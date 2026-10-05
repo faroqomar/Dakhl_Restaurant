@@ -3,7 +3,7 @@
   else root.DaftarModel = factory();
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   const core = [{ id: 'samoon', name: 'الصمون' }, { id: 'bread', name: 'الخبز' }, { id: 'falafel', name: 'الفلافل' }, { id: 'market', name: 'الأسواق' }];
-  function empty() { return { version: 3, categories: core.map(c => ({ ...c })), days: {}, transactions: [], transfers: [], suppliers: [], invoices: [], payments: [] }; }
+  function empty() { return { version: 3, categories: core.map(c => ({ ...c, type: 'primary' })), days: {}, transactions: [], transfers: [], suppliers: [], invoices: [], payments: [] }; }
   function dateKey(d = new Date()) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; }
   function validDate(s) { if (typeof s !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(s)) return false; const d = new Date(`${s}T12:00:00`); return !isNaN(d) && dateKey(d) === s; }
   function numeric(raw, { signed = false, positive = false } = {}) {
@@ -119,10 +119,15 @@
   function id(s) { assert(typeof s === 'string' && /^[a-zA-Z0-9_-]{1,80}$/.test(s)); return s; }
   function validate(raw) {
     assert(raw && [1, 2, 3].includes(raw.version) && Array.isArray(raw.categories) && raw.categories.length >= 4 && raw.categories.length <= 500);
-    const categories = raw.categories.map(c => ({ id: id(c.id), name: string(c.name, 80).trim() }));
+    // Older files have no type; infer it from stable IDs, never array position.
+    const categories = raw.categories.map(c => {
+      const type = c.type === undefined ? (core.some(x => x.id === c.id) ? 'primary' : 'additional') : c.type;
+      assert(['primary', 'additional'].includes(type), 'نوع الخانة غير صالح.');
+      return { id: id(c.id), name: string(c.name, 80).trim(), type };
+    });
     const names = new Set(categories.map(c => c.name)); const ids = new Set(categories.map(c => c.id));
     assert(ids.size === categories.length && names.size === categories.length && categories.every(c => c.name.length > 0));
-    assert(core.every(c => categories.some(x => x.id === c.id && x.name === c.name)), 'الخانات الرئيسية مفقودة من الملف.');
+    assert(core.every(c => categories.some(x => x.id === c.id && x.name === c.name)), 'الخانات الأصلية مفقودة من الملف.');
     assert(raw.days && typeof raw.days === 'object' && !Array.isArray(raw.days) && Object.keys(raw.days).length <= 50000);
     const days = {}; const expenseIds = new Set();
     for (const [key, d] of Object.entries(raw.days)) {

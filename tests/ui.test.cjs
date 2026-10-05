@@ -104,3 +104,19 @@ test('paid invoice deletion is blocked; removing settlement first allows deletio
 test('failed invoice save preserves supplier, catalog, expenses and balances together', async t => {
   const data=M.empty(); data.suppliers.push({id:'supplier',name:'المورد',phone:'',note:'',categoryId:'market',openingBalance:0,materials:[]}); const ui=await setup(t,{data,failSave:true}); ui.click('[data-view="suppliers"]'); await addInvoice(ui,{paid:'5000'}); assert.match(ui.w.document.getElementById('form-error').textContent,/مساحة/); assert.deepEqual(ui.stored(),data); assert.equal(ui.w.document.querySelector('.line-name-input').value,'رز'); assert.equal(ui.w.document.getElementById('amount').value,'5000');
 });
+test('category creation chooses a type and existing categories can switch type with undo and reload', async t => {
+  const ui = await setup(t); ui.click('[data-view="categories"]'); ui.click('[data-action="category"]');
+  assert.equal(ui.w.document.getElementById('category-type').value, 'additional');
+  ui.value('name', 'الغاز'); ui.value('category-type', 'primary'); await ui.submit();
+  const gas = ui.stored().categories.at(-1); assert.equal(gas.type, 'primary');
+  const select = ui.w.document.querySelector('[data-category-id="samoon"]'); select.focus(); select.value = 'additional'; select.dispatchEvent(new ui.w.Event('change', { bubbles: true })); await tick();
+  assert.equal(ui.stored().categories[0].type, 'additional'); assert.equal(ui.w.document.activeElement.dataset.categoryId, 'samoon');
+  const reloaded = await setup(t, { data: structuredClone(ui.stored()) }); reloaded.click('[data-view="categories"]');
+  assert.equal(reloaded.w.document.querySelector('[data-category-id="samoon"]').value, 'additional'); assert.equal(reloaded.w.document.querySelector(`[data-category-id="${gas.id}"]`).value, 'primary');
+  ui.action('undo'); await tick(); assert.equal(ui.stored().categories[0].type, 'primary');
+});
+test('failed category type save restores the selection and preserves the saved data', async t => {
+  const ui = await setup(t, { failSave: true }); ui.click('[data-view="categories"]');
+  const select = ui.w.document.querySelector('[data-category-id="bread"]'); select.value = 'additional'; select.dispatchEvent(new ui.w.Event('change', { bubbles: true })); await tick();
+  assert.equal(select.value, 'primary'); assert.equal(select.disabled, false); assert.equal(ui.stored().categories[1].type, 'primary'); assert.match(ui.w.document.getElementById('save-status').textContent, /تعذّر/);
+});
