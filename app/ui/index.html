@@ -7,6 +7,7 @@
   <title>دفتر · حسابات المطعم</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="model.js"></script>
+  <script defer src="suppliers.js"></script>
   <script defer src="renderer.js"></script>
 </head>
 <body>
@@ -17,8 +18,8 @@
       <p class="nav-label">مساحة العمل</p>
       <nav id="navigation">
         <button data-view="expenses" class="nav-item active"><span data-icon="ledger"></span>المصاريف اليومية</button>
-        <button class="nav-item future" disabled><span data-icon="supplier"></span>الموردون <small>لاحقاً</small></button>
-        <button class="nav-item future" disabled><span data-icon="transfer"></span>التسديدات <small>لاحقاً</small></button>
+        <button data-view="suppliers" class="nav-item"><span data-icon="supplier"></span>الموردون</button>
+        <button data-view="payments" class="nav-item"><span data-icon="transfer"></span>التسديدات</button>
         <button data-view="cash" class="nav-item"><span data-icon="wallet"></span>القاصة</button>
         <button data-view="categories" class="nav-item"><span data-icon="grid"></span>الخانات</button>
         <button data-view="settings" class="nav-item"><span data-icon="settings"></span>البيانات والنسخ</button>

@@ -7,8 +7,8 @@ const M = require('../app/ui/model.js');
 async function setup(t, { data = M.empty(), failSave = false } = {}) {
   const root = path.join(__dirname, '../app/ui'); const dom = new JSDOM(fs.readFileSync(path.join(root, 'index.html'), 'utf8'), { url: 'file:///app/index.html', runScripts: 'outside-only' }); t.after(() => dom.window.close());
   const { window: w } = dom; w.structuredClone = structuredClone; w.HTMLElement.prototype.scrollIntoView = () => {}; let stored = data, action;
-  w.daftar = { load: async () => ({ ok: true, data: stored, directory: '/test/data' }), save: async d => { if (failSave) return { ok: false, error: 'لا توجد مساحة كافية' }; stored = M.validate(d); return { ok: true, data: stored }; }, onAction: cb => action = cb };
-  w.eval(fs.readFileSync(path.join(root, 'model.js'), 'utf8')); w.eval(fs.readFileSync(path.join(root, 'renderer.js'), 'utf8')); await tick();
+  w.daftar = { load: async () => ({ ok: true, data: stored, directory: '/test/data' }), save: async d => { if (failSave) return { ok: false, error: 'لا توجد مساحة كافية' }; stored = M.validate(structuredClone(d)); return { ok: true, data: stored }; }, onAction: cb => action = cb };
+  w.eval(fs.readFileSync(path.join(root, 'model.js'), 'utf8')); w.eval(fs.readFileSync(path.join(root, 'suppliers.js'), 'utf8') + '\n' + fs.readFileSync(path.join(root, 'renderer.js'), 'utf8')); await tick();
   function click(selector) { const el = w.document.querySelector(selector); assert.ok(el, selector); el.click(); }
   function value(id, val, change = false) { const el = w.document.getElementById(id); assert.ok(el, id); el.value = val; if (change) el.dispatchEvent(new w.Event('change', { bubbles: true })); }
   async function submit() { w.document.querySelector('form').dispatchEvent(new w.Event('submit', { bubbles: true, cancelable: true })); await tick(); }
@@ -61,4 +61,46 @@ test('failed transfer save preserves both balances and keeps the input available
   const data = M.empty(), date = M.dateKey(); M.recordRemaining(data, date, 50000);
   const ui = await setup(t, { data, failSave: true }); ui.click('[data-action="remaining-transfer"]'); ui.value('amount', '20000'); await ui.submit();
   assert.match(ui.w.document.getElementById('form-error').textContent, /مساحة/); assert.equal(M.cash(ui.stored()), 0); assert.equal(M.remaining(ui.stored(), date), 50000); assert.equal(ui.stored().transfers.length, 0); assert.equal(ui.w.document.getElementById('amount').value, '20000');
+});
+async function addSupplier(ui, opening = '100000') {
+  ui.click('[data-view="suppliers"]'); ui.click('[data-action="supplier-new"]'); ui.value('supplier-name','مورد المواد'); ui.value('amount',opening); await ui.submit(); return ui.stored().suppliers[0];
+}
+function lineValue(ui, cls, value, change = false, index = 0) { ui.value(ui.w.document.querySelectorAll(cls)[index].id, value, change); }
+async function addInvoice(ui, { number = 'A-1', price = '5000', qty = '2.5', paid = '0' } = {}) {
+  ui.click('[data-action="invoice-new"]'); ui.value('invoice-number',number); lineValue(ui,'.line-name-input','رز',true); lineValue(ui,'.line-unit','كيلو'); lineValue(ui,'.line-quantity',qty); lineValue(ui,'.line-price',price); ui.value('amount',paid); await ui.submit();
+}
+test('supplier, permanent material, invoice and shared payment are saved together; opening and current balances remain distinct', async t => {
+  const data = M.empty(), date = M.dateKey(); M.recordRemaining(data,date,50000); data.transactions.push({ id:'cash',date,type:'deposit',amount:200000,note:'',createdAt:new Date().toISOString() });
+  const ui = await setup(t,{data}); const supplier = await addSupplier(ui);
+  ui.click('[data-action="supplier-tab"][data-tab="materials"]'); ui.click('[data-action="material-new"]'); ui.value('material-name','رز'); ui.value('unit','كيلو'); ui.value('amount','5000'); await ui.submit(); assert.equal(ui.stored().suppliers[0].materials.length,1);
+  ui.click('[data-action="supplier-tab"][data-tab="invoices"]'); ui.click('[data-action="invoice-new"]'); ui.value('invoice-number','A-1'); lineValue(ui,'.line-name-input','رز',true); assert.equal(ui.w.document.querySelector('.line-price').value,'5000'); lineValue(ui,'.line-quantity','2.5'); ui.value('amount','2500'); ui.value('payment-source','shared',true); ui.value('daily-amount','1500'); ui.value('cash-amount','1000'); await ui.submit();
+  assert.equal(ui.stored().invoices.length,1); assert.equal(M.invoiceTotal(ui.stored().invoices[0]),12500); assert.equal(M.supplierBalance(ui.stored(),supplier.id),110000); assert.equal(M.total(ui.stored(),date),2500); assert.equal(M.cash(ui.stored()),199000); assert.equal(M.remaining(ui.stored(),date),48500);
+  ui.click('[data-view="expenses"]'); assert.equal(ui.w.document.querySelectorAll('[data-action="payment-edit"]').length,1); assert.match(ui.w.document.querySelector('.note').textContent,/مورد المواد/);
+  ui.click('[data-view="cash"]'); assert.ok(ui.w.document.querySelector('[data-kind="supplier-payment"]')); ui.click('[data-kind="supplier-payment"]'); assert.equal(ui.w.document.getElementById('amount').value,'2500');
+});
+test('new invoice materials become reusable; template edits do not rewrite saved invoice details', async t => {
+  const ui=await setup(t); await addSupplier(ui); await addInvoice(ui); assert.equal(ui.stored().suppliers[0].materials[0].name,'رز'); assert.equal(ui.stored().payments.length,0); assert.equal(M.total(ui.stored(),M.dateKey()),0);
+  ui.click('[data-action="supplier-tab"][data-tab="materials"]'); ui.click('[data-action="material-edit"]'); ui.value('amount','7000'); ui.value('material-name','رز جديد'); await ui.submit(); assert.equal(ui.stored().invoices[0].lines[0].price,5000);
+  ui.click('[data-action="supplier-tab"][data-tab="invoices"]'); ui.click('[data-action="invoice-edit"]'); await ui.submit(); assert.equal(ui.stored().suppliers[0].materials.length,1); assert.equal(ui.stored().invoices[0].lines[0].name,'رز');
+  ui.click('[data-action="supplier-tab"][data-tab="invoices"]'); ui.click('[data-action="invoice-new"]'); lineValue(ui,'.line-name-input','رز جديد',true); assert.equal(ui.w.document.querySelector('.line-price').value,'7000'); assert.equal(ui.w.document.querySelector('.line-unit').value,'كيلو');
+});
+test('duplicate invoice and overpayment keep all input and never partly add materials or payments', async t => {
+  const ui=await setup(t); await addSupplier(ui); await addInvoice(ui); const before=structuredClone(ui.stored());
+  await addInvoice(ui,{number:'A-1',paid:'100'}); assert.match(ui.w.document.getElementById('form-error').textContent,/رقم القائمة/); assert.deepEqual(ui.stored(),before);
+  ui.value('invoice-number','A-2'); ui.value('amount','20000'); await ui.submit(); assert.match(ui.w.document.getElementById('form-error').textContent,/أكبر/); assert.deepEqual(ui.stored(),before);
+});
+test('invoice settlements can be partial or full, opening debt is a separate target, and deleting a payment refunds funding', async t => {
+  const ui=await setup(t); const supplier=await addSupplier(ui); await addInvoice(ui); const invoice=ui.stored().invoices[0];
+  ui.click('[data-action="invoice-pay"]'); assert.equal(ui.w.document.getElementById('invoice-id').value,invoice.id); assert.equal(ui.w.document.getElementById('amount').value,'12500'); ui.value('amount','5000'); ui.value('payment-source','cash',true); await ui.submit(); assert.equal(M.invoiceDue(ui.stored(),invoice.id),7500); assert.equal(M.cash(ui.stored()),-5000);
+  ui.click('[data-action="invoice-pay"]'); await ui.submit(); assert.equal(M.invoiceDue(ui.stored(),invoice.id),0); assert.equal(M.supplierBalance(ui.stored(),supplier.id),100000);
+  ui.click('[data-view="payments"]'); ui.click('[data-action="payment-edit"]'); ui.click('[data-action="ask-delete"]'); ui.click('[data-action="confirm-delete"]'); await tick(); assert.equal(ui.stored().payments.length,1); assert.equal(M.invoiceDue(ui.stored(),invoice.id),7500);
+  ui.click('[data-action="payment-new"]'); assert.equal(ui.w.document.getElementById('invoice-id').value,''); ui.value('amount','20000'); await ui.submit(); assert.equal(M.openingDue(ui.stored(),supplier.id),80000);
+});
+test('paid invoice deletion is blocked; removing settlement first allows deletion and undo restores consistent records', async t => {
+  const ui=await setup(t); await addSupplier(ui); await addInvoice(ui,{paid:'5000'}); ui.click('[data-action="invoice-edit"]'); ui.click('[data-action="ask-delete"]'); ui.click('[data-action="confirm-delete"]'); await tick(); assert.match(ui.w.document.getElementById('form-error').textContent,/تسديدات/); assert.equal(ui.stored().invoices.length,1);
+  ui.click('[data-action="close-drawer"]'); ui.click('[data-view="payments"]'); ui.click('[data-action="payment-edit"]'); ui.click('[data-action="ask-delete"]'); ui.click('[data-action="confirm-delete"]'); await tick(); assert.equal(ui.stored().payments.length,0);
+  ui.click('[data-view="suppliers"]'); ui.click('[data-action="invoice-edit"]'); ui.click('[data-action="ask-delete"]'); ui.click('[data-action="confirm-delete"]'); await tick(); assert.equal(ui.stored().invoices.length,0); ui.action('undo'); await tick(); assert.equal(ui.stored().invoices.length,1);
+});
+test('failed invoice save preserves supplier, catalog, expenses and balances together', async t => {
+  const data=M.empty(); data.suppliers.push({id:'supplier',name:'المورد',phone:'',note:'',categoryId:'market',openingBalance:0,materials:[]}); const ui=await setup(t,{data,failSave:true}); ui.click('[data-view="suppliers"]'); await addInvoice(ui,{paid:'5000'}); assert.match(ui.w.document.getElementById('form-error').textContent,/مساحة/); assert.deepEqual(ui.stored(),data); assert.equal(ui.w.document.querySelector('.line-name-input').value,'رز'); assert.equal(ui.w.document.getElementById('amount').value,'5000');
 });
