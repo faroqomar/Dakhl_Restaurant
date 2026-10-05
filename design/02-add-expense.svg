@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 1440 1000">
+<rect x="0" y="0" width="1440" height="1000" rx="0" fill="#F6F7F2"/>
+<g id="Navigation">
+<rect x="1196" y="0" width="244" height="1000" rx="0" fill="#EFF2E9"/>
+<path d="M1196 0L1196 1000" fill="none" stroke="#E2E8DD"/>
+<rect x="1358" y="38" width="42" height="46" rx="11" fill="#245B42"/>
+<path d="M1370 51H1388" fill="none" stroke="#D6E7B8"/>
+<path d="M1370 59H1388" fill="none" stroke="#D6E7B8"/>
+<path d="M1376 67H1388" fill="none" stroke="#D6E7B8"/>
+<text x="1340" y="63" font-family="Geeza Pro, Tahoma, sans-serif" font-size="32" font-weight="700" fill="#17382D" text-anchor="end">دفتر</text>
+<text x="1400" y="119" font-family="Geeza Pro, Tahoma, sans-serif" font-size="16" font-weight="400" fill="#758378" text-anchor="end">حسابات المطعم</text>
+<text x="1400" y="194" font-family="Geeza Pro, Tahoma, sans-serif" font-size="12" font-weight="400" fill="#758378" text-anchor="end">مساحة العمل</text>
+<rect x="1216" y="216" width="204" height="48" rx="10" fill="#245B42"/>
+<g transform="translate(1382 230)" fill="none" stroke="#FEFEFA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2h14v18H3z M7 7h6 M7 11h6 M7 15h4"/></g>
+<text x="1363" y="247" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="600" fill="#FEFEFA" text-anchor="end">المصاريف اليومية</text>
+<g transform="translate(1382 290)" fill="none" stroke="#758378" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h16v12H2z M0 8l3-6h14l3 6 M6 20v-7h8v7"/></g>
+<text x="1363" y="307" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="400" fill="#17382D" text-anchor="end">الموردون</text>
+<text x="1230" y="306" font-family="Geeza Pro, Tahoma, sans-serif" font-size="11" font-weight="400" fill="#758378" text-anchor="start">لاحقاً</text>
+<g transform="translate(1382 350)" fill="none" stroke="#758378" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h16 M14 2l4 4-4 4 M18 16H2 M6 12l-4 4 4 4"/></g>
+<text x="1363" y="367" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="400" fill="#17382D" text-anchor="end">التسديدات</text>
+<text x="1230" y="366" font-family="Geeza Pro, Tahoma, sans-serif" font-size="11" font-weight="400" fill="#758378" text-anchor="start">لاحقاً</text>
+<g transform="translate(1382 410)" fill="none" stroke="#758378" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5h16v14H2z M3 5V2h12 M13 10h7v5h-7z"/></g>
+<text x="1363" y="427" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="400" fill="#17382D" text-anchor="end">القاصة</text>
+<g transform="translate(1382 470)" fill="none" stroke="#758378" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h1 M9 10h1 M15 10h1"/></g>
+<text x="1363" y="487" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="400" fill="#17382D" text-anchor="end">أخرى</text>
+<path d="M1224 826H1412" fill="none" stroke="#E2E8DD"/>
+<circle cx="1391" cy="872" r="20" fill="#DCE7D0"/>
+<text x="1391" y="878" font-family="Geeza Pro, Tahoma, sans-serif" font-size="18" font-weight="600" fill="#245B42" text-anchor="middle">م</text>
+<text x="1358" y="870" font-family="Geeza Pro, Tahoma, sans-serif" font-size="15" font-weight="600" fill="#17382D" text-anchor="end">حسابات المطعم</text>
+<text x="1358" y="893" font-family="Geeza Pro, Tahoma, sans-serif" font-size="12" font-weight="400" fill="#758378" text-anchor="end">مساحة خاصة</text>
+<text x="1404" y="959" font-family="Geeza Pro, Tahoma, sans-serif" font-size="14" font-weight="400" fill="#758378" text-anchor="end">بسيط. واضح. كل يوم.</text>
+</g><g id="Header">
+<text x="1156" y="51" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="end">المصاريف / سجل اليوم</text>
+<text x="1156" y="104" font-family="Geeza Pro, Tahoma, sans-serif" font-size="34" font-weight="700" fill="#17382D" text-anchor="end">كل يوم، حسابه واضح.</text>
+<text x="1156" y="138" font-family="Geeza Pro, Tahoma, sans-serif" font-size="16" font-weight="400" fill="#758378" text-anchor="end">سجّل مصاريفك وتابع القاصة من مكان واحد.</text>
+<rect x="48" y="77" width="166" height="48" rx="10" fill="#245B42"/>
+<text x="131.0" y="107.0" font-family="Geeza Pro, Tahoma, sans-serif" font-size="16" font-weight="600" fill="#FEFEFA" text-anchor="middle">إضافة مصروف  +</text>
+<rect x="226" y="77" width="228" height="48" rx="10" fill="#FEFEFA" stroke="#E2E8DD"/>
+<text x="340.0" y="107.0" font-family="Geeza Pro, Tahoma, sans-serif" font-size="16" font-weight="600" fill="#17382D" text-anchor="middle">5 تشرين الأول 2026</text>
+<g transform="translate(422 91)" fill="none" stroke="#758378" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h14v15H3z M3 8h14 M7 1v5 M13 1v5"/></g>
+</g><g id="DailySummary">
+<path d="M48 177H1156" fill="none" stroke="#E2E8DD"/>
+<path d="M48 263H1156" fill="none" stroke="#E2E8DD"/>
+<text x="1156" y="208" font-family="Geeza Pro, Tahoma, sans-serif" font-size="14" font-weight="400" fill="#758378" text-anchor="end">مجموع مصاريف اليوم</text>
+<text x="1156" y="246" font-family="Geeza Pro, Tahoma, sans-serif" font-size="30" font-weight="600" fill="#17382D" text-anchor="end">351,000</text>
+<text x="1009" y="245" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="end">د.ع</text>
+<path d="M800 194L800 246" fill="none" stroke="#E2E8DD"/>
+<text x="755" y="208" font-family="Geeza Pro, Tahoma, sans-serif" font-size="14" font-weight="400" fill="#758378" text-anchor="end">الرصيد الكلي</text>
+<text x="755" y="245" font-family="Geeza Pro, Tahoma, sans-serif" font-size="28" font-weight="400" fill="#17382D" text-anchor="end">—</text>
+<text x="718" y="242" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="end">يُحدّد عند تسجيل الرصيد</text>
+<path d="M441 194L441 246" fill="none" stroke="#E2E8DD"/>
+<text x="397" y="208" font-family="Geeza Pro, Tahoma, sans-serif" font-size="14" font-weight="400" fill="#758378" text-anchor="end">خانات المصاريف</text>
+<text x="397" y="245" font-family="Geeza Pro, Tahoma, sans-serif" font-size="29" font-weight="600" fill="#17382D" text-anchor="end">06</text>
+<text x="340" y="243" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="end">خانات مسجّلة لهذا اليوم</text>
+</g><g id="DailyExpenseLedger">
+<rect x="384" y="294" width="772" height="452" rx="16" fill="#FEFEFA" stroke="#E2E8DD"/>
+<text x="1128" y="336" font-family="Geeza Pro, Tahoma, sans-serif" font-size="23" font-weight="600" fill="#17382D" text-anchor="end">تفاصيل المصاريف</text>
+<text x="412" y="335" font-family="Geeza Pro, Tahoma, sans-serif" font-size="14" font-weight="600" fill="#245B42" text-anchor="start">+ إضافة خانة</text>
+<rect x="400" y="357" width="740" height="38" rx="6" fill="#F3F5EE"/>
+<text x="1122" y="382" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="end">الخانة</text>
+<text x="919" y="382" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="end">المبلغ · د.ع</text>
+<text x="752" y="382" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="end">ملاحظات</text>
+<text x="420" y="382" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="start">تعديل</text>
+<circle cx="1119" cy="418" r="3" fill="#245B42"/>
+<text x="1104" y="424" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="600" fill="#17382D" text-anchor="end">الصمون</text>
+<text x="919" y="424" font-family="Geeza Pro, Tahoma, sans-serif" font-size="18" font-weight="500" fill="#17382D" text-anchor="end">113,000</text>
+<text x="752" y="424" font-family="Geeza Pro, Tahoma, sans-serif" font-size="14" font-weight="400" fill="#758378" text-anchor="end">حساب الصمون اليومي</text>
+<text x="422" y="424" font-family="Geeza Pro, Tahoma, sans-serif" font-size="22" font-weight="400" fill="#758378" text-anchor="start">···</text>
+<path d="M409 443H1130" fill="none" stroke="#EEF0E9"/>
+<circle cx="1119" cy="462" r="3" fill="#245B42"/>
+<text x="1104" y="468" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="600" fill="#17382D" text-anchor="end">الخبز</text>
+<text x="919" y="468" font-family="Geeza Pro, Tahoma, sans-serif" font-size="18" font-weight="500" fill="#17382D" text-anchor="end">60,000</text>
+<text x="752" y="468" font-family="Geeza Pro, Tahoma, sans-serif" font-size="14" font-weight="400" fill="#758378" text-anchor="end">—</text>
+<text x="422" y="468" font-family="Geeza Pro, Tahoma, sans-serif" font-size="22" font-weight="400" fill="#758378" text-anchor="start">···</text>
+<path d="M409 487H1130" fill="none" stroke="#EEF0E9"/>
+<circle cx="1119" cy="506" r="3" fill="#245B42"/>
+<text x="1104" y="512" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="600" fill="#17382D" text-anchor="end">الفلافل</text>
+<text x="919" y="512" font-family="Geeza Pro, Tahoma, sans-serif" font-size="18" font-weight="500" fill="#17382D" text-anchor="end">9,000</text>
+<text x="752" y="512" font-family="Geeza Pro, Tahoma, sans-serif" font-size="14" font-weight="400" fill="#758378" text-anchor="end">—</text>
+<text x="422" y="512" font-family="Geeza Pro, Tahoma, sans-serif" font-size="22" font-weight="400" fill="#758378" text-anchor="start">···</text>
+<path d="M409 531H1130" fill="none" stroke="#EEF0E9"/>
+<circle cx="1119" cy="550" r="3" fill="#245B42"/>
+<text x="1104" y="556" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="600" fill="#17382D" text-anchor="end">الأسواق</text>
+<text x="919" y="556" font-family="Geeza Pro, Tahoma, sans-serif" font-size="18" font-weight="500" fill="#17382D" text-anchor="end">41,000</text>
+<text x="752" y="556" font-family="Geeza Pro, Tahoma, sans-serif" font-size="14" font-weight="400" fill="#758378" text-anchor="end">مشتريات السوق</text>
+<text x="422" y="556" font-family="Geeza Pro, Tahoma, sans-serif" font-size="22" font-weight="400" fill="#758378" text-anchor="start">···</text>
+<path d="M409 575H1130" fill="none" stroke="#EEF0E9"/>
+<circle cx="1119" cy="594" r="3" fill="#ACBC98"/>
+<text x="1104" y="600" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="400" fill="#17382D" text-anchor="end">الغاز</text>
+<text x="919" y="600" font-family="Geeza Pro, Tahoma, sans-serif" font-size="18" font-weight="500" fill="#17382D" text-anchor="end">35,000</text>
+<text x="752" y="600" font-family="Geeza Pro, Tahoma, sans-serif" font-size="14" font-weight="400" fill="#758378" text-anchor="end">خانة إضافية</text>
+<text x="422" y="600" font-family="Geeza Pro, Tahoma, sans-serif" font-size="22" font-weight="400" fill="#758378" text-anchor="start">···</text>
+<path d="M409 619H1130" fill="none" stroke="#EEF0E9"/>
+<circle cx="1119" cy="638" r="3" fill="#ACBC98"/>
+<text x="1104" y="644" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="400" fill="#17382D" text-anchor="end">مشروبات غازية</text>
+<text x="919" y="644" font-family="Geeza Pro, Tahoma, sans-serif" font-size="18" font-weight="500" fill="#17382D" text-anchor="end">93,000</text>
+<text x="752" y="644" font-family="Geeza Pro, Tahoma, sans-serif" font-size="14" font-weight="400" fill="#758378" text-anchor="end">خانة إضافية</text>
+<text x="422" y="644" font-family="Geeza Pro, Tahoma, sans-serif" font-size="22" font-weight="400" fill="#758378" text-anchor="start">···</text>
+<path d="M408 686H1132" fill="none" stroke="#E2E8DD"/>
+<text x="1128" y="722" font-family="Geeza Pro, Tahoma, sans-serif" font-size="16" font-weight="600" fill="#17382D" text-anchor="end">مجموع المصاريف</text>
+<text x="916" y="724" font-family="Geeza Pro, Tahoma, sans-serif" font-size="24" font-weight="700" fill="#245B42" text-anchor="end">351,000</text>
+<text x="777" y="722" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="end">د.ع</text>
+<text x="412" y="721" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="start">تعديل المجموع</text>
+</g><g id="ChickenTracking">
+<rect x="384" y="770" width="772" height="175" rx="16" fill="#EDF2E6"/>
+<text x="1128" y="807" font-family="Geeza Pro, Tahoma, sans-serif" font-size="21" font-weight="600" fill="#17382D" text-anchor="end">تتبّع الدجاج</text>
+<text x="1128" y="831" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="end">أعداد فقط · خارج مجموع المصاريف</text>
+<text x="1128" y="908" font-family="Geeza Pro, Tahoma, sans-serif" font-size="36" font-weight="600" fill="#17382D" text-anchor="end">85</text>
+<text x="1056" y="878" font-family="Geeza Pro, Tahoma, sans-serif" font-size="15" font-weight="400" fill="#17382D" text-anchor="end">الدجاج المصروف</text>
+<text x="1056" y="905" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="end">دجاجة</text>
+<path d="M804 863L804 917" fill="none" stroke="#D8E2CE"/>
+<text x="758" y="908" font-family="Geeza Pro, Tahoma, sans-serif" font-size="36" font-weight="600" fill="#17382D" text-anchor="end">206</text>
+<text x="663" y="878" font-family="Geeza Pro, Tahoma, sans-serif" font-size="15" font-weight="400" fill="#17382D" text-anchor="end">الدجاج المتبقي</text>
+<text x="663" y="905" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="end">دجاجة</text>
+<text x="412" y="804" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#245B42" text-anchor="start">تعديل الأعداد</text>
+</g><g id="CashSafe">
+<rect x="48" y="294" width="308" height="290" rx="16" fill="#245B42"/>
+<g transform="translate(303 319)" fill="none" stroke="#D6E7B8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5h16v14H2z M3 5V2h12 M13 10h7v5h-7z"/></g>
+<text x="285" y="335" font-family="Geeza Pro, Tahoma, sans-serif" font-size="18" font-weight="600" fill="#FEFEFA" text-anchor="end">القاصة الرئيسية</text>
+<text x="326" y="382" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#CBDDC8" text-anchor="end">المبلغ الموجود بالقاصة</text>
+<text x="326" y="430" font-family="Geeza Pro, Tahoma, sans-serif" font-size="38" font-weight="600" fill="#FCFEF5" text-anchor="end">580,000</text>
+<text x="326" y="457" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#CBDDC8" text-anchor="end">دينار عراقي</text>
+<rect x="210" y="482" width="116" height="46" rx="9" fill="#D6E7B8"/>
+<text x="268" y="511" font-family="Geeza Pro, Tahoma, sans-serif" font-size="16" font-weight="600" fill="#17382D" text-anchor="middle">إيداع  +</text>
+<rect x="78" y="482" width="116" height="46" rx="9" fill="#356A51" stroke="#6C907B"/>
+<text x="136" y="511" font-family="Geeza Pro, Tahoma, sans-serif" font-size="16" font-weight="600" fill="#FEFEFA" text-anchor="middle">سحب  −</text>
+<text x="326" y="561" font-family="Geeza Pro, Tahoma, sans-serif" font-size="12" font-weight="400" fill="#CBDDC8" text-anchor="end">أنت تحدد مبلغ كل حركة</text>
+</g><g id="CashHistory">
+<text x="356" y="628" font-family="Geeza Pro, Tahoma, sans-serif" font-size="21" font-weight="600" fill="#17382D" text-anchor="end">آخر حركات القاصة</text>
+<text x="48" y="628" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#245B42" text-anchor="start">عرض الكل</text>
+<circle cx="338" cy="675" r="16" fill="#EAF0E4"/>
+<text x="338" y="681" font-family="Geeza Pro, Tahoma, sans-serif" font-size="20" font-weight="500" fill="#245B42" text-anchor="middle">+</text>
+<text x="309" y="674" font-family="Geeza Pro, Tahoma, sans-serif" font-size="15" font-weight="600" fill="#17382D" text-anchor="end">إيداع بالقاصة</text>
+<text x="309" y="697" font-family="Geeza Pro, Tahoma, sans-serif" font-size="12" font-weight="400" fill="#758378" text-anchor="end">اليوم · 10:30</text>
+<text x="48" y="679" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="600" fill="#245B42" text-anchor="start">+ 100,000</text>
+<path d="M48 721H356" fill="none" stroke="#E2E8DD"/>
+<circle cx="338" cy="764" r="16" fill="#EAF0E4"/>
+<text x="338" y="770" font-family="Geeza Pro, Tahoma, sans-serif" font-size="20" font-weight="500" fill="#245B42" text-anchor="middle">−</text>
+<text x="309" y="763" font-family="Geeza Pro, Tahoma, sans-serif" font-size="15" font-weight="600" fill="#17382D" text-anchor="end">سحب من القاصة</text>
+<text x="309" y="786" font-family="Geeza Pro, Tahoma, sans-serif" font-size="12" font-weight="400" fill="#758378" text-anchor="end">أمس · 19:15</text>
+<text x="48" y="768" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="600" fill="#855C44" text-anchor="start">− 60,000</text>
+<path d="M48 810H356" fill="none" stroke="#E2E8DD"/>
+<circle cx="338" cy="853" r="16" fill="#EAF0E4"/>
+<text x="338" y="859" font-family="Geeza Pro, Tahoma, sans-serif" font-size="20" font-weight="500" fill="#245B42" text-anchor="middle">+</text>
+<text x="309" y="852" font-family="Geeza Pro, Tahoma, sans-serif" font-size="15" font-weight="600" fill="#17382D" text-anchor="end">إيداع بالقاصة</text>
+<text x="309" y="875" font-family="Geeza Pro, Tahoma, sans-serif" font-size="12" font-weight="400" fill="#758378" text-anchor="end">أمس · 14:00</text>
+<text x="48" y="857" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="600" fill="#245B42" text-anchor="start">+ 40,000</text>
+<path d="M48 899H356" fill="none" stroke="#E2E8DD"/>
+<text x="356" y="950" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="end">لكل حركة مبلغ وتاريخ وملاحظة.</text>
+</g><g id="Footer">
+<text x="1156" y="980" font-family="Geeza Pro, Tahoma, sans-serif" font-size="12" font-weight="400" fill="#758378" text-anchor="end">نموذج تصميم · جميع الأرقام توضيحية</text>
+<text x="48" y="980" font-family="Geeza Pro, Tahoma, sans-serif" font-size="11" font-weight="400" fill="#758378" text-anchor="start">DAFTAR / 01</text>
+</g>
+<rect x="0" y="0" width="1196" height="1000" rx="0" fill="#17382D" fill-opacity="0.16"/>
+<g id="ExpenseDrawer">
+<rect x="0" y="0" width="492" height="1000" rx="0" fill="#FEFEFA"/>
+<path d="M491 0L491 1000" fill="none" stroke="#E2E8DD"/>
+<text x="452" y="52" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="end">المصاريف اليومية</text>
+<text x="38" y="52" font-family="Geeza Pro, Tahoma, sans-serif" font-size="28" font-weight="400" fill="#758378" text-anchor="start">×</text>
+<text x="452" y="111" font-family="Geeza Pro, Tahoma, sans-serif" font-size="32" font-weight="700" fill="#17382D" text-anchor="end">إضافة مصروف</text>
+<text x="452" y="149" font-family="Geeza Pro, Tahoma, sans-serif" font-size="16" font-weight="400" fill="#758378" text-anchor="end">تفاصيل بسيطة، وسجل مرتب.</text>
+<text x="452" y="214" font-family="Geeza Pro, Tahoma, sans-serif" font-size="15" font-weight="600" fill="#17382D" text-anchor="end">الخانة</text>
+<rect x="40" y="233" width="412" height="58" rx="10" fill="#F6F7F2" stroke="#E2E8DD"/>
+<text x="430" y="269" font-family="Geeza Pro, Tahoma, sans-serif" font-size="18" font-weight="400" fill="#17382D" text-anchor="end">الخبز</text>
+<text x="61" y="269" font-family="Geeza Pro, Tahoma, sans-serif" font-size="18" font-weight="400" fill="#758378" text-anchor="start">⌄</text>
+<text x="452" y="323" font-family="Geeza Pro, Tahoma, sans-serif" font-size="14" font-weight="400" fill="#245B42" text-anchor="end">+ إضافة خانة جديدة وحفظ اسمها</text>
+<text x="452" y="386" font-family="Geeza Pro, Tahoma, sans-serif" font-size="15" font-weight="600" fill="#17382D" text-anchor="end">المبلغ</text>
+<rect x="40" y="405" width="412" height="82" rx="10" fill="#FEFEFA" stroke="#8EAB80"/>
+<text x="430" y="458" font-family="Geeza Pro, Tahoma, sans-serif" font-size="32" font-weight="600" fill="#17382D" text-anchor="end">60,000</text>
+<text x="62" y="453" font-family="Geeza Pro, Tahoma, sans-serif" font-size="16" font-weight="400" fill="#758378" text-anchor="start">د.ع</text>
+<text x="452" y="534" font-family="Geeza Pro, Tahoma, sans-serif" font-size="15" font-weight="600" fill="#17382D" text-anchor="end">التاريخ</text>
+<rect x="40" y="553" width="412" height="58" rx="10" fill="#F6F7F2" stroke="#E2E8DD"/>
+<text x="430" y="590" font-family="Geeza Pro, Tahoma, sans-serif" font-size="17" font-weight="400" fill="#17382D" text-anchor="end">5 تشرين الأول 2026</text>
+<g transform="translate(62 571)" fill="none" stroke="#758378" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h14v15H3z M3 8h14 M7 1v5 M13 1v5"/></g>
+<text x="452" y="657" font-family="Geeza Pro, Tahoma, sans-serif" font-size="15" font-weight="600" fill="#17382D" text-anchor="end">ملاحظات</text>
+<text x="374" y="657" font-family="Geeza Pro, Tahoma, sans-serif" font-size="13" font-weight="400" fill="#758378" text-anchor="end">اختياري</text>
+<rect x="40" y="676" width="412" height="130" rx="10" fill="#F6F7F2" stroke="#E2E8DD"/>
+<text x="430" y="711" font-family="Geeza Pro, Tahoma, sans-serif" font-size="15" font-weight="400" fill="#758378" text-anchor="end">اكتب أي تفاصيل تحب ترجع إلها…</text>
+<rect x="40" y="861" width="412" height="54" rx="10" fill="#245B42"/>
+<text x="246.0" y="894.0" font-family="Geeza Pro, Tahoma, sans-serif" font-size="16" font-weight="600" fill="#FEFEFA" text-anchor="middle">حفظ المصروف</text>
+<text x="246" y="953" font-family="Geeza Pro, Tahoma, sans-serif" font-size="12" font-weight="400" fill="#758378" text-anchor="middle">نموذج إضافة · لا يسجّل بيانات فعلية</text>
+</g>
+</svg>

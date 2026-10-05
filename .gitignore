@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+
+# Local accounts and private backups
+accounts.json
+accounts.backup.json
+accounts-before-*.json
+window.json
+.env
+.env.*
+!.env.example
