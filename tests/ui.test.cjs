@@ -87,7 +87,7 @@ test('new invoice materials become reusable; template edits do not rewrite saved
 test('duplicate invoice and overpayment keep all input and never partly add materials or payments', async t => {
   const ui=await setup(t); await addSupplier(ui); await addInvoice(ui); const before=structuredClone(ui.stored());
   await addInvoice(ui,{number:'A-1',paid:'100'}); assert.match(ui.w.document.getElementById('form-error').textContent,/رقم القائمة/); assert.deepEqual(ui.stored(),before);
-  ui.value('invoice-number','A-2'); ui.value('amount','20000'); await ui.submit(); assert.match(ui.w.document.getElementById('form-error').textContent,/أكبر/); assert.deepEqual(ui.stored(),before);
+  ui.value('invoice-number','A-2'); ui.value('amount','120000'); await ui.submit(); assert.match(ui.w.document.getElementById('form-error').textContent,/يتجاوز/); assert.deepEqual(ui.stored(),before);
 });
 test('invoice settlements can be partial or full, opening debt is a separate target, and deleting a payment refunds funding', async t => {
   const ui=await setup(t); const supplier=await addSupplier(ui); await addInvoice(ui); const invoice=ui.stored().invoices[0];
@@ -119,4 +119,31 @@ test('failed category type save restores the selection and preserves the saved d
   const ui = await setup(t, { failSave: true }); ui.click('[data-view="categories"]');
   const select = ui.w.document.querySelector('[data-category-id="bread"]'); select.value = 'additional'; select.dispatchEvent(new ui.w.Event('change', { bubbles: true })); await tick();
   assert.equal(select.value, 'primary'); assert.equal(select.disabled, false); assert.equal(ui.stored().categories[1].type, 'primary'); assert.match(ui.w.document.getElementById('save-status').textContent, /تعذّر/);
+});
+test('excess settlement shows live split, reduces debts, and editing/deleting restores the correct amounts and source', async t => {
+  const data = M.empty(), date = M.dateKey(); M.recordRemaining(data, date, 100000);
+  const ui = await setup(t, { data }); const supplier = await addSupplier(ui); await addInvoice(ui); const invoice = ui.stored().invoices[0];
+  ui.click('[data-action="invoice-pay"]'); ui.value('amount', '32500'); ui.w.document.getElementById('amount').dispatchEvent(new ui.w.Event('input', { bubbles: true }));
+  assert.match(ui.w.document.getElementById('payment-split').textContent, /12,500.*20,000.*80,000/);
+  ui.value('payment-source', 'shared', true); ui.value('daily-amount', '20000'); ui.value('cash-amount', '12500'); await ui.submit();
+  assert.equal(M.invoiceDue(ui.stored(), invoice.id), 0); assert.equal(M.debtAvailable(ui.stored(), supplier.id), 80000); assert.equal(M.total(ui.stored(), date), 32500); assert.equal(M.cash(ui.stored()), -12500); assert.equal(M.remaining(ui.stored(), date), 80000);
+  assert.match(ui.w.document.querySelector('.supplier-summary').textContent, /الديون الباقية عليك.*80,000/); assert.doesNotMatch(ui.w.document.querySelector('main').textContent, /الرصيد الافتتاحي/);
+  ui.click('[data-view="payments"]'); assert.match(ui.w.document.querySelector('.payments-table').textContent, /للقائمة 12,500.*للديون 20,000/);
+  ui.click('[data-action="payment-edit"]'); ui.value('amount', '10000'); ui.value('payment-source', 'daily', true); await ui.submit();
+  assert.equal(M.invoiceDue(ui.stored(), invoice.id), 2500); assert.equal(M.debtAvailable(ui.stored(), supplier.id), 100000); assert.equal(M.cash(ui.stored()), 0); assert.equal(M.remaining(ui.stored(), date), 90000);
+  ui.click('[data-action="payment-edit"]'); ui.click('[data-action="ask-delete"]'); ui.click('[data-action="confirm-delete"]'); await tick(); assert.equal(M.invoiceDue(ui.stored(), invoice.id), 12500); assert.equal(M.total(ui.stored(), date), 0); assert.equal(M.remaining(ui.stored(), date), 100000);
+  ui.action('undo'); await tick(); assert.equal(M.total(ui.stored(), date), 10000);
+});
+test('new invoice accepts extra debt payment atomically, and added debt is editable until its repayment would exceed it', async t => {
+  const ui = await setup(t); const supplier = await addSupplier(ui, '100000'); await addInvoice(ui, { paid: '32500' });
+  assert.equal(ui.stored().payments.length, 1); assert.equal(ui.stored().payments[0].invoiceAmount, 12500); assert.equal(ui.stored().payments[0].debtAmount, 20000); assert.equal(M.debtAvailable(ui.stored(), supplier.id), 80000);
+  ui.click('[data-action="supplier-tab"][data-tab="debts"]'); ui.click('[data-action="debt-new"]'); ui.value('amount', '50000'); ui.value('note', 'باقي سابق'); await ui.submit(); assert.equal(M.debtAvailable(ui.stored(), supplier.id), 130000); assert.equal(M.total(ui.stored(), M.dateKey()), 32500);
+  ui.click('[data-action="debt-edit"]'); ui.value('amount', '40000'); await ui.submit(); assert.equal(M.debtAvailable(ui.stored(), supplier.id), 120000);
+  ui.click('[data-action="payment-new"]'); ui.value('amount', '120000'); await ui.submit(); assert.equal(M.debtAvailable(ui.stored(), supplier.id), 0);
+  ui.click('[data-action="debt-edit"]'); ui.click('[data-action="ask-delete"]'); ui.click('[data-action="confirm-delete"]'); await tick(); assert.match(ui.w.document.getElementById('form-error').textContent, /الديون/); assert.equal(ui.stored().debts.length, 1);
+});
+test('excess payment save failure never partly pays the bill, debt, or source and keeps the input', async t => {
+  const data = M.empty(), date = M.dateKey(); data.suppliers.push({ id: 'supplier', name: 'المورد', phone: '', note: '', categoryId: 'market', openingBalance: 100000, materials: [] });
+  const ui = await setup(t, { data, failSave: true }); ui.click('[data-view="suppliers"]'); await addInvoice(ui, { paid: '32500' });
+  assert.match(ui.w.document.getElementById('form-error').textContent, /مساحة/); assert.deepEqual(ui.stored(), data); assert.equal(ui.w.document.getElementById('amount').value, '32500'); assert.equal(M.total(ui.stored(), date), 0);
 });

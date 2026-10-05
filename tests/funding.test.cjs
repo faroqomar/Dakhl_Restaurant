@@ -16,7 +16,7 @@ function state() {
 test('version 1 migration keeps cash and totals, defaults old expenses to daily without assuming a remainder', () => {
   const s = state(); s.version = 1; delete s.transfers; delete s.days[date].remaining;
   const old = expense('old', 25000); delete old.funding; delete old.createdAt; s.days[date].expenses.push(old);
-  const next = M.validate(s); assert.equal(next.version, 3); assert.equal(M.cash(next), 100000); assert.equal(M.total(next, date), 25000);
+  const next = M.validate(s); assert.equal(next.version, 4); assert.equal(M.cash(next), 100000); assert.equal(M.total(next, date), 25000);
   assert.deepEqual(next.days[date].expenses[0].funding, { source: 'daily', dailyAmount: 25000, cashAmount: 0 }); assert.equal(M.remaining(next, date), null);
 });
 test('all sources count once in expenses; only cash allocation withdraws, and editing or deleting corrects it', () => {

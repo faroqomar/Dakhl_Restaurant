@@ -3,7 +3,7 @@
   else root.DaftarModel = factory();
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   const core = [{ id: 'samoon', name: 'الصمون' }, { id: 'bread', name: 'الخبز' }, { id: 'falafel', name: 'الفلافل' }, { id: 'market', name: 'الأسواق' }];
-  function empty() { return { version: 3, categories: core.map(c => ({ ...c, type: 'primary' })), days: {}, transactions: [], transfers: [], suppliers: [], invoices: [], payments: [] }; }
+  function empty() { return { version: 4, categories: core.map(c => ({ ...c, type: 'primary' })), days: {}, transactions: [], transfers: [], suppliers: [], invoices: [], payments: [], debts: [] }; }
   function dateKey(d = new Date()) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; }
   function validDate(s) { if (typeof s !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(s)) return false; const d = new Date(`${s}T12:00:00`); return !isNaN(d) && dateKey(d) === s; }
   function numeric(raw, { signed = false, positive = false } = {}) {
@@ -57,24 +57,39 @@
     assert(Number.isSafeInteger(product), 'قيمة المادة أكبر من الحد الدقيق للحساب.'); return money(Math.round(product / 1000));
   }
   function invoiceTotal(invoice) { return money(invoice.lines.reduce((sum, line) => sum + lineTotal(line), 0)); }
-  function invoicePaid(state, invoiceId) { return (state.payments || []).filter(p => p.invoiceId === invoiceId).reduce((sum, p) => sum + p.amount, 0); }
+  function paymentAllocation(p) { return { invoiceAmount: p.invoiceAmount === undefined ? (p.invoiceId ? p.amount : 0) : p.invoiceAmount, debtAmount: p.debtAmount === undefined ? (p.invoiceId ? 0 : p.amount) : p.debtAmount }; }
+  function invoicePaid(state, invoiceId) { return (state.payments || []).filter(p => p.invoiceId === invoiceId).reduce((sum, p) => sum + paymentAllocation(p).invoiceAmount, 0); }
   function invoiceDue(state, invoiceId) { const inv = (state.invoices || []).find(i => i.id === invoiceId); return inv ? invoiceTotal(inv) - invoicePaid(state, invoiceId) : 0; }
-  function openingDue(state, supplierId) { return (state.suppliers || []).find(s => s.id === supplierId)?.openingBalance - (state.payments || []).filter(p => p.supplierId === supplierId && p.invoiceId === null).reduce((sum, p) => sum + p.amount, 0); }
-  function supplierBalance(state, supplierId) { return (state.suppliers || []).find(s => s.id === supplierId)?.openingBalance + (state.invoices || []).filter(i => i.supplierId === supplierId).reduce((sum, i) => sum + invoiceTotal(i), 0) - (state.payments || []).filter(p => p.supplierId === supplierId).reduce((sum, p) => sum + p.amount, 0); }
+  function debtAvailable(state, supplierId, date = '9999-12-31', excludeId = null) {
+    return ((state.suppliers || []).find(s => s.id === supplierId)?.openingBalance || 0) + (state.debts || []).filter(d => d.supplierId === supplierId && d.date <= date).reduce((sum, d) => sum + d.amount, 0) - (state.payments || []).filter(p => p.supplierId === supplierId && p.id !== excludeId).reduce((sum, p) => sum + paymentAllocation(p).debtAmount, 0);
+  }
+  function openingDue(state, supplierId) { return debtAvailable(state, supplierId); }
+  function splitPayment(state, supplierId, invoiceId, amount, date, excludeId = null) {
+    money(amount); assert(amount > 0, 'مبلغ التسديد لازم يكون أكبر من صفر.'); assert(validDate(date));
+    assert((state.suppliers || []).some(s => s.id === supplierId), 'المورد غير موجود.');
+    const invoice = invoiceId ? (state.invoices || []).find(i => i.id === invoiceId) : null;
+    assert(!invoiceId || (invoice?.supplierId === supplierId && date >= invoice.date), 'اختار قائمة لهذا المورد وتاريخاً لا يسبقها.');
+    const other = { ...state, payments: (state.payments || []).filter(p => p.id !== excludeId) };
+    const invoiceAmount = invoiceId ? Math.min(amount, Math.max(0, invoiceDue(other, invoiceId))) : 0;
+    const debtAmount = amount - invoiceAmount;
+    assert(debtAmount <= Math.max(0, debtAvailable(other, supplierId, date)), 'مبلغ التسديد يتجاوز المتبقي من القائمة والديون المتاحة بهذا التاريخ.');
+    return { invoiceAmount, debtAmount };
+  }
+  function supplierBalance(state, supplierId) { return ((state.suppliers || []).find(s => s.id === supplierId)?.openingBalance || 0) + (state.debts || []).filter(d => d.supplierId === supplierId).reduce((sum, d) => sum + d.amount, 0) + (state.invoices || []).filter(i => i.supplierId === supplierId).reduce((sum, i) => sum + invoiceTotal(i), 0) - (state.payments || []).filter(p => p.supplierId === supplierId).reduce((sum, p) => sum + p.amount, 0); }
   function supplierEvents(state, supplierId) {
-    return [...(state.invoices || []).filter(i => i.supplierId === supplierId).map(i => ({ ...i, type: 'invoice', amount: invoiceTotal(i) })), ...(state.payments || []).filter(p => p.supplierId === supplierId).map(p => ({ ...p, type: 'payment' }))].sort((a, b) => a.date.localeCompare(b.date) || a.createdAt.localeCompare(b.createdAt) || (a.type === b.type ? a.id.localeCompare(b.id) : a.type === 'invoice' ? -1 : 1));
+    return [...(state.invoices || []).filter(i => i.supplierId === supplierId).map(i => ({ ...i, type: 'invoice', amount: invoiceTotal(i) })), ...(state.debts || []).filter(d => d.supplierId === supplierId).map(d => ({ ...d, type: 'debt' })), ...(state.payments || []).filter(p => p.supplierId === supplierId).map(p => ({ ...p, type: 'payment' }))].sort((a, b) => a.date.localeCompare(b.date) || a.createdAt.localeCompare(b.createdAt) || (Number(a.type === 'payment') - Number(b.type === 'payment') || a.id.localeCompare(b.id)));
   }
   function supplierLedger(state, supplierId) {
     let balance = (state.suppliers || []).find(s => s.id === supplierId)?.openingBalance || 0;
-    return supplierEvents(state, supplierId).map(e => { const before = balance; balance += e.type === 'invoice' ? e.amount : -e.amount; return { ...e, before, balance }; });
+    return supplierEvents(state, supplierId).map(e => { const before = balance; balance += e.type !== 'payment' ? e.amount : -e.amount; return { ...e, before, balance }; });
   }
   function balanceBefore(state, supplierId, date, createdAt, excludeId = null) {
-    return ((state.suppliers || []).find(s => s.id === supplierId)?.openingBalance || 0) + supplierEvents(state, supplierId).filter(e => e.id !== excludeId && (e.date < date || (e.date === date && (e.createdAt < createdAt || (e.createdAt === createdAt && e.type === 'invoice'))))).reduce((sum, e) => sum + (e.type === 'invoice' ? e.amount : -e.amount), 0);
+    return ((state.suppliers || []).find(s => s.id === supplierId)?.openingBalance || 0) + supplierEvents(state, supplierId).filter(e => e.id !== excludeId && (e.date < date || (e.date === date && (e.createdAt < createdAt || (e.createdAt === createdAt && e.type !== 'payment'))))).reduce((sum, e) => sum + (e.type !== 'payment' ? e.amount : -e.amount), 0);
   }
   function expenses(state, key) {
     return [...day(state, key).expenses, ...(state.payments || []).filter(p => p.date === key).map(p => {
       const supplier = (state.suppliers || []).find(s => s.id === p.supplierId), invoice = (state.invoices || []).find(i => i.id === p.invoiceId);
-      return { ...p, kind: 'supplier-payment', note: `تسديد ${supplier?.name || 'مورد'} · ${invoice ? 'قائمة ' + invoice.number : 'الرصيد القديم'}${p.note ? ' · ' + p.note : ''}` };
+      return { ...p, kind: 'supplier-payment', note: `تسديد ${supplier?.name || 'مورد'} · ${invoice ? 'قائمة ' + invoice.number + (paymentAllocation(p).debtAmount ? ` · ديون ${paymentAllocation(p).debtAmount} د.ع` : '') : 'الديون'}${p.note ? ' · ' + p.note : ''}` };
     })];
   }
   function allocation(amount, f) {
@@ -86,8 +101,8 @@
     return { source: f.source, dailyAmount, cashAmount };
   }
   function validateSuppliers(raw, categoryIds) {
-    const rawSuppliers = raw.suppliers ?? [], rawInvoices = raw.invoices ?? [], rawPayments = raw.payments ?? [];
-    assert(Array.isArray(rawSuppliers) && rawSuppliers.length <= 5000 && Array.isArray(rawInvoices) && rawInvoices.length <= 100000 && Array.isArray(rawPayments) && rawPayments.length <= 100000);
+    const rawSuppliers = raw.suppliers ?? [], rawInvoices = raw.invoices ?? [], rawPayments = raw.payments ?? [], rawDebts = raw.debts ?? [];
+    assert(Array.isArray(rawSuppliers) && rawSuppliers.length <= 5000 && Array.isArray(rawInvoices) && rawInvoices.length <= 100000 && Array.isArray(rawPayments) && rawPayments.length <= 100000 && Array.isArray(rawDebts) && rawDebts.length <= 100000);
     const supplierIds = new Set(), supplierNames = new Set(), invoiceIds = new Set(), paymentIds = new Set(), invoiceNumbers = new Set();
     const suppliers = rawSuppliers.map(s => {
       const key = id(s.id), name = string(s.name, 100).trim(); assert(name && !supplierIds.has(key) && !supplierNames.has(name.toLowerCase()), 'اسم المورد موجود أو غير صالح.'); supplierIds.add(key); supplierNames.add(name.toLowerCase());
@@ -103,14 +118,26 @@
       const lines = i.lines.map(l => { assert(supplier.materials.some(m => m.id === l.materialId), 'المادة غير موجودة عند المورد.'); const name = string(l.name, 100).trim(), unit = string(l.unit, 30).trim(); assert(name && unit); const line = { materialId: l.materialId, name, unit, quantity: quantity(l.quantity), price: money(l.price) }; lineTotal(line); return line; });
       const inv = { id: key, supplierId: i.supplierId, number, date: i.date, lines, note: string(i.note), createdAt: i.createdAt }; assert(invoiceTotal(inv) > 0, 'مجموع القائمة لازم يكون أكبر من صفر.'); return inv;
     });
+    const debtIds = new Set();
+    const debts = rawDebts.map(d => {
+      const key = id(d.id); assert(!debtIds.has(key)); debtIds.add(key); assert(supplierIds.has(d.supplierId) && validDate(d.date));
+      const amount = money(d.amount); assert(amount > 0, 'مبلغ الدين لازم يكون أكبر من صفر.'); string(d.createdAt, 40); assert(!isNaN(Date.parse(d.createdAt)));
+      return { id: key, supplierId: d.supplierId, date: d.date, amount, note: string(d.note), createdAt: d.createdAt };
+    });
     const payments = rawPayments.map(p => {
       const key = id(p.id); assert(!paymentIds.has(key)); paymentIds.add(key); assert(supplierIds.has(p.supplierId) && validDate(p.date)); const invoice = p.invoiceId === null ? null : invoices.find(i => i.id === p.invoiceId); assert(p.invoiceId === null || (invoice?.supplierId === p.supplierId && p.date >= invoice.date), 'اختار قائمة لهذا المورد وتاريخاً لا يسبقها.');
       assert(categoryIds.has(p.categoryId)); const amount = money(p.amount); assert(amount > 0, 'مبلغ التسديد لازم يكون أكبر من صفر.'); string(p.createdAt, 40); assert(!isNaN(Date.parse(p.createdAt)));
-      return { id: key, supplierId: p.supplierId, invoiceId: p.invoiceId, categoryId: p.categoryId, date: p.date, amount, funding: allocation(amount, p.funding), note: string(p.note), createdAt: p.createdAt };
+      const split = paymentAllocation(p); money(split.invoiceAmount); money(split.debtAmount);
+      assert(split.invoiceAmount + split.debtAmount === amount && (p.invoiceId !== null || split.invoiceAmount === 0), 'توزيع التسديد بين القائمة والديون غير صالح.');
+      return { id: key, supplierId: p.supplierId, invoiceId: p.invoiceId, ...split, categoryId: p.categoryId, date: p.date, amount, funding: allocation(amount, p.funding), note: string(p.note), createdAt: p.createdAt };
     });
-    const state = { suppliers, invoices, payments };
+    const state = { suppliers, invoices, payments, debts };
     for (const i of invoices) assert(invoicePaid(state, i.id) <= invoiceTotal(i), 'التسديد يتجاوز قيمة القائمة؛ عدّل التسديد أولاً.');
-    for (const s of suppliers) { assert(openingDue(state, s.id) >= 0, 'تسديد الرصيد القديم أكبر من قيمته.'); assert(Number.isSafeInteger(supplierBalance(state, s.id)), 'رصيد المورد يتجاوز الحد الدقيق للحساب.'); for (const e of supplierLedger(state, s.id)) assert(Number.isSafeInteger(e.balance), 'رصيد المورد يتجاوز الحد الدقيق للحساب.'); }
+    for (const s of suppliers) { assert(openingDue(state, s.id) >= 0, 'تسديد الديون والرصيد القديم أكبر من قيمته.');
+      let available = s.openingBalance;
+      const timeline = [...debts.filter(d => d.supplierId === s.id).map(d => ({ ...d, credit: true })), ...payments.filter(p => p.supplierId === s.id).map(p => ({ ...p, credit: false }))].sort((a, b) => a.date.localeCompare(b.date) || Number(b.credit) - Number(a.credit));
+      for (const e of timeline) { available += e.credit ? e.amount : -e.debtAmount; assert(Number.isSafeInteger(available), 'الديون تتجاوز الحد الدقيق للحساب.'); assert(available >= 0, 'تسديد الديون يسبق تسجيلها أو يتجاوز قيمتها.'); }
+       assert(Number.isSafeInteger(supplierBalance(state, s.id)), 'رصيد المورد يتجاوز الحد الدقيق للحساب.'); for (const e of supplierLedger(state, s.id)) assert(Number.isSafeInteger(e.balance), 'رصيد المورد يتجاوز الحد الدقيق للحساب.'); }
     return state;
   }
   function assert(ok, message = 'ملف البيانات غير صالح.') { if (!ok) throw new Error(message); }
@@ -118,7 +145,7 @@
   function string(s, max = 2000) { assert(typeof s === 'string' && s.length <= max); return s; }
   function id(s) { assert(typeof s === 'string' && /^[a-zA-Z0-9_-]{1,80}$/.test(s)); return s; }
   function validate(raw) {
-    assert(raw && [1, 2, 3].includes(raw.version) && Array.isArray(raw.categories) && raw.categories.length >= 4 && raw.categories.length <= 500);
+    assert(raw && [1, 2, 3, 4].includes(raw.version) && Array.isArray(raw.categories) && raw.categories.length >= 4 && raw.categories.length <= 500);
     // Older files have no type; infer it from stable IDs, never array position.
     const categories = raw.categories.map(c => {
       const type = c.type === undefined ? (core.some(x => x.id === c.id) ? 'primary' : 'additional') : c.type;
@@ -150,12 +177,12 @@
     const rawTransfers = raw.transfers ?? []; assert(Array.isArray(rawTransfers) && rawTransfers.length <= 100000);
     const transferIds = new Set();
     const transfers = rawTransfers.map(t => { const key = id(t.id); assert(!transferIds.has(key)); transferIds.add(key); assert(validDate(t.date) && days[t.date]?.remaining != null, 'إيداع الرصيد اليومي يحتاج رصيداً مسجّلاً.'); money(t.amount); assert(t.amount > 0); string(t.createdAt, 40); assert(!isNaN(Date.parse(t.createdAt))); return { id: key, date: t.date, amount: t.amount, createdAt: t.createdAt }; });
-    const clean = { version: 3, categories, days, transactions, transfers, ...validateSuppliers(raw, ids) };
+    const clean = { version: 4, categories, days, transactions, transfers, ...validateSuppliers(raw, ids) };
     for (const date of new Set([...Object.keys(days), ...clean.payments.map(p => p.date)])) assert(Number.isSafeInteger(expenses(clean, date).reduce((sum, e) => sum + e.amount, 0)), 'مجموع المصاريف أكبر من الحد الدقيق للحساب.');
     let cashTotal = 0;
     for (const t of movements(clean)) { cashTotal += t.type === 'withdrawal' ? -t.amount : t.amount; assert(Number.isSafeInteger(cashTotal), 'مجموع حركات القاصة أكبر من الحد الدقيق للحساب.'); }
     for (const key of Object.keys(days)) { assert(Number.isSafeInteger(transferred(clean, key)), 'الإيداعات تتجاوز الحد الدقيق للحساب.'); const r = remaining(clean, key); assert(r === null || Number.isSafeInteger(r), 'الرصيد المتبقي يتجاوز الحد الدقيق للحساب.'); }
     return clean;
   }
-  return { empty, dateKey, validDate, numeric, day, total, funding, dailySpent, transferred, remaining, recordRemaining, movements, transferRemaining, cash, validate, quantity, lineTotal, invoiceTotal, invoicePaid, invoiceDue, openingDue, supplierBalance, supplierLedger, balanceBefore, expenses, allocation };
+  return { empty, dateKey, validDate, numeric, day, total, funding, dailySpent, transferred, remaining, recordRemaining, movements, transferRemaining, cash, validate, quantity, lineTotal, invoiceTotal, invoicePaid, invoiceDue, paymentAllocation, splitPayment, debtAvailable, openingDue, supplierBalance, supplierLedger, balanceBefore, expenses, allocation };
 });

@@ -42,7 +42,7 @@ function settingsPage() { return header('حساباتك تبقى يمّك.', 'ا
 function render() {
   if (!state) return;
   document.querySelectorAll('[data-view]').forEach(el => { const active = el.dataset.view === view; el.classList.toggle('active', active); el.setAttribute('aria-current', active ? 'page' : 'false'); });
-  main.innerHTML = ({ expenses: expensesPage, suppliers: suppliersPage, payments: paymentsPage, cash: cashPage, categories: categoriesPage, settings: settingsPage }[view])() + `<footer class="page-footer"><span>كل حساباتك محفوظة على هذا الجهاز</span><span class="number">DAFTAR / 1.2.1</span></footer>`;
+  main.innerHTML = ({ expenses: expensesPage, suppliers: suppliersPage, payments: paymentsPage, cash: cashPage, categories: categoriesPage, settings: settingsPage }[view])() + `<footer class="page-footer"><span>كل حساباتك محفوظة على هذا الجهاز</span><span class="number">DAFTAR / 1.3</span></footer>`;
 }
 async function commit(next, message, { remember = true } = {}) {
   if (busy) return false;
@@ -84,7 +84,7 @@ function openDrawer(kind, id = null, options = {}) {
   if (!state || busy) return;
   previousFocus = document.activeElement; drawer = { kind, id, originalDate: selectedDate };
   const d = M.day(state, selectedDate); let title, subtitle, fields, saveLabel = 'حفظ التغيير';
-  if (['supplier', 'material', 'invoice', 'payment'].includes(kind)) {
+  if (['supplier', 'material', 'invoice', 'payment', 'debt'].includes(kind)) {
     const spec = supplierDrawer(kind, id, options); ({ title, subtitle, fields, saveLabel } = spec); drawer.wide = spec.wide;
   } else if (kind === 'expense') {
     const e = id ? d.expenses.find(e => e.id === id) : null;
@@ -131,7 +131,7 @@ async function submitForm(event) {
   event.preventDefault(); if (busy || !drawer) return;
   const form = event.target, values = new FormData(form), next = structuredClone(state), context = { ...drawer }; let message = 'تم حفظ التغيير';
   try {
-    if (['supplier', 'material', 'invoice', 'payment'].includes(context.kind)) { message = supplierSubmit(next, context, values, form); }
+    if (['supplier', 'material', 'invoice', 'payment', 'debt'].includes(context.kind)) { message = supplierSubmit(next, context, values, form); }
     else if (context.kind === 'expense') {
       const date = values.get('date'); if (!M.validDate(date)) throw new Error('اختار تاريخ صحيح.');
       let categoryId = values.get('category'); if (categoryId === '__new') categoryId = addCategory(next, values.get('newCategory'), values.get('categoryType'));
