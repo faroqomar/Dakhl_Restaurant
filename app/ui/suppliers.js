@@ -13,7 +13,7 @@ function suppliersPage() {
   return header('كل مورد، حسابه مرتب.', 'قوائم ومواد محفوظة، وتسديدات مرتبطة بالمصاريف.', button('إضافة مورد', 'supplier-new', true, 'plus'), 'الموردون / الحسابات') + (supplier ? `<div class="supplier-workspace"><aside class="supplier-index"><div class="supplier-index-head"><h2>الموردون</h2><span class="badge">${fmt(state.suppliers.length)}</span></div><label class="sr-only" for="supplier-search">ابحث عن مورد</label><input id="supplier-search" type="search" placeholder="ابحث عن مورد…" value="${esc(supplierQuery)}" class="supplier-search"><div id="supplier-list" class="supplier-list">${supplierList()}</div></aside><section class="supplier-detail">${supplierDetail(supplier)}</section></div>` : supplierEmpty('ابدأ بأول مورد.', 'سجّل اسمه والديون الباقية عليك، ثم أضف قوائمه ومواده.', 'إضافة مورد', 'supplier-new'));
 }
 function supplierList() {
-  const suppliers = state.suppliers.filter(s => s.name.toLowerCase().includes(supplierQuery.trim().toLowerCase()));
+  const suppliers = state.suppliers.filter(s => N.latin(s.name).toLowerCase().includes(supplierQuery.trim().toLowerCase()));
   return suppliers.length ? suppliers.map(s => `<button class="supplier-choice ${selectedSupplier === s.id ? 'selected' : ''}" data-action="supplier-select" data-id="${s.id}" aria-pressed="${selectedSupplier === s.id}"><strong>${esc(s.name)}</strong><span>${num(M.supplierBalance(state, s.id))}<small>د.ع متبقي</small></span></button>`).join('') : '<p class="empty-help">ماكو مورد بهذا الاسم.</p>';
 }
 function supplierDetail(s) {
@@ -76,7 +76,7 @@ function readInvoiceLines(form, next = null, supplierId = drawer.supplierId) {
     const name = row.querySelector('.line-name-input').value.trim(), unit = row.querySelector('.line-unit').value.trim();
     if (!name || !unit) throw new Error('اكتب اسم كل مادة ووحدة قياسها.');
     const quantity = M.quantity(row.querySelector('.line-quantity').value), price = M.numeric(row.querySelector('.line-price').value);
-    let m = (row.dataset.materialId && name === row.dataset.originalName ? s.materials.find(m => m.id === row.dataset.materialId) : null) || s.materials.find(m => m.name.toLowerCase() === name.toLowerCase());
+    let m = (row.dataset.materialId && name === row.dataset.originalName ? s.materials.find(m => m.id === row.dataset.materialId) : null) || s.materials.find(m => N.latin(m.name).toLowerCase() === name.toLowerCase());
     if (!m && next) { m = { id: crypto.randomUUID(), name, unit, price, archived: false }; s.materials.push(m); }
     return { materialId: m?.id || '', name, unit, quantity, price };
   });
@@ -115,7 +115,7 @@ function refreshPaymentAvailable(fillAmount = false) {
   document.getElementById('payment-invoice-due').textContent = invoiceId ? `المتبقي من القائمة: ${fmt(due)} د.ع` : 'التسديد للديون فقط.';
   document.getElementById('payment-debt-due').textContent = `الديون المتاحة: ${fmt(debt)} د.ع`;
   document.getElementById('payment-available').textContent = fmt(due + debt);
-  if (fillAmount) { document.getElementById('amount').value = Math.max(0, invoiceId ? due : debt); refreshFundingTotal(); }
+  if (fillAmount) { document.getElementById('amount').value = N.format(Math.max(0, invoiceId ? due : debt)); refreshFundingTotal(); }
   try { const split = M.splitPayment(state, supplierId, invoiceId, M.numeric(document.getElementById('amount').value), date, drawer.id); showPaymentSplit('payment-split', split, M.debtAvailable(other, supplierId) - split.debtAmount); }
   catch (error) { document.getElementById('payment-split').textContent = error.message; }
 }
@@ -136,7 +136,9 @@ function supplierSubmit(next, context, values, form) {
     s.materials = s.materials.filter(x => x.id !== context.id); s.materials.push(m); return 'تم حفظ المادة للمورد';
   }
   if (context.kind === 'invoice') {
-    const inv = { id: context.id || crypto.randomUUID(), supplierId: context.supplierId, number: String(values.get('invoice-number')).trim(), date: values.get('date'), createdAt: context.createdAt, lines: readInvoiceLines(form, next, context.supplierId), note: String(values.get('note')).trim() };
+    const number = N.latin(values.get('invoice-number')).trim();
+    if (next.invoices.some(i => i.id !== context.id && i.supplierId === context.supplierId && N.latin(i.number) === number)) throw new Error('رقم القائمة موجود لهذا المورد.');
+    const inv = { id: context.id || crypto.randomUUID(), supplierId: context.supplierId, number, date: values.get('date'), createdAt: context.createdAt, lines: readInvoiceLines(form, next, context.supplierId), note: String(values.get('note')).trim() };
     next.invoices = next.invoices.filter(i => i.id !== context.id); next.invoices.push(inv);
     if (!context.id) { const paid = M.numeric(values.get('amount')); if (paid > 0) { const split = M.splitPayment(next, inv.supplierId, inv.id, paid, inv.date); const s = next.suppliers.find(s => s.id === inv.supplierId); next.payments.push({ id: crypto.randomUUID(), supplierId: inv.supplierId, invoiceId: inv.id, categoryId: s.categoryId, date: inv.date, amount: paid, ...split, funding: readPaymentFunding(values, paid), note: '', createdAt: now }); } }
     return context.id ? 'تم تعديل القائمة' : 'تم حفظ القائمة وموادها';
@@ -157,7 +159,7 @@ function supplierAction(action, el) {
   if (action === 'material-new' || action === 'material-edit') { openDrawer('material', action === 'material-edit' ? el.dataset.id : null); return true; }
   if (action === 'invoice-new' || action === 'invoice-edit') { openDrawer('invoice', action === 'invoice-edit' ? el.dataset.id : null); return true; }
   if (action === 'payment-new' || action === 'payment-edit' || action === 'invoice-pay') { const inv = action === 'invoice-pay' ? invoiceById(el.dataset.id) : null; openDrawer('payment', action === 'payment-edit' ? el.dataset.id : null, inv ? { supplierId: inv.supplierId, invoiceId: inv.id } : {}); return true; }
-  if (action === 'invoice-line-add') { if (host.querySelectorAll('.invoice-line').length >= 200) { formError('وصلت للحد الأقصى: 200 مادة بالقائمة.'); return true; } document.getElementById('invoice-lines').insertAdjacentHTML('beforeend', invoiceLine(null)); refreshInvoice(); document.getElementById('invoice-lines').lastElementChild.querySelector('input').focus(); return true; }
+  if (action === 'invoice-line-add') { if (host.querySelectorAll('.invoice-line').length >= 200) { formError('وصلت للحد الأقصى: 200 مادة بالقائمة.'); return true; } document.getElementById('invoice-lines').insertAdjacentHTML('beforeend', invoiceLine(null)); N.formatInputs(host); refreshInvoice(); document.getElementById('invoice-lines').lastElementChild.querySelector('input').focus(); return true; }
   if (action === 'invoice-line-remove') { el.closest('.invoice-line').remove(); refreshInvoice(); return true; }
   if (action === 'confirm-delete' && ['invoice', 'payment', 'debt'].includes(drawer?.kind)) return (async () => {
     const next = structuredClone(state);
@@ -174,7 +176,7 @@ document.addEventListener('input', event => {
   if (drawer?.kind === 'payment' && ['amount', 'date'].includes(event.target.id)) refreshPaymentAvailable();
 });
 document.addEventListener('change', event => {
-  if (drawer?.kind === 'invoice' && event.target.classList.contains('line-name-input')) { const s = supplierById(drawer.supplierId), m = s.materials.find(m => !m.archived && m.name.toLowerCase() === event.target.value.trim().toLowerCase()); if (m) { const row = event.target.closest('.invoice-line'); row.querySelector('.line-price').value = m.price; row.querySelector('.line-unit').value = m.unit; } refreshInvoice(); }
+  if (drawer?.kind === 'invoice' && event.target.classList.contains('line-name-input')) { const s = supplierById(drawer.supplierId), m = s.materials.find(m => !m.archived && N.latin(m.name).toLowerCase() === event.target.value.trim().toLowerCase()); if (m) { const row = event.target.closest('.invoice-line'); row.querySelector('.line-price').value = N.format(m.price); row.querySelector('.line-unit').value = m.unit; } refreshInvoice(); }
   if (drawer?.kind === 'invoice' && event.target.id === 'date') refreshInvoice();
   if (drawer?.kind === 'payment' && event.target.id === 'payment-supplier') refreshPaymentChoices(true);
   if (drawer?.kind === 'payment' && event.target.id === 'invoice-id') refreshPaymentAvailable(true);

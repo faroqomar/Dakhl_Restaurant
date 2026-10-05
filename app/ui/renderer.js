@@ -1,14 +1,14 @@
 'use strict';
-const M = window.DaftarModel;
+const M = window.DaftarModel, N = window.DaftarNumbers;
 let state, directory = '', selectedDate = M.dateKey(), view = 'expenses', history = [], drawer = null, busy = false, previousFocus;
 const main = document.getElementById('main'), host = document.getElementById('drawer-host');
-const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const esc = value => N.latin(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const paths = { ledger: 'M4 2h14v18H4z M8 7h6 M8 11h6 M8 15h4', wallet: 'M2 5h16v14H2z M3 5V2h12 M13 10h7v5h-7z', supplier: 'M2 8h16v12H2z M0 8l3-6h14l3 6 M6 20v-7h8v7', transfer: 'M2 6h16 M14 2l4 4-4 4 M18 16H2 M6 12l-4 4 4 4', grid: 'M2 2h7v7H2z M13 2h7v7h-7z M2 13h7v7H2z M13 13h7v7h-7z', settings: 'M3 5h16 M3 11h16 M3 17h16 M7 2v6 M15 8v6 M9 14v6', plus: 'M11 4v14 M4 11h14', close: 'M5 5l12 12 M17 5L5 17', left: 'M14 4l-7 7 7 7', right: 'M8 4l7 7-7 7', edit: 'M4 15l11-11 4 4-11 11H4z M13 6l4 4', download: 'M11 2v12 M6 9l5 5 5-5 M3 16v4h16v-4', upload: 'M11 15V3 M6 8l5-5 5 5 M3 16v4h16v-4', folder: 'M2 5h7l2 3h9v12H2z', undo: 'M7 4L2 9l5 5 M2 9h10a7 7 0 0 1 7 7', check: 'M4 11l4 4 10-11' };
 const icon = name => `<svg class="icon" viewBox="0 0 22 22" aria-hidden="true"><path d="${paths[name] || paths.ledger}"/></svg>`;
 const fmt = n => new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(n);
 const num = (n, cls = '') => `<span class="number ${cls}">${fmt(n)}</span>`;
-const prettyDate = date => new Intl.DateTimeFormat('ar-IQ', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(`${date}T12:00:00`));
-const shortDate = date => new Intl.DateTimeFormat('ar-IQ', { day: 'numeric', month: 'short' }).format(new Date(`${date}T12:00:00`));
+const prettyDate = date => new Intl.DateTimeFormat('ar-IQ-u-nu-latn', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(`${date}T12:00:00`));
+const shortDate = date => new Intl.DateTimeFormat('ar-IQ-u-nu-latn', { day: 'numeric', month: 'short' }).format(new Date(`${date}T12:00:00`));
 const button = (label, action, primary = false, ic = '') => `<button class="button ${primary ? 'primary' : ''}" data-action="${action}">${ic ? icon(ic) : ''}${label}</button>`;
 const categoryName = id => state.categories.find(c => c.id === id)?.name || 'خانة';
 function status(text, error = false) { const el = document.getElementById('save-status'); el.classList.toggle('error', error); el.innerHTML = '<span class="status-dot"></span>'; el.append(document.createTextNode(text)); }
@@ -42,7 +42,7 @@ function settingsPage() { return header('حساباتك تبقى يمّك.', 'ا
 function render() {
   if (!state) return;
   document.querySelectorAll('[data-view]').forEach(el => { const active = el.dataset.view === view; el.classList.toggle('active', active); el.setAttribute('aria-current', active ? 'page' : 'false'); });
-  main.innerHTML = ({ expenses: expensesPage, suppliers: suppliersPage, payments: paymentsPage, cash: cashPage, categories: categoriesPage, settings: settingsPage }[view])() + `<footer class="page-footer"><span>كل حساباتك محفوظة على هذا الجهاز</span><span class="number">DAFTAR / 1.3</span></footer>`;
+  main.innerHTML = ({ expenses: expensesPage, suppliers: suppliersPage, payments: paymentsPage, cash: cashPage, categories: categoriesPage, settings: settingsPage }[view])() + `<footer class="page-footer"><span>كل حساباتك محفوظة على هذا الجهاز</span><span class="number">DAFTAR / 1.3.1</span></footer>`;
 }
 async function commit(next, message, { remember = true } = {}) {
   if (busy) return false;
@@ -56,7 +56,7 @@ async function commit(next, message, { remember = true } = {}) {
 }
 function editableDay(next, key) { if (!next.days[key]) next.days[key] = structuredClone(M.day(next, key)); return next.days[key]; }
 function field(name, label, type = 'text', value = '', extra = '') { return `<div class="field"><label for="${name}">${label}</label><input id="${name}" name="${name}" type="${type}" value="${esc(value)}" ${extra}></div>`; }
-function amountField(value = '', label = 'المبلغ', signed = false) { return `<div class="field"><label for="amount">${label}</label><div class="money-input"><input id="amount" name="amount" inputmode="${signed ? 'text' : 'numeric'}" type="text" value="${esc(value)}" required maxlength="24" autocomplete="off"><span>د.ع</span></div></div>`; }
+function amountField(value = '', label = 'المبلغ', signed = false) { return `<div class="field"><label for="amount">${label}</label><div class="money-input"><input id="amount" name="amount" inputmode="${signed ? 'text' : 'numeric'}" type="text" data-number-format="${signed ? 'signed' : 'integer'}" value="${esc(N.format(value, signed ? 'signed' : 'integer'))}" required maxlength="24" autocomplete="off"><span>د.ع</span></div></div>`; }
 function noteField(value = '') { return `<div class="field"><label for="note">ملاحظات<span class="optional">اختياري</span></label><textarea id="note" name="note" maxlength="2000" placeholder="اكتب أي تفاصيل تحب ترجع إلها…">${esc(value)}</textarea></div>`; }
 function dExpense(date, id) { return id ? M.day(state, date).expenses.find(e => e.id === id) : null; }
 function fundingFields(e, label = 'مصدر دفع المصروف') {
@@ -68,7 +68,7 @@ function toggleFunding() {
   document.getElementById('funding-split').classList.toggle('visible', shared);
   for (const id of ['daily-amount', 'cash-amount']) { const el = document.getElementById(id); el.disabled = !shared; el.required = shared; }
   if (shared && !document.getElementById('daily-amount').value && !document.getElementById('cash-amount').value) { document.getElementById('daily-amount').value = document.getElementById('amount').value || '0'; document.getElementById('cash-amount').value = '0'; }
-  refreshFundingTotal();
+  N.formatInputs(host); refreshFundingTotal();
 }
 function refreshFundingTotal() {
   const el = document.getElementById('funding-total'); if (!el) return;
@@ -118,6 +118,7 @@ function openDrawer(kind, id = null, options = {}) {
   } else return;
   host.innerHTML = `<button class="scrim" data-action="close-drawer" aria-label="إغلاق النموذج" tabindex="-1"></button><section class="drawer ${drawer.wide ? 'wide' : ''}" role="dialog" aria-modal="true" aria-labelledby="drawer-title"><div class="drawer-top"><span>دفتر / ${kind === 'deposit' || kind === 'withdrawal' || kind === 'transaction' ? 'القاصة' : 'سجل اليوم'}</span><button class="icon-button" data-action="close-drawer" aria-label="إغلاق">${icon('close')}</button></div><div class="drawer-intro"><h2 id="drawer-title">${esc(title)}</h2><p>${esc(subtitle)}</p></div><form class="drawer-form"><div id="form-error" class="form-error" role="alert"></div>${fields}<div class="form-footer"><button class="button primary" type="submit">${saveLabel}</button><p>يحفظ التغيير تلقائياً على جهازك</p></div></form></section>`;
   document.body.classList.add('drawer-open'); document.querySelector('.shell').inert = true;
+  N.formatInputs(host);
   if (kind === 'total') toggleAutomatic();
   if (kind === 'expense' || kind === 'payment' || (kind === 'invoice' && !id)) toggleFunding();
   if (kind === 'invoice') refreshInvoice();
@@ -129,7 +130,8 @@ function toggleAutomatic() { const automatic = document.getElementById('automati
 function addCategory(next, name, type = 'additional') { name = String(name).trim(); if (!name || name.length > 80) throw new Error('اكتب اسم الخانة، بحد أقصى 80 حرف.'); if (next.categories.some(c => c.name === name)) throw new Error('اسم الخانة موجود مسبقاً. اختاره من القائمة.'); if (next.categories.length >= 500) throw new Error('وصلت للحد الأقصى للخانات.'); const id = crypto.randomUUID(); next.categories.push({ id, name, type }); return id; }
 async function submitForm(event) {
   event.preventDefault(); if (busy || !drawer) return;
-  const form = event.target, values = new FormData(form), next = structuredClone(state), context = { ...drawer }; let message = 'تم حفظ التغيير';
+  const form = event.target; N.formatInputs(form);
+  const values = new FormData(form), next = structuredClone(state), context = { ...drawer }; let message = 'تم حفظ التغيير';
   try {
     if (['supplier', 'material', 'invoice', 'payment', 'debt'].includes(context.kind)) { message = supplierSubmit(next, context, values, form); }
     else if (context.kind === 'expense') {
