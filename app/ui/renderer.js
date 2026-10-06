@@ -38,11 +38,11 @@ function cashPage() { const txs = orderedTransactions(); return header('القا
 function categoryTypeOptions(type = 'additional') { return `<option value="primary" ${type === 'primary' ? 'selected' : ''}>رئيسية</option><option value="additional" ${type === 'additional' ? 'selected' : ''}>إضافية</option>`; }
 function categoryTypeField() { return `<div class="field"><label for="category-type">نوع الخانة</label><select id="category-type" name="categoryType">${categoryTypeOptions()}</select></div>`; }
 function categoriesPage() { return header('خاناتك، حسب شغلك.', 'اختار لكل خانة رئيسية أو إضافية. أي تغيير ينحفظ تلقائياً.', button('إضافة خانة', 'category', true, 'plus'), 'المصاريف / الخانات') + `<section class="panel"><div class="category-grid">${state.categories.map(c => `<div class="category-item"><strong>${esc(c.name)}</strong><select class="category-type-select" data-category-id="${c.id}" aria-label="نوع خانة ${esc(c.name)}">${categoryTypeOptions(c.type)}</select></div>`).join('')}</div></section>`; }
-function settingsPage() { return header('حساباتك تبقى يمّك.', 'الحفظ محلي وتلقائي. تگدر تحتفظ بنسخة إضافية بأي وقت.', '', 'البيانات / النسخ الاحتياطية') + `<div class="settings-grid"><section class="panel"><h2>نسخة احتياطية بإيدك</h2><p>صدّر كل الأيام والخانات وحركات القاصة والموردين وموادهم وقوائمهم وتسديداتهم بملف واحد، واستورده على نفس الجهاز بعدين.</p><div class="backup-actions">${button('تصدير نسخة', 'export', true, 'download')}${button('استيراد نسخة', 'import', false, 'upload')}</div><p>الاستيراد يستبدل البيانات الحالية؛ نحفظ نسخة من الملف القديم قبل الاستبدال.</p></section><section class="panel"><h2>طريقة الحساب الحالية</h2><ul class="info-list"><li>المصاريف تجمع تلقائياً<small>تگدر تحدد مجموعاً يدوياً وترجع للحساب التلقائي.</small></li><li>الرصيد الكلي ينحفظ عند تسجيل الباقي<small>مجموع المصاريف + الباقي + ما انودع من اليومي سابقاً. الإيداع ما يغيّر هذا المجموع.</small></li><li>مصدر الدفع محفوظ لكل مصروف<small>حصة اليومي تنخصم من المتبقي المسجّل، وحصة القاصة تنخصم منها.</small></li><li>الرصيد المتبقي بعد المصاريف<small>أي مبلغ تودعه منه بالقاصة ينخصم من اليومي بنفس العملية.</small></li></ul></section><section class="panel"><h2>مكان البيانات</h2><p>ملف الحسابات يبقى خارج التطبيق، حتى تبقى البيانات عند تحديثه.</p><div class="path">${esc(directory)}</div><div class="backup-actions">${button('فتح مجلد البيانات', 'folder', false, 'folder')}</div><p>نحتفظ أيضاً بملف النسخة السابقة قبل كل حفظ ناجح.</p></section><section class="panel"><h2>التراجع عن التغييرات</h2><p>تگدر تتراجع عن آخر تغييراتك خلال جلسة التطبيق الحالية. ويشمل هذا تعديل المصاريف وحركات القاصة وحذفها.</p>${button('تراجع عن آخر تغيير', 'undo', false, 'undo')}</section></div>`; }
+function settingsPage() { return header('حساباتك تبقى يمّك.', 'الحفظ محلي وتلقائي. تگدر تحتفظ بنسخة إضافية بأي وقت.', '', 'البيانات / النسخ الاحتياطية') + `<div class="settings-grid"><section class="panel"><h2>نسخة احتياطية بإيدك</h2><p>صدّر كل الأيام والخانات وحركات القاصة والموردين وموادهم وقوائمهم وتسديداتهم وسلفة العمال بملف واحد، واستورده على نفس الجهاز بعدين.</p><div class="backup-actions">${button('تصدير نسخة', 'export', true, 'download')}${button('استيراد نسخة', 'import', false, 'upload')}</div><p>الاستيراد يستبدل البيانات الحالية؛ نحفظ نسخة من الملف القديم قبل الاستبدال.</p></section><section class="panel"><h2>طريقة الحساب الحالية</h2><ul class="info-list"><li>المصاريف تجمع تلقائياً<small>تگدر تحدد مجموعاً يدوياً وترجع للحساب التلقائي.</small></li><li>الرصيد الكلي ينحفظ عند تسجيل الباقي<small>مجموع المصاريف + الباقي + ما انودع من اليومي سابقاً. الإيداع ما يغيّر هذا المجموع.</small></li><li>مصدر الدفع محفوظ لكل مصروف<small>حصة اليومي تنخصم من المتبقي المسجّل، وحصة القاصة تنخصم منها.</small></li><li>الرصيد المتبقي بعد المصاريف<small>أي مبلغ تودعه منه بالقاصة ينخصم من اليومي بنفس العملية.</small></li></ul></section><section class="panel"><h2>مكان البيانات</h2><p>ملف الحسابات يبقى خارج التطبيق، حتى تبقى البيانات عند تحديثه.</p><div class="path">${esc(directory)}</div><div class="backup-actions">${button('فتح مجلد البيانات', 'folder', false, 'folder')}</div><p>نحتفظ أيضاً بملف النسخة السابقة قبل كل حفظ ناجح.</p></section><section class="panel"><h2>التراجع عن التغييرات</h2><p>تگدر تتراجع عن آخر تغييراتك خلال جلسة التطبيق الحالية. ويشمل هذا تعديل المصاريف وحركات القاصة وحذفها.</p>${button('تراجع عن آخر تغيير', 'undo', false, 'undo')}</section></div>`; }
 function render() {
   if (!state) return;
   document.querySelectorAll('[data-view]').forEach(el => { const active = el.dataset.view === view; el.classList.toggle('active', active); el.setAttribute('aria-current', active ? 'page' : 'false'); });
-  main.innerHTML = ({ expenses: expensesPage, suppliers: suppliersPage, payments: paymentsPage, cash: cashPage, categories: categoriesPage, settings: settingsPage }[view])() + `<footer class="page-footer"><span>كل حساباتك محفوظة على هذا الجهاز</span><span class="number">DAFTAR / 1.5.1</span></footer>`;
+  main.innerHTML = ({ expenses: expensesPage, suppliers: suppliersPage, payments: paymentsPage, cash: cashPage, savings: savingsPage, categories: categoriesPage, settings: settingsPage }[view])() + `<footer class="page-footer"><span>كل حساباتك محفوظة على هذا الجهاز</span><span class="number">DAFTAR / 1.6.0</span></footer>`;
 }
 async function commit(next, message, { remember = true } = {}) {
   if (busy) return false;
@@ -86,6 +86,8 @@ function openDrawer(kind, id = null, options = {}) {
   const d = M.day(state, selectedDate); let title, subtitle, fields, saveLabel = 'حفظ التغيير';
   if (['supplier', 'material', 'invoice', 'payment', 'debt'].includes(kind)) {
     const spec = supplierDrawer(kind, id, options); ({ title, subtitle, fields, saveLabel } = spec); drawer.wide = spec.wide;
+  } else if (['worker', 'savings-entry'].includes(kind)) {
+    const spec = savingsDrawer(kind, id, options); ({ title, subtitle, fields, saveLabel } = spec);
   } else if (kind === 'expense') {
     const e = id ? d.expenses.find(e => e.id === id) : null;
     title = e ? 'تعديل المصروف' : 'إضافة مصروف'; subtitle = 'تفاصيل بسيطة، وسجل مرتب.'; saveLabel = e ? 'حفظ التعديل' : 'حفظ المصروف';
@@ -120,15 +122,16 @@ function openDrawer(kind, id = null, options = {}) {
     title = 'إضافة خانة'; subtitle = 'اسم الخانة ينحفظ ويظهر بكل الأيام.';
     fields = `${field('name', 'اسم الخانة', 'text', '', 'required maxlength="80" placeholder="مثلاً: الغاز، مشتريات، أجور…"')}${categoryTypeField()}<div class="note-box">كل خانة جديدة تقبل مبلغ وملاحظات اختيارية.</div>`; saveLabel = 'حفظ الخانة';
   } else return;
-  host.innerHTML = `<button class="scrim" data-action="close-drawer" aria-label="إغلاق النموذج" tabindex="-1"></button><section class="drawer ${drawer.wide ? 'wide' : ''}" role="dialog" aria-modal="true" aria-labelledby="drawer-title"><div class="drawer-top"><span>دفتر / ${kind === 'deposit' || kind === 'withdrawal' || kind === 'transaction' ? 'القاصة' : 'سجل اليوم'}</span><button class="icon-button" data-action="close-drawer" aria-label="إغلاق">${icon('close')}</button></div><div class="drawer-intro"><h2 id="drawer-title">${esc(title)}</h2><p>${esc(subtitle)}</p></div><form class="drawer-form"><div id="form-error" class="form-error" role="alert"></div>${fields}<div class="form-footer"><button class="button primary" type="submit">${saveLabel}</button><p>يحفظ التغيير تلقائياً على جهازك</p></div></form></section>`;
+  host.innerHTML = `<button class="scrim" data-action="close-drawer" aria-label="إغلاق النموذج" tabindex="-1"></button><section class="drawer ${drawer.wide ? 'wide' : ''}" role="dialog" aria-modal="true" aria-labelledby="drawer-title"><div class="drawer-top"><span>دفتر / ${kind === 'deposit' || kind === 'withdrawal' || kind === 'transaction' ? 'القاصة' : ['worker', 'savings-entry'].includes(kind) ? 'سلفة العمال' : 'سجل اليوم'}</span><button class="icon-button" data-action="close-drawer" aria-label="إغلاق">${icon('close')}</button></div><div class="drawer-intro"><h2 id="drawer-title">${esc(title)}</h2><p>${esc(subtitle)}</p></div><form class="drawer-form"><div id="form-error" class="form-error" role="alert"></div>${fields}<div class="form-footer"><button class="button primary" type="submit">${saveLabel}</button><p>يحفظ التغيير تلقائياً على جهازك</p></div></form></section>`;
   document.body.classList.add('drawer-open'); document.querySelector('.shell').inert = true;
   N.formatInputs(host);
+  if (kind === 'savings-entry') refreshSavingsEntry();
   if (kind === 'day-date') refreshDayDatePreview();
   if (kind === 'total') toggleAutomatic();
   if (kind === 'expense' || kind === 'payment' || (kind === 'invoice' && !id)) toggleFunding();
   if (kind === 'invoice') refreshInvoice();
   if (kind === 'payment') refreshPaymentChoices();
-  const focus = host.querySelector('#supplier-name, #material-name, #invoice-number, #amount:not(:disabled), #used, #name, #correct-date'); if (focus) { focus.focus(); focus.select(); }
+  const focus = host.querySelector('#worker-name, #supplier-name, #material-name, #invoice-number, #amount:not(:disabled), #used, #name, #correct-date'); if (focus) { focus.focus(); focus.select(); }
 }
 function refreshDayDatePreview() {
   if (drawer?.kind !== 'day-date') return;
@@ -153,6 +156,7 @@ async function submitForm(event) {
   const values = new FormData(form), next = structuredClone(state), context = { ...drawer }; let message = 'تم حفظ التغيير';
   try {
     if (['supplier', 'material', 'invoice', 'payment', 'debt'].includes(context.kind)) { message = supplierSubmit(next, context, values, form); }
+    else if (['worker', 'savings-entry'].includes(context.kind)) { message = savingsSubmit(next, context, values); }
     else if (context.kind === 'day-date') {
       const destination = values.get('correct-date'), end = values.has('shiftFollowing') ? values.get('range-end') : context.originalDate;
       Object.assign(next, M.correctDayDates(state, context.originalDate, destination, end)); context.resultDate = destination; message = 'تم تصحيح تواريخ الفواتير اليومية';
@@ -178,7 +182,7 @@ async function submitForm(event) {
     else if (context.kind === 'balance') { editableDay(next, selectedDate).balance = M.numeric(values.get('amount'), { signed: true }); message = 'تم تسجيل الرصيد'; }
     else if (context.kind === 'total') { editableDay(next, selectedDate).totalOverride = values.has('automatic') ? null : M.numeric(values.get('amount')); message = values.has('automatic') ? 'تم اعتماد الجمع التلقائي' : 'تم حفظ المجموع اليدوي'; }
     else if (context.kind === 'category') { addCategory(next, values.get('name'), values.get('categoryType')); message = 'تم حفظ الخانة الجديدة'; }
-    if (await commit(next, message)) { if (context.resultSupplier) { selectedSupplier = context.resultSupplier; view = 'suppliers'; render(); } if (context.resultDate) { selectedDate = context.resultDate; render(); } closeDrawer(); }
+    if (await commit(next, message)) { if (context.resultSavingsTab) { savingsTab = context.resultSavingsTab; render(); } if (context.resultSupplier) { selectedSupplier = context.resultSupplier; view = 'suppliers'; render(); } if (context.resultDate) { selectedDate = context.resultDate; render(); } closeDrawer(); }
   } catch (error) { formError(error.message); }
 }
 async function undo() { if (!state || busy) return; if (!history.length) { toast('ماكو تغيير للتراجع عنه بهالجلسة.'); return; } const next = history[history.length - 1]; if (await commit(next, 'تم التراجع عن آخر تغيير', { remember: false })) { history.pop(); closeDrawer(); } }
@@ -203,6 +207,7 @@ document.addEventListener('click', async event => {
   const nav = event.target.closest('[data-view]'); if (nav) { view = nav.dataset.view; render(); return; }
   const el = event.target.closest('[data-action]'); if (!el || busy) return; const action = el.dataset.action;
   if (action === 'daily-pdf' || action === 'invoice-pdf') { await exportPDF(action === 'daily-pdf' ? { kind: 'daily', date: selectedDate } : { kind: 'invoice', id: el.dataset.id }, el); return; }
+  const savingsHandled = savingsAction(action, el); if (savingsHandled) { await savingsHandled; return; }
   const handled = supplierAction(action, el); if (handled) { await handled; return; }
   if (action === 'close-drawer') closeDrawer();
   else if (['expense', 'deposit', 'withdrawal', 'category', 'chicken', 'balance', 'total', 'remaining', 'remaining-transfer', 'day-date'].includes(action)) openDrawer(action);

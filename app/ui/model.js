@@ -3,7 +3,7 @@
   else root.DaftarModel = factory();
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   const core = [{ id: 'samoon', name: 'الصمون' }, { id: 'bread', name: 'الخبز' }, { id: 'falafel', name: 'الفلافل' }, { id: 'market', name: 'الأسواق' }];
-  function empty() { return { version: 5, categories: core.map(c => ({ ...c, type: 'primary' })), days: {}, transactions: [], transfers: [], suppliers: [], invoices: [], payments: [], debts: [] }; }
+  function empty() { return { version: 6, categories: core.map(c => ({ ...c, type: 'primary' })), days: {}, transactions: [], transfers: [], suppliers: [], invoices: [], payments: [], debts: [], workers: [], savingsEntries: [] }; }
   function dateKey(d = new Date()) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; }
   function validDate(s) { if (typeof s !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(s)) return false; const d = new Date(`${s}T12:00:00`); return !isNaN(d) && dateKey(d) === s; }
   function numeric(raw, { signed = false, positive = false } = {}) {
@@ -180,12 +180,78 @@
        assert(Number.isSafeInteger(supplierBalance(state, s.id)), 'رصيد المورد يتجاوز الحد الدقيق للحساب.'); for (const e of supplierLedger(state, s.id)) assert(Number.isSafeInteger(e.balance), 'رصيد المورد يتجاوز الحد الدقيق للحساب.'); }
     return state;
   }
+  // Savings are an independent worker ledger; they never enter restaurant expenses or cash.
+  function savingsPeriod(worker, date) {
+    assert(validDate(date) && validDate(worker.startDate), 'اختار تاريخاً صحيحاً.');
+    if (date < worker.startDate) return null;
+    const start = new Date(worker.startDate + 'T00:00:00Z'), target = new Date(date + 'T00:00:00Z');
+    const key = d => d.toISOString().slice(0, 10);
+    if (worker.frequency === 'monthly') {
+      const anchor = start.getUTCDate();
+      const at = months => { const y = start.getUTCFullYear(), m = start.getUTCMonth() + months; const next = new Date(start); next.setUTCFullYear(y, m + 1, 0); const last = next.getUTCDate(); const result = new Date(start); result.setUTCFullYear(y, m, Math.min(anchor, last)); return result; };
+      let months = (target.getUTCFullYear() - start.getUTCFullYear()) * 12 + target.getUTCMonth() - start.getUTCMonth();
+      if (at(months) > target) months--;
+      return { start: key(at(months)), end: at(months + 1).getUTCFullYear() > 9999 ? '9999-12-31' : key(new Date(at(months + 1).getTime() - 86400000)) };
+    }
+    const interval = worker.frequency === 'weekly' ? 7 : 1;
+    const offset = Math.floor((target - start) / 86400000 / interval) * interval;
+    return { start: key(new Date(start.getTime() + offset * 86400000)), end: new Date(start.getTime() + (offset + interval - 1) * 86400000).getUTCFullYear() > 9999 ? '9999-12-31' : key(new Date(start.getTime() + (offset + interval - 1) * 86400000)) };
+  }
+  function savingsStatus(state, worker, date) {
+    const period = savingsPeriod(worker, date);
+    if (!period) return { period: null, due: worker.amount, paid: 0, remaining: 0 };
+    const entries = (state.savingsEntries || []).filter(e => e.type === 'contribution' && e.workerId === worker.id && e.periodStart === period.start);
+    const due = entries[0]?.dueAmount ?? worker.amount;
+    const paid = entries.filter(e => e.date <= date).reduce((sum, e) => sum + e.amount, 0);
+    return { period, due, paid, remaining: Math.max(0, due - paid) };
+  }
+  function savingsBalance(state, date = '9999-12-31') {
+    return (state.savingsEntries || []).filter(e => e.date <= date).reduce((sum, e) => sum + (e.type === 'contribution' ? e.amount : -e.amount), 0);
+  }
+  function validateSavings(raw) {
+    const workers = raw.workers ?? [], entries = raw.savingsEntries ?? [];
+    assert(Array.isArray(workers) && workers.length <= 500 && Array.isArray(entries) && entries.length <= 100000, 'سجل السلفة أكبر من الحد المسموح.');
+    const ids = new Set(), names = new Set();
+    const cleanWorkers = workers.map(w => {
+      const key = id(w.id), name = string(w.name, 100).trim();
+      assert(name && !ids.has(key) && !names.has(name.toLowerCase()), 'اسم العامل مكرر أو فارغ.'); ids.add(key); names.add(name.toLowerCase());
+      assert(['daily', 'weekly', 'monthly'].includes(w.frequency) && validDate(w.startDate) && typeof w.archived === 'boolean', 'جدول العامل غير صالح.');
+      const amount = money(w.amount); assert(amount > 0, 'مبلغ اشتراك العامل لازم يكون أكبر من صفر.');
+      return { id: key, name, amount, frequency: w.frequency, startDate: w.startDate, archived: w.archived, note: string(w.note) };
+    });
+    const entryIds = new Set(), periods = new Map();
+    const savingsEntries = entries.map(e => {
+      const key = id(e.id); assert(!entryIds.has(key) && ids.has(e.workerId), 'سجل السلفة مكرر أو العامل غير موجود.'); entryIds.add(key);
+      assert(['contribution', 'receipt'].includes(e.type) && validDate(e.date), 'نوع حركة السلفة أو تاريخها غير صالح.');
+      const amount = money(e.amount); assert(amount > 0, 'مبلغ الحركة لازم يكون أكبر من صفر.');
+      string(e.createdAt, 40); assert(!isNaN(Date.parse(e.createdAt)));
+      const clean = { id: key, workerId: e.workerId, type: e.type, date: e.date, amount, note: string(e.note), createdAt: e.createdAt };
+      if (e.type === 'contribution') {
+        const worker = cleanWorkers.find(w => w.id === e.workerId), period = savingsPeriod(worker, e.date);
+        assert(period && e.periodStart === period.start && e.periodEnd === period.end, 'تاريخ الدفعة خارج فترة اشتراك العامل.');
+        const due = money(e.dueAmount); assert(due > 0);
+        const periodKey = e.workerId + ':' + period.start, previous = periods.get(periodKey) || { due, paid: 0 };
+        assert(previous.due === due, 'مبلغ الاشتراك لهذه الفترة مختلف عن الدفعات السابقة.'); previous.paid += amount;
+        assert(Number.isSafeInteger(previous.paid) && previous.paid <= due, 'الدفعات تتجاوز اشتراك العامل لهذه الفترة.'); periods.set(periodKey, previous);
+        Object.assign(clean, { periodStart: period.start, periodEnd: period.end, dueAmount: due });
+      }
+      return clean;
+    });
+    let balance = 0, contributed = 0, received = 0;
+    for (const e of [...savingsEntries].sort((a, b) => a.date.localeCompare(b.date) || Number(b.type === 'contribution') - Number(a.type === 'contribution') || a.id.localeCompare(b.id))) {
+      contributed += e.type === 'contribution' ? e.amount : 0; received += e.type === 'receipt' ? e.amount : 0;
+      assert(Number.isSafeInteger(contributed) && Number.isSafeInteger(received), 'مجموع السلفة يتجاوز الحد الدقيق للحساب.');
+      balance += e.type === 'contribution' ? e.amount : -e.amount;
+      assert(Number.isSafeInteger(balance) && balance >= 0, 'مبلغ الاستلام يتجاوز المتجمع بالسلفة بهذا التاريخ.');
+    }
+    return { workers: cleanWorkers, savingsEntries };
+  }
   function assert(ok, message = 'ملف البيانات غير صالح.') { if (!ok) throw new Error(message); }
   function money(n, signed = false) { assert(Number.isSafeInteger(n) && Math.abs(n) <= 1e12 && (signed || n >= 0)); return n; }
   function string(s, max = 2000) { assert(typeof s === 'string' && s.length <= max); return s; }
   function id(s) { assert(typeof s === 'string' && /^[a-zA-Z0-9_-]{1,80}$/.test(s)); return s; }
   function validate(raw) {
-    assert(raw && [1, 2, 3, 4, 5].includes(raw.version) && Array.isArray(raw.categories) && raw.categories.length >= 4 && raw.categories.length <= 500);
+    assert(raw && [1, 2, 3, 4, 5, 6].includes(raw.version) && Array.isArray(raw.categories) && raw.categories.length >= 4 && raw.categories.length <= 500);
     // Older files have no type; infer it from stable IDs, never array position.
     const categories = raw.categories.map(c => {
       const type = c.type === undefined ? (core.some(x => x.id === c.id) ? 'primary' : 'additional') : c.type;
@@ -217,7 +283,7 @@
     const rawTransfers = raw.transfers ?? []; assert(Array.isArray(rawTransfers) && rawTransfers.length <= 100000);
     const transferIds = new Set();
     const transfers = rawTransfers.map(t => { const key = id(t.id); assert(!transferIds.has(key)); transferIds.add(key); assert(validDate(t.date) && days[t.date]?.remaining != null, 'إيداع الرصيد اليومي يحتاج رصيداً مسجّلاً.'); money(t.amount); assert(t.amount > 0); string(t.createdAt, 40); assert(!isNaN(Date.parse(t.createdAt))); return { id: key, date: t.date, amount: t.amount, createdAt: t.createdAt }; });
-    const clean = { version: 5, categories, days, transactions, transfers, ...validateSuppliers(raw, ids) };
+    const clean = { version: 6, categories, days, transactions, transfers, ...validateSuppliers(raw, ids), ...validateSavings(raw) };
     for (const date of new Set([...Object.keys(days), ...clean.payments.map(p => p.date)])) assert(Number.isSafeInteger(expenses(clean, date).reduce((sum, e) => sum + e.amount, 0)), 'مجموع المصاريف أكبر من الحد الدقيق للحساب.');
     let cashTotal = 0;
     for (const t of movements(clean)) { cashTotal += t.type === 'withdrawal' ? -t.amount : t.amount; assert(Number.isSafeInteger(cashTotal), 'مجموع حركات القاصة أكبر من الحد الدقيق للحساب.'); }
@@ -231,5 +297,5 @@
     }
     return clean;
   }
-  return { empty, dateKey, validDate, numeric, day, total, funding, dailySpent, transferred, remaining, balanceFromRemaining, recordRemaining, movements, transferRemaining, cash, validate, recordedDays, dayDatePlan, correctDayDates, quantity, lineTotal, invoiceTotal, invoicePaid, invoiceDue, paymentAllocation, splitPayment, debtAvailable, openingDue, supplierBalance, supplierLedger, balanceBefore, expenses, allocation };
+  return { empty, dateKey, validDate, numeric, day, total, funding, dailySpent, transferred, remaining, balanceFromRemaining, recordRemaining, movements, transferRemaining, cash, validate, recordedDays, dayDatePlan, correctDayDates, quantity, lineTotal, invoiceTotal, invoicePaid, invoiceDue, paymentAllocation, splitPayment, debtAvailable, openingDue, supplierBalance, supplierLedger, balanceBefore, expenses, allocation, savingsPeriod, savingsStatus, savingsBalance };
 });

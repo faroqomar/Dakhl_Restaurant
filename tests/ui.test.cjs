@@ -8,7 +8,7 @@ async function setup(t, { data = M.empty(), failSave = false, pdfResult = { ok: 
   const root = path.join(__dirname, '../app/ui'); const dom = new JSDOM(fs.readFileSync(path.join(root, 'index.html'), 'utf8'), { url: 'file:///app/index.html', runScripts: 'outside-only' }); t.after(() => dom.window.close());
   const { window: w } = dom; w.structuredClone = structuredClone; w.HTMLElement.prototype.scrollIntoView = () => {}; let stored = data, action, pdfRequests = [];
   w.daftar = { load: async () => ({ ok: true, data: stored, directory: '/test/data' }), save: async d => { if (failSave) return { ok: false, error: 'لا توجد مساحة كافية' }; stored = M.validate(structuredClone(d)); return { ok: true, data: stored }; }, pdf: async request => { pdfRequests.push(structuredClone(request)); return pdfResult; }, onAction: cb => action = cb };
-  w.eval(fs.readFileSync(path.join(root, 'model.js'), 'utf8')); w.eval(fs.readFileSync(path.join(root, 'numbers.js'), 'utf8')); w.eval(fs.readFileSync(path.join(root, 'suppliers.js'), 'utf8') + '\n' + fs.readFileSync(path.join(root, 'renderer.js'), 'utf8')); await tick();
+  w.eval(fs.readFileSync(path.join(root, 'model.js'), 'utf8')); w.eval(fs.readFileSync(path.join(root, 'numbers.js'), 'utf8')); w.eval(fs.readFileSync(path.join(root, 'suppliers.js'), 'utf8') + '\n' + fs.readFileSync(path.join(root, 'savings.js'), 'utf8') + '\n' + fs.readFileSync(path.join(root, 'renderer.js'), 'utf8')); await tick();
   function click(selector) { const el = w.document.querySelector(selector); assert.ok(el, selector); el.click(); }
   function value(id, val, change = false) { const el = w.document.getElementById(id); assert.ok(el, id); el.value = val; if (change) el.dispatchEvent(new w.Event('change', { bubbles: true })); }
   async function submit() { w.document.querySelector('form').dispatchEvent(new w.Event('submit', { bubbles: true, cancelable: true })); await tick(); }
@@ -208,4 +208,33 @@ test('failed remainder save keeps the old daily total and cash intact; retry inp
   assert.equal(failed.stored().days[date].balance,123000);assert.equal(M.remaining(failed.stored(),date),null);assert.equal(M.cash(failed.stored()),0);assert.equal(failed.w.document.getElementById('amount').value,'50,000');
   const ui=await setup(t,{data});ui.click('[data-action="remaining"]');ui.value('amount','50000');await ui.submit();assert.equal(ui.stored().days[date].balance,50000);
   ui.action('undo');await tick();assert.deepEqual(ui.stored(),M.validate(data));
+});
+
+async function addWorker(ui, amount = '١٠٠٠٠') {
+  ui.click('[data-view="savings"]'); ui.click('[data-action="worker-new"]'); ui.value('worker-name', 'عامل تجريبي'); ui.value('amount', amount); ui.value('worker-frequency', 'weekly'); ui.value('worker-start', '2026-10-01'); await ui.submit();
+}
+test('worker savings support Arabic input, partial weekly contributions, receipts, edit, delete and undo without changing restaurant accounts', async t => {
+  const ui = await setup(t), before = M.empty(); await addWorker(ui);
+  assert.equal(ui.stored().workers[0].amount, 10000);
+  ui.value('savings-date', '2026-10-03', true); ui.click('[data-action="savings-pay"]'); assert.equal(ui.w.document.getElementById('amount').value, '10,000'); ui.value('amount', '٤٠٠٠'); await ui.submit();
+  assert.match(ui.w.document.getElementById('savings-roster').textContent, /دفع جزء/); ui.click('[data-action="savings-pay"]'); assert.equal(ui.w.document.getElementById('amount').value, '6,000'); await ui.submit();
+  assert.match(ui.w.document.getElementById('savings-roster').textContent, /دفع كامل/); ui.click('[data-action="savings-receive"]'); ui.value('amount', '٨٠٠٠'); await ui.submit();
+  assert.match(ui.w.document.getElementById('savings-roster').textContent, /سبق واستلم/); assert.equal(M.savingsBalance(ui.stored()), 2000);
+  ui.click('[data-action="savings-tab"][data-tab="receipt"]'); ui.click('[data-action="savings-entry-edit"]'); ui.value('amount', '7000'); await ui.submit(); assert.equal(M.savingsBalance(ui.stored()), 3000);
+  ui.click('[data-action="savings-entry-edit"]'); ui.click('[data-action="ask-delete"]'); ui.click('[data-action="confirm-delete"]'); await tick(); assert.equal(M.savingsBalance(ui.stored()), 10000); ui.action('undo'); await tick(); assert.equal(M.savingsBalance(ui.stored()), 3000);
+  for (const key of ['days', 'transactions', 'transfers', 'suppliers', 'invoices', 'payments', 'debts']) assert.deepEqual(ui.stored()[key], before[key]);
+  ui.value('savings-date', '2026-10-08', true); assert.match(ui.w.document.getElementById('savings-roster').textContent, /لم يدفع/);
+});
+test('savings validation and failed writes keep the input available, preserve prior records and block deleting money already received', async t => {
+  const data = M.empty(), date = '2026-10-01'; data.workers.push({ id: 'worker', name: '<img src=x onerror=alert(1)>', amount: 10000, frequency: 'daily', startDate: date, archived: false, note: '' }); data.savingsEntries.push({ id: 'c1', workerId: 'worker', type: 'contribution', date, amount: 10000, periodStart: date, periodEnd: date, dueAmount: 10000, note: '', createdAt: date + 'T12:00:00Z' }, { id: 'r1', workerId: 'worker', type: 'receipt', date, amount: 5000, note: '', createdAt: date + 'T13:00:00Z' });
+  const ui = await setup(t, { data }); ui.click('[data-view="savings"]'); ui.value('savings-date', date, true); assert.equal(ui.w.document.querySelector('#savings-roster img'), null);
+  ui.click('[data-action="savings-receive"]'); ui.value('amount', '6000'); await ui.submit(); assert.match(ui.w.document.getElementById('form-error').textContent, /المتجمع/); assert.equal(ui.stored().savingsEntries.length, 2);
+  ui.click('[data-action="close-drawer"]'); ui.click('[data-action="savings-entry-edit"]'); ui.click('[data-action="ask-delete"]'); ui.click('[data-action="confirm-delete"]'); await tick(); assert.match(ui.w.document.getElementById('form-error').textContent, /المتجمع/); assert.equal(ui.stored().savingsEntries.length, 2);
+  const failed = await setup(t, { data, failSave: true }); failed.click('[data-view="savings"]'); failed.value('savings-date', date, true); failed.click('[data-action="savings-receive"]'); failed.value('amount', '3000'); await failed.submit(); assert.match(failed.w.document.getElementById('form-error').textContent, /مساحة/); assert.equal(failed.w.document.getElementById('amount').value, '3,000'); assert.equal(failed.stored().savingsEntries.length, 2);
+});
+test('worker schedule remains stable after payment and amount edits apply to future periods while pause keeps history', async t => {
+  const ui = await setup(t); await addWorker(ui); ui.value('savings-date', '2026-10-03', true); ui.click('[data-action="savings-pay"]'); ui.value('amount', '4000'); await ui.submit();
+  ui.click('[data-action="worker-edit"]'); assert.equal(ui.w.document.getElementById('worker-frequency').disabled, true); assert.equal(ui.w.document.getElementById('worker-start').disabled, true); ui.value('amount', '20000'); await ui.submit();
+  ui.click('[data-action="savings-pay"]'); assert.equal(ui.w.document.getElementById('amount').value, '6,000'); ui.click('[data-action="close-drawer"]'); ui.value('savings-date', '2026-10-08', true); ui.click('[data-action="savings-pay"]'); assert.equal(ui.w.document.getElementById('amount').value, '20,000'); ui.click('[data-action="close-drawer"]');
+  ui.click('[data-action="worker-edit"]'); ui.w.document.querySelector('[name="archived"]').checked = true; await ui.submit(); assert.equal(ui.w.document.querySelector('[data-action="savings-pay"]').disabled, true); assert.equal(ui.stored().savingsEntries.length, 1);
 });
