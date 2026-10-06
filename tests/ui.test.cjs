@@ -4,15 +4,15 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { JSDOM } = require('jsdom');
 const M = require('../app/ui/model.js');
-async function setup(t, { data = M.empty(), failSave = false } = {}) {
+async function setup(t, { data = M.empty(), failSave = false, pdfResult = { ok: true } } = {}) {
   const root = path.join(__dirname, '../app/ui'); const dom = new JSDOM(fs.readFileSync(path.join(root, 'index.html'), 'utf8'), { url: 'file:///app/index.html', runScripts: 'outside-only' }); t.after(() => dom.window.close());
-  const { window: w } = dom; w.structuredClone = structuredClone; w.HTMLElement.prototype.scrollIntoView = () => {}; let stored = data, action;
-  w.daftar = { load: async () => ({ ok: true, data: stored, directory: '/test/data' }), save: async d => { if (failSave) return { ok: false, error: 'لا توجد مساحة كافية' }; stored = M.validate(structuredClone(d)); return { ok: true, data: stored }; }, onAction: cb => action = cb };
+  const { window: w } = dom; w.structuredClone = structuredClone; w.HTMLElement.prototype.scrollIntoView = () => {}; let stored = data, action, pdfRequests = [];
+  w.daftar = { load: async () => ({ ok: true, data: stored, directory: '/test/data' }), save: async d => { if (failSave) return { ok: false, error: 'لا توجد مساحة كافية' }; stored = M.validate(structuredClone(d)); return { ok: true, data: stored }; }, pdf: async request => { pdfRequests.push(structuredClone(request)); return pdfResult; }, onAction: cb => action = cb };
   w.eval(fs.readFileSync(path.join(root, 'model.js'), 'utf8')); w.eval(fs.readFileSync(path.join(root, 'numbers.js'), 'utf8')); w.eval(fs.readFileSync(path.join(root, 'suppliers.js'), 'utf8') + '\n' + fs.readFileSync(path.join(root, 'renderer.js'), 'utf8')); await tick();
   function click(selector) { const el = w.document.querySelector(selector); assert.ok(el, selector); el.click(); }
   function value(id, val, change = false) { const el = w.document.getElementById(id); assert.ok(el, id); el.value = val; if (change) el.dispatchEvent(new w.Event('change', { bubbles: true })); }
   async function submit() { w.document.querySelector('form').dispatchEvent(new w.Event('submit', { bubbles: true, cancelable: true })); await tick(); }
-  return { w, click, value, submit, stored: () => stored, action: name => action(name) };
+  return { w, click, value, submit, stored: () => stored, pdfRequests, action: name => action(name) };
 }
 const tick = () => new Promise(resolve => setTimeout(resolve, 5));
 test('expense with a new Arabic category persists, notes render safely, edit can move to another day', async t => {
@@ -185,4 +185,19 @@ test('failed date correction preserves the complete original day and keeps the c
   const data = M.empty(); data.days['2026-10-02'] = { ...M.day(data, '2026-10-02'), chickenUsed: 85, balance: 500000 };
   const ui = await setup(t, { data, failSave: true }); ui.value('selected-date', '2026-10-02', true); ui.click('[data-action="day-date"]'); ui.value('correct-date', '2026-10-03', true); await ui.submit();
   assert.match(ui.w.document.getElementById('form-error').textContent, /مساحة/); assert.equal(ui.w.document.getElementById('correct-date').value, '2026-10-03'); assert.deepEqual(ui.stored(), data);
+});
+
+test('PDF controls export the selected saved day and supplier invoice without saving or mutating account records', async t => {
+  const { fixture } = require('./pdf-fixture.cjs'), data = fixture(), ui = await setup(t, { data });
+  ui.value('selected-date', '2026-10-04', true); ui.click('[data-action="daily-pdf"]'); await tick();
+  assert.deepEqual(ui.pdfRequests[0], { kind: 'daily', date: '2026-10-04' }); assert.match(ui.w.document.getElementById('toast').textContent, /تم حفظ ملف PDF/);
+  ui.click('[data-view="suppliers"]'); ui.click('[data-action="invoice-pdf"]'); await tick(); assert.deepEqual(ui.pdfRequests[1], { kind: 'invoice', id: 'invoice' }); assert.deepEqual(ui.stored(), data);
+});
+test('PDF cancellation is quiet and failure leaves account data intact and the export button ready to retry', async t => {
+  for (const pdfResult of [{ ok: true, canceled: true }, { ok: false, error: 'لا توجد مساحة للحفظ' }]) {
+    const ui = await setup(t, { pdfResult }); ui.click('[data-action="daily-pdf"]'); await tick();
+    assert.equal(ui.w.document.querySelector('[data-action="daily-pdf"]').disabled, false); assert.deepEqual(ui.stored(), M.empty());
+    const toast = ui.w.document.getElementById('toast').textContent;
+    if (pdfResult.canceled) assert.equal(toast, ''); else assert.match(toast, /تعذّر تصدير PDF.*مساحة/);
+  }
 });

@@ -4,6 +4,8 @@ const path = require('node:path');
 const { pathToFileURL } = require('node:url');
 const { Storage } = require('./storage.cjs');
 const model = require('./ui/model.js');
+const { createReport } = require('./reports/pdf.cjs');
+const { renderPDF, writePDF } = require('./reports/export.cjs');
 app.setName('Daftar');
 const directory = path.join(app.getPath('appData'), 'Daftar');
 app.setPath('userData', directory);
@@ -29,7 +31,7 @@ else {
     const action = name => () => win.webContents.send('app:action', name);
     Menu.setApplicationMenu(Menu.buildFromTemplate([
       { label: 'دفتر', submenu: [{ role: 'about', label: 'حول دفتر' }, { label: 'إعدادات البيانات', accelerator: 'CmdOrCtrl+,', click: action('settings') }, { type: 'separator' }, { role: 'services' }, { role: 'hide' }, { role: 'hideOthers' }, { role: 'unhide' }, { type: 'separator' }, { role: 'quit', label: 'إنهاء دفتر' }] },
-      { label: 'ملف', submenu: [{ label: 'إضافة مصروف', accelerator: 'CmdOrCtrl+N', click: action('expense') }, { label: 'تصدير نسخة احتياطية', accelerator: 'CmdOrCtrl+Shift+E', click: action('export') }, { label: 'استيراد نسخة احتياطية', accelerator: 'CmdOrCtrl+O', click: action('import') }, { type: 'separator' }, { role: 'close' }] },
+      { label: 'ملف', submenu: [{ label: 'إضافة مصروف', accelerator: 'CmdOrCtrl+N', click: action('expense') }, { label: 'تصدير فاتورة اليوم PDF', accelerator: 'CmdOrCtrl+Shift+P', click: action('daily-pdf') }, { label: 'تصدير نسخة احتياطية', accelerator: 'CmdOrCtrl+Shift+E', click: action('export') }, { label: 'استيراد نسخة احتياطية', accelerator: 'CmdOrCtrl+O', click: action('import') }, { type: 'separator' }, { role: 'close' }] },
       { label: 'تحرير', submenu: [{ label: 'تراجع', accelerator: 'CmdOrCtrl+Z', click: action('undo') }, { role: 'redo' }, { type: 'separator' }, { role: 'cut' }, { role: 'copy' }, { role: 'paste' }, { role: 'selectAll' }] },
       { label: 'عرض', submenu: [{ role: 'resetZoom' }, { role: 'zoomIn' }, { role: 'zoomOut' }, { role: 'togglefullscreen' }] },
       { label: 'نافذة', submenu: [{ role: 'minimize' }, { role: 'zoom' }, { role: 'front' }] },
@@ -44,6 +46,22 @@ else {
     handle('accounts:load', () => { if (loadError) throw new Error(loadError); return { data, directory }; });
     handle('accounts:save', raw => { data = storage.save(raw); return { data }; });
     handle('accounts:folder', async () => { const error = await shell.openPath(directory); if (error) throw new Error(error); return {}; });
+    let exportingPDF = false;
+    handle('accounts:pdf', async request => {
+      if (loadError) throw new Error(loadError);
+      if (exportingPDF) throw new Error('التصدير الحالي بعده قيد التجهيز.');
+      exportingPDF = true;
+      try {
+        // Render only canonical saved accounts; never accept HTML or financial values over IPC.
+        const report = createReport(structuredClone(data), request);
+        const result = await dialog.showSaveDialog(win, { title: 'تصدير ' + report.title + ' PDF', defaultPath: path.join(app.getPath('documents'), report.filename), filters: [{ name: 'PDF', extensions: ['pdf'] }] });
+        if (result.canceled) return { canceled: true };
+        const filePath = /\.pdf$/i.test(result.filePath) ? result.filePath : result.filePath + '.pdf';
+        const bytes = await renderPDF(BrowserWindow, report);
+        await writePDF(filePath, bytes);
+        return { filePath };
+      } finally { exportingPDF = false; }
+    });
     handle('accounts:export', async () => {
       if (loadError) throw new Error(loadError);
       const result = await dialog.showSaveDialog(win, { title: 'تصدير نسخة احتياطية', defaultPath: path.join(app.getPath('documents'), `Daftar-${model.dateKey()}.json`), filters: [{ name: 'Daftar backup', extensions: ['json'] }] });

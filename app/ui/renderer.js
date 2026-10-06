@@ -25,7 +25,7 @@ function expensesPage() {
   const d = M.day(state, selectedDate), items = M.expenses(state, selectedDate), actual = items.reduce((s, e) => s + e.amount, 0);
   const rows = items.map(e => `<tr><td class="category-name"><span class="category-dot"></span>${esc(categoryName(e.categoryId))}</td><td>${num(e.amount)}<small class="funding-note">${esc(fundingLabel(e))}</small></td><td><div class="note">${e.note ? esc(e.note) : '—'}</div></td><td><button class="icon-button" data-action="${e.kind === 'supplier-payment' ? 'payment-edit' : 'edit-expense'}" data-id="${e.id}" aria-label="تعديل مصروف ${esc(categoryName(e.categoryId))}">${icon('edit')}</button></td></tr>`);
   for (const c of state.categories.filter(c => !items.some(e => e.categoryId === c.id))) rows.push(`<tr class="row-empty"><td class="category-name"><span class="category-dot"></span>${esc(c.name)}</td><td><button class="amount-add" data-action="category-expense" data-id="${c.id}">+ إضافة مبلغ</button></td><td><div class="note">—</div></td><td></td></tr>`);
-  return header('كل يوم، حسابه واضح.', 'سجّل مصاريفك وتابع القاصة من مكان واحد.', button('إضافة مصروف', 'expense', true, 'plus') + (state.suppliers.length ? button('تسديد مورد', 'payment-new') : '') + dateControl()) +
+  return header('كل يوم، حسابه واضح.', 'سجّل مصاريفك وتابع القاصة من مكان واحد.', button('إضافة مصروف', 'expense', true, 'plus') + (state.suppliers.length ? button('تسديد مورد', 'payment-new') : '') + button('تصدير PDF', 'daily-pdf', false, 'download') + dateControl()) +
     `<div class="date-label">${esc(prettyDate(selectedDate))}${selectedDate !== M.dateKey() ? ' · <button class="text-link" data-action="today">الرجوع لليوم</button>' : ''}<button class="text-link" data-action="day-date" ${M.recordedDays(state).includes(selectedDate) ? '' : 'disabled'}>تعديل تاريخ الفاتورة</button></div><section class="summary" aria-label="ملخص اليوم"><div><p class="summary-label">مجموع مصاريف اليوم</p>${num(M.total(state, selectedDate), 'summary-value')}<span class="unit">د.ع</span>${d.totalOverride !== null ? '<span class="badge">مجموع يدوي</span>' : ''}</div><div><p class="summary-label">الرصيد الكلي</p>${d.balance === null ? '<span class="summary-value">—</span>' : num(d.balance, 'summary-value')}<span class="summary-sub"><button class="text-link" data-action="balance">${d.balance === null ? 'تسجيل الرصيد' : 'تعديل الرصيد'}</button></span></div><div><p class="summary-label">المصاريف المسجّلة</p>${num(items.length, 'summary-value')}<span class="summary-sub">لهذا اليوم</span></div></section>
     <div class="dashboard"><div><section class="ledger"><div class="section-head"><h2>تفاصيل المصاريف</h2><button class="button ghost" data-action="category">+ إضافة خانة</button></div><div class="table-scroll"><table class="expenses-table"><thead><tr><th>الخانة</th><th>المبلغ · د.ع</th><th>ملاحظات</th><th><span class="sr-only">تعديل</span></th></tr></thead><tbody>${rows.join('')}</tbody></table></div><div class="table-total"><div class="total-name">مجموع المصاريف${d.totalOverride !== null ? `<div class="total-manual">المحسوب: ${num(actual)} د.ع</div>` : ''}</div><div>${num(M.total(state, selectedDate), 'total-amount')}<span class="unit">د.ع</span></div><button class="text-link" data-action="total">تعديل المجموع</button></div>${!items.length ? '<p class="empty-help">ابدأ بمبلغ أول خانة. تگدر تضيف أكثر من مصروف لنفس الخانة.</p>' : ''}</section>
     ${remainingPanel()}<section class="chicken"><div class="chicken-head"><div><h2>تتبّع الدجاج</h2><p class="chicken-description">أعداد فقط · خارج مجموع المصاريف</p></div><button class="text-link" data-action="chicken">تعديل الأعداد</button></div><div class="chicken-stats"><div>${num(d.chickenUsed, 'chicken-number')}<div>الدجاج المصروف<small>دجاجة</small></div></div><div>${num(d.chickenLeft, 'chicken-number')}<div>الدجاج المتبقي<small>دجاجة</small></div></div></div></section></div><aside class="cash-rail">${cashCard()}${activity()}</aside></div>`;
@@ -42,7 +42,7 @@ function settingsPage() { return header('حساباتك تبقى يمّك.', 'ا
 function render() {
   if (!state) return;
   document.querySelectorAll('[data-view]').forEach(el => { const active = el.dataset.view === view; el.classList.toggle('active', active); el.setAttribute('aria-current', active ? 'page' : 'false'); });
-  main.innerHTML = ({ expenses: expensesPage, suppliers: suppliersPage, payments: paymentsPage, cash: cashPage, categories: categoriesPage, settings: settingsPage }[view])() + `<footer class="page-footer"><span>كل حساباتك محفوظة على هذا الجهاز</span><span class="number">DAFTAR / 1.4</span></footer>`;
+  main.innerHTML = ({ expenses: expensesPage, suppliers: suppliersPage, payments: paymentsPage, cash: cashPage, categories: categoriesPage, settings: settingsPage }[view])() + `<footer class="page-footer"><span>كل حساباتك محفوظة على هذا الجهاز</span><span class="number">DAFTAR / 1.5</span></footer>`;
 }
 async function commit(next, message, { remember = true } = {}) {
   if (busy) return false;
@@ -187,10 +187,22 @@ async function backup(action) {
   try { const result = await window.daftar[action](); if (!result.ok) throw new Error(result.error); if (result.canceled) return; if (action === 'import') { state = result.data; directory = result.directory; history = []; selectedDate = M.dateKey(); view = 'expenses'; render(); status('محفوظ على جهازك'); } toast(action === 'export' ? 'تم تصدير النسخة الاحتياطية' : 'تم استيراد الحسابات'); }
   catch (error) { toast(error.message, true); }
 }
+async function exportPDF(request, trigger = null) {
+  if (!state || busy) return;
+  busy = true;
+  if (trigger) { trigger.disabled = true; trigger.setAttribute('aria-busy', 'true'); }
+  try {
+    const result = await window.daftar.pdf(request);
+    if (!result.ok) throw new Error(result.error);
+    if (!result.canceled) toast('تم حفظ ملف PDF');
+  } catch (error) { toast('تعذّر تصدير PDF: ' + error.message, true); }
+  finally { busy = false; if (trigger) { trigger.disabled = false; trigger.removeAttribute('aria-busy'); } }
+}
 function moveDate(step) { const d = new Date(`${selectedDate}T12:00:00`); d.setDate(d.getDate() + step); selectedDate = M.dateKey(d); render(); }
 document.addEventListener('click', async event => {
   const nav = event.target.closest('[data-view]'); if (nav) { view = nav.dataset.view; render(); return; }
   const el = event.target.closest('[data-action]'); if (!el || busy) return; const action = el.dataset.action;
+  if (action === 'daily-pdf' || action === 'invoice-pdf') { await exportPDF(action === 'daily-pdf' ? { kind: 'daily', date: selectedDate } : { kind: 'invoice', id: el.dataset.id }, el); return; }
   const handled = supplierAction(action, el); if (handled) { await handled; return; }
   if (action === 'close-drawer') closeDrawer();
   else if (['expense', 'deposit', 'withdrawal', 'category', 'chicken', 'balance', 'total', 'remaining', 'remaining-transfer', 'day-date'].includes(action)) openDrawer(action);
@@ -233,6 +245,6 @@ document.addEventListener('keydown', event => {
 document.querySelectorAll('[data-icon]').forEach(el => el.innerHTML = icon(el.dataset.icon));
 main.innerHTML = '<div class="loading">جارٍ فتح حساباتك…</div>';
 if (window.daftar) {
-  window.daftar.onAction(action => { if (action === 'undo') { if (document.activeElement.matches('input,textarea')) document.execCommand('undo'); else undo(); } else if (action === 'export' || action === 'import') backup(action); else if (action === 'expense') openDrawer('expense'); else if (action === 'settings') { closeDrawer(); view = 'settings'; render(); } });
+  window.daftar.onAction(action => { if (action === 'undo') { if (document.activeElement.matches('input,textarea')) document.execCommand('undo'); else undo(); } else if (action === 'daily-pdf') { if (drawer) { toast('كمّل النموذج أو أغلقه حتى تصدّر الحسابات المحفوظة.'); return; } exportPDF({ kind: 'daily', date: selectedDate }); } else if (action === 'export' || action === 'import') backup(action); else if (action === 'expense') openDrawer('expense'); else if (action === 'settings') { closeDrawer(); view = 'settings'; render(); } });
   window.daftar.load().then(result => { if (!result.ok) throw new Error(result.error); state = M.validate(result.data); directory = result.directory; render(); status('محفوظ على جهازك'); }).catch(error => { status('الحسابات تحتاج استعادة', true); main.innerHTML = `<section class="panel load-error"><h1>نحافظ على بياناتك أولاً.</h1><p>${esc(error.message)}</p>${button('استيراد نسخة احتياطية', 'import', true, 'upload')}</section>`; });
 } else main.innerHTML = '<section class="panel load-error"><h1>افتح تطبيق دفتر.</h1><p>هذه الواجهة تشتغل من داخل التطبيق حتى تحفظ الحسابات بملف محلي.</p></section>';
