@@ -170,3 +170,19 @@ test('normalizing a legacy Arabic invoice number does not create a second invoic
   ui.click('[data-action="invoice-new"]'); ui.value('invoice-number', '0012'); lineValue(ui, '.line-name-input', 'رز 1', true); assert.equal(ui.w.document.querySelector('.line-price').value, '5,000'); await ui.submit();
   assert.match(ui.w.document.getElementById('form-error').textContent, /رقم القائمة/); assert.equal(ui.stored().invoices.length, 1);
 });
+test('daily invoice date correction previews a range, blocks overlaps, preserves records and is undoable', async t => {
+  const data = M.empty();
+  for (const [date, amount] of [['2026-10-02', 10000], ['2026-10-03', 20000], ['2026-10-04', 30000]]) data.days[date] = { ...M.day(data, date), chickenUsed: amount / 1000, expenses: [{ id: 'e-' + date, categoryId: 'bread', amount, note: '', funding: { source: 'daily', dailyAmount: amount, cashAmount: 0 } }] };
+  const ui = await setup(t, { data }); ui.value('selected-date', '2026-10-02', true); ui.click('[data-action="day-date"]'); ui.value('correct-date', '2026-10-03', true);
+  assert.match(ui.w.document.getElementById('date-preview').textContent, /بيه سجل آخر/); assert.equal(ui.w.document.querySelector('[type=submit]').disabled, true);
+  const check = ui.w.document.getElementById('shift-following'); check.checked = true; check.dispatchEvent(new ui.w.Event('change', { bubbles: true }));
+  assert.equal(ui.w.document.getElementById('range-end').value, '2026-10-04'); assert.match(ui.w.document.getElementById('date-preview').textContent, /3 يوم/); assert.equal(ui.w.document.querySelector('[type=submit]').disabled, false);
+  assert.equal(ui.w.document.querySelectorAll('#date-preview tbody tr').length, 3); await ui.submit();
+  assert.equal(ui.stored().days['2026-10-02'], undefined); assert.equal(ui.stored().days['2026-10-03'].expenses[0].amount, 10000); assert.equal(ui.stored().days['2026-10-05'].expenses[0].amount, 30000); assert.equal(ui.w.document.getElementById('selected-date').value, '2026-10-03');
+  ui.action('undo'); await tick(); assert.deepEqual(ui.stored(), M.validate(data));
+});
+test('failed date correction preserves the complete original day and keeps the chosen dates available', async t => {
+  const data = M.empty(); data.days['2026-10-02'] = { ...M.day(data, '2026-10-02'), chickenUsed: 85, balance: 500000 };
+  const ui = await setup(t, { data, failSave: true }); ui.value('selected-date', '2026-10-02', true); ui.click('[data-action="day-date"]'); ui.value('correct-date', '2026-10-03', true); await ui.submit();
+  assert.match(ui.w.document.getElementById('form-error').textContent, /مساحة/); assert.equal(ui.w.document.getElementById('correct-date').value, '2026-10-03'); assert.deepEqual(ui.stored(), data);
+});

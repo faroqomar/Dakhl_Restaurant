@@ -26,7 +26,7 @@ function expensesPage() {
   const rows = items.map(e => `<tr><td class="category-name"><span class="category-dot"></span>${esc(categoryName(e.categoryId))}</td><td>${num(e.amount)}<small class="funding-note">${esc(fundingLabel(e))}</small></td><td><div class="note">${e.note ? esc(e.note) : '—'}</div></td><td><button class="icon-button" data-action="${e.kind === 'supplier-payment' ? 'payment-edit' : 'edit-expense'}" data-id="${e.id}" aria-label="تعديل مصروف ${esc(categoryName(e.categoryId))}">${icon('edit')}</button></td></tr>`);
   for (const c of state.categories.filter(c => !items.some(e => e.categoryId === c.id))) rows.push(`<tr class="row-empty"><td class="category-name"><span class="category-dot"></span>${esc(c.name)}</td><td><button class="amount-add" data-action="category-expense" data-id="${c.id}">+ إضافة مبلغ</button></td><td><div class="note">—</div></td><td></td></tr>`);
   return header('كل يوم، حسابه واضح.', 'سجّل مصاريفك وتابع القاصة من مكان واحد.', button('إضافة مصروف', 'expense', true, 'plus') + (state.suppliers.length ? button('تسديد مورد', 'payment-new') : '') + dateControl()) +
-    `<div class="date-label">${esc(prettyDate(selectedDate))}${selectedDate !== M.dateKey() ? ' · <button class="text-link" data-action="today">الرجوع لليوم</button>' : ''}</div><section class="summary" aria-label="ملخص اليوم"><div><p class="summary-label">مجموع مصاريف اليوم</p>${num(M.total(state, selectedDate), 'summary-value')}<span class="unit">د.ع</span>${d.totalOverride !== null ? '<span class="badge">مجموع يدوي</span>' : ''}</div><div><p class="summary-label">الرصيد الكلي</p>${d.balance === null ? '<span class="summary-value">—</span>' : num(d.balance, 'summary-value')}<span class="summary-sub"><button class="text-link" data-action="balance">${d.balance === null ? 'تسجيل الرصيد' : 'تعديل الرصيد'}</button></span></div><div><p class="summary-label">المصاريف المسجّلة</p>${num(items.length, 'summary-value')}<span class="summary-sub">لهذا اليوم</span></div></section>
+    `<div class="date-label">${esc(prettyDate(selectedDate))}${selectedDate !== M.dateKey() ? ' · <button class="text-link" data-action="today">الرجوع لليوم</button>' : ''}<button class="text-link" data-action="day-date" ${M.recordedDays(state).includes(selectedDate) ? '' : 'disabled'}>تعديل تاريخ الفاتورة</button></div><section class="summary" aria-label="ملخص اليوم"><div><p class="summary-label">مجموع مصاريف اليوم</p>${num(M.total(state, selectedDate), 'summary-value')}<span class="unit">د.ع</span>${d.totalOverride !== null ? '<span class="badge">مجموع يدوي</span>' : ''}</div><div><p class="summary-label">الرصيد الكلي</p>${d.balance === null ? '<span class="summary-value">—</span>' : num(d.balance, 'summary-value')}<span class="summary-sub"><button class="text-link" data-action="balance">${d.balance === null ? 'تسجيل الرصيد' : 'تعديل الرصيد'}</button></span></div><div><p class="summary-label">المصاريف المسجّلة</p>${num(items.length, 'summary-value')}<span class="summary-sub">لهذا اليوم</span></div></section>
     <div class="dashboard"><div><section class="ledger"><div class="section-head"><h2>تفاصيل المصاريف</h2><button class="button ghost" data-action="category">+ إضافة خانة</button></div><div class="table-scroll"><table class="expenses-table"><thead><tr><th>الخانة</th><th>المبلغ · د.ع</th><th>ملاحظات</th><th><span class="sr-only">تعديل</span></th></tr></thead><tbody>${rows.join('')}</tbody></table></div><div class="table-total"><div class="total-name">مجموع المصاريف${d.totalOverride !== null ? `<div class="total-manual">المحسوب: ${num(actual)} د.ع</div>` : ''}</div><div>${num(M.total(state, selectedDate), 'total-amount')}<span class="unit">د.ع</span></div><button class="text-link" data-action="total">تعديل المجموع</button></div>${!items.length ? '<p class="empty-help">ابدأ بمبلغ أول خانة. تگدر تضيف أكثر من مصروف لنفس الخانة.</p>' : ''}</section>
     ${remainingPanel()}<section class="chicken"><div class="chicken-head"><div><h2>تتبّع الدجاج</h2><p class="chicken-description">أعداد فقط · خارج مجموع المصاريف</p></div><button class="text-link" data-action="chicken">تعديل الأعداد</button></div><div class="chicken-stats"><div>${num(d.chickenUsed, 'chicken-number')}<div>الدجاج المصروف<small>دجاجة</small></div></div><div>${num(d.chickenLeft, 'chicken-number')}<div>الدجاج المتبقي<small>دجاجة</small></div></div></div></section></div><aside class="cash-rail">${cashCard()}${activity()}</aside></div>`;
 }
@@ -42,7 +42,7 @@ function settingsPage() { return header('حساباتك تبقى يمّك.', 'ا
 function render() {
   if (!state) return;
   document.querySelectorAll('[data-view]').forEach(el => { const active = el.dataset.view === view; el.classList.toggle('active', active); el.setAttribute('aria-current', active ? 'page' : 'false'); });
-  main.innerHTML = ({ expenses: expensesPage, suppliers: suppliersPage, payments: paymentsPage, cash: cashPage, categories: categoriesPage, settings: settingsPage }[view])() + `<footer class="page-footer"><span>كل حساباتك محفوظة على هذا الجهاز</span><span class="number">DAFTAR / 1.3.1</span></footer>`;
+  main.innerHTML = ({ expenses: expensesPage, suppliers: suppliersPage, payments: paymentsPage, cash: cashPage, categories: categoriesPage, settings: settingsPage }[view])() + `<footer class="page-footer"><span>كل حساباتك محفوظة على هذا الجهاز</span><span class="number">DAFTAR / 1.4</span></footer>`;
 }
 async function commit(next, message, { remember = true } = {}) {
   if (busy) return false;
@@ -94,6 +94,10 @@ function openDrawer(kind, id = null, options = {}) {
     const t = id ? state.transactions.find(t => t.id === id) : null; const type = t?.type || kind;
     drawer.type = type; title = t ? 'تعديل حركة القاصة' : type === 'deposit' ? 'إيداع بالقاصة' : 'سحب من القاصة'; subtitle = 'حدد المبلغ وسجّل حركة القاصة.'; saveLabel = t ? 'حفظ التعديل' : type === 'deposit' ? 'تسجيل الإيداع' : 'تسجيل السحب';
     fields = `<div class="drawer-summary"><p>الموجود بالقاصة</p>${num(M.cash(state))}<span class="unit">د.ع</span></div>${t ? `<div class="field"><label for="type">نوع الحركة</label><select id="type" name="type"><option value="deposit" ${type === 'deposit' ? 'selected' : ''}>إيداع</option><option value="withdrawal" ${type === 'withdrawal' ? 'selected' : ''}>سحب</option></select></div>` : ''}${amountField(t?.amount ?? '', type === 'deposit' ? 'مبلغ الإيداع' : 'مبلغ السحب')}${field('date', 'التاريخ', 'date', t?.date || selectedDate, 'required')}${noteField(t?.note || '')}${t ? deleteBlock() : ''}`;
+  } else if (kind === 'day-date') {
+    title = 'تعديل تاريخ الفاتورة اليومية'; subtitle = `السجل الحالي: ${prettyDate(selectedDate)}`; saveLabel = 'حفظ التواريخ';
+    const last = M.recordedDays(state).filter(date => date >= selectedDate).at(-1) || selectedDate;
+    fields = `${field('correct-date', 'التاريخ الصحيح لهذا اليوم', 'date', selectedDate, 'required')}<label class="checkline"><input type="checkbox" name="shiftFollowing" id="shift-following">تصحيح الأيام التالية أيضاً بنفس فرق التاريخ</label><div id="date-range-field" hidden>${field('range-end', 'لحد أي يوم مسجّل؟', 'date', last, `min="${selectedDate}"`)}</div><div class="note-box">ينتقل سجل كل يوم بمصاريفه وتسديداته وأعداد الدجاج وأرصدته وحركات القاصة. تواريخ قوائم الموردين والديون تتعدّل من سجلاتها الخاصة. تگدر تتراجع عن النقل بـ ⌘Z.</div><div id="date-preview" class="date-preview" role="status" aria-live="polite"></div>`;
   } else if (kind === 'remaining') {
     title = 'الرصيد المتبقي'; subtitle = `الباقي الفعلي ليوم ${prettyDate(selectedDate)}`;
     fields = `${amountField(M.remaining(state, selectedDate) ?? '', 'المبلغ المتبقي')}<div class="note-box">اكتب الباقي الفعلي <strong>بعد مصاريفك المسجّلة حالياً</strong>. المصاريف السابقة ما تنخصم مرة ثانية؛ ينخصم فقط أي تغيير بعدها من اليومي، وأي إيداع منه بالقاصة.</div>`;
@@ -119,11 +123,26 @@ function openDrawer(kind, id = null, options = {}) {
   host.innerHTML = `<button class="scrim" data-action="close-drawer" aria-label="إغلاق النموذج" tabindex="-1"></button><section class="drawer ${drawer.wide ? 'wide' : ''}" role="dialog" aria-modal="true" aria-labelledby="drawer-title"><div class="drawer-top"><span>دفتر / ${kind === 'deposit' || kind === 'withdrawal' || kind === 'transaction' ? 'القاصة' : 'سجل اليوم'}</span><button class="icon-button" data-action="close-drawer" aria-label="إغلاق">${icon('close')}</button></div><div class="drawer-intro"><h2 id="drawer-title">${esc(title)}</h2><p>${esc(subtitle)}</p></div><form class="drawer-form"><div id="form-error" class="form-error" role="alert"></div>${fields}<div class="form-footer"><button class="button primary" type="submit">${saveLabel}</button><p>يحفظ التغيير تلقائياً على جهازك</p></div></form></section>`;
   document.body.classList.add('drawer-open'); document.querySelector('.shell').inert = true;
   N.formatInputs(host);
+  if (kind === 'day-date') refreshDayDatePreview();
   if (kind === 'total') toggleAutomatic();
   if (kind === 'expense' || kind === 'payment' || (kind === 'invoice' && !id)) toggleFunding();
   if (kind === 'invoice') refreshInvoice();
   if (kind === 'payment') refreshPaymentChoices();
-  const focus = host.querySelector('#supplier-name, #material-name, #invoice-number, #amount:not(:disabled), #used, #name'); if (focus) { focus.focus(); focus.select(); }
+  const focus = host.querySelector('#supplier-name, #material-name, #invoice-number, #amount:not(:disabled), #used, #name, #correct-date'); if (focus) { focus.focus(); focus.select(); }
+}
+function refreshDayDatePreview() {
+  if (drawer?.kind !== 'day-date') return;
+  const range = document.getElementById('shift-following').checked, end = document.getElementById('range-end');
+  document.getElementById('date-range-field').hidden = !range; end.disabled = !range; end.required = range;
+  const destination = document.getElementById('correct-date').value, preview = document.getElementById('date-preview'), save = host.querySelector('[type=submit]');
+  save.disabled = true;
+  if (destination === drawer.originalDate) { preview.textContent = 'حدد التاريخ الصحيح حتى تشوف معاينة النقل.'; return; }
+  try {
+    const last = range ? end.value : drawer.originalDate, plan = M.dayDatePlan(state, drawer.originalDate, destination, last);
+    M.correctDayDates(state, drawer.originalDate, destination, last);
+    preview.innerHTML = `<p>راح يتغيّر تاريخ ${fmt(plan.length)} يوم. المبالغ تبقى نفسها.</p><table><thead><tr><th>التاريخ المسجّل</th><th>التاريخ الصحيح</th></tr></thead><tbody>${plan.slice(0, 100).map(p => `<tr><td class="number">${p.from}</td><td class="number">${p.to}</td></tr>`).join('')}</tbody></table>${plan.length > 100 ? '<p>المعاينة تعرض أول 100 يوم؛ الحفظ يشمل كل الأيام المختارة.</p>' : ''}`;
+    save.disabled = false;
+  } catch (error) { preview.textContent = error.message; }
 }
 function formError(message) { const error = document.getElementById('form-error'); error.textContent = message; error.classList.add('visible'); error.scrollIntoView({ block: 'nearest' }); }
 function toggleAutomatic() { const automatic = document.getElementById('automatic'); const amount = document.getElementById('amount'); amount.disabled = automatic.checked; amount.required = !automatic.checked; }
@@ -134,7 +153,10 @@ async function submitForm(event) {
   const values = new FormData(form), next = structuredClone(state), context = { ...drawer }; let message = 'تم حفظ التغيير';
   try {
     if (['supplier', 'material', 'invoice', 'payment', 'debt'].includes(context.kind)) { message = supplierSubmit(next, context, values, form); }
-    else if (context.kind === 'expense') {
+    else if (context.kind === 'day-date') {
+      const destination = values.get('correct-date'), end = values.has('shiftFollowing') ? values.get('range-end') : context.originalDate;
+      Object.assign(next, M.correctDayDates(state, context.originalDate, destination, end)); context.resultDate = destination; message = 'تم تصحيح تواريخ الفواتير اليومية';
+    } else if (context.kind === 'expense') {
       const date = values.get('date'); if (!M.validDate(date)) throw new Error('اختار تاريخ صحيح.');
       let categoryId = values.get('category'); if (categoryId === '__new') categoryId = addCategory(next, values.get('newCategory'), values.get('categoryType'));
       const amount = M.numeric(values.get('amount')), source = values.get('paymentSource');
@@ -171,7 +193,7 @@ document.addEventListener('click', async event => {
   const el = event.target.closest('[data-action]'); if (!el || busy) return; const action = el.dataset.action;
   const handled = supplierAction(action, el); if (handled) { await handled; return; }
   if (action === 'close-drawer') closeDrawer();
-  else if (['expense', 'deposit', 'withdrawal', 'category', 'chicken', 'balance', 'total', 'remaining', 'remaining-transfer'].includes(action)) openDrawer(action);
+  else if (['expense', 'deposit', 'withdrawal', 'category', 'chicken', 'balance', 'total', 'remaining', 'remaining-transfer', 'day-date'].includes(action)) openDrawer(action);
   else if (action === 'edit-expense') openDrawer('expense', el.dataset.id);
   else if (action === 'edit-transaction') { if (el.dataset.kind === 'supplier-payment') openDrawer('payment', el.dataset.id); else if (el.dataset.kind === 'expense') { selectedDate = el.dataset.date; openDrawer('expense', el.dataset.id); } else openDrawer(el.dataset.kind === 'transfer' ? 'transfer' : 'transaction', el.dataset.id); }
   else if (action === 'category-expense') { openDrawer('expense'); document.getElementById('category').value = el.dataset.id; }
@@ -196,13 +218,14 @@ document.addEventListener('change', async event => {
     const saved = await commit(next, 'تم حفظ نوع الخانة');
     if (!saved) { el.value = category.type; el.disabled = false; }
     if (hadFocus && view === 'categories') main.querySelector(`[data-category-id="${category.id}"]`)?.focus();
-  } else if (event.target.id === 'selected-date' && M.validDate(event.target.value)) { selectedDate = event.target.value; render(); }
+  } else if (drawer?.kind === 'day-date' && ['correct-date', 'shift-following', 'range-end'].includes(event.target.id)) refreshDayDatePreview();
+  else if (event.target.id === 'selected-date' && M.validDate(event.target.value)) { selectedDate = event.target.value; render(); }
   else if (event.target.id === 'category') { const field = document.getElementById('new-category-field'); const isNew = event.target.value === '__new'; field.classList.toggle('visible', isNew); document.getElementById('new-category').required = isNew; if (isNew) document.getElementById('new-category').focus(); }
   else if (event.target.id === 'automatic') toggleAutomatic();
   else if (event.target.id === 'payment-source') toggleFunding();
 });
 host.addEventListener('submit', submitForm);
-host.addEventListener('input', event => { if (['expense', 'payment', 'invoice'].includes(drawer?.kind) && ['amount', 'daily-amount', 'cash-amount'].includes(event.target.id)) refreshFundingTotal(); });
+host.addEventListener('input', event => { if (drawer?.kind === 'day-date') refreshDayDatePreview(); if (['expense', 'payment', 'invoice'].includes(drawer?.kind) && ['amount', 'daily-amount', 'cash-amount'].includes(event.target.id)) refreshFundingTotal(); });
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && drawer) { event.preventDefault(); closeDrawer(); }
   if (event.key === 'Tab' && drawer) { const focusable = [...host.querySelectorAll('button:not([disabled]):not(.scrim), input:not([disabled]), select, textarea')].filter(el => el.getClientRects().length); const first = focusable[0], last = focusable[focusable.length - 1]; if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); } else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); } }

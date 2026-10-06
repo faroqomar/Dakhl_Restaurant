@@ -47,6 +47,33 @@
     const t = { id: old?.id || transferId, date: key, amount, createdAt: old?.createdAt || createdAt };
     state.transfers = (state.transfers || []).filter(t => t.id !== editId); state.transfers.push(t);
   }
+  function recordedDays(state) {
+    return [...new Set([...Object.entries(state.days).filter(([, d]) => d.expenses.length || d.chickenUsed || d.chickenLeft || d.balance != null || d.totalOverride != null || d.remaining != null).map(([date]) => date), ...['payments', 'transactions', 'transfers'].flatMap(key => (state[key] || []).map(e => e.date))])].sort();
+  }
+  function dayDatePlan(state, from, to, end = from) {
+    assert(validDate(from) && validDate(to) && validDate(end), 'اختار تواريخ صحيحة.');
+    assert(from !== to, 'اختار تاريخاً مختلفاً عن التاريخ الحالي.');
+    assert(end >= from, 'آخر يوم لازم يكون نفس يوم البداية أو بعده.');
+    const dates = recordedDays(state), selected = dates.filter(date => date >= from && date <= end);
+    assert(dates.includes(from), 'ماكو سجل يومي بهذا التاريخ.');
+    const offset = Date.parse(to + 'T00:00:00Z') - Date.parse(from + 'T00:00:00Z');
+    const originals = new Set(selected), recorded = new Set(dates);
+    return selected.map(date => {
+      const destination = new Date(Date.parse(date + 'T00:00:00Z') + offset).toISOString().slice(0, 10);
+      assert(validDate(destination), 'التاريخ الجديد خارج المجال المسموح.');
+      assert(!recorded.has(destination) || originals.has(destination), 'التاريخ ' + destination + ' بيه سجل آخر. فعّل تصحيح الأيام التالية وحدّد آخر يوم حتى ما تتداخل الحسابات.');
+      return { from: date, to: destination };
+    });
+  }
+  function correctDayDates(state, from, to, end = from) {
+    const plan = dayDatePlan(state, from, to, end), mapping = new Map(plan.map(p => [p.from, p.to]));
+    const next = structuredClone(state), destinations = new Set(plan.map(p => p.to));
+    // Build a new map: moving adjacent days must never overwrite a day still being moved.
+    next.days = Object.fromEntries(Object.entries(next.days).filter(([date]) => mapping.has(date) || !destinations.has(date)).map(([date, d]) => [mapping.get(date) || date, d]));
+    for (const key of ['payments', 'transactions', 'transfers']) for (const e of next[key] || []) e.date = mapping.get(e.date) || e.date;
+    // Supplier bills and debt records keep their own dates. Validation rejects payments before their bill/debt.
+    return validate(next);
+  }
   function quantity(raw) {
     const s = String(raw).trim().replace(/[٠-٩]/g, d => String('٠١٢٣٤٥٦٧٨٩'.indexOf(d))).replace(/[۰-۹]/g, d => String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d))).replace(/٫/g, '.').replace(/[,٬\s]/g, '');
     assert(/^\d+(?:\.\d{1,3})?$/.test(s), 'اكتب كمية موجبة، بحد أقصى 3 أرقام بعد الفاصلة.');
@@ -184,5 +211,5 @@
     for (const key of Object.keys(days)) { assert(Number.isSafeInteger(transferred(clean, key)), 'الإيداعات تتجاوز الحد الدقيق للحساب.'); const r = remaining(clean, key); assert(r === null || Number.isSafeInteger(r), 'الرصيد المتبقي يتجاوز الحد الدقيق للحساب.'); }
     return clean;
   }
-  return { empty, dateKey, validDate, numeric, day, total, funding, dailySpent, transferred, remaining, recordRemaining, movements, transferRemaining, cash, validate, quantity, lineTotal, invoiceTotal, invoicePaid, invoiceDue, paymentAllocation, splitPayment, debtAvailable, openingDue, supplierBalance, supplierLedger, balanceBefore, expenses, allocation };
+  return { empty, dateKey, validDate, numeric, day, total, funding, dailySpent, transferred, remaining, recordRemaining, movements, transferRemaining, cash, validate, recordedDays, dayDatePlan, correctDayDates, quantity, lineTotal, invoiceTotal, invoicePaid, invoiceDue, paymentAllocation, splitPayment, debtAvailable, openingDue, supplierBalance, supplierLedger, balanceBefore, expenses, allocation };
 });
