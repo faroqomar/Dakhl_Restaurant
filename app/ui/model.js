@@ -3,7 +3,7 @@
   else root.DaftarModel = factory();
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   const core = [{ id: 'samoon', name: 'الصمون' }, { id: 'bread', name: 'الخبز' }, { id: 'falafel', name: 'الفلافل' }, { id: 'market', name: 'الأسواق' }];
-  function empty() { return { version: 4, categories: core.map(c => ({ ...c, type: 'primary' })), days: {}, transactions: [], transfers: [], suppliers: [], invoices: [], payments: [], debts: [] }; }
+  function empty() { return { version: 5, categories: core.map(c => ({ ...c, type: 'primary' })), days: {}, transactions: [], transfers: [], suppliers: [], invoices: [], payments: [], debts: [] }; }
   function dateKey(d = new Date()) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; }
   function validDate(s) { if (typeof s !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(s)) return false; const d = new Date(`${s}T12:00:00`); return !isNaN(d) && dateKey(d) === s; }
   function numeric(raw, { signed = false, positive = false } = {}) {
@@ -23,9 +23,20 @@
     const snapshot = day(state, key).remaining;
     return snapshot ? snapshot.amount - (dailySpent(state, key) - snapshot.dailySpent) - (transferred(state, key) - snapshot.transferred) : null;
   }
+  function balanceFromRemaining(state, key) {
+    const available = remaining(state, key);
+    if (available === null) return null;
+    const sum = total(state, key) + available + transferred(state, key);
+    assert(Number.isSafeInteger(sum) && Math.abs(sum) <= 1e12, 'الرصيد الكلي يتجاوز الحد المسموح للحساب.');
+    return sum;
+  }
   function recordRemaining(state, key, amount) {
+    money(amount);
+    const sum = total(state, key) + amount + transferred(state, key);
+    assert(Number.isSafeInteger(sum) && Math.abs(sum) <= 1e12, 'الرصيد الكلي يتجاوز الحد المسموح للحساب.');
     const d = state.days[key] || (state.days[key] = { ...day(state, key) });
-    d.remaining = { amount: money(amount), dailySpent: dailySpent(state, key), transferred: transferred(state, key) };
+    d.remaining = { amount, dailySpent: dailySpent(state, key), transferred: transferred(state, key) };
+    d.balance = sum;
   }
   function movements(state) {
     const result = state.transactions.map(t => ({ ...t, kind: 'cash' }));
@@ -44,8 +55,10 @@
     const available = remaining(state, key);
     assert(available !== null, 'سجّل الرصيد المتبقي أولاً.');
     assert(amount <= available + (old?.amount || 0), 'مبلغ الإيداع أكبر من الرصيد المتبقي.');
+    // Recover an unset total on older/manual records before the remainder is transferred.
+    const d = day(state, key), sum = d.balance === null ? balanceFromRemaining(state, key) : d.balance;
     const t = { id: old?.id || transferId, date: key, amount, createdAt: old?.createdAt || createdAt };
-    state.transfers = (state.transfers || []).filter(t => t.id !== editId); state.transfers.push(t);
+    state.transfers = (state.transfers || []).filter(t => t.id !== editId); state.transfers.push(t); d.balance = sum;
   }
   function recordedDays(state) {
     return [...new Set([...Object.entries(state.days).filter(([, d]) => d.expenses.length || d.chickenUsed || d.chickenLeft || d.balance != null || d.totalOverride != null || d.remaining != null).map(([date]) => date), ...['payments', 'transactions', 'transfers'].flatMap(key => (state[key] || []).map(e => e.date))])].sort();
@@ -172,7 +185,7 @@
   function string(s, max = 2000) { assert(typeof s === 'string' && s.length <= max); return s; }
   function id(s) { assert(typeof s === 'string' && /^[a-zA-Z0-9_-]{1,80}$/.test(s)); return s; }
   function validate(raw) {
-    assert(raw && [1, 2, 3, 4].includes(raw.version) && Array.isArray(raw.categories) && raw.categories.length >= 4 && raw.categories.length <= 500);
+    assert(raw && [1, 2, 3, 4, 5].includes(raw.version) && Array.isArray(raw.categories) && raw.categories.length >= 4 && raw.categories.length <= 500);
     // Older files have no type; infer it from stable IDs, never array position.
     const categories = raw.categories.map(c => {
       const type = c.type === undefined ? (core.some(x => x.id === c.id) ? 'primary' : 'additional') : c.type;
@@ -204,12 +217,19 @@
     const rawTransfers = raw.transfers ?? []; assert(Array.isArray(rawTransfers) && rawTransfers.length <= 100000);
     const transferIds = new Set();
     const transfers = rawTransfers.map(t => { const key = id(t.id); assert(!transferIds.has(key)); transferIds.add(key); assert(validDate(t.date) && days[t.date]?.remaining != null, 'إيداع الرصيد اليومي يحتاج رصيداً مسجّلاً.'); money(t.amount); assert(t.amount > 0); string(t.createdAt, 40); assert(!isNaN(Date.parse(t.createdAt))); return { id: key, date: t.date, amount: t.amount, createdAt: t.createdAt }; });
-    const clean = { version: 4, categories, days, transactions, transfers, ...validateSuppliers(raw, ids) };
+    const clean = { version: 5, categories, days, transactions, transfers, ...validateSuppliers(raw, ids) };
     for (const date of new Set([...Object.keys(days), ...clean.payments.map(p => p.date)])) assert(Number.isSafeInteger(expenses(clean, date).reduce((sum, e) => sum + e.amount, 0)), 'مجموع المصاريف أكبر من الحد الدقيق للحساب.');
     let cashTotal = 0;
     for (const t of movements(clean)) { cashTotal += t.type === 'withdrawal' ? -t.amount : t.amount; assert(Number.isSafeInteger(cashTotal), 'مجموع حركات القاصة أكبر من الحد الدقيق للحساب.'); }
     for (const key of Object.keys(days)) { assert(Number.isSafeInteger(transferred(clean, key)), 'الإيداعات تتجاوز الحد الدقيق للحساب.'); const r = remaining(clean, key); assert(r === null || Number.isSafeInteger(r), 'الرصيد المتبقي يتجاوز الحد الدقيق للحساب.'); }
+    // Older days with an entered remainder but no total can be recovered, including fully deposited remainders.
+    // Preserve explicitly entered totals and never change any expense, remainder snapshot, or cash movement.
+    if (raw.version < 5) for (const key of Object.keys(days)) if (days[key].balance === null && days[key].remaining !== null) {
+      const sum = total(clean, key) + remaining(clean, key) + transferred(clean, key);
+      // A valid older ledger can exceed the total field's limit; do not block access to its records.
+      if (Number.isSafeInteger(sum) && Math.abs(sum) <= 1e12) days[key].balance = sum;
+    }
     return clean;
   }
-  return { empty, dateKey, validDate, numeric, day, total, funding, dailySpent, transferred, remaining, recordRemaining, movements, transferRemaining, cash, validate, recordedDays, dayDatePlan, correctDayDates, quantity, lineTotal, invoiceTotal, invoicePaid, invoiceDue, paymentAllocation, splitPayment, debtAvailable, openingDue, supplierBalance, supplierLedger, balanceBefore, expenses, allocation };
+  return { empty, dateKey, validDate, numeric, day, total, funding, dailySpent, transferred, remaining, balanceFromRemaining, recordRemaining, movements, transferRemaining, cash, validate, recordedDays, dayDatePlan, correctDayDates, quantity, lineTotal, invoiceTotal, invoicePaid, invoiceDue, paymentAllocation, splitPayment, debtAvailable, openingDue, supplierBalance, supplierLedger, balanceBefore, expenses, allocation };
 });

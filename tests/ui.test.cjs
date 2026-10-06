@@ -46,10 +46,10 @@ test('new expenses default to daily; shared allocation must match and cash-linke
 test('remaining is actual after existing expenses; partial/full deposits affect both balances without double counting', async t => {
   const ui = await setup(t), date = M.dateKey(); ui.click('[data-action="expense"]'); ui.value('amount', '10000'); await ui.submit();
   assert.equal(ui.w.document.querySelector('[data-action="remaining-transfer"]').disabled, true);
-  ui.click('[data-action="remaining"]'); ui.value('amount', '50000'); await ui.submit(); assert.equal(M.remaining(ui.stored(), date), 50000);
+  ui.click('[data-action="remaining"]'); ui.value('amount', '50000'); await ui.submit(); assert.equal(M.remaining(ui.stored(), date), 50000); assert.equal(ui.stored().days[date].balance,60000);
   ui.click('[data-action="remaining-transfer"]'); assert.equal(ui.w.document.getElementById('amount').value, '50,000'); ui.value('amount', '50001'); await ui.submit(); assert.match(ui.w.document.getElementById('form-error').textContent, /أكبر/); assert.equal(M.cash(ui.stored()), 0);
   ui.value('amount', '20000'); await ui.submit(); assert.equal(M.cash(ui.stored()), 20000); assert.equal(M.remaining(ui.stored(), date), 30000);
-  ui.click('[data-action="remaining-transfer"]'); await ui.submit(); assert.equal(M.cash(ui.stored()), 50000); assert.equal(M.remaining(ui.stored(), date), 0); assert.equal(M.total(ui.stored(), date), 10000); assert.equal(ui.w.document.querySelector('[data-action="remaining-transfer"]').disabled, true);
+  ui.click('[data-action="remaining-transfer"]'); await ui.submit(); assert.equal(M.cash(ui.stored()), 50000); assert.equal(M.remaining(ui.stored(), date), 0); assert.equal(ui.stored().days[date].balance,60000); assert.equal(M.total(ui.stored(), date), 10000); assert.equal(ui.w.document.querySelector('[data-action="remaining-transfer"]').disabled, true);
 });
 test('transfer edits and deletion refund daily balance and safe; undo restores the entire movement', async t => {
   const data = M.empty(), date = M.dateKey(); M.recordRemaining(data, date, 50000); M.transferRemaining(data, date, 50000, 'transfer', new Date().toISOString());
@@ -200,4 +200,12 @@ test('PDF cancellation is quiet and failure leaves account data intact and the e
     const toast = ui.w.document.getElementById('toast').textContent;
     if (pdfResult.canceled) assert.equal(toast, ''); else assert.match(toast, /تعذّر تصدير PDF.*مساحة/);
   }
+});
+
+test('failed remainder save keeps the old daily total and cash intact; retry inputs and undo restore the complete record', async t => {
+  const data=M.empty(),date=M.dateKey();data.days[date]={...M.day(data,date),balance:123000};
+  const failed=await setup(t,{data,failSave:true});failed.click('[data-action="remaining"]');failed.value('amount','50000');await failed.submit();
+  assert.equal(failed.stored().days[date].balance,123000);assert.equal(M.remaining(failed.stored(),date),null);assert.equal(M.cash(failed.stored()),0);assert.equal(failed.w.document.getElementById('amount').value,'50,000');
+  const ui=await setup(t,{data});ui.click('[data-action="remaining"]');ui.value('amount','50000');await ui.submit();assert.equal(ui.stored().days[date].balance,50000);
+  ui.action('undo');await tick();assert.deepEqual(ui.stored(),M.validate(data));
 });

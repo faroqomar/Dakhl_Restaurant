@@ -11,7 +11,7 @@ function fixture() {
 function pay(id = 'payment', amount = 5000, dailyAmount = 3000) { return { id, supplierId: 'supplier', invoiceId: 'invoice', date, amount, categoryId: 'market', funding: { source: 'shared', dailyAmount, cashAmount: amount - dailyAmount }, note: '', createdAt: `${date}T11:00:00.000Z` }; }
 test('old and new data migrate to supplier schema without changing existing money or remainder snapshots', () => {
   const old = M.empty(); old.version = 2; delete old.suppliers; delete old.invoices; delete old.payments; M.recordRemaining(old, date, 50000); old.transactions = fixture().transactions;
-  const next = M.validate(old); assert.equal(next.version, 4); assert.deepEqual(next.suppliers, []); assert.equal(M.cash(next), 200000); assert.equal(M.remaining(next, date), 50000);
+  const next = M.validate(old); assert.equal(next.version, 5); assert.deepEqual(next.suppliers, []); assert.equal(M.cash(next), 200000); assert.equal(M.remaining(next, date), 50000);
 });
 test('invoice records debt only; settlement contributes exactly once to expenses and affects its allocated source', () => {
   const s = fixture(); M.recordRemaining(s, date, 50000); assert.equal(M.supplierBalance(s, 'supplier'), 112500); assert.equal(M.total(s, date), 0); assert.equal(M.cash(s), 200000);
@@ -49,7 +49,7 @@ test('moving a settlement between days corrects both remainders and leaves cash/
 test('version 3 balances migrate to debts with legacy allocations and identical financial totals', () => {
   const old = fixture(); old.version = 3; delete old.debts;
   old.payments = [pay(), { ...pay('old-debt', 10000, 10000), invoiceId: null }];
-  const clean = M.validate(old); assert.equal(clean.version, 4); assert.deepEqual(clean.debts, []);
+  const clean = M.validate(old); assert.equal(clean.version, 5); assert.deepEqual(clean.debts, []);
   assert.deepEqual(M.paymentAllocation(clean.payments[0]), { invoiceAmount: 5000, debtAmount: 0 });
   assert.deepEqual(M.paymentAllocation(clean.payments[1]), { invoiceAmount: 0, debtAmount: 10000 });
   assert.equal(M.debtAvailable(clean, 'supplier'), 90000); assert.equal(M.supplierBalance(clean, 'supplier'), 97500); assert.equal(M.total(clean, date), 15000); assert.equal(M.cash(clean), 198000);

@@ -5,7 +5,7 @@ const { createReport } = require('../app/reports/pdf.cjs'), { renderPDF, writePD
 function document(report) { return new JSDOM(report.html).window.document; }
 test('daily PDF reflects manual totals, actual funding, remainder, chicken and historical cash without mutating accounts', () => {
   const s=fixture(),before=structuredClone(s),report=createReport(s,{kind:'daily',date:'2026-10-04'}),d=document(report),text=d.body.textContent;
-  assert.match(text,/350,000/); assert.match(text,/335,250/); assert.match(text,/385,000/); assert.match(text,/693,750/); assert.doesNotMatch(text,/999,999/);
+  assert.match(text,/950,000/); assert.match(text,/350,000/); assert.match(text,/335,250/); assert.match(text,/385,000/); assert.match(text,/693,750/); assert.doesNotMatch(text,/999,999/);
   assert.equal(d.querySelector('table tbody').children.length,M.expenses(s,'2026-10-04').length); assert.match(text,/85 دجاجة/); assert.match(text,/206 دجاجة/);
   assert.match(text,/100,000/); assert.match(text,/21,250/); assert.deepEqual(s,before);
   assert.throws(()=>createReport(s,{kind:'daily',date:'2026-02-30'})); assert.throws(()=>createReport(s,{kind:'daily',date:'2026-10-02'}));
