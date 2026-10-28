@@ -1,0 +1,19 @@
+docs/phases/00-step6-merge.md
+  s_8c9e903a0f085a::t_5d7301b8f0cf0a 25-26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1ce6bb1e854b0dc7628da62e79a886296bdacef1",
+  "prompts": {},
+  "sessions": {
+    "s_8c9e903a0f085a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1814f-9531-7040-8610-ab44599118ac",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
