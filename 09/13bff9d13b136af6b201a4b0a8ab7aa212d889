@@ -1,0 +1,340 @@
+outputs/phase00/ios-native-result-superseded.json
+  s_8c9e903a0f085a::t_2ebf6639867e7f 1-25
+docs/decisions/0017-phase00-development-baseline.md
+  s_8c9e903a0f085a::t_4c8c838a50ba45 1-29
+macos/Runner/Info.plist
+  s_8c9e903a0f085a::t_32dec8a464748b 1-32
+docs/phases/README.md
+  s_8c9e903a0f085a::t_4c8c838a50ba45 3,5
+macos/Flutter/Flutter-Release.xcconfig
+  s_8c9e903a0f085a::t_32dec8a464748b 1
+macos/Runner/Configs/Release.xcconfig
+  s_8c9e903a0f085a::t_32dec8a464748b 1-2
+macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+  s_8c9e903a0f085a::t_32dec8a464748b 1-8
+android/settings.gradle.kts
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-26
+test/app/development_identity_test.dart
+  s_8c9e903a0f085a::t_f2fb419fe5bd44 1-11,14-21,26-28,31-34
+  s_8c9e903a0f085a::t_fd6382269e8a9b 12-13,22-25,29-30
+assets/fonts/OFL.txt
+  s_8c9e903a0f085a::t_d03a3b85aab179 1-94
+ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+  s_8c9e903a0f085a::t_32dec8a464748b 1-8
+macos/Runner/Base.lproj/MainMenu.xib
+  s_8c9e903a0f085a::t_32dec8a464748b 1-343
+lib/capabilities/capability_probe_view_model.dart
+  s_8c9e903a0f085a::t_fc5059005af5be 1-10,15-148
+  s_8c9e903a0f085a::t_41c32620aed559 11-14
+macos/Runner/Configs/Warnings.xcconfig
+  s_8c9e903a0f085a::t_32dec8a464748b 1-13
+macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+  s_8c9e903a0f085a::t_32dec8a464748b 1-8
+ios/Runner.xcodeproj/project.pbxproj
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-385,387-401,403-418,420-433,435-566,568-588,590-647
+  s_8c9e903a0f085a::t_32dec8a464748b 386,402,419,434,567,589
+PHASES.md
+  s_8c9e903a0f085a::t_d1cd4727a54009 15,33,39-40,42-43,47
+  s_8c9e903a0f085a::t_1023e459f9b418 37
+  s_8c9e903a0f085a::t_bc88b44c07595d 36,45
+android/app/src/debug/AndroidManifest.xml
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-7
+lib/platform/probe_app.dart
+  s_8c9e903a0f085a::t_97101b475508ad 1-42,44-46,48-67,69-75,77,79-89,91-98,101-104,106-110,112-115,117-120,122-126,128-132,134-138,140-141,143,145-146,148-150
+  s_8c9e903a0f085a::t_c740f685b49863 43,47,68,76,78,90,99-100,105,111,116,121,127,133,139,142,144,147
+outputs/phase00/pdf-artifacts.json
+  s_8c9e903a0f085a::t_855a1efe8c7e23 1-44
+macos/Runner.xcodeproj/project.pbxproj
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-67,69-136,138-226,228-397,399-400,402-411,413-414,416-425,427-428,430-729
+  s_8c9e903a0f085a::t_32dec8a464748b 68,137,227,398,412,426
+  s_8c9e903a0f085a::t_5f9917ef6ee0a3 401,415,429
+ios/Flutter/AppFrameworkInfo.plist
+  s_8c9e903a0f085a::t_32dec8a464748b 1-24
+docs/planning/flutter-rebuild/phases/00.html
+  s_8c9e903a0f085a::t_4c8c838a50ba45 2
+PLANS.md
+  s_8c9e903a0f085a::t_4c8c838a50ba45 3
+docs/reference/application.md
+  s_8c9e903a0f085a::t_d1cd4727a54009 3-4
+outputs/phase00/android-native-dialogs.json
+  s_8c9e903a0f085a::t_1023e459f9b418 1-13
+lib/platform/native_probe_directory.dart
+  s_8c9e903a0f085a::t_f3169e3097ea34 1-23,30-31,33-40,42-47,49-54,56-59
+  s_8c9e903a0f085a::t_72ab873907acf1 24-29
+  s_8c9e903a0f085a::t_3df8919ba9ce2d 32,41,48,55
+test/capabilities/capability_probe_view_model_test.dart
+  s_8c9e903a0f085a::t_90b72a2560aa88 146-166,222-224,229-230
+  s_8c9e903a0f085a::t_8b197c639bd8ec 19-21,24-28,35-49,58-67,72-77,80-104,106-129,131-144,168-181,183-196,236
+  s_8c9e903a0f085a::t_3e86d7bc4ac3cb 1-18,22-23,29-34,50-57,68-71,78-79,105,130,145,182,197-221,225-228,231-235,237-242
+  s_8c9e903a0f085a::t_4b1377c4d0db64 167
+macos/Runner/Configs/Debug.xcconfig
+  s_8c9e903a0f085a::t_32dec8a464748b 1-2
+lib/platform/probe_main.dart
+  s_8c9e903a0f085a::t_97101b475508ad 1-23,27-41,48-49
+  s_8c9e903a0f085a::t_ce4113e9c5ff5a 24-26,42-47
+pubspec.yaml
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-14,20-23,26-29
+  s_8c9e903a0f085a::t_baade347096404 15-19,24-25,30-37
+outputs/phase00/ios-launch.json
+  s_8c9e903a0f085a::t_62707f81e7b5c0 1-10
+.metadata
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-36
+assets/fonts/SOURCE.md
+  s_8c9e903a0f085a::t_d03a3b85aab179 1-14
+ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-119
+macos/RunnerTests/RunnerTests.swift
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-12
+docs/planning/flutter-rebuild/phases/00.md
+  s_8c9e903a0f085a::t_4c8c838a50ba45 3,27
+  s_8c9e903a0f085a::t_f88c792ca8bf3a 28
+test/capabilities/isolated_probe_repository_test.dart
+  s_8c9e903a0f085a::t_90b72a2560aa88 159-187,205-207,221-227
+  s_8c9e903a0f085a::t_3f605520ef9963 1,46-47,54-64,69-74,102
+  s_8c9e903a0f085a::t_af52e998d25f8e 2-19,34,122,158,189-193,200,209-211,213-218,231-233,238-245,250-253,257-267,273-276,285-286,301
+  s_8c9e903a0f085a::t_f0040afd6dace0 48-53,65-68,75-101,103-121
+  s_8c9e903a0f085a::t_8b197c639bd8ec 20-33,35-45,123-157,194-199,202-204,208,219-220,228-229,234-237,246-249,254-256,268-272,277-284,287-300
+  s_8c9e903a0f085a::t_87163ce0dd5f09 188,201,212,230
+ios/Flutter/Release.xcconfig
+  s_8c9e903a0f085a::t_32dec8a464748b 1
+outputs/phase00/macos-native-write.txt
+  s_8c9e903a0f085a::t_53733a0b2547a1 5-7
+  s_8c9e903a0f085a::t_5d93bc5fc41ac1 1-4
+outputs/phase00/android-native-write.txt
+  s_8c9e903a0f085a::t_afb62d4fb008e0 9
+  s_8c9e903a0f085a::t_1aab99aa7e5f5a 11
+  s_8c9e903a0f085a::t_4d1e15c6365241 1-8,10,12-15
+ios/Runner/Info.plist
+  s_8c9e903a0f085a::t_32dec8a464748b 10,18
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-9,11-17,19-70
+android/build.gradle.kts
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-24
+assets/fonts/METADATA.pb
+  s_8c9e903a0f085a::t_d03a3b85aab179 1-72
+AGENTS.md
+  s_8c9e903a0f085a::t_4c8c838a50ba45 19
+macos/Runner/Release.entitlements
+  s_8c9e903a0f085a::t_32dec8a464748b 1-12
+macos/Runner/DebugProfile.entitlements
+  s_8c9e903a0f085a::t_32dec8a464748b 1-16
+macos/Runner/Configs/AppInfo.xcconfig
+  s_8c9e903a0f085a::t_32dec8a464748b 8,11
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-7,9-10,12-14
+docs/phases/00-build-evidence.md
+  s_8c9e903a0f085a::t_bc88b44c07595d 1-2,4-15,17-23
+  s_8c9e903a0f085a::t_2ebf6639867e7f 27-34
+  s_8c9e903a0f085a::t_abf9f8c1d2251d 35-46
+  s_8c9e903a0f085a::t_1023e459f9b418 3,16,24,47-67
+  s_8c9e903a0f085a::t_11393688bd8072 25-26,68-69
+.gitignore
+  s_8c9e903a0f085a::t_e5bb513f4a2564 22-52,54-72
+  s_8c9e903a0f085a::t_c5cbe3a7fee5c4 53
+android/app/src/main/AndroidManifest.xml
+  s_8c9e903a0f085a::t_32dec8a464748b 3
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-2,4-45
+test/platform/probe_run_identity_test.dart
+  s_8c9e903a0f085a::t_2b7250895aa8dc 1-15,19-22,24-37,40,42-53,55-67,69-82
+  s_8c9e903a0f085a::t_0973c695daecfa 16-17
+  s_8c9e903a0f085a::t_449bc5672a2f4e 18,23,38-39,41,54,68
+README.md
+  s_8c9e903a0f085a::t_4c8c838a50ba45 5,7,21-38
+  s_8c9e903a0f085a::t_140aa8d7fbab7a 39
+outputs/phase00/macos-native-dialogs.json
+  s_8c9e903a0f085a::t_855a1efe8c7e23 1-11
+test/platform/probe_app_test.dart
+  s_8c9e903a0f085a::t_90b72a2560aa88 38
+  s_8c9e903a0f085a::t_ff8b20c080cc26 16-18,51-53
+  s_8c9e903a0f085a::t_892add4eed8775 1-15,19-37,39-50,54-71
+android/app/src/profile/AndroidManifest.xml
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-7
+ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+  s_8c9e903a0f085a::t_32dec8a464748b 1-8
+lib/platform/native_file_selection.dart
+  s_8c9e903a0f085a::t_f3169e3097ea34 1-28,32-55,57-62,64-67,69-77,79-88,90-93
+  s_8c9e903a0f085a::t_e14a44507dfac0 29-31,56,63,68,78,89
+android/app/build.gradle.kts
+  s_8c9e903a0f085a::t_32dec8a464748b 8,18,33-34
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-7,9-17,19-32,35-47
+macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-17,19-35,37-51,53-86,88-103,105-117
+  s_8c9e903a0f085a::t_32dec8a464748b 18,36,52,87,104
+lib/platform/offline_arabic_pdf.dart
+  s_8c9e903a0f085a::t_b9701675a6789a 1-15,17-40,42-47,49-51,61-65,67-70,72-74,76-81,84,87-92,94-107,109-110,112,114-121,123-126,128-133,135-136,138,140-147,149-152
+  s_8c9e903a0f085a::t_8f979fec4b9c75 108,113,134,139
+  s_8c9e903a0f085a::t_be77f255f62a04 52-60
+  s_8c9e903a0f085a::t_f0ac29af193cda 16,41,48,66,71,75,82-83,85-86,93,111,122,127,137,148
+analysis_options.yaml
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-8
+.github/actionlint.yaml
+  s_8c9e903a0f085a::t_8b15734d9fb10c 1-5
+android/app/src/main/kotlin/com/eros/dakhlrestaurant/phase00/MainActivity.kt
+  s_8c9e903a0f085a::t_32dec8a464748b 1-5
+android/gradle.properties
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-6
+outputs/phase00/flutter-tests.txt
+  s_8c9e903a0f085a::t_1aab99aa7e5f5a 42-48
+  s_8c9e903a0f085a::t_c12535e669a176 1-41
+outputs/phase00/electron-tests.txt
+  s_8c9e903a0f085a::t_3699ca71e9b6b8 1-39
+  s_8c9e903a0f085a::t_3c7a372acccf75 40-161
+integration_test/native_capabilities_test.dart
+  s_8c9e903a0f085a::t_c06432f0963364 1,3-15,19-25,28-34,37-47,49-52,61,63,69,72-73,76-93
+  s_8c9e903a0f085a::t_7a44133b7fa2ca 2,74-75
+  s_8c9e903a0f085a::t_0c724e202c1942 16,53-60,62,64-68
+  s_8c9e903a0f085a::t_1aab99aa7e5f5a 17-18
+  s_8c9e903a0f085a::t_21ab4393f38af5 26-27,35-36,48,70-71
+macos/Flutter/Flutter-Debug.xcconfig
+  s_8c9e903a0f085a::t_32dec8a464748b 1
+docs/log/2026-10-28-phase-00-build.md
+  s_8c9e903a0f085a::t_1023e459f9b418 9
+  s_8c9e903a0f085a::t_d1cd4727a54009 1-8,10-15
+docs/decisions/README.md
+  s_8c9e903a0f085a::t_4c8c838a50ba45 3-4
+macos/Flutter/GeneratedPluginRegistrant.swift
+  s_8c9e903a0f085a::t_32dec8a464748b 8-9,12-13
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-7,10-11,14
+lib/app/app.dart
+  s_8c9e903a0f085a::t_baade347096404 1-42
+lib/capabilities/isolated_probe_repository.dart
+  s_8c9e903a0f085a::t_70013aa73e1e4f 63
+  s_8c9e903a0f085a::t_053d6c2b789c75 1-62,64,67-90,95-123,127-134,139-145,150-155,160-209
+  s_8c9e903a0f085a::t_8b197c639bd8ec 65-66,91-94,124-126,135-138,146-149,156-159
+integration_test/README.md
+  s_8c9e903a0f085a::t_0c724e202c1942 11,14-15,21,25-32
+  s_8c9e903a0f085a::t_c06432f0963364 1-6,8-9,12-13,17-20,22-23,33-53,55-59
+  s_8c9e903a0f085a::t_f0b0ec13ef2a6d 7,10,16,24,54
+lib/main.dart
+  s_8c9e903a0f085a::t_baade347096404 1-7
+docs/reference/project-scope.md
+  s_8c9e903a0f085a::t_d1cd4727a54009 21
+test/app/app_test.dart
+  s_8c9e903a0f085a::t_f2fb419fe5bd44 1-13,18-26,30-43
+  s_8c9e903a0f085a::t_fd6382269e8a9b 14-17,27-29
+outputs/phase00/android-build.txt
+  s_8c9e903a0f085a::t_87fc16b127ebb7 1-6
+  s_8c9e903a0f085a::t_bacae20623b0d9 7-20
+.fvmrc
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-3
+ios/RunnerTests/RunnerTests.swift
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-12
+lib/platform/probe_run_identity.dart
+  s_8c9e903a0f085a::t_0973c695daecfa 7-9
+  s_8c9e903a0f085a::t_4e8f31e082240d 1-6,10-33
+lib/capabilities/capability_contracts.dart
+  s_8c9e903a0f085a::t_4a188191fdaf1f 25-29
+  s_8c9e903a0f085a::t_4b1377c4d0db64 63
+  s_8c9e903a0f085a::t_8a72990f59104a 1-24,30-62,64-105
+test/capabilities/synthetic_probe_test.dart
+  s_8c9e903a0f085a::t_87163ce0dd5f09 17-18,31-32
+  s_8c9e903a0f085a::t_af52e998d25f8e 1-16,33-39,50,55-67,75-77
+  s_8c9e903a0f085a::t_8b197c639bd8ec 40-49,51-54,68-74
+  s_8c9e903a0f085a::t_90b72a2560aa88 19-30
+android/gradle/wrapper/gradle-wrapper.properties
+  s_8c9e903a0f085a::t_e5bb513f4a2564 1-5
+ios/Flutter/Debug.xcconfig
+  s_8c9e903a0f085a::t_32dec8a464748b 1
+test/platform/native_capabilities_test.dart
+  s_8c9e903a0f085a::t_5c1b9a5c5c36b0 113,119-121
+  s_8c9e903a0f085a::t_90aa4589d802c4 78-79,81
+  s_8c9e903a0f085a::t_f3169e3097ea34 1-14,16-17,19-44,46-48,50-52,54-56,58-59,61-74,76-77,82-90,92-96,98,100-106,108-112,122-124,126-130
+  s_8c9e903a0f085a::t_72ab873907acf1 114-118
+  s_8c9e903a0f085a::t_8f870d4caf6645 15,18,45,49,53,57,60,75,80,91,97,99,107,125
+.github/workflows/electron-reference.yml
+  s_8c9e903a0f085a::t_c5cbe3a7fee5c4 17-49,51-54,57,59-62,64
+  s_8c9e903a0f085a::t_9863ce149e5f6f 50
+  s_8c9e903a0f085a::t_23468609855a4e 1-16,55-56,58,63,65-70
+outputs/phase00/macos-native-export.json
+  s_8c9e903a0f085a::t_855a1efe8c7e23 1
+.github/workflows/flutter.yml
+  s_8c9e903a0f085a::t_df7f71f908d433 1-80
+android/.gitignore
+  s_8c9e903a0f085a::t_6c3d4a70a3c2af 1-14
+android/app/src/main/res/drawable-v21/launch_background.xml
+  s_8c9e903a0f085a::t_dbea7e605edc2d 1-12
+android/app/src/main/res/drawable/launch_background.xml
+  s_8c9e903a0f085a::t_c3736cea7d4c97 1-12
+android/app/src/main/res/values-night/styles.xml
+  s_8c9e903a0f085a::t_7a54c53cc2a786 1-18
+android/app/src/main/res/values/styles.xml
+  s_8c9e903a0f085a::t_11bf4ac66e1629 1-18
+ios/.gitignore
+  s_8c9e903a0f085a::t_bf0f461919441a 1-34
+ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+  s_8c9e903a0f085a::t_a26ea604fb05e8 1-7
+ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+  s_8c9e903a0f085a::t_683c0c0d24a50e 1-8
+ios/Runner.xcworkspace/contents.xcworkspacedata
+  s_8c9e903a0f085a::t_83e2e20adb7841 1-7
+ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+  s_8c9e903a0f085a::t_86b0c0ae7e91a5 1-8
+ios/Runner/AppDelegate.swift
+  s_8c9e903a0f085a::t_5ae9b1d51702a6 1-16
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+  s_8c9e903a0f085a::t_11b7d3b01bd3f1 1-122
+ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json
+  s_8c9e903a0f085a::t_8ed8f6fe07c231 1-23
+ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md
+  s_8c9e903a0f085a::t_022cb848a72ff9 1-5
+ios/Runner/Base.lproj/LaunchScreen.storyboard
+  s_8c9e903a0f085a::t_567be79af4e64d 1-37
+ios/Runner/Base.lproj/Main.storyboard
+  s_8c9e903a0f085a::t_f65d74551b70ce 1-26
+ios/Runner/Runner-Bridging-Header.h
+  s_8c9e903a0f085a::t_4a45637560f046 1
+ios/Runner/SceneDelegate.swift
+  s_8c9e903a0f085a::t_72e5c5502ca6c9 1-6
+macos/.gitignore
+  s_8c9e903a0f085a::t_ccc46568863d5c 1-7
+macos/Runner.xcworkspace/contents.xcworkspacedata
+  s_8c9e903a0f085a::t_fd012f86efbc85 1-7
+macos/Runner/AppDelegate.swift
+  s_8c9e903a0f085a::t_294f67b090af15 1-13
+macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+  s_8c9e903a0f085a::t_2640c4b6b0cee1 1-68
+macos/Runner/MainFlutterWindow.swift
+  s_8c9e903a0f085a::t_c91d76bd72b586 1-15
+outputs/phase00/android-launch.json
+  s_8c9e903a0f085a::t_088e85956cb5f3 1-15
+outputs/phase00/android-native-read.txt
+  s_8c9e903a0f085a::t_8a805c8e26eec0 1-14
+outputs/phase00/android-native-result.json
+  s_8c9e903a0f085a::t_4e224be454fe6f 1-26
+outputs/phase00/flutter-analyze.txt
+  s_8c9e903a0f085a::t_c77be4a300693e 1-2
+outputs/phase00/flutter-format.txt
+  s_8c9e903a0f085a::t_7dfc5258430946 1
+outputs/phase00/ios-native-read.txt
+  s_8c9e903a0f085a::t_42ad99726a4f39 1-7
+outputs/phase00/ios-native-result.json
+  s_8c9e903a0f085a::t_4993e12aabb01a 1-26
+outputs/phase00/ios-native-write.txt
+  s_8c9e903a0f085a::t_1f2b939bd3b529 1-7
+outputs/phase00/macos-native-read.txt
+  s_8c9e903a0f085a::t_6f0d5a7fcf8490 1-8
+outputs/phase00/macos-native-recovery.txt
+  s_8c9e903a0f085a::t_c4dc3acbdc705a 1-8
+outputs/phase00/macos-native-result.json
+  s_8c9e903a0f085a::t_76a34770a38be9 1-43
+outputs/phase00/macos-native-wrong-nonce.txt
+  s_8c9e903a0f085a::t_5fc7e804132ff1 1-39
+pubspec.lock
+  s_8c9e903a0f085a::t_cc405a9f9abd8a 1-670
+test/platform/offline_arabic_pdf_test.dart
+  s_8c9e903a0f085a::t_458bf139574430 1-101
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0913bff9d13b136af6b201a4b0a8ab7aa212d889",
+  "prompts": {},
+  "sessions": {
+    "s_8c9e903a0f085a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1814f-9531-7040-8610-ab44599118ac",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
