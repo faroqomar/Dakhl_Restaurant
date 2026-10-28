@@ -1,0 +1,34 @@
+# Daftar — project phases and scope
+
+Status: current phase definitions, 2026-10-28. Implementation has not started. The existing 12 phases remain unchanged.
+
+Read [AGENTS.md](AGENTS.md) for mandatory workflow and [PHASES.md](PHASES.md) for live status/evidence. This file is the binding phase index and incorporates the scope and acceptance requirements in each linked detailed phase file. The [visual plan](docs/planning/flutter-rebuild/plan.html) and [179-image library](docs/planning/flutter-rebuild/gallery.html) remain in place.
+
+## Phase definitions
+
+| Phase | Name and detailed scope | Dependencies | Outcome |
+| --- | --- | --- | --- |
+| 00 | [Baseline and delivery setup](docs/planning/flutter-rebuild/phases/00.md) | None | A runnable, isolated Flutter app on macOS, Android and iPhone, with a frozen specification. |
+| 01 | [Design system, navigation and interaction shell](docs/planning/flutter-rebuild/phases/01.md) | 00 | A responsive Arabic component system and complete navigation shell with shortcuts and safe form interactions. |
+| 02 | [Local accounts, validation and safe persistence](docs/planning/flutter-rebuild/phases/02.md) | 00, 01 | Accounts can be saved, reopened and recovered safely while offline. |
+| 03 | [Sellable products and inventory](docs/planning/flutter-rebuild/phases/03.md) | 01, 02 | The sellable catalog and quantity ledger work end to end. |
+| 04 | [Cash sales, saved receipt, drafts and held orders](docs/planning/flutter-rebuild/phases/04.md) | 01, 02, 03 | A cashier can build, suspend, recover and complete a ticket safely, with a saved receipt and one stock/cash effect. |
+| 05 | [Sales history, returns and voids](docs/planning/flutter-rebuild/phases/05.md) | 02, 03, 04 | Saved sales can be found, inspected, refunded or corrected with faithful accounting. |
+| 06 | [Daily accounting, expense categories and cashbox](docs/planning/flutter-rebuild/phases/06.md) | 01, 02, 05 | Categories, source-funded expenses, daily balances, chicken counts, cash movements and daily-to-cashbox transfers reconcile as one workflow. |
+| 07 | [Suppliers, debts, materials and prices](docs/planning/flutter-rebuild/phases/07.md) | 01, 02, 06 | Supplier liabilities and a shared materials/default-price catalog are ready for purchasing. |
+| 08 | [Purchase invoices, analysis and supplier payments](docs/planning/flutter-rebuild/phases/08.md) | 02, 06, 07 | Invoices, quantity/price analysis and partial/full settlement work together, including atomic invoice-with-payment. |
+| 09 | [Settings, backups, import and recovery](docs/planning/flutter-rebuild/phases/09.md) | 01, 02, 04, 06, 08 | A user can configure the app and safely move or restore all finalized records. |
+| 10 | [Statements, day review, PDF reports and printing](docs/planning/flutter-rebuild/phases/10.md) | 03, 04, 05, 06, 07, 08, 09 | The owner can review paid spending and the restaurant day, then export/share/print every operational report. |
+| 11 | [Complete MVP verification, migration rehearsal and release](docs/planning/flutter-rebuild/phases/11.md) | 00–10 | Installable MVP builds on all three platforms, with end-to-end evidence and rollback instructions. |
+
+## Required execution gates
+
+For each phase, the Lead records Git isolation, assigned agents and applicable design requirements in PHASES.md. A read-only Planner defines the bounded work, tests, meaningful performance measurements and CI needs. UI work first validates the suitable reference in Figma and obtains approval; non-UI work records Design: N/A. Workers implement with meaningful tests written before behavior changes. An independent Reviewer verifies the result and fixes are re-verified.
+
+Create a traceable PR, satisfy mandatory quality gates, obtain user approval before merging, then perform applicable release/rollback validation. Update PHASES.md and evidence in docs/phases/. DONE requires the approved, merged PR and every applicable check; stop afterward until the owner starts the next phase.
+
+## Scope boundaries
+
+Preserve all existing phase work items, financial invariants, failure/recovery checks and screenshots. All platforms remain macOS, Android and iPhone; data remains offline with backup/import. Exact current-design reproduction remains the default, subject to phase-specific owner edits and the Figma gate. The reference app is for consultation, not the destination for new Flutter features.
+
+Changes to phase definitions must update this index, linked detail, tracker and generated views together. The plan builder is a publication helper, not independent authorization to change scope or reset status.

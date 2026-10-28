@@ -1,0 +1,964 @@
+{
+  "pages": [
+    {
+      "view": "sales",
+      "title": "بيع جديد",
+      "buttons": 20,
+      "overflow": false
+    },
+    {
+      "view": "sale-history",
+      "title": "كل مبيعاتك، بمكان واحد.",
+      "buttons": 11,
+      "overflow": false
+    },
+    {
+      "view": "inventory",
+      "title": "مخزن بسيط، صورة واضحة.",
+      "buttons": 34,
+      "overflow": false
+    },
+    {
+      "view": "expenses",
+      "title": "كل يوم، حسابه واضح.",
+      "buttons": 30,
+      "overflow": false
+    },
+    {
+      "view": "statement",
+      "title": "كشف الحساب",
+      "buttons": 12,
+      "overflow": false
+    },
+    {
+      "view": "suppliers",
+      "title": "كل مورد، حسابه مرتب.",
+      "buttons": 21,
+      "overflow": false
+    },
+    {
+      "view": "invoices",
+      "title": "فواتير المشتريات",
+      "buttons": 10,
+      "overflow": false
+    },
+    {
+      "view": "materials",
+      "title": "المواد والأسعار",
+      "buttons": 11,
+      "overflow": false
+    },
+    {
+      "view": "payments",
+      "title": "التسديد، بمحله الصحيح.",
+      "buttons": 10,
+      "overflow": false
+    },
+    {
+      "view": "cash",
+      "title": "القاصة، بحركة واضحة.",
+      "buttons": 14,
+      "overflow": false
+    },
+    {
+      "view": "savings",
+      "title": "سلفة العمال، واضحة.",
+      "buttons": 16,
+      "overflow": false
+    },
+    {
+      "view": "categories",
+      "title": "خاناتك، حسب شغلك.",
+      "buttons": 9,
+      "overflow": false
+    },
+    {
+      "view": "settings",
+      "title": "حساباتك تبقى يمّك.",
+      "buttons": 14,
+      "overflow": false
+    }
+  ],
+  "flows": [
+    "Sale draft survives navigation",
+    {
+      "saveFailurePreservesCart": 1,
+      "error": "اختبار: تعذّر الحفظ"
+    },
+    "Sale saved after retry; receipt shown",
+    "Sale cancellation with reason succeeds",
+    "Arabic-number expense create",
+    "Remaining balance then partial cash transfer",
+    "Transfer delete then session undo",
+    "Supplier creation",
+    "Purchase invoice with fractional quantity and partial payment",
+    "Payment edit",
+    "Worker pool receipt",
+    "Stock restock",
+    "Shortcut and order type settings save",
+    "Product creation with opening stock",
+    "Stock damage adjustment",
+    "Category creation",
+    "Worker creation and partial contribution",
+    {
+      "paidInvoiceDeleteBlocked": "القائمة بيها تسديدات. احذف تسديداتها أولاً حتى ترجع مبالغها لأرصدة الدفع."
+    }
+  ],
+  "bugs": {
+    "cashFilteredSummary": "المجموع حسب الفلتر\n12,000 د.ع\nحصة اليومي\n12,000 د.ع\nحصة القاصة\n0 د.ع\nعدد البنود\n1",
+    "oldExpenseForm": {
+      "title": "إضافة مصروف",
+      "amount": "",
+      "date": "2026-10-26"
+    },
+    "dailyTotalDialog": "مجموع الخانات المحسوب\n\n42,500د.ع",
+    "drawerDraftAfterEscape": "",
+    "focusAfterAdd": {
+      "tag": "BODY",
+      "id": ""
+    },
+    "clearWithoutConfirm": 0,
+    "cartAfterReload": 0,
+    "duplicateGroupIDs": 2,
+    "productOrderAfterEdit": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7",
+      "p0"
+    ],
+    "inventoryNoMatch": "أضف أول صنف للمخزن\n\nسجّل الاسم وسعر البيع والكمية، ويصير جاهز للبيع.\n\nإضافة صنف",
+    "savingsAsOf": {
+      "summary": "المتجمع المتاح\n\n1,000د.ع\n\nمجموع دفعات العمال\n\n1,000د.ع\n\nمجموع الاستلام\n\n0د.ع",
+      "log": "سجل السلفة\nدفعات العمال\nالاستلام\nالتاريخ\tالعامل\tالمبلغ · د.ع\tالملاحظات / الفترة\tتعديل\n2026-10-26عامل تجريبي\t1,000\t—\n2026-10-26 — 2026-10-26\n\t\n\n2026-10-25عامل تجريبي\t1,000\t—\n2026-10-25 — 2026-10-25\n\t"
+    },
+    "purchaseFractionDisplay": "كمية الكارتون\n0\nكمية القطعة\n3\nالمبلغ الكلي\n12,500 د.ع\nعدد الفواتير\n1",
+    "newInvoicePreview": {
+      "before": "60,000",
+      "after": "60,000",
+      "paymentText": "تاريخ الوصل: 2026-10-26 · المبلغ: 5,000 د.ع. (للقائمة 5,000 · للديون 0). بعد الوصل يبقى على المورد: 55,000 د.ع."
+    },
+    "blankSaleDate": {
+      "visible": "",
+      "draft": "2026-10-26",
+      "checkoutEnabled": true
+    },
+    "undoSale": {
+      "salesAfterUndo": 1,
+      "originalSales": 1
+    },
+    "archivedCartLineAfterRemove": 1,
+    "fractionalStock": {
+      "stock": 0.5,
+      "cartLines": 0,
+      "message": "الكمية المطلوبة أكثر من المتوفر."
+    },
+    "futureStockInventory": "كباب دجاج\nالمشاوي · 10001\n\t8,000\t30 قطعة\tمتوفر\t\nتعديل\nتزويد / تسوية\nالحركة",
+    "futureStockSales": "المشاوي\n+\nكباب دجاج\n8,000 د.ع\nالمتوفر 20 قطعة",
+    "noSupplierInvoice": {
+      "errors": [
+        "اختار مورداً أولاً."
+      ],
+      "drawerCount": 0,
+      "title": "فواتير المشتريات",
+      "drawerState": {
+        "kind": "invoice",
+        "id": null,
+        "originalDate": "2026-10-26",
+        "supplierId": null
+      }
+    }
+  },
+  "geometry": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "collapsed": false,
+      "horizontal": false,
+      "grid": {
+        "x": 38,
+        "y": 241.9921875,
+        "width": 762.6015625,
+        "height": 712.0078125,
+        "bottom": 954,
+        "scroll": 712,
+        "client": 712
+      },
+      "cart": {
+        "x": 825.6015625,
+        "y": 292.890625,
+        "width": 351.3984375,
+        "height": 390.921875,
+        "bottom": 683.8125,
+        "scroll": 391,
+        "client": 391
+      },
+      "checkout": {
+        "x": 843.6015625,
+        "y": 882,
+        "width": 315.3984375,
+        "height": 48,
+        "bottom": 930,
+        "scroll": 46,
+        "client": 46
+      },
+      "bill": {
+        "x": 824.6015625,
+        "y": 177.1953125,
+        "width": 353.3984375,
+        "height": 802.8046875,
+        "bottom": 980,
+        "scroll": 801,
+        "client": 801
+      },
+      "sidebar": {
+        "x": 1216,
+        "y": 0,
+        "width": 224,
+        "height": 1000,
+        "bottom": 1000,
+        "scroll": 1000,
+        "client": 1000
+      }
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "collapsed": true,
+      "horizontal": false,
+      "grid": {
+        "x": 38,
+        "y": 243.9921875,
+        "width": 917.1640625,
+        "height": 710.0078125,
+        "bottom": 954,
+        "scroll": 710,
+        "client": 710
+      },
+      "cart": {
+        "x": 980.1640625,
+        "y": 294.890625,
+        "width": 420.8359375,
+        "height": 388.921875,
+        "bottom": 683.8125,
+        "scroll": 389,
+        "client": 389
+      },
+      "checkout": {
+        "x": 998.1640625,
+        "y": 882,
+        "width": 384.8359375,
+        "height": 48,
+        "bottom": 930,
+        "scroll": 46,
+        "client": 46
+      },
+      "bill": {
+        "x": 979.1640625,
+        "y": 179.1953125,
+        "width": 422.8359375,
+        "height": 800.8046875,
+        "bottom": 980,
+        "scroll": 799,
+        "client": 799
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0,
+        "scroll": 0,
+        "client": 0
+      }
+    },
+    {
+      "width": 1252,
+      "height": 943,
+      "collapsed": false,
+      "horizontal": false,
+      "grid": {
+        "x": 38,
+        "y": 241.9921875,
+        "width": 618,
+        "height": 655.0078125,
+        "bottom": 897,
+        "scroll": 655,
+        "client": 655
+      },
+      "cart": {
+        "x": 681,
+        "y": 292.890625,
+        "width": 308,
+        "height": 333.921875,
+        "bottom": 626.8125,
+        "scroll": 334,
+        "client": 334
+      },
+      "checkout": {
+        "x": 699,
+        "y": 825,
+        "width": 272,
+        "height": 48,
+        "bottom": 873,
+        "scroll": 46,
+        "client": 46
+      },
+      "bill": {
+        "x": 680,
+        "y": 177.1953125,
+        "width": 310,
+        "height": 745.8046875,
+        "bottom": 923,
+        "scroll": 744,
+        "client": 744
+      },
+      "sidebar": {
+        "x": 1028,
+        "y": 0,
+        "width": 224,
+        "height": 943,
+        "bottom": 943,
+        "scroll": 943,
+        "client": 943
+      }
+    },
+    {
+      "width": 1252,
+      "height": 943,
+      "collapsed": true,
+      "horizontal": false,
+      "grid": {
+        "x": 38,
+        "y": 243.9921875,
+        "width": 787.4453125,
+        "height": 653.0078125,
+        "bottom": 897,
+        "scroll": 653,
+        "client": 653
+      },
+      "cart": {
+        "x": 850.4453125,
+        "y": 294.890625,
+        "width": 362.5546875,
+        "height": 331.921875,
+        "bottom": 626.8125,
+        "scroll": 332,
+        "client": 332
+      },
+      "checkout": {
+        "x": 868.4453125,
+        "y": 825,
+        "width": 326.5546875,
+        "height": 48,
+        "bottom": 873,
+        "scroll": 46,
+        "client": 46
+      },
+      "bill": {
+        "x": 849.4453125,
+        "y": 179.1953125,
+        "width": 364.5546875,
+        "height": 743.8046875,
+        "bottom": 923,
+        "scroll": 742,
+        "client": 742
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0,
+        "scroll": 0,
+        "client": 0
+      }
+    },
+    {
+      "width": 1000,
+      "height": 700,
+      "collapsed": false,
+      "horizontal": false,
+      "grid": {
+        "x": 24,
+        "y": 237.296875,
+        "width": 463,
+        "height": 424.703125,
+        "bottom": 662,
+        "scroll": 1192,
+        "client": 425
+      },
+      "cart": {
+        "x": 503,
+        "y": 203.1953125,
+        "width": 288,
+        "height": 227.421875,
+        "bottom": 430.6171875,
+        "scroll": 227,
+        "client": 227
+      },
+      "checkout": {
+        "x": 517,
+        "y": 600.40625,
+        "width": 260,
+        "height": 47.59375,
+        "bottom": 648,
+        "scroll": 46,
+        "client": 46
+      },
+      "bill": {
+        "x": 502,
+        "y": 128,
+        "width": 290,
+        "height": 560,
+        "bottom": 688,
+        "scroll": 558,
+        "client": 558
+      },
+      "sidebar": {
+        "x": 816,
+        "y": 0,
+        "width": 184,
+        "height": 700,
+        "bottom": 700,
+        "scroll": 700,
+        "client": 700
+      }
+    },
+    {
+      "width": 1000,
+      "height": 700,
+      "collapsed": true,
+      "horizontal": false,
+      "grid": {
+        "x": 24,
+        "y": 239.296875,
+        "width": 647,
+        "height": 422.703125,
+        "bottom": 662,
+        "scroll": 1441,
+        "client": 423
+      },
+      "cart": {
+        "x": 687,
+        "y": 205.1953125,
+        "width": 288,
+        "height": 225.421875,
+        "bottom": 430.6171875,
+        "scroll": 225,
+        "client": 225
+      },
+      "checkout": {
+        "x": 701,
+        "y": 600.40625,
+        "width": 260,
+        "height": 47.59375,
+        "bottom": 648,
+        "scroll": 46,
+        "client": 46
+      },
+      "bill": {
+        "x": 686,
+        "y": 130,
+        "width": 290,
+        "height": 558,
+        "bottom": 688,
+        "scroll": 556,
+        "client": 556
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0,
+        "scroll": 0,
+        "client": 0
+      }
+    },
+    {
+      "width": 900,
+      "height": 580,
+      "collapsed": false,
+      "horizontal": false,
+      "grid": {
+        "x": 24,
+        "y": 237.296875,
+        "width": 363,
+        "height": 304.703125,
+        "bottom": 542,
+        "scroll": 1057,
+        "client": 305
+      },
+      "cart": {
+        "x": 403,
+        "y": 203.1953125,
+        "width": 288,
+        "height": 107.421875,
+        "bottom": 310.6171875,
+        "scroll": 107,
+        "client": 107
+      },
+      "checkout": {
+        "x": 417,
+        "y": 480.40625,
+        "width": 260,
+        "height": 47.59375,
+        "bottom": 528,
+        "scroll": 46,
+        "client": 46
+      },
+      "bill": {
+        "x": 402,
+        "y": 128,
+        "width": 290,
+        "height": 440,
+        "bottom": 568,
+        "scroll": 438,
+        "client": 438
+      },
+      "sidebar": {
+        "x": 716,
+        "y": 0,
+        "width": 184,
+        "height": 580,
+        "bottom": 580,
+        "scroll": 580,
+        "client": 580
+      }
+    },
+    {
+      "width": 900,
+      "height": 580,
+      "collapsed": true,
+      "horizontal": false,
+      "grid": {
+        "x": 24,
+        "y": 239.296875,
+        "width": 547,
+        "height": 302.703125,
+        "bottom": 542,
+        "scroll": 1306,
+        "client": 303
+      },
+      "cart": {
+        "x": 587,
+        "y": 205.1953125,
+        "width": 288,
+        "height": 105.421875,
+        "bottom": 310.6171875,
+        "scroll": 105,
+        "client": 105
+      },
+      "checkout": {
+        "x": 601,
+        "y": 480.40625,
+        "width": 260,
+        "height": 47.59375,
+        "bottom": 528,
+        "scroll": 46,
+        "client": 46
+      },
+      "bill": {
+        "x": 586,
+        "y": 130,
+        "width": 290,
+        "height": 438,
+        "bottom": 568,
+        "scroll": 436,
+        "client": 436
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0,
+        "scroll": 0,
+        "client": 0
+      }
+    },
+    {
+      "width": 760,
+      "height": 844,
+      "collapsed": false,
+      "horizontal": false,
+      "grid": {
+        "x": 12,
+        "y": 222.796875,
+        "width": 736,
+        "height": 300.859375,
+        "bottom": 523.65625,
+        "scroll": 742,
+        "client": 301
+      },
+      "cart": {
+        "x": 13,
+        "y": 593.15625,
+        "width": 734,
+        "height": 68.046875,
+        "bottom": 661.203125,
+        "scroll": 68,
+        "client": 68
+      },
+      "checkout": {
+        "x": 25,
+        "y": 786.6015625,
+        "width": 710,
+        "height": 44.3984375,
+        "bottom": 831,
+        "scroll": 42,
+        "client": 42
+      },
+      "bill": {
+        "x": 12,
+        "y": 553.65625,
+        "width": 736,
+        "height": 286.34375,
+        "bottom": 840,
+        "scroll": 284,
+        "client": 284
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 760,
+        "height": 98,
+        "bottom": 98,
+        "scroll": 98,
+        "client": 98
+      }
+    },
+    {
+      "width": 760,
+      "height": 844,
+      "collapsed": true,
+      "horizontal": false,
+      "grid": {
+        "x": 12,
+        "y": 126.796875,
+        "width": 736,
+        "height": 353.65625,
+        "bottom": 480.453125,
+        "scroll": 742,
+        "client": 354
+      },
+      "cart": {
+        "x": 13,
+        "y": 549.953125,
+        "width": 734,
+        "height": 111.25,
+        "bottom": 661.203125,
+        "scroll": 111,
+        "client": 111
+      },
+      "checkout": {
+        "x": 25,
+        "y": 786.6015625,
+        "width": 710,
+        "height": 44.3984375,
+        "bottom": 831,
+        "scroll": 42,
+        "client": 42
+      },
+      "bill": {
+        "x": 12,
+        "y": 510.453125,
+        "width": 736,
+        "height": 329.546875,
+        "bottom": 840,
+        "scroll": 328,
+        "client": 328
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0,
+        "scroll": 0,
+        "client": 0
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "collapsed": false,
+      "horizontal": false,
+      "grid": {
+        "x": 12,
+        "y": 222.796875,
+        "width": 366,
+        "height": 300.859375,
+        "bottom": 523.65625,
+        "scroll": 813,
+        "client": 301
+      },
+      "cart": {
+        "x": 13,
+        "y": 593.15625,
+        "width": 364,
+        "height": 68.046875,
+        "bottom": 661.203125,
+        "scroll": 68,
+        "client": 68
+      },
+      "checkout": {
+        "x": 25,
+        "y": 786.6015625,
+        "width": 340,
+        "height": 44.3984375,
+        "bottom": 831,
+        "scroll": 42,
+        "client": 42
+      },
+      "bill": {
+        "x": 12,
+        "y": 553.65625,
+        "width": 366,
+        "height": 286.34375,
+        "bottom": 840,
+        "scroll": 284,
+        "client": 284
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 98,
+        "bottom": 98,
+        "scroll": 98,
+        "client": 98
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "collapsed": true,
+      "horizontal": false,
+      "grid": {
+        "x": 12,
+        "y": 126.796875,
+        "width": 366,
+        "height": 353.65625,
+        "bottom": 480.453125,
+        "scroll": 813,
+        "client": 354
+      },
+      "cart": {
+        "x": 13,
+        "y": 549.953125,
+        "width": 364,
+        "height": 111.25,
+        "bottom": 661.203125,
+        "scroll": 111,
+        "client": 111
+      },
+      "checkout": {
+        "x": 25,
+        "y": 786.6015625,
+        "width": 340,
+        "height": 44.3984375,
+        "bottom": 831,
+        "scroll": 42,
+        "client": 42
+      },
+      "bill": {
+        "x": 12,
+        "y": 510.453125,
+        "width": 366,
+        "height": 329.546875,
+        "bottom": 840,
+        "scroll": 328,
+        "client": 328
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0,
+        "scroll": 0,
+        "client": 0
+      }
+    },
+    {
+      "width": 390,
+      "height": 640,
+      "collapsed": false,
+      "horizontal": false,
+      "grid": {
+        "x": 12,
+        "y": 222.796875,
+        "width": 366,
+        "height": 142.7578125,
+        "bottom": 365.5546875,
+        "scroll": 813,
+        "client": 143
+      },
+      "cart": {
+        "x": 13,
+        "y": 432.0546875,
+        "width": 364,
+        "height": 37.1484375,
+        "bottom": 469.203125,
+        "scroll": 49,
+        "client": 37
+      },
+      "checkout": {
+        "x": 25,
+        "y": 582.6015625,
+        "width": 340,
+        "height": 44.3984375,
+        "bottom": 627,
+        "scroll": 42,
+        "client": 42
+      },
+      "bill": {
+        "x": 12,
+        "y": 395.5546875,
+        "width": 366,
+        "height": 240.4453125,
+        "bottom": 636,
+        "scroll": 238,
+        "client": 238
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 98,
+        "bottom": 98,
+        "scroll": 98,
+        "client": 98
+      }
+    },
+    {
+      "width": 390,
+      "height": 640,
+      "collapsed": true,
+      "horizontal": false,
+      "grid": {
+        "x": 12,
+        "y": 126.796875,
+        "width": 366,
+        "height": 185.953125,
+        "bottom": 312.75,
+        "scroll": 813,
+        "client": 186
+      },
+      "cart": {
+        "x": 13,
+        "y": 379.25,
+        "width": 364,
+        "height": 89.953125,
+        "bottom": 469.203125,
+        "scroll": 90,
+        "client": 90
+      },
+      "checkout": {
+        "x": 25,
+        "y": 582.6015625,
+        "width": 340,
+        "height": 44.3984375,
+        "bottom": 627,
+        "scroll": 42,
+        "client": 42
+      },
+      "bill": {
+        "x": 12,
+        "y": 342.75,
+        "width": 366,
+        "height": 293.25,
+        "bottom": 636,
+        "scroll": 291,
+        "client": 291
+      },
+      "sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0,
+        "scroll": 0,
+        "client": 0
+      }
+    },
+    {
+      "view": "expenses",
+      "width": 900,
+      "height": 580,
+      "horizontal": false,
+      "scrollWidth": 900
+    },
+    {
+      "view": "statement",
+      "width": 900,
+      "height": 580,
+      "horizontal": false,
+      "scrollWidth": 900
+    },
+    {
+      "view": "suppliers",
+      "width": 900,
+      "height": 580,
+      "horizontal": false,
+      "scrollWidth": 900
+    },
+    {
+      "view": "invoices",
+      "width": 900,
+      "height": 580,
+      "horizontal": false,
+      "scrollWidth": 900
+    },
+    {
+      "view": "cash",
+      "width": 900,
+      "height": 580,
+      "horizontal": false,
+      "scrollWidth": 900
+    },
+    {
+      "view": "savings",
+      "width": 900,
+      "height": 580,
+      "horizontal": false,
+      "scrollWidth": 900
+    },
+    {
+      "view": "settings",
+      "width": 900,
+      "height": 580,
+      "horizontal": false,
+      "scrollWidth": 900
+    }
+  ],
+  "accessibility": {
+    "smallTargets": [
+      {
+        "label": "sale-date",
+        "w": 125,
+        "h": 21
+      },
+      {
+        "label": "كمية كباب لحم",
+        "w": 46,
+        "h": 14
+      }
+    ],
+    "searchNames": {
+      "labels": [
+        ""
+      ],
+      "aria": null,
+      "placeholder": "ابحث باسم الصنف أو رمزه…"
+    }
+  },
+  "errors": [
+    "اختار مورداً أولاً."
+  ]
+}

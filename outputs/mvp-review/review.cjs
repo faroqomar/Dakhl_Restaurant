@@ -1,0 +1,20 @@
+const {app,BrowserWindow,ipcMain}=require('electron'),fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'../..'),M=require(path.join(root,'app/ui/model.js'));app.setPath('userData',path.join(__dirname,'isolated-profile'));
+app.on('window-all-closed',()=>{});
+let state,prints=0;ipcMain.handle('accounts:load',()=>({ok:true,data:state,directory:'isolated-mvp-review'}));ipcMain.handle('accounts:save',(_e,d)=>({ok:true,data:state=M.validate(d)}));ipcMain.handle('accounts:print',()=>{prints++;return {ok:true,canceled:true}});
+app.whenReady().then(async()=>{try{const results=[];for(const [width,height] of [[1512,982],[1024,768],[390,844]]){
+ state=require(path.join(root,'scripts/preview-fixture.cjs')).previewFixture();
+ const w=new BrowserWindow({show:false,width,height,useContentSize:true,webPreferences:{preload:path.join(root,'app/preload.cjs'),sandbox:true,contextIsolation:true,nodeIntegration:false}});
+ w.webContents.on('console-message',(_e,...args)=>console.log('renderer',...args));
+ await w.loadFile(path.join(root,'app/ui/index.html'));const js=s=>w.webContents.executeJavaScript(s);
+ await js(`localStorage.clear()`);await w.reload();await new Promise(r=>setTimeout(r,200));
+ const click=async selector=>{console.log(width,selector);await js(`(()=>{const el=document.querySelector(${JSON.stringify(selector)});if(!el)throw Error('Missing '+${JSON.stringify(selector)});el.click()})()`);await new Promise(r=>setTimeout(r,100));};
+ const input=async(id,value)=>js(`(()=>{const e=document.getElementById(${JSON.stringify(id)});e.value=${JSON.stringify(value)};e.dispatchEvent(new Event('input',{bubbles:true}));})()`);
+ const snap=async(name)=>{await new Promise(r=>setTimeout(r,400));await js(`document.getAnimations().forEach(a=>{if(a.effect.getTiming().iterations!==Infinity)a.finish()});new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))`);await new Promise(r=>setTimeout(r,100));const info=await js(`({pageOverflow:document.documentElement.scrollWidth>innerWidth,dialogOverflow:(()=>{const e=document.querySelector('.drawer');return !!e&&e.scrollWidth>e.clientWidth+1})(),title:document.querySelector('#drawer-title')?.textContent})`);results.push({width,name,...info});fs.writeFileSync(path.join(__dirname,`${width}-${name}.png`),(await w.webContents.capturePage()).toPNG());};
+ await click('[data-view="sales"]');await click('[data-action="sale-add"][data-id="p0"]');await click('[data-action="sale-hold"]');await input('held-label','طاولة 3');await click('[data-action="sale-hold-confirm"]');await click('[data-action="held-orders"]');await snap('held-orders');await click('[data-action="sale-resume"]');
+ await click('[data-action="sale-add"][data-id="p0"]');await input('sale-discount','2000');await click('[data-action="sale-complete"]');await snap('paid-receipt');if(state.sales.length!==1)throw Error('Sale not saved');await click('.receipt-actions [data-action="sale-print"]');
+ await click('.receipt-actions [data-action="sale-receipt"]');await click('[data-action="sale-return"]');await input('return-quantity-0','1');await input('return-reason','إرجاع صنف من الطلب');await snap('return-form');
+ await js(`document.querySelector('[data-return-restock]').checked=true;document.getElementById('return-confirm').checked=true;document.getElementById('entry-form').requestSubmit()`);await new Promise(r=>setTimeout(r,150));
+ if(state.saleReturns.length!==1||state.saleReturns[0].amount!==11000)throw Error('Refund not saved exactly');
+ await click('[data-view="sale-history"]');await click('[data-action="sale-receipt"]');await snap('returned-receipt');await click('[data-action="close-drawer"]');await click('[data-view="expenses"]');await click('[data-action="day-review"]');await snap('day-review');w.destroy();
+ }fs.writeFileSync(path.join(__dirname,'results.json'),JSON.stringify(results,null,2));console.log(JSON.stringify({cases:results.length,prints,failures:results.filter(x=>x.pageOverflow||x.dialogOverflow)}));app.quit();}catch(e){console.error(e);app.exit(1)}});

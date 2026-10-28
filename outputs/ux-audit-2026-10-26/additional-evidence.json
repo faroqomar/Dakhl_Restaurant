@@ -1,0 +1,51 @@
+{
+  "zoom200": {
+    "w": 450,
+    "h": 290,
+    "checkoutBottom": 485,
+    "cartHeight": 19.703125,
+    "catalogHeight": 18.203125
+  },
+  "computedContrast": {
+    "color": "rgb(100, 117, 104)",
+    "background": "rgb(239, 242, 233)",
+    "fontSize": "11px"
+  },
+  "performance": [
+    {
+      "sales": 100,
+      "bytes": 32290,
+      "validationMs": 1.2450410000000147,
+      "renderMs": 29.600000001490116,
+      "layoutMs": 19.600000001490116,
+      "rows": 100,
+      "nodes": 1253
+    },
+    {
+      "sales": 5000,
+      "bytes": 1452390,
+      "validationMs": 21.091291999999953,
+      "renderMs": 797.6999999955297,
+      "layoutMs": 364.29999999701977,
+      "rows": 5000,
+      "nodes": 55153
+    }
+  ],
+  "pdf": {
+    "results": [
+      {
+        "name": "daily",
+        "bytes": 154213
+      },
+      {
+        "name": "purchase",
+        "bytes": 122882
+      },
+      {
+        "name": "sale",
+        "bytes": 87960
+      }
+    ],
+    "salesOnlyError": "ماكو بيانات مسجّلة بهذا اليوم حتى تصدّرها."
+  }
+}

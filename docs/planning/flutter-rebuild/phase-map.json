@@ -1,0 +1,143 @@
+{
+  "revision": "2026-10-27-12-phases",
+  "old_phase_count": 19,
+  "current_phase_count": 12,
+  "old_to_new": {
+    "00": "00",
+    "01": "01",
+    "03": "01",
+    "02": "02",
+    "05": "03",
+    "06": "04",
+    "07": "04",
+    "08": "05",
+    "04": "06",
+    "09": "06",
+    "15": "06",
+    "11": "07",
+    "12": "07",
+    "13": "08",
+    "14": "08",
+    "16": "09",
+    "10": "10",
+    "17": "10",
+    "18": "11"
+  },
+  "groups": [
+    {
+      "phase": "00",
+      "title": "Baseline and delivery setup",
+      "dependencies": "None",
+      "former_phases": [
+        "00"
+      ],
+      "reason": "Keep platform/toolchain and distribution proof separate from feature implementation."
+    },
+    {
+      "phase": "01",
+      "title": "Design system, navigation and interaction shell",
+      "dependencies": "00",
+      "former_phases": [
+        "01",
+        "03"
+      ],
+      "reason": "The shell uses the same components, focus behavior, dialogs and responsive rules; build and review them together."
+    },
+    {
+      "phase": "02",
+      "title": "Local accounts, validation and safe persistence",
+      "dependencies": "00, 01",
+      "former_phases": [
+        "02"
+      ],
+      "reason": "Keep storage and compatibility as an early gate; settings will expose its file operations in phase 09."
+    },
+    {
+      "phase": "03",
+      "title": "Sellable products and inventory",
+      "dependencies": "01, 02",
+      "former_phases": [
+        "05"
+      ],
+      "reason": "Keep stock history, reversals and historical quantity checks together as one complete inventory feature."
+    },
+    {
+      "phase": "04",
+      "title": "Cash sales, saved receipt, drafts and held orders",
+      "dependencies": "01, 02, 03",
+      "former_phases": [
+        "06",
+        "07"
+      ],
+      "reason": "Draft recovery and hold/resume are part of the same ticket lifecycle as checkout; separating them created a partially finished sales flow."
+    },
+    {
+      "phase": "05",
+      "title": "Sales history, returns and voids",
+      "dependencies": "02, 03, 04",
+      "former_phases": [
+        "08"
+      ],
+      "reason": "Keep return/void accounting and historical stock checks as a distinct verification gate after checkout."
+    },
+    {
+      "phase": "06",
+      "title": "Daily accounting, expense categories and cashbox",
+      "dependencies": "01, 02, 05",
+      "former_phases": [
+        "04",
+        "09",
+        "15"
+      ],
+      "reason": "Categories feed expense entry, and daily/cash funding and transfers change both ledgers; implement and verify them together."
+    },
+    {
+      "phase": "07",
+      "title": "Suppliers, debts, materials and prices",
+      "dependencies": "01, 02, 06",
+      "former_phases": [
+        "11",
+        "12"
+      ],
+      "reason": "Supplier and material setup are the reference data used by the same purchase workflow."
+    },
+    {
+      "phase": "08",
+      "title": "Purchase invoices, analysis and supplier payments",
+      "dependencies": "02, 06, 07",
+      "former_phases": [
+        "13",
+        "14"
+      ],
+      "reason": "Immediate payment already belongs to invoice entry; combining them removes a later-phase dependency from a core purchase action."
+    },
+    {
+      "phase": "09",
+      "title": "Settings, backups, import and recovery",
+      "dependencies": "01, 02, 04, 06, 08",
+      "former_phases": [
+        "16"
+      ],
+      "reason": "Keep the complete settings and user-facing recovery review after operational records are available; reuse phase 02 storage services."
+    },
+    {
+      "phase": "10",
+      "title": "Statements, day review, PDF reports and printing",
+      "dependencies": "03, 04, 05, 06, 07, 08, 09",
+      "former_phases": [
+        "10",
+        "17"
+      ],
+      "reason": "Statements/day review and their reports share filters, financial meanings and export actions; verify screen-to-document parity together."
+    },
+    {
+      "phase": "11",
+      "title": "Complete MVP verification, migration rehearsal and release",
+      "dependencies": "00\u201310",
+      "former_phases": [
+        "18"
+      ],
+      "reason": "Keep independent end-to-end, installed-device and cutover verification as the final gate."
+    }
+  ]
+}

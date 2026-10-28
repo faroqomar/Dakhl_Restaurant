@@ -1,0 +1,128 @@
+{
+  "installed_on": "2026-10-28",
+  "scope": "project",
+  "skills": [
+    {
+      "name": "flutter-testing",
+      "repository": "thienqo/flutter-skills",
+      "revision": "301f9e81286057bd48914210111ff8543d3a3008",
+      "upstream_skill_sha256": "96ea3822a66fc498d9892eca3fbb428979823e4d324624680b81049d396993b5",
+      "local_adaptation": false,
+      "installed_files": {
+        "SKILL.md": "96ea3822a66fc498d9892eca3fbb428979823e4d324624680b81049d396993b5",
+        "evals/cases.json": "c1b82143995cb999fa78e95f3ad0ebaca91dfbf270d35f84a1f7f5c9f5494229",
+        "references/determinism-goldens-and-integration.md": "b0f03f7be26573ecec4878370d9584fbddaba73693524bad59a9c0451505b70a",
+        "references/test-layers-and-doubles.md": "f22f701f8a3394f5cf611b5b000c0ac6fcc898ca73d547ff510f542efcf93cd3"
+      }
+    },
+    {
+      "name": "flutter-device-testing",
+      "repository": "thienqo/flutter-skills",
+      "revision": "301f9e81286057bd48914210111ff8543d3a3008",
+      "upstream_skill_sha256": "1e62f144474e60173e6fc4426d566445996e0e81826b628e2b61874e73975ffe",
+      "local_adaptation": false,
+      "installed_files": {
+        "SKILL.md": "1e62f144474e60173e6fc4426d566445996e0e81826b628e2b61874e73975ffe",
+        "evals/cases.json": "8fe889f05ef67007136313eea6337e5dc6403161cfa08a65c31d45d434d79adb",
+        "references/android-emulator-operations.md": "22482cb7b5098f4ccc9beaf15acdbfa7cfbb7ef778802d6b17e6579fb72d6588",
+        "references/device-discovery-and-emulators.md": "ece168e91722a281f9dc8366c9386f243e3b5d6f2e004de64c4bd63b1b2d58cf",
+        "references/integration-test-workflows.md": "46ab4860796b7b21e175d37f7e7d3453f45388ec1729cd1b8ed4df66106fc310",
+        "references/ios-simulator-operations.md": "d80f36a66b12488bccca547e71c2cbd8f94ef07a05098adf3533f193ea83c727",
+        "references/lifecycle-entry-matrix.md": "e4abfe82cac39f63ea1d6185bad556190aea3d23c74eb8e25ed99e172834fd28",
+        "references/semantic-ui-inspection.md": "228c512390436c3f4e46ffe673839781c1f48edd8502bd37057be171489f52d9",
+        "scripts/run_lifecycle_matrix.py": "a4cd878d6af7ed2195c859de5d646fcc52c6bdf1e0c35fc021c0f62286ded18c"
+      }
+    },
+    {
+      "name": "flutter-persistence",
+      "repository": "thienqo/flutter-skills",
+      "revision": "301f9e81286057bd48914210111ff8543d3a3008",
+      "upstream_skill_sha256": "0d6d439e0cc4f0fe7fe11b8f5a211e4be10033320a64e81478098fe4c950042e",
+      "local_adaptation": false,
+      "installed_files": {
+        "SKILL.md": "0d6d439e0cc4f0fe7fe11b8f5a211e4be10033320a64e81478098fe4c950042e",
+        "evals/cases.json": "0a9ed135f9cfa0e575234090d6ee7a81733cead91f44589388fc4b6578b0368a",
+        "references/caching-policy.md": "f0fcc4b0f1129de74dc9c0e927355c11ebfdc906ff0c4308e5d8f58d5e7456f2",
+        "references/offline-sync.md": "dcf1acfadcf4e1cbb609a1d8f860be2d1fb44ad81e9c75988e1a4a6612ced8ec",
+        "references/schema-migrations-and-recovery.md": "05d44fa72523ef6ad5215e8df58a17b8239aebf38bb4ac4fa1997b919391987c"
+      }
+    },
+    {
+      "name": "flutter-localization",
+      "repository": "thienqo/flutter-skills",
+      "revision": "301f9e81286057bd48914210111ff8543d3a3008",
+      "upstream_skill_sha256": "2dc616fdd558a47c8bbd69ea12ab7f45dfff7b1f96d886fcec8402df8351eeb2",
+      "local_adaptation": false,
+      "installed_files": {
+        "SKILL.md": "2dc616fdd558a47c8bbd69ea12ab7f45dfff7b1f96d886fcec8402df8351eeb2",
+        "evals/cases.json": "fb35e603b36b9c74e8fecbe07ef8470f17c90a61c80847df64a33383f5eaf33c",
+        "references/icu-messages-and-formatting.md": "ace469d9602e9074959f3799ffa2825430a99eab3d2c4e57aa5f2458db942319"
+      }
+    },
+    {
+      "name": "flutter-accessibility",
+      "repository": "thienqo/flutter-skills",
+      "revision": "301f9e81286057bd48914210111ff8543d3a3008",
+      "upstream_skill_sha256": "acd1e70a2d4400caf13b10e0074e479d96990b5335da7362e11b30323c27f4f5",
+      "local_adaptation": false,
+      "installed_files": {
+        "SKILL.md": "acd1e70a2d4400caf13b10e0074e479d96990b5335da7362e11b30323c27f4f5",
+        "evals/cases.json": "34902273d33bc32be90f360642cdd06ef13d6e939cb61d95be42f28a5c90da12",
+        "references/semantics-and-screen-readers.md": "8eb1f815aa0996ce589d42cc458d14865b289245059790e2ef37a618e086721a",
+        "references/target-sizes-and-contrast.md": "62a01733e8988d708952295028b26bb461f31a4d0e12324f555e97a2429efd39"
+      }
+    },
+    {
+      "name": "flutter-ci-cd",
+      "repository": "thienqo/flutter-skills",
+      "revision": "301f9e81286057bd48914210111ff8543d3a3008",
+      "upstream_skill_sha256": "fbffad28e9f3aeb6ed92381dfff01c1935633d519aed2980c2257fea1d5b33ff",
+      "local_adaptation": false,
+      "installed_files": {
+        "SKILL.md": "fbffad28e9f3aeb6ed92381dfff01c1935633d519aed2980c2257fea1d5b33ff",
+        "evals/cases.json": "a44803359a0eb8c6cfa23f333af0f4e8e4a669ef9f13dc61d68ebe8535cbf4bb",
+        "references/delivery-and-secrets.md": "e1c8dce110d79a2df7b4c244b9823824fc0b0c83f6c5a01ace203009ed20ee96",
+        "references/provider-and-monorepo.md": "14ee66b79c9731529ec2e34a9f006d5df812a3e78331063f8782d3fbd5748655",
+        "references/quality-gates.md": "361b9a5f08b81bed833c304bbbeea8fa0ea938d827af58a9ae4250b75194bbcc"
+      }
+    },
+    {
+      "name": "property-based-testing",
+      "repository": "trailofbits/skills",
+      "revision": "bf23bfb21f10a2a4b0406086d690dc8cb1b3ccf3",
+      "upstream_skill_sha256": "9448cacb65c6237a7c22dc59602667177ecae405524079ae9ff92240590b995a",
+      "local_adaptation": true,
+      "installed_files": {
+        "README.md": "ffbe30eec09cc64fb1eae836b07ca1d82939bda3f1e6f0dceadcdd78793a3112",
+        "SKILL.md": "04b3a3015dd73647c20ccb5a582a7860eaab88585cf335a8dd29cdc7faa31ebe",
+        "agents/openai.yaml": "51d635deefa254d8cdf6dc56450851b6ec9545cd37f88a4eb4035cf3f2262fff",
+        "assets/trail-of-bits-mark.svg": "4bf74c789b38dcf6ad762c136b6832363d27ae19fbaa9a18ec18d66ecce6ca05",
+        "references/generating.md": "c0e72dfc89babe3c32de718b81b94044362c85e776d7475e950dfeaab78bb58e",
+        "references/interpreting-failures.md": "dbae7db8773712ba03268a3d56ea5aa6720af0650a5189580bfd88aa2edc3f9a",
+        "references/libraries.md": "f7218acf8e668130ef3048983472579d04e12030c5401926f666363e5f69c686",
+        "references/refactoring.md": "6eb5c206f575704791f089608bb06e41d6eed91b9d3c7fb27912f969aed07a18",
+        "references/reviewing.md": "110b08118a1e7b1a2566def6e9d2a0bf43fc2deefce857d2ce3b4382b07bc774"
+      }
+    },
+    {
+      "name": "flutter-build-responsive-layout",
+      "repository": "flutter/agent-plugins",
+      "revision": "90fa51dc9d1bd6694cee226397e08ec8193e9e69",
+      "upstream_skill_sha256": "c7a5d18071c625137cad2def9b13f3579d9bdf0aae29621a1825f12b560394c0",
+      "local_adaptation": false,
+      "installed_files": {
+        "SKILL.md": "c7a5d18071c625137cad2def9b13f3579d9bdf0aae29621a1825f12b560394c0"
+      }
+    },
+    {
+      "name": "documentation-and-adrs",
+      "repository": "addyosmani/agent-skills",
+      "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "upstream_skill_sha256": "b60d503925bbaacee7fd63935db70b9ced5b2514ff5a56a672130e01b9690bc5",
+      "local_adaptation": false,
+      "installed_files": {
+        "SKILL.md": "b60d503925bbaacee7fd63935db70b9ced5b2514ff5a56a672130e01b9690bc5"
+      }
+    }
+  ]
+}

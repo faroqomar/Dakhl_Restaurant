@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>دفتر · حسابات المطعم</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="commerce.css">
+  <link rel="stylesheet" href="ux.css">
+  <script defer src="model.js"></script>
+  <script defer src="numbers.js"></script>
+  <script defer src="suppliers.js"></script>
+  <script defer src="commerce.js"></script>
+  <script defer src="ux.js"></script>
+  <script defer src="renderer.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <button id="nav-scrim" class="scrim" data-action="toggle-sidebar" aria-label="إغلاق التنقل" hidden></button>
+    <aside id="main-sidebar" class="sidebar" hidden aria-label="التنقل الرئيسي">
+      <div class="sidebar-header"><div class="brand"><div class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></div><strong>دفتر</strong></div><button id="sidebar-collapse" class="sidebar-toggle icon-button" data-action="toggle-sidebar" aria-controls="main-sidebar" aria-expanded="true" aria-label="إخفاء القائمة الجانبية" title="إخفاء القائمة الجانبية"><span data-icon="menu"></span></button></div>
+      <p class="brand-subtitle">حسابات المطعم</p>
+      <p class="nav-label">مساحة العمل</p>
+      <nav id="navigation">
+        <button data-view="sales" class="nav-item"><span data-icon="grid"></span>المبيعات</button>
+        <button data-view="sale-history" class="nav-item"><span data-icon="ledger"></span>سجل المبيعات</button>
+        <button data-view="inventory" class="nav-item"><span data-icon="supplier"></span>المخزن</button>
+        <button data-view="expenses" class="nav-item active"><span data-icon="ledger"></span>المصاريف اليومية</button>
+        <button data-view="statement" class="nav-item"><span data-icon="ledger"></span>كشف الحساب</button>
+        <button data-view="suppliers" class="nav-item"><span data-icon="supplier"></span>الموردون</button>
+        <button data-view="invoices" class="nav-item"><span data-icon="ledger"></span>فواتير المشتريات</button>
+        <button data-view="materials" class="nav-item"><span data-icon="grid"></span>المواد والأسعار</button>
+        <button data-view="payments" class="nav-item"><span data-icon="transfer"></span>التسديدات</button>
+        <button data-view="cash" class="nav-item"><span data-icon="wallet"></span>القاصة</button>
+        <button data-view="categories" class="nav-item"><span data-icon="grid"></span>الخانات</button>
+        <button data-view="settings" class="nav-item"><span data-icon="settings"></span>الإعدادات والنسخ</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="account"><span class="avatar">م</span><div><strong>حسابات المطعم</strong><small>مساحة خاصة على جهازك</small></div></div><div id="save-status" class="save-status" role="status"><span class="status-dot"></span>جارٍ فتح الحسابات…</div></div>
+    </aside>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <div id="drawer-host"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+[
+  {
+    "kind": "daily",
+    "bytes": 136521,
+    "pdf": "/Users/eros/Dev/Eros_Projects/ResturanetAccounting/outputs/ux-fixes-2026-10-26/pdf/daily.pdf"
+  },
+  {
+    "kind": "invoice",
+    "bytes": 112117,
+    "pdf": "/Users/eros/Dev/Eros_Projects/ResturanetAccounting/outputs/ux-fixes-2026-10-26/pdf/invoice.pdf"
+  },
+  {
+    "kind": "sale",
+    "bytes": 90751,
+    "pdf": "/Users/eros/Dev/Eros_Projects/ResturanetAccounting/outputs/ux-fixes-2026-10-26/pdf/sale.pdf"
+  },
+  {
+    "kind": "sales",
+    "bytes": 83990,
+    "pdf": "/Users/eros/Dev/Eros_Projects/ResturanetAccounting/outputs/ux-fixes-2026-10-26/pdf/sales.pdf"
+  },
+  {
+    "kind": "statement",
+    "bytes": 89023,
+    "pdf": "/Users/eros/Dev/Eros_Projects/ResturanetAccounting/outputs/ux-fixes-2026-10-26/pdf/statement.pdf"
+  },
+  {
+    "kind": "cash",
+    "bytes": 93261,
+    "pdf": "/Users/eros/Dev/Eros_Projects/ResturanetAccounting/outputs/ux-fixes-2026-10-26/pdf/cash.pdf"
+  },
+  {
+    "kind": "workers",
+    "bytes": 72919,
+    "pdf": "/Users/eros/Dev/Eros_Projects/ResturanetAccounting/outputs/ux-fixes-2026-10-26/pdf/workers.pdf"
+  },
+  {
+    "kind": "payment",
+    "bytes": 73452,
+    "pdf": "/Users/eros/Dev/Eros_Projects/ResturanetAccounting/outputs/ux-fixes-2026-10-26/pdf/payment.pdf"
+  }
+]

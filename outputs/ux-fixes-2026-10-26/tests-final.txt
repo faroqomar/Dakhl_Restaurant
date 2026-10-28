@@ -1,0 +1,692 @@
+
+> daftar-restaurant@1.12.0 test
+> node --test tests/*.test.cjs
+
+TAP version 13
+# Subtest: expenses exclude chicken and are independent of recorded balance and cash
+ok 1 - expenses exclude chicken and are independent of recorded balance and cash
+  ---
+  duration_ms: 8.734
+  type: 'test'
+  ...
+# Subtest: manual total persists independently until the user restores automatic summing
+ok 2 - manual total persists independently until the user restores automatic summing
+  ---
+  duration_ms: 1.429
+  type: 'test'
+  ...
+# Subtest: Iraqi Arabic digits and separators are accepted but fractions, negatives, overflow, and blank are rejected
+ok 3 - Iraqi Arabic digits and separators are accepted but fractions, negatives, overflow, and blank are rejected
+  ---
+  duration_ms: 4.697209
+  type: 'test'
+  ...
+# Subtest: invalid dates and unknown categories cannot corrupt persisted data
+ok 4 - invalid dates and unknown categories cannot corrupt persisted data
+  ---
+  duration_ms: 23.869875
+  type: 'test'
+  ...
+# Subtest: account data and custom categories survive a fresh storage instance; backup retains previous save
+ok 5 - account data and custom categories survive a fresh storage instance; backup retains previous save
+  ---
+  duration_ms: 27.006542
+  type: 'test'
+  ...
+# Subtest: corrupt account file blocks writes instead of silently clearing data, and recovery preserves it
+ok 6 - corrupt account file blocks writes instead of silently clearing data, and recovery preserves it
+  ---
+  duration_ms: 31.947666
+  type: 'test'
+  ...
+# Subtest: import validates whole file and preserves prior data before replacing it
+ok 7 - import validates whole file and preserves prior data before replacing it
+  ---
+  duration_ms: 36.489417
+  type: 'test'
+  ...
+# Subtest: duplicate entry IDs and invalid transactions are rejected
+ok 8 - duplicate entry IDs and invalid transactions are rejected
+  ---
+  duration_ms: 1.132458
+  type: 'test'
+  ...
+# Subtest: aggregate money cannot overflow exact integer arithmetic
+ok 9 - aggregate money cannot overflow exact integer arithmetic
+  ---
+  duration_ms: 56.229625
+  type: 'test'
+  ...
+# Subtest: old category types migrate by ID even when reordered, and invalid types cannot overwrite data
+ok 10 - old category types migrate by ID even when reordered, and invalid types cannot overwrite data
+  ---
+  duration_ms: 64.514625
+  type: 'test'
+  ...
+# Subtest: all categories can switch type and survive reload and import without changing accounting
+ok 11 - all categories can switch type and survive reload and import without changing accounting
+  ---
+  duration_ms: 37.394625
+  type: 'test'
+  ...
+# Subtest: schema 9 migrates old data without rewriting balances and persists complete commerce data atomically
+ok 12 - schema 9 migrates old data without rewriting balances and persists complete commerce data atomically
+  ---
+  duration_ms: 58.388541
+  type: 'test'
+  ...
+# Subtest: cash sale snapshots price, applies discount, derives exact inventory and never counts cash twice
+ok 13 - cash sale snapshots price, applies discount, derives exact inventory and never counts cash twice
+  ---
+  duration_ms: 5.834292
+  type: 'test'
+  ...
+# Subtest: overselling, backdated negative inventory, invalid amounts, duplicates and changing tracked mode are rejected
+ok 14 - overselling, backdated negative inventory, invalid amounts, duplicates and changing tracked mode are rejected
+  ---
+  duration_ms: 23.342125
+  type: 'test'
+  ...
+# Subtest: fractional stock stays exact, untracked dishes sell, archived products and invalid shortcuts are blocked
+ok 15 - fractional stock stays exact, untracked dishes sell, archived products and invalid shortcuts are blocked
+  ---
+  duration_ms: 1.443167
+  type: 'test'
+  ...
+# Subtest: sale PDF reports saved snapshots, discount, cash, change and void reason with escaped user text
+ok 16 - sale PDF reports saved snapshots, discount, cash, change and void reason with escaped user text
+  ---
+  duration_ms: 40.627917
+  type: 'test'
+  ...
+# Subtest: correcting daily dates leaves sales and stock dates independent and preserves the actual daily remainder
+ok 17 - correcting daily dates leaves sales and stock dates independent and preserves the actual daily remainder
+  ---
+  duration_ms: 1.813375
+  type: 'test'
+  ...
+# Subtest: daily date correction preserves an overdrawn remainder after a sale cancellation
+ok 18 - daily date correction preserves an overdrawn remainder after a sale cancellation
+  ---
+  duration_ms: 1.543041
+  type: 'test'
+  ...
+# Subtest: version 8 data gains editable order types without changing old invoices; photo choices are validated
+ok 19 - version 8 data gains editable order types without changing old invoices; photo choices are validated
+  ---
+  duration_ms: 2.583
+  type: 'test'
+  ...
+# Subtest: exact-total checkout requires no cash entry and preserves historical order types after settings edits
+ok 20 - exact-total checkout requires no cash entry and preserves historical order types after settings edits
+  ---
+  duration_ms: 4.313667
+  type: 'test'
+  ...
+# Subtest: one-day correction moves all daily records and snapshots without changing balances, amounts, identities, or supplier bill dates
+ok 21 - one-day correction moves all daily records and snapshots without changing balances, amounts, identities, or supplier bill dates
+  ---
+  duration_ms: 34.525125
+  type: 'test'
+  ...
+# Subtest: adjacent days shift together without overwriting, preserve gaps, and can move backwards across month/year boundaries
+ok 22 - adjacent days shift together without overwriting, preserve gaps, and can move backwards across month/year boundaries
+  ---
+  duration_ms: 5.514208
+  type: 'test'
+  ...
+# Subtest: collision, invalid dates, backwards range, and payments before bills fail without changing persisted records; valid correction survives reload/import
+ok 23 - collision, invalid dates, backwards range, and payments before bills fail without changing persisted records; valid correction survives reload/import
+  ---
+  duration_ms: 93.721167
+  type: 'test'
+  ...
+# Subtest: empty placeholders cannot block or overwrite a correction, while explicitly recorded zero balances are preserved
+ok 24 - empty placeholders cannot block or overwrite a correction, while explicitly recorded zero balances are preserved
+  ---
+  duration_ms: 14.383666
+  type: 'test'
+  ...
+# Subtest: version 1 migration keeps cash and totals, defaults old expenses to daily without assuming a remainder
+ok 25 - version 1 migration keeps cash and totals, defaults old expenses to daily without assuming a remainder
+  ---
+  duration_ms: 8.485834
+  type: 'test'
+  ...
+# Subtest: all sources count once in expenses; only cash allocation withdraws, and editing or deleting corrects it
+ok 26 - all sources count once in expenses; only cash allocation withdraws, and editing or deleting corrects it
+  ---
+  duration_ms: 1.581375
+  type: 'test'
+  ...
+# Subtest: actual remainder snapshots exclude earlier expenses and transfers, then apply daily allocation changes
+ok 27 - actual remainder snapshots exclude earlier expenses and transfers, then apply daily allocation changes
+  ---
+  duration_ms: 1.826167
+  type: 'test'
+  ...
+# Subtest: partial and full deposits move the same amount between balances and reject repeated or excessive deposits
+ok 28 - partial and full deposits move the same amount between balances and reject repeated or excessive deposits
+  ---
+  duration_ms: 1.563959
+  type: 'test'
+  ...
+# Subtest: editing and deleting a transfer correct both balances; expense date changes correct the two daily remainders
+ok 29 - editing and deleting a transfer correct both balances; expense date changes correct the two daily remainders
+  ---
+  duration_ms: 0.703708
+  type: 'test'
+  ...
+# Subtest: save, restart and backup import preserve both allocations and atomic transfers; invalid allocations leave disk untouched
+ok 30 - save, restart and backup import preserve both allocations and atomic transfers; invalid allocations leave disk untouched
+  ---
+  duration_ms: 60.849708
+  type: 'test'
+  ...
+# Subtest: daily expense total excludes the cash share of shared expenses; saved balance stays fixed after transfers
+ok 31 - daily expense total excludes the cash share of shared expenses; saved balance stays fixed after transfers
+  ---
+  duration_ms: 0.867084
+  type: 'test'
+  ...
+# Subtest: daily expense total excludes cash-funded costs while the saved balance remains unchanged after transfer
+ok 32 - daily expense total excludes cash-funded costs while the saved balance remains unchanged after transfer
+  ---
+  duration_ms: 1.677708
+  type: 'test'
+  ...
+# Subtest: old blank daily totals are restored using remainder plus earlier deposits; entered totals and all financial movements survive migration and reload
+ok 33 - old blank daily totals are restored using remainder plus earlier deposits; entered totals and all financial movements survive migration and reload
+  ---
+  duration_ms: 39.520916
+  type: 'test'
+  ...
+# Subtest: an invalid or overflowing remainder sum never partly changes the saved total, remainder or cash
+ok 34 - an invalid or overflowing remainder sum never partly changes the saved total, remainder or cash
+  ---
+  duration_ms: 1.937375
+  type: 'test'
+  ...
+# Subtest: migration leaves a valid legacy ledger accessible when its reconstructed total exceeds the daily total limit
+ok 35 - migration leaves a valid legacy ledger accessible when its reconstructed total exceeds the daily total limit
+  ---
+  duration_ms: 0.5635
+  type: 'test'
+  ...
+# Subtest: native import previews both datasets, cancel preserves records, confirm saves recovery copy
+ok 36 - native import previews both datasets, cancel preserves records, confirm saves recovery copy
+  ---
+  duration_ms: 141.368666
+  type: 'test'
+  ...
+# Subtest: native previous backup restores a corrupt account and preserves the unreadable original
+ok 37 - native previous backup restores a corrupt account and preserves the unreadable original
+  ---
+  duration_ms: 31.747084
+  type: 'test'
+  ...
+# Subtest: native export records health and permits opening only files exported this session
+ok 38 - native export records health and permits opening only files exported this session
+  ---
+  duration_ms: 14.635334
+  type: 'test'
+  ...
+# Subtest: Arabic/Persian numbers format as English grouped strings without rounding, including decimals, negatives and identifiers
+ok 39 - Arabic/Persian numbers format as English grouped strings without rounding, including decimals, negatives and identifiers
+  ---
+  duration_ms: 6.825
+  type: 'test'
+  ...
+# Subtest: caret and selection stay in the number when typing, replacing, or pasting digits in the middle
+ok 40 - caret and selection stay in the number when typing, replacing, or pasting digits in the middle
+  ---
+  duration_ms: 257.618416
+  type: 'test'
+  ...
+# Subtest: backspace/delete across thousands separators removes a digit instead of getting stuck on a comma
+ok 41 - backspace/delete across thousands separators removes a digit instead of getting stuck on a comma
+  ---
+  duration_ms: 28.145041
+  type: 'test'
+  ...
+# Subtest: composition input is left intact until composition completes and decimal editing keeps trailing zeros
+ok 42 - composition input is left intact until composition completes and decimal editing keeps trailing zeros
+  ---
+  duration_ms: 28.96525
+  type: 'test'
+  ...
+# Subtest: daily PDF reflects manual totals, actual funding, remainder, chicken and historical cash without mutating accounts
+ok 43 - daily PDF reflects manual totals, actual funding, remainder, chicken and historical cash without mutating accounts
+  ---
+  duration_ms: 265.22575
+  type: 'test'
+  ...
+# Subtest: supplier PDF preserves fractions, identifiers, paid invoice allocation and separate debt/account totals; untrusted strings are escaped
+ok 44 - supplier PDF preserves fractions, identifiers, paid invoice allocation and separate debt/account totals; untrusted strings are escaped
+  ---
+  duration_ms: 57.880916
+  type: 'test'
+  ...
+# Subtest: PDF writer replaces atomically and leaves existing files intact if staging fails
+ok 45 - PDF writer replaces atomically and leaves existing files intact if staging fails
+  ---
+  duration_ms: 18.810084
+  type: 'test'
+  ...
+# Subtest: hidden PDF window is destroyed after successful printing or a rendering failure
+ok 46 - hidden PDF window is destroyed after successful printing or a rendering failure
+  ---
+  duration_ms: 8.826542
+  type: 'test'
+  ...
+# Subtest: anchored daily, weekly and monthly savings periods cross months, leap days and years correctly
+ok 47 - anchored daily, weekly and monthly savings periods cross months, leap days and years correctly
+  ---
+  duration_ms: 6.750667
+  type: 'test'
+  ...
+# Subtest: partial contributions accumulate once per period; amount changes preserve already recorded dues and future payments do not mark past dates paid
+ok 48 - partial contributions accumulate once per period; amount changes preserve already recorded dues and future payments do not mark past dates paid
+  ---
+  duration_ms: 20.255083
+  type: 'test'
+  ...
+# Subtest: receipt amounts are capped by savings available on their actual date; removing contributions cannot invalidate paid receipts
+ok 49 - receipt amounts are capped by savings available on their actual date; removing contributions cannot invalidate paid receipts
+  ---
+  duration_ms: 1.660917
+  type: 'test'
+  ...
+# Subtest: invalid worker names, references, dates, periods and duplicate records cannot overwrite account files
+ok 50 - invalid worker names, references, dates, periods and duplicate records cannot overwrite account files
+  ---
+  duration_ms: 17.757583
+  type: 'test'
+  ...
+# Subtest: savings survive reload and backup recovery without changing daily accounts, cash, supplier balances or date corrections
+ok 51 - savings survive reload and backup recovery without changing daily accounts, cash, supplier balances or date corrections
+  ---
+  duration_ms: 39.34825
+  type: 'test'
+  ...
+# Subtest: old and new data migrate to supplier schema without changing existing money or remainder snapshots
+ok 52 - old and new data migrate to supplier schema without changing existing money or remainder snapshots
+  ---
+  duration_ms: 8.134333
+  type: 'test'
+  ...
+# Subtest: invoice records debt only; settlement contributes exactly once to expenses and affects its allocated source
+ok 53 - invoice records debt only; settlement contributes exactly once to expenses and affects its allocated source
+  ---
+  duration_ms: 21.26125
+  type: 'test'
+  ...
+# Subtest: carton and piece quantities use their own saved prices while old single-unit invoices still validate
+ok 54 - carton and piece quantities use their own saved prices while old single-unit invoices still validate
+  ---
+  duration_ms: 3.741417
+  type: 'test'
+  ...
+# Subtest: schema 6 supplier catalogs migrate to one shared material list without changing historical invoice amounts
+ok 55 - schema 6 supplier catalogs migrate to one shared material list without changing historical invoice amounts
+  ---
+  duration_ms: 2.803292
+  type: 'test'
+  ...
+# Subtest: partial/full payments and opening debt are distinct; excess, orphan, wrong supplier, and invalid dates are rejected
+ok 56 - partial/full payments and opening debt are distinct; excess, orphan, wrong supplier, and invalid dates are rejected
+  ---
+  duration_ms: 7.121042
+  type: 'test'
+  ...
+# Subtest: supplier ledger uses transaction dates with old/current running balances and responds to backdated entries
+ok 57 - supplier ledger uses transaction dates with old/current running balances and responds to backdated entries
+  ---
+  duration_ms: 1.652375
+  type: 'test'
+  ...
+# Subtest: fractional quantities, integer dinars, and saved line snapshots survive template price/name edits
+ok 58 - fractional quantities, integer dinars, and saved line snapshots survive template price/name edits
+  ---
+  duration_ms: 7.011917
+  type: 'test'
+  ...
+# Subtest: paid invoice cannot be reduced below payment or removed; duplicate supplier numbers and malformed references fail safely
+ok 59 - paid invoice cannot be reduced below payment or removed; duplicate supplier numbers and malformed references fail safely
+  ---
+  duration_ms: 57.977375
+  type: 'test'
+  ...
+# Subtest: moving a settlement between days corrects both remainders and leaves cash/counts consistent
+ok 60 - moving a settlement between days corrects both remainders and leaves cash/counts consistent
+  ---
+  duration_ms: 7.284041
+  type: 'test'
+  ...
+# Subtest: version 3 balances migrate to debts with legacy allocations and identical financial totals
+ok 61 - version 3 balances migrate to debts with legacy allocations and identical financial totals
+  ---
+  duration_ms: 5.239875
+  type: 'test'
+  ...
+# Subtest: one excess payment clears the invoice and reduces debts while funding and expenses count once, including restart/import
+ok 62 - one excess payment clears the invoice and reduces debts while funding and expenses count once, including restart/import
+  ---
+  duration_ms: 30.922542
+  type: 'test'
+  ...
+# Subtest: partial payments split only the outstanding invoice; edits/deletes refund both portions and later bill changes keep allocation fixed
+ok 63 - partial payments split only the outstanding invoice; edits/deletes refund both portions and later bill changes keep allocation fixed
+  ---
+  duration_ms: 0.491208
+  type: 'test'
+  ...
+# Subtest: additional debts are tracked separately, excess cannot consume future debt or another invoice, and paid debts cannot be removed
+ok 64 - additional debts are tracked separately, excess cannot consume future debt or another invoice, and paid debts cannot be removed
+  ---
+  duration_ms: 9.470292
+  type: 'test'
+  ...
+# Subtest: expense with a new Arabic category persists, notes render safely, edit can move to another day
+ok 65 - expense with a new Arabic category persists, notes render safely, edit can move to another day
+  ---
+  duration_ms: 613.06075
+  type: 'test'
+  ...
+# Subtest: save failure keeps the form and input, does not claim saved or mutate current totals
+ok 66 - save failure keeps the form and input, does not claim saved or mutate current totals
+  ---
+  duration_ms: 90.99275
+  type: 'test'
+  ...
+# Subtest: cash deposit and withdrawal update total, delete is undoable, and chicken does not affect either total
+ok 67 - cash deposit and withdrawal update total, delete is undoable, and chicken does not affect either total
+  ---
+  duration_ms: 185.387667
+  type: 'test'
+  ...
+# Subtest: manual total and balance persist; restoring automatic total is explicit
+ok 68 - manual total and balance persist; restoring automatic total is explicit
+  ---
+  duration_ms: 108.683959
+  type: 'test'
+  ...
+# Subtest: new expenses default to daily; shared allocation must match and cash-linked edits correct both balances
+ok 69 - new expenses default to daily; shared allocation must match and cash-linked edits correct both balances
+  ---
+  duration_ms: 128.554667
+  type: 'test'
+  ...
+# Subtest: remaining is actual after existing expenses; partial/full deposits affect both balances without double counting
+ok 70 - remaining is actual after existing expenses; partial/full deposits affect both balances without double counting
+  ---
+  duration_ms: 124.6955
+  type: 'test'
+  ...
+# Subtest: transfer edits and deletion refund daily balance and safe; undo restores the entire movement
+ok 71 - transfer edits and deletion refund daily balance and safe; undo restores the entire movement
+  ---
+  duration_ms: 78.482709
+  type: 'test'
+  ...
+# Subtest: failed transfer save preserves both balances and keeps the input available for retry
+ok 72 - failed transfer save preserves both balances and keeps the input available for retry
+  ---
+  duration_ms: 44.895791
+  type: 'test'
+  ...
+# Subtest: supplier, permanent material, invoice and shared payment are saved together; opening and current balances remain distinct
+ok 73 - supplier, permanent material, invoice and shared payment are saved together; opening and current balances remain distinct
+  ---
+  duration_ms: 147.297166
+  type: 'test'
+  ...
+# Subtest: daily expenses keep cash purchases separate and account statement filters category, dates, and source
+ok 74 - daily expenses keep cash purchases separate and account statement filters category, dates, and source
+  ---
+  duration_ms: 120.240084
+  type: 'test'
+  ...
+# Subtest: new invoice materials become reusable; template edits do not rewrite saved invoice details
+ok 75 - new invoice materials become reusable; template edits do not rewrite saved invoice details
+  ---
+  duration_ms: 151.208709
+  type: 'test'
+  ...
+# Subtest: shared catalog fills carton and piece prices for invoices across suppliers
+ok 76 - shared catalog fills carton and piece prices for invoices across suppliers
+  ---
+  duration_ms: 117.01775
+  type: 'test'
+  ...
+# Subtest: duplicate invoice and overpayment keep all input and never partly add materials or payments
+ok 77 - duplicate invoice and overpayment keep all input and never partly add materials or payments
+  ---
+  duration_ms: 108.630667
+  type: 'test'
+  ...
+# Subtest: invoice settlements can be partial or full, opening debt is a separate target, and deleting a payment refunds funding
+ok 78 - invoice settlements can be partial or full, opening debt is a separate target, and deleting a payment refunds funding
+  ---
+  duration_ms: 157.168541
+  type: 'test'
+  ...
+# Subtest: paid invoice deletion is blocked; removing settlement first allows deletion and undo restores consistent records
+ok 79 - paid invoice deletion is blocked; removing settlement first allows deletion and undo restores consistent records
+  ---
+  duration_ms: 139.173291
+  type: 'test'
+  ...
+# Subtest: failed invoice save preserves supplier, catalog, expenses and balances together
+ok 80 - failed invoice save preserves supplier, catalog, expenses and balances together
+  ---
+  duration_ms: 51.829541
+  type: 'test'
+  ...
+# Subtest: category creation chooses a type and existing categories can switch type with undo and reload
+ok 81 - category creation chooses a type and existing categories can switch type with undo and reload
+  ---
+  duration_ms: 91.605083
+  type: 'test'
+  ...
+# Subtest: failed category type save restores the selection and preserves the saved data
+ok 82 - failed category type save restores the selection and preserves the saved data
+  ---
+  duration_ms: 41.1125
+  type: 'test'
+  ...
+# Subtest: excess settlement shows live split, reduces debts, and editing/deleting restores the correct amounts and source
+ok 83 - excess settlement shows live split, reduces debts, and editing/deleting restores the correct amounts and source
+  ---
+  duration_ms: 153.762291
+  type: 'test'
+  ...
+# Subtest: new invoice accepts extra debt payment atomically, and added debt is editable until its repayment would exceed it
+ok 84 - new invoice accepts extra debt payment atomically, and added debt is editable until its repayment would exceed it
+  ---
+  duration_ms: 165.168792
+  type: 'test'
+  ...
+# Subtest: excess payment save failure never partly pays the bill, debt, or source and keeps the input
+ok 85 - excess payment save failure never partly pays the bill, debt, or source and keeps the input
+  ---
+  duration_ms: 58.599375
+  type: 'test'
+  ...
+# Subtest: all numeric forms group English digits immediately, preserve live calculations, and save numeric values
+ok 86 - all numeric forms group English digits immediately, preserve live calculations, and save numeric values
+  ---
+  duration_ms: 232.4605
+  type: 'test'
+  ...
+# Subtest: normalizing a legacy Arabic invoice number does not create a second invoice with the same visible number
+ok 87 - normalizing a legacy Arabic invoice number does not create a second invoice with the same visible number
+  ---
+  duration_ms: 86.564333
+  type: 'test'
+  ...
+# Subtest: daily invoice date correction previews a range, blocks overlaps, preserves records and is undoable
+ok 88 - daily invoice date correction previews a range, blocks overlaps, preserves records and is undoable
+  ---
+  duration_ms: 71.00875
+  type: 'test'
+  ...
+# Subtest: failed date correction preserves the complete original day and keeps the chosen dates available
+ok 89 - failed date correction preserves the complete original day and keeps the chosen dates available
+  ---
+  duration_ms: 46.365458
+  type: 'test'
+  ...
+# Subtest: PDF controls export the selected saved day and supplier invoice without saving or mutating account records
+ok 90 - PDF controls export the selected saved day and supplier invoice without saving or mutating account records
+  ---
+  duration_ms: 55.630667
+  type: 'test'
+  ...
+# Subtest: PDF cancellation is quiet and failure leaves account data intact and the export button ready to retry
+ok 91 - PDF cancellation is quiet and failure leaves account data intact and the export button ready to retry
+  ---
+  duration_ms: 62.414167
+  type: 'test'
+  ...
+# Subtest: failed remainder save keeps the old daily total and cash intact; retry inputs and undo restore the complete record
+ok 92 - failed remainder save keeps the old daily total and cash intact; retry inputs and undo restore the complete record
+  ---
+  duration_ms: 88.524625
+  type: 'test'
+  ...
+# Subtest: worker savings support Arabic input, partial weekly contributions, receipts, edit, delete and undo without changing restaurant accounts
+ok 93 - worker savings support Arabic input, partial weekly contributions, receipts, edit, delete and undo without changing restaurant accounts
+  ---
+  duration_ms: 175.6215
+  type: 'test'
+  ...
+# Subtest: savings validation and failed writes keep the input available, preserve prior records and block deleting money already received
+ok 94 - savings validation and failed writes keep the input available, preserve prior records and block deleting money already received
+  ---
+  duration_ms: 135.023041
+  type: 'test'
+  ...
+# Subtest: worker schedule remains stable after payment and amount edits apply to future periods while pause keeps history
+ok 95 - worker schedule remains stable after payment and amount edits apply to future periods while pause keeps history
+  ---
+  duration_ms: 117.529916
+  type: 'test'
+  ...
+# Subtest: inventory and sales UI complete a cash sale, preserve draft on navigation, export receipt, void and undo
+ok 96 - inventory and sales UI complete a cash sale, preserve draft on navigation, export receipt, void and undo
+  ---
+  duration_ms: 148.094917
+  type: 'test'
+  ...
+# Subtest: failed sale keeps stock and all entered quantities, discount, payment and note for retry
+ok 97 - failed sale keeps stock and all entered quantities, discount, payment and note for retry
+  ---
+  duration_ms: 60.235375
+  type: 'test'
+  ...
+# Subtest: stock adjustments reject shortages, product archive preserves history, shortcut choices persist after reload
+ok 98 - stock adjustments reject shortages, product archive preserves history, shortcut choices persist after reload
+  ---
+  duration_ms: 147.459042
+  type: 'test'
+  ...
+# Subtest: order-type settings validate duplicates, persist custom choices and leave saved sales unchanged
+ok 99 - order-type settings validate duplicates, persist custom choices and leave saved sales unchanged
+  ---
+  duration_ms: 334.519125
+  type: 'test'
+  ...
+# Subtest: audit regression: first purchase guides through supplier creation and opens invoice
+ok 100 - audit regression: first purchase guides through supplier creation and opens invoice
+  ---
+  duration_ms: 60.102917
+  type: 'test'
+  ...
+# Subtest: audit regression: statement shares are correct and old expense opens at its original date
+ok 101 - audit regression: statement shares are correct and old expense opens at its original date
+  ---
+  duration_ms: 60.766208
+  type: 'test'
+  ...
+# Subtest: audit regression: dirty form Escape can be cancelled and completed sale undo preserves issued record
+ok 102 - audit regression: dirty form Escape can be cancelled and completed sale undo preserves issued record
+  ---
+  duration_ms: 99.547958
+  type: 'test'
+  ...
+# Subtest: audit regression: blank sale date blocks checkout and fractional inventory is sellable
+ok 103 - audit regression: blank sale date blocks checkout and fractional inventory is sellable
+  ---
+  duration_ms: 50.671209
+  type: 'test'
+  ...
+# Subtest: audit regression: current bill retains quoted price and archived line remains removable
+ok 104 - audit regression: current bill retains quoted price and archived line remains removable
+  ---
+  duration_ms: 159.679375
+  type: 'test'
+  ...
+# Subtest: audit regression: invalid filter ranges retain current results and custom categories archive safely
+ok 105 - audit regression: invalid filter ranges retain current results and custom categories archive safely
+  ---
+  duration_ms: 60.058375
+  type: 'test'
+  ...
+# Subtest: audit regression: corrections require a reason and retain before/after history
+ok 106 - audit regression: corrections require a reason and retain before/after history
+  ---
+  duration_ms: 54.356125
+  type: 'test'
+  ...
+# Subtest: correction undo retains original reason and records the reversal
+ok 107 - correction undo retains original reason and records the reversal
+  ---
+  duration_ms: 59.398417
+  type: 'test'
+  ...
+# Subtest: inventory no matches is recoverable and compact catalog preserves photos
+ok 108 - inventory no matches is recoverable and compact catalog preserves photos
+  ---
+  duration_ms: 71.829625
+  type: 'test'
+  ...
+# Subtest: numeric validation locates the exact invoice field and expands its details
+ok 109 - numeric validation locates the exact invoice field and expands its details
+  ---
+  duration_ms: 162.485459
+  type: 'test'
+  ...
+# Subtest: schema 10 preserves old financial values and durable correction/identity metadata
+ok 110 - schema 10 preserves old financial values and durable correction/identity metadata
+  ---
+  duration_ms: 11.808375
+  type: 'test'
+  ...
+# Subtest: stock correction preserves original, rejects duplicate reversal and historical overdraft
+ok 111 - stock correction preserves original, rejects duplicate reversal and historical overdraft
+  ---
+  duration_ms: 7.698167
+  type: 'test'
+  ...
+# Subtest: period statement reports source allocations exactly; sales totals exclude voids
+ok 112 - period statement reports source allocations exactly; sales totals exclude voids
+  ---
+  duration_ms: 38.852791
+  type: 'test'
+  ...
+# Subtest: customer identity escapes markup and backup preview includes coverage and counts
+ok 113 - customer identity escapes markup and backup preview includes coverage and counts
+  ---
+  duration_ms: 3.272833
+  type: 'test'
+  ...
+1..113
+# tests 113
+# suites 0
+# pass 113
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 7080.471875

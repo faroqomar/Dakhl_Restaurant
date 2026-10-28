@@ -1,0 +1,244 @@
+# Universal Development Rules
+
+Applies to AlDakhl, Dakhl_Restaurant, Madar Engine, and future projects.
+
+All agents must follow AGENTS.md, PLANS.md, and PHASES.md.
+
+## 1. Agent Responsibilities
+
+### Lead / Architect Agent
+
+- Orchestrates the entire workflow.
+    
+- Launches and coordinates specialized agents.
+    
+- Assigns tasks and manages dependencies.
+    
+- Maintains Git isolation and the phase tracker.
+    
+- Integrates worker results and resolves conflicts.
+    
+- Prepares pull requests and manages completion.
+    
+
+### UX Agent
+
+- Researches suitable UI/UX references.
+    
+- Creates or adjusts designs in Figma.
+    
+- Validates usability, accessibility, responsiveness, and all relevant UI states.
+    
+- Requires user approval before implementation.
+    
+- Only used for phases involving UI/UX.
+    
+
+### Planner Agent
+
+- Read-only planning; never implements code.
+    
+- Inspects relevant project files and requirements.
+    
+- Defines exactly what needs implementation.
+    
+- Identifies required references, dependencies, tests, benchmarks, and CI changes.
+    
+- Produces short, actionable plans without unnecessary context.
+    
+- Never suggests unrelated features or speculative improvements.
+    
+
+### Worker Agents
+
+- Implement independently assigned tasks.
+    
+- Use fresh, focused context windows.
+    
+- May specialize in UI, business logic, backend, testing, or infrastructure.
+    
+- Write meaningful tests before implementing behavior.
+    
+- Establish measurable performance baselines before optimization.
+    
+- Respect assigned ownership and existing architecture.
+    
+
+### Independent Reviewer Agent
+
+- Independently reviews work completed by Workers.
+    
+- Verifies logic, correctness, architecture, and MVVM compliance.
+    
+- Evaluates whether automated tests cover meaningful real-world scenarios.
+    
+- Identifies missing edge cases and regressions.
+    
+- Validates benchmark methodology, baseline measurements, and improvements.
+    
+- Reviews security, data integrity, and production readiness.
+    
+- Reports actionable findings and requires re-verification.
+    
+- Prefer a different model/provider where available.
+    
+
+## 2. Multi-Agent Orchestration
+
+- The Lead launches appropriate agents automatically for each workflow step.
+    
+- Use parallel Workers only for independent tasks.
+    
+- Assign explicit task ownership, interfaces, and non-overlapping file boundaries.
+    
+- Never allow agents to overwrite or interfere with one another's work.
+    
+- Workers cannot approve their own implementations.
+    
+- The Reviewer must be independent of implementation.
+    
+- Keep agent context focused on the files and information relevant to its task.
+    
+
+## 3. Design Rules
+
+- Every UI phase requires an approved Figma design or suitable reference validated in Figma.
+    
+- Validate responsive layouts, accessibility, usability, and loading, empty, error, and success states where relevant.
+    
+- Do not implement unapproved design changes.
+    
+- For non-UI phases, record Design: N/A.
+    
+
+## 4. Git Isolation
+
+- Every phase has its own dedicated branch/worktree.
+    
+- Every phase must be traceable through a pull request.
+    
+- Protect `main` from unfinished changes.
+    
+- Never merge without user approval.
+    
+- Prevent cross-agent interference and unrelated modifications.
+    
+
+## 5. Architecture & Implementation
+
+- Enforce MVVM for applicable application UI layers.
+    
+- Respect existing architecture, conventions, and module boundaries.
+    
+- Maintain clear separation of responsibilities.
+    
+- Avoid unnecessary dependencies, abstractions, or refactoring.
+    
+- Never alter unrelated features without authorization.
+    
+
+## 6. Testing & Numeric Benchmarks
+
+### Automated Testing
+
+- Write meaningful automated tests before implementing behavior.
+    
+- Cover normal usage, boundaries, invalid inputs, network errors, concurrency, race conditions, data failures, and recovery scenarios where relevant.
+    
+- Use appropriate unit, integration, and end-to-end tests.
+    
+- Reject superficial tests, meaningless assertions, and artificial coverage.
+    
+- Tests must validate actual requirements and realistic behavior.
+    
+- No implementation is considered complete until all required automated tests pass.
+    
+
+### Benchmarks
+
+- Establish numeric baselines before optimization.
+    
+- Never accept vague goals such as "make it faster."
+    
+- Measure relevant metrics such as latency, memory, startup time, rendering performance, or throughput.
+    
+- Record baseline values, measurement conditions, and acceptable targets.
+    
+- Automatically compare results after changes wherever practical.
+    
+- Reject meaningless benchmarks or improvements without evidence.
+    
+- Benchmarks are optional when no meaningful performance requirement exists; document N/A.
+    
+
+## 7. CI & Quality Gates
+
+- Existing mandatory CI checks must pass for every PR.
+    
+- Add targeted CI tests, architecture checks, or regression checks when required.
+    
+- Validate linting, static analysis, automated tests, and builds as applicable.
+    
+- Avoid redundant or unnecessarily expensive CI pipelines.
+    
+- Never mark failed, skipped, or unverified required checks as passed.
+    
+
+## 8. Security & Production Readiness
+
+- Review authorization, secrets, data integrity, and security-sensitive behavior.
+    
+- Validate database changes, migrations, and recovery where applicable.
+    
+- Run staging validation and smoke tests for deployable changes.
+    
+- Verify rollback procedures when necessary.
+    
+- Resolve blocking review findings before final approval.
+    
+
+## 9. Phase Tracking & Documentation
+
+- `PLANS.md` defines the phases and their scope.
+    
+- `PHASES.md` records each phase's status, branch, PR, design approval, tests, benchmarks, and completion.
+    
+- Update the tracker as work progresses.
+    
+- Record important architecture decisions, benchmark results, discovered issues, and lessons learned.
+    
+- Keep documentation useful, concise, and relevant.
+    
+- Mark a phase DONE only after all required checks, approval, merge, and applicable release validation.
+    
+- Never automatically start the next phase.
+    
+
+## 10. Prompt & Communication Rules
+
+- Prompts define the objective, acceptance criteria, and hard boundaries.
+    
+- Avoid micromanaging implementation details.
+    
+- Let the Lead and specialized agents determine the execution strategy.
+    
+- Keep plans, progress updates, and summaries concise.
+    
+- Report blockers and failed verification explicitly.
+    
+- Never claim work is verified when it has not been executed and checked.
+
+
+Final structure:
+Project/
+├── AGENTS.md          # Permanent rules + agent roles
+├── PLANS.md           # Project phases and scope
+├── PHASES.md          # Phase tracker
+├── PROMPTS.md         # 6 reusable execution prompts
+├── docs/
+│   └── phases/        # Evidence and decisions
+└── .codex/
+    └── agents/
+        ├── planner.toml
+        ├── ux.toml
+        └── reviewer.toml

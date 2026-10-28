@@ -1,0 +1,23 @@
+[
+  {
+    "view": "sales",
+    "width": 1512,
+    "mainWidth": 1440,
+    "overflow": false,
+    "heading": true
+  },
+  {
+    "view": "sales",
+    "width": 1024,
+    "mainWidth": 1024,
+    "overflow": false,
+    "heading": true
+  },
+  {
+    "view": "sales",
+    "width": 390,
+    "mainWidth": 390,
+    "overflow": false,
+    "heading": true
+  }
+]
