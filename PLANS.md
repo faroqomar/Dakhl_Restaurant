@@ -1,4 +1,4 @@
-# Daftar — project phases and scope
+# Dakhl_Restaurant — project phases and scope
 
 Status: current phase definitions, 2026-10-28. Implementation has not started. The existing 12 phases remain unchanged.
 
@@ -23,12 +23,12 @@ Read [AGENTS.md](AGENTS.md) for mandatory workflow and [PHASES.md](PHASES.md) fo
 
 ## Required execution gates
 
-For each phase, the Lead records Git isolation, assigned agents and applicable design requirements in PHASES.md. A read-only Planner defines the bounded work, tests, meaningful performance measurements and CI needs. UI work first validates the suitable reference in Figma and obtains approval; non-UI work records Design: N/A. Workers implement with meaningful tests written before behavior changes. An independent Reviewer verifies the result and fixes are re-verified.
+For each phase, the Lead records Git isolation, assigned agents and applicable design requirements in PHASES.md. A read-only Planner defines the bounded work, tests, meaningful performance measurements and CI needs. UI work first validates the suitable reference in Penpot and obtains approval; non-UI work records Design: N/A. Workers implement with meaningful tests written before behavior changes. An independent Reviewer verifies the result and fixes are re-verified.
 
 Create a traceable PR, satisfy mandatory quality gates, obtain user approval before merging, then perform applicable release/rollback validation. Update PHASES.md and evidence in docs/phases/. DONE requires the approved, merged PR and every applicable check; stop afterward until the owner starts the next phase.
 
 ## Scope boundaries
 
-Preserve all existing phase work items, financial invariants, failure/recovery checks and screenshots. All platforms remain macOS, Android and iPhone; data remains offline with backup/import. Exact current-design reproduction remains the default, subject to phase-specific owner edits and the Figma gate. The reference app is for consultation, not the destination for new Flutter features.
+Preserve all existing phase work items, financial invariants, failure/recovery checks and screenshots. All platforms remain macOS, Android and iPhone; data remains offline with backup/import. Exact current-design reproduction remains the default, subject to phase-specific owner edits and the Penpot design approval gate. The reference app is for consultation, not the destination for new Flutter features.
 
 Changes to phase definitions must update this index, linked detail, tracker and generated views together. The plan builder is a publication helper, not independent authorization to change scope or reset status.

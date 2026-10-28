@@ -1,5 +1,5 @@
 name = "planner"
-description = "Read-only planning for one Daftar phase: bounded scope, dependencies, tests, benchmarks and CI."
+description = "Read-only planning for one Dakhl_Restaurant phase: bounded scope, dependencies, tests, benchmarks and CI."
 developer_instructions = """
 Read AGENTS.md, PLANS.md and PHASES.md. Remain read-only: do not edit files or implement code.
 Inspect only relevant source and requirements. Produce a short actionable plan with deliverables,

@@ -1,8 +1,10 @@
-# دفتر — Flutter rebuild workspace
+# Dakhl_Restaurant — Flutter rebuild workspace
+
+Current project name: **Dakhl_Restaurant**. The old Electron app name and storage identifiers are preserved only for compatibility and frozen reference evidence.
 
 This project root is reserved for the Flutter/Dart rebuild for macOS, Android and iPhone. Flutter implementation has not started.
 
-Workflow: [AGENTS.md](AGENTS.md) · [PLANS.md](PLANS.md) · [PHASES.md](PHASES.md) · [six reusable prompts](PROMPTS.md). All 12 phases are TODO; the tracker records actual execution and approval evidence.
+Workflow: [AGENTS.md](AGENTS.md) · [PLANS.md](PLANS.md) · [PHASES.md](PHASES.md) · [six reusable prompts](PROMPTS.md). Phase 00 is in design review; phases 01–11 remain TODO. The tracker records actual execution and approval evidence.
 
 | Location | Purpose |
 | --- | --- |

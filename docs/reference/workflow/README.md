@@ -18,7 +18,7 @@ Exact local source copies are universal-rules.source.txt and phase-tracker.sourc
 - [.codex/agents/](../../../.codex/agents/): planner, ux and reviewer definitions; Lead/Workers use the available general roles.
 - [Evidence index](../../phases/README.md): where phase evidence is recorded when work begins.
 
-The shared memory source allowlist for daftar includes the three new root workflow files, alongside its existing documentation sources. No app/account data or other project’s source patterns were added.
+The shared memory source allowlist for Dakhl_Restaurant (legacy selector `daftar`) includes the three new root workflow files, alongside its existing documentation sources. No app/account data or other project’s source patterns were added.
 
 ## Agent configuration evidence
 

@@ -1,0 +1,95 @@
+{
+  "result": [
+    {
+      "node": "n90",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05bc0839c",
+      "image": "61fd668e-ca9f-8100-8008-dbb057bc583f"
+    },
+    {
+      "node": "n108",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05bc34120",
+      "image": "122350ae-89ad-8027-8008-dbb058292cbe"
+    },
+    {
+      "node": "n124",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05bc5a84b",
+      "image": "61fd668e-ca9f-8100-8008-dbb05a299c27"
+    },
+    {
+      "node": "n140",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05bc7e339",
+      "image": "122350ae-89ad-8027-8008-dbb05ac0a818"
+    },
+    {
+      "node": "n156",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05bca490e",
+      "image": "122350ae-89ad-8027-8008-dbb0543f49a7"
+    },
+    {
+      "node": "n174",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05bccf864",
+      "image": "bfddaaba-4180-81d4-8008-dbb054a57d33"
+    },
+    {
+      "node": "n190",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05bcf6fb2",
+      "image": "122350ae-89ad-8027-8008-dbb055216871"
+    },
+    {
+      "node": "n206",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05bd1fcfc",
+      "image": "61fd668e-ca9f-8100-8008-dbb0558795e2"
+    },
+    {
+      "node": "n222",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05bd4781e",
+      "image": "61fd668e-ca9f-8100-8008-dbb057bc583f"
+    },
+    {
+      "node": "n238",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05bd6be81",
+      "image": "122350ae-89ad-8027-8008-dbb058292cbe"
+    },
+    {
+      "node": "n254",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05bd93232",
+      "image": "61fd668e-ca9f-8100-8008-dbb057bc583f"
+    },
+    {
+      "node": "n270",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05bdbbd18",
+      "image": "61fd668e-ca9f-8100-8008-dbb057bc583f"
+    },
+    {
+      "node": "n286",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05bddef53",
+      "image": "122350ae-89ad-8027-8008-dbb058292cbe"
+    },
+    {
+      "node": "n301",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05bdf9e50",
+      "image": "61fd668e-ca9f-8100-8008-dbb05a299c27"
+    },
+    {
+      "node": "n316",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05be1764b",
+      "image": "61fd668e-ca9f-8100-8008-dbb05a299c27"
+    },
+    {
+      "node": "n331",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05be33aa4",
+      "image": "61fd668e-ca9f-8100-8008-dbb05a299c27"
+    },
+    {
+      "node": "n346",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05be4898f",
+      "image": "61fd668e-ca9f-8100-8008-dbb05a299c27"
+    },
+    {
+      "node": "n361",
+      "shape": "ac11b0df-9658-80a2-8008-dbb05be665f3",
+      "image": "122350ae-89ad-8027-8008-dbb05ac0a818"
+    }
+  ],
+  "log": ""
+}
