@@ -1,0 +1,1082 @@
+[
+  {
+    "view": "sales",
+    "width": 1512,
+    "height": 982,
+    "main": {
+      "x": 36,
+      "y": 0,
+      "width": 1440,
+      "height": 982
+    },
+    "header": null,
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "بيع جديدجاهز لاستقبال الطلبات",
+    "activeView": "sales",
+    "pageHeight": 982
+  },
+  {
+    "view": "expenses",
+    "width": 1512,
+    "height": 982,
+    "main": {
+      "x": 116,
+      "y": 0,
+      "width": 1280,
+      "height": 1329.140625
+    },
+    "header": {
+      "x": 146,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": {
+      "x": 146,
+      "y": 294.59375,
+      "width": 1220,
+      "height": 107.6953125
+    },
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "المصاريف اليومية",
+    "activeView": "expenses",
+    "pageHeight": 1329
+  },
+  {
+    "view": "sale-history",
+    "width": 1512,
+    "height": 982,
+    "main": {
+      "x": 116,
+      "y": 0,
+      "width": 1280,
+      "height": 802.9609375
+    },
+    "header": {
+      "x": 146,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "سجل المبيعات",
+    "activeView": "sale-history",
+    "pageHeight": 982
+  },
+  {
+    "view": "inventory",
+    "width": 1512,
+    "height": 982,
+    "main": {
+      "x": 116,
+      "y": 0,
+      "width": 1280,
+      "height": 921.3828125
+    },
+    "header": {
+      "x": 146,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "المخزن",
+    "activeView": "inventory",
+    "pageHeight": 982
+  },
+  {
+    "view": "statement",
+    "width": 1512,
+    "height": 982,
+    "main": {
+      "x": 116,
+      "y": 0,
+      "width": 1280,
+      "height": 1030.2734375
+    },
+    "header": {
+      "x": 146,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "كشف الحساب",
+    "pageHeight": 1030
+  },
+  {
+    "view": "suppliers",
+    "width": 1512,
+    "height": 982,
+    "main": {
+      "x": 116,
+      "y": 0,
+      "width": 1280,
+      "height": 516.984375
+    },
+    "header": {
+      "x": 146,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "الموردون",
+    "pageHeight": 982
+  },
+  {
+    "view": "invoices",
+    "width": 1512,
+    "height": 982,
+    "main": {
+      "x": 116,
+      "y": 0,
+      "width": 1280,
+      "height": 1054.0703125
+    },
+    "header": {
+      "x": 146,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "فواتير المشتريات",
+    "pageHeight": 1054
+  },
+  {
+    "view": "materials",
+    "width": 1512,
+    "height": 982,
+    "main": {
+      "x": 116,
+      "y": 0,
+      "width": 1280,
+      "height": 715.4765625
+    },
+    "header": {
+      "x": 146,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "المواد والأسعار",
+    "pageHeight": 982
+  },
+  {
+    "view": "payments",
+    "width": 1512,
+    "height": 982,
+    "main": {
+      "x": 116,
+      "y": 0,
+      "width": 1280,
+      "height": 742.9765625
+    },
+    "header": {
+      "x": 146,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "التسديدات",
+    "pageHeight": 982
+  },
+  {
+    "view": "cash",
+    "width": 1512,
+    "height": 982,
+    "main": {
+      "x": 116,
+      "y": 0,
+      "width": 1280,
+      "height": 884.7734375
+    },
+    "header": {
+      "x": 146,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "القاصة",
+    "activeView": "cash",
+    "pageHeight": 982
+  },
+  {
+    "view": "categories",
+    "width": 1512,
+    "height": 982,
+    "main": {
+      "x": 116,
+      "y": 0,
+      "width": 1280,
+      "height": 491.7890625
+    },
+    "header": {
+      "x": 146,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "الخانات",
+    "pageHeight": 982
+  },
+  {
+    "view": "settings",
+    "width": 1512,
+    "height": 982,
+    "main": {
+      "x": 116,
+      "y": 0,
+      "width": 1280,
+      "height": 1053.65625
+    },
+    "header": {
+      "x": 146,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "الإعدادات والنسخ",
+    "activeView": "settings",
+    "pageHeight": 1053
+  },
+  {
+    "view": "sales",
+    "width": 1920,
+    "height": 1080,
+    "main": {
+      "x": 240,
+      "y": 0,
+      "width": 1440,
+      "height": 1080
+    },
+    "header": null,
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "بيع جديدجاهز لاستقبال الطلبات",
+    "activeView": "sales",
+    "pageHeight": 1080
+  },
+  {
+    "view": "expenses",
+    "width": 1920,
+    "height": 1080,
+    "main": {
+      "x": 320,
+      "y": 0,
+      "width": 1280,
+      "height": 1329.140625
+    },
+    "header": {
+      "x": 350,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": {
+      "x": 350,
+      "y": 294.59375,
+      "width": 1220,
+      "height": 107.6953125
+    },
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "المصاريف اليومية",
+    "activeView": "expenses",
+    "pageHeight": 1329
+  },
+  {
+    "view": "sale-history",
+    "width": 1920,
+    "height": 1080,
+    "main": {
+      "x": 320,
+      "y": 0,
+      "width": 1280,
+      "height": 802.9609375
+    },
+    "header": {
+      "x": 350,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "سجل المبيعات",
+    "activeView": "sale-history",
+    "pageHeight": 1080
+  },
+  {
+    "view": "inventory",
+    "width": 1920,
+    "height": 1080,
+    "main": {
+      "x": 320,
+      "y": 0,
+      "width": 1280,
+      "height": 921.3828125
+    },
+    "header": {
+      "x": 350,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "المخزن",
+    "activeView": "inventory",
+    "pageHeight": 1080
+  },
+  {
+    "view": "statement",
+    "width": 1920,
+    "height": 1080,
+    "main": {
+      "x": 320,
+      "y": 0,
+      "width": 1280,
+      "height": 1030.2734375
+    },
+    "header": {
+      "x": 350,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "كشف الحساب",
+    "pageHeight": 1080
+  },
+  {
+    "view": "suppliers",
+    "width": 1920,
+    "height": 1080,
+    "main": {
+      "x": 320,
+      "y": 0,
+      "width": 1280,
+      "height": 516.984375
+    },
+    "header": {
+      "x": 350,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "الموردون",
+    "pageHeight": 1080
+  },
+  {
+    "view": "invoices",
+    "width": 1920,
+    "height": 1080,
+    "main": {
+      "x": 320,
+      "y": 0,
+      "width": 1280,
+      "height": 1054.0703125
+    },
+    "header": {
+      "x": 350,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "فواتير المشتريات",
+    "pageHeight": 1080
+  },
+  {
+    "view": "materials",
+    "width": 1920,
+    "height": 1080,
+    "main": {
+      "x": 320,
+      "y": 0,
+      "width": 1280,
+      "height": 715.4765625
+    },
+    "header": {
+      "x": 350,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "المواد والأسعار",
+    "pageHeight": 1080
+  },
+  {
+    "view": "payments",
+    "width": 1920,
+    "height": 1080,
+    "main": {
+      "x": 320,
+      "y": 0,
+      "width": 1280,
+      "height": 742.9765625
+    },
+    "header": {
+      "x": 350,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "التسديدات",
+    "pageHeight": 1080
+  },
+  {
+    "view": "cash",
+    "width": 1920,
+    "height": 1080,
+    "main": {
+      "x": 320,
+      "y": 0,
+      "width": 1280,
+      "height": 884.7734375
+    },
+    "header": {
+      "x": 350,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "القاصة",
+    "activeView": "cash",
+    "pageHeight": 1080
+  },
+  {
+    "view": "categories",
+    "width": 1920,
+    "height": 1080,
+    "main": {
+      "x": 320,
+      "y": 0,
+      "width": 1280,
+      "height": 491.7890625
+    },
+    "header": {
+      "x": 350,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "الخانات",
+    "pageHeight": 1080
+  },
+  {
+    "view": "settings",
+    "width": 1920,
+    "height": 1080,
+    "main": {
+      "x": 320,
+      "y": 0,
+      "width": 1280,
+      "height": 1053.65625
+    },
+    "header": {
+      "x": 350,
+      "y": 99,
+      "width": 1220,
+      "height": 95.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "الإعدادات والنسخ",
+    "activeView": "settings",
+    "pageHeight": 1080
+  },
+  {
+    "view": "sales",
+    "width": 1024,
+    "height": 768,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 2966.6484375
+    },
+    "header": null,
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "بيع جديدجاهز لاستقبال الطلبات",
+    "activeView": "sales",
+    "pageHeight": 2966
+  },
+  {
+    "view": "expenses",
+    "width": 1024,
+    "height": 768,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 1410.2578125
+    },
+    "header": {
+      "x": 30,
+      "y": 99,
+      "width": 964,
+      "height": 165.59375
+    },
+    "summary": {
+      "x": 30,
+      "y": 364.59375,
+      "width": 964,
+      "height": 136.296875
+    },
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "المصاريف اليومية",
+    "activeView": "expenses",
+    "pageHeight": 1410
+  },
+  {
+    "view": "sale-history",
+    "width": 1024,
+    "height": 768,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 864.9609375
+    },
+    "header": {
+      "x": 30,
+      "y": 99,
+      "width": 964,
+      "height": 157.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "سجل المبيعات",
+    "activeView": "sale-history",
+    "pageHeight": 865
+  },
+  {
+    "view": "inventory",
+    "width": 1024,
+    "height": 768,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 1058.3828125
+    },
+    "header": {
+      "x": 30,
+      "y": 99,
+      "width": 964,
+      "height": 157.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "المخزن",
+    "activeView": "inventory",
+    "pageHeight": 1058
+  },
+  {
+    "view": "statement",
+    "width": 1024,
+    "height": 768,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 1082.7734375
+    },
+    "header": {
+      "x": 30,
+      "y": 99,
+      "width": 964,
+      "height": 157.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "كشف الحساب",
+    "pageHeight": 1083
+  },
+  {
+    "view": "suppliers",
+    "width": 1024,
+    "height": 768,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 578.984375
+    },
+    "header": {
+      "x": 30,
+      "y": 99,
+      "width": 964,
+      "height": 157.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "الموردون",
+    "pageHeight": 768
+  },
+  {
+    "view": "invoices",
+    "width": 1024,
+    "height": 768,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 1106.5703125
+    },
+    "header": {
+      "x": 30,
+      "y": 99,
+      "width": 964,
+      "height": 157.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "فواتير المشتريات",
+    "pageHeight": 1106
+  },
+  {
+    "view": "materials",
+    "width": 1024,
+    "height": 768,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 777.4765625
+    },
+    "header": {
+      "x": 30,
+      "y": 99,
+      "width": 964,
+      "height": 157.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "المواد والأسعار",
+    "pageHeight": 777
+  },
+  {
+    "view": "payments",
+    "width": 1024,
+    "height": 768,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 758.9765625
+    },
+    "header": {
+      "x": 30,
+      "y": 99,
+      "width": 964,
+      "height": 111.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "التسديدات",
+    "pageHeight": 768
+  },
+  {
+    "view": "cash",
+    "width": 1024,
+    "height": 768,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 946.7734375
+    },
+    "header": {
+      "x": 30,
+      "y": 99,
+      "width": 964,
+      "height": 157.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "القاصة",
+    "activeView": "cash",
+    "pageHeight": 947
+  },
+  {
+    "view": "categories",
+    "width": 1024,
+    "height": 768,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 553.7890625
+    },
+    "header": {
+      "x": 30,
+      "y": 99,
+      "width": 964,
+      "height": 157.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "الخانات",
+    "pageHeight": 768
+  },
+  {
+    "view": "settings",
+    "width": 1024,
+    "height": 768,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 1069.65625
+    },
+    "header": {
+      "x": 30,
+      "y": 99,
+      "width": 964,
+      "height": 111.59375
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "الإعدادات والنسخ",
+    "activeView": "settings",
+    "pageHeight": 1069
+  },
+  {
+    "view": "sales",
+    "width": 390,
+    "height": 844,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 4982.625
+    },
+    "header": null,
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "بيع جديدجاهز لاستقبال الطلبات",
+    "activeView": "sales",
+    "pageHeight": 4982
+  },
+  {
+    "view": "expenses",
+    "width": 390,
+    "height": 844,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 2069.640625
+    },
+    "header": {
+      "x": 14,
+      "y": 193,
+      "width": 362,
+      "height": 462
+    },
+    "summary": {
+      "x": 14,
+      "y": 755,
+      "width": 362,
+      "height": 363.0859375
+    },
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "المصاريف اليومية",
+    "activeView": "expenses",
+    "pageHeight": 2069
+  },
+  {
+    "view": "sale-history",
+    "width": 390,
+    "height": 844,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 1414.5546875
+    },
+    "header": {
+      "x": 14,
+      "y": 193,
+      "width": 362,
+      "height": 342
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "سجل المبيعات",
+    "activeView": "sale-history",
+    "pageHeight": 1414
+  },
+  {
+    "view": "inventory",
+    "width": 390,
+    "height": 844,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 1430.3828125
+    },
+    "header": {
+      "x": 14,
+      "y": 193,
+      "width": 362,
+      "height": 342
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "المخزن",
+    "activeView": "inventory",
+    "pageHeight": 1430
+  },
+  {
+    "view": "statement",
+    "width": 390,
+    "height": 844,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 1751.3671875
+    },
+    "header": {
+      "x": 14,
+      "y": 193,
+      "width": 362,
+      "height": 342
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "كشف الحساب",
+    "pageHeight": 1751
+  },
+  {
+    "view": "suppliers",
+    "width": 390,
+    "height": 844,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 849.390625
+    },
+    "header": {
+      "x": 14,
+      "y": 193,
+      "width": 362,
+      "height": 342
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "الموردون",
+    "pageHeight": 849
+  },
+  {
+    "view": "invoices",
+    "width": 390,
+    "height": 844,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 1797.5625
+    },
+    "header": {
+      "x": 14,
+      "y": 193,
+      "width": 362,
+      "height": 342
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "فواتير المشتريات",
+    "pageHeight": 1797
+  },
+  {
+    "view": "materials",
+    "width": 390,
+    "height": 844,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 1151.078125
+    },
+    "header": {
+      "x": 14,
+      "y": 193,
+      "width": 362,
+      "height": 342
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "المواد والأسعار",
+    "pageHeight": 1151
+  },
+  {
+    "view": "payments",
+    "width": 390,
+    "height": 844,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 1137.9765625
+    },
+    "header": {
+      "x": 14,
+      "y": 193,
+      "width": 362,
+      "height": 296
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "التسديدات",
+    "pageHeight": 1138
+  },
+  {
+    "view": "cash",
+    "width": 390,
+    "height": 844,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 1537.5703125
+    },
+    "header": {
+      "x": 14,
+      "y": 193,
+      "width": 362,
+      "height": 398
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "القاصة",
+    "activeView": "cash",
+    "pageHeight": 1537
+  },
+  {
+    "view": "categories",
+    "width": 390,
+    "height": 844,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 982.1953125
+    },
+    "header": {
+      "x": 14,
+      "y": 193,
+      "width": 362,
+      "height": 342
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "الخانات",
+    "pageHeight": 982
+  },
+  {
+    "view": "settings",
+    "width": 390,
+    "height": 844,
+    "main": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 1793.453125
+    },
+    "header": {
+      "x": 14,
+      "y": 193,
+      "width": 362,
+      "height": 296
+    },
+    "summary": null,
+    "overflow": false,
+    "hasHeading": true,
+    "heading": "الإعدادات والنسخ",
+    "activeView": "settings",
+    "pageHeight": 1793
+  }
+]

@@ -1,0 +1,56 @@
+# Project Phase Tracker
+
+Source of phase definitions: PLANS.md
+
+## Statuses
+
+TODO → DESIGN → PLANNING → BUILDING → REVIEW → VERIFYING → PR → DONE
+
+Use BLOCKED when progress cannot continue. Skip inapplicable steps and record N/A.
+
+## Phases
+
+|Phase|Name|Status|Branch|PR|
+|---|---|---|---|---|
+|01|[Phase name]|TODO|—|—|
+|02|[Phase name]|TODO|—|—|
+|03|[Phase name]|TODO|—|—|
+
+## Per-Phase Record
+
+### Phase {{PHASE}}
+
+- **Status:** TODO
+    
+- **Figma / Design approval:** Pending / Approved / N/A
+    
+- **Branch / Worktree:** —
+    
+- **Assigned agents:** —
+    
+- **Implementation plan:** —
+    
+- **Automated tests:** Pending
+    
+- **CI:** Pending / N/A
+    
+- **Benchmarks:** Baseline / Final / N/A
+    
+- **Independent review:** Pending
+    
+- **Staging / Rollback:** Pending / N/A
+    
+- **PR:** —
+    
+- **User approval:** Pending
+    
+- **Decisions / Lessons:** —
+    
+- **Completed:** —
+    
+
+### Completion Rule
+
+Mark DONE only after all applicable requirements pass, the PR is approved and merged, and required release validation is completed.
+
+Never mark a phase DONE based only on implementation progress.

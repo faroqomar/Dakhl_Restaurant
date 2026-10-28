@@ -1,0 +1,1032 @@
+{
+  "original_work_items": 89,
+  "original_acceptance_items": 39,
+  "preserved_items": [
+    {
+      "id": "old-00-work-01",
+      "old_phase": "00",
+      "new_phase": "00",
+      "kind": "work",
+      "original": "Create the Flutter workspace in a separate flutter/ directory, retaining the working Electron app. Use separate development app identifiers and data locations until the final migration rehearsal.",
+      "current": "Create the Flutter workspace at this project root, retaining the unchanged Electron reference in electron-reference/. Use separate development app identifiers and data locations until the final migration rehearsal."
+    },
+    {
+      "id": "old-00-work-02",
+      "old_phase": "00",
+      "new_phase": "00",
+      "kind": "work",
+      "original": "Pin the verified Flutter/Dart toolchain and dependency versions; record minimum supported OS versions and actual test devices. Build and launch a blank Arabic RTL shell on all three targets.",
+      "current": "Pin the verified Flutter/Dart toolchain and dependency versions; record minimum supported OS versions and actual test devices. Build and launch a blank Arabic RTL shell on all three targets."
+    },
+    {
+      "id": "old-00-work-03",
+      "old_phase": "00",
+      "new_phase": "00",
+      "kind": "work",
+      "original": "Freeze these screenshots, source hashes, illustrative fixtures and feature inventory. Review the current plan with the owner; changes can be decided at the start of each later phase.",
+      "current": "Freeze these screenshots, source hashes, illustrative fixtures and feature inventory. Review the current plan with the owner; changes can be decided at the start of each later phase."
+    },
+    {
+      "id": "old-00-work-04",
+      "old_phase": "00",
+      "new_phase": "00",
+      "kind": "work",
+      "original": "Choose iPhone installation/distribution route, Apple signing identity, Android signing custody and macOS distribution route. Keep credentials outside the repository.",
+      "current": "Choose iPhone installation/distribution route, Apple signing identity, Android signing custody and macOS distribution route. Keep credentials outside the repository."
+    },
+    {
+      "id": "old-00-work-05",
+      "old_phase": "00",
+      "new_phase": "00",
+      "kind": "work",
+      "original": "Prove Arabic font availability/licensing, file picker import/export, local writes, PDF generation/share and system print entry points on all targets before depending on plugins. Select dependencies by this evidence, not by another project’s stack.",
+      "current": "Prove Arabic font availability/licensing, file picker import/export, local writes, PDF generation/share and system print entry points on all targets before depending on plugins. Select dependencies by this evidence, not by another project’s stack."
+    },
+    {
+      "id": "old-00-acceptance-01",
+      "old_phase": "00",
+      "new_phase": "00",
+      "kind": "acceptance",
+      "original": "Three launch records show device/OS/build versions and screenshots. A simulator build alone does not establish iPhone installation.",
+      "current": "Three launch records show device/OS/build versions and screenshots. A simulator build alone does not establish iPhone installation."
+    },
+    {
+      "id": "old-00-acceptance-02",
+      "old_phase": "00",
+      "new_phase": "00",
+      "kind": "acceptance",
+      "original": "Every current screen and behavior has an owner phase. No current accounts have been opened, modified or migrated by this planning work.",
+      "current": "Every current screen and behavior has an owner phase. No current accounts have been opened, modified or migrated by this planning work."
+    },
+    {
+      "id": "old-01-work-01",
+      "old_phase": "01",
+      "new_phase": "01",
+      "kind": "work",
+      "original": "Implement extracted colors, radii, spacing, page gutters, typography roles, Latin tabular financial values, Arabic labels and RTL reading order.",
+      "current": "Implement extracted colors, radii, spacing, page gutters, typography roles, Latin tabular financial values, Arabic labels and RTL reading order."
+    },
+    {
+      "id": "old-01-work-02",
+      "old_phase": "01",
+      "new_phase": "01",
+      "kind": "work",
+      "original": "Build the actual shared components: toolbar and shortcuts, buttons and icons, inputs, money/quantity/date fields, selects, tables, pagination, filters, badges, empty states, toast/status, standard and wide dialogs.",
+      "current": "Build the actual shared components: toolbar and shortcuts, buttons and icons, inputs, money/quantity/date fields, selects, tables, pagination, filters, badges, empty states, toast/status, standard and wide dialogs."
+    },
+    {
+      "id": "old-01-work-03",
+      "old_phase": "01",
+      "new_phase": "01",
+      "kind": "work",
+      "original": "Retain fluid full-width pages, catalog on the left and bill on the right, modest gutters, compact related totals, popover navigation and centered dialogs. Reuse the frozen product thumbnails and icon paths.",
+      "current": "Retain fluid full-width pages, catalog on the left and bill on the right, modest gutters, compact related totals, popover navigation and centered dialogs. Reuse the frozen product thumbnails and icon paths."
+    },
+    {
+      "id": "old-01-work-04",
+      "old_phase": "01",
+      "new_phase": "01",
+      "kind": "work",
+      "original": "Reproduce the current narrow reference at 390×844, then verify safe areas, keyboard open, scrollable form content, visible save/cancel, back gesture and large text on Android and iPhone.",
+      "current": "Reproduce the current narrow reference at 390×844, then verify safe areas, keyboard open, scrollable form content, visible save/cancel, back gesture and large text on Android and iPhone."
+    },
+    {
+      "id": "old-01-work-05",
+      "old_phase": "01",
+      "new_phase": "01",
+      "kind": "work",
+      "original": "Choose a licensed Arabic font and establish a golden baseline per platform. Record glyph/rendering differences explicitly; do not claim raw macOS pixels can be identical on every platform.",
+      "current": "Choose a licensed Arabic font and establish a golden baseline per platform. Record glyph/rendering differences explicitly; do not claim raw macOS pixels can be identical on every platform."
+    },
+    {
+      "id": "old-01-acceptance-01",
+      "old_phase": "01",
+      "new_phase": "01",
+      "kind": "acceptance",
+      "original": "Component gallery screenshots cover default, focused, disabled, loading, validation and error states.",
+      "current": "Component gallery screenshots cover default, focused, disabled, loading, validation and error states."
+    },
+    {
+      "id": "old-01-acceptance-02",
+      "old_phase": "01",
+      "new_phase": "01",
+      "kind": "acceptance",
+      "original": "Side-by-side comparison at the same logical size shows no unexplained layout or copy differences. 320-wide and 200% text tests leave essential actions reachable.",
+      "current": "Side-by-side comparison at the same logical size shows no unexplained layout or copy differences. 320-wide and 200% text tests leave essential actions reachable."
+    },
+    {
+      "id": "old-02-work-01",
+      "old_phase": "02",
+      "new_phase": "02",
+      "kind": "work",
+      "original": "Define typed Dart models, codecs, IDs, date-only values, integer IQD money, scaled quantities up to three decimals, exact rounding and shared validation limits. Preserve source semantics and IDs, not just visible totals.",
+      "current": "Define typed Dart models, codecs, IDs, date-only values, integer IQD money, scaled quantities up to three decimals, exact rounding and shared validation limits. Preserve source semantics and IDs, not just visible totals."
+    },
+    {
+      "id": "old-02-work-02",
+      "old_phase": "02",
+      "new_phase": "02",
+      "kind": "work",
+      "original": "Implement repository and local file service boundaries. Proposed first storage is versioned JSON with atomic replacement, validated writes, previous-copy backup and an explicit single-writer policy. Record any alternative in an ADR before changing it.",
+      "current": "Implement repository and local file service boundaries. Proposed first storage is versioned JSON with atomic replacement, validated writes, previous-copy backup and an explicit single-writer policy. Record any alternative in an ADR before changing it."
+    },
+    {
+      "id": "old-02-work-03",
+      "old_phase": "02",
+      "new_phase": "02",
+      "kind": "work",
+      "original": "Implement non-destructive legacy migrations for supported Electron schema versions 1–11. Preserve workers/savingsEntries and correction history as compatibility data with no worker UI.",
+      "current": "Implement non-destructive legacy migrations for supported Electron schema versions 1–11. Preserve workers/savingsEntries and correction history as compatibility data with no worker UI."
+    },
+    {
+      "id": "old-02-work-04",
+      "old_phase": "02",
+      "new_phase": "02",
+      "kind": "work",
+      "original": "Add a separate durable workspace for active/held orders and device-only display preferences. File/account replacement clears old drafts only after a successful replacement.",
+      "current": "Add a separate durable workspace for active/held orders and device-only display preferences. File/account replacement clears old drafts only after a successful replacement."
+    },
+    {
+      "id": "old-02-work-05",
+      "old_phase": "02",
+      "new_phase": "02",
+      "kind": "work",
+      "original": "Handle loading, unreadable file, unsupported version, invalid import, full disk/write failure, interrupted write, backup recovery, save retry and app lifecycle interruption. Failed writes never show saved success or clear the user’s form.",
+      "current": "Handle loading, unreadable file, unsupported version, invalid import, full disk/write failure, interrupted write, backup recovery, save retry and app lifecycle interruption. Failed writes never show saved success or clear the user’s form."
+    },
+    {
+      "id": "old-02-work-06",
+      "old_phase": "02",
+      "new_phase": "02",
+      "kind": "work",
+      "original": "Create a deterministic parity corpus from synthetic JavaScript inputs/outputs. As each later feature is implemented, run the same cases through Dart; compare records and derived outputs.",
+      "current": "Create a deterministic parity corpus from synthetic JavaScript inputs/outputs. As each later feature is implemented, run the same cases through Dart; compare records and derived outputs."
+    },
+    {
+      "id": "old-02-acceptance-01",
+      "old_phase": "02",
+      "new_phase": "02",
+      "kind": "acceptance",
+      "original": "Restart round-trip preserves every supported record and setting. Unknown future schema is rejected without overwriting it.",
+      "current": "Restart round-trip preserves every supported record and setting. Unknown future schema is rejected without overwriting it."
+    },
+    {
+      "id": "old-02-acceptance-02",
+      "old_phase": "02",
+      "new_phase": "02",
+      "kind": "acceptance",
+      "original": "Fault injection at each write boundary recovers either the last valid state or the complete new state. Import size limit and validation match the current 20 MiB boundary unless explicitly changed.",
+      "current": "Fault injection at each write boundary recovers either the last valid state or the complete new state. Import size limit and validation match the current 20 MiB boundary unless explicitly changed."
+    },
+    {
+      "id": "old-02-acceptance-03",
+      "old_phase": "02",
+      "new_phase": "02",
+      "kind": "acceptance",
+      "original": "All money/date/quantity parsing and migration cases pass in Dart and in the frozen JavaScript reference.",
+      "current": "All money/date/quantity parsing and migration cases pass in Dart and in the frozen JavaScript reference."
+    },
+    {
+      "id": "old-03-work-01",
+      "old_phase": "03",
+      "new_phase": "01",
+      "kind": "work",
+      "original": "Rebuild the grouped popover menu and dismiss/scrim behavior, six configurable shortcuts, active state and current save/error status.",
+      "current": "Rebuild the grouped popover menu and dismiss/scrim behavior, six configurable shortcuts, active state and current save/error status."
+    },
+    {
+      "id": "old-03-work-02",
+      "old_phase": "03",
+      "new_phase": "01",
+      "kind": "work",
+      "original": "Wire route restoration and unknown destinations back to Sales. Preserve the historic savings shortcut cleanup without exposing a retired screen.",
+      "current": "Wire route restoration and unknown destinations back to Sales. Preserve the historic savings shortcut cleanup without exposing a retired screen."
+    },
+    {
+      "id": "old-03-work-03",
+      "old_phase": "03",
+      "new_phase": "01",
+      "kind": "work",
+      "original": "Implement keyboard traversal, Escape, focus trapping/restoration, menu shortcuts, session undo dispatch and dirty-form protection. Map mobile back/navigation onto the same rules.",
+      "current": "Implement keyboard traversal, Escape, focus trapping/restoration, menu shortcuts, session undo dispatch and dirty-form protection. Map mobile back/navigation onto the same rules."
+    },
+    {
+      "id": "old-03-work-04",
+      "old_phase": "03",
+      "new_phase": "01",
+      "kind": "work",
+      "original": "Provide compact loading, empty and failure shells without changing domain records. Keep every page aligned to the same gutters.",
+      "current": "Provide compact loading, empty and failure shells without changing domain records. Keep every page aligned to the same gutters."
+    },
+    {
+      "id": "old-03-acceptance-01",
+      "old_phase": "03",
+      "new_phase": "01",
+      "kind": "acceptance",
+      "original": "Every route opens, closes and restores focus; hidden navigation cannot receive interaction.",
+      "current": "Every route opens, closes and restores focus; hidden navigation cannot receive interaction."
+    },
+    {
+      "id": "old-03-acceptance-02",
+      "old_phase": "03",
+      "new_phase": "01",
+      "kind": "acceptance",
+      "original": "Unsaved dialogs/settings require a discard decision; canceling it retains content. Navigation does not erase an active ticket.",
+      "current": "Unsaved dialogs/settings require a discard decision; canceling it retains content. Navigation does not erase an active ticket."
+    },
+    {
+      "id": "old-04-work-01",
+      "old_phase": "04",
+      "new_phase": "06",
+      "kind": "work",
+      "original": "Rebuild the category grid, add/edit dialog, primary/additional classification and automatic type save.",
+      "current": "Rebuild the category grid, add/edit dialog, primary/additional classification and automatic type save."
+    },
+    {
+      "id": "old-04-work-02",
+      "old_phase": "04",
+      "new_phase": "06",
+      "kind": "work",
+      "original": "Preserve built-in category identities and restrictions. Validate names and duplicate handling; allow custom category archive/restore behavior as supported by the source.",
+      "current": "Preserve built-in category identities and restrictions. Validate names and duplicate handling; allow custom category archive/restore behavior as supported by the source."
+    },
+    {
+      "id": "old-04-work-03",
+      "old_phase": "04",
+      "new_phase": "06",
+      "kind": "work",
+      "original": "Expose active categories to new expenses and supplier-payment defaults while historical entries keep their category identity. Support creating a category within the expense form.",
+      "current": "Expose active categories to new expenses and supplier-payment defaults while historical entries keep their category identity. Support creating a category within the expense form."
+    },
+    {
+      "id": "old-04-acceptance-01",
+      "old_phase": "04",
+      "new_phase": "06",
+      "kind": "acceptance",
+      "original": "Add/edit/type/archive/reopen work offline and survive restart.",
+      "current": "Add/edit/type/archive/reopen work offline and survive restart."
+    },
+    {
+      "id": "old-04-acceptance-02",
+      "old_phase": "04",
+      "new_phase": "06",
+      "kind": "acceptance",
+      "original": "Existing expenses and supplier references retain their identity and financial values; invalid names do not save.",
+      "current": "Existing expenses and supplier references retain their identity and financial values; invalid names do not save."
+    },
+    {
+      "id": "old-05-work-01",
+      "old_phase": "05",
+      "new_phase": "03",
+      "kind": "work",
+      "original": "Rebuild catalog table, search, group/status/low-stock filters, pagination, add/edit product, code/barcode text, group, unit, price, reference photo and archive state.",
+      "current": "Rebuild catalog table, search, group/status/low-stock filters, pagination, add/edit product, code/barcode text, group, unit, price, reference photo and archive state."
+    },
+    {
+      "id": "old-05-work-02",
+      "old_phase": "05",
+      "new_phase": "03",
+      "kind": "work",
+      "original": "Implement tracked/untracked products, opening quantities, restock and signed adjustment/loss, effective dates, low-stock threshold and current-date availability.",
+      "current": "Implement tracked/untracked products, opening quantities, restock and signed adjustment/loss, effective dates, low-stock threshold and current-date availability."
+    },
+    {
+      "id": "old-05-work-03",
+      "old_phase": "05",
+      "new_phase": "03",
+      "kind": "work",
+      "original": "Rebuild stock history including sale/return links, future movement labels, reversal with reason and trace to the original entry. Corrections preserve history and cannot create negative historical stock.",
+      "current": "Rebuild stock history including sale/return links, future movement labels, reversal with reason and trace to the original entry. Corrections preserve history and cannot create negative historical stock."
+    },
+    {
+      "id": "old-05-work-04",
+      "old_phase": "05",
+      "new_phase": "03",
+      "kind": "work",
+      "original": "Lock unit/tracking changes once history exists; preserve prices and product details in saved sale lines. Keep supplier ingredients/materials separate: no recipe or automatic purchase-to-product conversion.",
+      "current": "Lock unit/tracking changes once history exists; preserve prices and product details in saved sale lines. Keep supplier ingredients/materials separate: no recipe or automatic purchase-to-product conversion."
+    },
+    {
+      "id": "old-05-work-05",
+      "old_phase": "05",
+      "new_phase": "03",
+      "kind": "work",
+      "original": "Barcode is a searchable text/code field here. Camera scanning or new scanner hardware is outside this reproduction unless later requested.",
+      "current": "Barcode is a searchable text/code field here. Camera scanning or new scanner hardware is outside this reproduction unless later requested."
+    },
+    {
+      "id": "old-05-acceptance-01",
+      "old_phase": "05",
+      "new_phase": "03",
+      "kind": "acceptance",
+      "original": "Opening, sale, return, restock, loss and reversal quantities reconcile for current and historical dates.",
+      "current": "Opening, sale, return, restock, loss and reversal quantities reconcile for current and historical dates."
+    },
+    {
+      "id": "old-05-acceptance-02",
+      "old_phase": "05",
+      "new_phase": "03",
+      "kind": "acceptance",
+      "original": "Archived, unavailable and low-stock states match the reference; filters keep keyboard focus. Changing a current price never rewrites a saved sale.",
+      "current": "Archived, unavailable and low-stock states match the reference; filters keep keyboard focus. Changing a current price never rewrites a saved sale."
+    },
+    {
+      "id": "old-06-work-01",
+      "old_phase": "06",
+      "new_phase": "04",
+      "kind": "work",
+      "original": "Reproduce photo cards, corner plus/count, group tabs/counts, search, compact display toggle and catalog pagination/scrolling.",
+      "current": "Reproduce photo cards, corner plus/count, group tabs/counts, search, compact display toggle and catalog pagination/scrolling."
+    },
+    {
+      "id": "old-06-work-02",
+      "old_phase": "06",
+      "new_phase": "04",
+      "kind": "work",
+      "original": "Build the right-hand ticket with quantity increment/decrement/direct entry, remove line, fixed discount, note, date, order type, subtotal and total; retain the price captured when adding an item.",
+      "current": "Build the right-hand ticket with quantity increment/decrement/direct entry, remove line, fixed discount, note, date, order type, subtotal and total; retain the price captured when adding an item."
+    },
+    {
+      "id": "old-06-work-03",
+      "old_phase": "06",
+      "new_phase": "04",
+      "kind": "work",
+      "original": "Exact-value checkout means confirming receipt of the net total. Do not add a tendered-cash input, taxes, fees, credit customers or automatic delivery charges.",
+      "current": "Exact-value checkout means confirming receipt of the net total. Do not add a tendered-cash input, taxes, fees, credit customers or automatic delivery charges."
+    },
+    {
+      "id": "old-06-work-04",
+      "old_phase": "06",
+      "new_phase": "04",
+      "kind": "work",
+      "original": "Persist before presenting the paid receipt. Protect duplicate taps, retries and stale workspace writes using durable operation/sale identity. Keep the ticket on any failed validation or save.",
+      "current": "Persist before presenting the paid receipt. Protect duplicate taps, retries and stale workspace writes using durable operation/sale identity. Keep the ticket on any failed validation or save."
+    },
+    {
+      "id": "old-06-work-05",
+      "old_phase": "06",
+      "new_phase": "04",
+      "kind": "work",
+      "original": "After a successful save open the paid receipt with close/new-order, details, PDF and system-print actions. Connect file/print services incrementally; their final cross-platform completion is phase 17.",
+      "current": "After a successful save open the paid receipt with close/new-order, details, PDF and system-print actions. Connect file/print services incrementally; their final cross-platform completion is phase 10."
+    },
+    {
+      "id": "old-06-acceptance-01",
+      "old_phase": "06",
+      "new_phase": "04",
+      "kind": "acceptance",
+      "original": "Subtotal minus discount equals stored net; stock and daily sales change once. Retrying after restart cannot duplicate a saved sale or reuse a sale number.",
+      "current": "Subtotal minus discount equals stored net; stock and daily sales change once. Retrying after restart cannot duplicate a saved sale or reuse a sale number."
+    },
+    {
+      "id": "old-06-acceptance-02",
+      "old_phase": "06",
+      "new_phase": "04",
+      "kind": "acceptance",
+      "original": "Empty ticket, insufficient stock, archived product, invalid discount and changed date have explicit states. Failed saves retain the ticket.",
+      "current": "Empty ticket, insufficient stock, archived product, invalid discount and changed date have explicit states. Failed saves retain the ticket."
+    },
+    {
+      "id": "old-07-work-01",
+      "old_phase": "07",
+      "new_phase": "04",
+      "kind": "work",
+      "original": "Rebuild hold-name dialog, held list, resume/swap and deletion confirmation, including empty list.",
+      "current": "Rebuild hold-name dialog, held list, resume/swap and deletion confirmation, including empty list."
+    },
+    {
+      "id": "old-07-work-02",
+      "old_phase": "07",
+      "new_phase": "04",
+      "kind": "work",
+      "original": "Persist active ticket and up to the source limit of 40 held orders in device/account-scoped storage; keep lines, price snapshots, date, discount, note and order type.",
+      "current": "Persist active ticket and up to the source limit of 40 held orders in device/account-scoped storage; keep lines, price snapshots, date, discount, note and order type."
+    },
+    {
+      "id": "old-07-work-03",
+      "old_phase": "07",
+      "new_phase": "04",
+      "kind": "work",
+      "original": "A held order creates neither sale nor stock reservation nor cash effect. Resume checks current product availability at checkout.",
+      "current": "A held order creates neither sale nor stock reservation nor cash effect. Resume checks current product availability at checkout."
+    },
+    {
+      "id": "old-07-work-04",
+      "old_phase": "07",
+      "new_phase": "04",
+      "kind": "work",
+      "original": "Switching to another held ticket atomically preserves the current one; handle storage failure and stale second-window state without losing either ticket.",
+      "current": "Switching to another held ticket atomically preserves the current one; handle storage failure and stale second-window state without losing either ticket."
+    },
+    {
+      "id": "old-07-work-05",
+      "old_phase": "07",
+      "new_phase": "04",
+      "kind": "work",
+      "original": "Keep these drafts outside the transferable accounts backup, matching current behavior. Explain their device-only boundary in the UI and manual.",
+      "current": "Keep these drafts outside the transferable accounts backup, matching current behavior. Explain their device-only boundary in the UI and manual."
+    },
+    {
+      "id": "old-07-acceptance-01",
+      "old_phase": "07",
+      "new_phase": "04",
+      "kind": "acceptance",
+      "original": "Force-close/reopen recovers active and held orders, scoped to the correct account.",
+      "current": "Force-close/reopen recovers active and held orders, scoped to the correct account."
+    },
+    {
+      "id": "old-07-acceptance-02",
+      "old_phase": "07",
+      "new_phase": "04",
+      "kind": "acceptance",
+      "original": "Hold/resume failures preserve both sides; checkout conflicts cannot duplicate sales. Importing replacement accounts cannot resurrect unrelated drafts.",
+      "current": "Hold/resume failures preserve both sides; checkout conflicts cannot duplicate sales. Importing replacement accounts cannot resurrect unrelated drafts."
+    },
+    {
+      "id": "old-08-work-01",
+      "old_phase": "08",
+      "new_phase": "05",
+      "kind": "work",
+      "original": "Rebuild date/query/status/order-type filters, presets, pagination, totals, saved/void receipts and refund history.",
+      "current": "Rebuild date/query/status/order-type filters, presets, pagination, totals, saved/void receipts and refund history."
+    },
+    {
+      "id": "old-08-work-02",
+      "old_phase": "08",
+      "new_phase": "05",
+      "kind": "work",
+      "original": "Implement partial and full returns with quantity, date, reason, explicit cash-refund confirmation and per-line optional restock. Display the calculated refund before saving.",
+      "current": "Implement partial and full returns with quantity, date, reason, explicit cash-refund confirmation and per-line optional restock. Display the calculated refund before saving."
+    },
+    {
+      "id": "old-08-work-03",
+      "old_phase": "08",
+      "new_phase": "05",
+      "kind": "work",
+      "original": "Use original price snapshots and cumulative discount allocation/rounding. Full successive refunds must equal the original net exactly, including fractional quantities.",
+      "current": "Use original price snapshots and cumulative discount allocation/rounding. Full successive refunds must equal the original net exactly, including fractional quantities."
+    },
+    {
+      "id": "old-08-work-04",
+      "old_phase": "08",
+      "new_phase": "05",
+      "kind": "work",
+      "original": "Refund affects daily net proceeds on its return date, never an expense or automatic cashbox withdrawal. Restock affects only the return date when selected.",
+      "current": "Refund affects daily net proceeds on its return date, never an expense or automatic cashbox withdrawal. Restock affects only the return date when selected."
+    },
+    {
+      "id": "old-08-work-05",
+      "old_phase": "08",
+      "new_phase": "05",
+      "kind": "work",
+      "original": "Void a sale without returns only, with reason and original-date reversal. Preserve its number and original record. A sale with returns uses further returns rather than void.",
+      "current": "Void a sale without returns only, with reason and original-date reversal. Preserve its number and original record. A sale with returns uses further returns rather than void."
+    },
+    {
+      "id": "old-08-acceptance-01",
+      "old_phase": "08",
+      "new_phase": "05",
+      "kind": "acceptance",
+      "original": "Over-return, duplicate return and invalid dates are rejected. Full returns reconcile exactly and cannot double-deduct a fresh remaining snapshot.",
+      "current": "Over-return, duplicate return and invalid dates are rejected. Full returns reconcile exactly and cannot double-deduct a fresh remaining snapshot."
+    },
+    {
+      "id": "old-08-acceptance-02",
+      "old_phase": "08",
+      "new_phase": "05",
+      "kind": "acceptance",
+      "original": "History totals use sale dates and refund dates correctly, including a negative net return-only period. Saved receipt details persist after price changes.",
+      "current": "History totals use sale dates and refund dates correctly, including a negative net return-only period. Saved receipt details persist after price changes."
+    },
+    {
+      "id": "old-09-work-01",
+      "old_phase": "09",
+      "new_phase": "06",
+      "kind": "work",
+      "original": "Reproduce the daily table plus compact secondary cash-expense/remaining/chicken column; date selection, previous/next/today, expense add/edit/delete and notes.",
+      "current": "Reproduce the daily table plus compact secondary cash-expense/remaining/chicken column; date selection, previous/next/today, expense add/edit/delete and notes."
+    },
+    {
+      "id": "old-09-work-02",
+      "old_phase": "09",
+      "new_phase": "06",
+      "kind": "work",
+      "original": "Implement daily/cash/shared funding with both shares validated. A shared expense appears in both source views, with no duplication in daily totals.",
+      "current": "Implement daily/cash/shared funding with both shares validated. A shared expense appears in both source views, with no duplication in daily totals."
+    },
+    {
+      "id": "old-09-work-03",
+      "old_phase": "09",
+      "new_phase": "06",
+      "kind": "work",
+      "original": "Port remaining-cash snapshots and total-balance recording, automatic/manual expense totals, correction reasons/history, clear balance and session undo preserving inverse correction records.",
+      "current": "Port remaining-cash snapshots and total-balance recording, automatic/manual expense totals, correction reasons/history, clear balance and session undo preserving inverse correction records."
+    },
+    {
+      "id": "old-09-work-04",
+      "old_phase": "09",
+      "new_phase": "06",
+      "kind": "work",
+      "original": "Port daily date correction and optional shift of following recorded days with preview/collision protection. Respect the independent dates of supplier invoices/debts, sales and inventory.",
+      "current": "Port daily date correction and optional shift of following recorded days with preview/collision protection. Respect the independent dates of supplier invoices/debts, sales and inventory."
+    },
+    {
+      "id": "old-09-work-05",
+      "old_phase": "09",
+      "new_phase": "06",
+      "kind": "work",
+      "original": "Chicken used/left are counts only. Keep daily sales/refunds integrated with remaining snapshots without treating balances as profit.",
+      "current": "Chicken used/left are counts only. Keep daily sales/refunds integrated with remaining snapshots without treating balances as profit."
+    },
+    {
+      "id": "old-09-acceptance-01",
+      "old_phase": "09",
+      "new_phase": "06",
+      "kind": "acceptance",
+      "original": "The numerical examples in accounting-parity.md pass for edits/deletes, shared funding, snapshots, later sales/refunds and transfers.",
+      "current": "The numerical examples in accounting-parity.md pass for edits/deletes, shared funding, snapshots, later sales/refunds and transfers."
+    },
+    {
+      "id": "old-09-acceptance-02",
+      "old_phase": "09",
+      "new_phase": "06",
+      "kind": "acceptance",
+      "original": "Correction/undo/date-shift tests preserve linked records and reject overlaps; chicken changes affect no monetary result.",
+      "current": "Correction/undo/date-shift tests preserve linked records and reject overlaps; chicken changes affect no monetary result."
+    },
+    {
+      "id": "old-10-work-01",
+      "old_phase": "10",
+      "new_phase": "10",
+      "kind": "work",
+      "original": "Reproduce from/to, category and source filters, date presets, summary amounts, descending category ranking, transaction detail and pagination.",
+      "current": "Reproduce from/to, category and source filters, date presets, summary amounts, descending category ranking, transaction detail and pagination."
+    },
+    {
+      "id": "old-10-work-02",
+      "old_phase": "10",
+      "new_phase": "10",
+      "kind": "work",
+      "original": "Use paid expenses and supplier payments, not unpaid invoice totals. Source-filtered shares remain correctly classified.",
+      "current": "Use paid expenses and supplier payments, not unpaid invoice totals. Source-filtered shares remain correctly classified."
+    },
+    {
+      "id": "old-10-work-03",
+      "old_phase": "10",
+      "new_phase": "10",
+      "kind": "work",
+      "original": "Rebuild the short day-review dialog, temporary checkboxes, sales/refund/spending facts, record-remaining link, optional transfer and daily PDF link.",
+      "current": "Rebuild the short day-review dialog, temporary checkboxes, sales/refund/spending facts, record-remaining link, optional transfer and daily PDF link."
+    },
+    {
+      "id": "old-10-work-04",
+      "old_phase": "10",
+      "new_phase": "10",
+      "kind": "work",
+      "original": "Keep day review informational. It does not create an immutable closing record, lock a date or calculate profit.",
+      "current": "Keep day review informational. It does not create an immutable closing record, lock a date or calculate profit."
+    },
+    {
+      "id": "old-10-acceptance-01",
+      "old_phase": "10",
+      "new_phase": "10",
+      "kind": "acceptance",
+      "original": "Cash-source filtering shows zero daily share, matching the reference. Ranked totals reconcile to visible rows.",
+      "current": "Cash-source filtering shows zero daily share, matching the reference. Ranked totals reconcile to visible rows."
+    },
+    {
+      "id": "old-10-acceptance-02",
+      "old_phase": "10",
+      "new_phase": "10",
+      "kind": "acceptance",
+      "original": "Review checkboxes change no account data and no financial amount; links return to the correct daily context.",
+      "current": "Review checkboxes change no account data and no financial amount; links return to the correct daily context."
+    },
+    {
+      "id": "old-11-work-01",
+      "old_phase": "11",
+      "new_phase": "07",
+      "kind": "work",
+      "original": "Rebuild supplier picker/search, supplier add/edit, optional contact and note, category default, opening debt and supported archive behavior.",
+      "current": "Rebuild supplier picker/search, supplier add/edit, optional contact and note, category default, opening debt and supported archive behavior."
+    },
+    {
+      "id": "old-11-work-02",
+      "old_phase": "11",
+      "new_phase": "07",
+      "kind": "work",
+      "original": "Reproduce supplier summary, invoices/debts/ledger tabs, additional debt add/edit/delete and chronological before/after balances.",
+      "current": "Reproduce supplier summary, invoices/debts/ledger tabs, additional debt add/edit/delete and chronological before/after balances."
+    },
+    {
+      "id": "old-11-work-03",
+      "old_phase": "11",
+      "new_phase": "07",
+      "kind": "work",
+      "original": "Preserve IDs and relationships and enforce restrictions on debt reductions/deletions once allocated payments exist.",
+      "current": "Preserve IDs and relationships and enforce restrictions on debt reductions/deletions once allocated payments exist."
+    },
+    {
+      "id": "old-11-work-04",
+      "old_phase": "11",
+      "new_phase": "07",
+      "kind": "work",
+      "original": "Opening debt, added debt and invoice liability do not themselves create paid expense or cashbox movements. Payment actions link to phase 14.",
+      "current": "Opening debt, added debt and invoice liability do not themselves create paid expense or cashbox movements. Payment actions link to phase 08."
+    },
+    {
+      "id": "old-11-acceptance-01",
+      "old_phase": "11",
+      "new_phase": "07",
+      "kind": "acceptance",
+      "original": "Opening debt + added debt + invoices − payments equals the supplier summary and ledger closing balance.",
+      "current": "Opening debt + added debt + invoices − payments equals the supplier summary and ledger closing balance."
+    },
+    {
+      "id": "old-11-acceptance-02",
+      "old_phase": "11",
+      "new_phase": "07",
+      "kind": "acceptance",
+      "original": "Backdated debt/invoice changes and payment allocations preserve history and reject underfunded edits.",
+      "current": "Backdated debt/invoice changes and payment allocations preserve history and reject underfunded edits."
+    },
+    {
+      "id": "old-12-work-01",
+      "old_phase": "12",
+      "new_phase": "07",
+      "kind": "work",
+      "original": "Reproduce material search/status filters, add/edit/archive, name, unit and independent carton/piece defaults.",
+      "current": "Reproduce material search/status filters, add/edit/archive, name, unit and independent carton/piece defaults."
+    },
+    {
+      "id": "old-12-work-02",
+      "old_phase": "12",
+      "new_phase": "07",
+      "kind": "work",
+      "original": "Keep one shared catalog across suppliers. Selecting a material fills defaults in a new invoice but saves a snapshot on that invoice.",
+      "current": "Keep one shared catalog across suppliers. Selecting a material fills defaults in a new invoice but saves a snapshot on that invoice."
+    },
+    {
+      "id": "old-12-work-03",
+      "old_phase": "12",
+      "new_phase": "07",
+      "kind": "work",
+      "original": "Preserve legacy material identity/migration and duplicate-name handling. Do not infer a carton-to-piece conversion.",
+      "current": "Preserve legacy material identity/migration and duplicate-name handling. Do not infer a carton-to-piece conversion."
+    },
+    {
+      "id": "old-12-acceptance-01",
+      "old_phase": "12",
+      "new_phase": "07",
+      "kind": "acceptance",
+      "original": "Editing or archiving a material never rewrites an earlier invoice or debt total.",
+      "current": "Editing or archiving a material never rewrites an earlier invoice or debt total."
+    },
+    {
+      "id": "old-12-acceptance-02",
+      "old_phase": "12",
+      "new_phase": "07",
+      "kind": "acceptance",
+      "original": "New invoice selection uses current defaults, while legacy single-unit lines remain readable and retain totals.",
+      "current": "New invoice selection uses current defaults, while legacy single-unit lines remain readable and retain totals."
+    },
+    {
+      "id": "old-13-work-01",
+      "old_phase": "13",
+      "new_phase": "08",
+      "kind": "work",
+      "original": "Rebuild separate purchase-invoice page, supplier/material/date filters, purchase groups/details and quantity/price history comparisons.",
+      "current": "Rebuild separate purchase-invoice page, supplier/material/date filters, purchase groups/details and quantity/price history comparisons."
+    },
+    {
+      "id": "old-13-work-02",
+      "old_phase": "13",
+      "new_phase": "08",
+      "kind": "work",
+      "original": "Reproduce the wide invoice dialog with visible supplier/date/number context, scrollable lines and total/save actions. Support adding/selecting materials inline.",
+      "current": "Reproduce the wide invoice dialog with visible supplier/date/number context, scrollable lines and total/save actions. Support adding/selecting materials inline."
+    },
+    {
+      "id": "old-13-work-03",
+      "old_phase": "13",
+      "new_phase": "08",
+      "kind": "work",
+      "original": "Enter carton and piece quantities/prices independently; save snapshots and notes. Permit historical invoices with unique invoice number per supplier.",
+      "current": "Enter carton and piece quantities/prices independently; save snapshots and notes. Permit historical invoices with unique invoice number per supplier."
+    },
+    {
+      "id": "old-13-work-04",
+      "old_phase": "13",
+      "new_phase": "08",
+      "kind": "work",
+      "original": "Create liability only for an unpaid invoice. Invoice-with-payment must commit the invoice and payment together, following phase 14 allocation/funding rules; that path cannot be called finished before phase 14.",
+      "current": "Create liability only for an unpaid invoice. Invoice-with-payment must commit the invoice and payment together, using this phase’s allocation/funding rules; both invoice and immediate payment must work before this phase is complete."
+    },
+    {
+      "id": "old-13-work-05",
+      "old_phase": "13",
+      "new_phase": "08",
+      "kind": "work",
+      "original": "Restrict edit/delete when payments exist. Preserve legacy quantity × unit-price lines and unit-aware analysis.",
+      "current": "Restrict edit/delete when payments exist. Preserve legacy quantity × unit-price lines and unit-aware analysis."
+    },
+    {
+      "id": "old-13-acceptance-01",
+      "old_phase": "13",
+      "new_phase": "08",
+      "kind": "acceptance",
+      "original": "Carton/piece calculations match rounding and range limits; quantities aggregate by unit without fabricated conversion.",
+      "current": "Carton/piece calculations match rounding and range limits; quantities aggregate by unit without fabricated conversion."
+    },
+    {
+      "id": "old-13-acceptance-02",
+      "old_phase": "13",
+      "new_phase": "08",
+      "kind": "acceptance",
+      "original": "Paid invoices cannot be deleted or reduced below their allocation. Inline material creation plus invoice save is atomic.",
+      "current": "Paid invoices cannot be deleted or reduced below their allocation. Inline material creation plus invoice save is atomic."
+    },
+    {
+      "id": "old-14-work-01",
+      "old_phase": "14",
+      "new_phase": "08",
+      "kind": "work",
+      "original": "Rebuild payments list/filter/pagination and new/edit/delete payment dialog, supplier/invoice/debt choice, amount/date/category/note and funding split.",
+      "current": "Rebuild payments list/filter/pagination and new/edit/delete payment dialog, supplier/invoice/debt choice, amount/date/category/note and funding split."
+    },
+    {
+      "id": "old-14-work-02",
+      "old_phase": "14",
+      "new_phase": "08",
+      "kind": "work",
+      "original": "Implement available amount and preview: pay the selected invoice first, then eligible supplier debt; store invoiceAmount and debtAmount.",
+      "current": "Implement available amount and preview: pay the selected invoice first, then eligible supplier debt; store invoiceAmount and debtAmount."
+    },
+    {
+      "id": "old-14-work-03",
+      "old_phase": "14",
+      "new_phase": "08",
+      "kind": "work",
+      "original": "Never spill excess into another invoice or future debt. Prevent orphan references, wrong supplier, invalid payment date and overpayment.",
+      "current": "Never spill excess into another invoice or future debt. Prevent orphan references, wrong supplier, invalid payment date and overpayment."
+    },
+    {
+      "id": "old-14-work-04",
+      "old_phase": "14",
+      "new_phase": "08",
+      "kind": "work",
+      "original": "Connect purchase-with-immediate-payment atomically. A payment contributes one paid expense and one source effect; editing/deleting reverses prior effects appropriately.",
+      "current": "Connect purchase-with-immediate-payment atomically. A payment contributes one paid expense and one source effect; editing/deleting reverses prior effects appropriately."
+    },
+    {
+      "id": "old-14-work-05",
+      "old_phase": "14",
+      "new_phase": "08",
+      "kind": "work",
+      "original": "Provide payment receipt PDF entry; complete platform sharing in phase 17.",
+      "current": "Provide payment receipt PDF entry; complete platform sharing in phase 10."
+    },
+    {
+      "id": "old-14-acceptance-01",
+      "old_phase": "14",
+      "new_phase": "08",
+      "kind": "acceptance",
+      "original": "The invoice/debt split and daily/cash split reconcile through restart/import/edit/delete and backdated operations.",
+      "current": "The invoice/debt split and daily/cash split reconcile through restart/import/edit/delete and backdated operations."
+    },
+    {
+      "id": "old-14-acceptance-02",
+      "old_phase": "14",
+      "new_phase": "08",
+      "kind": "acceptance",
+      "original": "Invoice + immediate payment either both save or neither saves. No path double-counts expense or deducts the source twice.",
+      "current": "Invoice + immediate payment either both save or neither saves. No path double-counts expense or deducts the source twice."
+    },
+    {
+      "id": "old-15-work-01",
+      "old_phase": "15",
+      "new_phase": "06",
+      "kind": "work",
+      "original": "Rebuild cash card, movement ledger/running balance, filters, external deposit/withdrawal, edit/delete and cash context popover.",
+      "current": "Rebuild cash card, movement ledger/running balance, filters, external deposit/withdrawal, edit/delete and cash context popover."
+    },
+    {
+      "id": "old-15-work-02",
+      "old_phase": "15",
+      "new_phase": "06",
+      "kind": "work",
+      "original": "Include derived cash-funded expense/payment movements without permitting a second independent edit of a derived movement; route to its source.",
+      "current": "Include derived cash-funded expense/payment movements without permitting a second independent edit of a derived movement; route to its source."
+    },
+    {
+      "id": "old-15-work-03",
+      "old_phase": "15",
+      "new_phase": "06",
+      "kind": "work",
+      "original": "Transfer part/all of available remaining daily cash to cashbox once. Editing/deleting restores both sides correctly and preserves the saved total-balance meaning.",
+      "current": "Transfer part/all of available remaining daily cash to cashbox once. Editing/deleting restores both sides correctly and preserves the saved total-balance meaning."
+    },
+    {
+      "id": "old-15-work-04",
+      "old_phase": "15",
+      "new_phase": "06",
+      "kind": "work",
+      "original": "Keep existing negative-balance indications where the source allows them; do not introduce unapproved blocking rules or label cashbox balance as profit.",
+      "current": "Keep existing negative-balance indications where the source allows them; do not introduce unapproved blocking rules or label cashbox balance as profit."
+    },
+    {
+      "id": "old-15-acceptance-01",
+      "old_phase": "15",
+      "new_phase": "06",
+      "kind": "acceptance",
+      "original": "External deposits, withdrawals, shared expenses, payments and transfers reconcile to the model and filtered running balances.",
+      "current": "External deposits, withdrawals, shared expenses, payments and transfers reconcile to the model and filtered running balances."
+    },
+    {
+      "id": "old-15-acceptance-02",
+      "old_phase": "15",
+      "new_phase": "06",
+      "kind": "acceptance",
+      "original": "A transfer above available daily cash is blocked. Editing or deleting a transfer adjusts daily and cashbox once, with no expense created.",
+      "current": "A transfer above available daily cash is blocked. Editing or deleting a transfer adjusts daily and cashbox once, with no expense created."
+    },
+    {
+      "id": "old-16-work-01",
+      "old_phase": "16",
+      "new_phase": "09",
+      "kind": "work",
+      "original": "Reproduce restaurant identity/live receipt preview, workflow, data/backup and about sections, a shared save/discard bar and dirty-state protection.",
+      "current": "Reproduce restaurant identity/live receipt preview, workflow, data/backup and about sections, a shared save/discard bar and dirty-state protection."
+    },
+    {
+      "id": "old-16-work-02",
+      "old_phase": "16",
+      "new_phase": "09",
+      "kind": "work",
+      "original": "Implement shortcut ordering and order-type add/rename/enable/disable/delete/default rules. At least one enabled type; unique names across both lists; maximum 20. Existing sales retain their original type.",
+      "current": "Implement shortcut ordering and order-type add/rename/enable/disable/delete/default rules. At least one enabled type; unique names across both lists; maximum 20. Existing sales retain their original type."
+    },
+    {
+      "id": "old-16-work-03",
+      "old_phase": "16",
+      "new_phase": "09",
+      "kind": "work",
+      "original": "Export the complete validated account schema. Import is replacement, not merge: inspect counts/coverage/version, confirm replacement and create a pre-import backup before committing.",
+      "current": "Export the complete validated account schema. Import is replacement, not merge: inspect counts/coverage/version, confirm replacement and create a pre-import backup before committing."
+    },
+    {
+      "id": "old-16-work-04",
+      "old_phase": "16",
+      "new_phase": "09",
+      "kind": "work",
+      "original": "Show backup status and previous-copy recovery, invalid/unreadable/oversized file states and explicit cancel paths. Mobile uses system file/share surfaces instead of a desktop folder path.",
+      "current": "Show backup status and previous-copy recovery, invalid/unreadable/oversized file states and explicit cancel paths. Mobile uses system file/share surfaces instead of a desktop folder path."
+    },
+    {
+      "id": "old-16-work-05",
+      "old_phase": "16",
+      "new_phase": "09",
+      "kind": "work",
+      "original": "Preserve retired worker data and account preferences. Keep active/held tickets and compact-display preference device-only. Explain that copying a backup is a manual handoff, not synchronization.",
+      "current": "Preserve retired worker data and account preferences. Keep active/held tickets and compact-display preference device-only. Explain that copying a backup is a manual handoff, not synchronization."
+    },
+    {
+      "id": "old-16-acceptance-01",
+      "old_phase": "16",
+      "new_phase": "09",
+      "kind": "acceptance",
+      "original": "Export on macOS → import on Android → export → import on iPhone → reimport in a separate test account preserves finalized records, IDs, totals and supported legacy data.",
+      "current": "Export on macOS → import on Android → export → import on iPhone → reimport in a separate test account preserves finalized records, IDs, totals and supported legacy data."
+    },
+    {
+      "id": "old-16-acceptance-02",
+      "old_phase": "16",
+      "new_phase": "09",
+      "kind": "acceptance",
+      "original": "Rejected/canceled import and failed recovery preserve current data. Successful replacement clears stale workspace safely; no account or draft silently mixes with another.",
+      "current": "Rejected/canceled import and failed recovery preserve current data. Successful replacement clears stale workspace safely; no account or draft silently mixes with another."
+    },
+    {
+      "id": "old-17-work-01",
+      "old_phase": "17",
+      "new_phase": "10",
+      "kind": "work",
+      "original": "Reproduce daily expenses, supplier invoice, sale receipt, period sales/refunds, account statement, cashbox and supplier-payment receipt. Retired worker reports remain compatibility code only, with no new visible workflow.",
+      "current": "Reproduce daily expenses, supplier invoice, sale receipt, period sales/refunds, account statement, cashbox and supplier-payment receipt. Retired worker reports remain compatibility code only, with no new visible workflow."
+    },
+    {
+      "id": "old-17-work-02",
+      "old_phase": "17",
+      "new_phase": "10",
+      "kind": "work",
+      "original": "Generate from validated saved records and stable IDs/filters, never user-provided HTML or editable display totals. Match Arabic shaping, RTL order, Latin numbers, A4 layout, table wrapping, page breaks, repeated headings and page numbering.",
+      "current": "Generate from validated saved records and stable IDs/filters, never user-provided HTML or editable display totals. Match Arabic shaping, RTL order, Latin numbers, A4 layout, table wrapping, page breaks, repeated headings and page numbering."
+    },
+    {
+      "id": "old-17-work-03",
+      "old_phase": "17",
+      "new_phase": "10",
+      "kind": "work",
+      "original": "Provide save/share/open actions on each target and normal system print dialogs. Cancel, denied file access, no printer and service failure leave the saved transaction intact.",
+      "current": "Provide save/share/open actions on each target and normal system print dialogs. Cancel, denied file access, no printer and service failure leave the saved transaction intact."
+    },
+    {
+      "id": "old-17-work-04",
+      "old_phase": "17",
+      "new_phase": "10",
+      "kind": "work",
+      "original": "Use report HTML screenshots as content/style references, then render actual Flutter PDFs and inspect every page. HTML screenshots are not evidence of PDF output fidelity.",
+      "current": "Use report HTML screenshots as content/style references, then render actual Flutter PDFs and inspect every page. HTML screenshots are not evidence of PDF output fidelity."
+    },
+    {
+      "id": "old-17-work-05",
+      "old_phase": "17",
+      "new_phase": "10",
+      "kind": "work",
+      "original": "No thermal printer/Bluetooth/ESC-POS work is included. Store signing, sharing and print integration evidence per platform.",
+      "current": "No thermal printer/Bluetooth/ESC-POS work is included. Store signing, sharing and print integration evidence per platform."
+    },
+    {
+      "id": "old-17-acceptance-01",
+      "old_phase": "17",
+      "new_phase": "10",
+      "kind": "acceptance",
+      "original": "Seven report kinds export from all three platforms; amounts and date/filter boundaries match on screen and in the file.",
+      "current": "Seven report kinds export from all three platforms; amounts and date/filter boundaries match on screen and in the file."
+    },
+    {
+      "id": "old-17-acceptance-02",
+      "old_phase": "17",
+      "new_phase": "10",
+      "kind": "acceptance",
+      "original": "Open/print/share is tested with native surfaces on physical devices; system print cancellation creates no new sale or payment. Arabic text is intact in short and multipage outputs.",
+      "current": "Open/print/share is tested with native surfaces on physical devices; system print cancellation creates no new sale or payment. Arabic text is intact in short and multipage outputs."
+    },
+    {
+      "id": "old-18-work-01",
+      "old_phase": "18",
+      "new_phase": "11",
+      "kind": "work",
+      "original": "Run the full synthetic restaurant-day scenario in release/profile builds: import, products/opening stock, invoice, partial shared payment, sales, hold/resume, return, expenses, remaining snapshot, transfer, day review, reports, export, restart and restore.",
+      "current": "Run the full synthetic restaurant-day scenario in release/profile builds: import, products/opening stock, invoice, partial shared payment, sales, hold/resume, return, expenses, remaining snapshot, transfer, day review, reports, export, restart and restore."
+    },
+    {
+      "id": "old-18-work-02",
+      "old_phase": "18",
+      "new_phase": "11",
+      "kind": "work",
+      "original": "Run the complete parity suite, widget tests and integration tests. Compare macOS/Android/iPhone captures to the frozen references and approved per-platform goldens. Record deliberate differences and owner decisions.",
+      "current": "Run the complete parity suite, widget tests and integration tests. Compare macOS/Android/iPhone captures to the frozen references and approved per-platform goldens. Record deliberate differences and owner decisions."
+    },
+    {
+      "id": "old-18-work-03",
+      "old_phase": "18",
+      "new_phase": "11",
+      "kind": "work",
+      "original": "Test app kill/resume, device offline/restart, duplicate tap, disk full, bad file, unknown schema, long Arabic names, large datasets, small screens, landscape, safe area, keyboard open, large text and accessibility semantics.",
+      "current": "Test app kill/resume, device offline/restart, duplicate tap, disk full, bad file, unknown schema, long Arabic names, large datasets, small screens, landscape, safe area, keyboard open, large text and accessibility semantics."
+    },
+    {
+      "id": "old-18-work-04",
+      "old_phase": "18",
+      "new_phase": "11",
+      "kind": "work",
+      "original": "Build signed installable artifacts for macOS/Android/iPhone through the chosen distribution route. Validate installation, launch, native import/export/share/print and update persistence on physical target devices.",
+      "current": "Build signed installable artifacts for macOS/Android/iPhone through the chosen distribution route. Validate installation, launch, native import/export/share/print and update persistence on physical target devices."
+    },
+    {
+      "id": "old-18-work-05",
+      "old_phase": "18",
+      "new_phase": "11",
+      "kind": "work",
+      "original": "Rehearse migration using synthetic legacy copies first. Before any later live cutover, make a private verified backup and keep Electron available for rollback. Never point both implementations at the same writable accounts file.",
+      "current": "Rehearse migration using synthetic legacy copies first. Before any later live cutover, make a private verified backup and keep Electron available for rollback. Never point both implementations at the same writable accounts file."
+    },
+    {
+      "id": "old-18-work-06",
+      "old_phase": "18",
+      "new_phase": "11",
+      "kind": "work",
+      "original": "Deliver app builds, source, release notes, backup/import/restore manual, known issues and rollback procedure. Public store publishing is a separate explicit action if requested.",
+      "current": "Deliver app builds, source, release notes, backup/import/restore manual, known issues and rollback procedure. Public store publishing is a separate explicit action if requested."
+    },
+    {
+      "id": "old-18-acceptance-01",
+      "old_phase": "18",
+      "new_phase": "11",
+      "kind": "acceptance",
+      "original": "All checks in mvp-acceptance.md pass with attached evidence. No data-loss, duplicate-posting or incorrect-financial-total defect is open.",
+      "current": "All checks in mvp-acceptance.md pass with attached evidence. No data-loss, duplicate-posting or incorrect-financial-total defect is open."
+    },
+    {
+      "id": "old-18-acceptance-02",
+      "old_phase": "18",
+      "new_phase": "11",
+      "kind": "acceptance",
+      "original": "Each target has a real install/run record, migration round-trip and native service results. Any missing signing/device/printer requirement is reported as a remaining blocker, not marked passed.",
+      "current": "Each target has a real install/run record, migration round-trip and native service results. Any missing signing/device/printer requirement is reported as a remaining blocker, not marked passed."
+    }
+  ],
+  "additional_integration_check_phase": "06",
+  "screenshots_retained": 179
+}

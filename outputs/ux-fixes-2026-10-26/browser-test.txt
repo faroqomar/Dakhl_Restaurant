@@ -1,0 +1,121 @@
+{
+  "pages": [
+    {
+      "view": "sales",
+      "title": "بيع جديد",
+      "overflow": false
+    },
+    {
+      "view": "sale-history",
+      "title": "سجل المبيعات",
+      "overflow": false
+    },
+    {
+      "view": "inventory",
+      "title": "المخزن",
+      "overflow": false
+    },
+    {
+      "view": "expenses",
+      "title": "المصاريف اليومية",
+      "overflow": false
+    },
+    {
+      "view": "statement",
+      "title": "كشف الحساب",
+      "overflow": false
+    },
+    {
+      "view": "suppliers",
+      "title": "الموردون",
+      "overflow": false
+    },
+    {
+      "view": "invoices",
+      "title": "فواتير المشتريات",
+      "overflow": false
+    },
+    {
+      "view": "materials",
+      "title": "المواد والأسعار",
+      "overflow": false
+    },
+    {
+      "view": "payments",
+      "title": "التسديدات",
+      "overflow": false
+    },
+    {
+      "view": "cash",
+      "title": "القاصة",
+      "overflow": false
+    },
+    {
+      "view": "savings",
+      "title": "سلفة العمال",
+      "overflow": false
+    },
+    {
+      "view": "categories",
+      "title": "الخانات",
+      "overflow": false
+    },
+    {
+      "view": "settings",
+      "title": "الإعدادات والنسخ",
+      "overflow": false
+    }
+  ],
+  "flows": [
+    "D03 cash-only funding shares correct",
+    "D02 cross-date edit retains original record",
+    "D12 Escape protects dirty form",
+    "D05 invoice previews agree; spacious fixed header/footer",
+    "D13/D14 persisted draft and retained tile focus",
+    "D07 date validation; D11 Undo routes to void; D24 next sale uninterrupted",
+    "D08 archived cart item removable",
+    "D09 fractional stock can sell",
+    "D35 durable stock reversal linked to original",
+    "D17 as-of history and D49 explicit receipt amount",
+    "D54 receipt identity saved",
+    "D01 first supplier leads directly to invoice",
+    "D16 checkout reachable at 200% zoom"
+  ],
+  "geometry": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "checkout": 899.8046875,
+      "scrollable": false
+    },
+    {
+      "width": 900,
+      "height": 580,
+      "overflow": false,
+      "checkout": 689.984375,
+      "scrollable": true
+    },
+    {
+      "width": 760,
+      "height": 844,
+      "overflow": false,
+      "checkout": 2168.6171875,
+      "scrollable": true
+    },
+    {
+      "width": 390,
+      "height": 640,
+      "overflow": false,
+      "checkout": 504.7734375,
+      "scrollable": true
+    },
+    {
+      "zoom": 2,
+      "width": 450,
+      "height": 290,
+      "bottom": 169.08203125
+    }
+  ],
+  "errors": []
+}

@@ -11,3 +11,11 @@ window.json
 .env
 .env.*
 !.env.example
+
+# Local design feedback
+outputs/design-review/comments.json
+
+# Local Electron preview profiles and browser caches
+outputs/**/isolated-profile/
+outputs/**/profile/
+outputs/**/order-panel-profile/

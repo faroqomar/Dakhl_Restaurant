@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /Users/eros/Dev/Eros_Projects/Hindsight/.venv/bin/python /Users/eros/Dev/Eros_Projects/Hindsight/bin/memory.py "$@" --project daftar

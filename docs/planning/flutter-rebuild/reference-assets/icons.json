@@ -1,0 +1,19 @@
+{
+  "menu": "M3 5h16 M3 11h16 M3 17h16",
+  "ledger": "M4 2h14v18H4z M8 7h6 M8 11h6 M8 15h4",
+  "wallet": "M2 5h16v14H2z M3 5V2h12 M13 10h7v5h-7z",
+  "supplier": "M2 8h16v12H2z M0 8l3-6h14l3 6 M6 20v-7h8v7",
+  "transfer": "M2 6h16 M14 2l4 4-4 4 M18 16H2 M6 12l-4 4 4 4",
+  "grid": "M2 2h7v7H2z M13 2h7v7h-7z M2 13h7v7H2z M13 13h7v7h-7z",
+  "settings": "M3 5h16 M3 11h16 M3 17h16 M7 2v6 M15 8v6 M9 14v6",
+  "plus": "M11 4v14 M4 11h14",
+  "close": "M5 5l12 12 M17 5L5 17",
+  "left": "M14 4l-7 7 7 7",
+  "right": "M8 4l7 7-7 7",
+  "edit": "M4 15l11-11 4 4-11 11H4z M13 6l4 4",
+  "download": "M11 2v12 M6 9l5 5 5-5 M3 16v4h16v-4",
+  "upload": "M11 15V3 M6 8l5-5 5 5 M3 16v4h16v-4",
+  "folder": "M2 5h7l2 3h9v12H2z",
+  "undo": "M7 4L2 9l5 5 M2 9h10a7 7 0 0 1 7 7",
+  "check": "M4 11l4 4 10-11"
+}

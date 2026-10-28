@@ -1,0 +1,52 @@
+{
+  "tokens": {
+    "--bg": "#f6f7f2",
+    "--paper": "#fefefa",
+    "--ink": "#17382d",
+    "--muted": "#4c6051",
+    "--line": "#e2e8dd",
+    "--green": "#245b42",
+    "--lime": "#d6e7b8",
+    "--soft": "#eaf0e4",
+    "--red": "#9a493e",
+    "--radius": "10px",
+    "--focus": "#28633f",
+    "--control-height": "42px",
+    "--page-gutter": "24px",
+    "--panel-padding": "20px"
+  },
+  "body": {
+    "font": "\"Geeza Pro\", Tahoma, sans-serif",
+    "fontSize": "15px"
+  },
+  "components": {
+    "h1": {
+      "fontSize": "28px",
+      "lineHeight": "42px",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "gap": "normal"
+    },
+    ".button": {
+      "fontSize": "15px",
+      "lineHeight": "24px",
+      "padding": "10px 12px",
+      "borderRadius": "9px",
+      "gap": "9px"
+    },
+    ".panel": {
+      "fontSize": "15px",
+      "lineHeight": "24px",
+      "padding": "20px",
+      "borderRadius": "10px",
+      "gap": "normal"
+    },
+    ".shortcut-bar": {
+      "fontSize": "15px",
+      "lineHeight": "24px",
+      "padding": "0px 0px 14px",
+      "borderRadius": "0px",
+      "gap": "12px"
+    }
+  }
+}
