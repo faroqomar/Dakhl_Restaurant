@@ -1,7 +1,7 @@
 {
   "engine": "Madar_Engine",
   "status": "local development preview; remote distribution pending",
-  "git_commit": "7e008000107a89f297eaec126d053978f8bc7917",
+  "git_commit": "437f6000a50853c3c551cd32473a1d7d871644cb",
   "packages": {
     "madar_application": {
       "path": "../Madar_Engine/packages/application",

@@ -23,6 +23,9 @@ Read AGENTS.md, [PLANS.md](PLANS.md) and [PHASES.md](PHASES.md) before phase wor
 
 Owner instruction,2026-10-28; always applicable to work on these projects, not only to extraction or a particular phase. Apply it during research, design, planning, coding, execution, testing, review, documentation, dependency upgrades and delivery. Follow the joint PROMPTS.md workflow; the Lead must include this rule in every specialist brief.
 
+Prompt style: define only the objective, acceptance criteria and hard boundaries. Keep prompts concise; do not prescribe exact files, implementation steps or tools beyond an explicit owner constraint. The Lead chooses the optimal execution path within the standing rules.
+
+
 - Before changing anything, identify the Madar responsibility, the app responsibility and their public contract. Read the relevant current rules/plans/trackers and source documentation from both projects. Record N/A with a reason when one side is unaffected; do not add unnecessary changes.
 - Madar_Engine is the sole source of shared business rules, contracts and reusable adapters. Keep its pure Dart code independent of Flutter, databases/cloud and hardware; optional integrations live in separate adapters. Reuse existing capabilities before adding them and implement new shared behavior there with concrete consumer/conformance tests. No copied/forked engine implementation inside apps, and no engine dependency on consumer code.
 - Dakhl_Restaurant owns its UI/ViewModels, restaurant workflows, presentation/document composition and app-specific safeguards. It consumes a reviewed, versioned engine revision. Preserve one-restaurant/offline/Arabic RTL/IQD/history constraints; shared engine work does not add cloud/auth/multitenancy or settle open financial/recovery policies.
