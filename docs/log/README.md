@@ -79,3 +79,5 @@ Each log records request, change, rationale, actual verification, limits and nex
 - [2026-10-28 — Parallel Madar engine separation](2026-10-28-madar-engine-separation.md).
 
 - [2026-10-28 — Repeated problems and prevention](2026-10-28-repeated-problems.md).
+
+- [2026-10-28 — Required Madar documentation reading](2026-10-28-madar-documentation-rule.md).

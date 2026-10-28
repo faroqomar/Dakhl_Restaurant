@@ -275,3 +275,7 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 Mark DONE only after all applicable requirements pass, the PR is approved and merged, and required release validation is completed. Never mark a phase DONE based only on implementation progress. Never automatically start the next phase.
 
 Prior Electron tests, screenshots, planning and folder relocation remain historical reference evidence. They do not mark any Flutter phase as started, reviewed, approved, merged or completed.
+
+## Documentation maintenance outside phases
+
+- 2026-10-28: [Required current Madar documentation reading](docs/log/2026-10-28-madar-documentation-rule.md). Documentation maintenance only; runtime/contracts and phase progression are N/A. Existing acceptance gates remain pending.

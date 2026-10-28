@@ -4,6 +4,19 @@ Adopted by the owner on 2026-10-28 from the supplied universal rules and phase-t
 
 Read AGENTS.md, [PLANS.md](PLANS.md) and [PHASES.md](PHASES.md) before phase work. [PROMPTS.md](PROMPTS.md) contains the joint engine/app workflow prompts. The [workflow source record](docs/reference/workflow/README.md) preserves provenance.
 
+## Always consult Madar_Engine documentation
+
+Owner instruction, 2026-10-28. Before every task, including planning, design, implementation, tests, review, documentation and delivery, read the current Madar sources alongside this project's AGENTS.md, PLANS.md, PHASES.md and PROMPTS.md:
+
+- [README](../Madar_Engine/README.md), [AGENTS](../Madar_Engine/AGENTS.md), [PLANS](../Madar_Engine/PLANS.md), [PHASES](../Madar_Engine/PHASES.md) and [PROMPTS](../Madar_Engine/PROMPTS.md).
+- [Documentation index](../Madar_Engine/docs/README.md), [FULLSTACK](../Madar_Engine/FULLSTACK.md), [responsibility list](../Madar_Engine/docs/reference/madar-responsibility-list.md), [next-session/open decisions](../Madar_Engine/docs/how-to/start-next-session.md) and [memory guide](../Madar_Engine/docs/how-to/memory.md).
+
+Then follow the index to the decisions, contracts, usage examples and package READMEs relevant to the task. Verify claims against current source and the actual engine revision consumed by the app; distinguish selected, implemented and verified behavior. Hindsight summaries do not replace current Madar sources.
+
+Identify the engine work, app work and public contract before acting. Keep linked task/phase evidence in each affected project and record a justified N/A when engine changes are unnecessary. Shared rules, contracts and reusable adapters live only in Madar; Dakhl_Restaurant owns restaurant UI/ViewModels, industry workflows, document composition and app safeguards. Consume reviewed engine revisions and never copy/fork engine implementation into this app. Preserve single-restaurant, offline, Arabic RTL, IQD and historical-record constraints; Madar's planned cloud stack does not change the app's scope or resolve open policies.
+
+Give every subagent this reading requirement and ownership boundary. Keep project-daftar and project-madar separate; task-specific engine recall may use Madar's own scoped wrapper with source provenance, without merging banks or querying unrelated history. If required Madar sources are unavailable, report the missing files and stop dependent work while continuing safe independent work. Reading documentation does not authorize a new phase, merge, publication or deployment.
+
 ## Application to this project
 
 - Canonical project name: **Dakhl_Restaurant** (owner correction, 2026-10-28). Use it for current project, planning, agent and Penpot names. Legacy Electron names, source/screenshot hashes, archived evidence, `project-daftar`, `daftar_memory` and the memory selector `daftar` remain compatibility identifiers, not the current project name. [Naming record](docs/decisions/0016-dakhl-restaurant-project-name.md).
