@@ -1,0 +1,1365 @@
+docs/decisions/0005-sales-reference-redesign.md
+  s_5dfd3df320e540::t_f2fed23dabed10 12-15
+  s_2950e33bbd467c::t_10978e498f1345 1-11
+docs/planning/flutter-rebuild/archive/v1-19-phases/design-tokens.json
+  s_80122bade619fe::t_37aa72784dcd91 1-52
+.agents/skills/property-based-testing/references/reviewing.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-78
+docs/planning/flutter-rebuild/archive/v1-19-phases/accounting-parity.md
+  s_80122bade619fe::t_37aa72784dcd91 1-45
+docs/log/2026-10-27-compact-sales-cards.md
+  s_5dfd3df320e540::t_f2fed23dabed10 1-9
+docs/log/2026-10-27-macos-app-update.md
+  s_2950e33bbd467c::t_0aee5415690b88 1-8
+  s_2950e33bbd467c::t_98c24a9225ef95 9
+scripts/build-flutter-plan.py
+  s_80122bade619fe::t_8e30f50fbd707a 457,731-733,735-793,795-798
+  s_80122bade619fe::t_7d3f5cb2e7739d 674-715
+  s_80122bade619fe::t_9bb715e8d518b2 7,175-223,226-248,250-258,263-264,267-271,282-283,291-297
+  s_80122bade619fe::t_2fe831be033123 718-720,724,729
+  s_80122bade619fe::t_19d7b18309e24d 224-225,259,371,641,663
+  s_80122bade619fe::t_3bd75ba625a3c9 794
+  s_80122bade619fe::t_968a504a277d67 1-6,8-174,249,260-262,265-266,272-281,284-286,289-290,298-307,310-315,318-325,327-331,333-345,347-349,352-358,360,367-370,372-386,388,391-397,399,401-405,407,409-456,458-524,527-571,574-576,578-635,638-640,642-662,664-673,716-717,721-723,725-728,730,799
+  s_80122bade619fe::t_e493b60b2f4964 287-288,308-309,326,350-351,387,389-390,572-573
+  s_80122bade619fe::t_217c15a7b7a14f 316-317,332,346,359,361-366,398,400,406,408,577,636-637,734
+  s_80122bade619fe::t_2a3022710b385f 525-526
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/16.md
+  s_80122bade619fe::t_37aa72784dcd91 1-68
+docs/planning/flutter-rebuild/archive/v1-19-phases/capture-guide.html
+  s_80122bade619fe::t_37aa72784dcd91 1-24
+docs/log/2026-10-25-daily-balance-formula.md
+  s_ce1e3832335507::t_82f890fde27a95 1-17
+docs/planning/flutter-rebuild/phase-map.md
+  s_80122bade619fe::t_343a8383b7621a 1-56
+.agents/skills/property-based-testing/agents/openai.yaml
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-6
+outputs/figma-transfer/RESUME.md
+  s_5dfd3df320e540::t_253e3c118a7556 1-14
+docs/planning/flutter-rebuild/feature-coverage.html
+  s_80122bade619fe::t_3bd75ba625a3c9 1
+  s_80122bade619fe::t_d9aaf69519b2bc 2-5,23-26,32,44-45,47
+  s_80122bade619fe::t_6f1135f47e1de1 6-22
+  s_80122bade619fe::t_343a8383b7621a 27-31,33-43,46
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/06.md
+  s_80122bade619fe::t_37aa72784dcd91 1-58
+docs/reference/accounting-rules.md
+  s_80122bade619fe::t_6f1135f47e1de1 3
+  s_55ce3d66c45885::t_51e292c5a34715 1-2,4-9,12-24,26-33,35-50
+  s_5dfd3df320e540::t_cafc77a189f039 71-74
+  s_80122bade619fe::t_dd4c8ffc446fbf 10-11,25,34,51-70
+docs/log/2026-10-28-electron-reference-folder.md
+  s_80122bade619fe::t_5e738f46de2668 13-20
+  s_80122bade619fe::t_19d7b18309e24d 1-12,21-24
+docs/log/2026-10-27-settings-redesign.md
+  s_5dfd3df320e540::t_eb32fe5863ea5b 1-23
+  s_5dfd3df320e540::t_b5e8c5e0be95a0 24-25
+.agents/skills/documentation-and-adrs/SKILL.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-297
+docs/decisions/0007-retire-worker-savings.md
+  s_5dfd3df320e540::t_0fad2b74b23eba 1-11
+.agents/skills/flutter-device-testing/scripts/run_lifecycle_matrix.py
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-576
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/12.html
+  s_80122bade619fe::t_37aa72784dcd91 1-39
+outputs/mvp-review/results.json
+  s_5dfd3df320e540::t_dc4e2b6c6a85c2 1-107
+.agents/skills/property-based-testing/references/interpreting-failures.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-80
+.agents/skills/flutter-ci-cd/references/quality-gates.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-29
+.agents/skills/flutter-device-testing/references/integration-test-workflows.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-84
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/02.html
+  s_80122bade619fe::t_37aa72784dcd91 1-38
+outputs/layout-review/verify-inventory.cjs
+  s_5dfd3df320e540::t_54f40804f9924b 1-26
+docs/templates/campaign.md
+  s_55ce3d66c45885::t_51e292c5a34715 1-28
+docs/log/2026-10-27-mvp-workflows.md
+  s_5dfd3df320e540::t_ff10a9e40bcda9 7-13
+  s_5dfd3df320e540::t_c0da7174012d66 1-6
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/15.md
+  s_80122bade619fe::t_37aa72784dcd91 1-56
+.codex/agents/ux.toml
+  s_80122bade619fe::t_eed1142874d3a4 1-11
+outputs/figma-transfer/export.cjs
+  s_5dfd3df320e540::t_794020273da7c1 1-38,40-49
+  s_5dfd3df320e540::t_26c28498cc66e6 39
+outputs/fullscreen-review/content/results.json
+  s_5dfd3df320e540::t_6648d2e3a6cf68 1419,1441-1442,1446
+  s_5dfd3df320e540::t_339e756dc84222 1-21,23-58,60-95,97-132,134-169,171-200,202-236,238-272,274-308,310-322,324-334,336-344,346-381,383-417,419-427,429-434,436-441,443-465,467-502,504-539,541-576,578-613,615-644,646-680,682-716,718-752,754-766,768-778,780-788,790-825,827-861,863-871,873-878,880-885,887-909,924-959,961-996,998-1033,1035-1070,1072-1101,1103-1137,1139-1173,1175-1209,1211-1223,1225-1235,1237-1245,1247-1250,1252-1282,1284-1318,1320-1328,1330-1335,1337-1342,1344-1366,1405-1418,1420-1440,1443-1445,1447-1477,1479-1514,1607-1642,1644-1673,1675-1709,1711-1745,1747-1781,1783-1795,1797-1807,1809-1817,1819-1822,1824-1854,1856-1890,1899-1907,1916-1921,1930-1935,1944-1947
+  s_5dfd3df320e540::t_239fe6c5bf8f9b 22,59,96,133,170,201,237,273,309,323,335,345,382,418,428,435,442,466,503,540,577,614,645,681,717,753,767,779,789,826,862,872,879,886,910-923,960,997,1034,1071,1102,1138,1174,1210,1224,1236,1246,1251,1283,1319,1329,1336,1343,1367-1404,1478,1515-1606,1643,1674,1710,1746,1782,1796,1808,1818,1823,1855,1891-1898,1908-1915,1922-1929,1936-1943
+docs/log/2026-10-27-fullscreen-layout-review.md
+  s_5dfd3df320e540::t_e04922383e7892 1-21
+docs/planning/flutter-rebuild/archive/v1-19-phases/plan.html
+  s_80122bade619fe::t_37aa72784dcd91 1-72
+.agents/skills/licenses/addyosmani--agent-skills/LICENSE
+  s_d6fa52f8e243a6::t_394f427b50a1a8 1-21
+docs/decisions/0008-fullscreen-layout-density.md
+  s_5dfd3df320e540::t_e04922383e7892 1-9
+  s_5dfd3df320e540::t_f275ecc5c908e6 10-14
+docs/planning/flutter-rebuild/phases/02.md
+  s_80122bade619fe::t_a4b48da227dcf7 11-12,37-38,56
+  s_80122bade619fe::t_343a8383b7621a 7-8,14-15,23-24
+  s_80122bade619fe::t_f83faaa795ccf6 1-6,9-10,13,16-22,25-36,39-55
+docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html
+  s_80122bade619fe::t_37aa72784dcd91 1-4
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/17.html
+  s_80122bade619fe::t_37aa72784dcd91 1-47
+.agents/skills/flutter-ci-cd/references/delivery-and-secrets.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-28
+.agents/skills/flutter-device-testing/SKILL.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-44
+outputs/layout-review/sales-corner-results.json
+  s_5dfd3df320e540::t_b13f82c67d531e 1-23
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/13.html
+  s_80122bade619fe::t_37aa72784dcd91 1-47
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/16.html
+  s_80122bade619fe::t_37aa72784dcd91 1-56
+docs/templates/idea.md
+  s_55ce3d66c45885::t_51e292c5a34715 1-24
+outputs/fullscreen-review/content-populated/results.json
+  s_5dfd3df320e540::t_f63ee84dcc5e03 1419,1441-1442,1446
+  s_5dfd3df320e540::t_b14157e0d676dc 1-1418,1420-1440,1443-1445,1447-2129
+.agents/skills/flutter-ci-cd/SKILL.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-41
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/05.html
+  s_80122bade619fe::t_37aa72784dcd91 1-48
+.agents/skills/README.md
+  s_d6fa52f8e243a6::t_394f427b50a1a8 1-21
+docs/decisions/0006-organized-settings.md
+  s_5dfd3df320e540::t_a90583d01cb79c 16-19
+  s_5dfd3df320e540::t_ca886a175aa205 12-15
+  s_5dfd3df320e540::t_b5e8c5e0be95a0 1-11
+outputs/figma-transfer/supplier-supplier.html
+  s_5dfd3df320e540::t_7ff88b1a48c078 1-317
+.agents/skills/flutter-testing/references/test-layers-and-doubles.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-17
+.agents/skills/flutter-persistence/references/caching-policy.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-43
+docs/reference/workflow/source-manifest.json
+  s_80122bade619fe::t_db652c3f23c478 1-4
+docs/planning/flutter-rebuild/archive/v1-19-phases/screenshot-manifest.json
+  s_80122bade619fe::t_37aa72784dcd91 1-2625
+.agents/skills/licenses/thienqo--flutter-skills/LICENSE
+  s_d6fa52f8e243a6::t_394f427b50a1a8 1-28
+docs/planning/flutter-rebuild/phases/00.md
+  s_80122bade619fe::t_f83faaa795ccf6 1-6,9-10,13,16,18-21,24-34,37-53
+  s_80122bade619fe::t_343a8383b7621a 7-8,14-15,22-23
+  s_80122bade619fe::t_a4b48da227dcf7 11-12,35-36,54
+  s_80122bade619fe::t_6f1135f47e1de1 17
+outputs/figma-transfer/session.json
+  s_5dfd3df320e540::t_77d2004b60df2a 1-22
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/08.md
+  s_80122bade619fe::t_37aa72784dcd91 1-61
+.agents/skills/flutter-persistence/references/offline-sync.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-39
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/14.md
+  s_80122bade619fe::t_37aa72784dcd91 1-58
+docs/log/2026-10-27-inventory-toolbar.md
+  s_5dfd3df320e540::t_f99ffaf1c84c18 1-9
+docs/log/README.md
+  s_80122bade619fe::t_73837bb817a32d 72-73
+  s_80122bade619fe::t_f6bce606798466 7-8
+  s_8c9e903a0f085a::t_3a1c22fa5ab955 3-4
+  s_55ce3d66c45885::t_de7c741966362d 20
+  s_e7ed819f427c8c::t_d7b827560dba17 15-19,27-41
+  s_5dfd3df320e540::t_4cd5efce18b2ee 70-71
+  s_313c29e6455e32::t_0da79f4f8612d0 76-77
+  s_5dfd3df320e540::t_e04922383e7892 62-63
+  s_80122bade619fe::t_e493b60b2f4964 5-6
+  s_5dfd3df320e540::t_50358bb45751fd 66-67
+  s_5dfd3df320e540::t_f99ffaf1c84c18 52-53
+  s_5dfd3df320e540::t_ca886a175aa205 48-49
+  s_55ce3d66c45885::t_eed73abb631dcd 23
+  s_2950e33bbd467c::t_10978e498f1345 42-43
+  s_5dfd3df320e540::t_eb32fe5863ea5b 46-47
+  s_55ce3d66c45885::t_51e292c5a34715 1-2,9-12,24-26
+  s_5dfd3df320e540::t_a90583d01cb79c 50-51
+  s_5dfd3df320e540::t_a505b527a5310c 58-59
+  s_2950e33bbd467c::t_0aee5415690b88 44-45
+  s_5dfd3df320e540::t_2e4aaee9a6e8b9 64-65
+  s_80122bade619fe::t_2433cadeca7a5f 74-75
+  s_5dfd3df320e540::t_c0da7174012d66 68-69
+  s_55ce3d66c45885::t_b82bb0c3df6f44 21
+  s_55ce3d66c45885::t_7509c180fef07c 22
+  s_5dfd3df320e540::t_11bec096878ec1 13
+  s_5dfd3df320e540::t_10d721bc861f71 56-57
+  s_5dfd3df320e540::t_f2fed23dabed10 54-55
+  s_5dfd3df320e540::t_67137b9be22bc4 60-61
+  s_313c29e6455e32::t_ce552dc46c97e8 14
+docs/log/2026-10-26-full-app-ux-audit.md
+  s_e7ed819f427c8c::t_a096d19260382e 31-36
+  s_e7ed819f427c8c::t_d7b827560dba17 1-30,37
+scripts/capture-flutter-reference.cjs
+  s_80122bade619fe::t_40e023e522413b 1-3,7,10-41,43-48,50-56,58-62,66,68-84,89,96-99,103-104,108-110,120-122
+  s_80122bade619fe::t_023e892479a9fe 4-6,8-9,42,49,63,111,118
+  s_80122bade619fe::t_ec2160c0727491 65,67
+  s_80122bade619fe::t_df19202010b83c 64,85-86,100-102,105-107
+  s_80122bade619fe::t_7920e7ecfd04c0 87-88,112-115
+  s_80122bade619fe::t_62e754222385db 57,90-95,116-117,119
+docs/log/2026-10-28-phase-00-kickoff.md
+  s_8c9e903a0f085a::t_82acdddbd9dd09 11-12
+  s_8c9e903a0f085a::t_3a1c22fa5ab955 1-10,14-15
+  s_8c9e903a0f085a::t_394b2f832e9d2d 13
+docs/planning/flutter-rebuild/phases/08.html
+  s_80122bade619fe::t_343a8383b7621a 1-4,8,10-14,16-23,26-29,42-43,46-71
+  s_80122bade619fe::t_d9aaf69519b2bc 5,7,9,15,24-25,30-36,39-41,44-45,72-73
+  s_80122bade619fe::t_a4b48da227dcf7 6,37-38,74
+docs/templates/README.md
+  s_55ce3d66c45885::t_51e292c5a34715 1-10
+docs/templates/work-log.md
+  s_55ce3d66c45885::t_51e292c5a34715 1-20
+docs/planning/flutter-rebuild/accounting-parity.html
+  s_80122bade619fe::t_3bd75ba625a3c9 1
+  s_80122bade619fe::t_d9aaf69519b2bc 2-32
+outputs/layout-review/results.json
+  s_5dfd3df320e540::t_2e5deadc2bd80c 1-254
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/12.md
+  s_80122bade619fe::t_37aa72784dcd91 1-51
+docs/log/2026-10-16-arabic-popular-menu.md
+  s_55ce3d66c45885::t_eed73abb631dcd 1-13
+docs/planning/campaigns.md
+  s_55ce3d66c45885::t_51e292c5a34715 1-2,4-8,10-13
+  s_55ce3d66c45885::t_7509c180fef07c 3
+  s_55ce3d66c45885::t_de7c741966362d 9
+docs/planning/flutter-rebuild/phases/06.md
+  s_80122bade619fe::t_f83faaa795ccf6 2,4,6,9-10,13,22,28,39-40,47-52,55-58,61,63,65-67,106-108
+  s_80122bade619fe::t_a4b48da227dcf7 11-12,53-54,109
+  s_80122bade619fe::t_343a8383b7621a 1,3,5,7-8,14-21,23-27,29-38,41-46,59-60,62,64,68-105
+docs/planning/flutter-rebuild/mvp-acceptance.html
+  s_80122bade619fe::t_a4b48da227dcf7 3
+  s_80122bade619fe::t_3bd75ba625a3c9 1
+  s_80122bade619fe::t_343a8383b7621a 6
+  s_80122bade619fe::t_d9aaf69519b2bc 2,4-5,7-57
+docs/planning/flutter-rebuild/phase-map.html
+  s_80122bade619fe::t_343a8383b7621a 1-47
+docs/planning/flutter-rebuild/archive/v1-19-phases/design-system-contract.html
+  s_80122bade619fe::t_37aa72784dcd91 1-44
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/02.md
+  s_80122bade619fe::t_37aa72784dcd91 1-50
+docs/phases/README.md
+  s_8c9e903a0f085a::t_3a1c22fa5ab955 3-5
+  s_80122bade619fe::t_eed1142874d3a4 1-2,6-13
+docs/planning/2026-10-27-mvp-completion.md
+  s_5dfd3df320e540::t_03853875913bb4 1-22
+docs/log/2026-10-28-universal-workflow.md
+  s_80122bade619fe::t_eed1142874d3a4 1-12,22-25
+  s_80122bade619fe::t_425a6797f49200 13-21
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/03.html
+  s_80122bade619fe::t_37aa72784dcd91 1-35
+docs/reference/workflow/project-rules-before-adoption.source.txt
+  s_80122bade619fe::t_db652c3f23c478 1-42
+.agents/skills/property-based-testing/references/libraries.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-77
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/04.md
+  s_80122bade619fe::t_37aa72784dcd91 1-51
+docs/planning/flutter-rebuild/archive/v1-19-phases/design-system.html
+  s_80122bade619fe::t_37aa72784dcd91 1-3
+.agents/skills/property-based-testing/references/generating.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-79
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/14.html
+  s_80122bade619fe::t_37aa72784dcd91 1-46
+docs/planning/flutter-rebuild/phases/03.html
+  s_80122bade619fe::t_d9aaf69519b2bc 2,5,7,9,15-17,20-26,29-31,34-35,51-52
+  s_80122bade619fe::t_343a8383b7621a 1,3-4,8,10-14,18-19,32-33,36-50
+  s_80122bade619fe::t_a4b48da227dcf7 6,27-28,53
+docs/log/2026-10-27-flutter-phase-consolidation.md
+  s_80122bade619fe::t_2433cadeca7a5f 1-16,25-28
+  s_80122bade619fe::t_d13b88bf337a36 17-24
+docs/decisions/README.md
+  s_80122bade619fe::t_73837bb817a32d 29-30
+  s_5dfd3df320e540::t_cafc77a189f039 27-28
+  s_80122bade619fe::t_f6bce606798466 5-6
+  s_80122bade619fe::t_2433cadeca7a5f 31-32
+  s_5dfd3df320e540::t_b5e8c5e0be95a0 19-20
+  s_5dfd3df320e540::t_e04922383e7892 23-24
+  s_2950e33bbd467c::t_10978e498f1345 17-18
+  s_55ce3d66c45885::t_51e292c5a34715 1-2,7-16
+  s_5dfd3df320e540::t_f275ecc5c908e6 25-26
+  s_80122bade619fe::t_e493b60b2f4964 3-4
+  s_5dfd3df320e540::t_0fad2b74b23eba 21-22
+docs/how-to/sales-inventory.md
+  s_2950e33bbd467c::t_10978e498f1345 35-37
+  s_5dfd3df320e540::t_44ea3ba2c9f5de 3-24,38
+  s_5dfd3df320e540::t_c0da7174012d66 39-46
+  s_5dfd3df320e540::t_cc39af5e414af1 1-2,25-34
+docs/planning/flutter-rebuild/merge-audit.json
+  s_80122bade619fe::t_343a8383b7621a 1-10,12-1032
+  s_80122bade619fe::t_6f1135f47e1de1 11
+.agents/skills/property-based-testing/references/refactoring.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-120
+docs/decisions/0009-fluid-aligned-workspace.md
+  s_5dfd3df320e540::t_f275ecc5c908e6 1-9
+.agents/skills/flutter-device-testing/references/device-discovery-and-emulators.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-76
+outputs/fullscreen-review/review.cjs
+  s_5dfd3df320e540::t_b4fce5b0f0cd4a 17
+  s_5dfd3df320e540::t_7dcf19135b6dca 26
+  s_5dfd3df320e540::t_157780b95b8d4b 5-11,38
+  s_5dfd3df320e540::t_ac80421886ede7 27-29,33-34
+  s_5dfd3df320e540::t_9a864361904b3b 30-32,35-37
+  s_5dfd3df320e540::t_9230bd411c7892 23
+  s_5dfd3df320e540::t_28b91be2396709 25
+  s_5dfd3df320e540::t_0615eddc5a94be 1-4,12-16,18-22,24,39-41
+electron-reference/AGENTS.md
+  s_80122bade619fe::t_19d7b18309e24d 1-7
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/17.md
+  s_80122bade619fe::t_37aa72784dcd91 1-59
+docs/log/2026-10-27-compact-order-details.md
+  s_5dfd3df320e540::t_67137b9be22bc4 1-9
+docs/planning/flutter-rebuild/design-system.html
+  s_80122bade619fe::t_6922d9d4ea8274 1-3
+docs/planning/flutter-rebuild/plan.html
+  s_80122bade619fe::t_a4b48da227dcf7 20,55-56
+  s_80122bade619fe::t_d9aaf69519b2bc 3-14,16-19,21-24,26,36,41-43,45-54,57-62,64,66-68
+  s_80122bade619fe::t_3bd75ba625a3c9 1
+  s_80122bade619fe::t_343a8383b7621a 2,15,25,27-35,37-40,63,65,69-70
+  s_80122bade619fe::t_6f1135f47e1de1 44
+docs/decisions/0011-flutter-rebuild-baseline.md
+  s_80122bade619fe::t_73837bb817a32d 1-18,21-31
+  s_80122bade619fe::t_2433cadeca7a5f 19-20
+docs/planning/flutter-rebuild/phases/00.html
+  s_80122bade619fe::t_d9aaf69519b2bc 2-3,5,7,9,11-26,29-40
+  s_80122bade619fe::t_343a8383b7621a 4,8
+  s_80122bade619fe::t_6f1135f47e1de1 10
+  s_80122bade619fe::t_3bd75ba625a3c9 1
+  s_80122bade619fe::t_a4b48da227dcf7 6,27-28,41
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/11.md
+  s_80122bade619fe::t_37aa72784dcd91 1-57
+docs/log/2026-10-16-project-documentation.md
+  s_55ce3d66c45885::t_51e292c5a34715 1-2,4-8,10-18,24-26
+  s_55ce3d66c45885::t_dfc1a25d65035f 3,20,22-23
+  s_55ce3d66c45885::t_d14d7bab633371 9,19,21,27
+docs/planning/flutter-rebuild/accounting-parity.md
+  s_80122bade619fe::t_f83faaa795ccf6 1-41
+docs/planning/flutter-rebuild/feature-coverage.md
+  s_80122bade619fe::t_f83faaa795ccf6 1-8,26-30,36,48-50,52-53
+  s_80122bade619fe::t_6f1135f47e1de1 9-25
+  s_80122bade619fe::t_343a8383b7621a 31-35,37-47,51
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/09.md
+  s_80122bade619fe::t_37aa72784dcd91 1-63
+.agents/skills/flutter-localization/evals/cases.json
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-76
+outputs/design-review/bridge.js
+  s_5dfd3df320e540::t_eb6ff7d24415f1 1-37
+docs/planning/flutter-rebuild/archive/v1-19-phases/capture-guide.md
+  s_80122bade619fe::t_37aa72784dcd91 1-41
+docs/log/2026-10-27-content-density.md
+  s_5dfd3df320e540::t_f27d9c1baa6b75 1-6
+  s_5dfd3df320e540::t_90bfa2f1c17c81 7-11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/08.html
+  s_80122bade619fe::t_37aa72784dcd91 1-49
+docs/log/2026-10-27-figma-transfer.md
+  s_5dfd3df320e540::t_253e3c118a7556 1-36
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/05.md
+  s_80122bade619fe::t_37aa72784dcd91 1-60
+docs/planning/flutter-rebuild/phases/11.md
+  s_80122bade619fe::t_f83faaa795ccf6 2,4,6,9-10,13,24-27,30-35,38-42,44,46-48,55-57
+  s_80122bade619fe::t_343a8383b7621a 1,3,5,7-8,14-23,28-29,43,45,49-54
+  s_80122bade619fe::t_a4b48da227dcf7 11-12,36-37,58
+docs/planning/flutter-rebuild/archive/v1-19-phases/README.md
+  s_80122bade619fe::t_37aa72784dcd91 1-91
+.codex/agents/planner.toml
+  s_80122bade619fe::t_eed1142874d3a4 1-10
+docs/planning/flutter-rebuild/phases/10.md
+  s_80122bade619fe::t_343a8383b7621a 1,3,5,7-8,15-16,21-30,36-37,53,61-67,72-78
+  s_80122bade619fe::t_a4b48da227dcf7 11-12,44-45,82
+  s_80122bade619fe::t_36fc0615b1208f 71
+  s_80122bade619fe::t_f83faaa795ccf6 2,4,6,9-10,13-14,17-20,31-35,38-43,46-52,54-60,68-70,79-81
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/18.md
+  s_80122bade619fe::t_37aa72784dcd91 1-52
+docs/planning/flutter-rebuild/phases/09.md
+  s_80122bade619fe::t_f83faaa795ccf6 2,4,6,9-10,13,23-26,29-34,37-41,43,45-47,71-73
+  s_80122bade619fe::t_343a8383b7621a 1,3,5,7-8,14-22,27-28,42,44,48-70
+  s_80122bade619fe::t_a4b48da227dcf7 11-12,35-36,74
+docs/decisions/0004-ux-popouts-and-recovery.md
+  s_5dfd3df320e540::t_cafc77a189f039 21-23
+  s_5dfd3df320e540::t_0fad2b74b23eba 19-20
+  s_5dfd3df320e540::t_85ce38c9ef6061 1-18
+PROMPTS.md
+  s_80122bade619fe::t_eed1142874d3a4 1-27
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/01.html
+  s_80122bade619fe::t_37aa72784dcd91 1-37
+.codex/agents/reviewer.toml
+  s_80122bade619fe::t_eed1142874d3a4 1-11
+.agents/skills/flutter-device-testing/references/semantic-ui-inspection.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-54
+.agents/skills/flutter-localization/SKILL.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-32
+docs/planning/flutter-rebuild/phases/05.html
+  s_80122bade619fe::t_a4b48da227dcf7 6,27-28,54
+  s_80122bade619fe::t_343a8383b7621a 1-4,8,10-14,18-19,32-33,36-51
+  s_80122bade619fe::t_d9aaf69519b2bc 5,7,9,15-17,20-26,29-31,34-35,52-53
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/18.html
+  s_80122bade619fe::t_37aa72784dcd91 1-40
+AGENTS.md
+  s_55ce3d66c45885::t_51e292c5a34715 267-272,277-308
+  s_80122bade619fe::t_19d7b18309e24d 273-276
+  s_d6fa52f8e243a6::t_394f427b50a1a8 309-312
+  s_80122bade619fe::t_db652c3f23c478 1-266
+docs/planning/flutter-rebuild/archive/v1-19-phases/design-system.md
+  s_80122bade619fe::t_37aa72784dcd91 1-59
+docs/planning/flutter-rebuild/mvp-acceptance.md
+  s_80122bade619fe::t_a4b48da227dcf7 5-6
+  s_80122bade619fe::t_f83faaa795ccf6 1-4,7-8,10-62
+  s_80122bade619fe::t_343a8383b7621a 9
+outputs/layout-review/verify.cjs
+  s_5dfd3df320e540::t_7e916b1d64976a 1-13,15-25
+  s_5dfd3df320e540::t_0fad2b74b23eba 14
+docs/log/2026-10-27-page-width.md
+  s_5dfd3df320e540::t_11bec096878ec1 1-11
+  s_5dfd3df320e540::t_59bd2aec4f8121 12-13
+docs/log/2026-10-16-jannat-baghdad-menu.md
+  s_55ce3d66c45885::t_7509c180fef07c 1-19
+docs/how-to/documentation.md
+  s_55ce3d66c45885::t_51e292c5a34715 1-34
+outputs/layout-review/verify-order-panel.cjs
+  s_5dfd3df320e540::t_6fea307a8cb6b1 16
+  s_5dfd3df320e540::t_210cbf872ac89e 1-15,17-27
+docs/log/2026-10-27-fluid-alignment.md
+  s_5dfd3df320e540::t_2e4aaee9a6e8b9 1-9
+  s_5dfd3df320e540::t_162820844b65ba 10-11
+outputs/figma-transfer/assemble.js
+  s_5dfd3df320e540::t_8c8492235afc03 1-19
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/00.html
+  s_80122bade619fe::t_37aa72784dcd91 1-36
+outputs/figma-transfer/captures.json
+  s_5dfd3df320e540::t_77d2004b60df2a 1-55
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/11.html
+  s_80122bade619fe::t_37aa72784dcd91 1-45
+docs/decisions/0013-electron-reference-folder.md
+  s_80122bade619fe::t_19d7b18309e24d 1-21
+.agents/skills/flutter-ci-cd/evals/cases.json
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-31
+.gitignore
+  s_313c29e6455e32::t_9534360d1d7b11 14-21
+docs/planning/flutter-rebuild/reference-assets/icons.json
+  s_80122bade619fe::t_09b3ffe5bffbda 1-19
+outputs/layout-review/verify-sales-cards.cjs
+  s_5dfd3df320e540::t_29b29c514807b8 1-26
+docs/planning/flutter-rebuild/archive/v1-19-phases/mvp-acceptance.md
+  s_80122bade619fe::t_37aa72784dcd91 1-64
+docs/planning/flutter-rebuild/phase-map.json
+  s_80122bade619fe::t_343a8383b7621a 1-143
+docs/planning/campaigns/CAM-0001-reduced-price-menu.md
+  s_55ce3d66c45885::t_7509c180fef07c 13,18,22,42
+  s_55ce3d66c45885::t_d14d7bab633371 1-2,4-8,11-12,14,23-24,26-31,39-41
+  s_55ce3d66c45885::t_de7c741966362d 15-17
+  s_55ce3d66c45885::t_b82bb0c3df6f44 3,19-21
+  s_55ce3d66c45885::t_eed73abb631dcd 9-10,25,32-38
+  s_55ce3d66c45885::t_ad3891fcedc5db 43-46
+.agents/skills/flutter-build-responsive-layout/SKILL.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-139
+outputs/fullscreen-review/after/results.json
+  s_5dfd3df320e540::t_5a1a3a228ebe02 1-1082
+docs/planning/flutter-rebuild/phases/07.html
+  s_80122bade619fe::t_343a8383b7621a 1-4,8,10-13,15-20,23-26,39-40,43-63
+  s_80122bade619fe::t_a4b48da227dcf7 6,34-35,66
+  s_80122bade619fe::t_d9aaf69519b2bc 5,7,9,14,21-22,27-33,36-38,41-42,64-65
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/04.html
+  s_80122bade619fe::t_37aa72784dcd91 1-39
+.agents/skills/flutter-device-testing/evals/cases.json
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-210
+.agents/skills/flutter-device-testing/references/lifecycle-entry-matrix.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-102
+docs/planning/flutter-rebuild/phases/04.html
+  s_80122bade619fe::t_a4b48da227dcf7 6,37-38,63
+  s_80122bade619fe::t_d9aaf69519b2bc 5,7,9,15,24-25,30-36,39-41,44-45,61-62
+  s_80122bade619fe::t_343a8383b7621a 1-4,8,10-14,16-23,26-29,42-43,46-60
+docs/phases/00-baseline-kickoff.md
+  s_8c9e903a0f085a::t_3a1c22fa5ab955 1-2,4-17,19-26,28-53
+  s_8c9e903a0f085a::t_8953e0fe35415f 3,18,27,54
+.agents/skills/flutter-persistence/SKILL.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-43
+docs/planning/flutter-rebuild/phases/08.md
+  s_80122bade619fe::t_a4b48da227dcf7 11-12,45-46,87
+  s_80122bade619fe::t_343a8383b7621a 1,3,5,7-8,14-30,35-38,52,54,58-83
+  s_80122bade619fe::t_f83faaa795ccf6 2,4,6,9-10,13,31-34,39-44,47-51,53,55-57,84-86
+.agents/skills/flutter-testing/references/determinism-goldens-and-integration.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-39
+docs/planning/flutter-rebuild/phases/01.html
+  s_80122bade619fe::t_343a8383b7621a 1,3-4,8,16-22,27-28,49-50
+  s_80122bade619fe::t_a4b48da227dcf7 6,36-37,53
+  s_80122bade619fe::t_d9aaf69519b2bc 2,5,7,9-15,23-26,29-35,38-48,51-52
+docs/planning/flutter-rebuild/phases/09.html
+  s_80122bade619fe::t_a4b48da227dcf7 6,27-28,61
+  s_80122bade619fe::t_343a8383b7621a 1-4,8,10-14,18-19,32-33,36-58
+  s_80122bade619fe::t_d9aaf69519b2bc 5,7,9,15-17,20-26,29-31,34-35,59-60
+docs/planning/flutter-rebuild/capture-guide.html
+  s_80122bade619fe::t_d9aaf69519b2bc 2,4,6-20,22-25
+  s_80122bade619fe::t_3bd75ba625a3c9 1
+  s_80122bade619fe::t_343a8383b7621a 3
+  s_80122bade619fe::t_6f1135f47e1de1 5,21
+docs/planning/flutter-rebuild/phases/07.md
+  s_80122bade619fe::t_f83faaa795ccf6 2,4,6,9-10,13,28-31,36-41,44-48,50,52-54,76-78
+  s_80122bade619fe::t_343a8383b7621a 1,3,5,7-8,14-27,32-35,49,51,55-75
+  s_80122bade619fe::t_a4b48da227dcf7 11-12,42-43,79
+docs/planning/flutter-rebuild/archive/v1-19-phases/assets-manifest.json
+  s_80122bade619fe::t_37aa72784dcd91 1-23
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/10.md
+  s_80122bade619fe::t_37aa72784dcd91 1-52
+.agents/skills/flutter-accessibility/SKILL.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-37
+.agents/skills/flutter-device-testing/references/android-emulator-operations.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-106
+.agents/skills/flutter-device-testing/references/ios-simulator-operations.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-92
+docs/planning/flutter-rebuild/phases/02.html
+  s_80122bade619fe::t_d9aaf69519b2bc 2-3,5,7,9-28,31-42
+  s_80122bade619fe::t_3bd75ba625a3c9 1
+  s_80122bade619fe::t_a4b48da227dcf7 6,29-30,43
+  s_80122bade619fe::t_343a8383b7621a 4,8
+PHASES.md
+  s_8c9e903a0f085a::t_8953e0fe35415f 15,33,35,45-47
+  s_8c9e903a0f085a::t_3a1c22fa5ab955 36-38
+  s_80122bade619fe::t_db652c3f23c478 1-14,16-32,34,39-44,48-274
+outputs/figma-transfer/source-masters.json
+  s_5dfd3df320e540::t_2ee5c5b073fdad 1
+electron-reference/REFERENCE.md
+  s_80122bade619fe::t_19d7b18309e24d 1-19
+.impeccable.md
+  s_5dfd3df320e540::t_33f07bd87ea93a 28-29
+  s_5dfd3df320e540::t_f275ecc5c908e6 26
+  s_5dfd3df320e540::t_50358bb45751fd 30-33
+  s_5dfd3df320e540::t_11bec096878ec1 24-25,27
+  s_5dfd3df320e540::t_1f379ac3728a09 4,13,19-23
+.agents/skills/sources.json
+  s_d6fa52f8e243a6::t_394f427b50a1a8 1-128
+outputs/layout-review/compact-order-results.json
+  s_5dfd3df320e540::t_6fea307a8cb6b1 1-29
+docs/planning/flutter-rebuild/phases/11.html
+  s_80122bade619fe::t_d9aaf69519b2bc 5,7,9,16-18,21-27,30-32,35-36,43-44
+  s_80122bade619fe::t_343a8383b7621a 1-4,8,10-15,19-20,33-34,37-42
+  s_80122bade619fe::t_a4b48da227dcf7 6,28-29,45
+.agents/skills/flutter-localization/references/icu-messages-and-formatting.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-28
+docs/log/2026-10-27-sales-display-only.md
+  s_5dfd3df320e540::t_a90583d01cb79c 1-7
+  s_5dfd3df320e540::t_9362e8a4a52d4a 8-9
+outputs/mvp-review/review.cjs
+  s_5dfd3df320e540::t_3e6a428f03da65 13
+  s_5dfd3df320e540::t_da509cfcd163b9 1-2,4-7,9-10,12,15-20
+  s_5dfd3df320e540::t_16ef66bfbe532a 14
+  s_5dfd3df320e540::t_dc4e2b6c6a85c2 3
+  s_5dfd3df320e540::t_bff4b28ad3087f 8,11
+docs/planning/flutter-rebuild/design-tokens.json
+  s_80122bade619fe::t_1830cd74ca3627 1-52
+README.md
+  s_80122bade619fe::t_19d7b18309e24d 1,3,7-15,17,19,22,25,27
+  s_80122bade619fe::t_e493b60b2f4964 5
+docs/log/2026-10-27-remove-worker-savings.md
+  s_5dfd3df320e540::t_10d721bc861f71 1-17
+docs/log/2026-10-28-github-upload.md
+  s_313c29e6455e32::t_0da79f4f8612d0 13-16
+  s_313c29e6455e32::t_79aabad9d9333d 1-12,17
+docs/planning/flutter-rebuild/phases/06.html
+  s_80122bade619fe::t_d9aaf69519b2bc 5,7,9,13,32-33,40-46,49-51,55-56,95-96
+  s_80122bade619fe::t_343a8383b7621a 1-4,8,10-12,14-31,34-39,52-54,57-94
+  s_80122bade619fe::t_a4b48da227dcf7 6,47-48,97
+docs/templates/decision.md
+  s_55ce3d66c45885::t_51e292c5a34715 1-20
+docs/reference/project-scope.md
+  s_80122bade619fe::t_73837bb817a32d 21
+  s_55ce3d66c45885::t_7509c180fef07c 9-10,26
+  s_55ce3d66c45885::t_51e292c5a34715 1-8,11-14,16,18-19,22-25,27-30
+  s_5dfd3df320e540::t_0fad2b74b23eba 15,17
+  s_5dfd3df320e540::t_c0da7174012d66 20
+outputs/figma-transfer/assembled-0.json
+  s_5dfd3df320e540::t_5bcf5f3c338e46 1
+outputs/fullscreen-review/fluid/results.json
+  s_5dfd3df320e540::t_9230bd411c7892 394,396-397,414-431,823,825-826,841-858,1252,1254-1255,1270-1287,1684,1699-1716
+  s_5dfd3df320e540::t_c0ca2b4d9e526b 1-393,395,398-413,432-822,824,827-840,859-1251,1253,1256-1269,1288-1683,1685-1698,1717-1718
+docs/log/2026-10-27-flutter-rebuild-plan.md
+  s_80122bade619fe::t_73837bb817a32d 1-2,5-20,25-29,31-32,35-36
+  s_80122bade619fe::t_687e352eccf598 22,30
+  s_80122bade619fe::t_9e36a158c6c6a4 24,33-34
+  s_80122bade619fe::t_3bd75ba625a3c9 21,23
+  s_80122bade619fe::t_d13b88bf337a36 3-4
+docs/log/2026-10-27-extra-preview-products.md
+  s_5dfd3df320e540::t_a505b527a5310c 1-9
+docs/planning/flutter-rebuild/archive/v1-19-phases/accounting-parity.html
+  s_80122bade619fe::t_37aa72784dcd91 1-32
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/15.html
+  s_80122bade619fe::t_37aa72784dcd91 1-44
+.agents/skills/property-based-testing/README.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-279
+.agents/skills/flutter-accessibility/references/semantics-and-screen-readers.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-77
+.agents/skills/flutter-ci-cd/references/provider-and-monorepo.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-21
+docs/reference/application.md
+  s_5dfd3df320e540::t_ca886a175aa205 88-93
+  s_5dfd3df320e540::t_2e4aaee9a6e8b9 120
+  s_80122bade619fe::t_f6bce606798466 3-4
+  s_5dfd3df320e540::t_f99ffaf1c84c18 94-97
+  s_5dfd3df320e540::t_41775fe46964ea 85
+  s_80122bade619fe::t_6f1135f47e1de1 13-22
+  s_55ce3d66c45885::t_51e292c5a34715 1-2,7-12,23-29,31-55
+  s_5dfd3df320e540::t_a90583d01cb79c 87
+  s_5dfd3df320e540::t_f2fed23dabed10 98-101
+  s_5dfd3df320e540::t_e04922383e7892 117-119
+  s_5dfd3df320e540::t_cafc77a189f039 30,125-128
+  s_80122bade619fe::t_73837bb817a32d 5-6
+  s_5dfd3df320e540::t_50358bb45751fd 121-124
+  s_5dfd3df320e540::t_a505b527a5310c 109-112
+  s_5dfd3df320e540::t_0fad2b74b23eba 102-108
+  s_5dfd3df320e540::t_eb32fe5863ea5b 82-84,86
+  s_5dfd3df320e540::t_67137b9be22bc4 113-116
+docs/log/2026-10-17-menu-dulaimiya-chicken.md
+  s_55ce3d66c45885::t_b82bb0c3df6f44 1-15
+docs/planning/flutter-rebuild/phases/10.html
+  s_80122bade619fe::t_d9aaf69519b2bc 5,7,9-14,23-26,29-35,38-41,43-48,56-59,67-68
+  s_80122bade619fe::t_343a8383b7621a 1-4,8,15-22,27-28,42,49-55,60-66
+  s_80122bade619fe::t_a4b48da227dcf7 6,36-37,69
+outputs/layout-review/inventory-results.json
+  s_5dfd3df320e540::t_ba49ff2a8946df 1-23
+docs/planning/flutter-rebuild/design-system.md
+  s_80122bade619fe::t_f83faaa795ccf6 1-46,48-55
+  s_80122bade619fe::t_d9aaf69519b2bc 47
+docs/log/2026-10-17-menu-polish.md
+  s_55ce3d66c45885::t_de7c741966362d 1-15
+.codex/config.toml
+  s_55ce3d66c45885::t_51e292c5a34715 1-4
+outputs/figma-transfer/build-library.js
+  s_5dfd3df320e540::t_048176ac33a2db 1-45
+outputs/layout-review/verify-settings.cjs
+  s_5dfd3df320e540::t_1d349553a35492 1-18,20-28
+  s_5dfd3df320e540::t_f747efc7688b12 19
+docs/planning/flutter-rebuild/assets-manifest.json
+  s_80122bade619fe::t_09b3ffe5bffbda 1-23
+outputs/fullscreen-review/README.md
+  s_5dfd3df320e540::t_90bfa2f1c17c81 1,3,5-72
+  s_5dfd3df320e540::t_33f07bd87ea93a 2,4
+docs/planning/flutter-rebuild/screenshot-manifest.json
+  s_80122bade619fe::t_a14af095feef3e 1006,1012-1013,1021,1027-1038,1042-1053,1057-1068,1072-1083,1087-1098,1102-1113,1117-1118,1126,1132-1143,1147-1158,1162-1163,1757,1766-1773,1777-1778,1792-1793,1807-1808,1822-1823,1837-1848,1852-1863,1867-1878,1882-1893,1897-1908,1912-1915,1922,2107-2108,2115,2120-2121,2128,2133-2134,2141,2146-2147,2154,2159-2160,2167,2172-2173,2180,2185-2186,2193,2198-2199,2206,2211-2212,2219,2224-2225,2232,2237-2238,2245,2250-2251,2258,2402,2407-2408,2412,2415-2416,2422-2429,2434-2435,2439,2442-2443,2449-2470,2476-2497,2503-2524,2530-2551,2557-2578,2584-2592,2596-2597
+  s_80122bade619fe::t_1830cd74ca3627 1,3-18,22-31,48,52-63,67-78,82-93,97-108,112-123,127-138,142-153,157-168,172-183,187-198,202-213,217-228,232-243,247-258,262-273,277-288,292-303,307-318,322-333,337-348,352-363,367-378,382-393,397-408,412-423,427-438,442-451,453,457-466,468,472-481,483,487-496,498,502-511,513,517-526,528,532-543,547-558,562-573,577-588,592-603,607-618,622-633,637-648,652-663,667-678,682-693,697-708,712-723,727-738,742-753,757-768,772-783,787-798,802-813,817-828,832-843,847-858,862-873,877-888,892-903,907-918,922-933,937-948,952-963,967-978,982-993,997-998,1001-1005,1007-1008,1016-1020,1022-1023,1121-1125,1127-1128,1164-1173,1177-1413,1417-1426,1428,1432-1441,1443,1447-1456,1458,1462-1471,1473,1477-1488,1492-1503,1507-1518,1522-1533,1537-1548,1552-1563,1567-1578,1582-1593,1597-1608,1612-1623,1627-1638,1642-1653,1657-1668,1672-1683,1687-1698,1702-1713,1717-1728,1732-1743,1747-1756,1758,1762-1765,1781-1786,1788,1796-1801,1803,1811-1816,1818,1826-1831,1833,1916-1921,1923,1927-1938,1942-1953,1957-1966,1968,1972-1981,1983,1987-1996,1998,2002-2011,2013,2017-2028,2032-2043,2047-2058,2062-2073,2077-2088,2092-2103,2112-2113,2116,2125-2126,2129,2138-2139,2142,2151-2152,2155,2164-2165,2168,2177-2178,2181,2190-2191,2194,2203-2204,2207,2216-2217,2220,2229-2230,2233,2242-2243,2246,2255-2256,2259,2263-2270,2275-2281,2287-2294,2299-2306,2311-2318,2323-2330,2335-2342,2347-2354,2359-2366,2371-2378,2383-2390,2395-2401,2413,2418,2440,2444-2445,2472,2499,2526,2553,2580,2602,2604,2607,2611-2625
+  s_80122bade619fe::t_1bfda6179d894d 2
+  s_80122bade619fe::t_07bbb78cf9dec8 19-21
+  s_80122bade619fe::t_72b07b65bd523a 32-34,45-47
+  s_80122bade619fe::t_7165783eb51f06 49-51
+  s_80122bade619fe::t_2cd03bc7be2ce1 64-66
+  s_80122bade619fe::t_9e9d006cc7936f 79-81
+  s_80122bade619fe::t_9578413d80773b 94-96
+  s_80122bade619fe::t_9988f875f6e18b 109-111
+  s_80122bade619fe::t_d93dd4f8b1f2d8 124-126
+  s_80122bade619fe::t_facd6ff5cca6ff 139-141
+  s_80122bade619fe::t_eeabd93aabbd23 154-156
+  s_80122bade619fe::t_b07a6c839c793e 169-171
+  s_80122bade619fe::t_240dfd90ecab43 184-186
+  s_80122bade619fe::t_00c2de51d0443d 199-201
+  s_80122bade619fe::t_2770676a0979f7 214-216
+  s_80122bade619fe::t_c27832bf07701c 229-231
+  s_80122bade619fe::t_56c47b86d24907 244-246
+  s_80122bade619fe::t_9692db94f2e437 259-261
+  s_80122bade619fe::t_e5e969db33a906 274-276
+  s_80122bade619fe::t_2e42f30c054c59 289-291
+  s_80122bade619fe::t_22912b784398f8 304-306
+  s_80122bade619fe::t_f3c959db3d3820 319-321
+  s_80122bade619fe::t_e78b4278edf4d1 334-336
+  s_80122bade619fe::t_8746bbd04d7799 349-351
+  s_80122bade619fe::t_06e6d1f1f0b137 364-366
+  s_80122bade619fe::t_b5714052d8aa90 379-381
+  s_80122bade619fe::t_ba2beb3c4cda9c 394-396
+  s_80122bade619fe::t_bca7f63e180330 409-411
+  s_80122bade619fe::t_b57739780d7478 424-426
+  s_80122bade619fe::t_67328b2151c219 439-441
+  s_80122bade619fe::t_04b9c08b9f924c 452
+  s_80122bade619fe::t_4b5d118ec02b4e 454-456
+  s_80122bade619fe::t_2be3a3ac33c1ce 467
+  s_80122bade619fe::t_aa97b6005158a7 469-471
+  s_80122bade619fe::t_f46abb6f1a0c77 482
+  s_80122bade619fe::t_40dc7e2fc9e0b0 484-486
+  s_80122bade619fe::t_8bdfd9430ac22c 497
+  s_80122bade619fe::t_22eb423c15d6ac 499-501
+  s_80122bade619fe::t_1b88a1485cbdce 512
+  s_80122bade619fe::t_68235fd442a7c2 514-516
+  s_80122bade619fe::t_6505c1ad067219 527
+  s_80122bade619fe::t_0e435978c3ac9e 529-531
+  s_80122bade619fe::t_89a758f4437236 544-546
+  s_80122bade619fe::t_32fdfc426efd4a 559-561
+  s_80122bade619fe::t_5544e594e177e1 574-576
+  s_80122bade619fe::t_0daf08546df427 589-591
+  s_80122bade619fe::t_892cb858fb5696 604-606
+  s_80122bade619fe::t_0c70460a945e3f 619-621
+  s_80122bade619fe::t_f3a3a00d2e1203 634-636
+  s_80122bade619fe::t_7e971213af5521 649-651
+  s_80122bade619fe::t_42f6791c197b3f 664-666
+  s_80122bade619fe::t_12012a37659f7d 679-681
+  s_80122bade619fe::t_ac854519acc909 694-696
+  s_80122bade619fe::t_571be8cf20bf5a 709-711
+  s_80122bade619fe::t_64004ce2da2309 724-726
+  s_80122bade619fe::t_eb3108234b90c9 739-741
+  s_80122bade619fe::t_2723272284d6b7 754-756
+  s_80122bade619fe::t_ae7ecf385a6ff7 769-771
+  s_80122bade619fe::t_eae7f3102ebd8f 784-786
+  s_80122bade619fe::t_473613b6e2aced 799-801
+  s_80122bade619fe::t_e14703047601df 814-816
+  s_80122bade619fe::t_0251500fc5d51e 829-831
+  s_80122bade619fe::t_e75a7bb6918524 844-846
+  s_80122bade619fe::t_fb239fe1c0c771 859-861
+  s_80122bade619fe::t_0dd78d9b7dc7d8 874-876
+  s_80122bade619fe::t_9e5eb8fa691554 889-891
+  s_80122bade619fe::t_20611a97b40cb1 904-906
+  s_80122bade619fe::t_b3e3410d3c4233 919-921
+  s_80122bade619fe::t_f1ac0f82242804 934-936
+  s_80122bade619fe::t_ba47b1fdaff757 949-951
+  s_80122bade619fe::t_71f8d791894f9d 964-966
+  s_80122bade619fe::t_6616e3582e331d 979-981
+  s_80122bade619fe::t_332a4af95bd685 994-996
+  s_80122bade619fe::t_2178102059ee9e 999-1000
+  s_80122bade619fe::t_3775a7fb75c0c8 1009-1011
+  s_80122bade619fe::t_9a68bd990a456d 1014-1015
+  s_80122bade619fe::t_59abb8d94388e1 1024-1026
+  s_80122bade619fe::t_6ae593bae99578 1039-1041
+  s_80122bade619fe::t_594e90f7725399 1054-1056
+  s_80122bade619fe::t_af21ab1088e219 1069-1071
+  s_80122bade619fe::t_2e274da7546a52 1084-1086
+  s_80122bade619fe::t_b937635be9577c 1099-1101
+  s_80122bade619fe::t_fd7a89e7d1b495 1114-1116
+  s_80122bade619fe::t_7afe224f61df3a 1119-1120
+  s_80122bade619fe::t_81c772af7060b9 1129-1131
+  s_80122bade619fe::t_d712d590372c5d 1144-1146
+  s_80122bade619fe::t_c691dbb0f88ef9 1159-1161
+  s_80122bade619fe::t_24a9a8b5aa035d 1174-1176
+  s_80122bade619fe::t_f586416a37c437 1414-1416
+  s_80122bade619fe::t_ca396dc1b8d657 1427
+  s_80122bade619fe::t_4004a3b32876dc 1429-1431
+  s_80122bade619fe::t_5c4798e62f7f76 1442
+  s_80122bade619fe::t_ef94baa263cfbf 1444-1446
+  s_80122bade619fe::t_a3dc3c7d830a74 1457
+  s_80122bade619fe::t_d7ee88e97407d4 1459-1461
+  s_80122bade619fe::t_d030d9dcf543e8 1472
+  s_80122bade619fe::t_6f64a4aa232eca 1474-1476
+  s_80122bade619fe::t_c70f18d174ed32 1489-1491
+  s_80122bade619fe::t_9ae5f80ad81d59 1504-1506
+  s_80122bade619fe::t_b394f91ac4b995 1519-1521
+  s_80122bade619fe::t_2dfc2b01aad5fd 1534-1536
+  s_80122bade619fe::t_95dd861a35940a 1549-1551
+  s_80122bade619fe::t_93f97430222642 1564-1566
+  s_80122bade619fe::t_01ce4ddebd517f 1579-1581
+  s_80122bade619fe::t_afd1dd870a0612 1594-1596
+  s_80122bade619fe::t_3054298ef50666 1609-1611
+  s_80122bade619fe::t_a8c93378f82b64 1624-1626
+  s_80122bade619fe::t_74a817a2a273db 1639-1641
+  s_80122bade619fe::t_1487aa3f3b03ea 1654-1656
+  s_80122bade619fe::t_ab13610da59714 1669-1671
+  s_80122bade619fe::t_553c7f72516aa8 1684-1686
+  s_80122bade619fe::t_2eb3bd9df86118 1699-1701
+  s_80122bade619fe::t_80b6c144de8f9f 1714-1716
+  s_80122bade619fe::t_22224178cd4ac1 1729-1731
+  s_80122bade619fe::t_eea729a6bae407 1744-1746
+  s_80122bade619fe::t_eaefae36d8a9b7 1759-1761
+  s_80122bade619fe::t_50f3ebd9048d6a 1774-1776
+  s_80122bade619fe::t_ad0209139fe469 1779-1780
+  s_80122bade619fe::t_db828cc7f3b3f6 1787
+  s_80122bade619fe::t_233e70b2f6e7c4 1789-1791
+  s_80122bade619fe::t_8876714e3f5635 1794-1795
+  s_80122bade619fe::t_630dd5f151c208 1802
+  s_80122bade619fe::t_5ec6dfeb405587 1804-1806
+  s_80122bade619fe::t_b8215beb5a25ed 1809-1810
+  s_80122bade619fe::t_2d3e93e5933ab0 1817
+  s_80122bade619fe::t_643d051e7d3f80 1819-1821
+  s_80122bade619fe::t_adb89d7e53c8c4 1824-1825
+  s_80122bade619fe::t_6b3201eb78be93 1832
+  s_80122bade619fe::t_08ad8739bcf4d8 1834-1836
+  s_80122bade619fe::t_9421024b56df28 1849-1851
+  s_80122bade619fe::t_458f59418213ec 1864-1866
+  s_80122bade619fe::t_82ef0fdd759b28 1879-1881
+  s_80122bade619fe::t_64fa8b3f01e470 1894-1896
+  s_80122bade619fe::t_331c8a32a47d21 1909-1911
+  s_80122bade619fe::t_c6296273a83235 1924-1926
+  s_80122bade619fe::t_50c0ae6376d796 1939-1941
+  s_80122bade619fe::t_f6f9807225a94f 1954-1956
+  s_80122bade619fe::t_5da2bfc1e853a7 1967
+  s_80122bade619fe::t_5a381e7df80206 1969-1971
+  s_80122bade619fe::t_6ffa42261ba2f1 1982
+  s_80122bade619fe::t_07039510e553fb 1984-1986
+  s_80122bade619fe::t_f231d40ea3e9a2 1997
+  s_80122bade619fe::t_b1644432332632 1999-2001
+  s_80122bade619fe::t_4b9835293c8463 2012
+  s_80122bade619fe::t_c5b00dc76beb2a 2014-2016
+  s_80122bade619fe::t_ad0319e2682cf1 2029-2031
+  s_80122bade619fe::t_73f8d45fdec5c9 2044-2046
+  s_80122bade619fe::t_af2fd9da846f4e 2059-2061
+  s_80122bade619fe::t_d8f6d7c6984611 2074-2076
+  s_80122bade619fe::t_da32fa6dc8a6f9 2089-2091
+  s_80122bade619fe::t_da8b3975db9100 2104-2106
+  s_80122bade619fe::t_a62022c3d3c383 2109-2111
+  s_80122bade619fe::t_db9d4352476a50 2114
+  s_80122bade619fe::t_c7f904d06b1ad1 2117-2119
+  s_80122bade619fe::t_85e0c09ee921ea 2122-2124
+  s_80122bade619fe::t_113de829e01e64 2127
+  s_80122bade619fe::t_9a1ca883171216 2130-2132
+  s_80122bade619fe::t_e218a136356b84 2135-2137
+  s_80122bade619fe::t_c093f7602c015c 2140
+  s_80122bade619fe::t_7231848879c9fe 2143-2145
+  s_80122bade619fe::t_96799fc0eed59f 2148-2150
+  s_80122bade619fe::t_cdffe65c93957e 2153
+  s_80122bade619fe::t_d7820dc7b9a706 2156-2158
+  s_80122bade619fe::t_a5ea8292362cda 2161-2163
+  s_80122bade619fe::t_57453dab31a299 2166
+  s_80122bade619fe::t_3ca23923326a45 2169-2171
+  s_80122bade619fe::t_ba4c0764a87bcc 2174-2176
+  s_80122bade619fe::t_8d773ad515a1c6 2179
+  s_80122bade619fe::t_243aa26ba5fd6e 2182-2184
+  s_80122bade619fe::t_341e5389fe20e5 2187-2189
+  s_80122bade619fe::t_fa005a5f016980 2192
+  s_80122bade619fe::t_dedd301a3686e8 2195-2197
+  s_80122bade619fe::t_50f60205ef7180 2200-2202
+  s_80122bade619fe::t_f4472996911f1e 2205
+  s_80122bade619fe::t_54cd43d4a7205c 2208-2210
+  s_80122bade619fe::t_dd20206ac576cb 2213-2215
+  s_80122bade619fe::t_d38f09dae2d3b0 2218
+  s_80122bade619fe::t_5aada508927e10 2221-2223
+  s_80122bade619fe::t_f92f45948253b5 2226-2228
+  s_80122bade619fe::t_cb9cd283420490 2231
+  s_80122bade619fe::t_e4b286e01d52eb 2234-2236
+  s_80122bade619fe::t_71d99d66d4d0df 2239-2241
+  s_80122bade619fe::t_f830c5114c3fd1 2244
+  s_80122bade619fe::t_cf82f9d38644ad 2247-2249
+  s_80122bade619fe::t_0343775b69d08e 2252-2254
+  s_80122bade619fe::t_b514e0bba4a634 2257
+  s_80122bade619fe::t_44efb020e47d37 2260-2262
+  s_80122bade619fe::t_fe7fde174a3a8f 2271-2274
+  s_80122bade619fe::t_f02c4592deb30b 2282-2286
+  s_80122bade619fe::t_6a02c2d5dbcba5 2295-2298
+  s_80122bade619fe::t_adfe5619dae61e 2307-2310
+  s_80122bade619fe::t_05360da4558d84 2319-2322
+  s_80122bade619fe::t_060c5c39712c23 2331-2334
+  s_80122bade619fe::t_d9ac1e999f460f 2343-2346
+  s_80122bade619fe::t_59dfe7709b48e4 2355-2358
+  s_80122bade619fe::t_520f1085478cca 2367-2370
+  s_80122bade619fe::t_8b55bdf6a052ad 2379-2382
+  s_80122bade619fe::t_c7c0cbe5994f06 2391-2394
+  s_80122bade619fe::t_cf21abf2a547b7 2403-2406
+  s_80122bade619fe::t_4a6c3d86515899 2409-2411
+  s_80122bade619fe::t_b1802e8640cadf 2414
+  s_80122bade619fe::t_104da7e959d836 2417
+  s_80122bade619fe::t_217e0bc3ac8949 2419-2421
+  s_80122bade619fe::t_d223c49fa42720 2430-2433
+  s_80122bade619fe::t_4bea0c55d46f9b 2436-2438
+  s_80122bade619fe::t_9f7701735469b2 2441
+  s_80122bade619fe::t_03287641d7719c 2446-2448
+  s_80122bade619fe::t_0f7a96307b3afc 2471
+  s_80122bade619fe::t_7e05e72d6297e6 2473-2475
+  s_80122bade619fe::t_294b7eaf16620d 2498
+  s_80122bade619fe::t_1e8b1a70bedff3 2500-2502
+  s_80122bade619fe::t_b22c1d4f12efbf 2525
+  s_80122bade619fe::t_7fd42da9c5b8ea 2527-2529
+  s_80122bade619fe::t_d0957361ddfad2 2552
+  s_80122bade619fe::t_213b96d4863ec2 2554-2556
+  s_80122bade619fe::t_7ac0c682116bd3 2579
+  s_80122bade619fe::t_78f6d383ba6c68 2581-2583
+  s_80122bade619fe::t_3a228de6058297 2593-2595
+  s_80122bade619fe::t_395375f5b3c3ea 2598-2601
+  s_80122bade619fe::t_43524595c138cf 2603
+  s_80122bade619fe::t_188d52a56c247e 2605-2606
+  s_80122bade619fe::t_69119bf50ca5c3 2608-2610
+docs/planning/flutter-rebuild/archive/v1-19-phases/feature-coverage.html
+  s_80122bade619fe::t_37aa72784dcd91 1-47
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/07.md
+  s_80122bade619fe::t_37aa72784dcd91 1-48
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/00.md
+  s_80122bade619fe::t_37aa72784dcd91 1-48
+.agents/skills/flutter-persistence/evals/cases.json
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-67
+.agents/skills/flutter-persistence/references/schema-migrations-and-recovery.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-63
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/10.html
+  s_80122bade619fe::t_37aa72784dcd91 1-40
+.agents/skills/flutter-accessibility/evals/cases.json
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-70
+.agents/skills/flutter-testing/evals/cases.json
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-53
+outputs/layout-review/settings-results.json
+  s_5dfd3df320e540::t_1d349553a35492 1-98
+outputs/figma-transfer/link-masters.js
+  s_5dfd3df320e540::t_607ac5bd91169c 1-2,4-13,15-16
+  s_5dfd3df320e540::t_b29231cf2550d3 3,14,17
+scripts/memory
+  s_55ce3d66c45885::t_51e292c5a34715 1-2
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/01.md
+  s_80122bade619fe::t_37aa72784dcd91 1-49
+docs/planning/flutter-rebuild/phases/01.md
+  s_80122bade619fe::t_a4b48da227dcf7 11-12,44-45,66
+  s_80122bade619fe::t_343a8383b7621a 1,5,7-8,15-16,22-30,36-37,61-62
+  s_80122bade619fe::t_f83faaa795ccf6 2-4,6,9-10,13-14,17-21,31-35,38-43,46-60,63-65
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/09.html
+  s_80122bade619fe::t_37aa72784dcd91 1-51
+.agents/skills/flutter-testing/SKILL.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-52
+docs/planning/flutter-rebuild/capture-guide.md
+  s_80122bade619fe::t_343a8383b7621a 5-6
+  s_80122bade619fe::t_f83faaa795ccf6 1-2,4,7-8,10-30,32-39
+  s_80122bade619fe::t_6f1135f47e1de1 9,31
+  s_80122bade619fe::t_d9aaf69519b2bc 3
+docs/README.md
+  s_80122bade619fe::t_2433cadeca7a5f 12
+  s_80122bade619fe::t_73837bb817a32d 34-37
+  s_55ce3d66c45885::t_51e292c5a34715 1-8,11,14-28,32-33,38-41
+  s_80122bade619fe::t_e493b60b2f4964 9-10
+  s_80122bade619fe::t_f6bce606798466 29-30
+  s_5dfd3df320e540::t_cafc77a189f039 31
+docs/planning/flutter-rebuild/design-system-contract.html
+  s_80122bade619fe::t_3bd75ba625a3c9 1
+  s_80122bade619fe::t_d9aaf69519b2bc 2-44
+PLANS.md
+  s_80122bade619fe::t_db652c3f23c478 1-34
+outputs/figma-transfer/foundations.json
+  s_5dfd3df320e540::t_4571a63f872461 1
+.agents/skills/flutter-accessibility/references/target-sizes-and-contrast.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-46
+docs/planning/flutter-rebuild/phases/04.md
+  s_80122bade619fe::t_a4b48da227dcf7 11-12,45-46,76
+  s_80122bade619fe::t_f83faaa795ccf6 2,4,6,9-10,13,31-34,39-44,47-51,53,55-57,73-75
+  s_80122bade619fe::t_343a8383b7621a 1,3,5,7-8,14-30,35-38,52,54,58-72
+docs/decisions/0001-single-restaurant-and-project-memory.md
+  s_55ce3d66c45885::t_51e292c5a34715 1-26
+docs/planning/flutter-rebuild/gallery.html
+  s_80122bade619fe::t_f83faaa795ccf6 1-2
+  s_80122bade619fe::t_36fc0615b1208f 4
+  s_80122bade619fe::t_343a8383b7621a 3
+docs/planning/flutter-rebuild/README.md
+  s_80122bade619fe::t_a4b48da227dcf7 22-23,68-69,71
+  s_80122bade619fe::t_d9aaf69519b2bc 16
+  s_80122bade619fe::t_6f1135f47e1de1 53
+  s_80122bade619fe::t_343a8383b7621a 3,17,29,31-39,41-48,80,82,88,90
+  s_80122bade619fe::t_f83faaa795ccf6 1-2,4-15,18-21,24-28,30,40,49-52,54-67,70,72-79,81,83-87,89
+docs/decisions/0012-merge-flutter-rebuild-phases.md
+  s_80122bade619fe::t_2433cadeca7a5f 1-30
+docs/decisions/0014-adopt-universal-workflow.md
+  s_80122bade619fe::t_eed1142874d3a4 1-21
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/03.md
+  s_80122bade619fe::t_37aa72784dcd91 1-47
+.agents/skills/property-based-testing/assets/trail-of-bits-mark.svg
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1
+docs/planning/flutter-rebuild/archive/v1-19-phases/feature-coverage.md
+  s_80122bade619fe::t_37aa72784dcd91 1-57
+docs/planning/2026-10-26-full-app-ux-audit.md
+  s_80122bade619fe::t_6f1135f47e1de1 82-986
+  s_80122bade619fe::t_3bcf839e8c6e7e 1-81,987-1035
+outputs/figma-transfer/server.cjs
+  s_5dfd3df320e540::t_14e9d9e038f863 1-5
+  s_5dfd3df320e540::t_620c21f512436d 7
+  s_5dfd3df320e540::t_1171f028da9037 6
+docs/planning/flutter-rebuild/phases/05.md
+  s_80122bade619fe::t_a4b48da227dcf7 11-12,35-36,67
+  s_80122bade619fe::t_343a8383b7621a 1,3,5,7-8,14-22,27-28,42,44,48-63
+  s_80122bade619fe::t_f83faaa795ccf6 2,4,6,9-10,13,23-26,29-34,37-41,43,45-47,64-66
+docs/how-to/memory.md
+  s_80122bade619fe::t_687e352eccf598 7
+  s_80122bade619fe::t_ca9a3534ff7f42 15-16
+  s_55ce3d66c45885::t_51e292c5a34715 1-6,8-14,17-49
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/06.html
+  s_80122bade619fe::t_37aa72784dcd91 1-46
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/13.md
+  s_80122bade619fe::t_37aa72784dcd91 1-59
+docs/reference/workflow/README.md
+  s_80122bade619fe::t_eed1142874d3a4 1-20,23-31
+  s_80122bade619fe::t_ca9a3534ff7f42 21-22
+docs/log/2026-10-27-sales-reference-redesign.md
+  s_2950e33bbd467c::t_10978e498f1345 1-9
+  s_2950e33bbd467c::t_88af2811de43e7 10
+docs/log/2026-10-28-selected-project-skills.md
+  s_d6fa52f8e243a6::t_2b86467a62a4cd 26-31
+  s_d6fa52f8e243a6::t_e9aaaf570074a5 1-25
+docs/decisions/0010-mvp-returns-and-held-orders.md
+  s_5dfd3df320e540::t_cafc77a189f039 1-17
+docs/log/2026-10-27-order-type-manager.md
+  s_5dfd3df320e540::t_2c007fb41325ff 20-21
+  s_5dfd3df320e540::t_ca886a175aa205 1-19
+.agents/skills/property-based-testing/SKILL.md
+  s_d6fa52f8e243a6::t_fe0f8834c1200d 1-3,5-7,18-78
+  s_d6fa52f8e243a6::t_394f427b50a1a8 4,8-17
+.agents/skills/licenses/flutter--agent-plugins/LICENSE
+  s_d6fa52f8e243a6::t_394f427b50a1a8 1-26
+docs/planning/flutter-rebuild/archive/v1-19-phases/mvp-acceptance.html
+  s_80122bade619fe::t_37aa72784dcd91 1-56
+.agents/skills/licenses/trailofbits--skills/LICENSE
+  s_d6fa52f8e243a6::t_394f427b50a1a8 1-427
+docs/planning/ideas.md
+  s_55ce3d66c45885::t_51e292c5a34715 1-2,4-8,10-11
+  s_55ce3d66c45885::t_7509c180fef07c 9
+  s_55ce3d66c45885::t_d14d7bab633371 3
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/07.html
+  s_80122bade619fe::t_37aa72784dcd91 1-36
+docs/planning/flutter-rebuild/phases/03.md
+  s_80122bade619fe::t_f83faaa795ccf6 2-4,6,9-10,13,23-26,29-34,37-41,43,45-47,63-65
+  s_80122bade619fe::t_a4b48da227dcf7 11-12,35-36,66
+  s_80122bade619fe::t_343a8383b7621a 1,5,7-8,14-22,27-28,42,44,48-62
+docs/decisions/0002-sales-inventory-shortcuts.md
+  s_e7ed819f427c8c::t_310adeb995117f 1-16
+docs/decisions/0003-sales-layout-review.md
+  s_e7ed819f427c8c::t_a1f89a3ac2b9e4 1-13
+docs/log/2026-10-17-dine-in-menu.md
+  s_55ce3d66c45885::t_f5ec40699726ca 1-7
+docs/log/2026-10-17-dine-in-wings.md
+  s_55ce3d66c45885::t_42694b2d058e84 1-7
+docs/log/2026-10-17-menu-cross-footer.md
+  s_55ce3d66c45885::t_aff8e9a5459236 1-9
+docs/log/2026-10-17-promo-fish-wings.md
+  s_55ce3d66c45885::t_f3b2be5fec8ff2 1-9
+docs/log/2026-10-25-daily-account-statement.md
+  s_ce1e3832335507::t_eb22cc12bff20c 1-17
+docs/log/2026-10-25-purchase-invoices.md
+  s_ce1e3832335507::t_709020cbb4f614 1-21
+docs/log/2026-10-25-shared-material-catalog.md
+  s_ce1e3832335507::t_429b7c5091f446 1-19
+docs/log/2026-10-26-browser-design-review.md
+  s_e7ed819f427c8c::t_60e363d1f7ed1b 1-11
+docs/log/2026-10-26-sales-inventory.md
+  s_e7ed819f427c8c::t_3cf9f95617d5b4 1-22
+docs/log/2026-10-26-sales-layout-review.md
+  s_e7ed819f427c8c::t_641a6c674ca969 1-18
+docs/log/2026-10-26-sidebar-toggle.md
+  s_e7ed819f427c8c::t_83767b72cbb9fc 1-13
+docs/log/2026-10-26-ux-audit-fixes.md
+  s_e7ed819f427c8c::t_6f3d65991268dc 1-23
+docs/planning/dine-in-menu.md
+  s_55ce3d66c45885::t_94d159345c2bbc 1-32
+docs/planning/flutter-rebuild/archive/v1-19-phases/build-flutter-plan.py.txt
+  s_80122bade619fe::t_e93e7fa84ac195 1-640
+docs/planning/flutter-rebuild/reference-assets/commerce.css
+  s_80122bade619fe::t_322528a15da64e 1-19
+docs/planning/flutter-rebuild/reference-assets/styles.css
+  s_80122bade619fe::t_e03b96cde11b3a 17-19
+docs/planning/flutter-rebuild/reference-assets/ux.css
+  s_80122bade619fe::t_6a8ac73645195e 1-275
+docs/reference/product-photos.md
+  s_e7ed819f427c8c::t_dd245ed314dd6f 1-24
+docs/reference/workflow/phase-tracker.source.txt
+  s_80122bade619fe::t_edb7e11b23d4c3 1-56
+docs/reference/workflow/universal-rules.source.txt
+  s_80122bade619fe::t_d54342d3235f1c 1-244
+electron-reference/.impeccable.md
+  s_5dfd3df320e540::t_e79c2c3b2e1912 1-33
+electron-reference/README.md
+  s_5dfd3df320e540::t_df68e095d598c5 1-102
+electron-reference/app/backup-info.cjs
+  s_5dfd3df320e540::t_3caa6c921524de 1-4
+electron-reference/app/main.cjs
+  s_5dfd3df320e540::t_d909f2ca7e8aa1 7,9,16-17,49,65,68-76,81,87-88,90-99,101
+electron-reference/app/preload.cjs
+  s_5dfd3df320e540::t_87505b5131c6e4 5,10-12
+electron-reference/app/reports/export.cjs
+  s_5dfd3df320e540::t_fdf5864419bfc6 18-32
+electron-reference/app/reports/pdf.cjs
+  s_5dfd3df320e540::t_b086dc90df1dcc 30-31,34,37-38,49,55-95,97-99
+electron-reference/app/reports/pdf.css
+  s_c92747f145b532::t_1022dde11acd9d 1-43
+electron-reference/app/ui/commerce.css
+  s_5dfd3df320e540::t_55753156f5a35b 1-19
+electron-reference/app/ui/commerce.js
+  s_5dfd3df320e540::t_640b8873726ae6 1-208
+electron-reference/app/ui/index.html
+  s_5dfd3df320e540::t_46e472f4a2d00f 9-10,14-15,20-22,26-28,30,32-33,37
+electron-reference/app/ui/model.js
+  s_5dfd3df320e540::t_29cfc23a339105 6,16,24,38,87-92,101-106,110,147-149,158,164,166-167,173,268-415,417,422,440-441,449-450,455-456,464
+electron-reference/app/ui/renderer.js
+  s_5dfd3df320e540::t_011c519310e40d 3,6,11,14-31,34-35,41-43,45-61,65,67,71,74-83,91-95,123,126-133,135,139,142,147,150,155,162,165,167-168,170,174,178-180,196,200,204-206,231-233,236,238-239,249,255,257-258,263,272,278,297,299,304-305
+electron-reference/app/ui/styles.css
+  s_ce1e3832335507::t_d9f0bb32340a0f 1-19
+electron-reference/app/ui/suppliers.js
+  s_e7ed819f427c8c::t_a1aca5f77260cf 7-8,11,15-26,29,35,38-46,50,54,61-62,74-76,78,80,82,90-91,94,98-101,107,112,117-123,134,136-137,155,163-166,192,209
+electron-reference/app/ui/ux.css
+  s_5dfd3df320e540::t_24aa6902e7cd04 1-275
+electron-reference/app/ui/ux.js
+  s_5dfd3df320e540::t_31c3eafca5bec0 1-314
+electron-reference/design
+  s_80122bade619fe::t_384dfaa22aecb0 1
+electron-reference/dist
+  s_80122bade619fe::t_664d3a25c91fa6 1
+electron-reference/docs
+  s_80122bade619fe::t_77199c5cede652 1
+electron-reference/outputs
+  s_80122bade619fe::t_3f9c2f5cd241ff 1
+electron-reference/package-lock.json
+  s_80122bade619fe::t_cd8821bedc0ff0 3,9
+electron-reference/package.json
+  s_80122bade619fe::t_8956705050745c 4,11
+electron-reference/scripts/preview-design.cjs
+  s_5dfd3df320e540::t_ffec259b5f8087 1-36
+electron-reference/scripts/preview-fixture.cjs
+  s_5dfd3df320e540::t_47b731c058564d 1-39
+electron-reference/scripts/verify-commerce.cjs
+  s_e7ed819f427c8c::t_d03e76d8196980 1-17
+electron-reference/tests/accounts.test.cjs
+  s_5dfd3df320e540::t_bbcce14636ca5a 14
+electron-reference/tests/commerce-fixture.cjs
+  s_5dfd3df320e540::t_bbe70d196bd647 1-8
+electron-reference/tests/commerce.test.cjs
+  s_5dfd3df320e540::t_362b591c7fdf4a 1-77
+electron-reference/tests/funding.test.cjs
+  s_5dfd3df320e540::t_175b40ff18c304 19,24,66,69,71-75,79-86
+electron-reference/tests/mvp-ui.test.cjs
+  s_5dfd3df320e540::t_1af78d10574b1d 1-54
+electron-reference/tests/native-recovery.test.cjs
+  s_5dfd3df320e540::t_76699a6ceaff74 1-23
+electron-reference/tests/pdf.test.cjs
+  s_5dfd3df320e540::t_d5c994141dbd4e 8-10
+electron-reference/tests/receipt-print.test.cjs
+  s_5dfd3df320e540::t_cecf1a9d572922 1-5
+electron-reference/tests/returns.test.cjs
+  s_5dfd3df320e540::t_1051a9d703c671 1-18
+electron-reference/tests/suppliers.test.cjs
+  s_5dfd3df320e540::t_05aa274169a366 14,18,22-38,64,69,72,79
+electron-reference/tests/ui.test.cjs
+  s_5dfd3df320e540::t_253410474a39aa 9,11,14,43,75,77-78,81-86,88-97,141,182-183,206,226-227,229-404
+electron-reference/tests/ux-model.test.cjs
+  s_5dfd3df320e540::t_68990562566f1a 1-6
+outputs/campaigns/CAM-0001/build.cjs
+  s_55ce3d66c45885::t_c9647744635944 1-53
+outputs/campaigns/CAM-0001/jannat-baghdad-menu.html
+  s_55ce3d66c45885::t_0d01be886afb5a 1
+outputs/campaigns/CAM-0001/jannat-baghdad-menu.svg
+  s_55ce3d66c45885::t_2716820e8e42fd 1
+outputs/campaigns/CAM-0001/menu-data.json
+  s_55ce3d66c45885::t_f15ee8bf286603 1-68
+outputs/campaigns/CAM-0001/v2/build.cjs
+  s_55ce3d66c45885::t_97d8483be4663f 1-73
+outputs/campaigns/CAM-0001/v2/jannat-baghdad-menu-v2.html
+  s_55ce3d66c45885::t_94c33cdb34f36d 1
+outputs/campaigns/CAM-0001/v2/jannat-baghdad-menu-v2.svg
+  s_55ce3d66c45885::t_0297e964a18402 1
+outputs/campaigns/CAM-0001/v2/menu-data-v2.json
+  s_55ce3d66c45885::t_25bf698f3728b5 1-139
+outputs/campaigns/CAM-0001/v3/build.cjs
+  s_55ce3d66c45885::t_ec19f0581aa60e 1-104
+outputs/campaigns/CAM-0001/v3/fonts/OFL.txt
+  s_55ce3d66c45885::t_2cc2321761c726 1-93
+outputs/campaigns/CAM-0001/v3/jannat-baghdad-menu-v3.html
+  s_55ce3d66c45885::t_fb22c7a417ea4b 1
+outputs/campaigns/CAM-0001/v3/jannat-baghdad-menu-v3.svg
+  s_55ce3d66c45885::t_30f7cd71188ad3 1
+outputs/campaigns/CAM-0001/v3/menu-data-v3.json
+  s_55ce3d66c45885::t_97dd821c589ed7 1-217
+outputs/campaigns/CAM-0001/v3/typography-check.json
+  s_55ce3d66c45885::t_a40fbd9439360e 1-9
+outputs/campaigns/CAM-0001/v4/build.cjs
+  s_55ce3d66c45885::t_e888499945754c 1-106
+outputs/campaigns/CAM-0001/v4/jannat-baghdad-menu-v4.html
+  s_55ce3d66c45885::t_6617aef0238857 1
+outputs/campaigns/CAM-0001/v4/jannat-baghdad-menu-v4.svg
+  s_55ce3d66c45885::t_3393834b558bd8 1
+outputs/campaigns/CAM-0001/v4/menu-data-v4.json
+  s_55ce3d66c45885::t_cb463d9a8ed0b0 1-217
+outputs/campaigns/CAM-0001/v4/typography-check.json
+  s_55ce3d66c45885::t_15ae4d223a9c8c 1-9
+outputs/campaigns/CAM-0001/v5/build.cjs
+  s_55ce3d66c45885::t_9ae95b90c83912 1-112
+outputs/campaigns/CAM-0001/v5/jannat-baghdad-menu-v5.html
+  s_55ce3d66c45885::t_8c009bdec60988 1
+outputs/campaigns/CAM-0001/v5/jannat-baghdad-menu-v5.svg
+  s_55ce3d66c45885::t_c76022be4c1abb 1
+outputs/campaigns/CAM-0001/v5/menu-data-v5.json
+  s_55ce3d66c45885::t_3a66ba8b603562 1-218
+outputs/campaigns/CAM-0001/v5/typography-check.json
+  s_55ce3d66c45885::t_2e34876d48c94f 1-9
+outputs/campaigns/CAM-0001/v6/build.cjs
+  s_55ce3d66c45885::t_df872b898e5a0c 1-112
+outputs/campaigns/CAM-0001/v6/jannat-baghdad-menu-v6.html
+  s_55ce3d66c45885::t_d3676069425492 1
+outputs/campaigns/CAM-0001/v6/jannat-baghdad-menu-v6.svg
+  s_55ce3d66c45885::t_9da88b430ae4b9 1
+outputs/campaigns/CAM-0001/v6/menu-data-v6.json
+  s_55ce3d66c45885::t_64591464aa9dc4 1-246
+outputs/design-review/review.css
+  s_e7ed819f427c8c::t_52c0007233e891 1-3
+outputs/design-review/review.js
+  s_e7ed819f427c8c::t_ee2611939a93c9 1-39
+outputs/figma-transfer/cash.html
+  s_5dfd3df320e540::t_05a57fbf951344 1-346
+outputs/figma-transfer/categories.html
+  s_5b2fe0a0d1d289::t_b942c2c834689a 1-346
+outputs/figma-transfer/expenses.html
+  s_5dfd3df320e540::t_04d4df6dd4a46b 1-349
+outputs/figma-transfer/inventory.html
+  s_5dfd3df320e540::t_614efddebfb18a 1-346
+outputs/figma-transfer/invoices.html
+  s_5dfd3df320e540::t_b8f6e58fa18f6b 1-346
+outputs/figma-transfer/materials.html
+  s_5b2fe0a0d1d289::t_20d872d8ae9064 1-346
+outputs/figma-transfer/mobile-cash.html
+  s_5b2fe0a0d1d289::t_45adb607818c79 1-346
+outputs/figma-transfer/mobile-expenses.html
+  s_5b2fe0a0d1d289::t_c531b1b0c92a7c 1-349
+outputs/figma-transfer/mobile-sales.html
+  s_5b2fe0a0d1d289::t_e26d1107eded1d 1-346
+outputs/figma-transfer/payments.html
+  s_5b2fe0a0d1d289::t_497b23ce8f5437 1-346
+outputs/figma-transfer/sale-history.html
+  s_5dfd3df320e540::t_fa542871fa2e57 1-346
+outputs/figma-transfer/sales-filled.html
+  s_5b2fe0a0d1d289::t_5e52e60bad2425 1-346
+outputs/figma-transfer/sales.html
+  s_5dfd3df320e540::t_d5e8361b09ee33 1-346
+outputs/figma-transfer/settings-about.html
+  s_5b2fe0a0d1d289::t_ae94275376631f 1-356
+outputs/figma-transfer/settings-data.html
+  s_5b2fe0a0d1d289::t_8f3743af8cccce 1-356
+outputs/figma-transfer/settings-restaurant.html
+  s_5b2fe0a0d1d289::t_0219f7cffcb8fb 1-356
+outputs/figma-transfer/settings-workflow.html
+  s_5b2fe0a0d1d289::t_069d8f79c54941 1-356
+outputs/figma-transfer/statement.html
+  s_5dfd3df320e540::t_81a9b3892e6e68 1-346
+outputs/figma-transfer/supplier-debts.html
+  s_5b2fe0a0d1d289::t_76bf75cdb91fe1 1-346
+outputs/figma-transfer/supplier-invoices.html
+  s_5b2fe0a0d1d289::t_e5d3ae7454b0f8 1-346
+outputs/figma-transfer/supplier-ledger.html
+  s_5b2fe0a0d1d289::t_d13a0443c2bd5d 1-346
+outputs/figma-transfer/supplier-materials.html
+  s_5b2fe0a0d1d289::t_46a711fb637d69 1-346
+outputs/figma-transfer/suppliers.html
+  s_5dfd3df320e540::t_e8e60237f09959 1-346
+outputs/fullscreen-review/before/results.json
+  s_5dfd3df320e540::t_55dec54025fc02 1-1082
+outputs/menus/dine-in/v1/build.cjs
+  s_55ce3d66c45885::t_c7fbb995eb40cb 1-59
+outputs/menus/dine-in/v1/jannat-baghdad-dine-in.html
+  s_55ce3d66c45885::t_e03369a3a7d09a 1
+outputs/menus/dine-in/v1/jannat-baghdad-dine-in.svg
+  s_55ce3d66c45885::t_c229a48a659263 1
+outputs/menus/dine-in/v1/menu-data.json
+  s_55ce3d66c45885::t_685638ac0e6ef5 1-129
+outputs/menus/dine-in/v2/build.cjs
+  s_55ce3d66c45885::t_04bb232e81adfc 1-61
+outputs/menus/dine-in/v2/jannat-baghdad-dine-in.html
+  s_55ce3d66c45885::t_33493db0fce56a 1
+outputs/menus/dine-in/v2/jannat-baghdad-dine-in.svg
+  s_55ce3d66c45885::t_012898fbdde0d0 1
+outputs/menus/dine-in/v2/menu-data.json
+  s_55ce3d66c45885::t_63814017ac07d7 1-144
+outputs/ux-audit-2026-10-26/audit-additional.cjs
+  s_e7ed819f427c8c::t_199e06a723c2c0 1-13
+outputs/ux-audit-2026-10-26/audit-flows.cjs
+  s_e7ed819f427c8c::t_3c22b16eaf69cb 1-109
+outputs/ux-audit-2026-10-26/audit-shell.cjs
+  s_e7ed819f427c8c::t_2079cb359f8ab8 1-6
+outputs/ux-audit-2026-10-26/automated-tests.txt
+  s_e7ed819f427c8c::t_f916cb54140b3f 1-590
+outputs/ux-audit-2026-10-26/build-report.py
+  s_e7ed819f427c8c::t_37870db443198e 1-551
+outputs/ux-audit-2026-10-26/findings.json
+  s_e7ed819f427c8c::t_b5885f19c352dd 1-844
+outputs/ux-audit-2026-10-26/report.html
+  s_e7ed819f427c8c::t_949cf66b85eedc 1-205
+outputs/ux-audit-2026-10-26/report.md
+  s_e7ed819f427c8c::t_fb00e703405171 1-1033
+outputs/ux-fixes-2026-10-26/browser-shell.cjs
+  s_e7ed819f427c8c::t_c4906087d44da7 1-6
+outputs/ux-fixes-2026-10-26/build-verification.json
+  s_e7ed819f427c8c::t_dba32f6495ea45 1-9
+outputs/ux-fixes-2026-10-26/pdf/daily.html
+  s_e7ed819f427c8c::t_27b9e061ed71d7 1-44
+outputs/ux-fixes-2026-10-26/pdf/invoice.html
+  s_e7ed819f427c8c::t_2f2ff3f301f2d0 1-44
+outputs/ux-fixes-2026-10-26/pdf/sale.html
+  s_e7ed819f427c8c::t_6629b0937b72e5 1-44
+outputs/ux-fixes-2026-10-26/pdf/sales.html
+  s_e7ed819f427c8c::t_9f2dda948cc49d 1-44
+outputs/ux-fixes-2026-10-26/pdf/statement.html
+  s_e7ed819f427c8c::t_a4880d0e2f84e4 1-44
+outputs/ux-fixes-2026-10-26/verify-pdf.cjs
+  s_e7ed819f427c8c::t_7e2dcc6e99e634 1-4
+outputs/ux-fixes-2026-10-26/verify-ui.cjs
+  s_e7ed819f427c8c::t_8cae3b9e4b451c 1-19,21-56
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d242ef1c3e223e44e5c9dff4039e8c8ff6cdfca7",
+  "prompts": {},
+  "sessions": {
+    "s_2950e33bbd467c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a17c4a-292e-7890-bdf9-45d806f74b7c",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_313c29e6455e32": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a18154-fa30-7cd0-83a0-48477156c4a1",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_55ce3d66c45885": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a14617-d404-7a90-a50d-ba63545807e1",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_5b2fe0a0d1d289": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a17df1-c4bf-7953-a9b6-d866520583e7",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_5dfd3df320e540": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a17db8-1f57-70a2-90a2-7e0893755e35",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_80122bade619fe": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a17e45-4b2c-7ac1-85f5-cd2f12423600",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_8c9e903a0f085a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1814f-9531-7040-8610-ab44599118ac",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_c92747f145b532": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a10adc-5994-7270-a3c6-1d121a264c63",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_ce1e3832335507": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a17300-ea22-72b1-840c-d27dd1d12419",
+        "model": "gpt-6-luna"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_d6fa52f8e243a6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1811c-d465-7ea0-a6b4-e469ab9f96e1",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_e7ed819f427c8c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a178a0-1111-7ae3-981e-e97d7daef6e0",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
