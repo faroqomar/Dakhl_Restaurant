@@ -1,6 +1,6 @@
 # Phase 00 — build evidence
 
-Date:2026-10-28. Status: VERIFYING. Scope: [implementation plan](00-implementation-plan.md). The owner's Orchestrate & Build request authorizes the technical baseline only; no product-screen or reference-design approval is inferred.
+Date:2026-10-28. Status: BLOCKED for remote delivery; locally verified. Scope: [implementation plan](00-implementation-plan.md). The owner's Orchestrate & Build request authorizes the technical baseline only; no product-screen or reference-design approval is inferred.
 
 ## Ownership and isolation
 
@@ -13,7 +13,7 @@ Branch/worktree: `codex/phase00-penpot`, `/Users/eros/.codex/worktrees/phase00-p
 | `phase00_contracts` | `lib/capabilities/`, `test/capabilities/`: contracts, isolated synthetic repository and probe ViewModel. |
 | `phase00_native` | `lib/platform/`, `assets/fonts/`, `test/platform/`, `integration_test/`: native candidates, offline font and probe harness. |
 
-Workers coordinate interfaces/dependencies directly and do not commit, overwrite each other or self-approve. The bootstrap owner controls dependency resolution. Independent Reviewer `phase00_build_review` reviewed implementation and repaired findings; no remaining actionable implementation defect was reported.
+Workers coordinate interfaces/dependencies directly and do not commit, overwrite each other or self-approve. The bootstrap owner controls dependency resolution. Independent Reviewer `phase00_build_review` reviewed implementation and re-verified Worker repairs; no remaining actionable implementation defect was reported.
 
 ## Initial verified toolchain
 
@@ -67,3 +67,5 @@ The independent reviewer identified two P2 evidence defects (stale run identity 
 The phase PR targets `codex/project-baseline-upload`, whose baseline already contains the earlier repository organization. This avoids silently presenting those unrelated earlier commits as phase00 implementation. Preparation commit `614cf0f` contains the authorized naming/design prerequisite; the next commit carries the technical implementation.
 
 Documentation checks: selected local links and staged private-file exclusion passed. Source diff whitespace check passed; the unmodified upstream OFL license and raw tool-output logs retain their original whitespace. `./scripts/memory sync` and `check` reported healthy,102 sources, no pending or failed delivery. The configured source registration points at the root checkout, so this does not prove delivery of worktree-only new Markdown; the sanitized current outcome/correction was also ingested directly.
+
+Remote delivery attempt: `git push -u origin codex/phase00-penpot` was rejected by GitHub because the current OAuth connection lacks `workflow` scope and cannot create `.github/workflows/electron-reference.yml`. The available GitHub CLI connection has repo/read:org/project/gist scopes and also lacks workflow permission. A read-only remote check confirmed the phase branch was not created. No workflow was omitted to bypass this restriction, no permission settings were changed, and no PR/hosted CI pass is claimed. Resume delivery after the GitHub connection is granted workflow permission: push this preserved branch, create a draft PR against `codex/project-baseline-upload`, attach it, then inspect actual checks.
