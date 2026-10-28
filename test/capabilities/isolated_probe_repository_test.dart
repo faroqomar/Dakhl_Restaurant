@@ -63,6 +63,7 @@ Future<void> main(List<String> arguments) async {
 }
 ''');
     final result = await Process.run('dart', [
+      '--packages=${File('.dart_tool/package_config.json').absolute.path}',
       child.path,
       root.path,
     ], workingDirectory: temporary.path);

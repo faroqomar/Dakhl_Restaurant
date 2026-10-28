@@ -36,3 +36,5 @@
 - [0011 — نطاق إعادة بناء Flutter وDart وخطة MVP](0011-flutter-rebuild-baseline.md) — خيارات المالك معتمدة؛ التنفيذ لم يبدأ.
 
 - [0012 — دمج مراحل Flutter من 19 إلى 12](0012-merge-flutter-rebuild-phases.md) — يستبدل تقسيم المراحل في 0011 مع حفظ نطاقه.
+
+- [0018 — Parallel Madar engine/app development boundary](0018-madar-engine-boundary.md).

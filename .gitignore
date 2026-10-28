@@ -70,3 +70,6 @@ app.*.map.json
 
 # Widget Preview related
 .widget_preview/
+
+# Local engine worktree wiring; canonical sibling paths live in pubspec.yaml.
+pubspec_overrides.yaml

@@ -12,17 +12,20 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  file_picker: 13.3.0
+  madar_application:
+    path: ../Madar_Engine/packages/application
+  madar_flutter_adapters:
+    path: ../Madar_Engine/packages/flutter_adapters
   path_provider: 2.1.6
   path: 1.9.1
   pdf: 3.13.1
-  printing: 5.15.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   integration_test:
     sdk: flutter
+  printing: 5.15.1 # Integration-only native PDF raster evidence.
   flutter_lints: 6.0.0
 
 flutter:

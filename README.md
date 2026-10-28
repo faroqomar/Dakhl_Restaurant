@@ -18,11 +18,16 @@ Workflow: [AGENTS.md](AGENTS.md) · [PLANS.md](PLANS.md) · [PHASES.md](PHASES.m
 
 The current design and financial behavior remain the baseline. Work is offline for one restaurant; backup/import is manual transfer, not synchronization. Preserve historical account records, with no testing in restaurant accounts.
 
+## Engine and app development
+
+Madar_Engine is developed alongside this app and owns shared contracts/native adapters. Keep both independent repositories as sibling folders; app `pubspec.yaml` uses relative package paths and `engine-dependency.json` pins the engine commit. This nested Codex worktree uses a sibling symlink to the canonical engine, with no copied engine source. Read [ownership and setup](docs/decisions/0018-madar-engine-boundary.md) before updating the dependency. Hosted CI also needs the independent engine source published/configured; local success does not satisfy that gate.
+
 ## Flutter development
 
 Pinned SDK: Flutter 3.47.8 / Dart 3.13.7. Development app ID: `com.eros.dakhlrestaurant.phase00`; display name: **Dakhl_Restaurant Dev**. It is separate from the preserved application and its data.
 
 ```sh
+python3 scripts/check-engine.py
 flutter pub get --enforce-lockfile
 flutter test --no-pub
 flutter analyze --no-pub

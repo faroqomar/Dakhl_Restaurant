@@ -1,0 +1,38 @@
+name: Checkout pinned Madar engine
+description: Fetch the independently owned engine commit beside the consumer.
+inputs:
+  repository:
+    description: Owner/repository of the separately published engine.
+    required: true
+  token:
+    description: Read access to the engine repository.
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Validate engine source and read consumer pin
+      id: pin
+      shell: bash
+      working-directory: ${{ github.workspace }}
+      env:
+        MADAR_REPOSITORY: ${{ inputs.repository }}
+      run: |
+        python3 - <<'PY'
+        import json, os, re
+        from pathlib import Path
+        repo = os.environ.get('MADAR_REPOSITORY', '')
+        if not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', repo):
+            raise SystemExit('Configure MADAR_ENGINE_REPOSITORY after publishing the independent engine source; no engine code is vendored in this app.')
+        pin = json.loads(Path('Dakhl_Restaurant/engine-dependency.json').read_text())['git_commit']
+        if not re.fullmatch(r'[0-9a-f]{40}', pin):
+            raise SystemExit('Engine dependency must pin a full commit SHA.')
+        with open(os.environ['GITHUB_OUTPUT'], 'a') as out:
+            out.write(f'ref={pin}\n')
+        PY
+    - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      with:
+        repository: ${{ inputs.repository }}
+        ref: ${{ steps.pin.outputs.ref }}
+        token: ${{ inputs.token }}
+        path: Madar_Engine
+        persist-credentials: false

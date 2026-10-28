@@ -32,3 +32,7 @@ Create a traceable PR, satisfy mandatory quality gates, obtain user approval bef
 Preserve all existing phase work items, financial invariants, failure/recovery checks and screenshots. All platforms remain macOS, Android and iPhone; data remains offline with backup/import. Exact current-design reproduction remains the default, subject to phase-specific owner edits and the Penpot design approval gate. The reference app is for consultation, not the destination for new Flutter features.
 
 Changes to phase definitions must update this index, linked detail, tracker and generated views together. The plan builder is a publication helper, not independent authorization to change scope or reset status.
+
+## Shared engine ownership —2026-10-28
+
+Develop Madar_Engine alongside these phases. Implement shared contracts and reusable capabilities in its independently owned packages; app phases consume them and retain restaurant workflows/UI. [Decision0018](docs/decisions/0018-madar-engine-boundary.md) supersedes earlier wording that no engine dependency was implied for this explicit extraction only. No cloud/auth/multitenancy, new financial policies or phase01 implementation is added.

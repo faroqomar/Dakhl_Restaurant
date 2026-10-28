@@ -1,25 +1,9 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-/// Cancellation is a user outcome, never a platform failure or success.
-sealed class CapabilityResult<T> {
-  const CapabilityResult();
-}
+import 'package:madar_application/madar_application.dart';
 
-final class CapabilitySuccess<T> extends CapabilityResult<T> {
-  const CapabilitySuccess(this.value);
-  final T value;
-}
-
-final class CapabilityCancelled<T> extends CapabilityResult<T> {
-  const CapabilityCancelled();
-}
-
-final class CapabilityFailure<T> extends CapabilityResult<T> {
-  const CapabilityFailure(this.code, this.message);
-  final String code;
-  final String message;
-}
+export 'package:madar_application/madar_application.dart';
 
 abstract interface class FileSelectionCapability {
   /// Accepted/returned payloads are validated to [SyntheticProbe.maxBytes].
