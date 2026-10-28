@@ -15,3 +15,5 @@ When phase NN starts, create a phase evidence record here and link it from the t
 Each record should identify scope and dependencies; branch/worktree and task ownership; Penpot validation and user design approval or N/A; the read-only plan; meaningful test commands/results and CI; numeric benchmark conditions/baseline/final/target or justified N/A; independent reviewer findings and re-verification; staging/migration/rollback results where applicable; PR, explicit merge approval, merged revision and release evidence; and remaining issues/lessons.
 
 Do not prefill results or approvals. Earlier Electron checks are reference evidence, not Flutter phase completion. DONE requires all applicable checks, approved merge and applicable release validation. Never automatically start the next phase.
+
+- [Phase00 / CAP-00 Step4 independent review](00-step4-review.md) — local finding closed; full acceptance remains blocked.

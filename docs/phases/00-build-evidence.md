@@ -53,7 +53,7 @@ Current detailed evidence is under `outputs/phase00/`: target-native result JSON
 | Fresh write / process stop / read | Passed, wrong-nonce rejection/recovery also passed | Passed | Passed |
 | Offline Arabic PDF / native raster | Passed, visibly inspected | Passed, visibly inspected | Passed, visibly inspected |
 | Native open/export cancellation | Observed | Observed | Pending interactive dialog check |
-| New synthetic external export/open | Passed,112 bytes | Pending | Pending |
+| New synthetic external export/open | Passed,112 bytes | Passed in Step4,112 bytes | Pending |
 | Share chooser / print chooser | Observed; dismissed, no send/job | Observed; dismissed, no send/job | Pending interactive dialog check |
 
 The first Android picker assertion ran before its asynchronous native transition. The picker was subsequently observed, canceled, and a fresh open/cancel check passed; export/cancel, PDF, share and print checks then passed. The iOS headless Simulator operated successfully for builds, launch, screenshots and native integration checks, but its interactive Simulator app/window was unavailable through current Mac app discovery. No iOS native-dialog pass is claimed.
@@ -73,3 +73,7 @@ Remote delivery attempt: `git push -u origin codex/phase00-penpot` was rejected 
 ## Engine separation follow-up —2026-10-28
 
 Owner-directed shared adapter extraction now uses independently owned Madar packages. Current post-extraction verification:48 app tests,27 engine adapter tests, all3 debug builds and a fresh macOS native write/stop/read/PDF pair passed. Original phase00 results above remain dated evidence; remote delivery is still blocked. [Ownership decision](../decisions/0018-madar-engine-boundary.md) and [extraction log](../log/2026-10-28-madar-engine-separation.md) identify source commits, exact scope and limits.
+
+## Step4 follow-up
+
+[Independent review](00-step4-review.md) records the repaired source-resolution enforcement finding, fresh48/27/24/140 tests, unchanged frozen artifacts and newly verified Android external roundtrip. iPhone Simulator native dialogs and hosted/owner approval gates remain pending. Original evidence above is retained with its original dates/scope.

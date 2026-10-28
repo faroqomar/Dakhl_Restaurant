@@ -27,8 +27,8 @@ Madar_Engine is developed alongside this app and owns shared contracts/native ad
 Pinned SDK: Flutter 3.47.8 / Dart 3.13.7. Development app ID: `com.eros.dakhlrestaurant.phase00`; display name: **Dakhl_Restaurant Dev**. It is separate from the preserved application and its data.
 
 ```sh
-python3 scripts/check-engine.py
 flutter pub get --enforce-lockfile
+python3 scripts/check-engine.py
 flutter test --no-pub
 flutter analyze --no-pub
 flutter run -d macos

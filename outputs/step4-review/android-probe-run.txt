@@ -1,0 +1,19 @@
+Launching lib/platform/probe_main.dart on sdk gphone16k arm64 in debug mode...
+Running Gradle task 'assembleDebug'...                          
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/Users/eros/.gradle/wrapper/dists/gradle-9.3.1-all/9ot9r568e8zfvvd4mn8rbu1j0/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Running Gradle task 'assembleDebug'...                             26.8s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...        1,661ms
+I/FlutterActivityAndFragmentDelegate( 4724): If you are attempting to set --enable-dart-profiling via Intent extras to launch a Flutter component outside of using the Flutter CLI, note that support for setting engine flags on Android via Intent will soon be dropped; see https://github.com/flutter/flutter/issues/180686 for more information on this breaking change. To migrate, set --enable-dart-profiling or any other flags specified via Intent extras on the command line instead or see https://github.com/flutter/flutter/blob/main/docs/engine/Flutter-Android-Engine-Flags.md for alternative methods.
+D/FlutterJNI( 4724): Beginning load of flutter...
+D/FlutterJNI( 4724): flutter (null) was loaded normally!
+I/flutter ( 4724): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+D/FlutterRenderer( 4724): Width is zero. 0,0
+D/FlutterRenderer( 4724): Width is zero. 0,0
+D/FlutterJNI( 4724): Sending viewport metrics to the engine.
+D/FlutterJNI( 4724): Sending viewport metrics to the engine.
+Syncing files to device sdk gphone16k arm64...                     535ms

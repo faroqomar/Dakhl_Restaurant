@@ -48,8 +48,9 @@ jobs:
         working-directory: Madar_Engine/packages/flutter_adapters
       - run: dart run tool/verify_boundaries.dart ../Dakhl_Restaurant
         working-directory: Madar_Engine
-      - run: python3 scripts/check-engine.py
       - run: flutter pub get --enforce-lockfile
+      - run: python3 -m unittest discover -s scripts/tests -v
+      - run: python3 scripts/check-engine.py
       - run: dart format --output=none --set-exit-if-changed lib test integration_test
       - run: flutter analyze --no-pub
       - run: flutter test --no-pub
@@ -78,6 +79,7 @@ jobs:
           flutter-version-file: Dakhl_Restaurant/.fvmrc
           channel: stable
       - run: flutter pub get --enforce-lockfile
+      - run: python3 scripts/check-engine.py
       - run: flutter build apk --debug --no-pub
 
   apple:
@@ -107,6 +109,7 @@ jobs:
           channel: stable
       - run: xcodebuild -version
       - run: flutter pub get --enforce-lockfile
+      - run: python3 scripts/check-engine.py
       - name: macOS development build
         if: matrix.target == 'macos'
         run: flutter build macos --debug --no-pub
