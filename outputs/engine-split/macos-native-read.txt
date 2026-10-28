@@ -1,0 +1,8 @@
+00:00 +0: loading /Users/eros/.codex/worktrees/phase00-penpot/Dakhl_Restaurant/integration_test/native_capabilities_test.dart
+Building macOS application...                                   
+✓ Built build/macos/Build/Products/Debug/Dakhl_Restaurant Dev.app
+Failed to foreground app; open returned 1
+00:00 +0: native isolated storage and offline Arabic PDF [read]
+PHASE00_SYNTHETIC_EVIDENCE=/Users/eros/Library/Containers/com.eros.dakhlrestaurant.phase00/Data/Library/Application Support/com.eros.dakhlrestaurant.phase00/dakhl_restaurant_phase00_devprobe/pdf-evidence-iKDFq8 stage=read nonce=7e4d4061de1a43419e5a8510c845e0e0
+00:02 +1: (tearDownAll)
+00:02 +1: All tests passed!

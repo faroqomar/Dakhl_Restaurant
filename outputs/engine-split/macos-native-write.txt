@@ -1,0 +1,7 @@
+00:00 +0: loading /Users/eros/.codex/worktrees/phase00-penpot/Dakhl_Restaurant/integration_test/native_capabilities_test.dart
+Building macOS application...                                   
+✓ Built build/macos/Build/Products/Debug/Dakhl_Restaurant Dev.app
+00:00 +0: native isolated storage and offline Arabic PDF [write]
+PHASE00_SYNTHETIC_EVIDENCE=/Users/eros/Library/Containers/com.eros.dakhlrestaurant.phase00/Data/Library/Application Support/com.eros.dakhlrestaurant.phase00/dakhl_restaurant_phase00_devprobe/pdf-evidence-NOSoL9 stage=write nonce=7e4d4061de1a43419e5a8510c845e0e0
+00:03 +1: (tearDownAll)
+00:03 +1: All tests passed!

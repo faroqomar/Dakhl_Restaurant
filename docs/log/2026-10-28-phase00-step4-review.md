@@ -1,0 +1,7 @@
+# Phase00 Step4 review
+
+Date:2026-10-28. Owner invoked independent review/verification for the active phase00 and linked Madar CAP-00. Two independent reviewers audited runtime/tests and delivery/evidence; one focused Worker repaired the resolved-package pin gate. Quoted-YAML and clean-checkout setup followups were fixed, fixture cleanup was isolated, and independent24/24 regression re-verification closed the finding.
+
+Fresh results:48 app tests,27 engine tests,24 pin regressions,140 preserved-reference tests, analysis/format/boundary/lint and179/9/21 frozen hashes passed. Android native export/open roundtrip newly passed and its112-byte source remained unchanged. Prior matching build/restart/PDF evidence remains explicitly dated. Runtime/engine package source was not changed by the verification repair.
+
+Full readiness remains blocked by iPhone Simulator native dialogs, independent engine publication/read access, hosted CI/phase PR and required owner approvals. No publication/permissions/signing/account migration/merge or next phase. Task-owned emulator/export/UI dump cleaned up without erasing target data. Detailed findings/results/limits: [review](../phases/00-step4-review.md). Other existing engine docs/phase maintenance edits were preserved. Memory sync/check and sanitized outcome delivery are verified separately; an empty registered-root queue is not proof that worktree-only Markdown was ingested.

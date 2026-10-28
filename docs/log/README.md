@@ -75,3 +75,5 @@
 - [دمج مراحل Flutter إلى 12 مرحلة مع حفظ المتطلبات والصور](2026-10-27-flutter-phase-consolidation.md)
 
 - [GitHub repository rename and project upload](2026-10-28-github-upload.md)
+
+- [2026-10-28 — Parallel Madar engine separation](2026-10-28-madar-engine-separation.md).

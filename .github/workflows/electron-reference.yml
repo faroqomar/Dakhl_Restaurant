@@ -1,0 +1,70 @@
+name: Frozen Electron reference
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: electron-reference-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  reference-integrity:
+    name: Frozen screenshot and source integrity
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - name: Verify frozen reference against existing manifests
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          baseline = Path('docs/planning/flutter-rebuild')
+          source = Path('electron-reference/app/ui')
+          manifest = json.loads((baseline / 'screenshot-manifest.json').read_text())
+          screenshots = manifest['screenshots']
+          assert len(screenshots) == 179, 'Frozen screenshot count changed'
+          assert len({item['file'] for item in screenshots}) == 179
+          assert manifest['errors'] == [], 'Frozen capture reported errors'
+
+          def verify(path, expected):
+              actual = hashlib.sha256(path.read_bytes()).hexdigest()
+              assert actual == expected, f'Frozen reference changed: {path}'
+
+          for item in screenshots:
+              verify(baseline / 'screenshots' / item['file'], item['sha256'])
+          for name, expected in manifest['sourceHashes'].items():
+              verify(source / name, expected)
+          assets = json.loads((baseline / 'assets-manifest.json').read_text())
+          for name, expected in assets.items():
+              verify(baseline / 'reference-assets' / name, expected)
+          print(f'Verified 179 captures, {len(manifest["sourceHashes"])} source files, '
+                f'and {len(assets)} reference assets.')
+          PY
+
+  reference-tests:
+    name: Legacy reference regression tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: '24.19.0'
+      - name: Install reference test dependencies without running package hooks
+        env:
+          ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
+        run: npm --prefix electron-reference ci --ignore-scripts
+      - run: npm --prefix electron-reference test

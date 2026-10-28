@@ -1,27 +1,49 @@
-# Six reusable phase execution prompts
+# Madar_Engine + Dakhl_Restaurant — simple workflow prompts
 
-Use with AGENTS.md, PLANS.md and PHASES.md. Replace bracketed values before use. A prompt does not waive design, Git, review, approval or completion gates.
+Use one prompt for the selected phase or work item `{{PHASE}}`. Existing project rules remain mandatory. The Lead chooses the analysis, agents, files, tools and execution path.
 
-## 1. Lead — start one phase
+## Shared guardrails
 
-Run phase [ID] only. Read the rules, scope, tracker and relevant source/evidence. Confirm dependencies, preserve existing work and establish dedicated branch/worktree isolation. Coordinate the applicable UX, read-only Planner, Workers and independent Reviewer with explicit ownership and interfaces. Record actual evidence in PHASES.md. Keep the reference app and restaurant records safe. Do not merge without user approval and do not start the next phase automatically.
+Develop the engine and app side by side. Shared capabilities belong only in Madar; the app owns its UI, restaurant workflows and composition. Preserve separate project documentation, evidence and compatible engine versions so future apps can reuse the foundation. Do not copy engine implementation into apps, change protected accounting/data behavior, expand scope or bypass approvals without permission. Record N/A when one project is unaffected.
 
-## 2. UX — validate the reference
+## Step 1 — Scope, References & Track
 
-For UI phase [ID], validate the existing screenshot/design reference in Figma, preserving the owner’s approved direction. Check responsive layouts, accessibility, keyboard/safe areas and applicable loading, empty, error and success states. Return the Figma link, differences, evidence and specific approval required before implementation. Do not invent features or implement UI code. For non-UI scope, record Design: N/A.
+- **Objective:** Establish the scope and readiness of `{{PHASE}}` across the engine and app.
+- **Acceptance criteria:** Ownership, dependencies, tracking and blockers are clear. Previously supplied screenshots/references are shown back to me. UI design needs are identified, or Design is recorded as N/A.
+- **Hard boundaries:** No implementation, unrelated scope, discarded prior work or assumed approval.
 
-## 3. Planner — bounded implementation plan
+## Step 1.5 — Penpot Design & Wireframes
 
-Plan phase [ID] read-only. Inspect its requirements, dependencies and relevant source. Define the exact deliverables, interfaces, acceptance tests, meaningful benchmarks where applicable, CI/build needs and risks. Keep the plan short and actionable. Do not edit files, implement code or propose unrelated improvements. Report missing decisions and design/approval evidence.
+- **Objective:** Prepare the active phase's design and matching structural wireframes in Penpot.
+- **Acceptance criteria:** The result follows my references and direction, addresses relevant accessibility, responsive layouts and UI states, and is presented with previews, discrepancies and evidence for my explicit approval.
+- **Hard boundaries:** Reuse the existing project design space and preserve prior work. No whole-app redesign, invented features or UI implementation before my design approval. Non-UI work is N/A.
 
-## 4. Worker — implement owned scope
+## Step 2 — Isolate & Plan
 
-Implement [TASK] for phase [ID], owning only [FILES/MODULES] within [BRANCH/WORKTREE]. Respect [INTERFACES] and other Workers’ ownership. Follow MVVM where applicable. Write meaningful requirement-based tests before behavior changes; establish numeric baselines before optimization. Preserve financial/data semantics and use isolated fixtures. Return changes, executed tests, results and limitations. Do not self-approve, merge or mark the phase DONE.
+- **Objective:** Produce a bounded, reviewable implementation plan for `{{PHASE}}` with suitable isolation in each affected project.
+- **Acceptance criteria:** The plan defines deliverables, engine/app responsibilities, contracts, dependencies, meaningful tests, applicable benchmarks and CI, documentation needs, risks and completion criteria.
+- **Hard boundaries:** No implementation, unrelated changes or silent decisions on unresolved business policies. Preserve existing work; build only after plan approval.
 
-## 5. Independent Reviewer — verify the implementation
+## Step 3 — Orchestrate & Build
 
-Review phase [ID] independently and read-only against requirements and the actual diff/evidence. Check correctness, architecture/MVVM, data integrity, security, realistic tests, edge cases, races/recovery and meaningful benchmark methods/results. Prefer a different available model/provider where practical and record the actual choice. Report actionable findings with file/line evidence; require re-verification after fixes. Do not edit or approve your own work, invent verification results or mark skipped checks passed.
+- **Objective:** Implement the approved outcome for `{{PHASE}}` in the appropriate engine and app boundaries.
+- **Acceptance criteria:** Approved behavior works, shared capabilities are reusable, consumer integration is compatible, meaningful tests precede behavior changes, applicable checks pass, and each affected project's documentation and tracker reflect actual results. Optimization has a measured baseline.
+- **Hard boundaries:** No unapproved design or scope changes, copied engine code, overwritten work, production-record testing or weakening of required checks. No self-approval or merge.
 
-## 6. Lead — verify, prepare PR and close the phase
+## Step 4 — Independent Review & Verification
 
-For phase [ID], resolve independent review findings and re-run affected verification. Confirm required lint/analysis/tests/builds/CI and applicable staging, migration and rollback evidence. Update PHASES.md with links and actual results, prepare a scoped PR, then request user approval for merge. Do not merge without that approval. Mark DONE only after approved merge and all applicable release validation; otherwise record the remaining state/blocker. Stop after this phase. Never automatically start another phase.
+- **Objective:** Independently establish whether `{{PHASE}}` is correct and ready for approval.
+- **Acceptance criteria:** Blocking findings are resolved and reverified. Evidence covers relevant architecture, engine/app compatibility, security, data integrity, realistic tests, CI/builds, benchmarks and recovery/readiness requirements.
+- **Hard boundaries:** No self-review, fabricated results or passing labels for missing/failed verification. Unavailable required evidence remains pending or blocked; scope changes need approval.
+
+## Step 5 — Pull Requests & Approval
+
+- **Objective:** Present the verified `{{PHASE}}` changes for my merge approval across affected projects.
+- **Acceptance criteria:** Reviewable PRs show final diffs, linked engine/app dependencies and revisions, actual verification results, benchmark comparisons or N/A, documentation changes and remaining non-blocking risks.
+- **Hard boundaries:** No automatic merge, implied approval or readiness claims while required checks are unresolved. Report access/delivery blockers honestly.
+
+## Step 6 — Approved Merge & Completion
+
+- **Objective:** Integrate the explicitly approved `{{PHASE}}` revisions and record truthful completion in each affected project.
+- **Acceptance criteria:** Approved changes are merged in a compatible dependency order; the app uses the approved engine revision; applicable checks, documentation, trackers and release/rollback evidence support DONE.
+- **Hard boundaries:** Merge only approved revisions; changed revisions need renewed approval. Do not mark unfinished requirements complete, deploy without authorization or start the next phase automatically.

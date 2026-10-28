@@ -1,4 +1,4 @@
-# Daftar — Flutter/Dart rebuild to a complete MVP
+# Dakhl_Restaurant — Flutter/Dart rebuild to a complete MVP
 
 Status: revised 12-phase planning baseline, superseding the original 19-phase sequence; Flutter implementation has not started. Date: 27 October 2026 (Asia/Baghdad). Owner: restaurant/project owner. Reference: current working tree, Electron 1.12.0, account schema 11.
 

@@ -1,0 +1,11 @@
+{
+  "openCancel": "observed cancellation",
+  "exportCancel": "observed cancellation",
+  "newSyntheticExportAndReopen": "observed success",
+  "exportBytes": 112,
+  "exportSha256": "857bf114be7b70a0608a623a39310df746ed1cc125657f4929b58c152d1f6f12",
+  "pdfGeneration": "observed success",
+  "systemPrintDialog": "observed and cancelled; no printer selected/no job sent",
+  "sharePopover": "visually observed then dismissed with Escape; no recipient selected/no send",
+  "shareApiReturn": "handoff accepted; not delivery or reliable cancellation evidence"
+}

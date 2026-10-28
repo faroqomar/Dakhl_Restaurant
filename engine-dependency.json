@@ -1,0 +1,15 @@
+{
+  "engine": "Madar_Engine",
+  "status": "private draft review; supported release pending",
+  "git_commit": "784b139753a0e2a07d3f97eedb326debfe068395",
+  "packages": {
+    "madar_application": {
+      "path": "../Madar_Engine/packages/application",
+      "version": "0.1.0-dev.1"
+    },
+    "madar_flutter_adapters": {
+      "path": "../Madar_Engine/packages/flutter_adapters",
+      "version": "0.1.0-dev.1"
+    }
+  }
+}

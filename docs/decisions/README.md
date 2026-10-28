@@ -1,5 +1,11 @@
 # سجل القرارات
 
+- [0017 — خط أساس Flutter المعزول للتطوير](0017-phase00-development-baseline.md) — تنفيذ تقني وقياس قدرات؛ لا بيانات مطعم أو اعتماد إنتاجي.
+
+- [0016 — اسم المشروع الحالي Dakhl_Restaurant](0016-dakhl-restaurant-project-name.md) — تصحيح أسماء المشروع مع حفظ معرّفات التوافق والمرجع المجمد.
+
+- [0015 — مساحة Penpot للتصميم والموافقة](0015-penpot-design-workspace.md) — قرار الأداة والنطاق معتمد؛ موافقة التصميم معلقة.
+
 - [0014 — اعتماد القواعد العامة والوكلاء ومتتبع المراحل](0014-adopt-universal-workflow.md) — كل مراحل Flutter ما زالت TODO.
 
 - [0013 — حفظ Electron في مجلد مرجعي والجذر لإعادة البناء](0013-electron-reference-folder.md) — الخطة والصور تبقى خارج المرجع.
@@ -30,3 +36,5 @@
 - [0011 — نطاق إعادة بناء Flutter وDart وخطة MVP](0011-flutter-rebuild-baseline.md) — خيارات المالك معتمدة؛ التنفيذ لم يبدأ.
 
 - [0012 — دمج مراحل Flutter من 19 إلى 12](0012-merge-flutter-rebuild-phases.md) — يستبدل تقسيم المراحل في 0011 مع حفظ نطاقه.
+
+- [0018 — Parallel Madar engine/app development boundary](0018-madar-engine-boundary.md).

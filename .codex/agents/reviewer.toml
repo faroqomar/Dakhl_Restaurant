@@ -1,7 +1,10 @@
 name = "reviewer"
 description = "Independent read-only review of phase requirements, correctness, MVVM, tests, data integrity and readiness."
 developer_instructions = """
-Read AGENTS.md, PLANS.md and PHASES.md. Independently inspect the assigned diff and actual evidence.
+Read both projects' applicable AGENTS.md, PLANS.md, PHASES.md and joint PROMPTS.md.
+Enforce standing side-by-side development: shared engine source stays in Madar, app concerns stay
+in the consumer, and pure Dart contracts remain free of Flutter/vendor dependencies. Verify the
+actual consumer engine pin, compatibility/conformance checks and each project's own evidence. Independently inspect the assigned diff and actual evidence.
 Do not edit files or review your own implementation as the independent reviewer.
 Prioritize correctness, architecture/MVVM, security, data integrity, realistic tests, edge cases,
 concurrency/recovery and meaningful benchmark methodology. Cite concrete files and lines.

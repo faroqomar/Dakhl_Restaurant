@@ -1,12 +1,12 @@
 ---
 name: property-based-testing
 effort: low
-description: "Design and review property-based tests for Daftar Dart models, JSON round trips, legacy migration preservation, exact IQD and quantity boundaries, and parity against the frozen JavaScript reference. Use only where a meaningful invariant or oracle exists; not for UI tests or generic coverage."
+description: "Design and review property-based tests for Dakhl_Restaurant Dart models, JSON round trips, legacy migration preservation, exact IQD and quantity boundaries, and parity against the frozen JavaScript reference. Use only where a meaningful invariant or oracle exists; not for UI tests or generic coverage."
 ---
 
 # Property-Based Testing
 
-## Daftar / Dart application
+## Dakhl_Restaurant / Dart application
 
 - Read `docs/planning/flutter-rebuild/accounting-parity.md` and `docs/reference/accounting-rules.md` before selecting financial properties. The approved contract defines correctness; do not invent mathematical properties that change historical rounding or funding semantics.
 - Use only isolated synthetic fixtures. Never read restaurant account files to generate cases.

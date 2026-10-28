@@ -1,4 +1,4 @@
-# Daftar project skills
+# Dakhl_Restaurant project skills
 
 Nine selected skills, installed with the owner's approval on 2026-10-28. These are project-local reference workflows, loaded only for matching work; they do not start a Flutter phase.
 

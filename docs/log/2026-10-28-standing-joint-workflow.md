@@ -1,0 +1,13 @@
+# Standing engine/app workflow and reusable prompts
+
+Date:2026-10-28. Owner requested that side-by-side Madar_Engine/Dakhl_Restaurant development always apply to planning, implementation, execution, tests and other work, with separate project documentation and future-app reuse. Requested a rewrite of six workflow steps plus phase-scoped Penpot design/wireframes.
+
+Added the scoped standing rule to Codex user AGENTS.md and strengthened both project AGENTS.md files. The rule requires engine/app/contract assessment for every task, shared code solely in Madar, app-specific concerns in the consumer, reviewed dependency versions, independent and consumer checks, separate documentation/evidence and justified N/A where unaffected. Current owner scope and financial/history/design/merge protections remain in force.
+
+Rewrote identical PROMPTS.md copies in both repositories: Steps1,1.5,2–6, plus common standing instructions. Prompts return supplied references, use the canonical Penpot workspace, restrict designs/wireframes to the active phase, require explicit design/plan/merge approvals, assign specialist ownership, verify actual engine pins, allow draft PRs for CI and handle engine-first merges with approval of changed consumer heads. Updated app Planner/UX/Reviewer TOML; UX's stale Figma instructions now use Penpot. Added Madar PLANS/PHASES registering only existing CAP-00 with remote delivery blocked, not new business scope or DONE. App phase statuses were not advanced.
+
+Verification: identical prompt hashes; all7step headings; role TOML parsing; Penpot UX checks; selected local links and source diff checks passed. No runtime source changed; app/device/performance tests are N/A for this documentation/configuration task. Independent documentation review is recorded after its actual result. Preserved frozen reference assets, Penpot intermediates and unrelated Madar memory-guide/log-index edits already present. Source provenance copies and Vault originals were not modified.
+
+Both project's own logs record their affected scope. Memory synchronization/check delivery is reported after execution; app registered-root status does not prove worktree-only documents were indexed. This task does not authorize publication, deployment, merge, phase completion or a new phase. The engine consumer pin may advance only to record these reviewed documentation changes; package implementation is unchanged.
+
+Independent review found no substantive conflicts. Its sole formatting finding (Madar AGENTS trailing blank line) was repaired and the whitespace check passed. No runtime tests/builds were required or repeated.

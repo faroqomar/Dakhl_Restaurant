@@ -1,0 +1,26 @@
+{
+  "platform": "android",
+  "kind": "emulator",
+  "bundle": "com.eros.dakhlrestaurant.phase00",
+  "nonce": "4bb36e31dfc5459fa1a25eb5dcc8b654",
+  "stages": [
+    {
+      "stage": "write",
+      "tag": "write",
+      "exitCode": 0,
+      "log": "outputs/phase00/android-native-write.txt",
+      "nonce": "4bb36e31dfc5459fa1a25eb5dcc8b654",
+      "evidenceDirectory": "/data/data/com.eros.dakhlrestaurant.phase00/files/dakhl_restaurant_phase00_devprobe/pdf-evidence-KHSNUJ"
+    },
+    {
+      "stage": "read",
+      "tag": "read",
+      "exitCode": 0,
+      "log": "outputs/phase00/android-native-read.txt",
+      "nonce": "4bb36e31dfc5459fa1a25eb5dcc8b654",
+      "evidenceDirectory": "/data/data/com.eros.dakhlrestaurant.phase00/files/dakhl_restaurant_phase00_devprobe/pdf-evidence-ISIIQV"
+    }
+  ],
+  "processStoppedBeforeRead": true,
+  "passed": true
+}

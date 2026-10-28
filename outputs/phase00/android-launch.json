@@ -1,0 +1,15 @@
+{
+  "target": "Flutter_API_37_2",
+  "kind": "Android emulator",
+  "bundle": "com.eros.dakhlrestaurant.phase00",
+  "buildMode": "debug",
+  "install": {
+    "exitCode": 0,
+    "output": "Performing Streamed Install\nSuccess"
+  },
+  "launch": {
+    "exitCode": 0,
+    "output": "Starting: Intent { cmp=com.eros.dakhlrestaurant.phase00/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: com.eros.dakhlrestaurant.phase00/.MainActivity\nTotalTime: 7646\nWaitTime: 7668\nComplete"
+  },
+  "androidVersion": "17"
+}

@@ -1,0 +1,13 @@
+{
+  "target": "Flutter_API_37_2 Android 17 API37 ARM64 emulator",
+  "bundle": "com.eros.dakhlrestaurant.phase00",
+  "entrypoint": "lib/platform/probe_main.dart",
+  "openCancel": "observed; app cancellation status",
+  "exportCancel": "observed; app cancellation status",
+  "pdf": "generated successfully",
+  "share": "system chooser observed and dismissed with Back; no recipient selected or send",
+  "print": "system print chooser observed and dismissed with Back; no job submitted",
+  "externalRoundtrip": "not exercised",
+  "initialHarnessIssue": "first package assertion ran before asynchronous picker transition; picker later observed, canceled, and fresh check passed",
+  "screenshot": "android-probe.png"
+}

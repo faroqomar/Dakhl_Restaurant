@@ -1,0 +1,13 @@
+{
+  "appRuntimeAndTestsUnchangedSince": "fbcc4ef",
+  "enginePackagesAndToolUnchangedSince": "8c964f8",
+  "unchangedComparedWithCurrentHeads": true,
+  "priorBuildsRetainedAsDatedEvidence": [
+    "outputs/engine-split/macos-build.txt",
+    "outputs/engine-split/android-build.txt",
+    "outputs/engine-split/ios-build.txt"
+  ],
+  "priorNativePair": "outputs/engine-split/native-restart-result.json",
+  "freshChecks": "outputs/step4-review",
+  "note": "Build artifacts are dated passes against identical runtime inputs, not claimed rebuilt by this comparison. Android probe build/launch and native roundtrip executed anew."
+}
