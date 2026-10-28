@@ -1,0 +1,23 @@
+PHASES.md
+  s_8c9e903a0f085a::t_1aa143341376ef 15,33,40,44
+docs/log/2026-10-28-phase-00-build.md
+  s_8c9e903a0f085a::t_f55f69601161a3 16-17
+docs/phases/00-build-evidence.md
+  s_8c9e903a0f085a::t_ae020eb2267f82 3,16,70-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "517c6a85815f6f29941acc3b1a36067e5792f2c4",
+  "prompts": {},
+  "sessions": {
+    "s_8c9e903a0f085a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1814f-9531-7040-8610-ab44599118ac",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
