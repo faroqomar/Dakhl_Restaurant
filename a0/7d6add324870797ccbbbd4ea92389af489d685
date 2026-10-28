@@ -1,0 +1,21 @@
+docs/how-to/repeated-problems.md
+  s_8c9e903a0f085a::t_0da75fb2b63e69 61-66
+docs/log/2026-10-28-documentation-publication.md
+  s_8c9e903a0f085a::t_9734fc64b51843 12-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a07d6add324870797ccbbbd4ea92389af489d685",
+  "prompts": {},
+  "sessions": {
+    "s_8c9e903a0f085a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1814f-9531-7040-8610-ab44599118ac",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
