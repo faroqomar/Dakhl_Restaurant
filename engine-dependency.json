@@ -1,6 +1,6 @@
 {
   "engine": "Madar_Engine",
-  "status": "private draft review; supported release pending",
+  "status": "merged private development preview; supported release pending",
   "git_commit": "784b139753a0e2a07d3f97eedb326debfe068395",
   "packages": {
     "madar_application": {
