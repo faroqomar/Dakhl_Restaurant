@@ -77,3 +77,7 @@ Owner-directed shared adapter extraction now uses independently owned Madar pack
 ## Step4 follow-up
 
 [Independent review](00-step4-review.md) records the repaired source-resolution enforcement finding, fresh48/27/24/140 tests, unchanged frozen artifacts and newly verified Android external roundtrip. iPhone Simulator native dialogs and hosted/owner approval gates remain pending. Original evidence above is retained with its original dates/scope.
+
+## Step5 delivery update
+
+Both linked draft PRs now exist; see [review package](00-pr-approval.md). Private engine source/read-only CI access are configured with explicit owner approval for the key. Initial reference CI passed; initial Flutter CI failed before builds at private checkout and is being reverified after the reviewed repair. Earlier OAuth/publication blockers above are historical, not a claim that draft PR creation is still blocked. Native/design/approval gates remain unchanged.

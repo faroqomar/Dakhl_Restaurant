@@ -17,3 +17,5 @@ Each record should identify scope and dependencies; branch/worktree and task own
 Do not prefill results or approvals. Earlier Electron checks are reference evidence, not Flutter phase completion. DONE requires all applicable checks, approved merge and applicable release validation. Never automatically start the next phase.
 
 - [Phase00 / CAP-00 Step4 independent review](00-step4-review.md) — local finding closed; full acceptance remains blocked.
+
+- [Phase00/CAP-00 linked draft PR review package](00-pr-approval.md).

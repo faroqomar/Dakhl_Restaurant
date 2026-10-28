@@ -1,0 +1,11 @@
+{
+  "engine": "faroqomar/Madar_Engine",
+  "consumer": "faroqomar/Dakhl_Restaurant",
+  "deployKeyId": 167974942,
+  "readOnly": true,
+  "ciSecretName": "MADAR_ENGINE_SSH_KEY",
+  "localSourceReadVerified": true,
+  "privateKeyPrinted": false,
+  "privateKeyCommitted": false,
+  "localTemporaryKeyRemoved": true
+}

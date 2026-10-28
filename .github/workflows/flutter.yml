@@ -31,6 +31,7 @@ jobs:
         uses: ./Dakhl_Restaurant/.github/actions/checkout-madar
         with:
           repository: ${{ vars.MADAR_ENGINE_REPOSITORY }}
+          ssh-key: ${{ secrets.MADAR_ENGINE_SSH_KEY }}
           token: ${{ secrets.MADAR_ENGINE_READ_TOKEN || github.token }}
       - uses: subosito/flutter-action@1a449444c387b1966244ae4d4f8c696479add0b2 # v2
         with:
@@ -69,6 +70,7 @@ jobs:
         uses: ./Dakhl_Restaurant/.github/actions/checkout-madar
         with:
           repository: ${{ vars.MADAR_ENGINE_REPOSITORY }}
+          ssh-key: ${{ secrets.MADAR_ENGINE_SSH_KEY }}
           token: ${{ secrets.MADAR_ENGINE_READ_TOKEN || github.token }}
       - uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5
         with:
@@ -102,6 +104,7 @@ jobs:
         uses: ./Dakhl_Restaurant/.github/actions/checkout-madar
         with:
           repository: ${{ vars.MADAR_ENGINE_REPOSITORY }}
+          ssh-key: ${{ secrets.MADAR_ENGINE_SSH_KEY }}
           token: ${{ secrets.MADAR_ENGINE_READ_TOKEN || github.token }}
       - uses: subosito/flutter-action@1a449444c387b1966244ae4d4f8c696479add0b2 # v2
         with:

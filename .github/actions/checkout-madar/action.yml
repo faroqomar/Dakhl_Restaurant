@@ -5,8 +5,12 @@ inputs:
     description: Owner/repository of the separately published engine.
     required: true
   token:
-    description: Read access to the engine repository.
-    required: true
+    description: Optional HTTPS read token; defaults to the workflow token.
+    required: false
+    default: ${{ github.token }}
+  ssh-key:
+    description: Read-only deploy key for private engine checkout.
+    required: false
 runs:
   using: composite
   steps:
@@ -34,5 +38,7 @@ runs:
         repository: ${{ inputs.repository }}
         ref: ${{ steps.pin.outputs.ref }}
         token: ${{ inputs.token }}
+        ssh-key: ${{ inputs.ssh-key }}
+        ssh-strict: true
         path: Madar_Engine
         persist-credentials: false
