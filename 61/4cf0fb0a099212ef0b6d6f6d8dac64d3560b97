@@ -1,0 +1,179 @@
+docs/planning/flutter-rebuild/phases/05.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 54
+docs/planning/flutter-rebuild/phases/10.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 69
+docs/planning/flutter-rebuild/README.md
+  s_8c9e903a0f085a::t_19c167f98afaaf 1
+docs/phases/00-penpot-ux-review.md
+  s_8c9e903a0f085a::t_fdea533266dd16 46-50,52-56
+  s_8c9e903a0f085a::t_e1dc4c6a566c88 1-45
+  s_8c9e903a0f085a::t_7b33407ab4c0bb 51,57-58
+  s_8c9e903a0f085a::t_97b49695b57eda 59-77
+docs/planning/flutter-rebuild/phases/08.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 74
+docs/planning/flutter-rebuild/phase-map.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 47
+docs/reference/workflow/README.md
+  s_8c9e903a0f085a::t_0aa60e5d13c48e 21
+docs/planning/flutter-rebuild/phases/03.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 53
+docs/planning/flutter-rebuild/phases/07.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 66
+docs/phases/README.md
+  s_8c9e903a0f085a::t_c4a0ffbba9fd43 5-6
+  s_8c9e903a0f085a::t_a0e6d3b2387a57 7-8,14
+PHASES.md
+  s_8c9e903a0f085a::t_c4a0ffbba9fd43 38
+  s_8c9e903a0f085a::t_6d03f97b87884f 15,33,35-37,39-47,55,75,95,115,135,155,175,195,215,235,255
+docs/decisions/0016-dakhl-restaurant-project-name.md
+  s_8c9e903a0f085a::t_0aa60e5d13c48e 1-32
+docs/log/2026-10-28-project-name.md
+  s_8c9e903a0f085a::t_ea322c256490ae 1-15
+  s_8c9e903a0f085a::t_a88bfefc8da028 16-19
+docs/planning/flutter-rebuild/phases/00.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 41
+docs/planning/flutter-rebuild/phases/02.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 43
+README.md
+  s_8c9e903a0f085a::t_19c167f98afaaf 1-3,7
+docs/planning/flutter-rebuild/accounting-parity.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 32
+docs/log/2026-10-28-penpot-skill.md
+  s_8c9e903a0f085a::t_feb3455052b4e4 1-13
+  s_8c9e903a0f085a::t_2bba8ec88dfac9 14-17
+scripts/build-penpot-reference-svg.py
+  s_8c9e903a0f085a::t_98740fb9a13893 1-54,57-59,68-77,81-129,131-138,140,151-161
+  s_8c9e903a0f085a::t_4ab31549e68616 55-56
+  s_8c9e903a0f085a::t_2cc928f2b10ede 60-67,78-80,130,139,141-150
+docs/planning/flutter-rebuild/phases/09.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 61
+docs/planning/flutter-rebuild/phases/06.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 97
+.codex/agents/planner.toml
+  s_8c9e903a0f085a::t_19c167f98afaaf 2
+docs/phases/00-baseline-kickoff.md
+  s_8c9e903a0f085a::t_19c167f98afaaf 28
+  s_8c9e903a0f085a::t_a99f238e6f2a8c 3,18,27,54
+docs/planning/flutter-rebuild/phases/01.md
+  s_8c9e903a0f085a::t_19c167f98afaaf 51
+AGENTS.md
+  s_8c9e903a0f085a::t_19c167f98afaaf 1,9-10,14-15,270
+  s_8c9e903a0f085a::t_0aa60e5d13c48e 285,315
+  s_8c9e903a0f085a::t_feb3455052b4e4 316-317
+docs/reference/accounting-rules.md
+  s_8c9e903a0f085a::t_0aa60e5d13c48e 3
+docs/planning/flutter-rebuild/design-system.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 1,3
+docs/planning/flutter-rebuild/plan.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 1,70
+docs/how-to/memory.md
+  s_8c9e903a0f085a::t_19c167f98afaaf 1,5-6,19,39
+  s_8c9e903a0f085a::t_0aa60e5d13c48e 9-10,12
+docs/README.md
+  s_8c9e903a0f085a::t_19c167f98afaaf 1,14,31
+docs/planning/flutter-rebuild/design-system-contract.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 44
+docs/planning/flutter-rebuild/phases/11.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 45
+.agents/skills/property-based-testing/SKILL.md
+  s_8c9e903a0f085a::t_19c167f98afaaf 4,9
+docs/planning/flutter-rebuild/feature-coverage.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 47
+scripts/build-flutter-plan.py
+  s_8c9e903a0f085a::t_0aa60e5d13c48e 728
+  s_8c9e903a0f085a::t_19c167f98afaaf 330,726,794
+docs/reference/project-scope.md
+  s_8c9e903a0f085a::t_19c167f98afaaf 1,9
+outputs/penpot/phase00/screenshot-recreation/README.md
+  s_8c9e903a0f085a::t_0aa60e5d13c48e 3
+  s_8c9e903a0f085a::t_42d8bd18acb3c7 1-2,4-13
+docs/phases/00-figma-reference-preparation.md
+  s_8c9e903a0f085a::t_19c167f98afaaf 9
+  s_8c9e903a0f085a::t_bed85d57b64f1c 1-8,10-38
+docs/planning/flutter-rebuild/mvp-acceptance.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 57
+docs/decisions/0015-penpot-design-workspace.md
+  s_8c9e903a0f085a::t_19c167f98afaaf 1-11
+  s_8c9e903a0f085a::t_bdfc994054c4d5 12-21
+docs/planning/flutter-rebuild/capture-guide.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 25
+docs/planning/flutter-rebuild/phases/01.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 41,53
+docs/reference/application.md
+  s_8c9e903a0f085a::t_0aa60e5d13c48e 3-4,9,26
+docs/decisions/README.md
+  s_8c9e903a0f085a::t_0aa60e5d13c48e 3-4
+  s_8c9e903a0f085a::t_3148ac59912af6 5-6
+docs/planning/flutter-rebuild/gallery.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 1
+  s_8c9e903a0f085a::t_0aa60e5d13c48e 3
+docs/log/2026-10-28-phase-00-isolate-plan.md
+  s_8c9e903a0f085a::t_7b8d9de7089be5 1-11
+  s_8c9e903a0f085a::t_91dd6087c7405a 12-17
+docs/phases/00-implementation-plan.md
+  s_8c9e903a0f085a::t_5a09d0d6448df2 3,5,11,17,19,23,39,43,45,47
+  s_8c9e903a0f085a::t_c4a0ffbba9fd43 1-2,4,6-10,12-16,18,20-22,24-38,40-42,44,46,48-57
+PLANS.md
+  s_8c9e903a0f085a::t_19c167f98afaaf 1
+  s_8c9e903a0f085a::t_3f81bbe039d09f 26,32
+docs/planning/flutter-rebuild/phases/04.html
+  s_8c9e903a0f085a::t_19c167f98afaaf 63
+.agents/skills/README.md
+  s_8c9e903a0f085a::t_19c167f98afaaf 1
+docs/log/2026-10-28-phase-00-kickoff.md
+  s_8c9e903a0f085a::t_e7cb59d2e2710b 16-37
+docs/phases/00-penpot-reference-recreation.md
+  s_8c9e903a0f085a::t_165ef60d020d88 1-52
+outputs/penpot/phase00/screenshot-recreation/artwork-manifest.json
+  s_8c9e903a0f085a::t_d3310844b03954 1-62
+outputs/penpot/phase00/screenshot-recreation/desktop-expenses-design-penpot.json
+  s_8c9e903a0f085a::t_c7e96bf0fb7f8a 1-9
+outputs/penpot/phase00/screenshot-recreation/desktop-expenses-design.svg
+  s_8c9e903a0f085a::t_b0e26daf81835f 1
+outputs/penpot/phase00/screenshot-recreation/desktop-expenses-wireframe-penpot.json
+  s_8c9e903a0f085a::t_f64a18162c1099 1-9
+outputs/penpot/phase00/screenshot-recreation/desktop-expenses-wireframe.svg
+  s_8c9e903a0f085a::t_904a444dae5e0d 1
+outputs/penpot/phase00/screenshot-recreation/desktop-sales-design-penpot.json
+  s_8c9e903a0f085a::t_22621dd1dcd2d6 1-9
+outputs/penpot/phase00/screenshot-recreation/desktop-sales-design.svg
+  s_8c9e903a0f085a::t_c2cab230eee625 1
+outputs/penpot/phase00/screenshot-recreation/desktop-sales-wireframe-penpot.json
+  s_8c9e903a0f085a::t_1f244a992fd899 1-9
+outputs/penpot/phase00/screenshot-recreation/desktop-sales-wireframe.svg
+  s_8c9e903a0f085a::t_79c456778d0324 1
+outputs/penpot/phase00/screenshot-recreation/desktop-settings-data-design-penpot.json
+  s_8c9e903a0f085a::t_2fc90cbd4abcdc 1-9
+outputs/penpot/phase00/screenshot-recreation/desktop-settings-data-design.svg
+  s_8c9e903a0f085a::t_d8bbe872eafad6 1
+outputs/penpot/phase00/screenshot-recreation/desktop-settings-data-wireframe-penpot.json
+  s_8c9e903a0f085a::t_82271a846204c0 1-9
+outputs/penpot/phase00/screenshot-recreation/desktop-settings-data-wireframe.svg
+  s_8c9e903a0f085a::t_be6a422bbbb0fc 1
+outputs/penpot/phase00/screenshot-recreation/native-photo-fills.json
+  s_8c9e903a0f085a::t_e9f4f020c2c466 1-95
+outputs/penpot/phase00/screenshot-recreation/native-pixel-comparison.json
+  s_8c9e903a0f085a::t_944700212827ed 1-44
+outputs/penpot/phase00/screenshot-recreation/native-structure-audit.json
+  s_8c9e903a0f085a::t_ffd6e68088fc24 1-327
+scripts/export-penpot-phase00.cjs
+  s_8c9e903a0f085a::t_8211606efe4e15 1-126
+scripts/penpot-text-outlines.swift
+  s_8c9e903a0f085a::t_a9e017df921753 1-158
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "614cf0fb0a099212ef0b6d6f6d8dac64d3560b97",
+  "prompts": {},
+  "sessions": {
+    "s_8c9e903a0f085a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1814f-9531-7040-8610-ab44599118ac",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
