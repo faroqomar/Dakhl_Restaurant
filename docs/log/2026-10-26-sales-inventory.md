@@ -1,22 +1,22 @@
-# مبيعات نقدية ومخزن بسيط واختصارات قابلة للتخصيص
+# Cash sales, simple inventory and customizable shortcuts
 
-الحالة: منفّذ ومتحقق منه محلياً ومثبت، 2026-10-26. المصدر: طلب المالك إضافة المبيعات والمخزن وفق السكيتش وتخصيص اختصار لأي واجهة من الإعدادات، وتأكيد ResturanetAccounting. النسخة: 1.10.0 / صيغة 8.
+Status: implemented, locally verified and installed, 2026-10-26. Source: the owner requested sales/inventory according to the sketch and assignment of any screen to a settings shortcut, confirming ResturanetAccounting. Version: 1.10.0 / schema 8.
 
-## التغيير
+## Change
 
-واجهة المبيعات بأصناف يساراً وفاتورة يميناً، بحث ومجموعات وكميات وخصم ونقد مستلم وباقي، وصل محفوظ وPDF. المخزن يتيح الأصناف وأسعارها وافتتاحياتها والتزويد والتلف وسجل الحركة وتنبيه النقص وإيقاف الصنف. سجل المبيعات يصفي الفواتير ويفتح وصولها ويلغي البيع كاملاً مع إرجاع الكميات وسبب الإلغاء. ستة اختصارات قابلة لتحديد الواجهات أو الإخفاء، محفوظة ضمن الحسابات والنسخ الاحتياطية. يحفظ الطلب أثناء التنقل بالجلسة، ويمنع الحفظ المكرر أثناء الكتابة.
+The sales UI places products on the left and a ticket on the right, with search, groups, quantities, discount, cash received/change, saved receipts and PDF. Inventory supports products, prices, opening quantities, restock, spoilage, movement history, low-stock alerts and product deactivation. Sales history filters invoices, opens receipts and cancels whole sales with returned stock and a cancellation reason. Six shortcuts can target screens or be hidden; they are saved in accounts/backups. The active order survives navigation during the session, and duplicate save is blocked while writing.
 
-المبيعات ترتبط بالمخزون تلقائياً وباليومي عبر فرق المبيعات بعد لقطة الباقي؛ لا يودع المبلغ تلقائياً بالقاصة. المكونات وكراتين الشراء لا تتحول تلقائياً إلى وجبات؛ [القرار 0002](../decisions/0002-sales-inventory-shortcuts.md) يعرّف التفاصيل وحدود المبيعات النقدية والإلغاء على التاريخ الأصلي. [دليل الاستخدام](../how-to/sales-inventory.md).
+Sales update inventory automatically and daily accounts through the sales difference after the remainder snapshot; money is not automatically deposited in the cashbox. Ingredients and purchase cartons do not automatically become meals. [Decision 0002](../decisions/0002-sales-inventory-shortcuts.md) defines details, cash-sales boundaries and cancellation on the original date. [Usage guide](../how-to/sales-inventory.md).
 
-## التحقق الفعلي
+## Actual verification
 
-- `npm test`: **93/93 ناجحة**، بما فيها ترحيل الصيغ القديمة وحفظ/استيراد/نسخة سابقة، المخزون الزمني والكميات العشرية والبيع والإلغاء والخصم والنقد وسلامة البيانات المدخلة والاختصارات وفشل الحفظ. اختبارات قديمة كاملة للمصاريف والموردين والقاصة والسلفة وPDF بقيت ناجحة.
-- تجربة Electron حقيقية منفصلة باستخدام `scripts/verify-commerce.cjs`، دون فتح حسابات المطعم: إضافة أصناف للطلب وإتمام البيع، حفظ PDF، تخصيص الاختصار ثم فتح الواجهة المستهدفة. تحقق ترتيب العمودين وعدم تجاوز عرض النافذة، على عروض 1440 و1000 و900 و760 و390؛ أخطاء الصفحة صفر. الصور في `dist/commerce-qa/` ببيانات توضيحية فقط.
-- وصل بيع PDF ناتج فعلياً، صفحة A4 واحدة، ومراجعة صورته بعد التحويل بأداة Poppler: الجداول والعربية والخصم والمستلم والباقي واضحة.
-- `git diff --check` ناجح. `npm run package` أنشأ macOS ARM64 بنجاح. تحذير الأيقونة الموجود في التغليف بقي دون تعطيل البناء.
-- قبل التحديث: النسخة السابقة 1.9.0 كانت مفتوحة دون نموذج إدخال. أغلقت بشكل عادي، وحفظ التطبيق السابق باسم `Daftar-1.9.0-before-sales-2026-10-26.app` بجانب التطبيق، ونسخة الحسابات الأصلية داخل مجلد بياناته باسم `accounts-before-sales-update-2026-10-26.json` بصلاحية خاصة.
-- تثبيت 1.10.0 في `/Users/eros/Applications/Daftar.app` وفتحها بنجاح: الواجهات والاختصارات ظاهرة وحالة الحفظ سليمة. مقارنة جميع نطاقات الحسابات القديمة قبل التحديث وبعده أثبتت تطابقها مع التحقق المرجعي؛ القوائم الجديدة فارغة، لا بيانات اختبار في حسابات المطعم.
+- `npm test`: **93/93 passed**, covering legacy migration, save/import/previous backup, chronological stock, decimal quantities, sales/cancellation/discount/cash, input integrity, shortcuts and save failure. Existing complete expense/supplier/cashbox/worker-advance/PDF tests remained green.
+- Actual isolated Electron run using `scripts/verify-commerce.cjs`, without opening restaurant accounts: added items, completed a sale, saved PDF, assigned a shortcut and opened its destination. Column order and no window-width overflow were verified at 1440, 1000, 900, 760 and 390 widths; zero page errors. Images in `dist/commerce-qa/` use illustrative data only.
+- Actually generated a one-page A4 sales receipt PDF and visually inspected its Poppler-rasterized image: tables, Arabic, discount, received amount and change were clear.
+- `git diff --check` passed. `npm run package` successfully built macOS ARM64. The existing packaging icon warning remained without blocking the build.
+- Before updating, installed 1.9.0 was open without an entry form. It was closed normally, preserved beside the application as `Daftar-1.9.0-before-sales-2026-10-26.app`, and the original accounts file was privately backed up within its data folder as `accounts-before-sales-update-2026-10-26.json`.
+- Installed 1.10.0 at `/Users/eros/Applications/Daftar.app` and opened it successfully: screens/shortcuts appeared and save state was healthy. Comparing every legacy account area before/after confirmed equality against reference validation; new lists were empty, with no synthetic data in restaurant accounts.
 
-## التوثيق والذاكرة
+## Documentation and memory
 
-حدثت مراجع التطبيق والقواعد والنطاق ودليل الاستخدام وسجل القرارات. فحص Hindsight الأخير بعد مزامنة المستندات أظهر API سليماً وقاعدة متصلة و32 مصدراً، بلا عمليات معلقة أو فاشلة.
+Updated application, accounting, scope, usage and decision references. The latest Hindsight check after synchronizing documents showed a healthy API, connected database and 32 sources, with no pending or failed operations.

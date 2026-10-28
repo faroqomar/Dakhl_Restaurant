@@ -1,15 +1,15 @@
-# 0005 — إعادة تصميم البيع بإلهام مرجع المالك
+# 0005 — Redesign sales using the owner's reference
 
-الحالة: طلب المالك معتمد؛ منفذ في المصدر ومراجع بصرياً ببيانات معزولة. التاريخ: 2026-10-27.
+Status: owner request approved; implemented in source and visually reviewed with isolated data. Date: 2026-10-27.
 
-المصدر: صورة شاشة Nook التي أرفقها المالك وطلب الاستلهام منها لشاشة البيع.
+Source: the Nook screenshot supplied by the owner with a request to use it as inspiration for the sales screen.
 
-نعتمد سطحاً عاجياً هادئاً وبطاقات صور بإضافة واضحة وتبويبات مجموعات تعرض أعداد الأصناف، وفاتورة بيضاء يميناً بإجمالي وتأكيد أسفلها. نحافظ على العربية RTL داخل اللوحتين وترتيب المنتجات يساراً والفاتورة يميناً. على الهاتف تصبح اللوحتان متتابعتين مع تمرير الصفحة. لا ننسخ خصائص المرجع غير المعتمدة مثل الضرائب أو تعليق الطلب أو ربط العملاء.
+Use a calm ivory surface, image cards with a clear add action, group tabs showing product counts, and a white ticket on the right with its total and confirmation at the bottom. Preserve Arabic RTL within both panels and the products-left/ticket-right arrangement. On phones, stack the panels and allow page scrolling. Do not copy unapproved reference features such as taxes, held orders or customer linking.
 
-هذا تفصيل بصري للقرارين [0003](0003-sales-layout-review.md) و[0004](0004-ux-popouts-and-recovery.md)، ولا يستبدل قواعد الدفع الدقيق والخصم الثابت ونوع الطلب وحماية المسودة والقائمة المنبثقة. الصور المحلية مرجعية. لا تغيير في صيغة البيانات أو الحسابات.
+This is a visual refinement of decisions [0003](0003-sales-layout-review.md) and [0004](0004-ux-popouts-and-recovery.md), not a replacement of exact payment, fixed discount, order type, draft protection or popout navigation. Local images are references. No account-data or schema change.
 
-التحقق: [سجل التنفيذ](../log/2026-10-27-sales-reference-redesign.md). التطبيق المثبت لم يُحدّث ضمن هذه المهمة.
+Verification: [implementation log](../log/2026-10-27-sales-reference-redesign.md). The installed application was not updated by this task.
 
-## متابعة شكل البطاقة — 2026-10-27
+## Card-layout follow-up — 2026-10-27
 
-بطلب المالك استُبدلت عبارة الإضافة العريضة بعلامة زائد في زاوية الصورة، مع تقليل ارتفاع الصورة والفراغات وحجم البطاقة. يبقى سطح البطاقة كاملاً قابلاً للإضافة، والعدد في الزاوية المقابلة، وبيانات الصنف والسعر ظاهرة. هذا يحل محل عرض «إضافة +» أسفل البطاقة؛ بقية القرار مستمرة. [سجل التحقق](../log/2026-10-27-compact-sales-cards.md).
+At the owner's request, replace the wide add label with a plus in the image corner, reducing image height, spacing and card size. The whole card remains an add target, the count stays in the opposite corner, and product information and price remain visible. This supersedes the "Add +" row below the card; the rest of the decision continues. [Verification log](../log/2026-10-27-compact-sales-cards.md).

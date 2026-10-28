@@ -1,30 +1,30 @@
-# نطاق Dakhl_Restaurant — مطعم واحد
+# Dakhl_Restaurant scope — One restaurant
 
-الحالة: معتمد من المالك؛ وظائف المستقبل تحتاج تفصيلاً. التاريخ: 2026-10-16. المصدر: توجيه المالك في المحادثة وتأكيد ResturanetAccounting. القرار: [0001](../decisions/0001-single-restaurant-and-project-memory.md).
+Status: owner-approved; future capabilities need further definition. Date: 2026-10-16. Source: owner direction in conversation and confirmation of ResturanetAccounting. Decision: [0001](../decisions/0001-single-restaurant-and-project-memory.md).
 
-## الغرض
+## Purpose
 
-هذا المشروع والتطبيق خاصان بمطعم واحد فقط. كل فاتورة وحملة وفكرة وتطوير هنا يعود إلى المطعم نفسه. لا توجد حاجة معتمدة إلى تعدد المطاعم أو الاشتراكات أو بيع نظام عام. أي تغيير لهذا النطاق يحتاج توجيهاً صريحاً وقراراً موثقاً.
+This project and application serve one restaurant only. Every invoice, campaign, idea and development activity here belongs to that same restaurant. No approved need exists for multiple restaurants, subscriptions or selling a general-purpose system. Scope changes require explicit direction and a documented decision.
 
-اسم المطعم الذي قدمه المالك للمينيو بتاريخ 2026-10-16 هو **مطعم جنة بغداد**. اسم المشروع الحالي **Dakhl_Restaurant** حسب توجيه المالك في 2026-10-28. يحمل تطبيق Electron المرجعي اسم «دفتر / Daftar» تاريخياً؛ تبقى هويته التقنية وبياناته وصوره المجمدة محفوظة. اسم المطعم لا يغيّر السجلات تلقائياً.
+The restaurant name supplied by the owner for the menu on 2026-10-16 is **Jannat Baghdad Restaurant**. The current project name is **Dakhl_Restaurant**, as directed on 2026-10-28. The reference Electron application's historical name is **Daftar**; preserve its technical identity, data and frozen screenshots. A restaurant-name change does not automatically change records.
 
-## مجالات العمل وحالتها
+## Areas of work and status
 
-| المجال | الموجود فعلياً | ما يحتاج تحديداً أو تنفيذاً لاحقاً |
+| Area | Actually available | Later definition or implementation |
 | --- | --- | --- |
-| الفواتير | تصدير فاتورة المصاريف اليومية وقائمة المورد إلى PDF | وصل البيع النقدي أضيف بطلب 2026-10-26؛ [قواعده](../decisions/0002-sales-inventory-shortcuts.md) |
-| حسابات المطعم | المصاريف، الرصيد اليومي، القاصة، الموردون والقوائم والتسديدات والديون | توسعات التقارير تتبع تعريفاً مالياً واضحاً |
-| سجلات العمال القديمة | أزيلت واجهة السلفة بطلب المالك 2026-10-27؛ تبقى السجلات محفوظة للتوافق والنسخ فقط | لا واجهة تشغيل؛ [القرار 0007](../decisions/0007-retire-worker-savings.md) |
-| الحملات الإعلانية | [سجل توثيق للحملات](../planning/campaigns.md) | أدوات الإنشاء أو النشر أو الربط بمنصة إعلانية غير منفّذة في التطبيق |
-| الأفكار | [سجل الأفكار](../planning/ideas.md) | تحويل الفكرة إلى متطلبات ثم تنفيذ عند طلبها |
-| المبيعات والمخزن | بيع نقدي، سجل ووصل PDF، مخزن أصناف البيع واختصارات مخصصة منذ 2026-10-26 | المكونات والوصفات والبيع الآجل خارج النطاق الحالي؛ المرتجعات والطلبات المعلقة ضمن [إكمال MVP](../decisions/0010-mvp-returns-and-held-orders.md) |
-| التطبيق الخاص | Electron وواجهة عربية RTL وحفظ محلي | إعادة بناء Flutter/Dart على macOS وAndroid وiPhone معتمدة كتوجه ومخططة؛ [القرار 0011](../decisions/0011-flutter-rebuild-baseline.md)؛ بدأ خط الأساس التقني المعزول للمرحلة00؛ واجهات المنتج والترحيل لم تنفّذ |
-| التوثيق والذاكرة | وثائق المشروع وبنك Hindsight الخاص `project-daftar` | نتائج المزامنة تُثبت في سجل العمل، ولا تُفترض من وجود الإعداد |
+| Invoices | Daily-expense and supplier-invoice PDF export | Cash-sale receipt added by the 2026-10-26 request; [rules](../decisions/0002-sales-inventory-shortcuts.md) |
+| Restaurant accounts | Expenses, daily balance, cashbox, suppliers, invoices, payments and debts | Report extensions require explicit financial meanings |
+| Historical worker records | Worker-savings UI removed at owner request on 2026-10-27; records retained only for compatibility/backups | No operating UI; [decision 0007](../decisions/0007-retire-worker-savings.md) |
+| Advertising campaigns | [Campaign documentation register](../planning/campaigns.md) | Creation/publishing/ad-platform integrations are not implemented in the application |
+| Ideas | [Idea register](../planning/ideas.md) | Convert an idea into requirements, then implement when requested |
+| Sales and inventory | Cash sales, history/PDF receipts, sellable inventory and custom shortcuts since 2026-10-26 | Ingredients, recipes and credit sales are outside current scope; returns/held orders belong to [MVP completion](../decisions/0010-mvp-returns-and-held-orders.md) |
+| Dedicated application | Electron, Arabic RTL UI and local persistence | Flutter/Dart rebuild for macOS/Android/iPhone is selected/planned; [decision 0011](../decisions/0011-flutter-rebuild-baseline.md). The isolated phase00 technical baseline has started; product screens and migration are not implemented |
+| Documentation and memory | Project documents and dedicated `project-daftar` Hindsight bank | Synchronization results are established in work logs, not inferred from configuration |
 
-## أمور لم يحددها المالك بعد
+## Matters the owner has not yet defined
 
-الهوية الرسمية والشعار، والمنصات والميزانيات ومقاييس نجاح الحملات، وأنواع الفواتير الإضافية، ومعنى أي تطبيق إضافي أو تكامل مستقبلي. لا نملأ هذه التفاصيل بافتراضات. تعدد الأجهزة أو الفروع أو الحسابات ليس نتيجة تلقائية لكون المشروع خاصاً بمطعم واحد؛ يُحدد عند الحاجة.
+Official identity/logo, campaign platforms/budgets/success measures, additional invoice types, and the meaning of any additional application or future integration. Do not fill these gaps with assumptions. Multiple devices, branches or accounts are not automatic consequences of serving one restaurant; define them when needed.
 
-## حدود هذا التوضيح
+## Limits of this clarification
 
-طلب 2026-10-16 هو تثبيت النطاق والتوثيق والمتابعة والذاكرة. لا يشمل إنشاء إعلان فعلي أو نشره، ولا يغيّر الحسابات أو تقنية التطبيق. مرجع التحقق: ملفات التطبيق المذكورة في [مرجع التطبيق](application.md). القرارات المالية الحالية في [قواعد الحسابات](accounting-rules.md).
+The 2026-10-16 request establishes scope, documentation, follow-up and memory. It does not authorize creating/publishing an actual advertisement or changing accounts or application technology. Verification reference: application files in the [application reference](application.md). Current financial decisions are in the [accounting rules](accounting-rules.md).

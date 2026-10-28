@@ -1,24 +1,24 @@
 <!-- hindsight:ignore -->
-# IDEA-NNNN — عنوان الفكرة
+# IDEA-NNNN — Idea title
 
-الحالة: فكرة. التاريخ: YYYY-MM-DD. المالك: … المصدر: … آخر تحديث: …
+Status: idea. Date: YYYY-MM-DD. Owner: … Source: … Last updated: …
 
-## المشكلة والنتيجة المطلوبة للمطعم
-
-…
-
-## المتطلبات وما بقي مفتوحاً
+## Restaurant problem and desired outcome
 
 …
 
-## القرار ومعيار النجاح
+## Requirements and open questions
 
-لم يعتمد التنفيذ بعد. رابط القرار عند وجوده: …
+…
 
-## التنفيذ والتحقق
+## Decision and success criteria
 
-لم ينفذ بعد. رابط سجل العمل والدليل عند وجوده: …
+Implementation not yet approved. Decision link when available: …
 
-## الخطوة التالية
+## Implementation and verification
+
+Not yet implemented. Work-log/evidence links when available: …
+
+## Next action
 
 …

@@ -1,21 +1,21 @@
-# 0013 — حفظ التطبيق القديم في electron-reference
+# 0013 — Preserve the legacy application in electron-reference
 
-الحالة: معتمد بطلب المالك ومنفذ تنظيمياً؛ لا يبدأ تنفيذ Flutter. التاريخ: 2026-10-28.
+Status: owner-approved and implemented as folder organization; does not begin Flutter implementation. Date: 2026-10-28.
 
-## الطلب والقرار
+## Request and decision
 
-طلب المالك وضع المشروع الحالي في مجلد مرجعي داخل المشروع نفسه لبدء إعادة البناء، مع تأكيد عدم نقل الخطة والصور إلى ذلك المجلد.
+The owner requested placing the existing project in a reference folder within the same project to begin the rebuild, explicitly keeping the plan and screenshots outside that folder.
 
-نُقلت ملفات تطبيق Electron وassets والاختبارات وpackage.json وقفل المكتبات وnode_modules وأدوات التطبيق إلى electron-reference/. بقيت وثائق المشروع والخطة والصور وoutputs وdist وdesign وGit وإعدادات الوكلاء في الجذر. احتُفظ بـREADME الأصلي في المرجع، وأصبح README الجذر دليلاً لإعادة البناء. بقي سياق التصميم المشترك في .impeccable.md بالجذر مع نسخته الأصلية في المرجع.
+Electron application files, assets, tests, package.json, dependency lockfile, node_modules and application tooling moved to `electron-reference/`. Project documentation, plan, screenshots, outputs, dist, design, Git and agent settings remained at the root. Preserve the original README in the reference; the root README becomes the rebuild guide. Shared design context remains in root `.impeccable.md`, with its original copy in the reference.
 
-روابط docs/ وoutputs/ وdist/ وdesign/ داخل المرجع تشير إلى مجلدات الجذر الموجودة، كي تبقى التعليمات وأدوات المعاينة الأصلية قابلة للاستخدام دون نقل الصور أو تكرارها. لا توجد .git ثانية.
+Links named `docs/`, `outputs/`, `dist/` and `design/` inside the reference point to existing root folders so earlier instructions and preview tools remain usable without moving or duplicating images. There is no second `.git`.
 
-## أثر القرار
+## Consequences
 
-يستخدم مشروع Flutter جذر المشروع بدلاً من مقترح المجلد الفرعي flutter/ السابق في الخطة. هذا يستبدل توصية موقع الملفات في 0011 فقط؛ لا يغير المنصات أو الوظائف أو التصميم أو قواعد الحسابات أو ترتيب المراحل الـ12 في 0012.
+Flutter uses the project root instead of the earlier proposed `flutter/` subfolder. This supersedes only the file-location recommendation in 0011; it changes neither platforms, features, design, accounting rules nor the 12-phase order in 0012.
 
-تبقى أدوات بناء الخطة والتقاط المرجع والذاكرة في scripts/ بالجذر. أُصلحت أداة الالتقاط لتقرأ من electron-reference/ وتكتب إلى مسار الصور الأصلي. لا تُعاد صور المرجع أو ملفات الحسابات أثناء التحقق من نقل المجلد.
+Plan-building, reference-capture and memory tools remain in root `scripts/`. The capture tool was repaired to read from `electron-reference/` and write to the original screenshot path. Reference images and account files are not regenerated during relocation verification.
 
-## التحقق والحدود
+## Verification and limits
 
-تُقارن بصمات الملفات المنقولة والصور قبل النقل وبعده، وتُشغّل اختبارات المرجع من موقعه الجديد. الدليل الفعلي في [سجل النقل](../log/2026-10-28-electron-reference-folder.md). هذا ليس تثبيت تطبيق جديد أو ترحيل حسابات المطعم؛ لم يُفتح التطبيق المعتاد أو مجلد حساباته.
+Compare moved-file and screenshot hashes before/after relocation and run reference tests from the new location. Actual evidence is in the [relocation log](../log/2026-10-28-electron-reference-folder.md). This is neither a new application installation nor migration of restaurant accounts; the normal application and its account directory were not opened.

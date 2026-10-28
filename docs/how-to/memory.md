@@ -1,46 +1,46 @@
-# ذاكرة Dakhl_Restaurant في Hindsight
+# Dakhl_Restaurant Hindsight memory
 
-الحالة: إعداد خاص بالمشروع؛ نتائج التشغيل في [سجل الإعداد](../log/2026-10-16-project-documentation.md). التاريخ: 2026-10-16. المالك: القائم على المشروع. المصدر: الإعداد المحلي في خدمة Hindsight المشتركة وطلب المالك.
+Status: project-specific configuration; operating results are in the [setup log](../log/2026-10-16-project-documentation.md). Date: 2026-10-16. Owner: project maintainer. Source: shared local Hindsight configuration and owner request.
 
-> اسم المشروع المعروض الحالي: **Dakhl_Restaurant**. تبقى مفاتيح الربط `daftar` و`project-daftar` و`daftar_memory` كما هي للحفاظ على البنك الموجود؛ ليست أسماء المشروع الحالية.
+> Current displayed project name: **Dakhl_Restaurant**. Connection keys `daftar`, `project-daftar` and `daftar_memory` remain unchanged to preserve the existing bank; they are not current project names.
 
-## هوية المشروع
+## Project identity
 
-- مفتاح التسجيل القديم: `daftar`، واسم المشروع الحالي **Dakhl_Restaurant**، والمجلد الحالي: `/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant`. صُحح مسار التسجيل وربط البنك بتاريخ 2026-10-27 بعد التأكد أن المجلد القديم ResturanetAccounting لم يعد موجوداً؛ اسم البنك لم يتغير.
-- اسم البنك المعروض: **Dakhl_Restaurant**، ومعرّفه التقني الثابت **project-daftar**، مستقل عن `project-aldakhl`.
-- الخدمة المشتركة: `/Users/eros/Dev/Eros_Projects/Hindsight`.
-- [واجهة الذاكرة](http://127.0.0.1:9999): اختر **Dakhl_Restaurant** (المعرّف `project-daftar`) لتصفح المستندات والحقائق والاسترجاع.
-- ربط Codex: `.codex/config.toml`، والخادم `daftar_memory`. قد يحتاج فتح جلسة من مجلد المشروع أو إعادة فتحها لتحميل الخادم؛ أمر المشروع يعمل مستقلاً عن ظهور أدوات MCP في هذه المحادثة.
+- Legacy registration key: `daftar`; current project name: **Dakhl_Restaurant**; current folder: `/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant`. Registration path and bank mapping were corrected on 2026-10-27 after verifying the old ResturanetAccounting folder no longer existed; the bank ID did not change.
+- Displayed bank name: **Dakhl_Restaurant**, with stable technical ID **project-daftar**, separate from `project-aldakhl`.
+- Shared service: `/Users/eros/Dev/Eros_Projects/Hindsight`.
+- [Memory UI](http://127.0.0.1:9999): select **Dakhl_Restaurant** (ID `project-daftar`) to browse documents, facts and recall.
+- Codex connection: `.codex/config.toml`, server `daftar_memory`. Opening/reopening a session from the project folder may be needed to load the server; the project command works independently of MCP tools appearing in this conversation.
 
-## الاسترجاع والحفظ
+## Recall and retention
 
-تحديث 2026-10-28: أُضيفت ملفات الجذر PLANS.md وPHASES.md وPROMPTS.md إلى قائمة مصادر مشروع daftar فقط، لتدخل تعريفات المراحل وحالتها وقواعد التنفيذ في المزامنة. لا يشمل ذلك المصدر أو المكتبات أو الحسابات. محفوظات قوالب القواعد الأصلية بصيغة source.txt لا تدخل فهرسة Markdown. لم تتغير مصادر المشاريع الأخرى.
+Update, 2026-10-28: root PLANS.md, PHASES.md and PROMPTS.md were added to the daftar project's source allowlist so phase definitions, state and execution rules participate in synchronization. This excludes source code, dependencies and accounts. Original-rule archives in source.txt format are not Markdown-indexed. Other projects' source lists were unchanged.
 
-من مجلد Dakhl_Restaurant:
+From the Dakhl_Restaurant folder:
 
 ```sh
-./scripts/memory recall --query 'ما نطاق المشروع وما قواعد سلفة العمال؟'
-./scripts/memory reflect --query 'ما القرارات المفتوحة لهذه الفكرة وما مصادرها؟'
+./scripts/memory recall --query 'What is the project scope and what are the worker-savings rules?'
+./scripts/memory reflect --query 'Which decisions remain open for this idea, and what are their sources?'
 ./scripts/memory sync
 ./scripts/memory check
 ./scripts/memory status
 ```
 
-استرجع قبل العمل ثم اقرأ المصدر الحالي. `reflect` تحليل أعمق ويستهلك من الاشتراك. الحفظ المقصود هنا هو كتابة القرار أو المعرفة المفيدة في ملفات المشروع ثم فهرستها، وليس حفظ كل المحادثة. الإعداد المشترك الحالي `retainSessions: false` ولا يستورد المحادثات الخام أو يجري مسحاً تلقائياً للمصدر.
+Recall before work, then read current source. `reflect` performs deeper analysis and uses subscription capacity. Retention means writing a decision/useful knowledge into project files and then indexing them, not retaining every conversation. Shared configuration currently uses `retainSessions: false`, imports no raw conversations and runs no automatic codebase survey.
 
-المراقب يفحص الوثائق كل نحو 60 ثانية ويستخدم معرفات ثابتة وبصمات المحتوى. مسارات التسجيل: `README.md`, `AGENTS.md`, `docs/**/*.md`، و`FULLSTACK.md` إن أُنشئ لاحقاً. لا حاجة لإنشاء FULLSTACK أو نقل تقنية مشروع آخر. القوالب التي تحمل `<!-- hindsight:ignore -->` على سطر مستقل مستثناة. المصدر البرمجي وملفات الحسابات ليست ضمن هذا النطاق؛ مرجع التطبيق يلخص ما يلزم منها.
+The watcher checks documents approximately every 60 seconds using stable IDs and content hashes. Registered paths are `README.md`, `AGENTS.md`, `docs/**/*.md` and `FULLSTACK.md` if created later. There is no need to create FULLSTACK or import another project's technology. Templates containing `<!-- hindsight:ignore -->` on a separate line are excluded. Source code and account files are outside this scope; the application reference summarizes necessary behavior.
 
-`sync` يرسل التغييرات. `check` يحدّث حالة العمليات ويفشل إذا بقي معلق أو فاشل. لا تعتبر رسالة `queued` أو صحة API وحدها نجاحاً. راجع بعد اكتمال المعالجة، واسترجع قاعدة محددة للتأكد من قابلية العثور عليها. مؤشر `hindsight_sync_status` يخص مسار البذر الافتراضي المعطل هنا؛ فحص ملفات المشروع هو المرجع لاكتمال إرسالها.
+`sync` submits changes. `check` updates operation states and fails if anything remains pending or failed. A `queued` response or healthy API alone is not success. Recheck after processing, and recall a specific rule to verify discoverability. `hindsight_sync_status` describes the default seeding workflow disabled here; project-file checks are authoritative for completed delivery.
 
-## ما يُحفظ وما يبقى خاصاً
+## Retained knowledge and private material
 
-احفظ النطاق والقرارات والأسباب ومعايير القبول والنتائج المتحققة والعوائق والخطوات التالية. لا تحفظ `accounts.json` أو نسخه أو صادرات الفواتير أو هواتف أو بيانات عملاء أو أسرار أو جلسات كاملة. راجع محتوى أي مستند قبل وضعه ضمن المسارات المفهرسة.
+Retain scope, decisions, rationale, acceptance criteria, verified outcomes, blockers and next actions. Never retain `accounts.json`, its backups, invoice exports, phones, customer data, secrets or complete sessions. Review a document before placing it in indexed paths.
 
-Hindsight لا يدخل في تشغيل تطبيق Dakhl_Restaurant أو حفظ حساباته. قاعدة الذاكرة محلية، لكن الخدمة المشتركة تستخدم مزود `openai-codex` لإرسال النص المفهرس وأسئلة التحليل إلى OpenAI عبر الاشتراك المهيأ؛ ليست معالجة كاملة دون إنترنت. الفصل بالبنوك تنظيمي لهذه الخدمة المحلية، وليس صلاحيات حسابات متعددة.
+Hindsight is not part of the running Dakhl_Restaurant application or its account persistence. The memory database is local, but the shared service uses provider `openai-codex` to send indexed text and reflection questions to OpenAI through the configured subscription; processing is not fully offline. Banks provide organizational separation within this local service, not multi-account access control.
 
-## عند التعطل أو الخطأ
+## Failure or incorrect information
 
-احتفظ بالتوثيق وسجّل الفشل أو الانتظار. افحص `./scripts/memory status` وسجلات الخدمة المشتركة قبل إعادة المحاولة. بعد إصلاح السبب:
+Preserve documentation and record failure/pending status. Inspect `./scripts/memory status` and shared-service logs before retrying. After repairing the cause:
 
 ```sh
 ./scripts/memory sync
@@ -48,4 +48,8 @@ Hindsight لا يدخل في تشغيل تطبيق Dakhl_Restaurant أو حفظ 
 ./scripts/memory check
 ```
 
-لا تكرر إعادة المحاولة عند فشل دائم بلا معالجة سببه. عند اكتشاف معلومة قديمة صحّح المصدر وأضف قراراً أو سجل تصحيح مؤرخاً واربط ما حل محله ثم زامن. لا تعالج خطأ ذاكرة بإعادة تهيئة البنك أو حذف التاريخ.
+Do not repeatedly retry a permanent failure without addressing its cause. On discovering stale information, correct the source, add a dated correction decision/log, link the superseded record and synchronize. Do not solve a memory error by reinitializing the bank or deleting history.
+
+## English-only knowledge
+
+Owner confirmed English-only source documentation, retained facts/contexts/entity labels and generated knowledge/reflections on 2026-10-28. Both project banks have scoped English-language missions/directives; preserve them during reconfiguration. Translate source prose without changing Arabic runtime UI or frozen evidence. Replace/correct the affected project sources with provenance and verify actual active content after processing; an accepted operation, healthy API or empty generated page alone does not prove migration. Never clear whole banks, mix projects or change shared model/provider settings for language conversion.

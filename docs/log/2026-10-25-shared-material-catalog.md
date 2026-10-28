@@ -1,19 +1,19 @@
-# كتالوج مواد وأسعار موحّد لفواتير الموردين
+# Shared material and price catalog for supplier invoices
 
-الحالة: منفذ ومتحقق باختبارات التطبيق؛ قيد التحديث المحلي. التاريخ: 2026-10-25. المصدر: طلب مالك التطبيق.
+Status: implemented and verified by application tests; local update in progress. Date: 2026-10-25. Source: application owner's request.
 
-## الطلب
+## Request
 
-مشاركة أسماء المواد بين الموردين، وإدارة أسعار الكارتون والقطعة من قائمة إعدادات واحدة، وتعبئة السعرين والوحدة عند اختيار المادة في أي فاتورة.
+Share material names between suppliers, manage carton/piece prices in one settings list, and populate both prices and the unit when selecting a material in any invoice.
 
-## التغيير والسبب
+## Change and rationale
 
-أضيف جذر `materials` لصيغة الحسابات 7 وصفحة «المواد والأسعار». تعرض المواد وأسعارها وحالتها، مع إضافة وتعديل وإيقاف مادة عن الفواتير الجديدة. اختيار المادة من أي فاتورة يملأ سعر الكارتون وسعر القطعة ووحدة القياس. الفاتورة تحتفظ بلقطة مستقلة من الاسم والوحدة والكمية والسعر، لذلك لا تؤثر تعديلات الكتالوج على السجل التاريخي. ترحيل الحسابات القديمة يدمج قوائم الموردين حسب الاسم؛ يستخدم سعر الوحدة القديم كسعر القطعة الافتراضي، ويبدأ سعر الكارتون من صفر لعدم وجوده في البيانات السابقة.
+Added the `materials` root to account schema 7 and a Materials and Prices page. It shows materials, their prices and status, and allows adding/editing materials and disabling them for new invoices. Selecting a material in any invoice fills carton price, piece price and measurement unit. Each invoice keeps an independent name/unit/quantity/price snapshot, so catalog edits do not alter historical records. Legacy-account migration merges supplier material lists by name, uses the old unit price as the default piece price, and starts carton price at zero because prior data did not contain it.
 
-## التحقق
+## Verification
 
-نجحت `node --check` لملفات النموذج والواجهة، ونجحت `npm test`: 81 اختباراً دون إخفاق، ومنها ترحيل مواد الموردين والحفاظ على الإجماليات القديمة وتعبئة سعري الكارتون والقطعة بمورد مختلف. لم تُستخدم بيانات المطعم الحقيقية في الاختبارات.
+`node --check` passed for model/UI files. `npm test` passed: 81 tests, no failures, including migration of supplier materials, preservation of old totals and population of carton/piece prices with a different supplier. Real restaurant data was not used in tests.
 
-## الحالة والخطوة التالية
+## Status and next action
 
-رُفع رقم المصدر إلى 1.8.0. تحديث التطبيق المحلي يتطلب تغليف نسخة macOS ARM64 وتثبيتها ثم فتحها للتحقق من صفحة المواد. لا يحول هذا التغيير الأسعار السابقة إلى أسعار حالية؛ كل تحليل تاريخي يعتمد على لقطة الفاتورة.
+Source version was raised to 1.8.0. Updating the local application requires packaging macOS ARM64, installation and opening it to verify the Materials page. This change does not convert historical prices into current prices; historical analysis always uses invoice snapshots.

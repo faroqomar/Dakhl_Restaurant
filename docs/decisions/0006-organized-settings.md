@@ -1,19 +1,19 @@
-# 0006 — إعدادات مقسمة وحفظ موحد
+# 0006 — Sectioned settings and unified saving
 
-الحالة: قرار تنفيذ ضمن طلب المالك إعادة تصميم الإعدادات بتاريخ 2026-10-27؛ منفّذ في المصدر، مراجعة المالك البصرية مفتوحة. لا يستبدل قواعد الحسابات أو الحفظ في القرارات السابقة.
+Status: implementation decision within the owner's settings-redesign request of 2026-10-27; implemented in source, owner visual review remains open. This does not replace the account or persistence rules in earlier decisions.
 
-## القرار والسبب
+## Decision and rationale
 
-تقسيم الإعدادات إلى أربعة أقسام داخل الصفحة، مع إبقاء النماذج عند التبديل بينها. حفظ تفضيلات المطعم وأنواع الطلبات والاختصارات معاً يمنع فقدان تعديل في قسم آخر بسبب إعادة رسم الصفحة بعد حفظ نموذج مستقل. حجم بطاقات البيع يبقى تفضيلاً محلياً للجهاز بالمفتاح السابق، دون تغيير صيغة الحسابات.
+Divide settings into four in-page sections while preserving forms when switching. Saving restaurant preferences, order types and shortcuts together prevents losing another section's edits when a separate form save rerenders the page. Sales-card size remains a device-local preference under its previous key, with no account-schema change.
 
-تظهر معاينة هوية الوصل بجانب حقولها. تفصل عمليات التصدير والاستيراد عن خيارات الاستعادة، مع إبقاء التأكيد والمعاينة وحفظ نسخة من البيانات الحالية في مسارات سطح المكتب الموجودة.
+Show a receipt-identity preview alongside its fields. Separate export/import actions from restore choices, preserving confirmation, preview and a copy of current data in the existing desktop flows.
 
-الدليل والقيود في [سجل التنفيذ](../log/2026-10-27-settings-redesign.md). الاختبارات والمعاينة لا تعني تحديث التطبيق المثبت أو إجراء استعادة فعلية لحسابات المطعم.
+Evidence and limits are in the [implementation log](../log/2026-10-27-settings-redesign.md). Tests and preview do not establish an installed-app update or an actual restore of restaurant accounts.
 
-## متابعة طلب المالك — إدارة الأنواع، 2026-10-27
+## Owner follow-up — Type management, 2026-10-27
 
-طلب المالك استبدال النص بقائمة مع إضافة وحذف وتعطيل. يبقى ترتيب الأنواع المفعلة في الحقل الحالي، وتضاف الأسماء المعطلة كحقل اختياري مستقل للحفاظ على التوافق مع الملفات القديمة وتضمين حالة التعطيل في النسخ الاحتياطية. لا تُعدّل أسماء الأنواع المسجلة في المبيعات السابقة. [نتيجة التنفيذ](../log/2026-10-27-order-type-manager.md).
+The owner requested replacing free text with a list supporting add, delete and disable. Active-type order stays in the current field; disabled names are an independent optional field for compatibility with older files and inclusion of disabled state in backups. Do not change the type names recorded in earlier sales. [Implementation outcome](../log/2026-10-27-order-type-manager.md).
 
-## تعديل نطاق خيار العرض — 2026-10-27
+## Display-option scope change — 2026-10-27
 
-بطلب المالك أزيل خيار حجم بطاقات الأصناف من الإعدادات. يظهر فقط في شاشة البيع، ويحتفظ بتفضيل الجهاز نفسه. يحل هذا التوجيه محل إتاحة الخيار في القسم الثاني من تصميم الإعدادات الأولي؛ بقية القرار مستمرة.
+At the owner's request, remove product-card size from settings. It appears only on the sales screen and retains the same device preference. This direction supersedes its availability in the second section of the initial settings design; the rest of the decision continues.

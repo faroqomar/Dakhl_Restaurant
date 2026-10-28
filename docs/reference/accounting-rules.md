@@ -1,74 +1,74 @@
-# قواعد الحسابات الحالية
+# Current accounting rules
 
-الحالة: وصف للسلوك الموجود؛ التغيير يحتاج قراراً وتحققاً. التاريخ: 2026-10-16. المالك: القائم على Dakhl_Restaurant. المصدر: [model.js](../../electron-reference/app/ui/model.js)، [storage.cjs](../../electron-reference/app/storage.cjs)، واختبارات الحسابات والموردين ومصادر الدفع وسلفة العمال والتواريخ.
+Status: description of existing behavior; changes need a decision and verification. Date: 2026-10-16. Owner: Dakhl_Restaurant maintainer. Source: [model.js](../../electron-reference/app/ui/model.js), [storage.cjs](../../electron-reference/app/storage.cjs), and tests for accounts, suppliers, payment sources, worker savings and dates.
 
-## المبالغ والمصاريف
+## Amounts and expenses
 
-- العملة الحالية الدينار العراقي؛ المبالغ أعداد صحيحة ضمن حدود التحقق، مع قبول الأرقام العربية والفارسية وتحويلها. الإدخال المالي العادي لا يقبل كسور الدينار.
-- كمية مادة المورد موجبة وتقبل حتى ثلاث خانات عشرية. إجمالي السطر يُقرب إلى أقرب دينار؛ توجد حدود للدقة والمدى في النموذج.
-- لكل مصروف مصدر دفع: اليومي أو القاصة أو مشترك. مجموع الحصتين يساوي المبلغ. المجموع يشمل المصروف مرة واحدة، وحصة القاصة تنشئ أثراً مشتقاً على رصيدها.
-- مجموع مصروف اليومي التلقائي هو حصة اليومي من كل مصروف وتسديد؛ حصة القاصة تعرض مستقلة وتخصم من القاصة. مصروف المصدر المشترك يظهر موزعاً على الجدولين ولا يتكرر في مجموع اليومي. السجلات القديمة بلا مصدر دفع تعامل كأنها يومية.
-- المجموع قد يكون يدوياً (`totalOverride`)؛ يبقى الرقم الذي أدخله المستخدم، بينما يعرض التحليل حصص مصادر الدفع المسجلة. الرصيد الكلي المحسوب عند تسجيل الباقي = مجموع مصروف اليومي + المتبقي + ما تم إيداعه من المتبقي بالقاصة. مصاريف القاصة وحصتها من الدفع المشترك لا تدخل في مجموع مصاريف اليومي.
+- Current currency is Iraqi dinar; amounts are integers within validation limits, accepting and normalizing Arabic/Persian digits. Ordinary financial entry does not accept fractional dinars.
+- Supplier-material quantity is positive and accepts up to three decimal places. A line total is rounded to the nearest dinar; the model defines precision/range limits.
+- Every expense has daily, cashbox or shared funding. Its shares sum to the amount. Totals count the expense once, and its cashbox share creates a derived cashbox-balance effect.
+- Automatic daily expenses equal the daily-funded share of every expense/payment; cashbox-funded shares are shown separately and deducted from the cashbox. Shared funding appears split across both tables without being counted twice in daily totals. Legacy records without a source are treated as daily-funded.
+- The total may be manual (`totalOverride`): preserve the user's entered number, while analysis shows recorded funding shares. Overall balance calculated when remaining cash is recorded equals daily-funded expenses + remaining cash + transfers of remaining cash into the cashbox. Cashbox-funded expenses and cashbox portions of shared payments do not enter daily-expense totals.
 
-## الرصيد اليومي والقاصة
+## Daily balance and cashbox
 
-الرصيد المتبقي لقطة للباقي الفعلي **بعد** المصاريف والحركات المسجلة عند إدخاله. تحفظ اللقطة `amount`, `dailySpent`, `transferred`. الحساب الحالي:
+Remaining cash is a snapshot of actual cash **after** the expenses/movements recorded at entry time. The snapshot stores `amount`, `dailySpent` and `transferred`. Current calculation:
 
 ```text
-المتبقي = مبلغ اللقطة
-        − (المصروف من اليومي الآن − المصروف من اليومي عند اللقطة)
-        − (الإيداعات من اليومي الآن − الإيداعات عند اللقطة)
+remaining = snapshot amount
+          - (daily-funded spending now - daily-funded spending at snapshot)
+          - (daily-to-cashbox transfers now - transfers at snapshot)
 ```
 
-سجل الإيداع من اليومي مستقل؛ يخصم المتاح من اليوم ويضيفه للقاصة مرة واحدة. لا يُعامل كمصروف ولا يسمح بإيداع أكثر من المتاح. تعديل الإيداع أو حذفه يعيد الأثر المناسب. القاصة تجمع إيداعاتها وتطرح سحوباتها، بما يشمل حصتها من المصاريف وتسديدات الموردين.
+A daily-to-cashbox deposit is an independent record: deduct available daily cash and add it to the cashbox once. It is not an expense, and cannot exceed available cash. Editing/deleting a deposit reverses the appropriate effect. The cashbox totals deposits minus withdrawals, including its shares of expenses and supplier payments.
 
-عند تسجيل الباقي يحفظ التطبيق الرصيد الكلي من **مجموع حصة مصروف اليومي + الباقي + الإيداعات السابقة من اليومي إلى القاصة**. حصة مصروف القاصة لا تدخل بمصاريف اليومي ولا برصيده؛ وتبقى ضمن رصيد القاصة. بعد تسجيل الإجمالي يبقى ثابتاً عند الإيداع اللاحق، ويُحسب المتبقي منفصلاً.
+When remaining cash is entered, save overall balance as **daily-funded expenses + remaining cash + earlier daily-to-cashbox deposits**. Cashbox-funded expenses enter neither daily expenses nor daily balance; they remain within cashbox balance. Once entered, the overall total remains fixed through later deposits, and remaining cash is calculated separately.
 
-هذه المقاييس ليست مبيعات مثبتة أو صافي ربح. أي تحليل يستخدم جمعاً للاستدلال على الإيراد يوضح أنه استدلال، ويحدد البنود ومصادر الدفع والتجاوزات اليدوية المستخدمة. القاصة نقد متاح وليست ربحاً.
+These measures are neither established sales nor net profit. Any analysis inferring revenue by addition must identify it as inference and specify the entries, funding sources and manual overrides used. Cashbox money is available cash, not profit.
 
-## الموردون والقوائم والديون
+## Suppliers, invoices and debts
 
-- القائمة تضيف ديناً فقط؛ تسجيل تسديدها هو ما يدخل المصاريف بتاريخ التسديد ويؤثر في مصدر الدفع مرة واحدة.
-- حساب المورد = الديون السابقة + الديون المضافة + قيم القوائم − التسديدات.
-- التسديد يرتبط بقائمة محددة أو بالديون، ويحفظ `invoiceAmount` و`debtAmount`. الزيادة عن متبقي القائمة تسدد الديون المتاحة؛ لا تنتقل تلقائياً إلى قائمة أخرى أو دين مستقبلي.
-- رقم القائمة فريد لدى المورد نفسه. كتالوج المواد واحد لكل الموردين؛ أسعاره افتراضية لتعبئة الإدخال، بينما تحفظ كل فاتورة سعر الكارتون والقطعة والوحدة وقت الشراء. تعديل الكتالوج لا يعيد كتابة فاتورة سابقة. ترحيل الصيغة 6 يدمج قوائم المواد بأسمائها، مع اعتماد سعر القطعة القديم كافتراضي ووضع سعر الكارتون صفراً لعدم وجوده سابقاً.
-- لا تُحذف قائمة لها تسديدات قبل حذف تسديداتها. لا تُخفض قائمة أو ديون بما يخالف المدفوع منها. حذف الدفعة أو تعديلها يصحح الأرصدة والتوزيع.
-- تصحيح تاريخ يوم ينقل سجله والحركات المرتبطة به مع منع التداخل والتحقق؛ قوائم الموردين والديون وسلفة العمال تحتفظ بتواريخها المستقلة.
+- An invoice adds debt only; its payment enters expenses on the payment date and affects its funding source once.
+- Supplier balance = prior debts + added debts + invoice values - payments.
+- A payment links to a specific invoice or debt and saves `invoiceAmount` and `debtAmount`. Excess beyond the invoice remainder settles available debt, not another invoice or future debt automatically.
+- An invoice number is unique per supplier. One material catalog serves all suppliers; prices are entry defaults, while every invoice preserves carton/piece/unit prices at purchase time. Editing the catalog never rewrites an earlier invoice. Schema-6 migration merges material lists by name, uses the earlier piece price as default and sets carton price to zero because it was previously absent.
+- An invoice with payments cannot be deleted until its payments are removed. Invoices/debts cannot be reduced below amounts already paid. Deleting/editing a payment corrects balances and allocations.
+- Correcting a day's date moves its record and linked movements while preventing overlap and validating; supplier invoices, debts and worker savings retain independent dates.
 
-## سلفة العمال والدجاج
+## Worker savings and chicken counts
 
-سلفة العمال نطاق مستقل: اشتراك يومي أو أسبوعي أو شهري من تاريخ بداية، دفعات جزئية أو كاملة، واستلام من المتجمع. لا تغير المصاريف أو القاصة أو حساب المورد. لا يتجاوز الاستلام المتاح بتاريخ الحركة، ولا يُحذف دفع يجعل استلاماً سابقاً غير مغطى. الفترات المسجلة تحفظ مبلغها وتاريخها، وإيقاف العامل يحفظ سجله.
+Worker savings are an independent scope: daily/weekly/monthly contributions from a start date, partial/full payments and withdrawals from accumulated funds. They do not change expenses, cashbox or supplier balances. A withdrawal cannot exceed funds available on its movement date; a payment cannot be deleted if it would leave an earlier withdrawal uncovered. Recorded periods preserve their amount/date, and deactivating a worker preserves history.
 
-أعداد الدجاج المصروف والمتبقي للتتبع فقط ولا تدخل في مجموع المصاريف أو رصيد القاصة.
+Issued/remaining chicken counts are tracking quantities only and enter neither expense totals nor cashbox balance.
 
-## كشف الحساب اليومي
+## Daily account statement
 
-مرشح الفترة والخانة ومصدر الدفع يعرض الحركات المسددة فعلياً ضمن الفئات، ويجمعها ويرتب الخانات تنازلياً حسب المبلغ للفترة المحددة. هذا ترتيب للمصروف المسدد في السجل، ولا يساوي إجمالي مشتريات الفواتير الآجلة.
+Period, category and funding-source filters show actually paid movements within categories, total them and rank categories by descending amount for the selected period. This ranks paid spending in the register; it is not the total of unpaid purchase invoices.
 
-## حفظ التاريخ
+## Historical preservation
 
-حافظ على معنى السجلات والنسخ القديمة عند الترحيل. التراجع الحالي داخل الجلسة ويُحفظ عبر مسار التحقق؛ ليس أرشيف تدقيق دائم أو بديلاً عن النسخ الاحتياطية. أي دمج لمصاريف الإعلانات أو ربط لحملة بالحسابات يحتاج تعريفاً صريحاً يمنع عدّ المبلغ مرتين؛ سجل التخطيط وحده لا ينشئ مصروفاً.
+Preserve the meaning of records/older backups during migration. Current undo is in-session and saved through validation; it is neither a permanent audit archive nor a backup replacement. Including advertising expenses or linking a campaign to accounts requires an explicit definition preventing double counting; a planning entry alone creates no expense.
 
-## قوائم المشتريات بالكارتون والقطعة
+## Carton/piece purchase invoices
 
-الفاتورة الجديدة تحفظ لكل مادة كمية الكارتون والقطعة وسعر كل منهما، وتحسب الإجمالي هكذا: (عدد الكراتين × سعر الكارتون) + (عدد القطع × سعر القطعة). لا نفترض تحويل الكارتون إلى قطع لأن عدد القطع في الكارتون يختلف حسب المادة. تبقى الفواتير القديمة ذات الكمية وسعر الوحدة صالحة وتُعرض ضمن تحليل المشتريات. التحليل يجمع الكميات كلٌّ بوحدته، ويعرض الموردين والأسعار وتغيرها عبر الفواتير؛ مجموع قيمة الفواتير هو دين للمورد، والتسديد فقط هو الذي يدخل المصروف والقاصة حسب مصدره.
+A new invoice stores carton/piece quantities and prices per material and calculates total as (cartons × carton price) + (pieces × piece price). Do not assume a carton-to-piece conversion: pieces per carton vary by material. Older quantity/unit-price invoices remain valid and appear in purchase analysis. Analysis aggregates each quantity in its own unit and shows suppliers, prices and changes between invoices. Total invoice value is supplier debt; only payment enters expenses and cashbox effects according to funding source.
 
-## المبيعات والمخزن — صيغة 8، 2026-10-26
+## Sales and inventory — Schema 8, 2026-10-26
 
-المبيعات المكتملة تحتفظ بأسعارها وقت الحفظ. الصافي = مجموع الأسطر − الخصم؛ الباقي للزبون = النقد المستلم − الصافي. المبيعات الملغاة تستبعد من المجموع والمخزون مع حفظ السبب. [قواعد الربط والتواريخ](../decisions/0002-sales-inventory-shortcuts.md): فرق المبيعات بعد لقطة الباقي يضاف لليومي، دون إيداع تلقائي بالقاصة. الصافي هنا بعد الخصومات والإلغاء؛ ليس صافي الربح. المخزون = الإضافات والتسويات − كميات البيع المكتمل، وكل ذلك بوحدة الصنف دون افتراض تحويلات من فواتير المشتريات.
+Completed sales preserve prices at save time. Net = line total - discount; customer change = cash received - net. Voided sales are excluded from totals/inventory with the reason preserved. [Integration/date rules](../decisions/0002-sales-inventory-shortcuts.md): the sales difference after the remaining-cash snapshot is added to daily cash, without automatic cashbox deposit. Net here follows discounts/voids; it is not net profit. Inventory = additions/adjustments - completed-sale quantities, in each product's unit without assuming conversions from purchase invoices.
 
-## تسريع الدفع — الصيغة 9، 2026-10-26
+## Faster payment — Schema 9, 2026-10-26
 
-بطلب المالك أزيل إدخال النقد المستلم من البيع السريع. إتمام البيع يعد إقراراً باستلام صافي إجمالي الفاتورة بالضبط؛ لا يحتاج كتابة مبلغ، ويبقى الأثر المالي صافي الأسطر ناقص الخصم. السجلات السابقة تحفظ مبلغها المستلم والباقي كما سجلا. نوع الطلب وصف محفوظ لا يغير الحسابات أو يضيف رسوم توصيل تلقائية. [القرار](../decisions/0003-sales-layout-review.md).
+At the owner's request, quick sale no longer requires entering cash received. Completing a sale acknowledges receipt of the exact net receipt total without entering an amount; the financial effect remains net lines minus discount. Earlier records retain their received amount and change as saved. Order type is descriptive stored data; it neither changes calculations nor automatically adds delivery charges. [Decision](../decisions/0003-sales-layout-review.md).
 
-## تصحيحات المراجعة — الصيغة 10، 2026-10-26
+## Audit corrections — Schema 10, 2026-10-26
 
-معادلات اليومي والقاصة وسلفة العمال باقية. تصفية كشف المصاريف لحصة القاصة تعرض اليومي صفراً والقاصة بحصتها، ولا تعيد تفسير الحصة المفلترة كمصروف يومي. معاينة مجموع المصاريف اليدوي تعتمد مجموع حصص اليومي فقط. معاينة قائمة المورد تستخدم الرصيد قبلها + قيمتها − دفعتها.
+Daily-account, cashbox and worker-savings equations remain. Filtering the expense statement to the cashbox share shows zero daily share and the cashbox amount, never reinterpreting that filtered share as daily expense. The manual-expense-total preview uses only summed daily shares. Supplier-invoice preview uses previous balance + invoice value - its payment.
 
-سعر البيع المقترح يثبت في المسودة عند إضافة الصنف. البيع المكتمل يبقى كسجل، والتراجع عنه يفتح الإلغاء؛ لا يعيد رقمه للاستخدام. حركة المخزن الخاطئة تصحح بعكس كامل مرتبط بالأصل في تاريخه، مع سبب وتوقيت تسجيل جديد، ولا يسمح بعكس ينشئ مخزوناً تاريخياً سالباً. يمكن بعدها تسجيل حركة صحيحة. عرض «المتوفر» يخص اليوم، والحركات المستقبلية موضحة في السجل.
+Suggested selling price is fixed in the draft when a product is added. A completed sale remains a record; undo opens voiding rather than making its number reusable. A wrong inventory movement is corrected through a full reversal linked to the original on its original date, with a reason and new recording timestamp; reject reversals causing negative historical stock. A correct movement may then be recorded. Available quantity refers to today; future movements are identified in history.
 
-تعديل الرصيد الكلي أو المجموع اليدوي يحتاج سبباً ويضيف تاريخ تصحيح؛ التراجع عنه يحتفظ بالتصحيح ويضيف القيم العكسية. هذا أثر للتصحيحات المحددة، وليس ادعاءً بأرشيف تدقيق شامل لكل تعديل في البرنامج.
+Changing overall balance or a manual total requires a reason and adds correction history. Undo preserves that correction and adds inverse values. This is a trail for specific corrections, not a claim of a comprehensive audit archive for every program edit.
 
-## مرتجعات المبيعات — صيغة11، 2026-10-27
+## Sales returns — Schema 11, 2026-10-27
 
-المرتجع سجل مستقل يحفظ الفاتورة الأصلية. يخصم مبلغ ما بعد الخصم من صافي التحصيل اليومي بتاريخ المرتجع، ولا يسجل كمصروف أو يخصم من القاصة. قد يكون صافي التحصيل سالباً في فترة مرتجعات. إعادة تسجيل الباقي تحفظ خط أساس هذا الصافي لمنع الخصم مرتين. تعاد الكميات للمخزون بتاريخ الإرجاع فقط إذا اختير ذلك. يوزع الخصم وتقريب الدينار تراكمياً بحيث يرجع كامل صافي الفاتورة عند إرجاع جميع الكميات؛ لا يسمح بإرجاع أكثر من المباع أو إلغاء فاتورة لها مرتجعات. [التفصيل](../decisions/0010-mvp-returns-and-held-orders.md).
+A return is an independent record preserving the original sale. Deduct its discounted amount from net daily collections on the return date; it is neither an expense nor a cashbox deduction. Net collections may be negative during returns periods. Re-entering remaining cash preserves that net baseline to prevent double deduction. Quantities return to inventory on the return date only when selected. Allocate discount and dinar rounding cumulatively so returning all quantities refunds the exact full net receipt; reject returns exceeding sold quantities and voids of sales with returns. [Details](../decisions/0010-mvp-returns-and-held-orders.md).

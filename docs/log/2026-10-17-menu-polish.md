@@ -1,15 +1,15 @@
-# 2026-10-17 — ترتيب المينيو وتصحيح عرضه
+# 2026-10-17 — Organize and correct the menu layout
 
-الحالة: مسودة v3 منفّذة؛ لا نشر. التاريخ: 2026-10-17. المالك: مالك مطعم جنة بغداد. المصدر: لقطة المينيو المرفقة وطلب «رتبها وصحح الأخطاء كلها».
+Status: implemented v3 draft, not published. Date: 2026-10-17. Owner: Jannat Baghdad restaurant owner. Source: attached menu screenshot and request to organize it and correct all errors.
 
-## التغيير والسبب
+## Change and rationale
 
-قلّص الفراغ في رأس التصميم وكبّرت الأسماء والتفاصيل المهمة، وأزيلت علامات الحذف من العنوان لتفادي التباس اتجاهها. استُبدل تكرار الدليمية بجدول واضح، بصفوف 3 و4 و6 نفرات وأعمدة دليمية فقط ومع نصف دجاجة ومع دجاجة. فُصل كباب اللحم عن كباب وتكة الدجاج، وبقيت صفة اللحم العراقي 100% في عنوان مجموعته وصمون/شيش دبل مع الأصناف المعنية. صار قسم الدجاج مستقلاً ومرافقاته تحت عنوانه. بقيت × على القديم بأثر أرفع يحافظ على قراءة الرقم، والجديد أكبر وبالأصفر.
+Reduced empty space in the header and enlarged names and important details. Removed ellipses from the title to avoid directional ambiguity. Replaced repeated Dulaimiya entries with a clear table: 3/4/6-portion rows and Dulaimiya-only/half-chicken/whole-chicken columns. Separated meat kebab from chicken kebab/tikka, retaining 100% Iraqi meat in its group heading and samoon/double-skewer details on relevant items. The chicken section became independent, with its accompaniments under the heading. Old-price X marks remain thinner to preserve numeral readability; new prices remain larger and yellow.
 
-المخرج الحالي [Canva v3](https://www.canva.com/d/xrVGV1ZUBZBOh1b) بمعرف `DAHYPUZ0O9k`، ومصادره وPNG تحت `outputs/campaigns/CAM-0001/v3/`. النسخ السابقة محفوظة. ملفات الخط المستعمل وتعليمات ترخيصه محفوظة مع المخرج. لا تغيير في أسعار أو بيانات التطبيق المالية، ولا أسعار سابقة مخترعة.
+Current output: [Canva v3](https://www.canva.com/d/xrVGV1ZUBZBOh1b), ID `DAHYPUZ0O9k`, with sources/PNG under `outputs/campaigns/CAM-0001/v3/`. Previous versions remain preserved. The used font files and license instructions accompany the output. No application prices or financial data changed, and no previous prices were invented.
 
-## التحقق
+## Verification
 
-قورنت بيانات v3 مع v2: أقسام الأصناف الـ18 وأسعارها متطابقة، واسم المطعم ورقم التوصيل محفوظان. قورن جدول الدليمية 3×3 مع أسعار الصواني التسع في مصدر v2 فطابقت جميع الخانات. نجحت مطابقة النص المستخرج من Canva مع صفوف الأسعار الثلاثة، وأصناف الكباب السبعة، والدجاجة من 12,000 إلى 10,000 والنصف 5,000 ومرافق القسم. صفحة Canva واحدة 1080×1440. روجعت النسخة بصرياً في محرر Canva ثم صُدّرت بصيغة PNG بدقة 1080×1440 إلى `jannat-baghdad-menu-v3-canva.png` وروجعت الصورة النهائية فعلياً، بما يشمل الأسعار ورقم التوصيل والخط العربي. المسودة المحلية بدقة 2160×2880 تستخدم خطاً بديلاً في محرّك الرسم؛ لذلك ملف Canva المصدّر هو صورة التسليم المعتمدة. فحص مواضع النص في التوليد المحلي يرفض أي نص خارج حدود البوست.
+Comparing v3 data with v2 confirmed identical sections and prices for all 18 items, with restaurant name and delivery number retained. The 3×3 Dulaimiya table matched all nine tray prices in the v2 source. Extracted Canva text matched the three price rows, seven kebab items, whole-chicken reduction from 12,000 to 10,000, half-chicken price of 5,000 and section accompaniments. Canva has one 1080×1440 page. The design was inspected in the Canva editor, exported as a 1080×1440 PNG to `jannat-baghdad-menu-v3-canva.png` and the final image actually reviewed, including prices, delivery number and Arabic typography. The local 2160×2880 draft uses a substitute font in its renderer; the Canva export is therefore the approved delivery image. Local-generation text-position checking rejects text outside the post bounds.
 
-فُحصت روابط الملفات المحلية و`git diff --check`؛ تجري المزامنة وفحص اكتمالها قبل التسليم. الدليل النهائي هو استجابات التحقق في هذه الجلسة. لا اختبارات تطبيق جديدة لأن التغيير تصميم وتوثيق فقط، ولا نشر أو إنفاق ميزانية. مواد التصميم التي تحتوي رقم التوصيل خارج قائمة فهرسة الذاكرة.
+Local-file links and `git diff --check` were checked; synchronization and completion checks occur before delivery. Final evidence consists of this session's verification responses. No new application tests were needed for design/documentation-only changes; no publication or spending occurred. Design materials containing the delivery number are outside the memory indexing allowlist.

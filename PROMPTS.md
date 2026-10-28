@@ -4,7 +4,7 @@ Use one prompt for the selected phase or work item `{{PHASE}}`. Existing project
 
 ## Shared guardrails
 
-Develop the engine and app side by side. Shared capabilities belong only in Madar; the app owns its UI, restaurant workflows and composition. Preserve separate project documentation, evidence and compatible engine versions so future apps can reuse the foundation. Do not copy engine implementation into apps, change protected accounting/data behavior, expand scope or bypass approvals without permission. Record N/A when one project is unaffected.
+Develop the engine and app side by side. Shared capabilities belong only in Madar; the app owns its UI, restaurant workflows and composition. Preserve separate project documentation, evidence and compatible engine versions so future apps can reuse the foundation. Do not copy engine implementation into apps, change protected accounting/data behavior, expand scope or bypass approvals without permission. Record N/A when one project is unaffected. Each phase makes ownership, contract/revision, engine documentation, justified package choices, safe diagnostics and meaningful test evidence explicit. Documentation and project memory are English-only.
 
 ## Step 1 — Scope, References & Track
 

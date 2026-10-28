@@ -1,11 +1,11 @@
-# 0007 — إزالة واجهة سلفة العمال مع حفظ التاريخ
+# 0007 — Remove the worker-savings UI while preserving history
 
-الحالة: معتمد بطلب المالك الصريح، منفّذ في المصدر. التاريخ: 2026-10-27. المصدر: «remove سلفة العمال from the app» مع صورة الشاشة.
+Status: approved by the owner's explicit request and implemented in source. Date: 2026-10-27. Source: the request to remove worker savings from the application, with its screenshot.
 
-## القرار والسبب
+## Decision and rationale
 
-إزالة صفحة سلفة العمال ونماذجها وإجراءاتها من الواجهة، ومن التنقل وتخصيص الاختصارات. أزيل تحميل وحدة الواجهة البرمجية وحُذف ملفها. تتحول الاختصارات القديمة إليها إلى خانات فارغة دون تعطيل استيراد الحسابات.
+Remove the worker-savings page, forms and actions from the UI, navigation and shortcut configuration. Remove loading of its UI module and delete that file. Earlier shortcuts to it become empty slots without breaking account import.
 
-الطلب إزالة ميزة من التطبيق؛ لا يعني إتلاف سجلات مالية. تبقى حقول workers وsavingsEntries والتحقق منها ومسارات الحفظ والنسخ والتقارير التاريخية لأجل التوافق فقط. لا تغيير للأرصدة أو المصاريف أو المبيعات أو المخزون، ولا حاجة لترحيل يحذف السجلات.
+The request removes a feature from the application; it does not authorize destruction of financial records. The `workers` and `savingsEntries` fields, validation, save/backup paths and historical reports remain only for compatibility. No balances, expenses, sales or inventory change, and no record-deleting migration is required.
 
-هذا يحل محل إتاحة واجهة سلفة العمال المذكورة في الوثائق السابقة وجزء واجهة العمال من [القرار 0004](0004-ux-popouts-and-recovery.md)، دون تغيير قواعد استقلال السجلات المالية التاريخية. [نتيجة التحقق](../log/2026-10-27-remove-worker-savings.md).
+This supersedes the availability of the worker-savings screen in earlier documentation and the worker-UI portion of [decision 0004](0004-ux-popouts-and-recovery.md), preserving the independence rules for historical financial records. [Verification outcome](../log/2026-10-27-remove-worker-savings.md).

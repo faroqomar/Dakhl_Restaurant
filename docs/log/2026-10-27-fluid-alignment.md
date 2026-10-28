@@ -1,11 +1,11 @@
-# تصحيح المحاذاة واستغلال عرض النافذة — 2026-10-27
+# Correct alignment and use window width — 2026-10-27
 
-الطلب: رفض المالك تضييق الصفحات نحو الوسط وطلب محاذاة متسقة واستغلال العرض، مع استخدام Astra ومهارات UI.
+Request: the owner rejected narrowing pages toward the center and requested consistent alignment and full-width use, using Astra and UI skills.
 
-التغيير: تولى Astra تعديل ux.css بعد قراءة arrange وfrontend-design. أزيلت حدود عرض الصفحات والملخصات، وتوحدت الحواف عند 24px لسطح المكتب و14px للعرض الضيق. بقيت تفاصيل الطلب مضغوطة، وتوزعت حقول الإعدادات ومعاينة الوصل بوضوح. لا تعديل مالي أو لحفظ البيانات.
+Change: Astra edited ux.css after reading arrange and frontend-design. Page/summary width caps were removed; margins became 24px on desktop and 14px on narrow layouts. Order details stayed compact, with settings fields and receipt preview clearly arranged. No financial or persistence changes.
 
-التحقق: npm test نجح في 120 اختباراً. راجع برنامج outputs/fullscreen-review/review.cjs اثنتي عشرة صفحة وأقسام الإعدادات الإضافية بأربعة أحجام: 1512×982 و1920×1080 و1024×768 و390×844؛ 60 حالة بلا تجاوز أفقي أو عنوان مفقود. الصور النهائية في outputs/fullscreen-review/fluid. تمت مراجعة صور البيع والمخزن والمصاريف وأقسام الإعدادات بصرياً. نوافذ الاختبار تستخدم عينات معزولة فقط.
+Verification: npm test passed 120 tests. outputs/fullscreen-review/review.cjs checked twelve pages plus additional settings sections at 1512×982, 1920×1080, 1024×768 and 390×844: 60 cases without horizontal overflow or missing headings. Final images: outputs/fullscreen-review/fluid. Sales, inventory, expenses and settings screenshots were visually reviewed. Test windows used isolated fixtures only.
 
-القيود: هذه مراجعة للمصدر ومعاينة المتصفح؛ التطبيق المثبت لم يحدّث. نتائج القياس لا تعني موافقة المالك على الشكل. استرجاع project-daftar عاد بإشعارات سحب مصادر تاريخية، لذلك اعتمد العمل الملفات الحالية.
+Limits: this verifies source/browser preview; the installed application was not updated. Measurements do not imply owner design approval. project-daftar recall returned withdrawn-source notices, so current files were used.
 
-الذاكرة: نُفذ sync ثم check؛ الفحص النهائي healthy بلا عمليات معلقة أو فاشلة، لكن sources=0، لذلك لا ندعي فهرسة الوثائق. حُدثت معاينة المتصفح وبقي الطلب الفارغ كما هو.
+Memory: sync then check ran; the final check was healthy without pending/failed work, but sources=0, so no document-indexing claim is made. The browser preview was refreshed and the empty order remained unchanged.

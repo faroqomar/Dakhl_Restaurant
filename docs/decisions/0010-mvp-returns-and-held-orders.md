@@ -1,17 +1,19 @@
-# 0010 — مرتجعات مستقلة وطلبات معلقة ووصل بعد الدفع
+# 0010 — Independent returns, held orders and receipt after payment
 
-الحالة: معتمد ضمن طلب المالك بتاريخ 2026-10-27. [النطاق](../planning/2026-10-27-mvp-completion.md).
+Status: approved within the owner's request of 2026-10-27. [Scope](../planning/2026-10-27-mvp-completion.md).
 
-## المرتجعات
-صيغة الحسابات11 تضيف saleReturns. الترحيل من1–10 يبقي السجلات والمبالغ القديمة ويبدأ سجل المرتجعات فارغاً. السجل يتضمن الفاتورة والتاريخ والسبب والأسطر والكميات والمبالغ وخيار إعادة المخزون. يتحقق الحفظ والاستيراد من الكميات والمبلغ المحسوب، ولا يقبل مبلغاً مقدماً من النموذج دون إعادة الحساب.
+## Returns
 
-يبقى البيع الأصلي محفوظاً؛ المرتجع يخصم التحصيل بتاريخ المرتجع من اليومي، ولا ينشئ مصروفاً أو حركة قاصة. لا يفترض تحويل نقد من القاصة تلقائياً. مجموع التحصيل اليومي قد يكون سالباً في يوم مرتجعات، لذلك لقطة الباقي تقبل خط أساس مبيعات سالباً وتمنع تكرار الخصم بعد إعادة تسجيل النقد الفعلي.
+Account schema 11 adds `saleReturns`. Migration from 1–10 preserves earlier records and amounts and starts with an empty returns register. A return records the sale, date, reason, lines, quantities, amounts and whether inventory is restored. Save/import validate quantities and the calculated amount; a form-provided amount is not accepted without recalculation.
 
-يوزع صافي الفاتورة بعد الخصم على الأسطر بأعداد صحيحة، ثم يحسب المرتجع الجزئي تراكمياً من كمية السطر. إعادة كل الكميات تعيد صافي الفاتورة بالضبط حتى مع كسور الكمية وتقريب الدينار. المخزون يعاد فقط عند اختيار ذلك وفي تاريخ الإرجاع. لا يمكن إلغاء فاتورة لها مرتجعات؛ يمكن إرجاع الباقي. الإلغاء التاريخي للفواتير بلا مرتجعات باقٍ للتصحيح.
+The original sale remains saved; a return deducts daily collections on the return date and creates neither an expense nor a cashbox movement. No automatic cash transfer from the cashbox is assumed. Total daily collections may be negative on a returns day, so the remaining-cash snapshot accepts a negative sales baseline and prevents repeated deduction after actual cash is re-entered.
 
-## الطلبات المعلقة والوصل
-الطلب المعلق مسودة محلية غير مدفوعة؛ لا يحجز مخزوناً ولا يغير أي رصيد. استئنافه يعيد فحص الأصناف والمخزون وقت الدفع. تبقى بياناته ضمن تخزين الجهاز/الحساب، لا ضمن ملف الحسابات المنقول.
+Allocate the net discounted receipt value across lines using integers, then calculate a partial return cumulatively from line quantity. Returning every quantity refunds the exact net receipt amount even with fractional quantities and dinar rounding. Inventory is restored only when selected and on the return date. A sale with returns cannot be voided; its remaining quantities may be returned. Historical voiding of sales without returns remains available for corrections.
 
-بعد حفظ البيع بنجاح يفتح الوصل تلقائياً مع إغلاق وطباعة وPDF. هذا يحل محل اختيار فتح الوصل من إشعار النجاح في [القرار0004](0004-ux-popouts-and-recovery.md). الطباعة تعرض حوار النظام ولا تطبع بصمت؛ تبنى من سجل محفوظ في العملية الرئيسية، لا من HTML قادم من الواجهة. لا توجد طابعة فعلية للاختبار.
+## Held orders and receipt
 
-الإعداد الأول وتذكيرات النسخ مؤجلة. مراجعة اليوم تبقى مختصرة ولا تعني إنشاء سجل إقفال أو أرشيف تدقيق شامل.
+A held order is a local unpaid draft; it neither reserves inventory nor changes a balance. Resuming it rechecks products and inventory at payment time. Its data remains in device/account-scoped storage, not in the transferable account file.
+
+After a sale is successfully saved, automatically open the receipt with close, print and PDF actions. This supersedes choosing to open it from the success notification in [decision 0004](0004-ux-popouts-and-recovery.md). Printing opens the system dialog and never prints silently; the main process constructs it from a saved record, not UI-supplied HTML. No physical printer is available for testing.
+
+First-run setup and backup reminders are deferred. Day review remains concise and does not create a closing record or comprehensive audit archive.

@@ -1,21 +1,21 @@
-# مراجعة التمدد في النافذة الكاملة
+# Review layout stretching in a full window
 
-الحالة: منفّذ ومتحقق منه. التاريخ: 2026-10-27. الطلب: تصوير الشاشات بحجم النافذة الكاملة، مراجعة التمدد وإصلاحه.
+Status: implemented and verified. Date: 2026-10-27. Request: capture full-window screens, review excessive stretching and fix it.
 
-## النتيجة والتغيير
+## Result and change
 
-مراجعة صور الشاشات الاثنتي عشرة أظهرت تمدد حقول التاريخ والفلاتر والملخصات فوق حاجة المحتوى. حُدد عرض صفحات العمل بـ1120px والبيع بـ1360px، وعرض فاتورة البيع الكبيرة بين 330 و380px. حُددت عروض الفلاتر مع استمرار الالتفاف، وصُغرت مسافات الأقسام والحالات الفارغة، وأصبحت تبويبات الأصناف بعرض محتواها.
+Reviewing twelve screens showed date fields, filters and summaries stretching beyond their content needs. Work-page width was capped at 1120px and Sales at 1360px; the large sales ticket ranges from 330 to 380px. Filter widths were constrained while retaining wrapping, section/empty-state spacing reduced, and product tabs sized to content.
 
-كما ثبت قياسياً أن قاعدة الترويسة السابقة flex-basis:280px خلقت فراغاً عمودياً عند التحول إلى عمود في العرض الضيق. أزيل هذا الأساس الثابت. أمثلة عند عرض390px: ترويسة المخزن من342 إلى158px، والإعدادات من296 إلى96px. ترويسة المصاريف الأطول تحتوي إجراءاتها الفعلية؛ لا أساس ارتفاع مفروض.
+Measurements also showed the previous header's flex-basis:280px created vertical blank space when narrow layouts changed to a column. Removed that fixed basis. At width 390px, inventory header height changed from 342 to 158px, and settings from 296 to 96px. The taller expense header contains its actual actions; no forced height basis remains.
 
-## التحقق الفعلي
+## Actual verification
 
-- صور قبل وبعد لكل شاشة في عرض1512×982 و1920×1080؛ 24 صورة لكل مرحلة. راجعت الشاشات بصرياً، مع فحص إضافي بالحجم الأكبر.
-- فحص12 شاشة على أربعة أحجام:1512×982 و1920×1080 و1024×768 و390×844، إجمالي48 حالة دون تجاوز أفقي أو فقد عنوان. التحقق يتأكد من تطابق الوجهة المطلوبة مع الوجهة النشطة عند توفر اختصارها.
-- npm test نجح120/120.
-- الدليل المحلي outputs/fullscreen-review/README.md يربط الصور الكاملة، وbefore/results.json وafter/results.json يحملان القياسات. أداة إعادة الفحص review.cjs في المجلد نفسه؛ حالة الاختبار معزولة وبها33 صنفاً وطلب توضيحي15 بنداً.
-- حُدثت معاينة المتصفح وتحقق بقاء عدد بنود الطلب وإجماليه كما كانا قبل إعادة التحميل.
+- Before/after screenshots for each screen at 1512×982 and 1920×1080: 24 images per stage. Screens were visually reviewed, with extra inspection at the larger size.
+- Checked 12 screens at 1512×982, 1920×1080, 1024×768 and 390×844: 48 cases without horizontal overflow or missing headings. Verification compares requested and active destinations when their shortcuts exist.
+- npm test passed 120/120.
+- Local evidence: outputs/fullscreen-review/README.md links full captures; before/results.json and after/results.json contain measurements. Recheck tool review.cjs is in the same folder. The isolated fixture has 33 products and an illustrative 15-item order.
+- Refreshed the browser preview and confirmed order-item count/total remained unchanged after reload.
 
-## القيود
+## Limits
 
-لم يُستبدل التطبيق المثبت، ولم تُعدّل حسابات المطعم أو البيانات المالية. التصوير هو لحجم محتوى النافذة وليس ملفات PDF. الاسترجاع أعاد مصادر تاريخية مسحوبة؛ اعتمدت على المصدر الحالي. خدمة الذاكرة سليمة سابقاً بلا معلق أو فاشل لكن sources=0؛ تُشغّل المزامنة والفحص ولا تعني النتيجة فهرسة مستندات دون مصادر مسجلة.
+The installed application was not replaced; restaurant accounts/financial data were untouched. Captures show window content, not PDFs. Recall returned withdrawn historical sources, so current source was used. Earlier memory service status was healthy without pending/failed work but sources=0; sync/check run without interpreting that result as indexing documents without registered sources.

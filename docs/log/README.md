@@ -1,78 +1,78 @@
-# سجلات العمل
+# Work logs
 
-- [2026-10-28 — بدء تتبع المرحلة 00 وتقييم انطباق التصميم](2026-10-28-phase-00-kickoff.md).
+- [2026-10-28 — Start phase 00 tracking and assess design applicability](2026-10-28-phase-00-kickoff.md).
 
-- [2026-10-28 — اعتماد القواعد العامة وتتبع المراحل](2026-10-28-universal-workflow.md).
+- [2026-10-28 — Adopt universal rules and phase tracking](2026-10-28-universal-workflow.md).
 
-- [2026-10-28 — نقل Electron إلى مجلد مرجعي مع إبقاء الخطة والصور](2026-10-28-electron-reference-folder.md).
+- [2026-10-28 — Move Electron to a reference folder while preserving plans/images](2026-10-28-electron-reference-folder.md).
 
-الحالة: فهرس نتائج العمل. التاريخ: 2026-10-16. المالك: القائم على المشروع.
+Status: work-outcome index. Date: 2026-10-16. Owner: project maintainer.
 
-| التاريخ | العمل والدليل |
+| Date | Work and evidence |
 | --- | --- |
-| 2026-10-27 | [ضبط تمدد جميع الواجهات](2026-10-27-page-width.md) |
-| 2026-10-26 | [تنفيذ إصلاحات المراجعة الـ64](2026-10-26-ux-audit-fixes.md) |
-| 2026-10-26 | [مراجعة التطبيق والواجهة وتجربة الاستخدام بالكامل](2026-10-26-full-app-ux-audit.md) |
-| 2026-10-26 | [ملاحظات تصميم المبيعات — الجولة الثانية](2026-10-26-sales-layout-review.md) |
-| 2026-10-26 | [معاينة المتصفح وتحديد ملاحظات التصميم](2026-10-26-browser-design-review.md) |
-| 2026-10-26 | [فتح وإغلاق القائمة الجانبية لتوسيع مساحة العمل](2026-10-26-sidebar-toggle.md) |
-| 2026-10-26 | [المبيعات والمخزن واختصارات الواجهات](2026-10-26-sales-inventory.md) |
-| 2026-10-17 | [ترتيب المينيو وتصحيح المحاذاة والقراءة مع حفظ الأسعار](2026-10-17-menu-polish.md) |
-| 2026-10-17 | [إضافة صواني الدليمية وقسم الدجاج وتصحيح سعر الدجاجة](2026-10-17-menu-dulaimiya-chicken.md) |
-| 2026-10-16 | [إنشاء مينيو مطعم جنة بغداد بالأسعار القديمة والجديدة](2026-10-16-jannat-baghdad-menu.md) |
-| 2026-10-16 | [تصحيح اتجاه المينيو إلى مطعم شعبي عربي](2026-10-16-arabic-popular-menu.md) |
-| 2026-10-16 | [تثبيت نطاق المطعم الواحد وتوثيق المشروع وربط Hindsight](2026-10-16-project-documentation.md) |
+| 2026-10-27 | [Control excessive UI stretching](2026-10-27-page-width.md) |
+| 2026-10-26 | [Implement the 64 audit fixes](2026-10-26-ux-audit-fixes.md) |
+| 2026-10-26 | [Complete application, UI and usability review](2026-10-26-full-app-ux-audit.md) |
+| 2026-10-26 | [Sales design feedback — second round](2026-10-26-sales-layout-review.md) |
+| 2026-10-26 | [Browser preview and design feedback](2026-10-26-browser-design-review.md) |
+| 2026-10-26 | [Open/close sidebar to expand workspace](2026-10-26-sidebar-toggle.md) |
+| 2026-10-26 | [Sales, inventory and screen shortcuts](2026-10-26-sales-inventory.md) |
+| 2026-10-17 | [Organize the menu and correct alignment/readability while preserving prices](2026-10-17-menu-polish.md) |
+| 2026-10-17 | [Add Dulaimiya trays/chicken section and correct chicken price](2026-10-17-menu-dulaimiya-chicken.md) |
+| 2026-10-16 | [Create Jannat Baghdad menu with old/new prices](2026-10-16-jannat-baghdad-menu.md) |
+| 2026-10-16 | [Correct the menu direction for an Arabic traditional restaurant](2026-10-16-arabic-popular-menu.md) |
+| 2026-10-16 | [Establish one-restaurant scope, documentation and Hindsight](2026-10-16-project-documentation.md) |
 
-كل سجل يذكر الطلب والتغيير والسبب والتحقق الفعلي والقيود والخطوة التالية. لا نكتب سجلات قديمة توحي بأن أعمالاً لم نراجعها تحققت الآن؛ المراجع الحالية تصف المصدر، وهذا الفهرس يبدأ من هذه المهمة.
+Each log records request, change, rationale, actual verification, limits and next action. Do not create historical logs implying unreviewed work was verified now; current references describe source, and this index starts with this task.
 
-- [ضبط الشطب والتوصيل والأسعار القديمة](2026-10-17-menu-cross-footer.md).
+- [Adjust strike marks, delivery number and old prices](2026-10-17-menu-cross-footer.md).
 
-- [منيو الصالة المستقل](2026-10-17-dine-in-menu.md).
+- [Separate dine-in menu](2026-10-17-dine-in-menu.md).
 
-- [إضافة الأجنحة لمنيو الصالة](2026-10-17-dine-in-wings.md).
+- [Add wings to the dine-in menu](2026-10-17-dine-in-wings.md).
 
-- [السمك والأجنحة في منيو العروض](2026-10-17-promo-fish-wings.md).
-| 2026-10-25 | [فواتير المشتريات بالكارتون والقطعة](2026-10-25-purchase-invoices.md) |
+- [Fish and wings in the promotional menu](2026-10-17-promo-fish-wings.md).
+| 2026-10-25 | [Purchase invoices by carton and piece](2026-10-25-purchase-invoices.md) |
 
-| 2026-10-25 | [كتالوج مواد وأسعار موحّد لفواتير الموردين](2026-10-25-shared-material-catalog.md) |
+| 2026-10-25 | [Shared material/price catalog for supplier invoices](2026-10-25-shared-material-catalog.md) |
 
-| 2026-10-25 | [فصل مصروفات القاصة وإضافة كشف الحساب](2026-10-25-daily-account-statement.md) |
+| 2026-10-25 | [Separate cashbox expenses and add account statement](2026-10-25-daily-account-statement.md) |
 
-| 2026-10-25 | [اعتماد الرصيد الكلي اليومي من المصروف والمتبقي](2026-10-25-daily-balance-formula.md) |
+| 2026-10-25 | [Clarify daily total balance from expenses and remainder](2026-10-25-daily-balance-formula.md) |
 
-- [إعادة تصميم شاشة البيع — 2026-10-27](2026-10-27-sales-reference-redesign.md).
+- [Redesign Sales — 2026-10-27](2026-10-27-sales-reference-redesign.md).
 
-- [تحديث تطبيق الماك إلى 1.12.0 — 2026-10-27](2026-10-27-macos-app-update.md).
+- [Update the Mac application to 1.12.0 — 2026-10-27](2026-10-27-macos-app-update.md).
 
-- [إعادة تنظيم الإعدادات — 2026-10-27](2026-10-27-settings-redesign.md).
+- [Reorganize Settings — 2026-10-27](2026-10-27-settings-redesign.md).
 
-- [قائمة إدارة أنواع الطلبات — 2026-10-27](2026-10-27-order-type-manager.md).
+- [Order-type management list — 2026-10-27](2026-10-27-order-type-manager.md).
 
-- [خيار حجم البطاقات في البيع فقط — 2026-10-27](2026-10-27-sales-display-only.md).
+- [Card-size control on Sales only — 2026-10-27](2026-10-27-sales-display-only.md).
 
-- [تنظيم شريط المخزن — 2026-10-27](2026-10-27-inventory-toolbar.md).
+- [Organize the inventory toolbar — 2026-10-27](2026-10-27-inventory-toolbar.md).
 
-- [بطاقات بيع أصغر وإضافة من الزاوية — 2026-10-27](2026-10-27-compact-sales-cards.md).
+- [Smaller sales cards with corner addition — 2026-10-27](2026-10-27-compact-sales-cards.md).
 
-- [إزالة واجهة سلفة العمال — 2026-10-27](2026-10-27-remove-worker-savings.md).
+- [Remove the worker-advance UI — 2026-10-27](2026-10-27-remove-worker-savings.md).
 
-- [إضافة 25 صنفاً توضيحياً للمعاينة — 2026-10-27](2026-10-27-extra-preview-products.md).
+- [Add 25 illustrative preview products — 2026-10-27](2026-10-27-extra-preview-products.md).
 
-- [تصغير تفاصيل الطلب — 2026-10-27](2026-10-27-compact-order-details.md).
+- [Compact order details — 2026-10-27](2026-10-27-compact-order-details.md).
 
-- [مراجعة التمدد في النافذة الكاملة — 2026-10-27](2026-10-27-fullscreen-layout-review.md).
+- [Review full-window layout stretching — 2026-10-27](2026-10-27-fullscreen-layout-review.md).
 
-- [تصحيح المحاذاة واستغلال عرض النافذة](2026-10-27-fluid-alignment.md)
+- [Correct alignment and use window width](2026-10-27-fluid-alignment.md)
 
-- [تنظيم المحتوى داخل الصفحات](2026-10-27-content-density.md)
+- [Organize page content](2026-10-27-content-density.md)
 
-- [مسارات MVP](2026-10-27-mvp-workflows.md)
+- [MVP workflows](2026-10-27-mvp-workflows.md)
 
-- [نقل Figma — جزئي ومتوقف عند حد Starter](2026-10-27-figma-transfer.md)
+- [Figma transfer — partial and stopped at Starter limit](2026-10-27-figma-transfer.md)
 
-- [خطة إعادة بناء Flutter ومكتبة الصور — 19 مرحلة](2026-10-27-flutter-rebuild-plan.md)
+- [Flutter rebuild plan and screenshot library — 19 phases](2026-10-27-flutter-rebuild-plan.md)
 
-- [دمج مراحل Flutter إلى 12 مرحلة مع حفظ المتطلبات والصور](2026-10-27-flutter-phase-consolidation.md)
+- [Consolidate Flutter into 12 phases preserving requirements/images](2026-10-27-flutter-phase-consolidation.md)
 
 - [GitHub repository rename and project upload](2026-10-28-github-upload.md)
 

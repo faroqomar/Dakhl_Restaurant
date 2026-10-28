@@ -1,21 +1,21 @@
-# قائمة إدارة أنواع الطلبات
+# Order-type management list
 
-الحالة: منفّذ ومتحقق منه في المصدر والمعاينة. التاريخ: 2026-10-27. المصدر: صورة المالك وطلب قائمة مع إضافة وحذف وتعطيل.
+Status: implemented and verified in source/preview. Date: 2026-10-27. Source: the owner's screenshot and request for a list with add, delete and disable controls.
 
-## التنفيذ والسبب
+## Implementation and rationale
 
-استبدال مربع النص الظاهر بقائمة عناصر: إضافة اسم، تعطيل/تفعيل، حذف، وقائمة منسدلة لتحديد الافتراضي. تبقى التعديلات ضمن الحفظ الموحد، مع منع تكرار الاسم أو حذف/تعطيل آخر نوع مفعّل. لا تتغير المبيعات التاريخية؛ الفاتورة الفارغة فقط تتبنى الافتراضي الجديد بعد الحفظ.
+Replaced the visible text area with an item list: add a name, disable/enable, delete and a default-selection dropdown. Changes remain part of unified settings save, rejecting duplicate names and deletion/disabling of the last enabled type. Historical sales are unchanged; only an empty ticket adopts the new default after save.
 
-حفظ التعطيل في preferences.disabledOrderTypes كحقل اختياري متحقق منه؛ الملفات القديمة تعمل بلا الحقل وتحتفظ بقيمها. الأنواع المفعلة تبقى في preferences.orderTypes. لا تغيير للمبالغ أو الأرصدة أو مسارات ملفات المطعم.
+Disabled state is stored in preferences.disabledOrderTypes as an optional validated field. Old files without it remain valid and retain their values. Enabled types stay in preferences.orderTypes. No amounts, balances or restaurant file paths changed.
 
-## التحقق
+## Verification
 
-npm test نجح 120/120. الاختبارات الجديدة تغطي الإضافة والتعطيل وإعادة التفعيل والافتراضي، التكرار وآخر نوع مفعّل، حذف نوع دون تغيير المبيعات السابقة، حفظ حالة التعطيل عبر إعادة فتح التخزين وبيانات JSON، ومنع إكمال بيع بنوع معطّل. أظهر اختبار الافتراضي أن الفاتورة الفارغة كانت تحتفظ بالنوع السابق؛ أُصلح ثم أعيدت المجموعة بنجاح.
+npm test passed 120/120. New tests cover add/disable/re-enable/default, duplicates and last-enabled protection, deletion without historical-sale changes, disabled-state persistence across storage reopen/JSON, and rejection of a sale using a disabled type. The default test found an empty ticket retaining its previous type; this was fixed and the suite passed again.
 
-معاينة Electron: الأقسام الأربعة بعروض 1512 و1024 و390px (12 حالة) دون تجاوز أفقي. راجعت قائمة الأنواع في المتصفح وتركتها مفتوحة للمستخدم. الصورة المحلية outputs/layout-review/order-types-browser.png. جميع بيانات التحقق معزولة أو توضيحية؛ لم تُعدّل حسابات المطعم. التطبيق المثبت لم يُستبدل.
+Electron preview: four sections at 1512, 1024 and 390px, 12 cases without horizontal overflow. The browser's type list was visually inspected and left open for the user. Local image: outputs/layout-review/order-types-browser.png. All verification data was isolated or illustrative; restaurant accounts were unchanged and the installed application was not replaced.
 
-## الذاكرة والمتابعة
+## Memory and follow-up
 
-استرجاع project-daftar أعاد مصادر تاريخية مسحوبة؛ اعتمدت على المصدر الحالي. متابعة مراجعة المالك للقائمة في المتصفح. نتيجة المزامنة موثقة أدناه.
+project-daftar recall returned withdrawn historical sources; current source was authoritative. Next: owner review of the list in the browser. Synchronization result follows.
 
-شُغّل sync ثم check: الخدمة سليمة ولا عمليات معلقة أو فاشلة، لكن sources=0؛ لذلك لا دليل على فهرسة وثائق الجولة في البنك.
+Ran sync then check: healthy service, no pending/failed operations, but sources=0; there is no proof that this run's documents were indexed in the bank.

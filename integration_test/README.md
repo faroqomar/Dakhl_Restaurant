@@ -39,7 +39,7 @@ Only when approved for native UI operation, launch the separate opt-in harness:
 flutter run -d <device> -t lib/platform/probe_main.dart
 ```
 
-1. Confirm the title says `اختبار تقني — بيانات تجريبية فقط`, the app ID is `com.eros.dakhlrestaurant.phase00`, and the display name is the development app. All controls remain reachable by scroll and desktop keyboard.
+1. Confirm the title identifies "Technical probe — test data only" (English translation of the Arabic UI title), the app ID is `com.eros.dakhlrestaurant.phase00`, and the display name is the development app. All controls remain reachable by scroll and desktop keyboard.
 2. Export the synthetic specimen to a new disposable destination. Never choose a restaurant account, backup, invoice or an existing important file as the destination. Reopen only that synthetic export and confirm success.
 3. Open the file chooser then cancel. Open export then cancel. Record cancellation distinctly from denial/plugin failure. A fake adapter exception is automated boundary evidence only, not an observed native denied write.
 4. Generate the Arabic PDF offline. Open sharing and dismiss without selecting a recipient/app. The plugin returns a handoff boolean and cannot reliably distinguish share dismissal on every platform. `share_unconfirmed` is explicitly inconclusive; success does not prove delivery, and cancellation requires independently observed native UI evidence.

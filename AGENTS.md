@@ -13,7 +13,7 @@ Read AGENTS.md, [PLANS.md](PLANS.md) and [PHASES.md](PHASES.md) before phase wor
 - Flutter work belongs at the root. Preserve electron-reference/ and keep the detailed plan/screenshots in docs/planning/flutter-rebuild/.
 - PLANS.md defines the current 12 phases (00–11) and incorporates their detailed scope. PHASES.md is authoritative for execution status and completion evidence. Published plan pages do not override the tracker.
 - The owner's screenshot-reproduction direction is approved as intent, not evidence of design validation or approval. On 2026-10-28 the owner explicitly replaced Figma with **Penpot**. Penpot is the design/reference-validation destination for this project; the approval gate remains mandatory. The Figma wording in the preserved universal source below is superseded only as to the tool. Non-UI phases record Design: N/A; reassess when UI enters scope.
-- Reuse one Penpot project/file/page for all future create/recreate-design requests: project **Dakhl_Restaurant**, file **Dakhl_Restaurant · Phase designs & wireframes**, page **Dakhl_Restaurant · Designs & Wireframes / التصاميم**. [Canonical page](https://design.penpot.app/#/workspace?team-id=bfddaaba-4180-81d4-8008-db9f13093baa&file-id=122350ae-89ad-8027-8008-dba0bd5cf454&page-id=122350ae-89ad-8027-8008-dba0bd5cf455). Keep phase versions in named boards on that page, preserve prior work, and use computer use if MCP is blocked. Phase 00's current design prerequisite covers only its three listed desktop screenshots and matching wireframes. [Decision and scope](docs/decisions/0015-penpot-design-workspace.md).
+- Reuse one Penpot project/file/page for all future create/recreate-design requests: project **Dakhl_Restaurant**, file **Dakhl_Restaurant · Phase designs & wireframes**, page **Dakhl_Restaurant · Designs & Wireframes / Designs**. This is an English rendering for documentation; canonical IDs and the external workspace are not renamed by this translation. [Canonical page](https://design.penpot.app/#/workspace?team-id=bfddaaba-4180-81d4-8008-db9f13093baa&file-id=122350ae-89ad-8027-8008-dba0bd5cf454&page-id=122350ae-89ad-8027-8008-dba0bd5cf455). Keep phase versions in named boards on that page, preserve prior work, and use computer use if MCP is blocked. Phase 00's current design prerequisite covers only its three listed desktop screenshots and matching wireframes. [Decision and scope](docs/decisions/0015-penpot-design-workspace.md).
 - For each implementation phase, create a dedicated branch/worktree and a traceable PR, preserving existing work. Never reset, discard or silently include unrelated changes. The current rules adoption is a documentation/configuration chore, not the start or completion of phase 00.
 - DONE requires all applicable tests/CI, independent review, user approval, merged PR and applicable release/rollback evidence. Missing design, hardware, signing or access remains pending/blocked, never passed. Never merge without the owner’s approval; never automatically start the next phase.
 - Use the Lead plus appropriate specialist agents automatically as described below; independent Workers have non-overlapping ownership and cannot self-approve. Custom role instructions do not establish separate permissions. Do not change model/provider or permission settings merely to configure these roles.
@@ -281,48 +281,48 @@ Project/
 
 ## Existing restaurant-specific rules — retained
 
-# Dakhl_Restaurant — قواعد المشروع والتوثيق والذاكرة
+# Dakhl_Restaurant — Project, documentation and memory rules
 
-الحالة: تعليمات معتمدة. التاريخ: 2026-10-16. المصدر: توجيه مالك المشروع ومراجعة الملفات الحالية.
+Status: approved instructions. Date: 2026-10-16. Source: project-owner direction and review of current files.
 
-## النطاق
+## Scope
 
-### تنظيم المجلدات — 2026-10-28
+### Folder organization — 2026-10-28
 
-جذر المشروع مخصص لإعادة البناء بـFlutter وDart. التطبيق القديم ومكتبته واختباراته في `electron-reference/` للرجوع إليها؛ لا تنفذ ميزات Flutter داخله. الخطة والصور تبقى في `docs/planning/flutter-rebuild/` خارج مجلد المرجع، والوثائق والذاكرة وGit تبقى مشتركة في الجذر. روابط `docs/`, `outputs/`, `dist/`, `design/` داخل المرجع تشير إلى مجلدات الجذر ولا تعني نقلها. اختبار المرجع من الجذر: `npm --prefix electron-reference test`. لا تشغّل التطبيق المعتاد لمجرد فحص النقل لأنه قد يقرأ حسابات المطعم. [قرار التنظيم](docs/decisions/0013-electron-reference-folder.md).
+The project root is for the Flutter/Dart rebuild. The old application, dependencies and tests are in `electron-reference/` for reference; do not implement Flutter features there. The plan/screenshots stay in `docs/planning/flutter-rebuild/` outside the reference folder; documentation, memory and Git remain shared at the root. Links named `docs/`, `outputs/`, `dist/` and `design/` inside the reference point to root folders and do not mean those folders moved. Run reference tests from the root with `npm --prefix electron-reference test`. Do not launch the normal application merely to verify relocation because it may read restaurant accounts. [Organization decision](docs/decisions/0013-electron-reference-folder.md).
 
-هذا المشروع خاص **بمطعم واحد فقط**. اقرأ `docs/reference/project-scope.md` و`docs/README.md` أولاً. لا تحوّله تلقائياً إلى منصة لعدة مطاعم أو منتج عام. الفواتير والحملات والأفكار والتطبيق الخاص تخدم المطعم نفسه. هذه التعليمات توثّق الاتجاه؛ لا تعني أن الحملات منفّذة داخل التطبيق.
+This project serves **one restaurant only**. Read `docs/reference/project-scope.md` and `docs/README.md` first. Do not automatically turn it into a multi-restaurant platform or general-purpose product. Invoices, campaigns, ideas and the dedicated application serve the same restaurant. These instructions document direction, not implemented in-app campaign functionality.
 
-## قبل العمل
+## Before work
 
-1. استرجع ما يخص المهمة من بنك **project-daftar** باستخدام `daftar_memory` أو `./scripts/memory recall --query 'موضوع المهمة'`.
-2. راجع الملفات الحالية التي تشير إليها الذاكرة. ملفات المشروع وتوجيه المستخدم الحالي تتقدم على الذاكرة التاريخية. لا تستخدم بنك AlDakhl أو تفترض أن تقنياته تخص Dakhl_Restaurant.
-3. اقرأ `docs/reference/accounting-rules.md` قبل أي تغيير مالي، و`docs/reference/application.md` قبل تغيير الحفظ أو التقارير. للواجهة اقرأ `.impeccable.md`.
-4. عند تعطل الذاكرة، تابع العمل المستقل الآمن وسجّل التعطل؛ لا تدّعِ استرجاعاً أو مزامنة ناجحين.
+1. Recall task-relevant context from **project-daftar** through `daftar_memory` or `./scripts/memory recall --query 'task topic'`.
+2. Inspect current files cited by memory. Project files and current user direction take precedence over historical memory. Do not use AlDakhl's bank or assume its technologies belong to Dakhl_Restaurant.
+3. Read `docs/reference/accounting-rules.md` before financial changes and `docs/reference/application.md` before persistence/report changes. For UI work, read `.impeccable.md`.
+4. If memory is unavailable, continue safe independent work and record the outage; do not claim successful recall or synchronization.
 
-## الحفاظ على التطبيق
+## Protect the application
 
-- التطبيق الحالي Electron وJavaScript، وبياناته محلية بصيغة JSON. لا تفرض تقنية أو قاعدة بيانات جديدة بسبب أمثلة من مشروع آخر.
-- حافظ على الحسابات القديمة، والنسخ الاحتياطية، والتحقق قبل الحفظ والاستيراد. أي تغيير صيغة يحتاج ترحيلاً يحافظ على السجلات واختباراً مناسباً.
-- سلفة العمال مستقلة عن المصاريف والقاصة. أعداد الدجاج خارج المبالغ المالية. قائمة المورد تسجل الدين؛ التسديد يظهر كمصروف ويخصم من مصدره مرة واحدة.
-- الرصيد المتبقي والقاصة والرصيد الكلي ليست تسميات بديلة لصافي الربح. وثّق معنى أي تقرير قبل تنفيذه.
-- استخدم العربية RTL والأخضر الهادئ والخلفية الفاتحة. أثناء التحقق لا تحفظ بيانات تجريبية في حسابات المطعم؛ استخدم الاختبارات ذات البيانات المعزولة.
-- طلب توثيق أو تسجيل فكرة لا يفوّض نشر إعلان أو صرف ميزانية أو مراسلة أشخاص أو تعديل حسابات فعلية.
+- The current application is Electron/JavaScript with local JSON data. Do not impose a new technology/database because another project's examples use it.
+- Preserve older accounts, backups and validation before save/import. Every schema change needs a record-preserving migration and appropriate tests.
+- Worker savings are independent of expenses/cashbox. Chicken counts are outside financial amounts. A supplier invoice records debt; payment enters expenses and deducts its source exactly once.
+- Remaining cash, cashbox and overall balance are not alternative names for net profit. Document a report's meaning before implementation.
+- Use Arabic RTL, calm green and a light background in the application UI. During verification, never save sample data into restaurant accounts; use isolated test fixtures.
+- A request to document an idea authorizes neither publishing an advertisement, spending a budget, messaging people nor changing real accounts.
 
-## أثناء العمل وقبل الإكمال
+## During work and before completion
 
-1. سجّل الأفكار والحملات في `docs/planning/`، والسياسات في `docs/reference/`، وخطوات العمل في `docs/how-to/`.
-2. وثّق القرار المهم وسببه في `docs/decisions/`؛ احتفظ بالقرار السابق مع رابط ما حل محله.
-3. حدّث الوثائق المتأثرة وسجّل نتيجة المهمة في `docs/log/YYYY-MM-DD-topic.md`: الطلب، التغيير، السبب، التحقق الفعلي، القيود والخطوة التالية.
-4. ميّز مقترحاً، ومعتمداً، ومنفّذاً، ومتحققاً منه. لا تسجّل نتائج اختبارات أو حملات بلا دليل. لا تصنع أفكاراً أو حملات باسم المالك لمجرد ملء السجل.
-5. شغّل التحقق المناسب للتغيير. تغييرات التطبيق تحتاج `npm test` وما يلزم للمسار المتأثر؛ التوثيق وحده يحتاج مراجعة المصدر والروابط ودقة الحالة.
-6. شغّل `./scripts/memory sync` ثم `./scripts/memory check`؛ إرسال الطلب للطابور ليس اكتمالاً. أعد الفحص عند وجود عمليات معلقة وصرّح بأي فشل أو انتظار.
+1. Record ideas/campaigns in `docs/planning/`, policies in `docs/reference/` and procedures in `docs/how-to/`.
+2. Record significant decisions and rationale in `docs/decisions/`; preserve earlier decisions with successor links.
+3. Update affected documentation and record the task outcome in `docs/log/YYYY-MM-DD-topic.md`: request, change, reason, actual verification, limits and next action.
+4. Distinguish proposed, approved, implemented and verified states. Never record test/campaign results without evidence. Do not invent ideas/campaigns in the owner's name merely to fill a register.
+5. Run verification appropriate to the change. Application changes need `npm test` and the affected-path checks; documentation-only changes need source/link/state-accuracy review.
+6. Run `./scripts/memory sync` and then `./scripts/memory check`; queue submission is not completion. Recheck pending operations and disclose failures/pending work.
 
-## حدود ذاكرة المشروع
+## Project-memory boundaries
 
-Hindsight فهرس مشتق للتوثيق وقرارات التطوير، وليس مخزن حسابات المطعم أو جزءاً من تشغيل التطبيق. الإعداد المشترك الحالي يعطل حفظ المحادثات الخام (`retainSessions: false`)؛ احفظ المعرفة المفيدة في الوثائق ثم زامنها.
+Hindsight is a derived index of documentation/development decisions, not a restaurant-account store or application runtime component. Shared configuration currently disables raw-conversation retention (`retainSessions: false`); write useful knowledge into documents and synchronize it.
 
-لا تفهرس ملفات الحسابات أو نسخها أو فواتير فعلية أو بيانات عملاء أو هواتف أو كلمات مرور أو مفاتيح أو `.env` أو تفريغ المحادثات. ضع فقط المعلومات اللازمة للمتابعة، وأبقِ أمثلة القوالب خالية. استخدم `<!-- hindsight:ignore -->` على سطر مستقل لاستثناء مستند؛ راجع دليل الذاكرة قبل إضافة مسارات للفهرسة.
+Never index account files/backups, actual invoices, customer data, phone numbers, passwords, keys, `.env` or conversation dumps. Retain only what is needed for follow-up and keep template examples empty. A standalone `<!-- hindsight:ignore -->` line excludes a document; consult the memory guide before adding indexing paths.
 
 ## Selected project skills — 2026-10-28
 
@@ -333,3 +333,7 @@ For Penpot tasks, use the reusable [Penpot skill](/Users/eros/.codex/skills/penp
 ## Repeated problems and efficient execution
 
 Owner instruction, 2026-10-28: continuously document new and repeated problems, complications, failed approaches and unnecessary time/token use so later runs do not repeat them. Consult [the project prevention record](docs/how-to/repeated-problems.md) before retrying a known issue; keep symptom, cause, verified remedy or unresolved status, prevention and evidence current. Reuse task context and valid unchanged-source evidence, keep output bounded, batch necessary documentation/review work, and avoid redundant polling or speculative investigations. Preserve required verification, independent review, explicit design/revision approvals and separate engine/app ownership and memory; efficiency never waives a gate.
+
+## Per-phase ownership, packages, documentation and diagnostics
+
+Owner reaffirmation, 2026-10-28: apply [the consumer delivery obligations](docs/how-to/engine-consumer-contract.md) and Madar's authoritative delivery standards in every phase. Classify engine work, app work and contract/revision first. Write shared rules/contracts/adapters once in Madar and consume reviewed packages here; keep app UI/workflows/safeguards here. Deliver engine capability documentation, justified Dart/Flutter packages when needed, safe structured terminal logging and meaningful engine/consumer tests. No unused dependency or logger retrofit is introduced by this rule. All documentation and Hindsight knowledge are English-only; preserve Arabic executable UI/fixtures and frozen screenshots/source assets.

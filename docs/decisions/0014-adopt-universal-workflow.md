@@ -1,21 +1,21 @@
-# 0014 — اعتماد قواعد العمل العامة وتتبع المراحل
+# 0014 — Adopt universal development rules and phase tracking
 
-الحالة: اعتماد بطلب صريح من المالك؛ تنفيذ مراحل Flutter لم يبدأ. التاريخ: 2026-10-28.
+Status: adopted at the owner's explicit request; Flutter phase implementation has not started. Date: 2026-10-28.
 
-## المصدر والقرار
+## Source and decision
 
-طلب المالك استخدام ملفي Universal Rules & Agents وPhase Tracker من ErosVault/My_Workflow كقواعد للمشروع. نُقل نص القواعد العامة كاملاً إلى AGENTS.md مع الاحتفاظ بقواعد المطعم وتنظيم electron-reference وحماية الحسابات والخطة والصور. حفظت نسخ المصدر وبصماته في docs/reference/workflow/ دون تعديل الأصلين.
+The owner requested using Universal Rules & Agents and Phase Tracker from ErosVault/My_Workflow as this project's rules. The complete universal-rules text was copied into AGENTS.md while retaining restaurant rules, electron-reference organization, account protection, the plan and screenshots. Source copies and hashes were preserved in docs/reference/workflow/ without modifying the two originals.
 
-أُضيف PLANS.md لفهرس المراحل الـ12 الحالية ونطاقها التفصيلي، وPHASES.md لتتبعها من 00 إلى 11، وPROMPTS.md للطلبات الستة القابلة لإعادة الاستخدام، وdocs/phases/ للأدلة، وثلاثة ملفات أدوار planner وux وreviewer. بقي إعداد الذاكرة والموديل والصلاحيات كما هو.
+Added PLANS.md for the current 12 phases and detailed scope, PHASES.md for tracking 00–11, PROMPTS.md for six reusable requests, docs/phases/ for evidence, and three role files: planner, ux and reviewer. Memory, model and permission configuration remained unchanged.
 
-## قواعد التنفيذ الجديدة
+## New execution rules
 
-التنسيق يقوده Lead ويستخدم وكلاء مناسبين تلقائياً، مع Planner للقراءة فقط، وعمل مستقل بحدود ملفات واضحة، ومراجع مستقل عن التنفيذ. تحتاج مراحل UI مرجعاً مناسباً متحققاً منه في Figma واعتماد المالك قبل التنفيذ. اتجاه الصور الحالي ليس إثبات تحقق Figma.
+The Lead coordinates appropriate agents automatically, with a read-only Planner, independent work under explicit file ownership and a Reviewer independent of implementation. UI phases need a suitable reference validated in Figma and owner approval before implementation. Current screenshot direction is not evidence of Figma verification.
 
-كل مرحلة تنفيذ لها branch/worktree وPR قابلان للتتبع، واختبارات سلوك ذات معنى قبل التنفيذ، وقياسات رقمية قبل التحسين عند انطباقها، وفحوص CI المناسبة. لا دمج دون موافقة المالك. لا تُسجل DONE إلا بعد الفحوص والمراجعة والاعتماد والدمج والتحقق المطلوب للإصدار؛ ولا تبدأ المرحلة التالية تلقائياً.
+Every implementation phase has a traceable branch/worktree and PR, meaningful behavior tests before implementation, numeric measurements before optimization where applicable, and appropriate CI checks. Never merge without owner approval. Record DONE only after checks, review, approval, merge and required release verification; never start the next phase automatically.
 
-## الحالة والحدود
+## Status and limits
 
-هذه تهيئة توثيق وأدوار وليست المرحلة 00. كل المراحل TODO؛ لم تُخترع فروع أو PR أو موافقات أو نتائج Flutter. اختبارات Electron السابقة والصور المرجعية لا تعني اكتمال مراحل جديدة. تبقى قواعد النطاق المالي والمحلي وسلامة البيانات سارية، ولا تُطبق هذه المهمة تغييرات على AlDakhl أو Madar أو ملفات Vault.
+This is documentation/role preparation, not phase 00. All phases are TODO; no branches, PRs, approvals or Flutter results were invented. Earlier Electron tests and reference captures do not establish completion of new phases. Financial/local-scope and data-integrity rules remain in force, and this task changes neither AlDakhl, Madar nor Vault files.
 
-الأدلة الفعلية ونتيجة الفحص والمراجعة في [سجل الاعتماد](../log/2026-10-28-universal-workflow.md).
+Actual evidence, inspection and review outcomes are in the [adoption log](../log/2026-10-28-universal-workflow.md).

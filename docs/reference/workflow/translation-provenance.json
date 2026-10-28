@@ -1,0 +1,14 @@
+{
+  "translation_date": "2026-10-28",
+  "policy": "English-only documentation approved by owner; historical meaning and identifiers retained.",
+  "file": "docs/reference/workflow/project-rules-before-adoption.source.txt",
+  "original_revision": "31f5df3bb2d6574cc1d71a7673557d4a939d2df3",
+  "original_sha256": "bffec3b8d3de7850a6fcce037deafa1adef34451cfe993a38b6902ac2b15dc81",
+  "translation_sha256": "dc715a5807efbd21e08e985839d1de33d21fec7539ea18589907f4fa0905db86",
+  "original_retention": "Git history at original_revision and path",
+  "unchanged_original_sources": [
+    "universal-rules.source.txt",
+    "phase-tracker.source.txt"
+  ],
+  "original_source_manifest": "source-manifest.json"
+}

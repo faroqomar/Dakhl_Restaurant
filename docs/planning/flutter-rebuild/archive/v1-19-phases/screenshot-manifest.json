@@ -8,7 +8,7 @@
     {
       "id": "desktop-sales",
       "file": "desktop-sales.png",
-      "title": "بيع جديدجاهز لاستقبال الطلبات",
+      "title": "New sale — ready for orders",
       "phase": "06",
       "mobile": false,
       "view": "sales",
@@ -23,7 +23,7 @@
     {
       "id": "desktop-sale-history",
       "file": "desktop-sale-history.png",
-      "title": "سجل المبيعات",
+      "title": "Sales history",
       "phase": "08",
       "mobile": false,
       "view": "sale-history",
@@ -38,7 +38,7 @@
     {
       "id": "desktop-sale-history-bottom",
       "file": "desktop-sale-history-bottom.png",
-      "title": "سجل المبيعات",
+      "title": "Sales history",
       "phase": "08",
       "mobile": false,
       "view": "sale-history",
@@ -53,7 +53,7 @@
     {
       "id": "desktop-inventory",
       "file": "desktop-inventory.png",
-      "title": "المخزن",
+      "title": "Inventory",
       "phase": "05",
       "mobile": false,
       "view": "inventory",
@@ -68,7 +68,7 @@
     {
       "id": "desktop-expenses",
       "file": "desktop-expenses.png",
-      "title": "المصاريف اليومية",
+      "title": "Daily expenses",
       "phase": "09",
       "mobile": false,
       "view": "expenses",
@@ -83,7 +83,7 @@
     {
       "id": "desktop-expenses-bottom",
       "file": "desktop-expenses-bottom.png",
-      "title": "المصاريف اليومية",
+      "title": "Daily expenses",
       "phase": "09",
       "mobile": false,
       "view": "expenses",
@@ -98,7 +98,7 @@
     {
       "id": "desktop-statement",
       "file": "desktop-statement.png",
-      "title": "كشف الحساب",
+      "title": "Account statement",
       "phase": "10",
       "mobile": false,
       "view": "statement",
@@ -113,7 +113,7 @@
     {
       "id": "desktop-statement-bottom",
       "file": "desktop-statement-bottom.png",
-      "title": "كشف الحساب",
+      "title": "Account statement",
       "phase": "10",
       "mobile": false,
       "view": "statement",
@@ -128,7 +128,7 @@
     {
       "id": "desktop-suppliers",
       "file": "desktop-suppliers.png",
-      "title": "الموردون",
+      "title": "Suppliers",
       "phase": "11",
       "mobile": false,
       "view": "suppliers",
@@ -143,7 +143,7 @@
     {
       "id": "desktop-invoices",
       "file": "desktop-invoices.png",
-      "title": "فواتير المشتريات",
+      "title": "Purchase invoices",
       "phase": "13",
       "mobile": false,
       "view": "invoices",
@@ -158,7 +158,7 @@
     {
       "id": "desktop-invoices-bottom",
       "file": "desktop-invoices-bottom.png",
-      "title": "فواتير المشتريات",
+      "title": "Purchase invoices",
       "phase": "13",
       "mobile": false,
       "view": "invoices",
@@ -173,7 +173,7 @@
     {
       "id": "desktop-materials",
       "file": "desktop-materials.png",
-      "title": "المواد والأسعار",
+      "title": "Materials and prices",
       "phase": "12",
       "mobile": false,
       "view": "materials",
@@ -188,7 +188,7 @@
     {
       "id": "desktop-payments",
       "file": "desktop-payments.png",
-      "title": "التسديدات",
+      "title": "Payments",
       "phase": "14",
       "mobile": false,
       "view": "payments",
@@ -203,7 +203,7 @@
     {
       "id": "desktop-cash",
       "file": "desktop-cash.png",
-      "title": "القاصة",
+      "title": "Cashbox",
       "phase": "15",
       "mobile": false,
       "view": "cash",
@@ -218,7 +218,7 @@
     {
       "id": "desktop-categories",
       "file": "desktop-categories.png",
-      "title": "الخانات",
+      "title": "Categories",
       "phase": "04",
       "mobile": false,
       "view": "categories",
@@ -233,7 +233,7 @@
     {
       "id": "desktop-settings",
       "file": "desktop-settings.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": false,
       "view": "settings",
@@ -248,7 +248,7 @@
     {
       "id": "desktop-settings-bottom",
       "file": "desktop-settings-bottom.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": false,
       "view": "settings",
@@ -263,7 +263,7 @@
     {
       "id": "desktop-navigation",
       "file": "desktop-navigation.png",
-      "title": "بيع جديدجاهز لاستقبال الطلبات",
+      "title": "New sale — ready for orders",
       "phase": "03",
       "mobile": false,
       "view": "sales",
@@ -278,7 +278,7 @@
     {
       "id": "desktop-sales-cart",
       "file": "desktop-sales-cart.png",
-      "title": "بيع جديدجاهز لاستقبال الطلبات",
+      "title": "New sale — ready for orders",
       "phase": "06",
       "mobile": false,
       "view": "sales",
@@ -293,7 +293,7 @@
     {
       "id": "desktop-sales-compact",
       "file": "desktop-sales-compact.png",
-      "title": "بيع جديدجاهز لاستقبال الطلبات",
+      "title": "New sale — ready for orders",
       "phase": "06",
       "mobile": false,
       "view": "sales",
@@ -308,7 +308,7 @@
     {
       "id": "desktop-hold-order",
       "file": "desktop-hold-order.png",
-      "title": "تعليق الطلب",
+      "title": "Hold order",
       "phase": "07",
       "mobile": false,
       "view": "sales",
@@ -323,7 +323,7 @@
     {
       "id": "desktop-held-orders",
       "file": "desktop-held-orders.png",
-      "title": "الطلبات المعلّقة",
+      "title": "Held orders",
       "phase": "07",
       "mobile": false,
       "view": "sales",
@@ -338,7 +338,7 @@
     {
       "id": "desktop-product-new",
       "file": "desktop-product-new.png",
-      "title": "إضافة صنف",
+      "title": "Add product",
       "phase": "05",
       "mobile": false,
       "view": "inventory",
@@ -353,7 +353,7 @@
     {
       "id": "desktop-product-new-bottom",
       "file": "desktop-product-new-bottom.png",
-      "title": "إضافة صنف",
+      "title": "Add product",
       "phase": "05",
       "mobile": false,
       "view": "inventory",
@@ -368,7 +368,7 @@
     {
       "id": "desktop-product-edit",
       "file": "desktop-product-edit.png",
-      "title": "تعديل الصنف",
+      "title": "Edit product",
       "phase": "05",
       "mobile": false,
       "view": "inventory",
@@ -383,7 +383,7 @@
     {
       "id": "desktop-product-edit-bottom",
       "file": "desktop-product-edit-bottom.png",
-      "title": "تعديل الصنف",
+      "title": "Edit product",
       "phase": "05",
       "mobile": false,
       "view": "inventory",
@@ -398,7 +398,7 @@
     {
       "id": "desktop-stock",
       "file": "desktop-stock.png",
-      "title": "تزويد أو تسوية المخزون",
+      "title": "Restock or adjust inventory",
       "phase": "05",
       "mobile": false,
       "view": "inventory",
@@ -413,7 +413,7 @@
     {
       "id": "desktop-stock-history",
       "file": "desktop-stock-history.png",
-      "title": "حركة الصنف",
+      "title": "Product movements",
       "phase": "05",
       "mobile": false,
       "view": "inventory",
@@ -428,7 +428,7 @@
     {
       "id": "desktop-stock-reverse",
       "file": "desktop-stock-reverse.png",
-      "title": "تصحيح حركة المخزن",
+      "title": "Correct inventory movement",
       "phase": "05",
       "mobile": false,
       "view": "inventory",
@@ -443,7 +443,7 @@
     {
       "id": "desktop-sale-paid",
       "file": "desktop-sale-paid.png",
-      "title": "تم البيع وحُفظ الوصل",
+      "title": "Sale completed and receipt saved",
       "phase": "06",
       "mobile": false,
       "view": "sale-history",
@@ -458,7 +458,7 @@
     {
       "id": "desktop-receipt",
       "file": "desktop-receipt.png",
-      "title": "وصل بيع محفوظ",
+      "title": "Saved sales receipt",
       "phase": "08",
       "mobile": false,
       "view": "sale-history",
@@ -473,7 +473,7 @@
     {
       "id": "desktop-receipt-bottom",
       "file": "desktop-receipt-bottom.png",
-      "title": "وصل بيع محفوظ",
+      "title": "Saved sales receipt",
       "phase": "08",
       "mobile": false,
       "view": "sale-history",
@@ -488,7 +488,7 @@
     {
       "id": "desktop-sale-return",
       "file": "desktop-sale-return.png",
-      "title": "مرتجع فاتورة S-000001",
+      "title": "Invoice return S-000001",
       "phase": "08",
       "mobile": false,
       "view": "sale-history",
@@ -503,7 +503,7 @@
     {
       "id": "desktop-sale-void",
       "file": "desktop-sale-void.png",
-      "title": "إلغاء فاتورة S-000003",
+      "title": "Void invoice S-000003",
       "phase": "08",
       "mobile": false,
       "view": "sale-history",
@@ -518,7 +518,7 @@
     {
       "id": "desktop-void-receipt",
       "file": "desktop-void-receipt.png",
-      "title": "فاتورة ملغاة",
+      "title": "Voided invoice",
       "phase": "08",
       "mobile": false,
       "view": "sale-history",
@@ -533,7 +533,7 @@
     {
       "id": "desktop-expense-new",
       "file": "desktop-expense-new.png",
-      "title": "إضافة مصروف",
+      "title": "Add expense",
       "phase": "09",
       "mobile": false,
       "view": "expenses",
@@ -548,7 +548,7 @@
     {
       "id": "desktop-expense-edit",
       "file": "desktop-expense-edit.png",
-      "title": "تعديل المصروف",
+      "title": "Edit expense",
       "phase": "09",
       "mobile": false,
       "view": "expenses",
@@ -563,7 +563,7 @@
     {
       "id": "desktop-expense-edit-bottom",
       "file": "desktop-expense-edit-bottom.png",
-      "title": "تعديل المصروف",
+      "title": "Edit expense",
       "phase": "09",
       "mobile": false,
       "view": "expenses",
@@ -578,7 +578,7 @@
     {
       "id": "desktop-remaining",
       "file": "desktop-remaining.png",
-      "title": "الرصيد المتبقي",
+      "title": "Remaining balance",
       "phase": "09",
       "mobile": false,
       "view": "expenses",
@@ -593,7 +593,7 @@
     {
       "id": "desktop-daily-transfer",
       "file": "desktop-daily-transfer.png",
-      "title": "تحويل من رصيد اليوم للقاصة",
+      "title": "Transfer from daily balance to cashbox",
       "phase": "15",
       "mobile": false,
       "view": "expenses",
@@ -608,7 +608,7 @@
     {
       "id": "desktop-chicken",
       "file": "desktop-chicken.png",
-      "title": "تتبّع الدجاج",
+      "title": "Chicken tracking",
       "phase": "09",
       "mobile": false,
       "view": "expenses",
@@ -623,7 +623,7 @@
     {
       "id": "desktop-balance",
       "file": "desktop-balance.png",
-      "title": "الرصيد الكلي",
+      "title": "Total balance",
       "phase": "09",
       "mobile": false,
       "view": "expenses",
@@ -638,7 +638,7 @@
     {
       "id": "desktop-total",
       "file": "desktop-total.png",
-      "title": "مجموع المصاريف",
+      "title": "Total expenses",
       "phase": "09",
       "mobile": false,
       "view": "expenses",
@@ -653,7 +653,7 @@
     {
       "id": "desktop-day-date",
       "file": "desktop-day-date.png",
-      "title": "تعديل تاريخ الفاتورة اليومية",
+      "title": "Edit daily invoice date",
       "phase": "09",
       "mobile": false,
       "view": "expenses",
@@ -668,7 +668,7 @@
     {
       "id": "desktop-supplier-new",
       "file": "desktop-supplier-new.png",
-      "title": "إضافة مورد",
+      "title": "Add supplier",
       "phase": "11",
       "mobile": false,
       "view": "suppliers",
@@ -683,7 +683,7 @@
     {
       "id": "desktop-supplier-edit",
       "file": "desktop-supplier-edit.png",
-      "title": "تعديل المورد",
+      "title": "Edit supplier",
       "phase": "11",
       "mobile": false,
       "view": "suppliers",
@@ -698,7 +698,7 @@
     {
       "id": "desktop-supplier-edit-bottom",
       "file": "desktop-supplier-edit-bottom.png",
-      "title": "تعديل المورد",
+      "title": "Edit supplier",
       "phase": "11",
       "mobile": false,
       "view": "suppliers",
@@ -713,7 +713,7 @@
     {
       "id": "desktop-debt",
       "file": "desktop-debt.png",
-      "title": "تعديل الدين",
+      "title": "Edit debt",
       "phase": "11",
       "mobile": false,
       "view": "suppliers",
@@ -728,7 +728,7 @@
     {
       "id": "desktop-material-new",
       "file": "desktop-material-new.png",
-      "title": "إضافة مادة مشتركة",
+      "title": "Add shared material",
       "phase": "12",
       "mobile": false,
       "view": "materials",
@@ -743,7 +743,7 @@
     {
       "id": "desktop-material-edit",
       "file": "desktop-material-edit.png",
-      "title": "تعديل مادة مشتركة",
+      "title": "Edit shared material",
       "phase": "12",
       "mobile": false,
       "view": "materials",
@@ -758,7 +758,7 @@
     {
       "id": "desktop-invoice-new",
       "file": "desktop-invoice-new.png",
-      "title": "قائمة جديدة",
+      "title": "New purchase invoice",
       "phase": "13",
       "mobile": false,
       "view": "invoices",
@@ -773,7 +773,7 @@
     {
       "id": "desktop-invoice-new-bottom",
       "file": "desktop-invoice-new-bottom.png",
-      "title": "قائمة جديدة",
+      "title": "New purchase invoice",
       "phase": "13",
       "mobile": false,
       "view": "invoices",
@@ -788,7 +788,7 @@
     {
       "id": "desktop-invoice-edit",
       "file": "desktop-invoice-edit.png",
-      "title": "تفاصيل وتعديل القائمة",
+      "title": "Purchase invoice details and editing",
       "phase": "13",
       "mobile": false,
       "view": "invoices",
@@ -803,7 +803,7 @@
     {
       "id": "desktop-invoice-edit-bottom",
       "file": "desktop-invoice-edit-bottom.png",
-      "title": "تفاصيل وتعديل القائمة",
+      "title": "Purchase invoice details and editing",
       "phase": "13",
       "mobile": false,
       "view": "invoices",
@@ -818,7 +818,7 @@
     {
       "id": "desktop-payment-new",
       "file": "desktop-payment-new.png",
-      "title": "تسجيل تسديد",
+      "title": "Record payment",
       "phase": "14",
       "mobile": false,
       "view": "payments",
@@ -833,7 +833,7 @@
     {
       "id": "desktop-payment-new-bottom",
       "file": "desktop-payment-new-bottom.png",
-      "title": "تسجيل تسديد",
+      "title": "Record payment",
       "phase": "14",
       "mobile": false,
       "view": "payments",
@@ -848,7 +848,7 @@
     {
       "id": "desktop-payment-edit",
       "file": "desktop-payment-edit.png",
-      "title": "تعديل التسديد",
+      "title": "Edit payment",
       "phase": "14",
       "mobile": false,
       "view": "payments",
@@ -863,7 +863,7 @@
     {
       "id": "desktop-payment-edit-bottom",
       "file": "desktop-payment-edit-bottom.png",
-      "title": "تعديل التسديد",
+      "title": "Edit payment",
       "phase": "14",
       "mobile": false,
       "view": "payments",
@@ -878,7 +878,7 @@
     {
       "id": "desktop-cash-deposit",
       "file": "desktop-cash-deposit.png",
-      "title": "إيداع خارجي للقاصة",
+      "title": "External cashbox deposit",
       "phase": "15",
       "mobile": false,
       "view": "cash",
@@ -893,7 +893,7 @@
     {
       "id": "desktop-cash-withdrawal",
       "file": "desktop-cash-withdrawal.png",
-      "title": "سحب من القاصة",
+      "title": "Cashbox withdrawal",
       "phase": "15",
       "mobile": false,
       "view": "cash",
@@ -908,7 +908,7 @@
     {
       "id": "desktop-cash-edit",
       "file": "desktop-cash-edit.png",
-      "title": "تعديل حركة القاصة",
+      "title": "Edit cashbox movement",
       "phase": "15",
       "mobile": false,
       "view": "cash",
@@ -923,7 +923,7 @@
     {
       "id": "desktop-cash-edit-bottom",
       "file": "desktop-cash-edit-bottom.png",
-      "title": "تعديل حركة القاصة",
+      "title": "Edit cashbox movement",
       "phase": "15",
       "mobile": false,
       "view": "cash",
@@ -938,7 +938,7 @@
     {
       "id": "desktop-category-new",
       "file": "desktop-category-new.png",
-      "title": "إضافة خانة",
+      "title": "Add category",
       "phase": "04",
       "mobile": false,
       "view": "categories",
@@ -953,7 +953,7 @@
     {
       "id": "desktop-category-edit",
       "file": "desktop-category-edit.png",
-      "title": "تعديل الخانة",
+      "title": "Edit category",
       "phase": "04",
       "mobile": false,
       "view": "categories",
@@ -968,7 +968,7 @@
     {
       "id": "desktop-supplier-debts",
       "file": "desktop-supplier-debts.png",
-      "title": "الموردون",
+      "title": "Suppliers",
       "phase": "11",
       "mobile": false,
       "view": "suppliers",
@@ -983,7 +983,7 @@
     {
       "id": "desktop-supplier-ledger",
       "file": "desktop-supplier-ledger.png",
-      "title": "الموردون",
+      "title": "Suppliers",
       "phase": "11",
       "mobile": false,
       "view": "suppliers",
@@ -998,7 +998,7 @@
     {
       "id": "desktop-settings-restaurant",
       "file": "desktop-settings-restaurant.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": false,
       "view": "settings",
@@ -1013,7 +1013,7 @@
     {
       "id": "desktop-settings-restaurant-bottom",
       "file": "desktop-settings-restaurant-bottom.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": false,
       "view": "settings",
@@ -1028,7 +1028,7 @@
     {
       "id": "desktop-settings-workflow",
       "file": "desktop-settings-workflow.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": false,
       "view": "settings",
@@ -1043,7 +1043,7 @@
     {
       "id": "desktop-settings-workflow-bottom",
       "file": "desktop-settings-workflow-bottom.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": false,
       "view": "settings",
@@ -1058,7 +1058,7 @@
     {
       "id": "desktop-settings-data",
       "file": "desktop-settings-data.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": false,
       "view": "settings",
@@ -1073,7 +1073,7 @@
     {
       "id": "desktop-settings-data-bottom",
       "file": "desktop-settings-data-bottom.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": false,
       "view": "settings",
@@ -1088,7 +1088,7 @@
     {
       "id": "desktop-settings-about",
       "file": "desktop-settings-about.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": false,
       "view": "settings",
@@ -1103,7 +1103,7 @@
     {
       "id": "desktop-settings-about-bottom",
       "file": "desktop-settings-about-bottom.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": false,
       "view": "settings",
@@ -1118,7 +1118,7 @@
     {
       "id": "desktop-invoice-cartons",
       "file": "desktop-invoice-cartons.png",
-      "title": "تفاصيل وتعديل القائمة",
+      "title": "Purchase invoice details and editing",
       "phase": "13",
       "mobile": false,
       "view": "invoices",
@@ -1133,7 +1133,7 @@
     {
       "id": "desktop-sales-catalog-bottom",
       "file": "desktop-sales-catalog-bottom.png",
-      "title": "بيع جديدجاهز لاستقبال الطلبات",
+      "title": "New sale — ready for orders",
       "phase": "06",
       "mobile": false,
       "view": "sales",
@@ -1148,7 +1148,7 @@
     {
       "id": "desktop-sales-no-results",
       "file": "desktop-sales-no-results.png",
-      "title": "بيع جديدجاهز لاستقبال الطلبات",
+      "title": "New sale — ready for orders",
       "phase": "06",
       "mobile": false,
       "view": "sales",
@@ -1163,7 +1163,7 @@
     {
       "id": "desktop-validation",
       "file": "desktop-validation.png",
-      "title": "تعديل المصروف",
+      "title": "Edit expense",
       "phase": "09",
       "mobile": false,
       "view": "expenses",
@@ -1178,7 +1178,7 @@
     {
       "id": "desktop-day-review",
       "file": "desktop-day-review.png",
-      "title": "مراجعة اليوم",
+      "title": "Day review",
       "phase": "10",
       "mobile": false,
       "view": "expenses",
@@ -1193,7 +1193,7 @@
     {
       "id": "desktop-cash-popout",
       "file": "desktop-cash-popout.png",
-      "title": "القاصة",
+      "title": "Cashbox",
       "phase": "15",
       "mobile": false,
       "view": "expenses",
@@ -1208,7 +1208,7 @@
     {
       "id": "desktop-supplier-picker",
       "file": "desktop-supplier-picker.png",
-      "title": "اختيار المورد",
+      "title": "Select supplier",
       "phase": "11",
       "mobile": false,
       "view": "suppliers",
@@ -1223,7 +1223,7 @@
     {
       "id": "empty-sales",
       "file": "empty-sales.png",
-      "title": "بيع جديدجاهز لاستقبال الطلبات",
+      "title": "New sale — ready for orders",
       "phase": "06",
       "mobile": false,
       "view": "sales",
@@ -1238,7 +1238,7 @@
     {
       "id": "empty-sale-history",
       "file": "empty-sale-history.png",
-      "title": "سجل المبيعات",
+      "title": "Sales history",
       "phase": "08",
       "mobile": false,
       "view": "sale-history",
@@ -1253,7 +1253,7 @@
     {
       "id": "empty-inventory",
       "file": "empty-inventory.png",
-      "title": "المخزن",
+      "title": "Inventory",
       "phase": "05",
       "mobile": false,
       "view": "inventory",
@@ -1268,7 +1268,7 @@
     {
       "id": "empty-expenses",
       "file": "empty-expenses.png",
-      "title": "المصاريف اليومية",
+      "title": "Daily expenses",
       "phase": "09",
       "mobile": false,
       "view": "expenses",
@@ -1283,7 +1283,7 @@
     {
       "id": "empty-statement",
       "file": "empty-statement.png",
-      "title": "كشف الحساب",
+      "title": "Account statement",
       "phase": "10",
       "mobile": false,
       "view": "statement",
@@ -1298,7 +1298,7 @@
     {
       "id": "empty-suppliers",
       "file": "empty-suppliers.png",
-      "title": "الموردون",
+      "title": "Suppliers",
       "phase": "11",
       "mobile": false,
       "view": "suppliers",
@@ -1313,7 +1313,7 @@
     {
       "id": "empty-invoices",
       "file": "empty-invoices.png",
-      "title": "فواتير المشتريات",
+      "title": "Purchase invoices",
       "phase": "13",
       "mobile": false,
       "view": "invoices",
@@ -1328,7 +1328,7 @@
     {
       "id": "empty-materials",
       "file": "empty-materials.png",
-      "title": "المواد والأسعار",
+      "title": "Materials and prices",
       "phase": "12",
       "mobile": false,
       "view": "materials",
@@ -1343,7 +1343,7 @@
     {
       "id": "empty-payments",
       "file": "empty-payments.png",
-      "title": "التسديدات",
+      "title": "Payments",
       "phase": "14",
       "mobile": false,
       "view": "payments",
@@ -1358,7 +1358,7 @@
     {
       "id": "empty-cash",
       "file": "empty-cash.png",
-      "title": "القاصة",
+      "title": "Cashbox",
       "phase": "15",
       "mobile": false,
       "view": "cash",
@@ -1373,7 +1373,7 @@
     {
       "id": "empty-categories",
       "file": "empty-categories.png",
-      "title": "الخانات",
+      "title": "Categories",
       "phase": "04",
       "mobile": false,
       "view": "categories",
@@ -1388,7 +1388,7 @@
     {
       "id": "empty-settings",
       "file": "empty-settings.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": false,
       "view": "settings",
@@ -1403,7 +1403,7 @@
     {
       "id": "desktop-save-error",
       "file": "desktop-save-error.png",
-      "title": "بيع جديدجاهز لاستقبال الطلبات",
+      "title": "New sale — ready for orders",
       "phase": "02",
       "mobile": false,
       "view": "sales",
@@ -1418,7 +1418,7 @@
     {
       "id": "phone-sales",
       "file": "phone-sales.png",
-      "title": "بيع جديدجاهز لاستقبال الطلبات",
+      "title": "New sale — ready for orders",
       "phase": "06",
       "mobile": true,
       "view": "sales",
@@ -1433,7 +1433,7 @@
     {
       "id": "phone-sales-bottom",
       "file": "phone-sales-bottom.png",
-      "title": "بيع جديدجاهز لاستقبال الطلبات",
+      "title": "New sale — ready for orders",
       "phase": "06",
       "mobile": true,
       "view": "sales",
@@ -1448,7 +1448,7 @@
     {
       "id": "phone-sale-history",
       "file": "phone-sale-history.png",
-      "title": "سجل المبيعات",
+      "title": "Sales history",
       "phase": "08",
       "mobile": true,
       "view": "sale-history",
@@ -1463,7 +1463,7 @@
     {
       "id": "phone-sale-history-bottom",
       "file": "phone-sale-history-bottom.png",
-      "title": "سجل المبيعات",
+      "title": "Sales history",
       "phase": "08",
       "mobile": true,
       "view": "sale-history",
@@ -1478,7 +1478,7 @@
     {
       "id": "phone-inventory",
       "file": "phone-inventory.png",
-      "title": "المخزن",
+      "title": "Inventory",
       "phase": "05",
       "mobile": true,
       "view": "inventory",
@@ -1493,7 +1493,7 @@
     {
       "id": "phone-inventory-bottom",
       "file": "phone-inventory-bottom.png",
-      "title": "المخزن",
+      "title": "Inventory",
       "phase": "05",
       "mobile": true,
       "view": "inventory",
@@ -1508,7 +1508,7 @@
     {
       "id": "phone-expenses",
       "file": "phone-expenses.png",
-      "title": "المصاريف اليومية",
+      "title": "Daily expenses",
       "phase": "09",
       "mobile": true,
       "view": "expenses",
@@ -1523,7 +1523,7 @@
     {
       "id": "phone-expenses-bottom",
       "file": "phone-expenses-bottom.png",
-      "title": "المصاريف اليومية",
+      "title": "Daily expenses",
       "phase": "09",
       "mobile": true,
       "view": "expenses",
@@ -1538,7 +1538,7 @@
     {
       "id": "phone-statement",
       "file": "phone-statement.png",
-      "title": "كشف الحساب",
+      "title": "Account statement",
       "phase": "10",
       "mobile": true,
       "view": "statement",
@@ -1553,7 +1553,7 @@
     {
       "id": "phone-statement-bottom",
       "file": "phone-statement-bottom.png",
-      "title": "كشف الحساب",
+      "title": "Account statement",
       "phase": "10",
       "mobile": true,
       "view": "statement",
@@ -1568,7 +1568,7 @@
     {
       "id": "phone-suppliers",
       "file": "phone-suppliers.png",
-      "title": "الموردون",
+      "title": "Suppliers",
       "phase": "11",
       "mobile": true,
       "view": "suppliers",
@@ -1583,7 +1583,7 @@
     {
       "id": "phone-suppliers-bottom",
       "file": "phone-suppliers-bottom.png",
-      "title": "الموردون",
+      "title": "Suppliers",
       "phase": "11",
       "mobile": true,
       "view": "suppliers",
@@ -1598,7 +1598,7 @@
     {
       "id": "phone-invoices",
       "file": "phone-invoices.png",
-      "title": "فواتير المشتريات",
+      "title": "Purchase invoices",
       "phase": "13",
       "mobile": true,
       "view": "invoices",
@@ -1613,7 +1613,7 @@
     {
       "id": "phone-invoices-bottom",
       "file": "phone-invoices-bottom.png",
-      "title": "فواتير المشتريات",
+      "title": "Purchase invoices",
       "phase": "13",
       "mobile": true,
       "view": "invoices",
@@ -1628,7 +1628,7 @@
     {
       "id": "phone-materials",
       "file": "phone-materials.png",
-      "title": "المواد والأسعار",
+      "title": "Materials and prices",
       "phase": "12",
       "mobile": true,
       "view": "materials",
@@ -1643,7 +1643,7 @@
     {
       "id": "phone-materials-bottom",
       "file": "phone-materials-bottom.png",
-      "title": "المواد والأسعار",
+      "title": "Materials and prices",
       "phase": "12",
       "mobile": true,
       "view": "materials",
@@ -1658,7 +1658,7 @@
     {
       "id": "phone-payments",
       "file": "phone-payments.png",
-      "title": "التسديدات",
+      "title": "Payments",
       "phase": "14",
       "mobile": true,
       "view": "payments",
@@ -1673,7 +1673,7 @@
     {
       "id": "phone-payments-bottom",
       "file": "phone-payments-bottom.png",
-      "title": "التسديدات",
+      "title": "Payments",
       "phase": "14",
       "mobile": true,
       "view": "payments",
@@ -1688,7 +1688,7 @@
     {
       "id": "phone-cash",
       "file": "phone-cash.png",
-      "title": "القاصة",
+      "title": "Cashbox",
       "phase": "15",
       "mobile": true,
       "view": "cash",
@@ -1703,7 +1703,7 @@
     {
       "id": "phone-cash-bottom",
       "file": "phone-cash-bottom.png",
-      "title": "القاصة",
+      "title": "Cashbox",
       "phase": "15",
       "mobile": true,
       "view": "cash",
@@ -1718,7 +1718,7 @@
     {
       "id": "phone-categories",
       "file": "phone-categories.png",
-      "title": "الخانات",
+      "title": "Categories",
       "phase": "04",
       "mobile": true,
       "view": "categories",
@@ -1733,7 +1733,7 @@
     {
       "id": "phone-categories-bottom",
       "file": "phone-categories-bottom.png",
-      "title": "الخانات",
+      "title": "Categories",
       "phase": "04",
       "mobile": true,
       "view": "categories",
@@ -1748,7 +1748,7 @@
     {
       "id": "phone-settings",
       "file": "phone-settings.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": true,
       "view": "settings",
@@ -1763,7 +1763,7 @@
     {
       "id": "phone-settings-bottom",
       "file": "phone-settings-bottom.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": true,
       "view": "settings",
@@ -1778,7 +1778,7 @@
     {
       "id": "phone-sales-cart",
       "file": "phone-sales-cart.png",
-      "title": "بيع جديدجاهز لاستقبال الطلبات",
+      "title": "New sale — ready for orders",
       "phase": "06",
       "mobile": true,
       "view": "sales",
@@ -1793,7 +1793,7 @@
     {
       "id": "phone-sales-cart-bottom",
       "file": "phone-sales-cart-bottom.png",
-      "title": "بيع جديدجاهز لاستقبال الطلبات",
+      "title": "New sale — ready for orders",
       "phase": "06",
       "mobile": true,
       "view": "sales",
@@ -1808,7 +1808,7 @@
     {
       "id": "phone-settings-restaurant",
       "file": "phone-settings-restaurant.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": true,
       "view": "settings",
@@ -1823,7 +1823,7 @@
     {
       "id": "phone-settings-restaurant-bottom",
       "file": "phone-settings-restaurant-bottom.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": true,
       "view": "settings",
@@ -1838,7 +1838,7 @@
     {
       "id": "phone-settings-workflow",
       "file": "phone-settings-workflow.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": true,
       "view": "settings",
@@ -1853,7 +1853,7 @@
     {
       "id": "phone-settings-workflow-bottom",
       "file": "phone-settings-workflow-bottom.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": true,
       "view": "settings",
@@ -1868,7 +1868,7 @@
     {
       "id": "phone-settings-data",
       "file": "phone-settings-data.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": true,
       "view": "settings",
@@ -1883,7 +1883,7 @@
     {
       "id": "phone-settings-data-bottom",
       "file": "phone-settings-data-bottom.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": true,
       "view": "settings",
@@ -1898,7 +1898,7 @@
     {
       "id": "phone-settings-about",
       "file": "phone-settings-about.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": true,
       "view": "settings",
@@ -1913,7 +1913,7 @@
     {
       "id": "phone-settings-about-bottom",
       "file": "phone-settings-about-bottom.png",
-      "title": "الإعدادات والنسخ",
+      "title": "Settings and backups",
       "phase": "16",
       "mobile": true,
       "view": "settings",
@@ -1928,7 +1928,7 @@
     {
       "id": "phone-product-new",
       "file": "phone-product-new.png",
-      "title": "إضافة صنف",
+      "title": "Add product",
       "phase": "05",
       "mobile": true,
       "view": "inventory",
@@ -1943,7 +1943,7 @@
     {
       "id": "phone-product-new-bottom",
       "file": "phone-product-new-bottom.png",
-      "title": "إضافة صنف",
+      "title": "Add product",
       "phase": "05",
       "mobile": true,
       "view": "inventory",
@@ -1958,7 +1958,7 @@
     {
       "id": "phone-receipt",
       "file": "phone-receipt.png",
-      "title": "وصل بيع محفوظ",
+      "title": "Saved sales receipt",
       "phase": "08",
       "mobile": true,
       "view": "sale-history",
@@ -1973,7 +1973,7 @@
     {
       "id": "phone-receipt-bottom",
       "file": "phone-receipt-bottom.png",
-      "title": "وصل بيع محفوظ",
+      "title": "Saved sales receipt",
       "phase": "08",
       "mobile": true,
       "view": "sale-history",
@@ -1988,7 +1988,7 @@
     {
       "id": "phone-sale-return",
       "file": "phone-sale-return.png",
-      "title": "مرتجع فاتورة S-000001",
+      "title": "Invoice return S-000001",
       "phase": "08",
       "mobile": true,
       "view": "sale-history",
@@ -2003,7 +2003,7 @@
     {
       "id": "phone-sale-return-bottom",
       "file": "phone-sale-return-bottom.png",
-      "title": "مرتجع فاتورة S-000001",
+      "title": "Invoice return S-000001",
       "phase": "08",
       "mobile": true,
       "view": "sale-history",
@@ -2018,7 +2018,7 @@
     {
       "id": "phone-expense-new",
       "file": "phone-expense-new.png",
-      "title": "إضافة مصروف",
+      "title": "Add expense",
       "phase": "09",
       "mobile": true,
       "view": "expenses",
@@ -2033,7 +2033,7 @@
     {
       "id": "phone-expense-new-bottom",
       "file": "phone-expense-new-bottom.png",
-      "title": "إضافة مصروف",
+      "title": "Add expense",
       "phase": "09",
       "mobile": true,
       "view": "expenses",
@@ -2048,7 +2048,7 @@
     {
       "id": "phone-invoice-new",
       "file": "phone-invoice-new.png",
-      "title": "قائمة جديدة",
+      "title": "New purchase invoice",
       "phase": "13",
       "mobile": true,
       "view": "invoices",
@@ -2063,7 +2063,7 @@
     {
       "id": "phone-invoice-new-bottom",
       "file": "phone-invoice-new-bottom.png",
-      "title": "قائمة جديدة",
+      "title": "New purchase invoice",
       "phase": "13",
       "mobile": true,
       "view": "invoices",
@@ -2078,7 +2078,7 @@
     {
       "id": "phone-payment-new",
       "file": "phone-payment-new.png",
-      "title": "تسجيل تسديد",
+      "title": "Record payment",
       "phase": "14",
       "mobile": true,
       "view": "payments",
@@ -2093,7 +2093,7 @@
     {
       "id": "phone-payment-new-bottom",
       "file": "phone-payment-new-bottom.png",
-      "title": "تسجيل تسديد",
+      "title": "Record payment",
       "phase": "14",
       "mobile": true,
       "view": "payments",
@@ -2408,7 +2408,7 @@
     {
       "id": "report-daily",
       "file": "report-daily.png",
-      "title": "فاتورة المصاريف اليومية",
+      "title": "Daily expense statement",
       "phase": "17",
       "mobile": false,
       "view": "report",
@@ -2435,7 +2435,7 @@
     {
       "id": "report-invoice",
       "file": "report-invoice.png",
-      "title": "قائمة DEMO-001",
+      "title": "Purchase invoice DEMO-001",
       "phase": "17",
       "mobile": false,
       "view": "report",
@@ -2462,7 +2462,7 @@
     {
       "id": "report-sale",
       "file": "report-sale.png",
-      "title": "فاتورة بيع S-000001",
+      "title": "Sales invoice S-000001",
       "phase": "17",
       "mobile": false,
       "view": "report",
@@ -2489,7 +2489,7 @@
     {
       "id": "report-sales",
       "file": "report-sales.png",
-      "title": "ملخص المبيعات",
+      "title": "Sales summary",
       "phase": "17",
       "mobile": false,
       "view": "report",
@@ -2516,7 +2516,7 @@
     {
       "id": "report-statement",
       "file": "report-statement.png",
-      "title": "كشف المصروفات",
+      "title": "Expense statement",
       "phase": "17",
       "mobile": false,
       "view": "report",
@@ -2543,7 +2543,7 @@
     {
       "id": "report-cash",
       "file": "report-cash.png",
-      "title": "كشف القاصة",
+      "title": "Cashbox statement",
       "phase": "17",
       "mobile": false,
       "view": "report",
@@ -2570,7 +2570,7 @@
     {
       "id": "report-payment",
       "file": "report-payment.png",
-      "title": "وصل تسديد",
+      "title": "Payment receipt",
       "phase": "17",
       "mobile": false,
       "view": "report",

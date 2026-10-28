@@ -1,13 +1,13 @@
-# تنفيذ مسارات MVP — 2026-10-27
+# Implement MVP workflows — 2026-10-27
 
-طلب المالك توثيق النطاق والعمل على المرتجعات والطلبات المعلقة والوصل بعد الدفع وحالات الشاشة، مع مراجعة يومية بسيطة. الإعداد الأول وتذكيرات النسخ مؤجلة. [النطاق المعتمد](../planning/2026-10-27-mvp-completion.md).
+The owner requested documenting scope and implementing returns, held orders, post-payment receipts and screen states, with a simple daily review. Initial setup and backup reminders remain deferred. [Approved scope](../planning/2026-10-27-mvp-completion.md).
 
-منفذ في المصدر: صيغة11 وسجل مرتجعات مستقل، توزيع خصم دقيق، تأثير بتاريخ الإرجاع، اختيار إعادة المخزون، منع الإرجاع المتكرر والإلغاء المزدوج؛ الطباعة بحوار النظام من سجل محفوظ. واجهات Astra تشمل وصل الدفع والمرتجعات والطلبات المعلقة وحالاتها.
+Implemented in source: schema 11 and a separate returns ledger; exact discount allocation; effects dated on return; optional stock restoration; duplicate-return/double-cancellation prevention; and system-dialog printing from saved records. Astra's UI includes payment receipts, returns, held orders and their states.
 
-التحقق الفعلي: نجحت اختبارات npm test البالغ عددها 140 دون فشل. نجحت 15 حالة واجهة عبر 1512×982 و1024×768 و390×844، شملت التعليق والاسترجاع والدفع والوصل والإرجاع ومراجعة اليوم، دون تجاوز أفقي للصفحة أو النافذة. جرت مراجعة الصور في outputs/mvp-review، واستدعاء الطباعة الوهمي ثلاث مرات. لم تستخدم حسابات المطعم أو طابعة فعلية.
+Actual verification: all 140 npm test tests passed without failure. 15 UI cases across 1512×982, 1024×768 and 390×844 passed, covering hold/resume/payment/receipt/return/day review without page/dialog horizontal overflow. Images in outputs/mvp-review were reviewed, with three mocked print calls. Neither restaurant accounts nor a real printer was used.
 
-محدودية: طباعة الورق غير متحقق منها لغياب طابعة؛ الطلبات المعلقة محلية خارج نسخة الحسابات. لم تحدّث نسخة Mac المثبتة. حدّثت معاينة المتصفح مع الحفاظ على عيناتها الحالية.
+Limits: physical printing is unverified because no printer was available. Held orders are local, outside account backups. The installed Mac application was not updated. Browser preview was refreshed while preserving its current sample data.
 
-التوثيق محفوظ في التخطيط والقرار 0010 والمراجع ودليل الاستخدام. ذاكرة المشروع: sync ثم check أعادا خدمة سليمة ولا عمليات معلقة أو فاشلة، لكن sources=0؛ لا يعد ذلك إثبات فهرسة الوثائق.
+Documentation is saved in planning, decision 0010, references and usage guide. Project memory: sync/check returned a healthy service and no pending/failed work, but sources=0; this does not prove document indexing.
 
-الخطوة التالية: تجربة المالك لمسارات البيع والمرتجعات والتعليق؛ الإعداد الأول وتذكيرات النسخ تبقى مؤجلة بنص الطلب.
+Next: owner trial of sales/returns/held-order flows. Initial setup and backup reminders remain deferred by the request.

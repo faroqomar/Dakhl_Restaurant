@@ -1,18 +1,18 @@
-# ملاحظات تصميم المبيعات — الجولة الثانية
+# Sales design feedback — second round
 
-الحالة: منفّذ ومتحقق منه في المصدر ومعاينة المتصفح. التاريخ: 2026-10-26. الإصدار في المصدر: 1.11.0 / صيغة البيانات 9. المصدر: الملاحظات الأربع المصدّرة من المراجعة، ثم تأكيد المالك أن القائمة المطلوبة هي أنواع الطلبات.
+Status: implemented and verified in source/browser preview. Date: 2026-10-26. Source version: 1.11.0 / data schema 9. Source: four exported review comments, followed by owner confirmation that the requested list represents order types.
 
-## النتيجة
+## Result
 
-شاشة البيع تبقى ضمن النافذة؛ يتنقل التمرير إلى قائمة الأصناف وقائمة أسطر الفاتورة، ويبقى الدفع ثابتاً. ثماني صور مرجعية مولدة ومحلية تظهر في بطاقات العينة، ويتيح المخزن اختيار صورة مرجعية للصنف. البيع الجديد يتم بالقيمة الدقيقة بعد الخصم دون كتابة النقد المستلم. قائمة صالة/سفري/توصيل تحل محل حقل الملاحظة في البيع السريع، ويمكن تعديلها وترتيبها من الإعدادات. نوع الطلب يحفظ كنص في الفاتورة ووصل PDF، ولا يتغير بتغيير الإعدادات. [القرار 0003](../decisions/0003-sales-layout-review.md) و[أصول الصور ومجموعة النصوص النهائية](../reference/product-photos.md).
+Sales stays within the window; scrolling moves to the product list and ticket lines while payment remains fixed. Eight locally generated reference images appear in sample cards, and inventory can assign a reference image to a product. New sales settle the exact discounted amount without entering cash received. A dine-in/takeaway/delivery list replaces the quick-sale note field and can be edited/reordered in settings. Order type is saved as text in the invoice/PDF receipt and is unaffected by later settings changes. [Decision 0003](../decisions/0003-sales-layout-review.md) and [photo assets/final text set](../reference/product-photos.md).
 
-## التحقق الفعلي
+## Actual verification
 
-- `npm test`: 96/96 ناجحة. اختبارات جديدة لترحيل صيغة 8، مفاتيح الصور المسموحة، الدفع دون مبلغ مدخل، تعديل أنواع الطلبات وحفظ اسمها السابق في الفواتير، ورفض التكرار والأنواع غير المتاحة. اختبارات المصاريف والقاصة والموردين والمخزن والسلفة والواجهة بقيت ناجحة.
-- تجربة Electron معزولة راجعت 1440×1000 و1252×943 و1000×700 و900×580 و760×844 و390×844 و390×640: دون تجاوز أفقي أو تمرير المستند، مع بقاء لوحة الفاتورة وزر الدفع ضمن النافذة. تمرير المنتجات 600 بكسل لم يغير موضع زر الدفع؛ قائمة المنتجات ذات ارتفاع محتوى 1303 بكسل مررت داخل ارتفاع 303 بكسل في النافذة القصيرة.
-- البيع الفعلي ببيانات الاختبار حفظ القيمة الدقيقة ونوع الطلب، وأنشأ PDF. تعديل النوع بالإعدادات ثم اختياره في بيع جديد نجح. صور الأصناف الثماني حمّلت محلياً، وأخطاء الصفحة صفر.
-- راجعت صورة الشاشة المحدثة في `dist/commerce-qa/layout-review-v2.png` وPDF فعلي من صفحة A4 واحدة بعد تحويله إلى صورة. نوع الطلب والعربية والأسطر والإجمالي واضحة. لا حسابات فعلية أو بيانات تجربة داخل حسابات المطعم.
-- أعيد تشغيل خادم المعاينة المحلي ليدعم الصور؛ شريط المراجعة يعرض round 2 ويحفظ التعليقات السابقة ويمنع رسم إحداثياتها القديمة على التخطيط الجديد. المعاينة مفتوحة في متصفح Codex مع الصور ونوع الطلب وإزالة النقد المستلم.
-- `git diff --check` ناجح. هذه جولة مراجعة بالمتصفح؛ التطبيق المثبت 1.10.1 لم يستبدل ولم تفتح حساباته.
+- `npm test`: 96/96 passed. New tests cover schema-8 migration, allowed photo keys, payment without entered cash, order-type editing and preservation of historical invoice labels, duplicate rejection and unavailable types. Expense/cashbox/supplier/inventory/worker-advance/UI tests remained green.
+- An isolated Electron run checked 1440×1000, 1252×943, 1000×700, 900×580, 760×844, 390×844 and 390×640: no horizontal overflow or document scrolling, with ticket/payment inside the window. Scrolling products by 600 pixels did not move payment. Product content height 1303 pixels scrolled within a 303-pixel area in the short window.
+- A real test-data sale saved the exact amount/order type and produced a PDF. Editing a type in settings and selecting it for a new sale succeeded. All eight product images loaded locally; zero page errors.
+- Reviewed `dist/commerce-qa/layout-review-v2.png` and an actual one-page A4 PDF rasterized to an image. Order type, Arabic, lines and total were clear. No actual accounts were opened or test data written into restaurant accounts.
+- Restarted the local preview server to support images. The review toolbar shows round 2, preserves earlier comments and avoids painting their old coordinates on the new layout. The preview is open in the Codex browser with photos, order type and cash-received input removed.
+- `git diff --check` passed. This is a browser-review round; installed 1.10.1 was not replaced and its accounts were not opened.
 
-التوثيق محدث؛ مزامنة Hindsight تتبعها مراجعة `memory check`، ولا يعد إرسال الطلبات للطابور اكتمالاً.
+Documentation is current; Hindsight sync is followed by `memory check`. Queue submission alone is not completion.
