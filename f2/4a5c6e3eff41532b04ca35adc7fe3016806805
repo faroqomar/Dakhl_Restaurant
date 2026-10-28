@@ -1,0 +1,87 @@
+AGENTS.md
+  s_8c9e903a0f085a::t_d39ca492e3edc2 320
+docs/decisions/0002-sales-inventory-shortcuts.md
+  s_8c9e903a0f085a::t_7bb78d783ff987 3,16
+docs/decisions/0004-ux-popouts-and-recovery.md
+  s_8c9e903a0f085a::t_090d0b9de6027b 11
+docs/decisions/0005-sales-reference-redesign.md
+  s_8c9e903a0f085a::t_2b076e7bb5d4ff 9
+docs/decisions/0006-organized-settings.md
+  s_8c9e903a0f085a::t_e302d9795c17e2 19
+docs/decisions/0007-retire-worker-savings.md
+  s_8c9e903a0f085a::t_6b33599ad4940a 1,3,7,11
+docs/decisions/0008-fullscreen-layout-density.md
+  s_8c9e903a0f085a::t_226bac0178c019 7
+docs/decisions/0013-electron-reference-folder.md
+  s_8c9e903a0f085a::t_03d5f493c47f78 9,21
+docs/decisions/0014-adopt-universal-workflow.md
+  s_8c9e903a0f085a::t_9767bdd7fae5aa 11-12
+docs/decisions/README.md
+  s_8c9e903a0f085a::t_f50bc553725658 22
+docs/how-to/memory.md
+  s_8c9e903a0f085a::t_5fbc21267371c5 22
+docs/how-to/repeated-problems.md
+  s_8c9e903a0f085a::t_d5c5d4c5d76f7c 36,55-60
+docs/log/2026-10-17-promo-fish-wings.md
+  s_8c9e903a0f085a::t_0b77e5911f2c52 5
+docs/log/2026-10-25-daily-balance-formula.md
+  s_8c9e903a0f085a::t_a8a80dd5129c77 17
+docs/log/2026-10-26-sales-inventory.md
+  s_8c9e903a0f085a::t_289e9599ab4f1d 9
+docs/log/2026-10-27-figma-transfer.md
+  s_8c9e903a0f085a::t_13475c5376ce89 32
+docs/log/2026-10-28-documentation-publication.md
+  s_8c9e903a0f085a::t_bc631e485736be 10-11
+docs/log/2026-10-28-project-name.md
+  s_8c9e903a0f085a::t_57849e4fc8e77d 7
+docs/log/2026-10-28-universal-workflow.md
+  s_8c9e903a0f085a::t_fb97c619f8c552 9,15,26-27
+docs/log/README.md
+  s_8c9e903a0f085a::t_152bc3f9c4774e 41,84-87
+docs/phases/00-penpot-ux-review.md
+  s_8c9e903a0f085a::t_8b414c3c994f6b 36
+docs/planning/2026-10-26-full-app-ux-audit.md
+  s_8c9e903a0f085a::t_bd0083f5a302a3 74,310
+docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html
+  s_8c9e903a0f085a::t_e6b1c14eeec454 3
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/17.html
+  s_8c9e903a0f085a::t_b6bbfc3ce10e4f 27
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/17.md
+  s_8c9e903a0f085a::t_abd40612c75a96 36
+docs/planning/flutter-rebuild/archive/v1-19-phases/screenshot-manifest.json
+  s_8c9e903a0f085a::t_0a8239db160342 2411
+docs/planning/flutter-rebuild/gallery.html
+  s_8c9e903a0f085a::t_93389806bbfc1c 3
+docs/planning/flutter-rebuild/phases/10.html
+  s_8c9e903a0f085a::t_6af702d5796f1d 42
+docs/planning/flutter-rebuild/phases/10.md
+  s_8c9e903a0f085a::t_a1991c5c32d4f9 53
+docs/planning/flutter-rebuild/screenshot-manifest.json
+  s_8c9e903a0f085a::t_16bfef6c0e0b7d 2411
+docs/reference/accounting-rules.md
+  s_8c9e903a0f085a::t_278eeddd817f69 3,36,38,40-42,68
+docs/reference/application.md
+  s_8c9e903a0f085a::t_f92aeb770d256c 21,59,107,109
+docs/reference/project-scope.md
+  s_8c9e903a0f085a::t_6730687438ca3d 17
+electron-reference/README.md
+  s_8c9e903a0f085a::t_2a63d67cacba20 22,55
+outputs/ux-audit-2026-10-26/report.md
+  s_8c9e903a0f085a::t_28d85780afa3fc 308
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f24a5c6e3eff41532b04ca35adc7fe3016806805",
+  "prompts": {},
+  "sessions": {
+    "s_8c9e903a0f085a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1814f-9531-7040-8610-ab44599118ac",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
