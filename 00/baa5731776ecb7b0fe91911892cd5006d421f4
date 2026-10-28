@@ -1,0 +1,35 @@
+.github/actions/checkout-madar/action.yml
+  s_8c9e903a0f085a::t_f8434320067b0a 8-13,41-42
+.github/workflows/flutter.yml
+  s_8c9e903a0f085a::t_f8434320067b0a 34,73,107
+PHASES.md
+  s_8c9e903a0f085a::t_f564f617ee9a63 17,42-43,47
+docs/log/2026-10-28-phase00-step5-pr.md
+  s_8c9e903a0f085a::t_ae0f58a9ccfe9c 1-9
+docs/phases/00-build-evidence.md
+  s_8c9e903a0f085a::t_36a510c389c1b0 80-83
+docs/phases/00-pr-approval.md
+  s_8c9e903a0f085a::t_674f72a7311890 1-32
+docs/phases/README.md
+  s_8c9e903a0f085a::t_1f6dc6e80ad03c 20-21
+engine-dependency.json
+  s_8c9e903a0f085a::t_f8b19e5b96a6c6 3-4
+outputs/pr-review/read-only-source-access.json
+  s_8c9e903a0f085a::t_af6fe4c416f13c 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "00baa5731776ecb7b0fe91911892cd5006d421f4",
+  "prompts": {},
+  "sessions": {
+    "s_8c9e903a0f085a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1814f-9531-7040-8610-ab44599118ac",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
