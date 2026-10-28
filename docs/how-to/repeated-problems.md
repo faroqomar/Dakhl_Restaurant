@@ -58,6 +58,12 @@ The detailed existing 41-error Penpot record (`/Users/eros/.codex/skills/penpot/
 | --- | --- | --- |
 | A23 | English translation introduced financial-term drift (worker advances became savings; an unconfirmed invoice became a receipt), changed completed actions into instructions and weakened recovery/source-data limits. Initial cross-review did not catch these; hosted PR5 review did. | Compare financial nouns, status/tense, permission boundaries and recovery meaning directly with the original source, then independently review the corrections. Keep runtime identifiers and frozen UI unchanged; label translated UI quotations and historical snapshots explicitly. Correct matching authored captions and indexes without rewriting source history. PR5 corrections preserve values, dates, reference hashes and engine pin; no accounting behavior is changed. |
 
+## Review-service availability
+
+| ID | Observed problem / cause | Prevention and verification |
+| --- | --- | --- |
+| A24 | After translation fixes, a request to rerun Cubic on PR5 was rejected because the GitHub organization subscription was inactive. Earlier-head automated results cannot be presented as a review of the corrected head. | Do not retry the same unavailable service or change billing/subscription settings without owner authorization. Preserve the earlier findings and their independently verified corrections. Use the required independent Reviewer and applicable hosted checks for the current revision; report the unavailable automated rerun honestly. A missing required check remains pending or blocked, never passed; this record does not waive any gate. |
+
 ## Evidence and maintenance
 
 [Step4](../phases/00-step4-review.md), [Step5](../phases/00-pr-approval.md), [Step6](../phases/00-step6-merge.md), [native evidence](../phases/00-build-evidence.md) and [Penpot reproduction](../phases/00-penpot-reference-recreation.md) preserve detailed outcomes. The engine counterpart is Madar_Engine, `docs/how-to/repeated-problems.md`; shared capabilities remain there, never copied here.
