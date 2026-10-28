@@ -1,0 +1,30 @@
+docs/log/2026-10-28-phase00-step6-merge.md
+  s_8c9e903a0f085a::t_14f6632c0b9325 1-5
+docs/phases/00-step6-merge.md
+  s_8c9e903a0f085a::t_14f6632c0b9325 1-29
+docs/phases/00-pr-approval.md
+  s_8c9e903a0f085a::t_14f6632c0b9325 3-4
+engine-dependency.json
+  s_8c9e903a0f085a::t_14f6632c0b9325 3
+docs/planning/flutter-rebuild/phases/00.md
+  s_8c9e903a0f085a::t_14f6632c0b9325 3
+PHASES.md
+  s_8c9e903a0f085a::t_b23c20ab7e0ef5 38
+  s_8c9e903a0f085a::t_14f6632c0b9325 17,35,42,47-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5376f1e2c80273874bde06c2bc818ea8d5a664eb",
+  "prompts": {},
+  "sessions": {
+    "s_8c9e903a0f085a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1814f-9531-7040-8610-ab44599118ac",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
