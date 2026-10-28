@@ -12,6 +12,8 @@ Verification: `npm --prefix electron-reference test` passed all 140 tests with z
 
 Publication checks: independent read-only review identified five local Chromium profile directories; all are excluded. The staged tree contains zero account/private files or profile paths, and the text scan found no private-key/token candidates. Screenshot checks verified all 179 frozen SHA-256 hashes. The full staged whitespace check reports existing trailing whitespace in imported rules/source records and generated evidence; preserved those files rather than rewriting historical sources. No other diff-check diagnostic type was reported.
 
-Memory delivery: sync/check completed with zero pending or failed documents before the final publication record update. Recheck after the final update remains required.
+Upload result: snapshot commit `d242ef1` was pushed to `origin/codex/project-baseline-upload`; `git ls-remote` matched the local revision. Draft [PR #1](https://github.com/faroqomar/Dakhl_Restaurant/pull/1) provides the review record. No merge performed. Phase documents changed concurrently after staging; those later working-tree edits were left untouched and are outside the uploaded snapshot.
+
+Memory delivery: an initial sync/check completed with zero pending or failed documents. Subsequent documentation updates and concurrent phase edits were queued; the latest check reports pending documents and no failures. Queue acceptance is not completed delivery. Final publication-note delivery remains pending.
 
 Limits: no application installation, real-data migration, Flutter implementation, phase completion, design approval or merge is implied. Existing historical documentation remains a record of its original task; current execution status remains in PHASES.md.
