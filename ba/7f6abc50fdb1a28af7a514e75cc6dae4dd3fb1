@@ -1,0 +1,27 @@
+AGENTS.md
+  s_8c9e903a0f085a::t_5922a349dafec2 7-19
+PHASES.md
+  s_8c9e903a0f085a::t_77431fe24020c4 278-281
+docs/log/2026-10-28-documentation-publication.md
+  s_8c9e903a0f085a::t_9b278a6bd9fa91 1-9
+docs/log/2026-10-28-madar-documentation-rule.md
+  s_8c9e903a0f085a::t_17594415192af2 1-17
+docs/log/README.md
+  s_8c9e903a0f085a::t_2193a72a16f5d7 82-83
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ba7f6abc50fdb1a28af7a514e75cc6dae4dd3fb1",
+  "prompts": {},
+  "sessions": {
+    "s_8c9e903a0f085a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1814f-9531-7040-8610-ab44599118ac",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
