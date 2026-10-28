@@ -41,3 +41,7 @@ Dakhl_Restaurant الحالي تطبيق محلي مبني على Electron؛ ر�
 لكل مستند فعلي حالة وتاريخ ومالك أو مصدر، مع دليل التحقق وما بقي مفتوحاً. القوالب الخالية مستثناة من فهرسة الذاكرة. التفاصيل الخاصة بالمطعم وبياناته المالية تبقى في أماكنها الخاصة، ولا تُنسخ إلى التوثيق أو الذاكرة.
 
 توجيه2026-10-28: تطوير Madar_Engine بالتوازي، مع إبقاء المصدر المشترك في المحرك واستهلاكه هنا. [حدود الملكية](decisions/0018-madar-engine-boundary.md).
+
+## Prevent repeated problems
+
+[Observed failures, causes, remedies and prevention](how-to/repeated-problems.md) are maintained throughout each task under the owner's standing direction.

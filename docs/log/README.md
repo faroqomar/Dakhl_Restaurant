@@ -77,3 +77,5 @@
 - [GitHub repository rename and project upload](2026-10-28-github-upload.md)
 
 - [2026-10-28 — Parallel Madar engine separation](2026-10-28-madar-engine-separation.md).
+
+- [2026-10-28 — Repeated problems and prevention](2026-10-28-repeated-problems.md).
