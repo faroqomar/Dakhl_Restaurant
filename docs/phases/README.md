@@ -1,7 +1,8 @@
 # Phase evidence index
 
-Status: phase 00 kickoff initialized on 2026-10-28; Flutter implementation has not started. Phases 01–11 remain TODO.
+Status: phase 00 technical implementation is under verification on 2026-10-28. Phases 01–11 remain TODO.
 
+- [Phase 00 — build, test and runtime evidence](00-build-evidence.md).
 - [Phase 00 — current implementation plan and isolation](00-implementation-plan.md).
 - [Phase 00 — initial kickoff, UX applicability and read-only plan](00-baseline-kickoff.md).
 - [Phase 00 — Penpot screenshot designs and matching wireframes](00-penpot-reference-recreation.md).

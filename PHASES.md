@@ -12,7 +12,7 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 
 | Phase | Name | Status | Branch | PR |
 | --- | --- | --- | --- | --- |
-| 00 | [Baseline and delivery setup](docs/planning/flutter-rebuild/phases/00.md) | DESIGN | codex/phase00-penpot | Pending |
+| 00 | [Baseline and delivery setup](docs/planning/flutter-rebuild/phases/00.md) | VERIFYING | codex/phase00-penpot | Pending |
 | 01 | [Design system, navigation and interaction shell](docs/planning/flutter-rebuild/phases/01.md) | TODO | — | — |
 | 02 | [Local accounts, validation and safe persistence](docs/planning/flutter-rebuild/phases/02.md) | TODO | — | — |
 | 03 | [Sellable products and inventory](docs/planning/flutter-rebuild/phases/03.md) | TODO | — | — |
@@ -30,21 +30,21 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 ### Phase 00
 
 - **Name:** Baseline and delivery setup
-- **Status:** DESIGN — the owner's three screenshot designs and matching wireframes are ready for review in Penpot. Owner design approval pending; Flutter implementation has not begun.
+- **Status:** VERIFYING — phase00 technical baseline implemented; local tests/builds/native storage/PDF probes passed and independent findings were repaired. Hosted CI, per-target dialog limits, approval and PR evidence remain explicit below.
 - **Dependencies:** None
 - **Design approval:** N/A for the original technical shell. The owner added a design prerequisite: recreate only `desktop-sales.png`, `desktop-expenses.png` and `desktop-settings-data.png`, with matching wireframes, in Penpot. Validation and approval evidence: [Penpot record](docs/phases/00-penpot-reference-recreation.md). The superseded blank-shell boards are not the approval artifact.
-- **Branch / Worktree:** `codex/phase00-penpot` at `/Users/eros/.codex/worktrees/phase00-penpot/Dakhl_Restaurant`, based on `ecf692b`. Existing root-checkout work preserved. Initial kickoff branch/history is retained in its evidence record.
-- **Assigned agents:** Lead (Penpot integration, tracker/evidence); UX `phase00_ux` (reference scope and independent visual review); Planner `phase00_plan` (bounded read-only implementation plan); reference-export and font-outline Workers (isolated synthetic extraction and vector lettering).
+- **Branch / Worktree:** `codex/phase00-penpot` at `/Users/eros/.codex/worktrees/phase00-penpot/Dakhl_Restaurant`. Preparation baseline `614cf0f` separates prior design/naming documentation from implementation; original base `ecf692b`. Root-checkout work preserved.
+- **Assigned agents:** Lead (integration, device evidence, tracker/PR); Workers `phase00_bootstrap` (root/native scaffold, blank shell and CI), `phase00_contracts` (capability contracts/repository/ViewModel), `phase00_native` (native adapters, offline font and integration harness). Prior Planner/UX evidence retained; independent Reviewer `phase00_build_review` completed implementation review.
 - **Implementation plan:** [Phase scope](docs/planning/flutter-rebuild/phases/00.md); [current read-only implementation plan](docs/phases/00-implementation-plan.md) prepared 2026-10-28; [initial kickoff](docs/phases/00-baseline-kickoff.md). Existing phase00 isolation reused; no implementation or design approval inferred.
-- **Automated tests:** Flutter tests/builds pending. The three isolated source renders match the frozen screenshot PNGs byte for byte; this is reference evidence, not Flutter verification or proof of Penpot identity.
-- **CI:** Pending for implementation; no required-check pass claimed.
+- **Automated tests:** 46 Flutter unit/widget tests passed; native fresh-nonce write/stop/read passed on macOS, Android emulator and iPhone Simulator, with macOS wrong-nonce rejection/recovery. 140 preserved Electron reference tests passed separately; 179 screenshot/9 source/21 asset hashes unchanged. [Build evidence](docs/phases/00-build-evidence.md).
+- **CI:** Targeted Flutter and separate reference workflows added; local format/analyze, actionlint and Android/macOS/iOS Simulator builds passed. Hosted execution pending; no remote pass inferred.
 - **Benchmarks:** N/A — no optimization requirement.
-- **Independent review:** Independent UX export review complete; no remaining blocking content/layout transfer finding. Pixel identity is not achieved. Implementation review pending.
-- **Staging / Rollback:** Pending for implementation. No real accounts, deployment or migration touched.
+- **Independent review:** `phase00_build_review` independently reviewed implementation and final local evidence; stale-data nonce and mobile-runner uninstall findings repaired/re-verified, no remaining actionable implementation defect. Native boundary limits remain documented. Prior UX reference review is separate; no pixel identity/design approval inferred.
+- **Staging / Rollback:** Development-only ID/data sandbox verified; no production account migration or release. Rollback is to stop the isolated development build; preserved Electron/data remain untouched. Distribution/signing beyond debug/simulator is pending.
 - **PR:** Pending
-- **User approval:** Penpot setup, phase-only screenshot recreation and wireframes authorized. Design approval, implementation, merge and phase completion remain pending.
+- **User approval:** Owner explicitly requested phase00 plan execution via Orchestrate & Build on 2026-10-28. This authorizes the non-product technical baseline; separate product-reference design approval is not inferred. Merge and phase completion approvals remain pending.
 - **Decisions / Lessons:** [0015 — canonical Penpot workspace](docs/decisions/0015-penpot-design-workspace.md). Reuse this page for future design requests. Outlined lettering preserves font appearance; original text strings must remain available separately. No whole-screen raster substitution in editable artwork.
-- **Evidence:** [Penpot recreation](docs/phases/00-penpot-reference-recreation.md); [kickoff](docs/phases/00-baseline-kickoff.md); [historical Figma blocker](docs/phases/00-figma-reference-preparation.md); [task log](docs/log/2026-10-28-phase-00-kickoff.md).
+- **Evidence:** [Technical build/tests/platform evidence](docs/phases/00-build-evidence.md); [development baseline decision](docs/decisions/0017-phase00-development-baseline.md); [Penpot recreation](docs/phases/00-penpot-reference-recreation.md); [kickoff](docs/phases/00-baseline-kickoff.md); [historical Figma blocker](docs/phases/00-figma-reference-preparation.md); [task log](docs/log/2026-10-28-phase-00-kickoff.md).
 - **Completed:** —
 
 ### Phase 01

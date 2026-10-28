@@ -2,9 +2,9 @@
 
 Current project name: **Dakhl_Restaurant**. The old Electron app name and storage identifiers are preserved only for compatibility and frozen reference evidence.
 
-This project root is reserved for the Flutter/Dart rebuild for macOS, Android and iPhone. Flutter implementation has not started.
+This root contains the phase 00 Flutter development baseline for macOS, Android and iPhone Simulator. The default app is a blank offline Arabic RTL shell; product screens and production account persistence are not implemented.
 
-Workflow: [AGENTS.md](AGENTS.md) · [PLANS.md](PLANS.md) · [PHASES.md](PHASES.md) · [six reusable prompts](PROMPTS.md). Phase 00 is in design review; phases 01–11 remain TODO. The tracker records actual execution and approval evidence.
+Workflow: [AGENTS.md](AGENTS.md) · [PLANS.md](PLANS.md) · [PHASES.md](PHASES.md) · [six reusable prompts](PROMPTS.md). Phase 00 is under build verification; phases 01–11 remain TODO. The tracker records actual execution and approval evidence.
 
 | Location | Purpose |
 | --- | --- |
@@ -17,6 +17,25 @@ Workflow: [AGENTS.md](AGENTS.md) · [PLANS.md](PLANS.md) · [PHASES.md](PHASES.m
 | scripts/ | Shared memory and rebuild-plan/capture tooling |
 
 The current design and financial behavior remain the baseline. Work is offline for one restaurant; backup/import is manual transfer, not synchronization. Preserve historical account records, with no testing in restaurant accounts.
+
+## Flutter development
+
+Pinned SDK: Flutter 3.47.8 / Dart 3.13.7. Development app ID: `com.eros.dakhlrestaurant.phase00`; display name: **Dakhl_Restaurant Dev**. It is separate from the preserved application and its data.
+
+```sh
+flutter pub get --enforce-lockfile
+flutter test --no-pub
+flutter analyze --no-pub
+flutter run -d macos
+```
+
+The default entrypoint is blank. The explicitly selected development probe exercises synthetic platform capabilities:
+
+```sh
+flutter run -d macos -t lib/platform/probe_main.dart
+```
+
+Use only new disposable synthetic files in native dialogs. [Native probe/restart instructions](integration_test/README.md) explain required fresh nonces, `--no-uninstall` and limits. [Build evidence](docs/phases/00-build-evidence.md) separates tests/builds, runtime results and pending checks. Plugin candidates are not production account import/export infrastructure. [Development baseline decision](docs/decisions/0017-phase00-development-baseline.md).
 
 ## Use the reference
 

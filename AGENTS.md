@@ -16,7 +16,7 @@ Read AGENTS.md, [PLANS.md](PLANS.md) and [PHASES.md](PHASES.md) before phase wor
 - For each implementation phase, create a dedicated branch/worktree and a traceable PR, preserving existing work. Never reset, discard or silently include unrelated changes. The current rules adoption is a documentation/configuration chore, not the start or completion of phase 00.
 - DONE requires all applicable tests/CI, independent review, user approval, merged PR and applicable release/rollback evidence. Missing design, hardware, signing or access remains pending/blocked, never passed. Never merge without the owner’s approval; never automatically start the next phase.
 - Use the Lead plus appropriate specialist agents automatically as described below; independent Workers have non-overlapping ownership and cannot self-approve. Custom role instructions do not establish separate permissions. Do not change model/provider or permission settings merely to configure these roles.
-- The current 12 phases are TODO. Earlier Electron tests, captures and folder preparation are reference evidence, not proof that any Flutter phase passed.
+- The 12 phases initially started as TODO; use PHASES.md for current execution state. Earlier Electron tests, captures and folder preparation are reference evidence, not proof that any Flutter phase passed.
 
 ## Adopted universal rules — full source text
 

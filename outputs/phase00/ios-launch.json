@@ -1,0 +1,10 @@
+{
+  "target": "iPhone18Pro",
+  "runtime": "iOS27.0",
+  "kind": "simulator",
+  "bundle": "com.eros.dakhlrestaurant.phase00",
+  "buildMode": "debug",
+  "installed": true,
+  "launched": true,
+  "screenshot": "ios-shell.png"
+}

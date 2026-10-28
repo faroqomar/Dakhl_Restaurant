@@ -1,6 +1,6 @@
 # Dakhl_Restaurant — project phases and scope
 
-Status: current phase definitions, 2026-10-28. Implementation has not started. The existing 12 phases remain unchanged.
+Status: current phase definitions, 2026-10-28. Phase 00 technical baseline implementation is under verification; product UI implementation has not started. The existing 12 phases remain unchanged.
 
 Read [AGENTS.md](AGENTS.md) for mandatory workflow and [PHASES.md](PHASES.md) for live status/evidence. This file is the binding phase index and incorporates the scope and acceptance requirements in each linked detailed phase file. The [visual plan](docs/planning/flutter-rebuild/plan.html) and [179-image library](docs/planning/flutter-rebuild/gallery.html) remain in place.
 

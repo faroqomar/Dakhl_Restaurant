@@ -1,0 +1,44 @@
+[
+  {
+    "platform": "macos",
+    "nonce": "1335bb39ded64b548f22e274feb26bfc",
+    "artifacts": [
+      {
+        "path": "outputs/phase00/macos-synthetic.pdf",
+        "sha256": "45a6a2e14bb8df52ce8cdc5a2eede50b54c4fc92d810e286f2ad4ff259c8cda3"
+      },
+      {
+        "path": "outputs/phase00/macos-synthetic-page-1.png",
+        "sha256": "6faebbaf4eec990e89542d15051d349dc7f591b1414c7d19d5198e156f1a6acb"
+      }
+    ]
+  },
+  {
+    "platform": "ios",
+    "nonce": "16a359c77fdd47359d14dd0d51ea59cb",
+    "artifacts": [
+      {
+        "path": "outputs/phase00/ios-synthetic.pdf",
+        "sha256": "e6b217919f303cc9f906cabd361befa1dae6ddf6faafa8c6e6c2949b2a120b53"
+      },
+      {
+        "path": "outputs/phase00/ios-synthetic-page-1.png",
+        "sha256": "6ade823fc1b4062ed99491d6bb762dc664016dc4beb0bd7a405bcd2af235b1d4"
+      }
+    ]
+  },
+  {
+    "platform": "android",
+    "nonce": "4bb36e31dfc5459fa1a25eb5dcc8b654",
+    "artifacts": [
+      {
+        "path": "outputs/phase00/android-synthetic.pdf",
+        "sha256": "9fc21e3a13f1ccfba6dcf26599e993d61d424bcdee5fcdac1ce9b9299d98b3bc"
+      },
+      {
+        "path": "outputs/phase00/android-synthetic-page-1.png",
+        "sha256": "da647f56157942f710607368154d9a2275e2c48300f46dcf3bf4d22792482e9c"
+      }
+    ]
+  }
+]

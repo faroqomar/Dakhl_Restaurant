@@ -1,0 +1,43 @@
+{
+  "platform": "macos",
+  "kind": "desktop",
+  "bundle": "com.eros.dakhlrestaurant.phase00",
+  "nonce": "1335bb39ded64b548f22e274feb26bfc",
+  "stages": [
+    {
+      "stage": "write",
+      "tag": "write",
+      "exitCode": 0,
+      "log": "outputs/phase00/macos-native-write.txt",
+      "nonce": "1335bb39ded64b548f22e274feb26bfc",
+      "evidenceDirectory": "/Users/eros/Library/Containers/com.eros.dakhlrestaurant.phase00/Data/Library/Application Support/com.eros.dakhlrestaurant.phase00/dakhl_restaurant_phase00_devprobe/pdf-evidence-tXhAvU"
+    },
+    {
+      "stage": "read",
+      "tag": "read",
+      "exitCode": 0,
+      "log": "outputs/phase00/macos-native-read.txt",
+      "nonce": "1335bb39ded64b548f22e274feb26bfc",
+      "evidenceDirectory": "/Users/eros/Library/Containers/com.eros.dakhlrestaurant.phase00/Data/Library/Application Support/com.eros.dakhlrestaurant.phase00/dakhl_restaurant_phase00_devprobe/pdf-evidence-aYy9Js"
+    },
+    {
+      "stage": "read",
+      "tag": "wrong-nonce",
+      "exitCode": 1,
+      "log": "outputs/phase00/macos-native-wrong-nonce.txt",
+      "nonce": "175a21f859f74c9ea0273cf93941d1c2",
+      "evidenceDirectory": null
+    },
+    {
+      "stage": "read",
+      "tag": "recovery",
+      "exitCode": 0,
+      "log": "outputs/phase00/macos-native-recovery.txt",
+      "nonce": "1335bb39ded64b548f22e274feb26bfc",
+      "evidenceDirectory": "/Users/eros/Library/Containers/com.eros.dakhlrestaurant.phase00/Data/Library/Application Support/com.eros.dakhlrestaurant.phase00/dakhl_restaurant_phase00_devprobe/pdf-evidence-bJqxdW"
+    }
+  ],
+  "processStoppedBeforeRead": true,
+  "wrongNonceRejected": true,
+  "passed": true
+}
