@@ -14,7 +14,7 @@ Exact local source copies are universal-rules.source.txt and phase-tracker.sourc
 - [AGENTS.md](../../../AGENTS.md): full universal rules plus retained project-specific constraints and precedence notes.
 - [PLANS.md](../../../PLANS.md): current phase index incorporating the existing detailed scope.
 - [PHASES.md](../../../PHASES.md): authoritative status/evidence tracker; all phases initially TODO.
-- [PROMPTS.md](../../../PROMPTS.md): six reusable role/workflow prompts.
+- [PROMPTS.md](../../../PROMPTS.md): joint phase workflow, Steps1–6 plus Penpot Step1.5, applied to engine and app.
 - [.codex/agents/](../../../.codex/agents/): planner, ux and reviewer definitions; Lead/Workers use the available general roles.
 - [Evidence index](../../phases/README.md): where phase evidence is recorded when work begins.
 
@@ -26,6 +26,10 @@ The project-scoped TOML files use name, description and developer_instructions, 
 
 ## Approval and completion interpretation
 
-The screenshot direction remains the owner’s approved design intent. It is not a Figma artifact or evidence that the newly adopted Figma gate has passed. UI phases record that gate as pending; 00/02/11 record N/A for their present non-UI setup/data/release scope and must reassess if UI changes enter scope.
+The screenshot direction remains the owner’s approved design intent. Penpot superseded Figma on2026-10-28; active prompts and UX configuration now use Penpot. Supplied screenshots are not evidence that the design approval gate passed. UI phases record that gate as pending; 00/02/11 record N/A for their present non-UI setup/data/release scope and must reassess if UI changes enter scope.
 
 The existing worktree contains earlier uncommitted work. Adoption does not discard it, claim it merged, create a retroactive PR or start phase 00. At the next explicitly requested phase, the Lead must establish the required Git isolation while preserving that work. Do not merge without user approval, and do not auto-start the next phase.
+
+## Standing joint workflow update —2026-10-28
+
+The owner made side-by-side Madar_Engine/Dakhl_Restaurant development mandatory for all work, not only phase00 extraction. Both projects' AGENTS/PROMPTS now require ownership/contract assessment, separate documentation/evidence, independent engine and consumer checks, explicit dependency pins and approval gates. Madar now has its own registered work plan/tracker; its IDs do not mirror app phase IDs. The original source copies/manifest remain preserved historical provenance. Active prompts supersede their old Figma wording.

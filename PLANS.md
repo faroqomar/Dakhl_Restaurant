@@ -35,4 +35,4 @@ Changes to phase definitions must update this index, linked detail, tracker and 
 
 ## Shared engine ownership —2026-10-28
 
-Develop Madar_Engine alongside these phases. Implement shared contracts and reusable capabilities in its independently owned packages; app phases consume them and retain restaurant workflows/UI. [Decision0018](docs/decisions/0018-madar-engine-boundary.md) supersedes earlier wording that no engine dependency was implied for this explicit extraction only. No cloud/auth/multitenancy, new financial policies or phase01 implementation is added.
+Develop Madar_Engine alongside these phases. Implement shared contracts and reusable capabilities in its independently owned packages; app phases consume them and retain restaurant workflows/UI. [Decision0018](docs/decisions/0018-madar-engine-boundary.md) establishes standing engine/app source ownership for all future work and supersedes the earlier no-implied-engine-dependency assumption. Each new capability still requires its own bounded plan and authorization. No cloud/auth/multitenancy, new financial policies or phase01 implementation is added.

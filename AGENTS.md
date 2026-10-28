@@ -2,7 +2,7 @@
 
 Adopted by the owner on 2026-10-28 from the supplied universal rules and phase-tracker template. Applies to this project; the source Vault files and other projects are not modified.
 
-Read AGENTS.md, [PLANS.md](PLANS.md) and [PHASES.md](PHASES.md) before phase work. [PROMPTS.md](PROMPTS.md) contains six reusable workflow prompts. The [workflow source record](docs/reference/workflow/README.md) preserves provenance.
+Read AGENTS.md, [PLANS.md](PLANS.md) and [PHASES.md](PHASES.md) before phase work. [PROMPTS.md](PROMPTS.md) contains the joint engine/app workflow prompts. The [workflow source record](docs/reference/workflow/README.md) preserves provenance.
 
 ## Application to this project
 
@@ -18,6 +18,16 @@ Read AGENTS.md, [PLANS.md](PLANS.md) and [PHASES.md](PHASES.md) before phase wor
 - DONE requires all applicable tests/CI, independent review, user approval, merged PR and applicable release/rollback evidence. Missing design, hardware, signing or access remains pending/blocked, never passed. Never merge without the owner’s approval; never automatically start the next phase.
 - Use the Lead plus appropriate specialist agents automatically as described below; independent Workers have non-overlapping ownership and cannot self-approve. Custom role instructions do not establish separate permissions. Do not change model/provider or permission settings merely to configure these roles.
 - The 12 phases initially started as TODO; use PHASES.md for current execution state. Earlier Electron tests, captures and folder preparation are reference evidence, not proof that any Flutter phase passed.
+
+## Standing rule: engine and app develop side by side
+
+Owner instruction,2026-10-28; always applicable to work on these projects, not only to extraction or a particular phase. Apply it during research, design, planning, coding, execution, testing, review, documentation, dependency upgrades and delivery. Follow the joint PROMPTS.md workflow; the Lead must include this rule in every specialist brief.
+
+- Before changing anything, identify the Madar responsibility, the app responsibility and their public contract. Read the relevant current rules/plans/trackers and source documentation from both projects. Record N/A with a reason when one side is unaffected; do not add unnecessary changes.
+- Madar_Engine is the sole source of shared business rules, contracts and reusable adapters. Keep its pure Dart code independent of Flutter, databases/cloud and hardware; optional integrations live in separate adapters. Reuse existing capabilities before adding them and implement new shared behavior there with concrete consumer/conformance tests. No copied/forked engine implementation inside apps, and no engine dependency on consumer code.
+- Dakhl_Restaurant owns its UI/ViewModels, restaurant workflows, presentation/document composition and app-specific safeguards. It consumes a reviewed, versioned engine revision. Preserve one-restaurant/offline/Arabic RTL/IQD/history constraints; shared engine work does not add cloud/auth/multitenancy or settle open financial/recovery policies.
+- Keep each project's own plan/tracker, contracts/API/usage examples, decisions, tests and dated evidence current for its affected scope. Cross-link work and engine revisions; do not substitute one project's evidence for another's or duplicate writable engine authority in the app. Keep project-madar and project-daftar memory separate.
+- The goal is an engine future apps can build on without rebuilding shared foundations. Validate reusable boundaries and consumer compatibility; avoid speculative abstractions and do not claim a supported release before its documented gates pass. Design, implementation, tests and delivery approvals remain separate.
 
 ## Adopted universal rules — full source text
 

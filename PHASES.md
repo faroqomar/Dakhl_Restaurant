@@ -2,6 +2,8 @@
 
 Source of phase definitions: [PLANS.md](PLANS.md). Rules: [AGENTS.md](AGENTS.md). Adopted 2026-10-28 from the owner’s supplied tracker template.
 
+The standing joint workflow in [PROMPTS.md](PROMPTS.md) applies to every phase and linked engine work item. Each project keeps its own status/evidence; an unaffected side records N/A with a reason. This workflow update does not advance any phase.
+
 ## Statuses
 
 TODO → DESIGN → PLANNING → BUILDING → REVIEW → VERIFYING → PR → DONE
