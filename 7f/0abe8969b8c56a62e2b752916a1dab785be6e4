@@ -1,0 +1,331 @@
+AGENTS.md
+  s_8c9e903a0f085a::t_1e2cf1a46386e9 16,284,286,288,290,292,294,296,298-301,303,305-310,312,314-319,321,323,325,336-339
+PROMPTS.md
+  s_8c9e903a0f085a::t_6a55d0b97fe03c 7
+docs/README.md
+  s_8c9e903a0f085a::t_8a93d35040fa18 1,3,5,7,9-25,27,29,31,33,35,37,39,41,43,48-51
+docs/decisions/0001-single-restaurant-and-project-memory.md
+  s_8c9e903a0f085a::t_21542ee55bcb00 1,3,5,7,9,11-16,18,20,22,24,26
+docs/decisions/0002-sales-inventory-shortcuts.md
+  s_8c9e903a0f085a::t_1d379700a8036a 1,3,5,7-14,16
+docs/decisions/0003-sales-layout-review.md
+  s_8c9e903a0f085a::t_c8e7c9abefc788 1,3,5-9,11,13
+docs/decisions/0004-ux-popouts-and-recovery.md
+  s_8c9e903a0f085a::t_1098822640dd98 1,3,5,7-12,14,16,18,20,22
+docs/decisions/0005-sales-reference-redesign.md
+  s_8c9e903a0f085a::t_1720aa8eedfcfb 1,3,5,7,9,11,13,15
+docs/decisions/0006-organized-settings.md
+  s_8c9e903a0f085a::t_c1388ef17c30da 1,3,5,7,9,11,13,15,17,19
+docs/decisions/0007-retire-worker-savings.md
+  s_8c9e903a0f085a::t_217ee0e0b6ba3a 1,3,5,7,9,11
+docs/decisions/0008-fullscreen-layout-density.md
+  s_8c9e903a0f085a::t_e3d4850985f5e8 1,3,5,7,9,11,13
+docs/decisions/0009-fluid-aligned-workspace.md
+  s_8c9e903a0f085a::t_3164f443977b1b 1,3,5,7,9
+docs/decisions/0010-mvp-returns-and-held-orders.md
+  s_8c9e903a0f085a::t_64491ee0c85900 1,3,5,7,9,11,13,15-19
+docs/decisions/0011-flutter-rebuild-baseline.md
+  s_8c9e903a0f085a::t_0df9b65f2dad8e 1,3,5,7-11,13,15,17,19,21,23,25,27,29,31
+docs/decisions/0012-merge-flutter-rebuild-phases.md
+  s_8c9e903a0f085a::t_fb0687b40934dc 1,3,5,7,9,11-16,18,20,22,24,26,28,30
+docs/decisions/0013-electron-reference-folder.md
+  s_8c9e903a0f085a::t_fb9e735d3f8af9 1,3,5,7,9,11,13,15,17,19,21
+docs/decisions/0014-adopt-universal-workflow.md
+  s_8c9e903a0f085a::t_19f25ed6b9f298 1,3,5,7,9,11,13,15,17,19,21
+docs/decisions/0015-penpot-design-workspace.md
+  s_8c9e903a0f085a::t_18629d064728ce 11,22-23
+docs/decisions/0016-dakhl-restaurant-project-name.md
+  s_8c9e903a0f085a::t_bf08df43610f93 15,33-34
+docs/decisions/0019-engine-package-documentation-diagnostics.md
+  s_8c9e903a0f085a::t_4bc103d12f6f1a 1-11
+docs/decisions/README.md
+  s_8c9e903a0f085a::t_62880e362a199d 1,3-7,9,11,13-27,29
+docs/how-to/documentation.md
+  s_8c9e903a0f085a::t_6e49f3f7244287 1,3,5,7,9-14,16,18-22,24,26,28,30,32,34
+docs/how-to/engine-consumer-contract.md
+  s_8c9e903a0f085a::t_d1631424b403c7 1-13
+docs/how-to/memory.md
+  s_8c9e903a0f085a::t_7483d01ce7bbd2 1,3,5,7,9-13,15,17,19,22-23,29,31,33,35,37,39,41,43,51-55
+docs/how-to/sales-inventory.md
+  s_8c9e903a0f085a::t_f30848dc1d0b87 1,3,5-10,12,14,16,18,20,22,24,26,28-33,35,37,39,41-45
+docs/log/2026-10-16-arabic-popular-menu.md
+  s_8c9e903a0f085a::t_0cda4c84d992bf 1,3,5,7,9,11,13
+docs/log/2026-10-16-jannat-baghdad-menu.md
+  s_8c9e903a0f085a::t_7a1eea35a414a1 1,3,5,7,9,11,13,15,17,19
+docs/log/2026-10-16-project-documentation.md
+  s_8c9e903a0f085a::t_e5070a99bbba0e 1,3,5,7,9,11,13,15,17-23,25,27
+docs/log/2026-10-17-dine-in-menu.md
+  s_8c9e903a0f085a::t_b781dac1d376e1 1,3,5,7
+docs/log/2026-10-17-dine-in-wings.md
+  s_8c9e903a0f085a::t_2782a22ea044a9 1,3,5,7
+docs/log/2026-10-17-menu-cross-footer.md
+  s_8c9e903a0f085a::t_5fca0c8e5f6c25 1,3,5,7,9
+docs/log/2026-10-17-menu-dulaimiya-chicken.md
+  s_8c9e903a0f085a::t_80e6d110fa1183 1,3,5,7,9,11,13,15
+docs/log/2026-10-17-menu-polish.md
+  s_8c9e903a0f085a::t_8ec2d98832bead 1,3,5,7,9,11,13,15
+docs/log/2026-10-17-promo-fish-wings.md
+  s_8c9e903a0f085a::t_3b34416f19198c 1,3,5,7,9
+docs/log/2026-10-25-daily-account-statement.md
+  s_8c9e903a0f085a::t_4834bd76983374 1,3,5,7,9,11,13,15,17
+docs/log/2026-10-25-daily-balance-formula.md
+  s_8c9e903a0f085a::t_669bdb1eff13d6 1,3,5,7,9,11,13,15,17
+docs/log/2026-10-25-purchase-invoices.md
+  s_8c9e903a0f085a::t_ea846be111b52b 1,3,5,7,9,11-24
+docs/log/2026-10-25-shared-material-catalog.md
+  s_8c9e903a0f085a::t_32b53a589e849c 1,3,5,7,9,11,13,15,17,19
+docs/log/2026-10-26-browser-design-review.md
+  s_8c9e903a0f085a::t_b103d77c35d573 1,3,5,7,9,11
+docs/log/2026-10-26-full-app-ux-audit.md
+  s_8c9e903a0f085a::t_72f8fcf438b3b4 1,3,5,7,9,11,13,15-23,25,27,29,31,33,35,37
+docs/log/2026-10-26-sales-inventory.md
+  s_8c9e903a0f085a::t_30d5cc7b807d90 1,3,5,7,9,11,13-18,20,22
+docs/log/2026-10-26-sales-layout-review.md
+  s_8c9e903a0f085a::t_2b9343261ef53f 1,3,5,7,9,11-16,18
+docs/log/2026-10-26-sidebar-toggle.md
+  s_8c9e903a0f085a::t_2c180ef04638eb 1,3,5,7,9,11,13
+docs/log/2026-10-26-ux-audit-fixes.md
+  s_8c9e903a0f085a::t_423b7cabce0ab3 1,3,5,7,9,11-17,19,21,23
+docs/log/2026-10-27-compact-order-details.md
+  s_8c9e903a0f085a::t_e0b4bf5d4e7aa3 1,3,5,7,9
+docs/log/2026-10-27-compact-sales-cards.md
+  s_8c9e903a0f085a::t_817b60414d90a5 1,3,5,7,9
+docs/log/2026-10-27-content-density.md
+  s_8c9e903a0f085a::t_1eb150669059f7 1,3,5,7,9,11
+docs/log/2026-10-27-extra-preview-products.md
+  s_8c9e903a0f085a::t_daf8144bcb1024 1,3,5,7,9
+docs/log/2026-10-27-figma-transfer.md
+  s_8c9e903a0f085a::t_a636a287a3bef2 1,3,5,7,9,11-17,19,21,23,25,27,29-34,36
+docs/log/2026-10-27-fluid-alignment.md
+  s_8c9e903a0f085a::t_f43d5bdf4f2877 1,3,5,7,9,11
+docs/log/2026-10-27-flutter-phase-consolidation.md
+  s_8c9e903a0f085a::t_d29f92e10ca954 1,3,5,7,9,11,13,15,17-22,24,26,28
+docs/log/2026-10-27-flutter-rebuild-plan.md
+  s_8c9e903a0f085a::t_767e4f2a310588 1,3,5,7,9,11,13,15,17,19-24,26,28,30,32,34,36
+docs/log/2026-10-27-fullscreen-layout-review.md
+  s_8c9e903a0f085a::t_de1e6c8a0787e3 1,3,5,7,9,11,13-17,19,21
+docs/log/2026-10-27-inventory-toolbar.md
+  s_8c9e903a0f085a::t_31393fa1cecfc3 1,3,5,7,9
+docs/log/2026-10-27-macos-app-update.md
+  s_8c9e903a0f085a::t_cb25d914b2a279 1,3,5-9
+docs/log/2026-10-27-mvp-workflows.md
+  s_8c9e903a0f085a::t_1ac853d45a69ff 1,3,5,7,9,11,13
+docs/log/2026-10-27-order-type-manager.md
+  s_8c9e903a0f085a::t_9da764c058ca92 1,3,5,7,9,11,13,15,17,19,21
+docs/log/2026-10-27-page-width.md
+  s_8c9e903a0f085a::t_957c1ec0566b23 1,3,5,7,9,11,13
+docs/log/2026-10-27-remove-worker-savings.md
+  s_8c9e903a0f085a::t_f7828eedbd5810 1,3,5,7,9,11,13,15,17
+docs/log/2026-10-27-sales-display-only.md
+  s_8c9e903a0f085a::t_4d89ccce7cd206 1,3,5,7,9
+docs/log/2026-10-27-sales-reference-redesign.md
+  s_8c9e903a0f085a::t_08c54a5c0d14f1 1,3,5-10
+docs/log/2026-10-27-settings-redesign.md
+  s_8c9e903a0f085a::t_f6a87b38dce82a 1,3,5,7-11,13,15-17,19,21,23,25
+docs/log/2026-10-28-delivery-and-english-documentation.md
+  s_8c9e903a0f085a::t_85b55280a0b384 1-9
+docs/log/2026-10-28-electron-reference-folder.md
+  s_8c9e903a0f085a::t_1ae74eec474251 1,3,5,7,9,11,13-18,20,22,24
+docs/log/2026-10-28-project-name.md
+  s_8c9e903a0f085a::t_41b1601e436ffe 7
+docs/log/2026-10-28-universal-workflow.md
+  s_8c9e903a0f085a::t_73c783936029cb 1,3,5,7,9,11,13-19,21,23,25
+docs/log/README.md
+  s_8c9e903a0f085a::t_3ad3f82cd42be6 1,3,5,7,9,11,13-24,26,28,30,32,34-35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,65,67,69,71,73,75
+docs/phases/00-penpot-ux-review.md
+  s_8c9e903a0f085a::t_5f1dfd8eedcccd 27,36
+docs/planning/2026-10-26-full-app-ux-audit.md
+  s_8c9e903a0f085a::t_95b51a376de0d3 74,78,90,126,140,172,214,242,310,328,340,344,382,424,428,454,458,510,514,570,624,628,680,684,698,710,714,770,822,836,880,964,968
+docs/planning/2026-10-27-mvp-completion.md
+  s_8c9e903a0f085a::t_359da2fc7f1715 1,3,5,7-11,13,15-16,18-26
+docs/planning/campaigns.md
+  s_8c9e903a0f085a::t_700fd1d09bf154 1,3,5,7,9,11,13
+docs/planning/campaigns/CAM-0001-reduced-price-menu.md
+  s_8c9e903a0f085a::t_9861bb35de9aab 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31-33,35,37,39-40,42,44,46
+docs/planning/dine-in-menu.md
+  s_8c9e903a0f085a::t_093f2e7c96cac9 1,3,5,7,9-25,27-28,30,32
+docs/planning/flutter-rebuild/archive/v1-19-phases/design-system.html
+  s_8c9e903a0f085a::t_66099a10f134f3 3
+docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html
+  s_8c9e903a0f085a::t_7289fe839b808e 3
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/00.html
+  s_8c9e903a0f085a::t_ff8824f08837ac 27-28
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/00.md
+  s_8c9e903a0f085a::t_aa5cc3b7979888 36,38
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/01.html
+  s_8c9e903a0f085a::t_40df68c16a4f6c 28
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/01.md
+  s_8c9e903a0f085a::t_a17b9f21153be4 38
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/02.html
+  s_8c9e903a0f085a::t_50c62bb66369b2 29-30
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/02.md
+  s_8c9e903a0f085a::t_50333a97dab9bf 38,40
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/03.html
+  s_8c9e903a0f085a::t_bc84086cd08298 26-27
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/03.md
+  s_8c9e903a0f085a::t_93cc9e40100998 35,37
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/04.html
+  s_8c9e903a0f085a::t_d1ece574a7aabd 25-26
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/04.md
+  s_8c9e903a0f085a::t_76b06992ed89a4 34,36
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/05.html
+  s_8c9e903a0f085a::t_355470eb416751 27-28
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/05.md
+  s_8c9e903a0f085a::t_7a0bf93c37077b 36,38
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/06.html
+  s_8c9e903a0f085a::t_a3a9e39c077412 27-28
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/06.md
+  s_8c9e903a0f085a::t_d7a6745784585f 36,38
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/07.html
+  s_8c9e903a0f085a::t_abe98d52e9af37 27-28
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/07.md
+  s_8c9e903a0f085a::t_ae49c318cd4c4e 36,38
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/08.html
+  s_8c9e903a0f085a::t_34d2e8a40fa439 27-28
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/08.md
+  s_8c9e903a0f085a::t_059240e85f4804 36,38
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/09.html
+  s_8c9e903a0f085a::t_6d5f44a62360c3 27-28
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/09.md
+  s_8c9e903a0f085a::t_a2a43200265a11 36,38
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/10.html
+  s_8c9e903a0f085a::t_f7d96b82ba2acc 26
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/10.md
+  s_8c9e903a0f085a::t_9efc38d9c8a012 35
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/11.html
+  s_8c9e903a0f085a::t_93ddfc4b6832a6 26-27
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/11.md
+  s_8c9e903a0f085a::t_4e06447462423c 35,37
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/12.html
+  s_8c9e903a0f085a::t_6a907332b33c82 25-26
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/12.md
+  s_8c9e903a0f085a::t_8e6e1049460680 34,36
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/13.html
+  s_8c9e903a0f085a::t_7927c7e6a21649 27-28
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/13.md
+  s_8c9e903a0f085a::t_0dbdfb4e66e769 36,38
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/14.html
+  s_8c9e903a0f085a::t_21cb3794e2f0a5 27-28
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/14.md
+  s_8c9e903a0f085a::t_4eae9dfd402596 36,38
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/15.html
+  s_8c9e903a0f085a::t_fc5e93518a089d 26-27
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/15.md
+  s_8c9e903a0f085a::t_017d087a650599 35,37
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/16.html
+  s_8c9e903a0f085a::t_ae9d23a6f27dae 27-28
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/16.md
+  s_8c9e903a0f085a::t_68bd3c74437164 36,38
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/17.html
+  s_8c9e903a0f085a::t_c62a6f3dfdee95 27-28
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/17.md
+  s_8c9e903a0f085a::t_b6150392f4b6cf 36,38
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/18.html
+  s_8c9e903a0f085a::t_65c965ecb6808e 28-29
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/18.md
+  s_8c9e903a0f085a::t_d7c12258b97845 37,39
+docs/planning/flutter-rebuild/archive/v1-19-phases/screenshot-manifest.json
+  s_8c9e903a0f085a::t_76693a8b520991 11,26,41,56,71,86,101,116,131,146,161,176,191,206,221,236,251,266,281,296,311,326,341,356,371,386,401,416,431,446,461,476,491,506,521,536,551,566,581,596,611,626,641,656,671,686,701,716,731,746,761,776,791,806,821,836,851,866,881,896,911,926,941,956,971,986,1001,1016,1031,1046,1061,1076,1091,1106,1121,1136,1151,1166,1181,1196,1211,1226,1241,1256,1271,1286,1301,1316,1331,1346,1361,1376,1391,1406,1421,1436,1451,1466,1481,1496,1511,1526,1541,1556,1571,1586,1601,1616,1631,1646,1661,1676,1691,1706,1721,1736,1751,1766,1781,1796,1811,1826,1841,1856,1871,1886,1901,1916,1931,1946,1961,1976,1991,2006,2021,2036,2051,2066,2081,2096,2411,2438,2465,2492,2519,2546,2573
+docs/planning/flutter-rebuild/design-system.html
+  s_8c9e903a0f085a::t_b8178a668b4b64 3
+docs/planning/flutter-rebuild/gallery.html
+  s_8c9e903a0f085a::t_7f5338a5d5cbb8 3
+docs/planning/flutter-rebuild/phases/00.html
+  s_8c9e903a0f085a::t_4b58785d96b1c8 32-33
+docs/planning/flutter-rebuild/phases/00.md
+  s_8c9e903a0f085a::t_9acac1413f6772 44,46
+docs/planning/flutter-rebuild/phases/01.html
+  s_8c9e903a0f085a::t_a08f035f9f7ac0 42
+docs/planning/flutter-rebuild/phases/01.md
+  s_8c9e903a0f085a::t_c6a7532a670305 53
+docs/planning/flutter-rebuild/phases/02.html
+  s_8c9e903a0f085a::t_b7288c496adc04 34-35
+docs/planning/flutter-rebuild/phases/02.md
+  s_8c9e903a0f085a::t_383ce1f3d5a306 44,46
+docs/planning/flutter-rebuild/phases/03.html
+  s_8c9e903a0f085a::t_202adaa1afce09 32-33
+docs/planning/flutter-rebuild/phases/03.md
+  s_8c9e903a0f085a::t_3160126047c87a 42,44
+docs/planning/flutter-rebuild/phases/04.html
+  s_8c9e903a0f085a::t_a8ac70a5b9758f 42-43
+docs/planning/flutter-rebuild/phases/04.md
+  s_8c9e903a0f085a::t_f320faa3036f2a 52,54
+docs/planning/flutter-rebuild/phases/05.html
+  s_8c9e903a0f085a::t_bd2b3af7d67048 32-33
+docs/planning/flutter-rebuild/phases/05.md
+  s_8c9e903a0f085a::t_ef6ba83be2a72b 42,44
+docs/planning/flutter-rebuild/phases/06.html
+  s_8c9e903a0f085a::t_41fc4bd5b49c49 52-54
+docs/planning/flutter-rebuild/phases/06.md
+  s_8c9e903a0f085a::t_c93bff31fed60b 60,62,64
+docs/planning/flutter-rebuild/phases/07.html
+  s_8c9e903a0f085a::t_be7a1515fc6b6d 39-40
+docs/planning/flutter-rebuild/phases/07.md
+  s_8c9e903a0f085a::t_00176a628366ad 49,51
+docs/planning/flutter-rebuild/phases/08.html
+  s_8c9e903a0f085a::t_7ec95129f87bc9 42-43
+docs/planning/flutter-rebuild/phases/08.md
+  s_8c9e903a0f085a::t_25e381a7796134 52,54
+docs/planning/flutter-rebuild/phases/09.html
+  s_8c9e903a0f085a::t_2937a6324c093b 32-33
+docs/planning/flutter-rebuild/phases/09.md
+  s_8c9e903a0f085a::t_02a12eccb0876d 42,44
+docs/planning/flutter-rebuild/phases/10.html
+  s_8c9e903a0f085a::t_b89614268fb88b 41-42
+docs/planning/flutter-rebuild/phases/10.md
+  s_8c9e903a0f085a::t_243b49dd538bda 51,53
+docs/planning/flutter-rebuild/phases/11.html
+  s_8c9e903a0f085a::t_617d793ec7387c 33-34
+docs/planning/flutter-rebuild/phases/11.md
+  s_8c9e903a0f085a::t_aebdf452788e84 43,45
+docs/planning/flutter-rebuild/screenshot-manifest.json
+  s_8c9e903a0f085a::t_3a0091f9ca9be3 11,26,41,56,71,86,101,116,131,146,161,176,191,206,221,236,251,266,281,296,311,326,341,356,371,386,401,416,431,446,461,476,491,506,521,536,551,566,581,596,611,626,641,656,671,686,701,716,731,746,761,776,791,806,821,836,851,866,881,896,911,926,941,956,971,986,1001,1016,1031,1046,1061,1076,1091,1106,1121,1136,1151,1166,1181,1196,1211,1226,1241,1256,1271,1286,1301,1316,1331,1346,1361,1376,1391,1406,1421,1436,1451,1466,1481,1496,1511,1526,1541,1556,1571,1586,1601,1616,1631,1646,1661,1676,1691,1706,1721,1736,1751,1766,1781,1796,1811,1826,1841,1856,1871,1886,1901,1916,1931,1946,1961,1976,1991,2006,2021,2036,2051,2066,2081,2096,2411,2438,2465,2492,2519,2546,2573
+docs/planning/ideas.md
+  s_8c9e903a0f085a::t_24136ee16fd1c5 1,3,5,7,9,11
+docs/reference/accounting-rules.md
+  s_8c9e903a0f085a::t_70ac5b3f2e5da8 1,3,5,7-11,13,15,18-20,23,25,27,29,31-36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74
+docs/reference/application.md
+  s_8c9e903a0f085a::t_d13c131431d79b 1,3,5,7,9,11,13,15,17-26,28,30,32,34,36,38,40,42,44,46,48,57,59,61,63,65,67,69,71,73,75,77,79,81,83,85,87,89,91,93,95,97,99,101,103,105,107,109,111,113,115,117,119,121,123,125,127,129,131
+docs/reference/product-photos.md
+  s_8c9e903a0f085a::t_7c9c683fab2399 1,3,5,7,9,13,24
+docs/reference/project-scope.md
+  s_8c9e903a0f085a::t_13083accb2f148 1,3,5,7,9,11,13,15-22,24,26,28,30
+docs/reference/workflow/README.md
+  s_8c9e903a0f085a::t_cf9dcd2bc47c83 10
+docs/reference/workflow/project-rules-before-adoption.source.txt
+  s_8c9e903a0f085a::t_f8702ff1e7bbf7 1-5,7,9,11,13,15,17,19,21-24,26,28-33,35,37-42,44,46-48
+docs/reference/workflow/translation-provenance.json
+  s_8c9e903a0f085a::t_0ba7605c7c8d61 1-14
+docs/templates/README.md
+  s_8c9e903a0f085a::t_4a3d0c9a8ccf4c 1,3,5-8,10
+docs/templates/campaign.md
+  s_8c9e903a0f085a::t_02ab6e507fb53d 2,4,6,10,12,14,16,18,20,22,24,26
+docs/templates/decision.md
+  s_8c9e903a0f085a::t_41f58a8455058a 2,4,6,10,14,18,20
+docs/templates/idea.md
+  s_8c9e903a0f085a::t_1f11cda6b6b7cd 2,4,6,10,14,16,18,20,22
+docs/templates/work-log.md
+  s_8c9e903a0f085a::t_33f5bdca579402 2,4,6,10,12,14,16,18,20
+electron-reference/README.md
+  s_8c9e903a0f085a::t_bffc116ff98601 1,3,5,7,9,11,13-18,20,22,24,26,28-31,33-34,36-47,49,51,53,55,57,59-70,72,74-76,80,82,84,86-91,93,102,104
+integration_test/README.md
+  s_8c9e903a0f085a::t_bde9e86d900a06 42
+outputs/ux-audit-2026-10-26/report.md
+  s_8c9e903a0f085a::t_ec42ae066a0c8d 72,76,88,124,138,170,212,240,308,326,338,342,380,422,426,452,456,508,512,568,622,626,678,682,696,708,712,768,820,834,878,962,966
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7f0abe8969b8c56a62e2b752916a1dab785be6e4",
+  "prompts": {},
+  "sessions": {
+    "s_8c9e903a0f085a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1814f-9531-7040-8610-ab44599118ac",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
