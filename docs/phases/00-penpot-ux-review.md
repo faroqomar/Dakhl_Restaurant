@@ -33,7 +33,7 @@ No approval-ready claim is made for these initial exports. Repeat review after t
 
 These are reference limitations to record for owner review, not permission to redesign the reproduction:
 
-- The sales eyebrow "Current receipt" (translated UI label) uses 10px text with color #6A8074 on white: calculated contrast approximately 4.24:1.
+- The sales eyebrow "Current invoice" (translated UI label) uses 10px text with color #6A8074 on white: calculated contrast approximately 4.24:1.
 - The active group count `33` uses white 12px text over a 15% white layer on #078657: composited contrast approximately 3.59:1.
 - Source geometry records sales cart removal/stepper buttons at 28×30 logical pixels and quantity fields at 36×30; expense rail edit controls are 32×36. These are compact reference targets. No invisible hit padding or runtime target behavior is established by the artwork.
 - The source reference includes low-stock color and supporting stock text; preserve the wording as well as its visual state. Do not rely on a grayscale wireframe to prove color contrast.

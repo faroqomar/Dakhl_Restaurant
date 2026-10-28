@@ -19,7 +19,7 @@ Accounts/invoices described below exist in the current application; campaigns/id
 
 ## Open the application
 
-Version 1.10.1 is installed at `/Users/eros/Applications/Daftar.app`, with a desktop shortcut using the historical Arabic Daftar name. Double-click to open. The packaged build also exists at `dist/Daftar-darwin-arm64/Daftar.app`. The application targets Apple Silicon Macs; data remains independent of the application location.
+Version 1.10.1 is installed at `/Users/eros/Applications/Daftar.app`, with a desktop shortcut using the historical Arabic Daftar filename (JSON Unicode escapes: `"\u062F\u0641\u062A\u0631.app"`). Double-click to open. The packaged build also exists at `dist/Daftar-darwin-arm64/Daftar.app`. The application targets Apple Silicon Macs; data remains independent of the application location.
 
 ## Available capabilities
 
@@ -52,7 +52,7 @@ Remaining cash is actual cash after expenses recorded at entry time, so earlier 
 
 ## Historical worker-record compatibility
 
-At the owner's request on 2026-10-27, the worker-savings UI was removed. It is absent from navigation/shortcut customization. Historical worker/movement records remain in account files/backups without changing balances or expenses; old shortcuts to that screen become empty slots. [Decision](docs/decisions/0007-retire-worker-savings.md).
+At the owner's request on 2026-10-27, the worker-advance UI was removed. It is absent from navigation/shortcut customization. Historical worker/movement records remain in account files/backups without changing balances or expenses; old shortcuts to that screen become empty slots. [Decision](docs/decisions/0007-retire-worker-savings.md).
 
 ## Suppliers, invoices and payments
 

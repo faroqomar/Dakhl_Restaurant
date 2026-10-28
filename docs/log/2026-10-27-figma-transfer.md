@@ -29,7 +29,7 @@ Starter allows three pages, so the structure is three pages: system/guide, scree
 1. Read `outputs/figma-transfer/session.json`, `foundations.json`, `source-masters.json`, `assembled-0.json` and `captures.json`, then inspect the current file before editing.
 2. Correct horizontal-container direction and text alignment against the source; diagnose product ordering before applying a general change. Recheck Sales/Expenses.
 3. Complete instance assembly for the remaining 64 states and screen sizes, bind tokens/text styles, and improve library and image-component naming.
-4. Complete the inventory for pop-up navigation, supplier selection, native confirmations, import/restore and save/error states. Document system dialogs as behavioral specifications rather than claiming macOS emulation.
+4. Complete the inventory for the pop-up menu, supplier selection, original confirmation messages, import/restore and save/error states. Document system dialogs as behavioral specifications rather than claiming macOS emulation.
 5. Visually/structurally review every group, fix clipping/alignment, add traceable flow/coverage maps, and remove temporary capture references only after final versions are complete and verified.
 6. Initial setup and backup reminders remain deferred by owner instruction; do not present them as implemented features.
 

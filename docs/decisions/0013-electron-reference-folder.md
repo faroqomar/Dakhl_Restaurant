@@ -6,7 +6,7 @@ Status: owner-approved and implemented as folder organization; does not begin Fl
 
 The owner requested placing the existing project in a reference folder within the same project to begin the rebuild, explicitly keeping the plan and screenshots outside that folder.
 
-Electron application files, assets, tests, package.json, dependency lockfile, node_modules and application tooling moved to `electron-reference/`. Project documentation, plan, screenshots, outputs, dist, design, Git and agent settings remained at the root. Preserve the original README in the reference; the root README becomes the rebuild guide. Shared design context remains in root `.impeccable.md`, with its original copy in the reference.
+Electron application files, assets, tests, package.json, dependency lockfile, node_modules and application tooling moved to `electron-reference/`. Project documentation, plan, screenshots, outputs, dist, design, Git and agent settings remained at the root. The original README was preserved in the reference, and the root README became the rebuild guide. Shared design context remains in root `.impeccable.md`, with its original copy in the reference.
 
 Links named `docs/`, `outputs/`, `dist/` and `design/` inside the reference point to existing root folders so earlier instructions and preview tools remain usable without moving or duplicating images. There is no second `.git`.
 
@@ -18,4 +18,4 @@ Plan-building, reference-capture and memory tools remain in root `scripts/`. The
 
 ## Verification and limits
 
-Compare moved-file and screenshot hashes before/after relocation and run reference tests from the new location. Actual evidence is in the [relocation log](../log/2026-10-28-electron-reference-folder.md). This is neither a new application installation nor migration of restaurant accounts; the normal application and its account directory were not opened.
+Moved-file and screenshot hashes were compared before/after relocation, and reference tests were run from the new location. Actual evidence is in the [relocation log](../log/2026-10-28-electron-reference-folder.md). This is neither a new application installation nor migration of restaurant accounts; the normal application and its account directory were not opened.

@@ -8,7 +8,7 @@ Status: approved by the owner's "fix them all" direction after the audit report 
 - Preserve the requested sales layout: products left, ticket right. Large screens use internal scrolling; short or zoomed screens allow scrolling to reach actions. Discount and date are expandable details, with an optional compact-product mode.
 - Save the sales draft locally per account path. Each line's price is fixed when added to the draft. A draft number/ID prevents recovery as a new sale after saving completes. A draft is not a financial movement and is not included in the account backup.
 - A completed sale is not erased by general undo; it requires a reasoned void. An inventory correction is a reversal linked to its original movement and must satisfy historical-balance validation. Balance/total corrections retain the reason and before/after values; undo adds a reversing effect.
-- Schema 10 adds receipt identity, supplier deactivation, custom fields, correction history and inventory reversal links. Migration does not redefine the daily account, cashbox or worker savings.
+- Schema 10 adds receipt identity, supplier deactivation, custom fields, correction history and inventory reversal links. Migration does not redefine the daily account, cashbox or worker advances.
 - Import and restore display summaries of the incoming and current data and save a copy of the current file before replacement. A backup on the same device does not protect against device loss.
 
 ## Verification and limits

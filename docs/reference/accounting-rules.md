@@ -1,6 +1,6 @@
 # Current accounting rules
 
-Status: description of existing behavior; changes need a decision and verification. Date: 2026-10-16. Owner: Dakhl_Restaurant maintainer. Source: [model.js](../../electron-reference/app/ui/model.js), [storage.cjs](../../electron-reference/app/storage.cjs), and tests for accounts, suppliers, payment sources, worker savings and dates.
+Status: description of existing behavior; changes need a decision and verification. Date: 2026-10-16. Owner: Dakhl_Restaurant maintainer. Source: [model.js](../../electron-reference/app/ui/model.js), [storage.cjs](../../electron-reference/app/storage.cjs), and tests for accounts, suppliers, payment sources, worker advances and dates.
 
 ## Amounts and expenses
 
@@ -33,11 +33,13 @@ These measures are neither established sales nor net profit. Any analysis inferr
 - A payment links to a specific invoice or debt and saves `invoiceAmount` and `debtAmount`. Excess beyond the invoice remainder settles available debt, not another invoice or future debt automatically.
 - An invoice number is unique per supplier. One material catalog serves all suppliers; prices are entry defaults, while every invoice preserves carton/piece/unit prices at purchase time. Editing the catalog never rewrites an earlier invoice. Schema-6 migration merges material lists by name, uses the earlier piece price as default and sets carton price to zero because it was previously absent.
 - An invoice with payments cannot be deleted until its payments are removed. Invoices/debts cannot be reduced below amounts already paid. Deleting/editing a payment corrects balances and allocations.
-- Correcting a day's date moves its record and linked movements while preventing overlap and validating; supplier invoices, debts and worker savings retain independent dates.
+- Correcting a day's date moves its record and linked movements while preventing overlap and validating; supplier invoices, debts and worker advances retain independent dates.
 
-## Worker savings and chicken counts
+## Worker advances and chicken counts
 
-Worker savings are an independent scope: daily/weekly/monthly contributions from a start date, partial/full payments and withdrawals from accumulated funds. They do not change expenses, cashbox or supplier balances. A withdrawal cannot exceed funds available on its movement date; a payment cannot be deleted if it would leave an earlier withdrawal uncovered. Recorded periods preserve their amount/date, and deactivating a worker preserves history.
+The historical Arabic feature name is rendered as "worker advances" in English documentation. Existing `savings`/`savingsEntries` identifiers and the contribution/withdrawal rules below are retained for compatibility; this terminology correction does not redefine their accounting behavior.
+
+Worker advances are an independent scope: daily/weekly/monthly contributions from a start date, partial/full payments and withdrawals from accumulated funds. They do not change expenses, cashbox or supplier balances. A withdrawal cannot exceed funds available on its movement date; a payment cannot be deleted if it would leave an earlier withdrawal uncovered. Recorded periods preserve their amount/date, and deactivating a worker preserves history.
 
 Issued/remaining chicken counts are tracking quantities only and enter neither expense totals nor cashbox balance.
 
@@ -63,7 +65,7 @@ At the owner's request, quick sale no longer requires entering cash received. Co
 
 ## Audit corrections — Schema 10, 2026-10-26
 
-Daily-account, cashbox and worker-savings equations remain. Filtering the expense statement to the cashbox share shows zero daily share and the cashbox amount, never reinterpreting that filtered share as daily expense. The manual-expense-total preview uses only summed daily shares. Supplier-invoice preview uses previous balance + invoice value - its payment.
+Daily-account, cashbox and worker-advance equations remain. Filtering the expense statement to the cashbox share shows zero daily share and the cashbox amount, never reinterpreting that filtered share as daily expense. The manual-expense-total preview uses only summed daily shares. Supplier-invoice preview uses previous balance + invoice value - its payment.
 
 Suggested selling price is fixed in the draft when a product is added. A completed sale remains a record; undo opens voiding rather than making its number reusable. A wrong inventory movement is corrected through a full reversal linked to the original on its original date, with a reason and new recording timestamp; reject reversals causing negative historical stock. A correct movement may then be recorded. Available quantity refers to today; future movements are identified in history.
 

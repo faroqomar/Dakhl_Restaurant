@@ -305,7 +305,7 @@ At the supported 900×580 window with Electron zoom set to 200%, the effective v
 
 **Area:** Workers · **Evidence:** Observed
 
-Selecting “Follow through” 25 October reduces the summary to 1,000, but the history still includes the 26 October contribution.
+Selecting an end date of 25 October reduces the summary to 1,000, but the history still includes the 26 October contribution.
 
 **Why it matters:** Visible rows do not reconcile with the summary; users can mistake later entries for included entries.
 

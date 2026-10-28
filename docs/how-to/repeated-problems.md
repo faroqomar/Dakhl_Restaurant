@@ -33,7 +33,7 @@ Read required rules once per task, then refresh changed sections/current facts. 
 
 ## Penpot/design lessons
 
-The detailed existing [41-error Penpot record](/Users/eros/.codex/skills/penpot/references/mistakes-2026-10-28.md) and [Penpot skill](/Users/eros/.codex/skills/penpot/SKILL.md) are the primary transfer guide, with [project skill provenance](../log/2026-10-28-penpot-skill.md). Do not duplicate its low-level font/SVG/import fixes into another writable guide. These absolute skill paths refer to this owner's machine; use the installed skill location in another environment.
+The detailed existing 41-error Penpot record (`/Users/eros/.codex/skills/penpot/references/mistakes-2026-10-28.md`) and Penpot skill (`/Users/eros/.codex/skills/penpot/SKILL.md`) are the primary transfer guide, with [project skill provenance](../log/2026-10-28-penpot-skill.md). Do not duplicate its low-level font/SVG/import fixes into another writable guide. These absolute skill paths refer to this owner's machine; use the installed skill location in another environment.
 
 | ID | Observed problem / cause | Prevention and verification |
 | --- | --- | --- |
@@ -51,6 +51,12 @@ The detailed existing [41-error Penpot record](/Users/eros/.codex/skills/penpot/
 | A20 | Snapshot review recorded 55 skill/docs/tool/evidence findings; old Figma transfer and several harnesses are incomplete or stale. | Keep the [independent dispositions](../phases/00-step6-merge.md). Do not label all fixed/false positives, use historical focus/totals overclaims as current acceptance, or silently rewrite archives. Resolve token-inventory discrepancies before phase01 implementation; no phase01 is started here. |
 | A21 | The merge record inventories 17 legacy lockfile alerts, including high-severity findings. | Treat the count as a dated inventory, not a permanent live count or exploitability assessment. Reference CI also consumes that lockfile. Dedicated advisory/reachability triage, applicable remediation and re-verification are required before affected legacy reuse/release. No silent dependency upgrade or security-readiness claim. |
 | A22 | Review comments threatened to expand an already approved revision into unrelated repairs. | Triage validity/scope/severity and record deferred gates. Fix current blockers with proportionate tests and renewed head approval; preserve approved heads for nonblocking follow-ups. Never change code, policy, permissions or scope merely to silence a reviewer. |
+
+## Documentation translation lessons
+
+| ID | Observed problem / cause | Prevention and verification |
+| --- | --- | --- |
+| A23 | English translation introduced financial-term drift (worker advances became savings; an unconfirmed invoice became a receipt), changed completed actions into instructions and weakened recovery/source-data limits. Initial cross-review did not catch these; hosted PR5 review did. | Compare financial nouns, status/tense, permission boundaries and recovery meaning directly with the original source, then independently review the corrections. Keep runtime identifiers and frozen UI unchanged; label translated UI quotations and historical snapshots explicitly. Correct matching authored captions and indexes without rewriting source history. PR5 corrections preserve values, dates, reference hashes and engine pin; no accounting behavior is changed. |
 
 ## Evidence and maintenance
 

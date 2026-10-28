@@ -14,7 +14,7 @@ The restaurant name supplied by the owner for the menu on 2026-10-16 is **Jannat
 | --- | --- | --- |
 | Invoices | Daily-expense and supplier-invoice PDF export | Cash-sale receipt added by the 2026-10-26 request; [rules](../decisions/0002-sales-inventory-shortcuts.md) |
 | Restaurant accounts | Expenses, daily balance, cashbox, suppliers, invoices, payments and debts | Report extensions require explicit financial meanings |
-| Historical worker records | Worker-savings UI removed at owner request on 2026-10-27; records retained only for compatibility/backups | No operating UI; [decision 0007](../decisions/0007-retire-worker-savings.md) |
+| Historical worker records | Worker-advance UI removed at owner request on 2026-10-27; records retained only for compatibility/backups | No operating UI; [decision 0007](../decisions/0007-retire-worker-savings.md) |
 | Advertising campaigns | [Campaign documentation register](../planning/campaigns.md) | Creation/publishing/ad-platform integrations are not implemented in the application |
 | Ideas | [Idea register](../planning/ideas.md) | Convert an idea into requirements, then implement when requested |
 | Sales and inventory | Cash sales, history/PDF receipts, sellable inventory and custom shortcuts since 2026-10-26 | Ingredients, recipes and credit sales are outside current scope; returns/held orders belong to [MVP completion](../decisions/0010-mvp-returns-and-held-orders.md) |

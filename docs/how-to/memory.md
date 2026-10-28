@@ -19,7 +19,7 @@ Update, 2026-10-28: root PLANS.md, PHASES.md and PROMPTS.md were added to the da
 From the Dakhl_Restaurant folder:
 
 ```sh
-./scripts/memory recall --query 'What is the project scope and what are the worker-savings rules?'
+./scripts/memory recall --query 'What is the project scope and what are the worker-advance rules?'
 ./scripts/memory reflect --query 'Which decisions remain open for this idea, and what are their sources?'
 ./scripts/memory sync
 ./scripts/memory check

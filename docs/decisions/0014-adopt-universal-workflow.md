@@ -8,6 +8,8 @@ The owner requested using Universal Rules & Agents and Phase Tracker from ErosVa
 
 Added PLANS.md for the current 12 phases and detailed scope, PHASES.md for tracking 00–11, PROMPTS.md for six reusable requests, docs/phases/ for evidence, and three role files: planner, ux and reviewer. Memory, model and permission configuration remained unchanged.
 
+> Historical adoption snapshot: the Figma/TODO wording below describes the original adoption task. The owner later selected Penpot in [decision 0015](0015-penpot-design-workspace.md); current [AGENTS.md](../../AGENTS.md) and [PHASES.md](../../PHASES.md) govern the active design tool and phase status.
+
 ## New execution rules
 
 The Lead coordinates appropriate agents automatically, with a read-only Planner, independent work under explicit file ownership and a Reviewer independent of implementation. UI phases need a suitable reference validated in Figma and owner approval before implementation. Current screenshot direction is not evidence of Figma verification.

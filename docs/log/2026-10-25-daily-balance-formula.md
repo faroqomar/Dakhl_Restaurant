@@ -14,4 +14,4 @@ Tests confirm that a shared expense of 30,000, allocated 10,000 to daily funds a
 
 ## Installation
 
-Restored `/Users/eros/Applications/Daftar-1.9.0-before-daily-balance.app` to `/Users/eros/Applications/Daftar.app` and verified version 1.9.0. Version 1.10.0 remains preserved for reference if needed.
+Restored `/Users/eros/Applications/Daftar-1.9.0-before-daily-balance.app` to `/Users/eros/Applications/Daftar.app` and verified version 1.9.0. Version 1.10.0 remains available for rollback if needed.

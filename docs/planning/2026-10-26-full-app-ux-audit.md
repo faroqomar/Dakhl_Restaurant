@@ -71,7 +71,7 @@ These are reviewer assessments, not automated certification scores.
 
 **Area:** Purchases · **Evidence:** Observed
 
-With no suppliers, Purchases still offers Add invoice. Clicking it throws “Select a supplier first.”, creates no visible drawer, and leaves an internal drawer state that prevents navigation.
+With no suppliers, Purchases still offers Add invoice. Clicking it throws an Arabic exception meaning “Select a supplier first.”, creates no visible drawer, and leaves an internal drawer state that prevents navigation.
 
 **Why it matters:** A first-time owner meets a silent dead end before recording the first purchase. Escape is an undocumented recovery.
 
@@ -307,7 +307,7 @@ At the supported 900×580 window with Electron zoom set to 200%, the effective v
 
 **Area:** Workers · **Evidence:** Observed
 
-Selecting “Follow through” 25 October reduces the summary to 1,000, but the history still includes the 26 October contribution.
+Selecting an end date of 25 October reduces the summary to 1,000, but the history still includes the 26 October contribution.
 
 **Why it matters:** Visible rows do not reconcile with the summary; users can mistake later entries for included entries.
 

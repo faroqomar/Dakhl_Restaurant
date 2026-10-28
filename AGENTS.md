@@ -317,7 +317,7 @@ This project serves **one restaurant only**. Read `docs/reference/project-scope.
 
 - The current application is Electron/JavaScript with local JSON data. Do not impose a new technology/database because another project's examples use it.
 - Preserve older accounts, backups and validation before save/import. Every schema change needs a record-preserving migration and appropriate tests.
-- Worker savings are independent of expenses/cashbox. Chicken counts are outside financial amounts. A supplier invoice records debt; payment enters expenses and deducts its source exactly once.
+- Worker advances are independent of expenses/cashbox. Chicken counts are outside financial amounts. A supplier invoice records debt; payment enters expenses and deducts its source exactly once.
 - Remaining cash, cashbox and overall balance are not alternative names for net profit. Document a report's meaning before implementation.
 - Use Arabic RTL, calm green and a light background in the application UI. During verification, never save sample data into restaurant accounts; use isolated test fixtures.
 - A request to document an idea authorizes neither publishing an advertisement, spending a budget, messaging people nor changing real accounts.

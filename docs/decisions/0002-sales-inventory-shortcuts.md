@@ -1,6 +1,6 @@
 # 0002 — Cash sales, sellable inventory and interface shortcuts
 
-Status: the owner approved sales, inventory and shortcuts on 2026-10-26; the details below are documented implementation choices. Source: the owner's request, the sketch with products on the left and the ticket on the right, and confirmation of the existing Daftar application. Implementation: version 1.10.0, account schema 8.
+Status: the owner approved the request for sales, inventory and shortcuts on 2026-10-26; the details below are documented implementation choices. Source: the owner's request, the sketch with products on the left and the ticket on the right, and confirmation of the existing Daftar application. Implementation: version 1.10.0, account schema 8.
 
 ## Decision and rationale
 
@@ -13,4 +13,4 @@ Status: the owner approved sales, inventory and shortcuts on 2026-10-26; the det
 - Sales revenue belongs to the daily account; it is not automatically added to the cashbox because the daily deposit is recorded later. The remaining-cash snapshot stores the sales total at that point, and only the subsequent sales difference is added. Sales preceding entry of remaining cash are treated as included in the actual entered amount, preventing duplicate cash. The manually entered overall balance remains fixed under the earlier rules. Moving a day's expense records does not move sales or inventory; when sales differ, the remaining-cash snapshot is reset to preserve the actual remaining amount.
 - Do not create illustrative products or opening balances in restaurant accounts. Screen and PDF experiments use only an isolated folder under `dist/commerce-qa/`.
 
-Behavior reference: `app/ui/model.js`, `commerce.js` and `commerce.css`; verification evidence is in the [work log](../log/2026-10-26-sales-inventory.md).
+Behavior reference: `electron-reference/app/ui/model.js`, `electron-reference/app/ui/commerce.js` and `electron-reference/app/ui/commerce.css`; verification evidence is in the [work log](../log/2026-10-26-sales-inventory.md).

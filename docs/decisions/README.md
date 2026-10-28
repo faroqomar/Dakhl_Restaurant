@@ -19,7 +19,7 @@ Use the [decision template](../templates/decision.md) and a sequential number. A
 
 - [0005 — Sales redesign inspired by the owner's reference](0005-sales-reference-redesign.md).
 - [0006 — Sectioned settings and unified saving](0006-organized-settings.md).
-- [0007 — Remove the worker-savings UI while preserving history](0007-retire-worker-savings.md).
+- [0007 — Remove the worker-advance UI while preserving history](0007-retire-worker-savings.md).
 - [0008 — Content-appropriate page widths in a full window](0008-fullscreen-layout-density.md).
 - [0009 — Full-width workspace and consistent alignment](0009-fluid-aligned-workspace.md).
 - [0010 — Returns, held orders and receipt](0010-mvp-returns-and-held-orders.md).

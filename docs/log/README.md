@@ -38,7 +38,7 @@ Each log records request, change, rationale, actual verification, limits and nex
 
 | 2026-10-25 | [Separate cashbox expenses and add account statement](2026-10-25-daily-account-statement.md) |
 
-| 2026-10-25 | [Clarify daily total balance from expenses and remainder](2026-10-25-daily-balance-formula.md) |
+| 2026-10-25 | [Clarify cashbox/daily-expense separation while preserving the balance formula](2026-10-25-daily-balance-formula.md) |
 
 - [Redesign Sales — 2026-10-27](2026-10-27-sales-reference-redesign.md).
 
@@ -81,3 +81,7 @@ Each log records request, change, rationale, actual verification, limits and nex
 - [2026-10-28 — Repeated problems and prevention](2026-10-28-repeated-problems.md).
 
 - [2026-10-28 — Required Madar documentation reading](2026-10-28-madar-documentation-rule.md).
+
+- [2026-10-28 — Owner delivery rules and English documentation review](2026-10-28-delivery-and-english-documentation.md).
+
+- [2026-10-28 — Documentation publication request](2026-10-28-documentation-publication.md).

@@ -6,7 +6,7 @@ Status: implemented, locally verified and installed, 2026-10-26. Source: the own
 
 The sales UI places products on the left and a ticket on the right, with search, groups, quantities, discount, cash received/change, saved receipts and PDF. Inventory supports products, prices, opening quantities, restock, spoilage, movement history, low-stock alerts and product deactivation. Sales history filters invoices, opens receipts and cancels whole sales with returned stock and a cancellation reason. Six shortcuts can target screens or be hidden; they are saved in accounts/backups. The active order survives navigation during the session, and duplicate save is blocked while writing.
 
-Sales update inventory automatically and daily accounts through the sales difference after the remainder snapshot; money is not automatically deposited in the cashbox. Ingredients and purchase cartons do not automatically become meals. [Decision 0002](../decisions/0002-sales-inventory-shortcuts.md) defines details, cash-sales boundaries and cancellation on the original date. [Usage guide](../how-to/sales-inventory.md).
+Sales update inventory automatically and daily accounts through the sales difference after the remaining-cash snapshot; money is not automatically deposited in the cashbox. Ingredients and purchase cartons do not automatically become meals. [Decision 0002](../decisions/0002-sales-inventory-shortcuts.md) defines details, cash-sales boundaries and cancellation on the original date. [Usage guide](../how-to/sales-inventory.md).
 
 ## Actual verification
 

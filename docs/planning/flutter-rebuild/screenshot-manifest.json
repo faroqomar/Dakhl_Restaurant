@@ -2408,7 +2408,7 @@
     {
       "id": "report-daily",
       "file": "report-daily.png",
-      "title": "Daily expense statement",
+      "title": "Daily expense invoice",
       "phase": "17",
       "mobile": false,
       "view": "report",

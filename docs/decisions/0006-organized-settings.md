@@ -16,4 +16,4 @@ The owner requested replacing free text with a list supporting add, delete and d
 
 ## Display-option scope change — 2026-10-27
 
-At the owner's request, remove product-card size from settings. It appears only on the sales screen and retains the same device preference. This direction supersedes its availability in the second section of the initial settings design; the rest of the decision continues.
+At the owner's request, the product-card size option was removed from settings. It appears only on the sales screen and retains the same device preference. This direction supersedes its availability in the second section of the initial settings design; the rest of the decision continues.

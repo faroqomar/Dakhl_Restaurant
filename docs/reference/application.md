@@ -18,7 +18,7 @@ Status: documented from source; establishes neither an installed version nor a n
 | [main.cjs](../../electron-reference/app/main.cjs) | Window/menus, data path, IPC-origin validation, save/import/export |
 | [preload.cjs](../../electron-reference/app/preload.cjs) | Restricted `window.daftar` bridge between UI and main process |
 | [storage.cjs](../../electron-reference/app/storage.cjs) | Validation, atomic saving, backups and unreadable-file protection |
-| [model.js](../../electron-reference/app/ui/model.js) | Schema 11, migration/validation, accounting, suppliers and worker savings |
+| [model.js](../../electron-reference/app/ui/model.js) | Schema 11, migration/validation, accounting, suppliers and worker advances |
 | [renderer.js](../../electron-reference/app/ui/renderer.js) | Rendering, forms, navigation and in-session undo |
 | [suppliers.js](../../electron-reference/app/ui/suppliers.js) | Supplier, material, invoice, debt and payment UI |
 | [numbers.js](../../electron-reference/app/ui/numbers.js) | Arabic/Persian digit normalization and input formatting |
@@ -56,7 +56,7 @@ npm run package
 
 Current packaging targets macOS ARM64 only; do not infer Windows/iOS/Android support. Normal startup may read restaurant accounts; tests use fake data, temporary folders or an isolated bridge. Optional PDF verification, `./node_modules/.bin/electron scripts/verify-pdf.cjs`, generates samples in `dist/pdf-qa/` without opening user accounts; inspect output visually when changing reports.
 
-Current tests cover accounting/storage, funding sources, suppliers, dates, worker savings, numbers, UI and PDF report content. Content-test success proves neither visual print quality nor application signing. Actual run results belong in [work logs](../log/README.md).
+Current tests cover accounting/storage, funding sources, suppliers, dates, worker advances, numbers, UI and PDF report content. Content-test success proves neither visual print quality nor application signing. Actual run results belong in [work logs](../log/README.md).
 
 ## Purchase invoices
 
@@ -104,9 +104,9 @@ The toolbar has a consistently aligned search/status/group cluster, with a separ
 
 Add through the card itself with a plus in the image corner instead of an add row below it. Count sits in the opposite corner; name, price and stock remain. Images/cards are shorter in both layouts, with an additional density option only on sales. There are no nested buttons; each card remains one button with an Arabic accessible name describing add, product and price, and adding is disabled when available stock is exhausted.
 
-## Worker-savings UI removal — 2026-10-27
+## Worker-advance UI removal — 2026-10-27
 
-At the owner's request, delete UI module savings.js, its HTML connection and handlers in renderer.js/ux.js. No savings page, worker/payment/withdrawal forms or associated shortcut choices remain. Unknown destinations return to sales; historical `savings` in an older file is accepted but becomes an empty shortcut slot during validation.
+At the owner's request, UI module savings.js, its HTML connection and handlers in renderer.js/ux.js were deleted. No savings page, worker/payment/withdrawal forms or associated shortcut choices remain. Unknown destinations return to sales; historical `savings` in an older file is accepted but becomes an empty shortcut slot during validation.
 
 Keep `workers`, `savingsEntries` and model validation for lossless reading, saving, import and export of older accounts. No balances, expenses or schema-10 change. Historical compatibility functions/reports are not a new worker UI. Historical model tests remain; removed UI tests were replaced with checks for absence and record preservation after settings save. [Decision](../decisions/0007-retire-worker-savings.md).
 
