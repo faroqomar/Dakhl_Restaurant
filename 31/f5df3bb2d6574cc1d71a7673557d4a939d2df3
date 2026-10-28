@@ -1,0 +1,27 @@
+AGENTS.md
+  s_8c9e903a0f085a::t_82ba10321fe3f8 332-335
+docs/README.md
+  s_8c9e903a0f085a::t_ca38c00c0b2dcb 44-47
+docs/how-to/repeated-problems.md
+  s_8c9e903a0f085a::t_9f9754e006b7af 1-59
+docs/log/2026-10-28-repeated-problems.md
+  s_8c9e903a0f085a::t_55871fc7be2d5c 1-9
+docs/log/README.md
+  s_8c9e903a0f085a::t_7cc860e2367299 80-81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "31f5df3bb2d6574cc1d71a7673557d4a939d2df3",
+  "prompts": {},
+  "sessions": {
+    "s_8c9e903a0f085a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1814f-9531-7040-8610-ab44599118ac",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
