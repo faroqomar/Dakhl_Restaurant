@@ -1,0 +1,22 @@
+{
+  "kind": "immutable source review snapshot, not a second writable console implementation",
+  "authority": "Sites source repository, Dakhl Development",
+  "site": "https://dakhl-development-dashboard.eros-6.chatgpt.site",
+  "sourceCommit": "3de2983c4e79ddd651715ec2692bcec0e2bfaf30",
+  "files": {
+    ".gitignore": "c39d32858a63984238fe034fdf0ba5177add5c6be1391d68983023de1703062d",
+    ".openai/hosting.json": "0e4b5d2c29afba1c94ea24196c85a1cc49ce004dd7e12c9a5a71b0f1d3dd7ace",
+    "README.md": "9fe2aa3ea48fb9370695bfa10b5914b001c146290f160eef630b91191f8da3fc",
+    "Start Dashboard.command": "4aad2c8e284173ddc519b7669d6e47d1c739003f0c1f02eb983e165921626392",
+    "dist/app.js": "aaba4ef8ddcae5cafd6403bc9af625b4be3dae6a5d7ad8db3fe48a5dbc97225a",
+    "dist/index.html": "d209b33f85cab859603f6f5c806ab4efebc7fab5679f105171b6802975504970",
+    "dist/snapshot.json": "772572956b9d7f2203abb47b3aa84f586499f0778620bde5f699ea80012c9c33",
+    "dist/styles.css": "8e18c61b3e7bbe5d6e037fbd67fe197439b90e7593da9d8b13cab2d2d40fb742",
+    "runner-config.example.json": "ff09992d43916d4d794d072488bfa7c17d97e31c72eb44228b64884b7bda935a",
+    "runner/connect.html": "d4a897efb7c86f1587ec16dd7b6f847bec51b19d9a1ea76d0215215fdd498908",
+    "runner/server.py": "10d0f7acc890d96c70dfa35fd188575cd0a0a51f8a3aadb17762c716de5199de",
+    "runner/tests/test_server.py": "52e5ed92525d399844cf93f21fcf6ea2752f718bdc7cb6ca812bbc81f1cff6d0",
+    "site/tests/ui-contract.test.mjs": "c7bdc61ac91fc5aab9306824ad3d06dfa1c069e95c9158806b21bbe34a96d7cb"
+  },
+  "excluded": "Local ignored runner configuration, sessions, logs and runtime data; screenshot evidence already separate."
+}
