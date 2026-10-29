@@ -1,6 +1,8 @@
 import importlib.util
 from pathlib import Path
 import tempfile
+import subprocess
+import sys
 import unittest
 
 spec = importlib.util.spec_from_file_location('release_version', Path(__file__).parents[1] / 'release_version.py')
@@ -8,6 +10,15 @@ version = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(version)
 
 class VersionTests(unittest.TestCase):
+    def test_explicit_empty_previous_fails_closed_in_api_and_cli(self):
+        with self.assertRaises(ValueError):
+            version.validate('1.2.3+4', '')
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'pubspec.yaml'
+            path.write_text('version: 1.2.3+4\n')
+            result = subprocess.run([sys.executable, str(Path(version.__file__)), 'check', '--pubspec', str(path), '--previous', ''], capture_output=True, text=True)
+            self.assertNotEqual(result.returncode, 0)
+
     def test_requires_monotonic_build_and_no_version_downgrade(self):
         for candidate in ['1.2.2+10', '1.2.3+9', '1.2.3+10']:
             with self.assertRaises(ValueError):

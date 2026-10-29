@@ -10,7 +10,7 @@
     "docs/how-to/repeated-problems.md": "646b1eac19d0191c3a2a721966178feb325f28a72e524e0703b0c4c2fe12440d"
   },
   "project": "daftar",
-  "status": "queued",
+  "status": "completed",
   "operation": {
     "operation_id": "1992e414-83ef-46c9-9bdb-b491e6294a6c",
     "status": "completed",
@@ -45,5 +45,7 @@
       }
     ],
     "task_payload": null
-  }
+  },
+  "submissionStatus": "queued",
+  "statusScope": "Final status of the retained operation; source hashes describe that dated source snapshot."
 }

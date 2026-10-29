@@ -34,3 +34,9 @@ python3 -m unittest discover -s tool/dev_dashboard/tests -v
 ```
 
 Use one Flutter command at a time in this checkout. Concurrent native asset preparation can collide on the generated SQLite universal binary.
+
+## Current console setup
+
+Use the live standalone dashboard project, not the frozen review snapshot in outputs. Copy its runner-config.example.json to ignored runner-config.json. Set app_root, engine_root and engine_tools_root to the intended checkouts. Also set the fourth absolute placeholder, data_dir, to the local dashboard var directory, or remove data_dir to use the default ignored var directory. Do not leave any /absolute/path placeholder. Start Dashboard.command in the authoritative project is executable; the review snapshot preserves its original mode for provenance only.
+
+Profile cache identity includes active Xcode version and macOS SDK build as well as Flutter/Dart, app/native inputs and the verified runtime-engine identity. Toolchain changes force a build; changes during build or measurement reject the result. Results carry the same toolchain identity so older conditions are not silently compared.

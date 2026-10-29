@@ -13,7 +13,7 @@ def validate(value, previous=None):
     if not match:
         raise ValueError('Use MAJOR.MINOR.PATCH+BUILD with a positive build number.')
     parsed = tuple(map(int, match.groups()))
-    if previous:
+    if previous is not None:
         old = validate(previous)
         if parsed[:3] < old[:3] or parsed[3] <= old[3]:
             raise ValueError('Version cannot decrease; build must increase.')
@@ -43,11 +43,11 @@ def main():
     args = parser.parse_args()
     try:
         if args.action == 'prepare':
-            if not args.version or args.previous:
+            if not args.version or args.previous is not None:
                 parser.error('prepare needs --version and does not accept --previous')
             prepare(args.pubspec, args.version)
         else:
-            if args.version:
+            if args.version is not None:
                 parser.error('--version is for prepare')
             validate(current(args.pubspec), args.previous)
         print(current(args.pubspec))

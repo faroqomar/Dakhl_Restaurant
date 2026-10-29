@@ -116,11 +116,20 @@ def binary_fingerprint():
     return digest.hexdigest()
 
 
-def build_profile(fingerprint, sdk, engine_identity=None):
+def apple_toolchain_identity():
+    identity = dict(xcode=command(['xcodebuild', '-version']).strip(),
+                    macosSdkBuild=command(['xcrun', '--sdk', 'macosx', '--show-sdk-build-version']).strip())
+    if not all(identity.values()):
+        raise RuntimeError('apple_toolchain_identity_unavailable')
+    return identity
+
+
+def build_profile(fingerprint, sdk, engine_identity=None, apple_toolchain=None):
     stamp = ROOT / 'build/dev_dashboard/profile-cache.json'
     identity = engine_identity if engine_identity is not None else runtime_engine_identity()
+    toolchain = apple_toolchain if apple_toolchain is not None else apple_toolchain_identity()
     key = dict(sourceFingerprint=fingerprint, sdk=sdk, mode='profile', target='lib/platform/performance_main.dart',
-               runtimeEngineIdentity=identity)
+               runtimeEngineIdentity=identity, appleToolchainIdentity=toolchain)
     try:
         cached = json.loads(stamp.read_text())
     except (OSError, ValueError):
@@ -164,9 +173,10 @@ def main():
     command(['python3', 'scripts/check-engine.py'])
     sdk = json.loads(command(['flutter', '--version', '--machine']))
     engine_identity = runtime_engine_identity()
+    toolchain = apple_toolchain_identity()
     fingerprint = source_fingerprint(engine_identity)
-    executable = build_profile(fingerprint, sdk, engine_identity)
-    if source_fingerprint() != fingerprint:
+    executable = build_profile(fingerprint, sdk, engine_identity, toolchain)
+    if source_fingerprint() != fingerprint or apple_toolchain_identity() != toolchain:
         raise RuntimeError('source_changed_during_profile_build')
     version = re.search(r'^version:\s*(\S+)', (ROOT / 'pubspec.yaml').read_text(), re.M).group(1)
     engine_commit = engine_identity['gitCommit']
@@ -181,6 +191,7 @@ def main():
         result['runtimeEngineIdentity'] = engine_identity
         result['environment']['flutterVersion'] = sdk['frameworkVersion']
         result['environment']['dartVersion'] = sdk['dartSdkVersion']
+        result['environment']['appleToolchain'] = toolchain
         result['environment']['appBenchmarkRunnerFingerprint'] = runner_fingerprint
         result['environment']['benchmarkToolsCommit'] = command(['git', 'rev-parse', 'HEAD'], tooling_root).strip()
         result['environment']['benchmarkToolsFingerprint'] = tooling_fingerprint
@@ -189,7 +200,7 @@ def main():
         result['comparabilityKey'] = module.comparability_key(result)
         module.validate_result(result)
         results.append(result)
-    if source_fingerprint() != fingerprint or hashlib.sha256(module_path.read_bytes()).hexdigest() != tooling_fingerprint:
+    if source_fingerprint() != fingerprint or hashlib.sha256(module_path.read_bytes()).hexdigest() != tooling_fingerprint or apple_toolchain_identity() != toolchain:
         raise RuntimeError('benchmark_source_changed_during_measurement')
     output = results[0] if len(results) == 1 else dict(schemaVersion=1, results=results)
     args.output.parent.mkdir(parents=True, exist_ok=True)

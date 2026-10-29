@@ -18,5 +18,21 @@
     "runner/tests/test_server.py": "52e5ed92525d399844cf93f21fcf6ea2752f718bdc7cb6ca812bbc81f1cff6d0",
     "site/tests/ui-contract.test.mjs": "c7bdc61ac91fc5aab9306824ad3d06dfa1c069e95c9158806b21bbe34a96d7cb"
   },
-  "excluded": "Local ignored runner configuration, sessions, logs and runtime data; screenshot evidence already separate."
+  "excluded": "Local ignored runner configuration, sessions, logs and runtime data; screenshot evidence already separate.",
+  "usage": "Immutable source audit snapshot only; do not install/run from outputs. The writable authority remains the Sites project. Current setup corrections are in tool/dev_dashboard/README.md.",
+  "modes": {
+    ".gitignore": "100644",
+    ".openai/hosting.json": "100644",
+    "README.md": "100644",
+    "Start Dashboard.command": "100755",
+    "dist/app.js": "100644",
+    "dist/index.html": "100644",
+    "dist/snapshot.json": "100644",
+    "dist/styles.css": "100644",
+    "runner-config.example.json": "100644",
+    "runner/connect.html": "100644",
+    "runner/server.py": "100644",
+    "runner/tests/test_server.py": "100644",
+    "site/tests/ui-contract.test.mjs": "100644"
+  }
 }

@@ -12,6 +12,30 @@ spec.loader.exec_module(runner)
 
 
 class AppRunnerTests(unittest.TestCase):
+    def setUp(self):
+        toolchain = patch.object(runner, 'apple_toolchain_identity', return_value={'xcode': 'fixture', 'macosSdkBuild': 'fixture'}, create=True)
+        toolchain.start()
+        self.addCleanup(toolchain.stop)
+
+    def test_native_toolchain_upgrade_invalidates_identical_app_cache(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            executable = root / 'app'
+            executable.write_text('fixture')
+            toolchain = {'xcode': 'Xcode old\nBuild old', 'macosSdkBuild': 'sdk-old'}
+            with patch.object(runner, 'ROOT', root), patch.object(runner, 'EXECUTABLE', executable), patch.object(runner, 'runtime_engine_identity', return_value={'gitCommit': 'a' * 40}), patch.object(runner, 'apple_toolchain_identity', side_effect=lambda: dict(toolchain)), patch.object(runner, 'command') as build:
+                runner.build_profile('same-source', {'flutter': 'same'})
+                runner.build_profile('same-source', {'flutter': 'same'})
+                self.assertEqual(build.call_count, 1)
+                toolchain['xcode'] = 'Xcode new\nBuild new'
+                runner.build_profile('same-source', {'flutter': 'same'})
+                self.assertEqual(build.call_count, 2)
+                toolchain['macosSdkBuild'] = 'sdk-new'
+                runner.build_profile('same-source', {'flutter': 'same'})
+                self.assertEqual(build.call_count, 3)
+                key = json.loads((root / 'build/dev_dashboard/profile-cache.json').read_text())['key']
+                self.assertEqual(key['appleToolchainIdentity'], toolchain)
+
     def engine_fixture(self, directory):
         root = Path(directory) / 'app'
         engine = Path(directory) / 'Madar_Engine'
