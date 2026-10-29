@@ -1,0 +1,268 @@
+{
+  "date": "2026-10-27",
+  "isolatedProfile": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/daftar-penpot-reference-E6K34C",
+  "syntheticOnly": true,
+  "viewports": "per-screen",
+  "sourceHashChecks": [
+    {
+      "file": "index.html",
+      "match": true
+    },
+    {
+      "file": "styles.css",
+      "match": true
+    },
+    {
+      "file": "commerce.css",
+      "match": true
+    },
+    {
+      "file": "ux.css",
+      "match": true
+    },
+    {
+      "file": "commerce.js",
+      "match": true
+    },
+    {
+      "file": "renderer.js",
+      "match": true
+    },
+    {
+      "file": "suppliers.js",
+      "match": true
+    },
+    {
+      "file": "ux.js",
+      "match": true
+    },
+    {
+      "file": "model.js",
+      "match": true
+    }
+  ],
+  "results": [
+    {
+      "id": "desktop-sales",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1000
+      },
+      "actualSize": {
+        "width": 2880,
+        "height": 2000
+      },
+      "expectedSize": {
+        "width": 2880,
+        "height": 2000
+      },
+      "equalDimensions": true,
+      "changedPixels": 0,
+      "totalPixels": 5760000,
+      "changedPixelRatio": 0,
+      "differenceBounds": null,
+      "meanAbsoluteChannelDifference": 0,
+      "maxChannelDifference": 0,
+      "actualSha256": "4b7ec00c447aac765662ec6d96d98998eb576b52ca1e9277a82eb8be0b4f49f2",
+      "expectedSha256": "4b7ec00c447aac765662ec6d96d98998eb576b52ca1e9277a82eb8be0b4f49f2",
+      "presentationOverrides": []
+    },
+    {
+      "id": "desktop-navigation",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1000
+      },
+      "actualSize": {
+        "width": 2880,
+        "height": 2000
+      },
+      "expectedSize": {
+        "width": 2880,
+        "height": 2000
+      },
+      "equalDimensions": true,
+      "changedPixels": 0,
+      "totalPixels": 5760000,
+      "changedPixelRatio": 0,
+      "differenceBounds": null,
+      "meanAbsoluteChannelDifference": 0,
+      "maxChannelDifference": 0,
+      "actualSha256": "3750ff59c26d37c01051131738673356db0e65c6fa5e25977624381946f37ecb",
+      "expectedSha256": "3750ff59c26d37c01051131738673356db0e65c6fa5e25977624381946f37ecb",
+      "presentationOverrides": []
+    },
+    {
+      "id": "desktop-invoice-new",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1000
+      },
+      "actualSize": {
+        "width": 2880,
+        "height": 2000
+      },
+      "expectedSize": {
+        "width": 2880,
+        "height": 2000
+      },
+      "equalDimensions": true,
+      "changedPixels": 0,
+      "totalPixels": 5760000,
+      "changedPixelRatio": 0,
+      "differenceBounds": null,
+      "meanAbsoluteChannelDifference": 0,
+      "maxChannelDifference": 0,
+      "actualSha256": "ad11eb5bf1c2e722e6ae9de344216f47742ec2d937e64b453bf1d58942397472",
+      "expectedSha256": "ad11eb5bf1c2e722e6ae9de344216f47742ec2d937e64b453bf1d58942397472",
+      "presentationOverrides": [
+        {
+          "selector": "#invoice-old-balance",
+          "before": "157,500",
+          "after": "137,500",
+          "applied": true,
+          "scope": "Design-only synthetic presentation fixture. Match supplied reference footer; no model, posted record or accounting rule changed."
+        }
+      ]
+    },
+    {
+      "id": "phone-invoice-new",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "actualSize": {
+        "width": 780,
+        "height": 1688
+      },
+      "expectedSize": {
+        "width": 780,
+        "height": 1688
+      },
+      "equalDimensions": true,
+      "changedPixels": 0,
+      "totalPixels": 1316640,
+      "changedPixelRatio": 0,
+      "differenceBounds": null,
+      "meanAbsoluteChannelDifference": 0,
+      "maxChannelDifference": 0,
+      "actualSha256": "26dca31f61b6772dec43b329f552f3f65a90a4987e53643805f179599048c92e",
+      "expectedSha256": "26dca31f61b6772dec43b329f552f3f65a90a4987e53643805f179599048c92e",
+      "presentationOverrides": [
+        {
+          "selector": "#invoice-old-balance",
+          "before": "157,500",
+          "after": "137,500",
+          "applied": true,
+          "scope": "Design-only synthetic presentation fixture. Match supplied reference footer; no model, posted record or accounting rule changed."
+        }
+      ]
+    },
+    {
+      "id": "phone-sales",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "actualSize": {
+        "width": 780,
+        "height": 1688
+      },
+      "expectedSize": {
+        "width": 780,
+        "height": 1688
+      },
+      "equalDimensions": true,
+      "changedPixels": 368,
+      "totalPixels": 1316640,
+      "changedPixelRatio": 0.00027949933163203303,
+      "differenceBounds": {
+        "minX": 50,
+        "minY": 870,
+        "maxX": 729,
+        "maxY": 1502
+      },
+      "meanAbsoluteChannelDifference": 0.0008210292866690971,
+      "maxChannelDifference": 7,
+      "actualSha256": "3e9109d293255d746964e63bc2ea80a6e0c8252075e12a4c282fc75500f68853",
+      "expectedSha256": "c927c98295d7d1546031aacfac8a6f4d2958c2d80644a0f0888be25912f21859",
+      "presentationOverrides": [
+        {
+          "field": "synthetic saleDraft.lines",
+          "after": [],
+          "scope": "Design-only narrow-reference fixture. Fresh empty local draft matches frozen visible product counts of zero; held-order list and posted synthetic records preserved."
+        }
+      ]
+    },
+    {
+      "id": "design-system",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1200
+      },
+      "actualSize": {
+        "width": 2880,
+        "height": 2400
+      },
+      "expectedSize": {
+        "width": 2880,
+        "height": 2400
+      },
+      "equalDimensions": true,
+      "changedPixels": 0,
+      "totalPixels": 6912000,
+      "changedPixelRatio": 0,
+      "differenceBounds": null,
+      "meanAbsoluteChannelDifference": 0,
+      "maxChannelDifference": 0,
+      "actualSha256": "0e9e34d1eb7f76d9a07548c2a8ed0631ed447708ae74f1ee0873a6f2ce558259",
+      "expectedSha256": "0e9e34d1eb7f76d9a07548c2a8ed0631ed447708ae74f1ee0873a6f2ce558259",
+      "presentationOverrides": []
+    },
+    {
+      "id": "medium-sales",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 768
+      },
+      "actualSize": {
+        "width": 2048,
+        "height": 1536
+      },
+      "reference": "No supplied same-size baseline; additional frozen-source responsive view",
+      "actualSha256": "c9a8163aabdb9064e31e056017e1b8b98be0f34b0784990065f7d05df74024cb",
+      "presentationOverrides": []
+    },
+    {
+      "id": "wide-sales",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      "actualSize": {
+        "width": 3840,
+        "height": 2160
+      },
+      "reference": "No supplied same-size baseline; additional frozen-source responsive view",
+      "actualSha256": "9155de33a5d35c61b7ed3c55b054f93cb1a9a6d3212d0d05bc9afb516cb83294",
+      "presentationOverrides": []
+    }
+  ],
+  "blockedRequests": []
+}

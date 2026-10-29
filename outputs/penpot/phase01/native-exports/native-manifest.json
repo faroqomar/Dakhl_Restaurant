@@ -1,0 +1,447 @@
+{
+  "date": "2026-10-29",
+  "file": "122350ae-89ad-8027-8008-dba0bd5cf454",
+  "page": "122350ae-89ad-8027-8008-dba0bd5cf455",
+  "status": "Native export set prepared for independent review and explicit owner approval",
+  "boards": [
+    {
+      "id": "812c55ce-996a-805c-8008-dcf2baa25258",
+      "art": "6038a601-8820-8088-8008-dcf4e11a8a78",
+      "name": "01 · Reference · Desktop navigation · Design · v1",
+      "screen": "desktop-navigation",
+      "kind": "design",
+      "x": 1520,
+      "y": 3000,
+      "w": 1440,
+      "h": 1000,
+      "photoCount": 24,
+      "markerCount": 2,
+      "png": "desktop-navigation-design.png",
+      "sha256": "15184128133dfbcde6204f877fd142b4dd774689455652dfd8b769486c68bb22",
+      "pixelSize": [
+        2880,
+        2000
+      ],
+      "referenceComparison": {
+        "sourceSha256": "3750ff59c26d37c01051131738673356db0e65c6fa5e25977624381946f37ecb",
+        "equalDimensions": true,
+        "sourceICC": true,
+        "nativeICC": false,
+        "condition": "ICC to sRGB when present; untagged PNG assumed sRGB; RGB unmasked; scale2",
+        "meanAbsoluteRGBError": 1.923603,
+        "changedPixelRatio": 0.988021,
+        "maxChannelDifference": 230,
+        "acceptance": "No aggregate threshold; actual native visual review and explicit owner approval required."
+      }
+    },
+    {
+      "id": "6038a601-8820-8088-8008-dcf50bd70ac4",
+      "art": "6038a601-8820-8088-8008-dcf50a72ec75",
+      "name": "01 · Reference · Desktop navigation · Wireframe · v1",
+      "screen": "desktop-navigation",
+      "kind": "wireframe",
+      "x": 1520,
+      "y": 4350,
+      "w": 1440,
+      "h": 1000,
+      "photoCount": 0,
+      "markerCount": 2,
+      "png": "desktop-navigation-wireframe.png",
+      "sha256": "2b6b9f34a783261e19b9b6ad071f373c18b9dfd9b328f1ec2457c4d9f21a2dc7",
+      "pixelSize": [
+        2880,
+        2000
+      ]
+    },
+    {
+      "id": "6038a601-8820-8088-8008-dcf5971ec0d6",
+      "art": "6038a601-8820-8088-8008-dcf615277fe5",
+      "name": "01 · Reference · Design inventory · Design · v1",
+      "screen": "design-system",
+      "kind": "design",
+      "x": 0,
+      "y": 3000,
+      "w": 1440,
+      "h": 1200,
+      "photoCount": 1,
+      "markerCount": 1,
+      "png": "design-system-design.png",
+      "sha256": "fabf122d02b746013eb7993220d7295abfa620ded9ca06f71439051916883f8e",
+      "pixelSize": [
+        2880,
+        2400
+      ],
+      "referenceComparison": {
+        "sourceSha256": "0e9e34d1eb7f76d9a07548c2a8ed0631ed447708ae74f1ee0873a6f2ce558259",
+        "equalDimensions": true,
+        "sourceICC": true,
+        "nativeICC": false,
+        "condition": "ICC to sRGB when present; untagged PNG assumed sRGB; RGB unmasked; scale2",
+        "meanAbsoluteRGBError": 1.404547,
+        "changedPixelRatio": 0.657771,
+        "maxChannelDifference": 231,
+        "acceptance": "No aggregate threshold; actual native visual review and explicit owner approval required."
+      }
+    },
+    {
+      "id": "6038a601-8820-8088-8008-dcf6365ed789",
+      "art": "6038a601-8820-8088-8008-dcf63604eb29",
+      "name": "01 · Reference · Design inventory · Wireframe · v1",
+      "screen": "design-system",
+      "kind": "wireframe",
+      "x": 0,
+      "y": 4350,
+      "w": 1440,
+      "h": 1200,
+      "photoCount": 0,
+      "markerCount": 1,
+      "png": "design-system-wireframe.png",
+      "sha256": "d5cbc8fd3625fce76532e77a60fce43b58d57890da5355c70a812ed9357f470f",
+      "pixelSize": [
+        2880,
+        2400
+      ]
+    },
+    {
+      "id": "6038a601-8820-8088-8008-dcf6c1a48592",
+      "art": "6038a601-8820-8088-8008-dcf6c10630e6",
+      "name": "01 · Reference · Medium sales shell · Design · v1",
+      "screen": "medium-sales",
+      "kind": "design",
+      "x": 900,
+      "y": 8400,
+      "w": 1024,
+      "h": 768,
+      "photoCount": 6,
+      "markerCount": 2,
+      "png": "medium-sales-design.png",
+      "sha256": "aceb49af193ea962a7262b58188e5faf0b26a19754c03dfcd959992d165f99e8",
+      "pixelSize": [
+        2048,
+        1536
+      ]
+    },
+    {
+      "id": "6038a601-8820-8088-8008-dcf6d73a6109",
+      "art": "6038a601-8820-8088-8008-dcf6d68c05a6",
+      "name": "01 · Reference · Medium sales shell · Wireframe · v1",
+      "screen": "medium-sales",
+      "kind": "wireframe",
+      "x": 900,
+      "y": 9750,
+      "w": 1024,
+      "h": 768,
+      "photoCount": 0,
+      "markerCount": 2,
+      "png": "medium-sales-wireframe.png",
+      "sha256": "69117d81a4c51139c766a03a9423196a6bdea3752c1758b142aadaacf06a9f1a",
+      "pixelSize": [
+        2048,
+        1536
+      ]
+    },
+    {
+      "id": "6038a601-8820-8088-8008-dcf6ee2e0047",
+      "art": "6038a601-8820-8088-8008-dcf6ec6f0bc3",
+      "name": "01 · Reference · Wide sales shell · Design · v1",
+      "screen": "wide-sales",
+      "kind": "design",
+      "x": 2050,
+      "y": 8400,
+      "w": 1920,
+      "h": 1080,
+      "photoCount": 29,
+      "markerCount": 2,
+      "recoveredAfterTimeout": "Native metadata/source hash/full photo and marker counts confirmed completed; no duplicate import.",
+      "png": "wide-sales-design.png",
+      "sha256": "c93babb5947b93caaab0d2fa095629fc5f36cd2742b90165a425917a7e8c511e",
+      "pixelSize": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "id": "6038a601-8820-8088-8008-dcf77896d80a",
+      "art": "6038a601-8820-8088-8008-dcf776f8e978",
+      "name": "01 · Reference · Wide sales shell · Wireframe · v1",
+      "screen": "wide-sales",
+      "kind": "wireframe",
+      "x": 2050,
+      "y": 9750,
+      "w": 1920,
+      "h": 1080,
+      "photoCount": 0,
+      "markerCount": 2,
+      "png": "wide-sales-wireframe.png",
+      "sha256": "49eeffd2c7f350df5e1255f7104efc2bfd9a70e9cf7714679fb77ae6376c2cdf",
+      "pixelSize": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "id": "6038a601-8820-8088-8008-dcf67806c1ef",
+      "art": "6038a601-8820-8088-8008-dcfc38b41bc6",
+      "name": "01 · Reference · Narrow sales · Design · v1",
+      "screen": "phone-sales",
+      "kind": "design",
+      "x": 1520,
+      "y": 5700,
+      "w": 390,
+      "h": 844,
+      "photoCount": 4,
+      "markerCount": 1,
+      "png": "phone-sales-design.png",
+      "sha256": "f6a481e1afffb3192eebcfb0d0519b817b4a3b161cd73a21a80cddd7bfddc237",
+      "pixelSize": [
+        780,
+        1688
+      ],
+      "referenceComparison": {
+        "sourceSha256": "c927c98295d7d1546031aacfac8a6f4d2958c2d80644a0f0888be25912f21859",
+        "equalDimensions": true,
+        "sourceICC": true,
+        "nativeICC": false,
+        "condition": "ICC to sRGB when present; untagged PNG assumed sRGB; RGB unmasked; scale2",
+        "meanAbsoluteRGBError": 2.160589,
+        "changedPixelRatio": 0.567906,
+        "maxChannelDifference": 223,
+        "acceptance": "No aggregate threshold; actual native visual review and explicit owner approval required."
+      }
+    },
+    {
+      "id": "6038a601-8820-8088-8008-dcf68b9b53cd",
+      "art": "6038a601-8820-8088-8008-dcfc54caefa5",
+      "name": "01 · Reference · Narrow sales · Wireframe · v1",
+      "screen": "phone-sales",
+      "kind": "wireframe",
+      "x": 1520,
+      "y": 7050,
+      "w": 390,
+      "h": 844,
+      "photoCount": 0,
+      "markerCount": 1,
+      "png": "phone-sales-wireframe.png",
+      "sha256": "7abfe5c68a521ed445456e65f7fc14d61a9c1cdcff8900ceb479187e5e3bb0e2",
+      "pixelSize": [
+        780,
+        1688
+      ]
+    },
+    {
+      "id": "6038a601-8820-8088-8008-dcf6538d07f5",
+      "art": "6038a601-8820-8088-8008-dcff14a5caa0",
+      "name": "01 · Reference · Desktop invoice dialog · Design · v1",
+      "screen": "desktop-invoice-new",
+      "kind": "design",
+      "x": 3040,
+      "y": 3000,
+      "w": 1440,
+      "h": 1000,
+      "photoCount": 0,
+      "markerCount": 4,
+      "png": "desktop-invoice-new-design.png",
+      "sha256": "8ed4c132ff99699b5da3b56b05a2e1795c550d19d03cb3e2d51cca089dde8fe8",
+      "pixelSize": [
+        2880,
+        2000
+      ],
+      "referenceComparison": {
+        "sourceSha256": "ad11eb5bf1c2e722e6ae9de344216f47742ec2d937e64b453bf1d58942397472",
+        "equalDimensions": true,
+        "sourceICC": true,
+        "nativeICC": false,
+        "condition": "ICC to sRGB when present; untagged PNG assumed sRGB; RGB unmasked; scale2",
+        "meanAbsoluteRGBError": 1.504202,
+        "changedPixelRatio": 0.792453,
+        "maxChannelDifference": 226,
+        "acceptance": "No aggregate threshold; actual native visual review and explicit owner approval required."
+      }
+    },
+    {
+      "id": "6038a601-8820-8088-8008-dcf664de7069",
+      "art": "6038a601-8820-8088-8008-dcff292fb031",
+      "name": "01 · Reference · Desktop invoice dialog · Wireframe · v1",
+      "screen": "desktop-invoice-new",
+      "kind": "wireframe",
+      "x": 3040,
+      "y": 4350,
+      "w": 1440,
+      "h": 1000,
+      "photoCount": 0,
+      "markerCount": 4,
+      "png": "desktop-invoice-new-wireframe.png",
+      "sha256": "ef273638a4311665062ae5cacc48b8b666cf26e8cf764597b328c096efcdb224",
+      "pixelSize": [
+        2880,
+        2000
+      ]
+    },
+    {
+      "id": "6038a601-8820-8088-8008-dcf69c4bb9f1",
+      "art": "6038a601-8820-8088-8008-dcff43a1d3fa",
+      "name": "01 · Reference · Narrow invoice dialog · Design · v1",
+      "screen": "phone-invoice-new",
+      "kind": "design",
+      "x": 2070,
+      "y": 5700,
+      "w": 390,
+      "h": 844,
+      "photoCount": 0,
+      "markerCount": 4,
+      "png": "phone-invoice-new-design.png",
+      "sha256": "b68ed50918801260ba01b83d26d83069b419471998f475c2d8ebfd39d2100d84",
+      "pixelSize": [
+        780,
+        1688
+      ],
+      "referenceComparison": {
+        "sourceSha256": "26dca31f61b6772dec43b329f552f3f65a90a4987e53643805f179599048c92e",
+        "equalDimensions": true,
+        "sourceICC": true,
+        "nativeICC": false,
+        "condition": "ICC to sRGB when present; untagged PNG assumed sRGB; RGB unmasked; scale2",
+        "meanAbsoluteRGBError": 2.302819,
+        "changedPixelRatio": 0.772857,
+        "maxChannelDifference": 230,
+        "acceptance": "No aggregate threshold; actual native visual review and explicit owner approval required."
+      }
+    },
+    {
+      "id": "6038a601-8820-8088-8008-dcf6adaf3d06",
+      "art": "6038a601-8820-8088-8008-dcff60672b7a",
+      "name": "01 · Reference · Narrow invoice dialog · Wireframe · v1",
+      "screen": "phone-invoice-new",
+      "kind": "wireframe",
+      "x": 2070,
+      "y": 7050,
+      "w": 390,
+      "h": 844,
+      "photoCount": 0,
+      "markerCount": 4,
+      "png": "phone-invoice-new-wireframe.png",
+      "sha256": "3fe7d17c04065eb092749deceb253ad02792d3d7fd6bfbfe1fe26b80c1ad3d34",
+      "pixelSize": [
+        780,
+        1688
+      ]
+    },
+    {
+      "screen": "desktop-sales",
+      "kind": "design",
+      "id": "812c55ce-996a-805c-8008-dcf124e008ef",
+      "w": 1440,
+      "h": 1000,
+      "png": "desktop-sales-design.png",
+      "sha256": "82a4a738354debf223108196dd05036f3fa17e5f900f596df0872d477565af2d",
+      "pixelSize": [
+        2880,
+        2000
+      ],
+      "referenceComparison": {
+        "sourceSha256": "4b7ec00c447aac765662ec6d96d98998eb576b52ca1e9277a82eb8be0b4f49f2",
+        "equalDimensions": true,
+        "sourceICC": true,
+        "nativeICC": false,
+        "condition": "ICC to sRGB when present; untagged PNG assumed sRGB; RGB unmasked; scale2",
+        "meanAbsoluteRGBError": 1.528575,
+        "changedPixelRatio": 0.45931,
+        "maxChannelDifference": 242,
+        "acceptance": "No aggregate threshold; actual native visual review and explicit owner approval required."
+      }
+    },
+    {
+      "screen": "desktop-sales",
+      "kind": "wireframe",
+      "id": "812c55ce-996a-805c-8008-dcf1263a146e",
+      "w": 1440,
+      "h": 1000,
+      "png": "desktop-sales-wireframe.png",
+      "sha256": "1c61ff676ba983d478eae72e57d86a03c72dbbab26ea03391fcdf5fa56553f74",
+      "pixelSize": [
+        2880,
+        2000
+      ]
+    },
+    {
+      "screen": "component-states",
+      "kind": "design",
+      "id": "812c55ce-996a-805c-8008-dcf1d06dbde5",
+      "w": 1440,
+      "h": 1200,
+      "png": "component-states-design.png",
+      "sha256": "f2daebaac5c63be8678824305828e2b9d64954b6672356de4af636b30f2ee034",
+      "pixelSize": [
+        2880,
+        2400
+      ]
+    },
+    {
+      "screen": "component-states",
+      "kind": "wireframe",
+      "id": "812c55ce-996a-805c-8008-dcf1d6c3dfdf",
+      "w": 1440,
+      "h": 1200,
+      "png": "component-states-wireframe.png",
+      "sha256": "7aeb3603a18ad921aa68781b6a3aa3f9e4d0fea33d2bf2c32135480a82bbadd2",
+      "pixelSize": [
+        2880,
+        2400
+      ]
+    },
+    {
+      "screen": "phone-invoice-adaptation",
+      "kind": "design",
+      "id": "812c55ce-996a-805c-8008-dcf2225706d4",
+      "w": 390,
+      "h": 844,
+      "png": "phone-invoice-adaptation-design.png",
+      "sha256": "c5ce5aa777044f12b10943341b57f1ad2a2c6b18a4be1ec98806b8e27f10c78a",
+      "pixelSize": [
+        780,
+        1688
+      ]
+    },
+    {
+      "screen": "phone-invoice-adaptation",
+      "kind": "wireframe",
+      "id": "812c55ce-996a-805c-8008-dcf22540a496",
+      "w": 390,
+      "h": 844,
+      "png": "phone-invoice-adaptation-wireframe.png",
+      "sha256": "231785d905d9c56e05b568e400ca99c654abbb0980b5ad9a1f6fbeeca4fd573a",
+      "pixelSize": [
+        780,
+        1688
+      ]
+    },
+    {
+      "screen": "large-text-320",
+      "kind": "design",
+      "id": "812c55ce-996a-805c-8008-dcf2288ed2eb",
+      "w": 320,
+      "h": 1100,
+      "png": "large-text-320-design.png",
+      "sha256": "5861112b09b9de330bd3b1294dee0d8977017982d20a9fa8ad0b4e2e9610d6ae",
+      "pixelSize": [
+        640,
+        2200
+      ]
+    },
+    {
+      "screen": "large-text-320",
+      "kind": "wireframe",
+      "id": "812c55ce-996a-805c-8008-dcf22acd25e2",
+      "w": 320,
+      "h": 1100,
+      "png": "large-text-320-wireframe.png",
+      "sha256": "d729ab5424b880b451d371ff9231f0dbaeb1da70afd53ec9abe3886640c6560f",
+      "pixelSize": [
+        640,
+        2200
+      ]
+    }
+  ],
+  "frozenReferenceHashMatches": 6,
+  "noRuntimeVerification": true
+}

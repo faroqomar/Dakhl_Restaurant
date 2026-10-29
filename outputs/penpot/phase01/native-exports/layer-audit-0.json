@@ -1,0 +1,260 @@
+[
+  {
+    "id": "812c55ce-996a-805c-8008-dcf124e008ef",
+    "name": "01 · Reference · Desktop sales · Design · v1",
+    "counts": {
+      "board": 1,
+      "group": 282,
+      "rectangle": 9,
+      "svg-raw": 1,
+      "path": 354,
+      "ellipse": 1
+    },
+    "imageFills": [
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e06882",
+        "name": "Product photo · n90",
+        "w": 138.328125,
+        "h": 83.828125,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e06891",
+        "name": "Product photo · n108",
+        "w": 138.3359375,
+        "h": 83.8359375,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e0689d",
+        "name": "Product photo · n124",
+        "w": 138.328125,
+        "h": 83.828125,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e068a9",
+        "name": "Product photo · n140",
+        "w": 138.3359375,
+        "h": 83.8359375,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e068b5",
+        "name": "Product photo · n156",
+        "w": 138.3359375,
+        "h": 83.8359375,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e068c4",
+        "name": "Product photo · n174",
+        "w": 138.328125,
+        "h": 83.828125,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e068d0",
+        "name": "Product photo · n190",
+        "w": 138.328125,
+        "h": 83.828125,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e068dc",
+        "name": "Product photo · n206",
+        "w": 138.3359375,
+        "h": 83.8359375,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e068e8",
+        "name": "Product photo · n222",
+        "w": 138.328125,
+        "h": 83.828125,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e068f4",
+        "name": "Product photo · n238",
+        "w": 138.3359375,
+        "h": 83.8359375,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e06900",
+        "name": "Product photo · n254",
+        "w": 138.3359375,
+        "h": 83.8359375,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e0690c",
+        "name": "Product photo · n270",
+        "w": 138.328125,
+        "h": 83.828125,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e06918",
+        "name": "Product photo · n286",
+        "w": 138.328125,
+        "h": 83.828125,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e06923",
+        "name": "Product photo · n301",
+        "w": 138.3359375,
+        "h": 83.8359375,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e0692e",
+        "name": "Product photo · n316",
+        "w": 138.328125,
+        "h": 83.828125,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e06939",
+        "name": "Product photo · n331",
+        "w": 138.3359375,
+        "h": 83.8359375,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e08739",
+        "name": "Product photo · n346",
+        "w": 138.3359375,
+        "h": 83.8359375,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e08744",
+        "name": "Product photo · n361",
+        "w": 138.328125,
+        "h": 83.828125,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e0682f",
+        "name": "svg-image",
+        "w": 10,
+        "h": 7,
+        "imageW": 20,
+        "imageH": 14,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf124e06830",
+        "name": "svg-image",
+        "w": 8,
+        "h": 15,
+        "imageW": 16,
+        "imageH": 30,
+        "wholeScreen": false
+      }
+    ],
+    "originalStringsRetained": true,
+    "editableTextCount": 0,
+    "source": null
+  },
+  {
+    "id": "812c55ce-996a-805c-8008-dcf1263a146e",
+    "name": "01 · Reference · Desktop sales · Wireframe · v1",
+    "counts": {
+      "board": 1,
+      "group": 300,
+      "rectangle": 27,
+      "svg-raw": 1,
+      "path": 351,
+      "ellipse": 1
+    },
+    "imageFills": [
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf1263a6d97",
+        "name": "svg-image",
+        "w": 10,
+        "h": 7,
+        "imageW": 20,
+        "imageH": 14,
+        "wholeScreen": false
+      },
+      {
+        "shape": "812c55ce-996a-805c-8008-dcf1263a6d98",
+        "name": "svg-image",
+        "w": 8,
+        "h": 15,
+        "imageW": 16,
+        "imageH": 30,
+        "wholeScreen": false
+      }
+    ],
+    "originalStringsRetained": true,
+    "editableTextCount": 0,
+    "source": null
+  },
+  {
+    "id": "812c55ce-996a-805c-8008-dcf1d06dbde5",
+    "name": "01 · Proposal · Components, states and interaction · Design · v1",
+    "counts": {
+      "board": 1,
+      "text": 41,
+      "rectangle": 25
+    },
+    "imageFills": [],
+    "originalStringsRetained": false,
+    "editableTextCount": 41,
+    "source": null
+  },
+  {
+    "id": "812c55ce-996a-805c-8008-dcf1d6c3dfdf",
+    "name": "01 · Proposal · Components, states and interaction · Wireframe · v1",
+    "counts": {
+      "board": 1,
+      "text": 41,
+      "rectangle": 25
+    },
+    "imageFills": [],
+    "originalStringsRetained": false,
+    "editableTextCount": 41,
+    "source": null
+  }
+]

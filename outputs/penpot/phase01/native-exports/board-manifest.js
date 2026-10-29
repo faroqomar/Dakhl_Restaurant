@@ -1,0 +1,1 @@
+return penpot.root.children.filter(s=>s.type==='board'&&s.name.startsWith('01 ·')).map(b=>({id:b.id,name:b.name,x:b.x,y:b.y,w:b.width,h:b.height,clipContent:b.clipContent,status:b.getPluginData('phase01-status')}));

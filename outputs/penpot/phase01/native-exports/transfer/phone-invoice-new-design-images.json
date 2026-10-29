@@ -1,0 +1,29 @@
+[
+  {
+    "id": "Native select indicator",
+    "parent": null,
+    "x": "208",
+    "y": "535.6875",
+    "w": "11",
+    "h": "7",
+    "hrefSha": "0c49d77a6937161cca051fcfb3147c7d6836afdece96bcc4e035058c6e4834bf"
+  },
+  {
+    "id": "Native select indicator",
+    "parent": null,
+    "x": "56",
+    "y": "623.484375",
+    "w": "11",
+    "h": "7",
+    "hrefSha": "0c49d77a6937161cca051fcfb3147c7d6836afdece96bcc4e035058c6e4834bf"
+  },
+  {
+    "id": "Native disclosure marker",
+    "parent": null,
+    "x": "347",
+    "y": "507.5",
+    "w": "10",
+    "h": "19",
+    "hrefSha": "5ce0428435941a740b171b1442e64b7501e28dbd87c302847cddae706be0c213"
+  }
+]

@@ -1,0 +1,10 @@
+stage: loading isolated reference
+stage: isolated reference loaded
+stage: export desktop-invoice-new
+stage: DOM desktop-invoice-new 225
+stage: PNG desktop-invoice-new
+{"id":"desktop-invoice-new","elements":225,"texts":71,"images":0,"svgs":4,"actualSize":{"width":2880,"height":2000},"expectedSize":{"width":2880,"height":2000},"equalDimensions":true,"changedPixels":255,"totalPixels":5760000,"changedPixelRatio":0.000044270833333333337,"differenceBounds":{"minX":2286,"minY":1765,"maxX":2306,"maxY":1792},"meanAbsoluteChannelDifference":0.0041171296296296294,"maxChannelDifference":210,"actualSha256":"71128bdf0d49e3ecaefcc8c55c985a69d85616807febf03974cd435b976ed251","expectedSha256":"ad11eb5bf1c2e722e6ae9de344216f47742ec2d937e64b453bf1d58942397472"}
+stage: export phone-invoice-new
+stage: DOM phone-invoice-new 201
+stage: PNG phone-invoice-new
+{"id":"phone-invoice-new","elements":201,"texts":54,"images":0,"svgs":4,"actualSize":{"width":780,"height":1688},"expectedSize":{"width":780,"height":1688},"equalDimensions":true,"changedPixels":0,"totalPixels":1316640,"changedPixelRatio":0,"differenceBounds":null,"meanAbsoluteChannelDifference":0,"maxChannelDifference":0,"actualSha256":"26dca31f61b6772dec43b329f552f3f65a90a4987e53643805f179599048c92e","expectedSha256":"26dca31f61b6772dec43b329f552f3f65a90a4987e53643805f179599048c92e"}

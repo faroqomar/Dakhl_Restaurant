@@ -1,6 +1,6 @@
 # Phase evidence index
 
-Status: phase 00 technical implementation is under verification on 2026-10-28. Phases 01–11 remain TODO.
+Status, 2026-10-29: Phase 00 technical native dependency independently verified; Phase 01 approved implementation is locally built and in verification. Hosted CI and remaining native/release gates are explicit in the current build evidence. Phases 02–11 remain TODO.
 
 - [Phase 00 — build, test and runtime evidence](00-build-evidence.md).
 - [Phase 00 — current implementation plan and isolation](00-implementation-plan.md).
@@ -19,3 +19,14 @@ Do not prefill results or approvals. Earlier Electron checks are reference evide
 - [Phase00 / CAP-00 Step4 independent review](00-step4-review.md) — local finding closed; full acceptance remains blocked.
 
 - [Phase00/CAP-00 linked draft PR review package](00-pr-approval.md).
+
+- [Phase 01 — Step 1 scope, supplied references and readiness](01-scope-readiness.md) — historical preparation assessment; current execution status is below.
+
+- [Phase 01 — Penpot designs, structural wireframes and approval evidence](01-penpot-design-review.md) — explicitly approved by the owner on 2026-10-29; prior pending wording is historical.
+
+- [Phase 01 — bounded implementation plan and isolation](01-implementation-plan.md) — owner-approved plan; last route/six shortcuts restore after restart.
+
+- [Phase 01 — Step 3 approval and native preflight](../log/2026-10-29-phase01-step3-preflight.md) — historical blocked preflight, followed by Device Hub correction and verified dependency closure.
+
+- [Phase 01 — implementation and verification evidence](01-build-evidence.md) — current local results, native limits, independent findings and remaining delivery gates.
+- [Phase 01 — app shell contract/setup](../reference/phase01-shell-contract.md) — payload, composition, reviewed engine revision, guarded retry and development data isolation.

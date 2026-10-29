@@ -1,0 +1,19 @@
+Waiting for another flutter command to release the startup lock...
+Launching lib/main.dart on iPhone 18 Pro in debug mode...
+Running Xcode build...                                          
+Xcode build done.                                           48.2s
+[IMPORTANT:flutter/shell/platform/darwin/graphics/FlutterDarwinContextMetalImpeller.mm(45)] Using the Impeller rendering backend (Metal).
+flutter: {"event":"madar.preferences.open","level":"INFO","operation_id":"preferences-1","outcome":"success","elapsed_us":384679}
+flutter: {"event":"madar.preferences.read","level":"INFO","operation_id":"preferences-2","outcome":"success","elapsed_us":5872}
+-[WFIsolatedShortcutRunner init] Taking sandbox extensions for execution
+-[WFIsolatedShortcutRunner init]_block_invoke Sandbox extensions acquired
+Indexing for request: <WFToolKitIndexingRequest: 0x10244c0c0>, changeset: .partial(updatedCount: 1 removedCount: 0 updated: ["com.eros.dakhlrestaurant.phase00"], removed: [], provenance: [VoiceShortcutClient.ToolKitIndexingReason.Changeset.Provenance.launchServicesSnapshot(<LaunchServicesSnapshot uuid=6A639F86-B935-41CB-89B4-7AC9AAAD4E71, v=800)> ["com.apple.AXUIViewService", "com.apple.Health.Sleep", "com.apple.SensitiveContentAnalysis.SensitiveContentAnalysisConfigurationExtension", "com.apple.feedback.remote", "com.apple.ProximityReaderUIService", "com.apple.omniSearch.SearchToolExtension", "com.apple.TrackpadAndMouseSettingsIntents", "com.apple.ProximityReaderSceneUI", "com.apple.calls.PhoneAppIntentsExtension", "com.apple.mobiletimer.WorldClockIntentsExtension", "com.apple.Passwords", "com.apple.DefaultAppsSettingsIntents", "com.apple.chrono.WidgetRenderer-Default", "com.apple.SOS.SettingsSOSAppIntentsExtension", "com.apple.WebSheet", "com.apple.ClockAngel", "com.apple.mobilemail.MailSettingsIntentsExtension", "com.apple.P<…>, priority: <decode: missing data>
+Type indexing (params + content items) took 0.002264s
+Action indexing took 0.000828s
+Indexed: 0
+Errored: 0
+Skipped: [:]
+Bundle cache: 0 hits, 0 misses
+Finished in 1.171476s
+-[WFIsolatedShortcutRunner unaliveProcess] Releasing sandbox extensions
+Syncing files to device iPhone 18 Pro...                           410ms

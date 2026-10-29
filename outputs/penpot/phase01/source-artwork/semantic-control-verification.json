@@ -1,0 +1,190 @@
+{
+  "correction": "Small pixel count was not proof of harmless rendering: earlier invoice157,500 and phone product quantity2 were semantic fixture mismatches. Both are explicitly corrected in design-only synthetic presentation, without model/policy changes.",
+  "visibilityRemedy": "Filter actual owning control against closed-details/hidden ancestry; bind native shadow text to its exact DOM owner id, not overlapping background geometry.",
+  "baselineRemedy": "UA shadow marker moved glyph baseline without changing its range box. Reject it; derive native control baseline from source range top and actual CoreText font ascent, checked against source ink location. No arbitrary shifts or text scaling.",
+  "outputs": [
+    {
+      "screen": "desktop-invoice-new",
+      "presentationOverrides": [
+        {
+          "selector": "#invoice-old-balance",
+          "before": "157,500",
+          "after": "137,500",
+          "applied": true,
+          "scope": "Design-only synthetic presentation fixture. Match supplied reference footer; no model, posted record or accounting rule changed."
+        }
+      ],
+      "sourceChangedPixels": 0,
+      "filteredClosedDetailsRuns": [
+        {
+          "text": "0",
+          "ownerId": "line-cartons-1"
+        },
+        {
+          "text": "0",
+          "ownerId": "line-carton-price-1"
+        },
+        {
+          "text": "قطعة",
+          "ownerId": "line-unit-1"
+        }
+      ],
+      "otherFilteredRuns": [],
+      "visibleQuantity": {
+        "text": "0",
+        "ownerId": "line-pieces-1",
+        "ownerBounds": {
+          "x": 475.5,
+          "y": 359.0859375,
+          "width": 244.5,
+          "height": 48
+        },
+        "textBounds": {
+          "height": 17.5,
+          "width": 9.21875,
+          "x": 699.78125,
+          "y": 374.0859375
+        },
+        "rejectedShadowMarkerBaseline": 383.5859375,
+        "outlineBaseline": 388.587890625,
+        "baselineMethod": "native-control range-top+CoreText-ascent; UA shadow marker rejected after source ink-location check",
+        "sourceInkBounds": {
+          "minX": 700.5,
+          "maxX": 707.5,
+          "minY": 377.5,
+          "maxY": 388,
+          "pixelCount": 136,
+          "method": "Read-only dark-green glyph-pixel bounds in isolated visible quantity input; no image modification."
+        },
+        "outlineGlyphBounds": {
+          "minX": 700.77002,
+          "maxX": 708.24072,
+          "minY": 377.77002,
+          "maxY": 388.83691
+        },
+        "sourceOwnerIdAttachmentVerified": true,
+        "glyphInsideQuantityInputVerified": true
+      }
+    },
+    {
+      "screen": "phone-invoice-new",
+      "presentationOverrides": [
+        {
+          "selector": "#invoice-old-balance",
+          "before": "157,500",
+          "after": "137,500",
+          "applied": true,
+          "scope": "Design-only synthetic presentation fixture. Match supplied reference footer; no model, posted record or accounting rule changed."
+        }
+      ],
+      "sourceChangedPixels": 0,
+      "filteredClosedDetailsRuns": [
+        {
+          "text": "0",
+          "ownerId": "line-cartons-2"
+        },
+        {
+          "text": "0",
+          "ownerId": "line-carton-price-2"
+        },
+        {
+          "text": "قطعة",
+          "ownerId": "line-unit-2"
+        }
+      ],
+      "otherFilteredRuns": [
+        {
+          "text": "الرصيد اليومي",
+          "ownerId": "payment-source",
+          "reason": [
+            "outside-viewport"
+          ]
+        },
+        {
+          "text": "القاصة",
+          "ownerId": "payment-source",
+          "reason": [
+            "outside-viewport"
+          ]
+        },
+        {
+          "text": "مشترك بين اليومي والقاصة",
+          "ownerId": "payment-source",
+          "reason": [
+            "outside-viewport"
+          ]
+        },
+        {
+          "text": "الرصيد اليومي",
+          "ownerId": "payment-source",
+          "reason": [
+            "outside-viewport"
+          ]
+        }
+      ],
+      "visibleQuantity": {
+        "text": "0",
+        "ownerId": "line-pieces-2",
+        "ownerBounds": {
+          "x": 201,
+          "y": 447.4765625,
+          "width": 156,
+          "height": 48
+        },
+        "textBounds": {
+          "height": 17.5,
+          "width": 9.21875,
+          "x": 336.78125,
+          "y": 462.4765625
+        },
+        "rejectedShadowMarkerBaseline": 471.9765625,
+        "outlineBaseline": 476.978515625,
+        "baselineMethod": "native-control range-top+CoreText-ascent; UA shadow marker rejected after source ink-location check",
+        "sourceInkBounds": {
+          "minX": 337.5,
+          "maxX": 344.5,
+          "minY": 466,
+          "maxY": 476.5,
+          "pixelCount": 136,
+          "method": "Read-only dark-green glyph-pixel bounds in isolated visible quantity input; no image modification."
+        },
+        "outlineGlyphBounds": {
+          "minX": 337.77002,
+          "maxX": 345.24072,
+          "minY": 466.16064,
+          "maxY": 477.22754
+        },
+        "sourceOwnerIdAttachmentVerified": true,
+        "glyphInsideQuantityInputVerified": true
+      }
+    }
+  ],
+  "phoneSales": {
+    "screen": "phone-sales",
+    "designOnlyFixtureOverride": [
+      {
+        "field": "synthetic saleDraft.lines",
+        "after": [],
+        "scope": "Design-only narrow-reference fixture. Fresh empty local draft matches frozen visible product counts of zero; held-order list and posted synthetic records preserved."
+      }
+    ],
+    "sourceChangedPixels": 368,
+    "changedPixelsInsidePhotoBounds": 348,
+    "changedPixelsOutsidePhotoBounds": 20,
+    "changedPixelsWithinOneLogicalPixelOfPhotoEdge": 20,
+    "outsidePhotoAndEdge": [],
+    "maxAbsoluteChannelDelta": 7,
+    "semanticDisposition": "Earlier2-count badge and requested-quantity2 were wrong for this narrow reference. Fresh synthetic draft now matches zero counts. Remaining changed pixels are classified by actual source photo bounds; see exact image/edge/outside classifications; no native fidelity pass is inferred.",
+    "note": "Source comparison is not native Penpot fidelity verification."
+  },
+  "svgHashes": {
+    "desktop-invoice-new-design.svg": "5a2d948f233acaff42bbe651e4b6dbd067494b9dbfaad3c71803bd505b490172",
+    "desktop-invoice-new-wireframe.svg": "7b007e3029da754f5780d44ea31b75832d6ca036bc4b5d0df57b3e43ba1870ad",
+    "phone-invoice-new-design.svg": "67e26d1a053f36b3a777b9c559890e993da301833a19d165a505be88f6702d6d",
+    "phone-invoice-new-wireframe.svg": "daaef6085ccc0c2f96713b79f7620d5971c7f55fd8f3d2278274d48530f305a6",
+    "phone-sales-design.svg": "f8075d6a3e5979313572847790eb455b4ac22f578138e219b3360a894be16963",
+    "phone-sales-wireframe.svg": "bf8a6e780d229ecd6c228bd8a9a2ace00949e441bfabfe0da265da04565e7412"
+  },
+  "nativeFidelity": "Lead-owned verification still required.",
+  "finalPaintClipProof": "invoice-control-clipping-verification.json and per-screen control-clips.json own the final invoice visibility/clipping disposition; earlier semantic/baseline checks remain applicable."
+}

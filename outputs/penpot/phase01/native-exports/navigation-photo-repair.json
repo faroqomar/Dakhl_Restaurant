@@ -1,0 +1,101 @@
+{
+  "photosRepaired": 24,
+  "result": [
+    {
+      "node": "n165",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba3dfa31"
+    },
+    {
+      "node": "n183",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba3fd4aa"
+    },
+    {
+      "node": "n199",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba41c22f"
+    },
+    {
+      "node": "n215",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba43bd05"
+    },
+    {
+      "node": "n231",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba45aefc"
+    },
+    {
+      "node": "n249",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba47e7ee"
+    },
+    {
+      "node": "n265",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba49eabc"
+    },
+    {
+      "node": "n281",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba4b5418"
+    },
+    {
+      "node": "n297",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba4d606a"
+    },
+    {
+      "node": "n313",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba4f3ea9"
+    },
+    {
+      "node": "n329",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba50e661"
+    },
+    {
+      "node": "n345",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba534efe"
+    },
+    {
+      "node": "n361",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba54fa97"
+    },
+    {
+      "node": "n377",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba56a2b6"
+    },
+    {
+      "node": "n393",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba58f513"
+    },
+    {
+      "node": "n409",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba5b11cf"
+    },
+    {
+      "node": "n425",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba5cf3df"
+    },
+    {
+      "node": "n441",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba5f20f3"
+    },
+    {
+      "node": "n457",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba60f76d"
+    },
+    {
+      "node": "n463",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba60f773"
+    },
+    {
+      "node": "n469",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba611626"
+    },
+    {
+      "node": "n475",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba615c37"
+    },
+    {
+      "node": "n481",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba61a7a4"
+    },
+    {
+      "node": "n487",
+      "shape": "812c55ce-996a-805c-8008-dcf2ba61a7aa"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+00:00 +0: loading /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/integration_test/shell_preferences_test.dart
+Running Xcode build...                                          
+Xcode build done.                                           96.1s
+00:00 +0: real engine shell preferences write in fresh native process
+{"event":"madar.preferences.open","level":"INFO","operation_id":"preferences-1","outcome":"success","elapsed_us":573658}
+{"event":"madar.preferences.read","level":"INFO","operation_id":"preferences-2","outcome":"success","elapsed_us":2361}
+{"event":"madar.preferences.replace","level":"INFO","operation_id":"preferences-3","outcome":"success","elapsed_us":14934}
+{"event":"madar.preferences.replace","level":"INFO","operation_id":"preferences-4","outcome":"success","elapsed_us":2693}
+{"event":"madar.preferences.read","level":"INFO","operation_id":"preferences-5","outcome":"success","elapsed_us":834}
+{"event":"madar.preferences.replace","level":"INFO","operation_id":"preferences-6","outcome":"success","elapsed_us":1659}
+{"event":"madar.preferences.read","level":"INFO","operation_id":"preferences-7","outcome":"success","elapsed_us":1441}
+{"event":"madar.preferences.read","level":"INFO","operation_id":"preferences-8","outcome":"success","elapsed_us":9467}
+00:04 +1: (tearDownAll)
+00:05 +1: All tests passed!

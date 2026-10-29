@@ -15,7 +15,7 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 | Phase | Name | Status | Branch | PR |
 | --- | --- | --- | --- | --- |
 | 00 | [Baseline and delivery setup](docs/planning/flutter-rebuild/phases/00.md) | BLOCKED | codex/phase00-engine-split | [Merged PR2](https://github.com/faroqomar/Dakhl_Restaurant/pull/2) |
-| 01 | [Design system, navigation and interaction shell](docs/planning/flutter-rebuild/phases/01.md) | TODO | — | — |
+| 01 | [Design system, navigation and interaction shell](docs/planning/flutter-rebuild/phases/01.md) | DESIGN | codex/phase01-scope (preparation only) | — |
 | 02 | [Local accounts, validation and safe persistence](docs/planning/flutter-rebuild/phases/02.md) | TODO | — | — |
 | 03 | [Sellable products and inventory](docs/planning/flutter-rebuild/phases/03.md) | TODO | — | — |
 | 04 | [Cash sales, saved receipt, drafts and held orders](docs/planning/flutter-rebuild/phases/04.md) | TODO | — | — |
@@ -32,9 +32,9 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 ### Phase 00
 
 - **Name:** Baseline and delivery setup
-- **Status:** BLOCKED for iPhone Simulator native acceptance and explicit Penpot design approval. The exact owner-approved source is merged; all six premerge Actions checks passed. Completion remains unestablished. [Step6 record](docs/phases/00-step6-merge.md).
+- **Status:** Technical prerequisite VERIFIED — native iPhone acceptance independently closed and Penpot design approved on 2026-10-29. Evidence integration/overall DONE remain pending. The exact owner-approved source is merged; all six premerge Actions checks passed. Completion remains unestablished. [Step6 record](docs/phases/00-step6-merge.md).
 - **Dependencies:** None
-- **Design approval:** N/A for the original technical shell. The owner added a design prerequisite: recreate only `desktop-sales.png`, `desktop-expenses.png` and `desktop-settings-data.png`, with matching wireframes, in Penpot. Validation and approval evidence: [Penpot record](docs/phases/00-penpot-reference-recreation.md). The superseded blank-shell boards are not the approval artifact.
+- **Design approval:** N/A for the original technical shell. The owner added a design prerequisite: recreate only `desktop-sales.png`, `desktop-expenses.png` and `desktop-settings-data.png`, with matching wireframes, in Penpot. Validation and approval evidence: [Penpot record](docs/phases/00-penpot-reference-recreation.md). The superseded blank-shell boards are not the approval artifact. Owner explicitly approved the existing Phase 00 set on 2026-10-29.
 - **Branch / Worktree:** approved implementation branch `codex/phase00-engine-split` and original `codex/phase00-penpot` preserved; current documentation review branch `codex/phase00-merge-record` at `/Users/eros/.codex/worktrees/phase00-penpot/Dakhl_Restaurant`. Preparation baseline `614cf0f` separates prior design/naming documentation from implementation; original base `ecf692b`. Root-checkout work preserved.
 - **Assigned agents:** Lead (integration, device evidence, tracker/PR); Workers `phase00_bootstrap` (root/native scaffold, blank shell and CI), `phase00_contracts` (capability contracts/repository/ViewModel), `phase00_native` (native adapters, offline font and integration harness). Prior Planner/UX evidence retained; independent Reviewer `phase00_build_review` completed implementation review.
 - **Implementation plan:** [Phase scope](docs/planning/flutter-rebuild/phases/00.md); [current read-only implementation plan](docs/phases/00-implementation-plan.md) prepared 2026-10-28; [initial kickoff](docs/phases/00-baseline-kickoff.md). Existing phase00 isolation reused; no implementation or design approval inferred.
@@ -53,21 +53,22 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 ### Phase 01
 
 - **Name:** Design system, navigation and interaction shell
-- **Status:** TODO
+- **Status:** VERIFYING — approved bounded implementation built locally; native dependency independently closed. Local checks pass; remaining native verification and hosted delivery gates are explicit in build evidence.
 - **Dependencies:** 00
-- **Design approval:** Pending — validate the current reference in Penpot and record user approval before UI implementation.
-- **Branch / Worktree:** —
-- **Assigned agents:** —
-- **Implementation plan:** [Scope reference](docs/planning/flutter-rebuild/phases/01.md); phase-specific read-only Planner output pending.
-- **Automated tests:** Pending — no Flutter phase verification performed.
-- **CI:** Pending — assess mandatory checks and record evidence/N/A at phase planning.
+- **Design approval:** Approved — owner explicitly approved the [existing Phase 01 design/wireframe set and listed differences](docs/phases/01-penpot-design-review.md) on 2026-10-29.
+- **Branch / Worktree:** implementation `codex/phase01-build`, `/Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant`, clean base `f73b14b5a7cc6d2421f670938b2435af137ddb0f`; original dirty scope/design worktrees preserved, no PR/publication.
+- **Assigned agents:** Lead (composition/isolation/evidence); read-only Planner `phase01_scope`; engine Worker `phase01_engine_build`; shell Worker `phase01_shell_build`; UI/native Worker `phase01_capture`; independent code Reviewer `phase01_docs_review`; independent UX `phase01_references`. Each owns its project/layer; no copied engine code.
+- **Implementation plan:** [Bounded Step 2 proposal](docs/phases/01-implementation-plan.md), including read-only Planner advice and owner-confirmed full-restart route/shortcut restoration; approved Step 3 request and explicit designs recorded on 2026-10-29; technical dependency closed. Historical proposed/blocked sections retain provenance.
+- **Automated tests:** PASS locally — 134 app tests (including five controlled goldens), app analysis/format; 24 engine-source checker regressions and resolved-source check. Real different-process route/six-slot restoration passed on macOS/Android/iPhone; evidence records exact compiled snapshots and native limits.
+- **CI:** Configured — existing quality/three-target gates preserved, CAP-01 tests added, golden comparisons on macOS. Local checks/builds recorded separately; hosted CI not run, new engine pin is local until publication is authorized.
 - **Benchmarks:** N/A — no numeric optimization requirement set; establish baseline, conditions and target before optimization.
-- **Independent review:** Pending
-- **Staging / Rollback:** Pending — assess applicability; verify required migration/recovery/release paths.
+- **Independent review:** Plan review closed. Engine code/API/tests independently reviewed; app code review closed three P2s (modal retry, uncertain-commit overlap, visible Undo); UX review closed three P2s (desktop hints, menu identity/icons, inclusive760px boundary). Final focused reconciliation verified74/74 source hashes and honest reuse; native images independently reviewed. Owner manually confirmed Mac ⌘3/⌘K both work. Native mobile back/gesture and native accessibility traversal remain open.
+- **Staging / Rollback:** Isolated development data only. Real rollback/future-format preservation and fresh-process checks pass; stop development build to roll back UI, retain dedicated preferences DB. No production migration/deployment.
 - **PR:** —
-- **User approval:** Pending — no phase/merge approval recorded.
-- **Decisions / Lessons:** —
-- **Evidence:** [Evidence index](docs/phases/README.md); no phase 01 execution evidence yet.
+- **User approval:** Step 3 authorizes the presented plan/build scope; existing Phase 00/01 designs and listed differences explicitly approved on 2026-10-29. Phase 00 native acceptance is not waived; no exact revision merge or deployment approval.
+- **Decisions / Lessons:** [Shell contract/setup](docs/reference/phase01-shell-contract.md); [prevention catalogue](docs/how-to/repeated-problems.md). Device Hub is the verified native app; absence of old Simulator.app is not an access blocker.
+- **Evidence:** [Current build results and remaining gates](docs/phases/01-build-evidence.md); [Step 1 readiness](docs/phases/01-scope-readiness.md); [Step 1.5 design review](docs/phases/01-penpot-design-review.md); [design task log](docs/log/2026-10-29-phase01-penpot-design.md). [Step 2 plan/log](docs/log/2026-10-29-phase01-implementation-plan.md). [Step 3 approval and native preflight](docs/log/2026-10-29-phase01-step3-preflight.md). Native artifact evidence is separate from runtime verification.
+- **Engine/app contract:** App owns presentation, route/six-slot payload and safeguards. Implemented Madar CAP-01 owns local-only snapshot storage/adapter; owner-confirmed restart requirement supersedes earlier engine N/A assessment. Independently reviewed local CAP-01 pin `6d4ae39f35b005dfa1123a82c6df316901e1e1e4` now consumed; exact resolved-source check passed, no publication/merge.
 - **Completed:** —
 
 ### Phase 02
@@ -279,3 +280,11 @@ Prior Electron tests, screenshots, planning and folder relocation remain histori
 ## Documentation maintenance outside phases
 
 - 2026-10-28: [Required current Madar documentation reading](docs/log/2026-10-28-madar-documentation-rule.md). Documentation maintenance only; runtime/contracts and phase progression are N/A. Existing acceptance gates remain pending.
+
+## Device Hub correction — 2026-10-29
+
+Interactive iPhone access is available through Device Hub 27.1, `/Applications/Xcode.app/Contents/Applications/DeviceHub.app` (`com.apple.dt.Devices`). The old Simulator.app absence is no longer a blocker. Native acceptance is in progress and remains unverified until the actual checks complete. See the dated Step 3 preflight correction. Existing plan/design approvals stand; no merge/deployment approval or Phase 01 implementation pass is inferred.
+
+## Native dependency closure / Phase 01 Step 3 execution — 2026-10-29
+
+Focused independent review closed the previously outstanding iPhone Simulator technical acceptance after real open/export cancellation, synthetic export/reopen, share dismissal, print cancellation and recovery checks on unchanged approved Phase 00 source. Existing design/plan approvals and Step 3 authorization permit Phase 01/CAP-01 implementation. Status for current Phase 01/CAP-01 execution: **IN PROGRESS**. Phase 00/CAP-00 evidence integration and overall DONE remain separate; no automatic merge, supported-release claim or deployment. Detailed consumer authority: `docs/phases/00-ios-native-acceptance.md` in Dakhl_Restaurant. Earlier blocked sections are historical.

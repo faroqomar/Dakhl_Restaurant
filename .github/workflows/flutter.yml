@@ -41,6 +41,14 @@ jobs:
         working-directory: Madar_Engine/packages/application
       - run: dart analyze
         working-directory: Madar_Engine/packages/application
+      - run: dart test
+        working-directory: Madar_Engine/packages/application
+      - run: dart pub get --enforce-lockfile
+        working-directory: Madar_Engine/packages/data
+      - run: dart analyze
+        working-directory: Madar_Engine/packages/data
+      - run: dart test
+        working-directory: Madar_Engine/packages/data
       - run: flutter pub get --enforce-lockfile
         working-directory: Madar_Engine/packages/flutter_adapters
       - run: flutter analyze --no-pub
@@ -54,7 +62,7 @@ jobs:
       - run: python3 scripts/check-engine.py
       - run: dart format --output=none --set-exit-if-changed lib test integration_test
       - run: flutter analyze --no-pub
-      - run: flutter test --no-pub
+      - run: flutter test --no-pub --exclude-tags golden
 
   android:
     name: Android debug build
@@ -113,6 +121,9 @@ jobs:
       - run: xcodebuild -version
       - run: flutter pub get --enforce-lockfile
       - run: python3 scripts/check-engine.py
+      - name: Verify controlled macOS visual contracts
+        if: matrix.target == 'macos'
+        run: flutter test --no-pub --tags golden
       - name: macOS development build
         if: matrix.target == 'macos'
         run: flutter build macos --debug --no-pub

@@ -1,0 +1,63 @@
+[
+  {
+    "selector": "code",
+    "fonts": [
+      {
+        "familyName": "Menlo",
+        "glyphCount": 7,
+        "isCustomFont": false,
+        "postScriptName": "Menlo-Regular"
+      }
+    ]
+  },
+  {
+    "selector": ".swatch strong",
+    "fonts": [
+      {
+        "familyName": ".SF NS",
+        "glyphCount": 4,
+        "isCustomFont": false,
+        "postScriptName": ".SFNS-Regular_wdth_opsz110000_GRAD_wght2BC0000"
+      }
+    ]
+  },
+  {
+    "selector": ".amount",
+    "fonts": [
+      {
+        "familyName": "Helvetica",
+        "glyphCount": 9,
+        "isCustomFont": false,
+        "postScriptName": "Helvetica-Bold"
+      },
+      {
+        "familyName": "Geeza Pro",
+        "glyphCount": 2,
+        "isCustomFont": false,
+        "postScriptName": "GeezaPro-Bold"
+      }
+    ]
+  },
+  {
+    "selector": ".title",
+    "fonts": [
+      {
+        "familyName": "Geeza Pro",
+        "glyphCount": 15,
+        "isCustomFont": false,
+        "postScriptName": "GeezaPro-Bold"
+      }
+    ]
+  },
+  {
+    "selector": "h1",
+    "fonts": [
+      {
+        "familyName": ".SF NS",
+        "glyphCount": 32,
+        "isCustomFont": false,
+        "postScriptName": ".SFNS-Regular_wdth_opsz200000_GRAD_wght2BC0000"
+      }
+    ]
+  }
+]
