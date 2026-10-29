@@ -1,0 +1,606 @@
+pubspec.yaml
+  s_6f37b289fde16b::t_27f058a8937779 41,47-49
+  s_6f37b289fde16b::t_2195fbf2f02abf 38
+  s_6f37b289fde16b::t_887fc74f93ef3a 15-16
+  s_6f37b289fde16b::t_c7c3dfd5a354ef 19-20
+.github/workflows/flutter.yml
+  s_6f37b289fde16b::t_3807bf4b69a8e8 44-51,65,124-126
+PHASES.md
+  s_6f37b289fde16b::t_ca62f7f14e4c89 18,35,37,56,58-63,65-66,68-71,283-290
+README.md
+  s_6f37b289fde16b::t_8d6ae1c24b3752 5,7,23,37,54-55
+assets/fonts/INTER-SOURCE.json
+  s_6f37b289fde16b::t_3b1eec27e4cdce 1-19
+assets/fonts/Inter-OFL.txt
+  s_6f37b289fde16b::t_45a2f8d823c5a4 1-93
+assets/fonts/SOURCE.md
+  s_6f37b289fde16b::t_4995d248b9dbfb 15-18
+assets/ui/SOURCE.md
+  s_6f37b289fde16b::t_6de156d186886e 1-3
+dart_test.yaml
+  s_6f37b289fde16b::t_482a45ff2bbc80 1-3
+docs/how-to/repeated-problems.md
+  s_6f37b289fde16b::t_1aab5114745780 78-135
+docs/log/2026-10-29-phase01-build.md
+  s_6f37b289fde16b::t_2b0b06bd633bf1 1-13
+docs/log/2026-10-29-phase01-implementation-plan.md
+  s_6f37b289fde16b::t_55ad201fa82572 1-15
+docs/log/2026-10-29-phase01-penpot-design.md
+  s_6f37b289fde16b::t_a4307f7b8ac0ac 1-39
+docs/log/2026-10-29-phase01-scope-readiness.md
+  s_6f37b289fde16b::t_4fb1af4025431d 1-15
+docs/log/2026-10-29-phase01-step3-preflight.md
+  s_6f37b289fde16b::t_77089f1578a83f 1-23
+docs/phases/00-ios-native-acceptance.md
+  s_6f37b289fde16b::t_f971f742eab63d 1-34
+docs/phases/00-penpot-reference-recreation.md
+  s_6f37b289fde16b::t_3d0401b6565256 53-56
+docs/phases/01-build-evidence.md
+  s_6f37b289fde16b::t_e109216199123b 1-61
+docs/phases/01-implementation-plan.md
+  s_6f37b289fde16b::t_78c546a591c485 1-89
+docs/phases/01-penpot-design-review.md
+  s_6f37b289fde16b::t_0e44f341d8dc29 1-80
+docs/phases/01-scope-readiness.md
+  s_6f37b289fde16b::t_6f6517c03a7871 1-75
+docs/phases/README.md
+  s_6f37b289fde16b::t_b09f05bdb050f0 3,22-32
+docs/planning/flutter-rebuild/feature-coverage.md
+  s_6f37b289fde16b::t_0482e004cd6769 54-59
+docs/reference/phase01-shell-contract.md
+  s_6f37b289fde16b::t_78885ed32d0ec7 1-41
+engine-dependency.json
+  s_6f37b289fde16b::t_3dbc2c79ae4856 3-4,8,13-16
+integration_test/README.md
+  s_6f37b289fde16b::t_35d38c2041dc9c 60-79
+integration_test/phase01_native_ui_test.dart
+  s_6f37b289fde16b::t_f3904e790c497a 1-207
+integration_test/shell_preferences_test.dart
+  s_6f37b289fde16b::t_522f737bb85b31 1-115
+lib/app/app.dart
+  s_6f37b289fde16b::t_f50a88f0c540f3 1-3,5,7-17,19-27,30-282,288-303,305-371,374-375
+lib/app/bootstrap.dart
+  s_6f37b289fde16b::t_2554c2b6e83cb5 1-118
+lib/main.dart
+  s_6f37b289fde16b::t_260931b4ae9cae 4,7-14
+lib/platform/shell_preferences_directory.dart
+  s_6f37b289fde16b::t_849d299380cd8c 1-65
+lib/shell/shell_preferences.dart
+  s_6f37b289fde16b::t_8451e0ef9b0815 1-98
+lib/shell/shell_routes.dart
+  s_6f37b289fde16b::t_77474efa98a284 1-86
+lib/shell/shell_view_model.dart
+  s_6f37b289fde16b::t_13de067699f158 1-481
+lib/ui/component_gallery.dart
+  s_6f37b289fde16b::t_be1f16f4f1e83a 1-186
+lib/ui/components.dart
+  s_6f37b289fde16b::t_4edd28191fb051 1-826
+lib/ui/dakhl_ui.dart
+  s_6f37b289fde16b::t_c553b1668f176b 1-10
+lib/ui/dialogs.dart
+  s_6f37b289fde16b::t_98b0ff173cbe48 1-255
+lib/ui/icons.dart
+  s_6f37b289fde16b::t_ff8af12627ef22 1-176
+lib/ui/route_surface.dart
+  s_6f37b289fde16b::t_58655ec3682268 1-816
+lib/ui/shell_view.dart
+  s_6f37b289fde16b::t_445df412c46a9d 1-436
+lib/ui/theme.dart
+  s_6f37b289fde16b::t_c758bcdd94782a 1-121
+outputs/memory/phase01-build-delivery-initial.json
+  s_6f37b289fde16b::t_b2c568e9802077 1-64
+outputs/memory/phase01-build-delivery.json
+  s_6f37b289fde16b::t_eebbc63f6aeb44 1-66
+outputs/penpot/phase01/native-exports/audit-final.py
+  s_6f37b289fde16b::t_4d3ab2593137d7 1-22
+outputs/penpot/phase01/native-exports/board-manifest.js
+  s_6f37b289fde16b::t_697eb431103d63 1
+outputs/penpot/phase01/native-exports/board-manifest.json
+  s_6f37b289fde16b::t_3adc47cd9b17ca 1-222
+outputs/penpot/phase01/native-exports/design-system-design-native.json
+  s_6f37b289fde16b::t_9277fa60682b59 1-13
+outputs/penpot/phase01/native-exports/design-system-wireframe-native.json
+  s_6f37b289fde16b::t_206fd3d574bdf2 1-13
+outputs/penpot/phase01/native-exports/desktop-invoice-new-design-native.json
+  s_6f37b289fde16b::t_b95ab43b45921a 1-13
+outputs/penpot/phase01/native-exports/desktop-invoice-new-wireframe-native.json
+  s_6f37b289fde16b::t_b18058d381504d 1-13
+outputs/penpot/phase01/native-exports/desktop-navigation-design-native.json
+  s_6f37b289fde16b::t_aea37b9b14b95f 1-13
+outputs/penpot/phase01/native-exports/desktop-navigation-wireframe-native.json
+  s_6f37b289fde16b::t_3bd97b34a72011 1-13
+outputs/penpot/phase01/native-exports/export-supplemental.sh
+  s_6f37b289fde16b::t_4aa617832a6b7e 1-10
+outputs/penpot/phase01/native-exports/import-ledger.json
+  s_6f37b289fde16b::t_c5de5d2bdbe2f3 1-185
+outputs/penpot/phase01/native-exports/layer-audit-0.js
+  s_6f37b289fde16b::t_7fe18b4d7597d0 1
+outputs/penpot/phase01/native-exports/layer-audit-0.json
+  s_6f37b289fde16b::t_659d6e1cf30e7c 1-260
+outputs/penpot/phase01/native-exports/layer-audit-1.js
+  s_6f37b289fde16b::t_e512531affc3cf 1
+outputs/penpot/phase01/native-exports/layer-audit-1.json
+  s_6f37b289fde16b::t_3e1205df8d25bc 1-54
+outputs/penpot/phase01/native-exports/layer-audit-2.js
+  s_6f37b289fde16b::t_8ac657f1767d2b 1
+outputs/penpot/phase01/native-exports/layer-audit-2.json
+  s_6f37b289fde16b::t_960009b8367921 1-347
+outputs/penpot/phase01/native-exports/layer-audit-3.js
+  s_6f37b289fde16b::t_aa9ff048f7e346 1
+outputs/penpot/phase01/native-exports/layer-audit-3.json
+  s_6f37b289fde16b::t_13f1409535e509 1-194
+outputs/penpot/phase01/native-exports/layer-audit-4.js
+  s_6f37b289fde16b::t_aa2308a8611a53 1
+outputs/penpot/phase01/native-exports/layer-audit-4.json
+  s_6f37b289fde16b::t_705e749f0bd54a 1-230
+outputs/penpot/phase01/native-exports/layer-audit-5.js
+  s_6f37b289fde16b::t_9c05dce7e30379 1
+outputs/penpot/phase01/native-exports/layer-audit-5.json
+  s_6f37b289fde16b::t_37f0a333c67402 1-333
+outputs/penpot/phase01/native-exports/medium-sales-design-native.json
+  s_6f37b289fde16b::t_5db7c2df063d0d 1-13
+outputs/penpot/phase01/native-exports/medium-sales-wireframe-native.json
+  s_6f37b289fde16b::t_973d7b243fc5fb 1-13
+outputs/penpot/phase01/native-exports/native-layer-audit.json
+  s_6f37b289fde16b::t_0f4ba023de175b 1-1447
+outputs/penpot/phase01/native-exports/native-manifest.json
+  s_6f37b289fde16b::t_cdb9a801782455 1-447
+outputs/penpot/phase01/native-exports/navigation-photo-repair.json
+  s_6f37b289fde16b::t_245bda189039bf 1-101
+outputs/penpot/phase01/native-exports/navigation-stage.json
+  s_6f37b289fde16b::t_5fe66b56539b0c 1-6
+outputs/penpot/phase01/native-exports/phone-invoice-new-design-native.json
+  s_6f37b289fde16b::t_53d7ee08f2cc39 1-13
+outputs/penpot/phase01/native-exports/phone-invoice-new-wireframe-native.json
+  s_6f37b289fde16b::t_3c4b5d0a5422c0 1-13
+outputs/penpot/phase01/native-exports/phone-sales-design-native.json
+  s_6f37b289fde16b::t_574913a2183138 1-13
+outputs/penpot/phase01/native-exports/phone-sales-wireframe-native.json
+  s_6f37b289fde16b::t_1809f6ea9bf620 1-13
+outputs/penpot/phase01/native-exports/prior-board-preservation.js
+  s_6f37b289fde16b::t_3d0f89d5fc75d1 1
+outputs/penpot/phase01/native-exports/prior-board-preservation.json
+  s_6f37b289fde16b::t_44647bed0ed009 1-34
+outputs/penpot/phase01/native-exports/reference-text-metadata.js
+  s_6f37b289fde16b::t_1763cf5745fa3e 1
+outputs/penpot/phase01/native-exports/reference-text-metadata.json
+  s_6f37b289fde16b::t_641ddd724356e1 1-3
+outputs/penpot/phase01/native-exports/repair-navigation.js
+  s_6f37b289fde16b::t_a83592874b502f 1
+outputs/penpot/phase01/native-exports/transfer-boards.py
+  s_6f37b289fde16b::t_c5eb1f46145bc7 1-47
+outputs/penpot/phase01/native-exports/transfer/design-system-design-images.json
+  s_6f37b289fde16b::t_2170bd2d561ce4 1-20
+outputs/penpot/phase01/native-exports/transfer/design-system-design-import.js
+  s_6f37b289fde16b::t_d6a1609011ca15 1-8
+outputs/penpot/phase01/native-exports/transfer/design-system-design.svg
+  s_6f37b289fde16b::t_ed245cb847e6df 1
+outputs/penpot/phase01/native-exports/transfer/design-system-wireframe-images.json
+  s_6f37b289fde16b::t_e0c4fe89af6bbe 1-11
+outputs/penpot/phase01/native-exports/transfer/design-system-wireframe-import.js
+  s_6f37b289fde16b::t_2918444e495b7d 1-8
+outputs/penpot/phase01/native-exports/transfer/design-system-wireframe.svg
+  s_6f37b289fde16b::t_d5fe9b2e97abc0 1
+outputs/penpot/phase01/native-exports/transfer/desktop-invoice-new-design-images.json
+  s_6f37b289fde16b::t_563c7f1c07825e 1-29
+outputs/penpot/phase01/native-exports/transfer/desktop-invoice-new-design-import.js
+  s_6f37b289fde16b::t_74052fe54b05f4 1-8
+outputs/penpot/phase01/native-exports/transfer/desktop-invoice-new-design.svg
+  s_6f37b289fde16b::t_35930098708c2f 1
+outputs/penpot/phase01/native-exports/transfer/desktop-invoice-new-wireframe-images.json
+  s_6f37b289fde16b::t_f01608bdd48885 1-29
+outputs/penpot/phase01/native-exports/transfer/desktop-invoice-new-wireframe-import.js
+  s_6f37b289fde16b::t_07203b3bf72420 1-8
+outputs/penpot/phase01/native-exports/transfer/desktop-invoice-new-wireframe.svg
+  s_6f37b289fde16b::t_944bc7910e643e 1
+outputs/penpot/phase01/native-exports/transfer/desktop-navigation-design-images.json
+  s_6f37b289fde16b::t_e83b1d3f2c0d86 1-236
+outputs/penpot/phase01/native-exports/transfer/desktop-navigation-design-import.js
+  s_6f37b289fde16b::t_da5056238b3839 1-8
+outputs/penpot/phase01/native-exports/transfer/desktop-navigation-design.svg
+  s_6f37b289fde16b::t_31563a187ee41f 1
+outputs/penpot/phase01/native-exports/transfer/desktop-navigation-wireframe-images.json
+  s_6f37b289fde16b::t_d12609f155697b 1-20
+outputs/penpot/phase01/native-exports/transfer/desktop-navigation-wireframe-import.js
+  s_6f37b289fde16b::t_77e3841fd4b65f 1-8
+outputs/penpot/phase01/native-exports/transfer/desktop-navigation-wireframe.svg
+  s_6f37b289fde16b::t_fe811ec556f682 1
+outputs/penpot/phase01/native-exports/transfer/desktop-sales-design-images.json
+  s_6f37b289fde16b::t_af0ef11b84fe5b 1-182
+outputs/penpot/phase01/native-exports/transfer/desktop-sales-design.svg
+  s_6f37b289fde16b::t_bea2a39c7d741a 1
+outputs/penpot/phase01/native-exports/transfer/desktop-sales-wireframe-images.json
+  s_6f37b289fde16b::t_20bee2665a20bf 1-20
+outputs/penpot/phase01/native-exports/transfer/desktop-sales-wireframe.svg
+  s_6f37b289fde16b::t_88819148f9ea96 1
+outputs/penpot/phase01/native-exports/transfer/medium-sales-design-images.json
+  s_6f37b289fde16b::t_c5fd6e1a3ddfb8 1-74
+outputs/penpot/phase01/native-exports/transfer/medium-sales-design-import.js
+  s_6f37b289fde16b::t_5eb0f20dfc9296 1-8
+outputs/penpot/phase01/native-exports/transfer/medium-sales-design.svg
+  s_6f37b289fde16b::t_4d9f75f7e7e87a 1
+outputs/penpot/phase01/native-exports/transfer/medium-sales-wireframe-images.json
+  s_6f37b289fde16b::t_ec30a4770f7e0c 1-20
+outputs/penpot/phase01/native-exports/transfer/medium-sales-wireframe-import.js
+  s_6f37b289fde16b::t_8ae1bb5297fa16 1-8
+outputs/penpot/phase01/native-exports/transfer/medium-sales-wireframe.svg
+  s_6f37b289fde16b::t_24b967ca1e4e64 1
+outputs/penpot/phase01/native-exports/transfer/phone-invoice-new-design-images.json
+  s_6f37b289fde16b::t_05701201885765 1-29
+outputs/penpot/phase01/native-exports/transfer/phone-invoice-new-design-import.js
+  s_6f37b289fde16b::t_675d2e16e9ba42 1-8
+outputs/penpot/phase01/native-exports/transfer/phone-invoice-new-design.svg
+  s_6f37b289fde16b::t_253a6405c6b46d 1
+outputs/penpot/phase01/native-exports/transfer/phone-invoice-new-wireframe-images.json
+  s_6f37b289fde16b::t_117019abce3556 1-29
+outputs/penpot/phase01/native-exports/transfer/phone-invoice-new-wireframe-import.js
+  s_6f37b289fde16b::t_3815cd3924ec29 1-8
+outputs/penpot/phase01/native-exports/transfer/phone-invoice-new-wireframe.svg
+  s_6f37b289fde16b::t_8f60aecfdfe83a 1
+outputs/penpot/phase01/native-exports/transfer/phone-sales-design-images.json
+  s_6f37b289fde16b::t_4626209474970e 1-47
+outputs/penpot/phase01/native-exports/transfer/phone-sales-design-import.js
+  s_6f37b289fde16b::t_16962ca48deef3 1-8
+outputs/penpot/phase01/native-exports/transfer/phone-sales-design.svg
+  s_6f37b289fde16b::t_78a7992ce1dc49 1
+outputs/penpot/phase01/native-exports/transfer/phone-sales-wireframe-images.json
+  s_6f37b289fde16b::t_4bfbdc3294e479 1-11
+outputs/penpot/phase01/native-exports/transfer/phone-sales-wireframe-import.js
+  s_6f37b289fde16b::t_bea96b570de909 1-8
+outputs/penpot/phase01/native-exports/transfer/phone-sales-wireframe.svg
+  s_6f37b289fde16b::t_90f7e8369df566 1
+outputs/penpot/phase01/native-exports/transfer/wide-sales-design-images.json
+  s_6f37b289fde16b::t_912e01c67494cb 1-281
+outputs/penpot/phase01/native-exports/transfer/wide-sales-design-import.js
+  s_6f37b289fde16b::t_b2619e6218245d 1-8
+outputs/penpot/phase01/native-exports/transfer/wide-sales-design.svg
+  s_6f37b289fde16b::t_9191ea79375465 1
+outputs/penpot/phase01/native-exports/transfer/wide-sales-wireframe-images.json
+  s_6f37b289fde16b::t_9772bfc59caad0 1-20
+outputs/penpot/phase01/native-exports/transfer/wide-sales-wireframe-import.js
+  s_6f37b289fde16b::t_e7ad050ef2d133 1-8
+outputs/penpot/phase01/native-exports/transfer/wide-sales-wireframe.svg
+  s_6f37b289fde16b::t_ab57576d015bdc 1
+outputs/penpot/phase01/native-exports/verify-images.py
+  s_6f37b289fde16b::t_7ba034221335c4 1-31
+outputs/penpot/phase01/native-exports/wide-sales-design-native.json
+  s_6f37b289fde16b::t_73b7085585a77a 1-14
+outputs/penpot/phase01/native-exports/wide-sales-wireframe-native.json
+  s_6f37b289fde16b::t_2a58faa9756ce6 1-13
+outputs/penpot/phase01/reference-data/audit-invoice-controls.cjs
+  s_6f37b289fde16b::t_909b7d195bcb96 1
+outputs/penpot/phase01/reference-data/build-artwork-phase01.py
+  s_6f37b289fde16b::t_dce1ed67d724de 1-251
+outputs/penpot/phase01/reference-data/capture-phase01.cjs
+  s_6f37b289fde16b::t_57e5458d31ab2e 1-160
+outputs/penpot/phase01/reference-data/capture-run.txt
+  s_6f37b289fde16b::t_c9ef5fad0ea971 1-35
+outputs/penpot/phase01/reference-data/compare-phone-regions.cjs
+  s_6f37b289fde16b::t_2516c4dc3e817f 1
+outputs/penpot/phase01/reference-data/control-runs.json
+  s_6f37b289fde16b::t_8711ebc105dad6 1
+outputs/penpot/phase01/reference-data/controls-run.txt
+  s_6f37b289fde16b::t_000410e2127c66 1-10
+outputs/penpot/phase01/reference-data/design-system-diagnostic-run.txt
+  s_6f37b289fde16b::t_4bdefe89b35be2 1-6
+outputs/penpot/phase01/reference-data/design-system-photos-png.json
+  s_6f37b289fde16b::t_3f6fcc7ae2bb44 1
+outputs/penpot/phase01/reference-data/design-system-platform-fonts.json
+  s_6f37b289fde16b::t_77f60ed21620c8 1-63
+outputs/penpot/phase01/reference-data/design-system-source.html
+  s_6f37b289fde16b::t_c6e99862f398a0 1-3
+outputs/penpot/phase01/reference-data/design-system-text-outlines.json
+  s_6f37b289fde16b::t_df3879f4c496ef 1-7845
+outputs/penpot/phase01/reference-data/design-system.html
+  s_6f37b289fde16b::t_1d4b7bdd584bdc 1-3
+outputs/penpot/phase01/reference-data/design-system.json
+  s_6f37b289fde16b::t_90eb046566225f 1-58258
+outputs/penpot/phase01/reference-data/desktop-invoice-new-calendar.svg
+  s_6f37b289fde16b::t_666a1c3bf78557 1
+outputs/penpot/phase01/reference-data/desktop-invoice-new-photos-png.json
+  s_6f37b289fde16b::t_b8cfc9840e376a 1
+outputs/penpot/phase01/reference-data/desktop-invoice-new-text-outlines.json
+  s_6f37b289fde16b::t_ecd55156b129da 1-9475
+outputs/penpot/phase01/reference-data/desktop-invoice-new.html
+  s_6f37b289fde16b::t_e80f4c5cf2b901 1-45
+outputs/penpot/phase01/reference-data/desktop-invoice-new.json
+  s_6f37b289fde16b::t_6fe0ddbb782bb9 1-59371
+outputs/penpot/phase01/reference-data/desktop-navigation-calendar.svg
+  s_6f37b289fde16b::t_2cacb1df65870e 1
+outputs/penpot/phase01/reference-data/desktop-navigation-photos-png.json
+  s_6f37b289fde16b::t_6e0fada468c031 1
+outputs/penpot/phase01/reference-data/desktop-navigation-text-outlines.json
+  s_6f37b289fde16b::t_8e0039e8589c0f 1-18833
+outputs/penpot/phase01/reference-data/desktop-navigation.html
+  s_6f37b289fde16b::t_f1936447fee54b 1-45
+outputs/penpot/phase01/reference-data/desktop-navigation.json
+  s_6f37b289fde16b::t_340b409fb7fb9d 1-129038
+outputs/penpot/phase01/reference-data/desktop-sales-calendar.svg
+  s_6f37b289fde16b::t_9626878e5a1092 1
+outputs/penpot/phase01/reference-data/desktop-sales-photos-png.json
+  s_6f37b289fde16b::t_5e2e5143c34d25 1
+outputs/penpot/phase01/reference-data/desktop-sales-text-outlines.json
+  s_6f37b289fde16b::t_3db838e319b1b7 1-16283
+outputs/penpot/phase01/reference-data/desktop-sales.html
+  s_6f37b289fde16b::t_d722a5d5764c96 1-45
+outputs/penpot/phase01/reference-data/desktop-sales.json
+  s_6f37b289fde16b::t_5800f0184e4a4d 1-106700
+outputs/penpot/phase01/reference-data/extend-capture.py
+  s_6f37b289fde16b::t_856aedab767ded 1-10
+outputs/penpot/phase01/reference-data/invoice-capture-repair-run.txt
+  s_6f37b289fde16b::t_668b752d211e0d 1-10
+outputs/penpot/phase01/reference-data/invoice-control-ink-audit.json
+  s_6f37b289fde16b::t_1dc50e6ff4039c 1-28
+outputs/penpot/phase01/reference-data/invoice-control-ink-run.txt
+  s_6f37b289fde16b::t_d6081c2b08e6f0 1
+outputs/penpot/phase01/reference-data/invoice-controls-repair-run.txt
+  s_6f37b289fde16b::t_8666b819a99f94 1-4
+outputs/penpot/phase01/reference-data/invoice-outlines-repair-run.txt
+  s_6f37b289fde16b::t_4247744a273f86 1-2
+outputs/penpot/phase01/reference-data/manifest.json
+  s_6f37b289fde16b::t_38dfb0579ca9af 1-268
+outputs/penpot/phase01/reference-data/measure-fonts.swift
+  s_6f37b289fde16b::t_6a0e83274fefec 1-5
+outputs/penpot/phase01/reference-data/medium-sales-calendar.svg
+  s_6f37b289fde16b::t_702b4822c195e0 1
+outputs/penpot/phase01/reference-data/medium-sales-photos-png.json
+  s_6f37b289fde16b::t_54ec4f11833ed8 1
+outputs/penpot/phase01/reference-data/medium-sales-text-outlines.json
+  s_6f37b289fde16b::t_1455af89b47e54 1-8853
+outputs/penpot/phase01/reference-data/medium-sales.html
+  s_6f37b289fde16b::t_c9465d720a82b8 1-45
+outputs/penpot/phase01/reference-data/medium-sales.json
+  s_6f37b289fde16b::t_c262ba39e8800a 1-53765
+outputs/penpot/phase01/reference-data/outlines-run.txt
+  s_6f37b289fde16b::t_dab10341d00a61 1-8
+outputs/penpot/phase01/reference-data/phone-invoice-new-calendar.svg
+  s_6f37b289fde16b::t_01fe64322f9542 1
+outputs/penpot/phase01/reference-data/phone-invoice-new-photos-png.json
+  s_6f37b289fde16b::t_e8e17516479557 1
+outputs/penpot/phase01/reference-data/phone-invoice-new-text-outlines.json
+  s_6f37b289fde16b::t_9656514846394a 1-7667
+outputs/penpot/phase01/reference-data/phone-invoice-new.html
+  s_6f37b289fde16b::t_f28aeb7af8b8ec 1-45
+outputs/penpot/phase01/reference-data/phone-invoice-new.json
+  s_6f37b289fde16b::t_11aa5d50d71deb 1-44700
+outputs/penpot/phase01/reference-data/phone-regions-run.txt
+  s_6f37b289fde16b::t_9eea2cbf69fdc5 1
+outputs/penpot/phase01/reference-data/phone-sales-calendar.svg
+  s_6f37b289fde16b::t_2986d10fb51aaf 1
+outputs/penpot/phase01/reference-data/phone-sales-photos-png.json
+  s_6f37b289fde16b::t_40476241947b71 1
+outputs/penpot/phase01/reference-data/phone-sales-semantic-comparison.json
+  s_6f37b289fde16b::t_f78f4d466f93f1 1-18
+outputs/penpot/phase01/reference-data/phone-sales-text-outlines.json
+  s_6f37b289fde16b::t_331d55bd04a6a6 1-5053
+outputs/penpot/phase01/reference-data/phone-sales.html
+  s_6f37b289fde16b::t_cb006533df71ff 1-45
+outputs/penpot/phase01/reference-data/phone-sales.json
+  s_6f37b289fde16b::t_7863a430053f16 1-33677
+outputs/penpot/phase01/reference-data/prepare-capture.py
+  s_6f37b289fde16b::t_85f706b17b7b38 1-33
+outputs/penpot/phase01/reference-data/repair-control-clips.py
+  s_6f37b289fde16b::t_324a434574f7cf 1-79
+outputs/penpot/phase01/reference-data/repair-control-semantics.py
+  s_6f37b289fde16b::t_d74e633d5b3b62 1-40
+outputs/penpot/phase01/reference-data/semantic-capture-repair-run.txt
+  s_6f37b289fde16b::t_4628f4651f1889 1-14
+outputs/penpot/phase01/reference-data/semantic-controls-repair-run.txt
+  s_6f37b289fde16b::t_bd3feaff45749d 1-5
+outputs/penpot/phase01/reference-data/semantic-outlines-repair-run.txt
+  s_6f37b289fde16b::t_539872b220d01e 1-3
+outputs/penpot/phase01/reference-data/text-outlines-phase01.swift
+  s_6f37b289fde16b::t_a409022f81a26e 1-167
+outputs/penpot/phase01/reference-data/verify-control-clips.py
+  s_6f37b289fde16b::t_9991b823f6f01f 1-18
+outputs/penpot/phase01/reference-data/wide-sales-calendar.svg
+  s_6f37b289fde16b::t_470707f8eb56d5 1
+outputs/penpot/phase01/reference-data/wide-sales-photos-png.json
+  s_6f37b289fde16b::t_fc167a743ff3f1 1
+outputs/penpot/phase01/reference-data/wide-sales-text-outlines.json
+  s_6f37b289fde16b::t_c5e2430af6c9a5 1-21704
+outputs/penpot/phase01/reference-data/wide-sales.html
+  s_6f37b289fde16b::t_df2f4ede5df5d9 1-45
+outputs/penpot/phase01/reference-data/wide-sales.json
+  s_6f37b289fde16b::t_f1b921a25f428a 1-149217
+outputs/penpot/phase01/review/availability-at-build.json
+  s_6f37b289fde16b::t_011b1ab079d82c 1-248
+outputs/penpot/phase01/review/build-gallery.py
+  s_6f37b289fde16b::t_05a990605957fd 1-41
+outputs/penpot/phase01/review/gallery-ui.js
+  s_6f37b289fde16b::t_d075ccc39f320a 1
+outputs/penpot/phase01/review/independent-review.json
+  s_6f37b289fde16b::t_9a7732ce09a915 1-22
+outputs/penpot/phase01/review/index.html
+  s_6f37b289fde16b::t_311dab25389371 1
+outputs/penpot/phase01/source-artwork/README.md
+  s_6f37b289fde16b::t_4c95cc5aaea6a5 1-13
+outputs/penpot/phase01/source-artwork/artwork-manifest.json
+  s_6f37b289fde16b::t_120243df59596f 1-162
+outputs/penpot/phase01/source-artwork/build-run.json
+  s_6f37b289fde16b::t_fe60043a223573 1-162
+outputs/penpot/phase01/source-artwork/design-system-design.svg
+  s_6f37b289fde16b::t_0d6519e023a2b8 1
+outputs/penpot/phase01/source-artwork/design-system-wireframe.svg
+  s_6f37b289fde16b::t_b86f53aedf8da1 1
+outputs/penpot/phase01/source-artwork/desktop-invoice-new-control-clips.json
+  s_6f37b289fde16b::t_2595dc2623c3d2 1-1401
+outputs/penpot/phase01/source-artwork/desktop-invoice-new-design.svg
+  s_6f37b289fde16b::t_68f2025c80a0b5 1
+outputs/penpot/phase01/source-artwork/desktop-invoice-new-wireframe.svg
+  s_6f37b289fde16b::t_04609fd817d56b 1
+outputs/penpot/phase01/source-artwork/desktop-navigation-design.svg
+  s_6f37b289fde16b::t_4abe38b5633a0b 1
+outputs/penpot/phase01/source-artwork/desktop-navigation-wireframe.svg
+  s_6f37b289fde16b::t_545d55882e4cb6 1
+outputs/penpot/phase01/source-artwork/desktop-sales-design.svg
+  s_6f37b289fde16b::t_1dfd9d8551109b 1
+outputs/penpot/phase01/source-artwork/desktop-sales-wireframe.svg
+  s_6f37b289fde16b::t_6608c4266e15fc 1
+outputs/penpot/phase01/source-artwork/invoice-control-clipping-verification.json
+  s_6f37b289fde16b::t_96e7aa09a0739d 1-145
+outputs/penpot/phase01/source-artwork/invoice-wrapper-verification.json
+  s_6f37b289fde16b::t_c4c1ebf354f190 1-148
+outputs/penpot/phase01/source-artwork/medium-sales-design.svg
+  s_6f37b289fde16b::t_0f152a3ab7a459 1
+outputs/penpot/phase01/source-artwork/medium-sales-wireframe.svg
+  s_6f37b289fde16b::t_39d932dd0d8e98 1
+outputs/penpot/phase01/source-artwork/navigation-stacking-verification.json
+  s_6f37b289fde16b::t_54e2eebd69c92c 1-26
+outputs/penpot/phase01/source-artwork/phone-invoice-new-control-clips.json
+  s_6f37b289fde16b::t_f2498619353d0b 1-1324
+outputs/penpot/phase01/source-artwork/phone-invoice-new-design.svg
+  s_6f37b289fde16b::t_f40aa4949f7425 1
+outputs/penpot/phase01/source-artwork/phone-invoice-new-wireframe.svg
+  s_6f37b289fde16b::t_bb0cad4af350d3 1
+outputs/penpot/phase01/source-artwork/phone-sales-design.svg
+  s_6f37b289fde16b::t_489d814292a247 1
+outputs/penpot/phase01/source-artwork/phone-sales-wireframe.svg
+  s_6f37b289fde16b::t_a478d4a6fc116a 1
+outputs/penpot/phase01/source-artwork/semantic-control-verification.json
+  s_6f37b289fde16b::t_d80e414395d32d 1-190
+outputs/penpot/phase01/source-artwork/source-verification.json
+  s_6f37b289fde16b::t_3e6b0a27363b06 1-504
+outputs/penpot/phase01/source-artwork/wide-sales-design.svg
+  s_6f37b289fde16b::t_6a9c0191c1785e 1
+outputs/penpot/phase01/source-artwork/wide-sales-wireframe.svg
+  s_6f37b289fde16b::t_899b6ff1942cf3 1
+outputs/penpot/phase01/supplemental-artwork/create-native.js
+  s_6f37b289fde16b::t_e9be55d43b98ce 1-47
+outputs/penpot/phase01/supplemental-artwork/create-result.json
+  s_6f37b289fde16b::t_aeada6129216d7 1-46
+outputs/phase01-build/android-read.log
+  s_6f37b289fde16b::t_ef2cf868c247ca 1-18
+outputs/phase01-build/android-write.log
+  s_6f37b289fde16b::t_4404b93774cfaa 1-26
+outputs/phase01-build/authored-link-check.json
+  s_6f37b289fde16b::t_814e1c67e682d6 1-14
+outputs/phase01-build/final-analysis.log
+  s_6f37b289fde16b::t_9a8f34e71f3f03 1-2
+outputs/phase01-build/final-format.log
+  s_6f37b289fde16b::t_afd64e13d2f432 1
+outputs/phase01-build/final-local-checks.json
+  s_6f37b289fde16b::t_6f8a7dd8ea6d32 1-62
+outputs/phase01-build/final-source-analysis.log
+  s_6f37b289fde16b::t_0aa912b2301a83 1-2
+outputs/phase01-build/final-source-format.log
+  s_6f37b289fde16b::t_a9788975d59416 1
+outputs/phase01-build/final-source-manifest.json
+  s_6f37b289fde16b::t_994b0a468c1285 1-107
+outputs/phase01-build/final-source-tests.log
+  s_6f37b289fde16b::t_1f36af65d257ea 1-136
+outputs/phase01-build/final-tests.log
+  s_6f37b289fde16b::t_f1c22fa8931022 1-132
+outputs/phase01-build/ios-read.log
+  s_6f37b289fde16b::t_ac81f85cff869f 1-11
+outputs/phase01-build/ios-write.log
+  s_6f37b289fde16b::t_e17b878f397464 1-14
+outputs/phase01-build/macos-read.log
+  s_6f37b289fde16b::t_4e2ff3a310ed84 1-12
+outputs/phase01-build/macos-write.log
+  s_6f37b289fde16b::t_fe959cb9b0f09b 1-17
+outputs/phase01-build/macos-wrong-nonce-rejection.log
+  s_6f37b289fde16b::t_5bdc6df8a0df2f 1-43
+outputs/phase01-build/main-android.log
+  s_6f37b289fde16b::t_6891fafa2a107a 1-9
+outputs/phase01-build/main-ios-final.log
+  s_6f37b289fde16b::t_99fb53b0bbbad1 1-17
+outputs/phase01-build/main-ios.log
+  s_6f37b289fde16b::t_d113d504515d55 1-19
+outputs/phase01-build/main-macos-final.log
+  s_6f37b289fde16b::t_975195b7b18a5f 1-5
+outputs/phase01-build/main-macos.log
+  s_6f37b289fde16b::t_a60f29a2342f73 1-9
+outputs/phase01-build/modal-retry-red.log
+  s_6f37b289fde16b::t_f38b9238bd45f0 1-32
+outputs/phase01-build/native-android.json
+  s_6f37b289fde16b::t_73555908d217f2 1-29
+outputs/phase01-build/native-ios.json
+  s_6f37b289fde16b::t_e31d1e3c897785 1-30
+outputs/phase01-build/native-macos.json
+  s_6f37b289fde16b::t_92de96440574ef 1-33
+outputs/phase01-build/native-runs.json
+  s_6f37b289fde16b::t_e7a4f222f35e6e 1-17
+outputs/phase01-build/native-ui/android-main-build.log
+  s_6f37b289fde16b::t_a65427e8e0a47a 1-8
+outputs/phase01-build/native-ui/android-main-restore.log
+  s_6f37b289fde16b::t_230c41371152be 1-3
+outputs/phase01-build/native-ui/android-native-ui-status.json
+  s_6f37b289fde16b::t_2db37d392554c3 1-62
+outputs/phase01-build/native-ui/android-native-ui-test.log
+  s_6f37b289fde16b::t_68efa66ecb87cb 1-22
+outputs/phase01-build/native-ui/ios-final-ax-check.json
+  s_6f37b289fde16b::t_844f526f9847d5 1-18
+outputs/phase01-build/native-ui/macos-owner-keyboard-acceptance.json
+  s_6f37b289fde16b::t_b895308df33671 1-8
+outputs/phase01-build/source-checker-tests.log
+  s_6f37b289fde16b::t_26bed802f6a31b 1-29
+outputs/phase01-build/source-snapshot.json
+  s_6f37b289fde16b::t_9dca36507ee85b 1-49
+outputs/phase01-build/staged-whitespace-all.log
+  s_6f37b289fde16b::t_7d952beb81d9f0 1-170
+outputs/phase01-build/staged-whitespace-check.json
+  s_6f37b289fde16b::t_b8fd5d40278dfa 1-26
+outputs/phase01-build/unknown-commit-overlap-red.log
+  s_6f37b289fde16b::t_3708ced42da3a4 1-10
+outputs/phase01-build/verification-summary.json
+  s_6f37b289fde16b::t_b0668efb27882b 1-36
+outputs/phase01-build/visible-undo-red.log
+  s_6f37b289fde16b::t_8789411c0aacd8 1-32
+outputs/phase01-step3/approval-and-preflight.json
+  s_6f37b289fde16b::t_c8298ae2db7463 1-26
+outputs/phase01-step3/ios-native/acceptance-manifest.json
+  s_6f37b289fde16b::t_f66ef8cf9f33b8 1-38
+outputs/phase01-step3/ios-native/approved-probe-launch.log
+  s_6f37b289fde16b::t_58e8c7cc925f58 1-16
+outputs/phase01-step3/ios-native/approved-runtime-provenance.json
+  s_6f37b289fde16b::t_576f7a0b80b195 1-13
+outputs/phase01-step3/ios-native/runtime-provenance.json
+  s_6f37b289fde16b::t_3add8b372bd2c7 1-10
+outputs/phase01-step3/ios-native/synthetic-export-integrity.json
+  s_6f37b289fde16b::t_f458eac7c731ff 1-26
+outputs/phase01-step3/native-keyboard-probe-disposable-status.json
+  s_6f37b289fde16b::t_5efad50dc32190 1-19
+outputs/phase01-step3/native-keyboard-probe-disposable.log
+  s_6f37b289fde16b::t_77b482dfad4d8f 1-8
+pubspec.lock
+  s_6f37b289fde16b::t_fab14dcf7f77d3 68-75,88,91,116-123,204-211,235-242,258-273,343-350,383-390,405-411,436-443,452-459,464,467,588-603,628-635,652-659,673-720,729-736,785-792
+test/app/app_test.dart
+  s_6f37b289fde16b::t_d48a6a3eb000a4 1-2,4,7-10,13-20,23-121,123-148,150-158,161-270
+test/app/bootstrap_test.dart
+  s_6f37b289fde16b::t_3bad997b7bf6f8 1-120
+test/platform/shell_preferences_directory_test.dart
+  s_6f37b289fde16b::t_fe52c59415bddd 1-79
+test/shell/shell_preferences_test.dart
+  s_6f37b289fde16b::t_5e89779481d661 1-142
+test/shell/shell_view_model_test.dart
+  s_6f37b289fde16b::t_fd8791a2276f70 1-651
+test/support/preferences_store.dart
+  s_6f37b289fde16b::t_f9770057fcd9a4 1-37
+test/ui/README.md
+  s_6f37b289fde16b::t_0101e6b868ee33 1-22
+test/ui/global_keyboard_test.dart
+  s_6f37b289fde16b::t_965be7a5e01c0b 1-143
+test/ui/presentation_test.dart
+  s_6f37b289fde16b::t_2a4a25d493358e 1-658
+test/ui/session_undo_test.dart
+  s_6f37b289fde16b::t_e3f62c8614404c 1-95
+test/ui/visual_contract_test.dart
+  s_6f37b289fde16b::t_5a35b2aaa0162a 1-336
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6c5de66b600eec19fb1bc6f2356cf804f0033f76",
+  "prompts": {},
+  "sessions": {
+    "s_6f37b289fde16b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1868f-72d4-7453-b738-169f9e9d9bf4",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
