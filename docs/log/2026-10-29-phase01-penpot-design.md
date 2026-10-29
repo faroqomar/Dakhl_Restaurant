@@ -1,5 +1,7 @@
 # Phase 01 — Step 1.5 design outcome
 
+Historical preparation record. The plan and both Penpot design sets were subsequently approved, the native technical prerequisite was verified, and Phase 01 was implemented. Read [current review corrections](../phases/01-review-corrections.md) and PHASES.md for current disposition. Earlier pending/N/A/old-pin statements apply only to this preparation stage.
+
 Date: 2026-10-29. Status: designs/wireframes prepared and independently reviewed; explicit owner approval pending. The owner requested the active phase only, reuse of the existing Penpot space, preserved prior work and no application implementation.
 
 ## Delivered scope and ownership

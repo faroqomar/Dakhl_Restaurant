@@ -1,5 +1,7 @@
 # Phase 01 — implementation plan
 
+Historical preparation record. The plan and both Penpot design sets were subsequently approved, the native technical prerequisite was verified, and Phase 01 was implemented. Read [current review corrections](01-review-corrections.md) and PHASES.md for current disposition. Earlier pending/N/A/old-pin statements apply only to this preparation stage.
+
 Execution update, 2026-10-29: the owner approved Step 3 and both existing Penpot sets. The Phase 00 native technical dependency subsequently passed focused independent review through Device Hub. The bounded plan is implemented locally against reviewed engine `6d4ae39f35b005dfa1123a82c6df316901e1e1e4`; see [current build evidence](01-build-evidence.md). The proposed/blocked wording below is retained as dated planning history, not current execution status. Hosted CI, remaining native verification, exact merge approval and DONE remain separate.
 Date: 2026-10-29. **PROPOSED — awaiting owner plan and design approval; no implementation authorized.** Scope: design system, navigation and interaction shell. The owner confirmed that the last page and six shortcut choices must survive a full app restart. This adds bounded engine planning; it does not approve the complete plan or a new engine revision.
 
@@ -8,7 +10,7 @@ Date: 2026-10-29. **PROPOSED — awaiting owner plan and design approval; no imp
 | Owner | Deliverable / boundary |
 | --- | --- |
 | Dakhl_Restaurant | Arabic RTL components, themes, ViewModels, responsive navigation, route/shortcut semantics, UI preferences schema and user-facing safeguards. Widgets do not access SQL/files or implement accounting. |
-| Madar_Engine — proposed CAP-01 | Pure Dart local-preferences contract and an optional SQLite/PowerSync adapter. Owns atomic snapshot persistence, revision conflicts, validation limits, errors and safe diagnostics. See the [engine-owned plan and proposed public contract](../../../../phase01-scope-engine/Madar_Engine/docs/reference/cap01-device-preferences-plan.md). |
+| Madar_Engine — proposed CAP-01 | Pure Dart local-preferences contract and an optional SQLite/PowerSync adapter. Owns atomic snapshot persistence, revision conflicts, validation limits, errors and safe diagnostics. See the [engine-owned plan and proposed public contract](https://github.com/faroqomar/Madar_Engine/blob/d705576122f817093bcc9ab1bf935010958fea70/docs/reference/cap01-device-preferences-plan.md). |
 | Contract / composition | App supplies an isolated development database location and consumes the reviewed engine package revision. Only route ID and six shortcut choices cross the durable shell-preferences boundary. No account, ticket, financial, stock, authentication or sync data is introduced. |
 
 The earlier Step 1/1.5 engine N/A assessment is historical. The owner's subsequent restart requirement makes CAP-01 relevant. Existing source remains pinned to `784b139753a0e2a07d3f97eedb326debfe068395`, with `madar_application` and `madar_flutter_adapters` at `0.1.0-dev.1`. CAP-01 is proposed, absent from that revision and not a supported release. Repinning requires review of the engine change and consumer conformance; newer engine documentation is not a runtime upgrade.

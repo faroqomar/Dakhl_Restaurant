@@ -1,5 +1,7 @@
 # Phase 01 — Penpot designs and structural wireframes
 
+Historical preparation record. The plan and both Penpot design sets were subsequently approved, the native technical prerequisite was verified, and Phase 01 was implemented. Read [current review corrections](01-review-corrections.md) and PHASES.md for current disposition. Earlier pending/N/A/old-pin statements apply only to this preparation stage.
+
 Date: 2026-10-29. Status: design and wireframe set prepared and independently reviewed; explicit owner design approval pending. Step 1.5 authorizes phase-scoped design work, not UI implementation, a new financial policy, merge or deployment.
 
 ## Destination and ownership

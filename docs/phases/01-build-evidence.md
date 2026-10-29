@@ -1,5 +1,7 @@
 # Phase 01 — implementation and verification evidence
 
+Current owner disposition, 2026-10-29: live TalkBack/screen-reader verification is **owner-excluded, not passed**. The earlier wait is superseded by the owner's explicit scope decision. Existing keyboard/focus safeguards remain. The owner requested integration after required checks finish; hosted review corrections are being reverified before the changed revisions are presented. No merge, release, deployment or next phase has occurred in this correction record. Earlier status paragraphs below describe their dated assessment and do not reopen the excluded gate.
+
 Date:2026-10-29. Current status: **BLOCKED for full verification** — [Step4 review](01-step4-review.md) supersedes this initial build record. The approved implementation and three review fixes are built locally;147current app tests/all three builds pass, native mobile Back now passes, but required genuine screen-reader traversal remains pending. Earlier134test/initial native-run statements below retain their dated provenance. The owner authorized Step3 on the presented plan, required full-restart restoration, and separately approved both existing Penpot design sets and listed differences. Phase00's formerly outstanding native dependency passed focused independent review through Device Hub. This is not overall DONE, merge approval or a release.
 
 ## Scope and ownership delivered

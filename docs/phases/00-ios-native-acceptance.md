@@ -1,5 +1,7 @@
 # Phase 00 — iPhone Simulator native acceptance
 
+Current clarification, 2026-10-29: the owner approved the existing Phase 00 design set and independent review closed its iPhone technical prerequisite. Earlier pending statements below are historical. This closes the technical prerequisite only; it does not assert overall Phase 00 DONE or a production release.
+
 Date: 2026-10-29. Required native flows observed successfully; independent evidence review pending. Owner explicitly approved the existing Phase 00 and Phase 01 Penpot sets and requested Step 3. Physical iPhone/signing stays deferred under the existing Simulator direction.
 
 ## Corrected environment and source

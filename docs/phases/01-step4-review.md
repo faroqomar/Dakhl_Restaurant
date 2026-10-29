@@ -1,5 +1,7 @@
 # Phase 01 — independent review and verification
 
+Current owner disposition, 2026-10-29: live TalkBack/screen-reader verification is **owner-excluded, not passed**. The earlier wait is superseded by the owner's explicit scope decision. Existing keyboard/focus safeguards remain. The owner requested integration after required checks finish; hosted review corrections are being reverified before the changed revisions are presented. No merge, release, deployment or next phase has occurred in this correction record. Earlier status paragraphs below describe their dated assessment and do not reopen the excluded gate.
+
 Date: 2026-10-29. Owner requested completion of remaining Step3 work and Step4 independent review. Current disposition: **independent local review performed; approval readiness BLOCKED**. All three identified code P2 findings are repaired and independently reverified. Required genuine screen-reader traversal remains pending; the owner cannot perform the manual check now. Step3 full verification is therefore not complete. Hosted CI remains separately pending for unpublished revisions. No scope/design expansion, selfapproval, publication, merge or deployment.
 
 ## Reviewed boundary and sources

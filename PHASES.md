@@ -1,5 +1,7 @@
 # Project Phase Tracker
 
+Current owner disposition, 2026-10-29: live TalkBack/screen-reader verification is **owner-excluded, not passed**. The earlier wait is superseded by the owner's explicit scope decision. Existing keyboard/focus safeguards remain. The owner requested integration after required checks finish; hosted review corrections are being reverified before the changed revisions are presented. No merge, release, deployment or next phase has occurred in this correction record.
+
 Source of phase definitions: [PLANS.md](PLANS.md). Rules: [AGENTS.md](AGENTS.md). Adopted 2026-10-28 from the owner’s supplied tracker template.
 
 The standing joint workflow in [PROMPTS.md](PROMPTS.md) applies to every phase and linked engine work item. Each project keeps its own status/evidence; an unaffected side records N/A with a reason. This workflow update does not advance any phase.
@@ -15,7 +17,7 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 | Phase | Name | Status | Branch | PR |
 | --- | --- | --- | --- | --- |
 | 00 | [Baseline and delivery setup](docs/planning/flutter-rebuild/phases/00.md) | BLOCKED | codex/phase00-engine-split | [Merged PR2](https://github.com/faroqomar/Dakhl_Restaurant/pull/2) |
-| 01 | [Design system, navigation and interaction shell](docs/planning/flutter-rebuild/phases/01.md) | BLOCKED — required reader acceptance pending | `codex/phase01-build` | [Draft PR7](https://github.com/faroqomar/Dakhl_Restaurant/pull/7) |
+| 01 | [Design system, navigation and interaction shell](docs/planning/flutter-rebuild/phases/01.md) | REVIEW — hosted corrections; reader owner-excluded | `codex/phase01-build` | [Draft PR7](https://github.com/faroqomar/Dakhl_Restaurant/pull/7) |
 | 02 | [Local accounts, validation and safe persistence](docs/planning/flutter-rebuild/phases/02.md) | TODO | — | — |
 | 03 | [Sellable products and inventory](docs/planning/flutter-rebuild/phases/03.md) | TODO | — | — |
 | 04 | [Cash sales, saved receipt, drafts and held orders](docs/planning/flutter-rebuild/phases/04.md) | TODO | — | — |
@@ -53,7 +55,7 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 ### Phase 01
 
 - **Name:** Design system, navigation and interaction shell
-- **Status:** BLOCKED for full verification/approval readiness — Step4 repaired and independently closed three code P2s.147app tests and three final builds pass; native Back passes. Required real screen-reader traversal remains pending; owner cannot manually verify now. Hosted CI separately pending.
+- **Status:** REVIEW — owner excludes live screen-reader verification (not passed). The original three Step4 code findings remain closed; the new hosted-review path guard has 154 local tests and independent re-verification. Fresh CI on the corrected head and reviewed integration remain pending. Earlier native results are dated evidence.
 - **Dependencies:** 00
 - **Design approval:** Approved — owner explicitly approved the [existing Phase 01 design/wireframe set and listed differences](docs/phases/01-penpot-design-review.md) on 2026-10-29.
 - **Branch / Worktree:** implementation `codex/phase01-build`, `/Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant`, clean base `f73b14b5a7cc6d2421f670938b2435af137ddb0f`; original dirty scope/design worktrees preserved, no PR/publication.
@@ -65,10 +67,10 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 - **Independent review:** Plan review closed. Engine code/API/tests independently reviewed; app code review closed three P2s (modal retry, uncertain-commit overlap, visible Undo); UX review closed three P2s (desktop hints, menu identity/icons, inclusive760px boundary). Step3 focused reconciliation verified74/74 source hashes and honest reuse; Step4 final reconciliation independently verified78/78 current manifest hashes. Native images independently reviewed. Owner manually confirmed Mac ⌘3/⌘K both work. Step4 independent reviewers closed status/iOS-edge/Android-registration P2s with native Back evidence; genuine screen-reader traversal remains open.
 - **Staging / Rollback:** Isolated development data only. Real rollback/future-format preservation and fresh-process checks pass; stop development build to roll back UI, retain dedicated preferences DB. No production migration/deployment.
 - **PR:** [Draft PR7](https://github.com/faroqomar/Dakhl_Restaurant/pull/7), depends on [engine PR4](https://github.com/faroqomar/Madar_Engine/pull/4); reader acceptance remains blocking. [Step5 record](docs/phases/01-pr-approval.md).
-- **User approval:** Step 3 authorizes the presented plan/build scope; existing Phase 00/01 designs and listed differences explicitly approved on 2026-10-29. Phase 00 native acceptance is not waived; no exact revision merge or deployment approval.
+- **User approval:** Step 3 authorizes the presented plan/build scope; existing Phase 00/01 designs and listed differences explicitly approved on 2026-10-29. Phase 00 technical acceptance subsequently passed. The owner now requests conditional integration after checks and review; deployment remains unauthorized.
 - **Decisions / Lessons:** [Shell contract/setup](docs/reference/phase01-shell-contract.md); [prevention catalogue](docs/how-to/repeated-problems.md). Device Hub is the verified native app; absence of old Simulator.app is not an access blocker.
 - **Evidence:** [Current independent Step4 verdict](docs/phases/01-step4-review.md); [Current build results and remaining gates](docs/phases/01-build-evidence.md); [Step 1 readiness](docs/phases/01-scope-readiness.md); [Step 1.5 design review](docs/phases/01-penpot-design-review.md); [design task log](docs/log/2026-10-29-phase01-penpot-design.md). [Step 2 plan/log](docs/log/2026-10-29-phase01-implementation-plan.md). [Step 3 approval and native preflight](docs/log/2026-10-29-phase01-step3-preflight.md). Native artifact evidence is separate from runtime verification.
-- **Engine/app contract:** App owns presentation, route/six-slot payload and safeguards. Implemented Madar CAP-01 owns local-only snapshot storage/adapter; owner-confirmed restart requirement supersedes earlier engine N/A assessment. Independently reviewed local CAP-01 pin `6d4ae39f35b005dfa1123a82c6df316901e1e1e4` now consumed; exact resolved-source check passed, no publication/merge.
+- **Engine/app contract:** App owns presentation, route/six-slot payload and safeguards. Implemented Madar CAP-01 owns local-only snapshot storage/adapter; owner-confirmed restart requirement supersedes earlier engine N/A assessment. Independently reviewed local CAP-01 pin `6d4ae39f35b005dfa1123a82c6df316901e1e1e4` now consumed; exact resolved-source check passed; linked PR source is published. Final corrected-head CI/review and the owner's conditional integration instruction govern merging.
 - **Completed:** —
 
 ### Phase 02
