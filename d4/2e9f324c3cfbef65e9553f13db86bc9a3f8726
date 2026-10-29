@@ -1,0 +1,34 @@
+scripts/tests/test_release_version.py
+  s_6f37b289fde16b::t_40f1179b341088 4-5,13-21
+scripts/release_version.py
+  s_6f37b289fde16b::t_04e8edd6a4af46 16,46,50
+tool/dev_dashboard/run_benchmarks.py
+  s_6f37b289fde16b::t_04e8edd6a4af46 119-127,130,132,176,178-179,194,203
+tool/dev_dashboard/tests/test_app_runner.py
+  s_6f37b289fde16b::t_40f1179b341088 20-38
+  s_6f37b289fde16b::t_cec0b9b8aded2a 15-19
+docs/log/2026-10-29-step5-development-review.md
+  s_6f37b289fde16b::t_337030cbf0e894 3,5,9,11,15
+outputs/dev-dashboard/console-review-manifest.json
+  s_6f37b289fde16b::t_65fec368899dbe 21-37
+outputs/memory/dev-dashboard-delivery.json
+  s_6f37b289fde16b::t_11914b2812f6fa 13,48-50
+tool/dev_dashboard/README.md
+  s_6f37b289fde16b::t_3bd0552d85e590 37-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d42e9f324c3cfbef65e9553f13db86bc9a3f8726",
+  "prompts": {},
+  "sessions": {
+    "s_6f37b289fde16b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1868f-72d4-7453-b738-169f9e9d9bf4",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
