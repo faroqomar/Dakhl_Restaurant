@@ -1,0 +1,75 @@
+.github/workflows/flutter.yml
+  s_6f37b289fde16b::t_7e28022d800cce 62-63
+tool/dev_dashboard/tests/test_app_runner.py
+  s_6f37b289fde16b::t_e117550eb84a07 26-28,130-140
+  s_6f37b289fde16b::t_4bbcb0e55b8abe 45
+  s_6f37b289fde16b::t_6c23cbd2942aa6 1-25,29-44,46-85,87-129,141-145
+  s_6f37b289fde16b::t_1e1dfb0c810937 86
+lib/platform/performance_scenarios.dart
+  s_6f37b289fde16b::t_f081e29984a9d5 1-7,13-22,26-32,40-49,52-60,65-67,71-91,95-98,102-104,108-112,116-122
+  s_6f37b289fde16b::t_4d2bb0970ae0a5 8-12,23-25,33-39,50-51,61-64,68-70,92-94,99-101,105-107,113-115
+lib/platform/performance_main.dart
+  s_6f37b289fde16b::t_926b8644553f8e 5,18,20,29-34,36-37,53-56,60,89,91-92,97,105,107,110,113
+  s_6f37b289fde16b::t_f081e29984a9d5 1-2,4,6-17,21-28,35,38-50,68-84,86-87,90,106,108-109,114,116-119
+  s_6f37b289fde16b::t_ba3ae2f9f7a48b 3,51-52,57-59,61,65-67,85,88,93-96,111-112,115
+  s_6f37b289fde16b::t_4d2bb0970ae0a5 19,62-64,98-104
+tool/dev_dashboard/run_benchmarks.py
+  s_6f37b289fde16b::t_4bbcb0e55b8abe 1-14,16-48,65-70,78-91,94-208
+  s_6f37b289fde16b::t_e117550eb84a07 15,49-64,71-77,92-93
+test/app/performance_test.dart
+  s_6f37b289fde16b::t_defb6669812ca4 1-16,18-20,22-24,26-36,38-43,45-60,62-64,66-74,76-79,81-87,89,91,93-110,113-122,124-130,132-135,137-138
+  s_6f37b289fde16b::t_d367d95a46b298 17,21,25,37,44,61,65,75,80,88,90,92,111-112,123,131,136
+.github/pull_request_template.md
+  s_6f37b289fde16b::t_7e28022d800cce 1-21
+docs/how-to/versioning-and-performance.md
+  s_6f37b289fde16b::t_7e28022d800cce 1-32
+lib/app/app.dart
+  s_6f37b289fde16b::t_f081e29984a9d5 26,31-34,145-152,154-155
+  s_6f37b289fde16b::t_344a61c7cb3c6f 153
+AGENTS.md
+  s_6f37b289fde16b::t_12f15156de03e9 353-356
+PHASES.md
+  s_6f37b289fde16b::t_05747ab89390d6 298-303
+PLANS.md
+  s_6f37b289fde16b::t_a5ec924425c3ce 41-44
+docs/how-to/repeated-problems.md
+  s_6f37b289fde16b::t_3c30e1ddba3681 149-156
+docs/log/2026-10-29-development-dashboard-app-benchmarks.md
+  s_6f37b289fde16b::t_8131d4326379a5 1-35
+docs/log/2026-10-29-development-dashboard-delivery.md
+  s_6f37b289fde16b::t_0f51043535bf2f 1-43
+outputs/dev-dashboard/delivery.json
+  s_6f37b289fde16b::t_401d264d5fff21 1-855
+outputs/dev-dashboard/profile-baseline-final.json
+  s_6f37b289fde16b::t_fa7518332fc368 1-281
+outputs/dev-dashboard/profile-baseline.json
+  s_6f37b289fde16b::t_f7a75d60695bc8 1-278
+outputs/dev-dashboard/verification.json
+  s_6f37b289fde16b::t_104178b3935204 1-39
+outputs/memory/dev-dashboard-delivery.json
+  s_6f37b289fde16b::t_21701949ecacac 1-49
+scripts/release_version.py
+  s_6f37b289fde16b::t_db5a4d6fe68d03 1-59
+scripts/tests/test_release_version.py
+  s_6f37b289fde16b::t_1a61fd619c7a48 1-33
+tool/dev_dashboard/README.md
+  s_6f37b289fde16b::t_8c3024bceb5d2d 1-36
+tool/dev_dashboard/operations.json
+  s_6f37b289fde16b::t_87d59949978788 1-58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "70404f6aad865a50892a452fa5f7c4e2dd5c9637",
+  "prompts": {},
+  "sessions": {
+    "s_6f37b289fde16b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1868f-72d4-7453-b738-169f9e9d9bf4",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
