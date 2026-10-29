@@ -1,5 +1,7 @@
 # Project Phase Tracker
 
+Current owner disposition, 2026-10-29: live TalkBack/screen-reader verification is **owner-excluded, not passed**. The earlier wait is superseded by the owner's explicit scope decision. Existing keyboard/focus safeguards remain. The owner requested integration after required checks finish; hosted review corrections are being reverified before the changed revisions are presented. No merge, release, deployment or next phase has occurred in this correction record.
+
 Source of phase definitions: [PLANS.md](PLANS.md). Rules: [AGENTS.md](AGENTS.md). Adopted 2026-10-28 from the owner’s supplied tracker template.
 
 The standing joint workflow in [PROMPTS.md](PROMPTS.md) applies to every phase and linked engine work item. Each project keeps its own status/evidence; an unaffected side records N/A with a reason. This workflow update does not advance any phase.
@@ -15,7 +17,7 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 | Phase | Name | Status | Branch | PR |
 | --- | --- | --- | --- | --- |
 | 00 | [Baseline and delivery setup](docs/planning/flutter-rebuild/phases/00.md) | BLOCKED | codex/phase00-engine-split | [Merged PR2](https://github.com/faroqomar/Dakhl_Restaurant/pull/2) |
-| 01 | [Design system, navigation and interaction shell](docs/planning/flutter-rebuild/phases/01.md) | BLOCKED — required reader acceptance pending | `codex/phase01-build` | [Draft PR7](https://github.com/faroqomar/Dakhl_Restaurant/pull/7) |
+| 01 | [Design system, navigation and interaction shell](docs/planning/flutter-rebuild/phases/01.md) | REVIEW — hosted corrections; reader owner-excluded | `codex/phase01-build` | [Draft PR7](https://github.com/faroqomar/Dakhl_Restaurant/pull/7) |
 | 02 | [Local accounts, validation and safe persistence](docs/planning/flutter-rebuild/phases/02.md) | TODO | — | — |
 | 03 | [Sellable products and inventory](docs/planning/flutter-rebuild/phases/03.md) | TODO | — | — |
 | 04 | [Cash sales, saved receipt, drafts and held orders](docs/planning/flutter-rebuild/phases/04.md) | TODO | — | — |
@@ -53,7 +55,7 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 ### Phase 01
 
 - **Name:** Design system, navigation and interaction shell
-- **Status:** BLOCKED for full verification/approval readiness — Step4 repaired and independently closed three code P2s.147app tests and three final builds pass; native Back passes. Required real screen-reader traversal remains pending; owner cannot manually verify now. Hosted CI separately pending.
+- **Status:** REVIEW — owner excludes live screen-reader verification (not passed). The original three Step4 code findings remain closed; the new hosted-review path guard has 154 local tests and independent re-verification. Fresh CI on the corrected head and reviewed integration remain pending. Earlier native results are dated evidence.
 - **Dependencies:** 00
 - **Design approval:** Approved — owner explicitly approved the [existing Phase 01 design/wireframe set and listed differences](docs/phases/01-penpot-design-review.md) on 2026-10-29.
 - **Branch / Worktree:** implementation `codex/phase01-build`, `/Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant`, clean base `f73b14b5a7cc6d2421f670938b2435af137ddb0f`; original dirty scope/design worktrees preserved, no PR/publication.

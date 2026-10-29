@@ -1,5 +1,7 @@
 # Phase 01 — Step 1 scope, references and readiness
 
+Historical preparation record. The plan and both Penpot design sets were subsequently approved, the native technical prerequisite was verified, and Phase 01 was implemented. Read [current review corrections](01-review-corrections.md) and PHASES.md for current disposition. Earlier pending/N/A/old-pin statements apply only to this preparation stage.
+
 Date: 2026-10-29. Status: Step 1 assessment recorded; implementation not ready. Owner request: establish scope/readiness only, with references shown back, clear ownership/dependencies/tracking and no implementation or assumed approval.
 
 ## Source and isolation
@@ -18,7 +20,7 @@ Read both projects' AGENTS/PLANS/PHASES/PROMPTS, Madar README/documentation inde
 | Madar_Engine | Implementation, new capability ID and new public API: **N/A** for this presentation-only scope. Widgets, themes, navigation and presentation translations remain consumer-owned under Madar's responsibility list. Keep existing capabilities compatible; no speculative framework or duplicate backend. |
 | Existing contract | Preserve `madar_application` and `madar_flutter_adapters` preview `0.1.0-dev.1` at reviewed source `784b139753a0e2a07d3f97eedb326debfe068395`, as recorded in [engine-dependency.json](../../engine-dependency.json). Newer engine documentation does not require repinning runtime source. Actual resolved-package conformance remains a later verification gate. |
 
-If planning reveals a genuinely reusable value/validation/operation contract, stop that dependent scope and register bounded Madar work with independent engine plus consumer/conformance tests. Do not implement shared financial behavior in fields or silently settle policy. The [engine-owned counterpart](../../../../phase01-scope-engine/Madar_Engine/docs/log/2026-10-29-phase01-scope-readiness.md) records this justified N/A separately.
+If planning reveals a genuinely reusable value/validation/operation contract, stop that dependent scope and register bounded Madar work with independent engine plus consumer/conformance tests. Do not implement shared financial behavior in fields or silently settle policy. The [engine-owned counterpart](https://github.com/faroqomar/Madar_Engine/blob/d705576122f817093bcc9ab1bf935010958fea70/docs/log/2026-10-29-phase01-scope-readiness.md) records this justified N/A separately.
 
 Lead owns scope/tracking and integration boundaries. Read-only Planner `phase01_scope` assessed ownership, dependencies and acceptance; UX `phase01_references` assessed saved references and design needs. Independent documentation review is recorded in the dated task log. No Workers or implementation are authorized by Step 1.
 

@@ -1,5 +1,7 @@
 # App Phase 01 / CAP-01 draft review — 2026-10-29
 
+Current owner disposition, 2026-10-29: live TalkBack/screen-reader verification is **owner-excluded, not passed**. The earlier wait is superseded by the owner's explicit scope decision. Existing keyboard/focus safeguards remain. The owner requested integration after required checks finish; hosted review corrections are being reverified before the changed revisions are presented. No merge, release, deployment or next phase has occurred in this correction record. Earlier status paragraphs below describe their dated assessment and do not reopen the excluded gate.
+
 Owner invoked Step 5 and explicitly requested four separate linked review PRs, including the development-dashboard initiative. Own runtime draft: [App PR](https://github.com/faroqomar/Dakhl_Restaurant/pull/7); paired dependency/consumer: [linked PR](https://github.com/faroqomar/Madar_Engine/pull/4). Tooling PRs are separately stacked on the runtime branches. No merge, tag, release or next-phase approval is granted.
 
 Madar owns pure snapshot contracts and reusable local-only storage; Dakhl_Restaurant owns route/six-slot schema, UI/ViewModels and isolated app safeguards. Runtime consumer remains exact `6d4ae39f35b005dfa1123a82c6df316901e1e1e4`; engine publication includes that real commit as a reachable ancestor. Future engine integration must preserve ancestry through a normal merge, avoiding squash/rebase that drops the pin. This review does not introduce cloud/accounting policy or copy engine code.

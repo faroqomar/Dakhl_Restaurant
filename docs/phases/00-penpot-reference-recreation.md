@@ -1,5 +1,7 @@
 # Phase 00 — Penpot screenshot recreation
 
+Current clarification, 2026-10-29: the owner approved the existing Phase 00 design set and independent review closed its iPhone technical prerequisite. Earlier pending statements below are historical. This closes the technical prerequisite only; it does not assert overall Phase 00 DONE or a production release.
+
 Date: 2026-10-28. Status: DESIGN; owner approval pending. [Tracker](../../PHASES.md). [Tool/location decision](../decisions/0015-penpot-design-workspace.md).
 
 ## Scope and destination

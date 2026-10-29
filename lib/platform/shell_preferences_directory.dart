@@ -17,16 +17,8 @@ final class ShellPreferencesDirectory {
     try {
       final support = await _applicationSupport();
       final canonical = await support.resolveSymbolicLinks();
-      final segments = [
-        ...p.split(p.normalize(support.absolute.path)),
-        ...p.split(p.normalize(canonical)),
-      ];
-      if (segments.any(
-        (part) => RegExp(
-          r'^(daftar|com\.(?:eros\.)?daftar(?:\..*)?)$',
-          caseSensitive: false,
-        ).hasMatch(part),
-      )) {
+      if (_isLegacyAppStorage(support.absolute.path) ||
+          _isLegacyAppStorage(canonical)) {
         return const CapabilityFailure(
           'legacy_storage_rejected',
           'Legacy data locations are forbidden.',
@@ -56,6 +48,42 @@ final class ShellPreferencesDirectory {
         'Isolated application support is unavailable.',
       );
     }
+  }
+
+  /// A home/user-created ancestor is not an application identity. Check the
+  /// supplied support leaf and platform storage identity positions, including
+  /// both lexical and resolved paths so aliases cannot bypass isolation.
+  bool _isLegacyAppStorage(String path) {
+    final parts = p.split(p.normalize(path));
+    final legacy = RegExp(
+      r'^(daftar|com\.(?:eros\.)?daftar(?:\..*)?)$',
+      caseSensitive: false,
+    );
+    if (parts.isNotEmpty && legacy.hasMatch(parts.last)) return true;
+    for (var index = 0; index < parts.length; index++) {
+      if (!legacy.hasMatch(parts[index])) continue;
+      if (index >= 2 &&
+          parts[index - 2].toLowerCase() == 'library' &&
+          const {
+            'application support',
+            'containers',
+            'group containers',
+          }.contains(parts[index - 1].toLowerCase())) {
+        return true;
+      }
+      if (index >= 2 &&
+          parts[index - 2] == 'data' &&
+          parts[index - 1] == 'data') {
+        return true;
+      }
+      if (index >= 3 &&
+          parts[index - 3] == 'data' &&
+          const {'user', 'user_de'}.contains(parts[index - 2]) &&
+          int.tryParse(parts[index - 1]) != null) {
+        return true;
+      }
+    }
+    return false;
   }
 
   CapabilityFailure<String> _unsafe() => const CapabilityFailure(

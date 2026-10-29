@@ -43,6 +43,79 @@ void main() {
     });
   }
 
+  test('legacy-named home ancestor does not reject development support', () async {
+    final support = await Directory(
+      '${sandbox.path}/Users/Daftar/Library/Application Support/com.eros.dakhlrestaurant.phase00',
+    ).create(recursive: true);
+    final result = await ShellPreferencesDirectory(
+      applicationSupport: () async => support,
+    ).databasePath();
+    expect(result, isA<CapabilitySuccess<String>>());
+    expect(
+      (result as CapabilitySuccess<String>).value,
+      '${await support.resolveSymbolicLinks()}/${ShellPreferencesDirectory.leaf}/preferences.sqlite',
+    );
+  });
+
+  for (final location in [
+    'Library/Application Support/Daftar/nested',
+    'Library/Containers/com.eros.daftar/Data/Library/Application Support',
+    'data/user/0/com.daftar.restaurant/files',
+    'data/data/com.eros.daftar/files',
+  ]) {
+    test('rejects actual legacy app storage identity $location', () async {
+      final support = await Directory('${sandbox.path}/$location')
+          .create(recursive: true);
+      final result = await ShellPreferencesDirectory(
+        applicationSupport: () async => support,
+      ).databasePath();
+      expect(
+        (result as CapabilityFailure<String>).code,
+        'legacy_storage_rejected',
+      );
+      expect(await support.list().toList(), isEmpty);
+    });
+  }
+
+  test(
+    'canonical alias into nested legacy support is rejected without mutation',
+    () async {
+      final legacy = await Directory(
+        '${sandbox.path}/Library/Application Support/Daftar/nested',
+      ).create(recursive: true);
+      final alias = Link('${sandbox.path}/valid-development-support');
+      await alias.create(legacy.path);
+      final result = await ShellPreferencesDirectory(
+        applicationSupport: () async => Directory(alias.path),
+      ).databasePath();
+      expect(
+        (result as CapabilityFailure<String>).code,
+        'legacy_storage_rejected',
+      );
+      expect(await legacy.list().toList(), isEmpty);
+    },
+  );
+
+  test(
+    'lexical legacy support alias is rejected even with safe canonical target',
+    () async {
+      final target = await Directory('${sandbox.path}/safe-target').create();
+      final parent = await Directory(
+        '${sandbox.path}/Library/Application Support',
+      ).create(recursive: true);
+      final alias = Link('${parent.path}/Daftar');
+      await alias.create(target.path);
+      final result = await ShellPreferencesDirectory(
+        applicationSupport: () async => Directory(alias.path),
+      ).databasePath();
+      expect(
+        (result as CapabilityFailure<String>).code,
+        'legacy_storage_rejected',
+      );
+      expect(await target.list().toList(), isEmpty);
+    },
+  );
+
   test('does not follow a linked preferences root', () async {
     final target = await Directory('${sandbox.path}/unrelated').create();
     await Link('${sandbox.path}/dakhl_restaurant_phase01_shell')

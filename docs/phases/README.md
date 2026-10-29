@@ -31,4 +31,6 @@ Do not prefill results or approvals. Earlier Electron checks are reference evide
 - [Phase 01 — implementation and verification evidence](01-build-evidence.md) — current local results, native limits, independent findings and remaining delivery gates.
 - [Phase 01 — app shell contract/setup](../reference/phase01-shell-contract.md) — payload, composition, reviewed engine revision, guarded retry and development data isolation.
 
-- [Phase01 — independent Step4 review and verification](01-step4-review.md) — independent app/engine audit, scoped repairs and actual native/readiness gates; no merge or completion approval.
+- [Phase01 — independent Step4 review and verification](01-step4-review.md) — independent app/engine audit, scoped repairs and actual native/readiness gates; dated pre-integration assessment; current owner scope and revision disposition are in the review-corrections record.
+
+- [Hosted review corrections and current owner scope](01-review-corrections.md).
