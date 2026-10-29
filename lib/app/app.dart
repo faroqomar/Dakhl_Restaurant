@@ -23,9 +23,14 @@ class DakhlRestaurantApp extends StatefulWidget {
     super.key,
     required this.preferencesStore,
     this.closePreferences,
+    this.onShellReady,
   });
   final LocalPreferencesStore preferencesStore;
   final Future<void> Function()? closePreferences;
+
+  /// Optional development observation after bootstrap and shell frame build.
+  /// Normal composition supplies no observer and retains its original path.
+  final ValueChanged<ShellViewModel>? onShellReady;
 
   @override
   State<DakhlRestaurantApp> createState() => _DakhlRestaurantAppState();
@@ -137,7 +142,17 @@ class _DakhlRestaurantAppState extends State<DakhlRestaurantApp> {
       },
     );
     _model.addListener(_syncRoute);
-    unawaited(_model.initialize());
+    final initialization = _model.initialize();
+    if (widget.onShellReady == null) {
+      unawaited(initialization);
+    } else {
+      unawaited(
+        initialization.then((_) async {
+          await WidgetsBinding.instance.endOfFrame;
+          if (mounted) widget.onShellReady?.call(_model);
+        }),
+      );
+    }
   }
 
   Future<bool> _confirmDiscard() async {

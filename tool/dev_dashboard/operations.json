@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "appVersion": "0.0.0+1",
+  "operations": [
+    {
+      "id": "app.startup",
+      "label": "Cold process startup to usable shell",
+      "status": "ready",
+      "phase": "01",
+      "scenarioVersion": "1",
+      "defaultIterations": 5,
+      "measurementKind": "startup",
+      "scope": "Fresh macOS profile process to actual shell bootstrap and completed raster frame, with a fresh isolated Madar preferences database. Compilation and installation excluded. OS caches uncontrolled."
+    },
+    {
+      "id": "navigation.switch_route",
+      "label": "Switch route and render (ViewModel)",
+      "status": "ready",
+      "phase": "01",
+      "scenarioVersion": "1",
+      "defaultIterations": 20,
+      "measurementKind": "workflow",
+      "scope": "Actual shell ViewModel alternates Inventory/Sales, commits isolated device preferences, then completes the next raster frame. Does not measure pointer or keyboard input dispatch."
+    },
+    {
+      "id": "shortcuts.save",
+      "label": "Save six shortcuts and render (ViewModel)",
+      "status": "ready",
+      "phase": "01",
+      "scenarioVersion": "1",
+      "defaultIterations": 20,
+      "measurementKind": "workflow",
+      "scope": "Actual shell ViewModel edits all six slots, persists two alternating layouts through isolated Madar storage, verifies acknowledgement and completes the next raster frame. Excludes opening/closing the editor or native input dispatch."
+    },
+    {
+      "id": "orders.process",
+      "label": "Process an order",
+      "status": "planned",
+      "phase": "04",
+      "reason": "Order processing is not implemented in the Flutter app. Requires an approved real workflow, isolated fixture and separate benchmark before measurement."
+    },
+    {
+      "id": "catalog.add_item",
+      "label": "Add a catalog item",
+      "status": "planned",
+      "phase": "03",
+      "reason": "Catalog creation is not implemented. Requires an approved real create/persist workflow and isolated fixture."
+    },
+    {
+      "id": "sales.add_item",
+      "label": "Add an item to a sale",
+      "status": "planned",
+      "phase": "04",
+      "reason": "Sales posting/cart business workflow is not implemented. Existing presentation/toast is not a sales benchmark."
+    }
+  ],
+  "registrationRule": "Every major implemented feature requires its own stable case ID, real workflow, isolated fixture, scenario version and verification evidence before ready status. Planned entries cannot run or produce fabricated results."
+}
