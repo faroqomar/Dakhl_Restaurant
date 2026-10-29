@@ -1,21 +1,26 @@
-# فواتير المشتريات بالكارتون والقطعة
+# Purchase invoices by carton and piece
 
-الحالة: منفذ ومتحقق بالاختبارات الآلية، وحُزم وثُبّت كتحديث محلي 1.7.0 على MacBook. التاريخ: 2026-10-25.
+Status: implemented and verified by automated tests, packaged and installed as local update 1.7.0 on the MacBook. Date: 2026-10-25.
 
-## الطلب
-إضافة قائمة خاصة لإدخال الفواتير الجديدة والقديمة واختيار المورد؛ تسجيل كميات وأسعار الكارتون والقطعة والمبلغ الإجمالي؛ تحليل مشتريات الصنف خلال فترة مع الموردين وتغير الأسعار؛ وإظهار وصل التسديد وتاريخه والمتبقي.
+## Request
 
-## التغيير
-- إضافة صفحة فواتير مشتريات مستقلة بمرشحات المادة والفترة والمورد وملخص الكميات والمبالغ.
-- تحديث نموذج الفاتورة لحفظ كمية وسعر الكارتون والقطعة كلٌّ على حدة، مع إجمالي السطر، وإضافة اختيار المورد عند إنشاء فاتورة من الصفحة.
-- إبقاء صيغة الكمية والسعر القديمة صالحة للتحقق والتحرير، وتحديث PDF لإظهار حقول الكارتون والقطعة.
-- تحسين تفاصيل وصل التسديد لإظهار تاريخه ومبلغه وتوزيعه والرصيد المتبقي على المورد بعده.
+Add a dedicated list for entering new/historical invoices and selecting the supplier; record carton/piece quantities and prices plus the total; analyze item purchases over a period, including suppliers and price changes; and show the payment receipt, date and remainder.
 
-## السبب والحدود
-لا يوجد افتراض بأن الكارتون يحتوي عدداً ثابتاً من القطع. لذلك تجمع الكميات في وحدتين منفصلتين ويحسب المبلغ من سعر كل وحدة مباشرة. الفواتير تظل ديناً، والتسديد وحده يضاف إلى المصاريف ويؤثر على مصدر الدفع.
+## Change
 
-## التحقق
-نجح `node --check` لملفات النموذج والموردين والواجهة، ونجحت `npm test` بعد إضافة تحقق للكميات والأسعار المنفصلة وللتوافق مع صيغة الفاتورة السابقة. نجح توليد PDF والتحقق من صفحات المثال، ورُوجعت بصرياً صفحة فاتورة قديمة لضمان بقاء عرض الفواتير السابقة سليماً. ثُبّت البناء في `/Users/eros/Applications/Daftar.app` وبدأ بنجاح، وتأكد ظهور الإصدار 1.7.0 وصفحة المشتريات وقراءة حساب المطعم المحلي. حُفظ التطبيق السابق في `/Users/eros/Applications/Daftar-1.6.0.app`. لم يُولّد مثال PDF ببيانات كارتون وقطعة جديدة.
+- Added a separate Purchase Invoices page with material, period and supplier filters and quantity/amount summaries.
+- Updated the invoice model to preserve separate carton/piece quantities and prices plus line totals, and added supplier selection when creating an invoice from the page.
+- Kept the previous quantity/price format valid for validation and editing, and updated PDF output to show carton/piece fields.
+- Improved payment-receipt details to show date, amount, allocation and supplier balance remaining afterward.
 
-## الملفات
+## Rationale and boundaries
+
+No fixed number of pieces per carton is assumed. Quantities therefore aggregate in two separate units and amounts are calculated directly from each unit price. Invoices remain debt; only payment adds an expense and affects the funding source.
+
+## Verification
+
+`node --check` passed for model, supplier and UI files. `npm test` passed after adding checks for separate quantities/prices and compatibility with the previous invoice format. PDF generation and example-page checks passed; a historical invoice page was visually reviewed to confirm previous invoices still display correctly. The build was installed at `/Users/eros/Applications/Daftar.app` and started successfully, with version 1.7.0, the purchases page and reading of the local restaurant account confirmed. The previous application was preserved at `/Users/eros/Applications/Daftar-1.6.0.app`. No PDF example using new carton/piece data was generated.
+
+## Files
+
 `app/ui/index.html`, `app/ui/model.js`, `app/ui/suppliers.js`, `app/ui/renderer.js`, `app/ui/styles.css`, `app/reports/pdf.cjs`, `tests/suppliers.test.cjs`, `docs/reference/accounting-rules.md`, `docs/reference/application.md`.

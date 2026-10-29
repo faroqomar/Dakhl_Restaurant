@@ -1,17 +1,17 @@
-# توضيح فصل حصة القاصة عن مصاريف اليومي
+# Clarify separation of the cashbox share from daily expenses
 
-الحالة: أُلغي تفسير تغيير 1.10.0 بعد توضيح المالك، ورُدّ التطبيق إلى 1.9.0. التاريخ: 2026-10-25. المصدر: توضيح المالك وصورة شاشة المصاريف اليومية.
+Status: the interpretation behind 1.10.0 was withdrawn following owner clarification, and the application was restored to 1.9.0. Date: 2026-10-25. Source: owner clarification and the Daily Expenses screenshot.
 
-## التوضيح والتراجع
+## Clarification and rollback
 
-التوضيح المطلوب هو أن المصروف المشترك يظل بنداً واحداً، لكن حصة اليومي فقط تدخل في مجموع مصاريف اليومي، وحصة القاصة تُعرض وتُحسب على القاصة وحدها. لا يتغير تعريف الرصيد الكلي المحفوظ: يبقى كما كان قبل النسخة 1.10.0، ويظل ثابتاً عند تسجيل إيداع لاحق من المتبقي. تراجعنا عن تفسير 1.10.0 الذي غيّر معادلة الرصيد. لم تتغير السجلات القديمة.
+A shared expense remains one item, but only its daily share enters the daily-expense total; its cashbox share is displayed and charged to the cashbox alone. The definition of saved total balance does not change: it remains as before 1.10.0 and stays fixed when a later deposit from the remainder is recorded. The 1.10.0 interpretation that changed the balance formula was rolled back. Historical records were unchanged.
 
-تصدير PDF اليومي يستخدم الرصيد الكلي المحفوظ. الحسابات القديمة التي تستعيد رصيداً مفقوداً تبقى على قواعد الترحيل السابقة.
+The daily PDF uses saved total balance. Legacy accounts recovering a missing balance retain the previous migration rules.
 
-## التحقق
+## Verification
 
-تؤكد الاختبارات أن بنداً مشتركاً بقيمة 30,000، منه 10,000 على اليومي و20,000 على القاصة، يضيف حصة اليومي فقط إلى مجموع المصاريف اليومية. حصة القاصة تبقى منفصلة. نجحت اختبارات التطبيق بعد استعادة المعادلة السابقة.
+Tests confirm that a shared expense of 30,000, allocated 10,000 to daily funds and 20,000 to the cashbox, adds only the daily share to daily expenses. The cashbox share remains separate. Application tests passed after restoring the previous formula.
 
-## التثبيت
+## Installation
 
-تمت إعادة النسخة السابقة `/Users/eros/Applications/Daftar-1.9.0-before-daily-balance.app` إلى `/Users/eros/Applications/Daftar.app`، والتحقق من أنها الإصدار 1.9.0. النسخة 1.10.0 محفوظة للرجوع إن لزم.
+Restored `/Users/eros/Applications/Daftar-1.9.0-before-daily-balance.app` to `/Users/eros/Applications/Daftar.app` and verified version 1.9.0. Version 1.10.0 remains available for rollback if needed.

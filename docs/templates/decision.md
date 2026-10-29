@@ -1,20 +1,20 @@
 <!-- hindsight:ignore -->
-# القرار NNNN — عنوان القرار
+# Decision NNNN — Decision title
 
-الحالة: مقترح / معتمد / استُبدل بالقرار … التاريخ: YYYY-MM-DD. المالك: … المصدر: …
+Status: proposed / approved / superseded by decision … Date: YYYY-MM-DD. Owner: … Source: …
 
-## السياق والمشكلة
-
-…
-
-## القرار وسببه
+## Context and problem
 
 …
 
-## البدائل والنتائج
+## Decision and rationale
 
 …
 
-## التحقق وما بقي مفتوحاً
+## Alternatives and consequences
 
-دليل التنفيذ والتحقق إن وُجد؛ الاعتماد وحده ليس تنفيذاً: …
+…
+
+## Verification and open work
+
+Implementation/verification evidence when available; approval alone is not implementation: …

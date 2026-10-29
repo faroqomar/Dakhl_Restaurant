@@ -1,20 +1,20 @@
 <!-- hindsight:ignore -->
-# YYYY-MM-DD — عنوان العمل
+# YYYY-MM-DD — Work title
 
-الحالة: قيد التنفيذ / مكتمل / متعطل. التاريخ: YYYY-MM-DD. المالك: … المصدر: …
+Status: in progress / completed / blocked. Date: YYYY-MM-DD. Owner: … Source: …
 
-## الطلب والتغييرات
+## Request and changes
 
 …
 
-## القرارات وأسبابها
+## Decisions and rationale
 
-روابط القرارات والوثائق الحالية: …
+Decision/current-documentation links: …
 
-## التحقق الفعلي
+## Actual verification
 
-الأوامر أو خطوات المراجعة والنتائج والأدلة: … حالة مزامنة Hindsight: غير متحقق منها.
+Commands or review steps, results and evidence: … Hindsight synchronization: unverified.
 
-## القيود والخطوة التالية
+## Limits and next action
 
-الفشل أو الانتظار أو ما لم يتحقق منه: …
+Failures, pending work or unverified items: …

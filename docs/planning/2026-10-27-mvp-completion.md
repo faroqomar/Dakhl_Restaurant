@@ -1,22 +1,26 @@
-# نطاق إكمال MVP — 2026-10-27
+# MVP completion scope — 2026-10-27
 
-الحالة: معتمد من المالك؛ التنفيذ والتحقق يسجلان بشكل مستقل.
+Status: owner-approved; implementation and verification are recorded separately.
 
-## ينفذ الآن
-- مرتجعات أصناف كاملة أو جزئية من فاتورة محفوظة، بتاريخ وسبب، ومبلغ محسوب بعد الخصم، واختيار إعادة الكمية للمخزن.
-- طلبات معلقة: حفظ أكثر من طلب غير مدفوع واستئنافه دون حجز كمية أو تسجيل بيع.
-- بعد الدفع الناجح يفتح وصل بالتفاصيل مع إغلاق وطباعة وحفظ PDF. لا طابعة فعلية متاحة؛ اختبار الأجهزة خارج النطاق الحالي.
-- مراجعة اليوم تبقى بسيطة في واجهة واحدة؛ لا لوحة مزدحمة ولا إقفال إلزامي جديد.
-- توحيد حالات الفراغ والبحث والفشل والتحميل في المسارات المتأثرة ومراجعة الشاشات.
+## Implement now
 
-## مؤجل إلى نهاية التطبيق
-- إعداد الاستخدام الأول.
-- تذكيرات النسخ الاحتياطية. أدوات النسخ والاستعادة الحالية باقية.
+- Full or partial item returns from a saved invoice, with date/reason, amount calculated after discount and an option to return quantities to stock.
+- Held orders: save multiple unpaid orders and resume them without reserving stock or recording a sale.
+- Successful payment opens a detailed receipt with Close, Print and Save PDF. No physical printer is available; hardware testing is outside current scope.
+- Keep day review simple in one screen; no crowded dashboard or new mandatory closing process.
+- Standardize empty/search/failure/loading states in affected flows and review screens.
 
-## غير مطلوب في هذه الجولة
-وسائل دفع جديدة، فروع متعددة، وصفات وتكلفة مكونات، إدارة توصيل.
+## Deferred until the end of the application
 
-## تفاصيل التنفيذ المالية
-المرتجع سجل مستقل في صيغة11. يبقى البيع الأصلي كما هو؛ المبلغ المرتجع يخصم من صافي التحصيل اليومي بتاريخ المرتجع ولا يسجل مصروفاً ولا يخصم من القاصة. الواجهة تصرح بمصدر النقد. يعاد المخزون فقط باختيار المستخدم وفي تاريخ المرتجع. يمنع إلغاء فاتورة لها مرتجعات لمنع التصحيح المزدوج. يوزع الخصم على الأسطر حسابياً وتستكمل بقايا التقريب عند إرجاع الكمية كاملة.
+- First-use setup.
+- Backup reminders. Existing backup/restore tools remain.
 
-المراجعة اليومية الحالية تبقى إجراءً بسيطاً دون سجل إقفال أو حالة تدقيق دائمة؛ إضافة هذا السجل مؤجلة. الطلبات المعلقة محلية على الجهاز/الحساب مثل المسودة، وليست فواتير أو جزءاً من نسخ الحسابات.
+## Not requested in this round
+
+New payment methods, multiple branches, recipes/ingredient costing and delivery management.
+
+## Financial implementation details
+
+A return is an independent schema-11 record. The original sale remains unchanged. Refunded amounts reduce net daily collections on the return date; they are neither expenses nor cashbox deductions. The UI explicitly identifies the cash source. Stock returns only when the user chooses, dated on the return. Cancelling an invoice with returns is blocked to prevent double correction. Discount is mathematically allocated to lines, with rounding remainders completed when the entire quantity is returned.
+
+Current daily review remains a simple action without a closing ledger or persistent audit status; adding that record is deferred. Held orders are device/account-local like the draft, not invoices or part of account backups.

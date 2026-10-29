@@ -1,13 +1,13 @@
-# فتح وإغلاق القائمة الجانبية
+# Open and close the sidebar
 
-الحالة: منفّذ ومتحقق منه محلياً. التاريخ: 2026-10-26. المصدر: طلب المالك إخفاء وإظهار الشريط الجانبي للحصول على مساحة أكبر. الإصدار: 1.10.1.
+Status: implemented and locally verified. Date: 2026-10-26. Source: the owner requested hiding/showing the sidebar to gain space. Version: 1.10.1.
 
-أضيف زر قائمة دائم في بداية شريط الاختصارات؛ يخفي القائمة الجانبية بالكامل ويعيدها بالضغط مرة أخرى. يضبط `aria-expanded` و`aria-controls` والاسم والوصول بلوحة المفاتيح، ويخفي عناصر القائمة عن التركيز عند إغلاقها. الحالة محفوظة محلياً على هذا الجهاز في `localStorage`، خارج الحسابات والنسخ الاحتياطية. لا يسبب التبديل إعادة رسم نموذج الصفحة، لذلك يبقى طلب البيع الجاري ومدخلاته.
+Added a permanent menu button at the start of the shortcut bar; it fully hides the sidebar and restores it when pressed again. It updates `aria-expanded`, `aria-controls`, accessible name and keyboard access, and removes hidden menu items from focus. State is saved on this device in `localStorage`, outside accounts/backups. Toggling does not redraw the page form, so the active sale and its inputs survive.
 
-التحقق: `npm test` ناجح 93/93. تجربة Electron معزولة أكدت أن مساحة الصفحة زادت 224 بكسل، وأن الفاتورة وملاحظتها بقيتا، وأن الاختصارات تعمل والقائمة مغلقة، وأن الاختيار يستعاد بعد إعادة التحميل ويعمل بزر Enter. راجعت أحجام 1440 و900 و390 في حالتي الفتح والإغلاق دون تجاوز عرض النافذة أو أخطاء صفحة. صورة الحالة المغلقة راجعت بصرياً في `dist/commerce-qa/sidebar-collapsed.png` ببيانات توضيحية فقط.
+Verification: `npm test` passed 93/93. An isolated Electron run confirmed a 224-pixel workspace increase, preservation of the ticket/note, shortcuts working with navigation closed, state restoration after reload and Enter-key operation. Widths 1440, 900 and 390 were checked with the sidebar open/closed, without page errors or window-width overflow. The closed-state screenshot `dist/commerce-qa/sidebar-collapsed.png` was visually reviewed using illustrative data only.
 
-التغليف ناجح على macOS ARM64، مع تحذير الأيقونة السابق. ثبت الإصدار في `/Users/eros/Applications/Daftar.app` واحتفظ بالتطبيق السابق بجانبه باسم `Daftar-1.10.0-before-sidebar-2026-10-26.app`. الحسابات وصيغتها 8 لم تتغير لهذا الطلب. دليل الاستخدام ومرجع التطبيق محدثان. تحقق Hindsight يتبع المزامنة؛ لا يعد الإرسال وحده نجاحاً.
+macOS ARM64 packaging succeeded with the existing icon warning. The release was installed at `/Users/eros/Applications/Daftar.app`, preserving the previous app beside it as `Daftar-1.10.0-before-sidebar-2026-10-26.app`. Accounts and schema 8 were unchanged by this request. Usage/application references were updated. Hindsight verification follows synchronization; submission alone is not success.
 
-## دمج زر الإغلاق داخل القائمة — 2026-10-26
+## Move the close button into navigation — 2026-10-26
 
-بطلب المالك، زر الإخفاء يظهر الآن بجانب هوية دفتر داخل القائمة المفتوحة. زر إعادة الإظهار يبقى في الشريط العلوي عند إغلاقها فقط. يظل هناك زر مرئي واحد، وينتقل إليه التركيز بعد التبديل حتى يبقى التحكم بلوحة المفاتيح متاحاً. لم يتغير حفظ الحالة أو الحسابات. `npm test` ناجح 96/96، وفحص الصياغة والفروق ناجحان. تحديث تبويب المعاينة والتحقق من شجرة الوصول أكدا وجود زر الإغلاق داخل التنقل الرئيسي واختفاء الزر العلوي عندما تكون القائمة مفتوحة.
+At the owner's request, the hide button now appears next to Daftar's identity inside open navigation. The show button appears in the top bar only while navigation is closed. Exactly one button remains visible; focus moves to it after toggling to retain keyboard control. State storage/accounts were unchanged. `npm test` passed 96/96; syntax/diff checks passed. Refreshing the preview tab and checking the accessibility tree confirmed the close button inside main navigation and the absence of the top button while navigation is open.

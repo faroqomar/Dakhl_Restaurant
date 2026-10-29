@@ -1,11 +1,11 @@
-# سجل أفكار المطعم والتطبيق
+# Restaurant and application idea register
 
-الحالة: سجل متابعة؛ أول طلب مسجل أدناه. التاريخ: 2026-10-16. المالك: مالك المطعم. المصدر: طلب الاحتفاظ بالأفكار ومتابعتها وطلب المينيو الحالي.
+Status: tracking register; the first request is recorded below. Date: 2026-10-16. Owner: restaurant owner. Source: request to preserve/follow ideas and the current menu request.
 
-كل فكرة تخص المطعم الواحد أو تطبيقه. لا ننشئ فكرة وهمية لتعبئة الجدول. الاتجاه العام للفواتير والحملات موثّق في [نطاق المشروع](../reference/project-scope.md).
+Every idea concerns the one restaurant or its application. Do not invent ideas to fill the table. General invoice/campaign direction is documented in [project scope](../reference/project-scope.md).
 
-| المعرف | الفكرة والهدف | الحالة | تاريخ التحديث | المتطلب أو القرار | دليل التنفيذ | الخطوة التالية |
+| ID | Idea and objective | Status | Updated | Requirement or decision | Implementation evidence | Next action |
 | --- | --- | --- | --- | --- | --- | --- |
-| IDEA-0001 | مينيو عربي يعرض السعر القديم والجديد المخفض مع عنوان الدولار؛ [تفاصيل الطلب](campaigns/CAM-0001-reduced-price-menu.md) | مسودة منفّذة ومتحقق من محتواها؛ لم تنشر | 2026-10-16 | المالك طلب بوستاً أسود وقدم الأصناف والأسعار واسم مطعم جنة بغداد | [سجل التصميم والتحقق](../log/2026-10-16-jannat-baghdad-menu.md) | مراجعة المالك للمسودة وأي تصحيحات للأسعار |
+| IDEA-0001 | Arabic menu showing old/reduced new prices and a dollar headline; [request details](campaigns/CAM-0001-reduced-price-menu.md) | Draft implemented and content verified; not published | 2026-10-16 | Owner requested a black post and supplied items, prices and Jannat Baghdad restaurant name | [Design/verification log](../log/2026-10-16-jannat-baghdad-menu.md) | Owner draft review and any price corrections |
 
-الحالات: فكرة، قيد الدراسة، معتمدة للتنفيذ، قيد التنفيذ، منفّذة، متحقق منها، مؤجلة، ملغاة. سجل سبب التأجيل أو الإلغاء. عند تعدد التفاصيل استخدم [قالب الفكرة](../templates/idea.md) في ملف تحت `docs/planning/ideas/` واربطه هنا. معرفات `IDEA-NNNN` ثابتة ولا يعاد استخدامها.
+Statuses: idea, under study, approved for implementation, in progress, implemented, verified, deferred, cancelled. Record reasons for deferral/cancellation. For detailed ideas, use the [idea template](../templates/idea.md) in a file under `docs/planning/ideas/` and link it here. `IDEA-NNNN` identifiers are stable and never reused.

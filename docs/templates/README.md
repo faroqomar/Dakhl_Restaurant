@@ -1,10 +1,10 @@
-# قوالب التوثيق
+# Documentation templates
 
-الحالة: قوالب جاهزة وخالية. التاريخ: 2026-10-16. المالك: القائم على المشروع.
+Status: ready, empty templates. Date: 2026-10-16. Owner: project maintainer.
 
-- [فكرة](idea.md): انسخها إلى `docs/planning/ideas/` ثم اربط سجلها في فهرس الأفكار.
-- [حملة](campaign.md): انسخها إلى `docs/planning/campaigns/` ثم اربط سجلها في فهرس الحملات.
-- [قرار](decision.md): انسخه إلى `docs/decisions/NNNN-topic.md` وحدّث الفهرس.
-- [سجل عمل](work-log.md): انسخه إلى `docs/log/YYYY-MM-DD-topic.md` وحدّث الفهرس.
+- [Idea](idea.md): copy into `docs/planning/ideas/`, then link the record in the idea index.
+- [Campaign](campaign.md): copy into `docs/planning/campaigns/`, then link the record in the campaign index.
+- [Decision](decision.md): copy into `docs/decisions/NNNN-topic.md` and update the index.
+- [Work log](work-log.md): copy into `docs/log/YYYY-MM-DD-topic.md` and update the index.
 
-القوالب تحمل علامة استثناء من Hindsight. بعد نسخ القالب وإكماله احذف علامة الاستثناء من المستند الفعلي ليُفهرس. لا تضع بيانات عملاء أو ملفات حسابات أو معلومات خاصة في أي قالب أو مستند مفهرس.
+Templates carry a Hindsight exclusion marker. After copying/filling a template, remove that marker from the substantive document so it can be indexed. Never place customer data, account files or private information into templates or indexed documents.

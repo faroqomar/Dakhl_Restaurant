@@ -1,7 +1,7 @@
-# 2026-10-17 — إضافة الأجنحة لمنيو الصالة
+# 2026-10-17 — Add wings to the dine-in menu
 
-الحالة: مسودة v2 منفّذة، لا نشر. المصدر: طلب المالك إضافة نفر أجنحة 8 قطع مع تمن أحمر بـ8,000، ونصف نفر 4 قطع مع تمن أحمر بـ4,000.
+Status: implemented v2 draft, not published. Source: the owner requested an 8-piece wings portion with red rice for 8,000, and a 4-piece half portion with red rice for 4,000.
 
-أضيف قسم الأجنحة بعد مجموعة اللحم في المساحة اليمنى، وامتد ارتفاع الصفحة إلى 1720 للحفاظ على القراءة والمسافات. بقيت جميع أصناف وأسعار v1 السبعة عشر، مع الإضافتين صار العدد 19. صحن المقبلات الإضافي يبقى 1,500 بتأكيد المالك. النسخة الأولى محفوظة ومينيو العروض منفصل.
+Added a wings section after the meat group on the right, and increased page height to 1720 to preserve readability and spacing. All seventeen v1 items and prices remain; the two additions bring the total to 19. The extra appetizer plate remains 1,500, as confirmed by the owner. The first version is preserved, and the promotional menu remains separate.
 
-المخرج الحالي `outputs/menus/dine-in/v2/` وCanva `DAHYPtlHqpI` على https://www.canva.com/d/ivEtZenR4A8McLn . روجعت الصورة النهائية المصدرة من Canva بدقة 1080×1720: الأجنحة بأسعارها وعدد قطعها ومرافقاتها ظاهرة بوضوح دون ملامسة السعر للاسم. نجحت مقارنة الأصناف الـ17 الأصلية مع v1 دون تغيير وفحص الإضافتين، والروابط المحلية و`git diff --check`. تفحص مزامنة الذاكرة قبل التسليم. لا تغييرات في حسابات التطبيق ولا نشر أو إنفاق. [مرجع المنيو](../planning/dine-in-menu.md).
+Current output: `outputs/menus/dine-in/v2/`, Canva `DAHYPtlHqpI` at https://www.canva.com/d/ivEtZenR4A8McLn . The final 1080×1720 Canva export was reviewed: wings prices, piece counts and accompaniments are clear, and prices do not touch item names. Comparing the original 17 items against v1 and checking the two additions passed, as did local-link validation and `git diff --check`. Memory synchronization is checked before delivery. No application accounts changed; no publication or spending occurred. [Menu reference](../planning/dine-in-menu.md).

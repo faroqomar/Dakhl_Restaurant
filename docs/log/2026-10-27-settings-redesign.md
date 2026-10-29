@@ -1,25 +1,25 @@
-# إعادة تنظيم الإعدادات
+# Reorganize Settings
 
-الحالة: منفّذ ومتحقق منه في المصدر ومعاينة معزولة. التاريخ: 2026-10-27. المصدر: طلب المالك إعادة تصميم الإعدادات وتجميع الخيارات المفيدة بشكل منظم.
+Status: implemented and verified in source/isolated preview. Date: 2026-10-27. Source: the owner requested a Settings redesign grouping useful options clearly.
 
-## التغيير والسبب
+## Change and rationale
 
-- أربعة أقسام واضحة: المطعم والوصل، البيع والاختصارات، النسخ والبيانات، وعن دفتر؛ بدلاً من صفحة طويلة مختلطة.
-- معاينة مباشرة لهوية الوصل، وخيارات حجم بطاقات البيع، وروابط تعديل الخانات والمواد والأصناف.
-- حفظ موحد لتفضيلات جميع الأقسام، مع إلغاء التعديلات ومؤشر غير محفوظ واختصار ⌘/Ctrl+S. تبقى المسودات عند التنقل بين الأقسام.
-- فصل النسخ الاحتياطية والتصدير والاستيراد والاستعادة، وإظهار مكان البيانات وحالة النسخ. تبقى عمليات الملفات عبر المسارات الأصلية في تطبيق سطح المكتب.
-- التفضيلات تستخدم حقول النموذج الحالية؛ حجم البطاقات محلي للجهاز بالمفتاح الموجود. لا تعديل للحسابات أو صيغة الحفظ أو إضافة خدمة خارجية.
+- Four clear sections replace one long mixed page: Restaurant and Receipt, Sales and Shortcuts, Backups and Data, and About Daftar.
+- Live receipt-identity preview, sales-card size options and links to edit categories/materials/products.
+- Unified preference save across sections, with cancel, unsaved indicator and Command/Ctrl+S. Drafts survive section changes.
+- Separate backup/export/import/restore actions, showing data location and backup state. File operations retain native desktop-application paths.
+- Preferences use existing model fields; card size remains device-local under the existing key. No accounting, save-format or external-service changes.
 
-## التحقق الفعلي
+## Actual verification
 
-- npm test: نجح 117/117، بما فيها ثلاثة اختبارات جديدة لحفظ المسودات بين الأقسام والحفظ الموحد، عدم تغيير البيانات عند فشل التحقق/الحفظ، والتنقل بلوحة المفاتيح والإلغاء. تحقق الاختبار أيضاً من الهروب الآمن للنص في معاينة الوصل.
-- معاينة Electron ببيانات توضيحية معزولة: الأقسام الأربعة بعروض 1512 و1024 و390px، 12 حالة دون تجاوز أفقي. الدليل المحلي outputs/layout-review/settings-results.json؛ صور الأقسام وأداة verify-settings.cjs في المجلد نفسه.
-- راجعت الواجهة بصرياً وفتحت الإعدادات الجديدة في معاينة المتصفح للمستخدم. صورة المتصفح outputs/layout-review/settings-browser.png.
+- npm test: 117/117 passed, including three new tests for cross-section drafts/unified save, unchanged data on validation/save failure, and keyboard navigation/cancel. The test also verifies safe escaping in receipt preview.
+- Isolated illustrative-data Electron preview: four sections at 1512, 1024 and 390px, 12 cases without horizontal overflow. Local evidence: outputs/layout-review/settings-results.json; section images and verify-settings.cjs in the same folder.
+- Visually reviewed the UI and opened the new Settings in the user's browser preview. Browser image: outputs/layout-review/settings-browser.png.
 
-## القيود والخطوة التالية
+## Limits and next action
 
-التطبيق المثبت لم يُستبدل. عمليات تصدير واستيراد النسخ لم تُنفذ على حسابات المطعم أثناء هذه الجولة؛ حافظت على مساراتها الحالية. المتابعة: مراجعة المالك للتصميم في المتصفح.
+The installed application was not replaced. Backup export/import operations were not performed against restaurant accounts during this round; their existing paths were preserved. Next: owner design review in the browser.
 
-استرجاع project-daftar متاح لكنه أعاد مصادر تاريخية مسحوبة، ولذلك اعتمدت على الملفات الحالية. نتيجة المزامنة تُذكر بعد فحصها.
+project-daftar recall was available but returned withdrawn historical sources, so current files were used. Synchronization outcome is recorded after checking.
 
-نتيجة الذاكرة: شُغّل sync ثم check؛ الخدمة سليمة، بلا عمليات معلقة أو فاشلة، لكن sources=0. لا نعتبر ذلك دليلاً على فهرسة وثائق هذه الجولة؛ يحتاج إعداد المصادر متابعة مستقلة.
+Memory outcome: sync/check returned healthy service without pending/failed operations, but sources=0. This does not prove this round's documentation was indexed; source configuration needs separate follow-up.

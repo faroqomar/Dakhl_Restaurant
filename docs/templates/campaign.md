@@ -1,28 +1,28 @@
 <!-- hindsight:ignore -->
-# CAM-NNNN — عنوان الحملة
+# CAM-NNNN — Campaign title
 
-الحالة: مسودة. التاريخ: YYYY-MM-DD. المالك: … المصدر: … آخر تحديث: …
+Status: draft. Date: YYYY-MM-DD. Owner: … Source: … Last updated: …
 
-## الهدف والجمهور والعرض
+## Objective, audience and offer
 
 …
 
-## المنصة والمدة والميزانية
+## Platform, duration and budget
 
-المنصة: غير محددة. البداية والنهاية: غير محددتين. الميزانية المقترحة: غير محددة. الميزانية المعتمدة ودليل اعتمادها: غير معتمدتين.
+Platform: unspecified. Start/end: unspecified. Proposed budget: unspecified. Approved budget and approval evidence: not approved.
 
-## المحتوى والمواد
+## Content and assets
 
-نص أو فكرة الإعلان وروابط مواد عامة مناسبة فقط: …
+Advertising copy/concept and suitable public-asset links only: …
 
-## الاعتماد والنشر
+## Approval and publication
 
-لم تنشر. قرار المالك وتاريخه ونطاق الإذن: … دليل النشر عند وجوده: …
+Not published. Owner decision, date and authorization scope: … Publication evidence when available: …
 
-## القياس والنتائج
+## Measurement and results
 
-المقياس المستهدف وفترته ومصدره: … الصرف الفعلي ودليله: غير مسجل. النتائج الفعلية: غير مسجلة. علاقة النتائج بالمبيعات وحدود الإسناد: …
+Target measure, period and source: … Actual spend and evidence: not recorded. Actual results: not recorded. Relationship to sales and attribution limits: …
 
-## الدروس والخطوة التالية
+## Lessons and next action
 
 …

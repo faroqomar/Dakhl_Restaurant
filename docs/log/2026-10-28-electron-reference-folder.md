@@ -1,24 +1,24 @@
-# نقل Electron إلى مجلد مرجعي
+# Move Electron into a reference folder
 
-الحالة: إعادة تنظيم المجلدات بطلب المالك؛ تنفيذ Flutter لم يبدأ. التاريخ: 2026-10-28، Asia/Baghdad.
+Status: owner-requested folder reorganization; Flutter implementation had not started. Date: 2026-10-28, Asia/Baghdad.
 
-## الطلب والتغيير
+## Request and change
 
-طلب المالك حفظ التطبيق الحالي في مجلد جديد داخل المشروع للرجوع إليه، مع إبقاء الخطة والصور خارجه. أصبح electron-reference/ يحوي المصدر والمكتبات والاختبارات وأدوات التطبيق وREADME الأصلي. بقيت docs/ وoutputs/ وdist/ وdesign/ وGit وإعدادات المشروع في الجذر؛ أضيفت روابط إليها داخل المرجع لتعمل المسارات القديمة دون نقل الصور.
+The owner requested preserving the current application in a new project subfolder for reference, while leaving plans/images outside it. electron-reference/ now contains source, dependencies, tests, application tools and original README. docs/, outputs/, dist/, design/, Git and project configuration remain at root; links inside the reference preserve old paths without moving images.
 
-أُضيف README للجذر وحدود عمل المرجع وقرار 0013. بقيت أدوات الخطة والذاكرة والالتقاط في scripts/؛ أُصلحت مسارات الالتقاط وروابط المصادر في التوثيق والخطة إلى موضع Electron الجديد. حُدثت توصية موقع Flutter إلى الجذر.
+Added the root README, reference-work boundaries and decision 0013. Planning/memory/capture tools remain in scripts/; capture paths and documentation/plan source links were updated to Electron's new location. Updated the recommended Flutter location to root.
 
-## التحقق الفعلي والقيود
+## Actual verification and limits
 
-- طابقت بصمات 68 ملفاً من المصدر والأصول والاختبارات وإعداد npm وREADME وأدوات التطبيق النسخ الأصلية قبل النقل.
-- بقيت 502 صورة/رسم متحققاً منها في docs/planning/flutter-rebuild وoutputs وdist وdesign في مساراتها الأصلية وبالمحتوى نفسه، ومنها صور الخطة الـ179. لم يُعدل بيان الالتقاط أو يُنفذ التقاط جديد.
-- npm --prefix electron-reference test: نجح 140/140، بلا فشل أو تخطٍّ. الدليل المحلي: dist/electron-reference-relocation-tests.log.
-- نجح فتح واجهة Electron ببيانات توضيحية وجسر معزول من الموضع الجديد: 12 وجهة تنقل و8 أصناف وهمية. نجح تحميل معرض الخطة بـ179 صورة و12 مرحلة. الدليل: dist/reference-folder-smoke.json. لم يُشغّل app/main.cjs الحقيقي للوصول إلى حسابات المطعم.
-- نجح فحص 97 مستند Markdown/HTML للحزمة الحالية والمؤرشفة والروابط المتأثرة؛ لا روابط مكسورة في مجموعة التحقق. نجح فحص صياغة أداة الالتقاط، وأُعيد توليد الخطة بمسارات المرجع الجديدة دون إعادة صورها.
-- نُفذت memory sync وmemory check: خدمة سليمة و90 مصدراً، وطلبات قيد الفهرسة بلا عمليات فاشلة عند المتابعة. لا نعلن الفهرسة مكتملة قبل زوال المعلق. الدليل المحلي: dist/reference-folder-memory-check.json.
+- Hashes of 68 source/asset/test/npm-configuration/README/tool files match their pre-move originals.
+- All 502 verified images/drawings in docs/planning/flutter-rebuild, outputs, dist and design retained original paths/content, including 179 plan screenshots. The capture manifest was unchanged and no new capture ran.
+- npm --prefix electron-reference test: 140/140 passed, zero failed/skipped. Local evidence: dist/electron-reference-relocation-tests.log.
+- Opening Electron UI with illustrative data and an isolated bridge from the new location succeeded: 12 navigation destinations and 8 fake products. The plan gallery loaded 179 images/12 phases. Evidence: dist/reference-folder-smoke.json. Real app/main.cjs was not run to access restaurant accounts.
+- Checked 97 current/archived Markdown/HTML documents and affected links: no broken links in the checked set. Capture-tool syntax passed; the plan was regenerated with updated reference paths without recapturing images.
+- Ran memory sync/check: healthy service, 90 sources and indexing requests still processing without failed operations at follow-up. Indexing is not complete until pending work clears. Local evidence: dist/reference-folder-memory-check.json.
 
-لم تُفتح الحسابات أو النسخة المثبتة، ولم يُنفذ إنشاء Flutter. مجلد Git بقي في الجذر؛ لم يُنشأ مستودع آخر أو التزام Git تلقائي.
+Accounts and installed application were not opened, and no Flutter scaffold was created. Git remained at root; no separate repository or automatic commit was created.
 
-## الخطوة التالية
+## Next action
 
-ابدأ إعادة البناء من جذر المشروع وفق الخطة؛ استخدم electron-reference/ عند الحاجة إلى المصدر القديم. الخطة والصور تبقى في docs/planning/flutter-rebuild/.
+Start the rebuild at project root according to the plan; consult electron-reference/ when old source is needed. Plans/images remain at docs/planning/flutter-rebuild/.

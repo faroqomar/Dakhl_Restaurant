@@ -1,13 +1,13 @@
-# ضبط تمدد الواجهات
+# Control excessive UI stretching
 
-الحالة: منفّذ ومتحقق منه في المصدر ومعاينة Electron المعزولة. التاريخ: 2026-10-27.
+Status: implemented and verified in source/isolated Electron preview. Date: 2026-10-27.
 
-الطلب: معالجة تمدد عناصر جميع الشاشات في النوافذ العريضة، بناء على صورة المالك.
+Request: fix excessively stretched elements on all screens in wide windows, based on the owner's screenshot.
 
-التغيير والسبب: تحديد عرض صفحات العمل بحد أقصى 1280px بدلاً من 1800px، والمبيعات 1440px لاستيعاب الكتالوج والفاتورة، مع توسيط الصفحات والتفاف العنوان والإجراءات عند ضيق المساحة. المصدر app/ui/ux.css؛ اتجاه التصميم موثق في .impeccable.md. لا تغيير في الحسابات أو الحفظ.
+Change and rationale: capped work pages at 1280px instead of 1800px, and Sales at 1440px to fit catalog/ticket. Pages are centered, with headings/actions wrapping at narrow widths. Source: app/ui/ux.css; design direction is in .impeccable.md. No accounting or persistence changes.
 
-التحقق الفعلي: npm test نجح 114/114. معاينة Electron ببيانات توضيحية معزولة اختبرت 13 شاشة على عروض 1512 و1024 و390px (39 حالة): العناوين موجودة ولا تجاوز أفقي للصفحة. راجعت صورة المصاريف بصرياً. الدليل المحلي outputs/layout-review/results.json وexpenses.png، وأداة التحقق verify.cjs. لا حفظ لبيانات المطعم.
+Actual verification: npm test passed 114/114. An isolated illustrative-data Electron preview tested 13 screens at 1512, 1024 and 390px, 39 cases: headings present and no page-level horizontal overflow. The expense screenshot was visually reviewed. Local evidence: outputs/layout-review/results.json, expenses.png and verify.cjs. No restaurant data was saved.
 
-القيود والخطوة التالية: التحقق في المصدر والمعاينة فقط؛ التطبيق المثبت لم يستبدل. متابعة صور المالك لباقي التصحيحات.
+Limits and next action: source/preview verification only; installed application was not replaced. Continue owner screenshots for remaining corrections.
 
-الذاكرة: الاسترجاع متاح لكن نتائجه تشير إلى مصادر تاريخية مسحوبة؛ اعتمد التنفيذ على الملفات الحالية. شُغّل sync ثم check: الخدمة سليمة ولا عمليات معلقة أو فاشلة، لكن sources=0؛ لذلك لا يوجد دليل على فهرسة هذا السجل في البنك.
+Memory: recall was available but referenced withdrawn historical sources; current files were used. Sync then check returned a healthy service and no pending/failed work, but sources=0; there is no proof this log was indexed in the bank.

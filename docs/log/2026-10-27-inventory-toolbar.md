@@ -1,9 +1,9 @@
-# تنظيم شريط المخزن
+# Organize the inventory toolbar
 
-الحالة: منفّذ ومتحقق منه في المصدر والمعاينة. التاريخ: 2026-10-27. الطلب: تنظيم شريط البحث والفلاتر والإجراءات المحدد في صورة المالك.
+Status: implemented and verified in source/preview. Date: 2026-10-27. Request: organize the search, filter and action bar identified in the owner's screenshot.
 
-التغيير والسبب: جمع البحث والحالة والمجموعة في شبكة بمحاذاة وأحجام موحدة، مع فصل فلتر التزويد وفتح المبيعات في مجموعة إجراءات. شريط واحد بخلفية فاتحة وحد خفيف؛ يتكيف إلى سطرين في العرض المتوسط، وبحث بعرض كامل في العرض الضيق. توضيح إمكانية البحث بالاسم أو الرمز أو المجموعة، وإظهار حالة تفعيل فلتر التزويد. استعادة تركيز القائمة بعد تغيير الحالة/المجموعة لتسهيل استخدام لوحة المفاتيح. لا تعديل في قواعد المخزون أو الحسابات أو الحفظ.
+Change and rationale: grouped search, status and group controls into a consistently aligned/sized grid, with restock filter and Open Sales in a separate action group. One light-background toolbar with a subtle border adapts to two rows at medium widths and full-width search when narrow. Clarified searching by name/code/group and displayed active restock-filter state. Restored list focus after status/group changes for keyboard use. No stock rules, accounting or persistence changed.
 
-التحقق: npm test نجح 120/120، بما فيه مسار تصفية المخزن والبحث والتزويد. معاينة Electron المعزولة للشاشة بعروض 1512 و1024 و390px أكدت عدم تجاوز أفقي للصفحة. الدليل المحلي outputs/layout-review/inventory-results.json وinventory-toolbar.png وأداة verify-inventory.cjs. راجعت المعاينة بصرياً، وشاشة المخزن محدثة في المتصفح للمستخدم. لم تُستخدم حسابات المطعم ولم يُستبدل التطبيق المثبت.
+Verification: npm test passed 120/120, including inventory filtering/search/restock. Isolated Electron previews at 1512, 1024 and 390px confirmed no page-level horizontal overflow. Local evidence: outputs/layout-review/inventory-results.json, inventory-toolbar.png and verify-inventory.cjs. The preview was visually reviewed and the user's Inventory browser view refreshed. Restaurant accounts were not used and the installed application was not replaced.
 
-الذاكرة: الاسترجاع أعاد مصادر تاريخية مسحوبة، فاعتمدت على ملفات المشروع الحالية. الفحص السابق للخدمة سليم بلا عمليات معلقة أو فاشلة، لكنه sources=0؛ تعاد المزامنة والفحص ولا تعتبر النتيجة دليلاً على فهرسة هذه الوثائق دون مصادر.
+Memory: recall returned withdrawn historical sources, so current project files were used. The previous service check was healthy without pending/failed work but sources=0. Sync/check are repeated without treating that as proof these documents were indexed without registered sources.

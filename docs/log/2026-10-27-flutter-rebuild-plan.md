@@ -1,36 +1,36 @@
-# خطة إعادة بناء Flutter ومكتبة الصور
+# Flutter rebuild plan and screenshot library
 
-> تحديث لاحق: أُعيد تنظيم الخطة إلى 12 مرحلة بطلب المالك؛ [سجل الدمج](2026-10-27-flutter-phase-consolidation.md) و[القرار 0012](../decisions/0012-merge-flutter-rebuild-phases.md). الأعداد والتقسيم أدناه يوثقان المخرج الأصلي قبل الدمج، وليسا ترقيم التنفيذ الحالي.
+> Later update: the owner requested consolidation into 12 phases; see the [consolidation log](2026-10-27-flutter-phase-consolidation.md) and [decision 0012](../decisions/0012-merge-flutter-rebuild-phases.md). Counts and divisions below describe the original pre-consolidation output, not current implementation numbering.
 
-الحالة: خطة ومرجع بصري أُنشئا؛ تنفيذ Flutter لم يبدأ. التاريخ: 2026-10-27، Asia/Baghdad.
+Status: plan and visual references created; Flutter implementation had not started. Date: 2026-10-27, Asia/Baghdad.
 
-## الطلب والتوضيحات
+## Request and clarifications
 
-طلب المالك خطة مراحل كاملة، كل مرحلة مرتبطة بميزة وصور للشاشات والتصميم، حتى الوصول إلى MVP. أكد macOS وAndroid وiPhone، والعمل المحلي دون إنترنت مع النسخ والاستيراد، ومطابقة التصميم الحالي إلى أن يقرر تعديلات كل مرحلة، وPDF/المشاركة والطباعة العادية من النظام.
+The owner requested a complete feature-based phase plan, with screen/design images through MVP. Confirmed macOS, Android and iPhone; local offline operation with backup/import; matching the current design until phase-specific owner changes; and PDF/sharing/ordinary system printing.
 
-## التغيير والسبب
+## Change and rationale
 
-أُنشئت حزمة docs/planning/flutter-rebuild: خطة رئيسية، 19 ملف مرحلة، معرض محلي قابل للتصفية، صور كاملة للنوافذ والمستندات والحالات الفارغة والنماذج، لوحة مرجعية مستخرجة للتصميم، قيم التصميم ونسخة CSS/صور مرجعية، عقد المطابقة المالية، تغطية الميزات والمصدر، وقائمة قبول MVP. كل مرحلة تصف النتيجة والتبعيات والعمل المطلوب ومعايير القبول وروابط الصور وتسليم التنفيذ.
+Created docs/planning/flutter-rebuild: master plan, 19 phase files, filterable local gallery, complete window/document/empty/form captures, extracted reference design board, design tokens, reference CSS/images, financial-parity contract, feature/source coverage and MVP acceptance list. Every phase describes outcome, dependencies, work, acceptance criteria, screenshot links and implementation handoff.
 
-أُضيف القرار 0011 لتثبيت خيارات المالك. بقيت توصيات التخزين والمكتبات والخط والتوزيع موسومة كمقترحات أو قرارات مبكرة. لم تُنشأ ملفات Flutter ولم يتغير مصدر التطبيق أثناء هذه المهمة. التغييرات الموجودة مسبقاً في التطبيق بقيت كما وجدناها.
+Added decision 0011 to establish the owner's choices. Storage, package, font and distribution recommendations remain labeled proposals or early decisions. No Flutter files were created or application source changed during this task. Pre-existing application changes were preserved.
 
-## التحقق الفعلي
+## Actual verification
 
-- فحص المصدر الحالي: 12 وجهة ظاهرة؛ صيغة الحسابات 11 وإصدار المصدر 1.12.0؛ المرتجعات والطلبات المعلقة ووصل الدفع موجودة؛ واجهة العمال محذوفة والسجلات التاريخية محفوظة.
-- npm test: نجح 140 من 140، بلا فشل أو تخطٍّ. السجل المحلي: dist/flutter-rebuild-baseline-tests.log. هذا تحقق Electron، ولا يثبت Flutter.
-- الالتقاط النهائي: 179 صورة، بلا أخطاء في الجولة النهائية. العدد والأبعاد وبصمات المصدر والصور في screenshot-manifest.json. يستخدم scripts/capture-flutter-reference.cjs بيانات مصطنعة في الذاكرة وملف تعريف معزولاً؛ لا يقرأ حسابات المطعم أو مجلد التطبيق المثبت.
-- روجعت عينات المبيعات بفاتورة، ونموذج الشراء الضيق، ولوحة التصميم، ومرجع التقرير بصرياً. نجح فحص بصمات الصور وأبعادها وبقاء مصدر التطبيق مطابقاً لبصماته، وروابط جميع مستندات الخطة، ووجود صورتين مضمنتين على الأقل في كل ملف مرحلة.
-- نجح فحص معرض الصور في Electron: 179 بطاقة، وكل المرشحات الـ19 تعرض صوراً، و14 مرجع HTML للتقارير، والبحث عن invoice يعرض نتائج، ولا صور ظاهرة مكسورة. أضيف تحقق صريح أن سجل المبيعات المعبأ يعرض الفاتورة التوضيحية قبل التقاطه.
-- أُنشئت نسخة HTML مقروءة من الخطة والمراحل والعقود إلى جانب Markdown، مع معرض الصور ولوحة التصميم: 27 مستند HTML. نجح فحص روابطها المحلية والصور وبصمات المصدر. الفحص البصري كشف أن مرشح الحالة التوضيحي لسجل المبيعات كان غير صحيح؛ صُحح في أداة الالتقاط وحدها، وأعيد الالتقاط النهائي بسجل مبيعات معبأ ونسخة أسفل إضافية، ليصبح العدد النهائي 179.
+- Current-source inspection: 12 visible destinations, account schema 11 and source version 1.12.0; returns, held orders and payment receipts exist; worker UI is removed while historical records remain.
+- npm test: 140/140 passed, zero failed/skipped. Local log: dist/flutter-rebuild-baseline-tests.log. This verifies Electron, not Flutter.
+- Final capture: 179 images, no errors in the final run. Count, dimensions and source/image hashes are in screenshot-manifest.json. scripts/capture-flutter-reference.cjs uses synthetic in-memory data and an isolated profile; it does not read restaurant accounts or the installed app's folder.
+- Visually reviewed samples of Sales with a ticket, the narrow purchase form, design board and report reference. Image-hash/dimension checks, unchanged application-source hashes, links for every plan document and at least two embedded images per phase file passed.
+- Electron gallery verification passed: 179 cards, all 19 filters show images, 14 report HTML references, invoice search returns results and no broken visible images. Added an explicit assertion that populated sales history displays the illustrative invoice before capture.
+- Created readable HTML for plans/phases/contracts alongside Markdown, gallery and design board: 27 HTML documents. Local links, images and source hashes passed. Visual inspection found the illustrative sales-history status filter was wrong; corrected only the capture tool and repeated the final capture with populated history plus an additional bottom capture, resulting in 179 final images.
 
-## القيود
+## Limits
 
-صور الهاتف هي عرض Electron ضيق وليست تشغيل iPhone/Android. صور التقارير HTML وليست إثباتاً لإخراج PDF في Flutter. حالة خط Android والتوقيع والتوزيع والطباعة والأجهزة الفعلية تحتاج التحقق في مراحلها. حالات الخطأ المرئية مصطنعة للمرجع، لا ادعاء بحدوث فشل قرص فعلي.
+Phone captures are narrow Electron layouts, not iPhone/Android execution. Report images show HTML, not proven Flutter PDF output. Android font availability, signing, distribution, printing and actual devices require verification in their phases. Visible error states are synthesized for reference; no actual disk failure is claimed.
 
-استرجاع project-daftar نجح، لكنه أعاد حقائق سحب قديمة تشير إلى المجلد السابق؛ اعتمدنا الملفات الحالية ولم نستخدم تلك الحقائق لإثبات حالة المشروع. فحص الذاكرة الأول أظهر sources:0 لأن التسجيل بقي يشير إلى ResturanetAccounting المحذوف. بعد التأكد من غياب المجلد القديم، صُحح مسار مشروع daftar وربطه بالبنك فقط في إعداد Hindsight المشترك، مع نسخة خاصة من الإعداد السابق، ودون تغيير بنك أو مسارات المشاريع الأخرى أو أنماط الفهرسة. أصبح الفحص يرى 92 مصدراً؛ الطلبات كانت قيد المعالجة عند أول فحص بعد التصحيح. النتيجة النهائية أدناه بعد اكتمال الفحص، ولا نعد الإرسال اكتمالاً.
+project-daftar recall succeeded but returned old withdrawal facts referencing the previous folder; current files were authoritative and those facts were not used to establish project state. Initial memory check showed sources:0 because registration still pointed to deleted ResturanetAccounting. After confirming the old folder was absent, only daftar's shared Hindsight path/bank mapping was corrected, preserving a private backup of prior configuration and leaving other project banks/paths/index patterns unchanged. The check then saw 92 sources; requests were processing at the first post-correction check. The final outcome below follows the completed inspection; submission is not treated as ingestion completion.
 
-## الخطوة التالية
+## Next action
 
-نتيجة متابعة الذاكرة عند تسليم الخطة: الخدمة سليمة، والمجلد الحالي معرّف، و92 مصدراً مرئياً. الفهرسة ما زالت قيد المعالجة ولم تُعلن مكتملة؛ لا أخطاء عمليات ظاهرة في الفحوص المنفذة. النتائج التفصيلية المحلية في dist/flutter-plan-memory-check.json. الحزمة محفوظة ومستقلة عن انتهاء الفهرسة، ولا يثبت إرسالها للطابور قابليتها للاسترجاع بعد.
+Memory follow-up at plan delivery: healthy service, correct current folder and 92 visible sources. Indexing was still processing and was not declared complete; no operation errors appeared in the checks performed. Detailed local results: dist/flutter-plan-memory-check.json. The package is preserved independently of indexing completion; queue submission does not yet prove recall availability.
 
-تبدأ مرحلة 00 عند طلب بدء التنفيذ: تثبيت البيئة ومسارات التوزيع والأجهزة، ثم المكونات والتخزين قبل ميزات التطبيق. يبقى التصميم الحالي هو المرجع ما لم يقرر المالك خلافه عند المرحلة.
+Phase 00 starts when implementation is requested: establish the environment, distribution paths and devices, then components/persistence before application features. Current design remains the reference unless the owner decides otherwise at a phase.

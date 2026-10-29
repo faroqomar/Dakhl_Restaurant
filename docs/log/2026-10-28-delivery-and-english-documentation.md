@@ -1,0 +1,9 @@
+# Owner delivery rules and English documentation review
+
+Date: 2026-10-28. Owner reaffirmed one shared implementation in Madar, phase-specific engine/app responsibility and contract allocation, comprehensive engine documentation, useful packages when needed, structured terminal logging and meaningful tests. The owner then explicitly confirmed English-only documentation and Hindsight memory.
+
+Added the corresponding accepted decision and standing delivery rules. Reviewed documentation language and translated Arabic prose/descriptive labels without changing application UI, executable fixtures, frozen screenshots/source, financial semantics, dependency pins or phase statuses. Existing chronological records remain dated evidence; translation is not new implementation verification. Canonical registered sources and both separate project banks are handled with scoped provenance and completed-operation checks; no whole-bank deletion or shared model/provider changes.
+
+Runtime logging and new package installation are not implemented by these documentation edits. Runtime tests/builds/optimization benchmarks are N/A. Documentation language/link/scope checks, frozen source/hash checks and actual memory-delivery results are recorded by the task verification artifacts. Changes remain local for review; no push, merge, deployment or next phase is authorized here.
+
+Static verification: no Arabic remains in current authored documentation; independent cross-review preserved financial semantics, dates, amounts, links and verification/approval limits. Frozen checks verified 179 screenshots, nine UI sources and 21 assets unchanged. A schema-rejected memory request was corrected before accepted delivery. Canonical translation alignment issues were restored from backup and checked. Memory completion and active-record language checks remain separately evidenced by the task receipts until processing finishes.

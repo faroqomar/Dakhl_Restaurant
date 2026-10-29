@@ -1,14 +1,13 @@
-# 0008 — عرض صفحات مناسب للمحتوى في النافذة الكاملة
+# 0008 — Content-appropriate page widths in a full window
 
-الحالة: قرار تنفيذ ضمن طلب المالك مراجعة الشاشات كاملة وإصلاح التمدد؛ منفّذ ومتحقق منه. التاريخ: 2026-10-27.
+Status: implementation decision within the owner's request to review full screens and fix excessive stretching; implemented and verified. Date: 2026-10-27.
 
-حد عرض صفحات العمل 1120px والبيع 1360px؛ اللوحات تبقى مركزية، والتواريخ والفلاتر لا تتمدد تلقائياً على السطر. فاتورة البيع بعرض ثابت نسبي بين 330 و380px على النافذة الواسعة، مع تكيف أصغر حسب المساحة. هذه القيم تحل محل حدود 1280/1440 من المعالجة الأولية في .impeccable.md و[سجلها](../log/2026-10-27-page-width.md).
+Limit work-page width to 1120px and sales to 1360px; panels remain centered and dates/filters do not automatically stretch across the row. On wide windows, the sales ticket has a relatively fixed width between 330 and 380px, adapting smaller to available space. These values replace the initial 1280/1440 limits in .impeccable.md and its [log](../log/2026-10-27-page-width.md).
 
-السبب: الصور الكاملة أظهرت فراغات كبيرة بين عناصر قليلة وحقول تاريخ عريضة بلا حاجة. حدود عرض المكونات تبقي القراءة أقرب للمحتوى. أصلح أيضاً أساس flex بقيمة 280px كان يخلق مساحة عمودية غير ضرورية عند تكديس ترويسة الصفحة على نافذة ضيقة.
+Rationale: full-window screenshots showed excessive gaps between a small number of elements and unnecessarily wide date fields. Component width limits keep reading close to the content. A 280px flex basis was also removed; it created unnecessary vertical space when the page header stacked in a narrow window.
 
-لا تغيير في بيانات التطبيق أو الحسابات أو مسارات الحفظ. [التحقق والقيود](../log/2026-10-27-fullscreen-layout-review.md).
+No application data, account or persistence-path change. [Verification and limits](../log/2026-10-27-fullscreen-layout-review.md).
 
+## Superseded by owner direction
 
-## حل محله توجيه المالك
-
-رفض المالك الهوامش الجانبية الكبيرة الناتجة عن تضييق الصفحات؛ يحل [القرار 0009](0009-fluid-aligned-workspace.md) محل حدود عرض الصفحة والملخصات أعلاه. يبقى إصلاح ارتفاع الترويسة الضيقة وكثافة تفاصيل الطلب.
+The owner rejected the large side margins caused by narrowing pages; [decision 0009](0009-fluid-aligned-workspace.md) supersedes the page and summary width limits above. The narrow-header height repair and order-detail density remain.

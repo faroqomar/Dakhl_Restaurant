@@ -1,15 +1,15 @@
-# 2026-10-17 — إضافة الدليمية مع الدجاج وقسم الدجاج
+# 2026-10-17 — Add Dulaimiya with chicken and a chicken section
 
-الحالة: مسودة v2 منفّذة ومراجعة؛ لم تنشر. التاريخ: 2026-10-17 بتوقيت بغداد. المالك: مالك مطعم جنة بغداد. المصدر: طلب الإضافات في المحادثة وتصحيح أن سعر الدجاجة الكامل القديم 12,000 د.ع.
+Status: v2 draft implemented and reviewed; not published. Date: 2026-10-17, Baghdad time. Owner: Jannat Baghdad restaurant owner. Source: requested additions in the conversation and correction that the old whole-chicken price was IQD 12,000.
 
-## التغيير
+## Change
 
-أضيفت ست صواني دليمية: 3 نفرات مع نصف دجاجة 10,000، ومع دجاجة 15,000؛ 4 نفرات مع نصف دجاجة 15,000، ومع دجاجة 20,000؛ 6 نفرات مع نصف دجاجة 20,000، ومع دجاجة 25,000. أضيف قسم الدجاج: كاملة من 12,000 إلى 10,000، ونصف دجاجة 5,000. تحت عنوان قسم الدجاج أضيف «قدح برياني + مقبلات + صمون».
+Added six Dulaimiya trays: 3 portions with half chicken for 10,000 or whole chicken for 15,000; 4 portions with half chicken for 15,000 or whole chicken for 20,000; 6 portions with half chicken for 20,000 or whole chicken for 25,000. Added a chicken section: whole chicken from 12,000 to 10,000, and half chicken for 5,000. Under the chicken heading, added a cup of biryani, appetizers and samoon.
 
-أعيد الترتيب إلى عمودين في الصفحة نفسها للحفاظ على وضوح 18 صنفاً. بقيت الهوية السوداء والصفراء واسم المطعم ورقم التوصيل. لم تُخترع أسعار قديمة للإضافات التي لم يقدم لها المالك سعراً سابقاً. النسخة السابقة لم تستبدل أو تحذف؛ المخرج الحالي في `outputs/campaigns/CAM-0001/v2/`، و[Canva الحالي](https://www.canva.com/d/5JwMjq-afq_tW1d) معرفه `DAHYPeY3kXE`.
+Reorganized the same page into two columns so all 18 items remain legible. Preserved the black/yellow identity, restaurant name and delivery number. No old prices were invented for additions without an owner-supplied previous price. The previous version was neither replaced nor deleted. Current output: `outputs/campaigns/CAM-0001/v2/`; [current Canva](https://www.canva.com/d/5JwMjq-afq_tW1d), ID `DAHYPeY3kXE`.
 
-## التحقق
+## Verification
 
-نجح إنشاء PNG بدقة 2160×2880 واستيراد HTML إلى صفحة Canva واحدة 1080×1440. روجعت الصورة محلياً والنسخة المكتملة في محرر Canva عبر Chrome الأصلي دون تداخل. تطابق النص المستخرج مع خيارات الدليمية الستة وأسعارها، ومرافق الدجاج، والكاملة من 12,000 إلى 10,000 والنصف 5,000. فحص بيانات المصدر أكد 18 صنفاً، وأن الأسعار القديمة للإضافات الست غير معطاة، وأن مقارنة الدجاجة تطابق التصحيح الأخير.
+Creating a 2160×2880 PNG and importing HTML as one 1080×1440 Canva page succeeded. The image was inspected locally and the completed design reviewed in Canva through native Chrome without overlap. Extracted text matched the six Dulaimiya options/prices, chicken accompaniments, whole-chicken reduction from 12,000 to 10,000 and half-chicken price of 5,000. Source-data validation confirmed 18 items, no supplied old prices for the six additions, and a whole-chicken comparison matching the latest correction.
 
-تُراجع الروابط المحلية و`git diff --check` ويشغّل `./scripts/memory sync` ثم `./scripts/memory check` قبل التسليم؛ النتيجة الفعلية تثبتها استجابة الفحص في هذه الجلسة. لا تغيير في حسابات التطبيق أو وظائفه، ولا نشر أو إنفاق ميزانية. رقم التوصيل في المخرجات فقط خارج فهرسة الوثائق.
+Local links and `git diff --check` are reviewed, then `./scripts/memory sync` and `./scripts/memory check` run before delivery; the actual result is established by this session's check response. No application accounts/functionality changed, and no publication or budget spending occurred. The delivery number is in outputs only, outside document indexing.

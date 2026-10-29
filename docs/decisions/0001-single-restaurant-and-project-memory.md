@@ -1,26 +1,26 @@
-# القرار 0001 — مطعم واحد وتوثيق وذاكرة خاصة بدفتر
+# Decision 0001 — One restaurant and dedicated Daftar documentation and memory
 
-الحالة: معتمد من المالك؛ التحقق التشغيلي منفصل في سجل العمل. التاريخ: 2026-10-16. المالك: مالك المطعم والمشروع. المصدر: التوجيه الحالي وتأكيد اختيار ResturanetAccounting.
+Status: approved by the owner; operational verification is recorded separately in the work log. Date: 2026-10-16. Owner: restaurant and project owner. Source: current direction and confirmation that ResturanetAccounting is the selected project.
 
-## السياق
+## Context
 
-أكد المالك أن المشروع والتطبيق مختصان فقط بمطعم واحد، وأن الفواتير والحملات والأفكار والتطبيق الخاص تحتاج توثيقاً ومتابعة وذاكرة Hindsight. المجلد الأب يضم AlDakhl أيضاً؛ له نطاق وتقنية وذاكرة مختلفة، فلا يجوز نقلها إلى دفتر على أنها قراراته.
+The owner confirmed that the project and application serve only one restaurant, and that invoices, campaigns, ideas and the dedicated application need documentation, follow-up and Hindsight memory. The parent folder also contains AlDakhl, which has different scope, technology and memory; those must not be imported into Daftar as its decisions.
 
-## القرار
+## Decision
 
-1. تثبيت [نطاق المطعم الواحد](../reference/project-scope.md) لكل العمل المستقبلي.
-2. إبقاء السلوك المالي والبنية الحالية كما يثبتها المصدر، وتوثيقهما في مراجع مستقلة.
-3. تسجيل الأفكار والحملات وحالاتها وأدلتها؛ التوثيق لا يعني تنفيذ أدوات إعلان أو اعتماد ميزانية.
-4. استخدام Markdown داخل المشروع مرجعاً معتمداً، مع قرارات وأسباب وسجلات تحقق مؤرخة وقوالب فارغة.
-5. تسجيل المشروع باسم `daftar` في الخدمة المحلية المشتركة واستخدام البنك `project-daftar`. ملفات المشروع هي الأصل والذاكرة فهرس مشتق؛ لا تُحفظ بيانات حسابات المطعم في هذا البنك.
-6. إلزام العمل المستقبلي بالاسترجاع ومراجعة المصدر والتوثيق وفحص اكتمال المزامنة وفق `AGENTS.md`.
+1. Establish the [single-restaurant scope](../reference/project-scope.md) for all future work.
+2. Preserve the current financial behavior and structure as demonstrated by the source, documenting them in separate references.
+3. Record ideas, campaigns, their states and evidence; documentation does not mean implementing advertising tools or approving a budget.
+4. Use project Markdown as the authoritative reference, with decisions, rationale, dated verification logs and empty templates.
+5. Register the project as `daftar` in the shared local service and use bank `project-daftar`. Project files are the source of truth and memory is a derived index; restaurant account data is not stored in this bank.
+6. Require future work to recall relevant context, inspect source, document outcomes and verify completed synchronization under `AGENTS.md`.
 
-## السبب والنتائج
+## Rationale and consequences
 
-المطعم الواحد هو طلب صريح؛ بناء منتج متعدد المطاعم يضيف نطاقاً غير مطلوب. الوثائق تبقي القرارات قابلة للمراجعة دون الاعتماد على المحادثة، والفهرس يساعد استرجاعها. بنك منفصل يمنع الخلط المعتاد مع AlDakhl. نستخدم الخدمة الموجودة بدلاً من تثبيت خدمة جديدة.
+One restaurant is an explicit request; a multi-restaurant product would add unrequested scope. Documentation keeps decisions reviewable without depending on the conversation, while the index helps retrieve them. A separate bank prevents the usual confusion with AlDakhl. Reuse the existing service rather than install another one.
 
-هذا الاختيار لا يغير Electron أو صيغة الحسابات، ولا يضيف Hindsight إلى التطبيق وقت تشغيله. يلزم تحديث الوثائق مع العمل الفعلي. الفهرسة تستهلك من المزود المهيأ وقد تتعطل؛ تبقى ملفات المشروع متاحة. لا يوجد ادعاء أن كل محادثة تُحفظ تلقائياً.
+This choice does not change Electron or the account format and does not add Hindsight to the running application. Documentation must track actual work. Indexing uses the configured provider and may fail; project files remain available. There is no claim that every conversation is retained automatically.
 
-## التحقق
+## Verification
 
-راجع [سجل 2026-10-16](../log/2026-10-16-project-documentation.md) لفحص الملفات والاختبارات وإتمام المزامنة والاسترجاع. لم تُحدد حملة أو فاتورة من نوع جديد ولم يُنشر إعلان بهذا القرار.
+See the [2026-10-16 log](../log/2026-10-16-project-documentation.md) for file inspection, tests, completed synchronization and recall. This decision did not define a campaign or a new invoice type and did not publish an advertisement.

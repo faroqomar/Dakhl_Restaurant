@@ -1,46 +1,46 @@
-# CAM-0001 — مينيو الأسعار المخفضة
+# CAM-0001 — Reduced-price menu
 
-الحالة: مسودة تصميم منفّذة ومراجعة المحتوى؛ لم تنشر. تاريخ الإنشاء: 2026-10-16. آخر تحديث: 2026-10-17. المالك: مالك المطعم. المصدر: طلب إنشاء البوست ثم إضافة صواني الدليمية والدجاج وتصحيح السعر القديم للدجاجة في المحادثة. الفكرة المرتبطة: IDEA-0001 في [السجل](../ideas.md).
+Status: design draft implemented and content reviewed; not published. Created: 2026-10-16. Updated: 2026-10-17. Owner: restaurant owner. Source: post creation request, followed by Dulaimiya/chicken additions and correction of the old whole-chicken price in conversation. Related idea: IDEA-0001 in the [register](../ideas.md).
 
-## الطلب المعتمد
+## Approved request
 
-البحث عن قالب Canva مناسب لمينيو عربي مرتب يعرض السعر القديم والسعر الجديد المخفض لكل صنف، مع عنوان عربي طبيعي بعيد عن المبالغة. يرغب المالك بفكرة لغوية تقابل ارتفاع الدولار بتخفيض أسعار المطعم؛ هذه رسالة إعلانية مقترحة وليست تقريراً موثقاً عن سعر الصرف.
+Research a suitable Canva template for an organized Arabic menu showing each item's old and reduced new price, with a natural Arabic headline free of exaggeration. The owner wants wording contrasting a rising dollar with falling restaurant prices; this is proposed advertising copy, not a verified exchange-rate report.
 
-توضيح المالك اللاحق بتاريخ 2026-10-16: رفض المرشحين الثلاثة الأوائل جميعاً، ويريد قالباً **لمطعم شعبي، بالعربي، مميزاً ومفهوماً**. هذا يحدد اتجاه المينيو الترويجي؛ لا يغيّر ألوان تطبيق دفتر المعتمدة تلقائياً.
+Owner clarification on 2026-10-16: all three initial candidates were rejected. The desired template is **Arabic, distinctive and understandable, for a traditional local restaurant**. This sets the promotional-menu direction; it does not automatically change Daftar's approved application colors.
 
-## اتجاه مقترح للمحتوى والتنسيق
+## Proposed content and layout direction
 
-طلب المالك لاحقاً إنشاء البوست مباشرة: خلفية سوداء، عنوان الدولار، سعر قديم مشطوب ثم علامة × حسب توضيحه الأخير، وسعر جديد أكثر بروزاً. أضيف اسم **مطعم جنة بغداد** ورقم التوصيل الذي قدمه المالك. العنوان الحالي: «الدولار يصعد / وأسعارنا تنزل». الأسماء بيضاء والجديد أصفر أكبر، والمقارنة بعناوين «قبل» و«هسه» في صفحة عمودية واحدة بنسبة 3:4. هذه مواصفات المينيو ولا تغيّر هوية واجهة دفتر.
+The owner later requested directly creating the post: black background, dollar headline, crossed-out old price with an X per the latest clarification, and a more prominent new price. Added the **Jannat Baghdad restaurant** name and the owner-supplied delivery number. The current headline means "The dollar rises / our prices fall." Names are white; new prices larger/yellow; comparison headings mean "Before" and "Now," on one vertical 3:4 page. These menu specifications do not alter Daftar's UI identity.
 
-المسودة الحالية v6: [Canva](https://www.canva.com/d/B8jdj5l4NEQwgRy) و[PNG](../../../outputs/campaigns/CAM-0001/v6/jannat-baghdad-menu-v6-canva.png). أضيف السمك مع قدح تمن أحمر 8,000، ونفر أجنحة 8 قطع مع تمن أحمر 8,000 ونصف نفر 4 قطع مع تمن أحمر 4,000 بطلب المالك تحديداً لمنيو العروض الأول. صارت 21 خياراً، ومنيو الصالة مستقل بسعر سمك 10,000 ومرافقات أخرى. لا أسعار قديمة للإضافات الثلاث لأنها لم تُقدّم. [سجل الإضافة](../../log/2026-10-17-promo-fish-wings.md).
+Current draft v6: [Canva](https://www.canva.com/d/B8jdj5l4NEQwgRy) and [PNG](../../../outputs/campaigns/CAM-0001/v6/jannat-baghdad-menu-v6-canva.png). Added fish with a cup of red rice for 8,000, 8 wings with red rice for 8,000, and 4 wings with red rice for 4,000, explicitly requested for the original promotional menu. There are now 21 options. The dine-in menu remains independent, with fish at 10,000 and different accompaniments. No old prices were supplied for these three additions. [Addition log](../../log/2026-10-17-promo-fish-wings.md).
 
-النسخة السابقة v5 بتاريخ 2026-10-17: [Canva قابل للتعديل](https://www.canva.com/d/A5_hfPpRMeY-yOm)، و[PNG النهائي](../../../outputs/campaigns/CAM-0001/v5/jannat-baghdad-menu-v5-canva.png). وُسّط رقم التوصيل داخل المستطيل وضُبطت × بمنتصف السعر القديم. بطلب المالك حساب الأسعار القديمة بجمع مكوناتها: الدجاجة 12,000 والنصف 6,000 (12,000 ÷ 2)، فصارت صواني 3 نفرات مع النصف/الكاملة 14,000/20,000، و4 نفرات 18,000/24,000، و6 نفرات 23,000/29,000. هذه أسعار محسوبة بتوجيهه، والأسعار الجديدة بقيت كما هي. [سجل التعديل](../../log/2026-10-17-menu-cross-footer.md).
+Previous v5, dated 2026-10-17: [editable Canva](https://www.canva.com/d/A5_hfPpRMeY-yOm), [final PNG](../../../outputs/campaigns/CAM-0001/v5/jannat-baghdad-menu-v5-canva.png). The delivery number was centered in its rectangle and X marks centered on old prices. At the owner's request, old prices were calculated by adding components: whole chicken 12,000 and half chicken 6,000 (12,000 ÷ 2), making 3-portion half/whole-chicken trays 14,000/20,000, 4-portion trays 18,000/24,000, and 6-portion trays 23,000/29,000. These were calculated under owner direction; new prices stayed unchanged. [Adjustment log](../../log/2026-10-17-menu-cross-footer.md).
 
-النسخة السابقة v3 بتاريخ 2026-10-17 بعد طلب ترتيب المينيو وتصحيح أخطائه: [Canva قابل للتعديل](https://www.canva.com/d/xrVGV1ZUBZBOh1b)، و[PNG النهائي من Canva](../../../outputs/campaigns/CAM-0001/v3/jannat-baghdad-menu-v3-canva.png). خيارات الدليمية التسعة مرتبة بجدول: أحجام 3 و4 و6 نفرات مقابل دليمية فقط أو مع نصف دجاجة أو مع دجاجة. بقية الأقسام مستقلة مع كتابة أكبر ومحاذاة وشطب أوضح. جميع أسعار ومعلومات v2 محفوظة دون تغيير؛ 18 خياراً بصفحة واحدة، وصورة نهائية مصدّرة من Canva بدقة 1080×1440. [دليل الترتيب والتحقق](../../log/2026-10-17-menu-polish.md).
+Previous v3, dated 2026-10-17 after the request to organize/correct the menu: [editable Canva](https://www.canva.com/d/xrVGV1ZUBZBOh1b), [final Canva PNG](../../../outputs/campaigns/CAM-0001/v3/jannat-baghdad-menu-v3-canva.png). The nine Dulaimiya choices form a table: 3/4/6 portions versus Dulaimiya alone, with half chicken or with whole chicken. Other sections are separate, with larger text, clearer alignment/strike marks. All v2 prices/details were preserved: 18 options on one page and a final 1080×1440 Canva export. [Organization/verification evidence](../../log/2026-10-17-menu-polish.md).
 
-النسخة السابقة v2 محفوظة: [Canva v2](https://www.canva.com/d/5JwMjq-afq_tW1d)، و[PNG v2](../../../outputs/campaigns/CAM-0001/v2/jannat-baghdad-menu-v2.png). أضيف فيها قسم الدجاج ومرافقاته «قدح برياني + مقبلات + صمون». الدجاجة الكاملة من 12,000 إلى 10,000 د.ع بتصحيح صريح من المالك، والنصف 5,000 دون افتراض سعر قديم. الإضافات الست للدليمية لها أسعار حالية فقط لأن المالك لم يقدم أسعاراً قديمة لها. [دليل إضافة الأصناف](../../log/2026-10-17-menu-dulaimiya-chicken.md).
+Previous v2 remains preserved: [Canva v2](https://www.canva.com/d/5JwMjq-afq_tW1d), [PNG v2](../../../outputs/campaigns/CAM-0001/v2/jannat-baghdad-menu-v2.png). Added chicken and its cup-of-biryani/appetizer/samoon accompaniments. Whole chicken changed from IQD 12,000 to 10,000 with explicit owner correction; half chicken is 5,000 without an assumed old price. The six Dulaimiya additions initially had current prices only because the owner had not supplied previous prices. [Item-addition evidence](../../log/2026-10-17-menu-dulaimiya-chicken.md).
 
-النسخة السابقة v1 محفوظة للتاريخ: [Canva السابق](https://www.canva.com/d/qyaWxnRjvxd7fkY)، و[PNG السابق](../../../outputs/campaigns/CAM-0001/jannat-baghdad-menu.png). المصادر الكاملة والبيانات الخاصة بالمخرجات تحت `outputs/campaigns/CAM-0001/` خارج مسارات فهرسة Hindsight. لا نكرر رقم التوصيل في الوثائق المفهرسة.
+Previous v1 is retained as history: [previous Canva](https://www.canva.com/d/qyaWxnRjvxd7fkY), [previous PNG](../../../outputs/campaigns/CAM-0001/jannat-baghdad-menu.png). Complete output sources/data are under `outputs/campaigns/CAM-0001/`, outside Hindsight indexing. The delivery number is not repeated in indexed documents.
 
-النسخة الأولى احتوت عشرة أصناف؛ النسخة الحالية تحتوي تسع صواني دليمية وثلاثة أصناف كباب لحم وأربعة أصناف كباب وتكة دجاج وصنفي دجاج. سعر كيلو كباب اللحم الجديد كُتب في الطلب الأول «20,00» وفسر على أنه 20,000 د.ع، مع التصريح بذلك؛ هذا تفسير معلن وليس تأكيداً منفصلاً من المالك. باقي الأسعار من الطلبات كما وردت.
+The first version had ten items. The then-current version described nine Dulaimiya trays, three meat-kebab items, four chicken-kebab/tikka items and two chicken items. The initial request wrote the new kilogram-of-meat-kebab price as `20,00`; interpreting this as IQD 20,000 was disclosed. This is an acknowledged interpretation, not separate owner confirmation. Other prices follow the supplied requests.
 
-## نتيجة البحث وحدود التحقق
+## Research result and verification limits
 
-البحث الأول: بحث قوالب العلامة داخل موصل Canva عن `restaurant menu` أعاد قائمة فارغة. عُثر في مكتبة Canva العامة على الروابط التالية، ثم رفضها المالك كلها؛ تُحفظ هنا كتاريخ بحث وليست توصيات حالية:
+Initial research: brand-template search for `restaurant menu` through the Canva connector returned an empty list. The following public-library templates were found, then all rejected by the owner. They remain research history, not current recommendations:
 
-- [Beige Creative Price List Food Menu](https://www.canva.com/templates/EAEyN_RhHxk-beige-creative-price-list-food-menu/) — مرشح أولي لقائمة أسعار.
-- [White and Black Modern Simple Food Menu](https://www.canva.com/templates/EAFw1jMXSzk-white-and-black-modern-simple-food-menu/) — بديل بسيط.
-- [Black and Beige Classic Refined Simple Food Menu](https://www.canva.com/templates/EAEfNjcKK9Q-black-and-beige-classic-refined-simple-food-menu/) — بديل بطابع كلاسيكي.
+- [Beige Creative Price List Food Menu](https://www.canva.com/templates/EAEyN_RhHxk-beige-creative-price-list-food-menu/) — initial price-list candidate.
+- [White and Black Modern Simple Food Menu](https://www.canva.com/templates/EAFw1jMXSzk-white-and-black-modern-simple-food-menu/) — simple alternative.
+- [Black and Beige Classic Refined Simple Food Menu](https://www.canva.com/templates/EAEfNjcKK9Q-black-and-beige-classic-refined-simple-food-menu/) — classic-style alternative.
 
-التحقق اقتصر على وجودها بأسمائها وروابطها في صفحات Canva العامة. تعذر فحص معايناتها ومحررها في المتصفح؛ لا ندّعي اختبار دعم العربية أو وجود خانتي السعرين أو كونها مجانية. اختيارها نقطة بدء للتعديل وتقييم بصري لاحق، وليس ترتيباً شاملاً لكل قوالب Canva.
+Verification was limited to names/links existing on public Canva pages. Browser previews/editor could not be inspected; Arabic support, two-price fields and free availability are not claimed. These were starting points for later editing/visual assessment, not an exhaustive ranking of Canva templates.
 
-البحث الثاني في [مكتبة القوائم العربية في Canva](https://www.canva.com/ar_eg/menus/templates/) أظهر مرشحين عربيين أقرب لطابع المطعم الشعبي:
+The second search in [Canva's Arabic menu library](https://www.canva.com/ar_eg/menus/templates/) found two Arabic candidates closer to the traditional-restaurant style:
 
-- [قائمة طعام أحمر بتصميم ريترو رسومي لمطعم كبدة وحواوشي](https://www.canva.com/ar_eg/templates/EAF68J7NS20/) — المرشح الأول لهذا الاتجاه بحسب وصفه في Canva؛ لم يعتمده المالك بعد.
-- [منيو بألوان متدرجة ريترو لمطعم مصري](https://www.canva.com/ar_eg/templates/EAF6PTGsgkI/) — بديل للمقارنة؛ لم يعتمده المالك بعد.
+- [Red illustrated retro menu for a liver-and-hawawshi restaurant](https://www.canva.com/ar_eg/templates/EAF68J7NS20/) — first candidate for this direction according to Canva's description; not owner-approved.
+- [Retro gradient-color Egyptian restaurant menu](https://www.canva.com/ar_eg/templates/EAF6PTGsgkI/) — comparison alternative; not owner-approved.
 
-تحققت أسماء المرشحين وروابطهما مباشرة من المكتبة العربية. تعذر فتح المعاينة في المتصفح بسبب خطأ `Unable to load browser request-header policy`؛ لا توجد مراجعة بصرية أو تجربة محرر، ولا إثبات لخانتين جاهزتين للسعر القديم والجديد. تغيير الأصناف إلى أكلات المطعم العراقي وإضافة المقارنة بين السعرين عمل لاحق عند اختيار قالب.
+Names/links were verified directly in the Arabic library. Preview opening failed with `Unable to load browser request-header policy`. No visual/editor review or proof of ready-made old/new-price fields exists. Replacing items with the Iraqi restaurant's dishes and adding the price comparison would follow template selection.
 
-## ما بقي مطلوباً
+## Remaining requirements
 
-مراجعة المالك للمسودة وتصحيح أي تفاصيل يطلبها، وخاصة تفسير سعر كيلو اللحم إن كان المقصود مختلفاً. الشعار ومنصة النشر والمدة والميزانية والهدف الرقمي لم تحدد. لا يوجد صرف فعلي أو إعلان منشور أو نتائج مسجلة. إنشاء التصميم لا يجيز نشر حملة أو إنفاق ميزانية. التحقق التفصيلي في [سجل التصميم](../../log/2026-10-16-jannat-baghdad-menu.md).
+Owner draft review and requested corrections, especially clarification if the kilogram-of-meat price interpretation differs from the intent. Logo, publication platform, duration, budget and numeric target remain unspecified. There is no actual spending, published advertisement or recorded outcome. Creating the design does not authorize publication or spending. Detailed verification: [design log](../../log/2026-10-16-jannat-baghdad-menu.md).

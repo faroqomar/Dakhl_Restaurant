@@ -1,9 +1,9 @@
-# تحديث تطبيق الماك
+# Update the Mac application
 
-التاريخ: 2026-10-27. الحالة: مبني ومثبت ومفتوح ومتحقق منه.
+Date: 2026-10-27. Status: built, installed, opened and verified.
 
-- الطلب: تحديث تطبيق الماك إلى أحدث نسخة في المشروع.
-- التغيير: تغليف المصدر 1.12.0 وتثبيته بدلاً من 1.10.1 في `/Users/eros/Applications/Daftar.app`، شاملاً إعادة تصميم البيع. تم الإغلاق الطبيعي والاحتفاظ بحزمة التطبيق السابقة ونسخة خاصة من مجلد بيانات التطبيق خارج المستودع قبل الاستبدال.
-- التحقق: اختبارات المصدر الـ114 ناجحة في مهمة التصميم السابقة. نجح `npm run package`؛ تحذير تنسيق `.icon` اختياري من أداة التغليف. ملفات البيع والنموذج داخل `app.asar` تطابق المصدر. إصدار الحزمة المثبتة 1.12.0، والتطبيق فُتح فعلياً من مسار التثبيت وظهرت شاشة البيع الجديدة. مقارنة الحسابات بعد التحقق والترحيل بالنموذج مع النسخة السابقة نجحت؛ لم نضف أو نعدل أي حركة فعلية أو نحفظ بيانات توضيحية.
-- القيود: تحديث محلي macOS ARM64، دون نشر أو دفع Git. لم ننفذ عملية بيع للتحقق على الحسابات الحقيقية.
-- الذاكرة: نُفذت المزامنة والفحص؛ الخدمة سليمة ولا عمليات معلقة أو فاشلة، لكن عدد المصادر صفر، لذلك فهرسة المستند غير مثبتة.
+- Request: update the Mac application to the project's latest version.
+- Change: packaged source 1.12.0 and installed it over 1.10.1 at `/Users/eros/Applications/Daftar.app`, including the sales redesign. The application was closed normally; the previous bundle and a private backup of its data directory were preserved outside the repository before replacement.
+- Verification: all 114 source tests passed in the preceding design task. `npm run package` succeeded; the packager's `.icon` format warning was optional. Sales/model files inside `app.asar` match source. The installed bundle reports 1.12.0; it was actually opened from the installation path and displayed the new Sales screen. Comparing accounts after validation/model migration with the previous copy passed. No real movement was added/edited and no illustrative data saved.
+- Limits: local macOS ARM64 update only, without publication or Git push. No sale was performed against real accounts for verification.
+- Memory: sync/check ran; service healthy, no pending/failed operations, but source count zero, so document indexing was not established.

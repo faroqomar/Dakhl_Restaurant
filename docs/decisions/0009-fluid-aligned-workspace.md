@@ -1,9 +1,9 @@
-# 0009 — مساحة عمل كاملة ومحاذاة موحدة
+# 0009 — Full-width workspace and consistent alignment
 
-الحالة: معتمد بتوجيه المالك، 2026-10-27. يحل محل حدود عرض الصفحة في [0008](0008-fullscreen-layout-density.md).
+Status: approved by owner direction, 2026-10-27. Supersedes page-width limits in [0008](0008-fullscreen-layout-density.md).
 
-طلب المالك إلغاء دفع المحتوى نحو الوسط وملء عرض النافذة المفيد مع محاذاة متسقة. تمت الاستعانة بـ Astra ومهارتي arrange وfrontend-design.
+The owner requested removing the forced centering and filling the useful window width with consistent alignment. Astra and the arrange and frontend-design skills assisted the work.
 
-تستخدم الصفحات عرض النافذة مع هوامش مشتركة صغيرة؛ تتطابق حواف التنقل والعنوان والملخص والفلاتر واللوحات. تبقى الحقول والأزرار ولوحة الطلب بأحجام مناسبة لمحتواها، ويستفيد جدول البيانات وكتالوج البيع من العرض الإضافي. الإعدادات توزع النموذج ومعاينة الوصل على أعمدة بدلاً من توسيع الحقول بلا حاجة.
+Pages use the window width with small shared margins; navigation, title, summary, filters and panels share aligned edges. Fields, buttons and the ticket panel retain content-appropriate dimensions, while data tables and the sales catalog use the extra width. Settings distribute the form and receipt preview into columns rather than unnecessarily widening fields.
 
-لا تغيير للحسابات أو السجلات أو الحفظ. دليل التحقق في [سجل التنفيذ](../log/2026-10-27-fluid-alignment.md).
+No account, record or persistence change. Verification evidence is in the [implementation log](../log/2026-10-27-fluid-alignment.md).

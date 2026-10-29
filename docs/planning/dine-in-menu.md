@@ -1,32 +1,32 @@
-# MENU-0002 — منيو الصالة
+# MENU-0002 — Dine-in menu
 
-الحالة: مسودة منفّذة مستقلة عن مينيو العروض. التاريخ: 2026-10-17. المصدر: قائمة المالك في المحادثة وتصحيحه الصريح للمقبلات الإضافية إلى 1,500 د.ع.
+Status: implemented draft, independent of the promotional menu. Date: 2026-10-17. Source: the owner's conversation list and explicit correction of extra appetizers to IQD 1,500.
 
-طلب المالك منيو خاصاً جديداً للصالة بنفس ترتيب التصميم السابق. حُفظ الأسود والأصفر وخط Tajawal، وبدأ بالدليمية ثم مجموعات المشاوي والدجاج، وأضيف السمك والشوربة والمخلمة والإضافات. هذه قائمة أسعار للصالة؛ لا عنوان الدولار أو أسعار سابقة أو علامات شطب. سعر نفر كباب اللحم للصالة 16,000 وشيش دبل، مستقل عن سعر العرض السابق. لا كيلو كباب لحم مضاف لعدم وروده في الطلب. سُجّلت جميع الأصناف التسعة عشر.
+The owner requested a new dedicated dine-in menu using the previous section order. Black/yellow and Tajawal were preserved, starting with Dulaimiya, then grills/chicken, with fish, soup, makhlama and extras added. This is a dine-in price list: no dollar headline, old prices or strike marks. A dine-in meat-kebab portion is 16,000 with double skewers, independent of the earlier promotion. No kilogram of meat kebab was added because it was absent from the request. All nineteen items are recorded.
 
-| القسم | الصنف | التفاصيل | السعر د.ع |
+| Section | Item | Details | Price IQD |
 | --- | --- | --- | ---: |
-| صواني الدليمية | دليمية نفرين + نصف دجاجة | مع صحنين مقبلات | 16,000 |
-| صواني الدليمية | دليمية ٣ نفرات + دجاجة | مع ٣ صحون مقبلات | 25,000 |
-| كباب لحم ومعلاك | نفر كباب لحم | شيش دبل • لحم عراقي 100% | 16,000 |
-| كباب لحم ومعلاك | لفة كباب لحم | صمون دبل • لحم عراقي 100% | 2,500 |
-| كباب لحم ومعلاك | لفة معلاك | صمون دبل | 3,000 |
-| كباب وتكة وكص دجاج | لفة كباب دجاج | صمون دبل | 2,000 |
-| كباب وتكة وكص دجاج | لفة تكة دجاج | صمون دبل | 2,000 |
-| كباب وتكة وكص دجاج | كيلو كباب دجاج | شيش دبل | 15,000 |
-| كباب وتكة وكص دجاج | نفر كباب دجاج | شيش دبل | 12,000 |
-| كباب وتكة وكص دجاج | لفة كص دجاج | — | 2,000 |
-| الدجاج | نصف دجاجة ناشف | مع صحن مقبلات | 7,000 |
-| الدجاج | دجاجة ناشف | مع صحنين مقبلات | 14,000 |
-| الدجاج | ربع دجاجة على التمن | مع صحن مقبلات | 8,000 |
-| السمك | كيلو سمك عراقي | مع مقبلات وتمن أحمر | 10,000 |
-| الشوربة والمخلمة | نفر شوربة | — | 3,000 |
-| الشوربة والمخلمة | نفر مخلمة | — | 4,000 |
-| الإضافات | صحن مقبلات إضافي | — | 1,500 |
+| Dulaimiya trays | Two-portion Dulaimiya + half chicken | Two appetizer plates | 16,000 |
+| Dulaimiya trays | 3-portion Dulaimiya + whole chicken | 3 appetizer plates | 25,000 |
+| Meat kebab and offal | Meat-kebab portion | Double skewer • 100% Iraqi meat | 16,000 |
+| Meat kebab and offal | Meat-kebab sandwich | Double samoon • 100% Iraqi meat | 2,500 |
+| Meat kebab and offal | Offal sandwich | Double samoon | 3,000 |
+| Chicken kebab, tikka and shawarma | Chicken-kebab sandwich | Double samoon | 2,000 |
+| Chicken kebab, tikka and shawarma | Chicken-tikka sandwich | Double samoon | 2,000 |
+| Chicken kebab, tikka and shawarma | Kilogram of chicken kebab | Double skewer | 15,000 |
+| Chicken kebab, tikka and shawarma | Chicken-kebab portion | Double skewer | 12,000 |
+| Chicken kebab, tikka and shawarma | Chicken-shawarma sandwich | — | 2,000 |
+| Chicken | Half Nashif chicken | One appetizer plate | 7,000 |
+| Chicken | Whole Nashif chicken | Two appetizer plates | 14,000 |
+| Chicken | Quarter chicken over rice | One appetizer plate | 8,000 |
+| Fish | Kilogram of Iraqi fish | Appetizers and red rice | 10,000 |
+| Soup and makhlama | Soup portion | — | 3,000 |
+| Soup and makhlama | Makhlama portion | — | 4,000 |
+| Extras | Extra appetizer plate | — | 1,500 |
 
-| الأجنحة | نفر أجنحة — ٨ قطع | مع تمن أحمر | 8,000 |
-| الأجنحة | نصف نفر أجنحة — ٤ قطع | مع تمن أحمر | 4,000 |
+| Wings | 8-piece wings portion | Red rice | 8,000 |
+| Wings | 4-piece half wings portion | Red rice | 4,000 |
 
-أضيفت الأجنحة بطلب لاحق من المالك؛ v2 هي القائمة الحالية. النسخة v1 محفوظة تاريخياً. [سجل الإضافة](../log/2026-10-17-dine-in-wings.md).
+Wings were added by a subsequent owner request; v2 is current. Version v1 remains historical. [Addition log](../log/2026-10-17-dine-in-wings.md).
 
-[Canva قابل للتعديل](https://www.canva.com/d/ivEtZenR4A8McLn) بمعرف `DAHYPtlHqpI`. [الصورة النهائية](../../outputs/menus/dine-in/v2/jannat-baghdad-dine-in-final.png)، ومصدر HTML والبيانات في المجلد نفسه. رقم التواصل التجاري داخل المخرج فقط خارج فهرسة الذاكرة. منيو العروض السابق محفوظ مستقلاً، ولا تعديلات على حسابات التطبيق. لا نشر ولا إنفاق. [سجل التنفيذ والتحقق](../log/2026-10-17-dine-in-menu.md).
+[Editable Canva](https://www.canva.com/d/ivEtZenR4A8McLn), ID `DAHYPtlHqpI`. [Final image](../../outputs/menus/dine-in/v2/jannat-baghdad-dine-in-final.png), with HTML/data sources in the same folder. The business contact number exists only in outputs outside memory indexing. The previous promotional menu remains independent; application accounts are unchanged. No publication or spending. [Implementation/verification log](../log/2026-10-17-dine-in-menu.md).

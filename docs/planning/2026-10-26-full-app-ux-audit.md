@@ -71,11 +71,11 @@ These are reviewer assessments, not automated certification scores.
 
 **Area:** Purchases · **Evidence:** Observed
 
-With no suppliers, Purchases still offers Add invoice. Clicking it throws “اختار مورداً أولاً.”, creates no visible drawer, and leaves an internal drawer state that prevents navigation.
+With no suppliers, Purchases still offers Add invoice. Clicking it throws an Arabic exception meaning “Select a supplier first.”, creates no visible drawer, and leaves an internal drawer state that prevents navigation.
 
 **Why it matters:** A first-time owner meets a silent dead end before recording the first purchase. Escape is an undocumented recovery.
 
-**Proposed change:** Offer “إضافة مورد وبدء فاتورة” when no suppliers exist. Validate prerequisites before opening the entry form; show any failure visibly and clear the pending state.
+**Proposed change:** Offer “Add a supplier and start an invoice” when no suppliers exist. Validate prerequisites before opening the entry form; show any failure visibly and clear the pending state.
 
 **Acceptance check:** Start with empty accounts, add the first supplier, continue directly into the invoice, and verify navigation still works after canceling.
 
@@ -87,7 +87,7 @@ With no suppliers, Purchases still offers Add invoice. Clicking it throws “ا�
 
 **Area:** Daily accounts · **Evidence:** Observed
 
-From the statement, editing a 25 October expense while the selected day is 26 October opens “إضافة مصروف”, with an empty amount and the 26 October date. The edit action passes an ID without its date.
+From the statement, editing a 25 October expense while the selected day is 26 October opens “Add expense”, with an empty amount and the 26 October date. The edit action passes an ID without its date.
 
 **Why it matters:** The owner cannot reliably correct an older expense. Validation prevents a duplicate expense ID from being saved, but the resulting failure is confusing; this is not evidence of existing data corruption.
 
@@ -123,7 +123,7 @@ The daily-total editing drawer shows 42,500 as the calculated category sum in th
 
 **Why it matters:** It invites the owner to copy a number that violates the approved daily/cash separation.
 
-**Proposed change:** Preview only the daily share in this drawer. Label it “مجموع حصص اليومي” and show any cash total separately, if needed.
+**Proposed change:** Preview only the daily share in this drawer. Label it “Total daily-funded shares” and show any cash total separately, if needed.
 
 **Acceptance check:** With shared and cash-only expenses, the preview must equal the automatic daily total on the page.
 
@@ -137,7 +137,7 @@ With an existing balance of 60,000, a new 5,000 invoice and immediate 5,000 paym
 
 **Why it matters:** The owner cannot know which figure to trust at the moment of saving.
 
-**Proposed change:** Use one draft calculation for the entire form: balance before + new invoice − payment. Reuse its result in every summary and use “يبقى عليك للمورد”.
+**Proposed change:** Use one draft calculation for the entire form: balance before + new invoice − payment. Reuse its result in every summary and use “Amount still owed to the supplier”.
 
 **Acceptance check:** The invoice summary, allocation note and saved ledger must agree for unpaid, partial, full and excess-to-debt payments.
 
@@ -169,7 +169,7 @@ Clearing the visible date leaves saleDraft.date at 2026-10-26 and checkout enabl
 
 **Why it matters:** The date seen by the cashier is no longer the date used by the transaction; a long-running session can also retain yesterday’s date.
 
-**Proposed change:** Keep visible and stored dates synchronized, block checkout on an invalid date, and show a prominent historical-date badge with “الرجوع لليوم”. Refresh an empty new draft at day change; never silently change a populated draft.
+**Proposed change:** Keep visible and stored dates synchronized, block checkout on an invalid date, and show a prominent historical-date badge with “Return to today”. Refresh an empty new draft at day change; never silently change a populated draft.
 
 **Acceptance check:** Clear the date, select yesterday, and cross midnight in a simulated clock; verify the actual saved date and visible warning.
 
@@ -211,7 +211,7 @@ A restock dated 27 October makes inventory show 30 available on 26 October, whil
 
 **Why it matters:** The owner sees two conflicting stock figures and may promise goods not yet received.
 
-**Proposed change:** Use today’s date for “المتوفر حالياً”. If future receipts are allowed, show them separately as scheduled, with an explicit as-of date.
+**Proposed change:** Use today’s date for “Currently available”. If future receipts are allowed, show them separately as scheduled, with an explicit as-of date.
 
 **Acceptance check:** A future restock must not change today’s available quantity or low-stock indicator.
 
@@ -239,7 +239,7 @@ Entering an expense amount and pressing Escape loses it; reopening is blank. Clo
 
 **Why it matters:** One accidental click can lose a long purchase invoice or a partially entered payment.
 
-**Proposed change:** Track dirty forms. Preserve a local draft or ask “تجاهل التغييرات؟” only when something changed. Offer Continue editing / Discard. Apply the same policy to menus and app close.
+**Proposed change:** Track dirty forms. Preserve a local draft or ask “Discard changes?” only when something changed. Offer Continue editing / Discard. Apply the same policy to menus and app close.
 
 **Acceptance check:** Exercise Escape, backdrop, close button, navigation, native menu and app quit with both clean and dirty forms.
 
@@ -307,7 +307,7 @@ At the supported 900×580 window with Electron zoom set to 200%, the effective v
 
 **Area:** Workers · **Evidence:** Observed
 
-Selecting “المتابعة لغاية” 25 October reduces the summary to 1,000, but the history still includes the 26 October contribution.
+Selecting an end date of 25 October reduces the summary to 1,000, but the history still includes the 26 October contribution.
 
 **Why it matters:** Visible rows do not reconcile with the summary; users can mistake later entries for included entries.
 
@@ -325,7 +325,7 @@ The sidebar puts selling, purchase setup, daily accounts, workers and settings i
 
 **Why it matters:** New users must infer which pages form one task and where to go next.
 
-**Proposed change:** Group destinations under البيع والمخزن, المشتريات والموردون, الحسابات, and الإدارة. Keep customizable shortcuts; follow D64 for the owner’s requested pop-out navigation.
+**Proposed change:** Group destinations under Sales and Inventory, Purchases and Suppliers, Accounts, and Administration. Keep customizable shortcuts; follow D64 for the owner’s requested pop-out navigation.
 
 **Acceptance check:** A first-time user can locate selling, supplier payment and backup without exploring every section.
 
@@ -337,11 +337,11 @@ The sidebar puts selling, purchase setup, daily accounts, workers and settings i
 
 **Area:** Navigation · **Evidence:** Design
 
-Sales repeats history and inventory links already present in the top shortcuts and sidebar. Most pages devote a large header to slogans such as “كل يوم، حسابه واضح.” while the actual page name is a small eyebrow.
+Sales repeats history and inventory links already present in the top shortcuts and sidebar. Most pages devote a large header to slogans such as “Clear accounts, every day.” while the actual page name is a small eyebrow.
 
 **Why it matters:** The app spends space explaining itself instead of showing the task, especially on small laptop windows.
 
-**Proposed change:** Use the actual task as the heading—المصاريف اليومية, القاصة, المخزن—and one compact context line. Keep page-specific actions; avoid repeating navigation already visible.
+**Proposed change:** Use the actual task as the heading—Daily Expenses, Cashbox, Inventory—and one compact context line. Keep page-specific actions; avoid repeating navigation already visible.
 
 **Acceptance check:** At 900×580, useful data and the primary task appear earlier without removing important controls.
 
@@ -379,7 +379,7 @@ Six independent dropdowns allow the same destination repeatedly. The resulting b
 
 **Area:** Filtering · **Evidence:** Source
 
-Statement and purchase filters apply immediately; sales history requires “عرض”. Changes to auto-applied filters rebuild the entire page. Reversed date ranges are explicitly checked only in sales history.
+Statement and purchase filters apply immediately; sales history requires “Show”. Changes to auto-applied filters rebuild the entire page. Reversed date ranges are explicitly checked only in sales history.
 
 **Why it matters:** Users can mistake unsubmitted sales filters for active ones, or read a reversed range as an empty dataset.
 
@@ -421,11 +421,11 @@ Checkout saves successfully and always opens a modal receipt, which must be dism
 
 **Area:** Sales · **Evidence:** Design
 
-The button says “إتمام البيع”. Exact payment is assumed, while the explanatory cash hint is hidden by the fixed-layout CSS.
+The button says “Complete sale”. Exact payment is assumed, while the explanatory cash hint is hidden by the fixed-layout CSS.
 
 **Why it matters:** A new cashier may think the action only creates an order rather than confirming receipt of money.
 
-**Proposed change:** Keep the requested no-amount-entry checkout. Use “تأكيد البيع النقدي” or a short “تم استلام الإجمالي نقداً” cue and include the amount in the action or adjacent confirmation.
+**Proposed change:** Keep the requested no-amount-entry checkout. Use “Confirm cash sale” or a short “Total received in cash” cue and include the amount in the action or adjacent confirmation.
 
 **Acceptance check:** A new user understands that tapping the action records paid cash, without adding another amount field.
 
@@ -451,11 +451,11 @@ The date and discount always occupy space, even in an ordinary full-price sale. 
 
 **Area:** Sales · **Evidence:** Source
 
-A product says “المتوفر 20” even after some of those units are in the current bill; the disabled state is based on available minus in-cart quantity.
+A product says “Available: 20” even after some of those units are in the current bill; the disabled state is based on available minus in-cart quantity.
 
 **Why it matters:** The tile can become disabled while still displaying a positive available number, without explaining why.
 
-**Proposed change:** Show “بالمخزن 20 · بالطلب 2” or a remaining-to-add figure. Explain a disabled tile as “الكمية كلها بالطلب” or “نافد”.
+**Proposed change:** Show “In stock: 20 · In order: 2” or a remaining-to-add figure. Explain a disabled tile as “All available quantity is in the order” or “Out of stock”.
 
 **Acceptance check:** At maximum cart quantity, the tile text explains the disabled state without relying on color.
 
@@ -507,11 +507,11 @@ History supports dates and invoice/item search, but has no status or order-type 
 
 **Area:** Inventory · **Evidence:** Observed
 
-Searching for a nonexistent item in a populated inventory shows “أضف أول صنف للمخزن”.
+Searching for a nonexistent item in a populated inventory shows “Add your first inventory item”.
 
 **Why it matters:** It falsely implies the inventory is empty and encourages an unnecessary duplicate item.
 
-**Proposed change:** Use “ماكو صنف مطابق” with Clear search. Reserve first-item onboarding for an actually empty catalog.
+**Proposed change:** Use “No matching item” with Clear search. Reserve first-item onboarding for an actually empty catalog.
 
 **Acceptance check:** Empty catalog and zero search matches must have different messages and actions.
 
@@ -567,7 +567,7 @@ Stock history is read-only and offers no edit or reversal. Session Undo may help
 
 **Why it matters:** An incorrect opening quantity or restock date remains hard to explain and repair accurately.
 
-**Proposed change:** Provide a controlled “تصحيح حركة” or reversal linked to the original, with reason and date validation. Preserve the original event rather than silently overwriting history.
+**Proposed change:** Provide a controlled “Correct movement” or reversal linked to the original, with reason and date validation. Preserve the original event rather than silently overwriting history.
 
 **Acceptance check:** Correct an old mistaken stock entry after restart and explain both movements in the item history.
 
@@ -621,11 +621,11 @@ The summary adds every material’s quantities into carton/piece totals even whe
 
 **Area:** Purchases · **Evidence:** Source
 
-The invoice hint says a new material is saved “للمورد”, and the supplier tab says “المواد الدائمية”, while the implementation uses one catalog across all suppliers.
+The invoice hint says a new material is saved “for the supplier”, and the supplier tab says “Permanent materials”, while the implementation uses one catalog across all suppliers.
 
 **Why it matters:** The owner may change a default price believing it applies to one supplier only.
 
-**Proposed change:** Consistently call it “كتالوج مواد مشترك لكل الموردين”. Explain that it fills defaults, while each invoice retains its own price; keep the catalog’s scope visible in supplier views.
+**Proposed change:** Consistently call it “Shared material catalog for all suppliers”. Explain that it fills defaults, while each invoice retains its own price; keep the catalog’s scope visible in supplier views.
 
 **Acceptance check:** A user can predict where a new material and changed default price will appear.
 
@@ -677,11 +677,11 @@ The categories screen only adds a category or changes primary/additional type. T
 
 **Area:** Daily accounts · **Evidence:** Design
 
-Every category absent from the selected day is rendered as an empty expense row. Large category sets therefore create long lists of “+ إضافة مبلغ”.
+Every category absent from the selected day is rendered as an empty expense row. Large category sets therefore create long lists of “+ Add amount”.
 
 **Why it matters:** Recorded expenses and the remaining-balance action become harder to find among unused slots.
 
-**Proposed change:** Show recorded entries first and offer a compact frequently used category picker. Put unused categories behind “إضافة مصروف” or a collapsed area.
+**Proposed change:** Show recorded entries first and offer a compact frequently used category picker. Put unused categories behind “Add expense” or a collapsed area.
 
 **Acceptance check:** A day with 3 expenses and 100 categories should primarily show the 3 recorded entries.
 
@@ -695,7 +695,7 @@ Sales, daily total, overall balance, cash expenses, remaining cash and transfer 
 
 **Why it matters:** An owner must piece together the correct closing sequence and remember whether the cash count includes earlier sales.
 
-**Proposed change:** Add a compact “مراجعة اليوم” flow: review sales and funding shares → count actual remaining cash → preview the approved balance calculation → optionally transfer to the safe. Preserve existing formulas.
+**Proposed change:** Add a compact “Review day” flow: review sales and funding shares → count actual remaining cash → preview the approved balance calculation → optionally transfer to the safe. Preserve existing formulas.
 
 **Acceptance check:** Close a day with shared expenses and sales without double-counting or navigating back and forth.
 
@@ -707,11 +707,11 @@ Sales, daily total, overall balance, cash expenses, remaining cash and transfer 
 
 **Area:** Daily accounts · **Evidence:** Design
 
-“إيداع بالقاصة” on the cash card adds a direct deposit. The similarly named remaining-balance action transfers daily cash and reduces the daily remainder.
+“Deposit in cashbox” on the cash card adds a direct deposit. The similarly named remaining-balance action transfers daily cash and reduces the daily remainder.
 
 **Why it matters:** Choosing the wrong entry point can record the same physical movement with a different accounting effect.
 
-**Proposed change:** Distinguish “إيداع خارجي للقاصة” from “تحويل من رصيد اليوم”. Before saving, show source, destination and both balances after the action.
+**Proposed change:** Distinguish “External cashbox deposit” from “Transfer from daily balance”. Before saving, show source, destination and both balances after the action.
 
 **Acceptance check:** A first-time user moving today’s cash into the safe chooses the transfer path without needing documentation.
 
@@ -767,7 +767,7 @@ Opening a worker receipt pre-fills the full available pooled balance, not an emp
 
 **Why it matters:** A quick Save can allocate the entire pool to one worker accidentally. The domain correctly permits pooled receipts; the default is the risky part.
 
-**Proposed change:** Start with an empty amount and offer an explicit “استلام كل المتجمع” action with a before/after preview.
+**Proposed change:** Start with an empty amount and offer an explicit “Receive all accumulated funds” action with a before/after preview.
 
 **Acceptance check:** A normal receipt requires a deliberate amount choice, and full-pool receipt remains available without changing the accounting rules.
 
@@ -819,7 +819,7 @@ Export supports daily expenses, a purchase invoice and a sale receipt. There is 
 
 **Area:** Backup and reports · **Evidence:** Source
 
-PDF success only shows “تم حفظ ملف PDF” even though the bridge returns the file path. Backup success is similarly generic.
+PDF success only shows “PDF saved” even though the bridge returns the file path. Backup success is similarly generic.
 
 **Why it matters:** The user may repeat an export or search Finder to discover where it went.
 
@@ -833,7 +833,7 @@ PDF success only shows “تم حفظ ملف PDF” even though the bridge retur
 
 **Area:** Backup and reports · **Evidence:** Design
 
-Sale PDFs and on-screen receipts are headed دفتر / حسابات المطعم, without configurable restaurant identity or sale time.
+Sale PDFs and on-screen receipts are headed Daftar / Restaurant Accounts, without configurable restaurant identity or sale time.
 
 **Why it matters:** A receipt shared with a customer is less recognizable as the restaurant’s document.
 
@@ -877,7 +877,7 @@ The submit footer belongs to the scrollable drawer form, below all fields and ex
 
 **Area:** Forms · **Evidence:** Source
 
-A shared form-error box scrolls into view, but inputs generally receive no aria-invalid/aria-describedby state or targeted field error. Some low-level validation falls back to “ملف البيانات غير صالح.”
+A shared form-error box scrolls into view, but inputs generally receive no aria-invalid/aria-describedby state or targeted field error. Some low-level validation falls back to “Invalid data file.”
 
 **Why it matters:** Users must hunt for the field to correct, especially in large invoices.
 
@@ -961,11 +961,11 @@ The CSS has successive overrides for sales layout, responsive rules and sidebar 
 
 **Area:** Copy · **Evidence:** Design
 
-Many drawers—including products and suppliers—show “دفتر / سجل اليوم”. Read-only receipts say “متابعة”. Singular counts display forms such as “1 أصناف”.
+Many drawers—including products and suppliers—show “Daftar / Day Log”. Read-only receipts say “Continue”. Singular counts display forms such as “1 products”.
 
 **Why it matters:** Small ambiguities reduce orientation and make a polished app feel assembled from unrelated screens.
 
-**Proposed change:** Use the actual module in form context, “بيع جديد” or “إغلاق الوصل” for receipt actions, and Arabic plural rules for counts. Keep the friendly Iraqi voice consistent.
+**Proposed change:** Use the actual module in form context, “New sale” or “Close receipt” for receipt actions, and Arabic plural rules for counts. Keep the friendly Iraqi voice consistent.
 
 **Acceptance check:** A user can identify the module and the effect of an action from its label alone.
 

@@ -1,13 +1,13 @@
-# 2026-10-16 — مينيو عربي لمطعم شعبي
+# 2026-10-16 — Arabic menu for a traditional local restaurant
 
-الحالة: بحث المرشحين وتحديث المصدر مكتملان؛ لا تصميم أو نشر. التاريخ: 2026-10-16. المالك: مالك المطعم. المصدر: رفض المالك القوالب السابقة وطلبه قالباً شعبياً بالعربي ومميزاً ومفهوماً.
+Status: candidate research and source update completed; no design or publication. Date: 2026-10-16. Owner: restaurant owner. Source: the owner rejected the previous templates and requested a distinctive, understandable Arabic template suitable for a traditional local restaurant.
 
-## التغيير والسبب
+## Change and rationale
 
-حدّث [CAM-0001](../planning/campaigns/CAM-0001-reduced-price-menu.md) لتمييز القوالب السابقة المرفوضة عن مرشحين جديدين من مكتبة Canva العربية: قالب لمطعم كبدة وحواوشي، وقالب ريترو لمطعم مصري. الاختيار النهائي ما زال بيد المالك. متطلبات مقارنة السعر القديم والجديد مستمرة. التوجيه الشعبي يخص المينيو ولا يلغي هوية واجهة دفتر.
+Updated [CAM-0001](../planning/campaigns/CAM-0001-reduced-price-menu.md) to distinguish the rejected earlier templates from two new candidates in Canva's Arabic library: a liver-and-hawawshi restaurant template and a retro Egyptian restaurant template. The final choice remains with the owner. Old-versus-new price comparison remains required. This traditional-menu direction applies to the menu and does not cancel Daftar's application UI identity.
 
-## التحقق والقيود
+## Verification and limits
 
-عُثر على اسمي القالبين وروابطهما عبر صفحات Canva الرسمية العربية، وليس باستنتاج من أسماء أجنبية. تعذر فتح المعاينات في المتصفح بسبب خطأ سياسة ترويسات الطلب. لا ادعاء فحص بصري أو تجربة تعديل أو مجانية. التغيير وثائق فقط؛ لا حاجة لإعادة اختبارات التطبيق التي نجحت في المهمة السابقة، ولا تغيير للحسابات أو التطبيق.
+The two template names and links were found on official Arabic Canva pages, not inferred from foreign-language names. Browser previews could not be opened because of a request-header policy error. No visual inspection, editing trial or free-availability claim is made. This is documentation only; the application tests that passed in the previous task did not need to run again. Neither the accounts nor the application changed.
 
-يُفحص التحديث بـ `git diff --check` وفحص الروابط المحلية، ثم `./scripts/memory sync` و`./scripts/memory check`. حالة التسليم النهائية تثبتها نتيجة الفحص في هذه الجلسة؛ لا تكفي رسالة الطابور. الخطوة التالية اختيار قالب مناسب ثم توفير أصناف المطعم والأسعار.
+The update is checked with `git diff --check` and local-link validation, followed by `./scripts/memory sync` and `./scripts/memory check`. Final delivery status is established by this session's check result; queue acceptance is insufficient. Next: select a suitable template, then supply the restaurant's items and prices.
