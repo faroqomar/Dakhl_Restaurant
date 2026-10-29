@@ -1,0 +1,31 @@
+docs/log/2026-10-29-phase01-build.md
+  s_6f37b289fde16b::t_21ff9d1099a414 14-15
+docs/phases/01-build-evidence.md
+  s_6f37b289fde16b::t_71f5fe4cb4d7c3 62-63
+outputs/memory/phase01-build-delivery-before-pin-check.json
+  s_6f37b289fde16b::t_b0f9990a446075 1-66
+outputs/memory/phase01-build-delivery.json
+  s_6f37b289fde16b::t_b80e17faee3015 4-5,7,9,26-29,31,34,37-39,48-49,56
+outputs/phase01-build/final-engine-checkout.json
+  s_6f37b289fde16b::t_9d98b3e5c46860 1-7
+outputs/phase01-build/final-engine-pin-verification.json
+  s_6f37b289fde16b::t_cade8415714fe1 1-8
+outputs/phase01-build/final-engine-source-check.log
+  s_6f37b289fde16b::t_61fd0f43045704 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "19cd88056b1792e0e453aa0348baef51ab170644",
+  "prompts": {},
+  "sessions": {
+    "s_6f37b289fde16b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1868f-72d4-7453-b738-169f9e9d9bf4",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
