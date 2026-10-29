@@ -49,3 +49,7 @@ Owner direction, 2026-10-28: develop Madar_Engine alongside the app, keeping sha
 ## Engine/consumer implementation contract
 
 [Ownership, package use, documentation, safe diagnostics and verification](how-to/engine-consumer-contract.md) apply to every new phase and changed capability.
+
+## Phase execution, delays and automation
+
+[Required audit procedure](how-to/phase-execution-audit.md), [journal template](templates/phase-execution.md) and [Phase01 partial retrospective/live journal](log/phase-01-execution.md). Every phase records actual work, failures, wait causes, unknown costs and candidates for reliable automation.
