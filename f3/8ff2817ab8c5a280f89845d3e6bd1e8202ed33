@@ -1,0 +1,216 @@
+outputs/phase01-step4/android-repaired-key-back.json
+  s_6f37b289fde16b::t_7c98c5fbdac883 1-10
+outputs/phase01-step4/android-repaired-invoice-shell.json
+  s_6f37b289fde16b::t_7c98c5fbdac883 1-142
+outputs/phase01-step4/talkback-lifecycle.json
+  s_6f37b289fde16b::t_b0fe8b6205c755 10-17
+  s_6f37b289fde16b::t_ac2480ec79f7a9 1-9,18
+outputs/phase01-step4/android-repaired-edge-inventory.json
+  s_6f37b289fde16b::t_7c98c5fbdac883 1-132
+outputs/phase01-step4/android-after-talkback-off.json
+  s_6f37b289fde16b::t_b0fe8b6205c755 1-92
+outputs/phase01-step4/android-back-menu.json
+  s_6f37b289fde16b::t_7018482709e1bc 1-192
+outputs/phase01-step4/final/ios-native-current.json
+  s_6f37b289fde16b::t_b77e4208fbd3a5 1-15
+docs/phases/01-build-evidence.md
+  s_6f37b289fde16b::t_9f9a004c8fc194 3
+outputs/phase01-step4/talkback-stop.request
+  s_6f37b289fde16b::t_ac20a162601fd1 1
+outputs/phase01-step4/final/documentation-check.json
+  s_6f37b289fde16b::t_9c62c2815f5b86 1-13
+outputs/phase01-step4/android-back-sales.json
+  s_6f37b289fde16b::t_7018482709e1bc 1
+outputs/phase01-step4/android-repaired-edge-sales.json
+  s_6f37b289fde16b::t_7c98c5fbdac883 1-352
+docs/phases/README.md
+  s_6f37b289fde16b::t_a33a6966d5f23d 33-34
+outputs/memory/phase01-step4-delivery.json
+  s_6f37b289fde16b::t_f8f2e353fbf3ae 1-4,6-36,74
+  s_6f37b289fde16b::t_fd7ca147cca598 5,37-73
+outputs/phase01-step4/android-repaired-invoice-form.json
+  s_6f37b289fde16b::t_7c98c5fbdac883 1-152
+outputs/phase01-step4/review-start.json
+  s_6f37b289fde16b::t_53070e82ebaf6d 1-30
+PLANS.md
+  s_6f37b289fde16b::t_a33a6966d5f23d 3-5
+outputs/phase01-step4/android-preflight-tree.json
+  s_6f37b289fde16b::t_7425a772aa3951 1-372
+docs/reference/phase01-shell-contract.md
+  s_6f37b289fde16b::t_9f9a004c8fc194 42-47
+outputs/phase01-step4/final/source-manifest.json
+  s_6f37b289fde16b::t_9c62c2815f5b86 1-90
+outputs/phase01-step4/android-repaired-inventory.json
+  s_6f37b289fde16b::t_7c98c5fbdac883 1-132
+docs/phases/01-step4-review.md
+  s_6f37b289fde16b::t_9c62c2815f5b86 3,18-19,27,30,32,38,40,51
+  s_6f37b289fde16b::t_ba2020d0d40424 1-2,4-17,20-26,28-29,33-34,50,52,54
+  s_6f37b289fde16b::t_9f9a004c8fc194 31,35-37,39,41-49,53,55
+outputs/phase01-step4/android-repaired-menu.json
+  s_6f37b289fde16b::t_7c98c5fbdac883 1-192
+outputs/phase01-step4/android-native-back-progress.json
+  s_6f37b289fde16b::t_7c98c5fbdac883 1-12
+outputs/phase01-step4/talkback-service-active.txt
+  s_6f37b289fde16b::t_b18b13c23305a9 1-6
+outputs/phase01-step4/ios-native-back-acceptance.json
+  s_6f37b289fde16b::t_c6cbf0ac238bc4 1-25
+outputs/phase01-step4/talkback-native-touch-events.txt
+  s_6f37b289fde16b::t_d3aed8b485ae12 1-24
+docs/how-to/repeated-problems.md
+  s_6f37b289fde16b::t_9f9a004c8fc194 136-146
+  s_6f37b289fde16b::t_c4b3e0680b6bdf 147-148
+outputs/phase01-step4/android-back-inventory.json
+  s_6f37b289fde16b::t_7018482709e1bc 1-132
+outputs/phase01-step4/android-repaired-start.json
+  s_6f37b289fde16b::t_7c98c5fbdac883 1-352
+outputs/phase01-step4/android-repaired-invoice-menu.json
+  s_6f37b289fde16b::t_7c98c5fbdac883 1-192
+PHASES.md
+  s_6f37b289fde16b::t_209c317b25213b 18,65
+  s_6f37b289fde16b::t_9f9a004c8fc194 56,60,62,70,296-297
+  s_6f37b289fde16b::t_a33a6966d5f23d 291-295
+outputs/phase01-step4/final/verification.json
+  s_6f37b289fde16b::t_9c62c2815f5b86 1-31
+outputs/memory/phase01-step4-canonical-check.json
+  s_6f37b289fde16b::t_abf98cbb068703 1-19
+outputs/phase01-step4/android-final-restored-sales.json
+  s_6f37b289fde16b::t_f50fc7854dee8b 1-352
+outputs/phase01-step4/android-native-back-current.json
+  s_6f37b289fde16b::t_f50fc7854dee8b 9-13
+  s_6f37b289fde16b::t_9984501e77583e 1-8,14
+outputs/phase01-step4/android-installed-provenance.json
+  s_6f37b289fde16b::t_588341b35ea4af 1-9
+outputs/phase01-step4/android-repaired-edge-menu.json
+  s_6f37b289fde16b::t_7c98c5fbdac883 1-192
+docs/log/2026-10-29-phase01-step4-review.md
+  s_6f37b289fde16b::t_9f9a004c8fc194 2,4,6-11
+  s_6f37b289fde16b::t_9c62c2815f5b86 1,3,5
+test/ui/README.md
+  s_6f37b289fde16b::t_9f9a004c8fc194 23-24
+outputs/phase01-step4/android-cleanup-current.json
+  s_6f37b289fde16b::t_3a31be827b702c 1-132
+lib/app/app.dart
+  s_6f37b289fde16b::t_0c50c92b64b6fb 14,42,70-86,95,99-118,148-160,162-179,369,382-383,398-399
+lib/app/ios_shell_back_gesture.dart
+  s_6f37b289fde16b::t_7626fcf671d32f 1-135
+outputs/phase01-step4/android-accessibility-baseline.json
+  s_6f37b289fde16b::t_c4705480d2f7ce 1-9
+outputs/phase01-step4/android-final-start-tree.json
+  s_6f37b289fde16b::t_11e3a2c9c5688e 1-352
+outputs/phase01-step4/android-gesture-after.json
+  s_6f37b289fde16b::t_4a4be2c9b51dd9 1-352
+outputs/phase01-step4/android-gesture-inventory.json
+  s_6f37b289fde16b::t_1c53adc987479a 1-132
+outputs/phase01-step4/android-gui-switch.json
+  s_6f37b289fde16b::t_05682ab5f1a134 1-6
+outputs/phase01-step4/android-os-back-observed.json
+  s_6f37b289fde16b::t_0793b1dafcfe98 1-15
+outputs/phase01-step4/android-registration-analyze.log
+  s_6f37b289fde16b::t_7b7f499404febf 1-2
+outputs/phase01-step4/android-registration-green.log
+  s_6f37b289fde16b::t_bc1adc6f8adcd7 1-25
+outputs/phase01-step4/android-registration-red.log
+  s_6f37b289fde16b::t_9fcade3e361b35 1-33
+outputs/phase01-step4/android-repaired-dirty-back-first.json
+  s_6f37b289fde16b::t_02c668622c34e9 1-162
+outputs/phase01-step4/android-repaired-dirty-back-guard.json
+  s_6f37b289fde16b::t_b4a72d63bb88ed 1-52
+outputs/phase01-step4/android-repaired-dirty-q.json
+  s_6f37b289fde16b::t_7f861e88f0c291 1-82
+outputs/phase01-step4/android-repaired-dirty-retained.json
+  s_6f37b289fde16b::t_7e0fec62c04aca 1-82
+outputs/phase01-step4/android-repaired-main-build.log
+  s_6f37b289fde16b::t_f3f3bec278c294 1-8
+outputs/phase01-step4/android-repaired-main-install.log
+  s_6f37b289fde16b::t_4ae9800065c647 1-2
+outputs/phase01-step4/android-repaired-main-launch.log
+  s_6f37b289fde16b::t_2e09af151a6013 1-8
+outputs/phase01-step4/engine-checker-tests.log
+  s_6f37b289fde16b::t_24bc9a588796f3 1-29
+outputs/phase01-step4/final-analysis.log
+  s_6f37b289fde16b::t_4203ef2c72b4bd 1-2
+outputs/phase01-step4/final-engine-source.log
+  s_6f37b289fde16b::t_53674e130fdd68 1-2
+outputs/phase01-step4/final-format.log
+  s_6f37b289fde16b::t_b16a7b317f35b9 1
+outputs/phase01-step4/final-local-checks.json
+  s_6f37b289fde16b::t_aa66c248356993 1-111
+outputs/phase01-step4/final-tests.log
+  s_6f37b289fde16b::t_ff72be43ccdfc0 1-148
+outputs/phase01-step4/final/android-main-build.log
+  s_6f37b289fde16b::t_00c4c7eae33b22 1-8
+outputs/phase01-step4/final/android-main-install.log
+  s_6f37b289fde16b::t_c485556deffe3f 1-2
+outputs/phase01-step4/final/android-main-launch.log
+  s_6f37b289fde16b::t_37132c07a8cdfb 1-8
+outputs/phase01-step4/final/android-ready.json
+  s_6f37b289fde16b::t_a20ea233f0b7c2 1-5
+outputs/phase01-step4/final/app-analysis.log
+  s_6f37b289fde16b::t_6a71cfeb68b4d8 1-2
+outputs/phase01-step4/final/app-tests.log
+  s_6f37b289fde16b::t_810adc507d14f9 1-149
+outputs/phase01-step4/final/checks.json
+  s_6f37b289fde16b::t_78b2f891cff143 1-112
+outputs/phase01-step4/final/engine-source.log
+  s_6f37b289fde16b::t_e944e8ca7d6ce3 1-2
+outputs/phase01-step4/final/format.log
+  s_6f37b289fde16b::t_ddf853029cea7f 1
+outputs/phase01-step4/final/ios-main-build.log
+  s_6f37b289fde16b::t_4d17c7f2001e06 1-9
+outputs/phase01-step4/final/macos-main-build.log
+  s_6f37b289fde16b::t_486b065f9770d3 1-2
+outputs/phase01-step4/ios-back-analyze.log
+  s_6f37b289fde16b::t_7af36fb85b9dd9 1-2
+outputs/phase01-step4/ios-back-green.log
+  s_6f37b289fde16b::t_6b4b45349b529a 1-24
+outputs/phase01-step4/ios-back-red.log
+  s_6f37b289fde16b::t_94c81ac13bfb36 1-35
+outputs/phase01-step4/ios-edge-before-fix.json
+  s_6f37b289fde16b::t_ea013088db7d4d 1-34
+outputs/phase01-step4/ios-repaired-main-build.json
+  s_6f37b289fde16b::t_fa8397e55fb86f 1-13
+outputs/phase01-step4/ios-repaired-main-build.log
+  s_6f37b289fde16b::t_c0d7ce4b51d5b3 1-5
+outputs/phase01-step4/macos-repaired-main-build.log
+  s_6f37b289fde16b::t_245dd0fb046405 1-2
+outputs/phase01-step4/talkback-runtime-baseline.json
+  s_6f37b289fde16b::t_55b6950871eca0 1-4
+outputs/phase01-step4/tools/android-cleanup.py
+  s_6f37b289fde16b::t_545cdab5516314 1-14
+outputs/phase01-step4/tools/android-dirty-flow.py
+  s_6f37b289fde16b::t_d77156ff79691a 1-18
+outputs/phase01-step4/tools/android-repaired-flow.py
+  s_6f37b289fde16b::t_303abef12ba4ee 1-23
+outputs/phase01-step4/tools/android-ui.py
+  s_6f37b289fde16b::t_0d4936054e87d5 1-29
+outputs/phase01-step4/tools/final-checks.py
+  s_6f37b289fde16b::t_5c2084aeb6f050 1-19
+outputs/phase01-step4/tools/talkback-watchdog.py
+  s_6f37b289fde16b::t_b413b915152e75 1-27
+outputs/phase01-step4/unsaved-status-analysis.log
+  s_6f37b289fde16b::t_09bd794661e133 1-2
+outputs/phase01-step4/unsaved-status-green.log
+  s_6f37b289fde16b::t_ddb29e0e119348 1-13
+outputs/phase01-step4/unsaved-status-red.log
+  s_6f37b289fde16b::t_ee9f3d5126201c 1-35
+test/app/app_test.dart
+  s_6f37b289fde16b::t_debd647900758a 6-7,125-185,241-518
+test/app/ios_shell_back_gesture_test.dart
+  s_6f37b289fde16b::t_daf4c2dedd98a0 1-168
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f38ff2817ab8c5a280f89845d3e6bd1e8202ed33",
+  "prompts": {},
+  "sessions": {
+    "s_6f37b289fde16b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1868f-72d4-7453-b738-169f9e9d9bf4",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
