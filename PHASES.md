@@ -15,7 +15,7 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 | Phase | Name | Status | Branch | PR |
 | --- | --- | --- | --- | --- |
 | 00 | [Baseline and delivery setup](docs/planning/flutter-rebuild/phases/00.md) | BLOCKED | codex/phase00-engine-split | [Merged PR2](https://github.com/faroqomar/Dakhl_Restaurant/pull/2) |
-| 01 | [Design system, navigation and interaction shell](docs/planning/flutter-rebuild/phases/01.md) | BLOCKED — required reader acceptance pending | `codex/phase01-build` | — |
+| 01 | [Design system, navigation and interaction shell](docs/planning/flutter-rebuild/phases/01.md) | BLOCKED — required reader acceptance pending | `codex/phase01-build` | [Draft PR7](https://github.com/faroqomar/Dakhl_Restaurant/pull/7) |
 | 02 | [Local accounts, validation and safe persistence](docs/planning/flutter-rebuild/phases/02.md) | TODO | — | — |
 | 03 | [Sellable products and inventory](docs/planning/flutter-rebuild/phases/03.md) | TODO | — | — |
 | 04 | [Cash sales, saved receipt, drafts and held orders](docs/planning/flutter-rebuild/phases/04.md) | TODO | — | — |
@@ -64,7 +64,7 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 - **Benchmarks:** N/A — no numeric optimization requirement set; establish baseline, conditions and target before optimization.
 - **Independent review:** Plan review closed. Engine code/API/tests independently reviewed; app code review closed three P2s (modal retry, uncertain-commit overlap, visible Undo); UX review closed three P2s (desktop hints, menu identity/icons, inclusive760px boundary). Step3 focused reconciliation verified74/74 source hashes and honest reuse; Step4 final reconciliation independently verified78/78 current manifest hashes. Native images independently reviewed. Owner manually confirmed Mac ⌘3/⌘K both work. Step4 independent reviewers closed status/iOS-edge/Android-registration P2s with native Back evidence; genuine screen-reader traversal remains open.
 - **Staging / Rollback:** Isolated development data only. Real rollback/future-format preservation and fresh-process checks pass; stop development build to roll back UI, retain dedicated preferences DB. No production migration/deployment.
-- **PR:** —
+- **PR:** [Draft PR7](https://github.com/faroqomar/Dakhl_Restaurant/pull/7), depends on [engine PR4](https://github.com/faroqomar/Madar_Engine/pull/4); reader acceptance remains blocking. [Step5 record](docs/phases/01-pr-approval.md).
 - **User approval:** Step 3 authorizes the presented plan/build scope; existing Phase 00/01 designs and listed differences explicitly approved on 2026-10-29. Phase 00 native acceptance is not waived; no exact revision merge or deployment approval.
 - **Decisions / Lessons:** [Shell contract/setup](docs/reference/phase01-shell-contract.md); [prevention catalogue](docs/how-to/repeated-problems.md). Device Hub is the verified native app; absence of old Simulator.app is not an access blocker.
 - **Evidence:** [Current independent Step4 verdict](docs/phases/01-step4-review.md); [Current build results and remaining gates](docs/phases/01-build-evidence.md); [Step 1 readiness](docs/phases/01-scope-readiness.md); [Step 1.5 design review](docs/phases/01-penpot-design-review.md); [design task log](docs/log/2026-10-29-phase01-penpot-design.md). [Step 2 plan/log](docs/log/2026-10-29-phase01-implementation-plan.md). [Step 3 approval and native preflight](docs/log/2026-10-29-phase01-step3-preflight.md). Native artifact evidence is separate from runtime verification.
