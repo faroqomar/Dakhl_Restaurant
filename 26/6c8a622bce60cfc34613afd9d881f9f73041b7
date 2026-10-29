@@ -1,0 +1,23 @@
+PHASES.md
+  s_6f37b289fde16b::t_1a5dcd0b6e7947 18,67
+docs/how-to/repeated-problems.md
+  s_6f37b289fde16b::t_c1887b73e9ca28 149-152
+docs/phases/01-pr-approval.md
+  s_6f37b289fde16b::t_0b1d96f5e4927a 1-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "266c8a622bce60cfc34613afd9d881f9f73041b7",
+  "prompts": {},
+  "sessions": {
+    "s_6f37b289fde16b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1868f-72d4-7453-b738-169f9e9d9bf4",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
