@@ -1,0 +1,29 @@
+AGENTS.md
+  s_6f37b289fde16b::t_fe362f0a02bcbc 361-367
+docs/README.md
+  s_6f37b289fde16b::t_b3e51774d47a2e 52-55
+docs/how-to/phase-execution-audit.md
+  s_6f37b289fde16b::t_db2be46f71c7aa 1-29
+docs/log/2026-10-29-phase-audit-rule.md
+  s_6f37b289fde16b::t_884cdca3d3ec65 1-9
+docs/log/phase-01-execution.md
+  s_6f37b289fde16b::t_a2c3b2c6b000d8 1-74
+docs/templates/phase-execution.md
+  s_6f37b289fde16b::t_3458b9f060e656 1-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2e4bbbfef5baba9122748ea16f25addabe13663f",
+  "prompts": {},
+  "sessions": {
+    "s_6f37b289fde16b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1868f-72d4-7453-b738-169f9e9d9bf4",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
