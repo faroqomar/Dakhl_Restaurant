@@ -1,0 +1,21 @@
+outputs/dev-dashboard/review-corrections/README.md
+  s_6f37b289fde16b::t_7bd6a535935eab 1-17
+outputs/dev-dashboard/review-corrections/profile-results.json
+  s_6f37b289fde16b::t_cc7726ab50dcc2 1-326
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4dc42655bc333860a7d860d1abe36a519eecd80e",
+  "prompts": {},
+  "sessions": {
+    "s_6f37b289fde16b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1868f-72d4-7453-b738-169f9e9d9bf4",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
