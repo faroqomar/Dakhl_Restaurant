@@ -1,0 +1,855 @@
+{
+  "site": {
+    "url": "https://dakhl-development-dashboard.eros-6.chatgpt.site",
+    "projectId": "appgprj_6ae362717ed08191a885ecaf744a336c",
+    "commit": "3de2983c4e79ddd651715ec2692bcec0e2bfaf30",
+    "deploymentId": "appgdep_6ae36b28da448191bb74c20d98290b71",
+    "status": "succeeded",
+    "audience": "owner-private"
+  },
+  "testRun": {
+    "id": "run-da4fb11fcd67b2b6",
+    "kind": "tests",
+    "status": "passed",
+    "startedAt": "2026-10-29T15:40:27.667949+00:00",
+    "finishedAt": "2026-10-29T15:41:25.232971+00:00",
+    "request": {
+      "kind": "tests",
+      "suite": "all"
+    },
+    "source": {
+      "commit": "f38ff2817ab8c5a280f89845d3e6bd1e8202ed33",
+      "dirty": true,
+      "sourceFingerprint": "5bab006edda0db095d1bbfcf47c81242dbba1716cf2779d3aac48db54eedd6fa",
+      "name": "Dakhl_Restaurant",
+      "version": "0.0.0+1",
+      "engineCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+      "declaredEngineCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+      "runtimeEngine": {
+        "commit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "dirty": true,
+        "sourceFingerprint": "608c8ea9605583f242018aefdfaada7aa91b59f81359f756f19ff7888f47f3d2"
+      },
+      "benchmarkTools": {
+        "commit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "dirty": true,
+        "sourceFingerprint": "52e46301e860ca5f25d1cee99eea98b9436bceeb258a9996c08d2d38da44f068"
+      }
+    },
+    "results": [],
+    "summary": "All selected checks passed",
+    "counts": {
+      "passed": 246,
+      "failed": 0
+    },
+    "commands": [
+      {
+        "label": "Verify engine source",
+        "exitCode": 0,
+        "elapsedSeconds": 1.3,
+        "passed": null
+      },
+      {
+        "label": "App source and version regressions",
+        "exitCode": 0,
+        "elapsedSeconds": 10.61,
+        "passed": 27
+      },
+      {
+        "label": "Validate app version",
+        "exitCode": 0,
+        "elapsedSeconds": 0.33,
+        "passed": null
+      },
+      {
+        "label": "App regression tests",
+        "exitCode": 0,
+        "elapsedSeconds": 17.61,
+        "passed": 151
+      },
+      {
+        "label": "App benchmark runner tests",
+        "exitCode": 0,
+        "elapsedSeconds": 0.48,
+        "passed": 6
+      },
+      {
+        "label": "Engine application tests",
+        "exitCode": 0,
+        "elapsedSeconds": 3.34,
+        "passed": 5
+      },
+      {
+        "label": "Engine storage tests",
+        "exitCode": 0,
+        "elapsedSeconds": 14.66,
+        "passed": 16
+      },
+      {
+        "label": "Engine native adapter tests",
+        "exitCode": 0,
+        "elapsedSeconds": 3.27,
+        "passed": 27
+      },
+      {
+        "label": "Benchmark foundation tests",
+        "exitCode": 0,
+        "elapsedSeconds": 3.07,
+        "passed": 14
+      }
+    ]
+  },
+  "benchmarkRun": {
+    "id": "run-f57aad3e9bc2b13a",
+    "kind": "benchmarks",
+    "status": "passed",
+    "startedAt": "2026-10-29T15:46:37.484711+00:00",
+    "finishedAt": "2026-10-29T15:47:25.020745+00:00",
+    "request": {
+      "kind": "benchmarks",
+      "caseIds": [
+        "app.startup",
+        "navigation.switch_route",
+        "shortcuts.save"
+      ]
+    },
+    "source": {
+      "commit": "f38ff2817ab8c5a280f89845d3e6bd1e8202ed33",
+      "dirty": true,
+      "sourceFingerprint": "5bab006edda0db095d1bbfcf47c81242dbba1716cf2779d3aac48db54eedd6fa",
+      "name": "Dakhl_Restaurant",
+      "version": "0.0.0+1",
+      "engineCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+      "declaredEngineCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+      "runtimeEngine": {
+        "commit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "dirty": true,
+        "sourceFingerprint": "608c8ea9605583f242018aefdfaada7aa91b59f81359f756f19ff7888f47f3d2"
+      },
+      "benchmarkTools": {
+        "commit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "dirty": true,
+        "sourceFingerprint": "52e46301e860ca5f25d1cee99eea98b9436bceeb258a9996c08d2d38da44f068"
+      }
+    },
+    "results": [
+      {
+        "operationId": "app.startup",
+        "label": "Cold process startup to usable shell",
+        "appVersion": "0.0.0+1",
+        "sourceCommit": "f38ff2817ab8c5a280f89845d3e6bd1e8202ed33",
+        "sourceDirty": true,
+        "sourceFingerprint": "1ac0863dad621eafe8e8d92058437b22e0fd356116af09ac3c95a797a714db1d",
+        "engineCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "targetId": "macos-host",
+        "schemaVersion": 1,
+        "protocolVersion": 1,
+        "status": "passed",
+        "buildMode": "profile",
+        "scenarioVersion": "1",
+        "measurementKind": "startup",
+        "platform": "darwin",
+        "fixtureFingerprint": "9466b782f1b1f23c2f0f63895bbffdcc5b2f51e0a8b2f09b7cbfb156c455e076",
+        "iterations": 5,
+        "requestedIterations": 5,
+        "workloadHash": "9466b782f1b1f23c2f0f63895bbffdcc5b2f51e0a8b2f09b7cbfb156c455e076",
+        "timing": {
+          "medianMs": 392.34929101075977,
+          "p95Ms": 1463.9649580058176,
+          "minMs": 373.14250000054017,
+          "maxMs": 1463.9649580058176
+        },
+        "resources": {
+          "ramPeakMb": 182.550528,
+          "cpuAveragePercent": 59.377940156155,
+          "cpuPeakPercent": 396.08284777560385,
+          "cpuSeconds": 1.7787518749999998,
+          "sampleCount": 146,
+          "intervalMs": 20,
+          "windowSeconds": 2.9956442920083646,
+          "cpuNormalization": "one-logical-core-100-percent",
+          "ramScope": "sampled-process-resident-peak",
+          "boundary": "host-process-spawn-to-ready-receipt"
+        },
+        "startup": {
+          "processToReadyMs": {
+            "medianMs": 392.34929101075977,
+            "p95Ms": 1463.9649580058176,
+            "minMs": 373.14250000054017,
+            "maxMs": 1463.9649580058176
+          },
+          "launchCount": 5
+        },
+        "samplesMs": [
+          1463.9649580058176,
+          392.56949999253266,
+          392.34929101075977,
+          373.14250000054017,
+          373.5230830061482
+        ],
+        "startedAt": "2026-10-29T15:47:06.043382+00:00",
+        "finishedAt": "2026-10-29T15:47:09.674485+00:00",
+        "environment": {
+          "os": "Darwin",
+          "osVersion": "27.2",
+          "architecture": "arm64",
+          "cpuModel": "Apple M1 Pro",
+          "hardwareModel": "MacBookPro18,3",
+          "logicalCpuCount": 8,
+          "pythonVersion": "3.13.0",
+          "toolVersion": "1.0.0-dev.1",
+          "sampler": "macos-libproc-taskinfo",
+          "cpuPrecision": "native-cumulative-Mach-ticks/timebase; interval-derived-percent",
+          "processScope": "direct-child-only; excludes-descendants",
+          "startupCacheState": "fresh-process; OS caches uncontrolled",
+          "toolSourceFingerprint": "03895ffc543845e88b0f48aba42c3290d5f5f8a644f1ba73dc791434a2e3cd14",
+          "flutterVersion": "3.47.8",
+          "dartVersion": "3.13.7",
+          "appBenchmarkRunnerFingerprint": "0424d43fb157e19e4f1ae8cd3c35fdc950de7cc0607dd3a4728a58fec51708b3",
+          "benchmarkToolsCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+          "benchmarkToolsFingerprint": "03895ffc543845e88b0f48aba42c3290d5f5f8a644f1ba73dc791434a2e3cd14"
+        },
+        "diagnostics": [],
+        "cleanupComplete": true,
+        "hardwareId": "ca9b90ae4eb4c205db80db02f7a87729bddeb2f5882ca17998d25d347ae5e8fa",
+        "comparabilityKey": "e34b0d2449f5936977a845d06a5e705a7e408ace4a8547b74d73ac83585fefab",
+        "runtimeEngineIdentity": {
+          "gitCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+          "manifestFingerprint": "713e289347d732b1fc9def311e167874cd5ca819d376412441375e1df3a13928",
+          "sourceFingerprint": "05e29d35e79a8355f885e9b53febaaa47d26e9c0f6541da334b6e8e6aea017cc",
+          "packageVersions": {
+            "madar_application": "0.1.0-dev.2",
+            "madar_data": "0.1.0-dev.1",
+            "madar_flutter_adapters": "0.1.0-dev.1"
+          },
+          "resolutionFingerprint": "3db6757422f2b055b1ea36948fd2feeb75ed412f44f7513227c9a5d3e5983e2a"
+        },
+        "scope": "Fresh macOS profile process to actual shell bootstrap and completed raster frame, with a fresh isolated Madar preferences database. Compilation and installation excluded. OS caches uncontrolled."
+      },
+      {
+        "operationId": "navigation.switch_route",
+        "label": "Switch route and render (ViewModel)",
+        "appVersion": "0.0.0+1",
+        "sourceCommit": "f38ff2817ab8c5a280f89845d3e6bd1e8202ed33",
+        "sourceDirty": true,
+        "sourceFingerprint": "1ac0863dad621eafe8e8d92058437b22e0fd356116af09ac3c95a797a714db1d",
+        "engineCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "targetId": "macos-host",
+        "schemaVersion": 1,
+        "protocolVersion": 1,
+        "status": "passed",
+        "buildMode": "profile",
+        "scenarioVersion": "1",
+        "measurementKind": "workflow",
+        "platform": "darwin",
+        "fixtureFingerprint": "95cc4e5b53254d1275a93f0beb1c20dea2c373eb31c809223d968690dbaa2bad",
+        "iterations": 20,
+        "requestedIterations": 20,
+        "workloadHash": "95cc4e5b53254d1275a93f0beb1c20dea2c373eb31c809223d968690dbaa2bad",
+        "timing": {
+          "medianMs": 17.095,
+          "p95Ms": 19.16,
+          "minMs": 12.326,
+          "maxMs": 21.787
+        },
+        "resources": {
+          "ramPeakMb": 192.577536,
+          "cpuAveragePercent": 29.501601112333386,
+          "cpuPeakPercent": 126.94653226824263,
+          "cpuSeconds": 0.6487071666666666,
+          "sampleCount": 100,
+          "intervalMs": 20,
+          "windowSeconds": 2.1988879999989877,
+          "cpuNormalization": "one-logical-core-100-percent",
+          "ramScope": "sampled-process-resident-peak",
+          "boundary": "host-start-to-end-marker-receipt"
+        },
+        "startup": {
+          "processToReadyMs": {
+            "medianMs": 362.22549999365583,
+            "p95Ms": 362.22549999365583,
+            "minMs": 362.22549999365583,
+            "maxMs": 362.22549999365583
+          },
+          "launchCount": 1
+        },
+        "samplesMs": [
+          15.676,
+          12.326,
+          18.524,
+          12.824,
+          21.787,
+          17.791,
+          16.888,
+          19.016,
+          18.491,
+          15.451,
+          16.544,
+          14.163,
+          18.507,
+          14.137,
+          17.328,
+          16.836,
+          18.543,
+          14.833,
+          17.302,
+          19.16
+        ],
+        "startedAt": "2026-10-29T15:47:15.221470+00:00",
+        "finishedAt": "2026-10-29T15:47:17.910837+00:00",
+        "environment": {
+          "os": "Darwin",
+          "osVersion": "27.2",
+          "architecture": "arm64",
+          "cpuModel": "Apple M1 Pro",
+          "hardwareModel": "MacBookPro18,3",
+          "logicalCpuCount": 8,
+          "pythonVersion": "3.13.0",
+          "toolVersion": "1.0.0-dev.1",
+          "sampler": "macos-libproc-taskinfo",
+          "cpuPrecision": "native-cumulative-Mach-ticks/timebase; interval-derived-percent",
+          "processScope": "direct-child-only; excludes-descendants",
+          "startupCacheState": "fresh-process; OS caches uncontrolled",
+          "toolSourceFingerprint": "03895ffc543845e88b0f48aba42c3290d5f5f8a644f1ba73dc791434a2e3cd14",
+          "flutterVersion": "3.47.8",
+          "dartVersion": "3.13.7",
+          "appBenchmarkRunnerFingerprint": "0424d43fb157e19e4f1ae8cd3c35fdc950de7cc0607dd3a4728a58fec51708b3",
+          "benchmarkToolsCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+          "benchmarkToolsFingerprint": "03895ffc543845e88b0f48aba42c3290d5f5f8a644f1ba73dc791434a2e3cd14"
+        },
+        "diagnostics": [],
+        "cleanupComplete": true,
+        "hardwareId": "ca9b90ae4eb4c205db80db02f7a87729bddeb2f5882ca17998d25d347ae5e8fa",
+        "comparabilityKey": "1f5baf2211711f576a376f0262abc0ad808519c6b63ff567a4acb2582ba06c83",
+        "runtimeEngineIdentity": {
+          "gitCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+          "manifestFingerprint": "713e289347d732b1fc9def311e167874cd5ca819d376412441375e1df3a13928",
+          "sourceFingerprint": "05e29d35e79a8355f885e9b53febaaa47d26e9c0f6541da334b6e8e6aea017cc",
+          "packageVersions": {
+            "madar_application": "0.1.0-dev.2",
+            "madar_data": "0.1.0-dev.1",
+            "madar_flutter_adapters": "0.1.0-dev.1"
+          },
+          "resolutionFingerprint": "3db6757422f2b055b1ea36948fd2feeb75ed412f44f7513227c9a5d3e5983e2a"
+        },
+        "scope": "Actual shell ViewModel alternates Inventory/Sales, commits isolated device preferences, then completes the next raster frame. Does not measure pointer or keyboard input dispatch."
+      },
+      {
+        "operationId": "shortcuts.save",
+        "label": "Save six shortcuts and render (ViewModel)",
+        "appVersion": "0.0.0+1",
+        "sourceCommit": "f38ff2817ab8c5a280f89845d3e6bd1e8202ed33",
+        "sourceDirty": true,
+        "sourceFingerprint": "1ac0863dad621eafe8e8d92058437b22e0fd356116af09ac3c95a797a714db1d",
+        "engineCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "targetId": "macos-host",
+        "schemaVersion": 1,
+        "protocolVersion": 1,
+        "status": "passed",
+        "buildMode": "profile",
+        "scenarioVersion": "1",
+        "measurementKind": "workflow",
+        "platform": "darwin",
+        "fixtureFingerprint": "97bd22a4eaa7f424c6d99b82f80c8e167249eeb5181929a3131dac9b6724c339",
+        "iterations": 20,
+        "requestedIterations": 20,
+        "workloadHash": "97bd22a4eaa7f424c6d99b82f80c8e167249eeb5181929a3131dac9b6724c339",
+        "timing": {
+          "medianMs": 13.2275,
+          "p95Ms": 14.296,
+          "minMs": 11.486,
+          "maxMs": 14.844
+        },
+        "resources": {
+          "ramPeakMb": 186.417152,
+          "cpuAveragePercent": 22.35870424796719,
+          "cpuPeakPercent": 47.50111934150057,
+          "cpuSeconds": 0.48397149999999994,
+          "sampleCount": 102,
+          "intervalMs": 20,
+          "windowSeconds": 2.1645775829965714,
+          "cpuNormalization": "one-logical-core-100-percent",
+          "ramScope": "sampled-process-resident-peak",
+          "boundary": "host-start-to-end-marker-receipt"
+        },
+        "startup": {
+          "processToReadyMs": {
+            "medianMs": 380.0641249981709,
+            "p95Ms": 380.0641249981709,
+            "minMs": 380.0641249981709,
+            "maxMs": 380.0641249981709
+          },
+          "launchCount": 1
+        },
+        "samplesMs": [
+          11.682,
+          12.81,
+          13.029,
+          13.769,
+          14.844,
+          12.567,
+          14.296,
+          13.203,
+          13.773,
+          13.701,
+          13.513,
+          12.763,
+          13.268,
+          13.252,
+          12.946,
+          11.486,
+          13.403,
+          12.568,
+          13.566,
+          12.915
+        ],
+        "startedAt": "2026-10-29T15:47:21.815728+00:00",
+        "finishedAt": "2026-10-29T15:47:24.478447+00:00",
+        "environment": {
+          "os": "Darwin",
+          "osVersion": "27.2",
+          "architecture": "arm64",
+          "cpuModel": "Apple M1 Pro",
+          "hardwareModel": "MacBookPro18,3",
+          "logicalCpuCount": 8,
+          "pythonVersion": "3.13.0",
+          "toolVersion": "1.0.0-dev.1",
+          "sampler": "macos-libproc-taskinfo",
+          "cpuPrecision": "native-cumulative-Mach-ticks/timebase; interval-derived-percent",
+          "processScope": "direct-child-only; excludes-descendants",
+          "startupCacheState": "fresh-process; OS caches uncontrolled",
+          "toolSourceFingerprint": "03895ffc543845e88b0f48aba42c3290d5f5f8a644f1ba73dc791434a2e3cd14",
+          "flutterVersion": "3.47.8",
+          "dartVersion": "3.13.7",
+          "appBenchmarkRunnerFingerprint": "0424d43fb157e19e4f1ae8cd3c35fdc950de7cc0607dd3a4728a58fec51708b3",
+          "benchmarkToolsCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+          "benchmarkToolsFingerprint": "03895ffc543845e88b0f48aba42c3290d5f5f8a644f1ba73dc791434a2e3cd14"
+        },
+        "diagnostics": [],
+        "cleanupComplete": true,
+        "hardwareId": "ca9b90ae4eb4c205db80db02f7a87729bddeb2f5882ca17998d25d347ae5e8fa",
+        "comparabilityKey": "ae2f61abf2ca430d107c4f1c9289d95db8b2b1cdd4e0e1d4dc52eafa762ad6a8",
+        "runtimeEngineIdentity": {
+          "gitCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+          "manifestFingerprint": "713e289347d732b1fc9def311e167874cd5ca819d376412441375e1df3a13928",
+          "sourceFingerprint": "05e29d35e79a8355f885e9b53febaaa47d26e9c0f6541da334b6e8e6aea017cc",
+          "packageVersions": {
+            "madar_application": "0.1.0-dev.2",
+            "madar_data": "0.1.0-dev.1",
+            "madar_flutter_adapters": "0.1.0-dev.1"
+          },
+          "resolutionFingerprint": "3db6757422f2b055b1ea36948fd2feeb75ed412f44f7513227c9a5d3e5983e2a"
+        },
+        "scope": "Actual shell ViewModel edits all six slots, persists two alternating layouts through isolated Madar storage, verifies acknowledgement and completes the next raster frame. Excludes opening/closing the editor or native input dispatch."
+      }
+    ],
+    "summary": "Measurements complete",
+    "counts": {},
+    "commands": [
+      {
+        "label": "Measure app.startup",
+        "exitCode": 0,
+        "elapsedSeconds": 30.97,
+        "passed": null
+      },
+      {
+        "label": "Measure navigation.switch_route",
+        "exitCode": 0,
+        "elapsedSeconds": 7.98,
+        "passed": null
+      },
+      {
+        "label": "Measure shortcuts.save",
+        "exitCode": 0,
+        "elapsedSeconds": 6.28,
+        "passed": null
+      }
+    ]
+  },
+  "independentReview": {
+    "reviewer": "dashboard_runner_review",
+    "actionableFindings": "all closed",
+    "runnerTests": 11,
+    "uiTests": 5,
+    "genericTests": 14,
+    "appRunnerTests": 6,
+    "versionTests": 3,
+    "functionalAcceptance": "dashboard_runner_review verified private deployment, actual hosted benchmark run, screenshot and receipt match; no actionable finding.",
+    "remainingGates": "App reader, hosted app CI, PR/merge/release remain separate."
+  },
+  "browser": {
+    "localPairing": true,
+    "realTestsAndBenchmarksLaunched": true,
+    "desktop": true,
+    "narrow390pxNoPageOverflow": true,
+    "baselineSaved": true,
+    "privateCloudSession": "Owner signed in; approved Chrome device access; hosted Site paired and launched benchmark run-43f3530ce4c44462 successfully."
+  },
+  "cloudBenchmarkRun": {
+    "id": "run-43f3530ce4c44462",
+    "kind": "benchmarks",
+    "status": "passed",
+    "startedAt": "2026-10-29T15:59:35.630264+00:00",
+    "finishedAt": "2026-10-29T16:00:12.135034+00:00",
+    "request": {
+      "kind": "benchmarks",
+      "caseIds": [
+        "app.startup",
+        "navigation.switch_route",
+        "shortcuts.save"
+      ]
+    },
+    "source": {
+      "commit": "f38ff2817ab8c5a280f89845d3e6bd1e8202ed33",
+      "dirty": true,
+      "sourceFingerprint": "5bab006edda0db095d1bbfcf47c81242dbba1716cf2779d3aac48db54eedd6fa",
+      "name": "Dakhl_Restaurant",
+      "version": "0.0.0+1",
+      "engineCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+      "declaredEngineCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+      "runtimeEngine": {
+        "commit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "dirty": true,
+        "sourceFingerprint": "608c8ea9605583f242018aefdfaada7aa91b59f81359f756f19ff7888f47f3d2"
+      },
+      "benchmarkTools": {
+        "commit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "dirty": true,
+        "sourceFingerprint": "b7091e5860b65f193edac1d638da3014dece46952636edf7b3212c1ad6576aa2"
+      }
+    },
+    "results": [
+      {
+        "operationId": "app.startup",
+        "label": "Cold process startup to usable shell",
+        "appVersion": "0.0.0+1",
+        "sourceCommit": "f38ff2817ab8c5a280f89845d3e6bd1e8202ed33",
+        "sourceDirty": true,
+        "sourceFingerprint": "1ac0863dad621eafe8e8d92058437b22e0fd356116af09ac3c95a797a714db1d",
+        "engineCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "targetId": "macos-host",
+        "schemaVersion": 1,
+        "protocolVersion": 1,
+        "status": "passed",
+        "buildMode": "profile",
+        "scenarioVersion": "1",
+        "measurementKind": "startup",
+        "platform": "darwin",
+        "fixtureFingerprint": "9466b782f1b1f23c2f0f63895bbffdcc5b2f51e0a8b2f09b7cbfb156c455e076",
+        "iterations": 5,
+        "requestedIterations": 5,
+        "workloadHash": "9466b782f1b1f23c2f0f63895bbffdcc5b2f51e0a8b2f09b7cbfb156c455e076",
+        "timing": {
+          "medianMs": 462.4292090011295,
+          "p95Ms": 1135.7878750131931,
+          "minMs": 421.6239170054905,
+          "maxMs": 1135.7878750131931
+        },
+        "resources": {
+          "ramPeakMb": 181.026816,
+          "cpuAveragePercent": 67.9087151094057,
+          "cpuPeakPercent": 346.17925175261973,
+          "cpuSeconds": 2.0337359166666666,
+          "sampleCount": 147,
+          "intervalMs": 20,
+          "windowSeconds": 2.994808418021421,
+          "cpuNormalization": "one-logical-core-100-percent",
+          "ramScope": "sampled-process-resident-peak",
+          "boundary": "host-process-spawn-to-ready-receipt"
+        },
+        "startup": {
+          "processToReadyMs": {
+            "medianMs": 462.4292090011295,
+            "p95Ms": 1135.7878750131931,
+            "minMs": 421.6239170054905,
+            "maxMs": 1135.7878750131931
+          },
+          "launchCount": 5
+        },
+        "samplesMs": [
+          1135.7878750131931,
+          544.6688330121106,
+          430.15579199709464,
+          421.6239170054905,
+          462.4292090011295
+        ],
+        "startedAt": "2026-10-29T15:59:44.975617+00:00",
+        "finishedAt": "2026-10-29T15:59:48.594630+00:00",
+        "environment": {
+          "os": "Darwin",
+          "osVersion": "27.2",
+          "architecture": "arm64",
+          "cpuModel": "Apple M1 Pro",
+          "hardwareModel": "MacBookPro18,3",
+          "logicalCpuCount": 8,
+          "pythonVersion": "3.13.0",
+          "toolVersion": "1.0.0-dev.1",
+          "sampler": "macos-libproc-taskinfo",
+          "cpuPrecision": "native-cumulative-Mach-ticks/timebase; interval-derived-percent",
+          "processScope": "direct-child-only; excludes-descendants",
+          "startupCacheState": "fresh-process; OS caches uncontrolled",
+          "toolSourceFingerprint": "03895ffc543845e88b0f48aba42c3290d5f5f8a644f1ba73dc791434a2e3cd14",
+          "flutterVersion": "3.47.8",
+          "dartVersion": "3.13.7",
+          "appBenchmarkRunnerFingerprint": "0424d43fb157e19e4f1ae8cd3c35fdc950de7cc0607dd3a4728a58fec51708b3",
+          "benchmarkToolsCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+          "benchmarkToolsFingerprint": "03895ffc543845e88b0f48aba42c3290d5f5f8a644f1ba73dc791434a2e3cd14"
+        },
+        "diagnostics": [],
+        "cleanupComplete": true,
+        "hardwareId": "ca9b90ae4eb4c205db80db02f7a87729bddeb2f5882ca17998d25d347ae5e8fa",
+        "comparabilityKey": "e34b0d2449f5936977a845d06a5e705a7e408ace4a8547b74d73ac83585fefab",
+        "runtimeEngineIdentity": {
+          "gitCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+          "manifestFingerprint": "713e289347d732b1fc9def311e167874cd5ca819d376412441375e1df3a13928",
+          "sourceFingerprint": "05e29d35e79a8355f885e9b53febaaa47d26e9c0f6541da334b6e8e6aea017cc",
+          "packageVersions": {
+            "madar_application": "0.1.0-dev.2",
+            "madar_data": "0.1.0-dev.1",
+            "madar_flutter_adapters": "0.1.0-dev.1"
+          },
+          "resolutionFingerprint": "3db6757422f2b055b1ea36948fd2feeb75ed412f44f7513227c9a5d3e5983e2a"
+        },
+        "scope": "Fresh macOS profile process to actual shell bootstrap and completed raster frame, with a fresh isolated Madar preferences database. Compilation and installation excluded. OS caches uncontrolled."
+      },
+      {
+        "operationId": "navigation.switch_route",
+        "label": "Switch route and render (ViewModel)",
+        "appVersion": "0.0.0+1",
+        "sourceCommit": "f38ff2817ab8c5a280f89845d3e6bd1e8202ed33",
+        "sourceDirty": true,
+        "sourceFingerprint": "1ac0863dad621eafe8e8d92058437b22e0fd356116af09ac3c95a797a714db1d",
+        "engineCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "targetId": "macos-host",
+        "schemaVersion": 1,
+        "protocolVersion": 1,
+        "status": "passed",
+        "buildMode": "profile",
+        "scenarioVersion": "1",
+        "measurementKind": "workflow",
+        "platform": "darwin",
+        "fixtureFingerprint": "95cc4e5b53254d1275a93f0beb1c20dea2c373eb31c809223d968690dbaa2bad",
+        "iterations": 20,
+        "requestedIterations": 20,
+        "workloadHash": "95cc4e5b53254d1275a93f0beb1c20dea2c373eb31c809223d968690dbaa2bad",
+        "timing": {
+          "medianMs": 14.354,
+          "p95Ms": 18.059,
+          "minMs": 10.647,
+          "maxMs": 18.399
+        },
+        "resources": {
+          "ramPeakMb": 193.953792,
+          "cpuAveragePercent": 27.04758197266795,
+          "cpuPeakPercent": 118.31005363425253,
+          "cpuSeconds": 0.5858884583333333,
+          "sampleCount": 100,
+          "intervalMs": 20,
+          "windowSeconds": 2.1661398750002263,
+          "cpuNormalization": "one-logical-core-100-percent",
+          "ramScope": "sampled-process-resident-peak",
+          "boundary": "host-start-to-end-marker-receipt"
+        },
+        "startup": {
+          "processToReadyMs": {
+            "medianMs": 497.729958005948,
+            "p95Ms": 497.729958005948,
+            "minMs": 497.729958005948,
+            "maxMs": 497.729958005948
+          },
+          "launchCount": 1
+        },
+        "samplesMs": [
+          18.399,
+          10.916,
+          12.14,
+          16.231,
+          17.457,
+          18.059,
+          11.919,
+          14.079,
+          10.647,
+          15.339,
+          11.803,
+          14.8,
+          11.184,
+          14.629,
+          11.819,
+          13.478,
+          17.131,
+          16.403,
+          11.771,
+          15.075
+        ],
+        "startedAt": "2026-10-29T15:59:57.144267+00:00",
+        "finishedAt": "2026-10-29T15:59:59.947602+00:00",
+        "environment": {
+          "os": "Darwin",
+          "osVersion": "27.2",
+          "architecture": "arm64",
+          "cpuModel": "Apple M1 Pro",
+          "hardwareModel": "MacBookPro18,3",
+          "logicalCpuCount": 8,
+          "pythonVersion": "3.13.0",
+          "toolVersion": "1.0.0-dev.1",
+          "sampler": "macos-libproc-taskinfo",
+          "cpuPrecision": "native-cumulative-Mach-ticks/timebase; interval-derived-percent",
+          "processScope": "direct-child-only; excludes-descendants",
+          "startupCacheState": "fresh-process; OS caches uncontrolled",
+          "toolSourceFingerprint": "03895ffc543845e88b0f48aba42c3290d5f5f8a644f1ba73dc791434a2e3cd14",
+          "flutterVersion": "3.47.8",
+          "dartVersion": "3.13.7",
+          "appBenchmarkRunnerFingerprint": "0424d43fb157e19e4f1ae8cd3c35fdc950de7cc0607dd3a4728a58fec51708b3",
+          "benchmarkToolsCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+          "benchmarkToolsFingerprint": "03895ffc543845e88b0f48aba42c3290d5f5f8a644f1ba73dc791434a2e3cd14"
+        },
+        "diagnostics": [],
+        "cleanupComplete": true,
+        "hardwareId": "ca9b90ae4eb4c205db80db02f7a87729bddeb2f5882ca17998d25d347ae5e8fa",
+        "comparabilityKey": "1f5baf2211711f576a376f0262abc0ad808519c6b63ff567a4acb2582ba06c83",
+        "runtimeEngineIdentity": {
+          "gitCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+          "manifestFingerprint": "713e289347d732b1fc9def311e167874cd5ca819d376412441375e1df3a13928",
+          "sourceFingerprint": "05e29d35e79a8355f885e9b53febaaa47d26e9c0f6541da334b6e8e6aea017cc",
+          "packageVersions": {
+            "madar_application": "0.1.0-dev.2",
+            "madar_data": "0.1.0-dev.1",
+            "madar_flutter_adapters": "0.1.0-dev.1"
+          },
+          "resolutionFingerprint": "3db6757422f2b055b1ea36948fd2feeb75ed412f44f7513227c9a5d3e5983e2a"
+        },
+        "scope": "Actual shell ViewModel alternates Inventory/Sales, commits isolated device preferences, then completes the next raster frame. Does not measure pointer or keyboard input dispatch."
+      },
+      {
+        "operationId": "shortcuts.save",
+        "label": "Save six shortcuts and render (ViewModel)",
+        "appVersion": "0.0.0+1",
+        "sourceCommit": "f38ff2817ab8c5a280f89845d3e6bd1e8202ed33",
+        "sourceDirty": true,
+        "sourceFingerprint": "1ac0863dad621eafe8e8d92058437b22e0fd356116af09ac3c95a797a714db1d",
+        "engineCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "targetId": "macos-host",
+        "schemaVersion": 1,
+        "protocolVersion": 1,
+        "status": "passed",
+        "buildMode": "profile",
+        "scenarioVersion": "1",
+        "measurementKind": "workflow",
+        "platform": "darwin",
+        "fixtureFingerprint": "97bd22a4eaa7f424c6d99b82f80c8e167249eeb5181929a3131dac9b6724c339",
+        "iterations": 20,
+        "requestedIterations": 20,
+        "workloadHash": "97bd22a4eaa7f424c6d99b82f80c8e167249eeb5181929a3131dac9b6724c339",
+        "timing": {
+          "medianMs": 13.985,
+          "p95Ms": 14.504,
+          "minMs": 12.312,
+          "maxMs": 14.63
+        },
+        "resources": {
+          "ramPeakMb": 186.056704,
+          "cpuAveragePercent": 22.893675324526328,
+          "cpuPeakPercent": 71.90862642926037,
+          "cpuSeconds": 0.49624675,
+          "sampleCount": 102,
+          "intervalMs": 20,
+          "windowSeconds": 2.1676150419953046,
+          "cpuNormalization": "one-logical-core-100-percent",
+          "ramScope": "sampled-process-resident-peak",
+          "boundary": "host-start-to-end-marker-receipt"
+        },
+        "startup": {
+          "processToReadyMs": {
+            "medianMs": 505.0348340009805,
+            "p95Ms": 505.0348340009805,
+            "minMs": 505.0348340009805,
+            "maxMs": 505.0348340009805
+          },
+          "launchCount": 1
+        },
+        "samplesMs": [
+          14.504,
+          12.312,
+          12.429,
+          12.766,
+          12.572,
+          13.901,
+          13.775,
+          14.63,
+          14.375,
+          13.984,
+          14.187,
+          14.076,
+          14.002,
+          13.944,
+          13.987,
+          13.608,
+          13.38,
+          14.099,
+          14.092,
+          13.986
+        ],
+        "startedAt": "2026-10-29T16:00:08.399574+00:00",
+        "finishedAt": "2026-10-29T16:00:11.192703+00:00",
+        "environment": {
+          "os": "Darwin",
+          "osVersion": "27.2",
+          "architecture": "arm64",
+          "cpuModel": "Apple M1 Pro",
+          "hardwareModel": "MacBookPro18,3",
+          "logicalCpuCount": 8,
+          "pythonVersion": "3.13.0",
+          "toolVersion": "1.0.0-dev.1",
+          "sampler": "macos-libproc-taskinfo",
+          "cpuPrecision": "native-cumulative-Mach-ticks/timebase; interval-derived-percent",
+          "processScope": "direct-child-only; excludes-descendants",
+          "startupCacheState": "fresh-process; OS caches uncontrolled",
+          "toolSourceFingerprint": "03895ffc543845e88b0f48aba42c3290d5f5f8a644f1ba73dc791434a2e3cd14",
+          "flutterVersion": "3.47.8",
+          "dartVersion": "3.13.7",
+          "appBenchmarkRunnerFingerprint": "0424d43fb157e19e4f1ae8cd3c35fdc950de7cc0607dd3a4728a58fec51708b3",
+          "benchmarkToolsCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+          "benchmarkToolsFingerprint": "03895ffc543845e88b0f48aba42c3290d5f5f8a644f1ba73dc791434a2e3cd14"
+        },
+        "diagnostics": [],
+        "cleanupComplete": true,
+        "hardwareId": "ca9b90ae4eb4c205db80db02f7a87729bddeb2f5882ca17998d25d347ae5e8fa",
+        "comparabilityKey": "ae2f61abf2ca430d107c4f1c9289d95db8b2b1cdd4e0e1d4dc52eafa762ad6a8",
+        "runtimeEngineIdentity": {
+          "gitCommit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+          "manifestFingerprint": "713e289347d732b1fc9def311e167874cd5ca819d376412441375e1df3a13928",
+          "sourceFingerprint": "05e29d35e79a8355f885e9b53febaaa47d26e9c0f6541da334b6e8e6aea017cc",
+          "packageVersions": {
+            "madar_application": "0.1.0-dev.2",
+            "madar_data": "0.1.0-dev.1",
+            "madar_flutter_adapters": "0.1.0-dev.1"
+          },
+          "resolutionFingerprint": "3db6757422f2b055b1ea36948fd2feeb75ed412f44f7513227c9a5d3e5983e2a"
+        },
+        "scope": "Actual shell ViewModel edits all six slots, persists two alternating layouts through isolated Madar storage, verifies acknowledgement and completes the next raster frame. Excludes opening/closing the editor or native input dispatch."
+      }
+    ],
+    "summary": "Measurements complete",
+    "counts": {},
+    "commands": [
+      {
+        "label": "Measure app.startup",
+        "exitCode": 0,
+        "elapsedSeconds": 12.72,
+        "passed": null
+      },
+      {
+        "label": "Measure navigation.switch_route",
+        "exitCode": 0,
+        "elapsedSeconds": 11.1,
+        "passed": null
+      },
+      {
+        "label": "Measure shortcuts.save",
+        "exitCode": 0,
+        "elapsedSeconds": 11.13,
+        "passed": null
+      }
+    ]
+  }
+}

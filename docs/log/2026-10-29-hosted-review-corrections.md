@@ -11,3 +11,10 @@ Historical artifacts receive stage/usage/provenance clarification, not invented 
 Copilot reported exhausted review quota; this is unavailable review, not a pass. Cubic findings and the independent read-only reviews provide the actual recorded assessment. All old configured checks passed, but changed heads require fresh hosted checks. Final exact revisions, per-comment disposition and approval status are authoritative in the linked PRs and current tracker. No old-head CI pass or merge approval is assigned to a changed head.
 
 Every pre-existing uncommitted file was retained in 11 LOCAL Git preservation commits with original checkout/index/HEAD unchanged. Main integration must not restore superseded trackers/names/pins or publish raw memory snapshots, caches and backup archives. Preservation inventory is retained locally outside published source; project memory receives only sanitized summaries in its separate bank.
+
+
+## Final access and conformance disposition
+
+Fresh app tooling checks pass: analysis, 158 Flutter tests, 28 script tests and 7 cache tests. Independent read-only verification validated all three actual profile results, cleanup, samples and current source/toolchain/comparability identities without rerunning them. Source e385ce6/tools75c12fb/runtime exact6d4ae39; this documentation/evidence update does not change measured runtime code. Full results and limits are in outputs/dev-dashboard/review-corrections/README.md.
+
+Cubic cannot start a new review because the organization subscription is inactive; the engine-side rejection applies to this shared installation, so app retries were not repeated. Copilot is unavailable because of quota. All 46 original findings are triaged; old review SHAs are not assigned to changed heads. Fresh automatic review is unavailable, not passed. Renewed owner approval is required for changed revisions and an explicit disposition of unavailable review before integration. No merge, release, deployment or next phase. Current exact heads/CI are linked PR metadata authority; this final update is documentation only.

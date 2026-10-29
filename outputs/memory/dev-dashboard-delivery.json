@@ -1,0 +1,51 @@
+{
+  "operationId": "1992e414-83ef-46c9-9bdb-b491e6294a6c",
+  "sourceHashes": {
+    "docs/log/2026-10-29-development-dashboard-delivery.md": "d0d601294b48ee214b4bc561b6d24121111c886bdc7ade539b73317c1349f1e1",
+    "docs/how-to/versioning-and-performance.md": "f45bf15e77df40b350ecc5f40a02abad9c8e4a3c5abd9e568cfec11e24cf7d08",
+    "tool/dev_dashboard/README.md": "6cc7f479efe235b5d540067f53fcbac27096e131f036f3b125a34c04bc7220a7",
+    "PHASES.md": "7df4918ad6bd55996a7743ba3ad795ac3d5b3a6157ce7308ef4549264ef6f0f2",
+    "PLANS.md": "92be1cbf6848af1cbdfc9417218c39884c4239fcd9962daf6d46ccff752a167f",
+    "AGENTS.md": "799dec247002cb91954dc6991edbe11028c82b2e53cbc2061d167ec6b2092e25",
+    "docs/how-to/repeated-problems.md": "646b1eac19d0191c3a2a721966178feb325f28a72e524e0703b0c4c2fe12440d"
+  },
+  "project": "daftar",
+  "status": "completed",
+  "operation": {
+    "operation_id": "1992e414-83ef-46c9-9bdb-b491e6294a6c",
+    "status": "completed",
+    "operation_type": "batch_retain",
+    "id": "1992e414-83ef-46c9-9bdb-b491e6294a6c",
+    "task_type": "batch_retain",
+    "mental_model_id": null,
+    "created_at": "2026-10-29T16:02:09.108964+00:00",
+    "updated_at": "2026-10-29T16:03:14.829546+00:00",
+    "completed_at": "2026-10-29T16:03:14.829546+00:00",
+    "error_message": null,
+    "retry_count": 0,
+    "next_retry_at": null,
+    "progress": null,
+    "result_metadata": {
+      "is_parent": true,
+      "document_id": "dev-dashboard:delivery",
+      "items_count": 1,
+      "total_tokens": 4059,
+      "unit_ids_count": 34,
+      "num_sub_batches": 1,
+      "extraction_errors_count": 0
+    },
+    "details": null,
+    "child_operations": [
+      {
+        "operation_id": "3c96e50c-5757-40da-96a0-574c80b27ab8",
+        "status": "completed",
+        "sub_batch_index": 1,
+        "items_count": 1,
+        "error_message": null
+      }
+    ],
+    "task_payload": null
+  },
+  "submissionStatus": "queued",
+  "statusScope": "Final status of the retained operation; source hashes describe that dated source snapshot."
+}

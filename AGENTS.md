@@ -354,3 +354,7 @@ Owner reaffirmation, 2026-10-28: apply [the consumer delivery obligations](docs/
 ## Owner-excluded live screen-reader verification — 2026-10-29
 
 The owner explicitly removed live TalkBack/screen-reader verification from Dakhl_Restaurant requirements. Do not block this app's integration or phase completion on that excluded check, and never relabel it as passed. Retain existing keyboard, focus, semantics and tested safeguards unless the owner requests a change. This app-specific scope decision does not waive another product's requirements or authorize deployment, broader scope or a new phase.
+
+## Versioned delivery and separate operation performance — 2026-10-29
+
+Owner request: use versioned GitHub delivery in future work and measure each major feature separately. Follow [versioning and performance](docs/how-to/versioning-and-performance.md). Preserve `MAJOR.MINOR.PATCH+BUILD` as the explicit app candidate and monotonic delivered build number; record exact source and reviewed engine/tool revisions before future authorized pushes. Do not infer approval to push, merge, tag or release. Each major implemented feature needs its own realistic isolated operation benchmark with elapsed p50/p95, sampled RAM, CPU and comparable conditions. Unimplemented or unavailable scenarios remain planned/pending, never fabricated. Existing dated benchmark N/A records remain historical; reassess future affected work under this owner requirement.
