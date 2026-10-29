@@ -1,0 +1,25 @@
+PHASES.md
+  s_6f37b289fde16b::t_c1b9b3cf29cd91 3,19-20,58,61,64-67,69-70,73-74,310-313
+PLANS.md
+  s_6f37b289fde16b::t_c752fe63bd16f6 3,45-48
+docs/phases/01-step6-completion.md
+  s_6f37b289fde16b::t_1595e895d7ec27 1-36
+docs/phases/README.md
+  s_6f37b289fde16b::t_eeb54197b0f1b7 37-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5352ebe2b1a0f26565bb398970bc73dcbc832b05",
+  "prompts": {},
+  "sessions": {
+    "s_6f37b289fde16b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1868f-72d4-7453-b738-169f9e9d9bf4",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
