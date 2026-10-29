@@ -1,0 +1,26 @@
+{
+  "allArtifactsExitCode": 2,
+  "allArtifactsWarningFiles": [
+    "assets/fonts/Inter-OFL.txt",
+    "outputs/penpot/phase01/reference-data/desktop-invoice-new.html",
+    "outputs/penpot/phase01/reference-data/desktop-navigation.html",
+    "outputs/penpot/phase01/reference-data/desktop-sales.html",
+    "outputs/penpot/phase01/reference-data/medium-sales.html",
+    "outputs/penpot/phase01/reference-data/phone-invoice-new.html",
+    "outputs/penpot/phase01/reference-data/phone-sales.html",
+    "outputs/penpot/phase01/reference-data/wide-sales.html"
+  ],
+  "authoredScopeExitCode": 0,
+  "preservedImmutablePaths": [
+    "assets/fonts/Inter-OFL.txt",
+    "outputs/penpot/phase01/reference-data/*.html"
+  ],
+  "authoredOutput": "",
+  "notWaived": [
+    "Flutter format",
+    "analysis",
+    "tests",
+    "source boundaries"
+  ],
+  "reason": "Preserve original third-party license and frozen reference bytes; no changed runtime source."
+}

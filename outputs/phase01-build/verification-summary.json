@@ -1,0 +1,36 @@
+{
+  "checks": {
+    "appTests": 134,
+    "appAnalysis": "pass",
+    "format": "pass",
+    "engineCheckerRegressions": 24,
+    "resolvedEngineSource": "pass",
+    "applicationTests": 5,
+    "dataAdapterTests": 16,
+    "existingNativeAdapterTests": 27,
+    "goldenCount": 5,
+    "nativeRestartTargets": [
+      "macos",
+      "ios",
+      "android"
+    ],
+    "nativeAndroidUi": "pass",
+    "nativeIphoneUi": "focused captures+AX verified",
+    "nativeMacModifiers": "PASS: owner manually confirmed Cmd3 navigation and CmdK Search focus; automated observer remained inconclusive",
+    "nativeMobileBackGestures": "not verified",
+    "nativeAccessibilityTraversal": "not verified",
+    "hostedCi": "not run"
+  },
+  "review": {
+    "engine": "no actionable findings",
+    "appCode": "three P2s closed",
+    "ux": "three P2s closed",
+    "finalNativeVisual": "no actionable iPhone/Android finding",
+    "finalReconciliation": "74 source hashes and six initial/final deltas verified"
+  },
+  "sourceManifest": "final-source-manifest.json",
+  "enginePin": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+  "optimizationBenchmarks": "N/A, no optimization",
+  "publicationMergeDeployment": "not performed or authorized",
+  "memoryReceipt": "../memory/phase01-build-delivery.json"
+}

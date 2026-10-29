@@ -350,3 +350,7 @@ Owner instruction, 2026-10-28: continuously document new and repeated problems, 
 ## Per-phase ownership, packages, documentation and diagnostics
 
 Owner reaffirmation, 2026-10-28: apply [the consumer delivery obligations](docs/how-to/engine-consumer-contract.md) and Madar's authoritative delivery standards in every phase. Classify engine work, app work and contract/revision first. Write shared rules/contracts/adapters once in Madar and consume reviewed packages here; keep app UI/workflows/safeguards here. Deliver engine capability documentation, justified Dart/Flutter packages when needed, safe structured terminal logging and meaningful engine/consumer tests. No unused dependency or logger retrofit is introduced by this rule. All documentation and Hindsight knowledge are English-only; preserve Arabic executable UI/fixtures and frozen screenshots/source assets.
+
+## Owner-excluded live screen-reader verification — 2026-10-29
+
+The owner explicitly removed live TalkBack/screen-reader verification from Dakhl_Restaurant requirements. Do not block this app's integration or phase completion on that excluded check, and never relabel it as passed. Retain existing keyboard, focus, semantics and tested safeguards unless the owner requests a change. This app-specific scope decision does not waive another product's requirements or authorize deployment, broader scope or a new phase.

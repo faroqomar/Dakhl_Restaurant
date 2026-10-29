@@ -1,0 +1,9 @@
+Waiting for another flutter command to release the startup lock...
+Launching lib/main.dart on macOS in debug mode...
+Building macOS application...                                   
+✓ Built build/macos/Build/Products/Debug/Dakhl_Restaurant Dev.app
+[IMPORTANT:flutter/shell/platform/embedder/embedder_surface_metal_impeller.mm(53)] Using the Impeller rendering backend (MetalSDF).
+Failed to foreground app; open returned 1
+flutter: {"event":"madar.preferences.open","level":"INFO","operation_id":"preferences-1","outcome":"success","elapsed_us":484792}
+flutter: {"event":"madar.preferences.read","level":"INFO","operation_id":"preferences-2","outcome":"success","elapsed_us":4343}
+Syncing files to device macOS...                                   375ms

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "Native select indicator",
+    "parent": null,
+    "x": "1058",
+    "y": "613.125",
+    "w": "11",
+    "h": "7",
+    "hrefSha": "a1d9dd648a5549bd348377cf71c7a3759bf9edb62be079fc01c965cd13a13642"
+  },
+  {
+    "id": "Native disclosure marker",
+    "parent": null,
+    "x": "1393",
+    "y": "646.5",
+    "w": "8",
+    "h": "15",
+    "hrefSha": "7c2e4727bbdc2a99980972bbee8f0406c485dc2ed34ce6e8c7d1b859679b769c"
+  },
+  {
+    "id": null,
+    "parent": "n90 img.product-photo",
+    "x": "866.671875",
+    "y": "381.59375",
+    "w": "138.328125",
+    "h": "83.828125",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n108 img.product-photo",
+    "x": "700.3359375",
+    "y": "381.59375",
+    "w": "138.3359375",
+    "h": "83.8359375",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n124 img.product-photo",
+    "x": "534.0078125",
+    "y": "381.59375",
+    "w": "138.328125",
+    "h": "83.828125",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n140 img.product-photo",
+    "x": "367.671875",
+    "y": "381.59375",
+    "w": "138.3359375",
+    "h": "83.8359375",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n156 img.product-photo",
+    "x": "201.3359375",
+    "y": "381.59375",
+    "w": "138.3359375",
+    "h": "83.8359375",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n174 img.product-photo",
+    "x": "35.0078125",
+    "y": "381.59375",
+    "w": "138.328125",
+    "h": "83.828125",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n190 img.product-photo",
+    "x": "866.671875",
+    "y": "593.0234375",
+    "w": "138.328125",
+    "h": "83.828125",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n206 img.product-photo",
+    "x": "700.3359375",
+    "y": "593.0234375",
+    "w": "138.3359375",
+    "h": "83.8359375",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n222 img.product-photo",
+    "x": "534.0078125",
+    "y": "593.0234375",
+    "w": "138.328125",
+    "h": "83.828125",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n238 img.product-photo",
+    "x": "367.671875",
+    "y": "593.0234375",
+    "w": "138.3359375",
+    "h": "83.8359375",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n254 img.product-photo",
+    "x": "201.3359375",
+    "y": "593.0234375",
+    "w": "138.3359375",
+    "h": "83.8359375",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n270 img.product-photo",
+    "x": "35.0078125",
+    "y": "593.0234375",
+    "w": "138.328125",
+    "h": "83.828125",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n286 img.product-photo",
+    "x": "866.671875",
+    "y": "804.453125",
+    "w": "138.328125",
+    "h": "83.828125",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n301 img.product-photo",
+    "x": "700.3359375",
+    "y": "804.453125",
+    "w": "138.3359375",
+    "h": "83.8359375",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n316 img.product-photo",
+    "x": "534.0078125",
+    "y": "804.453125",
+    "w": "138.328125",
+    "h": "83.828125",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n331 img.product-photo",
+    "x": "367.671875",
+    "y": "804.453125",
+    "w": "138.3359375",
+    "h": "83.8359375",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n346 img.product-photo",
+    "x": "201.3359375",
+    "y": "804.453125",
+    "w": "138.3359375",
+    "h": "83.8359375",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n361 img.product-photo",
+    "x": "35.0078125",
+    "y": "804.453125",
+    "w": "138.328125",
+    "h": "83.828125",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  }
+]

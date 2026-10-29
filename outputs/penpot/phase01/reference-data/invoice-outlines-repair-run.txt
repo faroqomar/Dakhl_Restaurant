@@ -1,0 +1,2 @@
+desktop-invoice-new runs 105 max advance error 0.023140822784824877 median 0.004667721519012957 canvas fallbacks 0
+phone-invoice-new runs 87 max advance error 0.012732397151893338 median 0.004252373417727995 canvas fallbacks 0

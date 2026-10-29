@@ -1,0 +1,20 @@
+[
+  {
+    "id": "Native select indicator",
+    "parent": null,
+    "x": "760",
+    "y": "383.0859375",
+    "w": "11",
+    "h": "7",
+    "hrefSha": "a84f31a41a1974167ea835c2b88e5b7304fefad9ebdda57f9098f9738e04140f"
+  },
+  {
+    "id": null,
+    "parent": "n148 img",
+    "x": "1225",
+    "y": "708.484375",
+    "w": "150",
+    "h": "105",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  }
+]

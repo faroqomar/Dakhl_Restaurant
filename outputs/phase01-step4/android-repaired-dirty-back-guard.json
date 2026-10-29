@@ -1,0 +1,52 @@
+[
+  {
+    "class": "android.view.View",
+    "text": "",
+    "content-desc": "تغييرات غير محفوظة",
+    "clickable": "false",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[0,142][1080,2361]"
+  },
+  {
+    "class": "android.view.View",
+    "text": "",
+    "content-desc": "هل تريد تجاهل التغييرات؟",
+    "clickable": "false",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,1089][1006,1157]"
+  },
+  {
+    "class": "android.view.View",
+    "text": "",
+    "content-desc": "إلغاء المغادرة يحتفظ بالمحتوى الحالي.",
+    "clickable": "false",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,1157][1006,1225]"
+  },
+  {
+    "class": "android.widget.Button",
+    "text": "",
+    "content-desc": "متابعة التعديل",
+    "clickable": "true",
+    "focusable": "true",
+    "focused": "true",
+    "enabled": "true",
+    "bounds": "[74,1333][1006,1459]"
+  },
+  {
+    "class": "android.widget.Button",
+    "text": "",
+    "content-desc": "تجاهل التغييرات",
+    "clickable": "true",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,1490][1006,1616]"
+  }
+]

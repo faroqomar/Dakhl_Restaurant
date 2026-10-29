@@ -1,0 +1,14 @@
+stage: loading isolated reference
+stage: isolated reference loaded
+stage: export desktop-invoice-new
+stage: DOM desktop-invoice-new 215
+stage: PNG desktop-invoice-new
+{"id":"desktop-invoice-new","elements":215,"texts":71,"images":0,"svgs":4,"actualSize":{"width":2880,"height":2000},"expectedSize":{"width":2880,"height":2000},"equalDimensions":true,"changedPixels":0,"totalPixels":5760000,"changedPixelRatio":0,"differenceBounds":null,"meanAbsoluteChannelDifference":0,"maxChannelDifference":0,"actualSha256":"ad11eb5bf1c2e722e6ae9de344216f47742ec2d937e64b453bf1d58942397472","expectedSha256":"ad11eb5bf1c2e722e6ae9de344216f47742ec2d937e64b453bf1d58942397472"}
+stage: export phone-sales
+stage: DOM phone-sales 140
+stage: PNG phone-sales
+{"id":"phone-sales","elements":140,"texts":46,"images":4,"svgs":7,"actualSize":{"width":780,"height":1688},"expectedSize":{"width":780,"height":1688},"equalDimensions":true,"changedPixels":368,"totalPixels":1316640,"changedPixelRatio":0.00027949933163203303,"differenceBounds":{"minX":50,"minY":870,"maxX":729,"maxY":1502},"meanAbsoluteChannelDifference":0.0008210292866690971,"maxChannelDifference":7,"actualSha256":"3e9109d293255d746964e63bc2ea80a6e0c8252075e12a4c282fc75500f68853","expectedSha256":"c927c98295d7d1546031aacfac8a6f4d2958c2d80644a0f0888be25912f21859"}
+stage: export phone-invoice-new
+stage: DOM phone-invoice-new 166
+stage: PNG phone-invoice-new
+{"id":"phone-invoice-new","elements":166,"texts":54,"images":0,"svgs":4,"actualSize":{"width":780,"height":1688},"expectedSize":{"width":780,"height":1688},"equalDimensions":true,"changedPixels":0,"totalPixels":1316640,"changedPixelRatio":0,"differenceBounds":null,"meanAbsoluteChannelDifference":0,"maxChannelDifference":0,"actualSha256":"26dca31f61b6772dec43b329f552f3f65a90a4987e53643805f179599048c92e","expectedSha256":"26dca31f61b6772dec43b329f552f3f65a90a4987e53643805f179599048c92e"}

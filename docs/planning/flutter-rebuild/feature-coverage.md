@@ -51,3 +51,9 @@ Each observation includes file, enclosing symbol and proof location. Read the cu
 No Flutter code, native phone screenshot, real account migration, signed release or physical printer verification was performed by this plan. Report captures show HTML reference output rather than actual Flutter PDFs. Native file/print dialogs are platform-owned and cannot be specified by these Electron screenshots; reproduce their operation and test them in phases 00/09/10/11.
 
 Campaign/idea documentation is not an app feature. Workers/savingsEntries and historical report support are retained for compatibility; the removed worker screen is not in the rebuild. No cloud backend, multi-restaurant model, recipe conversion, camera scanner, thermal printer or profit dashboard is implied.
+
+## Phase 01 Flutter implementation mapping — 2026-10-29
+
+The frozen source inventory above remains unchanged. Current app-owned presentation is in `lib/ui/`, route/schema/guards in `lib/shell/`, composition in `lib/app/` and `lib/main.dart`, and the isolated location safeguard in `lib/platform/shell_preferences_directory.dart`. Madar CAP-01 owns the actual snapshot storage/adapter; the app consumes its independently reviewed exact revision. [App contract](../../reference/phase01-shell-contract.md), [build evidence](../../phases/01-build-evidence.md).
+
+This maps Phase 01 components/navigation, six shortcuts, cold restart of UI preferences, session dirty/undo/ticket safeguards and responsive examples only. It does not mark domain screens03–10, account persistence02, durable ticket recovery04, settings/backups09 or accounting/reporting10 implemented. The eight-item synthetic catalog is a fixture limit; frozen screenshot/source data and all original references are preserved.

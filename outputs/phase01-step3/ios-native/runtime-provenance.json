@@ -1,0 +1,10 @@
+{
+  "bundle_id": "com.eros.dakhlrestaurant.phase00",
+  "version": "0.0.0",
+  "installed_executable_sha256": "9388682c92cbf8fc0f3ef82bdcae20cd2d5b38848ba9105a9d8bc91b06b8552f",
+  "existing_build_executable_sha256": "a6540e42b95a352967f44f1918c0d43d769cf20feadae5481958d00cba4439d2",
+  "same_binary": false,
+  "gui": "Device Hub 27.1 / com.apple.dt.Devices",
+  "runtime": "iOS27.0 / iPhone18Pro",
+  "provenance_limit": "Binary equality with retained local artifact; no new build or claim of full source reproducibility."
+}

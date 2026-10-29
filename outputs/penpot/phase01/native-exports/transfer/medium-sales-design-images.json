@@ -1,0 +1,74 @@
+[
+  {
+    "id": "Native select indicator",
+    "parent": null,
+    "x": "690.1640625",
+    "y": "510.28125",
+    "w": "11",
+    "h": "7",
+    "hrefSha": "a1d9dd648a5549bd348377cf71c7a3759bf9edb62be079fc01c965cd13a13642"
+  },
+  {
+    "id": "Native disclosure marker",
+    "parent": null,
+    "x": "977",
+    "y": "543.5",
+    "w": "8",
+    "h": "15",
+    "hrefSha": "ce2f3d1f769c1040a0f7fae5f6d402140651f943a112ed0bc37c4ce2f920dac0"
+  },
+  {
+    "id": null,
+    "parent": "n87 img.product-photo",
+    "x": "457.78125",
+    "y": "367.59375",
+    "w": "183.3828125",
+    "h": "111.140625",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n105 img.product-photo",
+    "x": "246.390625",
+    "y": "367.59375",
+    "w": "183.390625",
+    "h": "111.140625",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n121 img.product-photo",
+    "x": "35.0078125",
+    "y": "367.59375",
+    "w": "183.3828125",
+    "h": "111.140625",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n137 img.product-photo",
+    "x": "457.78125",
+    "y": "606.328125",
+    "w": "183.3828125",
+    "h": "111.140625",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n148 img.product-photo",
+    "x": "246.390625",
+    "y": "606.328125",
+    "w": "183.390625",
+    "h": "111.140625",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  },
+  {
+    "id": null,
+    "parent": "n161 img.product-photo",
+    "x": "35.0078125",
+    "y": "606.328125",
+    "w": "183.3828125",
+    "h": "111.140625",
+    "hrefSha": "8e726a09c196f96bcf104fd83a6a6278c5ccca1c0b841dd8ecef621b87acf56a"
+  }
+]

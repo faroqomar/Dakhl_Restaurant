@@ -1,0 +1,13 @@
+{
+  "command": [
+    "flutter",
+    "run",
+    "--no-pub",
+    "--no-resident",
+    "-d",
+    "4445755D-8F85-40F6-94C4-1ABF06D23981"
+  ],
+  "exitCode": 0,
+  "elapsedSeconds": 93.3,
+  "sourceAppSha256": "a55f650e59baf6a9d410d48a78af8ff867390340327f31748c28573cc9e61534"
+}

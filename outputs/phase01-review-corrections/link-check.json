@@ -1,0 +1,23 @@
+{
+  "kind": "Authored markdown target check after hosted-review fixes",
+  "historicalPredecessor": "outputs/phase01-build/authored-link-check.json was a local capture, not proof of later GitHub publication portability",
+  "checkedMarkdownFiles": [
+    "README.md",
+    "PHASES.md",
+    "docs/phases/README.md",
+    "docs/phases/01-build-evidence.md",
+    "docs/reference/phase01-shell-contract.md",
+    "docs/log/2026-10-29-phase01-build.md",
+    "docs/phases/01-implementation-plan.md",
+    "integration_test/README.md",
+    "test/ui/README.md",
+    "docs/phases/01-scope-readiness.md",
+    "docs/phases/01-review-corrections.md"
+  ],
+  "missingLocalTargets": [],
+  "publishedCrossRepoLinks": [
+    "https://github.com/faroqomar/Madar_Engine/blob/d705576122f817093bcc9ab1bf935010958fea70/docs/reference/cap01-device-preferences-plan.md",
+    "https://github.com/faroqomar/Madar_Engine/blob/d705576122f817093bcc9ab1bf935010958fea70/docs/log/2026-10-29-phase01-scope-readiness.md"
+  ],
+  "workspaceReferences": []
+}

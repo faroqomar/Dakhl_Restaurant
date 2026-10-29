@@ -2,9 +2,9 @@
 
 Current project name: **Dakhl_Restaurant**. The old Electron app name and storage identifiers are preserved only for compatibility and frozen reference evidence.
 
-This root contains the phase 00 Flutter development baseline for macOS, Android and iPhone Simulator. The default app is a blank offline Arabic RTL shell; product screens and production account persistence are not implemented.
+This root contains the offline Arabic RTL development app for macOS, Android and iPhone Simulator. Phase 01 now adds the approved component/navigation shell and durable device-only route/six-shortcut preferences through Madar. Sales/invoice layouts use synthetic presentation fixtures; production account and later business workflows are not implemented.
 
-Workflow: [AGENTS.md](AGENTS.md) · [PLANS.md](PLANS.md) · [PHASES.md](PHASES.md) · [six reusable prompts](PROMPTS.md). Phase 00 is under build verification; phases 01–11 remain TODO. The tracker records actual execution and approval evidence.
+Workflow: [AGENTS.md](AGENTS.md) · [PLANS.md](PLANS.md) · [PHASES.md](PHASES.md) · [six reusable prompts](PROMPTS.md). Phase 00 technical prerequisites are verified; Phase 01 implementation/verification is in progress; phases 02–11 remain TODO. The tracker records actual execution and approval evidence.
 
 | Location | Purpose |
 | --- | --- |
@@ -20,7 +20,7 @@ The current design and financial behavior remain the baseline. Work is offline f
 
 ## Engine and app development
 
-Madar_Engine is developed alongside this app and owns shared contracts/native adapters. Keep both independent repositories as sibling folders; app `pubspec.yaml` uses relative package paths and `engine-dependency.json` pins the engine commit. This nested Codex worktree uses a sibling symlink to the canonical engine, with no copied engine source. Read [ownership and setup](docs/decisions/0018-madar-engine-boundary.md) before updating the dependency. Hosted CI also needs the independent engine source published/configured; local success does not satisfy that gate.
+Madar_Engine is developed alongside this app and owns shared contracts/native adapters. Keep both independent repositories as sibling folders; app `pubspec.yaml` uses relative package paths and `engine-dependency.json` pins the engine commit. This implementation worktree uses a sibling symlink to the reviewed Phase01 engine build tree, with no copied engine source. Read [ownership and setup](docs/decisions/0018-madar-engine-boundary.md) before updating the dependency. Hosted CI also needs the independent engine source published/configured; local success does not satisfy that gate.
 
 ## Flutter development
 
@@ -34,7 +34,7 @@ flutter analyze --no-pub
 flutter run -d macos
 ```
 
-The default entrypoint is blank. The explicitly selected development probe exercises synthetic platform capabilities:
+The default entrypoint opens the Phase01 navigation/component shell. The separately selected Phase00 development probe still exercises synthetic platform capabilities:
 
 ```sh
 flutter run -d macos -t lib/platform/probe_main.dart
@@ -51,3 +51,5 @@ npm --prefix electron-reference test
 The original app instructions are preserved in [electron-reference/README.md](electron-reference/README.md). Normal app launch may open restaurant accounts; use isolated fixtures for development verification. The reference folder is not a separate Git repository; Git history remains at this project root.
 
 The plan, screenshots and shared documentation were **not moved** into the reference folder. Read [the folder-layout decision](docs/decisions/0013-electron-reference-folder.md) before changing this structure.
+
+Phase 01 setup, schema, guards and limits: [shell contract](docs/reference/phase01-shell-contract.md). iPhone interactive controls use Device Hub 27.1 in the installed Xcode, while `simctl` remains the lifecycle command. The locally reviewed engine candidate is not published by these changes.

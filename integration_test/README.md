@@ -57,3 +57,23 @@ Record target/model, OS, architecture, build mode, app identifier, package lock 
 - Font: unmodified static Amiri Regular, OFL1.1. Complete copyright/license, immutable source commit and SHA-256 are under `assets/fonts/`. This technical font probe does not establish phase01 visual typography approval.
 
 Minimums are the scaffold's Android API24, iOS15 and macOS12; actual package compatibility still requires target builds/runtime. Mac printing and user-selected file read/write entitlements are owned by the scaffold. Native plugin registration/build evidence alone does not prove any dialog's behavior. No release signing, publishing or real app installation is performed by this harness.
+
+
+## Phase01 preferences and native UI
+
+The default app now composes the real reviewed Madar preferences adapter, not the Phase00 probe repository. `shell_preferences_test.dart` is a two-launch conformance harness. Choose one actual development target from `flutter devices`; use a new UUID for each write/read pair and keep it the same within the pair. Keep `--no-uninstall` so the tool does not remove the isolated development database between launches.
+
+```sh
+flutter test --no-pub --no-uninstall integration_test/shell_preferences_test.dart -d macos --dart-define=PHASE01_RESTART_STAGE=write --dart-define=PHASE01_RUN_NONCE=<new-uuid>
+flutter test --no-pub --no-uninstall integration_test/shell_preferences_test.dart -d macos --dart-define=PHASE01_RESTART_STAGE=read --dart-define=PHASE01_RUN_NONCE=<same-uuid>
+```
+
+The runner exits the writer process. On iPhone/Android, explicitly terminate only `com.eros.dakhlrestaurant.phase00` between commands through the target lifecycle tool; a no-process result on iPhone means the writer had already exited. The reader independently asserts a different PID, persisted nonce, same revision, Inventory and exact slots `[settings, empty, sales, cash, sales, materials]`; only the permitted schema fields persist. A macOS read with a different UUID must fail, followed by the valid UUID recovery read. Never relabel an old successful run with a later source hash.
+
+`phase01_native_ui_test.dart` runs the actual native root, uses real view metrics/IME insets, opens only a synthetic invoice draft, proves save/cancel remain reachable and retain-edit behavior, discards its fixture and restores the original route/six slots. It never submits a domain Save. Run on the existing development Android target:
+
+```sh
+flutter test --no-pub --no-uninstall integration_test/phase01_native_ui_test.dart -d emulator-5554 --reporter expanded
+```
+
+After any diagnostic/integration entrypoint, rebuild/relaunch the ordinary main app before showing it as the deliverable. Keep initial splash images labeled separately from loaded-shell proof. Current commands/results, hashes, source-delta reuse and native keyboard/back/screen-reader limits are in [Phase01 evidence](../docs/phases/01-build-evidence.md). Device Hub is the installed iPhone GUI; do not search for or install the absent old Simulator.app.
