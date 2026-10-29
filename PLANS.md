@@ -1,6 +1,6 @@
 # Dakhl_Restaurant — project phases and scope
 
-Execution update,2026-10-29: Phase00 technical prerequisites are verified and the approved Phase01 shell is implemented, with Step4 independent verification in progress. See PHASES.md for actual results and unresolved gates. The existing12phase definitions remain unchanged.
+Execution update,2026-10-29: Phase01 approved development-preview scope is DONE after independent verification, exact revision approval and four linked merges. Phase00 technical prerequisites are closed; its broader historical completion remains separately scoped. See PHASES.md and the local Step6 record for actual outcomes and publication/release limits. The existing12phase definitions remain unchanged; Phase02 is not started.
 
 Historical initialization status,2026-10-28: Phase00 baseline was under verification and product UI implementation had not started.
 
@@ -42,3 +42,7 @@ Develop Madar_Engine alongside these phases. Implement shared contracts and reus
 ## Development support — owner request 2026-10-29
 
 Maintain a minimal private development dashboard and [versioned delivery/per-operation measurements](docs/how-to/versioning-and-performance.md) alongside approved phases. Shared measurement tooling stays in Madar; app instrumentation/fixtures stay here. This support initiative neither adds a restaurant feature nor advances the 12-phase plan. Each future major feature registers its own real speed/RAM/CPU scenario; planned operations cannot claim measured readiness.
+
+## Approved source integration — 2026-10-29
+
+[Phase 01 / development dashboard Step6 outcome](docs/phases/01-step6-completion.md) records exact owner-approved revisions, actual merges, independent/CI evidence, compatible engine pin and rollback limits. These tracker/completion amendments are local records, not additional unapproved changes to main. No next phase or deployment.

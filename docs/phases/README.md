@@ -34,3 +34,5 @@ Do not prefill results or approvals. Earlier Electron checks are reference evide
 - [Phase01 — independent Step4 review and verification](01-step4-review.md) — independent app/engine audit, scoped repairs and actual native/readiness gates; dated pre-integration assessment; current owner scope and revision disposition are in the review-corrections record.
 
 - [Hosted review corrections and current owner scope](01-review-corrections.md).
+
+- [Phase 01 — approved Step6 source integration and rollback record](01-step6-completion.md) — four approved merges complete; this completion record is committed locally, with additional publication subject to explicit approval.
