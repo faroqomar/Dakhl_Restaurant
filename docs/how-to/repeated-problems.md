@@ -69,3 +69,9 @@ The detailed existing 41-error Penpot record (`/Users/eros/.codex/skills/penpot/
 [Step4](../phases/00-step4-review.md), [Step5](../phases/00-pr-approval.md), [Step6](../phases/00-step6-merge.md), [native evidence](../phases/00-build-evidence.md) and [Penpot reproduction](../phases/00-penpot-reference-recreation.md) preserve detailed outcomes. The engine counterpart is Madar_Engine, `docs/how-to/repeated-problems.md`; shared capabilities remain there, never copied here.
 
 This documentation maintenance changes no runtime code, CI, dependency pin, design, financial policy or phase status. Tests/builds/benchmarks: N/A for behavior changes because none are introduced; verify documentation links, owned diff and memory delivery instead. Known native/design/security findings remain pending, not repaired by writing this guide.
+
+## Postmerge memory timeout
+
+| ID | Observed problem / cause | Prevention and verification |
+| --- | --- | --- |
+| A25 | One historical-document replacement failed with a 3600-second batch-retain wall timeout during the extraction provider backoff. Source sync/check correctly remained failed/pending; the check output included a failure JSON record before its summary. | Retry the same saved operation through the supported memory wrapper once; do not submit duplicate IDs, restart services or raise shared timeouts/provider limits speculatively. Parse bounded wrapper output as a stream of JSON records when needed. Verify the operation and current source hash actually complete before claiming synchronization. Verified remedy: retrying saved operation cb1d6b3d-df48-41b4-b9eb-010cff883941 completed; the subsequent source check passed with 110 sources, zero pending and zero failures. This observation was initially recorded locally after PR5; the owner subsequently requested publication of the remaining note. |
