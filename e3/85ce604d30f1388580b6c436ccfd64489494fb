@@ -1,0 +1,75 @@
+AGENTS.md
+  s_6f37b289fde16b::t_a9e512eb846fef 354-357
+PHASES.md
+  s_6f37b289fde16b::t_76bf278388415a 3-4,20,58,70,73
+docs/how-to/repeated-problems.md
+  s_6f37b289fde16b::t_6ad2e4c52ef86a 154-159
+docs/log/2026-10-29-hosted-review-corrections.md
+  s_6f37b289fde16b::t_c9317657a00b74 1-13
+docs/log/2026-10-29-phase01-penpot-design.md
+  s_6f37b289fde16b::t_3ae02c0dcdd754 3-4
+docs/log/2026-10-29-phase01-step3-preflight.md
+  s_6f37b289fde16b::t_8810722415ea02 24-25
+docs/phases/00-ios-native-acceptance.md
+  s_6f37b289fde16b::t_f430a6e411aaab 3-4
+docs/phases/00-penpot-reference-recreation.md
+  s_6f37b289fde16b::t_9624d0f274845f 3-4
+docs/phases/01-build-evidence.md
+  s_6f37b289fde16b::t_9148d2b1735286 3-4
+docs/phases/01-implementation-plan.md
+  s_6f37b289fde16b::t_d556eabbb47017 3-4,13
+docs/phases/01-penpot-design-review.md
+  s_6f37b289fde16b::t_c7b2400fe69698 3-4
+docs/phases/01-pr-approval.md
+  s_6f37b289fde16b::t_ce206808a82116 3-4
+docs/phases/01-review-corrections.md
+  s_6f37b289fde16b::t_682d1102d9e0ee 1-11
+docs/phases/01-scope-readiness.md
+  s_6f37b289fde16b::t_f38074da925129 3-4,23
+docs/phases/01-step4-review.md
+  s_6f37b289fde16b::t_6cd87ad974266a 3-4
+docs/phases/README.md
+  s_6f37b289fde16b::t_b57f14e936a863 34-36
+docs/reference/phase01-shell-contract.md
+  s_6f37b289fde16b::t_7ffd4eb37d6bbc 41,47
+lib/platform/shell_preferences_directory.dart
+  s_6f37b289fde16b::t_bd58bc6e2b3669 20-21,53-88
+outputs/memory/phase01-step3-delivery.json
+  s_6f37b289fde16b::t_8a354acafdad78 1-52
+outputs/penpot/phase01/README.md
+  s_6f37b289fde16b::t_52b2ceb6e3f065 1-7
+outputs/phase01-review-corrections/evidence-index.json
+  s_6f37b289fde16b::t_452eb821635c0b 1-11
+outputs/phase01-review-corrections/guard-analysis.txt
+  s_6f37b289fde16b::t_e0de817c1951c1 1-2
+outputs/phase01-review-corrections/guard-engine-source.txt
+  s_6f37b289fde16b::t_f046e4493d839a 1-2
+outputs/phase01-review-corrections/guard-full-tests.txt
+  s_6f37b289fde16b::t_4ed7c72602a767 1
+outputs/phase01-review-corrections/guard-green.txt
+  s_6f37b289fde16b::t_61a7a2d9074d9a 1-16
+outputs/phase01-review-corrections/guard-red.txt
+  s_6f37b289fde16b::t_e1483f1442a083 1-28
+outputs/phase01-review-corrections/link-check.json
+  s_6f37b289fde16b::t_1cb90b2518b7c6 1-23
+outputs/phase01-step4/tools/README.md
+  s_6f37b289fde16b::t_30cace5a73d6a9 1-3
+test/platform/shell_preferences_directory_test.dart
+  s_6f37b289fde16b::t_1b5e39e533d4fd 46-118
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e385ce604d30f1388580b6c436ccfd64489494fb",
+  "prompts": {},
+  "sessions": {
+    "s_6f37b289fde16b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1868f-72d4-7453-b738-169f9e9d9bf4",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
