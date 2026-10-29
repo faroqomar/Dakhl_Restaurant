@@ -1,6 +1,6 @@
 # Phase 01 — implementation and verification evidence
 
-Date:2026-10-29. Current status: **VERIFYING, locally implemented**. The owner authorized Step3 on the presented plan, required full-restart restoration, and separately approved both existing Penpot design sets and listed differences. Phase00's formerly outstanding native dependency passed focused independent review through Device Hub. This is not overall DONE, merge approval or a release.
+Date:2026-10-29. Current status: **BLOCKED for full verification** — [Step4 review](01-step4-review.md) supersedes this initial build record. The approved implementation and three review fixes are built locally;147current app tests/all three builds pass, native mobile Back now passes, but required genuine screen-reader traversal remains pending. Earlier134test/initial native-run statements below retain their dated provenance. The owner authorized Step3 on the presented plan, required full-restart restoration, and separately approved both existing Penpot design sets and listed differences. Phase00's formerly outstanding native dependency passed focused independent review through Device Hub. This is not overall DONE, merge approval or a release.
 
 ## Scope and ownership delivered
 

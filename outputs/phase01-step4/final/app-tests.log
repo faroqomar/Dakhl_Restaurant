@@ -1,0 +1,149 @@
+00:00 +0: loading /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/global_keyboard_test.dart
+00:00 +0: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh restored Inventory accepts global search without a preceding click (variant: TargetPlatform.macOS)
+00:01 +1: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh restored Inventory accepts global search without a preceding click (variant: TargetPlatform.macOS)
+00:01 +2: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh restored Inventory accepts global search without a preceding click (variant: TargetPlatform.macOS)
+00:01 +3: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh restored Inventory accepts global search without a preceding click (variant: TargetPlatform.macOS)
+00:01 +4: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh restored Inventory accepts global search without a preceding click (variant: TargetPlatform.macOS)
+00:01 +5: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh restored Inventory accepts global search without a preceding click (variant: TargetPlatform.macOS)
+00:02 +6: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh restored Inventory accepts global search without a preceding click (variant: TargetPlatform.macOS)
+00:02 +7: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/session_undo_test.dart: session Undo restores visible date and discount and survives away/back
+00:02 +8: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/session_undo_test.dart: session Undo restores visible date and discount and survives away/back
+00:02 +9: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/session_undo_test.dart: session Undo restores visible date and discount and survives away/back
+00:02 +10: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/session_undo_test.dart: session Undo restores visible date and discount and survives away/back
+00:02 +11: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/session_undo_test.dart: session Undo restores visible date and discount and survives away/back
+00:03 +12: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/session_undo_test.dart: session Undo restores visible date and discount and survives away/back
+00:03 +13: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/session_undo_test.dart: session Undo restores visible date and discount and survives away/back
+00:03 +14: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh global numbered shortcuts navigate while editable text owns slot and Undo keys (variant: TargetPlatform.macOS)
+00:03 +15: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh global numbered shortcuts navigate while editable text owns slot and Undo keys (variant: TargetPlatform.macOS)
+00:03 +16: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh global numbered shortcuts navigate while editable text owns slot and Undo keys (variant: TargetPlatform.macOS)
+00:03 +17: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: narrow and desktop sales and gallery have no layout overflow
+00:04 +18: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: narrow and desktop sales and gallery have no layout overflow
+00:04 +19: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: narrow and desktop sales and gallery have no layout overflow
+00:04 +20: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: narrow and desktop sales and gallery have no layout overflow
+00:04 +21: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: narrow and desktop sales and gallery have no layout overflow
+00:04 +22: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: narrow and desktop sales and gallery have no layout overflow
+00:04 +23: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: narrow and desktop sales and gallery have no layout overflow
+00:04 +24: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: narrow and desktop sales and gallery have no layout overflow
+00:04 +25: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:04 +26: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:04 +27: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:04 +28: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:04 +29: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:04 +30: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:04 +31: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:04 +32: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:04 +33: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/capability_probe_view_model_test.dart: canceled selection is distinct from failed selection and writes nothing
+00:04 +34: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/capability_probe_view_model_test.dart: canceled selection is distinct from failed selection and writes nothing
+00:04 +35: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: protected shortcut editor disables save and exposes explicit reread
+00:05 +36: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: protected shortcut editor disables save and exposes explicit reread
+00:05 +37: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: protected shortcut editor disables save and exposes explicit reread
+00:05 +38: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: protected shortcut editor disables save and exposes explicit reread
+00:05 +39: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/capability_probe_view_model_test.dart: invalid imported bytes preserve existing source and output; valid retry persists
+00:05 +40: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: denied publication preserves old committed bytes and retry succeeds
+00:05 +41: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: denied publication preserves old committed bytes and retry succeeds
+00:05 +42: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: denied publication preserves old committed bytes and retry succeeds
+00:05 +43: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: denied publication preserves old committed bytes and retry succeeds
+00:05 +44: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: sales layout uses the same inclusive narrow boundary as gutters
+00:05 +45: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: sales layout uses the same inclusive narrow boundary as gutters
+00:05 +46: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: sales layout uses the same inclusive narrow boundary as gutters
+00:05 +47: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: sales layout uses the same inclusive narrow boundary as gutters
+00:05 +48: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: sales layout uses the same inclusive narrow boundary as gutters
+00:05 +49: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: sales layout uses the same inclusive narrow boundary as gutters
+00:05 +50: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: sales layout uses the same inclusive narrow boundary as gutters
+00:05 +51: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: sales layout uses the same inclusive narrow boundary as gutters
+00:05 +52: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: sales layout uses the same inclusive narrow boundary as gutters
+00:05 +53: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/ui/presentation_test.dart: explicitly named icon buttons announce exactly one accessible label
+00:06 +54: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/bootstrap_test.dart: overlapping reads share one initialization and use the real contract
+00:06 +55: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/bootstrap_test.dart: failed bootstrap is retryable and cannot claim a saved value
+00:06 +56: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/bootstrap_test.dart: closing during initialization releases a late opened store once
+00:06 +57: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/bootstrap_test.dart: composition forwards opaque payload/revision without app-side storage
+00:06 +58: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/bootstrap_test.dart: opening exceptions are sanitized and closed startup does not open
+00:06 +59: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +60: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +61: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +62: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +63: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +64: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +65: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +66: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +67: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +68: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +69: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +70: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +71: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +72: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +73: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +74: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +75: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +76: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +77: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +78: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +79: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +80: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +81: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +82: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +83: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +84: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +85: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +86: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +87: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +88: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +89: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +90: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +91: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +92: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +93: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +94: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +95: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +96: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +97: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +98: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +99: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:08 +100: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:08 +101: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:08 +102: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:08 +103: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:08 +104: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: fresh app instance restores route and slots without bootstrap write
+00:08 +105: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: a visible shortcut changes route and saves shell preferences only
+00:08 +106: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: unavailable preferences permit session navigation without writes
+00:09 +107: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: healthy reread warns when a newer session route remains unsaved
+00:09 +108: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: unknown router destination falls back to Sales consistently
+00:10 +109: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: mobile back from a shell destination returns to Sales (variant: TargetPlatform.android)
+00:10 +110: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: resumed Android registers framework Back through shell navigation and modal closure (variant: TargetPlatform.android)
+00:10 +111: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: resumed Android registers framework Back through shell navigation and modal closure (variant: TargetPlatform.android)
+00:10 +112: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: resumed Android registers framework Back through shell navigation and modal closure (variant: TargetPlatform.android)
+00:11 +113: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: resumed Android registers framework Back through shell navigation and modal closure (variant: TargetPlatform.android)
+00:11 +114: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: resumed Android registers framework Back through shell navigation and modal closure (variant: TargetPlatform.android)
+00:11 +115: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: resumed Android registers framework Back through shell navigation and modal closure (variant: TargetPlatform.android)
+00:11 +116: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: resumed Android registers framework Back through shell navigation and modal closure (variant: TargetPlatform.android)
+00:11 +117: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: resumed Android registers framework Back through shell navigation and modal closure (variant: TargetPlatform.android)
+00:11 +118: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: resumed Android registers framework Back through shell navigation and modal closure (variant: TargetPlatform.android)
+00:11 +119: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: resumed Android registers framework Back through shell navigation and modal closure (variant: TargetPlatform.android)
+00:11 +120: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: resumed Android registers framework Back through shell navigation and modal closure (variant: TargetPlatform.android)
+00:11 +121: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: resumed Android registers framework Back through shell navigation and modal closure (variant: TargetPlatform.android)
+00:11 +122: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: resumed Android registers framework Back through shell navigation and modal closure (variant: TargetPlatform.android)
+00:11 +123: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/platform/probe_app_test.dart: development controls are Arabic RTL, labelled, scrollable at large text; cancel announced
+00:11 +124: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/platform/probe_app_test.dart: development controls are Arabic RTL, labelled, scrollable at large text; cancel announced
+00:11 +125: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/platform/probe_app_test.dart: development controls are Arabic RTL, labelled, scrollable at large text; cancel announced
+00:12 +126: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe uses one dirty guard and Cancel retains input (variant: TargetPlatform.iOS)
+00:12 +127: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe uses one dirty guard and Cancel retains input (variant: TargetPlatform.iOS)
+00:12 +128: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/platform/offline_arabic_pdf_test.dart: generates a real PDF with embedded offline Arabic font and no source mutation
+00:12 +129: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +130: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +131: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +132: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +133: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +134: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +135: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +136: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +137: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +138: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +139: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +140: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +141: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS wrong-edge vertical short and canceled swipes do not navigate (variant: TargetPlatform.iOS)
+00:12 +142: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe on Sales never requests app exit (variant: TargetPlatform.iOS)
+00:12 +143: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: canceling shortcut discard retains the edited choices
+00:13 +144: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: failed shortcut save retries inside the open dialog
+00:14 +145: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: shell keeps essential layout reachable at Size(320.0, 568.0) and 200% text
+00:14 +146: /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/test/app/app_test.dart: shell keeps essential layout reachable at Size(1440.0, 1000.0) and 200% text
+00:14 +147: All tests passed!

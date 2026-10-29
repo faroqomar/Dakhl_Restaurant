@@ -11,6 +11,7 @@ import 'package:madar_application/madar_application.dart';
 import '../shell/shell_routes.dart';
 import '../shell/shell_view_model.dart';
 import '../ui/dakhl_ui.dart';
+import 'ios_shell_back_gesture.dart';
 
 final shellViewModelProvider = Provider<ShellViewModel>(
   (ref) => throw StateError('Shell composition must supply its ViewModel.'),
@@ -38,6 +39,7 @@ class _DakhlRestaurantAppState extends State<DakhlRestaurantApp> {
   late final AppLifecycleListener _lifecycle;
   bool _acceptingRouterIntent = false;
   bool _syncQueued = false;
+  bool _mobileBackInProgress = false;
 
   @override
   void initState() {
@@ -65,11 +67,23 @@ class _DakhlRestaurantAppState extends State<DakhlRestaurantApp> {
       },
       routes: [
         ShellRoute(
-          builder: (context, state, child) => _ShellFrame(
-            onNavigate: _navigate,
-            onEditShortcuts: () => _editShortcuts(context),
-            onSearch: _search,
-            child: child,
+          builder: (context, state, child) => ListenableBuilder(
+            listenable: _model,
+            builder: (context, _) => PopScope<void>(
+              // Android derives platform Back registration from the outer
+              // Navigator too. Its shell page must report the same guard as
+              // the selected destination, including after a modal closes.
+              canPop: _canPopShell,
+              onPopInvokedWithResult: (didPop, _) {
+                if (!didPop) unawaited(_mobileBack());
+              },
+              child: _ShellFrame(
+                onNavigate: _navigate,
+                onEditShortcuts: () => _editShortcuts(context),
+                onSearch: _search,
+                child: child,
+              ),
+            ),
           ),
           routes: [
             for (final destination in ShellRoutes.destinations)
@@ -78,29 +92,30 @@ class _DakhlRestaurantAppState extends State<DakhlRestaurantApp> {
                 builder: (context, state) => ListenableBuilder(
                   listenable: _model,
                   builder: (context, _) => PopScope<void>(
-                    canPop:
-                        _model.routeId == ShellRoutes.sales &&
-                        !_model.dirtyForm &&
-                        _model.shortcutDraft == null,
+                    canPop: _canPopShell,
                     onPopInvokedWithResult: (didPop, _) {
                       if (!didPop) unawaited(_mobileBack());
                     },
-                    child: Phase01RouteSurface(
-                      routeId: destination.id,
-                      onCheckout: () =>
-                          showDakhlToast(context, 'عرض تجريبي فقط'),
-                      searchFocusNode: _searchFocus,
-                      formDraft: _model.formDraft,
-                      onFormChanged: _model.setFormDraft,
-                      onFormDiscard: _model.discardForm,
-                      ticketPresentation: _model.ticketPresentation,
-                      onTicketChanged: (value) {
-                        final previous = _model.ticketPresentation;
-                        _model.registerSessionUndo(
-                          () => _model.setTicketPresentation(previous),
-                        );
-                        _model.setTicketPresentation(value);
-                      },
+                    child: IosShellBackGesture(
+                      canStart: _canStartIosBack,
+                      onBack: _mobileBack,
+                      child: Phase01RouteSurface(
+                        routeId: destination.id,
+                        onCheckout: () =>
+                            showDakhlToast(context, 'عرض تجريبي فقط'),
+                        searchFocusNode: _searchFocus,
+                        formDraft: _model.formDraft,
+                        onFormChanged: _model.setFormDraft,
+                        onFormDiscard: _model.discardForm,
+                        ticketPresentation: _model.ticketPresentation,
+                        onTicketChanged: (value) {
+                          final previous = _model.ticketPresentation;
+                          _model.registerSessionUndo(
+                            () => _model.setTicketPresentation(previous),
+                          );
+                          _model.setTicketPresentation(value);
+                        },
+                      ),
                     ),
                   ),
                 ),
@@ -130,18 +145,39 @@ class _DakhlRestaurantAppState extends State<DakhlRestaurantApp> {
     return context != null && mounted ? showDakhlDiscardDialog(context) : false;
   }
 
+  bool get _canPopShell =>
+      _model.routeId == ShellRoutes.sales &&
+      !_model.dirtyForm &&
+      _model.shortcutDraft == null;
+
+  bool _canStartIosBack() =>
+      mounted &&
+      _model.canNavigate &&
+      !_model.busy &&
+      !_mobileBackInProgress &&
+      _model.routeId != ShellRoutes.sales &&
+      !(_navigatorKey.currentState?.canPop() ?? true);
+
   Future<void> _mobileBack() async {
-    if (!mounted || !_model.canNavigate) return;
-    if (_model.routeId != ShellRoutes.sales) {
-      await _model.navigate(ShellRoutes.sales, confirmDiscard: _confirmDiscard);
-      return;
+    if (!mounted || !_model.canNavigate || _mobileBackInProgress) return;
+    _mobileBackInProgress = true;
+    try {
+      if (_model.routeId != ShellRoutes.sales) {
+        await _model.navigate(
+          ShellRoutes.sales,
+          confirmDiscard: _confirmDiscard,
+        );
+        return;
+      }
+      if (_model.dirtyForm || _model.shortcutDraft != null) {
+        if (!await _confirmDiscard() || !mounted) return;
+        _model.discardForm();
+        _model.cancelShortcutEditing();
+      }
+      await SystemNavigator.pop();
+    } finally {
+      _mobileBackInProgress = false;
     }
-    if (_model.dirtyForm || _model.shortcutDraft != null) {
-      if (!await _confirmDiscard() || !mounted) return;
-      _model.discardForm();
-      _model.cancelShortcutEditing();
-    }
-    await SystemNavigator.pop();
   }
 
   void _navigate(String id) {
@@ -330,6 +366,7 @@ class _ShellFrame extends ConsumerWidget {
             model.saveState == ShellSaveState.failed ||
             model.saveState == ShellSaveState.conflict ||
             model.saveState == ShellSaveState.commitUnknown;
+        final unsaved = model.hasUnsavedPreferences;
         final status = initializing
             ? 'جارٍ تحميل إعدادات العرض…'
             : protected
@@ -342,6 +379,8 @@ class _ShellFrame extends ConsumerWidget {
             ? 'تعذّر تأكيد الحفظ؛ أعد التحقق.'
             : failed
             ? 'تعذّر الحفظ. بقيت تغييراتك؛ أعد المحاولة.'
+            : unsaved
+            ? 'تغييرات العرض لهذه الجلسة فقط؛ لم تُحفظ على جهازك.'
             : 'محفوظ على جهازك';
         return Scaffold(
           body: SafeArea(
@@ -356,6 +395,8 @@ class _ShellFrame extends ConsumerWidget {
                   ? DakhlStatusKind.error
                   : initializing || model.saveState == ShellSaveState.saving
                   ? DakhlStatusKind.saving
+                  : unsaved
+                  ? DakhlStatusKind.info
                   : DakhlStatusKind.saved,
               onRetry: failed
                   ? () => unawaited(

@@ -1,0 +1,12 @@
+{
+  "cleanNativeBack": "pass on repairedsource",
+  "legacyKeyRepeat": "pass on repairedsource",
+  "actualInputs": [
+    "adbKEYCODE_BACK",
+    "actualrightedgegesture"
+  ],
+  "developmentAppOnly": true,
+  "startRoute": "Sales",
+  "currentState": "synthetic invoice form open, no edit/domainsave yet",
+  "talkBack": "notenabledyet"
+}

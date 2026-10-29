@@ -20,3 +20,5 @@ The editor adds controlled retry/canSave presentation so the root can expose a r
 ## Native delta evidence
 
 The current native Android invoice test uses real view metrics/OS keyboard, no inset/size overrides, and retains/discards only its synthetic fixture before restoring route/six slots. It does not submit a domain save or establish TalkBack/native back gestures. iPhone Device Hub captures and final live AX labels are separate. Current conditions, screenshots, compiled source snapshots and limitations are in docs/phases/01-build-evidence.md.
+
+Step4:147current tests/five unchanged goldens and native Back fixes are verified. Actual reader traversal remains a required pending gate despite successful service activation/field focus; owner cannot manually verify now. See docs/phases/01-step4-review.md; do not infer screen-reader acceptance from these widget snapshots.

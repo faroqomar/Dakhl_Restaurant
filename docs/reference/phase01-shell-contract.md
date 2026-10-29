@@ -39,3 +39,9 @@ Use `flutter test --no-pub`, `flutter analyze --no-pub`, formatting, the Python 
 Structured debug diagnostics come from the engine event sink and contain event/level/operation/outcome/code/duration, never payloads, namespaces, paths or account data. No remote telemetry, connector, authentication or upload queue is composed. Failure copy is translated by the app, not raw engine diagnostics displayed to users.
 
 Normal acknowledged process-restart persistence is covered. Power-loss/device loss, uninstall/clear-data retention, arbitrary multi-process access, financial migration/recovery, physical printing/hardware and unsupported platforms are not promised. Downgrade retains this dedicated database; Phase 00 ignores its separate location, and unknown/newer payloads remain protected. Publication, hosted CI, exact revision merge approval and supported release remain separate gates.
+
+## Step4 routing and feedback corrections
+
+A healthy reread may preserve a newer session route without writing. The shell now respects hasUnsavedPreferences and shows an informational unsaved warning instead of claiming Saved. Native Android framework Back registration must stay true for a guarded destination: both outer ShellRoute and inner page share one reactive PopScope decision and single-flight back command. The iOS-only leading-edge completion adapter is restricted to24logical edge pixels, touch input and dominant completed travel; it defers to child gestures, excludes open menu/modals and Sales, and uses the same dirty guard. It adds no history or pop animation. These are repairs of the approved interaction contract, not new engine capabilities.
+
+Current independent verification/remaining required screen-reader gate: [Step4 report](../phases/01-step4-review.md). TalkBack settings were restored after inconclusive automated traversal; do not claim a full accessibility pass.
