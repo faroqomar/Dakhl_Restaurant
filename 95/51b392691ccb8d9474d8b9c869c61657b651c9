@@ -1,0 +1,37 @@
+outputs/dev-dashboard/console-review-manifest.json
+  s_6f37b289fde16b::t_17e7f5ef41e8fb 1-22
+outputs/dev-dashboard/console-review/.gitignore
+  s_6f37b289fde16b::t_faa79e8b476f9b 1-7
+outputs/dev-dashboard/console-review/.openai/hosting.json
+  s_6f37b289fde16b::t_4d7aaf9783470e 1-6
+outputs/dev-dashboard/console-review/README.md
+  s_6f37b289fde16b::t_7193fe73a75cfb 1-35
+"outputs/dev-dashboard/console-review/Start Dashboard.command"
+  s_6f37b289fde16b::t_b45bef1873aca2 1-13
+outputs/dev-dashboard/console-review/runner-config.example.json
+  s_6f37b289fde16b::t_9e81bc6786fbda 1-8
+outputs/dev-dashboard/console-review/runner/connect.html
+  s_6f37b289fde16b::t_712826b18c69ca 1-5
+outputs/dev-dashboard/console-review/runner/server.py
+  s_6f37b289fde16b::t_96482be76a3d12 1-505
+outputs/dev-dashboard/console-review/runner/tests/test_server.py
+  s_6f37b289fde16b::t_ad5c791c447d16 1-281
+outputs/dev-dashboard/console-review/site/tests/ui-contract.test.mjs
+  s_6f37b289fde16b::t_3d0aa40efa8ef1 1-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "9551b392691ccb8d9474d8b9c869c61657b651c9",
+  "prompts": {},
+  "sessions": {
+    "s_6f37b289fde16b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1868f-72d4-7453-b738-169f9e9d9bf4",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
