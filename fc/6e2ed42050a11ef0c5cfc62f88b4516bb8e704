@@ -1,0 +1,21 @@
+tool/dev_dashboard/run_benchmarks.py
+  s_cecf55789e34ef::t_158851090e5d52 11-14,131-252,332,344-345,347-348
+tool/dev_dashboard/tests/test_app_runner.py
+  s_cecf55789e34ef::t_d76840572a1203 3,21-70,75,86,130,149,232-333
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "fc6e2ed42050a11ef0c5cfc62f88b4516bb8e704",
+  "prompts": {},
+  "sessions": {
+    "s_cecf55789e34ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1892c-b531-7571-8914-75aa02e54d3d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
