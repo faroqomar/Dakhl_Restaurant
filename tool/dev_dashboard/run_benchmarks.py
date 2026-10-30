@@ -8,6 +8,10 @@ import importlib.util
 import json
 from pathlib import Path
 import platform
+import plistlib
+import os
+import stat
+from contextlib import contextmanager
 import re
 import subprocess
 import sys
@@ -124,6 +128,128 @@ def apple_toolchain_identity():
     return identity
 
 
+REVIEWED_BUNDLE_ID = 'com.eros.dakhlrestaurant.phase00'
+PHASE02_CASES = {'accounts.open', 'accounts.save', 'accounts.migrate_legacy',
+                 'accounts.replace', 'accounts.recover_previous', 'workspace.save_restore'}
+PHASE02_PROFILES = {'small': 10, 'medium': 1000, 'largest': 10000}
+
+
+@contextmanager
+def _manifest_directory(path, *, create=False):
+    """Open every directory component without following filesystem redirects."""
+    path = Path(path)
+    if not path.is_absolute() or '..' in path.parts:
+        raise RuntimeError('phase02_manifest_directory_invalid')
+    descriptor = os.open(path.anchor, os.O_RDONLY | os.O_DIRECTORY)
+    try:
+        for component in path.parts[1:]:
+            if create:
+                try:
+                    os.mkdir(component, mode=0o700, dir_fd=descriptor)
+                except FileExistsError:
+                    pass
+            child = os.open(component, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW,
+                            dir_fd=descriptor)
+            os.close(descriptor)
+            descriptor = child
+        yield descriptor
+    except OSError:
+        raise RuntimeError('phase02_manifest_directory_redirected_or_unavailable') from None
+    finally:
+        os.close(descriptor)
+
+
+def phase02_manifest_path(executable, case, fixture, run_id, *, home_directory=None):
+    """Use only the reviewed app's existing sandbox temporary directory."""
+    try:
+        info = plistlib.loads((executable.parent.parent / 'Info.plist').read_bytes())
+        config = (ROOT / 'macos/Runner/Configs/AppInfo.xcconfig').read_text()
+        configured = re.search(r'^PRODUCT_BUNDLE_IDENTIFIER\s*=\s*([A-Za-z0-9.-]+)\s*$', config, re.M)
+    except (OSError, ValueError):
+        raise RuntimeError('phase02_bundle_identity_invalid') from None
+    if not isinstance(info, dict) or info.get('CFBundleIdentifier') != REVIEWED_BUNDLE_ID or configured is None or configured[1] != REVIEWED_BUNDLE_ID:
+        raise RuntimeError('phase02_bundle_identity_invalid')
+    if case not in PHASE02_CASES or fixture not in PHASE02_PROFILES or not re.fullmatch(r'[a-f0-9]{32}', run_id):
+        raise RuntimeError('phase02_manifest_identity_invalid')
+    temporary = (home_directory or Path.home()) / 'Library/Containers' / REVIEWED_BUNDLE_ID / 'Data/tmp'
+    try:
+        with _manifest_directory(temporary) as temporary_fd:
+            directory_name = 'dakhl-phase02-benchmark-manifests'
+            try:
+                os.mkdir(directory_name, mode=0o700, dir_fd=temporary_fd)
+            except FileExistsError:
+                pass
+            directory_fd = os.open(directory_name, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW,
+                                   dir_fd=temporary_fd)
+            try:
+                name = case + '-' + fixture + '-' + run_id + '.json'
+                try:
+                    os.stat(name, dir_fd=directory_fd, follow_symlinks=False)
+                except FileNotFoundError:
+                    return temporary / directory_name / name
+                raise RuntimeError('phase02_manifest_already_exists')
+            finally:
+                os.close(directory_fd)
+    except (OSError, RuntimeError):
+        raise RuntimeError('phase02_sandbox_temp_unavailable_or_redirected') from None
+
+
+def _validate_phase02_manifest(manifest, profile):
+    common = {'profile', 'synthetic', 'sourceSchema', 'legacySourceSchema', 'recordKind',
+              'recordCount', 'canonicalBytes', 'legacyInputBytes', 'replacementBytes',
+              'accountLimitBytes', 'workspaceBytes', 'heldDrafts', 'activeDrafts',
+              'largestMarginPolicyBytes'}
+    expected = common | ({'noteCharactersPerRecord'} if profile == 'largest' else {'notePattern'})
+    maximum = 20 * 1024 * 1024
+    fixed = {'sourceSchema': 11, 'legacySourceSchema': 1, 'recordCount': PHASE02_PROFILES[profile],
+             'accountLimitBytes': maximum, 'heldDrafts': 40, 'activeDrafts': 1,
+             'largestMarginPolicyBytes': 65536}
+    if not isinstance(manifest, dict) or set(manifest) != expected or manifest['profile'] != profile or manifest['synthetic'] is not True or manifest['recordKind'] != 'cash transactions; no operating commands':
+        raise RuntimeError('phase02_fixture_manifest_invalid')
+    if any(type(manifest[key]) is not int or manifest[key] != value for key, value in fixed.items()):
+        raise RuntimeError('phase02_fixture_manifest_invalid')
+    for key in ('canonicalBytes', 'legacyInputBytes', 'replacementBytes'):
+        value = manifest[key]
+        if type(value) is not int or not 3 * fixed['recordCount'] <= value <= maximum:
+            raise RuntimeError('phase02_fixture_manifest_invalid')
+        if profile == 'largest' and value <= 19 * 1024 * 1024:
+            raise RuntimeError('phase02_fixture_manifest_invalid')
+    workspace = manifest['workspaceBytes']
+    if type(workspace) is not int or not 3 * 41 <= workspace <= maximum:
+        raise RuntimeError('phase02_fixture_manifest_invalid')
+    if profile == 'largest':
+        if type(manifest['noteCharactersPerRecord']) is not int or not 1 <= manifest['noteCharactersPerRecord'] <= 2000:
+            raise RuntimeError('phase02_fixture_manifest_invalid')
+    elif manifest['notePattern'] != 'synthetic-{index}':
+        raise RuntimeError('phase02_fixture_manifest_invalid')
+
+
+def collect_phase02_manifest(path, profile, evidence_directory):
+    """Bind bounded metadata to its exclusive case/profile/run source filename."""
+    match = re.fullmatch(r'([a-z._]+)-(small|medium|largest)-([a-f0-9]{32})\.json', path.name)
+    if profile not in PHASE02_PROFILES or match is None or match[1] not in PHASE02_CASES or match[2] != profile:
+        raise RuntimeError('phase02_fixture_manifest_attempt_invalid')
+    try:
+        with _manifest_directory(path.parent) as directory_fd:
+            descriptor = os.open(path.name, os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK, dir_fd=directory_fd)
+            with os.fdopen(descriptor, 'rb') as source:
+                if not stat.S_ISREG(os.fstat(source.fileno()).st_mode):
+                    raise RuntimeError('phase02_fixture_manifest_source_invalid')
+                content = source.read(16 * 1024 + 1)
+    except OSError:
+        raise RuntimeError('phase02_fixture_manifest_source_invalid') from None
+    if len(content) > 16 * 1024:
+        raise RuntimeError('phase02_fixture_manifest_too_large')
+    manifest = json.loads(content)
+    _validate_phase02_manifest(manifest, profile)
+    with _manifest_directory(evidence_directory, create=True) as directory_fd:
+        descriptor = os.open(path.name, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW,
+                             0o600, dir_fd=directory_fd)
+        with os.fdopen(descriptor, 'wb') as output:
+            output.write(content)
+    return manifest, hashlib.sha256(content).hexdigest()
+
+
 def operation_target(entry):
     return ('lib/platform/phase02_performance_main.dart' if entry.get('phase') == '02'
             else 'lib/platform/performance_main.dart')
@@ -203,9 +329,7 @@ def main():
         argv = [str(executable), '--case', case, '--iterations',
                 str(1 if entry['measurementKind'] == 'startup' else count), '--run-id', run_id]
         if phase02:
-            manifest_directory = ROOT / 'outputs/phase02/performance-manifests'
-            manifest_directory.mkdir(parents=True, exist_ok=True)
-            manifest_path = manifest_directory / (case + '-' + args.fixture + '-' + run_id + '.json')
+            manifest_path = phase02_manifest_path(executable, case, args.fixture, run_id)
             argv += ['--fixture', args.fixture, '--fixture-manifest', str(manifest_path)]
         fixture_source = ROOT / ('lib/platform/phase02_performance_scenarios.dart' if phase02
                                  else 'lib/platform/performance_scenarios.dart')
@@ -217,12 +341,11 @@ def main():
             if result['status'] == 'passed':
                 if manifest_path is None or not manifest_path.is_file():
                     raise RuntimeError('phase02_fixture_manifest_missing')
-                manifest_bytes = manifest_path.read_bytes()
-                manifest = json.loads(manifest_bytes)
-                if manifest.get('profile') != args.fixture or manifest.get('synthetic') is not True:
-                    raise RuntimeError('phase02_fixture_manifest_invalid')
+                manifest, manifest_fingerprint = collect_phase02_manifest(
+                    manifest_path, args.fixture, ROOT / 'outputs/phase02/performance-manifests')
                 result['fixtureManifest'] = manifest
-                result['fixtureManifestFingerprint'] = hashlib.sha256(manifest_bytes).hexdigest()
+                result['fixtureManifestFingerprint'] = manifest_fingerprint
+                result['fixtureManifestArtifact'] = 'outputs/phase02/performance-manifests/' + manifest_path.name
             result['resourceWindowScope'] = ('One host start/end window: operation samples plus '
                 'inter-iteration fixture reset, teardown and rendering setup. Elapsed samples exclude '
                 'fixture reset and end at actual raster completion. RAM/CPU are not per-sample isolated.')

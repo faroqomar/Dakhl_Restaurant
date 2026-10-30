@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import plistlib
 from pathlib import Path
 import tempfile
 import unittest
@@ -17,11 +18,61 @@ class AppRunnerTests(unittest.TestCase):
         toolchain.start()
         self.addCleanup(toolchain.stop)
 
+    def test_phase02_manifest_uses_existing_sandbox_tmp_and_keeps_evidence_copy(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            executable = root / 'Fixture.app/Contents/MacOS/Fixture'
+            executable.parent.mkdir(parents=True)
+            executable.write_text('fixture')
+            (executable.parent.parent / 'Info.plist').write_bytes(plistlib.dumps({'CFBundleIdentifier': 'com.eros.dakhlrestaurant.phase00'}))
+            temporary = root / 'home/Library/Containers/com.eros.dakhlrestaurant.phase00/Data/tmp'
+            temporary.mkdir(parents=True)
+            path = runner.phase02_manifest_path(executable, 'accounts.open', 'small', 'a' * 32, home_directory=root / 'home')
+            self.assertTrue(path.is_relative_to(temporary.resolve()))
+            self.assertNotEqual(path.parent, root / 'outputs')
+            payload = json.dumps(dict(profile='small', synthetic=True, sourceSchema=11, legacySourceSchema=1, recordKind='cash transactions; no operating commands', recordCount=10, canonicalBytes=1234, legacyInputBytes=1200, replacementBytes=1250, notePattern='synthetic-{index}', accountLimitBytes=20*1024*1024, workspaceBytes=4096, heldDrafts=40, activeDrafts=1, largestMarginPolicyBytes=65536)).encode()
+            path.write_bytes(payload)
+            evidence = root / 'evidence'
+            manifest, digest = runner.collect_phase02_manifest(path, 'small', evidence)
+            self.assertEqual(manifest['canonicalBytes'], 1234)
+            self.assertEqual((evidence / path.name).read_bytes(), payload)
+            self.assertEqual(len(digest), 64)
+            self.assertEqual(path.read_bytes(), payload)
+
+    def test_phase02_invalid_or_oversize_manifest_never_creates_evidence(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            source = root / ('accounts.open-small-' + 'a' * 32 + '.json')
+            evidence = root / 'evidence'
+            source.write_text(json.dumps({'profile': 'medium', 'synthetic': True}))
+            with self.assertRaisesRegex(RuntimeError, 'manifest_invalid'):
+                runner.collect_phase02_manifest(source, 'small', evidence)
+            self.assertFalse(evidence.exists())
+            source.write_bytes(b' ' * (16 * 1024 + 1))
+            with self.assertRaisesRegex(RuntimeError, 'manifest_too_large'):
+                runner.collect_phase02_manifest(source, 'small', evidence)
+            self.assertFalse(evidence.exists())
+
+    def test_phase02_manifest_refuses_uninitialized_container_or_unsafe_bundle_identity(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            executable = root / 'Fixture.app/Contents/MacOS/Fixture'
+            executable.parent.mkdir(parents=True)
+            executable.write_text('fixture')
+            info = executable.parent.parent / 'Info.plist'
+            info.write_bytes(plistlib.dumps({'CFBundleIdentifier': 'com.eros.dakhlrestaurant.phase00'}))
+            with self.assertRaisesRegex(RuntimeError, 'sandbox_temp_unavailable'):
+                runner.phase02_manifest_path(executable, 'accounts.open', 'small', 'a' * 32, home_directory=root / 'home')
+            self.assertFalse((root / 'home').exists())
+            info.write_bytes(plistlib.dumps({'CFBundleIdentifier': '../unrelated'}))
+            with self.assertRaisesRegex(RuntimeError, 'bundle_identity_invalid'):
+                runner.phase02_manifest_path(executable, 'accounts.open', 'small', 'a' * 32, home_directory=root / 'home')
+
     def test_phase02_routes_to_separate_entrypoint_and_cache_target(self):
         self.assertEqual(runner.operation_target({'phase': '02'}), 'lib/platform/phase02_performance_main.dart')
         self.assertEqual(runner.operation_target({'phase': '01'}), 'lib/platform/performance_main.dart')
         with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory)
+            root = Path(directory).resolve()
             executable = root / 'app'
             executable.write_text('fixture')
             with patch.object(runner, 'ROOT', root), patch.object(runner, 'EXECUTABLE', executable), patch.object(runner, 'runtime_engine_identity', return_value={'gitCommit': 'a' * 40}), patch.object(runner, 'command') as build:
@@ -32,7 +83,7 @@ class AppRunnerTests(unittest.TestCase):
 
     def test_native_toolchain_upgrade_invalidates_identical_app_cache(self):
         with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory)
+            root = Path(directory).resolve()
             executable = root / 'app'
             executable.write_text('fixture')
             toolchain = {'xcode': 'Xcode old\nBuild old', 'macosSdkBuild': 'sdk-old'}
@@ -76,7 +127,7 @@ class AppRunnerTests(unittest.TestCase):
 
     def test_profile_cache_invalidates_source_sdk_and_missing_executable(self):
         with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory)
+            root = Path(directory).resolve()
             executable = root / 'app'
             executable.write_text('fixture')
             with patch.object(runner, 'ROOT', root), patch.object(runner, 'EXECUTABLE', executable), patch.object(runner, 'runtime_engine_identity', return_value=dict(gitCommit='a' * 40)), patch.object(runner, 'command') as build:
@@ -95,7 +146,7 @@ class AppRunnerTests(unittest.TestCase):
 
     def test_source_fingerprint_tracks_lock_assets_and_sources(self):
         with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory)
+            root = Path(directory).resolve()
             for name in ('lib', 'assets', 'macos/Flutter/ephemeral'):
                 (root / name).mkdir(parents=True)
             for name in ('lib/main.dart', 'assets/font.ttf', 'pubspec.yaml', 'pubspec.lock'):
@@ -176,6 +227,108 @@ class AppRunnerTests(unittest.TestCase):
             with patch.object(runner, 'ROOT', root), patch.object(runner, 'command', side_effect=['a' * 40, '']):
                 with self.assertRaisesRegex(RuntimeError, 'engine_resolution_mismatch'):
                     runner.runtime_engine_identity()
+
+
+
+class Phase02TransportGuardsTests(unittest.TestCase):
+    def setUp(self):
+        self.temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temporary.cleanup)
+        self.root = Path(self.temporary.name).resolve()
+        self.bundle = 'com.eros.dakhlrestaurant.phase00'
+        self.executable = self.root / 'Fixture.app/Contents/MacOS/Fixture'
+        self.executable.parent.mkdir(parents=True)
+        self.executable.write_text('fixture')
+        self.info = self.executable.parent.parent / 'Info.plist'
+        self.info.write_bytes(plistlib.dumps({'CFBundleIdentifier': self.bundle}))
+        self.home = self.root / 'home'
+        self.sandbox = self.home / 'Library/Containers' / self.bundle / 'Data/tmp'
+        self.sandbox.mkdir(parents=True)
+        self.source = self.root / ('accounts.open-small-' + 'a' * 32 + '.json')
+        self.source.write_text(json.dumps(self.valid_manifest()))
+
+    def valid_manifest(self):
+        return dict(profile='small', synthetic=True, sourceSchema=11,
+                    legacySourceSchema=1, recordKind='cash transactions; no operating commands',
+                    recordCount=10, canonicalBytes=3456, legacyInputBytes=3400,
+                    replacementBytes=3460, notePattern='synthetic-{index}',
+                    accountLimitBytes=20 * 1024 * 1024, workspaceBytes=4096,
+                    heldDrafts=40, activeDrafts=1, largestMarginPolicyBytes=65536)
+
+    def test_unrelated_valid_bundle_is_rejected_without_touching_its_container(self):
+        self.info.write_bytes(plistlib.dumps({'CFBundleIdentifier': 'com.example.unrelated'}))
+        foreign = self.home / 'Library/Containers/com.example.unrelated/Data/tmp'
+        foreign.mkdir(parents=True)
+        marker = foreign / 'preserve.txt'
+        marker.write_text('keep')
+        with self.assertRaises(RuntimeError):
+            runner.phase02_manifest_path(self.executable, 'accounts.open', 'small', 'a' * 32, home_directory=self.home)
+        self.assertEqual(marker.read_text(), 'keep')
+        self.assertFalse((foreign / 'dakhl-phase02-benchmark-manifests').exists())
+
+    def test_redirected_sandbox_tmp_is_rejected(self):
+        moved = self.sandbox.with_name('preserved-tmp')
+        self.sandbox.rename(moved)
+        self.sandbox.symlink_to(moved, target_is_directory=True)
+        with self.assertRaises(RuntimeError):
+            runner.phase02_manifest_path(self.executable, 'accounts.open', 'small', 'a' * 32, home_directory=self.home)
+        self.assertFalse((moved / 'dakhl-phase02-benchmark-manifests').exists())
+
+    def test_redirected_sandbox_ancestor_is_rejected(self):
+        library = self.home / 'Library'
+        moved = self.home / 'preserved-library'
+        library.rename(moved)
+        library.symlink_to(moved, target_is_directory=True)
+        with self.assertRaises(RuntimeError):
+            runner.phase02_manifest_path(self.executable, 'accounts.open', 'small', 'a' * 32, home_directory=self.home)
+
+    def test_source_symlink_is_rejected_without_creating_evidence(self):
+        directory = self.root / 'alias'
+        directory.mkdir()
+        link = directory / self.source.name
+        link.symlink_to(self.source)
+        evidence = self.root / 'evidence'
+        with self.assertRaises(RuntimeError):
+            runner.collect_phase02_manifest(link, 'small', evidence)
+        self.assertFalse(evidence.exists())
+
+    def test_redirected_evidence_ancestor_is_rejected_without_writing(self):
+        original = self.root / 'preserved-output'
+        original.mkdir()
+        marker = original / 'preserve.txt'
+        marker.write_text('keep')
+        link = self.root / 'output-link'
+        link.symlink_to(original, target_is_directory=True)
+        with self.assertRaises(RuntimeError):
+            runner.collect_phase02_manifest(self.source, 'small', link / 'evidence')
+        self.assertEqual(marker.read_text(), 'keep')
+        self.assertFalse((original / 'evidence').exists())
+
+    def test_missing_invalid_or_extra_payload_metadata_is_rejected(self):
+        mutations = [
+            {'profile': 'small', 'synthetic': True},
+            dict(self.valid_manifest(), recordCount=True),
+            dict(self.valid_manifest(), canonicalBytes=-1),
+            dict(self.valid_manifest(), canonicalBytes=20 * 1024 * 1024 + 1),
+            dict(self.valid_manifest(), heldDrafts=39),
+            dict(self.valid_manifest(), accountPayload={'unrelated': 'do not collect'}),
+        ]
+        for index, manifest in enumerate(mutations):
+            with self.subTest(index=index):
+                self.source.write_text(json.dumps(manifest))
+                evidence = self.root / ('evidence-' + str(index))
+                with self.assertRaises(RuntimeError):
+                    runner.collect_phase02_manifest(self.source, 'small', evidence)
+                self.assertFalse(evidence.exists())
+
+    def test_foreign_or_stale_attempt_filename_is_rejected(self):
+        for name in ['foreign-small-' + 'a' * 32 + '.json',
+                     'accounts.open-medium-' + 'a' * 32 + '.json',
+                     'accounts.open-small-stale.json']:
+            source = self.root / name
+            source.write_text(json.dumps(self.valid_manifest()))
+            with self.subTest(name=name), self.assertRaises(RuntimeError):
+                runner.collect_phase02_manifest(source, 'small', self.root / name.replace('.json', '-evidence'))
 
 
 if __name__ == '__main__':
