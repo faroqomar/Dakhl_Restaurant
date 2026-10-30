@@ -1,6 +1,6 @@
 # Phase 02 — Penpot design and wireframe review
 
-Date: 2026-10-29. Status: READY FOR OWNER DESIGN APPROVAL — all12final native exports independently reviewed; no design approval inferred. Owner invoked Step 1.5 only. [Scope](02-scope-readiness.md), [execution audit](../log/phase-02-execution.md).
+Date: 2026-10-29. Status: READY FOR OWNER DESIGN APPROVAL — all12final native exports independently reviewed; no design approval inferred. Owner invoked Step 1.5 only. [Scope](02-scope-readiness.md), execution audit (local-only artifact `docs/log/phase-02-execution.md`, SHA-256 `d490433a2ead39ecf2f36721364cd1003b550152426fa7b98b90c3bb069c639c`).
 
 ## Scope and authority
 
@@ -64,6 +64,6 @@ Final independent review, link/whitespace checks and separate memory receipts ar
 
 Independent Reviewer phase02_docs_review visually reviewed all6final design/wireframe pairs and verified all12PNG hashes against the final manifest. Developer copy, inherited saved-draft toast and clipped English review annotations are closed. No remaining actionable design-review findings. Review span20:19:47–20:31:49UTC includes export/repair waits; active effort/tokens/cost unknown. Prior30boards unchanged; no full-frame raster substitutes. No runtime acceptance or design approval is inferred.
 
-[Full-size final approval gallery](../../outputs/penpot/phase02/review-gallery.md), [design overview](../../outputs/penpot/phase02/design-overview.png), [wireframe overview](../../outputs/penpot/phase02/wireframe-overview.png), [exact final PNG manifest](../../outputs/penpot/phase02/native-exports.json), [native audit](../../outputs/penpot/phase02/native-audit.json). Penpot page proof is outputs/penpot/phase02/penpot-page-proof.jpg. Read-only source/native export metadata and correction artifacts remain beside these files.
+[Full-size final approval gallery](../../outputs/penpot/phase02/review-gallery.md), [design overview](../../outputs/penpot/phase02/design-overview.png), [wireframe overview](../../outputs/penpot/phase02/wireframe-overview.png), [exact final PNG manifest](../../outputs/penpot/phase02/native-exports.json), native audit (local-only artifact `outputs/penpot/phase02/native-audit.json`, SHA-256 `ea905fd2b9f1ce88a5f52b3a262eb73b71acb5b75456ad51a31d7bcbbb6a705f`). Penpot page proof is outputs/penpot/phase02/penpot-page-proof.jpg. Read-only source/native export metadata and correction artifacts remain beside these files.
 
 Owner approval is the next gate. Step2 planning/backend decisions and any UI implementation require their separate authorization. No push/PR/merge/tag/release/deployment or new phase is started.

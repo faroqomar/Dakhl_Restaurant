@@ -1,4 +1,10 @@
+Step5 publication preparation, 2026-10-30: **DRAFT / NOT MERGE-READY**. The owner requested reviewable pull requests; publication and hosted-check results are recorded in [the Step5 delivery record](docs/phases/02-step5-delivery.md). Android preservation failed and prior installed-app data retention remains unverified; Android cancellation and current iOS verification remain open. No merge, release, target mutation or next phase is authorized. Earlier Step3/Step4 publication statements below are dated historical records.
+
+Step4 current execution, 2026-10-30: BLOCKED / NOT READY. App5a11c66d/runtimea6a8ebdd/tool63 local source fixes independently verified;529 app tests/analysis/source checks and18currentMaccases/360samples pass. Android installation preservation failed; previous app-data retention unverified, cancellation/currentiOS/hostedCI/owner gates pending. [Current evidence](docs/phases/02-step4-review.md). Prior failures/partials/Step3 entries remain historical, no causality/reliability/optimization/DONE/merge/release claim.
+
 # Dakhl_Restaurant — project phases and scope
+
+Current execution, 2026-10-30: Phase 02 Step3 is authorized and implemented in the paired isolated build trees. Independent source checks, reviewed engine adoption, three-target native persistence and18 per-operation baselines passed within the documented limits. Phase02 is VERIFYING; integration/release remain separate. See [current tracker](PHASES.md) and [Step3 evidence](docs/phases/02-step3-build.md). Earlier dated execution statements below are historical; no merge, release or next phase is authorized.
 
 Execution update,2026-10-29: Phase01 approved development-preview scope is DONE after independent verification, exact revision approval and four linked merges. Phase00 technical prerequisites are closed; its broader historical completion remains separately scoped. See PHASES.md and the local Step6 record for actual outcomes and publication/release limits. The existing12phase definitions remain unchanged; Phase02 scope/design/implementation planning is in progress, with no implementation or owner approval inferred.
 

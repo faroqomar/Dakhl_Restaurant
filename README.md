@@ -1,3 +1,9 @@
+Step5 publication preparation, 2026-10-30: **DRAFT / NOT MERGE-READY**. The owner requested reviewable pull requests; publication and hosted-check results are recorded in [the Step5 delivery record](docs/phases/02-step5-delivery.md). Android preservation failed and prior installed-app data retention remains unverified; Android cancellation and current iOS verification remain open. No merge, release, target mutation or next phase is authorized. Earlier Step3/Step4 publication statements below are dated historical records.
+
+Step4 final local review, 2026-10-30: Phase02 BLOCKED / NOT READY. Source fixes independently clear at app5a11c66d/runtimea6a8ebdd;529 app checks and18 Mac cases/360samples pass. Android preservation failed through automatic uninstall/reinstall; prior app-data retention unverified, cancellation/iOS/hosted CI/owner gates open. [Current evidence and incident](docs/phases/02-step4-review.md). Earlier Step3 results stay historical; no DONE/publication/merge/release.
+
+Current Phase02 update, 2026-10-30: bounded accounts/validation/persistence and workspace presentation are implemented locally at69fef624, consuming reviewed Madar runtimeea9 and measurement tool63. Final462 tests/analysis, three-target persistence and18 operation baselines passed within documented limits. [Build and remaining gates](docs/phases/02-step3-build.md). Earlier dated execution descriptions below are historical; no production release or next phase.
+
 # Dakhl_Restaurant — Flutter rebuild workspace
 
 Current project name: **Dakhl_Restaurant**. The old Electron app name and storage identifiers are preserved only for compatibility and frozen reference evidence.

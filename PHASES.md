@@ -1,3 +1,5 @@
+Step5 publication preparation, 2026-10-30: **DRAFT / NOT MERGE-READY**. The owner requested reviewable pull requests; publication and hosted-check results are recorded in [the Step5 delivery record](docs/phases/02-step5-delivery.md). Android preservation failed and prior installed-app data retention remains unverified; Android cancellation and current iOS verification remain open. No merge, release, target mutation or next phase is authorized. Earlier Step3/Step4 publication statements below are dated historical records.
+
 # Project Phase Tracker
 
 Current completion, 2026-10-29: Phase 01 / development dashboard approved source integration is **DONE**. All four exact approved revisions merged after all 15 premerge checks passed. Owner accepted independent review with automatic review unavailable; TalkBack is owner-excluded, not tested. [Completion/rollback record](docs/phases/01-step6-completion.md). These completion/tracker updates are local documentation; no release, deployment or next phase. Earlier sections retain dated history.
@@ -18,7 +20,7 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 | --- | --- | --- | --- | --- |
 | 00 | [Baseline and delivery setup](docs/planning/flutter-rebuild/phases/00.md) | VERIFYING — technical prerequisite verified; historical completion pending | codex/phase00-engine-split | [Merged PR2](https://github.com/faroqomar/Dakhl_Restaurant/pull/2) |
 | 01 | [Design system, navigation and interaction shell](docs/planning/flutter-rebuild/phases/01.md) | DONE — approved preview scope | `codex/phase01-build` | [Merged PR7](https://github.com/faroqomar/Dakhl_Restaurant/pull/7) |
-| 02 | [Local accounts, validation and safe persistence](docs/planning/flutter-rebuild/phases/02.md) | PLANNING — Step2 reviewed; owner plan/design approvals pending | codex/phase02-scope | — |
+| 02 | [Local accounts, validation and safe persistence](docs/planning/flutter-rebuild/phases/02.md) | BLOCKED — Step4 NOT READY: preservation/iOS/CI/approval gaps | codex/phase02-build | — |
 | 03 | [Sellable products and inventory](docs/planning/flutter-rebuild/phases/03.md) | TODO | — | — |
 | 04 | [Cash sales, saved receipt, drafts and held orders](docs/planning/flutter-rebuild/phases/04.md) | TODO | — | — |
 | 05 | [Sales history, returns and voids](docs/planning/flutter-rebuild/phases/05.md) | TODO | — | — |
@@ -76,18 +78,19 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 ### Phase 02
 
 - **Name:** Local accounts, validation and safe persistence
-- **Status:** BUILDING — owner Step3 invoked2026-10-30. App/engine source review clear; engine121tests and exact reviewedpin ea9c21a adopted/checker+4consumerconformance pass; native/per-operation checks pending.
-- **Dependencies:**00,01; their approved preview prerequisites unchanged.
-- **Design:** Presented six native Phase02 Penpot design/wireframe pairs are the Step3 build reference; prior approval-pending watermarks are historical. Engine Design N/A. No whole-app redesign.
-- **Isolation:** codex/phase02-build in phase02-build-app/Dakhl_Restaurant and phase02-build-engine/Madar_Engine; original paired phase02-scope trees preserved.
-- **Ownership/contracts:** Shared pure values/generic fenced snapshot ports/optional durable adapter only Madar; app schema/codecs/settings/workspace/repository/VM/UI only here. Exact reviewed ea9c21a adopted with enforced locked resolution; no dirty-source bypass.
-- **Tests:**456app+5goldens,24focusedregressions,271codec,140Electron,179/9/21frozenintegrity,28source/versionhelpers and8runnercontracts pass in their dated scope. Final current engine suite/consumer pin/native evidence pending.
-- **Benchmarks:** Six real operation harnesses implemented/tested; actual20sample p50/p95/RAM/CPU baselines pending. No optimization claim or invented budget.
-- **Independent review:** App/source/picker harness clear after fixed findings; final engine implementation check gate pending.
-- **CI/build/native/recovery:** Local completion in progress; hosted CI not run. Production migration/install/release/physical-device signing excluded from preview delivery; live reader test owner-excluded/not passed.
-- **Approval:** Step3 build and in-scope technical choices authorized; no push/PR/merge/tag/release/deployment authorization.
-- **PR/completion:** Pending; not DONE.
-- **Evidence:** [Step3 build](docs/phases/02-step3-build.md), [plan](docs/phases/02-implementation-plan.md), [Penpot](docs/phases/02-penpot-design-review.md), [running audit](docs/log/phase-02-execution.md).
+- **Status:** BLOCKED — Step4 NOT READY for full approval. Local source/measurement findings repaired and independently reverified; Android preservation/cancellation, current iOS, hosted CI and owner gates remain open.
+- **Dependencies:** Approved00/01 preview prerequisites retained; no Phase03 started.
+- **Design:** Existing six Phase02 Penpot design/wireframe pairs retained. No Step4 product UI change; engine Design N/A. No new design/merge approval inferred.
+- **Isolation:** App/runtime codex/phase02-build and separate codex/phase02-bench-tools. Original scope/design worktrees retained. Redundant isolated engine repair archived recoverably after13 artifact+journal copies/hash verification; runtimea6 unchanged.
+- **Ownership/contracts:** Madar exact primitives/fenced opaque ports/optional durable adapter; app schema1–11/history/timestamps/settings/workspace/VM/UI/safeguards. App-only failure/readiness instrumentation changes neither generic measurement protocol nor normal UI. Four reviewed package revisions consumed with enforced source checks; no copied engine code/cloud/new business policy.
+- **Exact app / runtime / tool:** `5a11c66dbf665972b17b545c105eac74c17bfeeb` / `a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294` / `63bbed8303bf8561084c5f82a3ebd52e2bf9e95d`. Candidate unreleased0.0.0+1.
+- **Tests:** Fresh529 non-golden app tests/whole-app analysis/exact source checks pass.18 producer and26 runner checks pass; counts overlap. Focused355 accounts/329codec cover324 full-model+4,127 compact timestamps against frozen source in UTC/Baghdad, with1,840 further independent comparisons. Engine132 data/analyzer plus independent original-prefix/15protection/2SIGKILL checks pass. Unchanged source evidence retains original scope; no unnecessary test rerun.
+- **Independent review:** Original app/engineP2, procedureP3, diagnostic-authorityP2 and initial-only bootstrap correction independently closed for exact frozen hashes. Final805 artifact/statistical checks/108hashes found0 discrepancies. No self/owner approval inferred; historic specific failure interleavings remain unproven.
+- **Native/builds:** Accepted Mac6-stage process/recovery component proof at62/a6. Android automatic uninstall/reinstall after signing mismatch breached preservation despite --no-uninstall; rawWRITE excluded, oldpickerfixtureabsent/priorappdataunverified, Cancel cases unexecuted. Taskemulatoroff withoutreset, onlypowerstate restored; signing material preserved privately, no restoration. CurrentiOSprovider timedout; oldiPhone results historical. Live reader owner-excluded, neverpassed.
+- **Benchmarks:** Current5a11 fixed-source18distinct cases/360samples, oneattempt each, allcleanuptrue, independentverificationclear. [Current metrics/method](docs/phases/02-step4-performance.md). Prior62/df72 partials, isolated/prefix runs and Step3 failures remain separate. No numericbudget/optimization/reliability/mobilecapacity/cross-epochresourceclaim.
+- **CI/recovery/release:** Current hosted CI/source publication/physicalsigning/productionmigration/release pending. No priorAndroiddata restoration or future installation authorized. Required futurepreflight must refuseunknown/incompatible signing/preservation conditions before installation.
+- **Approval / PR / completion:** No PR/push/merge/tag/release/ownercompletionapproval/DONE/nextphase. Explicit remaininggates, not a request to bypass them.
+- **Evidence:** [Current Step4 review](docs/phases/02-step4-review.md), [incident](docs/log/2026-10-30-phase02-android-preservation-incident.md), [current metrics](docs/phases/02-step4-performance.md), [historical Step3](docs/phases/02-step3-build.md), execution/time-cost audit (local-only artifact `docs/log/phase-02-execution.md`, SHA-256 `d490433a2ead39ecf2f36721364cd1003b550152426fa7b98b90c3bb069c639c`), [sanitized outcome](docs/log/2026-10-30-phase02-step4-review.md). Separate source-hash delivery status recorded by receipts.
 
 ### Phase 03
 

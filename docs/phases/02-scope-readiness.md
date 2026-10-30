@@ -9,7 +9,7 @@ App branch `codex/phase02-scope`, base `2e4bbbfef5baba9122748ea16f25addabe13663f
 - Phase 00: technical prerequisite verified; overall historical evidence integration remains VERIFYING. Do not mark it DONE here. [Dependency closure](../log/2026-10-29-phase01-step3-preflight.md), [native acceptance](00-ios-native-acceptance.md).
 - Phase 01/CAP-01: approved development-preview source integrated and recorded DONE. [Exact approvals, merges and limits](01-step6-completion.md). Existing TalkBack exclusion belongs to that scope; it is not a general waiver for Phase 02.
 - Current consumed runtime stays `6d4ae39f35b005dfa1123a82c6df316901e1e1e4`, application `0.1.0-dev.2`, data/native adapters `0.1.0-dev.1`. [Pin](../../engine-dependency.json). Assessment worktrees contain newer documentation/tooling; they are not substituted for that runtime checkout. No Phase 02 reviewed package revision exists.
-- [Detailed Phase 02 scope](../planning/flutter-rebuild/phases/02.md), [Madar assessment](../../../../phase02-scope-engine/Madar_Engine/docs/log/2026-10-29-phase02-scope-readiness.md), [execution audit](../log/phase-02-execution.md).
+- [Detailed Phase 02 scope](../planning/flutter-rebuild/phases/02.md), [Madar assessment](https://github.com/faroqomar/Madar_Engine/blob/a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294/docs/log/2026-10-29-phase02-scope-readiness.md), execution audit (local-only artifact `docs/log/phase-02-execution.md`, SHA-256 `d490433a2ead39ecf2f36721364cd1003b550152426fa7b98b90c3bb069c639c`).
 
 ## Bounded outcome and ownership
 

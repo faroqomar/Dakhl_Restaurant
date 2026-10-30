@@ -1,3 +1,7 @@
+Step5 publication preparation, 2026-10-30: **DRAFT / NOT MERGE-READY**. The owner requested reviewable pull requests; publication and hosted-check results are recorded in [the Step5 delivery record](phases/02-step5-delivery.md). Android preservation failed and prior installed-app data retention remains unverified; Android cancellation and current iOS verification remain open. No merge, release, target mutation or next phase is authorized. Earlier Step3/Step4 publication statements below are dated historical records.
+
+Step4 final local review, 2026-10-30: Phase02 BLOCKED / NOT READY. Source fixes independently clear at app5a11c66d/runtimea6a8ebdd;529 app checks and18 Mac cases/360samples pass. Android preservation failed through automatic uninstall/reinstall; prior app-data retention unverified, cancellation/iOS/hosted CI/owner gates open. [Current evidence and incident](phases/02-step4-review.md). Earlier Step3 results stay historical; no DONE/publication/merge/release.
+
 # Dakhl_Restaurant — Project documentation
 
 Status: approved baseline documentation checked against source. Original date: 2026-10-16. Owner: restaurant/project owner. Scope source: the owner's conversation direction and selection of the ResturanetAccounting folder.

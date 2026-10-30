@@ -1,6 +1,12 @@
+Step5 publication preparation, 2026-10-30: **DRAFT / NOT MERGE-READY**. The owner requested reviewable pull requests; publication and hosted-check results are recorded in [the Step5 delivery record](02-step5-delivery.md). Android preservation failed and prior installed-app data retention remains unverified; Android cancellation and current iOS verification remain open. No merge, release, target mutation or next phase is authorized. Earlier Step3/Step4 publication statements below are dated historical records.
+
+Step4 final local review, 2026-10-30: Phase02 BLOCKED / NOT READY. Source fixes independently clear at app5a11c66d/runtimea6a8ebdd;529 app checks and18 Mac cases/360samples pass. Android preservation failed through automatic uninstall/reinstall; prior app-data retention unverified, cancellation/iOS/hosted CI/owner gates open. [Current evidence and incident](02-step4-review.md). Earlier Step3 results stay historical; no DONE/publication/merge/release.
+
 # Phase evidence index
 
-Status, 2026-10-29: Phase 00 technical prerequisite verified; historical completion remains separate. Phase 01 approved preview source integration is DONE. Phase 02 Step2 plan/contracts proposed; six-pair design ready. Owner plan/design/contract approvals pending. Phases 03–11 remain TODO.
+Current execution, 2026-10-30: Phase02 Step3 implementation and local tests/native/measurements are complete; source/native/metrics independently reviewed. Status VERIFYING, not DONE. See [build/limits](02-step3-build.md) and [18 operation baselines](02-performance.md). Android cancellation and one original benchmark failure remain documented limits; no hosted CI/merge/release.
+
+Historical status, 2026-10-29: Phase 00 technical prerequisite verified; historical completion remains separate. Phase 01 approved preview source integration is DONE. Phase 02 Step2 plan/contracts proposed; six-pair design ready. Owner plan/design/contract approvals pending. Phases 03–11 remain TODO.
 
 - [Phase 00 — build, test and runtime evidence](00-build-evidence.md).
 - [Phase 00 — current implementation plan and isolation](00-implementation-plan.md).
@@ -39,8 +45,8 @@ Do not prefill results or approvals. Earlier Electron checks are reference evide
 
 - [Phase 02 — Step 1 scope, supplied references and readiness](02-scope-readiness.md) — documentation only; no implementation approval.
 
-- [Phase 02 — Penpot designs, matching wireframes and approval evidence](02-penpot-design-review.md) — six final native pairs ready for explicit owner approval; no implementation inferred.
+- [Phase 02 — Penpot designs, matching wireframes and approval evidence](02-penpot-design-review.md) — historical Step1.5 package; presented six native pairs govern the subsequent owner-invoked Step3 build. Original pending watermarks remain dated history.
 
-- [Phase02 — bounded Step2 implementation plan](02-implementation-plan.md) — engine/app contracts, recovery, realistic tests, per-feature performance and delivery gates; unapproved.
+- [Phase02 — bounded Step2 implementation plan](02-implementation-plan.md) — original plan preserved; selected for subsequent Step3 implementation, including the bounded technical ADR/PREF-01/workspace profile. No publication/merge permission.
 
 - [Phase02 — Step3 build and actual verification](02-step3-build.md) — current implementation/source/native/performance gates; prior dated Step1–2 states remain historical.
