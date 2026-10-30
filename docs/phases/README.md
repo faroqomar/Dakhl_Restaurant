@@ -1,6 +1,6 @@
 # Phase evidence index
 
-Status, 2026-10-29: Phase 00 technical native dependency independently verified; Phase 01 approved implementation is locally built and in verification. Hosted CI and remaining native/release gates are explicit in the current build evidence. Phases 02–11 remain TODO.
+Status, 2026-10-29: Phase 00 technical prerequisite verified; historical completion remains separate. Phase 01 approved preview source integration is DONE. Phase 02 Step2 plan/contracts proposed; six-pair design ready. Owner plan/design/contract approvals pending. Phases 03–11 remain TODO.
 
 - [Phase 00 — build, test and runtime evidence](00-build-evidence.md).
 - [Phase 00 — current implementation plan and isolation](00-implementation-plan.md).
@@ -36,3 +36,11 @@ Do not prefill results or approvals. Earlier Electron checks are reference evide
 - [Hosted review corrections and current owner scope](01-review-corrections.md).
 
 - [Phase 01 — approved Step6 source integration and rollback record](01-step6-completion.md) — four approved merges complete; this completion record is committed locally, with additional publication subject to explicit approval.
+
+- [Phase 02 — Step 1 scope, supplied references and readiness](02-scope-readiness.md) — documentation only; no implementation approval.
+
+- [Phase 02 — Penpot designs, matching wireframes and approval evidence](02-penpot-design-review.md) — six final native pairs ready for explicit owner approval; no implementation inferred.
+
+- [Phase02 — bounded Step2 implementation plan](02-implementation-plan.md) — engine/app contracts, recovery, realistic tests, per-feature performance and delivery gates; unapproved.
+
+- [Phase02 — Step3 build and actual verification](02-step3-build.md) — current implementation/source/native/performance gates; prior dated Step1–2 states remain historical.

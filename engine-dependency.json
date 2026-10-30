@@ -1,11 +1,11 @@
 {
   "engine": "Madar_Engine",
-  "status": "independently source-reviewed local CAP-01 candidate; native consumer/hosted delivery gates recorded separately",
-  "git_commit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+  "status": "CAP-02 independently source-reviewed local candidate; final source tests passed, native consumer/per-operation/hosted delivery gates recorded separately",
+  "git_commit": "ea9c21adfde746c40d0e8d15a7e5bbe017beb70c",
   "packages": {
     "madar_application": {
       "path": "../Madar_Engine/packages/application",
-      "version": "0.1.0-dev.2"
+      "version": "0.1.0-dev.3"
     },
     "madar_flutter_adapters": {
       "path": "../Madar_Engine/packages/flutter_adapters",
@@ -13,6 +13,10 @@
     },
     "madar_data": {
       "path": "../Madar_Engine/packages/data",
+      "version": "0.1.0-dev.2"
+    },
+    "madar_domain": {
+      "path": "../Madar_Engine/packages/domain",
       "version": "0.1.0-dev.1"
     }
   }

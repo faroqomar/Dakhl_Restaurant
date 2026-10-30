@@ -124,11 +124,17 @@ def apple_toolchain_identity():
     return identity
 
 
-def build_profile(fingerprint, sdk, engine_identity=None, apple_toolchain=None):
+def operation_target(entry):
+    return ('lib/platform/phase02_performance_main.dart' if entry.get('phase') == '02'
+            else 'lib/platform/performance_main.dart')
+
+
+def build_profile(fingerprint, sdk, engine_identity=None, apple_toolchain=None,
+                  target='lib/platform/performance_main.dart'):
     stamp = ROOT / 'build/dev_dashboard/profile-cache.json'
     identity = engine_identity if engine_identity is not None else runtime_engine_identity()
     toolchain = apple_toolchain if apple_toolchain is not None else apple_toolchain_identity()
-    key = dict(sourceFingerprint=fingerprint, sdk=sdk, mode='profile', target='lib/platform/performance_main.dart',
+    key = dict(sourceFingerprint=fingerprint, sdk=sdk, mode='profile', target=target,
                runtimeEngineIdentity=identity, appleToolchainIdentity=toolchain)
     try:
         cached = json.loads(stamp.read_text())
@@ -148,6 +154,8 @@ def main():
     parser.add_argument('--case', action='append', default=[])
     parser.add_argument('--iterations', type=int, help='1–100, defaults to the operation registry')
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--fixture', choices=['small', 'medium', 'largest'], default='small',
+                        help='Synthetic Phase02 workload profile; Phase01 cases ignore this option')
     args = parser.parse_args()
     if platform.system() != 'Darwin':
         parser.error('These app cases require macOS profile mode.')
@@ -175,7 +183,6 @@ def main():
     engine_identity = runtime_engine_identity()
     toolchain = apple_toolchain_identity()
     fingerprint = source_fingerprint(engine_identity)
-    executable = build_profile(fingerprint, sdk, engine_identity, toolchain)
     if source_fingerprint() != fingerprint or apple_toolchain_identity() != toolchain:
         raise RuntimeError('source_changed_during_profile_build')
     version = re.search(r'^version:\s*(\S+)', (ROOT / 'pubspec.yaml').read_text(), re.M).group(1)
@@ -186,8 +193,39 @@ def main():
     for case in cases:
         entry = operations[case]
         count = args.iterations or entry['defaultIterations']
-        spec = dict(operationId=case, label=entry['label'], argv=[str(executable), '--case', case, '--iterations', str(1 if entry['measurementKind'] == 'startup' else count), '--run-id', uuid.uuid4().hex], cwd=str(ROOT), iterations=count, appVersion=version, sourceCommit=source_commit, sourceDirty=source_dirty, sourceFingerprint=fingerprint, engineCommit=engine_commit, targetId='macos-host', buildMode='profile', measurementKind=entry['measurementKind'], scenarioVersion=entry['scenarioVersion'], timeoutSeconds=45, sampleIntervalMs=20, fixtureFingerprint=hashlib.sha256((ROOT / 'lib/platform/performance_scenarios.dart').read_bytes() + (case + ':' + entry['scenarioVersion']).encode()).hexdigest())
+        executable = build_profile(fingerprint, sdk, engine_identity, toolchain,
+                                   target=operation_target(entry))
+        if source_fingerprint() != fingerprint or apple_toolchain_identity() != toolchain:
+            raise RuntimeError('source_changed_during_profile_build')
+        phase02 = entry.get('phase') == '02'
+        run_id = uuid.uuid4().hex
+        manifest_path = None
+        argv = [str(executable), '--case', case, '--iterations',
+                str(1 if entry['measurementKind'] == 'startup' else count), '--run-id', run_id]
+        if phase02:
+            manifest_directory = ROOT / 'outputs/phase02/performance-manifests'
+            manifest_directory.mkdir(parents=True, exist_ok=True)
+            manifest_path = manifest_directory / (case + '-' + args.fixture + '-' + run_id + '.json')
+            argv += ['--fixture', args.fixture, '--fixture-manifest', str(manifest_path)]
+        fixture_source = ROOT / ('lib/platform/phase02_performance_scenarios.dart' if phase02
+                                 else 'lib/platform/performance_scenarios.dart')
+        fixture_identity = case + ':' + entry['scenarioVersion'] + (':' + args.fixture if phase02 else '')
+        spec = dict(operationId=case, label=entry['label'], argv=argv, cwd=str(ROOT), iterations=count, appVersion=version, sourceCommit=source_commit, sourceDirty=source_dirty, sourceFingerprint=fingerprint, engineCommit=engine_commit, targetId='macos-host', buildMode='profile', measurementKind=entry['measurementKind'], scenarioVersion=entry['scenarioVersion'], timeoutSeconds=900 if phase02 else 45, sampleIntervalMs=20, fixtureFingerprint=hashlib.sha256(fixture_source.read_bytes() + fixture_identity.encode()).hexdigest())
         result = module.run_benchmark(spec)
+        if phase02:
+            result['fixtureProfile'] = args.fixture
+            if result['status'] == 'passed':
+                if manifest_path is None or not manifest_path.is_file():
+                    raise RuntimeError('phase02_fixture_manifest_missing')
+                manifest_bytes = manifest_path.read_bytes()
+                manifest = json.loads(manifest_bytes)
+                if manifest.get('profile') != args.fixture or manifest.get('synthetic') is not True:
+                    raise RuntimeError('phase02_fixture_manifest_invalid')
+                result['fixtureManifest'] = manifest
+                result['fixtureManifestFingerprint'] = hashlib.sha256(manifest_bytes).hexdigest()
+            result['resourceWindowScope'] = ('One host start/end window: operation samples plus '
+                'inter-iteration fixture reset, teardown and rendering setup. Elapsed samples exclude '
+                'fixture reset and end at actual raster completion. RAM/CPU are not per-sample isolated.')
         result['runtimeEngineIdentity'] = engine_identity
         result['environment']['flutterVersion'] = sdk['frameworkVersion']
         result['environment']['dartVersion'] = sdk['dartSdkVersion']

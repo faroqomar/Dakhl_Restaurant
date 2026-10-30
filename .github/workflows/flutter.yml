@@ -38,6 +38,12 @@ jobs:
           flutter-version-file: Dakhl_Restaurant/.fvmrc
           channel: stable
       - run: dart pub get --enforce-lockfile
+        working-directory: Madar_Engine/packages/domain
+      - run: dart analyze
+        working-directory: Madar_Engine/packages/domain
+      - run: dart test
+        working-directory: Madar_Engine/packages/domain
+      - run: dart pub get --enforce-lockfile
         working-directory: Madar_Engine/packages/application
       - run: dart analyze
         working-directory: Madar_Engine/packages/application

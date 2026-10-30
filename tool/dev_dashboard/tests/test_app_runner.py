@@ -17,6 +17,19 @@ class AppRunnerTests(unittest.TestCase):
         toolchain.start()
         self.addCleanup(toolchain.stop)
 
+    def test_phase02_routes_to_separate_entrypoint_and_cache_target(self):
+        self.assertEqual(runner.operation_target({'phase': '02'}), 'lib/platform/phase02_performance_main.dart')
+        self.assertEqual(runner.operation_target({'phase': '01'}), 'lib/platform/performance_main.dart')
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            executable = root / 'app'
+            executable.write_text('fixture')
+            with patch.object(runner, 'ROOT', root), patch.object(runner, 'EXECUTABLE', executable), patch.object(runner, 'runtime_engine_identity', return_value={'gitCommit': 'a' * 40}), patch.object(runner, 'command') as build:
+                runner.build_profile('same', {}, target='lib/platform/performance_main.dart')
+                runner.build_profile('same', {}, target='lib/platform/phase02_performance_main.dart')
+                self.assertEqual(build.call_count, 2)
+                self.assertEqual(build.call_args[0][0][-1], 'lib/platform/phase02_performance_main.dart')
+
     def test_native_toolchain_upgrade_invalidates_identical_app_cache(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -59,7 +72,7 @@ class AppRunnerTests(unittest.TestCase):
         for case in ('orders.process', 'catalog.add_item', 'sales.add_item'):
             self.assertEqual(entries[case]['status'], 'planned')
             self.assertIn('not implemented', entries[case]['reason'])
-        self.assertEqual({key for key, value in entries.items() if value['status'] == 'ready'}, {'app.startup', 'navigation.switch_route', 'shortcuts.save'})
+        self.assertEqual({key for key, value in entries.items() if value['status'] == 'ready'}, {'app.startup', 'navigation.switch_route', 'shortcuts.save', 'accounts.open', 'accounts.save', 'accounts.migrate_legacy', 'accounts.replace', 'accounts.recover_previous', 'workspace.save_restore'})
 
     def test_profile_cache_invalidates_source_sdk_and_missing_executable(self):
         with tempfile.TemporaryDirectory() as directory:

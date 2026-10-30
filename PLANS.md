@@ -1,6 +1,6 @@
 # Dakhl_Restaurant — project phases and scope
 
-Execution update,2026-10-29: Phase01 approved development-preview scope is DONE after independent verification, exact revision approval and four linked merges. Phase00 technical prerequisites are closed; its broader historical completion remains separately scoped. See PHASES.md and the local Step6 record for actual outcomes and publication/release limits. The existing12phase definitions remain unchanged; Phase02 is not started.
+Execution update,2026-10-29: Phase01 approved development-preview scope is DONE after independent verification, exact revision approval and four linked merges. Phase00 technical prerequisites are closed; its broader historical completion remains separately scoped. See PHASES.md and the local Step6 record for actual outcomes and publication/release limits. The existing12phase definitions remain unchanged; Phase02 scope/design/implementation planning is in progress, with no implementation or owner approval inferred.
 
 Historical initialization status,2026-10-28: Phase00 baseline was under verification and product UI implementation had not started.
 
