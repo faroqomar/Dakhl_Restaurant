@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
@@ -8,6 +9,39 @@ import 'package:dakhl_restaurant/platform/phase02_performance_scenarios.dart';
 import '../accounts/accounts_view_model_test.dart' show FixtureStore;
 
 void main() {
+  test(
+    'benchmark diagnostics retain only bounded safe stage/type/state/code',
+    () {
+      final secret = '/private/account-token?auth=secret';
+      final safe = phase02BenchmarkFailure(
+        stage: Phase02BenchmarkStage.finalRender,
+        error: TimeoutException(secret),
+        state: AccountsState.saved,
+        failureCode: secret,
+      );
+      expect(safe, {
+        'stage': 'finalRender',
+        'errorKind': 'timeout',
+        'state': 'saved',
+        'failureCode': 'redacted',
+      });
+      expect(jsonEncode(safe), isNot(contains(secret)));
+      expect(
+        phase02BenchmarkFailure(
+          stage: Phase02BenchmarkStage.operation,
+          error: StateError(secret),
+          state: AccountsState.commitUnknown,
+          failureCode: 'commit_unknown',
+        ),
+        {
+          'stage': 'operation',
+          'errorKind': 'state',
+          'state': 'commitUnknown',
+          'failureCode': 'commit_unknown',
+        },
+      );
+    },
+  );
   test('Phase02 arguments reject fabricated cases/unsafe fixture identity', () {
     expect(
       Phase02PerformanceOptions.parse([

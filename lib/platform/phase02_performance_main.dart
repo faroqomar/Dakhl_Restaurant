@@ -14,6 +14,7 @@ import 'phase02_performance_scenarios.dart';
 /// Opt-in synthetic Phase02 profile process, never the normal app entrypoint.
 Future<void> main(List<String> arguments) async {
   var operation = 'invalid';
+  var stage = Phase02BenchmarkStage.arguments;
   Phase02PerformanceFixture? current;
   void marker(String event, {int? elapsedUs}) => stdout.writeln(
     'DAKHL_BENCH ${jsonEncode({'event': event, 'operationId': operation, 'elapsedUs': ?elapsedUs})}',
@@ -22,13 +23,16 @@ Future<void> main(List<String> arguments) async {
     final options = Phase02PerformanceOptions.parse(arguments);
     operation = options.operationId;
     WidgetsFlutterBinding.ensureInitialized();
+    stage = Phase02BenchmarkStage.workload;
     final workload = Phase02Workload.create(options.fixtureName, options.runId);
     if (options.manifestPath case final String path) {
+      stage = Phase02BenchmarkStage.manifest;
       final file = File(path);
       await file.create(exclusive: true);
       await file.writeAsString(jsonEncode(workload.manifest), flush: true);
     }
     for (var i = 0; i < options.iterations; i++) {
+      stage = Phase02BenchmarkStage.prepare;
       current = await Phase02PerformanceFixture.create(
         options.runId,
         operation,
@@ -44,28 +48,37 @@ Future<void> main(List<String> arguments) async {
           home: Scaffold(body: AccountsSurface(model: current.model)),
         ),
       );
+      stage = Phase02BenchmarkStage.initialRender;
       await _rasterizedFrame();
       if (i == 0) {
         marker('ready');
         marker('start');
       }
+      stage = Phase02BenchmarkStage.operation;
       final started = Timeline.now;
       await runPhase02Operation(current.model, operation, workload);
+      stage = Phase02BenchmarkStage.finalRender;
       final finished = await _rasterizedFrame();
       if (finished < started || finished > Timeline.now) {
         throw StateError('Incompatible raster clock.');
       }
       marker('sample', elapsedUs: finished - started);
+      stage = Phase02BenchmarkStage.teardown;
       runApp(const SizedBox.shrink());
       await WidgetsBinding.instance.endOfFrame;
       await current.close();
       current = null;
     }
+    stage = Phase02BenchmarkStage.finish;
     marker('end');
     await stdout.flush();
     await Future<void>.delayed(const Duration(milliseconds: 100));
     exit(0);
-  } on Object {
+  } on Object catch (error) {
+    stderr.writeln(
+      'PHASE02_BENCH_DIAGNOSTIC ${jsonEncode(phase02BenchmarkFailure(stage: stage, error: error, state: current?.model.state, failureCode: current?.model.failureCode))}',
+    );
+    await stderr.flush();
     marker('error');
     await stdout.flush();
     await current?.close();

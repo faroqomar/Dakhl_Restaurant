@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
@@ -11,6 +12,53 @@ import '../accounts/accounts_view_model.dart';
 import '../accounts/legacy_account_codec.dart';
 import '../accounts/workspace_document.dart';
 import '../app/accounts_store.dart';
+
+enum Phase02BenchmarkStage {
+  arguments,
+  workload,
+  manifest,
+  prepare,
+  initialRender,
+  operation,
+  finalRender,
+  teardown,
+  finish,
+}
+
+/// Safe benchmark diagnostics only; exception text/stack and payloads are never
+/// emitted. Unknown stable codes are redacted instead of copying arbitrary text.
+Map<String, String?> phase02BenchmarkFailure({
+  required Phase02BenchmarkStage stage,
+  required Object error,
+  AccountsState? state,
+  String? failureCode,
+}) => {
+  'stage': stage.name,
+  'errorKind': switch (error) {
+    TimeoutException() => 'timeout',
+    StateError() => 'state',
+    FormatException() => 'format',
+    FileSystemException() => 'filesystem',
+    _ => 'other',
+  },
+  'state': state?.name,
+  'failureCode': failureCode == null
+      ? null
+      : const {
+          'commit_unknown',
+          'unavailable',
+          'conflict',
+          'generation_mismatch',
+          'invalid_payload',
+          'payload_too_large',
+          'incomplete_state',
+          'not_initialized',
+          'no_previous_copy',
+          'recovery_publication_unknown',
+        }.contains(failureCode)
+      ? failureCode
+      : 'redacted',
+};
 
 const phase02PerformanceCases = {
   'accounts.open',
