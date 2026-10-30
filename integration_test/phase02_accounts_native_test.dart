@@ -36,9 +36,9 @@ void main() {
       isTrue,
       reason: 'Fresh host UUID required before any storage access.',
     );
-    final root = await _conformanceRoot();
+    final root = await _step('conformanceRoot', _conformanceRoot);
     final accountsRoot = Directory(p.join(root.path, 'accounts'));
-    await accountsRoot.create();
+    await _step('accountsDirectory.create', () => accountsRoot.create());
     final store = AppAccountsStore(
       openStore: () => PowerSyncLocalDocumentWorkspaceStore.open(
         directoryPath: accountsRoot.path,
@@ -52,12 +52,12 @@ void main() {
         if (owner is PowerSyncLocalPreferencesStore) await owner.close();
       },
     );
-    addTearDown(preferences.close);
-    addTearDown(store.close);
+    addTearDown(() => _step('teardown.preferences.close', preferences.close));
+    addTearDown(() => _step('teardown.accounts.close', store.close));
     final repository = AccountsRepository(store: store);
     final model = AccountsViewModel(repository: repository);
     addTearDown(model.dispose);
-    await model.initialize();
+    await _step('model.initialize', model.initialize);
     if (stage == 'write') {
       expect([
         AccountsState.absent,
@@ -72,15 +72,21 @@ void main() {
         'footer': 'isolated synthetic conformance fixture',
       };
       model.prepareImport(codec.encode(codec.decodeJson(raw)));
-      await model.confirmImport();
+      await _step('model.confirmImport', model.confirmImport);
       expect(model.state, AccountsState.saved);
-      expect(await model.saveShortcuts(slots), isTrue);
+      expect(
+        await _step('model.saveShortcuts', () => model.saveShortcuts(slots)),
+        isTrue,
+      );
       final workspace = WorkspaceDocument(
         active: {'note': 'active-$nonce'},
         form: {'runNonce': nonce, 'writerPid': '$pid', 'recovered': 'false'},
         held: List.generate(40, (i) => {'id': 'held-$i', 'note': '$nonce-$i'}),
       );
-      await model.saveWorkspace(workspace, model.fence!);
+      await _step(
+        'model.saveWorkspace.initial',
+        () => model.saveWorkspace(workspace, model.fence!),
+      );
       expect(model.state, AccountsState.saved);
     } else {
       expect(model.state, AccountsState.saved);
@@ -112,7 +118,7 @@ void main() {
       }
       if (stage == 'recover') {
         final retired = model.fence!;
-        final previous = await store.readPrevious();
+        final previous = await _step('store.readPrevious', store.readPrevious);
         expect(previous, isA<CapabilitySuccess<PreviousDocument?>>());
         final selection =
             (previous as CapabilitySuccess<PreviousDocument?>).value!;
@@ -123,46 +129,59 @@ void main() {
               .restaurant['name'],
           'phase02-$nonce',
         );
-        await model.selectPrevious();
+        await _step('model.selectPrevious', model.selectPrevious);
         expect(model.state, AccountsState.recoveryReady);
-        await model.confirmRecovery();
+        await _step('model.confirmRecovery', model.confirmRecovery);
         expect(model.state, AccountsState.saved);
         expect(model.fence!.storeId, isNot(retired.storeId));
         expect(model.fence!.generation, isNot(retired.generation));
         expect(model.workspace.active, isEmpty);
         expect(model.workspace.held, isEmpty);
-        final late = await repository.saveWorkspace(
-          WorkspaceDocument(
-            active: {'note': 'late old callback'},
-            form: const {},
-            held: const [],
+        final late = await _step(
+          'repository.staleWorkspace',
+          () => repository.saveWorkspace(
+            WorkspaceDocument(
+              active: {'note': 'late old callback'},
+              form: const {},
+              held: const [],
+            ),
+            retired,
           ),
-          retired,
         );
         expect(late, isA<CapabilityFailure<void>>());
         expect((late as CapabilityFailure<void>).code, 'stale_generation');
-        await model.saveWorkspace(
-          WorkspaceDocument(
-            active: const {},
-            form: {'runNonce': nonce, 'writerPid': '$pid', 'recovered': 'true'},
-            held: const [],
+        await _step(
+          'model.saveWorkspace.recovered',
+          () => model.saveWorkspace(
+            WorkspaceDocument(
+              active: const {},
+              form: {
+                'runNonce': nonce,
+                'writerPid': '$pid',
+                'recovered': 'true',
+              },
+              held: const [],
+            ),
+            model.fence!,
           ),
-          model.fence!,
         );
         expect(model.state, AccountsState.saved);
       }
     }
-    final independent = await store.readPrevious();
+    final independent = await _step('store.readPrevious', store.readPrevious);
     expect(independent, isA<CapabilitySuccess<PreviousDocument?>>());
     expect(
       (independent as CapabilitySuccess<PreviousDocument?>).value,
       isNotNull,
     );
     expect(model.document!.preferences.restaurant['name'], 'phase02-$nonce');
-    await tester.pumpWidget(
-      DakhlRestaurantApp(preferencesStore: preferences, accounts: model),
+    await _step(
+      'tester.pumpWidget.app',
+      () => tester.pumpWidget(
+        DakhlRestaurantApp(preferencesStore: preferences, accounts: model),
+      ),
     );
-    await tester.pumpAndSettle();
+    await _step('tester.pumpAndSettle', tester.pumpAndSettle);
     expect(model.state, AccountsState.saved);
     binding.reportData = {
       'stage': stage,
@@ -175,11 +194,18 @@ void main() {
       'runtime': 'real native Madar adapter + consumer codec/repository/ViewModel + rendered app',
       'dataScope': 'fixed marked Phase02 conformance child only; --no-uninstall required',
     };
-    stdout.writeln('PHASE02_NATIVE_RESULT ${jsonEncode(binding.reportData)}');
-    await stdout.flush();
-    await tester.pumpWidget(const SizedBox.shrink());
-    await tester.pump();
-  });
+    debugPrint('PHASE02_NATIVE_STEP result.ready');
+    stdout.writeln(
+      'PHASE02_NATIVE_STDOUT_RESULT ${jsonEncode(binding.reportData)}',
+    );
+    await _step('stdout.flush', stdout.flush);
+    debugPrint('PHASE02_NATIVE_RESULT ${jsonEncode(binding.reportData)}');
+    await _step(
+      'tester.pumpBlank',
+      () => tester.pumpWidget(const SizedBox.shrink()),
+    );
+    await _step('tester.pump.final', tester.pump);
+  }, timeout: const Timeout(Duration(minutes: 5)));
 }
 
 Future<Directory> _conformanceRoot() async {
@@ -212,4 +238,21 @@ Future<Directory> _conformanceRoot() async {
     await marker.writeAsString(expected, flush: true);
   }
   return root;
+}
+
+Future<T> _step<T>(String label, Future<T> Function() action) async {
+  final watch = Stopwatch()..start();
+  debugPrint('PHASE02_NATIVE_STEP $label begin');
+  try {
+    final value = await action().timeout(const Duration(seconds: 45));
+    debugPrint(
+      'PHASE02_NATIVE_STEP $label done ${watch.elapsedMilliseconds}ms',
+    );
+    return value;
+  } on Object {
+    debugPrint(
+      'PHASE02_NATIVE_STEP $label failed ${watch.elapsedMilliseconds}ms',
+    );
+    rethrow;
+  }
 }
