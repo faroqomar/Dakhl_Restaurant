@@ -1,5 +1,10 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:ui' show FrameTiming;
+
+import 'package:flutter/material.dart';
+import 'package:dakhl_restaurant/platform/phase02_performance_main.dart'
+    show phase02RasterizedFrame;
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:dakhl_restaurant/accounts/accounts_repository.dart';
@@ -9,6 +14,35 @@ import 'package:dakhl_restaurant/platform/phase02_performance_scenarios.dart';
 import '../accounts/accounts_view_model_test.dart' show FixtureStore;
 
 void main() {
+  testWidgets('unchanged benchmark surface paints before raster completion', (
+    tester,
+  ) async {
+    var paints = 0;
+    await tester.pumpWidget(
+      CustomPaint(
+        painter: _CountPaint(() => paints++),
+        child: const SizedBox.expand(),
+      ),
+    );
+    final before = paints;
+    final pending = phase02RasterizedFrame();
+    await tester.pump();
+    final stamp = tester.binding.currentSystemFrameTimeStamp.inMicroseconds;
+    // Test binding has no native GPU: synthesize timing only to settle the
+    // helper future. The actual paint count is the regression assertion.
+    tester.binding.platformDispatcher.onReportTimings!([
+      FrameTiming(
+        vsyncStart: stamp,
+        buildStart: stamp,
+        buildFinish: stamp,
+        rasterStart: stamp,
+        rasterFinish: stamp + 1,
+        rasterFinishWallTime: stamp + 1,
+      ),
+    ]);
+    await pending;
+    expect(paints, greaterThan(before));
+  });
   test(
     'benchmark diagnostics retain only bounded safe stage/type/state/code',
     () {
@@ -111,4 +145,13 @@ void main() {
       model.dispose();
     }
   });
+}
+
+final class _CountPaint extends CustomPainter {
+  _CountPaint(this.onPaint);
+  final VoidCallback onPaint;
+  @override
+  void paint(Canvas canvas, Size size) => onPaint();
+  @override
+  bool shouldRepaint(_CountPaint oldDelegate) => false;
 }

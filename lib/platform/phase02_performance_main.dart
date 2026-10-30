@@ -49,7 +49,7 @@ Future<void> main(List<String> arguments) async {
         ),
       );
       stage = Phase02BenchmarkStage.initialRender;
-      await _rasterizedFrame();
+      await phase02RasterizedFrame();
       if (i == 0) {
         marker('ready');
         marker('start');
@@ -58,7 +58,7 @@ Future<void> main(List<String> arguments) async {
       final started = Timeline.now;
       await runPhase02Operation(current.model, operation, workload);
       stage = Phase02BenchmarkStage.finalRender;
-      final finished = await _rasterizedFrame();
+      final finished = await phase02RasterizedFrame();
       if (finished < started || finished > Timeline.now) {
         throw StateError('Incompatible raster clock.');
       }
@@ -86,7 +86,7 @@ Future<void> main(List<String> arguments) async {
   }
 }
 
-Future<int> _rasterizedFrame() async {
+Future<int> phase02RasterizedFrame() async {
   final completed = Completer<int>();
   int? requested;
   void timings(List<FrameTiming> values) {
@@ -104,6 +104,11 @@ Future<int> _rasterizedFrame() async {
 
   WidgetsBinding.instance.addTimingsCallback(timings);
   try {
+    // A completed command can leave identical visible state. Force a real
+    // final paint so its raster completion exists even when builds coalesce.
+    for (final view in WidgetsBinding.instance.renderViews) {
+      view.markNeedsPaint();
+    }
     WidgetsBinding.instance.addPostFrameCallback((_) {
       requested =
           WidgetsBinding.instance.currentSystemFrameTimeStamp.inMicroseconds;
