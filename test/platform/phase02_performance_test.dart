@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 import 'dart:ui' show FrameTiming;
 
 import 'package:flutter/material.dart';
@@ -14,6 +15,279 @@ import 'package:dakhl_restaurant/platform/phase02_performance_scenarios.dart';
 import '../accounts/accounts_view_model_test.dart' show FixtureStore;
 
 void main() {
+  test('foreign matching-name valid manifest grants no diagnostic ownership', () async {
+    final temporary = await Directory.systemTemp.createTemp(
+      'phase02-diagnostic-',
+    );
+    final directory = Directory(await temporary.resolveSymbolicLinks());
+    addTearDown(() => directory.delete(recursive: true));
+    final file = File(
+      '${directory.path}/accounts.open-small-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json',
+    );
+    final workload = Phase02Workload.create(
+      'small',
+      'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+    );
+    await file.writeAsString(jsonEncode(workload.manifest));
+    final original = await file.readAsBytes();
+    final options = Phase02PerformanceOptions.parse([
+      '--run-id',
+      'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+      '--fixture-manifest',
+      file.path,
+    ]);
+    final context = phase02FailureArtifact(
+      options: options,
+      stage: Phase02BenchmarkStage.manifest,
+      error: const FileSystemException('exclusive create refused'),
+      attemptedIteration: 0,
+      completedSampleCount: 0,
+    );
+    await expectLater(
+      writePhase02FixtureManifest(options, workload),
+      throwsA(isA<FileSystemException>()),
+    );
+    expect(await writePhase02FailureArtifact(options, context), isFalse);
+    expect(await file.readAsBytes(), original);
+    expect(await File('${file.path}.failure.json').exists(), isFalse);
+  });
+  test('pre-ownership failure refuses an unproven artifact destination', () async {
+    final temporary = await Directory.systemTemp.createTemp(
+      'phase02-diagnostic-',
+    );
+    final directory = Directory(await temporary.resolveSymbolicLinks());
+    addTearDown(() => directory.delete(recursive: true));
+    final manifest = File(
+      '${directory.path}/accounts.open-small-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json',
+    );
+    final options = Phase02PerformanceOptions.parse([
+      '--run-id',
+      'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+      '--fixture-manifest',
+      manifest.path,
+    ]);
+    final context = phase02FailureArtifact(
+      options: options,
+      stage: Phase02BenchmarkStage.workload,
+      error: const FormatException('secret'),
+      attemptedIteration: 0,
+      completedSampleCount: 0,
+    );
+    expect(await writePhase02FailureArtifact(options, context), isFalse);
+    expect(await manifest.exists(), isFalse);
+    expect(await File('${manifest.path}.failure.json').exists(), isFalse);
+  });
+  test('failure artifact captures safe attempt context and rejects bounds', () {
+    final options = Phase02PerformanceOptions.parse([
+      '--case',
+      'accounts.migrate_legacy',
+      '--fixture',
+      'medium',
+      '--iterations',
+      '20',
+      '--run-id',
+      'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+    ]);
+    final context = phase02FailureArtifact(
+      options: options,
+      stage: Phase02BenchmarkStage.finalRender,
+      error: TimeoutException('/private/secret?auth=token'),
+      attemptedIteration: 3,
+      completedSampleCount: 2,
+      state: AccountsState.saved,
+      failureCode: '/private/secret',
+    );
+    expect(context['attemptedIteration'], 3);
+    expect(context['completedSampleCount'], 2);
+    expect(context['errorKind'], 'timeout');
+    expect(context['failureCode'], 'redacted');
+    expect(jsonEncode(context), isNot(contains('secret')));
+    for (final counts in [
+      [-1, 0],
+      [21, 20],
+      [2, 3],
+      [3, 0],
+    ]) {
+      expect(
+        () => phase02FailureArtifact(
+          options: options,
+          stage: Phase02BenchmarkStage.operation,
+          error: StateError('secret'),
+          attemptedIteration: counts[0],
+          completedSampleCount: counts[1],
+        ),
+        throwsFormatException,
+      );
+    }
+  });
+  test('owned failure artifact is exclusive and preserves original manifest', () async {
+    final temporary = await Directory.systemTemp.createTemp(
+      'phase02-diagnostic-',
+    );
+    final directory = Directory(await temporary.resolveSymbolicLinks());
+    addTearDown(() => directory.delete(recursive: true));
+    final file = File(
+      '${directory.path}/accounts.migrate_legacy-medium-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json',
+    );
+    final options = Phase02PerformanceOptions.parse([
+      '--case',
+      'accounts.migrate_legacy',
+      '--fixture',
+      'medium',
+      '--run-id',
+      'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+      '--fixture-manifest',
+      file.path,
+    ]);
+    final binding = await writePhase02FixtureManifest(
+      options,
+      Phase02Workload.create('medium', options.runId),
+    );
+    final original = await file.readAsBytes();
+    final context = phase02FailureArtifact(
+      options: options,
+      stage: Phase02BenchmarkStage.operation,
+      error: StateError('private payload'),
+      attemptedIteration: 1,
+      completedSampleCount: 0,
+      state: AccountsState.failed,
+      failureCode: 'unavailable',
+    );
+    expect(
+      await writePhase02FailureArtifact(options, context, binding: binding),
+      isTrue,
+    );
+    final sidecar = File('${file.path}.failure.json');
+    final bytes = await sidecar.readAsBytes();
+    expect(jsonDecode(utf8.decode(bytes)), context);
+    expect(
+      await writePhase02FailureArtifact(options, context, binding: binding),
+      isFalse,
+    );
+    expect(await sidecar.readAsBytes(), bytes);
+    expect(await file.readAsBytes(), original);
+  });
+  test('owned failure capture refuses private fields, changed original and links', () async {
+    final temporary = await Directory.systemTemp.createTemp(
+      'phase02-diagnostic-',
+    );
+    final directory = Directory(await temporary.resolveSymbolicLinks());
+    addTearDown(() => directory.delete(recursive: true));
+    final file = File(
+      '${directory.path}/accounts.open-small-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json',
+    );
+    final options = Phase02PerformanceOptions.parse([
+      '--run-id',
+      'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+      '--fixture-manifest',
+      file.path,
+    ]);
+    final binding = await writePhase02FixtureManifest(
+      options,
+      Phase02Workload.create('small', options.runId),
+    );
+    final originalBytes = await file.readAsBytes();
+    final context = phase02FailureArtifact(
+      options: options,
+      stage: Phase02BenchmarkStage.prepare,
+      error: StateError('secret'),
+      attemptedIteration: 1,
+      completedSampleCount: 0,
+    );
+    expect(
+      await writePhase02FailureArtifact(options, {
+        ...context,
+        'payload': 'secret',
+      }, binding: binding),
+      isFalse,
+    );
+    final preserved = File('${directory.path}/original');
+    await preserved.writeAsString('keep');
+    await file.delete();
+    final link = Link(file.path);
+    await link.create(preserved.path);
+    expect(
+      await writePhase02FailureArtifact(options, context, binding: binding),
+      isFalse,
+    );
+    expect(await preserved.readAsString(), 'keep');
+    await link.delete();
+    await file.writeAsBytes(originalBytes);
+    await file.writeAsString('foreign changed manifest');
+    expect(
+      await writePhase02FailureArtifact(options, context, binding: binding),
+      isFalse,
+    );
+    expect(await file.readAsString(), 'foreign changed manifest');
+    expect(await File('${file.path}.failure.json').exists(), isFalse);
+  });
+  test(
+    'owned failure artifact refuses foreign names and sidecar/ancestor links',
+    () async {
+      final temporary = await Directory.systemTemp.createTemp(
+        'phase02-diagnostic-',
+      );
+      final directory = Directory(await temporary.resolveSymbolicLinks());
+      addTearDown(() => directory.delete(recursive: true));
+      final owned = await Directory('${directory.path}/owned').create();
+      final name = 'accounts.save-small-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json';
+      final file = File('${owned.path}/$name');
+      Phase02PerformanceOptions options(String path) =>
+          Phase02PerformanceOptions.parse([
+            '--case',
+            'accounts.save',
+            '--run-id',
+            'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+            '--fixture-manifest',
+            path,
+          ]);
+      final selected = options(file.path);
+      final binding = await writePhase02FixtureManifest(
+        selected,
+        Phase02Workload.create('small', selected.runId),
+      );
+      final original = await file.readAsBytes();
+      final context = phase02FailureArtifact(
+        options: selected,
+        stage: Phase02BenchmarkStage.prepare,
+        error: StateError('secret'),
+        attemptedIteration: 1,
+        completedSampleCount: 0,
+      );
+      final preserved = File('${directory.path}/preserved');
+      await preserved.writeAsString('keep');
+      final sidecar = Link('${file.path}.failure.json');
+      await sidecar.create(preserved.path);
+      expect(
+        await writePhase02FailureArtifact(selected, context, binding: binding),
+        isFalse,
+      );
+      expect(await preserved.readAsString(), 'keep');
+      await sidecar.delete();
+      final wrong = File('${directory.path}/foreign.json');
+      await wrong.writeAsString('keep');
+      expect(
+        await writePhase02FailureArtifact(
+          options(wrong.path),
+          context,
+          binding: binding,
+        ),
+        isFalse,
+      );
+      expect(await File('${wrong.path}.failure.json').exists(), isFalse);
+      final moved = await owned.rename('${directory.path}/moved');
+      final alias = Link(owned.path);
+      await alias.create(moved.path);
+      expect(
+        await writePhase02FailureArtifact(selected, context, binding: binding),
+        isFalse,
+      );
+      expect(await File('${moved.path}/$name').readAsBytes(), original);
+      await alias.delete();
+      await moved.rename(owned.path);
+      expect(await File('${file.path}.failure.json').exists(), isFalse);
+    },
+  );
   test('matching raster frame ID accepts earlier vsync and rejects stale IDs', () {
     FrameTiming timing(int id, {int finish = 19000}) => FrameTiming(
       vsyncStart: 1000,

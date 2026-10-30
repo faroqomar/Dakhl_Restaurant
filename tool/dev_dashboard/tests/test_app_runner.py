@@ -331,5 +331,120 @@ class Phase02TransportGuardsTests(unittest.TestCase):
                 runner.collect_phase02_manifest(source, 'small', self.root / name.replace('.json', '-evidence'))
 
 
+class Phase02FailureDiagnosticTests(unittest.TestCase):
+    def setUp(self):
+        self.temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temporary.cleanup)
+        self.root = Path(self.temporary.name).resolve()
+        self.case, self.profile, self.run = 'accounts.migrate_legacy', 'medium', 'a' * 32
+        self.manifest = self.root / (self.case + '-' + self.profile + '-' + self.run + '.json')
+        self.manifest.write_text('preserve original manifest')
+        self.sidecar = self.manifest.with_name(self.manifest.name + '.failure.json')
+        self.evidence = self.root / 'evidence'
+        self.measurement = dict(status='failed', iterations=0, samplesMs=[], timing=None,
+                                resources=None, diagnostics=['child_reported_error'])
+
+    def context(self):
+        return dict(schemaVersion=1, operationId=self.case, profile=self.profile,
+                    runId=self.run, requestedIterations=20, attemptedIteration=3,
+                    completedSampleCount=2, stage='finalRender', errorKind='timeout',
+                    state='saved', failureCode=None)
+
+    def capture(self):
+        before = json.dumps(self.measurement, sort_keys=True)
+        receipt = runner.capture_phase02_failure(self.measurement, self.manifest, self.case,
+                                                  self.profile, self.run, 20, self.evidence)
+        self.assertEqual(json.dumps(self.measurement, sort_keys=True), before)
+        self.assertEqual(self.manifest.read_text(), 'preserve original manifest')
+        return receipt
+
+    def test_missing_context_is_reported_without_masking_failed_result(self):
+        result = self.capture()
+        self.assertEqual(result['status'], 'missing')
+        self.assertEqual(self.measurement['diagnostics'], ['child_reported_error'])
+
+    def test_valid_context_captured_separately_from_generic_measurement(self):
+        self.sidecar.write_text(json.dumps(self.context()))
+        result = self.capture()
+        self.assertEqual(result['status'], 'captured')
+        self.assertEqual(result['context'], self.context())
+        self.assertEqual((self.evidence / self.sidecar.name).read_bytes(), self.sidecar.read_bytes())
+        self.assertNotIn('context', self.measurement)
+
+    def test_private_extra_invalid_bounds_and_unknown_values_are_rejected(self):
+        mutations = [dict(self.context(), privatePayload='secret?auth=token'),
+                     dict(self.context(), attemptedIteration=True),
+                     dict(self.context(), attemptedIteration=21),
+                     dict(self.context(), completedSampleCount=4),
+                     dict(self.context(), completedSampleCount=0),
+                     dict(self.context(), requestedIterations=19),
+                     dict(self.context(), stage='/private/secret'),
+                     dict(self.context(), errorKind='raw exception'),
+                     dict(self.context(), state='secret'),
+                     dict(self.context(), failureCode='secret')]
+        for index, context in enumerate(mutations):
+            with self.subTest(index=index):
+                self.evidence = self.root / ('evidence-' + str(index))
+                self.sidecar.write_text(json.dumps(context))
+                result = self.capture()
+                self.assertEqual(result['status'], 'rejected')
+                self.assertNotIn('secret', json.dumps(result))
+                self.assertFalse((self.evidence / self.sidecar.name).exists())
+
+    def test_foreign_case_profile_run_and_filename_are_rejected(self):
+        for index, fields in enumerate([dict(operationId='accounts.open'), dict(profile='small'),
+                                        dict(runId='b' * 32)]):
+            self.evidence = self.root / ('foreign-' + str(index))
+            self.sidecar.write_text(json.dumps(dict(self.context(), **fields)))
+            self.assertEqual(self.capture()['status'], 'rejected')
+        self.manifest = self.root / ('accounts.open-medium-' + self.run + '.json')
+        self.manifest.write_text('preserve original manifest')
+        self.sidecar = self.manifest.with_name(self.manifest.name + '.failure.json')
+        self.sidecar.write_text(json.dumps(self.context()))
+        self.evidence = self.root / 'foreign-file'
+        self.assertEqual(self.capture()['status'], 'rejected')
+
+    def test_source_symlink_and_oversized_context_are_rejected(self):
+        original = self.root / 'private.json'
+        original.write_text(json.dumps(self.context()))
+        self.sidecar.symlink_to(original)
+        self.assertEqual(self.capture()['status'], 'rejected')
+        self.assertEqual(json.loads(original.read_text()), self.context())
+        self.sidecar.unlink()
+        self.sidecar.write_bytes(b'x' * 4097)
+        self.evidence = self.root / 'oversized'
+        self.assertEqual(self.capture()['status'], 'rejected')
+
+    def test_redirected_evidence_and_existing_artifacts_are_preserved(self):
+        self.sidecar.write_text(json.dumps(self.context()))
+        original = self.root / 'preserved'
+        original.mkdir()
+        marker = original / 'keep'; marker.write_text('keep')
+        self.evidence.symlink_to(original, target_is_directory=True)
+        self.assertEqual(self.capture()['status'], 'unavailable')
+        self.assertEqual(marker.read_text(), 'keep')
+        self.evidence.unlink(); self.evidence.mkdir()
+        (self.evidence / self.sidecar.name).write_text('keep existing diagnostic')
+        self.assertEqual(self.capture()['status'], 'rejected')
+        self.assertEqual((self.evidence / self.sidecar.name).read_text(), 'keep existing diagnostic')
+        capture_path = self.evidence / (self.manifest.name + '.capture.json')
+        before = capture_path.read_bytes()
+        self.assertEqual(self.capture()['status'], 'unavailable')
+        self.assertEqual(capture_path.read_bytes(), before)
+
+    def test_duplicate_keys_cannot_hide_private_raw_text_in_copied_artifact(self):
+        raw = json.dumps(self.context()).replace('"failureCode": null',
+              '"failureCode": "secret?auth=token", "failureCode": null')
+        self.sidecar.write_text(raw)
+        result = self.capture()
+        self.assertEqual(result['status'], 'rejected')
+        self.assertNotIn('secret', json.dumps(result))
+        self.assertFalse((self.evidence / self.sidecar.name).exists())
+
+    def test_successful_measurement_does_not_collect_failure_context(self):
+        self.measurement['status'] = 'passed'
+        self.assertIsNone(self.capture())
+        self.assertFalse(self.evidence.exists())
+
 if __name__ == '__main__':
     unittest.main()

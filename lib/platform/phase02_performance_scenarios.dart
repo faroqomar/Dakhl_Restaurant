@@ -25,6 +25,40 @@ enum Phase02BenchmarkStage {
   finish,
 }
 
+const phase02BenchmarkFailureCodes = {
+  'commit_unknown',
+  'unavailable',
+  'conflict',
+  'generation_mismatch',
+  'invalid_payload',
+  'payload_too_large',
+  'incomplete_state',
+  'not_initialized',
+  'no_previous_copy',
+  'recovery_publication_unknown',
+  'redacted',
+};
+const _phase02FailureKinds = {
+  'timeout',
+  'state',
+  'format',
+  'filesystem',
+  'other',
+};
+const _phase02FailureKeys = {
+  'schemaVersion',
+  'operationId',
+  'profile',
+  'runId',
+  'requestedIterations',
+  'attemptedIteration',
+  'completedSampleCount',
+  'stage',
+  'errorKind',
+  'state',
+  'failureCode',
+};
+
 /// Safe benchmark diagnostics only; exception text/stack and payloads are never
 /// emitted. Unknown stable codes are redacted instead of copying arbitrary text.
 Map<String, String?> phase02BenchmarkFailure({
@@ -44,21 +78,181 @@ Map<String, String?> phase02BenchmarkFailure({
   'state': state?.name,
   'failureCode': failureCode == null
       ? null
-      : const {
-          'commit_unknown',
-          'unavailable',
-          'conflict',
-          'generation_mismatch',
-          'invalid_payload',
-          'payload_too_large',
-          'incomplete_state',
-          'not_initialized',
-          'no_previous_copy',
-          'recovery_publication_unknown',
-        }.contains(failureCode)
+      : phase02BenchmarkFailureCodes.contains(failureCode)
       ? failureCode
       : 'redacted',
 };
+
+/// Failure-only app metadata; never a measurement or arbitrary exception log.
+Map<String, Object?> phase02FailureArtifact({
+  required Phase02PerformanceOptions options,
+  required Phase02BenchmarkStage stage,
+  required Object error,
+  required int attemptedIteration,
+  required int completedSampleCount,
+  AccountsState? state,
+  String? failureCode,
+}) {
+  final data = <String, Object?>{
+    'schemaVersion': 1,
+    'operationId': options.operationId,
+    'profile': options.fixtureName,
+    'runId': options.runId,
+    'requestedIterations': options.iterations,
+    'attemptedIteration': attemptedIteration,
+    'completedSampleCount': completedSampleCount,
+    ...phase02BenchmarkFailure(
+      stage: stage,
+      error: error,
+      state: state,
+      failureCode: failureCode,
+    ),
+  };
+  if (!_validPhase02FailureArtifact(options, data)) {
+    throw const FormatException('Invalid bounded benchmark failure context.');
+  }
+  return Map.unmodifiable(data);
+}
+
+bool _validPhase02FailureOptions(Phase02PerformanceOptions options) =>
+    phase02PerformanceCases.contains(options.operationId) &&
+    {'small', 'medium', 'largest'}.contains(options.fixtureName) &&
+    RegExp(r'^[a-f0-9]{32}$').hasMatch(options.runId) &&
+    options.iterations >= 1 &&
+    options.iterations <= 100;
+
+bool _validPhase02FailureArtifact(
+  Phase02PerformanceOptions options,
+  Map<String, Object?> data,
+) {
+  if (data.length != _phase02FailureKeys.length ||
+      !data.keys.every(_phase02FailureKeys.contains) ||
+      data['schemaVersion'] is! int ||
+      data['schemaVersion'] != 1 ||
+      !_validPhase02FailureOptions(options)) {
+    return false;
+  }
+  for (final entry in {
+    'operationId': options.operationId,
+    'profile': options.fixtureName,
+    'runId': options.runId,
+  }.entries) {
+    if (data[entry.key] is! String || data[entry.key] != entry.value) {
+      return false;
+    }
+  }
+  final requested = data['requestedIterations'],
+      attempted = data['attemptedIteration'],
+      completed = data['completedSampleCount'];
+  if (requested is! int ||
+      requested != options.iterations ||
+      attempted is! int ||
+      completed is! int ||
+      attempted < 0 ||
+      attempted > requested ||
+      completed < 0 ||
+      completed > attempted ||
+      attempted - completed > 1) {
+    return false;
+  }
+  if (data['stage'] is! String ||
+      !Phase02BenchmarkStage.values.any((s) => s.name == data['stage']) ||
+      data['errorKind'] is! String ||
+      !_phase02FailureKinds.contains(data['errorKind'])) {
+    return false;
+  }
+  final state = data['state'], code = data['failureCode'];
+  return (state == null ||
+          state is String &&
+              AccountsState.values.any((s) => s.name == state)) &&
+      (code == null ||
+          code is String && phase02BenchmarkFailureCodes.contains(code));
+}
+
+/// Process-local proof that this producer exclusively published its validated
+/// synthetic manifest. An existing matching filename/content grants no proof.
+final class Phase02FailureBinding {
+  Phase02FailureBinding._(this._options, this._content, this._parent);
+  final Phase02PerformanceOptions _options;
+  final String _content, _parent;
+}
+
+Future<Phase02FailureBinding> writePhase02FixtureManifest(
+  Phase02PerformanceOptions options,
+  Phase02Workload workload,
+) async {
+  final path = options.manifestPath;
+  if (!_validPhase02FailureOptions(options) ||
+      path == null ||
+      workload.name != options.fixtureName) {
+    throw const FormatException('Invalid bound fixture manifest.');
+  }
+  final manifest = File(path);
+  final expected =
+      '${options.operationId}-${options.fixtureName}-${options.runId}.json';
+  if (!manifest.isAbsolute ||
+      manifest.uri.pathSegments.contains('..') ||
+      manifest.uri.pathSegments.last != expected) {
+    throw const FormatException('Invalid bound fixture filename.');
+  }
+  final parent = await manifest.parent.resolveSymbolicLinks();
+  if (parent != manifest.parent.absolute.path) {
+    throw const FormatException('Redirected fixture manifest directory.');
+  }
+  final content = jsonEncode(workload.manifest);
+  if (utf8.encode(content).length > 16384) {
+    throw const FormatException('Fixture metadata exceeds its bound.');
+  }
+  await manifest.create(exclusive: true);
+  await manifest.writeAsString(content, flush: true);
+  return Phase02FailureBinding._(options, content, parent);
+}
+
+/// Best effort, exclusive and bounded. No binding means no sidecar. Diagnostic
+/// I/O cannot replace the original producer failure/protocol error.
+Future<bool> writePhase02FailureArtifact(
+  Phase02PerformanceOptions options,
+  Map<String, Object?> context, {
+  Phase02FailureBinding? binding,
+}) async {
+  Future<bool> write() async {
+    try {
+      if (binding == null ||
+          !identical(binding._options, options) ||
+          !_validPhase02FailureArtifact(options, context)) {
+        return false;
+      }
+      final path = options.manifestPath;
+      if (path == null) return false;
+      final manifest = File(path);
+      if (await FileSystemEntity.type(path, followLinks: false) !=
+              FileSystemEntityType.file ||
+          await manifest.parent.resolveSymbolicLinks() != binding._parent ||
+          manifest.parent.absolute.path != binding._parent) {
+        return false;
+      }
+      final handle = await manifest.open();
+      try {
+        if (await handle.length() > 16384 ||
+            utf8.decode(await handle.read(16385)) != binding._content) {
+          return false;
+        }
+      } finally {
+        await handle.close();
+      }
+      final content = jsonEncode(context);
+      if (utf8.encode(content).length > 4096) return false;
+      final sidecar = File('$path.failure.json');
+      await sidecar.create(exclusive: true);
+      await sidecar.writeAsString(content, flush: true);
+      return true;
+    } on Object {
+      return false;
+    }
+  }
+
+  return write().timeout(const Duration(seconds: 2), onTimeout: () => false);
+}
 
 const phase02PerformanceCases = {
   'accounts.open',

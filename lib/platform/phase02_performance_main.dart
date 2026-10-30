@@ -16,22 +16,24 @@ Future<void> main(List<String> arguments) async {
   var operation = 'invalid';
   var stage = Phase02BenchmarkStage.arguments;
   Phase02PerformanceFixture? current;
+  Phase02PerformanceOptions? options;
+  Phase02FailureBinding? failureBinding;
+  var attemptedIteration = 0, completedSampleCount = 0;
   void marker(String event, {int? elapsedUs}) => stdout.writeln(
     'DAKHL_BENCH ${jsonEncode({'event': event, 'operationId': operation, 'elapsedUs': ?elapsedUs})}',
   );
   try {
-    final options = Phase02PerformanceOptions.parse(arguments);
+    options = Phase02PerformanceOptions.parse(arguments);
     operation = options.operationId;
     WidgetsFlutterBinding.ensureInitialized();
     stage = Phase02BenchmarkStage.workload;
     final workload = Phase02Workload.create(options.fixtureName, options.runId);
-    if (options.manifestPath case final String path) {
+    if (options.manifestPath != null) {
       stage = Phase02BenchmarkStage.manifest;
-      final file = File(path);
-      await file.create(exclusive: true);
-      await file.writeAsString(jsonEncode(workload.manifest), flush: true);
+      failureBinding = await writePhase02FixtureManifest(options, workload);
     }
     for (var i = 0; i < options.iterations; i++) {
+      attemptedIteration = i + 1;
       stage = Phase02BenchmarkStage.prepare;
       current = await Phase02PerformanceFixture.create(
         options.runId,
@@ -62,6 +64,7 @@ Future<void> main(List<String> arguments) async {
       if (finished < started || finished > Timeline.now) {
         throw StateError('Incompatible raster clock.');
       }
+      completedSampleCount++;
       marker('sample', elapsedUs: finished - started);
       stage = Phase02BenchmarkStage.teardown;
       runApp(const SizedBox.shrink());
@@ -79,6 +82,27 @@ Future<void> main(List<String> arguments) async {
       'PHASE02_BENCH_DIAGNOSTIC ${jsonEncode(phase02BenchmarkFailure(stage: stage, error: error, state: current?.model.state, failureCode: current?.model.failureCode))}',
     );
     await stderr.flush();
+    // Opt-in failure sidecar only. Never let diagnostic capture mask the
+    // original protocol error or change successful measurement semantics.
+    try {
+      if (options != null) {
+        await writePhase02FailureArtifact(
+          options,
+          phase02FailureArtifact(
+            options: options,
+            stage: stage,
+            error: error,
+            attemptedIteration: attemptedIteration,
+            completedSampleCount: completedSampleCount,
+            state: current?.model.state,
+            failureCode: current?.model.failureCode,
+          ),
+          binding: failureBinding,
+        );
+      }
+    } on Object {
+      // Retain the original failure even if bounded metadata cannot be built.
+    }
     marker('error');
     await stdout.flush();
     await current?.close();

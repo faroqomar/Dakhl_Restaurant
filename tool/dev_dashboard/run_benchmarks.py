@@ -250,6 +250,116 @@ def collect_phase02_manifest(path, profile, evidence_directory):
     return manifest, hashlib.sha256(content).hexdigest()
 
 
+PHASE02_FAILURE_STAGES = {'arguments', 'workload', 'manifest', 'prepare',
+                          'initialRender', 'operation', 'finalRender', 'teardown', 'finish'}
+PHASE02_FAILURE_KINDS = {'timeout', 'state', 'format', 'filesystem', 'other'}
+PHASE02_FAILURE_STATES = {'loading', 'absent', 'saved', 'saving', 'failed', 'protected',
+                          'importReady', 'recoveryReady', 'commitUnknown', 'conflict'}
+PHASE02_FAILURE_CODES = {'commit_unknown', 'unavailable', 'conflict', 'generation_mismatch',
+                        'invalid_payload', 'payload_too_large', 'incomplete_state',
+                        'not_initialized', 'no_previous_copy', 'recovery_publication_unknown',
+                        'redacted'}
+PHASE02_FAILURE_KEYS = {'schemaVersion', 'operationId', 'profile', 'runId',
+                       'requestedIterations', 'attemptedIteration', 'completedSampleCount',
+                       'stage', 'errorKind', 'state', 'failureCode'}
+
+
+def _failure_attempt_valid(case, profile, run_id, iterations):
+    return (type(case) is str and type(profile) is str and
+            case in PHASE02_CASES and profile in PHASE02_PROFILES and
+            type(run_id) is str and re.fullmatch(r'[a-f0-9]{32}', run_id) is not None and
+            type(iterations) is int and 1 <= iterations <= 100)
+
+
+def _validate_phase02_failure(context, case, profile, run_id, iterations):
+    if not isinstance(context, dict) or set(context) != PHASE02_FAILURE_KEYS:
+        raise RuntimeError('phase02_failure_context_invalid')
+    fixed = {'schemaVersion': 1, 'operationId': case, 'profile': profile,
+             'runId': run_id, 'requestedIterations': iterations}
+    if any(type(context[key]) is not type(value) or context[key] != value
+           for key, value in fixed.items()):
+        raise RuntimeError('phase02_failure_context_invalid')
+    attempted, completed = context['attemptedIteration'], context['completedSampleCount']
+    if (type(attempted) is not int or type(completed) is not int or
+            not 0 <= completed <= attempted <= iterations or attempted - completed > 1 or
+            context['stage'] not in PHASE02_FAILURE_STAGES or
+            context['errorKind'] not in PHASE02_FAILURE_KINDS or
+            context['state'] is not None and context['state'] not in PHASE02_FAILURE_STATES or
+            context['failureCode'] is not None and context['failureCode'] not in PHASE02_FAILURE_CODES):
+        raise RuntimeError('phase02_failure_context_invalid')
+
+
+def _write_phase02_metadata(name, content, evidence_directory):
+    with _manifest_directory(evidence_directory, create=True) as directory_fd:
+        descriptor = os.open(name, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW,
+                             0o600, dir_fd=directory_fd)
+        with os.fdopen(descriptor, 'wb') as output:
+            output.write(content)
+
+
+def _strict_phase02_failure_object(pairs):
+    context = {}
+    for key, value in pairs:
+        if key in context:
+            raise RuntimeError('phase02_failure_duplicate_key')
+        context[key] = value
+    return context
+
+
+def collect_phase02_failure(path, case, profile, run_id, iterations, evidence_directory):
+    expected = case + '-' + profile + '-' + run_id + '.json'
+    if not _failure_attempt_valid(case, profile, run_id, iterations) or path.name != expected:
+        raise RuntimeError('phase02_failure_attempt_invalid')
+    name = expected + '.failure.json'
+    with _manifest_directory(path.parent) as directory_fd:
+        try:
+            descriptor = os.open(name, os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK,
+                                 dir_fd=directory_fd)
+        except FileNotFoundError:
+            return None
+        with os.fdopen(descriptor, 'rb') as source:
+            if not stat.S_ISREG(os.fstat(source.fileno()).st_mode):
+                raise RuntimeError('phase02_failure_source_invalid')
+            content = source.read(4097)
+    if len(content) > 4096:
+        raise RuntimeError('phase02_failure_context_too_large')
+    context = json.loads(content, object_pairs_hook=_strict_phase02_failure_object)
+    _validate_phase02_failure(context, case, profile, run_id, iterations)
+    _write_phase02_metadata(name, content, evidence_directory)
+    return context, hashlib.sha256(content).hexdigest()
+
+
+def capture_phase02_failure(measurement, path, case, profile, run_id, iterations,
+                            evidence_directory):
+    """Separate APP receipt only. Never modify or mask the generic failed result."""
+    if measurement.get('status') not in {'failed', 'unavailable'}:
+        return None
+    if not _failure_attempt_valid(case, profile, run_id, iterations):
+        return {'status': 'unavailable', 'reason': 'invalid_attempt'}
+    name = case + '-' + profile + '-' + run_id + '.json'
+    receipt = dict(schemaVersion=1, operationId=case, profile=profile, runId=run_id,
+                   measurementStatus=measurement['status'], status='missing',
+                   receiptFileName=name + '.capture.json')
+    try:
+        collected = collect_phase02_failure(path, case, profile, run_id, iterations,
+                                            evidence_directory)
+        if collected is not None:
+            context, fingerprint = collected
+            receipt.update(status='captured', context=context,
+                           diagnosticFileName=name + '.failure.json',
+                           diagnosticSha256=fingerprint)
+    except Exception:
+        # Arbitrary exceptions/paths/payloads never become diagnostic metadata.
+        receipt.update(status='rejected', reason='invalid_or_unavailable_context')
+    try:
+        _write_phase02_metadata(receipt['receiptFileName'],
+                                (json.dumps(receipt, allow_nan=False) + '\n').encode(),
+                                evidence_directory)
+    except Exception:
+        return {'status': 'unavailable', 'reason': 'capture_receipt_unavailable'}
+    return receipt
+
+
 def operation_target(entry):
     return ('lib/platform/phase02_performance_main.dart' if entry.get('phase') == '02'
             else 'lib/platform/performance_main.dart')
@@ -316,6 +426,7 @@ def main():
     source_commit = command(['git', 'rev-parse', 'HEAD']).strip()
     source_dirty = bool(command(['git', 'status', '--porcelain']))
     results = []
+    app_failure_receipts = []
     for case in cases:
         entry = operations[case]
         count = args.iterations or entry['defaultIterations']
@@ -346,6 +457,22 @@ def main():
                 result['fixtureManifest'] = manifest
                 result['fixtureManifestFingerprint'] = manifest_fingerprint
                 result['fixtureManifestArtifact'] = 'outputs/phase02/performance-manifests/' + manifest_path.name
+            if result['status'] != 'passed' and manifest_path is not None:
+                # App-only context never changes the generic result or metrics.
+                try:
+                    capture_directory = ROOT / 'outputs/phase02/performance-diagnostics'
+                    capture = capture_phase02_failure(result, manifest_path, case,
+                                                      args.fixture, run_id, count,
+                                                      capture_directory)
+                    if capture is not None:
+                        record = dict(operationId=case, profile=args.fixture, runId=run_id,
+                                      captureStatus=capture['status'])
+                        if 'receiptFileName' in capture:
+                            record['captureReceiptArtifact'] = str(
+                                (capture_directory / capture['receiptFileName']).relative_to(ROOT))
+                        app_failure_receipts.append(record)
+                except Exception:
+                    app_failure_receipts.append(dict(operationId=case, captureStatus='unavailable'))
             result['resourceWindowScope'] = ('One host start/end window: operation samples plus '
                 'inter-iteration fixture reset, teardown and rendering setup. Elapsed samples exclude '
                 'fixture reset and end at actual raster completion. RAM/CPU are not per-sample isolated.')
@@ -363,6 +490,17 @@ def main():
         results.append(result)
     if source_fingerprint() != fingerprint or hashlib.sha256(module_path.read_bytes()).hexdigest() != tooling_fingerprint or apple_toolchain_identity() != toolchain:
         raise RuntimeError('benchmark_source_changed_during_measurement')
+    if app_failure_receipts:
+        try:
+            diagnostic_output = args.output.absolute()
+            _write_phase02_metadata(diagnostic_output.name + '.diagnostics.json',
+                                    (json.dumps(dict(schemaVersion=1,
+                                                    failedMeasurements=app_failure_receipts),
+                                                allow_nan=False) + '\n').encode(),
+                                    diagnostic_output.parent)
+        except Exception:
+            # The original generic result still records its original failure.
+            pass
     output = results[0] if len(results) == 1 else dict(schemaVersion=1, results=results)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     temporary = args.output.with_name(args.output.name + '.tmp-' + uuid.uuid4().hex)
