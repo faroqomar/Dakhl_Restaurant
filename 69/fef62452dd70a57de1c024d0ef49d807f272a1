@@ -1,0 +1,21 @@
+lib/platform/phase02_performance_main.dart
+  s_cecf55789e34ef::t_5faa9cd08532e6 89-121,124-146,148,150,159,161-166,168-169
+test/platform/phase02_performance_test.dart
+  s_cecf55789e34ef::t_0437f96c65dddb 7,17-39,51-56,62-63,68,74-118
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "69fef62452dd70a57de1c024d0ef49d807f272a1",
+  "prompts": {},
+  "sessions": {
+    "s_cecf55789e34ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1892c-b531-7571-8914-75aa02e54d3d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
