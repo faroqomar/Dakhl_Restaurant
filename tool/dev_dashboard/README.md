@@ -54,7 +54,13 @@ production capacity. Each elapsed sample excludes fresh-store preparation/reset,
 includes the consumer command and deliberate final repaint, and ends at the
 matching fresh native frame's raster-finish timestamp. Later timing callback
 delivery is excluded from elapsed latency but remains in the aggregate host
-resource window with reset, rendering setup and teardown. No mobile measurement,
+resource window with reset, rendering setup and teardown. Initial rendering waits
+for root/warm-up and public first-raster readiness before selecting a fresh native
+frame-ID baseline. Readiness and the subsequent matching native raster event
+share one ten-second timeout; framework post-frame/first-raster readiness alone
+cannot complete the observation. This initial bootstrap remains outside operation
+elapsed latency and inside the existing aggregate resource window for later
+iterations. Normal app initialization is unaffected. No mobile measurement,
 performance target, optimization or reliability claim follows from these cases.
 
 ## Failure-only context — app owned

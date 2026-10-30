@@ -51,7 +51,7 @@ Future<void> main(List<String> arguments) async {
         ),
       );
       stage = Phase02BenchmarkStage.initialRender;
-      await phase02RasterizedFrame();
+      await phase02RasterizedFrame(bootstrap: true);
       if (i == 0) {
         marker('ready');
         marker('start');
@@ -135,17 +135,23 @@ bool phase02IsRequestedRasterFrame(FrameTiming frame, int? requested) {
 
 /// Native callers use the SDK's actual frameData identity. The optional ID
 /// provider supports test bindings which do not have an engine/GPU recorder.
+/// Initial startup first awaits framework/root and first-raster readiness. Those
+/// futures never substitute for this helper's subsequent fresh native GPU event.
+/// Readiness and fresh-frame observation share the same ten-second deadline.
 Future<int> phase02RasterizedFrame({
+  bool bootstrap = false,
+  Future<void> Function()? bootstrapReadyForTesting,
   int Function()? frameNumberForTesting,
 }) async {
   final binding = WidgetsBinding.instance;
   final frameNumber =
       frameNumberForTesting ??
       () => binding.platformDispatcher.frameData.frameNumber;
-  final previous = frameNumber();
+  late final int previous;
   final completed = Completer<int>();
   int? requested;
   var active = true;
+  var listening = false;
   void repaint() {
     // A completed command can leave identical visible state. Force a real
     // final paint so its raster completion exists even when builds coalesce.
@@ -180,16 +186,34 @@ Future<int> phase02RasterizedFrame({
     }
   }
 
-  binding.addTimingsCallback(timings);
   try {
-    repaint();
-    binding.addPostFrameCallback(requestFrame);
     return await (() async {
+      if (bootstrap) {
+        final testReadiness = bootstrapReadyForTesting;
+        if (testReadiness != null) {
+          await testReadiness();
+        } else {
+          // runApp attaches the root asynchronously and schedules a warm-up.
+          // Post-frame alone does not prove rasterization; the first-raster
+          // future is readiness only, before choosing our new recorder baseline.
+          await binding.endOfFrame;
+          if (!active) throw StateError('Retired frame observation.');
+          await binding.waitUntilFirstFrameRasterized;
+        }
+      }
+      // A timed-out readiness future can complete later. Never let it register
+      // observers, sample metadata or request paints after this wait retired.
+      if (!active) throw StateError('Retired frame observation.');
+      previous = frameNumber();
+      binding.addTimingsCallback(timings);
+      listening = true;
+      repaint();
+      binding.addPostFrameCallback(requestFrame);
       await binding.endOfFrame;
       return completed.future;
     })().timeout(const Duration(seconds: 10));
   } finally {
     active = false;
-    binding.removeTimingsCallback(timings);
+    if (listening) binding.removeTimingsCallback(timings);
   }
 }

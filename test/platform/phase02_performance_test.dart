@@ -311,6 +311,125 @@ void main() {
       isFalse,
     );
   });
+  testWidgets(
+    'bootstrap waits for attachment and first raster before fresh baseline',
+    (tester) async {
+      await tester.pumpWidget(const SizedBox.shrink());
+      const attached = ValueKey('bootstrap-root');
+      // The widget-test binding attaches synchronously; explicitly model the
+      // production binding's Timer.run root attachment.
+      Timer.run(() => runApp(const SizedBox(key: attached)));
+      expect(find.byKey(attached), findsNothing);
+      final attachmentReady = Completer<void>();
+      final firstRasterReady = Completer<void>();
+      var nativeId = 0, reads = 0;
+      int? result;
+      Object? error;
+      final pending =
+          phase02RasterizedFrame(
+            bootstrap: true,
+            bootstrapReadyForTesting: () async {
+              await attachmentReady.future;
+              await firstRasterReady.future;
+            },
+            frameNumberForTesting: () {
+              reads++;
+              return nativeId;
+            },
+          ).then<void>(
+            (value) => result = value,
+            onError: (Object value) => error = value,
+          );
+      final readsBeforeAttachment = reads;
+      // A warm-up can expose advancing metadata without any native GPU timing.
+      nativeId = 1;
+      await tester.pump(const Duration(milliseconds: 1));
+      await tester.pump();
+      expect(find.byKey(attached), findsOneWidget);
+      attachmentReady.complete();
+      await tester.pump();
+      final readsBeforeFirstRaster = reads;
+      firstRasterReady.complete();
+      await tester.pump();
+      final resultFromReadinessOnly = result;
+      nativeId = 2;
+      await tester.pump();
+      // Synthetic unit events only; native execution uses actual SDK timings.
+      tester.binding.platformDispatcher.onReportTimings!([
+        _timing(1),
+        _timing(2),
+      ]);
+      await tester.pump();
+      await tester.pump(const Duration(seconds: 11));
+      await pending;
+      expect(readsBeforeAttachment, 0);
+      expect(readsBeforeFirstRaster, 0);
+      expect(resultFromReadinessOnly, isNull);
+      expect(error, isNull);
+      expect(result, 5002);
+    },
+  );
+  testWidgets(
+    'stalled bootstrap retires within shared timeout without late observation',
+    (tester) async {
+      await tester.pumpWidget(const SizedBox.shrink());
+      final readiness = Completer<void>();
+      var reads = 0;
+      final pending = phase02RasterizedFrame(
+        bootstrap: true,
+        bootstrapReadyForTesting: () => readiness.future,
+        frameNumberForTesting: () {
+          reads++;
+          return 10;
+        },
+      );
+      final expectation = expectLater(
+        pending,
+        throwsA(isA<TimeoutException>()),
+      );
+      await tester.pump(const Duration(seconds: 10));
+      await expectation;
+      final readsAtTimeout = reads;
+      readiness.complete();
+      await tester.pump();
+      await tester.pump();
+      expect(readsAtTimeout, 0);
+      expect(reads, 0);
+      expect(tester.binding.hasScheduledFrame, isFalse);
+    },
+  );
+  testWidgets(
+    'bootstrap and required fresh raster share one ten second budget',
+    (tester) async {
+      await tester.pumpWidget(const SizedBox.shrink());
+      final readiness = Completer<void>();
+      var nativeId = 10;
+      int? result;
+      Object? error;
+      final pending =
+          phase02RasterizedFrame(
+            bootstrap: true,
+            bootstrapReadyForTesting: () => readiness.future,
+            frameNumberForTesting: () => nativeId,
+          ).then<void>(
+            (value) => result = value,
+            onError: (Object value) => error = value,
+          );
+      await tester.pump(const Duration(seconds: 8));
+      readiness.complete();
+      await tester.pump();
+      nativeId = 11;
+      await tester.pump();
+      // Stale timings and framework readiness cannot stand in for the fresh GPU event.
+      tester.binding.platformDispatcher.onReportTimings!([_timing(10)]);
+      await tester.pump(const Duration(seconds: 2));
+      await pending;
+      expect(result, isNull);
+      expect(error, isA<TimeoutException>());
+      await tester.pump();
+      expect(tester.binding.hasScheduledFrame, isFalse);
+    },
+  );
   testWidgets('unchanged benchmark surface paints before raster completion', (
     tester,
   ) async {
@@ -502,3 +621,14 @@ final class _CountPaint extends CustomPainter {
   @override
   bool shouldRepaint(_CountPaint oldDelegate) => false;
 }
+
+// Synthetic ordered unit timing, never native GPU evidence.
+FrameTiming _timing(int id) => FrameTiming(
+  vsyncStart: 1000,
+  buildStart: 2000,
+  buildFinish: 3000,
+  rasterStart: 4000,
+  rasterFinish: 5000 + id,
+  rasterFinishWallTime: 5000 + id,
+  frameNumber: id,
+);
