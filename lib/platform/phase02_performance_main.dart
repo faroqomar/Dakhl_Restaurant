@@ -86,14 +86,68 @@ Future<void> main(List<String> arguments) async {
   }
 }
 
-Future<int> phase02RasterizedFrame() async {
+/// Match the engine recorder identity and ordered phases of the requested real
+/// frame. Presentation-target time is a different phase from vsync start.
+bool phase02IsRequestedRasterFrame(FrameTiming frame, int? requested) {
+  if (requested == null || requested < 0 || frame.frameNumber != requested) {
+    return false;
+  }
+  final timestamps = [
+    for (final phase in [
+      FramePhase.vsyncStart,
+      FramePhase.buildStart,
+      FramePhase.buildFinish,
+      FramePhase.rasterStart,
+      FramePhase.rasterFinish,
+    ])
+      frame.timestampInMicroseconds(phase),
+  ];
+  return timestamps.first >= 0 &&
+      List.generate(
+        timestamps.length - 1,
+        (i) => timestamps[i] <= timestamps[i + 1],
+      ).every((ordered) => ordered);
+}
+
+/// Native callers use the SDK's actual frameData identity. The optional ID
+/// provider supports test bindings which do not have an engine/GPU recorder.
+Future<int> phase02RasterizedFrame({
+  int Function()? frameNumberForTesting,
+}) async {
+  final binding = WidgetsBinding.instance;
+  final frameNumber =
+      frameNumberForTesting ??
+      () => binding.platformDispatcher.frameData.frameNumber;
+  final previous = frameNumber();
   final completed = Completer<int>();
   int? requested;
+  var active = true;
+  void repaint() {
+    // A completed command can leave identical visible state. Force a real
+    // final paint so its raster completion exists even when builds coalesce.
+    for (final view in binding.renderViews) {
+      view.markNeedsPaint();
+    }
+  }
+
+  void requestFrame(Duration _) {
+    if (!active || completed.isCompleted) return;
+    final current = frameNumber();
+    if (current >= 0 && current > previous) {
+      requested = current;
+      return;
+    }
+    // A warm-up frame has no new native recorder ID. Request a real frame;
+    // the whole wait remains bounded, including this retry.
+    repaint();
+    binding.addPostFrameCallback(requestFrame);
+    binding.scheduleFrame();
+  }
+
   void timings(List<FrameTiming> values) {
-    final target = requested;
-    if (target == null || completed.isCompleted) return;
+    if (!active || completed.isCompleted) return;
     for (final frame in values) {
-      if (frame.timestampInMicroseconds(FramePhase.vsyncStart) >= target) {
+      if (phase02IsRequestedRasterFrame(frame, requested)) {
         completed.complete(
           frame.timestampInMicroseconds(FramePhase.rasterFinish),
         );
@@ -102,20 +156,16 @@ Future<int> phase02RasterizedFrame() async {
     }
   }
 
-  WidgetsBinding.instance.addTimingsCallback(timings);
+  binding.addTimingsCallback(timings);
   try {
-    // A completed command can leave identical visible state. Force a real
-    // final paint so its raster completion exists even when builds coalesce.
-    for (final view in WidgetsBinding.instance.renderViews) {
-      view.markNeedsPaint();
-    }
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      requested =
-          WidgetsBinding.instance.currentSystemFrameTimeStamp.inMicroseconds;
-    });
-    await WidgetsBinding.instance.endOfFrame;
-    return await completed.future.timeout(const Duration(seconds: 10));
+    repaint();
+    binding.addPostFrameCallback(requestFrame);
+    return await (() async {
+      await binding.endOfFrame;
+      return completed.future;
+    })().timeout(const Duration(seconds: 10));
   } finally {
-    WidgetsBinding.instance.removeTimingsCallback(timings);
+    active = false;
+    binding.removeTimingsCallback(timings);
   }
 }

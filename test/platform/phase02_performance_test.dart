@@ -4,7 +4,7 @@ import 'dart:ui' show FrameTiming;
 
 import 'package:flutter/material.dart';
 import 'package:dakhl_restaurant/platform/phase02_performance_main.dart'
-    show phase02RasterizedFrame;
+    show phase02RasterizedFrame, phase02IsRequestedRasterFrame;
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:dakhl_restaurant/accounts/accounts_repository.dart';
@@ -14,6 +14,29 @@ import 'package:dakhl_restaurant/platform/phase02_performance_scenarios.dart';
 import '../accounts/accounts_view_model_test.dart' show FixtureStore;
 
 void main() {
+  test('matching raster frame ID accepts earlier vsync and rejects stale IDs', () {
+    FrameTiming timing(int id, {int finish = 19000}) => FrameTiming(
+      vsyncStart: 1000,
+      buildStart: 2000,
+      buildFinish: 3000,
+      rasterStart: 4000,
+      rasterFinish: finish,
+      rasterFinishWallTime: 1000000,
+      frameNumber: id,
+    );
+    // Presentation target can be 16000 while this same frame's vsync starts
+    // at 1000. Frame identity, rather than cross-phase time, proves freshness.
+    expect(phase02IsRequestedRasterFrame(timing(42), 42), isTrue);
+    for (final id in [-1, 0, 41, 43]) {
+      expect(phase02IsRequestedRasterFrame(timing(id), 42), isFalse);
+    }
+    expect(phase02IsRequestedRasterFrame(timing(-1), -1), isFalse);
+    expect(phase02IsRequestedRasterFrame(timing(42), null), isFalse);
+    expect(
+      phase02IsRequestedRasterFrame(timing(42, finish: 3999), 42),
+      isFalse,
+    );
+  });
   testWidgets('unchanged benchmark surface paints before raster completion', (
     tester,
   ) async {
@@ -25,23 +48,73 @@ void main() {
       ),
     );
     final before = paints;
-    final pending = phase02RasterizedFrame();
-    await tester.pump();
+    var frameNumber = 10;
+    final pending = phase02RasterizedFrame(
+      frameNumberForTesting: () => frameNumber,
+    );
+    frameNumber = 11;
+    await tester.pump(const Duration(milliseconds: 20));
     final stamp = tester.binding.currentSystemFrameTimeStamp.inMicroseconds;
     // Test binding has no native GPU: synthesize timing only to settle the
     // helper future. The actual paint count is the regression assertion.
     tester.binding.platformDispatcher.onReportTimings!([
       FrameTiming(
-        vsyncStart: stamp,
-        buildStart: stamp,
+        vsyncStart: stamp - 16000,
+        buildStart: stamp - 15000,
         buildFinish: stamp,
         rasterStart: stamp,
         rasterFinish: stamp + 1,
         rasterFinishWallTime: stamp + 1,
+        frameNumber: 11,
       ),
     ]);
     await pending;
     expect(paints, greaterThan(before));
+  });
+  testWidgets('warm-up and missing IDs wait for a fresh actual frame ID', (
+    tester,
+  ) async {
+    await tester.pumpWidget(const SizedBox.expand());
+    var frameNumber = -1;
+    var finished = false;
+    final pending =
+        phase02RasterizedFrame(frameNumberForTesting: () => frameNumber)
+            .then((value) {
+              finished = true;
+              return value;
+            });
+    await tester.pump(const Duration(milliseconds: 20));
+    expect(tester.binding.hasScheduledFrame, isTrue);
+    frameNumber = 8;
+    await tester.pump(const Duration(milliseconds: 20));
+    FrameTiming timing(int id) => FrameTiming(
+      vsyncStart: 1000,
+      buildStart: 2000,
+      buildFinish: 3000,
+      rasterStart: 4000,
+      rasterFinish: 5000,
+      rasterFinishWallTime: 5000,
+      frameNumber: id,
+    );
+    // Synthetic timings settle only this unit binding; native uses real IDs.
+    tester.binding.platformDispatcher.onReportTimings!([timing(-1), timing(7)]);
+    await tester.pump();
+    expect(finished, isFalse);
+    tester.binding.platformDispatcher.onReportTimings!([timing(8)]);
+    expect(await pending, 5000);
+    expect(finished, isTrue);
+  });
+  testWidgets('missing native frame IDs time out and stop rescheduling', (
+    tester,
+  ) async {
+    await tester.pumpWidget(const SizedBox.expand());
+    final pending = phase02RasterizedFrame(frameNumberForTesting: () => -1);
+    final expectation = expectLater(pending, throwsA(isA<TimeoutException>()));
+    await tester.pump(const Duration(milliseconds: 20));
+    await tester.pump(const Duration(seconds: 11));
+    await expectation;
+    await tester.pump();
+    expect(tester.binding.hasScheduledFrame, isFalse);
   });
   test(
     'benchmark diagnostics retain only bounded safe stage/type/state/code',
