@@ -1,0 +1,97 @@
+.github/workflows/flutter.yml
+  s_cecf55789e34ef::t_e62e230af0d820 40-45
+PHASES.md
+  s_cecf55789e34ef::t_5e953b90ea8466 21,79-90,310-314
+PLANS.md
+  s_cecf55789e34ef::t_472ba4622c2378 3
+docs/how-to/repeated-problems.md
+  s_cecf55789e34ef::t_b2c3b6842b1747 172-200
+docs/phases/02-implementation-plan.md
+  s_cecf55789e34ef::t_7726d9bbb36c38 1-102
+docs/phases/02-penpot-design-review.md
+  s_cecf55789e34ef::t_16e40801d73249 1-69
+docs/phases/02-scope-readiness.md
+  s_cecf55789e34ef::t_fe44a8dfa39ed7 1-70
+docs/phases/02-step3-build.md
+  s_cecf55789e34ef::t_98afee2ef9be41 1-43
+docs/phases/README.md
+  s_cecf55789e34ef::t_1f0079b66429e1 3,39-46
+docs/planning/flutter-rebuild/phases/02.md
+  s_cecf55789e34ef::t_6e23c10eb6e33d 7-8,39,46
+engine-dependency.json
+  s_cecf55789e34ef::t_2817d8fa67277c 3-4,8,16-19
+integration_test/phase02_accounts_native_test.dart
+  s_cecf55789e34ef::t_a4308c7323a450 1-213
+integration_test/phase02_file_picker_test.dart
+  s_cecf55789e34ef::t_ed0dcbb5ec74bf 1-261
+lib/accounts/account_document.dart
+  s_cecf55789e34ef::t_a2b714950ae06a 1-54
+lib/accounts/accounts_repository.dart
+  s_cecf55789e34ef::t_d858b66032c535 1-395
+lib/accounts/accounts_surface.dart
+  s_cecf55789e34ef::t_cde486f154156a 1-286
+lib/accounts/accounts_view_model.dart
+  s_cecf55789e34ef::t_aeee975a631e48 1-450
+lib/accounts/legacy_account_codec.dart
+  s_cecf55789e34ef::t_34a3f115f554c4 1-1517
+lib/accounts/workspace_document.dart
+  s_cecf55789e34ef::t_ba4d508a881e0c 1-60
+lib/app/accounts_store.dart
+  s_cecf55789e34ef::t_0b8b99c065dfe9 1-170
+lib/app/app.dart
+  s_cecf55789e34ef::t_5d5286e300c3c5 11-13,30-32,35-37,57-63,68-82,119,138,160-166,179-292,450-452,454-455,504,509,515,527,542-553,561,563,565-568,573-581
+lib/main.dart
+  s_cecf55789e34ef::t_5a0245bacf243d 5-9,14-17,21-30
+lib/platform/phase02_performance_main.dart
+  s_cecf55789e34ef::t_0d312338d42dad 1-103
+lib/platform/phase02_performance_scenarios.dart
+  s_cecf55789e34ef::t_6e174e6996ba89 1-338
+lib/shell/shell_view_model.dart
+  s_cecf55789e34ef::t_f1e697f711d453 18-25,140-144,150-151,226-248,340-342,461-487
+pubspec.lock
+  s_cecf55789e34ef::t_3b6dcf07d24fd5 405,412-418
+pubspec.yaml
+  s_cecf55789e34ef::t_efc9faaf439044 19-20
+scripts/build-account-corpus.cjs
+  s_cecf55789e34ef::t_919505cf3eaa9e 1-75
+test/accounts/account_callback_fence_test.dart
+  s_cecf55789e34ef::t_91b2737c4b0645 1-73
+test/accounts/accounts_surface_test.dart
+  s_cecf55789e34ef::t_2060167f12f89f 1-204
+test/accounts/accounts_view_model_test.dart
+  s_cecf55789e34ef::t_56fd21d0575e0e 1-475
+test/accounts/app_accounts_store_test.dart
+  s_cecf55789e34ef::t_1eff042d06ee68 1-29
+test/accounts/codec_test.dart
+  s_cecf55789e34ef::t_526643dc92877e 1-202
+test/fixtures/accounts/README.md
+  s_cecf55789e34ef::t_0195fef4421ef2 1-11
+test/fixtures/accounts/oracle.json
+  s_cecf55789e34ef::t_4d4187221b122c 1-143131
+test/platform/phase02_performance_test.dart
+  s_cecf55789e34ef::t_b4bb19f81f7352 1-80
+test/shell/account_preference_precedence_test.dart
+  s_cecf55789e34ef::t_66f180f7ee76d5 1-75
+tool/dev_dashboard/operations.json
+  s_cecf55789e34ef::t_b6b00da859f04c 55-120
+tool/dev_dashboard/run_benchmarks.py
+  s_cecf55789e34ef::t_e9090786468416 127-133,137,157-158,196-213,215-228
+tool/dev_dashboard/tests/test_app_runner.py
+  s_cecf55789e34ef::t_b0f5928e6985a6 20-32,75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e572af5a1d24d158028dd60a9e9062459c5540d9",
+  "prompts": {},
+  "sessions": {
+    "s_cecf55789e34ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1892c-b531-7571-8914-75aa02e54d3d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
