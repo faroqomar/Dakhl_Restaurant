@@ -46,6 +46,34 @@ void main() {
       }
     },
   );
+  test('pinned frozen V8 timestamp composers: independent matrix + primary grammar', () {
+    final timestampCases = (corpus['timestampCases'] as List)
+        .cast<Map<String, dynamic>>();
+    expect(timestampCases.length, 4127);
+    final base = cases.firstWhere(
+      (x) => x['name'] == 'all-entities-history',
+    )['input'];
+    final mismatches = <String>[];
+    for (final sample in timestampCases) {
+      final input = jsonDecode(jsonEncode(base)) as Map<String, dynamic>;
+      final stamp = sample['stamp'] as String;
+      (input['sales'] as List).first['createdAt'] = stamp;
+      var accepted = false;
+      try {
+        final document = codec.decodeJson(input);
+        accepted = true;
+        if ((document.toJson()['sales'] as List).first['createdAt'] != stamp) {
+          mismatches.add('text changed: $stamp');
+        }
+      } on AccountCodecException {
+        /* A rejected source input remains rejected. */
+      }
+      if (accepted != sample['accepted']) {
+        mismatches.add('$stamp: source=${sample['accepted']}, codec=$accepted');
+      }
+    }
+    expect(mismatches.length, 0, reason: mismatches.take(12).join('\n'));
+  });
   test('independent exact historical relationships and compatibility fields survive', () {
     final sample = cases.firstWhere((x) => x['name'] == 'all-entities-history');
     final document = codec.decodeBytes(

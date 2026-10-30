@@ -55,6 +55,24 @@ maxSafeRemainder.days['2026-10-30']={expenses:[],chickenUsed:0,chickenLeft:0,bal
 maxSafeRemainder.transfers=[{id:'t',date:'2026-10-30',amount:1,createdAt:'2026-10-30T12:00:00Z'}];
 add('remaining-final-safe-after-unsafe-prefix',maxSafeRemainder);
 for(const amount of [0,2,3,4]){const s=clone(maxSafeRemainder);s.days['2026-10-30'].remaining.amount=amount;add(`remaining-binary64-adjacent-${amount}`,s);}
+// Step4 APP-P2-01: evidence-bounded legacy timezone families, not literal patches.
+const zoneFamilyStamps=[];
+for(const numericDate of ['2024/01/01','2024-01-01'])
+  for(const clock of ['',' 00:00:00'])
+    for(const zone of ['GMT','UTC','GMT+0300','UTC-05:00'])
+      zoneFamilyStamps.push(numericDate+clock+' '+zone);
+for(const zone of ['EST','EDT','CST','CDT','MST','MDT','PST','PDT','BST','XYZ','GMT+2400','GMT+2500','GMT+2360'])
+  zoneFamilyStamps.push('29 Feb 2024 12:00:00 '+zone);
+zoneFamilyStamps.push('275760/09/13 00:00:00 GMT','275760/09/13 00:00:00 PDT',
+  '13 Sep 275760 00:00:00 GMT','13 Sep 275760 00:00:00 PDT',
+  '275760/09/13 01:00:00 GMT+0300','13 Sep 275760 01:00:00 GMT+0300',
+  '2024/13/01 GMT','2024/01/32 GMT','2024/01/01 25:00:00 GMT',
+  '2024/01/01 24:00:00 GMT','2024/01/01 24:00:01 UTC','2024/01/01 12:60:00 UTC',
+  '29 Feb 2024 24:00:00 GMT','29 Feb 2024 24:00:01 GMT',
+  '2024/01/01 gmt','29 Feb 2024 12:00:00 pdt','2024/01/01 GMT+03:60',
+  '2024/01/01 GMT+030','2024/01/01 UTC+','29 Feb 2024 12:00:00 PDTjunk');
+for(const suffix of ['+3','+03','+0030','+3:00','+03000','+9999','+99:99','+999'])zoneFamilyStamps.push('2024/01/01 GMT'+suffix);
+for(const [index,stamp] of zoneFamilyStamps.entries()) {const s=clone(base);s.sales[0].createdAt=stamp;add(`step4-timestamp-zone-family-${index}`,s);}
 const mutations={
  'future-version':s=>s.version=12,'missing-version':s=>delete s.version,'string-version':s=>s.version='11','duplicate-category':s=>s.categories.push(clone(s.categories[0])),'wrong-core-name':s=>s.categories[0].name='wrong','duplicate-expense':s=>s.days[date].expenses.push(clone(s.days[date].expenses[0])),
  'fraction-money':s=>s.days[date].expenses[0].amount=1.5,'negative-money':s=>s.days[date].expenses[0].amount=-1,'money-limit':s=>s.products[0].price=1000000000001,'wrong-funding':s=>s.days[date].expenses[0].funding.cashAmount++,
@@ -69,7 +87,17 @@ for(const [name,mutate] of Object.entries(mutations)){const s=clone(base);mutate
 let seed=0x02002610;
 const random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed;};
 for(let n=0;n<180;n++) {const s=clone(base);s.products[0].price=random()%1000000;s.products[0].minStock=(random()%100000)/1000;s.days[date].balance=(random()%200000)-100000;s.preferences.restaurant.footer=`seed-02002610-${n}`; if(n%5===0)s.days[date].expenses[0].funding.dailyAmount++;add(`seed-02002610-${n}`,s);}
-const output={format:1,provenance:{source:'electron-reference/app/ui/model.js',sha256:crypto.createHash('sha256').update(fs.readFileSync(source)).digest('hex'),node:process.version,timezone:process.env.TZ||Intl.DateTimeFormat().resolvedOptions().timeZone,seed:'0x02002610',synthetic:true,releasedArtifactClaim:false},cases};
+const timestampMatrixProfile={"dateFamilies":["2024/02/29","2023/02/29","2024-02-30","2024/04/31","2024/12/31","2024/13/01","2024/01/32","275760/09/13","275760/09/14","275760/09/12","0000/01/01","01/01/49","2/29/2024","29 Feb 2024","31 Apr 2024","13 Sep 275760","14 Sep 275760","12 Sep 275760"],"clockSuffixes":[""," 00:00:00"," 24:00:00"," 24:00:01"," 23:59:59"," 01:00:00"," 12:60:00"," 12:00:60"],"zoneSuffixes":["GMT","UTC","EST","EDT","CST","CDT","MST","MDT","PST","PDT","gmt","pdt","XYZ","BST","GMT+0","GMT-0","GMT+0030","UTC-05:00","GMT+2360","GMT+24:00","GMT+2500","GMT+9999","GMT-9999","UTC+99:59","GMT+03:60","GMT+03000","GMT+","GMT--03"],"formula":"Cartesian product in listed date/clock/zone order: date+clock+space+zone; then append ISO controls","ISOControls":["2024-01-01T00:00:00.000Z","2024-01-01T00:00:00+24:00","2024-13-01T00:00:00Z","2024-02-29T24:00:00Z"]};
+const primaryGrammarStamps=["February 29, 2024 1:30 PM GMT","February 29, 2024 1:30 AM GMT","February 29, 2024 12:00 AM GMT","February 29, 2024 12:00 PM GMT","February 29, 2024 0:30 PM GMT","February 29, 2024 13:30 PM GMT","Thu Feb 29 2024 12:00:00 GMT","Thursday, February 29, 2024 12:00 GMT","Thu Feb 29 12:00:00 2024 GMT","2024 Feb 29","29 2024 Feb","Feb 2024 29","29-Feb-2024","2024.02.29","02.29.2024","2024 02 29","2024,02,29","2024/02/29 12:30:45.123 GMT","29 Feb 2024 12:30:45.123 GMT","29 Feb 2024 12:: GMT","29 Feb 2024 12:30.500 GMT","29 Feb 2024 12:30 +03:30","29 Feb 2024 12:30 Z","29 Feb 2024 UT","29 Feb 2024 UTC (recorded)","(note)29 Feb 2024 GMT","garbage 29 Feb 2024 GMT","garbage29 Feb 2024 GMT","29 Feb garbage 2024","29 Feb 2024 GMT (a(b)c)","29 Feb 2024 GMT (unclosed","29 Feb 2024 GMT )","UTC 29 Feb 2024","29 February 2024","29 Februarystuff 2024","2024/2/29","2/29/24","2024-02-29T12:30:45.123Z","2024-02-29T12:30:45.123+24:00","2024-02-29T12:00:60Z","2024-02-29T24:00:01Z","2024-02-29T24:00:00Z","2024-02-29T12:00:00.000000Z","29 Feb 2024 GMT\u0000junk","29 Feb 2024 24:: GMT","2024/02/29 24:: GMT","2024/02/29 1:30 PM GMT","2024/02/29 12:30 +03:30","29 Feb 2024 12:30 GMT+03:99","29 Feb 2024 12:30:99 GMT","29 Feb 2024 12:99 GMT","2024/02/29 12:99 GMT","Feb 29 12:30:00 GMT 2024","Thu, 29 Feb 2024 GMT","29 Feb 2024 12:30 gmt+0300"];
+const timestampStamps=[];
+for(const d of timestampMatrixProfile.dateFamilies)for(const c of timestampMatrixProfile.clockSuffixes)for(const z of timestampMatrixProfile.zoneSuffixes)timestampStamps.push(d+c+' '+z);
+timestampStamps.push(...timestampMatrixProfile.ISOControls,...primaryGrammarStamps);
+const timestampScannerBoundaryStamps=["29\u00a0Feb\u00a02024 GMT","29\u2028Feb 2024 GMT","\ufeff29 Feb 2024 GMT","\ud83d\ude80 29 Feb 2024 GMT","\u0627\u062e\u062a\u0628\u0627\u0631 29 Feb 2024 GMT","\u0662\u0669 Feb 2024 GMT","29 Feb 2024 GMT\u0000junk","29 Feb 2024 GMT\ud800","(a(b(c)))29 Feb 2024 GMT","garbage29 Feb 2024 GMT","Jan 1 999999999 GMT","Jan 1 1000000 GMT","+999999-01-01T00:00:00Z","-000000-01-01","000000000001/01/01 GMT","Jan 1 2024 GMT+999999999:00","Jan 1 2024 GMT+99999999:00","Jan 1 2024 GMT+123456789:00","2024/2/29 1:2:3.000000009999999999Z","2024/2/29 1:2:3.123456789Z","29 Feb 2024 GMT                              ","29 Feb 2024 GMT \ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80"];
+timestampStamps.push(...timestampScannerBoundaryStamps);
+const timestampOffsetBoundaryStamps=["+275800-01-01 GMT+596523:14","275800/01/01 GMT+596523:14","1 Jan 275800 GMT+596523:14","+275800-01-01 GMT-596523:14","-271850-01-01 GMT-596523:14","-271850-01-01 GMT+596523:14","+275830-01-01 GMT+596523:14","-275830-01-01 GMT-596523:14","+275800-01-01 GMT+999999999:00","-271850-01-01 GMT-999999999:00","-271821-04-20T00:00:00Z","-271821-04-19T01:00:00-23:00","+275760-09-13T23:00:00+23:00","+275760-09-13T23:01:00+23:00"];
+timestampStamps.push(...timestampOffsetBoundaryStamps);
+const timestampCases=timestampStamps.map(stamp=>{const input=clone(base);input.sales[0].createdAt=stamp;let accepted=false;try{M.validate(input);accepted=true;}catch(_){}return{stamp,accepted};});
+const output={format:1,provenance:{source:'electron-reference/app/ui/model.js',sha256:crypto.createHash('sha256').update(fs.readFileSync(source)).digest('hex'),node:process.version,v8:process.versions.v8,timezone:process.env.TZ||Intl.DateTimeFormat().resolvedOptions().timeZone,seed:'0x02002610',synthetic:true,releasedArtifactClaim:false},timestampMatrixProfile,primaryGrammarStamps,timestampScannerBoundaryStamps,timestampOffsetBoundaryStamps,timestampCases,cases};
 const file=path.join(root,'test/fixtures/accounts/oracle.json'); const body=JSON.stringify(output,null,2)+'\n';
-if(process.argv.includes('--check')) {const saved=JSON.parse(fs.readFileSync(file,'utf8'));if(saved.provenance.sha256!==output.provenance.sha256||JSON.stringify(saved.cases)!==JSON.stringify(output.cases))throw Error('Corpus differs; inspect source changes before regeneration.');} else fs.writeFileSync(file,body);
-console.log(JSON.stringify({cases:cases.length,accepted:cases.filter(x=>x.accepted).length,rejected:cases.filter(x=>!x.accepted).length,sha256:output.provenance.sha256}));
+if(process.argv.includes('--check')) {const saved=JSON.parse(fs.readFileSync(file,'utf8'));if(saved.provenance.sha256!==output.provenance.sha256||JSON.stringify(saved.cases)!==JSON.stringify(output.cases)||JSON.stringify(saved.timestampCases)!==JSON.stringify(output.timestampCases))throw Error('Corpus differs; inspect source changes before regeneration.');} else fs.writeFileSync(file,body);
+console.log(JSON.stringify({cases:cases.length,accepted:cases.filter(x=>x.accepted).length,rejected:cases.filter(x=>!x.accepted).length,sha256:output.provenance.sha256,timestampCases:timestampCases.length,timestampAccepted:timestampCases.filter(x=>x.accepted).length}));

@@ -62,7 +62,7 @@
       "defaultIterations": 20,
       "measurementKind": "workflow",
       "scope": "Actual consumer ViewModel/repository command over a fresh real adapter fixture, through AccountsSurface raster completion. Small10/medium1000/largest near20MiB synthetic cash transactions; workspace active+40held. Elapsed excludes reset; sampled RAM/CPU host window includes between-sample reset/cleanup. No native input dispatch or production records.",
-      "verification": "Independent consumer source review and four real-adapter/consumer scenario conformance tests passed against reviewed engine ea9c21adfde746c40d0e8d15a7e5bbe017beb70c; native/profile outcomes recorded separately. Ready means measurable implementation, not a completed performance result."
+      "verification": "See docs/phases/02-step4-review.md for actual real-adapter consumer, native and profile results and their exact source revisions. Ready means measurable implementation, not a completed verification or performance result."
     },
     {
       "id": "accounts.save",
@@ -73,7 +73,7 @@
       "defaultIterations": 20,
       "measurementKind": "workflow",
       "scope": "Actual consumer ViewModel/repository command over a fresh real adapter fixture, through AccountsSurface raster completion. Small10/medium1000/largest near20MiB synthetic cash transactions; workspace active+40held. Elapsed excludes reset; sampled RAM/CPU host window includes between-sample reset/cleanup. No native input dispatch or production records.",
-      "verification": "Independent consumer source review and four real-adapter/consumer scenario conformance tests passed against reviewed engine ea9c21adfde746c40d0e8d15a7e5bbe017beb70c; native/profile outcomes recorded separately. Ready means measurable implementation, not a completed performance result."
+      "verification": "See docs/phases/02-step4-review.md for actual real-adapter consumer, native and profile results and their exact source revisions. Ready means measurable implementation, not a completed verification or performance result."
     },
     {
       "id": "accounts.migrate_legacy",
@@ -84,7 +84,7 @@
       "defaultIterations": 20,
       "measurementKind": "workflow",
       "scope": "Actual consumer ViewModel/repository command over a fresh real adapter fixture, through AccountsSurface raster completion. Small10/medium1000/largest near20MiB synthetic cash transactions; workspace active+40held. Elapsed excludes reset; sampled RAM/CPU host window includes between-sample reset/cleanup. No native input dispatch or production records.",
-      "verification": "Independent consumer source review and four real-adapter/consumer scenario conformance tests passed against reviewed engine ea9c21adfde746c40d0e8d15a7e5bbe017beb70c; native/profile outcomes recorded separately. Ready means measurable implementation, not a completed performance result."
+      "verification": "See docs/phases/02-step4-review.md for actual real-adapter consumer, native and profile results and their exact source revisions. Ready means measurable implementation, not a completed verification or performance result."
     },
     {
       "id": "accounts.replace",
@@ -95,7 +95,7 @@
       "defaultIterations": 20,
       "measurementKind": "workflow",
       "scope": "Actual consumer ViewModel/repository command over a fresh real adapter fixture, through AccountsSurface raster completion. Small10/medium1000/largest near20MiB synthetic cash transactions; workspace active+40held. Elapsed excludes reset; sampled RAM/CPU host window includes between-sample reset/cleanup. No native input dispatch or production records.",
-      "verification": "Independent consumer source review and four real-adapter/consumer scenario conformance tests passed against reviewed engine ea9c21adfde746c40d0e8d15a7e5bbe017beb70c; native/profile outcomes recorded separately. Ready means measurable implementation, not a completed performance result."
+      "verification": "See docs/phases/02-step4-review.md for actual real-adapter consumer, native and profile results and their exact source revisions. Ready means measurable implementation, not a completed verification or performance result."
     },
     {
       "id": "accounts.recover_previous",
@@ -106,7 +106,7 @@
       "defaultIterations": 20,
       "measurementKind": "workflow",
       "scope": "Actual consumer ViewModel/repository command over a fresh real adapter fixture, through AccountsSurface raster completion. Small10/medium1000/largest near20MiB synthetic cash transactions; workspace active+40held. Elapsed excludes reset; sampled RAM/CPU host window includes between-sample reset/cleanup. No native input dispatch or production records.",
-      "verification": "Independent consumer source review and four real-adapter/consumer scenario conformance tests passed against reviewed engine ea9c21adfde746c40d0e8d15a7e5bbe017beb70c; native/profile outcomes recorded separately. Ready means measurable implementation, not a completed performance result."
+      "verification": "See docs/phases/02-step4-review.md for actual real-adapter consumer, native and profile results and their exact source revisions. Ready means measurable implementation, not a completed verification or performance result."
     },
     {
       "id": "workspace.save_restore",
@@ -117,7 +117,7 @@
       "defaultIterations": 20,
       "measurementKind": "workflow",
       "scope": "Actual consumer ViewModel/repository command over a fresh real adapter fixture, through AccountsSurface raster completion. Small10/medium1000/largest near20MiB synthetic cash transactions; workspace active+40held. Elapsed excludes reset; sampled RAM/CPU host window includes between-sample reset/cleanup. No native input dispatch or production records.",
-      "verification": "Independent consumer source review and four real-adapter/consumer scenario conformance tests passed against reviewed engine ea9c21adfde746c40d0e8d15a7e5bbe017beb70c; native/profile outcomes recorded separately. Ready means measurable implementation, not a completed performance result."
+      "verification": "See docs/phases/02-step4-review.md for actual real-adapter consumer, native and profile results and their exact source revisions. Ready means measurable implementation, not a completed verification or performance result."
     }
   ],
   "registrationRule": "Every major implemented feature requires its own stable case ID, real workflow, isolated fixture, scenario version and verification evidence before ready status. Planned entries cannot run or produce fabricated results."
