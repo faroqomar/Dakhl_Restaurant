@@ -1,0 +1,29 @@
+lib/platform/phase02_performance_main.dart
+  s_cecf55789e34ef::t_699e8823508717 19-21,26,31,33,36,67,85-105
+lib/platform/phase02_performance_scenarios.dart
+  s_cecf55789e34ef::t_a6a47babfb6ee5 28-61,81,86-256
+test/platform/phase02_performance_test.dart
+  s_cecf55789e34ef::t_0cc71ac189ff21 3,18-290
+tool/dev_dashboard/README.md
+  s_cecf55789e34ef::t_c02d96cd43ae6c 3,13,43-105
+tool/dev_dashboard/run_benchmarks.py
+  s_cecf55789e34ef::t_6d12e9f7fcff84 253-362,429,460-475,493-503
+tool/dev_dashboard/tests/test_app_runner.py
+  s_cecf55789e34ef::t_41e7f831dcbc08 334-448
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "df72f769ff457b0ee883efa78d67ad5e055aaa06",
+  "prompts": {},
+  "sessions": {
+    "s_cecf55789e34ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1892c-b531-7571-8914-75aa02e54d3d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
