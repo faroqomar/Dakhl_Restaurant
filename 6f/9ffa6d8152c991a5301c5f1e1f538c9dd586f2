@@ -1,0 +1,31 @@
+PHASES.md
+  s_cecf55789e34ef::t_44452b2c6a2f9d 1
+README.md
+  s_cecf55789e34ef::t_7ec1bfc0c4a79a 1
+docs/how-to/repeated-problems.md
+  s_cecf55789e34ef::t_302e57245073c5 260-272
+docs/log/2026-10-30-phase02-step5-pr.md
+  s_cecf55789e34ef::t_55aba6ed8c4ff7 1-13
+docs/log/README.md
+  s_cecf55789e34ef::t_c0d7794686b01c 97-100
+docs/phases/02-step5-delivery.md
+  s_cecf55789e34ef::t_9c26d7213566c6 3,7,9-11,43
+docs/phases/02-step5-evidence-manifest.json
+  s_cecf55789e34ef::t_561c7039dc5ccd 11,13,25,27,39-41,53,55,575-576
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6f9ffa6d8152c991a5301c5f1e1f538c9dd586f2",
+  "prompts": {},
+  "sessions": {
+    "s_cecf55789e34ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1892c-b531-7571-8914-75aa02e54d3d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
