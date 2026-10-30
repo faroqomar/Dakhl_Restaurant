@@ -24,6 +24,11 @@ import 'package:path_provider/path_provider.dart';
 /// picker/confirmation wait is bounded120s. The host operates only printed paths.
 void main() {
   final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
+  // Native AX can request a framework semantics handle mid-test. Establish that
+  // platform baseline before WidgetTester records handles; keep all leak checks
+  // and semantics enabled, then restore the test override after the suite.
+  binding.platformDispatcher.semanticsEnabledTestValue = true;
+  tearDownAll(binding.platformDispatcher.clearSemanticsEnabledTestValue);
   const stage = String.fromEnvironment('PHASE02_PICKER_STAGE');
   const nonce = String.fromEnvironment('PHASE02_RUN_NONCE');
   const codec = LegacyAccountCodec();
