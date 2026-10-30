@@ -175,6 +175,8 @@ void main() {
       'runtime': 'real native Madar adapter + consumer codec/repository/ViewModel + rendered app',
       'dataScope': 'fixed marked Phase02 conformance child only; --no-uninstall required',
     };
+    stdout.writeln('PHASE02_NATIVE_RESULT ${jsonEncode(binding.reportData)}');
+    await stdout.flush();
     await tester.pumpWidget(const SizedBox.shrink());
     await tester.pump();
   });

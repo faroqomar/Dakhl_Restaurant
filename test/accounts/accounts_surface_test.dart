@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:madar_application/madar_application.dart';
+import 'package:madar_flutter_adapters/madar_flutter_adapters.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:dakhl_restaurant/ui/dialogs.dart';
@@ -199,6 +200,42 @@ void main() {
       expect(model.state, AccountsState.importReady);
       expect(find.byType(DakhlDialog), findsNothing);
       expect(model.pendingImport, isNotNull);
+    },
+  );
+  testWidgets(
+    'actual native open failure uses the approved unreadable-file message',
+    (tester) async {
+      final store = FixtureStore();
+      final model = AccountsViewModel(
+        repository: AccountsRepository(store: store),
+      );
+      await model.initialize();
+      final transfer = NativeFileTransfer(
+        maxBytes: 20 * 1024 * 1024,
+        fileName: 'accounts.json',
+        mimeType: 'application/json',
+        pick: () async => throw StateError('Synthetic provider failure'),
+      );
+      await tester.pumpWidget(
+        MaterialApp(
+          theme: DakhlTheme.light,
+          home: Scaffold(
+            body: AccountsSurface(model: model, transfer: transfer),
+          ),
+        ),
+      );
+      await tester.tap(find.text('استيراد الحسابات'));
+      await tester.pumpAndSettle();
+      expect(
+        find.descendant(
+          of: find.byType(DakhlDialog),
+          matching: find.text('تعذّر فتح الملف'),
+        ),
+        findsOneWidget,
+      );
+      expect(model.failureCode, 'native_open_failed');
+      expect(store.writes, 0);
+      expect(store.archives, 0);
     },
   );
 }

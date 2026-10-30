@@ -24,7 +24,9 @@ String accountStatus(AccountsViewModel model) => switch (model.state) {
     'invalid_payload' || 'invalid_workspace' => 'الملف غير صالح للاستيراد',
     'payload_too_large' || 'input_too_large' => 'حجم الملف أكبر من المسموح',
     'no_previous_copy' => 'لا توجد نسخة محلية سابقة',
-    'file_unreadable' || 'file_unavailable' => 'تعذّر فتح الملف',
+    'native_open_failed' ||
+    'file_unreadable' ||
+    'file_unavailable' => 'تعذّر فتح الملف',
     _ => 'تعذّر الحفظ',
   },
 };
