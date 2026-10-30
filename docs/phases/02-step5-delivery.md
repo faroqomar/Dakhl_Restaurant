@@ -1,12 +1,14 @@
 # Phase02 — Step5 draft pull-request delivery
 
-Date: 2026-10-30. **DRAFT / NOT MERGE-READY.** This is reviewable source publication, not merge approval or phase completion. The Android preservation failure is a blocking incident: Flutter automatically uninstalled/reinstalled after a signing mismatch; prior installed-app data retention is unverified. The raw Android WRITE success is excluded. Android Open/Save cancellation and current iOS verification remain unavailable. No new target installation, restore, reset, merge, tag, release or phase is authorized.
+Date: 2026-10-30. **DRAFT / NOT MERGE-READY.** The engine draft is published, but app source publication is access-blocked. The local app packet is reviewable; no app PR or hosted app-CI result exists. This is not merge approval or phase completion. The Android preservation failure is a blocking incident: Flutter automatically uninstalled/reinstalled after a signing mismatch; prior installed-app data retention is unverified. The raw Android WRITE success is excluded. Android Open/Save cancellation and current iOS verification remain unavailable. No new target installation, restore, reset, merge, tag, release or phase is authorized.
 
 ## Pull requests and dependencies
 
-- App PR: pending creation by the Lead. Publication branch: `codex/phase02-review`.
+- **App PR: unavailable; publication access-blocked.** The attempted local committed candidate is `0b75862a87aad3ae044ed0e3df4c6e3acfd7cd0b` on `codex/phase02-review`, consisting of tested app5a11 plus documentation/evidence. GitHub rejected its push because the active OAuth credential lacks the workflow scope needed to update `.github/workflows/flutter.yml`. No app PR was created; no app hosted checks ran. Current follow-up documentation remains local until its separate commit is recorded.
 - Engine draft PR: [Madar_Engine#6](https://github.com/faroqomar/Madar_Engine/pull/6), initial publication head `a731885a8875cdda78197d8df355d18a739e48e8`. It preserves the reviewed runtime and separate host revisions as ancestors with unchanged relevant trees. The app depends on runtime a6, not the documentation publication HEAD.
-- Hosted checks: pending first execution at the published candidate. Local tests are not hosted-CI results.
+- Engine hosted checks are ongoing at the initial published head as last observed for this handoff. The app has no hosted candidate/checks because publication was rejected. No current hosted check is labelled passed here; local tests do not substitute for hosted CI.
+
+The existing strict SSH trust check also failed, and no usable agent/default SSH identity or configuration was available. No credential, trust setting, GitHub policy or permission was changed; required workflow/CI changes were not stripped. No further push retry is warranted until actual access changes. The rejection does not alter reviewed source, runtime pin or local test evidence.
 
 | Role | Actual tested revision | Ownership and continuity |
 | --- | --- | --- |
@@ -38,4 +40,4 @@ This selective packet adds no raw command logs, current Phase02 live execution j
 
 ## Approval boundary
 
-No owner merge approval is requested while required checks or the Android preservation/iOS gates are unresolved. Draft PR publication does not make the phase ready or DONE. The Lead records actual PR URLs, final documentation heads, remote CI outcomes and independent packaging review here before the Step5 handoff. Remaining non-blocking method limits are recorded alongside the blocking incident, never substituted for it.
+No owner merge approval is requested while required checks or the Android preservation/iOS gates are unresolved. Draft PR publication does not make the phase ready or DONE. Engine PR#6 is available; app PR creation remains blocked by the actual credential rejection. The Lead records any final local documentation head, remote engine-CI outcome and independent packaging review before the Step5 handoff. A new authentication attempt or access change is not inferred from documentation. Remaining non-blocking method limits are recorded alongside the blocking incident, never substituted for it.

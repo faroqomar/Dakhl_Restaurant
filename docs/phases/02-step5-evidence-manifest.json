@@ -8,9 +8,9 @@
     {
       "path": "PHASES.md",
       "sourceSha256": "cd552b88ad10029a66f0bd3f5bfb3ffc4c9ec9d3b8589169d9514bf9f30c3c93",
-      "publishedSha256": "84c1a1f337eac4612ba61ae00b044f3d84f0208d8cb4bd8b271205e59c51f5d0",
+      "publishedSha256": "eeb21c18edb3ecca7d0a6a55e6e0aed4de4ced65dff45d783c5c1b1dcf5502d0",
       "byteIdentical": false,
-      "bytes": 34271
+      "bytes": 34441
     },
     {
       "path": "PLANS.md",
@@ -22,9 +22,9 @@
     {
       "path": "README.md",
       "sourceSha256": "f1faf7c124f2739fef29ea982baa1dda0cfdb5b1ccbb1d185682b2703df72f70",
-      "publishedSha256": "bdf6db557bae92e746115f056190d3579cbaa4b0029e9f3309247e63fc4e5903",
+      "publishedSha256": "157188cc9d33b10400658590675b6537ab277e1cbba1dbe9c7e972599eeb1ef1",
       "byteIdentical": false,
-      "bytes": 5969
+      "bytes": 6139
     },
     {
       "path": "docs/README.md",
@@ -36,9 +36,9 @@
     {
       "path": "docs/how-to/repeated-problems.md",
       "sourceSha256": "5af3d91bb152a8055d6582eb8e7ea5ee4b54e773d536cb80d840c54dcbada0a4",
-      "publishedSha256": "5af3d91bb152a8055d6582eb8e7ea5ee4b54e773d536cb80d840c54dcbada0a4",
-      "byteIdentical": true,
-      "bytes": 58495
+      "publishedSha256": "cb327bffadd2ff73e1d8289e2042f0aa5f469c5236c6a8ff3762e7c0bc101bbe",
+      "byteIdentical": false,
+      "bytes": 60636
     },
     {
       "path": "docs/how-to/versioning-and-performance.md",
@@ -50,9 +50,9 @@
     {
       "path": "docs/log/README.md",
       "sourceSha256": "8d391aff30d09e587cc262d7b10b6d66f096cc0fe5be398c6eaed5cf9efa5dec",
-      "publishedSha256": "a54f85942c3320f2149a35d37caf575bae46cf2e0aec7bac95455f9e9f3e6894",
+      "publishedSha256": "2dc54c116a97675106a285fb2ea63ff5e116624c941c21dee3270d5b6b9b8429",
       "byteIdentical": false,
-      "bytes": 5463
+      "bytes": 5600
     },
     {
       "path": "docs/phases/02-implementation-plan.md",
@@ -572,5 +572,6 @@
     }
   },
   "privacy": "No account payloads, signing stores/private keys, raw command logs, raw conversations, live audit journals, scripts or full Penpot payloads copied. Synthetic fixture summaries and frozen design PNGs only.",
-  "limits": "Hashes for original reports/metrics certify captured source bytes, not the later documentation-only publication HEAD. Explicit local-only references do not imply public raw evidence availability."
+  "limits": "Hashes for original reports/metrics certify captured source bytes, not the later documentation-only publication HEAD. Explicit local-only references do not imply public raw evidence availability.",
+  "followup": "2026-10-30: current documentation records rejected app publication candidate0b75862; original source hashes are packaging-time provenance, not a claim that later local follow-up was pushed."
 }
