@@ -1,0 +1,19 @@
+integration_test/phase02_accounts_native_test.dart
+  s_cecf55789e34ef::t_5769877e304dca 39,41,55-56,60,75,77-80,86-89,121,132,134,140-148,153-165,171,178-182,184,197-208,242-258
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "cc0bb7804bb5ea2a41fcb7bb25af1d16abe57d2c",
+  "prompts": {},
+  "sessions": {
+    "s_cecf55789e34ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1892c-b531-7571-8914-75aa02e54d3d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
