@@ -1,0 +1,131 @@
+PHASES.md
+  s_cecf55789e34ef::t_d6023fbd2257aa 1-2,23,81-93
+PLANS.md
+  s_cecf55789e34ef::t_450a2bf86c8783 1-4,7-8
+README.md
+  s_cecf55789e34ef::t_df7ee74cf40784 1-6
+docs/README.md
+  s_cecf55789e34ef::t_2b58cf57c0250b 1-4
+docs/how-to/repeated-problems.md
+  s_cecf55789e34ef::t_79987d44cf9916 201-259
+docs/how-to/versioning-and-performance.md
+  s_cecf55789e34ef::t_81940198184d3e 20,32
+docs/log/2026-10-29-phase02-implementation-plan.md
+  s_cecf55789e34ef::t_48344de8660eed 1-15
+docs/log/2026-10-29-phase02-penpot-design.md
+  s_cecf55789e34ef::t_fd00d530f19927 1-13
+docs/log/2026-10-29-phase02-scope-readiness.md
+  s_cecf55789e34ef::t_8ae17dbc833144 1-17
+docs/log/2026-10-30-phase02-android-preservation-incident.md
+  s_cecf55789e34ef::t_8b41f1ec370ddb 1-46
+docs/log/2026-10-30-phase02-build.md
+  s_cecf55789e34ef::t_b1604499def058 1-17
+docs/log/2026-10-30-phase02-step4-review.md
+  s_cecf55789e34ef::t_191548efd5b7f6 1-13
+docs/log/README.md
+  s_cecf55789e34ef::t_3cb3e7270af3b6 1-2,90-96
+docs/phases/02-implementation-plan.md
+  s_cecf55789e34ef::t_79bda72e23cc5a 3,34,36,38,40
+docs/phases/02-penpot-design-review.md
+  s_cecf55789e34ef::t_296f2172a71553 3,67
+docs/phases/02-performance.md
+  s_cecf55789e34ef::t_0a77abe9abf03d 1-59
+docs/phases/02-scope-readiness.md
+  s_cecf55789e34ef::t_f8be67414a4ee3 12
+docs/phases/02-step3-build.md
+  s_cecf55789e34ef::t_deabba6b103b60 1,3-5,9-23,25-33,35,37,39,41,43-77,79,81,83,85,87
+docs/phases/02-step4-performance.md
+  s_cecf55789e34ef::t_7f99d4a33c71fa 1-57
+docs/phases/02-step4-review.md
+  s_cecf55789e34ef::t_5cbd751cd19d9a 1-70
+docs/phases/02-step5-delivery.md
+  s_cecf55789e34ef::t_24bf3e1a2ad98e 1-41
+docs/phases/02-step5-evidence-manifest.json
+  s_cecf55789e34ef::t_34fe1ee9a9283c 1-576
+docs/phases/README.md
+  s_cecf55789e34ef::t_bba643a868e50d 1-4,7-9,48,50
+outputs/penpot/phase02/native-exports.json
+  s_cecf55789e34ef::t_03bda3c6135ee5 1-253
+outputs/penpot/phase02/review-gallery.md
+  s_cecf55789e34ef::t_57cb4819f36116 1-93
+outputs/phase02/step4-bootstrap-candidate.json
+  s_cecf55789e34ef::t_880442bb298bcb 1-13
+outputs/phase02/step4-bootstrap-current-checks.json
+  s_cecf55789e34ef::t_cefc25ffc8c9d7 1-47
+outputs/phase02/step4-bootstrap-independent-review.md
+  s_cecf55789e34ef::t_97d5916700068d 1-36
+outputs/phase02/step4-codec-port-review.md
+  s_cecf55789e34ef::t_407f00f3c70337 1-43
+outputs/phase02/step4-evidence-followup.md
+  s_cecf55789e34ef::t_15cbf06db2b994 1-24
+outputs/phase02/step4-failure-diagnostic-review-final.md
+  s_cecf55789e34ef::t_db9471dcdf42b3 1-32
+outputs/phase02/step4-final-docs-independent-review.json
+  s_cecf55789e34ef::t_cc3422592557db 1-153
+outputs/phase02/step4-final-docs-independent-review.md
+  s_cecf55789e34ef::t_fbc1d9fc008a52 1-18
+outputs/phase02/step4-final-performance-independent-review.json
+  s_cecf55789e34ef::t_c32df8ba4a3bb8 1-86
+outputs/phase02/step4-final-performance-independent-review.md
+  s_cecf55789e34ef::t_b22cb805a71aa4 1-38
+outputs/phase02/step4-final-performance/largest/accounts.migrate_legacy.json
+  s_cecf55789e34ef::t_cd41510fdfacab 1-134
+outputs/phase02/step4-final-performance/largest/accounts.open.json
+  s_cecf55789e34ef::t_2ba80e50f07284 1-134
+outputs/phase02/step4-final-performance/largest/accounts.recover_previous.json
+  s_cecf55789e34ef::t_7f26456703c35d 1-134
+outputs/phase02/step4-final-performance/largest/accounts.replace.json
+  s_cecf55789e34ef::t_650d298a6fdc10 1-134
+outputs/phase02/step4-final-performance/largest/accounts.save.json
+  s_cecf55789e34ef::t_75337fcb311c0c 1-134
+outputs/phase02/step4-final-performance/largest/workspace.save_restore.json
+  s_cecf55789e34ef::t_6417b84ace0db6 1-134
+outputs/phase02/step4-final-performance/medium/accounts.migrate_legacy.json
+  s_cecf55789e34ef::t_db06a6cc1e42be 1-134
+outputs/phase02/step4-final-performance/medium/accounts.open.json
+  s_cecf55789e34ef::t_a2864159d37355 1-134
+outputs/phase02/step4-final-performance/medium/accounts.recover_previous.json
+  s_cecf55789e34ef::t_f31e1bfb108e42 1-134
+outputs/phase02/step4-final-performance/medium/accounts.replace.json
+  s_cecf55789e34ef::t_5df3d58c77a4a2 1-134
+outputs/phase02/step4-final-performance/medium/accounts.save.json
+  s_cecf55789e34ef::t_8e9c1e82f1ad71 1-134
+outputs/phase02/step4-final-performance/medium/workspace.save_restore.json
+  s_cecf55789e34ef::t_ce90b4b550b15c 1-134
+outputs/phase02/step4-final-performance/small/accounts.migrate_legacy.json
+  s_cecf55789e34ef::t_c3135a3f46a08d 1-134
+outputs/phase02/step4-final-performance/small/accounts.open.json
+  s_cecf55789e34ef::t_d5756dadc3ac92 1-134
+outputs/phase02/step4-final-performance/small/accounts.recover_previous.json
+  s_cecf55789e34ef::t_ad06a2dcb25369 1-134
+outputs/phase02/step4-final-performance/small/accounts.replace.json
+  s_cecf55789e34ef::t_63dd8b8cc3bf16 1-134
+outputs/phase02/step4-final-performance/small/accounts.save.json
+  s_cecf55789e34ef::t_69f5f02709f16b 1-134
+outputs/phase02/step4-final-performance/small/workspace.save_restore.json
+  s_cecf55789e34ef::t_7903826e776705 1-134
+outputs/phase02/step4-final-performance/summary.json
+  s_cecf55789e34ef::t_60a6fb3eb1f725 1-2765
+outputs/phase02/step4-final-performance/summary.md
+  s_cecf55789e34ef::t_9d35ef2e1009f6 1-40
+outputs/phase02/step4-native-evidence-review.md
+  s_cecf55789e34ef::t_09e00ed595eb4d 1-43
+outputs/phase02/step4-v8-composer-result.json
+  s_cecf55789e34ef::t_2397133fe766f8 1-83
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0b75862a87aad3ae044ed0e3df4c6e3acfd7cd0b",
+  "prompts": {},
+  "sessions": {
+    "s_cecf55789e34ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1892c-b531-7571-8914-75aa02e54d3d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
