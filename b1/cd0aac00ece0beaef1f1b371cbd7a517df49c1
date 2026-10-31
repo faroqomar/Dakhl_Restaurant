@@ -1,0 +1,32 @@
+test/platform/phase02_native_picker_wait_test.dart
+  s_cecf55789e34ef::t_38d3729285685d 152
+  s_cecf55789e34ef::t_11619fd2c90f1d 136-151,153-174
+  s_cecf55789e34ef::t_e18b704d43e38e 175
+test/platform/phase02_native_app_readiness_test.dart
+  s_cecf55789e34ef::t_38d3729285685d 71
+  s_cecf55789e34ef::t_e74deab284a849 55-70,72-96
+integration_test/support/native_picker_wait.dart
+  s_cecf55789e34ef::t_38298a3e8ea01b 103-116,146
+integration_test/support/native_app_readiness.dart
+  s_cecf55789e34ef::t_aaf2bccdc85c78 120-123,125-128,130-134
+PHASES.md
+  s_cecf55789e34ef::t_6b0a8fdf3bef10 1,88,327-331
+docs/log/2026-10-31-phase02-native-timer-correction.md
+  s_cecf55789e34ef::t_7b140fd3cc66ce 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b1cd0aac00ece0beaef1f1b371cbd7a517df49c1",
+  "prompts": {},
+  "sessions": {
+    "s_cecf55789e34ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1892c-b531-7571-8914-75aa02e54d3d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
