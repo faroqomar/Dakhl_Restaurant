@@ -27,6 +27,7 @@ class FakeTools:
     def __init__(self):
         self.calls = []
         self.installed = False
+        self.retained_uninstalled = False
         self.installed_bytes = b'previous synthetic APK'
         self.signer = SIGNER
         self.installed_signer = SIGNER
@@ -77,7 +78,8 @@ class FakeTools:
             self.query_count += 1
             if self.appear_late and self.query_count > 1:
                 self.installed = True
-            out = 'package:' + PACKAGE + '\n' if self.installed else ''
+            present = self.installed or (self.retained_uninstalled and '-u' in args)
+            out = 'package:' + PACKAGE + '\n' if present else ''
         elif 'path' in args:
             out = self.paths
         elif 'pull' in args:
@@ -214,6 +216,25 @@ class AndroidInstallGuardTest(unittest.TestCase):
         self.tools.appear_late = True
         self.tools.query_count = 0
         self.refuse('unexpected-installed-package', execute=True)
+
+    def test_new_mode_refuses_retained_uninstalled_package_data(self):
+        self.tools.retained_uninstalled = True
+        self.refuse('unexpected-installed-package', execute=True)
+        queries = [c for c in self.tools.calls if 'packages' in c]
+        self.assertTrue(queries)
+        self.assertTrue(all('-u' in c for c in queries))
+
+    def test_postinstall_refuses_dot_segments_before_pulling(self):
+        for component in ('.', '..'):
+            with self.subTest(component=component):
+                self.tools = FakeTools()
+                path = '/data/app/' + component + '/base.apk'
+                self.tools.before_install = lambda _: setattr(
+                    self.tools, 'paths', 'package:' + path + '\n')
+                with self.assertRaises(guard.GuardError) as caught:
+                    self.run_guard(execute=True)
+                self.assertEqual(caught.exception.code, 'postinstall-unverified')
+                self.assertFalse(any('pull' in c and path in c for c in self.tools.calls))
 
     def test_existing_mode_requires_matching_fixture_marker_and_archive(self):
         self.existing()

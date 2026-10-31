@@ -380,12 +380,18 @@ final class ShellViewModel extends ChangeNotifier {
   }
 
   Future<void> retrySave() async {
+    final retryAccountShortcuts =
+        _failureCode == 'account_preferences_failed' && _shortcutDraft != null;
     if (_disposed ||
         _saveRecoveryInProgress ||
         _readInProgress ||
         _saveCount > 0 ||
         _bootstrapState != ShellBootstrapState.ready ||
-        _pending == null) {
+        (_pending == null && !retryAccountShortcuts)) {
+      return;
+    }
+    if (retryAccountShortcuts) {
+      await saveShortcuts();
       return;
     }
     // Set the guard before notifying or awaiting: repeated UI commands and

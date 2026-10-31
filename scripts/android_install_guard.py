@@ -203,7 +203,8 @@ def _unique_keys(pairs):
 
 
 def _installed(config, run, directory):
-    text = _tool(run, _adb(config, 'shell', 'pm', 'list', 'packages', '--user', '0', config.package))
+    # Retained data after uninstall -k is a prior fixture, never a fresh target.
+    text = _tool(run, _adb(config, 'shell', 'pm', 'list', 'packages', '-u', '--user', '0', config.package))
     rows = text.strip().splitlines()
     if any(not re.fullmatch(r'package:[A-Za-z0-9_.]+', row) for row in rows):
         raise GuardError('installed-state-unknown')
@@ -296,7 +297,9 @@ def guard_install(config, run=run_tool):
         if not install_lines or install_lines[-1] != 'Success' or any('Failure' in line for line in install_lines):
             raise GuardError('install-unconfirmed')
         paths = _tool(run, _adb(config, 'shell', 'pm', 'path', '--user', '0', config.package)).strip().splitlines()
-        if len(paths) != 1 or not paths[0].startswith('package:') or not INSTALLED_PATH.fullmatch(paths[0][8:]):
+        if (len(paths) != 1 or not paths[0].startswith('package:')
+                or not INSTALLED_PATH.fullmatch(paths[0][8:])
+                or any(part in ('.', '..') for part in paths[0][8:].split('/'))):
             raise GuardError('postinstall-unverified')
         installed = directory / 'installed-after.apk'
         _tool(run, _adb(config, 'pull', paths[0][8:], str(installed)), timeout=60)

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:madar_application/madar_application.dart';
 import 'package:dakhl_restaurant/shell/shell_preferences.dart';
@@ -35,14 +37,15 @@ void main() {
     },
   );
   test('account save precedes cache; cache failure preserves acknowledged account settings', () async {
-    final store = MemoryPreferencesStore()..writeFailure = 'unavailable';
+    final operations = <String>[];
+    final store = _LoggedPreferencesStore(operations, failure: 'unavailable');
     var account = List.filled(6, 'sales');
     var accountWrites = 0;
     final model = ShellViewModel(
       store: store,
       accountShortcuts: () => account,
       saveAccountShortcuts: (slots) async {
-        expect(store.writes, isEmpty);
+        operations.add('account');
         account = List.of(slots);
         accountWrites++;
         return true;
@@ -52,6 +55,7 @@ void main() {
     model.beginShortcutEditing();
     model.setShortcut(0, 'settings');
     await model.saveShortcuts();
+    expect(operations, ['account', 'cache']);
     expect(accountWrites, 1);
     expect(account.first, 'settings');
     expect(model.shortcuts.first, 'settings');
@@ -72,4 +76,67 @@ void main() {
       expect(store.writes, isEmpty);
     },
   );
+  test(
+    'Retry repeats failed account callback before attempting device cache',
+    () async {
+      final operations = <String>[];
+      final store = _LoggedPreferencesStore(operations);
+      var account = List.filled(6, 'sales');
+      var attempts = 0;
+      final retry = Completer<bool>();
+      final model = ShellViewModel(
+        store: store,
+        accountShortcuts: () => account,
+        saveAccountShortcuts: (slots) async {
+          operations.add('account');
+          attempts++;
+          if (attempts == 1) return false;
+          final saved = await retry.future;
+          if (saved) account = List.of(slots);
+          return saved;
+        },
+      );
+      addTearDown(model.dispose);
+      await model.initialize();
+      model.beginShortcutEditing();
+      model.setShortcut(0, 'settings');
+      await model.saveShortcuts();
+      expect(model.saveState, ShellSaveState.failed);
+      expect(model.shortcutDraft!.first, 'settings');
+      expect(operations, ['account']);
+      final firstRetry = model.retrySave();
+      final duplicateRetry = model.retrySave();
+      expect(attempts, 2);
+      expect(operations, ['account', 'account']);
+      retry.complete(true);
+      await Future.wait([firstRetry, duplicateRetry]);
+      expect(operations, ['account', 'account', 'cache']);
+      expect(account.first, 'settings');
+      expect(model.shortcutDraft, isNull);
+      expect(model.saveState, ShellSaveState.saved);
+    },
+  );
+}
+
+final class _LoggedPreferencesStore implements LocalPreferencesStore {
+  _LoggedPreferencesStore(this.operations, {String? failure})
+    : inner = MemoryPreferencesStore(writeFailure: failure);
+  final List<String> operations;
+  final MemoryPreferencesStore inner;
+  @override
+  Future<CapabilityResult<PreferenceSnapshot?>> read(String namespace) =>
+      inner.read(namespace);
+  @override
+  Future<CapabilityResult<PreferenceSnapshot>> replace(
+    String namespace,
+    String payload, {
+    int? expectedRevision,
+  }) {
+    operations.add('cache');
+    return inner.replace(
+      namespace,
+      payload,
+      expectedRevision: expectedRevision,
+    );
+  }
 }

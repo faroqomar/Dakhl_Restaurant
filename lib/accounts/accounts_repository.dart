@@ -41,11 +41,11 @@ final class AccountsRepository {
     try {
       final read = await store.readDocument();
       if (read is! CapabilitySuccess<DocumentSnapshot?>) {
-        _initialized = false;
         initialCreationBlocked =
             read is CapabilityFailure<DocumentSnapshot?> &&
             read.code == 'incomplete_state' &&
             _snapshot == null;
+        _invalidateCurrentDocument();
         return _failure(read);
       }
       final snapshot = read.value;
@@ -59,15 +59,23 @@ final class AccountsRepository {
       _workspace = null;
       return CapabilitySuccess(document);
     } on AccountCodecException catch (error) {
-      _initialized = false;
+      _invalidateCurrentDocument();
       return CapabilityFailure(error.code, 'Account data is protected.');
     } on Object {
-      _initialized = false;
+      _invalidateCurrentDocument();
       return const CapabilityFailure(
         'unavailable',
         'Account storage is unavailable.',
       );
     }
+  }
+
+  void _invalidateCurrentDocument() {
+    _initialized = false;
+    _document = null;
+    _workspace = null;
+    // Keep the previous fence and pending-write evidence for reconciliation
+    // and to prevent a failed reopen from becoming initial-creation authority.
   }
 
   PendingAccountImport prepare(List<int> bytes) =>
@@ -189,13 +197,46 @@ final class AccountsRepository {
     if (resolved is! CapabilitySuccess<void>) return _failure(resolved);
     final workspaceFence = _pendingWorkspaceFence;
     if (workspaceFence != null) {
+      // A failed reopen revoked the cached document. Reacquire authority before
+      // acknowledging a workspace commit, retaining pending evidence on errors.
+      final primaryRead = await store.readDocument();
+      if (primaryRead is! CapabilitySuccess<DocumentSnapshot?>) {
+        _invalidateCurrentDocument();
+        return _failure(primaryRead);
+      }
+      final primary = primaryRead.value;
+      if (primary == null || primary.fence != workspaceFence) {
+        _invalidateCurrentDocument();
+        _pendingToken = null;
+        _pendingPayload = null;
+        _pendingWorkspaceFence = null;
+        return const CapabilityFailure(
+          'stale_generation',
+          'Read the current account before retry.',
+        );
+      }
+      final AccountDocument document;
+      try {
+        document = codec.decodeBytes(utf8.encode(primary.payload));
+      } on AccountCodecException catch (error) {
+        _invalidateCurrentDocument();
+        return CapabilityFailure(error.code, 'Account data is protected.');
+      }
       final read = await store.readWorkspace(workspaceFence);
       if (read is! CapabilitySuccess<WorkspaceState>) return _failure(read);
       final actual = read.value.snapshot;
-      if (_snapshot?.fence != workspaceFence ||
-          actual == null ||
+      if (read.value.fence != workspaceFence ||
+          (actual != null && actual.fence != workspaceFence)) {
+        _invalidateCurrentDocument();
+        return const CapabilityFailure(
+          'commit_unknown',
+          'Workspace authority could not be verified.',
+        );
+      }
+      if (actual == null ||
           actual.writeToken != token ||
           actual.payload != _pendingPayload) {
+        _invalidateCurrentDocument();
         _pendingToken = null;
         _pendingPayload = null;
         _pendingWorkspaceFence = null;
@@ -204,11 +245,9 @@ final class AccountsRepository {
           'Read the current workspace before retry.',
         );
       }
+      _accept(primary, document);
       _workspace = actual;
-      _pendingToken = null;
-      _pendingPayload = null;
-      _pendingWorkspaceFence = null;
-      return CapabilitySuccess(_document!);
+      return CapabilitySuccess(document);
     }
     final read = await store.readDocument();
     if (read is! CapabilitySuccess<DocumentSnapshot?>) return _failure(read);

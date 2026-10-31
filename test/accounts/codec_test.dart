@@ -11,12 +11,72 @@ void main() {
     File('test/fixtures/accounts/oracle.json').readAsStringSync(),
   ) as Map<String, dynamic>;
   final cases = (corpus['cases'] as List).cast<Map<String, dynamic>>();
+  test(
+    'negative zero corpus preserves the raw token at the frozen validator',
+    () {
+      final sample = cases.singleWhere(
+        (sample) => sample['name'] == 'negative-zero',
+      );
+      expect(sample['rawJson'], isA<String>());
+      expect((sample['rawJson'] as String).contains('"price":-0'), isTrue);
+      expect(sample['rawNegativeZeroObserved'], isTrue);
+    },
+  );
+  Map<String, dynamic> historyFixture() => jsonDecode(
+    jsonEncode(
+      cases.singleWhere(
+        (sample) => sample['name'] == 'all-entities-history',
+      )['input'],
+    ),
+  ) as Map<String, dynamic>;
+  for (final key in ['before', 'after']) {
+    test('correction requires explicit $key while allowing null', () {
+      final raw = historyFixture();
+      final day = (raw['days'] as Map).values.first as Map;
+      final correction = (day['corrections'] as List).first as Map;
+      correction[key] = null;
+      expect(
+        () => codec.decodeBytes(utf8.encode(jsonEncode(raw))),
+        returnsNormally,
+      );
+      correction.remove(key);
+      expect(
+        () => codec.decodeBytes(utf8.encode(jsonEncode(raw))),
+        throwsA(
+          isA<AccountCodecException>().having(
+            (e) => e.code,
+            'code',
+            'invalid_payload',
+          ),
+        ),
+      );
+    });
+  }
+  test(
+    'V8 source word predicate accepts punctuation before separated date',
+    () {
+      final raw = historyFixture();
+      final sale = (raw['sales'] as List).first as Map;
+      sale['createdAt'] = 'garbage[ 29 Feb 2024 GMT';
+      expect(
+        () => codec.decodeBytes(utf8.encode(jsonEncode(raw))),
+        returnsNormally,
+      );
+      sale['createdAt'] = 'garbage[29 Feb 2024 GMT';
+      expect(
+        () => codec.decodeBytes(utf8.encode(jsonEncode(raw))),
+        throwsA(isA<AccountCodecException>()),
+      );
+    },
+  );
   group(
     'frozen model.validate parity, synthetic schema1–11 + seed0x02002610',
     () {
       for (final sample in cases) {
         test(sample['name'] as String, () {
-          final bytes = utf8.encode(jsonEncode(sample['input']));
+          final bytes = utf8.encode(
+            sample['rawJson'] as String? ?? jsonEncode(sample['input']),
+          );
           if (sample['accepted'] == true) {
             final actual = codec.decodeBytes(bytes);
             expect(
@@ -126,6 +186,18 @@ void main() {
         ),
       );
       final empty = codec.empty().toJson();
+      expect(
+        () => codec.decodeBytes(
+          utf8.encode(jsonEncode({...empty, 'version': 0})),
+        ),
+        throwsA(
+          isA<AccountCodecException>().having(
+            (e) => e.code,
+            'code',
+            'invalid_payload',
+          ),
+        ),
+      );
       expect(
         () => codec.decodeBytes(
           utf8.encode(jsonEncode({...empty, 'version': 12})),

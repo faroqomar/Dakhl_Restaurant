@@ -8,10 +8,12 @@ const source = path.join(root, 'electron-reference/app/ui/model.js');
 const M = require(source);
 const clone = x => structuredClone(x);
 const cases = [];
-function add(name, input) {
+function add(name, input, rawJson) {
   let accepted = false, expected;
-  try { expected = M.validate(JSON.parse(JSON.stringify(input))); accepted = true; } catch (_) {}
-  cases.push({ name, input, accepted, ...(accepted ? { expected } : {}) });
+  const parsed = JSON.parse(rawJson ?? JSON.stringify(input));
+  try { expected = M.validate(parsed); accepted = true; } catch (_) {}
+  cases.push({ name, input, accepted, ...(accepted ? { expected } : {}),
+    ...(rawJson ? { rawJson, rawNegativeZeroObserved: Object.is(parsed.products[0].price, -0) } : {}) });
 }
 const date = '2024-02-29', stamp = `${date}T12:00:00.000Z`;
 function rich() {
@@ -83,7 +85,14 @@ const mutations={
  'empty-order-types':s=>s.preferences.orderTypes=[],'duplicate-disabled-type':s=>s.preferences.disabledOrderTypes=['صالة'],'invalid-shortcuts':s=>s.preferences.shortcuts=['sales'],'unsafe-product':s=>{s.sales[0].lines[0].quantity=1000000000;s.sales[0].lines[0].price=1000000000000;},'decimal-four-places':s=>s.products[0].minStock='1.0001','quantity-exponent-string':s=>s.products[0].minStock='1e2',
  'numeric-exponent-value':s=>s.products[0].minStock=1e2,'negative-zero':s=>s.products[0].price=-0,'unicode-identifier':s=>s.products[0].id='١','unknown-keys':s=>{s.unknown='ignored';s.products[0].unknown=true;},'nullable-remaining':s=>s.days[date].remaining=null,
 };
-for(const [name,mutate] of Object.entries(mutations)){const s=clone(base);mutate(s);add(name,s);}
+for(const [name,mutate] of Object.entries(mutations)){
+  const s=clone(base);mutate(s);
+  if(name==='negative-zero') {
+    const raw=JSON.stringify(s).replace(/"price":0(?=[,}])/, '"price":-0');
+    if(!Object.is(JSON.parse(raw).products[0].price,-0))throw Error('Raw negative-zero fixture was lost');
+    add(name,s,raw);
+  } else add(name,s);
+}
 let seed=0x02002610;
 const random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed;};
 for(let n=0;n<180;n++) {const s=clone(base);s.products[0].price=random()%1000000;s.products[0].minStock=(random()%100000)/1000;s.days[date].balance=(random()%200000)-100000;s.preferences.restaurant.footer=`seed-02002610-${n}`; if(n%5===0)s.days[date].expenses[0].funding.dailyAmount++;add(`seed-02002610-${n}`,s);}

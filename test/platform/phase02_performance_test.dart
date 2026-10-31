@@ -5,7 +5,10 @@ import 'dart:ui' show FrameTiming;
 
 import 'package:flutter/material.dart';
 import 'package:dakhl_restaurant/platform/phase02_performance_main.dart'
-    show phase02RasterizedFrame, phase02IsRequestedRasterFrame;
+    show
+        phase02RasterizedFrame,
+        phase02IsRequestedRasterFrame,
+        phase02FinishFailedBenchmark;
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:dakhl_restaurant/accounts/accounts_repository.dart';
@@ -15,6 +18,28 @@ import 'package:dakhl_restaurant/platform/phase02_performance_scenarios.dart';
 import '../accounts/accounts_view_model_test.dart' show FixtureStore;
 
 void main() {
+  test('failed benchmark still terminates with original failure when cleanup throws', () async {
+    int? termination;
+    await phase02FinishFailedBenchmark(
+      cleanup: () async => throw StateError('cleanup failed'),
+      terminate: (code) => termination = code,
+    );
+    expect(termination, 1);
+  });
+  test(
+    'failed benchmark bounds stalled cleanup before failure termination',
+    () async {
+      final stalled = Completer<void>();
+      int? termination;
+      await phase02FinishFailedBenchmark(
+        cleanup: () => stalled.future,
+        cleanupTimeout: const Duration(milliseconds: 20),
+        terminate: (code) => termination = code,
+      ).timeout(const Duration(seconds: 2));
+      expect(termination, 1);
+    },
+  );
+
   test('foreign matching-name valid manifest grants no diagnostic ownership', () async {
     final temporary = await Directory.systemTemp.createTemp(
       'phase02-diagnostic-',

@@ -91,10 +91,14 @@ The app runner collects at most 4KiB through existing directory-descriptor,
 no-follow and exclusive-evidence guards. Duplicate JSON keys, unknown fields,
 foreign attempts, invalid types/counts and filesystem redirects are rejected.
 Validated context and its SHA256 are linked by a separate app capture receipt in
-`outputs/phase02/performance-diagnostics/`. The command writes a separate
-`<output>.diagnostics.json` index only for failed/unavailable Phase02 measurements.
+`outputs/phase02/performance-diagnostics/`. The command refreshes `<output>.diagnostics.json` whenever it replaces the
+mutable output, including an empty `failedMeasurements` list after success. The
+index carries `resultSha256` for the exact result bytes; inspect it only when that
+hash matches. Per-run capture receipts remain unchanged. Index and result renames
+are not one transaction: the result is published last, and a publication failure
+may leave an index whose hash does not match the still-authoritative old result.
 Capture status is `captured`, `missing`, `rejected` or `unavailable`; failures to
-write/copy metadata preserve the original failed measurement and nonzero exit.
+collect/copy per-run metadata preserve the original failed measurement and nonzero exit. Failure to publish the current result/index leaves the old result in place and reports an output-publication error; it does not mutate the collected generic measurement.
 The generic Madar result/protocol/metrics are unchanged. Zero host-reported
 iterations does not prove zero producer iterations when a failed host run omits
 partial samples.

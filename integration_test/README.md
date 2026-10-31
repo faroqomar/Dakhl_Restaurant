@@ -170,3 +170,35 @@ signature verification.
 `phase02_file_picker_test.dart` now imports test-only `support/native_picker_wait.dart`. Native Activities can pause Flutter frames, so an awaited tester pump is not a cancellable timeout boundary. The scoped helper uses real monotonic timing and timers, rejects observed late success, and confirms a scheduled framework frame without starting a pending pump. It temporarily enables fullyLive rendering and device pointer propagation for actual manual confirmation taps, restoring exact prior values on success, error and timeout. It retains120s per wait plus the existing bounded host/whole-test deadline; a suspended process cannot guarantee returning at an exact wall instant.
 
 Bind both the entrypoint and support-file hashes to each rebuilt APK/IOS build. Earlier long functional cases do not establish the new deadline, and old native receipts are not new-harness evidence. Revalidate all three picker scenarios on Android and iOS. Actual native pointer/Back gestures must reach the owned target; IDE AX toolbar activation alone is not proof of device input. Use only marked synthetic fixture namespaces and the guarded prebuilt Android installation path described above.
+
+
+## Manual picker provider copies and source epochs
+
+`phase02_file_picker_test.dart` deliberately creates its marked original in private
+Application Support. A native document picker cannot browse that directory.
+The operator must select a separate synthetic provider copy prepared by the
+reviewed external host mechanism, as documented in the [publication evidence
+index](../docs/phases/02-publication-evidence-index.md). The exact dated runner
+[source archive](../outputs/phase02/picker-runner-source-5095/README.md) and hash
+manifest make that mechanism inspectable; they are not a portable installer for
+new source revisions.
+
+Before a native run, bind the committed app revision, reviewed engine revision,
+entry-point hash, every imported support-file hash, guard, builder/adapter and
+driver. Observe only the printed path for the matching nonce and marked fixture.
+Validate its ownership and synthetic contents, exclusively create one new file
+in Android Download or the disposable simulator's local Files provider, and
+verify the copy's SHA-256. Preserve the original; do not move this test fixture
+into production storage or copy normal account files. Only CUA/the operator
+selects the copy and explicitly confirms replacement/recovery.
+
+A new source/engine/guard epoch requires new reviewed bindings and native
+verification. The historical 5a11 iOS outcomes and 5095 Android outcomes do not
+verify later app library changes. Keep 120-second handoff limits, real touch
+propagation with exact scope restoration, typed result assertions and host
+process bounds. Do not start a manual wait until the operator/controller is
+ready. On Android, install only the exact guarded prebuilt and attach the direct
+host driver; a later Flutter installer would bypass that artifact binding.
+Flutter installer use on iOS is confined to an explicitly attested disposable
+simulator with synthetic integration entry point; `--no-uninstall` does not make
+it preservation protection for a normal installation.

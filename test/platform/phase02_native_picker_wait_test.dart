@@ -18,9 +18,14 @@ final class _Frames implements NativePickerFrames {
   @override
   bool shouldPropagateDevicePointerEvents = false;
   void Function()? afterSchedule;
+  void Function()? onFramesEnabledRead;
   int requests = 0;
   @override
-  bool get framesEnabled => enabled;
+  bool get framesEnabled {
+    onFramesEnabledRead?.call();
+    return enabled;
+  }
+
   @override
   bool get framePending => pending;
   @override
@@ -159,6 +164,8 @@ void main() {
       final frames = _Frames();
       var settled = false;
       var completed = false;
+      final scheduled = Completer<void>();
+      frames.afterSchedule = () => scheduled.complete();
       final pending = waitForNativePickerCondition(
         frames: frames,
         settled: () => settled,
@@ -168,7 +175,7 @@ void main() {
       ).then((_) => completed = true);
       expect(frames.live, isTrue);
       settled = true;
-      await Future<void>.delayed(const Duration(milliseconds: 15));
+      await scheduled.future.timeout(const Duration(seconds: 2));
       expect(frames.requests, 1);
       expect(completed, isFalse);
       frames.pending = false;
@@ -182,6 +189,14 @@ void main() {
     'paused lifecycle must resume before the frame can be requested',
     () => _withTrackedRealTimers((timers) async {
       final frames = _Frames()..enabled = false;
+      final pausedObserved = Completer<void>();
+      final scheduled = Completer<void>();
+      frames.onFramesEnabledRead = () {
+        if (!frames.enabled && !pausedObserved.isCompleted) {
+          pausedObserved.complete();
+        }
+      };
+      frames.afterSchedule = () => scheduled.complete();
       final pending = waitForNativePickerCondition(
         frames: frames,
         settled: () => true,
@@ -189,10 +204,10 @@ void main() {
         timeout: const Duration(seconds: 1),
         pollInterval: const Duration(milliseconds: 2),
       );
-      await Future<void>.delayed(const Duration(milliseconds: 15));
+      await pausedObserved.future.timeout(const Duration(seconds: 2));
       expect(frames.requests, 0);
       frames.enabled = true;
-      await Future<void>.delayed(const Duration(milliseconds: 15));
+      await scheduled.future.timeout(const Duration(seconds: 2));
       expect(frames.requests, 1);
       frames.pending = false;
       await pending;
@@ -236,8 +251,9 @@ void main() {
         throwsA(isA<TimeoutException>()),
       );
       final readsAtTimeout = reads;
+      expect(timers.where((timer) => timer.isActive), isEmpty);
       settled = true;
-      await Future<void>.delayed(const Duration(milliseconds: 20));
+      await Future<void>.microtask(() {});
       expect(reads, readsAtTimeout);
       expect(frames.requests, 0);
       expect(frames.restored, isTrue);

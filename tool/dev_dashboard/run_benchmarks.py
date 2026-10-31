@@ -297,6 +297,46 @@ def _write_phase02_metadata(name, content, evidence_directory):
             output.write(content)
 
 
+def publish_results(output, result, failure_receipts):
+    """Refresh the mutable result/index pair without changing per-run evidence.
+
+    Publish the index first and bind it to exact result bytes. A failure before
+    result replacement leaves the old result authoritative; readers must match
+    resultSha256 because two file renames are not one transaction.
+    """
+    output = output.absolute()
+    content = (json.dumps(result, indent=2, allow_nan=False) + '\n').encode()
+    index_name = output.name + '.diagnostics.json'
+    index = dict(schemaVersion=1, resultSha256=hashlib.sha256(content).hexdigest(),
+                 failedMeasurements=failure_receipts)
+    metadata = (json.dumps(index, allow_nan=False) + '\n').encode()
+    temporary_names = []
+    with _manifest_directory(output.parent, create=True) as directory_fd:
+        try:
+            for name in (output.name, index_name):
+                try:
+                    existing = os.stat(name, dir_fd=directory_fd, follow_symlinks=False)
+                except FileNotFoundError:
+                    continue
+                if not stat.S_ISREG(existing.st_mode) or existing.st_nlink != 1:
+                    raise RuntimeError('benchmark_output_path_invalid')
+            for name, data in ((index_name, metadata), (output.name, content)):
+                temporary = name + '.tmp-' + uuid.uuid4().hex
+                descriptor = os.open(temporary, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW,
+                                     0o600, dir_fd=directory_fd)
+                temporary_names.append(temporary)
+                with os.fdopen(descriptor, 'wb') as destination:
+                    destination.write(data)
+            for temporary, name in zip(temporary_names, (index_name, output.name)):
+                os.replace(temporary, name, src_dir_fd=directory_fd, dst_dir_fd=directory_fd)
+        finally:
+            for temporary in temporary_names:
+                try:
+                    os.unlink(temporary, dir_fd=directory_fd)
+                except FileNotFoundError:
+                    pass
+
+
 def _strict_phase02_failure_object(pairs):
     context = {}
     for key, value in pairs:
@@ -490,22 +530,8 @@ def main():
         results.append(result)
     if source_fingerprint() != fingerprint or hashlib.sha256(module_path.read_bytes()).hexdigest() != tooling_fingerprint or apple_toolchain_identity() != toolchain:
         raise RuntimeError('benchmark_source_changed_during_measurement')
-    if app_failure_receipts:
-        try:
-            diagnostic_output = args.output.absolute()
-            _write_phase02_metadata(diagnostic_output.name + '.diagnostics.json',
-                                    (json.dumps(dict(schemaVersion=1,
-                                                    failedMeasurements=app_failure_receipts),
-                                                allow_nan=False) + '\n').encode(),
-                                    diagnostic_output.parent)
-        except Exception:
-            # The original generic result still records its original failure.
-            pass
     output = results[0] if len(results) == 1 else dict(schemaVersion=1, results=results)
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    temporary = args.output.with_name(args.output.name + '.tmp-' + uuid.uuid4().hex)
-    temporary.write_text(json.dumps(output, indent=2, allow_nan=False) + '\n')
-    temporary.replace(args.output)
+    publish_results(args.output, output, app_failure_receipts)
     print(json.dumps(output, allow_nan=False))
     return 0 if all(value['status'] == 'passed' for value in results) else 1
 

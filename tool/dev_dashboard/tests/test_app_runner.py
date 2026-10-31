@@ -1,4 +1,5 @@
 import importlib.util
+import hashlib
 import json
 import plistlib
 from pathlib import Path
@@ -13,6 +14,52 @@ spec.loader.exec_module(runner)
 
 
 class AppRunnerTests(unittest.TestCase):
+    def test_reused_output_refreshes_failed_diagnostics_to_empty_on_success(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory).resolve() / 'latest.json'
+            failure = dict(operationId='accounts.open', runId='a' * 32, captureStatus='captured')
+            old_receipt = Path(directory).resolve() / 'old.capture.json'
+            old_receipt.write_text('retained immutable failure evidence')
+            runner.publish_results(output, {'status': 'failed'}, [failure])
+            runner.publish_results(output, {'status': 'passed'}, [])
+            index = json.loads(output.with_name('latest.json.diagnostics.json').read_text())
+            self.assertEqual(index['failedMeasurements'], [])
+            self.assertEqual(index['resultSha256'], hashlib.sha256(output.read_bytes()).hexdigest())
+            self.assertEqual(json.loads(output.read_text()), {'status': 'passed'})
+            self.assertEqual(old_receipt.read_text(), 'retained immutable failure evidence')
+
+    def test_reused_output_failure_index_contains_only_new_attempt(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory).resolve() / 'latest.json'
+            old = dict(runId='a' * 32, captureStatus='captured')
+            new = dict(runId='b' * 32, captureStatus='missing')
+            result = {'status': 'failed', 'diagnostics': ['child_reported_error']}
+            runner.publish_results(output, result, [old])
+            runner.publish_results(output, result, [new])
+            index = json.loads(output.with_name('latest.json.diagnostics.json').read_text())
+            self.assertEqual(index['failedMeasurements'], [new])
+            self.assertEqual(result, {'status': 'failed', 'diagnostics': ['child_reported_error']})
+
+    def test_symlink_diagnostic_index_preserves_existing_output_and_foreign_file(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            output = root / 'latest.json'; output.write_text('previous result')
+            foreign = root / 'unrelated.json'; foreign.write_text('preserve')
+            (root / 'latest.json.diagnostics.json').symlink_to(foreign)
+            with self.assertRaises(RuntimeError):
+                runner.publish_results(output, {'status': 'passed'}, [])
+            self.assertEqual(output.read_text(), 'previous result')
+            self.assertEqual(foreign.read_text(), 'preserve')
+
+    def test_index_publication_error_does_not_replace_old_result_or_leave_temporaries(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory).resolve() / 'latest.json'; output.write_text('previous result')
+            with patch.object(runner.os, 'replace', side_effect=OSError('fixture failure')):
+                with self.assertRaises(RuntimeError):
+                    runner.publish_results(output, {'status': 'passed'}, [])
+            self.assertEqual(output.read_text(), 'previous result')
+            self.assertEqual([p.name for p in output.parent.iterdir()], ['latest.json'])
+
     def setUp(self):
         toolchain = patch.object(runner, 'apple_toolchain_identity', return_value={'xcode': 'fixture', 'macosSdkBuild': 'fixture'}, create=True)
         toolchain.start()

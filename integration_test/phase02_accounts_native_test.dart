@@ -8,6 +8,8 @@ import 'package:dakhl_restaurant/accounts/workspace_document.dart';
 import 'package:dakhl_restaurant/app/accounts_store.dart';
 import 'package:dakhl_restaurant/app/app.dart';
 import 'package:dakhl_restaurant/app/bootstrap.dart';
+import 'package:dakhl_restaurant/ui/dakhl_ui.dart';
+import 'package:dakhl_restaurant/shell/shell_view_model.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
@@ -15,6 +17,8 @@ import 'package:madar_application/madar_application.dart';
 import 'package:madar_data/madar_data.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
+
+import 'support/native_app_readiness.dart';
 
 /// Fixture-only multi-launch harness. Keep --no-uninstall on every invocation.
 /// Write/read/recover/read-recovered each require a fresh native process; a read
@@ -175,13 +179,35 @@ void main() {
       isNotNull,
     );
     expect(model.document!.preferences.restaurant['name'], 'phase02-$nonce');
+    ShellViewModel? shell;
     await _step(
-      'tester.pumpWidget.app',
-      () => tester.pumpWidget(
-        DakhlRestaurantApp(preferencesStore: preferences, accounts: model),
+      'app.renderedReadiness',
+      () => waitForNativeAppReadiness(
+        frames: LiveNativeAppReadinessFrames(binding),
+        mount: () => mountNativeAppRoot(
+          DakhlRestaurantApp(
+            preferencesStore: preferences,
+            accounts: model,
+            onShellReady: (value) => shell = value,
+          ),
+        ),
+        ready: () {
+          final roots = find.byType(DakhlShellView).evaluate();
+          if (model.state != AccountsState.saved ||
+              shell?.bootstrapState != ShellBootstrapState.ready ||
+              shell!.busy ||
+              roots.length != 1) {
+            return false;
+          }
+          final render = roots.single.findRenderObject();
+          return render is RenderBox &&
+              render.attached &&
+              render.hasSize &&
+              !render.size.isEmpty;
+        },
       ),
     );
-    await _step('tester.pumpAndSettle', tester.pumpAndSettle);
+    expect(find.byType(DakhlShellView), findsOneWidget);
     expect(model.state, AccountsState.saved);
     binding.reportData = {
       'stage': stage,

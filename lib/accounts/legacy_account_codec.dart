@@ -379,6 +379,7 @@ final class LegacyAccountCodec {
           _require(['balance', 'total'].contains(c['field']));
           final reason = _string(c['reason'], 500);
           _require(reason.trim().isNotEmpty);
+          _require(c.containsKey('before') && c.containsKey('after'));
           corrections.add({
             'field': c['field'],
             'date': _dateValue(c['date']),

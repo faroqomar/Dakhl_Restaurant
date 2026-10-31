@@ -251,24 +251,30 @@ class AccountsSurface extends StatelessWidget {
                       ],
                     ),
                   ],
-                  if (model.state == AccountsState.commitUnknown ||
+                  if (model.needsWriteReadback ||
+                      model.state == AccountsState.commitUnknown ||
                       model.state == AccountsState.conflict ||
                       model.state == AccountsState.protected ||
                       model.state == AccountsState.failed) ...[
                     const SizedBox(height: 16),
                     DakhlButton(
-                      label: model.state == AccountsState.commitUnknown
+                      label:
+                          model.needsWriteReadback ||
+                              model.state == AccountsState.commitUnknown
                           ? 'إعادة التحقق'
                           : 'إعادة المحاولة',
                       onPressed: model.busy
                           ? null
                           : () => unawaited(
-                              model.state == AccountsState.commitUnknown
+                              model.needsWriteReadback ||
+                                      model.state == AccountsState.commitUnknown
                                   ? model.reconcile()
                                   : model.needsAuthorityReload
                                   ? model.retry()
                                   : model.state == AccountsState.protected
                                   ? model.initialize()
+                                  : model.hasReadOnlyRetry
+                                  ? model.retry()
                                   : model.pendingImport != null
                                   ? _confirm(context, recovery: false)
                                   : model.recoverySelection != null

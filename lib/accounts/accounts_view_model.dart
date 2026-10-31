@@ -38,10 +38,13 @@ final class AccountsViewModel extends ChangeNotifier {
   List<String>? _deviceFallback;
   String? _authorityConflictCode;
   bool _reloadConfirming = false;
+  Future<void> Function()? _retryReadOnly;
   int _operation = 0;
   AccountsState get state => _state;
   bool get busy => _busy || _reloadConfirming;
   bool get needsAuthorityReload => _authorityConflictCode != null;
+  bool get needsWriteReadback => repository.hasUnknownWrite;
+  bool get hasReadOnlyRetry => _retryReadOnly != null;
   String? get failureCode => _failureCode;
   AccountDocument? get document => repository.document;
   StorageFence? get fence => repository.snapshot?.fence;
@@ -70,6 +73,7 @@ final class AccountsViewModel extends ChangeNotifier {
 
   Future<void> initialize() async {
     if (_disposed || _busy) return;
+    _retryReadOnly = null;
     final retainedWorkspace = _failedWorkspaceFence == fence
         ? _workspace
         : null;
@@ -80,6 +84,15 @@ final class AccountsViewModel extends ChangeNotifier {
     _notify();
     final result = await repository.open();
     if (!_current(operation)) return;
+    if (repository.hasUnknownWrite) {
+      _state = AccountsState.commitUnknown;
+      _failureCode = result is CapabilityFailure<AccountDocument?>
+          ? result.code
+          : 'commit_unknown';
+      _busy = false;
+      _notify();
+      return;
+    }
     if (result is CapabilitySuccess<AccountDocument?>) {
       if (result.value != null) {
         final workspace = await repository.readWorkspace();
@@ -118,6 +131,7 @@ final class AccountsViewModel extends ChangeNotifier {
 
   void prepareImport(List<int> bytes) {
     if (!canImport) return;
+    _retryReadOnly = null;
     try {
       final pending = repository.prepare(bytes);
       _pendingImport = pending;
@@ -125,15 +139,18 @@ final class AccountsViewModel extends ChangeNotifier {
       _failureCode = null;
       _state = AccountsState.importReady;
     } on AccountCodecException catch (error) {
+      // Invalid selected bytes require another selection, never an account save.
+      _retryReadOnly = () async {};
       _failureCode = error.code;
       _state = AccountsState.failed;
     }
     _notify();
   }
 
-  void reportFileFailure(String code) {
+  void reportFileFailure(String code, {Future<void> Function()? retry}) {
     if (_disposed || _busy) return;
     _failureCode = code;
+    _retryReadOnly = retry ?? () async {};
     _state = AccountsState.failed;
     _notify();
   }
@@ -142,6 +159,7 @@ final class AccountsViewModel extends ChangeNotifier {
     if (_disposed || _busy || repository.hasUnknownWrite) return;
     _pendingImport = null;
     _recovery = null;
+    _retryReadOnly = null;
     if (_authorityConflictCode != null) {
       _state = AccountsState.conflict;
       _failureCode = _authorityConflictCode;
@@ -187,6 +205,7 @@ final class AccountsViewModel extends ChangeNotifier {
 
   Future<void> selectPrevious() async {
     if (!canSelectRecovery) return;
+    _retryReadOnly = null;
     final operation = ++_operation;
     _busy = true;
     _notify();
@@ -200,6 +219,7 @@ final class AccountsViewModel extends ChangeNotifier {
       _failureCode = null;
       _state = AccountsState.recoveryReady;
     } else {
+      _retryReadOnly = selectPrevious;
       _state = AccountsState.failed;
       _failureCode = result is CapabilitySuccess<RecoverySelection?>
           ? 'no_previous_copy'
@@ -226,6 +246,7 @@ final class AccountsViewModel extends ChangeNotifier {
     Future<CapabilityResult<AccountDocument>> Function() action, {
     bool acknowledgesWorkspace = false,
   }) async {
+    _retryReadOnly = null;
     final operation = ++_operation;
     final oldFence = fence;
     final retainedFailure = _failureCode;
@@ -279,6 +300,7 @@ final class AccountsViewModel extends ChangeNotifier {
     StorageFence origin,
   ) async {
     if (!canMutate || fence != origin) return;
+    _retryReadOnly = null;
     final operation = ++_operation;
     _workspace = workspace;
     _failedWorkspaceFence = origin;
@@ -317,7 +339,7 @@ final class AccountsViewModel extends ChangeNotifier {
 
   Future<void> retry() async {
     if (_disposed || _busy || _reloadConfirming) return;
-    if (_state == AccountsState.commitUnknown) {
+    if (needsWriteReadback || _state == AccountsState.commitUnknown) {
       await reconcile();
       return;
     }
@@ -331,6 +353,11 @@ final class AccountsViewModel extends ChangeNotifier {
         _reloadConfirming = false;
         _notify();
       }
+      return;
+    }
+    final readOnlyRetry = _retryReadOnly;
+    if (readOnlyRetry != null) {
+      await readOnlyRetry();
       return;
     }
     if (_failedWorkspaceFence != null && _failedWorkspaceFence == fence) {
@@ -357,7 +384,12 @@ final class AccountsViewModel extends ChangeNotifier {
     } on Object {
       if (_current(operation)) {
         _busy = false;
-        reportFileFailure('file_unreadable');
+        reportFileFailure(
+          'file_unreadable',
+          retry: () async {
+            await pickImport(transfer);
+          },
+        );
       }
       return ImportPickOutcome.failed;
     }
@@ -367,13 +399,23 @@ final class AccountsViewModel extends ChangeNotifier {
     _busy = false;
     if (result is CapabilitySuccess<Uint8List>) {
       prepareImport(result.value);
+      if (_state == AccountsState.failed) {
+        _retryReadOnly = () async {
+          await pickImport(transfer);
+        };
+      }
       return _state == AccountsState.importReady &&
               !identical(previous, _pendingImport)
           ? ImportPickOutcome.selected
           : ImportPickOutcome.failed;
     }
     if (result is CapabilityFailure<Uint8List>) {
-      reportFileFailure(result.code);
+      reportFileFailure(
+        result.code,
+        retry: () async {
+          await pickImport(transfer);
+        },
+      );
       return ImportPickOutcome.failed;
     }
     _notify();
@@ -383,6 +425,7 @@ final class AccountsViewModel extends ChangeNotifier {
   Future<void> exportTo(FileTransferCapability transfer) async {
     final bytes = exportBytes();
     if (_disposed || _busy || bytes == null) return;
+    _retryReadOnly = null;
     final operation = ++_operation;
     _busy = true;
     _notify();
@@ -392,15 +435,32 @@ final class AccountsViewModel extends ChangeNotifier {
     } on Object {
       if (_current(operation)) {
         _busy = false;
-        reportFileFailure('file_unavailable');
+        reportFileFailure('file_unavailable', retry: () => exportTo(transfer));
       }
       return;
     }
     if (!_current(operation)) return;
     _busy = false;
     if (result is CapabilityFailure<void>) {
-      reportFileFailure(result.code);
+      reportFileFailure(result.code, retry: () => exportTo(transfer));
     } else {
+      if (_authorityConflictCode != null) {
+        _state = AccountsState.conflict;
+        _failureCode = _authorityConflictCode;
+      } else if (_failedWorkspaceFence != null &&
+          _failedWorkspaceFence == fence) {
+        _state = AccountsState.failed;
+        _failureCode = 'workspace_unsaved';
+      } else if (_pendingImport != null) {
+        _state = AccountsState.importReady;
+        _failureCode = null;
+      } else if (_recovery != null) {
+        _state = AccountsState.recoveryReady;
+        _failureCode = null;
+      } else {
+        _state = _settled;
+        if (_settled != AccountsState.protected) _failureCode = null;
+      }
       _notify();
     }
   }

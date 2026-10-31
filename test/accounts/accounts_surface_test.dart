@@ -14,7 +14,50 @@ import 'package:dakhl_restaurant/ui/theme.dart';
 
 import 'accounts_view_model_test.dart' show FixtureStore, FixtureTransfer;
 
+final class CountingFailedImport implements FileTransferCapability {
+  int opens = 0;
+  @override
+  Future<CapabilityResult<Uint8List>> open() async {
+    opens++;
+    return const CapabilityFailure('file_unreadable', 'Fixture failure');
+  }
+
+  @override
+  Future<CapabilityResult<void>> save(Uint8List bytes) async =>
+      const CapabilitySuccess(null);
+}
+
 void main() {
+  testWidgets('Retry after a failed picker cannot confirm an older selection', (
+    tester,
+  ) async {
+    final store = FixtureStore();
+    final model = AccountsViewModel(
+      repository: AccountsRepository(store: store),
+    );
+    await model.initialize();
+    model.prepareImport(
+      model.repository.codec.encode(model.repository.codec.empty()),
+    );
+    final retained = model.pendingImport;
+    final transfer = CountingFailedImport();
+    await model.pickImport(transfer);
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: DakhlTheme.light,
+        home: Scaffold(
+          body: AccountsSurface(model: model, transfer: transfer),
+        ),
+      ),
+    );
+    await tester.tap(find.text('إعادة المحاولة'));
+    await tester.pumpAndSettle();
+    expect(transfer.opens, 2);
+    expect(find.text('استبدال الحسابات الحالية؟'), findsNothing);
+    expect(model.pendingImport, same(retained));
+    expect(store.writes, 0);
+    expect(store.archives, 0);
+  });
   testWidgets(
     'protected failure is persistent and reachable at320px200percent',
     (tester) async {

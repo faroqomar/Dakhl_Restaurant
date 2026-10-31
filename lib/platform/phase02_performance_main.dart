@@ -105,8 +105,23 @@ Future<void> main(List<String> arguments) async {
     }
     marker('error');
     await stdout.flush();
-    await current?.close();
-    exit(1);
+    await phase02FinishFailedBenchmark(cleanup: () async => current?.close());
+  }
+}
+
+/// Testable failure teardown; normal successful measurements do not use this.
+Future<void> phase02FinishFailedBenchmark({
+  required Future<void> Function() cleanup,
+  void Function(int) terminate = exit,
+  Duration cleanupTimeout = const Duration(seconds: 10),
+}) async {
+  try {
+    await cleanup().timeout(cleanupTimeout);
+  } on Object {
+    // The original benchmark failure was already reported. Cleanup cannot
+    // replace that outcome or keep the failed opt-in process alive forever.
+  } finally {
+    terminate(1);
   }
 }
 

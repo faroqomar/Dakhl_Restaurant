@@ -1,3 +1,5 @@
+**Historical milestone / availability note.** This record preserves its dated results and pre-implementation approval state. The referenced worktree delivery receipt `outputs/memory/phase02-scope-delivery.json` is local-only and is not included in this publication checkout. Its contents/source-hash delivery cannot be independently re-audited from this PR; no current memory-delivery pass is inferred from the dated summary. Later authorizations and verification are recorded in the tracker.
+
 # Phase 02 scope/readiness — 2026-10-29
 
 Request: owner invoked Step 1 only. [Full scope, ownership, supplied references and gates](../phases/02-scope-readiness.md); live execution audit (local-only artifact `docs/log/phase-02-execution.md`, SHA-256 `d490433a2ead39ecf2f36721364cd1003b550152426fa7b98b90c3bb069c639c`).

@@ -1,7 +1,7 @@
 {
   "engine": "Madar_Engine",
-  "status": "CAP-02 Step4 independently reviewed early-prefix repair;132 data tests/analyzer pass. Exact consumer/native/per-operation/hosted gates tracked separately; unpublished local candidate.",
-  "git_commit": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+  "status": "Phase02 independently reviewed persistence/error/protection repairs; data134, application9, domain12 and benchmark-tool29 pass. Exact-head engine CI2/2 passes; current consumer/native verification tracked separately.",
+  "git_commit": "899678fa0b85807850e626db69b3291b8a7b7b64",
   "packages": {
     "madar_application": {
       "path": "../Madar_Engine/packages/application",

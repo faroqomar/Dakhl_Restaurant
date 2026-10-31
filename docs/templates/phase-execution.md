@@ -13,9 +13,9 @@ Next action: ...
 
 ## Events — append, do not erase failures
 
-| ID | Start → end UTC; duration and source | Actor / scope | Action / safe command / files | Result / evidence | Problem / cause confidence / retry | Wait category / avoidability | Next step / automation ID |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| E001 | unknown → unknown; unknown | Lead / phase | Record request and scope | pending | none | audit overhead / unknown | ... |
+| ID | Recorded UTC | Start → end UTC; duration and measurement source | Actor / scope | Action / safe command / files; reason | Source / API / tool revisions | Result / exit status / evidence | Problem / cause confidence / retry count | Wait category / measured duration / avoidability | Next step / automation ID |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| E001 | unknown | unknown → unknown; unknown / no measurement | Lead / phase | Record request and scope; reason: required phase intake | unknown | pending / exit N/A | none / N/A / 0 | audit overhead / unknown / unknown | ... |
 
 ## Incidents
 

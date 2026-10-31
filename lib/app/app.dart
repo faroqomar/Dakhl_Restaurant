@@ -548,7 +548,8 @@ class _ShellFrame extends ConsumerWidget {
                 account.state == AccountsState.commitUnknown);
         final status = account == null
             ? shellStatus
-            : account.state == AccountsState.saved && failed
+            : account.state == AccountsState.saved &&
+                  (failed || model.busy || unsaved)
             ? shellStatus
             : accountStatus(account);
         return Scaffold(

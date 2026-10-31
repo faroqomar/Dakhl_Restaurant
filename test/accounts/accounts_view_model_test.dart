@@ -13,9 +13,14 @@ final class FixtureStore implements LocalDocumentWorkspaceStore {
   DocumentSnapshot? document;
   PreviousDocument? previous;
   String? readFailure, writeFailure;
-  int writes = 0, archives = 0, workspaceWrites = 0, resumes = 0;
+  int writes = 0,
+      archives = 0,
+      workspaceWrites = 0,
+      resumes = 0,
+      previousReads = 0;
   bool throwAfterCommit = false;
   WorkspaceSnapshot? workspace;
+  WorkspaceState? workspaceReadOverride;
   String? workspaceWriteFailure;
   Completer<CapabilityResult<DocumentSnapshot?>>? delayedRead;
   @override
@@ -69,8 +74,9 @@ final class FixtureStore implements LocalDocumentWorkspaceStore {
   @override
   Future<CapabilityResult<WorkspaceState>> readWorkspace(
     StorageFence fence,
-  ) async =>
-      CapabilitySuccess(WorkspaceState(fence: fence, snapshot: workspace));
+  ) async => CapabilitySuccess(
+    workspaceReadOverride ?? WorkspaceState(fence: fence, snapshot: workspace),
+  );
   @override
   Future<CapabilityResult<WorkspaceSnapshot>> writeWorkspace(
     String payload, {
@@ -79,6 +85,16 @@ final class FixtureStore implements LocalDocumentWorkspaceStore {
     required String writeToken,
   }) async {
     workspaceWrites++;
+    if (document?.fence != fence || expectedRevision != workspace?.revision) {
+      return const CapabilityFailure('conflict', 'Stale fixture authority');
+    }
+    if (workspaceWriteFailure != null &&
+        workspaceWriteFailure != 'commit_unknown') {
+      return CapabilityFailure(
+        workspaceWriteFailure!,
+        'Definite fixture failure',
+      );
+    }
     workspace = WorkspaceSnapshot(
       payload: payload,
       revision: (workspace?.revision ?? 0) + 1,
@@ -95,8 +111,11 @@ final class FixtureStore implements LocalDocumentWorkspaceStore {
   }
 
   @override
-  Future<CapabilityResult<PreviousDocument?>> readPrevious() async =>
-      CapabilitySuccess(previous);
+  Future<CapabilityResult<PreviousDocument?>> readPrevious() async {
+    previousReads++;
+    return CapabilitySuccess(previous);
+  }
+
   @override
   Future<CapabilityResult<DocumentSnapshot>> recoverPrevious(
     PreviousDocument selected, {
@@ -136,7 +155,230 @@ final class FixtureTransfer implements FileTransferCapability {
       const CapabilitySuccess(null);
 }
 
+final class RetriableExport implements FileTransferCapability {
+  bool fail = true;
+  int saves = 0;
+  @override
+  Future<CapabilityResult<Uint8List>> open() async =>
+      const CapabilityCancelled();
+  @override
+  Future<CapabilityResult<void>> save(Uint8List bytes) async {
+    saves++;
+    return fail
+        ? const CapabilityFailure('file_unavailable', 'Fixture failure')
+        : const CapabilitySuccess(null);
+  }
+}
+
 void main() {
+  for (final foreignState in [true, false]) {
+    test(
+      'workspace readback refuses foreign ${foreignState ? 'state' : 'snapshot'} authority',
+      () async {
+        final store = FixtureStore();
+        final repository = AccountsRepository(store: store);
+        final model = AccountsViewModel(repository: repository);
+        await model.initialize();
+        await model.save();
+        store.workspaceWriteFailure = 'commit_unknown';
+        await model.saveWorkspace(WorkspaceDocument.empty(), model.fence!);
+        final committed = store.workspace!;
+        const foreign = StorageFence(storeId: 'other', generation: 'foreign');
+        store.workspaceReadOverride = WorkspaceState(
+          fence: foreignState ? foreign : model.fence!,
+          snapshot: WorkspaceSnapshot(
+            payload: committed.payload,
+            revision: committed.revision,
+            fence: foreignState ? committed.fence : foreign,
+            writeToken: committed.writeToken,
+          ),
+        );
+        await model.retry();
+        expect(repository.hasUnknownWrite, isTrue);
+        expect(model.exportBytes(), isNull);
+        expect(store.writes, 1);
+        expect(store.workspaceWrites, 1);
+        store.workspaceReadOverride = null;
+        await model.retry();
+        expect(repository.hasUnknownWrite, isFalse);
+        expect(model.state, AccountsState.saved);
+        expect(store.workspace, same(committed));
+      },
+    );
+  }
+  test(
+    'export retry cannot acknowledge or rewrite an unsaved workspace',
+    () async {
+      final store = FixtureStore();
+      final model = AccountsViewModel(
+        repository: AccountsRepository(store: store),
+      );
+      await model.initialize();
+      await model.save();
+      store.workspaceWriteFailure = 'unavailable';
+      await model.saveWorkspace(WorkspaceDocument.empty(), model.fence!);
+      final transfer = RetriableExport();
+      await model.exportTo(transfer);
+      transfer.fail = false;
+      await model.retry();
+      expect(transfer.saves, 2);
+      expect(store.writes, 1);
+      expect(store.workspaceWrites, 1);
+      expect(model.failureCode, 'workspace_unsaved');
+      store.workspaceWriteFailure = null;
+      await model.retry();
+      expect(store.workspaceWrites, 2);
+      expect(model.state, AccountsState.saved);
+    },
+  );
+  test('workspace uncertainty survives failed reopen until fresh validated readback', () async {
+    final store = FixtureStore();
+    final model = AccountsViewModel(
+      repository: AccountsRepository(store: store),
+    );
+    await model.initialize();
+    await model.save();
+    final primary = store.document!;
+    store.workspaceWriteFailure = 'commit_unknown';
+    await model.saveWorkspace(
+      WorkspaceDocument(
+        active: const {'note': 'committed'},
+        form: const {},
+        held: const [],
+      ),
+      model.fence!,
+    );
+    expect(model.state, AccountsState.commitUnknown);
+    store.readFailure = 'unavailable';
+    await model.initialize();
+    expect(model.document, isNull);
+    expect(model.state, AccountsState.commitUnknown);
+    expect(model.repository.hasUnknownWrite, isTrue);
+    await model.retry();
+    expect(model.repository.hasUnknownWrite, isTrue);
+    store.readFailure = null;
+    store.document = DocumentSnapshot(
+      payload: '{broken',
+      revision: primary.revision,
+      fence: primary.fence,
+      writeToken: primary.writeToken,
+    );
+    await model.retry();
+    expect(model.repository.hasUnknownWrite, isTrue);
+    expect(model.exportBytes(), isNull);
+    store.document = primary;
+    await model.retry();
+    expect(model.state, AccountsState.saved);
+    expect(model.repository.hasUnknownWrite, isFalse);
+    expect(model.workspace.active['note'], 'committed');
+    expect(model.exportBytes(), isNotNull);
+    expect(store.writes, 1);
+    expect(store.workspaceWrites, 1);
+  });
+  test('recovery lookup retry never creates an empty account', () async {
+    final store = FixtureStore();
+    final model = AccountsViewModel(
+      repository: AccountsRepository(store: store),
+    );
+    await model.initialize();
+    await model.selectPrevious();
+    expect(model.failureCode, 'no_previous_copy');
+    await model.retry();
+    expect(store.previousReads, 2);
+    expect(store.writes, 0);
+    expect(store.workspaceWrites, 0);
+    expect(store.document, isNull);
+    expect(model.failureCode, 'no_previous_copy');
+  });
+
+  test('definite workspace failure does not commit fixture state', () async {
+    final store = FixtureStore();
+    final model = AccountsViewModel(
+      repository: AccountsRepository(store: store),
+    );
+    await model.initialize();
+    await model.save();
+    store.workspaceWriteFailure = 'unavailable';
+    await model.saveWorkspace(WorkspaceDocument.empty(), model.fence!);
+    expect(store.workspace, isNull);
+    store.workspaceWriteFailure = null;
+    await model.retry();
+    expect(model.state, AccountsState.saved);
+    final saved = store.workspace!;
+    final stale = await store.writeWorkspace(
+      '{}',
+      fence: model.fence!,
+      expectedRevision: null,
+      writeToken: 'stale',
+    );
+    expect(stale, isA<CapabilityFailure<WorkspaceSnapshot>>());
+    expect(store.workspace, same(saved));
+  });
+
+  test(
+    'export retry uses the same transfer without writing accounts',
+    () async {
+      final store = FixtureStore();
+      final model = AccountsViewModel(
+        repository: AccountsRepository(store: store),
+      );
+      await model.initialize();
+      await model.save();
+      final saved = store.document;
+      final transfer = RetriableExport();
+      await model.exportTo(transfer);
+      expect(model.failureCode, 'file_unavailable');
+      transfer.fail = false;
+      await model.retry();
+      expect(transfer.saves, 2);
+      expect(store.writes, 1);
+      expect(store.document, same(saved));
+      expect(model.state, AccountsState.saved);
+      expect(model.failureCode, isNull);
+    },
+  );
+
+  test(
+    'failed reopen revokes export authority and retains creation protection',
+    () async {
+      for (final failure in [
+        'unavailable',
+        'incomplete_state',
+        'invalid_payload',
+      ]) {
+        final store = FixtureStore();
+        final model = AccountsViewModel(
+          repository: AccountsRepository(store: store),
+        );
+        await model.initialize();
+        await model.save();
+        final saved = store.document!;
+        if (failure == 'invalid_payload') {
+          store.document = DocumentSnapshot(
+            payload: '{broken',
+            revision: saved.revision,
+            fence: saved.fence,
+            writeToken: saved.writeToken,
+          );
+        } else {
+          store.readFailure = failure;
+        }
+        await model.initialize();
+        expect(model.state, AccountsState.protected);
+        expect(model.document, isNull);
+        expect(model.exportBytes(), isNull);
+        expect(model.repository.initialCreationBlocked, isFalse);
+        await model.save();
+        expect(store.writes, 1);
+        store.readFailure = null;
+        store.document = saved;
+        await model.initialize();
+        expect(model.state, AccountsState.saved);
+        expect(model.document, isNotNull);
+        expect(model.exportBytes(), isNotNull);
+      }
+    },
+  );
   test('first absence remains unsaved until an explicit save', () async {
     final store = FixtureStore();
     final model = AccountsViewModel(
