@@ -1,0 +1,45 @@
+integration_test/README.md
+  s_cecf55789e34ef::t_3189422f4a47cc 166-172
+integration_test/support/native_picker_wait.dart
+  s_cecf55789e34ef::t_5d30e856112092 3,13,41,116,122
+  s_cecf55789e34ef::t_ecb7b04e9ff9d1 1-2,4-7,12,14-25,28,37-40,44-54,57-64,70-71,77,80-115,117-121,123-129,132,134-142,148-149
+  s_cecf55789e34ef::t_2b211de6edebbb 8-11,29-36,55-56,78-79,130-131,143-147
+  s_cecf55789e34ef::t_f44ee146ceed6f 26-27
+  s_cecf55789e34ef::t_1d630a517f3d09 42-43
+  s_cecf55789e34ef::t_ca942f429c0861 65-69,72-76
+  s_cecf55789e34ef::t_a1a3eae0246770 133
+test/platform/phase02_native_picker_wait_test.dart
+  s_cecf55789e34ef::t_647061255b05b8 1-7,16-17,21-24,26-29,31-35,55-58,155,180,209,218,227,234,246
+  s_cecf55789e34ef::t_d4ab4577bd990d 25
+  s_cecf55789e34ef::t_1d630a517f3d09 141
+  s_cecf55789e34ef::t_3d0b954f926c8e 19-20,30,59-64,67-72,77-93,98-103
+  s_cecf55789e34ef::t_3304ca7b0a2cf7 8-15,18,65-66,73-76,94-97
+  s_cecf55789e34ef::t_ca942f429c0861 36-54,104-140,142-154,156-179,181-208,210-217,219-226,228-233,235-245
+docs/phases/02-android-incident-assessment.md
+  s_cecf55789e34ef::t_cdb68a09d9a160 1-31
+docs/phases/02-android-incident-evidence.json
+  s_cecf55789e34ef::t_cdb68a09d9a160 1-38
+integration_test/phase02_file_picker_test.dart
+  s_cecf55789e34ef::t_ca942f429c0861 242-243
+  s_cecf55789e34ef::t_8e5a462b32c848 22-23,240-241,246-250
+docs/how-to/repeated-problems.md
+  s_cecf55789e34ef::t_3189422f4a47cc 284-292
+PHASES.md
+  s_cecf55789e34ef::t_3189422f4a47cc 23,81,320-326
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5095e5cbbad496a5c5e203af4a8a31559bcf26ee",
+  "prompts": {},
+  "sessions": {
+    "s_cecf55789e34ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1892c-b531-7571-8914-75aa02e54d3d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
