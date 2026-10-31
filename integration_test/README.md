@@ -163,3 +163,10 @@ rotation/lineage reports remain refused. The task stage helper imports this same
 reviewed parser instead of maintaining a second acceptance grammar. Successful
 `apksigner verify` is still required before parsing; parsing text alone is not APK
 signature verification.
+
+
+## Manual native picker wait boundary — 2026-10-31
+
+`phase02_file_picker_test.dart` now imports test-only `support/native_picker_wait.dart`. Native Activities can pause Flutter frames, so an awaited tester pump is not a cancellable timeout boundary. The scoped helper uses real monotonic timing and timers, rejects observed late success, and confirms a scheduled framework frame without starting a pending pump. It temporarily enables fullyLive rendering and device pointer propagation for actual manual confirmation taps, restoring exact prior values on success, error and timeout. It retains120s per wait plus the existing bounded host/whole-test deadline; a suspended process cannot guarantee returning at an exact wall instant.
+
+Bind both the entrypoint and support-file hashes to each rebuilt APK/IOS build. Earlier long functional cases do not establish the new deadline, and old native receipts are not new-harness evidence. Revalidate all three picker scenarios on Android and iOS. Actual native pointer/Back gestures must reach the owned target; IDE AX toolbar activation alone is not proof of device input. Use only marked synthetic fixture namespaces and the guarded prebuilt Android installation path described above.

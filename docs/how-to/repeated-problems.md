@@ -281,3 +281,12 @@ Symptom: staged-diff review found an extra trailing blank line at end of a publi
 - **Symptom:** iOS live-test pointer taps showed finder hints without activating confirmations. **Verified remedy:** existing keyboard Tab/Return after visible focus, then verify actual integration assertions. **Prevention:** UI action alone is never acceptance; retain the native source/state assertions.
 
 Evidence: the dated resumed-native record and selected receipt manifest; full ignored execution journals and failed-attempt folders stay local. Prior Android data retention remains unverified, with no validated recovery point.
+
+
+## Native picker suspension, touch routing and SDK registration — 2026-10-31
+
+Symptom: a native picker can block tester.pump beyond a120s loop deadline; late success then exits without another deadline observation. Confirmed by347.743s functional Open cancellation and pinned live-binding private pending-frame implementation. Remedy: test-only scoped fullyLive/real timers+monotonic checks, no awaited pump, actual scheduled-frame observation, exact state/timer restoration.12 meaningful real-zone regressions pass; device revalidation remains separate. Device pointers are false by default in the pinned binding; scope true only for intended manual confirmation, restore exact prior value, and retain the original functional assertions.
+
+SDK setup downloads were unnecessary: installed Studio262 reads AndroidSdkPathStore in options/android.sdk.path.xml. The exact public SDK-path XML is corroborated by AndroidX StudioTask e3ac68fa75d017f9e49f518a49a856a95ac9db5b lines429–441. With task Studio closed and before-state preserved, registering the existing SDK enabled VDM without SDK/tool replacement, project trust or license acceptance. Use an empty task-only SafeMode viewer and launch the owned device from RunningDevices, not standalone VDM, for a CUA-recognized embedded viewport. VDM custom rows can exist despite an empty AX subtree; inspect pixels.
+
+IDE toolbar AX Back/Home activation did not prove guest input. CUA touches opened the actual provider drawer, and native edge-Back gestures demonstrably closed the drawer/provider with typed cancellation. Use fresh UI evidence; retain controller failures and long/late attempts separately. The first file-import attempt timed out waiting for selection because operator preparation was late; it remains failed and is not an app-success claim. Do not extend deadlines or use production stores.

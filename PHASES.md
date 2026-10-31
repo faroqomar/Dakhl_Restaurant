@@ -20,7 +20,7 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 | --- | --- | --- | --- | --- |
 | 00 | [Baseline and delivery setup](docs/planning/flutter-rebuild/phases/00.md) | VERIFYING — technical prerequisite verified; historical completion pending | codex/phase00-engine-split | [Merged PR2](https://github.com/faroqomar/Dakhl_Restaurant/pull/2) |
 | 01 | [Design system, navigation and interaction shell](docs/planning/flutter-rebuild/phases/01.md) | DONE — approved preview scope | `codex/phase01-build` | [Merged PR7](https://github.com/faroqomar/Dakhl_Restaurant/pull/7) |
-| 02 | [Local accounts, validation and safe persistence](docs/planning/flutter-rebuild/phases/02.md) | BLOCKED — Android acceptance/history, follow-up CI and approval gaps | codex/phase02-build | [#9](https://github.com/faroqomar/Dakhl_Restaurant/pull/9) |
+| 02 | [Local accounts, validation and safe persistence](docs/planning/flutter-rebuild/phases/02.md) | VERIFYING — bounded native Android and API37 checks in progress | codex/phase02-build | [#9](https://github.com/faroqomar/Dakhl_Restaurant/pull/9) |
 | 03 | [Sellable products and inventory](docs/planning/flutter-rebuild/phases/03.md) | TODO | — | — |
 | 04 | [Cash sales, saved receipt, drafts and held orders](docs/planning/flutter-rebuild/phases/04.md) | TODO | — | — |
 | 05 | [Sales history, returns and voids](docs/planning/flutter-rebuild/phases/05.md) | TODO | — | — |
@@ -78,7 +78,7 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 ### Phase 02
 
 - **Name:** Local accounts, validation and safe persistence
-- **Status:** BLOCKED — Android native acceptance and historical data-retention disposition remain unresolved; final follow-up revision CI and explicit merge approval remain pending. iOS simulator acceptance completed.
+- **Status:** BLOCKED — VERIFYING — owner explicitly requested in-scope fixes and paired merge. Bounded Android/iOS picker revalidation, API37 readiness and final-head checks remain pending; historical fixture impact is independently classified.
 - **Dependencies:** Approved00/01 preview prerequisites retained; no Phase03 started.
 - **Design:** Existing six Phase02 Penpot design/wireframe pairs retained. No Step4 product UI change; engine Design N/A. No new design/merge approval inferred.
 - **Isolation:** App/runtime codex/phase02-build and separate codex/phase02-bench-tools. Original scope/design worktrees retained. Redundant isolated engine repair archived recoverably after13 artifact+journal copies/hash verification; runtimea6 unchanged.
@@ -317,3 +317,10 @@ Actual dashboard-launched local test run `run-da4fb11fcd67b2b6`: 246 passed. Ben
 ### Step3 build started —2026-10-30
 
 Phase02 IMPLEMENTING in dedicated codex/phase02-build. Owner Step3 instruction authorizes presented outcome and in-scope engineering choices; no questions, publication or merge. Prior planning/design gate entries are historical. Independent implementation review, exact reviewed engine adoption, full checks/native/per-operation measurements and completion evidence remain pending. Current test results belong only to their recorded suites; no inferred CI/native/release pass. See the running execution journal and worker fragments under outputs/phase02.
+
+
+### Phase02 Android closure and merge authorization — 2026-10-31
+
+Owner explicitly requested fixes, old-data investigation and verified paired merge without another routine confirmation. This authorizes the bounded source changes and subsequent merge; it waives no actual verification or production-data protections. [Historical incident assessment](docs/phases/02-android-incident-assessment.md) establishes known synthetic fixture loss/no recorded normal-account access, with unrecorded activity/byte retention unknown and no restoration claim. Independent review accepts that residual as non-blocking for development-preview integration after current guarded gates pass.
+
+Test-only picker hardening removes uncancellable pumps across native Activity suspension, uses a real monotonic120s budget, scopes fullyLive frames and actual device touches, and restores both settings/timers.12 real-zone regression tests/analyzer and independent review pass. Native three-case verification on each affected mobile platform and current-head CI remain pending. Product library, business policies, engine runtimea6 and existing18-case/360-sample Mac baseline are unchanged; no new optimization or benchmark claim. Runtime libraries retain5a11 source continuity. No DONE/release/deployment/next phase yet.

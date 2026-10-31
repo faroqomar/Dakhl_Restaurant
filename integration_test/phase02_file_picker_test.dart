@@ -19,6 +19,8 @@ import 'package:madar_flutter_adapters/madar_flutter_adapters.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 
+import 'support/native_picker_wait.dart';
+
 /// Human/computer-use native dialog handoff over synthetic marked fixtures only.
 /// PHASE02_PICKER_STAGE: cancel-open, cancel-save, import-file. Every native
 /// picker/confirmation wait is bounded120s. The host operates only printed paths.
@@ -140,7 +142,6 @@ void main() {
     debugPrint('PHASE02_PICKER_STAGE $stage $nonce');
     if (stage == 'cancel-save') {
       await tester.tap(find.text('تصدير الحسابات'));
-      await tester.pump();
       await _wait(
         tester,
         () => transfer.saved != null,
@@ -149,7 +150,6 @@ void main() {
       expect(transfer.saved, isA<CapabilityCancelled<void>>());
     } else {
       await tester.tap(find.text('استيراد الحسابات'));
-      await tester.pump();
       await _wait(
         tester,
         () => transfer.opened != null,
@@ -186,7 +186,6 @@ void main() {
           beforeName,
         );
         await tester.tap(find.text('استعادة النسخة السابقة').first);
-        await tester.pump();
         debugPrint('PHASE02_PICKER_AWAIT_RECOVERY_CONFIRM $nonce');
         await _wait(
           tester,
@@ -238,17 +237,17 @@ Future<void> _wait(
   bool Function() settled,
   String label,
 ) async {
-  final deadline = DateTime.now().add(const Duration(seconds: 120));
-  while (!settled()) {
-    if (DateTime.now().isAfter(deadline)) {
-      throw StateError('Timed out waiting for $label.');
-    }
-    await tester.pump(const Duration(milliseconds: 100));
-    await tester.runAsync(
-      () => Future<void>.delayed(const Duration(milliseconds: 100)),
+  final binding = tester.binding;
+  if (binding is! LiveTestWidgetsFlutterBinding) {
+    throw StateError(
+      'Native picker waits require the live integration binding.',
     );
   }
-  await tester.pump();
+  await waitForNativePickerCondition(
+    frames: LiveNativePickerFrames(binding),
+    settled: settled,
+    label: label,
+  );
 }
 
 /// Observe actual outcomes without replacing the native picker implementation.
