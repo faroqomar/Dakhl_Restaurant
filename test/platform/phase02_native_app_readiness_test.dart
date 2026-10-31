@@ -52,6 +52,48 @@ Future<void> _tracked(Future<void> Function() body) async {
 }
 
 void main() {
+  test(
+    'early native deadline delivery cannot expire the monotonic budget',
+    () => _tracked(() async {
+      final frames = _Frames()..enabled = false;
+      final elapsed = Stopwatch()..start();
+      var deliveredEarly = false;
+      final pending = runZoned(
+        () => waitForNativeAppReadiness(
+          frames: frames,
+          mount: () {},
+          ready: () => true,
+          timeout: const Duration(milliseconds: 40),
+          pollInterval: const Duration(milliseconds: 2),
+        ),
+        zoneSpecification: ZoneSpecification(
+          createTimer: (self, parent, zone, duration, callback) {
+            if (!deliveredEarly) {
+              deliveredEarly = true;
+              return parent.createTimer(
+                zone,
+                const Duration(milliseconds: 10),
+                callback,
+              );
+            }
+            return parent.createTimer(zone, duration, callback);
+          },
+        ),
+      );
+      await expectLater(pending, throwsA(isA<TimeoutException>()));
+      expect(deliveredEarly, isTrue);
+      expect(
+        elapsed.elapsed,
+        greaterThanOrEqualTo(const Duration(milliseconds: 40)),
+      );
+      expect(elapsed.elapsed, lessThan(const Duration(seconds: 2)));
+      expect(frames.requests, 0);
+      expect(
+        frames.framePolicy,
+        LiveTestWidgetsFlutterBindingFramePolicy.onlyPumps,
+      );
+    }),
+  );
   testWidgets(
     'public native root attachment leaves no outstanding tester pump',
     (tester) async {

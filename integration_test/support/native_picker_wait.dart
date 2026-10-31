@@ -100,6 +100,20 @@ Future<void> waitForNativePickerCondition({
     return true;
   }
 
+  void armDeadline() {
+    if (done.isCompleted || expired()) return;
+    final remaining = timeout - elapsed.elapsed;
+    // Platform timers can round a fractional millisecond down. The same
+    // monotonic clock that rejects late success must also authorize timeout.
+    // A one-millisecond floor prevents a zero-delay rearm loop.
+    deadlineTimer = Timer(
+      remaining < const Duration(milliseconds: 1)
+          ? const Duration(milliseconds: 1)
+          : remaining,
+      armDeadline,
+    );
+  }
+
   void observe() {
     if (done.isCompleted || expired()) return;
     try {
@@ -129,10 +143,7 @@ Future<void> waitForNativePickerCondition({
   try {
     frames.framePolicy = LiveTestWidgetsFlutterBindingFramePolicy.fullyLive;
     frames.shouldPropagateDevicePointerEvents = true;
-    deadlineTimer = Timer(
-      timeout - elapsed.elapsed,
-      () => finish(TimeoutException('Timed out waiting for $label.', timeout)),
-    );
+    armDeadline();
     pollTimer = Timer.periodic(pollInterval, (_) => observe());
     observe();
     await done.future;

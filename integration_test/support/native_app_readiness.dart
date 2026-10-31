@@ -117,17 +117,21 @@ Future<void> waitForNativeAppReadiness({
     }
   }
 
+  void armDeadline() {
+    if (completed.isCompleted || expired()) return;
+    final remaining = timeout - elapsed.elapsed;
+    // Timer delivery is only a wakeup; the monotonic clock owns the budget.
+    deadlineTimer = Timer(
+      remaining < const Duration(milliseconds: 1)
+          ? const Duration(milliseconds: 1)
+          : remaining,
+      armDeadline,
+    );
+  }
+
   try {
     frames.framePolicy = LiveTestWidgetsFlutterBindingFramePolicy.fullyLive;
-    deadlineTimer = Timer(
-      timeout - elapsed.elapsed,
-      () => finish(
-        TimeoutException(
-          'Native app readiness exceeded its frame budget.',
-          timeout,
-        ),
-      ),
-    );
+    armDeadline();
     pollTimer = Timer.periodic(pollInterval, (_) => observe());
     mount();
     observe();

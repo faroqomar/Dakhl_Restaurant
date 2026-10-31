@@ -134,6 +134,46 @@ void main() {
   );
 
   test(
+    'an early deadline callback waits for the monotonic budget',
+    () => _withTrackedRealTimers((timers) async {
+      final frames = _Frames();
+      final wall = Stopwatch()..start();
+      var deliveredEarly = false;
+      final future = runZoned(
+        () => waitForNativePickerCondition(
+          frames: frames,
+          settled: () => true,
+          label: 'early platform timer',
+          timeout: const Duration(milliseconds: 60),
+          pollInterval: const Duration(milliseconds: 5),
+        ),
+        zoneSpecification: ZoneSpecification(
+          createTimer: (self, parent, zone, duration, callback) {
+            if (!deliveredEarly) {
+              deliveredEarly = true;
+              return parent.createTimer(
+                zone,
+                const Duration(milliseconds: 10),
+                callback,
+              );
+            }
+            return parent.createTimer(zone, duration, callback);
+          },
+        ),
+      );
+      await expectLater(future, throwsA(isA<TimeoutException>()));
+      expect(deliveredEarly, isTrue);
+      expect(
+        wall.elapsed,
+        greaterThanOrEqualTo(const Duration(milliseconds: 60)),
+      );
+      expect(wall.elapsed, lessThan(const Duration(seconds: 2)));
+      expect(frames.requests, 1);
+      expect(frames.restored, isTrue);
+    }),
+  );
+
+  test(
     'late success is rejected even before a delayed timer callback runs',
     () => _withTrackedRealTimers((timers) async {
       final frames = _Frames();
