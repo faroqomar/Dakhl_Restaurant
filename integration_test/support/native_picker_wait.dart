@@ -81,6 +81,7 @@ Future<void> waitForNativePickerCondition({
   Timer? pollTimer;
   var active = true, frameRequested = false, frameRendered = false;
   var frameGeneration = 0;
+  bool? lastObservedReady, lastObservedFramesEnabled;
 
   void finish([Object? error, StackTrace? stack]) {
     if (done.isCompleted) return;
@@ -94,8 +95,20 @@ Future<void> waitForNativePickerCondition({
   }
 
   bool expired() {
-    if (elapsed.elapsed < timeout) return false;
-    finish(TimeoutException('Timed out waiting for $label.', timeout));
+    final elapsedAtCheck = elapsed.elapsed;
+    if (elapsedAtCheck < timeout) return false;
+    // Failure-only diagnostic: these are cached observations, not fresh
+    // deadline-time SDK reads. Null means that gate has not been observed.
+    finish(
+      TimeoutException(
+        'Timed out waiting for $label. '
+        'Last observed gate: lastObservedReady=$lastObservedReady; '
+        'lastObservedFramesEnabled=$lastObservedFramesEnabled; '
+        'requested=$frameRequested; acknowledged=$frameRendered; '
+        'elapsedMicroseconds=${elapsedAtCheck.inMicroseconds}',
+        timeout,
+      ),
+    );
     return true;
   }
 
@@ -117,13 +130,16 @@ Future<void> waitForNativePickerCondition({
     if (!active || done.isCompleted || expired()) return;
     try {
       final ready = settled();
+      lastObservedReady = ready;
       if (expired()) return;
       if (!ready) {
         frameRequested = frameRendered = false;
         frameGeneration++;
         return;
       }
-      if (!frames.framesEnabled) {
+      final enabled = frames.framesEnabled;
+      lastObservedFramesEnabled = enabled;
+      if (!enabled) {
         frameRequested = frameRendered = false;
         frameGeneration++;
         return;

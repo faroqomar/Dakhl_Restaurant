@@ -19,6 +19,7 @@ final class _Frames implements NativePickerFrames {
   bool shouldPropagateDevicePointerEvents = false;
   void Function()? afterSchedule;
   void Function()? onFramesEnabledRead;
+  int enabledReads = 0;
   int requests = 0;
   int renderedFrames = 0;
   final acknowledgements = <void Function()>[];
@@ -37,6 +38,7 @@ final class _Frames implements NativePickerFrames {
 
   @override
   bool get framesEnabled {
+    enabledReads++;
     onFramesEnabledRead?.call();
     return enabled;
   }
@@ -274,6 +276,58 @@ void main() {
         frames.renderFrame();
         expect(reads, retiredReads);
         expect(frames.requests, 1);
+        expect(frames.restored, isTrue);
+      }),
+    );
+  }
+
+  for (final gate in ['native-pending', 'frames-disabled', 'ack-missing']) {
+    test(
+      'timeout describes only cached $gate state without new reads',
+      () => _withTrackedRealTimers((timers) async {
+        final frames = _Frames()..enabled = gate != 'frames-disabled';
+        var predicateReads = 0;
+        TimeoutException? failure;
+        try {
+          await waitForNativePickerCondition(
+            frames: frames,
+            settled: () {
+              predicateReads++;
+              return gate != 'native-pending';
+            },
+            label: 'cached gate',
+            timeout: const Duration(milliseconds: 20),
+            // No periodic read runs before the deadline. Snapshot creation
+            // must use the initial observation, never touch the binding.
+            pollInterval: const Duration(seconds: 1),
+          );
+        } on TimeoutException catch (error) {
+          failure = error;
+        }
+        expect(failure, isNotNull);
+        expect(failure!.duration, const Duration(milliseconds: 20));
+        expect(
+          failure.message,
+          startsWith('Timed out waiting for cached gate.'),
+        );
+        expect(
+          failure.message,
+          contains('lastObservedReady=${gate != 'native-pending'}'),
+        );
+        expect(
+          failure.message,
+          contains(
+            'lastObservedFramesEnabled=${gate == 'native-pending' ? null : frames.enabled}',
+          ),
+        );
+        expect(failure.message, contains('requested=${gate == 'ack-missing'}'));
+        expect(failure.message, contains('acknowledged=false'));
+        final elapsed = RegExp(r'elapsedMicroseconds=(\d+)')
+            .firstMatch(failure.message!);
+        expect(elapsed, isNotNull);
+        expect(int.parse(elapsed!.group(1)!), greaterThanOrEqualTo(20000));
+        expect(predicateReads, 1);
+        expect(frames.enabledReads, gate == 'native-pending' ? 0 : 1);
         expect(frames.restored, isTrue);
       }),
     );
