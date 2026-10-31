@@ -20,15 +20,27 @@ final class _Frames implements NativePickerFrames {
   void Function()? afterSchedule;
   void Function()? onFramesEnabledRead;
   int requests = 0;
+  int renderedFrames = 0;
+  final acknowledgements = <void Function()>[];
+
+  @override
+  void requestFrame(void Function() onRenderedFrame) {
+    acknowledgements.add(onRenderedFrame);
+    scheduleFrame();
+  }
+
+  void renderFrame({bool keepPending = false}) {
+    renderedFrames++;
+    pending = keepPending;
+    if (acknowledgements.isNotEmpty) acknowledgements.last();
+  }
+
   @override
   bool get framesEnabled {
     onFramesEnabledRead?.call();
     return enabled;
   }
 
-  @override
-  bool get framePending => pending;
-  @override
   void scheduleFrame() {
     requests++;
     pending = true;
@@ -69,7 +81,7 @@ void main() {
           final frames = _Frames()
             ..shouldPropagateDevicePointerEvents = previous
             ..framePolicy = LiveTestWidgetsFlutterBindingFramePolicy.onlyPumps;
-          frames.afterSchedule = () => Timer.run(() => frames.pending = false);
+          frames.afterSchedule = () => Timer.run(() => frames.renderFrame());
           final failure = StateError('native confirmation observation failed');
           final pending = waitForNativePickerCondition(
             frames: frames,
@@ -104,6 +116,167 @@ void main() {
         }),
       );
     }
+  }
+
+  test(
+    'a rendered native result succeeds while unrelated frames remain pending',
+    () => _withTrackedRealTimers((timers) async {
+      final frames = _Frames();
+      frames.afterSchedule = () =>
+          Timer.run(() => frames.renderFrame(keepPending: true));
+      await waitForNativePickerCondition(
+        frames: frames,
+        settled: () => true,
+        label: 'native result amid continuous animation',
+        timeout: const Duration(milliseconds: 80),
+        pollInterval: const Duration(milliseconds: 2),
+      );
+      expect(frames.renderedFrames, 1);
+      expect(frames.pending, isTrue);
+      expect(frames.requests, 1);
+      expect(frames.restored, isTrue);
+    }),
+  );
+
+  test(
+    'global idle without the requested frame acknowledgement cannot pass',
+    () => _withTrackedRealTimers((timers) async {
+      final frames = _Frames();
+      frames.afterSchedule = () => Timer.run(() => frames.pending = false);
+      await expectLater(
+        waitForNativePickerCondition(
+          frames: frames,
+          settled: () => true,
+          label: 'missing own frame',
+          timeout: const Duration(milliseconds: 30),
+          pollInterval: const Duration(milliseconds: 2),
+        ),
+        throwsA(isA<TimeoutException>()),
+      );
+      expect(frames.renderedFrames, 0);
+      expect(frames.restored, isTrue);
+    }),
+  );
+
+  test(
+    'a prior acknowledgement cannot authorize a newly settled condition',
+    () => _withTrackedRealTimers((timers) async {
+      final frames = _Frames();
+      var ready = true, completed = false;
+      final falseObserved = Completer<void>();
+      final secondRequested = Completer<void>();
+      frames.afterSchedule = () {
+        if (frames.requests == 2) secondRequested.complete();
+      };
+      final pending = waitForNativePickerCondition(
+        frames: frames,
+        settled: () {
+          if (!ready && !falseObserved.isCompleted) falseObserved.complete();
+          return ready;
+        },
+        label: 'condition generation',
+        timeout: const Duration(seconds: 1),
+        pollInterval: const Duration(milliseconds: 2),
+      ).then((_) => completed = true);
+      expect(frames.acknowledgements, hasLength(1));
+      ready = false;
+      await falseObserved.future.timeout(const Duration(seconds: 2));
+      ready = true;
+      await secondRequested.future.timeout(const Duration(seconds: 2));
+      frames.acknowledgements.first();
+      await Future<void>.microtask(() {});
+      expect(completed, isFalse);
+      frames.renderFrame(keepPending: true);
+      await pending;
+      expect(frames.requests, 2);
+      expect(frames.restored, isTrue);
+    }),
+  );
+
+  test(
+    'an acknowledgement during suspension requires a fresh enabled frame',
+    () => _withTrackedRealTimers((timers) async {
+      final frames = _Frames();
+      var completed = false;
+      final secondRequested = Completer<void>();
+      frames.afterSchedule = () {
+        if (frames.requests == 2) secondRequested.complete();
+      };
+      final pending = waitForNativePickerCondition(
+        frames: frames,
+        settled: () => true,
+        label: 'suspended acknowledgement',
+        timeout: const Duration(seconds: 1),
+        pollInterval: const Duration(milliseconds: 2),
+      ).then((_) => completed = true);
+      frames.enabled = false;
+      frames.acknowledgements.first();
+      await Future<void>.microtask(() {});
+      expect(completed, isFalse);
+      frames.enabled = true;
+      await secondRequested.future.timeout(const Duration(seconds: 2));
+      frames.acknowledgements.first();
+      await Future<void>.microtask(() {});
+      expect(completed, isFalse);
+      frames.renderFrame();
+      await pending;
+      expect(frames.restored, isTrue);
+    }),
+  );
+
+  test(
+    'late acknowledgement cannot win before a delayed deadline callback',
+    () => _withTrackedRealTimers((timers) async {
+      final frames = _Frames();
+      final pending = waitForNativePickerCondition(
+        frames: frames,
+        settled: () => true,
+        label: 'late rendered frame',
+        timeout: const Duration(milliseconds: 20),
+        pollInterval: const Duration(milliseconds: 2),
+      );
+      final blockedEventLoop = Stopwatch()..start();
+      while (blockedEventLoop.elapsed < const Duration(milliseconds: 40)) {}
+      frames.renderFrame();
+      await expectLater(pending, throwsA(isA<TimeoutException>()));
+      expect(frames.restored, isTrue);
+    }),
+  );
+
+  for (final outcome in ['timeout', 'error']) {
+    test(
+      'registered frame callback is inert after $outcome',
+      () => _withTrackedRealTimers((timers) async {
+        final frames = _Frames();
+        var reads = 0, fail = false;
+        final failure = StateError('native result observation failed');
+        final pending = waitForNativePickerCondition(
+          frames: frames,
+          settled: () {
+            reads++;
+            if (fail) throw failure;
+            return true;
+          },
+          label: 'retired acknowledgement',
+          timeout: const Duration(milliseconds: 30),
+          pollInterval: const Duration(milliseconds: 2),
+        );
+        expect(frames.acknowledgements, hasLength(1));
+        fail = outcome == 'error';
+        await expectLater(
+          pending,
+          outcome == 'error'
+              ? throwsA(same(failure))
+              : throwsA(isA<TimeoutException>()),
+        );
+        final retiredReads = reads;
+        expect(frames.restored, isTrue);
+        frames.renderFrame();
+        expect(reads, retiredReads);
+        expect(frames.requests, 1);
+        expect(frames.restored, isTrue);
+      }),
+    );
   }
 
   test(
@@ -218,7 +391,7 @@ void main() {
       await scheduled.future.timeout(const Duration(seconds: 2));
       expect(frames.requests, 1);
       expect(completed, isFalse);
-      frames.pending = false;
+      frames.renderFrame();
       await pending;
       expect(completed, isTrue);
       expect(frames.restored, isTrue);
@@ -249,7 +422,7 @@ void main() {
       frames.enabled = true;
       await scheduled.future.timeout(const Duration(seconds: 2));
       expect(frames.requests, 1);
-      frames.pending = false;
+      frames.renderFrame();
       await pending;
     }),
   );

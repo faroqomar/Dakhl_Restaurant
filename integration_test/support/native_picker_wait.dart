@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 /// Test-only frame control. No operation creates an awaited tester pump.
@@ -10,8 +9,7 @@ abstract interface class NativePickerFrames {
   bool get shouldPropagateDevicePointerEvents;
   set shouldPropagateDevicePointerEvents(bool value);
   bool get framesEnabled;
-  bool get framePending;
-  void scheduleFrame();
+  void requestFrame(void Function() onRenderedFrame);
 }
 
 /// Let the real framework render native-return/confirmation UI while polling.
@@ -38,17 +36,17 @@ final class LiveNativePickerFrames implements NativePickerFrames {
   @override
   bool get framesEnabled => binding.framesEnabled;
   @override
-  bool get framePending =>
-      binding.hasScheduledFrame ||
-      binding.schedulerPhase != SchedulerPhase.idle;
-  @override
-  void scheduleFrame() => binding.scheduleFrame();
+  void requestFrame(void Function() onRenderedFrame) {
+    binding.addPostFrameCallback((_) => onRenderedFrame());
+    binding.scheduleFrame();
+  }
 }
 
 /// A real, monotonic native handoff budget, including its final rendered frame.
 ///
 /// Call from the live integration binding's real timer zone. There is no
-/// awaited pump, frame future or asynchronous callback left behind on timeout.
+/// awaited pump or frame future. Timers retire on every exit. A registered
+/// public post-frame callback cannot be removed, so it becomes inert on exit.
 /// A stopped native Activity may suspend frames while Dart timers still run.
 /// Both the timer and checks around synchronous observation reject late success
 /// if an event-loop delay prevents the timer callback from firing on time.
@@ -81,7 +79,8 @@ Future<void> waitForNativePickerCondition({
   final done = Completer<void>();
   Timer? deadlineTimer;
   Timer? pollTimer;
-  var frameRequested = false;
+  var active = true, frameRequested = false, frameRendered = false;
+  var frameGeneration = 0;
 
   void finish([Object? error, StackTrace? stack]) {
     if (done.isCompleted) return;
@@ -115,26 +114,33 @@ Future<void> waitForNativePickerCondition({
   }
 
   void observe() {
-    if (done.isCompleted || expired()) return;
+    if (!active || done.isCompleted || expired()) return;
     try {
       final ready = settled();
       if (expired()) return;
       if (!ready) {
-        frameRequested = false;
+        frameRequested = frameRendered = false;
+        frameGeneration++;
         return;
       }
-      if (!frames.framesEnabled) return;
+      if (!frames.framesEnabled) {
+        frameRequested = frameRendered = false;
+        frameGeneration++;
+        return;
+      }
       if (!frameRequested) {
-        frames.scheduleFrame();
         frameRequested = true;
-        if (!frames.framePending) {
-          throw StateError('No framework frame was scheduled for $label.');
-        }
-        // A later observation must acknowledge that the scheduled frame ran.
+        final generation = ++frameGeneration;
+        frames.requestFrame(() {
+          if (!active || done.isCompleted || generation != frameGeneration) {
+            return;
+          }
+          frameRendered = true;
+          observe();
+        });
         return;
       }
-      final pending = frames.framePending;
-      if (!expired() && !pending) finish();
+      if (frameRendered && !expired()) finish();
     } catch (error, stack) {
       finish(error, stack);
     }
@@ -148,6 +154,7 @@ Future<void> waitForNativePickerCondition({
     observe();
     await done.future;
   } finally {
+    active = false;
     deadlineTimer?.cancel();
     pollTimer?.cancel();
     elapsed.stop();
