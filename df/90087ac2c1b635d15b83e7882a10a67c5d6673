@@ -1,0 +1,23 @@
+test/platform/phase02_native_picker_wait_test.dart
+  s_cecf55789e34ef::t_24506b595e8d65 311-314,323,325-326
+  s_cecf55789e34ef::t_b1b58caad7544a 22,41,284-310,315-322,324,327-330
+  s_cecf55789e34ef::t_050387eabb40f0 331-335
+integration_test/support/native_picker_wait.dart
+  s_cecf55789e34ef::t_7faf9bbeb18829 84,98-111,133,140-142
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "df90087ac2c1b635d15b83e7882a10a67c5d6673",
+  "prompts": {},
+  "sessions": {
+    "s_cecf55789e34ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1892c-b531-7571-8914-75aa02e54d3d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
