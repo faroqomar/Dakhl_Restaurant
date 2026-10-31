@@ -1,0 +1,166 @@
+PLANS.md
+  s_cecf55789e34ef::t_631ab2b3225086 2,4-6
+  s_cecf55789e34ef::t_50220e167f52c8 1,3
+test/accounts/accounts_surface_test.dart
+  s_cecf55789e34ef::t_576c2b16af8956 24,31-33,35-37,39-41,45-52
+  s_cecf55789e34ef::t_e5ef87f8a1ebb5 17-23,25-29,34,38,42-44,53-60
+outputs/phase02/picker-runner-source-5095/integration_driver.dart
+  s_cecf55789e34ef::t_0411ad125bafdc 1-5
+docs/log/2026-10-29-phase02-penpot-design.md
+  s_cecf55789e34ef::t_631ab2b3225086 1-2,5,7,9,13,15
+PHASES.md
+  s_cecf55789e34ef::t_218f3ee0d2783c 82-87,89-95
+  s_cecf55789e34ef::t_6b91920bfe5c55 3
+  s_cecf55789e34ef::t_11a788bf8412cf 88
+  s_cecf55789e34ef::t_6d1b37842320d7 1
+  s_cecf55789e34ef::t_326b9322e724ed 2
+docs/README.md
+  s_cecf55789e34ef::t_50220e167f52c8 1,3
+  s_cecf55789e34ef::t_631ab2b3225086 2,4-6
+docs/phases/02-publication-evidence-index.md
+  s_cecf55789e34ef::t_50220e167f52c8 5
+  s_cecf55789e34ef::t_2631d8f51deffa 1-4,6-46
+scripts/tests/test_android_install_guard.py
+  s_cecf55789e34ef::t_7f6a1872ac32e1 231
+  s_cecf55789e34ef::t_8b80c24021927c 30,81-82,220-230,232-237
+  s_cecf55789e34ef::t_f2ca03d63f57c4 238
+docs/phases/02-implementation-plan.md
+  s_cecf55789e34ef::t_631ab2b3225086 89,93,95-97
+docs/templates/phase-execution.md
+  s_cecf55789e34ef::t_631ab2b3225086 16-18
+lib/platform/phase02_performance_main.dart
+  s_cecf55789e34ef::t_9a21f439a7f354 118-124
+  s_cecf55789e34ef::t_f53d4c0f9c54aa 108-117
+docs/templates/README.md
+  s_cecf55789e34ef::t_631ab2b3225086 10
+integration_test/README.md
+  s_cecf55789e34ef::t_2631d8f51deffa 173-204
+scripts/build-account-corpus.cjs
+  s_cecf55789e34ef::t_f57e2535951840 11,13-16,88-95
+lib/shell/shell_view_model.dart
+  s_cecf55789e34ef::t_9a21f439a7f354 383-384,390-394
+test/fixtures/accounts/README.md
+  s_cecf55789e34ef::t_631ab2b3225086 3,5,7,16
+test/app/shell_account_status_test.dart
+  s_cecf55789e34ef::t_cb00c7e29c31fe 2,22
+  s_cecf55789e34ef::t_7dbb8f00f502c9 1,3-21,23-25,27-30,32-58,60-74,76,78-91,93-100,102-112,114-116,118-131,133-137,139-141
+  s_cecf55789e34ef::t_1f7f332fd8f144 26,31,59,75,77,92,101,113,117,132,138
+lib/accounts/accounts_view_model.dart
+  s_cecf55789e34ef::t_178bf9371b4afe 387-392,403-405,413-418,450-451
+  s_cecf55789e34ef::t_5ff2692fdb3d7a 46,87-89,92-95,342
+  s_cecf55789e34ef::t_c69a822f2c0e5b 47
+  s_cecf55789e34ef::t_ed4a27f25be4bf 41,76,134,142-143,150,153,162,208,222,249,303,358-362,402,406,428,438,445,447-449,452-463
+  s_cecf55789e34ef::t_f09bb2628d2e6e 90-91
+test/accounts/codec_test.dart
+  s_cecf55789e34ef::t_be9ea9566d0a15 14-17,19-22,24,77,79
+  s_cecf55789e34ef::t_f09bb2628d2e6e 25-31,38-41,43-52,55-71,190-199
+  s_cecf55789e34ef::t_84ee8d019aa75d 32-37,42,53-54,189,200
+  s_cecf55789e34ef::t_9586949fb7caf7 18,23,78
+lib/accounts/accounts_repository.dart
+  s_cecf55789e34ef::t_c2b7f99b284962 231-234
+  s_cecf55789e34ef::t_017a95034784f4 204,213-216,222,239
+  s_cecf55789e34ef::t_ed4a27f25be4bf 48,62,65,73-78
+  s_cecf55789e34ef::t_5ff2692fdb3d7a 200-203,205-212,217-221,223-224,236,248,250
+  s_cecf55789e34ef::t_d52bbf87887b18 228-230,235
+  s_cecf55789e34ef::t_e5d5c5e2f538c6 79-80
+outputs/phase02/picker-runner-source-5095/new-picker-ios.py
+  s_cecf55789e34ef::t_0411ad125bafdc 1-127
+tool/dev_dashboard/run_benchmarks.py
+  s_cecf55789e34ef::t_d0adcf2b528f18 300-339,534
+docs/log/2026-10-29-phase02-scope-readiness.md
+  s_cecf55789e34ef::t_631ab2b3225086 1-2
+test/accounts/accounts_view_model_test.dart
+  s_cecf55789e34ef::t_f09bb2628d2e6e 236-238,243-250,260-265
+  s_cecf55789e34ef::t_a1477fcde06cbb 294-295,299-307,314-317
+  s_cecf55789e34ef::t_2c093de748dacf 88-90,97
+  s_cecf55789e34ef::t_3344b612151c96 91-96,296-298,308-313
+  s_cecf55789e34ef::t_178bf9371b4afe 16-19,118,280-282,318-320,322-324,327-333,335,337-381
+  s_cecf55789e34ef::t_c2b7f99b284962 77-79,175-190,193-207
+  s_cecf55789e34ef::t_50121bdec5e00d 23,174,191-192,208
+  s_cecf55789e34ef::t_576c2b16af8956 209-233
+  s_cecf55789e34ef::t_a928491adfe72b 234-235,239-242,251-259,266-277
+  s_cecf55789e34ef::t_d213263c4483bf 20,114-117,158-170,278-279,283-293,321,325-326,334,336
+  s_cecf55789e34ef::t_c2b849c8f03e75 171-172
+README.md
+  s_cecf55789e34ef::t_631ab2b3225086 2,4-6,19,35,55
+  s_cecf55789e34ef::t_50220e167f52c8 1,3
+outputs/phase02/picker-runner-source-5095/new-picker-android.py
+  s_cecf55789e34ef::t_0411ad125bafdc 1-148
+scripts/android_install_guard.py
+  s_cecf55789e34ef::t_a4056e9934eb59 206-207,300-302
+docs/log/2026-10-31-phase02-cubic-doc-triage.md
+  s_cecf55789e34ef::t_eff35c0c535f57 1-68
+  s_cecf55789e34ef::t_2d683bfda0a72b 69-70
+  s_cecf55789e34ef::t_11a788bf8412cf 71-102
+docs/phases/02-step4-performance-readable-index.md
+  s_cecf55789e34ef::t_0411ad125bafdc 1-30
+outputs/phase02/picker-runner-source-5095/reviewed-android-stage.py
+  s_cecf55789e34ef::t_0411ad125bafdc 1-756
+docs/how-to/repeated-problems.md
+  s_cecf55789e34ef::t_631ab2b3225086 185,187,189,195,207
+  s_cecf55789e34ef::t_eff35c0c535f57 293-299
+docs/log/2026-10-29-phase02-implementation-plan.md
+  s_cecf55789e34ef::t_631ab2b3225086 1-2,7,9,15,17
+outputs/phase02/performance-readable-index-provenance.json
+  s_cecf55789e34ef::t_0411ad125bafdc 1-84
+test/accounts/app_accounts_store_test.dart
+  s_cecf55789e34ef::t_3edc0065aac38a 1-2,5,24-30,35-38,40-46,48,50-53,55-79,81-83,85-97,99
+  s_cecf55789e34ef::t_71785d587d3d59 39,47,49,54,80,84,98
+lib/accounts/legacy_account_codec.dart
+  s_cecf55789e34ef::t_5ff2692fdb3d7a 382
+outputs/phase02/picker-runner-source-5095/new-picker-build.py
+  s_cecf55789e34ef::t_0411ad125bafdc 1-109
+outputs/phase02/picker-runner-source-5095/README.md
+  s_cecf55789e34ef::t_0411ad125bafdc 1-9
+lib/accounts/accounts_surface.dart
+  s_cecf55789e34ef::t_f09bb2628d2e6e 261-263,269-270
+  s_cecf55789e34ef::t_c69a822f2c0e5b 276-277
+  s_cecf55789e34ef::t_5ff2692fdb3d7a 254-255
+tool/dev_dashboard/tests/test_app_runner.py
+  s_cecf55789e34ef::t_b9542e3743cb0f 58
+  s_cecf55789e34ef::t_46767fb6a482d9 2,17-18,20,22-32,34-44,46-55,57,59-62
+  s_cecf55789e34ef::t_6344e9d7d49c0b 19,21,33,45,56
+test/platform/phase02_native_picker_wait_test.dart
+  s_cecf55789e34ef::t_3edc0065aac38a 21,24-28,167-168,178,192-194,196-199,207,210,254,256
+  s_cecf55789e34ef::t_0774ad4825d513 195
+docs/phases/02-penpot-design-review.md
+  s_cecf55789e34ef::t_631ab2b3225086 3,7,15,20,24,30,34,44,46,48,50,65,67
+outputs/phase02/picker-runner-source-5095/manifest.json
+  s_cecf55789e34ef::t_0411ad125bafdc 1-49
+docs/reference/legacy-v8-timestamp-compatibility.md
+  s_cecf55789e34ef::t_631ab2b3225086 3,7,17,21,23,25,29,31
+tool/dev_dashboard/README.md
+  s_cecf55789e34ef::t_631ab2b3225086 94-99,101
+engine-dependency.json
+  s_cecf55789e34ef::t_57234dab19cf71 3-4
+integration_test/phase02_accounts_native_test.dart
+  s_cecf55789e34ef::t_4a453eb22e4c15 11-12,21-22,182,184-207,210
+integration_test/support/native_app_readiness.dart
+  s_cecf55789e34ef::t_0bef9e96e99ac0 1-142
+lib/app/app.dart
+  s_cecf55789e34ef::t_2fdc79dfea8e14 551-552
+test/fixtures/accounts/oracle.json
+  s_cecf55789e34ef::t_2e2adb3c7f3ef7 83299-83301
+test/platform/phase02_native_app_readiness_test.dart
+  s_cecf55789e34ef::t_1e2b1091bf0ce4 1-267
+test/platform/phase02_performance_test.dart
+  s_cecf55789e34ef::t_2eea3de717fb1c 8-11,21-42
+test/shell/account_preference_precedence_test.dart
+  s_cecf55789e34ef::t_5eb7a5bcc90084 1-2,40-41,48,58,79-141
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5c8d3cf0d08b2f2afe4f9096c85b12eaa11d2b73",
+  "prompts": {},
+  "sessions": {
+    "s_cecf55789e34ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1892c-b531-7571-8914-75aa02e54d3d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
