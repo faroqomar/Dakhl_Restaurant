@@ -1,0 +1,39 @@
+{
+  "kind": "native",
+  "label": "write",
+  "stage": "write",
+  "source": "5a11c66dbf665972b17b545c105eac74c17bfeeb",
+  "runtime": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+  "expectedOutcomeVerified": true,
+  "driverExitCode": 0,
+  "elapsedSeconds": 10.893136916012736,
+  "hostReports": [
+    {
+      "stage": "write",
+      "runNonce": "5f761e6d-7cee-4bee-bcbb-73de76a25a96",
+      "pid": 5405,
+      "storeId": "8dff9a0b1156845f08bf9393c46ca8441c2fbdf7a3045903528e1f82831728b1",
+      "generation": "495a091b14e9197c9749d20c3fe9dd18bdcb247292fd2ba1fb1d990aa6cfee89",
+      "documentRevision": 2,
+      "held": 40,
+      "runtime": "real native Madar adapter + consumer codec/repository/ViewModel + rendered app",
+      "dataScope": "fixed marked Phase02 conformance child only; --no-uninstall required"
+    }
+  ],
+  "cleanup": {
+    "logcatStopped": true,
+    "ownedForwardRemoved": true,
+    "ownedAppStopped": true,
+    "logcatReaderFinished": true,
+    "logcatPipeClosed": true
+  },
+  "priorFailedAttemptUnchanged": true,
+  "installedVerification": {
+    "package": "com.eros.dakhlrestaurant.phase02.verify.p4dd01bf2591c",
+    "versionCode": 1,
+    "signerSha256": "f0adaadb45dc23f7a359110ed51f989c4bc0c6e08c60f9947e3539e633a0e32f",
+    "apkSha256": "5438542a56361980f8b18b23cfd9ec1e27c3cf9c3eec1f1c7fe07956163fdc51"
+  },
+  "markerVerification": "missing-owned-marker-created-exclusively",
+  "originalReceiptSha256": "c63fb229fff752c0c4a23cd23eec29a095cefca80576446bf1e3a75c718b15b9"
+}

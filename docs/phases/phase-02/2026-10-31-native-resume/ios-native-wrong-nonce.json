@@ -1,0 +1,17 @@
+{
+  "startedAt": "2026-10-31T16:53:24.956191+00:00",
+  "finishedAt": "2026-10-31T16:54:12.815809+00:00",
+  "elapsedSeconds": 47.85938387498027,
+  "kind": "native",
+  "label": "wrong-nonce",
+  "stage": "read",
+  "appSource": "5a11c66dbf665972b17b545c105eac74c17bfeeb",
+  "runtime": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+  "entrySha256": "06d3a48c9de4abd1715b1f214e805e8e97e317a637b91e28dda01d01768d0eb4",
+  "exitCode": 1,
+  "hostTimedOut": false,
+  "expectedOutcomeVerified": true,
+  "nativeResults": [],
+  "dataScope": "fresh task-created target; fixed marked synthetic conformance fixture only; no production store",
+  "originalReceiptSha256": "6717c18ab8c4a79506938ad2517a695c68a607d01785860f7c7115e6361813fe"
+}

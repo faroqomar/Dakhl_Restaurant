@@ -1,5 +1,7 @@
 # Phase02 — Step5 draft pull-request delivery
 
+**Historical 2026-10-30 snapshot.** Publication permission and iOS status are superseded by [the 2026-10-31 continuation](02-native-verification-2026-10-31.md); its unresolved Android/approval gates still apply.
+
 Date: 2026-10-30. **DRAFT / NOT MERGE-READY.** The engine draft is published, but app source publication is access-blocked. The local app packet is reviewable; no app PR or hosted app-CI result exists. This is not merge approval or phase completion. The Android preservation failure is a blocking incident: Flutter automatically uninstalled/reinstalled after a signing mismatch; prior installed-app data retention is unverified. The raw Android WRITE success is excluded. Android Open/Save cancellation and current iOS verification remain unavailable. No new target installation, restore, reset, merge, tag, release or phase is authorized.
 
 ## Pull requests and dependencies

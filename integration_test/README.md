@@ -77,3 +77,89 @@ flutter test --no-pub --no-uninstall integration_test/phase01_native_ui_test.dar
 ```
 
 After any diagnostic/integration entrypoint, rebuild/relaunch the ordinary main app before showing it as the deliverable. Keep initial splash images labeled separately from loaded-shell proof. Current commands/results, hashes, source-delta reuse and native keyboard/back/screen-reader limits are in [Phase01 evidence](../docs/phases/01-build-evidence.md). Device Hub is the installed iPhone GUI; do not search for or install the absent old Simulator.app.
+
+
+## Phase02 Android installation safeguard
+
+`--no-uninstall` controls Flutter test cleanup; it does **not** prevent Flutter's
+install-failure fallback from uninstalling an incompatible package. Do not use a
+Flutter install/test command as an Android preservation guard. The earlier
+commands above retain their historical provenance; apply the safeguard below
+before any future authorized Android installation.
+
+`scripts/android_install_guard.py` accepts a prebuilt APK, expected SHA-256,
+package, public signer SHA-256, exact emulator serial/AVD, fixture identity and
+source/runtime revision attestations. It supports only a monolithic, single-signer
+APK under `com.eros.dakhlrestaurant.phase02.verify.<fixture_suffix>` and an emulator
+with one owner user. Production/normal app identities, unknown/multiple signers,
+split installed APKs, other users and ambiguous state are refused. The app owns
+this verification safeguard; no engine source, runtime package or adapter changes.
+
+Use `python3 scripts/android_install_guard.py --help` for required options. Select
+`--mode new-isolated-fixture --fixture-only` only for a newly authorized, absent
+fixture package on the explicitly named task emulator. A `--fixture-id` is 16–64
+lowercase hexadecimal characters. Preflight is read-only by default. Add
+`--execute` only when installation is authorized: the guard privately snapshots
+and verifies the exact bytes, rechecks the target/state, then makes one
+`adb -s <serial> install -r <private-copy.apk>` call. It never invokes Flutter,
+uninstall, data clearing, reset or an install-failure fallback. Tool paths can be
+specified with `--adb`, `--aapt2` and `--apksigner`. It confirms the installed APK
+hash afterwards; an unconfirmed postcondition fails without destructive recovery.
+
+An existing fixture update additionally requires
+`--mode existing-fixture --preservation-receipt <json-path>` and an already-owned
+`files/dakhl_phase02_fixture_id` containing the same fixture ID. The receipt has
+exactly these fields:
+
+```json
+{
+  "schema": 1,
+  "serial": "emulator-5582",
+  "package": "com.eros.dakhlrestaurant.phase02.verify.fixture1234",
+  "fixture_id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "installed_apk_sha256": "<64 lowercase hexadecimal characters>",
+  "backup_path": "<absolute path to the authorized fixture backup>",
+  "backup_sha256": "<64 lowercase hexadecimal characters>"
+}
+```
+
+The guard verifies receipt identity, installed APK identity/signature and the
+backup file hash before updating, then checks fixture-marker retention. Backup
+coverage, historical data retention and source-to-binary provenance still require
+the caller's actual evidence. The revision fields are explicitly reported as
+caller-attested; this tool cannot reconstruct missing prior data or establish a
+historical backup's completeness. Signer rotation, physical devices, split APKs,
+normal-app migration and hostile concurrent same-user mutation are unsupported.
+The caller must also verify real synthetic payload retention and cleanup; a
+passing installation receipt is not a native workflow acceptance result.
+
+
+### Android execution after the preservation incident
+
+All earlier Android Flutter integration command examples in this document are
+historical evidence and **must not be executed for future Android stages**.
+Running a guard before a later Flutter build/test/drive command does not protect
+that later command: Flutter may rebuild with another signer and invoke its own
+install-failure uninstall fallback. `--no-uninstall` does not prevent that path.
+
+For future authorized Android verification, build a fixture APK first, verify and
+install those exact bytes through the guard, then attach the Dart host
+`integration_test` driver directly to that already-running app's forwarded VM
+service. The host driver must perform no build or installation. Keep the VM
+service authentication URL only in live memory/environment, redact it from logs,
+and remove only the forwarding owned by that run. Root's task-owned stage helper
+records source/resolved-engine checks, actual driver outcomes, and independent
+cleanup attempts. Failed infrastructure/connection results cannot substitute for
+the expected wrong-nonce negative response. Native dialog interaction still
+requires actual device evidence; installation alone is not acceptance.
+
+
+The shared guard signer-report parser accepts either the legacy single
+`Signer #1 certificate SHA-256 digest` report or SDK37's single
+`V2 Signer: certificate SHA-256 digest` report. The V2 form additionally requires
+exactly one `Number of signers: 1` line. Public-key digests do not substitute for
+the certificate digest. Mixed, duplicate, conflicting, unknown, malformed or
+rotation/lineage reports remain refused. The task stage helper imports this same
+reviewed parser instead of maintaining a second acceptance grammar. Successful
+`apksigner verify` is still required before parsing; parsing text alone is not APK
+signature verification.

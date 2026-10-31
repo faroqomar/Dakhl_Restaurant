@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-31T16:53:08.409678+00:00",
+  "actor": "independent read-only android_preservation_assess planner",
+  "defaultBootRamMtime": "2026-10-29T16:55:05Z",
+  "defaultBootMetadataMtime": "2026-10-30T07:33:03Z",
+  "incidentUninstallTime": "2026-10-30T11:35:00Z",
+  "userdataOverlayMtime": "2026-10-30T11:39:42Z",
+  "qcow2InternalSnapshots": {
+    "userdata": 0,
+    "encryptionkey": 0,
+    "cache": 0
+  },
+  "qcow2Info": {
+    "dirty": false,
+    "corrupt": false
+  },
+  "timeMachineLocalSnapshotsFound": false,
+  "timeMachineBackupEnumeration": "No machine directory found for host",
+  "validatedRestorePoint": false,
+  "priorDataRetention": "unverified",
+  "restorationPerformed": false,
+  "accountPayloadsRead": false,
+  "affectedAvdBootedOrMutated": false,
+  "limits": "Pre-incident RAM/proto timestamps do not establish a matching disk state or complete recovery point. Clean QCOW2 metadata does not prove retention of removed app data.",
+  "originalReceiptSha256": "81453662f03548429d76b656777c55992b9e89a7f4f6b19e8aece032ba4a16fb"
+}
