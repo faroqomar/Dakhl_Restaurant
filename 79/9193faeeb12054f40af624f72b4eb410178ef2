@@ -1,0 +1,84 @@
+docs/phases/phase-02/2026-10-31-native-resume/android-api37-launch-retry.json
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-23
+docs/phases/README.md
+  s_cecf55789e34ef::t_a85d76d4f996a3 1-2
+docs/phases/phase-02/2026-10-31-native-resume/ios-native-wrong-nonce.json
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-17
+docs/phases/phase-02/2026-10-31-native-resume/android-api36-read.json
+  s_cecf55789e34ef::t_85b606d63c88f4 1-31
+docs/phases/phase-02/2026-10-31-native-resume/android-preservation-assessment.json
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-26
+docs/phases/02-native-verification-2026-10-31.md
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-10,12-21
+  s_cecf55789e34ef::t_85b606d63c88f4 11
+docs/phases/phase-02/2026-10-31-native-resume/ios-picker-cancel-save.json
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-17
+docs/phases/phase-02/2026-10-31-native-resume/ios-summary.json
+  s_cecf55789e34ef::t_ffe8b540af4eb6 12-13,21-22,30-31,39-40,48-49,57-58,66-67,75-76,84-85
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-11,14-20,23-29,32-38,41-47,50-56,59-65,68-74,77-83,86-95
+docs/how-to/repeated-problems.md
+  s_cecf55789e34ef::t_5a93b41f6ad74d 273-283
+docs/phases/phase-02/2026-10-31-native-resume/ios-native-write.json
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-29
+docs/phases/phase-02/2026-10-31-native-resume/ios-native-read.json
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-29
+docs/phases/phase-02/2026-10-31-native-resume/ios-picker-cancel-open.json
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-17
+docs/phases/phase-02/2026-10-31-native-resume/ios-picker-import-file.json
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-17
+docs/phases/phase-02/2026-10-31-native-resume/manifest.json
+  s_cecf55789e34ef::t_ffe8b540af4eb6 51-58,67-118
+  s_cecf55789e34ef::t_85b606d63c88f4 59-66
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-50,119
+docs/phases/02-step5-delivery.md
+  s_cecf55789e34ef::t_a85d76d4f996a3 3-4
+docs/phases/phase-02/2026-10-31-native-resume/android-api36-write.json
+  s_cecf55789e34ef::t_85b606d63c88f4 1-39
+docs/phases/phase-02/2026-10-31-native-resume/android-api36-install-refusal.json
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-15
+scripts/tests/test_android_install_guard.py
+  s_cecf55789e34ef::t_1efe5fbae57588 309
+  s_cecf55789e34ef::t_97135b4cd432e1 394-401
+  s_cecf55789e34ef::t_409eca6954bc51 1-32,34-39,44-56,59-64,70-73,76-93,95-286,315,319-320,322,402-413
+  s_cecf55789e34ef::t_ed914a88122165 33,65-69,317,323-392
+  s_cecf55789e34ef::t_c872ea1deaec30 40-43,57-58,74-75,94,287-308,310-314
+  s_cecf55789e34ef::t_ff9ba645bf79fd 316,318,321,393
+docs/phases/phase-02/2026-10-31-native-resume/ios-native-read-again.json
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-29
+integration_test/README.md
+  s_cecf55789e34ef::t_97135b4cd432e1 155-165
+  s_cecf55789e34ef::t_3bb15b4ebc6ab2 135-154
+  s_cecf55789e34ef::t_8eac3847cbe424 80-134
+PHASES.md
+  s_cecf55789e34ef::t_5a93b41f6ad74d 81,91-92,95
+  s_cecf55789e34ef::t_ffe8b540af4eb6 23,89
+  s_cecf55789e34ef::t_a85fcc6b3a1c38 96
+docs/phases/phase-02/2026-10-31-native-resume/ios-native-recover.json
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-29
+docs/phases/phase-02/2026-10-31-native-resume/guard-tests.json
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-17
+scripts/android_install_guard.py
+  s_cecf55789e34ef::t_1efe5fbae57588 126-129,142,196-204,221,236,294-297
+  s_cecf55789e34ef::t_a56a99507a347b 237
+  s_cecf55789e34ef::t_4f7c85f919352b 1-125,130-141,143-146,190-192,194-195,205-220,222-235,238-293,298-304,310-339
+  s_cecf55789e34ef::t_97135b4cd432e1 147-189,193
+  s_cecf55789e34ef::t_186654e287abf7 305-309
+docs/phases/phase-02/2026-10-31-native-resume/ios-native-read-recovered.json
+  s_cecf55789e34ef::t_a259aa4ba5cd03 1-29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "799193faeeb12054f40af624f72b4eb410178ef2",
+  "prompts": {},
+  "sessions": {
+    "s_cecf55789e34ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1892c-b531-7571-8914-75aa02e54d3d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
