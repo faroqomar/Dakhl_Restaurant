@@ -1,0 +1,17 @@
+{
+  "startedAt": "2026-10-31T16:58:07.937858+00:00",
+  "finishedAt": "2026-10-31T17:00:33.939391+00:00",
+  "elapsedSeconds": 146.00083029200323,
+  "kind": "picker",
+  "label": "cancel-open",
+  "stage": "cancel-open",
+  "appSource": "5a11c66dbf665972b17b545c105eac74c17bfeeb",
+  "runtime": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+  "entrySha256": "308c59c2c3c4f26cdb0bf024aaa5699b71ccb2099a77d03b5df14de4cfcb7f8e",
+  "exitCode": 0,
+  "hostTimedOut": false,
+  "expectedOutcomeVerified": true,
+  "nativeResults": [],
+  "dataScope": "fresh task-created target; fixed marked synthetic conformance fixture only; no production store",
+  "originalReceiptSha256": "6495a847b465371e4d9461cd66f866d4103e3f14854d763203bbed4115e1dd56"
+}

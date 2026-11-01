@@ -1,0 +1,23 @@
+{
+  "kind": "native",
+  "label": "write",
+  "stage": "write",
+  "runtime": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+  "guardSha256": "f4c9a44a8efeec88c6d107dfabd7e0327bb191133230b43e51be16e45cbd219b",
+  "expectedOutcomeVerified": false,
+  "driverExitCode": 1,
+  "hostReports": [],
+  "error": "stage-outcome-unverified",
+  "errorType": "Failure",
+  "elapsedSeconds": 226.47154637498898,
+  "cleanup": {
+    "logcatStopped": true,
+    "ownedForwardRemoved": true,
+    "ownedAppStopped": true,
+    "logcatReaderFinished": true,
+    "logcatPipeClosed": true
+  },
+  "finalOwnedAppStopped": true,
+  "originalReceiptSha256": "e5f16e40aa8f6b599d15577cfd7be27abffc4638ca79aa6a719062df91587129",
+  "scope": "new isolated synthetic verification namespace; historical retention not established"
+}

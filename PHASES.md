@@ -1,6 +1,10 @@
+Current continuation, 2026-10-31: **VERIFYING**. The owner explicitly authorized bounded fixes and verified paired merge. Engine PR6 is merged at b0db782; the app consumes reviewed engine899. Full current local analysis, 572 non-golden tests, five golden checks, 67 script tests and 30 dashboard tests pass. App PR9 still requires final-head hosted CI and current native evidence. The historical incident assessment records known synthetic fixture loss/no recorded business-account access, with unrecorded activity and prior retention unknown. No joint DONE, release, deployment or next phase.
+
+Historical Step5 delivery snapshot, 2026-10-30: **APP PUBLICATION ACCESS-BLOCKED / NOT MERGE-READY**. GitHub rejected the push of local candidate `0b75862a87aad3ae044ed0e3df4c6e3acfd7cd0b` because the active OAuth credential lacks workflow scope; no app PR or hosted app checks exist. [Engine draft PR#6](https://github.com/faroqomar/Madar_Engine/pull/6) is published; its CI is ongoing, not passed here. [Delivery evidence](docs/phases/02-step5-delivery.md) preserves tested app5a11/runtimea6/tool63 and all Android preservation/iOS blockers. No credentials, permissions, CI requirements or target state were changed; no merge, release or next phase. Earlier records below retain their original dated scope.
+
 # Project Phase Tracker
 
-Current owner disposition, 2026-10-29: live TalkBack/screen-reader verification is **owner-excluded, not passed**. The earlier wait is superseded by the owner's explicit scope decision. Existing keyboard/focus safeguards remain. The owner requested integration after required checks finish; hosted review corrections are being reverified before the changed revisions are presented. No merge, release, deployment or next phase has occurred in this correction record.
+Current completion, 2026-10-29: Phase 01 / development dashboard approved source integration is **DONE**. All four exact approved revisions merged after all 15 premerge checks passed. Owner accepted independent review with automatic review unavailable; TalkBack is owner-excluded, not tested. [Completion/rollback record](docs/phases/01-step6-completion.md). These completion/tracker updates are local documentation; no release, deployment or next phase. Earlier sections retain dated history.
 
 Source of phase definitions: [PLANS.md](PLANS.md). Rules: [AGENTS.md](AGENTS.md). Adopted 2026-10-28 from the owner’s supplied tracker template.
 
@@ -16,9 +20,9 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 
 | Phase | Name | Status | Branch | PR |
 | --- | --- | --- | --- | --- |
-| 00 | [Baseline and delivery setup](docs/planning/flutter-rebuild/phases/00.md) | BLOCKED | codex/phase00-engine-split | [Merged PR2](https://github.com/faroqomar/Dakhl_Restaurant/pull/2) |
-| 01 | [Design system, navigation and interaction shell](docs/planning/flutter-rebuild/phases/01.md) | REVIEW — hosted corrections; reader owner-excluded | `codex/phase01-build` | [Draft PR7](https://github.com/faroqomar/Dakhl_Restaurant/pull/7) |
-| 02 | [Local accounts, validation and safe persistence](docs/planning/flutter-rebuild/phases/02.md) | TODO | — | — |
+| 00 | [Baseline and delivery setup](docs/planning/flutter-rebuild/phases/00.md) | VERIFYING — technical prerequisite verified; historical completion pending | codex/phase00-engine-split | [Merged PR2](https://github.com/faroqomar/Dakhl_Restaurant/pull/2) |
+| 01 | [Design system, navigation and interaction shell](docs/planning/flutter-rebuild/phases/01.md) | DONE — approved preview scope | `codex/phase01-build` | [Merged PR7](https://github.com/faroqomar/Dakhl_Restaurant/pull/7) |
+| 02 | [Local accounts, validation and safe persistence](docs/planning/flutter-rebuild/phases/02.md) | VERIFYING — bounded native Android and API37 checks in progress | codex/phase02-build | [#9](https://github.com/faroqomar/Dakhl_Restaurant/pull/9) |
 | 03 | [Sellable products and inventory](docs/planning/flutter-rebuild/phases/03.md) | TODO | — | — |
 | 04 | [Cash sales, saved receipt, drafts and held orders](docs/planning/flutter-rebuild/phases/04.md) | TODO | — | — |
 | 05 | [Sales history, returns and voids](docs/planning/flutter-rebuild/phases/05.md) | TODO | — | — |
@@ -55,43 +59,40 @@ Use BLOCKED when progress cannot continue and record the reason and required act
 ### Phase 01
 
 - **Name:** Design system, navigation and interaction shell
-- **Status:** REVIEW — owner excludes live screen-reader verification (not passed). The original three Step4 code findings remain closed; the new hosted-review path guard has 154 local tests and independent re-verification. Fresh CI on the corrected head and reviewed integration remain pending. Earlier native results are dated evidence.
+- **Status:** DONE — approved development-preview source integration. Both app PRs 7/8 and engine PRs 4/5 are merged; the six main app and six dashboard premerge jobs pass. Owner-excluded live reader verification is not a passing result. See the Step6 completion record for scope, revision and local-documentation publication limits.
 - **Dependencies:** 00
 - **Design approval:** Approved — owner explicitly approved the [existing Phase 01 design/wireframe set and listed differences](docs/phases/01-penpot-design-review.md) on 2026-10-29.
-- **Branch / Worktree:** implementation `codex/phase01-build`, `/Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant`, clean base `f73b14b5a7cc6d2421f670938b2435af137ddb0f`; original dirty scope/design worktrees preserved, no PR/publication.
+- **Branch / Worktree:** Implementation codex/phase01-build merged through PR7; tooling codex/dev-dashboard through PR8. Completion-only local branch codex/phase01-completion-record follows merged main. Original preparation/canonical/consumed worktrees and their files are preserved.
 - **Assigned agents:** Lead (composition/isolation/evidence); read-only Planner `phase01_scope`; engine Worker `phase01_engine_build`; shell Worker `phase01_shell_build`; UI/native Worker `phase01_capture`; independent code Reviewer `phase01_docs_review`; independent UX `phase01_references`; Step4 independent reviewers `phase01_step4_app_audit` and `phase01_step4_engine_audit`. Each owns its project/layer; no copied engine code.
 - **Implementation plan:** [Bounded Step 2 proposal](docs/phases/01-implementation-plan.md), including read-only Planner advice and owner-confirmed full-restart route/shortcut restoration; approved Step 3 request and explicit designs recorded on 2026-10-29; technical dependency closed. Historical proposed/blocked sections retain provenance.
-- **Automated tests:** PASS locally — 147 current app tests (including five controlled goldens), app analysis/format; 24 engine-source checker regressions and resolved-source check. Real different-process route/six-slot restoration passed on macOS/Android/iPhone; evidence records exact compiled snapshots and native limits.
-- **CI:** Configured — existing quality/three-target gates preserved, CAP-01 tests added, golden comparisons on macOS. Local checks/builds recorded separately; hosted CI not run, new engine pin is local until publication is authorized.
-- **Benchmarks:** N/A — no numeric optimization requirement set; establish baseline, conditions and target before optimization.
-- **Independent review:** Plan review closed. Engine code/API/tests independently reviewed; app code review closed three P2s (modal retry, uncertain-commit overlap, visible Undo); UX review closed three P2s (desktop hints, menu identity/icons, inclusive760px boundary). Step3 focused reconciliation verified74/74 source hashes and honest reuse; Step4 final reconciliation independently verified78/78 current manifest hashes. Native images independently reviewed. Owner manually confirmed Mac ⌘3/⌘K both work. Step4 independent reviewers closed status/iOS-edge/Android-registration P2s with native Back evidence; genuine screen-reader traversal remains open.
+- **Automated tests:** PASS — 14 focused/154 full app guard tests; dashboard suite 158 Flutter + 28 script + 7 cache tests and analysis. Earlier 147-test/native restoration captures retain their original revisions and device limits; they are not relabeled new runs. The actual exact engine-source checker passed after integration.
+- **CI:** PASS at all four approved premerge heads: 1 + 6 + 2 + 6 jobs, including Android/macOS/iPhone development builds. Both final main trees equal the approved final child trees. Postmerge runs have their own live Actions status and are not fabricated passes.
+- **Benchmarks:** Three actual macOS profile baselines passed: startup, route switch and shortcut save, with p50/p95, sampled RAM and CPU. See Step6 record/results for actual values and identity/sampling limits. No optimization or measured order/item workflow is claimed.
+- **Independent review:** All genuine code findings closed and independently reverified. All 46 old automatic comments have dispositions. Owner confirmed Mac Command-3/Command-K; dated native Back/other captures retain scope. Live TalkBack is owner-excluded, not tested. Owner explicitly accepted completed independent review because fresh Cubic/Copilot reviews are unavailable.
 - **Staging / Rollback:** Isolated development data only. Real rollback/future-format preservation and fresh-process checks pass; stop development build to roll back UI, retain dedicated preferences DB. No production migration/deployment.
-- **PR:** [Draft PR7](https://github.com/faroqomar/Dakhl_Restaurant/pull/7), depends on [engine PR4](https://github.com/faroqomar/Madar_Engine/pull/4); reader acceptance remains blocking. [Step5 record](docs/phases/01-pr-approval.md).
-- **User approval:** Step 3 authorizes the presented plan/build scope; existing Phase 00/01 designs and listed differences explicitly approved on 2026-10-29. Phase 00 technical acceptance subsequently passed. The owner now requests conditional integration after checks and review; deployment remains unauthorized.
+- **PR:** Merged app PR7/PR8 with engine PR4/PR5, in compatible dependency order; exact heads/merge commits are in docs/phases/01-step6-completion.md. No additional revision is merged by the local completion documentation.
+- **User approval:** Owner explicitly approved the four corrected exact heads with independent review, conditional on all configured checks passing; the condition passed and merges completed. Existing design/build approvals remain recorded. No deployment or next phase.
 - **Decisions / Lessons:** [Shell contract/setup](docs/reference/phase01-shell-contract.md); [prevention catalogue](docs/how-to/repeated-problems.md). Device Hub is the verified native app; absence of old Simulator.app is not an access blocker.
 - **Evidence:** [Current independent Step4 verdict](docs/phases/01-step4-review.md); [Current build results and remaining gates](docs/phases/01-build-evidence.md); [Step 1 readiness](docs/phases/01-scope-readiness.md); [Step 1.5 design review](docs/phases/01-penpot-design-review.md); [design task log](docs/log/2026-10-29-phase01-penpot-design.md). [Step 2 plan/log](docs/log/2026-10-29-phase01-implementation-plan.md). [Step 3 approval and native preflight](docs/log/2026-10-29-phase01-step3-preflight.md). Native artifact evidence is separate from runtime verification.
-- **Engine/app contract:** App owns presentation, route/six-slot payload and safeguards. Implemented Madar CAP-01 owns local-only snapshot storage/adapter; owner-confirmed restart requirement supersedes earlier engine N/A assessment. Independently reviewed local CAP-01 pin `6d4ae39f35b005dfa1123a82c6df316901e1e1e4` now consumed; exact resolved-source check passed; linked PR source is published. Final corrected-head CI/review and the owner's conditional integration instruction govern merging.
-- **Completed:** —
+- **Engine/app contract:** App owns UI, route/six-slot payload, fixtures and safeguards; Madar owns generic contracts/storage and host measurement. Consumed runtime stays exact 6d4ae39f35b005dfa1123a82c6df316901e1e1e4, now preserved in merged engine ancestry; actual resolved-source checker passed.
+- **Completed:** 2026-10-29 — approved development-preview source integration; local completion/tracker documentation and separate memory delivery. App version 0.0.0+1 remains unreleased; no installed production update or next phase.
 
 ### Phase 02
 
-- **Name:** Local accounts, validation and safe persistence
-- **Status:** TODO
-- **Dependencies:** 00, 01
-- **Design approval:** N/A — non-UI setup/data/release scope; reassess if UI changes are introduced.
-- **Branch / Worktree:** —
-- **Assigned agents:** —
-- **Implementation plan:** [Scope reference](docs/planning/flutter-rebuild/phases/02.md); phase-specific read-only Planner output pending.
-- **Automated tests:** Pending — no Flutter phase verification performed.
-- **CI:** Pending — assess mandatory checks and record evidence/N/A at phase planning.
-- **Benchmarks:** N/A — no numeric optimization requirement set; establish baseline, conditions and target before optimization.
-- **Independent review:** Pending
-- **Staging / Rollback:** Pending — assess applicability; verify required migration/recovery/release paths.
-- **PR:** —
-- **User approval:** Pending — no phase/merge approval recorded.
-- **Decisions / Lessons:** —
-- **Evidence:** [Evidence index](docs/phases/README.md); no phase 02 execution evidence yet.
-- **Completed:** —
+- **Name:** Local accounts, validation and safe persistence.
+- **Status:** VERIFYING. The owner explicitly requested the remaining fixes, historical-data assessment and verified paired merge without another routine confirmation. This authorizes the bounded fixes and subsequent verified integration; required checks remain intact.
+- **Dependencies and isolation:** Approved 00/01 preview prerequisites retained. Original build/design worktrees and the a6 engine checkout remain preserved. App publication is isolated on `codex/phase02-review`; the exact reviewed consumer engine has its own detached worktree. No Phase 03 work.
+- **Design:** Existing six Penpot design/wireframe pairs retained. Corrections preserve those screens and states; no whole-app redesign or new feature. Engine design is N/A.
+- **Ownership and contract:** Madar owns exact primitives, opaque fenced persistence ports, the optional durable adapter and generic measurement tooling. The app owns schema 1–11/history compatibility, UI/ViewModels, restaurant workflows and safeguards. No copied engine code, cloud scope or new financial policy.
+- **Current revision:** The app consumes exact reviewed engine `899678fa0b85807850e626db69b3291b8a7b7b64` through [engine-dependency.json](engine-dependency.json). Engine PR6 merged as `b0db782aa1763e5bbb20bd735f12b9ba5dc0027c`. App source fixes remain a review candidate until its final checks/native evidence pass; exact final heads belong to PR metadata. App version `0.0.0+1` remains unreleased.
+- **Current source verification:** Independent review closed the bounded repository authority/retry, correction-key, guard, shell status/retry, diagnostics and harness findings. Recorded focused checks include 365 account/codec/screen tests, 39 guard cases within 67 script tests, and the separately scoped worker suites. Counts overlap and are not summed. Full consumer checks against engine899 pass: 572 non-golden tests, five golden checks, 67 script tests, 30 dashboard tests and clean analysis/format/source/version checks. Current app-head hosted CI and native acceptance remain pending.
+- **Engine verification:** Exact899 hosted checks 2/2 pass; independently verified data 134, application 9, domain 12 and benchmark-tool 29 tests plus affected analysis. Protected pre-intent prefixes remain intentionally non-resumable. Native inspection-copy close limitations are documented separately from managed writer ownership.
+- **Historical native evidence:** At app5a11/enginea6, iOS27 passed nine expected outcomes and Android16/API36 passed six persistence/recovery outcomes. At app5095/enginea6, real Android Open and Save cancellation passed; import reached confirmation but failed its real 120-second bound during controller failure/delay. Earlier API37 first-screen and incomplete diagnostic attempts remain failed. These results do not certify the new app/engine candidate. Live screen-reader verification is owner-excluded, never passed.
+- **Historical Android incident:** [Independent assessment](docs/phases/02-android-incident-assessment.md) establishes known synthetic fixture loss and no recorded normal business-account access. Unrecorded activity and prior byte retention remain unknown; no restoration or retention pass is claimed. The residual is non-blocking for bounded development-preview integration after current guarded gates. The original affected AVD stays untouched.
+- **Performance:** The existing 18-case/360-sample Mac baseline belongs to app5a11/enginea6/tool63. It remains historical and unchanged; no new optimization, comparison, numerical budget, reliability or mobile-capacity claim is made for this candidate. [Measurement method](docs/phases/02-step4-performance.md).
+- **CI and independent review:** Earlier app799 checks passed 6/6; those are historical. The new app candidate needs all six current checks. Cubic completed earlier183/5095 reviews; a new engine review was unavailable because its subscription is inactive, not passed. Required hosted checks and independent exact-head review are retained; no branch protection, ruleset, billing or check setting was changed.
+- **PR and completion:** [Engine PR6](https://github.com/faroqomar/Madar_Engine/pull/6) is merged; [app PR9](https://github.com/faroqomar/Dakhl_Restaurant/pull/9) remains unmerged pending current verification. No joint DONE, supported release, tag, deployment or next phase.
+- **Evidence:** [Incident assessment](docs/phases/02-android-incident-assessment.md), [dated native report](docs/phases/02-native-verification-2026-10-31.md), [historical Step4 review](docs/phases/02-step4-review.md) and detailed local execution journal. Missing raw logs are local-only provenance, not claimed to be available in this PR. Separate sanitized milestone delivery remains required.
 
 ### Phase 03
 
@@ -307,3 +308,24 @@ Actual dashboard-launched local test run `run-da4fb11fcd67b2b6`: 246 passed. Ben
 ## Development tooling Step5 — draft publication, 2026-10-29
 
 [App draft PR](https://github.com/faroqomar/Dakhl_Restaurant/pull/8) links [paired tooling PR](https://github.com/faroqomar/Madar_Engine/pull/5); runtime prerequisites are enginePR4/appPR7. [Delivery record](docs/log/2026-10-29-step5-development-review.md). Changes remain draft and unmerged; final exact-head checks are in PR metadata, reader acceptance remains pending, no release/DONE inferred.
+
+## Step6 — approved source integration, 2026-10-29
+
+[Phase 01 / development dashboard completion and rollback evidence](docs/phases/01-step6-completion.md). Actual merge commits and independent/CI evidence are explicit. Current main source trees equal their exact owner-approved final heads. Completion metadata is committed locally; no unapproved additional revision was merged or pushed. No next phase.
+
+
+### Step3 build started —2026-10-30
+
+Phase02 IMPLEMENTING in dedicated codex/phase02-build. Owner Step3 instruction authorizes presented outcome and in-scope engineering choices; no questions, publication or merge. Prior planning/design gate entries are historical. Independent implementation review, exact reviewed engine adoption, full checks/native/per-operation measurements and completion evidence remain pending. Current test results belong only to their recorded suites; no inferred CI/native/release pass. See the running execution journal and worker fragments under outputs/phase02.
+
+
+### Phase02 Android closure and merge authorization — 2026-10-31
+
+Owner explicitly requested fixes, old-data investigation and verified paired merge without another routine confirmation. This authorizes the bounded source changes and subsequent merge; it waives no actual verification or production-data protections. [Historical incident assessment](docs/phases/02-android-incident-assessment.md) establishes known synthetic fixture loss/no recorded normal-account access, with unrecorded activity/byte retention unknown and no restoration claim. Independent review accepts that residual as non-blocking for development-preview integration after current guarded gates pass.
+
+Test-only picker hardening removes uncancellable pumps across native Activity suspension, uses a real monotonic120s budget, scopes fullyLive frames and actual device touches, and restores both settings/timers.12 real-zone regression tests/analyzer and independent review pass. Native three-case verification on each affected mobile platform and current-head CI remain pending. Product library, business policies, engine runtimea6 and existing18-case/360-sample Mac baseline are unchanged; no new optimization or benchmark claim. Runtime libraries retain5a11 source continuity. No DONE/release/deployment/next phase yet.
+
+
+### Native deadline correction — 2026-10-31
+
+[Timer correction and actual CI failure](docs/log/2026-10-31-phase02-native-timer-correction.md). The failed5c8d quality result is preserved;24 focused and572 full local tests now pass with unchanged deadlines/assertions. Fresh hosted and native evidence remains pending.

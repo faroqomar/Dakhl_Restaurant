@@ -1,11 +1,11 @@
 {
   "engine": "Madar_Engine",
-  "status": "independently source-reviewed local CAP-01 candidate; native consumer/hosted delivery gates recorded separately",
-  "git_commit": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+  "status": "Phase02 independently reviewed persistence/error/protection repairs; data134, application9, domain12 and benchmark-tool29 pass. Exact-head engine CI2/2 passes; current consumer/native verification tracked separately.",
+  "git_commit": "899678fa0b85807850e626db69b3291b8a7b7b64",
   "packages": {
     "madar_application": {
       "path": "../Madar_Engine/packages/application",
-      "version": "0.1.0-dev.2"
+      "version": "0.1.0-dev.3"
     },
     "madar_flutter_adapters": {
       "path": "../Madar_Engine/packages/flutter_adapters",
@@ -13,6 +13,10 @@
     },
     "madar_data": {
       "path": "../Madar_Engine/packages/data",
+      "version": "0.1.0-dev.2"
+    },
+    "madar_domain": {
+      "path": "../Madar_Engine/packages/domain",
       "version": "0.1.0-dev.1"
     }
   }

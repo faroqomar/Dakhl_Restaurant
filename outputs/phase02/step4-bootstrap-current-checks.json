@@ -1,0 +1,47 @@
+{
+  "sourceCommit": "5a11c66dbf665972b17b545c105eac74c17bfeeb",
+  "engineCommit": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+  "checks": [
+    {
+      "name": "full-non-golden",
+      "command": [
+        "/Users/eros/Dev/flutter/bin/flutter",
+        "test",
+        "--no-pub",
+        "--exclude-tags=golden",
+        "--reporter",
+        "expanded"
+      ],
+      "startedAt": "2026-10-30T12:43:19.363993+00:00",
+      "finishedAt": "2026-10-30T12:43:37.786865+00:00",
+      "hostWallSeconds": 18.422667125007138,
+      "exitCode": 0,
+      "artifact": "outputs/phase02/step4-bootstrap-full-non-golden.log"
+    },
+    {
+      "name": "whole-app-analyze",
+      "command": [
+        "/Users/eros/Dev/flutter/bin/flutter",
+        "analyze",
+        "--no-pub"
+      ],
+      "startedAt": "2026-10-30T12:43:37.788544+00:00",
+      "finishedAt": "2026-10-30T12:43:43.727343+00:00",
+      "hostWallSeconds": 5.938796958012972,
+      "exitCode": 0,
+      "artifact": "outputs/phase02/step4-bootstrap-whole-app-analyze.log"
+    },
+    {
+      "name": "exact-source-check",
+      "command": [
+        "python3",
+        "scripts/check-engine.py"
+      ],
+      "startedAt": "2026-10-30T12:43:43.728795+00:00",
+      "finishedAt": "2026-10-30T12:43:44.557250+00:00",
+      "hostWallSeconds": 0.8284497910062782,
+      "exitCode": 0,
+      "artifact": "outputs/phase02/step4-bootstrap-exact-source-check.log"
+    }
+  ]
+}

@@ -8,6 +8,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:madar_application/madar_application.dart';
 
+import '../accounts/accounts_view_model.dart';
+import '../accounts/accounts_surface.dart';
+import '../accounts/workspace_document.dart';
 import '../shell/shell_routes.dart';
 import '../shell/shell_view_model.dart';
 import '../ui/dakhl_ui.dart';
@@ -24,8 +27,14 @@ class DakhlRestaurantApp extends StatefulWidget {
     required this.preferencesStore,
     this.closePreferences,
     this.onShellReady,
+    this.accounts,
+    this.accountTransfer,
+    this.closeAccounts,
   });
   final LocalPreferencesStore preferencesStore;
+  final AccountsViewModel? accounts;
+  final FileTransferCapability? accountTransfer;
+  final Future<void> Function()? closeAccounts;
   final Future<void> Function()? closePreferences;
 
   /// Optional development observation after bootstrap and shell frame build.
@@ -45,11 +54,32 @@ class _DakhlRestaurantAppState extends State<DakhlRestaurantApp> {
   bool _acceptingRouterIntent = false;
   bool _syncQueued = false;
   bool _mobileBackInProgress = false;
+  StorageFence? _accountFence;
+  String? _accountSlots;
+  String? _attemptedWorkspace;
+  bool _syncingAccount = false;
+  bool _workspaceQueued = false;
+  bool _accountBootstrapComplete = false;
+  Map<String, String>? _invalidWorkspaceForm, _invalidWorkspaceTicket;
 
   @override
   void initState() {
     super.initState();
-    _model = ShellViewModel(store: widget.preferencesStore);
+    _model = ShellViewModel(
+      store: widget.preferencesStore,
+      accountShortcuts: () => widget.accounts?.accountShortcuts,
+      saveAccountShortcuts: widget.accounts?.saveShortcuts,
+    );
+    widget.accounts?.confirmAuthorityReload = () async {
+      if (!_model.dirtyForm &&
+          _model.ticketPresentation.isEmpty &&
+          _model.shortcutDraft == null) {
+        return true;
+      }
+      return _confirmDiscard();
+    };
+    widget.accounts?.addListener(_syncAccount);
+    _model.addListener(_queueWorkspace);
     _router = GoRouter(
       navigatorKey: _navigatorKey,
       initialLocation: '/sales',
@@ -86,6 +116,7 @@ class _DakhlRestaurantAppState extends State<DakhlRestaurantApp> {
                 onNavigate: _navigate,
                 onEditShortcuts: () => _editShortcuts(context),
                 onSearch: _search,
+                accounts: widget.accounts,
                 child: child,
               ),
             ),
@@ -104,23 +135,7 @@ class _DakhlRestaurantAppState extends State<DakhlRestaurantApp> {
                     child: IosShellBackGesture(
                       canStart: _canStartIosBack,
                       onBack: _mobileBack,
-                      child: Phase01RouteSurface(
-                        routeId: destination.id,
-                        onCheckout: () =>
-                            showDakhlToast(context, 'عرض تجريبي فقط'),
-                        searchFocusNode: _searchFocus,
-                        formDraft: _model.formDraft,
-                        onFormChanged: _model.setFormDraft,
-                        onFormDiscard: _model.discardForm,
-                        ticketPresentation: _model.ticketPresentation,
-                        onTicketChanged: (value) {
-                          final previous = _model.ticketPresentation;
-                          _model.registerSessionUndo(
-                            () => _model.setTicketPresentation(previous),
-                          );
-                          _model.setTicketPresentation(value);
-                        },
-                      ),
+                      child: _routeContent(destination.id, context),
                     ),
                   ),
                 ),
@@ -142,7 +157,13 @@ class _DakhlRestaurantAppState extends State<DakhlRestaurantApp> {
       },
     );
     _model.addListener(_syncRoute);
-    final initialization = _model.initialize();
+    final initialization = () async {
+      await widget.accounts?.initialize();
+      await _model.initialize();
+      widget.accounts?.seedDeviceFallback(_model.shortcuts);
+      _syncAccount();
+      _accountBootstrapComplete = true;
+    }();
     if (widget.onShellReady == null) {
       unawaited(initialization);
     } else {
@@ -153,6 +174,120 @@ class _DakhlRestaurantAppState extends State<DakhlRestaurantApp> {
         }),
       );
     }
+  }
+
+  Widget _routeContent(String routeId, BuildContext context) {
+    final accounts = widget.accounts;
+    if (routeId == 'settings' && accounts != null) {
+      return AccountsSurface(model: accounts, transfer: widget.accountTransfer);
+    }
+    final origin = accounts?.fence;
+    bool current() => accounts == null || accounts.fence == origin;
+    return Phase01RouteSurface(
+      routeId: routeId,
+      onCheckout: () => showDakhlToast(context, 'عرض تجريبي فقط'),
+      searchFocusNode: _searchFocus,
+      formDraft: _model.formDraft,
+      onFormChanged: (value) {
+        if (current()) _model.setFormDraft(value);
+      },
+      onFormDiscard: () {
+        if (current()) _model.discardForm();
+      },
+      ticketPresentation: _model.ticketPresentation,
+      onTicketChanged: (value) {
+        if (!current()) return;
+        final previous = _model.ticketPresentation;
+        _model.registerSessionUndo(() {
+          if (current()) _model.setTicketPresentation(previous);
+        });
+        _model.setTicketPresentation(value);
+      },
+    );
+  }
+
+  void _syncAccount() {
+    final accounts = widget.accounts;
+    if (!mounted || accounts == null || _syncingAccount) return;
+    if ((accounts.state == AccountsState.saved ||
+            accounts.state == AccountsState.importReady) &&
+        accounts.fence != null) {
+      _syncingAccount = true;
+      try {
+        final hadFence = _accountFence != null;
+        final changedFence = _accountFence != accounts.fence;
+        if (changedFence) {
+          _accountFence = accounts.fence;
+          _attemptedWorkspace = accounts.workspace.encode();
+          if (hadFence || !_accountBootstrapComplete) {
+            _model.restoreAccountWorkspace(
+              form: accounts.workspace.form,
+              ticket: accounts.workspace.active,
+            );
+          }
+        }
+        final slots = accounts.accountShortcuts?.join('|');
+        if (slots != _accountSlots) {
+          _accountSlots = slots;
+          unawaited(
+            _model.refreshAccountSettings(
+              cache: hadFence && _model.shortcutDraft == null,
+            ),
+          );
+        }
+      } finally {
+        _syncingAccount = false;
+      }
+    }
+    _queueWorkspace();
+  }
+
+  void _queueWorkspace() {
+    final accounts = widget.accounts;
+    if (!mounted ||
+        _syncingAccount ||
+        _workspaceQueued ||
+        accounts == null ||
+        !accounts.canMutate ||
+        accounts.fence == null ||
+        accounts.pendingImport != null ||
+        accounts.recoverySelection != null) {
+      return;
+    }
+    final workspace = WorkspaceDocument(
+      active: _model.ticketPresentation,
+      form: _model.formDraft,
+      held: accounts.workspace.held,
+    );
+    final String encoded;
+    try {
+      encoded = workspace.encode();
+    } on FormatException {
+      if (identical(_invalidWorkspaceForm, _model.formDraft) &&
+          identical(_invalidWorkspaceTicket, _model.ticketPresentation)) {
+        return;
+      }
+      _invalidWorkspaceForm = _model.formDraft;
+      _invalidWorkspaceTicket = _model.ticketPresentation;
+      unawaited(accounts.saveWorkspace(workspace, accounts.fence!));
+      return;
+    }
+    _invalidWorkspaceForm = null;
+    _invalidWorkspaceTicket = null;
+    if (_attemptedWorkspace == encoded) return;
+    final origin = accounts.fence!;
+    _attemptedWorkspace = encoded;
+    _workspaceQueued = true;
+    scheduleMicrotask(() async {
+      try {
+        if (mounted && accounts.fence == origin) {
+          await accounts.saveWorkspace(workspace, origin);
+        }
+      } finally {
+        _workspaceQueued = false;
+        if (mounted) _queueWorkspace();
+      }
+    });
   }
 
   Future<bool> _confirmDiscard() async {
@@ -312,7 +447,12 @@ class _DakhlRestaurantAppState extends State<DakhlRestaurantApp> {
     _lifecycle.dispose();
     _model.removeListener(_syncRoute);
     _router.dispose();
+    widget.accounts?.confirmAuthorityReload = null;
+    widget.accounts?.removeListener(_syncAccount);
+    _model.removeListener(_queueWorkspace);
     _model.dispose();
+    final closeAccounts = widget.closeAccounts;
+    if (closeAccounts != null) unawaited(closeAccounts());
     _searchFocus.dispose();
     final close = widget.closePreferences;
     if (close != null) {
@@ -361,16 +501,18 @@ class _ShellFrame extends ConsumerWidget {
     required this.onNavigate,
     required this.onEditShortcuts,
     required this.onSearch,
+    this.accounts,
   });
   final Widget child;
   final ValueChanged<String> onNavigate;
   final VoidCallback onEditShortcuts, onSearch;
+  final AccountsViewModel? accounts;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final model = ref.watch(shellViewModelProvider);
     return ListenableBuilder(
-      listenable: model,
+      listenable: Listenable.merge([model, ?accounts]),
       builder: (context, _) {
         final initializing =
             model.bootstrapState == ShellBootstrapState.initializing;
@@ -382,7 +524,7 @@ class _ShellFrame extends ConsumerWidget {
             model.saveState == ShellSaveState.conflict ||
             model.saveState == ShellSaveState.commitUnknown;
         final unsaved = model.hasUnsavedPreferences;
-        final status = initializing
+        final shellStatus = initializing
             ? 'جارٍ تحميل إعدادات العرض…'
             : protected
             ? 'تعذّرت قراءة الإعدادات؛ التنقل لهذه الجلسة فقط.'
@@ -397,6 +539,19 @@ class _ShellFrame extends ConsumerWidget {
             : unsaved
             ? 'تغييرات العرض لهذه الجلسة فقط؛ لم تُحفظ على جهازك.'
             : 'محفوظ على جهازك';
+        final account = accounts;
+        final accountProtected =
+            account != null &&
+            (account.state == AccountsState.protected ||
+                account.state == AccountsState.failed ||
+                account.state == AccountsState.conflict ||
+                account.state == AccountsState.commitUnknown);
+        final status = account == null
+            ? shellStatus
+            : account.state == AccountsState.saved &&
+                  (failed || model.busy || unsaved)
+            ? shellStatus
+            : accountStatus(account);
         return Scaffold(
           body: SafeArea(
             child: DakhlShellView(
@@ -404,16 +559,27 @@ class _ShellFrame extends ConsumerWidget {
               shortcuts: model.shortcuts,
               destinations: _destinations,
               onNavigate: onNavigate,
-              busy: model.busy,
+              busy: model.busy || (accounts?.busy ?? false),
               statusMessage: status,
-              statusKind: failed
+              statusKind: failed || accountProtected
                   ? DakhlStatusKind.error
-                  : initializing || model.saveState == ShellSaveState.saving
+                  : initializing ||
+                        model.saveState == ShellSaveState.saving ||
+                        accounts?.state == AccountsState.saving ||
+                        accounts?.state == AccountsState.loading
                   ? DakhlStatusKind.saving
                   : unsaved
                   ? DakhlStatusKind.info
                   : DakhlStatusKind.saved,
-              onRetry: failed
+              onRetry: accountProtected
+                  ? () => unawaited(
+                      account.state == AccountsState.commitUnknown
+                          ? account.reconcile()
+                          : account.state == AccountsState.protected
+                          ? account.initialize()
+                          : account.retry(),
+                    )
+                  : failed
                   ? () => unawaited(
                       protected || model.saveState == ShellSaveState.conflict
                           ? model.retryRead()

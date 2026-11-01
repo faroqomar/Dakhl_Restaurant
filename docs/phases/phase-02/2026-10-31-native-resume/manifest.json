@@ -1,0 +1,119 @@
+{
+  "createdAt": "2026-10-31T17:45:26.518770+00:00",
+  "iosOriginalSummarySha256": "ac14dd205c505558b904e825d6a693d43090c8a06cb9aa3aa52e78091d7e950a",
+  "receipts": [
+    {
+      "file": "ios-native-write.json",
+      "originalSha256": "16b2d187ec3b68ce5009d9919a58426e2318b5c3ccc133476e8e4dd397b8eda8",
+      "publishedSha256": "b56d07d7494a21b6df91fc80eebe38e4f4e167cb66f520545b804f565cf949f4"
+    },
+    {
+      "file": "ios-native-read.json",
+      "originalSha256": "0c1363d486eec06b36eceb2c0f68bda4579d6b4aba95134fd0ff3a575b57f0cd",
+      "publishedSha256": "835375a1aa8d1a1d274615dd0302f2b1f961107581e6798bbee04e495a4f45fa"
+    },
+    {
+      "file": "ios-native-wrong-nonce.json",
+      "originalSha256": "6717c18ab8c4a79506938ad2517a695c68a607d01785860f7c7115e6361813fe",
+      "publishedSha256": "f3255c83888756b13c42a0eb68dc5ffbab00b80af4b22bd92cc72508872e90eb"
+    },
+    {
+      "file": "ios-native-read-again.json",
+      "originalSha256": "1fe61ac6c0bec613a0bb87ccd5e29f59fc08382ec46687b1a1d6599fa38a2997",
+      "publishedSha256": "e2ccf7f6cb661f1d52908a6fd5db707ad3de05ea871f67af6b643903e4ef07fd"
+    },
+    {
+      "file": "ios-native-recover.json",
+      "originalSha256": "bde935d4ea32973aeb227dd57431326d54fd50d66f1bbc0f575ff65b55099b4c",
+      "publishedSha256": "83cd094050d0092930b020abc26b69ab7fc0d69d6c10c7545df32728118daec1"
+    },
+    {
+      "file": "ios-native-read-recovered.json",
+      "originalSha256": "485bd05c00e2bf3389f864b48c842c8d4a03084a148c573d1a3a45259175e9b6",
+      "publishedSha256": "d7952915099e8f1f4477cb8e1b408a06bf23ab9541f2b4c197d8b632cc853792"
+    },
+    {
+      "file": "ios-picker-cancel-open.json",
+      "originalSha256": "6495a847b465371e4d9461cd66f866d4103e3f14854d763203bbed4115e1dd56",
+      "publishedSha256": "9cc2709a8120db7552750c86224b2f8e5b7a119fed735142c63d9b009e6ddcda"
+    },
+    {
+      "file": "ios-picker-cancel-save.json",
+      "originalSha256": "d6d83ec1abc4c162ce1c6b02b183223d8cc1e4d5fa8d45fc2fa287862a8fd496",
+      "publishedSha256": "d041439d98c019d7646686fb2ed6ce9e9c9ec624a598ef46169f9e794ca60ce7"
+    },
+    {
+      "file": "ios-picker-import-file.json",
+      "originalSha256": "ba8e24b67fbc9a949497a923fd7e22f222d34cf5707283a35ac40001cb18fe86",
+      "publishedSha256": "d3a4bc51a855817485e6a0e87cd30c7115d587684ae37c1bb99d777578a4da56"
+    }
+  ],
+  "scope": "selected sanitized verification receipts; no raw logs, APKs, archives, keys, account payloads or journals",
+  "iosPublishedSummarySha256": "bd1cfc6132ceb951cdc061e2dbf1ca889d8b8232c1b3aca214e3dd2be70a48ee",
+  "publishedFiles": [
+    {
+      "file": "android-api36-install-refusal.json",
+      "sha256": "a6de0cf6afe8d7620492e3457d7b78101e213d9687657e8761f8f2b35a114de3"
+    },
+    {
+      "file": "android-api36-read.json",
+      "sha256": "ff47bc451c1608b62258870c016c6a6da1a655391614b50c2b39ba7c8982329a"
+    },
+    {
+      "file": "android-api36-write.json",
+      "sha256": "01c283e5dd063cff7a6e3a92ac7ecb287751d4fa722d4880dbd4daabfce7ce4b"
+    },
+    {
+      "file": "android-api37-launch-retry.json",
+      "sha256": "3554a6d5a01b12890f04437c558f7ab5c0a8100db88753ed39717759b4b596a0"
+    },
+    {
+      "file": "android-preservation-assessment.json",
+      "sha256": "85f89fca56a887d08e819a9ba6d5e1c3bf233306248726586cde4f90d941c345"
+    },
+    {
+      "file": "guard-tests.json",
+      "sha256": "369648738a6ee93115946886294b8369ac9995614814d16b032b5c1b906a56af"
+    },
+    {
+      "file": "ios-native-read-again.json",
+      "sha256": "e2ccf7f6cb661f1d52908a6fd5db707ad3de05ea871f67af6b643903e4ef07fd"
+    },
+    {
+      "file": "ios-native-read-recovered.json",
+      "sha256": "d7952915099e8f1f4477cb8e1b408a06bf23ab9541f2b4c197d8b632cc853792"
+    },
+    {
+      "file": "ios-native-read.json",
+      "sha256": "835375a1aa8d1a1d274615dd0302f2b1f961107581e6798bbee04e495a4f45fa"
+    },
+    {
+      "file": "ios-native-recover.json",
+      "sha256": "83cd094050d0092930b020abc26b69ab7fc0d69d6c10c7545df32728118daec1"
+    },
+    {
+      "file": "ios-native-write.json",
+      "sha256": "b56d07d7494a21b6df91fc80eebe38e4f4e167cb66f520545b804f565cf949f4"
+    },
+    {
+      "file": "ios-native-wrong-nonce.json",
+      "sha256": "f3255c83888756b13c42a0eb68dc5ffbab00b80af4b22bd92cc72508872e90eb"
+    },
+    {
+      "file": "ios-picker-cancel-open.json",
+      "sha256": "9cc2709a8120db7552750c86224b2f8e5b7a119fed735142c63d9b009e6ddcda"
+    },
+    {
+      "file": "ios-picker-cancel-save.json",
+      "sha256": "d041439d98c019d7646686fb2ed6ce9e9c9ec624a598ef46169f9e794ca60ce7"
+    },
+    {
+      "file": "ios-picker-import-file.json",
+      "sha256": "d3a4bc51a855817485e6a0e87cd30c7115d587684ae37c1bb99d777578a4da56"
+    },
+    {
+      "file": "ios-summary.json",
+      "sha256": "bd1cfc6132ceb951cdc061e2dbf1ca889d8b8232c1b3aca214e3dd2be70a48ee"
+    }
+  ]
+}

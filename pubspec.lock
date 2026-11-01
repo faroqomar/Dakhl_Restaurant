@@ -402,11 +402,18 @@ packages:
       path: "../Madar_Engine/packages/application"
       relative: true
     source: path
-    version: "0.1.0-dev.2"
+    version: "0.1.0-dev.3"
   madar_data:
     dependency: "direct main"
     description:
       path: "../Madar_Engine/packages/data"
+      relative: true
+    source: path
+    version: "0.1.0-dev.2"
+  madar_domain:
+    dependency: "direct main"
+    description:
+      path: "../Madar_Engine/packages/domain"
       relative: true
     source: path
     version: "0.1.0-dev.1"

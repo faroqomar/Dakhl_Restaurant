@@ -1,0 +1,31 @@
+{
+  "kind": "native",
+  "label": "read",
+  "stage": "read",
+  "source": "5a11c66dbf665972b17b545c105eac74c17bfeeb",
+  "runtime": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+  "expectedOutcomeVerified": true,
+  "driverExitCode": 0,
+  "elapsedSeconds": 51.93715362501098,
+  "hostReports": [
+    {
+      "stage": "read",
+      "runNonce": "5f761e6d-7cee-4bee-bcbb-73de76a25a96",
+      "pid": 5644,
+      "storeId": "8dff9a0b1156845f08bf9393c46ca8441c2fbdf7a3045903528e1f82831728b1",
+      "generation": "495a091b14e9197c9749d20c3fe9dd18bdcb247292fd2ba1fb1d990aa6cfee89",
+      "documentRevision": 2,
+      "held": 40,
+      "runtime": "real native Madar adapter + consumer codec/repository/ViewModel + rendered app",
+      "dataScope": "fixed marked Phase02 conformance child only; --no-uninstall required"
+    }
+  ],
+  "cleanup": {
+    "logcatStopped": true,
+    "ownedForwardRemoved": true,
+    "ownedAppStopped": true,
+    "logcatReaderFinished": true,
+    "logcatPipeClosed": true
+  },
+  "originalReceiptSha256": "640dc518bed71442accd57911ceaf78b6f6671c117863c2b24e9289be528b2d8"
+}

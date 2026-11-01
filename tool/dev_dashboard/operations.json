@@ -52,6 +52,72 @@
       "status": "planned",
       "phase": "04",
       "reason": "Sales posting/cart business workflow is not implemented. Existing presentation/toast is not a sales benchmark."
+    },
+    {
+      "id": "accounts.open",
+      "label": "Reopen accounts and render",
+      "status": "ready",
+      "phase": "02",
+      "scenarioVersion": "1",
+      "defaultIterations": 20,
+      "measurementKind": "workflow",
+      "scope": "Actual consumer ViewModel/repository command over a fresh real adapter fixture, through AccountsSurface raster completion. Small10/medium1000/largest near20MiB synthetic cash transactions; workspace active+40held. Elapsed excludes reset; sampled RAM/CPU host window includes between-sample reset/cleanup. No native input dispatch or production records.",
+      "verification": "See docs/phases/02-step4-review.md for actual real-adapter consumer, native and profile results and their exact source revisions. Ready means measurable implementation, not a completed verification or performance result."
+    },
+    {
+      "id": "accounts.save",
+      "label": "Save account preferences and render",
+      "status": "ready",
+      "phase": "02",
+      "scenarioVersion": "1",
+      "defaultIterations": 20,
+      "measurementKind": "workflow",
+      "scope": "Actual consumer ViewModel/repository command over a fresh real adapter fixture, through AccountsSurface raster completion. Small10/medium1000/largest near20MiB synthetic cash transactions; workspace active+40held. Elapsed excludes reset; sampled RAM/CPU host window includes between-sample reset/cleanup. No native input dispatch or production records.",
+      "verification": "See docs/phases/02-step4-review.md for actual real-adapter consumer, native and profile results and their exact source revisions. Ready means measurable implementation, not a completed verification or performance result."
+    },
+    {
+      "id": "accounts.migrate_legacy",
+      "label": "Validate/migrate legacy accounts and render",
+      "status": "ready",
+      "phase": "02",
+      "scenarioVersion": "1",
+      "defaultIterations": 20,
+      "measurementKind": "workflow",
+      "scope": "Actual consumer ViewModel/repository command over a fresh real adapter fixture, through AccountsSurface raster completion. Small10/medium1000/largest near20MiB synthetic cash transactions; workspace active+40held. Elapsed excludes reset; sampled RAM/CPU host window includes between-sample reset/cleanup. No native input dispatch or production records.",
+      "verification": "See docs/phases/02-step4-review.md for actual real-adapter consumer, native and profile results and their exact source revisions. Ready means measurable implementation, not a completed verification or performance result."
+    },
+    {
+      "id": "accounts.replace",
+      "label": "Replace accounts and fence old workspace",
+      "status": "ready",
+      "phase": "02",
+      "scenarioVersion": "1",
+      "defaultIterations": 20,
+      "measurementKind": "workflow",
+      "scope": "Actual consumer ViewModel/repository command over a fresh real adapter fixture, through AccountsSurface raster completion. Small10/medium1000/largest near20MiB synthetic cash transactions; workspace active+40held. Elapsed excludes reset; sampled RAM/CPU host window includes between-sample reset/cleanup. No native input dispatch or production records.",
+      "verification": "See docs/phases/02-step4-review.md for actual real-adapter consumer, native and profile results and their exact source revisions. Ready means measurable implementation, not a completed verification or performance result."
+    },
+    {
+      "id": "accounts.recover_previous",
+      "label": "Recover independent previous copy and render",
+      "status": "ready",
+      "phase": "02",
+      "scenarioVersion": "1",
+      "defaultIterations": 20,
+      "measurementKind": "workflow",
+      "scope": "Actual consumer ViewModel/repository command over a fresh real adapter fixture, through AccountsSurface raster completion. Small10/medium1000/largest near20MiB synthetic cash transactions; workspace active+40held. Elapsed excludes reset; sampled RAM/CPU host window includes between-sample reset/cleanup. No native input dispatch or production records.",
+      "verification": "See docs/phases/02-step4-review.md for actual real-adapter consumer, native and profile results and their exact source revisions. Ready means measurable implementation, not a completed verification or performance result."
+    },
+    {
+      "id": "workspace.save_restore",
+      "label": "Save and restore active plus40held drafts",
+      "status": "ready",
+      "phase": "02",
+      "scenarioVersion": "1",
+      "defaultIterations": 20,
+      "measurementKind": "workflow",
+      "scope": "Actual consumer ViewModel/repository command over a fresh real adapter fixture, through AccountsSurface raster completion. Small10/medium1000/largest near20MiB synthetic cash transactions; workspace active+40held. Elapsed excludes reset; sampled RAM/CPU host window includes between-sample reset/cleanup. No native input dispatch or production records.",
+      "verification": "See docs/phases/02-step4-review.md for actual real-adapter consumer, native and profile results and their exact source revisions. Ready means measurable implementation, not a completed verification or performance result."
     }
   ],
   "registrationRule": "Every major implemented feature requires its own stable case ID, real workflow, isolated fixture, scenario version and verification evidence before ready status. Planned entries cannot run or produce fabricated results."

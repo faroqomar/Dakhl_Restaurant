@@ -15,7 +15,14 @@ enum ShellNavigationResult { changed, cancelled, gated, superseded }
 /// The ViewModel never sees SQL, file paths, posting logic or account records.
 /// Session drafts and undo callbacks are never serialized with preferences.
 final class ShellViewModel extends ChangeNotifier {
-  ShellViewModel({required this._store});
+  ShellViewModel({
+    required this._store,
+    this.accountShortcuts,
+    this.saveAccountShortcuts,
+  });
+
+  final List<String>? Function()? accountShortcuts;
+  final Future<bool> Function(List<String>)? saveAccountShortcuts;
 
   final LocalPreferencesStore _store;
   ShellBootstrapState _bootstrapState = ShellBootstrapState.initializing;
@@ -130,13 +137,18 @@ final class ShellViewModel extends ChangeNotifier {
   }
 
   ShellPreferences? _decodeSnapshot(PreferenceSnapshot? snapshot) {
-    if (snapshot == null) return ShellPreferences.defaults();
+    if (snapshot == null) {
+      return ShellPreferences.defaults().copyWith(
+        shortcuts: accountShortcuts?.call(),
+      );
+    }
     if (snapshot.revision <= 0) {
       _failureCode = PreferenceErrorCodes.invalidRevision;
       return null;
     }
     try {
-      return ShellPreferences.decode(snapshot.payload);
+      return ShellPreferences.decode(snapshot.payload)
+          .copyWith(shortcuts: accountShortcuts?.call());
     } on ShellPreferencesFormatException catch (error) {
       _failureCode = error.code;
       return null;
@@ -211,7 +223,29 @@ final class ShellViewModel extends ChangeNotifier {
 
   Future<void> saveShortcuts() async {
     if (!canEditShortcuts || _shortcutDraft == null) return;
-    await _enqueueSave(_preferences.copyWith(shortcuts: _shortcutDraft));
+    final draft = List<String>.of(_shortcutDraft!);
+    final persistAccount = saveAccountShortcuts;
+    if (persistAccount != null) {
+      _saveCount++;
+      _notify();
+      var saved = false;
+      try {
+        saved = await persistAccount(draft);
+      } finally {
+        _saveCount--;
+      }
+      if (_disposed) return;
+      if (!saved) {
+        _saveState = ShellSaveState.failed;
+        _failureCode = 'account_preferences_failed';
+        _notify();
+        return;
+      }
+      // The account is authoritative even when this subsequent device cache
+      // write fails. Device last-route durability remains a separate outcome.
+      _preferences = _preferences.copyWith(shortcuts: draft);
+    }
+    await _enqueueSave(_preferences.copyWith(shortcuts: draft));
   }
 
   void cancelShortcutEditing() {
@@ -303,7 +337,9 @@ final class ShellViewModel extends ChangeNotifier {
   void _acknowledge(ShellPreferences saved, int revision) {
     _revision = revision;
     _acknowledged = saved;
-    _preferences = _preferences.copyWith(shortcuts: saved.shortcuts);
+    _preferences = _preferences.copyWith(
+      shortcuts: accountShortcuts?.call() ?? saved.shortcuts,
+    );
     if (_shortcutDraft != null &&
         saved.copyWith(routeId: routeId) ==
             _preferences.copyWith(shortcuts: _shortcutDraft)) {
@@ -344,12 +380,18 @@ final class ShellViewModel extends ChangeNotifier {
   }
 
   Future<void> retrySave() async {
+    final retryAccountShortcuts =
+        _failureCode == 'account_preferences_failed' && _shortcutDraft != null;
     if (_disposed ||
         _saveRecoveryInProgress ||
         _readInProgress ||
         _saveCount > 0 ||
         _bootstrapState != ShellBootstrapState.ready ||
-        _pending == null) {
+        (_pending == null && !retryAccountShortcuts)) {
+      return;
+    }
+    if (retryAccountShortcuts) {
+      await saveShortcuts();
       return;
     }
     // Set the guard before notifying or awaiting: repeated UI commands and
@@ -420,6 +462,33 @@ final class ShellViewModel extends ChangeNotifier {
       }
       _notify();
     }
+  }
+
+  Future<void> refreshAccountSettings({bool cache = true}) async {
+    if (_disposed) return;
+    final slots = accountShortcuts?.call();
+    if (slots == null) return;
+    _preferences = _preferences.copyWith(shortcuts: slots);
+    _acknowledged = _acknowledged?.copyWith(shortcuts: slots);
+    _shortcutDraft = null;
+    _notify();
+    if (cache &&
+        _bootstrapState == ShellBootstrapState.ready &&
+        !_writeBlocked) {
+      await _enqueueSave(_preferences);
+    }
+  }
+
+  void restoreAccountWorkspace({
+    required Map<String, String> form,
+    required Map<String, String> ticket,
+  }) {
+    if (_disposed) return;
+    _formDraft = Map.unmodifiable(form);
+    _ticketPresentation = Map.unmodifiable(ticket);
+    _dirtyForm = form.isNotEmpty;
+    _undo.clear();
+    _notify();
   }
 
   void setFormDraft(Map<String, String> values) {

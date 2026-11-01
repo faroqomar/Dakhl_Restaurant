@@ -1,3 +1,5 @@
+Step5 publication preparation, 2026-10-30: **DRAFT / NOT MERGE-READY**. The owner requested reviewable pull requests; publication and hosted-check results are recorded in [the Step5 delivery record](../phases/02-step5-delivery.md). Android preservation failed and prior installed-app data retention remains unverified; Android cancellation and current iOS verification remain open. No merge, release, target mutation or next phase is authorized. Earlier Step3/Step4 publication statements below are dated historical records.
+
 # Work logs
 
 - [2026-10-28 — Start phase 00 tracking and assess design applicability](2026-10-28-phase-00-kickoff.md).
@@ -85,3 +87,14 @@ Each log records request, change, rationale, actual verification, limits and nex
 - [2026-10-28 — Owner delivery rules and English documentation review](2026-10-28-delivery-and-english-documentation.md).
 
 - [2026-10-28 — Documentation publication request](2026-10-28-documentation-publication.md).
+
+- [Phase02 Step3 local implementation and verified limits](2026-10-30-phase02-build.md).
+
+## Step4 review records — 2026-10-30
+
+- [Phase02 Step4 local outcome](2026-10-30-phase02-step4-review.md)
+- [Confirmed Android preservation incident](2026-10-30-phase02-android-preservation-incident.md)
+
+## Step5 delivery record — 2026-10-30
+
+- [Phase02 draft engine delivery and app publication blocker](2026-10-30-phase02-step5-pr.md).
