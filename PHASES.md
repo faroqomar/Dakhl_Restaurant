@@ -329,3 +329,8 @@ Test-only picker hardening removes uncancellable pumps across native Activity su
 ### Native deadline correction — 2026-10-31
 
 [Timer correction and actual CI failure](docs/log/2026-10-31-phase02-native-timer-correction.md). The failed5c8d quality result is preserved;24 focused and572 full local tests now pass with unchanged deadlines/assertions. Fresh hosted and native evidence remains pending.
+
+
+## Development tooling hardening — 2026-11-04
+
+Owner authorized the Phase 02 delay remedies as a tooling chore. Status: local implementation and independent code review complete; this does not advance a product phase or close outstanding native acceptance. Design/runtime package changes: N/A. Shared campaign/timing contract lives in Madar `tool/dev_workflow`; Dakhl owns source/fixture/device/delivery preflight and consumes an independently reviewed tool revision. [Task outcome](docs/log/2026-11-04-tooling-hardening.md); detailed ignored journal `docs/log/tooling-hardening-execution.md`. No merge, publication, deployment or claimed time savings.

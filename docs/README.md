@@ -63,3 +63,6 @@ Owner direction, 2026-10-28: develop Madar_Engine alongside the app, keeping sha
 ## Phase execution, delays and automation
 
 [Required audit procedure](how-to/phase-execution-audit.md), [journal template](templates/phase-execution.md) and [Phase01 partial retrospective/live journal](log/phase-01-execution.md). Every phase records actual work, failures, wait causes, unknown costs and candidates for reliable automation.
+
+
+Development campaigns: [source-bound workflow](how-to/development-campaigns.md), [fixture/device/delivery preflight](how-to/task-preflight.md), [verified tooling outcome](log/2026-11-04-tooling-hardening.md).
