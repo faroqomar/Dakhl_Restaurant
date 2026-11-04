@@ -1,0 +1,70 @@
+scripts/phase_workflow.py
+  s_77505c08a044cd::t_02161a0343f4b3 1-6,8-25,28-78,81-88,94,101-116,118-119,122-138,155-168,172-173,181-207,210-215,237-238,240-241,243-244,248-253,265,269-272
+  s_77505c08a044cd::t_6d335725dd2076 139-154
+  s_77505c08a044cd::t_77c7bd89fc4ef1 7,117,120-121,169-171,174-180,216-220,222,234-236,254-264,266-268
+  s_77505c08a044cd::t_73fe7498448bc6 91-93
+  s_77505c08a044cd::t_b653690fabc652 89-90,95-100,208-209,221,223-233,239,242,245-247
+  s_77505c08a044cd::t_c5dff12187bb1c 26-27,79-80
+docs/how-to/development-campaigns.md
+  s_77505c08a044cd::t_09195fded7e168 1-54
+scripts/phase_preflight.py
+  s_77505c08a044cd::t_e77303db9fcb36 79-83
+  s_77505c08a044cd::t_b3e195cb1af4a3 1-78,84-102,106-224,226-229,233-234,238-243,245-275,281,283-286,288-298
+  s_77505c08a044cd::t_a99000a78dbc0a 225,230-232,235,244
+  s_77505c08a044cd::t_287eb763ee904a 236-237,276-280,282,287
+  s_77505c08a044cd::t_d5f98a64d93b29 103-105
+docs/log/2026-11-04-tooling-hardening.md
+  s_77505c08a044cd::t_a1ce4a7bb5e46e 1-27
+docs/log/tooling-hardening-execution.md
+  s_77505c08a044cd::t_b77d898fe5f609 20-21
+  s_77505c08a044cd::t_a1ce4a7bb5e46e 26-29
+  s_77505c08a044cd::t_b9c191f34cc7f1 1-19,22-25
+scripts/tests/test_phase_workflow.py
+  s_77505c08a044cd::t_0022a71e2cc569 196-199
+  s_77505c08a044cd::t_f57cfc611636cd 87,89,111-117,226-227,229-242,244-246
+  s_77505c08a044cd::t_02161a0343f4b3 138-140
+  s_77505c08a044cd::t_94c04747a33ea3 6-31
+  s_77505c08a044cd::t_62d9717b2989f6 45,47-50,78,94,103,141,144-195,200-225,243,247-251
+  s_77505c08a044cd::t_fc7ed410da1d3d 60,228
+  s_77505c08a044cd::t_379f2fd68ba5d0 118-125
+  s_77505c08a044cd::t_fb5059bd97b3e8 1-5,32-44,46,51-59,61-77,79-86,88,90-93,95-102,104-110,126-137,142-143,252-255
+.github/workflows/flutter.yml
+  s_77505c08a044cd::t_9e467ad1f126c0 36-57,90-91
+scripts/tests/test_phase_preflight.py
+  s_77505c08a044cd::t_753150c40f7734 1-32,34-43,45-58,60-168,170-174,181-193,197-201,254-266
+  s_77505c08a044cd::t_287eb763ee904a 241-252
+  s_77505c08a044cd::t_d5f98a64d93b29 202-226,236-240,253
+  s_77505c08a044cd::t_2632ac2cc1a648 44,59,169,175-178
+  s_77505c08a044cd::t_a99000a78dbc0a 33,179-180,194-196,227-235
+docs/how-to/task-preflight.md
+  s_77505c08a044cd::t_a99000a78dbc0a 27-28
+  s_77505c08a044cd::t_d5f98a64d93b29 1-26,29-78
+AGENTS.md
+  s_77505c08a044cd::t_1d9466ddddcaeb 368-372
+PHASES.md
+  s_77505c08a044cd::t_f0b66d716d9551 332-336
+PLANS.md
+  s_77505c08a044cd::t_7e598512ca0709 61-63
+dev-tooling-dependency.json
+  s_77505c08a044cd::t_688b9af04663d4 1-7
+docs/README.md
+  s_77505c08a044cd::t_0554b5ecc7e13e 66-68
+docs/how-to/repeated-problems.md
+  s_77505c08a044cd::t_a12849bf56d119 300-306
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a09a759aa958c2e63e28e6e8972d4e7b6112a883",
+  "prompts": {},
+  "sessions": {
+    "s_77505c08a044cd": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a19b4e-2de4-7e90-9ce1-92c2d30e69b2",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
