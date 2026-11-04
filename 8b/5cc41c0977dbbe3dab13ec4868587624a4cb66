@@ -1,0 +1,25 @@
+AGENTS.md
+  s_cecf55789e34ef::t_28bb9a9a1937ff 373-377
+dev-tooling-dependency.json
+  s_cecf55789e34ef::t_7274c95eed5192 3
+docs/log/2026-11-04-worktree-consolidation.md
+  s_cecf55789e34ef::t_3a2726fbb5d34e 1-5
+engine-dependency.json
+  s_cecf55789e34ef::t_c9a43327e2a76f 3-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8b5cc41c0977dbbe3dab13ec4868587624a4cb66",
+  "prompts": {},
+  "sessions": {
+    "s_cecf55789e34ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1892c-b531-7571-8914-75aa02e54d3d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
