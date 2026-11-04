@@ -1,7 +1,7 @@
 {
   "engine": "Madar_Engine",
-  "status": "Phase02 independently reviewed persistence/error/protection repairs; data134, application9, domain12 and benchmark-tool29 pass. Exact-head engine CI2/2 passes; current consumer/native verification tracked separately.",
-  "git_commit": "899678fa0b85807850e626db69b3291b8a7b7b64",
+  "status": "Original engine checkout consolidated; runtime packages byte-identical to reviewed899. Tooling and documentation integration only; historical native/retention limits unchanged.",
+  "git_commit": "f7f68988561d25cc93eb28c0ec989847526b2df9",
   "packages": {
     "madar_application": {
       "path": "../Madar_Engine/packages/application",

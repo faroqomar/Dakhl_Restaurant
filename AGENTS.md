@@ -370,3 +370,8 @@ Keep a compact current handoff and finish with an honest time/cost review, cause
 ## Phase 02 tooling hardening — 2026-11-04
 
 For native or benchmark campaigns, use the reviewed Madar development workflow tool and the consumer preflight before expanding a pilot into a matrix. Preserve exact source/tool/runtime/target/fixture identity, failed attempts and cleanup evidence. One campaign owner continues already-authorized stages without per-stage approval pauses; independent aggregate review and focused review of later fixes remain required. Native UI uses the current Device tools. A campaign result is evidence for review, never design/merge/release approval. Use the persistent timer from task start, classify waits and preserve interruption/clock gaps as unknown. Generate compact handoffs from receipts instead of rereading or duplicating full journals.
+
+
+## Original checkout only — owner direction 2026-11-04
+
+Use the original project checkout and ordinary branches for future work. Do not create additional worktrees. Preserve existing work before switching branches. This newer owner instruction supersedes earlier dedicated-worktree requirements; PR/review and truthful verification requirements remain.

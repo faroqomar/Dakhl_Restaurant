@@ -1,0 +1,5 @@
+# Worktree consolidation
+
+Owner authorized publishing existing independently reviewed tooling and integrating without waiting for another GitHub-check cycle. Existing verification was 109 app script tests, 24 engine workflow tests and 29 benchmark contracts; no new hosted-CI pass is claimed. Engine tooling PR7 and checkout-policy PR8 are merged. The app now pins the original engine checkout at f7f68988561d25cc93eb28c0ec989847526b2df9 for runtime and development tooling; runtime package objects equal reviewed899 and tooling bytes retain their reviewed hash.
+
+Local worktree drafts/evidence and original uncommitted edits are preserved in locally excluded local-worktree-archive/2026-11-04-consolidation, plus original-edit Git stashes. Archives are local-only, not published or labelled merged. They retain old failures and pending iOS/retention limits; no phase DONE, restored data, release or deployment claim. Use the original projects with ordinary branches from now on. Temporary worktree folders may be removed after archive verification and reference migration.
