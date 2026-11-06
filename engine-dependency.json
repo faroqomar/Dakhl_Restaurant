@@ -1,7 +1,7 @@
 {
   "engine": "Madar_Engine",
   "status": "Locally independently reviewed completion domain and Unicode17 compatibility candidate; whole Completion, hosted CI and release gates remain blocked.",
-  "git_commit": "bc4e8fc63a18fd9c985cf475110d3624c8c8a97f",
+  "git_commit": "97a5a6f4003a7084304d87e1b9554397f9bd7ac8",
   "packages": {
     "madar_application": {
       "path": "../Madar_Engine/packages/application",

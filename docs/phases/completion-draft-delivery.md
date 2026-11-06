@@ -1,3 +1,5 @@
+Historical pre-implementation snapshot; superseded by [restarted delivery](../log/2026-11-07-completion-step5-restarted-delivery.md). Statements below apply only to their recorded older revision.
+
 # Completion draft delivery
 
 Status: BLOCKED / not ready for merge approval. This documentation-only draft records the partial engine candidate and remaining work; it does not implement or complete the restaurant workflows.
