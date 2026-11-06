@@ -1,0 +1,21 @@
+docs/log/2026-11-07-completion-ci-evidence-fix.md
+  s_4cfb0aecd4cd7c::t_4cc076cb768955 1-7
+outputs/completion-review/step4-restarted/README.md
+  s_4cfb0aecd4cd7c::t_4cc076cb768955 1-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "82e8bf1a05f13e23306926a565c8717a405fbcbc",
+  "prompts": {},
+  "sessions": {
+    "s_4cfb0aecd4cd7c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b2b4-e7e0-7aa0-af3c-4566b631abc3",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
