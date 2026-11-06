@@ -1,0 +1,35 @@
+engine-dependency.json
+  s_4cfb0aecd4cd7c::t_d6eccdc85ae913 3-4,20
+test/catalog/oracle.json
+  s_4cfb0aecd4cd7c::t_3f98c641b8ad79 2-34,974-1017,1021-1132,1177-1181,1183
+test/catalog/generate_catalog_oracle.cjs
+  s_4cfb0aecd4cd7c::t_3f98c641b8ad79 13-14,16,32
+lib/catalog/catalog_read_model.dart
+  s_4cfb0aecd4cd7c::t_d467b09e13f566 5-7,90,104-105
+lib/sales/ticket_workspace.dart
+  s_4cfb0aecd4cd7c::t_fc25552426f0d0 57,322
+lib/settings/account_settings.dart
+  s_4cfb0aecd4cd7c::t_a18a312c06c07f 3-4,53-55
+pubspec.lock
+  s_4cfb0aecd4cd7c::t_37ddc5534cecbe 419
+test/sales/ticket_workspace_test.dart
+  s_4cfb0aecd4cd7c::t_a198749d5e153e 8,106-145
+test/settings/account_settings_test.dart
+  s_4cfb0aecd4cd7c::t_6fd7a49e46207e 7-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f24bc12934ccec6307049803b6b9a6be7bc8e596",
+  "prompts": {},
+  "sessions": {
+    "s_4cfb0aecd4cd7c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b2b4-e7e0-7aa0-af3c-4566b631abc3",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
