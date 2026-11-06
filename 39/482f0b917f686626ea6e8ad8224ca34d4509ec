@@ -1,0 +1,47 @@
+outputs/completion-review/step4-restarted/step4_catalog_oracle_probe.dart
+  s_4cfb0aecd4cd7c::t_e842c70e612b5a 1-14
+outputs/completion-review/step4-restarted/step4_app_fix_reverify.dart
+  s_4cfb0aecd4cd7c::t_e842c70e612b5a 1-169
+outputs/completion-review/step4-restarted/timing-partial.json
+  s_4cfb0aecd4cd7c::t_e842c70e612b5a 1
+PHASES.md
+  s_4cfb0aecd4cd7c::t_bc6fbaab1fa6ce 2
+  s_4cfb0aecd4cd7c::t_b9afaf41da6324 1
+outputs/completion-review/step4-restarted/log-archives.json
+  s_4cfb0aecd4cd7c::t_b9afaf41da6324 41-45
+  s_4cfb0aecd4cd7c::t_e842c70e612b5a 1-40,46-47
+docs/log/2026-11-07-completion-step4-restarted-review.md
+  s_4cfb0aecd4cd7c::t_b9afaf41da6324 45-46
+  s_4cfb0aecd4cd7c::t_dd0371de2cdc55 47-48
+  s_4cfb0aecd4cd7c::t_99329199dc76b3 7,49-50
+  s_4cfb0aecd4cd7c::t_bc6fbaab1fa6ce 1-2,4-6,8-15,17-34
+  s_4cfb0aecd4cd7c::t_e842c70e612b5a 3,16,35-44
+outputs/completion-review/step4-restarted/engine-memory-check.json
+  s_4cfb0aecd4cd7c::t_c6455b2807680e 1-17
+outputs/completion-review/step4-restarted/independent-closeout.json
+  s_4cfb0aecd4cd7c::t_c6455b2807680e 1-20
+outputs/completion-review/step4-restarted/app-memory-check.json
+  s_4cfb0aecd4cd7c::t_c6455b2807680e 1-19
+docs/log/2026-11-07-completion-step5-restarted-delivery.md
+  s_4cfb0aecd4cd7c::t_ba0ac61a609b3d 1-15
+docs/phases/completion-draft-delivery.md
+  s_4cfb0aecd4cd7c::t_d650e422ae44f0 1-2
+engine-dependency.json
+  s_4cfb0aecd4cd7c::t_9d951b6a569aa6 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "39482f0b917f686626ea6e8ad8224ca34d4509ec",
+  "prompts": {},
+  "sessions": {
+    "s_4cfb0aecd4cd7c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b2b4-e7e0-7aa0-af3c-4566b631abc3",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
