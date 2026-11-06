@@ -1,0 +1,280 @@
+docs/phases/completion-inventory-contract.md
+  s_4cfb0aecd4cd7c::t_8b4b2838cf082a 38-41
+  s_4cfb0aecd4cd7c::t_62cfc7096563b8 7
+  s_4cfb0aecd4cd7c::t_ca0f3dc52bdaff 36
+  s_4cfb0aecd4cd7c::t_4f1a8dd2ca56d3 9,31,37
+  s_4cfb0aecd4cd7c::t_6477d1a86b3bcd 1-6,8,10-30,32-35
+lib/platform/completion_performance_main.dart
+  s_4cfb0aecd4cd7c::t_add2c36fbd841a 23-26,50-52
+  s_4cfb0aecd4cd7c::t_a9a1f1b576b8bf 21-22,27-30
+  s_4cfb0aecd4cd7c::t_09a430f7a3af0d 1-20,31-49,53-64
+test/catalog/oracle.json
+  s_4cfb0aecd4cd7c::t_ccf530d32ae826 1-1139
+lib/platform/completion_performance_scenarios.dart
+  s_4cfb0aecd4cd7c::t_09a430f7a3af0d 1-86,88,90-337
+  s_4cfb0aecd4cd7c::t_380677a9a0490f 87,89
+outputs/completion-build/performance-campaign-002/guard-attempt1.json
+  s_4cfb0aecd4cd7c::t_0034a21047e5a4 1-18
+outputs/completion-build/performance-campaign-002/plan.json
+  s_4cfb0aecd4cd7c::t_0034a21047e5a4 1-268
+outputs/completion-build/commerce-parity/commerce-js-results.json
+  s_4cfb0aecd4cd7c::t_8687ad24f1b297 1
+outputs/completion-build/performance-campaign-002/preflight-spec.json
+  s_4cfb0aecd4cd7c::t_0034a21047e5a4 1-16
+test/parties/parties_view_model_test.dart
+  s_4cfb0aecd4cd7c::t_de4e8902fab2d5 88-112,130-131,152-153,232-257
+  s_4cfb0aecd4cd7c::t_66f074f335f67c 1-2,4-15,18,25-27,37-38,40-47,113,121-124,126-129,137,143-151,154,220-221,226-231,258
+  s_4cfb0aecd4cd7c::t_f3cb9b71445df3 28,30
+  s_4cfb0aecd4cd7c::t_4ad1b5f2018bf2 3,16-17,19-24,29,31-36,39,48-87,114-120,125,132-136,138-142,155-219,222-225
+lib/inventory/stock_projection.dart
+  s_4cfb0aecd4cd7c::t_39faf9d051b0c1 4,16-25,32-36,45-49,58-62,72-75,81-82,84-102,107-112
+  s_4cfb0aecd4cd7c::t_ce3dba6950c6b7 1-3,5-15,26-31,37-44,50-57,63-71,76-80,83,103-106,113-115
+outputs/completion-build/performance-campaign/state.json
+  s_4cfb0aecd4cd7c::t_61f66923ebc390 29-55
+  s_4cfb0aecd4cd7c::t_697bf26744d668 56-83
+  s_4cfb0aecd4cd7c::t_2877d462d16a56 1,86-99
+  s_4cfb0aecd4cd7c::t_01616d458f6019 2-28,84-85
+outputs/completion-build/performance-campaign/pilot-catalog-attempt1.json
+  s_fb11b6964d9431::t_6d6b5412e27bb0 1-96
+outputs/completion-build/performance-campaign-002/successor.json
+  s_4cfb0aecd4cd7c::t_0034a21047e5a4 1-7
+test/settings/account_settings_test.dart
+  s_4cfb0aecd4cd7c::t_eaadfbcc890d67 1-82
+engine-dependency.json
+  s_4cfb0aecd4cd7c::t_407dd395b56e04 3-4,20
+outputs/completion-build/platforms/macos-debug.json
+  s_4cfb0aecd4cd7c::t_90773c778fc496 1-7
+outputs/completion-build/performance-campaign/pilot-catalog-attempt1.json.diagnostics.json
+  s_fb11b6964d9431::t_6d6b5412e27bb0 1
+outputs/completion-build/performance-campaign/spec.json
+  s_4cfb0aecd4cd7c::t_2877d462d16a56 1-25
+test/settings/account_settings_controller_test.dart
+  s_5231b33be1a511::t_9fadcce74230af 6,18-76
+  s_4cfb0aecd4cd7c::t_4453ebcaf45ae5 1-5,7-17,77
+test/catalog/generate_catalog_oracle.cjs
+  s_4cfb0aecd4cd7c::t_ccf530d32ae826 1-29
+outputs/completion-build/performance-campaign-002/matrix-receipt-001.json
+  s_4cfb0aecd4cd7c::t_7a554c83f60f00 1-21
+test/catalog/catalog_read_model_test.dart
+  s_4cfb0aecd4cd7c::t_ccf530d32ae826 1-3,10-46
+  s_4cfb0aecd4cd7c::t_eaadfbcc890d67 4-9,47-116
+test/inventory/stock_projection_test.dart
+  s_4cfb0aecd4cd7c::t_4d6e7f157eb56d 78
+  s_4cfb0aecd4cd7c::t_e41907e9dd2a4a 90,100,124,141
+  s_4cfb0aecd4cd7c::t_99cdb29e62b6d7 1-3,71-77,79-89,91-99,101-123,125-140,142-212
+  s_4cfb0aecd4cd7c::t_12188c62a9ed0b 4-8,11-14,26-27,46-47,68-70,213-216,225,230,240-242,251-252
+  s_4cfb0aecd4cd7c::t_39faf9d051b0c1 9-10,15-25,28-45,48-67,217-224,226-229,231-239,243-250
+lib/parties/parties_view_model.dart
+  s_4cfb0aecd4cd7c::t_4ad1b5f2018bf2 1-187,189,192,194-253
+  s_4cfb0aecd4cd7c::t_f3cb9b71445df3 188,190-191,193
+test/inventory/stock_parity.json
+  s_4cfb0aecd4cd7c::t_99cdb29e62b6d7 1-128
+outputs/completion-build/performance-campaign/pilot-receipt-001.json
+  s_4cfb0aecd4cd7c::t_61f66923ebc390 1-21
+tool/dev_dashboard/tests/test_app_runner.py
+  s_4cfb0aecd4cd7c::t_b7d0035f7c038b 180-191
+  s_4cfb0aecd4cd7c::t_201733f5b39154 131-137
+docs/log/2026-11-07-completion-step3-restarted-build.md
+  s_4cfb0aecd4cd7c::t_ffe39c8a60772a 1-2,4-18,20-22
+  s_4cfb0aecd4cd7c::t_8b4b2838cf082a 27-31
+  s_4cfb0aecd4cd7c::t_a7657562134b02 3,32-43
+  s_4cfb0aecd4cd7c::t_bbe6b280c0c8a2 19,23-26
+test/platform/completion_performance_test.dart
+  s_4cfb0aecd4cd7c::t_09a430f7a3af0d 2,14-17,21-49,51-52,54-56,60-61
+  s_4cfb0aecd4cd7c::t_f0cab3685d56d4 1,3-13,18-20,50,53,57-59,62
+lib/accounts/legacy_account_codec.dart
+  s_4cfb0aecd4cd7c::t_4f1a8dd2ca56d3 869
+  s_4cfb0aecd4cd7c::t_9005c1633298ec 935,938-941,962,964-967
+outputs/completion-build/performance-campaign/guard-attempt1.json
+  s_4cfb0aecd4cd7c::t_01616d458f6019 1-18
+docs/phases/completion-app-nonvisual.md
+  s_4cfb0aecd4cd7c::t_62a80c48d2a7fb 1-29
+  s_4cfb0aecd4cd7c::t_8b4b2838cf082a 30-33
+outputs/completion-build/commerce-parity/manifest.json
+  s_4cfb0aecd4cd7c::t_8687ad24f1b297 1-22
+outputs/completion-build/performance-campaign-002/pilot-receipt-001.json
+  s_4cfb0aecd4cd7c::t_e5b483b2efc609 1-25
+lib/sales/ticket_workspace.dart
+  s_4cfb0aecd4cd7c::t_86e5f5f1e282a2 1-18,20,22-34,42-57,59,61-112,114,116-137,139,141-154,156,158-175,177,179-181,183,185-200,219-230,234-235,238-247,249,251,253,255-271,273,276,278-280,282-284,286,294-314,316,318,320,322-347,349-358,360-366,368,370-377,379,381-386,388,390,393-402
+  s_4cfb0aecd4cd7c::t_ea75a5e08f34e8 35-41,202-209,211,213-216,252,254,281,289
+  s_4cfb0aecd4cd7c::t_b00dda68492981 19,21,58,60,113,115,138,140,155,157,176,178,182,184,248,250,272,274-275,277,285,287-288,290-293,315,317,319,321,348,359,367,369,378,380,387,389,391-392
+  s_4cfb0aecd4cd7c::t_5231faa98d917b 201,210,212,217-218,231-233,236-237
+outputs/completion-build/platforms/ios-simulator.json
+  s_4cfb0aecd4cd7c::t_90773c778fc496 1-8
+docs/phases/completion-benchmarks.md
+  s_4cfb0aecd4cd7c::t_022806392c383a 60-80
+  s_4cfb0aecd4cd7c::t_add2c36fbd841a 54-59
+  s_4cfb0aecd4cd7c::t_1503d157f03187 1-8,10-22,24-37,39-40,42-51
+  s_4cfb0aecd4cd7c::t_a9a1f1b576b8bf 9,23,38,41,52-53
+lib/catalog/catalog_read_model.dart
+  s_4cfb0aecd4cd7c::t_eaadfbcc890d67 1-116
+outputs/completion-build/performance-campaign-002/spec.json
+  s_4cfb0aecd4cd7c::t_0034a21047e5a4 1-25
+outputs/completion-build/performance-campaign/preflight-spec.json
+  s_4cfb0aecd4cd7c::t_2877d462d16a56 1-16
+outputs/completion-build/performance-campaign/plan.json
+  s_4cfb0aecd4cd7c::t_2877d462d16a56 1-268
+test/inventory/inventory_commands_test.dart
+  s_4cfb0aecd4cd7c::t_4453ebcaf45ae5 2,11,14-38,40-46,48-49,97-295,298-301,318-321,324-326,329-330,333-334,336-396
+  s_4cfb0aecd4cd7c::t_4f1a8dd2ca56d3 50-96,335
+  s_4cfb0aecd4cd7c::t_4ad1b5f2018bf2 1,3-10,12-13,39,47,397
+  s_4cfb0aecd4cd7c::t_c83b7e7c8423f4 296-297,302-317,322-323,327-328,331-332
+docs/phases/completion-parties-contract.md
+  s_4cfb0aecd4cd7c::t_8b4b2838cf082a 30-33
+  s_4cfb0aecd4cd7c::t_de4e8902fab2d5 1-29
+outputs/completion-build/verification-001/manifest.json
+  s_4cfb0aecd4cd7c::t_68d3e231edc569 1-25
+docs/phases/completion-financial-mapping-proposal.md
+  s_4cfb0aecd4cd7c::t_1cabb44ad2e462 1-39
+tool/dev_dashboard/operations.json
+  s_4cfb0aecd4cd7c::t_380677a9a0490f 191-204
+  s_4cfb0aecd4cd7c::t_aac86a12da5dda 121-190,205-211
+lib/accounts/accounts_repository.dart
+  s_4cfb0aecd4cd7c::t_2fa47715604bed 29-31
+  s_5231b33be1a511::t_9fadcce74230af 28
+outputs/completion-build/performance-campaign/seven-operations-attempt1.json.diagnostics.json
+  s_4cfb0aecd4cd7c::t_3dc54728279176 1
+outputs/completion-build/performance-campaign-002/state.json
+  s_4cfb0aecd4cd7c::t_0034a21047e5a4 1-28,87-102
+  s_4cfb0aecd4cd7c::t_13ab71d7f9d817 29-59
+  s_4cfb0aecd4cd7c::t_7838f0721a2a05 60-86
+lib/settings/account_settings_controller.dart
+  s_5231b33be1a511::t_9fadcce74230af 1-83
+docs/phases/completion-workspace-contract.md
+  s_4cfb0aecd4cd7c::t_8b4b2838cf082a 30-33
+  s_4cfb0aecd4cd7c::t_62cfc7096563b8 1-29
+test/sales/ticket_workspace_test.dart
+  s_4cfb0aecd4cd7c::t_929e882f298d1a 1,38-49,56-61,81-84,93-94,97,100-103,146
+  s_4cfb0aecd4cd7c::t_ea75a5e08f34e8 2,147-173
+  s_4cfb0aecd4cd7c::t_86e5f5f1e282a2 4,12,15-30,32-35,37,104,174-423
+  s_4cfb0aecd4cd7c::t_b00dda68492981 50-55,62-80,85-92,95-96,98-99,105-145
+  s_4cfb0aecd4cd7c::t_ee317e6ee9870d 3,5-11,13-14,31,36,424
+outputs/completion-build/performance-campaign/seven-operations-attempt1.json
+  s_4cfb0aecd4cd7c::t_3dc54728279176 1-638
+lib/inventory/inventory_commands.dart
+  s_4cfb0aecd4cd7c::t_4453ebcaf45ae5 1-143,145-153,155,157-242
+  s_4cfb0aecd4cd7c::t_4f1a8dd2ca56d3 144
+  s_5231b33be1a511::t_9fadcce74230af 154,156
+outputs/completion-build/commerce-parity/commerce-oracle.cjs
+  s_4cfb0aecd4cd7c::t_8687ad24f1b297 1-2
+tool/dev_dashboard/run_benchmarks.py
+  s_4cfb0aecd4cd7c::t_4c8d1b72de56a7 403-409,411-412,494,496,527-532
+lib/settings/account_settings.dart
+  s_4cfb0aecd4cd7c::t_eaadfbcc890d67 1-89
+outputs/completion-build/commerce-parity/commerce-corpus-gen.py
+  s_4cfb0aecd4cd7c::t_8687ad24f1b297 1-11
+outputs/completion-build/performance-campaign/matrix-receipt-001.json
+  s_4cfb0aecd4cd7c::t_697bf26744d668 1-22
+outputs/completion-build/commerce-parity/commerce-corpus.json
+  s_4cfb0aecd4cd7c::t_8687ad24f1b297 1
+outputs/completion-build/commerce-parity/commerce-corpus-run.dart.txt
+  s_4cfb0aecd4cd7c::t_8d4684f2cdea3d 1-5
+outputs/completion-build/performance-campaign-002/pilot-catalog-attempt1.json
+  s_4cfb0aecd4cd7c::t_55711e86076197 1-96
+outputs/completion-build/performance-campaign-002/pilot-catalog-attempt1.json.diagnostics.json
+  s_4cfb0aecd4cd7c::t_0c7efd6b11f572 1
+outputs/completion-build/performance-campaign-002/pilot-inventory-attempt1.json
+  s_4cfb0aecd4cd7c::t_f619bdcf9ab86f 1-96
+outputs/completion-build/performance-campaign-002/pilot-inventory-attempt1.json.diagnostics.json
+  s_4cfb0aecd4cd7c::t_fc8a4409c00efc 1
+outputs/completion-build/performance-campaign-002/seven-operations-attempt1.json
+  s_4cfb0aecd4cd7c::t_c27493351b0459 1-810
+outputs/completion-build/performance-campaign-002/seven-operations-attempt1.json.diagnostics.json
+  s_4cfb0aecd4cd7c::t_da0437e16513bd 1
+outputs/completion-build/platforms/android-debug.json
+  s_4cfb0aecd4cd7c::t_5139ae938aab21 1-13
+outputs/completion-build/platforms/completion-android-build-retry.log
+  s_4cfb0aecd4cd7c::t_4d64278fe89f69 1-9
+outputs/completion-build/platforms/completion-android-build.log
+  s_4cfb0aecd4cd7c::t_ebef57b04f4fad 1-84
+outputs/completion-build/platforms/completion-bench-postend-analysis.log
+  s_4cfb0aecd4cd7c::t_688f7e1ee22eb3 1-2
+outputs/completion-build/platforms/completion-golden-tests.log
+  s_4cfb0aecd4cd7c::t_d91818eab8cc14 1-9
+outputs/completion-build/platforms/completion-ios-build.log
+  s_4cfb0aecd4cd7c::t_3e6b7f197bb1bb 1-25
+outputs/completion-build/platforms/completion-macos-debug-build.log
+  s_4cfb0aecd4cd7c::t_828c3a1793161e 1-2
+outputs/completion-build/verification-001/completion-app-analysis-final.log
+  s_4cfb0aecd4cd7c::t_ecf0b7b21cb44f 1-2
+outputs/completion-build/verification-001/completion-app-analysis.log
+  s_4cfb0aecd4cd7c::t_86b0576fc82151 1-8
+outputs/completion-build/verification-001/completion-app-format-final.log
+  s_4cfb0aecd4cd7c::t_478d8a5b1f540c 1
+outputs/completion-build/verification-001/completion-app-format.log
+  s_4cfb0aecd4cd7c::t_78c13976c2d722 1-2
+outputs/completion-build/verification-001/completion-app-full-tests.log
+  s_4cfb0aecd4cd7c::t_cb9c444562dc94 1-641
+outputs/completion-build/verification-001/completion-bench-analysis-final.log
+  s_4cfb0aecd4cd7c::t_e07fcf724b4dab 1-2
+outputs/completion-build/verification-001/completion-bench-dart-first.log
+  s_4cfb0aecd4cd7c::t_4c9aab8019fac4 1-11
+outputs/completion-build/verification-001/completion-bench-dart-red.log
+  s_4cfb0aecd4cd7c::t_645d59e82af953 1-38
+outputs/completion-build/verification-001/completion-bench-python-final.log
+  s_4cfb0aecd4cd7c::t_45c72f13a7f7b3 1-17
+outputs/completion-build/verification-001/completion-codec-stock-final.log
+  s_4cfb0aecd4cd7c::t_fe989018078117 1-370
+outputs/completion-build/verification-001/completion-domain-analyze.log
+  s_4cfb0aecd4cd7c::t_96cdb534b81abd 1-2
+outputs/completion-build/verification-001/completion-domain-final.log
+  s_4cfb0aecd4cd7c::t_1983c3ea5d56a3 1-47
+outputs/completion-build/verification-001/completion-domain-format.log
+  s_4cfb0aecd4cd7c::t_82053f3ed90f64 1
+outputs/completion-build/verification-001/completion-inventory-analyze-final.log
+  s_4cfb0aecd4cd7c::t_a62b5c9fb125aa 1-25
+outputs/completion-build/verification-001/completion-python-checks.log
+  s_4cfb0aecd4cd7c::t_3060c2abb11a90 1-96
+outputs/completion-build/verification-001/completion-python313-checks.log
+  s_4cfb0aecd4cd7c::t_53c5144fc3d6f0 1-114
+outputs/completion-build/verification-001/settings-controller-analyze.log
+  s_4cfb0aecd4cd7c::t_ac921387543f71 1-26
+outputs/completion-build/verification-001/settings-controller-green.log
+  s_4cfb0aecd4cd7c::t_f00d638f1cc71d 1-29
+outputs/completion-build/verification-001/settings-controller-red.log
+  s_4cfb0aecd4cd7c::t_558da4a5b97662 1-67
+outputs/completion-build/verification-001/stock-consumer-parity.log
+  s_4cfb0aecd4cd7c::t_d0e95b78450a29 1-38
+outputs/completion-build/verification-001/ticket-race-analysis.log
+  s_4cfb0aecd4cd7c::t_437d388655d548 1-2
+outputs/completion-build/verification-001/ticket-race-final.log
+  s_4cfb0aecd4cd7c::t_cb37dbee893ab2 1-14
+outputs/completion-build/verification-001/ticket-race-red.log
+  s_4cfb0aecd4cd7c::t_7fba47e20c033e 1-10
+pubspec.lock
+  s_4cfb0aecd4cd7c::t_f29412d35811b4 419
+tool/dev_dashboard/README.md
+  s_4cfb0aecd4cd7c::t_66922452792396 116-122
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c90754aa3af86913be13819ada0f7bdaf3a94834",
+  "prompts": {},
+  "sessions": {
+    "s_4cfb0aecd4cd7c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b2b4-e7e0-7aa0-af3c-4566b631abc3",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_5231b33be1a511": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1abbe-5b0d-7492-b492-db03b118d2cf",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_fb11b6964d9431": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b059-699a-72b1-8a43-204a05a58610",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
