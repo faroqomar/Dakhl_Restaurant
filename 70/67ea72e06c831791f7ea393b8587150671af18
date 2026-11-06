@@ -1,0 +1,19 @@
+docs/phases/completion-draft-delivery.md
+  s_4cfb0aecd4cd7c::t_76fa8de9a7b1c9 1-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7067ea72e06c831791f7ea393b8587150671af18",
+  "prompts": {},
+  "sessions": {
+    "s_4cfb0aecd4cd7c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b2b4-e7e0-7aa0-af3c-4566b631abc3",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
