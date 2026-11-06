@@ -1,0 +1,21 @@
+outputs/completion-build/log-archives.json
+  s_4cfb0aecd4cd7c::t_79bdc1ad53ae8d 1-147
+outputs/completion-build/README.md
+  s_4cfb0aecd4cd7c::t_79bdc1ad53ae8d 1-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e2d61cec2495a4db9e237616db5cf13c627c4eb0",
+  "prompts": {},
+  "sessions": {
+    "s_4cfb0aecd4cd7c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b2b4-e7e0-7aa0-af3c-4566b631abc3",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
