@@ -166,4 +166,3 @@ final class FixtureStore implements LocalDocumentWorkspaceStore {
   @override
   Future<void> close() async {}
 }
-
