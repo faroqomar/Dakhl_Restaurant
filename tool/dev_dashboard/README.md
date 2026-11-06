@@ -113,3 +113,10 @@ python3 tool/dev_dashboard/tests/test_app_runner.py
 Failure metadata is diagnostic evidence, not a passing benchmark or a substitute
 for an independently reviewed current-source measurement cohort. Historical
 failed and partial results remain at their original source identities.
+
+
+## Completion nonvisual cases
+
+Seven additional registry cases use a separate opt-in entrypoint: `catalog.lookup`, `inventory.post_movement`, `workspace.hold`, `workspace.resume`, `settings.save`, `parties.save_supplier` and `parties.save_material`. See [workload, warm-up, timing, cleanup and evidence](../../docs/phases/completion-benchmarks.md). These measure actual nonvisual commands, not UI/raster completion. One unmeasured real operation precedes fresh measured fixtures. Elapsed samples exclude setup/readback/cleanup; the process RAM/CPU window includes inter-iteration work. Existing nine Phase01/02 scenarios retain their own semantics.
+
+Use the supported Python3.13 interpreter for campaign composition. The default shell Python may be older; interpreter/import failure is failed verification, not a reason to relax checks. The first native pilot and source-bound campaign receipts remain separate from scenario unit tests.

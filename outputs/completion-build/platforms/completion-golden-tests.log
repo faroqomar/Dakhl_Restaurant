@@ -1,0 +1,9 @@
+00:00 +0: loading /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/global_keyboard_test.dart
+00:00 +0: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/visual_contract_test.dart: (setUpAll)
+00:00 +0: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/visual_contract_test.dart: controlled component states and focused field
+00:00 +1: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/visual_contract_test.dart: controlled 390px invoice dialog
+00:01 +2: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/visual_contract_test.dart: controlled desktop sales composition
+00:01 +3: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/visual_contract_test.dart: controlled 320px invoice at 200 percent retains actions
+00:01 +4: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/visual_contract_test.dart: controlled desktop open navigation preserves source identity and icons
+00:01 +5: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/visual_contract_test.dart: (tearDownAll)
+00:06 +5: All tests passed!

@@ -1,0 +1,10 @@
+00:00 +0: loading /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart
+00:00 +0: sale finalized during workspace acknowledgement cannot publish a draft
+00:00 +0 -1: sale finalized during workspace acknowledgement cannot publish a draft [E]
+  type 'CapabilitySuccess<void>' is not a subtype of type 'CapabilityFailure<dynamic>' in type cast
+  test/sales/ticket_workspace_test.dart 103:27  main.<fn>
+  
+00:00 +0 -1: Some tests failed.
+
+Failing tests:
+  /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: sale finalized during workspace acknowledgement cannot publish a draft

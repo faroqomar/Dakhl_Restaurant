@@ -1,0 +1,641 @@
+00:00 +0: loading /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/global_keyboard_test.dart
+00:00 +0: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/settings/account_settings_test.dart: draft save and discard preserve immutable baseline and unrelated current records
+00:00 +1: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/settings/account_settings_test.dart: codec rejects empty enabled list, duplicate disabled name and total above20
+00:00 +2: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/settings/account_settings_test.dart: settings values defensively copy lists and detect raw whitespace edits
+00:01 +3: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/presentation_test.dart: invalid values and busy actions announce state, retain input
+00:02 +4: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh restored Inventory accepts global search without a preceding click (variant: TargetPlatform.macOS)
+00:02 +5: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh restored Inventory accepts global search without a preceding click (variant: TargetPlatform.macOS)
+00:02 +6: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh restored Inventory accepts global search without a preceding click (variant: TargetPlatform.macOS)
+00:02 +7: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh restored Inventory accepts global search without a preceding click (variant: TargetPlatform.macOS)
+00:02 +8: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/session_undo_test.dart: session Undo restores visible date and discount and survives away/back
+00:02 +9: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/session_undo_test.dart: session Undo restores visible date and discount and survives away/back
+00:03 +10: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/session_undo_test.dart: session Undo restores visible date and discount and survives away/back
+00:03 +11: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/session_undo_test.dart: session Undo restores visible date and discount and survives away/back
+00:03 +12: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/session_undo_test.dart: session Undo restores visible date and discount and survives away/back
+00:03 +13: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh global numbered shortcuts navigate while editable text owns slot and Undo keys (variant: TargetPlatform.macOS)
+00:03 +14: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh global numbered shortcuts navigate while editable text owns slot and Undo keys (variant: TargetPlatform.macOS)
+00:03 +15: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh global numbered shortcuts navigate while editable text owns slot and Undo keys (variant: TargetPlatform.macOS)
+00:03 +16: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh global numbered shortcuts navigate while editable text owns slot and Undo keys (variant: TargetPlatform.macOS)
+00:03 +17: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh global numbered shortcuts navigate while editable text owns slot and Undo keys (variant: TargetPlatform.macOS)
+00:03 +18: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/global_keyboard_test.dart: fresh global numbered shortcuts navigate while editable text owns slot and Undo keys (variant: TargetPlatform.macOS)
+00:03 +19: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/presentation_test.dart: narrow and desktop sales and gallery have no layout overflow
+00:03 +20: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/presentation_test.dart: narrow and desktop sales and gallery have no layout overflow
+00:04 +21: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/presentation_test.dart: shortcut editor preserves duplicates and empty choices
+00:04 +22: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/presentation_test.dart: complete six-shortcut shell remains usable at 320 and 200 percent
+00:04 +23: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/presentation_test.dart: icon-only control exposes a named button and 44px target
+00:04 +24: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/presentation_test.dart: quantity stepper emits intent without doing money arithmetic
+00:04 +25: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/presentation_test.dart: page gutter follows narrow source boundary through 760
+00:04 +26: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/presentation_test.dart: desktop shortcut hints preserve slot numbers and hide on narrow
+00:04 +27: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/presentation_test.dart: popover restores frozen brand subtitle and route icon paths
+00:04 +28: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/presentation_test.dart: protected shortcut editor disables save and exposes explicit reread
+00:04 +29: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/ui/presentation_test.dart: sales layout uses the same inclusive narrow boundary as gutters
+00:04 +30: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: writes only synthetic isolated output and discovers latest on reopen
+00:04 +31: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: writes only synthetic isolated output and discovers latest on reopen
+00:04 +32: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: repeating the same write after reopen does not create duplicates
+00:04 +33: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:05 +34: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:05 +35: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:05 +36: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:05 +37: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:05 +38: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:05 +39: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:05 +40: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:05 +41: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:05 +42: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:05 +43: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:05 +44: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:05 +45: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:05 +46: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:05 +47: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: committed synthetic output survives a separate Dart process
+00:06 +48: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: concurrent repositories cannot publish overlapping revisions
+00:06 +49: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: actual read-only lock denies a write while preserving committed bytes
+00:06 +50: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: denied publication preserves old committed bytes and retry succeeds
+00:06 +51: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: retry after publication but lost acknowledgement never duplicates output
+00:06 +52: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: ignores unpublished crash staging but fails closed on corrupt committed latest
+00:06 +53: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/bootstrap_test.dart: overlapping reads share one initialization and use the real contract
+00:06 +54: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/bootstrap_test.dart: overlapping reads share one initialization and use the real contract
+00:06 +55: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: rejects symlink roots and committed payload symlinks
+00:06 +56: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: rejects symlink roots and committed payload symlinks
+00:06 +57: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: rejects symlink roots and committed payload symlinks
+00:06 +58: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: rejects symlink roots and committed payload symlinks
+00:06 +59: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: rejects symlink roots and committed payload symlinks
+00:06 +60: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/capabilities/isolated_probe_repository_test.dart: rejects invalid payload before creating any directory
+00:06 +61: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/ios_shell_back_gesture_test.dart: ordinary child horizontal drags win even near the edge (variant: TargetPlatform.iOS)
+00:07 +62: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +63: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +64: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +65: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +66: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +67: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:07 +68: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:08 +69: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:08 +70: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: Arabic RTL development app composes the navigation shell
+00:08 +71: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/shell_account_status_test.dart: saved account does not hide an in-flight shell preference save
+00:08 +72: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/shell_account_status_test.dart: saved account does not hide an in-flight shell preference save
+00:09 +73: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/shell_account_status_test.dart: saved account does not hide an in-flight shell preference save
+00:09 +74: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/shell_account_status_test.dart: saved account does not hide an in-flight shell preference save
+00:09 +75: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/shell_account_status_test.dart: saved account does not hide an in-flight shell preference save
+00:09 +76: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/shell_account_status_test.dart: saved account does not hide an in-flight shell preference save
+00:09 +77: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/shell_account_status_test.dart: saved account does not hide an in-flight shell preference save
+00:09 +78: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/shell_account_status_test.dart: saved account does not hide an in-flight shell preference save
+00:09 +79: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/shell_account_status_test.dart: saved account does not hide an in-flight shell preference save
+00:09 +80: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/shell_account_status_test.dart: saved account does not hide an in-flight shell preference save
+00:09 +81: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/shell_account_status_test.dart: saved account does not hide an in-flight shell preference save
+00:09 +82: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/shell_account_status_test.dart: saved account does not hide an in-flight shell preference save
+00:09 +83: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/shell_account_status_test.dart: saved account does not hide an in-flight shell preference save
+00:09 +84: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/shell_account_status_test.dart: saved account does not hide an in-flight shell preference save
+00:09 +85: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/performance_test.dart: optional observation sees usable actual shell and route frames
+00:09 +86: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/performance_test.dart: optional observation sees usable actual shell and route frames
+00:09 +87: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: healthy reread warns when a newer session route remains unsaved
+00:09 +88: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: healthy reread warns when a newer session route remains unsaved
+00:10 +89: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:10 +90: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:10 +91: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:10 +92: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:10 +93: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:10 +94: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:10 +95: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:10 +96: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:10 +97: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:10 +98: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:10 +99: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:10 +100: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:10 +101: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:10 +102: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +103: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +104: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +105: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +106: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +107: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +108: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +109: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +110: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +111: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +112: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +113: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +114: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +115: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +116: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +117: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +118: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +119: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +120: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +121: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +122: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +123: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +124: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +125: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +126: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +127: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +128: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +129: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +130: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart: real local adapter persists typed workspace across reopen
+00:11 +131: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS completed RTL leading-edge swipe returns to Sales (variant: TargetPlatform.iOS)
+00:11 +132: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe uses one dirty guard and Cancel retains input (variant: TargetPlatform.iOS)
+00:11 +133: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe uses one dirty guard and Cancel retains input (variant: TargetPlatform.iOS)
+00:11 +134: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe uses one dirty guard and Cancel retains input (variant: TargetPlatform.iOS)
+00:11 +135: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe uses one dirty guard and Cancel retains input (variant: TargetPlatform.iOS)
+00:11 +136: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe uses one dirty guard and Cancel retains input (variant: TargetPlatform.iOS)
+00:12 +137: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/catalog_read_model_test.dart: frozen JavaScript filters and paging agree on synthetic oracle cases
+00:12 +138: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +139: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +140: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +141: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +142: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +143: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS shell swipe cannot navigate through an open menu or dialog (variant: TargetPlatform.iOS)
+00:12 +144: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/phase02_native_picker_wait_test.dart: manual touch enabled then restores false after timeout
+00:12 +145: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS wrong-edge vertical short and canceled swipes do not navigate (variant: TargetPlatform.iOS)
+00:12 +146: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS wrong-edge vertical short and canceled swipes do not navigate (variant: TargetPlatform.iOS)
+00:12 +147: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS wrong-edge vertical short and canceled swipes do not navigate (variant: TargetPlatform.iOS)
+00:12 +148: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS wrong-edge vertical short and canceled swipes do not navigate (variant: TargetPlatform.iOS)
+00:12 +149: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS wrong-edge vertical short and canceled swipes do not navigate (variant: TargetPlatform.iOS)
+00:12 +150: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/phase02_native_picker_wait_test.dart: global idle without the requested frame acknowledgement cannot pass
+00:12 +151: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe on Sales never requests app exit (variant: TargetPlatform.iOS)
+00:12 +152: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe on Sales never requests app exit (variant: TargetPlatform.iOS)
+00:12 +153: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe on Sales never requests app exit (variant: TargetPlatform.iOS)
+00:12 +154: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe on Sales never requests app exit (variant: TargetPlatform.iOS)
+00:12 +155: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe on Sales never requests app exit (variant: TargetPlatform.iOS)
+00:12 +156: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe on Sales never requests app exit (variant: TargetPlatform.iOS)
+00:12 +157: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe on Sales never requests app exit (variant: TargetPlatform.iOS)
+00:12 +158: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: iOS edge swipe on Sales never requests app exit (variant: TargetPlatform.iOS)
+00:12 +159: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/phase02_native_picker_wait_test.dart: timeout describes only cached ack-missing state without new reads
+00:12 +160: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: canceling shortcut discard retains the edited choices
+00:12 +161: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: canceling shortcut discard retains the edited choices
+00:12 +162: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: canceling shortcut discard retains the edited choices
+00:12 +163: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: canceling shortcut discard retains the edited choices
+00:12 +164: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: canceling shortcut discard retains the edited choices
+00:12 +165: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: canceling shortcut discard retains the edited choices
+00:12 +166: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: canceling shortcut discard retains the edited choices
+00:12 +167: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: canceling shortcut discard retains the edited choices
+00:13 +168: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: failed shortcut save retries inside the open dialog
+00:14 +169: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: shell keeps essential layout reachable at Size(320.0, 568.0) and 200% text
+00:14 +170: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/app_test.dart: shell keeps essential layout reachable at Size(1440.0, 1000.0) and 200% text
+00:15 +171: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/engine_adapter_wiring_test.dart: restaurant validates its schema before delegating export to Madar
+00:16 +172: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/engine_adapter_wiring_test.dart: restaurant import bound remains enforced with a different engine adapter
+00:16 +173: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/native_capabilities_test.dart: Native file selection boundary open cancellation is distinct from native failure
+00:16 +174: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/native_capabilities_test.dart: Native file selection boundary opening copies plugin bytes so later plugin mutation cannot change the result
+00:16 +175: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/native_capabilities_test.dart: Native file selection boundary cancelled and failed export preserve input and allow retry
+00:16 +176: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/native_capabilities_test.dart: Development data directory always resolves an isolated child of app support
+00:16 +177: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/native_capabilities_test.dart: Development data directory refuses legacy Daftar ancestor before any child is created
+00:16 +178: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/native_capabilities_test.dart: Development data directory refuses symlinked development root without following it
+00:16 +179: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/native_capabilities_test.dart: Development data directory refuses legacy com.daftar app identifier roots
+00:16 +180: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/native_capabilities_test.dart: Development data directory path plugin failure propagates as failure
+00:16 +181: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/probe_app_test.dart: development controls are Arabic RTL, labelled, scrollable at large text; cancel announced
+00:16 +182: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/probe_app_test.dart: development controls are Arabic RTL, labelled, scrollable at large text; cancel announced
+00:17 +183: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: catalog.lookup executes real command and survives adapter reopen
+00:17 +184: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: catalog.lookup executes real command and survives adapter reopen
+00:17 +185: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: catalog.lookup executes real command and survives adapter reopen
+00:17 +186: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: catalog.lookup executes real command and survives adapter reopen
+00:17 +187: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: catalog.lookup executes real command and survives adapter reopen
+00:17 +188: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: catalog.lookup executes real command and survives adapter reopen
+00:17 +189: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: catalog.lookup executes real command and survives adapter reopen
+00:17 +190: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: catalog.lookup executes real command and survives adapter reopen
+00:17 +191: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: catalog.lookup executes real command and survives adapter reopen
+00:17 +192: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: catalog.lookup executes real command and survives adapter reopen
+00:18 +193: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/phase02_performance_test.dart: owned failure artifact is exclusive and preserves original manifest
+00:18 +194: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +195: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +196: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +197: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +198: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +199: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +200: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +201: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +202: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +203: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +204: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +205: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +206: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +207: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +208: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +209: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +210: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +211: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +212: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +213: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +214: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +215: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +216: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +217: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +218: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +219: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:18 +220: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:19 +221: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:19 +222: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: inventory.post_movement executes real command and survives adapter reopen
+00:19 +223: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/phase02_performance_test.dart: largest bounded synthetic fixture fits independent input/output limits
+00:19 +224: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/phase02_performance_test.dart: largest bounded synthetic fixture fits independent input/output limits
+00:20 +225: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/phase02_performance_test.dart: largest bounded synthetic fixture fits independent input/output limits
+00:20 +226: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: settings.save executes real command and survives adapter reopen
+00:20 +227: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: settings.save executes real command and survives adapter reopen
+00:20 +228: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: settings.save executes real command and survives adapter reopen
+00:20 +229: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: settings.save executes real command and survives adapter reopen
+00:20 +230: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: settings.save executes real command and survives adapter reopen
+00:20 +231: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: settings.save executes real command and survives adapter reopen
+00:20 +232: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/shell_preferences_directory_test.dart: legacy-named home ancestor does not reject development support
+00:20 +233: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:20 +234: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:20 +235: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:20 +236: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:20 +237: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:20 +238: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:20 +239: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:20 +240: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:20 +241: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:20 +242: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +243: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +244: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +245: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +246: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +247: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +248: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +249: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +250: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +251: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +252: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +253: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +254: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +255: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +256: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +257: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +258: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +259: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +260: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +261: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +262: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +263: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +264: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +265: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +266: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +267: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_supplier executes real command and survives adapter reopen
+00:21 +268: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 schema-9-rich-history
+00:21 +269: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +270: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +271: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +272: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +273: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +274: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +275: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +276: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +277: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +278: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +279: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +280: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +281: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +282: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +283: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +284: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +285: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +286: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +287: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +288: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +289: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +290: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +291: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +292: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +293: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +294: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +295: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +296: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +297: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +298: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +299: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +300: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +301: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +302: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +303: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +304: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +305: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +306: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +307: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +308: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +309: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +310: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +311: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +312: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +313: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +314: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +315: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +316: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +317: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +318: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +319: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +320: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +321: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +322: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +323: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +324: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +325: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +326: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +327: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +328: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +329: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +330: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +331: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +332: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: parties.save_material executes real command and survives adapter reopen
+00:21 +333: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 step4-timestamp-zone-family-41
+00:21 +334: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +335: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +336: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +337: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +338: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +339: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +340: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +341: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +342: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +343: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +344: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +345: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +346: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +347: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +348: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +349: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +350: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +351: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +352: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +353: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +354: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +355: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:21 +356: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +357: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +358: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +359: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +360: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +361: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +362: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +363: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +364: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +365: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +366: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +367: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +368: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +369: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +370: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +371: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +372: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +373: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +374: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +375: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +376: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +377: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +378: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +379: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +380: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +381: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +382: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +383: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +384: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +385: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +386: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +387: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +388: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +389: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart: lookup consumes results and writes no account or workspace revision
+00:22 +390: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 unicode-identifier
+00:22 +391: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 unknown-keys
+00:22 +392: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 nullable-remaining
+00:22 +393: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-0
+00:22 +394: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-1
+00:22 +395: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-2
+00:22 +396: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-3
+00:22 +397: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-4
+00:22 +398: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-5
+00:22 +399: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-6
+00:22 +400: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-7
+00:22 +401: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-8
+00:22 +402: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-9
+00:22 +403: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-10
+00:22 +404: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-11
+00:22 +405: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-12
+00:22 +406: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-13
+00:22 +407: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-14
+00:22 +408: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-15
+00:22 +409: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-16
+00:22 +410: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-17
+00:22 +411: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-18
+00:22 +412: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-19
+00:22 +413: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-20
+00:22 +414: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-21
+00:22 +415: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-22
+00:22 +416: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-23
+00:22 +417: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-24
+00:22 +418: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-25
+00:22 +419: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-26
+00:22 +420: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-27
+00:22 +421: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-28
+00:22 +422: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-29
+00:22 +423: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-30
+00:22 +424: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-31
+00:22 +425: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-32
+00:22 +426: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-33
+00:22 +427: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-34
+00:22 +428: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-35
+00:22 +429: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-36
+00:22 +430: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-37
+00:22 +431: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-38
+00:22 +432: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-39
+00:22 +433: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-40
+00:22 +434: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-41
+00:22 +435: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-42
+00:22 +436: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-43
+00:22 +437: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-44
+00:22 +438: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-45
+00:22 +439: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-46
+00:22 +440: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-47
+00:22 +441: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-48
+00:22 +442: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-49
+00:22 +443: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-50
+00:22 +444: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-51
+00:22 +445: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-52
+00:22 +446: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-53
+00:22 +447: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-54
+00:22 +448: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-55
+00:22 +449: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-56
+00:22 +450: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-57
+00:22 +451: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-58
+00:22 +452: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-59
+00:22 +453: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-60
+00:22 +454: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-61
+00:22 +455: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-62
+00:22 +456: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-63
+00:22 +457: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-64
+00:22 +458: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-65
+00:22 +459: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-66
+00:22 +460: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-67
+00:22 +461: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-68
+00:22 +462: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-69
+00:22 +463: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-70
+00:22 +464: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-71
+00:22 +465: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-72
+00:22 +466: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-73
+00:22 +467: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-74
+00:22 +468: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-75
+00:22 +469: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-76
+00:22 +470: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-77
+00:22 +471: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: frozen model.validate parity, synthetic schema1–11 + seed0x02002610 seed-02002610-78
+00:22 +472: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +473: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +474: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +475: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +476: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +477: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +478: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +479: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +480: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +481: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +482: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +483: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +484: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +485: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +486: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +487: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +488: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +489: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +490: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +491: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +492: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +493: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +494: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +495: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +496: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +497: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +498: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +499: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +500: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +501: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +502: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +503: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +504: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +505: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +506: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +507: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +508: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +509: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +510: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +511: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +512: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +513: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +514: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +515: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +516: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +517: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +518: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +519: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +520: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +521: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +522: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +523: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +524: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +525: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +526: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +527: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +528: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +529: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +530: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +531: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:22 +532: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +533: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +534: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +535: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +536: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +537: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +538: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +539: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +540: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +541: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +542: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +543: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +544: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +545: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +546: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +547: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +548: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +549: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +550: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +551: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +552: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +553: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +554: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +555: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +556: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +557: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +558: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +559: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +560: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +561: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +562: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +563: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +564: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +565: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +566: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +567: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +568: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +569: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +570: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +571: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +572: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +573: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: retired screen callback cannot revive workspace after replacement
+00:23 +574: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: pinned frozen V8 timestamp composers: independent matrix + primary grammar
+00:24 +575: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: shell listener retains oversized draft without exception or storewrite
+00:24 +576: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: shell listener retains oversized draft without exception or storewrite
+00:24 +577: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/account_callback_fence_test.dart: shell listener retains oversized draft without exception or storewrite
+00:24 +578: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/accounts_surface_test.dart: Retry after a failed picker cannot confirm an older selection
+00:24 +579: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/accounts_surface_test.dart: Retry after a failed picker cannot confirm an older selection
+00:24 +580: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/accounts_surface_test.dart: Retry after a failed picker cannot confirm an older selection
+00:24 +581: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/accounts_surface_test.dart: Retry after a failed picker cannot confirm an older selection
+00:24 +582: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/accounts_surface_test.dart: Retry after a failed picker cannot confirm an older selection
+00:24 +583: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +584: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +585: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +586: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +587: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +588: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +589: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +590: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +591: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +592: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +593: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +594: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +595: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +596: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +597: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +598: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:24 +599: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:25 +600: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:25 +601: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:25 +602: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:25 +603: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:25 +604: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:25 +605: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:25 +606: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:25 +607: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:25 +608: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:25 +609: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:25 +610: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: both incoming and normalized serialized output are bounded independently
+00:26 +611: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/codec_test.dart: JSON exponent values follow numeric source semantics; strings do not
+00:26 +612: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/stock_projection_test.dart: source oracle corpus passes through validated consumer record mapping
+00:26 +613: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/stock_projection_test.dart: source oracle corpus passes through validated consumer record mapping
+00:27 +614: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/stock_projection_test.dart: source oracle corpus passes through validated consumer record mapping
+00:28 +615: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/stock_projection_test.dart: returns restore only selected stock on their inclusive effective date
+00:28 +616: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/stock_projection_test.dart: validated restaurant records feed source-specific engine queries
+00:28 +617: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/stock_projection_test.dart: catalog balance query result is immutable and excludes future dates
+00:28 +618: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/stock_projection_test.dart: void sales do not reduce quantity
+00:28 +619: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_view_model_test.dart: metadata and independent prices persist without rewriting invoice snapshots or opening debt
+00:28 +620: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/inventory_commands_test.dart: stock reversal reasons preserve JavaScript BOM and NEL semantics
+00:28 +621: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/inventory_commands_test.dart: stock reversal reasons preserve JavaScript BOM and NEL semantics
+00:28 +622: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/inventory_commands_test.dart: stock reversal reasons preserve JavaScript BOM and NEL semantics
+00:28 +623: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/inventory_commands_test.dart: stock reversal reasons preserve JavaScript BOM and NEL semantics
+00:28 +624: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_view_model_test.dart: new supplier has zero opening; archived IDs remain usable and drafts require an account
+00:28 +625: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/inventory_commands_test.dart: atomic product opening, busy rejection, restart and duplicate preservation
+00:28 +626: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_view_model_test.dart: unknown acknowledgement prevents retry; disposing during write is safe
+00:28 +627: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/inventory_commands_test.dart: history locks unit/tracking, price snapshots survive edit and archive
+00:28 +628: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/inventory_commands_test.dart: dated reversal rejects consumed opening and repeated inverse; definite failure preserves state
+00:28 +629: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/inventory_commands_test.dart: shared-repository stale authority and unknown acknowledgement prevent retry
+00:28 +630: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/inventory_commands_test.dart: invalid movements and untracked stock preserve acknowledged records
+00:28 +631: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/inventory/inventory_commands_test.dart: real adapter persists opening and reversal across close/reopen
+00:28 +632: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/reports/sales_report_test.dart: (setUpAll)
+00:29 +632: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/reports/sales_report_test.dart: actual frozen JS history filtering and period totals agree for ten cases
+00:29 +633: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/reports/sales_report_test.dart: return-only period is negative; snapshots are immutable and catalog-independent
+00:29 +634: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/reports/sales_report_test.dart: invalid date/status filters fail with sanitized errors
+00:29 +635: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/reports/sales_report_test.dart: valid multi-day history rejects unsafe aggregate
+00:33 +636: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/reports/sales_report_test.dart: legacy timestamp collation gap is explicit, not claimed as JS parity
+00:34 +637: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/reports/sales_report_test.dart: (tearDownAll)
+00:34 +637: All tests passed!

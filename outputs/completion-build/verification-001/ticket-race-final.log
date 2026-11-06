@@ -1,0 +1,14 @@
+00:00 +0: loading /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/ticket_workspace_test.dart
+00:00 +0: sale finalized during workspace acknowledgement cannot publish a draft
+00:00 +1: stored sale identities cannot be revived as active or held drafts
+00:00 +2: workspace revision is observable for stale controller checks
+00:00 +3: hold/resume swap and restart preserve snapshots and unrelated forms
+00:00 +4: definite failure retains both tickets and permits retry
+00:00 +5: unknown acknowledgement blocks retry then reads actual committed state
+00:00 +6: two controllers sharing repository cannot overwrite a newer revision
+00:00 +7: same-revision in-flight writes conflict through underlying CAS
+00:00 +8: generation replacement rejects stale workspace controller
+00:00 +9: unknown old workspace is protected rather than silently discarded
+00:00 +10: 40 held limit rejects hold but permits atomic swap and delete
+00:00 +11: real local adapter persists typed workspace across reopen
+00:01 +12: All tests passed!

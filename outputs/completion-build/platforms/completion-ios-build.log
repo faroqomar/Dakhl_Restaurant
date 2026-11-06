@@ -1,0 +1,25 @@
+Building com.eros.dakhlrestaurant.phase00 for simulator (ios)...
+Running Xcode build...                                          
+Xcode build done.                                           12.1s
+Failed to build iOS app
+Uncategorized (Xcode): Flutter.framework/.Flutter.AKq6vciWti: write: No space left on device
+
+Uncategorized (Xcode): buf_copy
+
+Uncategorized (Xcode): rsync_downloader
+
+Uncategorized (Xcode): rsync_receiver
+
+Uncategorized (Xcode): unexpected end of file
+
+Uncategorized (Xcode): io_read_nonblocking
+
+Uncategorized (Xcode): io_read_blocking
+
+Uncategorized (Xcode): io_read_flush
+
+Uncategorized (Xcode): rsync_sender
+
+Uncategorized (Xcode): Exited with status code 255
+
+Encountered error while building for simulator.

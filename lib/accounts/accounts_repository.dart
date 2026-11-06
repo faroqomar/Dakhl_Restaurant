@@ -25,6 +25,10 @@ final class AccountsRepository {
   String? _pendingPayload;
   StorageFence? _pendingWorkspaceFence;
   DocumentSnapshot? get snapshot => _snapshot;
+
+  /// Immutable workspace authority for controllers that retain their own
+  /// expected revision. A shared repository's latest read is not their consent.
+  WorkspaceSnapshot? get workspaceSnapshot => _workspace;
   AccountDocument? get document => _document;
   bool get hasUnknownWrite => _pendingToken != null;
   bool get hasUnknownWorkspaceWrite => _pendingWorkspaceFence != null;

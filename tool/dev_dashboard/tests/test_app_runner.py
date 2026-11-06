@@ -128,6 +128,13 @@ class AppRunnerTests(unittest.TestCase):
                 self.assertEqual(build.call_count, 2)
                 self.assertEqual(build.call_args[0][0][-1], 'lib/platform/phase02_performance_main.dart')
 
+    def test_completion_routes_and_fingerprints_nonvisual_fixture(self):
+        entry = {'phase': 'Completion', 'harness': 'completion-nonvisual'}
+        self.assertEqual(runner.operation_target(entry), 'lib/platform/completion_performance_main.dart')
+        self.assertEqual(runner.operation_fixture_source(entry), 'lib/platform/completion_performance_scenarios.dart')
+        self.assertEqual(runner.operation_fixture_source({'phase': '02'}), 'lib/platform/phase02_performance_scenarios.dart')
+        self.assertEqual(runner.operation_fixture_source({'phase': '01'}), 'lib/platform/performance_scenarios.dart')
+
     def test_native_toolchain_upgrade_invalidates_identical_app_cache(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory).resolve()
@@ -170,7 +177,18 @@ class AppRunnerTests(unittest.TestCase):
         for case in ('orders.process', 'catalog.add_item', 'sales.add_item'):
             self.assertEqual(entries[case]['status'], 'planned')
             self.assertIn('not implemented', entries[case]['reason'])
-        self.assertEqual({key for key, value in entries.items() if value['status'] == 'ready'}, {'app.startup', 'navigation.switch_route', 'shortcuts.save', 'accounts.open', 'accounts.save', 'accounts.migrate_legacy', 'accounts.replace', 'accounts.recover_previous', 'workspace.save_restore'})
+        self.assertEqual({key for key, value in entries.items() if value['status'] == 'ready'}, {'app.startup', 'navigation.switch_route', 'shortcuts.save', 'accounts.open', 'accounts.save', 'accounts.migrate_legacy', 'accounts.replace', 'accounts.recover_previous', 'workspace.save_restore', 'catalog.lookup', 'inventory.post_movement', 'workspace.hold', 'workspace.resume', 'settings.save', 'parties.save_supplier', 'parties.save_material'})
+
+    def test_completion_registry_describes_command_scope_without_ui_claims(self):
+        entries = json.loads(runner.REGISTRY.read_text())['operations']
+        cases = [entry for entry in entries if entry.get('harness') == 'completion-nonvisual']
+        self.assertEqual(len(cases), 7)
+        for entry in cases:
+            self.assertEqual(entry['measurementKind'], 'workflow')
+            self.assertEqual(entry['fixtureProfile'], 'completion-v1')
+            self.assertIn('No UI', entry['scope'])
+            self.assertIn('not a performance result', entry['verification'])
+            self.assertEqual(entry['status'], 'ready')
 
     def test_profile_cache_invalidates_source_sdk_and_missing_executable(self):
         with tempfile.TemporaryDirectory() as directory:

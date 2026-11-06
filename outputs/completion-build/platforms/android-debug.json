@@ -1,0 +1,13 @@
+{
+  "status": "build-passed",
+  "command": "flutter build apk --debug --no-pub",
+  "artifact": "build/app/outputs/flutter-apk/app-debug.apk",
+  "sha256": "0844305522d2cd262c5e1e41d0e42589ff168812187edff19363b1b5f906411d",
+  "bytes": 186445293,
+  "sourceRevision": "7067ea72e06c831791f7ea393b8587150671af18",
+  "sourceDirty": true,
+  "runtimeRevision": "7b1866fb8c9a40345c9d67b455c40053178fcb44",
+  "firstAttempt": "failed-no-space-left-on-device",
+  "retryChange": "removed-only-task-generated-build-app-intermediates",
+  "installedOrRuntimeVerified": false
+}

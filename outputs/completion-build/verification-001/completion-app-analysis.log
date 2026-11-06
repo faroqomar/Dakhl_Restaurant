@@ -1,0 +1,8 @@
+Analyzing Dakhl_Restaurant...                                   
+
+   info • The file name 'commerce-corpus-run.dart' isn't a lower_case_with_underscores identifier. Try changing the name to follow the lower_case_with_underscores style • electron-reference/outputs/completion-build/commerce-parity/commerce-corpus-run.dart:1:1 • file_names
+   info • Don't invoke 'print' in production code. Try using a logging framework • electron-reference/outputs/completion-build/commerce-parity/commerce-corpus-run.dart:5:1773 • avoid_print
+   info • The file name 'commerce-corpus-run.dart' isn't a lower_case_with_underscores identifier. Try changing the name to follow the lower_case_with_underscores style • outputs/completion-build/commerce-parity/commerce-corpus-run.dart:1:1 • file_names
+   info • Don't invoke 'print' in production code. Try using a logging framework • outputs/completion-build/commerce-parity/commerce-corpus-run.dart:5:1773 • avoid_print
+
+4 issues found. (ran in 25.9s)

@@ -1,7 +1,7 @@
 {
   "engine": "Madar_Engine",
-  "status": "Original engine checkout consolidated; runtime packages byte-identical to reviewed899. Tooling and documentation integration only; historical native/retention limits unchanged.",
-  "git_commit": "f7f68988561d25cc93eb28c0ec989847526b2df9",
+  "status": "Locally reviewed completion domain candidate: stock profiles/reversals, commerce, journal and explicit legacy text. App consumer integration in progress; UI, financial mapping, remote CI and release gates remain pending.",
+  "git_commit": "7b1866fb8c9a40345c9d67b455c40053178fcb44",
   "packages": {
     "madar_application": {
       "path": "../Madar_Engine/packages/application",
@@ -17,7 +17,7 @@
     },
     "madar_domain": {
       "path": "../Madar_Engine/packages/domain",
-      "version": "0.1.0-dev.1"
+      "version": "0.1.0-dev.2"
     }
   }
 }

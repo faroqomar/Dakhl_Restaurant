@@ -400,7 +400,16 @@ def capture_phase02_failure(measurement, path, case, profile, run_id, iterations
     return receipt
 
 
+def operation_fixture_source(entry):
+    if entry.get('harness') == 'completion-nonvisual':
+        return 'lib/platform/completion_performance_scenarios.dart'
+    return ('lib/platform/phase02_performance_scenarios.dart' if entry.get('phase') == '02'
+            else 'lib/platform/performance_scenarios.dart')
+
+
 def operation_target(entry):
+    if entry.get('harness') == 'completion-nonvisual':
+        return 'lib/platform/completion_performance_main.dart'
     return ('lib/platform/phase02_performance_main.dart' if entry.get('phase') == '02'
             else 'lib/platform/performance_main.dart')
 
@@ -482,10 +491,9 @@ def main():
         if phase02:
             manifest_path = phase02_manifest_path(executable, case, args.fixture, run_id)
             argv += ['--fixture', args.fixture, '--fixture-manifest', str(manifest_path)]
-        fixture_source = ROOT / ('lib/platform/phase02_performance_scenarios.dart' if phase02
-                                 else 'lib/platform/performance_scenarios.dart')
+        fixture_source = ROOT / operation_fixture_source(entry)
         fixture_identity = case + ':' + entry['scenarioVersion'] + (':' + args.fixture if phase02 else '')
-        spec = dict(operationId=case, label=entry['label'], argv=argv, cwd=str(ROOT), iterations=count, appVersion=version, sourceCommit=source_commit, sourceDirty=source_dirty, sourceFingerprint=fingerprint, engineCommit=engine_commit, targetId='macos-host', buildMode='profile', measurementKind=entry['measurementKind'], scenarioVersion=entry['scenarioVersion'], timeoutSeconds=900 if phase02 else 45, sampleIntervalMs=20, fixtureFingerprint=hashlib.sha256(fixture_source.read_bytes() + fixture_identity.encode()).hexdigest())
+        spec = dict(operationId=case, label=entry['label'], argv=argv, cwd=str(ROOT), iterations=count, appVersion=version, sourceCommit=source_commit, sourceDirty=source_dirty, sourceFingerprint=fingerprint, engineCommit=engine_commit, targetId='macos-host', buildMode='profile', measurementKind=entry['measurementKind'], scenarioVersion=entry['scenarioVersion'], timeoutSeconds=900 if phase02 or entry.get('harness') == 'completion-nonvisual' else 45, sampleIntervalMs=20, fixtureFingerprint=hashlib.sha256(fixture_source.read_bytes() + fixture_identity.encode()).hexdigest())
         result = module.run_benchmark(spec)
         if phase02:
             result['fixtureProfile'] = args.fixture
@@ -516,6 +524,12 @@ def main():
             result['resourceWindowScope'] = ('One host start/end window: operation samples plus '
                 'inter-iteration fixture reset, teardown and rendering setup. Elapsed samples exclude '
                 'fixture reset and end at actual raster completion. RAM/CPU are not per-sample isolated.')
+        if entry.get('harness') == 'completion-nonvisual':
+            result['resourceWindowScope'] = ('One host start/end window: nonvisual command samples plus '
+                'inter-iteration fixture setup, durable verification and teardown. Elapsed samples '
+                'exclude those stages and stop at command acknowledgement or completed lookup. '
+                'No UI/raster/input timing; RAM/CPU are not per-sample isolated.')
+            result['fixtureProfile'] = 'completion-v1'
         result['runtimeEngineIdentity'] = engine_identity
         result['environment']['flutterVersion'] = sdk['frameworkVersion']
         result['environment']['dartVersion'] = sdk['dartSdkVersion']

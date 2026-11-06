@@ -866,7 +866,7 @@ final class LegacyAccountCodec {
             old['productId'] == e['productId'] &&
             e['quantity'] == -(old['quantity'] as num) &&
             e['date'] == old['date'] &&
-            (e['note'] as String).trim().isNotEmpty,
+            LegacyText.trimJavaScript(e['note'] as String).isNotEmpty,
       );
       _unique(reversed, old['id'] as String);
     }
@@ -932,10 +932,13 @@ final class LegacyAccountCodec {
       sales.add(sale);
     }
     final returns = _returns(raw, sales);
-    final events = <String, Map<String, int>>{};
+    final events = <String, Map<String, BigInt>>{};
     void movement(Object? id, Object? date, int units) {
       final dates = events.putIfAbsent(id as String, () => {});
-      dates[date as String] = _sum([dates[date] ?? 0, units]);
+      dates[date as String] = ExactMath.binary64IntegerSum([
+        dates[date] ?? BigInt.zero,
+        BigInt.from(units),
+      ]);
     }
 
     for (final e in stock) {
@@ -956,10 +959,12 @@ final class LegacyAccountCodec {
       }
     }
     for (final dates in events.values) {
-      var available = 0;
+      var available = BigInt.zero;
       for (final date in dates.keys.toList()..sort()) {
-        available = _sum([available, dates[date]!]);
-        _require(available >= 0 && available <= 1000000000000);
+        available = ExactMath.binary64IntegerSum([available, dates[date]!]);
+        _require(
+          available >= BigInt.zero && available <= BigInt.from(1000000000000),
+        );
       }
     }
     for (final date in {

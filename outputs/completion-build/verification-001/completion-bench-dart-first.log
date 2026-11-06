@@ -1,0 +1,11 @@
+00:00 +0: loading /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/platform/completion_performance_test.dart
+00:00 +0: nonvisual options reject unknown cases and unsafe run identities
+00:00 +1: catalog.lookup executes real command and survives adapter reopen
+00:01 +2: inventory.post_movement executes real command and survives adapter reopen
+00:02 +3: workspace.hold executes real command and survives adapter reopen
+00:02 +4: workspace.resume executes real command and survives adapter reopen
+00:03 +5: settings.save executes real command and survives adapter reopen
+00:03 +6: parties.save_supplier executes real command and survives adapter reopen
+00:04 +7: parties.save_material executes real command and survives adapter reopen
+00:04 +8: lookup consumes results and writes no account or workspace revision
+00:04 +9: All tests passed!
