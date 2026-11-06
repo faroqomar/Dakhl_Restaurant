@@ -1,4 +1,37 @@
 {
+  "runtime": {
+    "node": "24.21.0",
+    "acorn": "8.18.0",
+    "ada": "4.0.0",
+    "amaro": "1.1.11",
+    "ares": "1.34.8",
+    "brotli": "1.2.0",
+    "cldr": "48.0",
+    "icu": "78.2",
+    "llhttp": "9.4.3",
+    "merve": "1.2.2",
+    "modules": "149",
+    "napi": "10",
+    "nbytes": "0.1.4",
+    "ncrypto": "0.0.1",
+    "nghttp2": "1.70.0",
+    "nghttp3": "",
+    "ngtcp2": "",
+    "openssl": "0.0.0",
+    "simdjson": "4.6.7",
+    "simdutf": "7.7.0",
+    "sqlite": "3.53.4",
+    "tz": "2025c",
+    "undici": "7.29.1",
+    "unicode": "17.0",
+    "uv": "1.52.1",
+    "uvwasi": "0.0.23",
+    "v8": "15.2.124.28-electron.0",
+    "zlib": "1.3.2.1-motley",
+    "zstd": "1.6.0",
+    "electron": "44.5.1",
+    "chrome": "152.0.7977.130"
+  },
   "sourceHashes": {
     "commerce": "e5cd21b5953c4f24d9fce9a75f9dac3cc7db4e7e8e0825c6651902a5d9579971",
     "ux": "2b60b1c72b80e3059e09b871b1df2e51fb1f1e06c54e280c71a191fbdeb9ff5f"
@@ -938,9 +971,165 @@
       "minStock": 1.5,
       "trackStock": true,
       "archived": false
+    },
+    {
+      "id": "unicode-dot",
+      "name": "İ",
+      "code": "",
+      "group": "",
+      "unit": "piece",
+      "price": 0,
+      "minStock": 0,
+      "trackStock": false,
+      "archived": false
+    },
+    {
+      "id": "unicode-sigma",
+      "name": "ΟΣ",
+      "code": "",
+      "group": "",
+      "unit": "piece",
+      "price": 0,
+      "minStock": 0,
+      "trackStock": false,
+      "archived": false
+    },
+    {
+      "id": "unicode-cyrillic",
+      "name": "Ᲊ",
+      "code": "",
+      "group": "",
+      "unit": "piece",
+      "price": 0,
+      "minStock": 0,
+      "trackStock": false,
+      "archived": false
+    },
+    {
+      "id": "unicode-latin",
+      "name": "Ɤ",
+      "code": "",
+      "group": "",
+      "unit": "piece",
+      "price": 0,
+      "minStock": 0,
+      "trackStock": false,
+      "archived": false
     }
   ],
   "cases": [
+    {
+      "kind": "sales",
+      "query": "i̇",
+      "group": "",
+      "status": "active",
+      "page": 1,
+      "expected": {
+        "ids": [
+          "unicode-dot"
+        ],
+        "total": 1,
+        "page": 1
+      }
+    },
+    {
+      "kind": "sales",
+      "query": "ος",
+      "group": "",
+      "status": "active",
+      "page": 1,
+      "expected": {
+        "ids": [
+          "unicode-sigma"
+        ],
+        "total": 1,
+        "page": 1
+      }
+    },
+    {
+      "kind": "sales",
+      "query": "ᲊ",
+      "group": "",
+      "status": "active",
+      "page": 1,
+      "expected": {
+        "ids": [
+          "unicode-cyrillic"
+        ],
+        "total": 1,
+        "page": 1
+      }
+    },
+    {
+      "kind": "sales",
+      "query": "ɤ",
+      "group": "",
+      "status": "active",
+      "page": 1,
+      "expected": {
+        "ids": [
+          "unicode-latin"
+        ],
+        "total": 1,
+        "page": 1
+      }
+    },
+    {
+      "kind": "inventory",
+      "query": "i̇",
+      "group": "",
+      "status": "active",
+      "page": 1,
+      "expected": {
+        "ids": [
+          "unicode-dot"
+        ],
+        "total": 1,
+        "page": 1
+      }
+    },
+    {
+      "kind": "inventory",
+      "query": "ος",
+      "group": "",
+      "status": "active",
+      "page": 1,
+      "expected": {
+        "ids": [
+          "unicode-sigma"
+        ],
+        "total": 1,
+        "page": 1
+      }
+    },
+    {
+      "kind": "inventory",
+      "query": "ᲊ",
+      "group": "",
+      "status": "active",
+      "page": 1,
+      "expected": {
+        "ids": [
+          "unicode-cyrillic"
+        ],
+        "total": 1,
+        "page": 1
+      }
+    },
+    {
+      "kind": "inventory",
+      "query": "ɤ",
+      "group": "",
+      "status": "active",
+      "page": 1,
+      "expected": {
+        "ids": [
+          "unicode-latin"
+        ],
+        "total": 1,
+        "page": 1
+      }
+    },
     {
       "kind": "sales",
       "query": "sKu1",
@@ -985,9 +1174,13 @@
           "p81",
           "p82",
           "p83",
-          "p84"
+          "p84",
+          "unicode-dot",
+          "unicode-sigma",
+          "unicode-cyrillic",
+          "unicode-latin"
         ],
-        "total": 84,
+        "total": 88,
         "page": 2
       }
     },

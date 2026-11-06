@@ -1,7 +1,7 @@
 {
   "engine": "Madar_Engine",
-  "status": "Locally reviewed completion domain candidate: stock profiles/reversals, commerce, journal and explicit legacy text. App consumer integration in progress; UI, financial mapping, remote CI and release gates remain pending.",
-  "git_commit": "7b1866fb8c9a40345c9d67b455c40053178fcb44",
+  "status": "Locally independently reviewed completion domain and Unicode17 compatibility candidate; whole Completion, hosted CI and release gates remain blocked.",
+  "git_commit": "bc4e8fc63a18fd9c985cf475110d3624c8c8a97f",
   "packages": {
     "madar_application": {
       "path": "../Madar_Engine/packages/application",
@@ -17,7 +17,7 @@
     },
     "madar_domain": {
       "path": "../Madar_Engine/packages/domain",
-      "version": "0.1.0-dev.2"
+      "version": "0.1.0-dev.3"
     }
   }
 }

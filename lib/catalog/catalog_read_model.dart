@@ -2,6 +2,9 @@ import 'package:madar_domain/madar_domain.dart';
 
 import '../accounts/account_document.dart';
 
+String _sourceLower(String text) =>
+    LegacyCase.lower(text, profile: LegacyCaseProfile.ecmascriptUnicode17);
+
 enum InventoryStatus { active, all, archived, low, out }
 
 /// Consumer presentation of validated records; stock computation stays in Madar.
@@ -84,7 +87,7 @@ final class CatalogReadModel {
           (p) =>
               !p.archived &&
               (group.isEmpty || p.group == group) &&
-              '${p.name} ${p.code}'.toLowerCase().contains(query.toLowerCase()),
+              _sourceLower('${p.name} ${p.code}').contains(_sourceLower(query)),
         ),
         page,
         80,
@@ -98,9 +101,8 @@ final class CatalogReadModel {
     products.where(
       (p) =>
           (group.isEmpty || p.group == group) &&
-          '${p.name} ${p.code} ${p.group}'.toLowerCase().contains(
-            query.toLowerCase(),
-          ) &&
+          _sourceLower('${p.name} ${p.code} ${p.group}')
+              .contains(_sourceLower(query)) &&
           switch (status) {
             InventoryStatus.all => true,
             InventoryStatus.archived => p.archived,

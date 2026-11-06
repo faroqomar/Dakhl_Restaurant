@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:madar_domain/madar_domain.dart';
+
 import '../accounts/account_document.dart';
 import '../accounts/legacy_account_codec.dart';
 
@@ -48,9 +50,9 @@ final class AccountSettingsValues {
     'disabledOrderTypes': disabledOrderTypes,
     'shortcuts': shortcuts,
     'restaurant': {
-      'name': trim ? name.trim() : name,
-      'contact': trim ? contact.trim() : contact,
-      'footer': trim ? footer.trim() : footer,
+      'name': trim ? LegacyText.trimJavaScript(name) : name,
+      'contact': trim ? LegacyText.trimJavaScript(contact) : contact,
+      'footer': trim ? LegacyText.trimJavaScript(footer) : footer,
     },
   };
 }

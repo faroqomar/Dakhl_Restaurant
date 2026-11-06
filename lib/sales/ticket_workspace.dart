@@ -54,7 +54,7 @@ final class TicketDraft {
     required Iterable<TicketLine> lines,
     this.heldLabel = '',
   }) : lines = List.unmodifiable(lines) {
-    DateOnly.parse(date, minimumYear: 1, maximumYear: 9999);
+    DateOnly.parse(date, minimumYear: 1000, maximumYear: 9999);
     if (id.isEmpty || this.lines.length > 200) {
       throw const FormatException('Invalid ticket');
     }
@@ -319,7 +319,7 @@ final class TicketWorkspaceController {
     if (fresh.lines.isNotEmpty) {
       throw const _TransitionFailure('fresh_ticket_required');
     }
-    final trimmed = label.trim();
+    final trimmed = LegacyText.trimJavaScript(label);
     final bounded = trimmed.length > 80 ? trimmed.substring(0, 80) : trimmed;
     return TicketWorkspace(
       active: fresh,

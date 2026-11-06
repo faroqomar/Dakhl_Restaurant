@@ -10,7 +10,10 @@ const salesFilter = commerce.split('\n').find(line => line.includes('const produ
 const inventoryFilter = commerce.split('\n').find(line => line.includes('const products = state.products.filter(p => `${p.name} ${p.code} ${p.group}`'));
 if (![inventoryMatches, pageItems, salesFilter, inventoryFilter].every(Boolean)) throw Error('Frozen-source selector changed');
 const products = Array.from({length: 85}, (_, i) => ({id:`p${i}`,name:`صنف ${i}`,code:`SKU${i}`,group:i%2===0?'مشاوي':'مشروبات',unit:'قطعة',price:1000,minStock:1.5,trackStock:i!==3,archived:i===2}));
+if (process.versions.unicode !== '17.0') throw Error('Oracle requires Unicode17 reference runtime');
+for (const [id,name] of [['unicode-dot','İ'],['unicode-sigma','ΟΣ'],['unicode-cyrillic','\u1C89'],['unicode-latin','\uA7CB']]) products.push({id,name,code:'',group:'',unit:'piece',price:0,minStock:0,trackStock:false,archived:false});
 const cases = [
+ ...['sales','inventory'].flatMap(kind=>['i\u0307','ος','\u1C8A','\u0264'].map(query=>({kind,query,group:'',status:'active',page:1}))),
  {kind:'sales', query:'sKu1',group:'',page:1},
  {kind:'sales', query:'مشاوي',group:'',page:1},
  {kind:'sales', query:'',group:'',page:99},
@@ -26,4 +29,4 @@ for (const c of cases) {
  vm.runInContext(`${inventoryMatches}\n${pageItems}\n${filter}\nresult={ids:pageItems(products,'oracle',${c.kind==='sales'?80:50}).map(p=>p.id),total:products.length,page:pageNumbers.oracle};`,context);
  c.expected=context.result;
 }
-fs.writeFileSync('test/catalog/oracle.json',JSON.stringify({sourceHashes:{commerce:crypto.createHash('sha256').update(commerce).digest('hex'),ux:crypto.createHash('sha256').update(ux).digest('hex')},products,cases},null,2)+'\n');
+fs.writeFileSync('test/catalog/oracle.json',JSON.stringify({runtime:process.versions,sourceHashes:{commerce:crypto.createHash('sha256').update(commerce).digest('hex'),ux:crypto.createHash('sha256').update(ux).digest('hex')},products,cases},null,2)+'\n');

@@ -4,6 +4,20 @@ import 'package:dakhl_restaurant/settings/account_settings.dart';
 
 void main() {
   const codec = LegacyAccountCodec();
+  test('receipt settings use source JavaScript whitespace for all fields', () {
+    final draft = AccountSettingsDraft(codec.empty());
+    draft.replace(
+      draft.values.copyWith(
+        name: '\uFEFF\u0085\uFEFF',
+        contact: '\u0085',
+        footer: '\uFEFF',
+      ),
+    );
+    final saved = draft.prepareSave(codec.empty()).preferences.restaurant;
+    expect(saved['name'], '\u0085');
+    expect(saved['contact'], '\u0085');
+    expect(saved['footer'], '');
+  });
   test('draft save and discard preserve immutable baseline and unrelated current records', () {
     final baseline = codec.empty();
     final draft = AccountSettingsDraft(baseline);

@@ -5,6 +5,7 @@ import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:madar_application/madar_application.dart';
 import 'package:madar_data/madar_data.dart';
+import 'package:madar_domain/madar_domain.dart';
 import 'package:dakhl_restaurant/accounts/accounts_repository.dart';
 import 'package:dakhl_restaurant/accounts/legacy_account_codec.dart';
 import 'package:dakhl_restaurant/accounts/workspace_document.dart';
@@ -102,6 +103,46 @@ final class DelayedWorkspaceStore implements LocalDocumentWorkspaceStore {
 }
 
 void main() {
+  test('draft dates share the persisted account year bounds', () {
+    TicketDraft make(String date) => TicketDraft(
+      id: 'd',
+      date: date,
+      orderType: '',
+      discount: '',
+      note: '',
+      lines: [],
+    );
+    for (final date in ['0001-01-01', '0999-12-31']) {
+      expect(() => make(date), throwsA(isA<DomainValidationException>()));
+    }
+    expect(make('1000-01-01').date, '1000-01-01');
+    expect(make('9999-12-31').date, '9999-12-31');
+  });
+  test('held labels preserve NEL and trim BOM across durable reopen', () async {
+    for (final (label, expected) in [
+      ('\uFEFF\u0085\uFEFF', '\u0085'),
+      ('\uFEFF', 'طلب 1'),
+    ]) {
+      final store = FixtureStore();
+      final repo = await repository(store);
+      final controller = TicketWorkspaceController(repo);
+      await controller.load(draft('a'));
+      expect(
+        await controller.hold(
+          label: label,
+          heldId: 'h',
+          fresh: draft('b', populated: false),
+          savedAt: '2026-11-07T10:00:00Z',
+        ),
+        isA<CapabilitySuccess<void>>(),
+      );
+      final reopened = AccountsRepository(store: store);
+      await reopened.open();
+      final restored = TicketWorkspaceController(reopened);
+      await restored.load(draft('unused'));
+      expect(restored.state!.held.single.label, expected);
+    }
+  });
   test(
     'sale finalized during workspace acknowledgement cannot publish a draft',
     () async {
