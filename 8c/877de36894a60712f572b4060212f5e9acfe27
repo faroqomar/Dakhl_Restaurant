@@ -1,0 +1,119 @@
+docs/phases/purchase_proposal-contract.md
+  s_4cfb0aecd4cd7c::t_20eb5c5ef9a25a 1-10,12
+  s_4cfb0aecd4cd7c::t_607541e61778a3 11,13-15
+test/parties/supplier_ledger_oracle.json
+  s_4cfb0aecd4cd7c::t_4b69439c0ba873 685-909
+  s_4cfb0aecd4cd7c::t_d3ac025ee50e45 1-35,45-579,684,910-1894
+  s_4cfb0aecd4cd7c::t_54923ac04928da 36-44,580-683
+test/parties/supplier_ledger_test.dart
+  s_4cfb0aecd4cd7c::t_bc3955d2171916 1-2,6-10,14,19-21,31-35,39-40,60,62-64
+  s_4cfb0aecd4cd7c::t_bbc14afd33e37e 4-5,23-28
+  s_4cfb0aecd4cd7c::t_e8b7aea3a068c2 3,11-13,15-18,22,29-30,36-38,41-59,61
+lib/parties/purchase_proposal.dart
+  s_4cfb0aecd4cd7c::t_b29a546f37fac2 68,181,183,258,260
+  s_4cfb0aecd4cd7c::t_e7bed525afc4ec 1-67,69-180,182,184-257,259,261-311
+docs/how-to/isolated-ui-qa.md
+  s_4cfb0aecd4cd7c::t_5d719459428977 1-18
+docs/phases/completion-sale-proposal-contract.md
+  s_4cfb0aecd4cd7c::t_23e6d297fa135e 1-6
+  s_4cfb0aecd4cd7c::t_2fa966dfdbc8a4 7
+test/sales/sale_proposal_test.dart
+  s_4cfb0aecd4cd7c::t_0641b219977043 3,7,9-34
+  s_4cfb0aecd4cd7c::t_ed58d0d4133f8c 1-2,4-6,8,35
+docs/phases/supplier_ledger-contract.md
+  s_4cfb0aecd4cd7c::t_7a011e1238ed7c 1-12,14-15
+  s_4cfb0aecd4cd7c::t_81e0442b9b79ed 13
+docs/phases/completion-live-gap-register.md
+  s_4cfb0aecd4cd7c::t_05de2e2b23a688 1-21
+  s_4cfb0aecd4cd7c::t_95d23f9ec5d4c5 22-31
+lib/accounting/daily_cash_queries.dart
+  s_4cfb0aecd4cd7c::t_c5dfb2a92e88ac 65-261,263,272,279-280
+  s_4cfb0aecd4cd7c::t_d9009d27a14414 1-64,262,264-271,273-278,281
+test/accounting/daily_cash_queries_test.dart
+  s_4cfb0aecd4cd7c::t_c3a036d1ff1dcc 32
+  s_4cfb0aecd4cd7c::t_c5dfb2a92e88ac 33-36
+  s_4cfb0aecd4cd7c::t_856b6849c7fba1 1-10,12-15,17-28,30-31,37-45,47,77-78
+  s_4cfb0aecd4cd7c::t_e3cc871355eb6c 48-76
+  s_4cfb0aecd4cd7c::t_2f6aef8eacaea9 11,16,29,46
+test/sales/return_proposal_checks.dart
+  s_4cfb0aecd4cd7c::t_0e37e06c36546f 1-139
+test/sales/sale_proposal_oracle.cjs
+  s_4cfb0aecd4cd7c::t_07fabcaa5d56cf 11-15
+  s_4cfb0aecd4cd7c::t_9826f925b66cb6 1-9,16
+  s_4cfb0aecd4cd7c::t_e58e45e137bf51 10
+docs/phases/completion-sales-report-contract.md
+  s_4cfb0aecd4cd7c::t_2a8e2347ebf2fb 1-33
+lib/sales/sale_proposal.dart
+  s_4cfb0aecd4cd7c::t_0641b219977043 1-57,64-94,96-118
+  s_4cfb0aecd4cd7c::t_0aced4e412efb6 95
+  s_4cfb0aecd4cd7c::t_cf3cbef4b2d43c 58-63
+test/sales/return_proposal_test.dart
+  s_4cfb0aecd4cd7c::t_0e37e06c36546f 1,3,6-8
+  s_4cfb0aecd4cd7c::t_f76dc5f1f344af 4-5,9
+  s_4cfb0aecd4cd7c::t_50f48e3531c28a 2
+test/sales/return_proposal_oracle.cjs
+  s_4cfb0aecd4cd7c::t_f76dc5f1f344af 1-12
+docs/phases/completion-daily-cash-query-contract.md
+  s_4cfb0aecd4cd7c::t_31af4fe379dec6 12-13
+  s_4cfb0aecd4cd7c::t_e3cc871355eb6c 1-11
+test/parties/supplier_ledger_oracle.cjs
+  s_4cfb0aecd4cd7c::t_4b69439c0ba873 10-16
+  s_4cfb0aecd4cd7c::t_54923ac04928da 9,20
+  s_4cfb0aecd4cd7c::t_d3ac025ee50e45 1-8,17-19
+test/parties/purchase_proposal_oracle.cjs
+  s_4cfb0aecd4cd7c::t_a4459f80a13c75 1-7
+  s_4cfb0aecd4cd7c::t_607541e61778a3 26
+  s_4cfb0aecd4cd7c::t_f0ad1486338a97 9-25
+  s_4cfb0aecd4cd7c::t_074be1f04fbc2b 8
+lib/sales/return_proposal.dart
+  s_4cfb0aecd4cd7c::t_50f48e3531c28a 1-54,56,58-61,63,65,67,69-70,72,74-96,98,100,102,104-144
+  s_4cfb0aecd4cd7c::t_0e37e06c36546f 55,57,62,64,66,68,71,73,97,99,101,103
+test/parties/purchase_proposal_test.dart
+  s_4cfb0aecd4cd7c::t_a4459f80a13c75 1-2,4-6,8,239
+  s_4cfb0aecd4cd7c::t_074be1f04fbc2b 47-68
+  s_4cfb0aecd4cd7c::t_f54fa5513b346e 162-238
+  s_4cfb0aecd4cd7c::t_0aced4e412efb6 69-161
+  s_4cfb0aecd4cd7c::t_e7bed525afc4ec 3,7,9-46
+lib/platform/ui_qa_main.dart
+  s_4cfb0aecd4cd7c::t_5d719459428977 1-20,23-39,41-63
+  s_4cfb0aecd4cd7c::t_9abf98ceeb4e3e 21-22,40
+test/accounting/daily_cash_oracle.cjs
+  s_4cfb0aecd4cd7c::t_856b6849c7fba1 1-12
+  s_4cfb0aecd4cd7c::t_c3a036d1ff1dcc 13
+test/sales/sale_proposal_oracle.json
+  s_4cfb0aecd4cd7c::t_e58e45e137bf51 1353-1471
+  s_4cfb0aecd4cd7c::t_07fabcaa5d56cf 1108-1352,1472-1955
+  s_4cfb0aecd4cd7c::t_9826f925b66cb6 1-1107,1956-1958
+docs/phases/completion-return-proposal-contract.md
+  s_4cfb0aecd4cd7c::t_81889c84e584e1 1-11
+engine-dependency.json
+  s_4cfb0aecd4cd7c::t_0aced4e412efb6 3-4,20
+lib/parties/supplier_ledger.dart
+  s_4cfb0aecd4cd7c::t_4fbb29e19c81f5 53,96,98
+  s_4cfb0aecd4cd7c::t_e8b7aea3a068c2 1-52,54-95,97,99-216
+test/reports/sales_report_test.dart
+  s_4cfb0aecd4cd7c::t_beb0c011df5d7a 1-179,181-187,189-217
+  s_4cfb0aecd4cd7c::t_2b0dfe97c429d4 180,188
+test/parties/purchase_proposal_oracle.json
+  s_4cfb0aecd4cd7c::t_607541e61778a3 1
+lib/reports/sales_report.dart
+  s_4cfb0aecd4cd7c::t_7ba88d17e661ae 1-174
+pubspec.lock
+  s_4cfb0aecd4cd7c::t_196bcc13342a44 419
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8c877de36894a60712f572b4060212f5e9acfe27",
+  "prompts": {},
+  "sessions": {
+    "s_4cfb0aecd4cd7c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b2b4-e7e0-7aa0-af3c-4566b631abc3",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
