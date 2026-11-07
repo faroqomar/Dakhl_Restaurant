@@ -1,0 +1,20 @@
+const fs=require('fs'),crypto=require('crypto');
+const path='electron-reference/app/ui/model.js', M=require('../../'+path);
+const state=M.empty();
+state.suppliers=[{id:'s',openingBalance:100,archived:true},{id:'other',openingBalance:99}];
+state.invoices=[{id:'i',supplierId:'s',date:'2026-01-02',createdAt:'2026-01-02T00:00:00Z',lines:[{quantity:1.5,price:101}]},{id:'other-i',supplierId:'other',date:'2026-01-02',createdAt:'2026-01-02',lines:[{quantity:1,price:20}]}];
+state.debts=[{id:'d',supplierId:'s',date:'2026-01-01',createdAt:'2026-01-01T00:00:00Z',amount:30},{id:'future',supplierId:'s',date:'2026-02-01',createdAt:'2026-02-01T00:00:00Z',amount:50}];
+state.payments=[{id:'p',supplierId:'s',invoiceId:'i',date:'2026-01-02',createdAt:'2026-01-02T00:00:00Z',amount:170,invoiceAmount:152,debtAmount:18},{id:'legacy',supplierId:'s',invoiceId:null,date:'2026-01-03',createdAt:'2026-01-03T00:00:00Z',amount:10}];
+const cases=[{name:'archived and mixed allocation',state},{name:'missing supplier',state,supplier:'missing'},{name:'empty',state:M.empty()},{name:'invoice removed',state:{...state,invoices:[]}}];
+cases.push({name:'independent units and maximum money',state:{...M.empty(),suppliers:[{id:'s',openingBalance:0}],invoices:[{id:'i',supplierId:'s',date:'2026-01-02',createdAt:'2026-01-02T00:00:00Z',lines:[{quantityCartons:0.001,priceCarton:500,quantityPieces:0.001,pricePiece:500},{quantity:1,price:999999999998}]}]}});
+const valid=JSON.parse(JSON.stringify(state));
+valid.materials=[{id:'m',name:'Material',unit:'piece',priceCarton:0,pricePiece:0,archived:false}];
+valid.suppliers=valid.suppliers.map(s=>({...s,name:s.id,phone:'',note:'',categoryId:'market',materials:[]}));
+valid.invoices=valid.invoices.map(i=>({...i,number:i.id,note:'',lines:i.lines.map(l=>({...l,materialId:'m',name:'Material',unit:'piece'}))}));
+valid.debts=valid.debts.map(d=>({...d,note:''}));
+valid.payments=valid.payments.map(p=>({...p,categoryId:'market',note:'',funding:{source:'daily',dailyAmount:p.amount,cashAmount:0}}));
+cases.push({name:'validated schema11 history',validated:true,state:M.validate(valid)});
+for(const c of cases){const s=c.supplier||'s',x=c.state;c.expected={balance:M.supplierBalance(x,s),debt:M.debtAvailable(x,s),datedDebt:M.debtAvailable(x,s,'2026-01-02'),excludedDebt:M.debtAvailable(x,s,'2026-01-02','p'),paid:M.invoicePaid(x,'i'),due:M.invoiceDue(x,'i'),ledger:M.supplierLedger(x,s).map(e=>({id:e.id,type:e.type,amount:e.amount,before:e.before,balance:e.balance})),before:M.balanceBefore(x,s,'2026-01-02','2026-01-02T00:00:00Z')};}
+const strings=[...new Set(cases.flatMap(c=>[...c.state.invoices,...c.state.debts,...c.state.payments].flatMap(e=>[e.id,e.date,e.createdAt])))];
+const comparisons=strings.flatMap(a=>strings.map(b=>[a,b,Math.sign(a.localeCompare(b))]));
+fs.writeFileSync('test/parties/supplier_ledger_oracle.json',JSON.stringify({sourceSha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex'),runtime:process.versions,collation:new Intl.Collator().resolvedOptions(),cases,comparisons},null,2)+'\n');

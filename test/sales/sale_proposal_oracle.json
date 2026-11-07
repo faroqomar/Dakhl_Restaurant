@@ -1,0 +1,1958 @@
+{
+  "sourceSha256": "65a9b33cdca42e328d710f1afaa1b0fb42a7778284bd2f07f7c7e77d3d9f07f4",
+  "cases": [
+    {
+      "name": "default",
+      "draft": {
+        "date": "2026-01-03",
+        "discount": 100,
+        "lines": [
+          {
+            "productId": "p",
+            "quantity": 2
+          }
+        ]
+      },
+      "state": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "saleId": "sale-new",
+      "createdAt": "2026-01-03T12:00:00Z",
+      "expected": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [
+          {
+            "id": "sale-new",
+            "number": "S-000001",
+            "date": "2026-01-03",
+            "status": "completed",
+            "lines": [
+              {
+                "productId": "p",
+                "name": "صنف",
+                "unit": "قطعة",
+                "quantity": 2,
+                "price": 1000,
+                "trackStock": true
+              }
+            ],
+            "discount": 100,
+            "paid": 1900,
+            "note": "",
+            "createdAt": "2026-01-03T12:00:00Z",
+            "orderType": "صالة"
+          }
+        ],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "ok": true
+    },
+    {
+      "name": "override",
+      "draft": {
+        "date": "2026-01-03",
+        "discount": 100,
+        "lines": [
+          {
+            "productId": "p",
+            "quantity": 1.5,
+            "price": 1500
+          }
+        ],
+        "paid": 3000,
+        "note": "memo"
+      },
+      "state": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "saleId": "sale-new",
+      "createdAt": "2026-01-03T12:00:00Z",
+      "expected": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [
+          {
+            "id": "sale-new",
+            "number": "S-000001",
+            "date": "2026-01-03",
+            "status": "completed",
+            "lines": [
+              {
+                "productId": "p",
+                "name": "صنف",
+                "unit": "قطعة",
+                "quantity": 1.5,
+                "price": 1500,
+                "trackStock": true
+              }
+            ],
+            "discount": 100,
+            "paid": 3000,
+            "note": "memo",
+            "createdAt": "2026-01-03T12:00:00Z",
+            "orderType": "صالة"
+          }
+        ],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "ok": true
+    },
+    {
+      "name": "empty",
+      "draft": {
+        "date": "2026-01-03",
+        "discount": 100,
+        "lines": []
+      },
+      "state": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "saleId": "sale-new",
+      "createdAt": "2026-01-03T12:00:00Z",
+      "ok": false
+    },
+    {
+      "name": "backdated",
+      "draft": {
+        "date": "2026-01-01",
+        "discount": 100,
+        "lines": [
+          {
+            "productId": "p",
+            "quantity": 2
+          }
+        ]
+      },
+      "state": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "saleId": "sale-new",
+      "createdAt": "2026-01-03T12:00:00Z",
+      "ok": false
+    },
+    {
+      "name": "overstock",
+      "draft": {
+        "date": "2026-01-03",
+        "discount": 100,
+        "lines": [
+          {
+            "productId": "p",
+            "quantity": 6
+          }
+        ]
+      },
+      "state": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "saleId": "sale-new",
+      "createdAt": "2026-01-03T12:00:00Z",
+      "ok": false
+    },
+    {
+      "name": "duplicate-line",
+      "draft": {
+        "date": "2026-01-03",
+        "discount": 100,
+        "lines": [
+          {
+            "productId": "p",
+            "quantity": 1
+          },
+          {
+            "productId": "p",
+            "quantity": 1
+          }
+        ]
+      },
+      "state": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "saleId": "sale-new",
+      "createdAt": "2026-01-03T12:00:00Z",
+      "ok": false
+    },
+    {
+      "name": "underpaid",
+      "draft": {
+        "date": "2026-01-03",
+        "discount": 100,
+        "lines": [
+          {
+            "productId": "p",
+            "quantity": 2
+          }
+        ],
+        "paid": 1
+      },
+      "state": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "saleId": "sale-new",
+      "createdAt": "2026-01-03T12:00:00Z",
+      "ok": false
+    },
+    {
+      "name": "bad-type",
+      "draft": {
+        "date": "2026-01-03",
+        "discount": 100,
+        "lines": [
+          {
+            "productId": "p",
+            "quantity": 2
+          }
+        ],
+        "orderType": "missing"
+      },
+      "state": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "saleId": "sale-new",
+      "createdAt": "2026-01-03T12:00:00Z",
+      "ok": false
+    },
+    {
+      "name": "duplicate-id",
+      "state": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [
+          {
+            "id": "sale-new",
+            "number": "S-000001",
+            "date": "2026-01-03",
+            "status": "completed",
+            "lines": [
+              {
+                "productId": "p",
+                "name": "صنف",
+                "unit": "قطعة",
+                "quantity": 2,
+                "price": 1000,
+                "trackStock": true
+              }
+            ],
+            "discount": 100,
+            "paid": 1900,
+            "note": "",
+            "createdAt": "2026-01-03T12:00:00Z",
+            "orderType": "صالة"
+          }
+        ],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "draft": {
+        "date": "2026-01-03",
+        "discount": 100,
+        "lines": [
+          {
+            "productId": "p",
+            "quantity": 2
+          }
+        ]
+      },
+      "saleId": "sale-new",
+      "createdAt": "2026-01-03T12:00:00Z",
+      "ok": false
+    },
+    {
+      "name": "legacy-number-S-9007199254740991",
+      "state": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [
+          {
+            "id": "sale-new",
+            "number": "S-9007199254740991",
+            "date": "2026-01-03",
+            "status": "completed",
+            "lines": [
+              {
+                "productId": "p",
+                "name": "صنف",
+                "unit": "قطعة",
+                "quantity": 2,
+                "price": 1000,
+                "trackStock": true
+              }
+            ],
+            "discount": 100,
+            "paid": 1900,
+            "note": "",
+            "createdAt": "2026-01-03T12:00:00Z",
+            "orderType": "صالة"
+          }
+        ],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "draft": {
+        "date": "2026-01-03",
+        "discount": 100,
+        "lines": [
+          {
+            "productId": "p",
+            "quantity": 1
+          }
+        ]
+      },
+      "saleId": "next",
+      "createdAt": "2026-01-04T12:00:00Z",
+      "expected": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [
+          {
+            "id": "sale-new",
+            "number": "S-9007199254740991",
+            "date": "2026-01-03",
+            "status": "completed",
+            "lines": [
+              {
+                "productId": "p",
+                "name": "صنف",
+                "unit": "قطعة",
+                "quantity": 2,
+                "price": 1000,
+                "trackStock": true
+              }
+            ],
+            "discount": 100,
+            "paid": 1900,
+            "note": "",
+            "createdAt": "2026-01-03T12:00:00Z",
+            "orderType": "صالة"
+          },
+          {
+            "id": "next",
+            "number": "S-9007199254740992",
+            "date": "2026-01-03",
+            "status": "completed",
+            "lines": [
+              {
+                "productId": "p",
+                "name": "صنف",
+                "unit": "قطعة",
+                "quantity": 1,
+                "price": 1000,
+                "trackStock": true
+              }
+            ],
+            "discount": 100,
+            "paid": 900,
+            "note": "",
+            "createdAt": "2026-01-04T12:00:00Z",
+            "orderType": "صالة"
+          }
+        ],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "ok": true
+    },
+    {
+      "name": "legacy-number-S-9007199254740992",
+      "state": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [
+          {
+            "id": "sale-new",
+            "number": "S-9007199254740992",
+            "date": "2026-01-03",
+            "status": "completed",
+            "lines": [
+              {
+                "productId": "p",
+                "name": "صنف",
+                "unit": "قطعة",
+                "quantity": 2,
+                "price": 1000,
+                "trackStock": true
+              }
+            ],
+            "discount": 100,
+            "paid": 1900,
+            "note": "",
+            "createdAt": "2026-01-03T12:00:00Z",
+            "orderType": "صالة"
+          }
+        ],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "draft": {
+        "date": "2026-01-03",
+        "discount": 100,
+        "lines": [
+          {
+            "productId": "p",
+            "quantity": 1
+          }
+        ]
+      },
+      "saleId": "next",
+      "createdAt": "2026-01-04T12:00:00Z",
+      "ok": false
+    },
+    {
+      "name": "legacy-number-S-9007199254740993",
+      "state": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [
+          {
+            "id": "sale-new",
+            "number": "S-9007199254740993",
+            "date": "2026-01-03",
+            "status": "completed",
+            "lines": [
+              {
+                "productId": "p",
+                "name": "صنف",
+                "unit": "قطعة",
+                "quantity": 2,
+                "price": 1000,
+                "trackStock": true
+              }
+            ],
+            "discount": 100,
+            "paid": 1900,
+            "note": "",
+            "createdAt": "2026-01-03T12:00:00Z",
+            "orderType": "صالة"
+          }
+        ],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "draft": {
+        "date": "2026-01-03",
+        "discount": 100,
+        "lines": [
+          {
+            "productId": "p",
+            "quantity": 1
+          }
+        ]
+      },
+      "saleId": "next",
+      "createdAt": "2026-01-04T12:00:00Z",
+      "expected": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [
+          {
+            "id": "sale-new",
+            "number": "S-9007199254740993",
+            "date": "2026-01-03",
+            "status": "completed",
+            "lines": [
+              {
+                "productId": "p",
+                "name": "صنف",
+                "unit": "قطعة",
+                "quantity": 2,
+                "price": 1000,
+                "trackStock": true
+              }
+            ],
+            "discount": 100,
+            "paid": 1900,
+            "note": "",
+            "createdAt": "2026-01-03T12:00:00Z",
+            "orderType": "صالة"
+          },
+          {
+            "id": "next",
+            "number": "S-9007199254740992",
+            "date": "2026-01-03",
+            "status": "completed",
+            "lines": [
+              {
+                "productId": "p",
+                "name": "صنف",
+                "unit": "قطعة",
+                "quantity": 1,
+                "price": 1000,
+                "trackStock": true
+              }
+            ],
+            "discount": 100,
+            "paid": 900,
+            "note": "",
+            "createdAt": "2026-01-04T12:00:00Z",
+            "orderType": "صالة"
+          }
+        ],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "ok": true
+    },
+    {
+      "name": "legacy-number-S-1000000000000000000000",
+      "state": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [
+          {
+            "id": "sale-new",
+            "number": "S-1000000000000000000000",
+            "date": "2026-01-03",
+            "status": "completed",
+            "lines": [
+              {
+                "productId": "p",
+                "name": "صنف",
+                "unit": "قطعة",
+                "quantity": 2,
+                "price": 1000,
+                "trackStock": true
+              }
+            ],
+            "discount": 100,
+            "paid": 1900,
+            "note": "",
+            "createdAt": "2026-01-03T12:00:00Z",
+            "orderType": "صالة"
+          }
+        ],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "draft": {
+        "date": "2026-01-03",
+        "discount": 100,
+        "lines": [
+          {
+            "productId": "p",
+            "quantity": 1
+          }
+        ]
+      },
+      "saleId": "next",
+      "createdAt": "2026-01-04T12:00:00Z",
+      "expected": {
+        "version": 11,
+        "products": [
+          {
+            "id": "p",
+            "name": "صنف",
+            "code": "",
+            "unit": "قطعة",
+            "price": 1000,
+            "group": "",
+            "minStock": 0,
+            "trackStock": true,
+            "archived": false
+          }
+        ],
+        "stockEntries": [
+          {
+            "id": "opening",
+            "productId": "p",
+            "date": "2026-01-02",
+            "quantity": 5,
+            "kind": "opening",
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          }
+        ],
+        "sales": [
+          {
+            "id": "sale-new",
+            "number": "S-1000000000000000000000",
+            "date": "2026-01-03",
+            "status": "completed",
+            "lines": [
+              {
+                "productId": "p",
+                "name": "صنف",
+                "unit": "قطعة",
+                "quantity": 2,
+                "price": 1000,
+                "trackStock": true
+              }
+            ],
+            "discount": 100,
+            "paid": 1900,
+            "note": "",
+            "createdAt": "2026-01-03T12:00:00Z",
+            "orderType": "صالة"
+          },
+          {
+            "id": "next",
+            "number": "S-01e+21",
+            "date": "2026-01-03",
+            "status": "completed",
+            "lines": [
+              {
+                "productId": "p",
+                "name": "صنف",
+                "unit": "قطعة",
+                "quantity": 1,
+                "price": 1000,
+                "trackStock": true
+              }
+            ],
+            "discount": 100,
+            "paid": 900,
+            "note": "",
+            "createdAt": "2026-01-04T12:00:00Z",
+            "orderType": "صالة"
+          }
+        ],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "materials": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "ok": true
+    }
+  ]
+}

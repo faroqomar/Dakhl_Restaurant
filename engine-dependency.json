@@ -1,7 +1,7 @@
 {
   "engine": "Madar_Engine",
-  "status": "Locally independently reviewed completion domain and Unicode17 compatibility candidate; whole Completion, hosted CI and release gates remain blocked.",
-  "git_commit": "97a5a6f4003a7084304d87e1b9554397f9bd7ac8",
+  "status": "Local reviewed integral Number formatter candidate; full app integration and final verification pending.",
+  "git_commit": "e73b5eebf84f742375eba298a63df8c7bcf70c97",
   "packages": {
     "madar_application": {
       "path": "../Madar_Engine/packages/application",
@@ -17,7 +17,7 @@
     },
     "madar_domain": {
       "path": "../Madar_Engine/packages/domain",
-      "version": "0.1.0-dev.3"
+      "version": "0.1.0-dev.4"
     }
   }
 }

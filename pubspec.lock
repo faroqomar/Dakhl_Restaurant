@@ -416,7 +416,7 @@ packages:
       path: "../Madar_Engine/packages/domain"
       relative: true
     source: path
-    version: "0.1.0-dev.3"
+    version: "0.1.0-dev.4"
   madar_flutter_adapters:
     dependency: "direct main"
     description:

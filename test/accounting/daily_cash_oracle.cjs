@@ -1,0 +1,13 @@
+const M=require('../../electron-reference/app/ui/model.js');
+const s=M.empty(), date='2026-01-01';
+s.days[date]={expenses:[{id:'e',categoryId:'market',amount:30000,note:'',createdAt:date+'T12:00:00Z',funding:{source:'shared',dailyAmount:20000,cashAmount:10000}}],chickenUsed:7,chickenLeft:9,balance:125000,totalOverride:null,remaining:{amount:100000,dailySpent:20000,transferred:5000,salesTotal:30000}};
+s.transfers=[{id:'t',date,amount:7000,createdAt:date+'T12:00:00Z'}];
+s.transactions=[{id:'deposit',date,type:'deposit',amount:50000,note:'',createdAt:date+'T12:00:00Z'}];
+s.suppliers=[{id:'s',name:'Supplier',phone:'',note:'',categoryId:'market',openingBalance:100000}];
+s.payments=[{id:'p',supplierId:'s',invoiceId:null,date,categoryId:'market',amount:8000,invoiceAmount:0,debtAmount:8000,funding:{source:'shared',dailyAmount:3000,cashAmount:5000},note:'',createdAt:date+'T12:00:00Z'}];
+s.products=[{id:'prod',name:'Rice',code:'',group:'',unit:'plate',price:37000,minStock:0,trackStock:false,archived:false}];
+let state=M.completeSale(s,{date,lines:[{productId:'prod',quantity:1}],discount:0,note:'',orderType:'صالة'},'sale',date+'T12:00:00Z');
+state=M.returnSale(state,'sale',{date:'2026-01-02',reason:'test',lines:[{productId:'prod',quantity:1,restock:false}]},'refund','2026-01-02T12:00:00Z');
+state=M.validate(state);
+const results=['2026-01-01','2026-01-02','2026-01-03'].map(date=>({date,dailySpent:M.dailySpent(state,date),transferred:M.transferred(state,date),remaining:M.remaining(state,date),total:M.total(state,date),salesTotal:M.salesTotal(state,date),cash:M.cash(state),expenseCount:M.expenses(state,date).length}));
+console.log(JSON.stringify({state,results,movements:M.movements(state)}));

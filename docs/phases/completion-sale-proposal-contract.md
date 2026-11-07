@@ -1,0 +1,7 @@
+# Pure checkout proposal candidate
+
+The app-owned SaleProposal maps an immutable validated account plus explicit draft, sale identity and timestamp into a new immutable account candidate. It uses Madar commerce/exact-value rules and the existing codec for schema, duplicate lines/numbers, price snapshots, accepted dates/timestamps, historical stock and daily monetary limits. It does not mutate the input or persist, reserve stock, establish durable idempotency, or invent FIN journal mappings.
+
+Nine synthetic cases compare actual frozen model.completeSale output or rejection: default current price/order type, explicit price and received cash, empty ticket, backdated insufficient stock, overstock, duplicate lines, underpayment, unavailable order type and duplicate sale identity. Targeted analysis and pure-Dart source comparison pass. Flutter suite has not run; compilation slot/storage remains constrained. Test-first missing-API analyzer output preceded implementation.
+
+Legacy S-number formatting now consumes Madar LegacyNumberFormat at local enginee73b5ee/domain0.1.0-dev.4. Three added source cases cover safe-boundary and unsafe suffixes plus exponent formatting; thirteen proposal cases pass (including increment-stagnation duplicate rejection) after a test-first failure. No money rounding policy changed. The proposal is not wired into checkout and cannot close C2 financial posting.
