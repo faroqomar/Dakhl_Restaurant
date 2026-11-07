@@ -1,0 +1,21 @@
+test/sales/return_proposal_oracle.cjs
+  s_4cfb0aecd4cd7c::t_d7cdb855a4281a 12-19
+test/sales/return_proposal_checks.dart
+  s_4cfb0aecd4cd7c::t_d7cdb855a4281a 84-100
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+  "prompts": {},
+  "sessions": {
+    "s_4cfb0aecd4cd7c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b2b4-e7e0-7aa0-af3c-4566b631abc3",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
