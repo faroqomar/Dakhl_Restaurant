@@ -81,6 +81,23 @@ int verifyReturnProposal() {
       'duplicate line',
     );
     check(rejects(() => build(lines: [])), 'empty lines');
+    for (final invalid in [BigInt.zero, -BigInt.one]) {
+      check(
+        rejects(
+          () => build(
+            lines: [
+              ReturnLineRequest(
+                productId: 'a',
+                quantityUnits: invalid,
+                restock: false,
+              ),
+            ],
+          ),
+        ),
+        'nonpositive return quantity $invalid',
+      );
+    }
+
     check(
       rejects(
         () => (proposal.candidate.toJson()['saleReturns'] as List).clear(),

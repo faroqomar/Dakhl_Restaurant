@@ -9,4 +9,12 @@ for(const [id,lines] of [['r1',[{productId:'a',quantity:1,restock:false}]],['r2'
 let zero=structuredClone(cases[0].base);zero.sales[0].discount=501;zero.sales[0].paid=0;zero=M.validate(zero);
 const request={date:'2026-01-02',reason:'free sale return',lines:[{productId:'a',quantity:3,restock:false},{productId:'b',quantity:2,restock:true}]};
 cases.push({base:zero,request,id:'zero',createdAt:'2026-01-02T12:00:00Z',candidate:M.returnSale(zero,'sale',request,'zero','2026-01-02T12:00:00Z')});
+let fractional=structuredClone(cases[0].base);
+// Successive sub-unit returns exercise cumulative whole-IQD rounding.
+for(const [index,quantity] of [0.333,0.667,0.001,1.999].entries()) {
+ const request={date:'2026-01-02',reason:'fractional successive return',lines:[{productId:'a',quantity,restock:false}]};
+ const id='fractional-'+index,createdAt='2026-01-02T12:00:00Z';
+ const candidate=M.returnSale(fractional,'sale',request,id,createdAt);
+ cases.push({base:fractional,request,id,createdAt,candidate});fractional=candidate;
+}
 console.log(JSON.stringify({cases,net:M.saleTotal(s.sales[0]),refunded:M.saleRefundTotal(s,'sale')}));
