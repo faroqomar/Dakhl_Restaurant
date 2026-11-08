@@ -1,7 +1,7 @@
 {
   "engine": "Madar_Engine",
   "status": "Reviewed local development candidate. Three-target ARM64 bundled conformance and macOS share-picker handoff verified; physical-phone, final visual/activation and delivery gates remain separately recorded.",
-  "git_commit": "296f56fdcca59c6be6e50b545b621ae2f5f9996e",
+  "git_commit": "d3d1ba1f6a5082f4ecc5a03ce677792f898269cf",
   "packages": {
     "madar_application": {
       "path": "../Madar_Engine/packages/application",
