@@ -1,0 +1,30 @@
+{
+  "campaignId": "remaining-bundled-native-001",
+  "targetId": "macos-host",
+  "fixtureId": "4b888633f2431f14c5c6e02cfc60e4d49594e0198bb43cb78c91780b46e7b160",
+  "context": {
+    "platform": "host"
+  },
+  "stages": [
+    {
+      "id": "guard",
+      "kind": "preflight",
+      "maxAttempts": 2
+    },
+    {
+      "id": "macos-pilot",
+      "kind": "pilot",
+      "maxAttempts": 2
+    },
+    {
+      "id": "ios-native",
+      "kind": "case",
+      "maxAttempts": 2
+    },
+    {
+      "id": "android-native",
+      "kind": "case",
+      "maxAttempts": 2
+    }
+  ]
+}

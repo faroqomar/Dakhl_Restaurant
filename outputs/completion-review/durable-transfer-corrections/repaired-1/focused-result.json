@@ -1,0 +1,7 @@
+{
+  "passedBeforeTwoAddedPolicyCases": 95,
+  "addedPolicyCases": 2,
+  "currentFocusedCases": 97,
+  "verificationSource": "accounting-test-attempt-2.log (all accounting cases, including all seven transfer suites)",
+  "priorFocusedLogSha256": "92a3a5ffb6b7cb466e2fe17d44bd8500cb58ef02b965eef30ee0504b7cdabeca"
+}

@@ -1,0 +1,53 @@
+{
+  "stageId": "restart-and-provider-pilot",
+  "status": "passed",
+  "cleanupConfirmed": true,
+  "identity": {
+    "contextFingerprint": "20033eacc8184b2ff7a484bce111634789b20b95be0a345ab33b41279b57a310",
+    "engineRevision": "bb00ccdad8f6710ca1778260d42ed5584f26a86c",
+    "fixtureId": "58e801b27334955d471bf19ca8abd5fbbd78d215059cec071e96062c5e2a892f",
+    "inputFingerprint": "55e42ad1db48ca2db99cea6dad0414c3beef844f569797988304cc7382d00187",
+    "planFingerprint": "4dd3159de1e5437a3ed9459a11384f493a4ec08caf3df3d758ad816886ec2c12",
+    "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+    "targetId": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
+    "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+  },
+  "evidence": [
+    {
+      "path": "outputs/completion-review/c1-restart-portability/native-pilot-1/result.json",
+      "sha256": "8a38e8e8c10338467ff328d50184fbd202824e1d7185daec196ef46d9645771f"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/native-pilot-1/restart-assertions.json",
+      "sha256": "ab77f7ed0fa61ae8b0a89e123de081b3ba3ded6ca4a9dd834b73e13a8e4d09d6"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/native-pilot-1/post-import-restart-assertions.json",
+      "sha256": "559163436cfd4e774902aae5771331392fe9951c79d3eba564447ad6f0852ae0"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/native-pilot-1/final-source-check.json",
+      "sha256": "2bc9fc97ee7c85ca4bcc6fc7909de55cea2e1312971a19b690389cc04d7947af"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/native-pilot-1/fixture-cleanup.json",
+      "sha256": "11d53eec3b309fa99f9f5339e201675f0d86000fa6554dad21341b6d7dfe73ac"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/native-pilot-1/preflight-fixture-cleanup.json",
+      "sha256": "db59d534a30d43a510a8058fe7328da483e47944bf5e38d990cb336265200efc"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/native-pilot-1/storage-closeout.json",
+      "sha256": "227f58ea480ed2a489f174ec6a0f95c599eecd3d4a507c461cb5d345a52b60f6"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/native-pilot-1/device-final-state.json",
+      "sha256": "8fbfda714460ba5f4e0c0f9b3808a3fd87ae699305e4ed6aef0ddfc9cadccdc9"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/native-pilot-1/binary-identity.json",
+      "sha256": "20ffd337fa90c46b7eb9ef74179b823a314c23a18a70aa0d938e5b27b2ad5781"
+    }
+  ]
+}

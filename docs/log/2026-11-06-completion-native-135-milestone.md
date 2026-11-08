@@ -1,0 +1,11 @@
+# Completion native135 milestone
+
+The sole local Penpot controller exported four additional settings design/wireframe pairs and the isolated desktop balance repair proposal. Current actual receipts show135 paired reference exports,270 reference sides,30 missing pairs,85 content-qualified proposals and zero new owner approvals. The176 mappings and original sources remain preserved. The balance correction revises an existing pair and adds no pair count.
+
+Exact immutable review manifests: `outputs/penpot/completion/export-recovery/native-milestone-settings-c01-135.json` and `native-milestone-c03-balance-repair-v1.json`. Old balance boards/exports remain preserved. Desktop repair native pixel recheck and current archive proof remain pending. A separate native review found phone-payment-new-bottom87500 versus frozen67500 on both sides; this pair remains on HOLD and Lead owns its isolated source correction.
+
+The controller integrated returned invoice, payment, payment-edit and c04/c05 reviews using exact current parent/crop hashes and actual native131IDs. Three c04 pairs retain owner discrepancies. Failure-toast fixtures, text selection, text weight and control-rendering differences remain explicit. Static images do not verify runtime behavior. Native131 independent structure review passed262ancestries,26root placements, two restored parents and byte-identical product export; its fresh raster sample covers43sides only.
+
+The controller removed the temporary intake wrapper, observed Saved and restored root, then requested native135 archive once. Archive/layer/reopen proof for ten replaced/new reference sides remains pending at this dated milestone. No service/exporter change, implementation, design approval, merge, push or release occurred. Step2 drafts remain under Lead ownership and require explicit approval.
+
+Engine runtime/API/Design: N/A for this consumer tooling delivery. Shared rules/contracts/adapters stay in Madar; restaurant UI/workflows/safeguards stay in Dakhl_Restaurant. Separate project memory delivery requires sync/check; subsequent digest delivery remains pending until checked. The persistent timer continues; prior interruption gaps and active effort/cost remain unknown. No reliable finish time is established.

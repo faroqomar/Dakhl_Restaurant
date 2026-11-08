@@ -1,0 +1,30 @@
+{
+  "recordedUtc": "2026-11-08T04:29:15.908844+00:00",
+  "reviewer": "/root/review_transfer_correction_history",
+  "verdict": "revision_required",
+  "verifiedBindings": 17,
+  "testsPassed": {
+    "corrections": 33,
+    "createRegression": 38
+  },
+  "analysis": "clean",
+  "findings": [
+    "P1 active target accounts/provenance not fully reconstructed; real-store edit committed inverse against tampered unrelated accounts",
+    "P1 historical replay accepts altered replacement accounts/policy, missing edit receipt and disconnected fork",
+    "P1 outcomes/date/amount and mapper/intent/provenance not fully reconciled; forged delete999IQD/date replayed",
+    "P2 unbounded identity permits greater-than20MiB reason; trimming collapses distinct submitted reasons",
+    "Evidence: proposal rejection is not actual precommit rollback; full271 count double-counted create baseline; delete oracle mirrors rather than executes renderer handler"
+  ],
+  "limits": [
+    "Candidate remains unaccepted; no UI/livecutover/performance/native closure"
+  ],
+  "storage": {
+    "freeKiB": [
+      109790088,
+      109799204
+    ],
+    "gitSizesUnchanged": true,
+    "temporaryGitStores": 0,
+    "ownedProbesAndStores": 0
+  }
+}

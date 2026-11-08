@@ -1,0 +1,102 @@
+{
+  "at": "2026-11-08T21:16:36.172203+00:00",
+  "status": "passed",
+  "artifacts": [
+    {
+      "target": "macos",
+      "path": "build/macos/Build/Products/Debug/Dakhl_Restaurant Dev.app",
+      "bundleId": "com.eros.dakhlrestaurant.phase00",
+      "version": "0.0.0",
+      "build": "1",
+      "minimumSystem": "12.0",
+      "nativeIcuFiles": {
+        "Contents/Frameworks/madar_icu_collation.framework/Versions/A/madar_icu_collation": "f4eadaaac57bad4457bcfd53ec74fa3e50fc65db8bb7e6d80131849d94527d9f"
+      },
+      "ICULicenseAggregated": true,
+      "licenseEncoding": "gzip",
+      "notices": {
+        "Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/NOTICES.Z": "6e76943246d5b08b24d4dc5e9b83946e4a84cdab348d5e6333eca85bf55d56f1"
+      },
+      "compiledCode": {
+        "Contents/MacOS/Dakhl_Restaurant Dev": "67453bf64d6d9f4cf6ff85c571cac849f75c5e50735d243bce7370b304e9bae8",
+        "Contents/Frameworks/App.framework/Versions/A/App": "b76f17daeb84e49608c3430b0f7055a00336d7eaac82a85f8d7936a113c3a281",
+        "Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/kernel_blob.bin": "d574bf70478682fe798bbddce022282a9ae0ba04bbee034d8c288267d67b76fb"
+      },
+      "infoPlistSha256": "fdc09d08473079ad8744637481fefdd8a217ae355d08f96bed752cb1a5475fcf",
+      "seal": "deep-strict-pass",
+      "icuMachOMinimumOS": "11.0",
+      "icuMachOEvidence": "normal-macos-icu-macho.log"
+    },
+    {
+      "target": "ios-unsigned-device",
+      "path": "build/ios/iphoneos/Runner.app",
+      "bundleId": "com.eros.dakhlrestaurant.phase00",
+      "version": "0.0.0",
+      "build": "1",
+      "minimumSystem": "15.0",
+      "nativeIcuFiles": {
+        "Frameworks/madar_icu_collation.framework/madar_icu_collation": "0e560776f91be94464651a58911a2beca348387b58a817dc644f2f451ba19aea"
+      },
+      "ICULicenseAggregated": true,
+      "licenseEncoding": "gzip",
+      "notices": {
+        "Frameworks/App.framework/flutter_assets/NOTICES.Z": "6e76943246d5b08b24d4dc5e9b83946e4a84cdab348d5e6333eca85bf55d56f1"
+      },
+      "compiledCode": {
+        "Runner": "18fe3c21bd0d15b1634405ff0a47442668716bee9f23393829b1f2676c917c3c",
+        "Frameworks/App.framework/App": "244bbb5246721c55c8fee685589e0b29e10a59615d5462d5aa7783794662b215",
+        "Frameworks/App.framework/flutter_assets/kernel_blob.bin": "4c74363d7be4f3fe77560bb22195a0a547d74ed59ac0d856c1748fa451f110a1"
+      },
+      "infoPlistSha256": "b6490d9779f1fcc7d999a9311b1e9763374613a705f91d75ca6fd75b55222389",
+      "seal": "unsigned-device-build-not-installation",
+      "icuMachOMinimumOS": "15.0",
+      "icuMachOEvidence": "normal-ios-icu-macho.log"
+    },
+    {
+      "target": "android-arm64",
+      "path": "build/app/outputs/flutter-apk/app-debug.apk",
+      "bytes": 187746249,
+      "sha256": "c4fd352c9135fd2182e6785eac53c27e92fc4d0123fc82273d2e0735476f3b05",
+      "nativeIcuFiles": {
+        "lib/arm64-v8a/libmadar_icu_collation.so": "6d4905ba2c893eb3dbdf242195f8ee689664a9a3eb533306e4266a80c9154d93"
+      },
+      "nativeAssetId": "package:madar_icu_collation/src/icu_collation_native.dart",
+      "sameIcuBytesAsQualifiedNativeFixture": true,
+      "ICULicenseAggregated": true,
+      "licenseEncoding": "gzip",
+      "nativeManifest": {
+        "format-version": [
+          1,
+          0,
+          0
+        ],
+        "native-assets": {
+          "android_arm64": {
+            "package:sqlite3/src/ffi/libsqlite3.g.dart": [
+              "absolute",
+              "libsqlite3.so"
+            ],
+            "package:sqlite3_connection_pool/sqlite3_connection_pool.dart": [
+              "absolute",
+              "libsqlite3_connection_pool.so"
+            ],
+            "package:powersync/src/platform_specific/native/sqlite3_powersync_init.dart": [
+              "absolute",
+              "libpowersync_core.so"
+            ],
+            "package:madar_icu_collation/src/icu_collation_native.dart": [
+              "absolute",
+              "libmadar_icu_collation.so"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "sourceUnchanged": true,
+  "sourceManifest": "normal-build-source-inputs.json",
+  "androidSuccessor": "normal-android-arm64-build-002.log",
+  "androidRemedy": "android-outer-hook-cache-diagnosis.json",
+  "initialCheck": "normal-artifact-check-attempt-001.json (GZIP checker mistake plus genuine missing Android asset)",
+  "scope": "Build-only; no normal-app launch/install or real-account access. iOS device remains unsigned/unexecuted. Actual Mac host27.2 qualifies this run; metadata minima do not establish Mac12 runtime acceptance."
+}

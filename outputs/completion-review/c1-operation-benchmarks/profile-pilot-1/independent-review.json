@@ -1,0 +1,21 @@
+{
+  "recordedUtc": "2026-11-08T06:51:08.357551+00:00",
+  "reviewer": "/root/review_c1_profile_pilot",
+  "verdict": "PASS for bounded n=1 plumbing/correctness pilot",
+  "verifiedBindings": 42,
+  "priorHarnessBindings": 54,
+  "historicalSourceInputs": 326,
+  "scope": [
+    "One c1.product.create macOS PROFILE sample",
+    "Real durable create, reopen and cleanup assertions",
+    "14 OS resource observations; direct-child broad marker window"
+  ],
+  "sampleMs": 186.662,
+  "limits": [
+    "n=1 provides no distribution or budget acceptance",
+    "No matrix, frame, GUI or mobile acceptance",
+    "Periodic raw OS observations not retained; sampled peak cannot be independently recomputed",
+    "Historical QA source snapshots preserve two later-edited broad-source entries"
+  ],
+  "repeatedTestsOrMeasurements": false
+}

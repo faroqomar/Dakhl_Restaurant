@@ -14,6 +14,72 @@ spec.loader.exec_module(runner)
 
 
 class AppRunnerTests(unittest.TestCase):
+
+    def _empty_icu_framework(self, root):
+        framework = root / 'build/macos/Build/Products/Profile/native_assets/madar_icu_collation.framework'
+        (framework / 'Versions/A/Resources').mkdir(parents=True)
+        (framework / 'Versions/Current').symlink_to('A')
+        (framework / 'Resources').symlink_to('Versions/Current/Resources')
+        return framework
+
+    def test_profile_build_retries_once_only_after_classified_empty_shell_failure(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            executable = root / 'app'
+            executable.write_bytes(b'fixture')
+            attempts = []
+            def build(argv, cwd=None):
+                attempts.append(argv)
+                if len(attempts) == 1:
+                    self._empty_icu_framework(root)
+                    raise runner.EmptyProfileFrameworkError('command_failed:flutter')
+                self.assertFalse((root / 'build/macos/Build/Products/Profile/native_assets/madar_icu_collation.framework').exists())
+                return ''
+            with patch.object(runner, 'ROOT', root), patch.object(runner, 'EXECUTABLE', executable), patch.object(runner, 'command', side_effect=build):
+                runner.build_profile('fixture', {}, engine_identity={'gitCommit': 'a' * 40})
+            self.assertEqual(len(attempts), 2)
+
+    def test_profile_build_does_not_retry_unrelated_failure_with_empty_shell(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            executable = root / 'app'
+            executable.write_bytes(b'fixture')
+            def build(argv, cwd=None):
+                self._empty_icu_framework(root)
+                raise RuntimeError('command_failed:flutter')
+            with patch.object(runner, 'ROOT', root), patch.object(runner, 'EXECUTABLE', executable), patch.object(runner, 'command', side_effect=build) as command:
+                with self.assertRaisesRegex(RuntimeError, 'command_failed:flutter'):
+                    runner.build_profile('fixture', {}, engine_identity={'gitCommit': 'a' * 40})
+                self.assertEqual(command.call_count, 1)
+
+    def test_profile_switch_removes_only_known_empty_framework_shell(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            framework = self._empty_icu_framework(root)
+            with patch.object(runner, 'ROOT', root):
+                runner.discard_empty_profile_icu_frameworks()
+            self.assertFalse(framework.exists())
+
+    def test_profile_switch_preserves_framework_with_any_payload(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            framework = self._empty_icu_framework(root)
+            payload = framework / 'Versions/A/madar_icu_collation'
+            payload.write_bytes(b'unique payload')
+            with patch.object(runner, 'ROOT', root):
+                runner.discard_empty_profile_icu_frameworks()
+            self.assertEqual(payload.read_bytes(), b'unique payload')
+
+    def test_profile_switch_refuses_redirected_empty_framework(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            framework = self._empty_icu_framework(root)
+            (framework / 'Resources').unlink()
+            (framework / 'Resources').symlink_to('/tmp')
+            with patch.object(runner, 'ROOT', root), self.assertRaisesRegex(RuntimeError, 'framework_redirected'):
+                runner.discard_empty_profile_icu_frameworks()
+            self.assertTrue(framework.exists())
+
     def test_reused_output_refreshes_failed_diagnostics_to_empty_on_success(self):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory).resolve() / 'latest.json'
@@ -170,14 +236,18 @@ class AppRunnerTests(unittest.TestCase):
             packages=[dict(name='madar_application', rootUri=package.resolve().as_uri(), packageUri='lib/')])) )
         return root, engine, pin
 
-    def test_major_future_features_cannot_masquerade_as_measured(self):
+    def test_major_visible_features_require_actual_surface_harness(self):
         registry = json.loads(runner.REGISTRY.read_text())
         entries = {value['id']: value for value in registry['operations']}
         self.assertEqual(len(entries), len(registry['operations']))
-        for case in ('orders.process', 'catalog.add_item', 'sales.add_item'):
-            self.assertEqual(entries[case]['status'], 'planned')
-            self.assertIn('not implemented', entries[case]['reason'])
-        self.assertEqual({key for key, value in entries.items() if value['status'] == 'ready'}, {'app.startup', 'navigation.switch_route', 'shortcuts.save', 'accounts.open', 'accounts.save', 'accounts.migrate_legacy', 'accounts.replace', 'accounts.recover_previous', 'workspace.save_restore', 'catalog.lookup', 'inventory.post_movement', 'workspace.hold', 'workspace.resume', 'settings.save', 'parties.save_supplier', 'parties.save_material'})
+        for case in ('orders.process', 'catalog.add_item', 'sales.add_item', 'visible.suppliers.ledger'):
+            self.assertEqual(entries[case]['status'], 'ready')
+            self.assertEqual(entries[case]['harness'], 'visible-operations')
+            self.assertEqual(entries[case]['fixtureProfile'], 'visible-operations-v1')
+            self.assertIn('800x600', entries[case]['scope'])
+            self.assertIn('native raster', entries[case]['scope'])
+            self.assertIn('not a performance result', entries[case]['verification'])
+        self.assertEqual({key for key, value in entries.items() if value['status'] == 'ready'}, {'c1.product.edit', 'review.register.remaining', 'review.suppliers.ledger_query', 'c1.stock.post', 'review.spending.expense', 'review.reports.invoice.short', 'workspace.save_restore', 'app.startup', 'c1.stock.reverse', 'workspace.hold', 'review.reports.sale.short', 'review.reports.cash.multi', 'workspace.resume', 'review.reports.payment.short', 'review.reports.statement.multi', 'review.days.shift', 'review.reports.sales.multi', 'parties.save_material', 'review.portable.recover', 'review.reports.generate', 'review.reports.cash.short', 'shortcuts.save', 'c1.catalog.lookup', 'c1.product.create', 'accounts.migrate_legacy', 'review.portable.export', 'review.cash.transfer', 'review.purchases.payment', 'accounts.open', 'accounts.recover_previous', 'inventory.post_movement', 'review.reports.sale.multi', 'review.purchases.invoice', 'review.reports.sales.short', 'accounts.save', 'review.sales.checkout', 'review.reports.daily.multi', 'parties.save_supplier', 'review.reports.statement.short', 'review.sales.void', 'review.reports.daily.short', 'review.undo.expense', 'navigation.switch_route', 'review.reports.payment.max', 'review.portable.import', 'catalog.lookup', 'c1.catalog.filter', 'review.purchases.analysis', 'review.sales.refund', 'review.reports.invoice.multi', 'review.spending.correct', 'accounts.replace', 'c1.stock.history', 'c1.catalog.page', 'review.purchases.invoice_inline', 'c1.product.photo_select_save', 'settings.save', 'review.suppliers.additional_debt', 'review.cash.external_deposit', 'review.categories.save'} | {'orders.process', 'catalog.add_item', 'sales.add_item', 'visible.suppliers.ledger', 'review.suppliers.opening_write'})
 
     def test_completion_registry_describes_command_scope_without_ui_claims(self):
         entries = json.loads(runner.REGISTRY.read_text())['operations']

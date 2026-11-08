@@ -1,0 +1,16 @@
+{
+  "recordedUtc": "2026-11-08T05:05:51.858702+00:00",
+  "freeKiB": 98343212,
+  "sizesKiB": {
+    ".": 27848776,
+    ".git": 18430636,
+    "build": 1131272,
+    ".dart_tool": 367344,
+    "outputs/completion-review/c1-native/device-ready-1": 420,
+    "../Madar_Engine/.git": 44528
+  },
+  "temporaryGitStores": {
+    ".git/objects": 0,
+    "../Madar_Engine/.git/objects": 0
+  }
+}

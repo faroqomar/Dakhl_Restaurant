@@ -1,0 +1,17 @@
+{
+  "recordedUtc": "2026-11-08T04:51:14.732305+00:00",
+  "originalSha256": "b5c5606a91be73266914282cc0ccfd38a3b8124186ff1f862c577d2de721c9f3",
+  "repairedSha256": "abfa40ee5fb20afb2b60f8ea0345d54e3496b8bb5abc212182acd94e3f90e74a",
+  "changedSource": "integration_test/c1_catalog_native_test.dart",
+  "changes": [
+    "Bounded5second scroll/pump/hitTestable readiness before test taps",
+    "Missed-hit warnings now fatal, previous global policy restored at teardown"
+  ],
+  "analysis": "No issues found",
+  "format": "Zero changes",
+  "status": "Candidate harness repair; native successor not run yet",
+  "limits": [
+    "No product/UI/financial behavior changed",
+    "Original failed campaign/source retained; successor binds README-only engine pin bb00ccd"
+  ]
+}

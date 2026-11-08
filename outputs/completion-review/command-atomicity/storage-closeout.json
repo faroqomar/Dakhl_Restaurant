@@ -1,0 +1,50 @@
+{
+  "recordedUtc": "2026-11-07T20:48:03.919956+00:00",
+  "baseline": {
+    "freeKiB": 112048048,
+    "gitKiB": 18422536,
+    "outputsKiB": 7305660,
+    "buildKiB": 639928,
+    "dartToolKiB": 204860
+  },
+  "afterKiB": {
+    "free": 112025924,
+    "project": 27085652,
+    "git": 18422716,
+    "outputs": 7305808,
+    "build": 623524,
+    "dartTool": 204860
+  },
+  "deltaKiB": {
+    "free": -22124,
+    "git": 180,
+    "outputs": 148,
+    "build": -16404,
+    "dartTool": 0
+  },
+  "parentProvidedProjectBaselineKiB": 27101652,
+  "projectDeltaKiB": -16000,
+  "unexplainedGrowthOver2GiB": false,
+  "freeBelow10GiB": false,
+  "gitTmpObjectStores": [],
+  "remainingOwnedTemporaryStores": [],
+  "reclaimedOwnBytes": 0,
+  "cleanup": "All per-test synthetic stores closed and deleted by teardown. No host deletes needed; no Git mutation or uncertain recovery object cleanup.",
+  "retained": [
+    {
+      "path": "test/accounting/journal_atomicity_fault_injection_test.dart",
+      "purpose": "durable acceptance coverage",
+      "canonical": true
+    },
+    {
+      "path": "outputs/completion-review/command-atomicity",
+      "purpose": "compact unique attempts, source manifests and verification receipts",
+      "approxKiB": 64
+    },
+    {
+      "path": "docs/log/2026-11-07-command-atomicity-verification.md",
+      "purpose": "sanitized milestone/audit handoff"
+    }
+  ],
+  "attribution": "Parallel workers share host. Git+180KiB and free-space difference have unknown producer; task output is compact. Build shrink is observed, not attributed to this worker."
+}

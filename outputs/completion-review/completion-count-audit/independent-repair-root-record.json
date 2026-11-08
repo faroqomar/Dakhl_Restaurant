@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-08T10:03:52.261940+00:00",
+  "independentCoreReview": "20tests/10bindings passed corefixed213IDs/types canonicalclosure andaggregatepreservation; P3 rawRecursionErroridentified",
+  "focusedRepairReview": "/root/review_boundary_count_small_fixes independently21Pythonpass/6bindings, deepJSONJSONrefusalnowcorrect",
+  "rootActualRefresh": "current-refresh.json",
+  "noApprovalGrantedByTool": true,
+  "sourceHashes": {
+    "scripts/audit-completion-progress.py": "792080967df7d995520d63e21baf529758989d8489f5120427c0eb9f538e0998",
+    "test/tooling/test_completion_progress_audit.py": "5e38b53ee8422de96b6310e2385a824f5f2e711bd5aea4f01b6686acf07e87f7"
+  },
+  "retainedAttempts": [
+    "deep-json-import-error-attempt-1.log",
+    "deep-json-import-error-attempt-2.log",
+    "deep-json-red.log",
+    "deep-json-green.log"
+  ]
+}

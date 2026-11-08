@@ -1,0 +1,1009 @@
+{
+  "results": [
+    {
+      "id": "0b602d45-350a-4620-b7cb-99afb2f8a799",
+      "text": "As of November 4, 2026, shared capability contracts, ports, reusable adapter extraction outputs, and optional native file/PDF handoff adapters remained development previews rather than a completed business engine or production persistence system. Financial modules, policy decisions, cross-domain acceptance, supported releases, native-provider caching limits, external replacement rollback, coordinated cross-process or power-loss durability, printing, external receipts, and native handoff guarantees remained separate or unresolved; accepted-payload size checks do not prove those capabilities.",
+      "type": "observation",
+      "entities": [
+        "reusable adapter extraction",
+        "native cache",
+        "shared outcomes",
+        "financial-policy acceptance",
+        "reports",
+        "docs/how-to/repeated-problems.md",
+        "CAP-00",
+        "ports",
+        "Madar Engine",
+        "iPhone Simulator",
+        "external handoff",
+        "Project Madar",
+        "pdf",
+        "external replacement rollback",
+        "financial policy",
+        "production persistence",
+        "native adapter",
+        "native handoff",
+        "financial modules",
+        "Dakhl_Restaurant",
+        "native file/PDF handoff adapters",
+        "business-engine release",
+        "Madar",
+        "shared capability contracts",
+        "native-dialog",
+        "business modules",
+        "ADR0006"
+      ],
+      "context": null,
+      "occurred_start": "2026-10-28T00:00:00+00:00",
+      "occurred_end": "2026-10-28T23:59:59.060000+00:00",
+      "mentioned_at": "2026-11-04T16:39:54.397029+00:00",
+      "document_id": null,
+      "metadata": {},
+      "chunk_id": null,
+      "tags": [
+        "project:madar"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.1040999404116147,
+        "reranker": null,
+        "semantic": 0.8644957027139856,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "4106f4b3-8095-4014-9292-df66eeed8f4d",
+      "text": "The proposed packaging is one justified pure Dart domain package, provisionally named `madar_domain`, for shared exact primitives; pure `madar_application` may be extended for new ports, with optional `madar_data` for storage. The plan excludes per-value/class packages, Flutter or vendor imports in the pure core, an app-owned copied backend, a new unused logger, a generic financial schema, and a new property-based-testing library; existing file/PDF/native/preferences contracts, logging, and the pinned SDK stack must remain compatible. | Involving: Madar project engineering team | These are proposed packaging and compatibility constraints, not verified implementation results.",
+      "type": "world",
+      "entities": [
+        "Dart",
+        "madar_application",
+        "madar_domain",
+        "madar_data",
+        "SDK stack",
+        "Flutter"
+      ],
+      "context": "Authoritative project source docs/reference/cap02-account-workspace-plan.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-04T16:39:54.390425+00:00",
+      "document_id": "repo:docs/reference/cap02-account-workspace-plan.md",
+      "metadata": {
+        "sha256": "9a602e342d43584f812bf6b3df3be84028747c2655dd60d619192f27a578f737",
+        "source_path": "docs/reference/cap02-account-workspace-plan.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:docs/reference/cap02-account-workspace-plan.md_1",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0944400388827336,
+        "reranker": null,
+        "semantic": 0.8476602091687984,
+        "keyword": 0.5
+      },
+      "attachments": null
+    },
+    {
+      "id": "338b83fe-738c-4753-942d-5fc4cb3d3a63",
+      "text": "Project Madar has shared capability contracts and optional native file/PDF handoff adapters as development previews under ADR0006; the source explicitly states this snapshot is not proof of implementation. | When: Wednesday, October 28, 2026 | Involving: Madar project maintainers | Business modules, financial policies, both-domain acceptance, and supported release remain pending.",
+      "type": "world",
+      "entities": [
+        "Project Madar",
+        "native file/PDF handoff adapters",
+        "shared capability contracts",
+        "ADR0006"
+      ],
+      "context": "Authoritative project source docs/how-to/start-next-session.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-10-28T00:00:00+00:00",
+      "occurred_end": "2026-10-28T23:59:59+00:00",
+      "mentioned_at": "2026-10-28T10:37:36.272308+00:00",
+      "document_id": "repo:docs/how-to/start-next-session.md",
+      "metadata": {
+        "sha256": "51a3c73e42557083376d0b6e84cfe7f5e50afa442a4a3cfb4af35c7662834af1",
+        "source_path": "docs/how-to/start-next-session.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:docs/how-to/start-next-session.md_0",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0935281875306697,
+        "reranker": null,
+        "semantic": 0.8444093465805054,
+        "keyword": 0.699999988079071
+      },
+      "attachments": null
+    },
+    {
+      "id": "b8a8d67c-9f63-431c-a95f-f78d7b922ac2",
+      "text": "Project madar treats reusable adapter extraction outputs, ports, and native adapters as previews rather than a completed business engine or production persistence system. Financial modules, policy decisions, cross-domain acceptance, and supported releases remain separate; payload-size checks do not bound native-provider caching, and native handoff does not prove printing, external receipts, or power-loss durability. | When: November 4, 2026 | Involving: Project madar engineering | The documented scope prevents unverified claims about production capability and persistence guarantees.",
+      "type": "world",
+      "entities": [
+        "reusable adapter extraction",
+        "docs/how-to/repeated-problems.md",
+        "ports",
+        "Project Madar",
+        "production persistence",
+        "native adapter",
+        "financial modules"
+      ],
+      "context": "Authoritative project source docs/how-to/repeated-problems.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-04T16:39:54.396507+00:00",
+      "document_id": "repo:docs/how-to/repeated-problems.md",
+      "metadata": {
+        "sha256": "28b60770b2a4c7e81fc45a29146968721f1f27f198e3fe0aa67d5cd1689413db",
+        "source_path": "docs/how-to/repeated-problems.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:docs/how-to/repeated-problems.md_3",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0911357919066673,
+        "reranker": null,
+        "semantic": 0.8339056968688965,
+        "keyword": 0.699999988079071
+      },
+      "attachments": null
+    },
+    {
+      "id": "b2f27d67-bda8-4131-b31f-d774fa6e4aca",
+      "text": "The candidate `packages/icu_collation` package (`madar_icu_collation` 0.1.0-dev.1) documents an ICU native bridge, Dart FFI binding, `CollationPort`/`CollationSession` adapter, public barrel, README, and example. The binding is documented to require ICU 78.2, Unicode 17.0, and CLDR 48.0; support only macOS ARM64; fail closed on unsupported platforms; preserve embedded NULs; enforce normalization; clean up native and parent/child resources safely; and reject process-global data replacement. | When: November 7, 2026 | These are the documented engineering rules and interfaces for the collation package candidate.",
+      "type": "world",
+      "entities": [
+        "macOS ARM64",
+        "madar_icu_collation",
+        "dart:ffi",
+        "packages/icu_collation",
+        "Project Madar",
+        "CollationSession",
+        "ICU",
+        "collation"
+      ],
+      "context": "Authoritative project source docs/log/2026-11-08-collation-package-candidate.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-07T22:55:45.350493+00:00",
+      "document_id": "repo:docs/log/2026-11-08-collation-package-candidate.md",
+      "metadata": {
+        "sha256": "841bbdeffdfde262d5d4f865313f82b20dc840ea9b0a8cf188e61c7272889526",
+        "source_path": "docs/log/2026-11-08-collation-package-candidate.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:docs/log/2026-11-08-collation-package-candidate.md_2",
+      "tags": [
+        "project:madar",
+        "kind:log"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.089602262260246,
+        "reranker": null,
+        "semantic": 0.8496319055557251,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "56c33f7c-be76-41c1-a41b-a91de056d788",
+      "text": "On October 28, 2026, parallel consumer development was recorded, including shared capability contracts and optional native file/PDF handoff adapters extracted from Dakhl_Restaurant; no financial policies had been resolved. | When: October 28, 2026 | Recorded as version 1.5 in FULLSTACK.md, supported by ADR0006 and an extraction log; this records the change but does not verify implementation.",
+      "type": "world",
+      "entities": [
+        "Project Madar",
+        "pdf",
+        "Dakhl_Restaurant",
+        "shared capability contracts",
+        "ADR0006"
+      ],
+      "context": "Authoritative project source FULLSTACK.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-10-28T00:00:00.130000+00:00",
+      "occurred_end": "2026-10-28T00:00:00.130000+00:00",
+      "mentioned_at": "2026-10-28T10:37:36.400606+00:00",
+      "document_id": "repo:FULLSTACK.md",
+      "metadata": {
+        "sha256": "e01f48cefccaf06aa108d2b34dff68b5d5ca7e7a706ca19aaecfcd5bf242d9e1",
+        "source_path": "FULLSTACK.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:FULLSTACK.md_12",
+      "tags": [
+        "project:madar",
+        "kind:decision"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.077070406256134,
+        "reranker": null,
+        "semantic": 0.8398251533508301,
+        "keyword": 0.5
+      },
+      "attachments": null
+    },
+    {
+      "id": "70b7ea53-221b-42dd-ab32-8dff7b7f8aa6",
+      "text": "As of October 28, 2026, shared capability contracts and optional native file/PDF handoff adapters exist as development previews under ADR0006; business modules, financial policies, both-domain acceptance, and a supported release remain pending. This project brief is a snapshot of status and design intent, not proof of implementation. | When: Wednesday, October 28, 2026 | Involving: Madar maintainers | The document explicitly distinguishes selected or preview work from pending implementation and acceptance.",
+      "type": "world",
+      "entities": [
+        "native file/PDF handoff adapters",
+        "Madar",
+        "shared capability contracts",
+        "ADR0006"
+      ],
+      "context": "Authoritative project source docs/reference/project-brief.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-10-28T00:00:00.010000+00:00",
+      "occurred_end": "2026-10-28T23:59:59.010000+00:00",
+      "mentioned_at": "2026-10-28T19:10:08.824690+00:00",
+      "document_id": "repo:docs/reference/project-brief.md",
+      "metadata": {
+        "sha256": "ac98b24fc72c4517af142cc533cd32c5489a6e536417d8658157b3dfa5f1292a",
+        "language": "en",
+        "source_path": "docs/reference/project-brief.md",
+        "source_root": "/Users/eros/.codex/worktrees/cap00-merge-record/Madar_Engine",
+        "source_state": "local documentation translation; not pushed/merged",
+        "translation_from_original_hash": "75ea52116174ff27bba3c910f6b0a115fb835782b779baaca5c10d0a6d34f4e6"
+      },
+      "chunk_id": "project-madar_repo:docs/reference/project-brief.md_0",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0737788490890454,
+        "reranker": null,
+        "semantic": 0.8567642739502471,
+        "keyword": 1.0
+      },
+      "attachments": null
+    },
+    {
+      "id": "28aabc92-a654-451e-85dd-70bca53dcf21",
+      "text": "Shared outcomes, ports, and native adapters are previews rather than a completed business engine or production persistence system. Financial modules, policy decisions, cross-domain acceptance, and supported releases remain separate; accepted-payload size checks do not bound native-provider caching, and native handoff does not prove printing, external receipt, or power-loss durability. | When: Documented on Wednesday, October 28, 2026 | Involving: Project Madar | Reusable adapter extraction could otherwise be misrepresented as completed business-engine or production-persistence capability.",
+      "type": "world",
+      "entities": [
+        "shared outcomes",
+        "reports",
+        "Project Madar",
+        "production persistence",
+        "native adapter",
+        "financial modules"
+      ],
+      "context": "Owner-directed project prevention practice. Local documentation commit, not pushed/merged. Explicit worktree delivery supplements canonical-root sync without modifying its registry or unrelated edits.",
+      "occurred_start": "2026-10-28T00:00:00.060000+00:00",
+      "occurred_end": "2026-10-28T23:59:59.060000+00:00",
+      "mentioned_at": "2026-10-28T16:17:29.724363+00:00",
+      "document_id": "practice:repeated-problems",
+      "metadata": {
+        "sha256": "9cab9a7fbabd5a9704ee94125bae964b45810cd290bb9217318dad121dc7a29c",
+        "source_path": "docs/how-to/repeated-problems.md",
+        "source_root": "/Users/eros/.codex/worktrees/cap00-merge-record/Madar_Engine",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine",
+        "source_revision": "dc6a2256a1f0e051f802d7a67fb7d8624b5c85e9"
+      },
+      "chunk_id": "project-madar_practice:repeated-problems_3",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0704872929819549,
+        "reranker": null,
+        "semantic": 0.8565118908882141,
+        "keyword": 1.0
+      },
+      "attachments": null
+    },
+    {
+      "id": "40ca5271-663d-4c61-93f9-49cd5dc85b41",
+      "text": "As of October 28, 2026, shared capability contracts and optional native file/PDF handoff adapters existed as development previews under ADR0006. Business modules, financial policies, both-domain acceptance, and supported release remained pending; the document explicitly preserves earlier unimplemented-status statements as the design baseline. Source: docs/README.md and decisions/0006-parallel-consumer-development.md. | When: October 28, 2026 | Involving: Madar project maintainers | Distinguishes development previews from completed business-domain and release implementation.",
+      "type": "world",
+      "entities": [
+        "financial policy",
+        "native file/PDF handoff adapters",
+        "Madar",
+        "business modules",
+        "ADR0006"
+      ],
+      "context": "Authoritative project source docs/README.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-10-28T00:00:00.010000+00:00",
+      "occurred_end": "2026-10-28T00:00:00.010000+00:00",
+      "mentioned_at": "2026-11-04T16:39:54.352915+00:00",
+      "document_id": "repo:docs/README.md",
+      "metadata": {
+        "sha256": "9b241281346c72bfe7428b85ae3f8b6d46254dbcf0562a88473201336696adcd",
+        "source_path": "docs/README.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:docs/README.md_1",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.067195736254031,
+        "reranker": null,
+        "semantic": 0.86396711253924,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "d7a2dede-3a3e-40d6-a843-d4b536bc3377",
+      "text": "The reviewed engine source was committed locally as `6d4ae39f35b005dfa1123a82c6df316901e1e1e4` (`feat(data): add local-only device preferences capability`). Dakhl_Restaurant consumes application `0.1.0-dev.2`, data `0.1.0-dev.1`, and native-adapter `0.1.0-dev.1` through sibling package paths with an immutable manifest and lockfile; resolved source, version, and package-boundary validation passed. | When: 2026-10-29 | Involving: Madar engine and Dakhl_Restaurant | Documents the approved local implementation and consumer handoff without changing the consumer pin merely because newer documentation exists.",
+      "type": "world",
+      "entities": [
+        "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "Dakhl_Restaurant",
+        "Madar"
+      ],
+      "context": "Current approved local implementation and independently reviewed results; exact source-scoped summary. Separate project ownership; native verification and remote delivery gates explicitly open. No conversation transcript or private payloads.",
+      "occurred_start": "2026-10-29T00:00:00.010000+00:00",
+      "occurred_end": "2026-10-29T23:59:59.010000+00:00",
+      "mentioned_at": "2026-10-29T13:08:40.280601+00:00",
+      "document_id": "phase01:step3:local-build-evidence",
+      "metadata": {
+        "project_path": "/Users/eros/.codex/worktrees/phase01-build-engine/Madar_Engine",
+        "source_hashes": "{\"docs/log/2026-10-29-cap01-consumer-handoff.md\": \"7f5dffe86c52135784659ab9286cd0e67d2d581d87ebe0ac38b10ef8247761ee\", \"docs/log/2026-10-29-cap01-implementation.md\": \"6ac8ad7c6719622e5bfc933c0e79f9ce9da17753ecf508ddbde0ce57d0f12e07\", \"docs/decisions/0009-local-device-preferences.md\": \"27e7aa07671d4dd78cf31014089eb96ab7f12bcad9aa40e8513a6171b6fb2c1c\", \"packages/application/README.md\": \"2656377488efb6f64f47e8d3abefcb3a40aafd499945e54ef924ac1c94ad6dcd\", \"packages/data/README.md\": \"95daa7135c55b239204e0b56043a7b997743792fa5f6c40951a7304543920251\", \"docs/reference/cap01-device-preferences-plan.md\": \"8a9a5129c0e6b7e00fd5d0a0239b6130a2a7a690de4cb274f7cc5f415e24b7fd\", \"docs/how-to/repeated-problems.md\": \"0490390dcd0e6c69e0eb5b8e68e98deaa9dbdb62c07dcc507ccdd0daeb9aab7d\", \"PHASES.md\": \"726837754738cff44391812fb07ba60bbf71c8de8d1cf592c533b75749d8c236\", \"PLANS.md\": \"5554e108865ded89bac2f013c09437791ff0b124fd9b4a01da8bd4a9b1c8cc5a\", \"README.md\": \"b81cda05ba03d72017ac7ba93515ead73966c836cf1c47ff2514f3974e498b2b\", \"FULLSTACK.md\": \"c26c86f3aca805ab028d8d923b05fdd3fca24ae922ac2d1eb8637fc966ec8df2\"}"
+      },
+      "chunk_id": "project-madar_phase01:step3:local-build-evidence_0",
+      "tags": [
+        "project:madar",
+        "kind:log"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0644372810414533,
+        "reranker": null,
+        "semantic": 0.8387339365105018,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "f867c51a-b6b9-4227-8c68-0813d4c07642",
+      "text": "The documented capability is only a local development snapshot, not production onboarding, posted-ledger storage, guaranteed power-loss durability, device/key-loss backup, indefinite retention, or a supported business-engine release. No connect/auth/upload queue is composed, and native package support does not establish consumer macOS, Android, or iPhone conformance; those require separate app evidence. | When: November 4, 2026 | Involving: Project Madar | These are explicit scope limitations; the README is a snapshot and not proof of implementation.",
+      "type": "world",
+      "entities": [
+        "iPhone",
+        "Project Madar",
+        "Android",
+        "macOS"
+      ],
+      "context": "Authoritative project source packages/data/README.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-04T16:39:54.406803+00:00",
+      "document_id": "repo:packages/data/README.md",
+      "metadata": {
+        "sha256": "65db27a752ba24657f2e40a3b94af83fa4d3b5d447c42cd6a8ca8d4df5834eb1",
+        "source_path": "packages/data/README.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:packages/data/README.md_7",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.061397568839102,
+        "reranker": null,
+        "semantic": 0.8421138525009155,
+        "keyword": 0.4000000059604645
+      },
+      "attachments": null
+    },
+    {
+      "id": "3d7d3019-eb8e-4b61-aba3-f96b3185c8ac",
+      "text": "As of October 28, 2026, shared capability contracts and optional native file/PDF handoff adapters exist as development previews under ADR0006; business modules, financial policies, both-domain acceptance, and a supported release remain pending. This document is a snapshot and does not prove implementation. | When: October 28, 2026 | Involving: AlDakhl maintainer | The document explicitly distinguishes development previews from completed, accepted, or supported Madar functionality.",
+      "type": "world",
+      "entities": [
+        "financial policy",
+        "native file/PDF handoff adapters",
+        "Madar",
+        "shared capability contracts",
+        "business modules",
+        "ADR0006"
+      ],
+      "context": "Authoritative project source docs/explanation/madar-engine-study.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-10-28T00:00:00+00:00",
+      "occurred_end": "2026-10-28T00:00:00+00:00",
+      "mentioned_at": "2026-10-28T19:10:08.763748+00:00",
+      "document_id": "repo:docs/explanation/madar-engine-study.md",
+      "metadata": {
+        "sha256": "ffcf7024833349002e80fd223f438918f86d83a6be624a559c5e3c1a206aa586",
+        "language": "en",
+        "source_path": "docs/explanation/madar-engine-study.md",
+        "source_root": "/Users/eros/.codex/worktrees/cap00-merge-record/Madar_Engine",
+        "source_state": "local documentation translation; not pushed/merged",
+        "translation_from_original_hash": "988eeb73bc72d4a45ee7700f5293f768a03a76920d5b9c73106f8dc9dc88b4ae"
+      },
+      "chunk_id": "project-madar_repo:docs/explanation/madar-engine-study.md_0",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0606126233575057,
+        "reranker": null,
+        "semantic": 0.858869194984436,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "390aea1c-67dd-49cd-9381-b994f8bd094d",
+      "text": "Dakhl_Restaurant recorded passing isolated macOS, iOS Simulator, and Android Emulator scenarios using the unchanged reviewed revision. Each scenario demonstrated first-page PDF-to-PNG output, application route rendering, and complete-envelope replacement; it did not verify all PDF pages, OS share/print dialogs, mobile ICU parity, or release readiness. | When: Sunday, November 08, 2026 | Involving: Dakhl_Restaurant | This is a consumer native checkpoint, not comprehensive native or release acceptance.",
+      "type": "world",
+      "entities": [
+        "complete-envelope replacement",
+        "application route rendering",
+        "PDF-to-PNG",
+        "iOS simulator",
+        "Android emulator",
+        "Dakhl_Restaurant",
+        "macOS"
+      ],
+      "context": "Authoritative project source docs/log/2026-11-08-pdf-raster-candidate.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-08T00:00:00.030000+00:00",
+      "occurred_end": "2026-11-08T23:59:59.030000+00:00",
+      "mentioned_at": "2026-11-08T18:38:28.179077+00:00",
+      "document_id": "repo:docs/log/2026-11-08-pdf-raster-candidate.md",
+      "metadata": {
+        "sha256": "e6e793b7390a37a8aabfc67a9ab785e391385feb539b8cb6e877b34bfad57ffd",
+        "source_path": "docs/log/2026-11-08-pdf-raster-candidate.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:docs/log/2026-11-08-pdf-raster-candidate.md_1",
+      "tags": [
+        "project:madar",
+        "kind:log"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.05983919595847,
+        "reranker": null,
+        "semantic": 0.8555077910423279,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "e9f4ae22-5d0c-4b61-9351-108264c7296c",
+      "text": "The selected architecture keeps the reusable byte/page contract and engine implementation in Madar, while leaving viewing widgets, navigation, fonts, report composition, business data, consumer composition, and synthetic native acceptance to the consumer/Lead. Importing the native PDF vendor into the consumer was rejected because it violates the engine ownership check. | When: November 8, 2026 | Involving: Project Madar; the Lead | This preserves engine ownership boundaries without adding a third-party dependency.",
+      "type": "world",
+      "entities": [
+        "Consumers",
+        "Madar Engine",
+        "Project Madar",
+        "Lead"
+      ],
+      "context": "Authoritative project source docs/log/2026-11-08-pdf-raster-candidate.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-08T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-08T23:59:59.010000+00:00",
+      "mentioned_at": "2026-11-08T17:30:03.563568+00:00",
+      "document_id": "repo:docs/log/2026-11-08-pdf-raster-candidate.md",
+      "metadata": {
+        "sha256": "e6e793b7390a37a8aabfc67a9ab785e391385feb539b8cb6e877b34bfad57ffd",
+        "source_path": "docs/log/2026-11-08-pdf-raster-candidate.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:docs/log/2026-11-08-pdf-raster-candidate.md_0",
+      "tags": [
+        "project:madar",
+        "kind:log"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0565294967513663,
+        "reranker": null,
+        "semantic": 0.8432032121182449,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "8d7c5438-085d-463d-84c0-33b46e8213b2",
+      "text": "`NativeFileTransfer` is a configurable native file byte-transfer adapter selected through `madar_application` contracts. It accepts a positive `maxBytes`, filename, MIME type, and allowed extensions; bounds reported size, cumulative Dart stream reads, and accepted or exported payloads; and leaves schema and import-policy validation to consumer applications. Native saving reports only a native handoff and does not guarantee native memory or disk limits, atomic replacement, or rollback at an existing external destination. Cancelled and failed operations remain retryable.",
+      "type": "observation",
+      "entities": [
+        "consumer applications",
+        "madar_application",
+        "NativeFileTransfer",
+        "native file saving"
+      ],
+      "context": null,
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-08T17:21:02.895967+00:00",
+      "document_id": null,
+      "metadata": {},
+      "chunk_id": null,
+      "tags": [
+        "project:madar"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0542345530835606,
+        "reranker": null,
+        "semantic": 0.8504879474639893,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "f3348e75-8e4f-492f-8555-cef1a259e8d4",
+      "text": "`NativePdfHandoff` checks only the leading `%PDF-` signature, copies the supplied bytes, and hands them to system share/print facilities. A successful result proves handoff only—not recipient delivery or physical printing; a false share response is `share_unconfirmed`, while a false print response is treated as cancellation. | Involving: NativePdfHandoff | The caller retains responsibility for composition, fonts, layout, authorization, and stronger validation of untrusted documents.",
+      "type": "world",
+      "entities": [
+        "NativePdfHandoff",
+        "share_unconfirmed",
+        "pdf",
+        "system share/print facilities"
+      ],
+      "context": "Authoritative project source packages/flutter_adapters/README.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-08T17:21:02.905967+00:00",
+      "document_id": "repo:packages/flutter_adapters/README.md",
+      "metadata": {
+        "sha256": "0198ee733d2494c68ac30e892a650db02730b2672794d1e034fddf147f32f9fd",
+        "source_path": "packages/flutter_adapters/README.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:packages/flutter~5Fadapters/README.md_0",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0535992413517317,
+        "reranker": null,
+        "semantic": 0.8843229481981443,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "e4140a37-4439-42bb-b9bf-26f4edb27a46",
+      "text": "CAP-02 local source preview adds pure madar_domain 0.1.0-dev.1, madar_application 0.1.0-dev.3, and madar_data 0.1.0-dev.2; the native adapter remains 0.1.0-dev.1. Final-source tests and review pass, while consumer native/per-operation gates and the broader business release remain separately tracked and unresolved. Sources: packages/application/README.md, packages/domain/README.md, packages/data/README.md, docs/decisions/0010-local-account-workspace-snapshots.md, and PHASES.md. | When: As of November 08, 2026 | Involving: Project Madar | The bounded allocation is explicitly local-only and opaque; passing final-source tests and review does not establish the remaining consumer or release gates.",
+      "type": "world",
+      "entities": [
+        "docs/decisions/0010-local-account-workspace-snapshots.md",
+        "madar_application",
+        "madar_domain",
+        "Project Madar",
+        "PHASES.md",
+        "madar_data",
+        "native adapter",
+        "CAP-02"
+      ],
+      "context": "Authoritative project source README.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-08T04:13:17.747063+00:00",
+      "document_id": "repo:README.md",
+      "metadata": {
+        "sha256": "337aa0e3b03eadfcef286a776bc0f7ab31df446b21ef0a1a7a0aca91e2ad0c0b",
+        "source_path": "README.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:README.md_3",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0500021302382598,
+        "reranker": null,
+        "semantic": 0.8409341072479437,
+        "keyword": 0.30000001192092896
+      },
+      "attachments": null
+    },
+    {
+      "id": "20e992d9-5334-4245-8226-fd90607038d8",
+      "text": "The candidate implementation reuses pinned `printing 5.15.1`, requires no direct vendor import for consumers, and includes callback tests for argument bounds, ownership, failure/retry, cancellation, and output checks. These tests do not establish native PDF decoder support; optional platform raster support still requires verification by the actual native consumer. | When: As documented on November 8, 2026 | Involving: Project madar and consuming Lead | Separates implemented/tested adapter behavior from unverified native consumer support.",
+      "type": "world",
+      "entities": [
+        "native PDF decoder",
+        "Project Madar",
+        "Flutter adapters",
+        "printing5.15.1"
+      ],
+      "context": "Authoritative project source packages/flutter_adapters/README.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-08T17:21:48.949189+00:00",
+      "document_id": "repo:packages/flutter_adapters/README.md",
+      "metadata": {
+        "sha256": "0198ee733d2494c68ac30e892a650db02730b2672794d1e034fddf147f32f9fd",
+        "source_path": "packages/flutter_adapters/README.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:packages/flutter~5Fadapters/README.md_1",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.043666844001725,
+        "reranker": null,
+        "semantic": 0.8419890999794006,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "91da32ba-5e0d-45cd-8ab9-ee3c051ab2d0",
+      "text": "The completion suites include synthetic source-parity fixtures and failure cases, but consumer mapping, durable writes, operation benchmarks, and native acceptance require separate evidence. | Passing completion suites alone does not establish consumer integration, persistence, performance, or native acceptance.",
+      "type": "world",
+      "entities": [
+        "Project Madar"
+      ],
+      "context": "Authoritative project source packages/domain/README.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-07T14:45:51.428201+00:00",
+      "document_id": "repo:packages/domain/README.md",
+      "metadata": {
+        "sha256": "91ee06d1f9e7aaf6fb63605c9bd62d4541e6eccaf620be7ad197fe3495fd2784",
+        "source_path": "packages/domain/README.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:packages/domain/README.md_3",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 0.4176774602539712,
+        "reranker": null,
+        "semantic": 0.8311875462532043,
+        "keyword": 0.4000000059604645
+      },
+      "attachments": null
+    }
+  ],
+  "trace": null,
+  "entities": {
+    "reusable adapter extraction": {
+      "entity_id": "0a963f10-e263-4826-8bf0-b743a9474ac8",
+      "canonical_name": "reusable adapter extraction",
+      "observations": []
+    },
+    "native cache": {
+      "entity_id": "0d764530-d182-4ec6-948c-0889ade82e54",
+      "canonical_name": "native cache",
+      "observations": []
+    },
+    "shared outcomes": {
+      "entity_id": "0f8c10db-2470-4935-b3f4-a4fa675564d9",
+      "canonical_name": "shared outcomes",
+      "observations": []
+    },
+    "financial-policy acceptance": {
+      "entity_id": "1158d93c-b331-42d3-971e-801c5c2105ec",
+      "canonical_name": "financial-policy acceptance",
+      "observations": []
+    },
+    "reports": {
+      "entity_id": "11896b04-6971-4582-b665-27161476cd3b",
+      "canonical_name": "reports",
+      "observations": []
+    },
+    "docs/how-to/repeated-problems.md": {
+      "entity_id": "1eef17a5-b902-4f3c-937c-f9dcb14fbb4b",
+      "canonical_name": "docs/how-to/repeated-problems.md",
+      "observations": []
+    },
+    "CAP-00": {
+      "entity_id": "3659318f-babf-40c2-81e6-9f08bce6bd91",
+      "canonical_name": "CAP-00",
+      "observations": []
+    },
+    "ports": {
+      "entity_id": "47bd6590-26c7-4f31-949b-6e288cc2e780",
+      "canonical_name": "ports",
+      "observations": []
+    },
+    "Madar Engine": {
+      "entity_id": "5f3bbdb3-5705-46ae-b1e9-3033fa1e5fbb",
+      "canonical_name": "Madar Engine",
+      "observations": []
+    },
+    "iPhone Simulator": {
+      "entity_id": "668ae0a1-5dee-40a0-928b-e3f9250b8b85",
+      "canonical_name": "iPhone Simulator",
+      "observations": []
+    },
+    "external handoff": {
+      "entity_id": "6c37ae6a-76a7-48af-97e8-839ad89231d5",
+      "canonical_name": "external handoff",
+      "observations": []
+    },
+    "Project Madar": {
+      "entity_id": "739ec0f5-34e4-4054-adcb-a8633bed248a",
+      "canonical_name": "Project Madar",
+      "observations": []
+    },
+    "pdf": {
+      "entity_id": "7992b35b-7a2b-4e8a-bd94-c8dc3ef5da08",
+      "canonical_name": "pdf",
+      "observations": []
+    },
+    "external replacement rollback": {
+      "entity_id": "7fa04471-9b8e-41b9-8b32-0078ca67cffa",
+      "canonical_name": "external replacement rollback",
+      "observations": []
+    },
+    "financial policy": {
+      "entity_id": "8ae44c13-0cc5-4232-a15f-cc3ceee3fb3a",
+      "canonical_name": "financial policy",
+      "observations": []
+    },
+    "production persistence": {
+      "entity_id": "90ec8906-45a2-4047-96d2-4f08267eece3",
+      "canonical_name": "production persistence",
+      "observations": []
+    },
+    "native adapter": {
+      "entity_id": "9b4373b9-a2b7-44e3-9617-218a56772e98",
+      "canonical_name": "native adapter",
+      "observations": []
+    },
+    "native handoff": {
+      "entity_id": "9bc66f02-e35a-40a0-ab77-c24b4c03e3ef",
+      "canonical_name": "native handoff",
+      "observations": []
+    },
+    "financial modules": {
+      "entity_id": "a67f0135-1b6c-4a55-a157-45d388485d5c",
+      "canonical_name": "financial modules",
+      "observations": []
+    },
+    "Dakhl_Restaurant": {
+      "entity_id": "acc7da4f-2d7e-4b9e-bd0c-442c063c5432",
+      "canonical_name": "Dakhl_Restaurant",
+      "observations": []
+    },
+    "native file/PDF handoff adapters": {
+      "entity_id": "ae28a159-4047-4436-808d-538d8ac345c3",
+      "canonical_name": "native file/PDF handoff adapters",
+      "observations": []
+    },
+    "business-engine release": {
+      "entity_id": "b4a022de-7773-4843-965b-0d7062aa54b7",
+      "canonical_name": "business-engine release",
+      "observations": []
+    },
+    "Madar": {
+      "entity_id": "bd7486f7-b318-4024-aa8a-1e7d7bdabb30",
+      "canonical_name": "Madar",
+      "observations": []
+    },
+    "shared capability contracts": {
+      "entity_id": "cc1cac78-bc8e-4b1a-8c16-bfcaacd172ec",
+      "canonical_name": "shared capability contracts",
+      "observations": []
+    },
+    "native-dialog": {
+      "entity_id": "d48979db-d5eb-4333-90b3-36da26c25ca4",
+      "canonical_name": "native-dialog",
+      "observations": []
+    },
+    "business modules": {
+      "entity_id": "e1d04926-9e24-4c5c-8c17-1694bc40d88f",
+      "canonical_name": "business modules",
+      "observations": []
+    },
+    "ADR0006": {
+      "entity_id": "f52cdc64-26c9-4e7c-b7a3-c6544b18cd64",
+      "canonical_name": "ADR0006",
+      "observations": []
+    },
+    "Dart": {
+      "entity_id": "0d174c62-702c-48e0-8c77-b5d198e3fd7e",
+      "canonical_name": "Dart",
+      "observations": []
+    },
+    "madar_application": {
+      "entity_id": "5a79bf8a-3f91-4932-b494-0e19d7e3fc65",
+      "canonical_name": "madar_application",
+      "observations": []
+    },
+    "madar_domain": {
+      "entity_id": "5b622ef3-8148-4463-a863-e793031a6e69",
+      "canonical_name": "madar_domain",
+      "observations": []
+    },
+    "madar_data": {
+      "entity_id": "97629cc5-c612-4764-9a8e-04c8071e34e7",
+      "canonical_name": "madar_data",
+      "observations": []
+    },
+    "SDK stack": {
+      "entity_id": "a1bf8c64-be3e-402b-a7e1-ffe713e6bbc4",
+      "canonical_name": "SDK stack",
+      "observations": []
+    },
+    "Flutter": {
+      "entity_id": "ff0c1f60-53b0-4182-a06e-e5f5431daea7",
+      "canonical_name": "Flutter",
+      "observations": []
+    },
+    "macOS ARM64": {
+      "entity_id": "0b368e39-9d47-4131-9dd1-03a6622275d1",
+      "canonical_name": "macOS ARM64",
+      "observations": []
+    },
+    "madar_icu_collation": {
+      "entity_id": "1700b782-236b-42c3-b663-f49c7386e296",
+      "canonical_name": "madar_icu_collation",
+      "observations": []
+    },
+    "dart:ffi": {
+      "entity_id": "27e33df3-530d-47ec-82ae-7f6ecde3f9b1",
+      "canonical_name": "dart:ffi",
+      "observations": []
+    },
+    "packages/icu_collation": {
+      "entity_id": "640f546c-a0e0-4bef-8407-1c7924c2c068",
+      "canonical_name": "packages/icu_collation",
+      "observations": []
+    },
+    "CollationSession": {
+      "entity_id": "9ac2127d-104d-43c8-8500-f884b6e1f61e",
+      "canonical_name": "CollationSession",
+      "observations": []
+    },
+    "ICU": {
+      "entity_id": "9b87690f-3c59-42c4-b2d5-c04c4fba05b6",
+      "canonical_name": "ICU",
+      "observations": []
+    },
+    "collation": {
+      "entity_id": "ab26fd71-0e61-4c8d-a0e7-ad09f0d09a0f",
+      "canonical_name": "collation",
+      "observations": []
+    },
+    "6d4ae39f35b005dfa1123a82c6df316901e1e1e4": {
+      "entity_id": "8c9f9c06-ddfd-4d83-8210-8ab2f7597a13",
+      "canonical_name": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+      "observations": []
+    },
+    "iPhone": {
+      "entity_id": "0e9ccc0f-1780-430f-b0c8-e964dbd6e0e3",
+      "canonical_name": "iPhone",
+      "observations": []
+    },
+    "Android": {
+      "entity_id": "c8da160d-0bb6-4be9-9bd3-39132e883380",
+      "canonical_name": "Android",
+      "observations": []
+    },
+    "macOS": {
+      "entity_id": "f0b80131-6606-44b1-83bb-12f49d659402",
+      "canonical_name": "macOS",
+      "observations": []
+    },
+    "complete-envelope replacement": {
+      "entity_id": "1024f273-483c-4546-8f58-3bf9a34b7b0b",
+      "canonical_name": "complete-envelope replacement",
+      "observations": []
+    },
+    "application route rendering": {
+      "entity_id": "12e11cff-be6c-400c-bfb3-241b06e9efd6",
+      "canonical_name": "application route rendering",
+      "observations": []
+    },
+    "PDF-to-PNG": {
+      "entity_id": "30599f42-adfe-4e99-8137-7c247ce228bc",
+      "canonical_name": "PDF-to-PNG",
+      "observations": []
+    },
+    "iOS simulator": {
+      "entity_id": "6731abd9-feb8-4330-9e25-806b4cca3eef",
+      "canonical_name": "iOS simulator",
+      "observations": []
+    },
+    "Android emulator": {
+      "entity_id": "731c3767-e9d6-46c4-ad04-4519f2bf7dd4",
+      "canonical_name": "Android emulator",
+      "observations": []
+    },
+    "Consumers": {
+      "entity_id": "1fe5d113-c830-4af5-b5c1-ebb839f184eb",
+      "canonical_name": "Consumers",
+      "observations": []
+    },
+    "Lead": {
+      "entity_id": "a0fff302-54a1-4c57-b577-46bd512f0a49",
+      "canonical_name": "Lead",
+      "observations": []
+    },
+    "consumer applications": {
+      "entity_id": "50204ca2-dcfd-4c87-8fa5-4357ab6c6a18",
+      "canonical_name": "consumer applications",
+      "observations": []
+    },
+    "NativeFileTransfer": {
+      "entity_id": "93a5dfaf-5134-4180-aed1-804b1c88086a",
+      "canonical_name": "NativeFileTransfer",
+      "observations": []
+    },
+    "native file saving": {
+      "entity_id": "93b756ca-afce-4276-bd9d-9eb223a2cb3d",
+      "canonical_name": "native file saving",
+      "observations": []
+    },
+    "NativePdfHandoff": {
+      "entity_id": "447a87b5-5e85-4dbf-911f-5aed33a6764a",
+      "canonical_name": "NativePdfHandoff",
+      "observations": []
+    },
+    "share_unconfirmed": {
+      "entity_id": "644d308e-5912-467e-aaf7-8994caaa3369",
+      "canonical_name": "share_unconfirmed",
+      "observations": []
+    },
+    "system share/print facilities": {
+      "entity_id": "cd01badf-199b-4ca5-84ef-75f211658c42",
+      "canonical_name": "system share/print facilities",
+      "observations": []
+    },
+    "docs/decisions/0010-local-account-workspace-snapshots.md": {
+      "entity_id": "51a59318-9642-4ce1-a816-c26c1737472f",
+      "canonical_name": "docs/decisions/0010-local-account-workspace-snapshots.md",
+      "observations": []
+    },
+    "PHASES.md": {
+      "entity_id": "92494482-e226-4ed8-a6d3-928d3fb92b1e",
+      "canonical_name": "PHASES.md",
+      "observations": []
+    },
+    "CAP-02": {
+      "entity_id": "dd8c4b75-7a01-4684-accd-3cf9765c46d7",
+      "canonical_name": "CAP-02",
+      "observations": []
+    },
+    "native PDF decoder": {
+      "entity_id": "34bc0f04-e5c2-49f0-b2ee-c7c2e573742a",
+      "canonical_name": "native PDF decoder",
+      "observations": []
+    },
+    "Flutter adapters": {
+      "entity_id": "b02962fb-8f86-4add-9906-1df03363a179",
+      "canonical_name": "Flutter adapters",
+      "observations": []
+    },
+    "printing5.15.1": {
+      "entity_id": "d650de98-75ca-462e-8b78-d35623cef479",
+      "canonical_name": "printing5.15.1",
+      "observations": []
+    }
+  },
+  "chunks": null,
+  "source_facts": null,
+  "source_facts_truncated": null
+}

@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "tool": "device_open",
+  "hostId": "local",
+  "deviceId": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
+  "sessionId": "t3-1a7e360279de8cddfa1ccb26",
+  "observedAt": "2026-11-08T20:06:11.003145+00:00",
+  "controlReady": true,
+  "fixtureReady": true,
+  "evidence": [
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/preflight-fixtures/remaining-bundled-001/ios-open-facts-001.json",
+      "sha256": "d130556f6ef2156f1e2277615a1f42636255875e6bc9c7501c4cfaaab7776d80"
+    }
+  ]
+}

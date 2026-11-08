@@ -1,0 +1,25 @@
+{
+  "startUtc": "2026-11-08T07:47:00.534217+00:00",
+  "endUtc": "2026-11-08T07:48:20.210100+00:00",
+  "elapsedSeconds": 79.6755845,
+  "argv": [
+    "/Users/eros/Dev/flutter/bin/flutter",
+    "test",
+    "--no-pub",
+    "-d",
+    "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
+    "--reporter",
+    "expanded",
+    "--fail-fast",
+    "integration_test/c0_protected_bootstrap_native_test.dart"
+  ],
+  "exitCode": 1,
+  "timedOut": false,
+  "sourceInputsUnchanged": true,
+  "changedInputs": [],
+  "logSha256": "0034ccb9e0e82a4dd113838e5e8f41a9c4a22e691241f0a766f943da549cc29b",
+  "runtimePin": "ac8b4edc2c915ed22c0991685c33967b3360e7fa",
+  "fixtureId": "79e74e30baa24f999ea2a4e860a573c7b653b5e181849ad6f7e97e318500ee49",
+  "sourceDirty": true,
+  "scope": "Actual isolated iOSsimulator six-case integration test;not physical/matrix/performance/release"
+}

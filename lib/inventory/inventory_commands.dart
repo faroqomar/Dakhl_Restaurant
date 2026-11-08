@@ -123,6 +123,7 @@ final class InventoryCommands {
     required String reason,
     required String createdAt,
     required DocumentSnapshot expected,
+    String? archiveCreatedProductId,
   }) => _run(expected, (current) {
     final entries = _records(current, 'stockEntries').toList();
     final matching = entries.where((e) => e['id'] == entryId);
@@ -144,7 +145,21 @@ final class InventoryCommands {
       note: LegacyText.trimJavaScript(reason),
     );
     entries.add({..._movementJson(inverse), 'reversesId': entryId});
-    return {...current.toJson(), 'stockEntries': entries};
+    final next = {...current.toJson(), 'stockEntries': entries};
+    if (archiveCreatedProductId != null) {
+      if (original['productId'] != archiveCreatedProductId ||
+          original['kind'] != 'opening') {
+        throw const DomainValidationException('invalid_product_creation_undo');
+      }
+      final products = _records(current, 'products').toList();
+      final index = products.indexWhere(
+        (p) => p['id'] == archiveCreatedProductId,
+      );
+      if (index < 0) throw const DomainValidationException('missing_product');
+      products[index] = {...products[index], 'archived': true};
+      next['products'] = products;
+    }
+    return next;
   });
 
   Future<CapabilityResult<AccountDocument>> _run(

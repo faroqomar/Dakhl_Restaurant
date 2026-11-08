@@ -1,0 +1,27 @@
+{
+  "recordedUtc": "2026-11-08T05:10:47.581662+00:00",
+  "pointInTimeCompilerCheck": [],
+  "removedCompilerCaches": [
+    {
+      "path": ".dart_tool/flutter_build/9a2c18f4b56344b81204d0d50f46916c",
+      "sizeKiB": 113980,
+      "historicalWidgetMd5": "a55dd63bfbfcc9ed30c80702829fb98c",
+      "fileCacheSha256": "71e29122b5d3dd6d41b60632ac3f863dcf7f55a19d71cb34e93e3988f5268189",
+      "kernelSha256": "6f7e1df53c7c4e9460531575132f6ddcb12e6bd8e05cd8bc9f375eb697b40a33",
+      "removed": true
+    }
+  ],
+  "retained": "Current successful iOS build/app and its compiler cache remain for reuse; shared caches not broadly cleaned",
+  "nativeStores": "Integration1/1 passes through awaited teardown/disposal/delete without errors. No separate native filesystem scan claimed.",
+  "hostFixture": {
+    "path": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-c1-native-preflight-layout-4ouvl9dd",
+    "bytes": 1667,
+    "files": [
+      ".dakhl-synthetic-fixture",
+      "device-observation.json",
+      "device-open-ready.json",
+      "fixture.json"
+    ],
+    "removed": true
+  }
+}

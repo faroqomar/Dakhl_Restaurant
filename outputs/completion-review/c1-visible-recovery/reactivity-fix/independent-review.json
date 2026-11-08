@@ -1,0 +1,42 @@
+{
+  "recordedUtc": "2026-11-07T21:52:09.186316+00:00",
+  "reviewer": "/root/recheck_c1_reactivity",
+  "status": "pass_scoped_notification_fix",
+  "files": [
+    {
+      "path": "lib/app/app.dart",
+      "sha256": "5b4759b6ea526b5271c7a023c97bd5b9c7cd5d565b1bde5712cf02eb17e3c24a"
+    },
+    {
+      "path": "test/catalog/c1_visible_recovery_workflow_test.dart",
+      "sha256": "900084f3b0d843078633ae8795a2ba047248320c78c5bd10e2ab532a92d03218"
+    },
+    {
+      "path": "integration_test/c1_catalog_native_test.dart",
+      "sha256": "b5c5606a91be73266914282cc0ccfd38a3b8124186ff1f862c577d2de721c9f3"
+    }
+  ],
+  "method": "Independent read-only source and retained red/green log inspection; no redundant suite execution",
+  "verified": {
+    "red": "clean archive warning absent before listener wiring",
+    "hostVisibleCases": 5,
+    "combinedAppInventoryRecoveryCases": 26,
+    "callbackCases": 2,
+    "analysis": "three affected files clean",
+    "lifecycle": "catalog replacement, shell rebinding and disposal guards inspected"
+  },
+  "remaining": [
+    "Native integration test unexecuted",
+    "Device discovery unresponsive; no IDs returned",
+    "Whole-source engine guard blocked by uncommitted ICU tooling",
+    "Benchmarks and broader C1 completion gates remain open"
+  ],
+  "storage": {
+    "freeKiBBefore": 112021636,
+    "freeKiBAfter": 112037616,
+    "appGitKiB": 18423252,
+    "engineGitKiB": 41284,
+    "temporaryGitStores": 0,
+    "createdDeletedArtifacts": 0
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "project": "daftar",
+  "bank": "project-daftar",
+  "command": [
+    "/Users/eros/Dev/Eros_Projects/Hindsight/.venv/bin/python",
+    "/Users/eros/Dev/Eros_Projects/Hindsight/bin/memory.py",
+    "check",
+    "--project",
+    "daftar"
+  ],
+  "start_utc": "2026-11-08T09:14:26.167860+00:00",
+  "end_utc": "2026-11-08T09:14:26.329736+00:00",
+  "elapsed_seconds": 0.161876,
+  "exit_code": 0,
+  "source_count_before": 324,
+  "source_count_after": 324,
+  "changed_during_command": [],
+  "current_summary": {
+    "project": "daftar",
+    "api": {
+      "status": "healthy",
+      "database": "connected",
+      "db_acquire_ms": 0.9,
+      "db_pool_waiting": 0,
+      "db_pool_in_use": 0,
+      "db_pool_max": 100,
+      "db_pool_idle": 5
+    },
+    "sources": 324,
+    "pending": [],
+    "failed": {}
+  },
+  "queued": [],
+  "source_hashes_current_match_synced_count": 324,
+  "current_sources_not_yet_matching_synced_hash": [],
+  "source_scope_receipt": "initial-daftar-check-source-scope.json",
+  "after_source_manifest": {
+    "file": "daftar-source-manifest.json",
+    "sha256": "18782fa96b9018082ad85f8d1d86e7b91a763e58e32773d39bbdc8a7eead23be"
+  }
+}

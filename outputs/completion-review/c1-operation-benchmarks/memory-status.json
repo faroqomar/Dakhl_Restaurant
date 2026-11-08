@@ -1,0 +1,11 @@
+{
+  "recordedUtc": "2026-11-08T05:10:56.464845+00:00",
+  "project": "daftar",
+  "sources": 300,
+  "pending": [
+    "docs/phases/c1-operation-benchmarks.md"
+  ],
+  "failed": {},
+  "ownCloseoutLogUpdatedAfterSnapshot": true,
+  "engineMemory": "N/A; no engine document or source changed; separate scoped recall succeeded"
+}

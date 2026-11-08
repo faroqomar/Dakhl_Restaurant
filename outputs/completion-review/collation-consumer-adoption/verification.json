@@ -1,0 +1,12 @@
+{
+  "recordedUtc": "2026-11-08T04:42:40.063480+00:00",
+  "offlineEnforcedResolution": "passed",
+  "lockChange": "Exactly one application path version line; original lock hash recovered",
+  "pubspecUnchanged": true,
+  "enginePinCheck": 0,
+  "consumerWiringTest": 0,
+  "packageConfigOldSha256": "f5a804384a7c0c0446cc0dd19f76e791ea87861068e592f240e2aafd108dd4b0",
+  "packageConfigCurrentSha256": "f5a804384a7c0c0446cc0dd19f76e791ea87861068e592f240e2aafd108dd4b0",
+  "engineCommit": "783e29cf8ae5c829cbb09bdb5b7a547aa92bc8d6",
+  "optionalIcuDependencyAdded": false
+}

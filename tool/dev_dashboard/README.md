@@ -120,3 +120,30 @@ failed and partial results remain at their original source identities.
 Seven additional registry cases use a separate opt-in entrypoint: `catalog.lookup`, `inventory.post_movement`, `workspace.hold`, `workspace.resume`, `settings.save`, `parties.save_supplier` and `parties.save_material`. See [workload, warm-up, timing, cleanup and evidence](../../docs/phases/completion-benchmarks.md). These measure actual nonvisual commands, not UI/raster completion. One unmeasured real operation precedes fresh measured fixtures. Elapsed samples exclude setup/readback/cleanup; the process RAM/CPU window includes inter-iteration work. Existing nine Phase01/02 scenarios retain their own semantics.
 
 Use the supported Python3.13 interpreter for campaign composition. The default shell Python may be older; interpreter/import failure is failed verification, not a reason to relax checks. The first native pilot and source-bound campaign receipts remain separate from scenario unit tests.
+
+## Review-stage complete-envelope workflows
+
+Twelve separate `review.*` cases use `review_performance_main.dart` and fresh
+`review-operations-v1` fixtures: sale checkout/refund, funded expense, daily
+transfer, remaining-register snapshot, purchase invoice/payment, canonical
+portable export, confirmed import/previous-copy recovery, offline cash PDF and
+expense session undo. The source fixture contains20products,200historical cash
+rows, one supplier/material and a verified synthetic opening. Historical rows
+predate cutover; no normal account location is resolved.
+
+Elapsed starts at the prepared public command and ends at durable acknowledgement
+or generated canonical/PDF bytes. Register command capture occurs inside its
+public controller method. Import/recovery candidate preparation is excluded.
+PDF generation includes the bundled-font read. Each sample excludes fresh-store
+preparation, full postcondition verification, native reopen comparison and
+cleanup; those stages between samples remain inside the broad host CPU/RAM
+window. There is no frame, raster, input dispatch or OS file-dialog timing.
+One verified real-operation warm-up precedes readiness; the existing reviewed
+Madar host sampler/protocol remains unchanged.
+
+Use `--case review.sales.checkout --iterations 1` for the native pilot after
+source/engine preflight, then choose the twelve independent cases with20samples
+for the first baseline. A ready registry entry identifies implemented measurable
+source; it is not a measured result. Current-source independent review and raw
+native profile receipts remain required. This adds no optimization target or
+mobile measurement claim.

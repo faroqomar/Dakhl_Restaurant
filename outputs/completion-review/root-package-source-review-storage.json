@@ -1,0 +1,42 @@
+{
+  "recordedUtc": "2026-11-08T02:43:10.449012+00:00",
+  "scope": "Root package repair/recheck and source-resolution review handoff",
+  "before": {
+    "freeKiB": 107334992,
+    "appGitKiB": 18428980,
+    "engineGitKiB": 42096,
+    "adapterKiB": 35212,
+    "appReviewKiB": 8436
+  },
+  "after": {
+    "freeKiB": 108383752,
+    "appGitKiB": 18428980,
+    "engineGitKiB": 42504,
+    "adapterKiB": 35228,
+    "appReviewKiB": 8460,
+    "buildKiB": 592172,
+    "dartToolKiB": 204860,
+    "packageEvidenceKiB": 88
+  },
+  "temporaryGitStores": {
+    "app": 0,
+    "engine": 0
+  },
+  "cleanup": {
+    "reclaimedBytes": 0,
+    "reason": "No confirmed obsolete owned outputs; canonical source, red/green logs and qualification fixtures retained. Standard adapter dependency/test cache retained for the next checks."
+  },
+  "growth": {
+    "engineGitKiB": 408,
+    "producer": "unknown concurrent; no manual Git mutations",
+    "appReviewKiB": 24,
+    "adapterKiB": 16
+  },
+  "retained": [
+    "Historical corrected1/2 source/binaries/corpus/provenance",
+    "Package original/repaired manifests and independent dispositions",
+    "Source-selection diagnosis/tool/tests",
+    "Existing unique Git storage recovery evidence"
+  ],
+  "limits": "Shared free-space movement has no established producer; project growth stays bounded and >10GiB free."
+}

@@ -1,0 +1,37 @@
+{
+  "recordedUtc": "2026-11-08T07:01:42.850673+00:00",
+  "scope": "Root exact documentary-row closure batch; no build/test output expansion",
+  "freeKiB": {
+    "rootBefore": 95183996,
+    "now": 97202120,
+    "sharedVolumeProducer": "unknown; concurrent native/benchmark tasks measured separately"
+  },
+  "latestProjectMeasurementsKiB": {
+    "app": 28999836,
+    "appBaseline": 27049792,
+    "engine": 1419552,
+    "appGit": 18430636,
+    "engineGit": 44528,
+    "build": 1950572,
+    "dartTool": 696896
+  },
+  "projectGrowthSinceBaselineKiB": 1950044,
+  "temporaryGitStores": {
+    "app": 0,
+    "engine": 0
+  },
+  "retained": [
+    "Canonical native/profile binaries and active compiler caches are required for reproducibility/reuse",
+    "All unique Git quarantine/recovery objects remain intact",
+    "Historical manifests, failed attempts and source snapshots preserve source-bound review evidence",
+    "One2KB synthetic native-export JSON remains on iPhone because supported deletion was unavailable; exact path in native result"
+  ],
+  "cleanup": {
+    "reclaimedBytes": 0,
+    "reason": "No confirmed obsolete task-owned output; no uncertain deletion"
+  },
+  "limits": [
+    "Heavy storage scans deferred during exclusive benchmark measurement window",
+    "Current free space is not attributed to root documents or builds without producer evidence"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "recordedUtc": "2026-11-08T05:12:23.684797+00:00",
+  "buildMode": "debug",
+  "scope": "Compiled integration-test app, not production main or release binary",
+  "bundleId": "com.eros.dakhlrestaurant.phase00",
+  "files": [
+    {
+      "path": "build/ios/iphonesimulator/Runner.app/Runner",
+      "bytes": 40080,
+      "sha256": "4cbc2005a321c96d8f776518301b0df97aafac279b455eea7bdd6437fcbddc1a"
+    },
+    {
+      "path": "build/ios/iphonesimulator/Runner.app/Info.plist",
+      "bytes": 2009,
+      "sha256": "5b19363672bca1776e2ea246a873559a33a0d7942ddd364b74321b87897bf636"
+    },
+    {
+      "path": "build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App",
+      "bytes": 16800,
+      "sha256": "9c202148eee62f643f01f6b258bf54668089717f9f12d50cee032bbd9d3fac5d"
+    },
+    {
+      "path": "build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin",
+      "bytes": 110530392,
+      "sha256": "dd9da949f59238ea8c1cdf88e684d83dd7b03b0773c09e2ed5f8719085c2e567"
+    }
+  ],
+  "association": "Exact test target/build command and frozen101 source inputs; kernel_blob.bin identifies the compiled Dart test/application payload"
+}

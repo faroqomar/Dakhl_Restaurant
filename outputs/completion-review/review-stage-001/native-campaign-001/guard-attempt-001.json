@@ -1,0 +1,18 @@
+{
+  "appRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+  "fixture": {
+    "scope": "marked-isolated-synthetic",
+    "sha256": "2a72b0a9c79c7a3ed8fdaaf43840644bdd9fad82b086ff4650fec1835ceffd7e"
+  },
+  "fixtureId": "2a72b0a9c79c7a3ed8fdaaf43840644bdd9fad82b086ff4650fec1835ceffd7e",
+  "guardToolSha256": "b03e4b75153b67f6b48eb8286084067d67a9707b4bc52f538dcd8c14423588c5",
+  "observedAt": "2026-11-08T17:55:29.791847+00:00",
+  "platform": "host",
+  "preflightToolSha256": "733b063024a9c064f9d4e4c27f5ebeb0ee6530be05ec8532b71d10bf6c61c14c",
+  "runtimeRevision": "f30827df9fe3c4d2ef6d7d31b53bb0125eea82ec",
+  "schema": 1,
+  "sourceCoverage": "explicit-caller-selected-tracked-inputs",
+  "sourceFingerprint": "da55528b5446d643fde8d49b6cbdfbc32dea724a994109f18915c576b7f537d2",
+  "status": "preflight-passed",
+  "targetId": "macos-host"
+}

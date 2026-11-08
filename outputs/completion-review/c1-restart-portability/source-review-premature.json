@@ -1,0 +1,49 @@
+{
+  "recordedUtc": "2026-11-08T05:54:56.766868+00:00",
+  "status": "source_frozen_unit4pass_analysis_clean_native_pending",
+  "files": [
+    {
+      "path": "integration_test/support/c1_restart_fixture.dart",
+      "bytes": 21836,
+      "sha256": "3ecfd70a81ca2be20c649fe795262a319b91e4b461df11e84e097112ff07f403"
+    },
+    {
+      "path": "integration_test/support/c1_restart_qa_main.dart",
+      "bytes": 11669,
+      "sha256": "fe863130142f5337a51907cd40d8e248f2e94024b21649dc8faee2d2b9752e41"
+    },
+    {
+      "path": "test/platform/c1_restart_fixture_test.dart",
+      "bytes": 3785,
+      "sha256": "05df3f335c60b0c8b6707532aa6f2cac48fd7922a96dd1177d2a5f0c82a7785b"
+    }
+  ],
+  "verification": {
+    "unitCasesPassed": 4,
+    "analysis": "No issues found",
+    "format": "3 new files formatted; latest parser clean"
+  },
+  "attempts": [
+    {
+      "kind": "analysis",
+      "result": "4 info lints fixed: unused typed_data import,3 braces"
+    },
+    {
+      "kind": "unit1",
+      "result": "1passed3failed at fixture create: explicit photo:null invalid at legacy codec boundary; harness factory fixed to omit absent photo"
+    },
+    {
+      "kind": "unit2",
+      "result": "4passed; real file callbacks validate bytes through actual model/export/import, not native provider UI"
+    }
+  ],
+  "audit": [
+    "Two patch context attempts failed atomically after formatter changes; corrected bounded source reads before patch",
+    "Unit teardown now registers each opened owner immediately, including failed setup"
+  ],
+  "limits": [
+    "Same-process reopen in unit test is not the required native process restart",
+    "Native default file-provider execution still pending",
+    "No Device boot or iOS build yet"
+  ]
+}

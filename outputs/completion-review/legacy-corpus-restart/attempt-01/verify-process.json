@@ -1,0 +1,18 @@
+{
+  "mode": "verify",
+  "pid": 70929,
+  "arguments": [
+    "--packages=/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/.dart_tool/package_config.json",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/support/legacy_corpus_restart_child.dart",
+    "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-legacy-corpus-restart-6T3GOp",
+    "verify",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/legacy-corpus-restart/attempt-01/verify.json"
+  ],
+  "startedUtc": "2026-11-08T07:28:53.304522Z",
+  "finishedUtc": "2026-11-08T07:28:55.736468Z",
+  "exitCode": 0,
+  "timedOut": false,
+  "processAbsent": true,
+  "stdout": "{\"event\":\"legacy-corpus-verify-complete\",\"pid\":70929,\"bootNonce\":\"5d91de4d3c59dd9dc661fe27a34ae949d410a0e59e01a242\",\"cases\":27}\n",
+  "stderr": ""
+}

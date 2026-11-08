@@ -1,0 +1,34 @@
+{
+  "recordedUtc": "2026-11-08T03:32:49.950756+00:00",
+  "reviewer": "/root/recheck_durable_transfer_repairs",
+  "status": "pass_four_repairs",
+  "manifest": "repaired-2-inputs.json",
+  "verifiedBindings": 23,
+  "verification": {
+    "focusedTests": 38,
+    "rootAccountingTests": 233,
+    "analysis": "clean",
+    "format": "pass after expected formatter-only unit delta",
+    "consumerBoundaries": "pass",
+    "sourceScenarios": 4,
+    "generators": "Both executed with writes intercepted in memory; complete successor fixture matches; historical oracle exact hash restored",
+    "genuineLostAck": "Real inner write succeeds before acknowledgement drop; reopen has one transfer/journal/receipt",
+    "engineBodiesMatched": 5,
+    "resolvedPackagePathsMatched": 4
+  },
+  "limits": [
+    "Create-only isolated candidate; UI/edit-delete/performance/native/live cutover separate",
+    "Whole-source guard remains failed on separate collation candidate"
+  ],
+  "storage": {
+    "freeKiB": [
+      110223624,
+      110222140
+    ],
+    "gitDirectories": "unchanged",
+    "temporaryGitStores": 0,
+    "ownedProbes": 0,
+    "evidenceGrowthKiB": 8,
+    "evidenceGrowthCause": "Parent successor manifest"
+  }
+}

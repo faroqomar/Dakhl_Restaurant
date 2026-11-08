@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/Users/eros/.t3/userdata/device/targets/t3-b91493306db60c230eefae24/agent-device",
+    "screenshot",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-restart-portability/native-pilot-1/origin.png"
+  ],
+  "startUtc": "2026-11-08T06:47:19.723887+00:00",
+  "endUtc": "2026-11-08T06:47:20.893833+00:00",
+  "elapsedSeconds": 1.169960667,
+  "exitCode": 0,
+  "log": "origin-screen.log"
+}

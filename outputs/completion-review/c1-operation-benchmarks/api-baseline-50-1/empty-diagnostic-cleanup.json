@@ -1,0 +1,16 @@
+{
+  "recordedUtc": "2026-11-08T07:06:37.345076+00:00",
+  "emptyStderrLogsRemoved": [
+    "case-03-attempt-1.stderr.log",
+    "case-06-attempt-1.stderr.log",
+    "case-09-attempt-1.stderr.log",
+    "case-08-attempt-1.stderr.log",
+    "case-02-attempt-1.stderr.log",
+    "case-07-attempt-1.stderr.log",
+    "case-04-attempt-1.stderr.log",
+    "case-01-attempt-1.stderr.log",
+    "case-05-attempt-1.stderr.log"
+  ],
+  "bytesReclaimed": 0,
+  "reason": "Empty successful stderr has no diagnostic content; hash/byte count retained in execution receipts"
+}

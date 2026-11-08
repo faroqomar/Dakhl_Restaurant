@@ -1,0 +1,57 @@
+{
+  "stageId": "protected-bootstrap-six-cases",
+  "status": "passed",
+  "cleanupConfirmed": true,
+  "identity": {
+    "contextFingerprint": "bc8042d23b456febdb29c83a7149f296ae573621ffa6f3ab8dedc6416ecf9d06",
+    "engineRevision": "ac8b4edc2c915ed22c0991685c33967b3360e7fa",
+    "fixtureId": "d0b28c0d7990d6622e18b77c30ac0d4f4a4dd8873643d6b380e0948622333091",
+    "inputFingerprint": "8059729f42d17d0fe4564c6b6be24a31466fbc7876da1101f774a1a9d125b460",
+    "planFingerprint": "2fff1d7397c177f7c72a6ae4590492eb49180ff37aa064c524c1eaf821913933",
+    "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+    "targetId": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
+    "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+  },
+  "evidence": [
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-2/result.json",
+      "sha256": "a0bd34dd2cd42ddc28475b3cdcae4e47e8103f9cf11593650e8595e131ce1acd"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-2/case-results.json",
+      "sha256": "5dff065b765a7169bec15c922ad4c42da064c0a6773551cd3c327ba4c36183fd"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-2/pilot-attempt-1-command.json",
+      "sha256": "6c3fca075ccdd3ef1f1d30d691d95a136936042c75815c48e9cd5c54eb3c5dd8"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-2/pilot-attempt-1.log",
+      "sha256": "63cd744883e0244c204c2073f32fa0063a02a29cd7e62a791f867d1bf35d3e3c"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-2/source-after.json",
+      "sha256": "c56736580b012ff6f8f66a12808b7bd4bee3afb16a79629a19d5d04087791f85"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-config-receipt.json",
+      "sha256": "145f189a974503f5722271d9975ccd284917f6ca22d340126f511a8b673eb431"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-2/binary-identity.json",
+      "sha256": "f95582d4e543e5dfe79a901542e42ad1019dd97ca85b81a5d94ebb3bd71f9dea"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-2/storage-closeout.json",
+      "sha256": "b1d44689d0425145c81c03120b7d075f3cfa12e9910af96baf964b56bd4cc7cf"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-2/device-final-state.json",
+      "sha256": "8fbfda714460ba5f4e0c0f9b3808a3fd87ae699305e4ed6aef0ddfc9cadccdc9"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-2/host-fixture-cleanup.json",
+      "sha256": "0dcf527da87d7321275202755b551d6ebf6c34770735a21c99bb5521abcd6485"
+    }
+  ]
+}

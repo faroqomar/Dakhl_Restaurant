@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "utc": "2026-11-08T08:12:31.932462+00:00",
+  "status": "scoped analysis and 2 host fixture tests passed; independent source review/native execution pending",
+  "initialPreparationManifest": {
+    "path": "outputs/completion-review/import-byte-boundary/review-manifest.json",
+    "bytes": 6201,
+    "sha256": "6e29bb813897ac97af8334c3d9a17aef1e7a4cd6ab648f4da78742b1073d3e24"
+  },
+  "actualTestReceipt": {
+    "path": "outputs/completion-review/import-byte-boundary/host-fixture-test-receipt.json",
+    "bytes": 1438,
+    "sha256": "66c4b07ca060d1ce4812e329a4610519484754d414d8c401000f969016ad6663"
+  },
+  "finalOwnedSources": [
+    {
+      "path": "integration_test/support/c0_import_boundary_fixture.dart",
+      "bytes": 22308,
+      "sha256": "ef67ba1a0bf6824cba732a50ff0270700a31e8989c4bb398ad23634cd04bda56"
+    },
+    {
+      "path": "integration_test/support/c0_import_boundary_qa_main.dart",
+      "bytes": 7528,
+      "sha256": "8e02b4247624132b2ae8e1df5ec52c39da8d9d4fc7b1ea52c2a6bcac5a30670b"
+    },
+    {
+      "path": "test/accounts/import_boundary_fixture_test.dart",
+      "bytes": 2214,
+      "sha256": "d597b829238f251d256e4fe3d51d33fe3171dbdbf1a3dcec4217730231dcf83b"
+    },
+    {
+      "path": "docs/log/2026-11-08-import-byte-boundary-preparation.md",
+      "bytes": 13197,
+      "sha256": "37d7888eb304c552d1a564782e27cced00075d8353df22220bdc125c1e1f5e7b"
+    }
+  ],
+  "nativeCasesPending": [
+    "cancel-open",
+    "exact-cancel",
+    "oversize",
+    "exact-confirm"
+  ],
+  "nativeStagingLimits": [
+    "No C0-12 closure or native evidence yet",
+    "Default picker open only; no injected picker proof",
+    "Mobile provider staging may be blocked; no config changes",
+    "Provider may materialize full input before Dart; no native memory/disk guarantee",
+    "Runtime FNV1a32 is diagnostic; campaign must capture staged/binary SHA256",
+    "Review/preflight and exclusive runner handoff precede execution"
+  ],
+  "testFixturePair": "generated in memory only; no disk pair",
+  "storage": {
+    "utc": "2026-11-08T08:11:49Z",
+    "freeKiB": 92940164,
+    "gitKiB": 18430636,
+    "buildKiB": 1993692,
+    "dartToolKiB": 789648,
+    "ownedOutputsAllocatedKiBBeforeReceipts": 12,
+    "gitTmpObjectDirectories": [],
+    "reclaimedBytes": 0,
+    "sharedFreeDecreaseSincePreviousCloseoutKiB": 2280720,
+    "diagnosis": "controller reported OS swap investigation; not independently verified by this worker",
+    "nextStorageBatch": "controller diagnosis required before sustained output",
+    "retained": "canonical source/tests/log and compact review/test receipts"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "recordedUtc": "2026-11-08T05:14:50.138527+00:00",
+  "baselineUtc": "2026-11-08T04:39:13.070582+00:00",
+  "baseline": {
+    "freeKiB": 109751060,
+    "appGitKiB": 18430636,
+    "buildKiB": 592396,
+    "dartToolKiB": 204860,
+    "existingC1EvidenceKiB": 172,
+    "engineGitKiB": 44156,
+    "temporaryGitStores": 0
+  },
+  "closeout": {
+    "freeKiB": 97886060,
+    "sizesKiB": {
+      ".": 27849044,
+      ".git": 18430636,
+      "build": 1131280,
+      ".dart_tool": 367356,
+      "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-native/device-ready-1": 536,
+      "../Madar_Engine/.git": 44528
+    },
+    "temporaryGitStores": {
+      ".git/objects": 0,
+      "../Madar_Engine/.git/objects": 0
+    }
+  },
+  "reclaimedCompilerCacheKiB": 341940,
+  "removedHostRecipeDirectories": 4,
+  "retainedArtifacts": [
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1",
+      "purpose": "Four immutable source-bound native campaign contexts, failures, source snapshots, final pilot and cleanup identity receipts",
+      "retention": "Required canonical review/audit evidence"
+    },
+    {
+      "path": "build/ios/iphonesimulator/Runner.app",
+      "purpose": "Current successful compiled synthetic integration-test app",
+      "retention": "Canonical native binary; reusable until explicit successor replaces it"
+    },
+    {
+      "path": ".dart_tool/flutter_build",
+      "purpose": "Current successful native compilation and preexisting shared caches",
+      "retention": "Keep current/shared artifacts; three exact obsolete failed-source caches removed"
+    }
+  ],
+  "cleanupQualification": "Removal followed point-in-time compiler checks while worker retained the native window. No later cache deletion after release; no blanket clean, account/backup/source/Git pruning.",
+  "delta": {
+    "freeKiB": -11865000,
+    "appGitKiB": 0,
+    "buildKiB": 538884,
+    "dartToolKiB": 162496,
+    "engineGitKiB": 372
+  },
+  "limits": [
+    "Initial whole-project total was not captured by this worker; parent shared-volume/project baselines cover global growth monitoring. Component baseline and all later totals are measured.",
+    "Shared-volume free-space decline has no verified sole producer; do not attribute it to build, documents or Simulator without additional measurements.",
+    "Root concurrent source/checkpoint/test work shares this checkout; cache/Git deltas are not exclusive task costs.",
+    "All four native test runs reached teardownAll without reported teardown failure; no separate native account filesystem scan claimed."
+  ],
+  "thresholdStatus": "Free space remains above10GiB; parent reports project growth below2GiB; no unexplained task-owned large artifact remains."
+}

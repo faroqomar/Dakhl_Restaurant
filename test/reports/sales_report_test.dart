@@ -7,6 +7,18 @@ import 'package:dakhl_restaurant/accounts/account_document.dart';
 import 'package:dakhl_restaurant/accounts/legacy_account_codec.dart';
 import 'package:dakhl_restaurant/reports/sales_report.dart';
 
+// Test-only comparator for these canonical ASCII date/time fixtures. Runtime
+// ordering requires a qualified caller session, never this test helper.
+SalesReport fixtureReport(
+  AccountDocument document, {
+  SalesHistoryFilter filter = const SalesHistoryFilter(),
+  int Function(String, String)? compareText,
+}) => SalesReport.build(
+  document,
+  filter: filter,
+  compareText: compareText ?? (a, b) => a.compareTo(b),
+);
+
 // Actual frozen model creates/validates synthetic history. The actual history
 // function's computation prefix is executed before its rendering expression.
 Map<String, dynamic> oracle() {
@@ -42,21 +54,21 @@ void main() {
   test('report rejects invalid source date bounds and reversed period', () {
     final empty = const LegacyAccountCodec().empty();
     expect(
-      () => SalesReport.build(
+      () => fixtureReport(
         empty,
         filter: const SalesHistoryFilter(from: '2026-02-01', to: '2026-01-01'),
       ),
       throwsFormatException,
     );
     expect(
-      () => SalesReport.build(
+      () => fixtureReport(
         empty,
         filter: const SalesHistoryFilter(from: '0999-12-31'),
       ),
       throwsA(isA<DomainValidationException>()),
     );
     expect(
-      SalesReport.build(
+      fixtureReport(
         empty,
         filter: const SalesHistoryFilter(from: '1000-01-01', to: '1000-01-01'),
       ).netMovement,
@@ -80,7 +92,7 @@ void main() {
         final f = filters[i] as Map;
         if ((source['valid'] as List)[i] != true) {
           expect(
-            () => SalesReport.build(
+            () => fixtureReport(
               document,
               filter: SalesHistoryFilter(
                 from: f['from'] as String? ?? '',
@@ -91,7 +103,7 @@ void main() {
           );
           continue;
         }
-        final report = SalesReport.build(
+        final report = fixtureReport(
           document,
           filter: SalesHistoryFilter(
             from: f['from'] as String? ?? '',
@@ -117,13 +129,13 @@ void main() {
     },
   );
   test('return-only period is negative; snapshots are immutable and catalog-independent', () {
-    final report = SalesReport.build(
+    final report = fixtureReport(
       document,
       filter: const SalesHistoryFilter(from: '2026-01-03', to: '2026-01-03'),
     );
     expect(report.sales, isEmpty);
     expect(report.netMovement, BigInt.from(-100));
-    final all = SalesReport.build(document);
+    final all = fixtureReport(document);
     final sale = all.sales.singleWhere((s) => s.snapshot['id'] == 'a');
     expect(sale.total, BigInt.from(201));
     expect(sale.lifetimeRefunded, BigInt.from(100));
@@ -137,14 +149,14 @@ void main() {
   });
   test('invalid date/status filters fail with sanitized errors', () {
     expect(
-      () => SalesReport.build(
+      () => fixtureReport(
         document,
         filter: const SalesHistoryFilter(from: '2026-02-30'),
       ),
       throwsA(isA<DomainValidationException>()),
     );
     expect(
-      () => SalesReport.build(
+      () => fixtureReport(
         document,
         filter: const SalesHistoryFilter(status: 'paid'),
       ),
@@ -180,7 +192,7 @@ void main() {
       r"const fs=require('fs');const M=require('./electron-reference/app/ui/model.js');const src=fs.readFileSync('./electron-reference/app/ui/commerce.js','utf8');const start=src.indexOf('function salesHistoryPage() {')+'function salesHistoryPage() {'.length;const body=src.slice(start,src.indexOf('  return header(',start));const state={sales:Array.from({length:9008},(_,i)=>({id:String(i),date:new Date(Date.UTC(2000,0,1+i)).toISOString().slice(0,10),createdAt:'2026-01-01T00:00:00Z',status:'completed',number:String(i),note:'',lines:[{name:'Rice',quantity:1000,price:1000000000}],discount:i%2})),saleReturns:[]};const run=new Function('state','saleFilter','M',body+';return BigInt(total).toString();');console.log(run(state,{from:'',to:'',query:'',status:'',orderType:''},M));",
     ]);
     expect(result.exitCode, 0, reason: '${result.stderr}');
-    final report = SalesReport.build(large);
+    final report = fixtureReport(large);
     expect(report.completedTotal.toString(), (result.stdout as String).trim());
     expect(report.netMovement, report.completedTotal);
     expect(
@@ -188,30 +200,40 @@ void main() {
       greaterThan(BigInt.parse('9007199254740991')),
     );
   });
-  test(
-    'legacy timestamp collation gap is explicit, not claimed as JS parity',
-    () {
-      final raw = {...document.toJson()};
-      raw['sales'] = [
-        for (final value in raw['sales'] as List)
-          {
-            ...value as Map<String, Object?>,
-            if (value['id'] == 'b') 'createdAt': 'Jan 2, 2026 12:00:00',
-            if (value['id'] == 'c') 'createdAt': 'jan 2, 2026 12:00:00',
-          },
-      ];
-      final legacy = const LegacyAccountCodec().decodeJson(raw);
-      final report = SalesReport.build(
+  test('legacy timestamps require injected source weights without lexical fallback', () {
+    final raw = {...document.toJson()};
+    raw['sales'] = [
+      for (final value in raw['sales'] as List)
+        {
+          ...value as Map<String, Object?>,
+          if (value['id'] == 'b') 'createdAt': 'Jan 2, 2026 12:00:00',
+          if (value['id'] == 'c') 'createdAt': 'jan 2, 2026 12:00:00',
+        },
+    ];
+    final legacy = const LegacyAccountCodec().decodeJson(raw);
+    expect(
+      () => SalesReport.build(
         legacy,
         filter: const SalesHistoryFilter(from: '2026-01-02', to: '2026-01-02'),
-      );
-      expect(report.sales.map((row) => row.snapshot['id']), ['c', 'b']);
-      final sourceOrder = Process.runSync('node', [
-        '-e',
-        "console.log(JSON.stringify([['b','Jan 2, 2026 12:00:00'],['c','jan 2, 2026 12:00:00']].sort((a,b)=>b[1].localeCompare(a[1])).map(x=>x[0])))",
-      ]);
-      expect(sourceOrder.exitCode, 0);
-      expect(jsonDecode(sourceOrder.stdout as String), ['b', 'c']);
-    },
-  );
+      ),
+      throwsFormatException,
+    );
+    final report = fixtureReport(
+      legacy,
+      filter: const SalesHistoryFilter(from: '2026-01-02', to: '2026-01-02'),
+      // Captured finite pair weights below, not a production comparator.
+      compareText: (a, b) {
+        if (a == b) return 0;
+        const ranks = {'Jan 2, 2026 12:00:00': 1, 'jan 2, 2026 12:00:00': 0};
+        return ranks[a]!.compareTo(ranks[b]!);
+      },
+    );
+    expect(report.sales.map((row) => row.snapshot['id']), ['b', 'c']);
+    final sourceOrder = Process.runSync('node', [
+      '-e',
+      "console.log(JSON.stringify([['b','Jan 2, 2026 12:00:00'],['c','jan 2, 2026 12:00:00']].sort((a,b)=>b[1].localeCompare(a[1])).map(x=>x[0])))",
+    ]);
+    expect(sourceOrder.exitCode, 0);
+    expect(jsonDecode(sourceOrder.stdout as String), ['b', 'c']);
+  });
 }

@@ -1,0 +1,11 @@
+{
+  "recordedUtc": "2026-11-08T04:56:12.047022+00:00",
+  "sourceSha256": "59b50cf07c9fc7113cfd490c00f697a82dfa8be478939af60c6094e0ec6d79ec",
+  "retainedChanges": [
+    "hit-test readiness/fatal missed-hit warnings",
+    "Exact invalid_payload rejection code and visible mapped error at existing codec boundary"
+  ],
+  "format": "Zero changes",
+  "analysis": "No issues found",
+  "productChanges": false
+}

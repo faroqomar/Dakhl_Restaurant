@@ -1,0 +1,29 @@
+{
+  "recordedUtc": "2026-11-08T07:07:01.721753+00:00",
+  "availableKiB": 97171892,
+  "sizesKiB": {
+    "appProject": 29000432,
+    "engineProject": 1419644,
+    "appGit": 18430636,
+    "engineGit": 44648,
+    "build": 1950572,
+    "dartTool": 696896,
+    "evidence": 480
+  },
+  "tmpGitStores": {
+    ".git": 0,
+    "../Madar_Engine/.git": 0
+  },
+  "deltaKiB": {
+    "appProject": 596,
+    "engineProject": 92,
+    "appGit": 0,
+    "engineGit": 120,
+    "build": 0,
+    "dartTool": 0,
+    "evidence": 416
+  },
+  "availableDeltaKiB": 2051692,
+  "retainedEvidence": "Canonical9results450samples, diagnostics/manifests/workflow, interrupted timer/refused bookkeeping, compact English log; existing profile binary only by path/hash",
+  "cleanup": "All owned fixtures closed/deleted;40460duplicate stdout bytes removed after semantic equality;9empty stderr files removed. No uncertain/native/cache/Git cleanup."
+}

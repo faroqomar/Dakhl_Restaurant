@@ -375,3 +375,27 @@ For native or benchmark campaigns, use the reviewed Madar development workflow t
 ## Original checkout only — owner direction 2026-11-04
 
 Use the original project checkout and ordinary branches for future work. Do not create additional worktrees. Preserve existing work before switching branches. This newer owner instruction supersedes earlier dedicated-worktree requirements; PR/review and truthful verification requirements remain.
+
+
+## Self-hosted Penpot — owner direction 2026-11-05
+
+Use self-hosted local Penpot and its browser UI instead of the cloud website and Penpot MCP for current design work. [Decision0020](docs/decisions/0020-self-hosted-penpot.md) supersedes the cloud-only destination/connection path. Preserve existing cloud work, prior design evidence and original sources; record local instance/project/file/page identities after setup. A recreated local source file is not a proven full migration of the old cloud file. Keep deployment private with persistent data and local secrets outside Git; do not add public exposure/telemetry or infer design/build/merge/release approval. Engine runtime/API/Design N/A for this consumer tooling setup.
+
+## Storage incident prevention — owner instruction, 2026-11-07
+
+Before sustained build, export, checkpoint or agent campaigns, measure free disk and project size including hidden `.git` directories. Recheck after each large batch. If free space falls below 10 GiB or project growth exceeds 2 GiB unexpectedly, stop storage-producing work and diagnose the largest directories; do not repeat low-space status checks or failed builds without investigating. Inspect `.git/objects/tmp_objdir-*`, Git wrapper/checkpoint processes, build caches and export duplication. Do not attribute growth to documents or builds without measurements.
+
+Remove only confirmed disposable outputs. For Git temporary stores: stop active writers, preserve refs/index/worktree, verify connectivity, preserve unique valid objects and remove only verified duplicates; verify integrity and unchanged refs/worktree afterward. Never delete `.git`, prune unique objects, or remove design sources/recovery evidence blindly. Record reclaimed bytes, cause confidence and recurrence checks. A rule alone does not establish that an upstream leak is fixed. Use plain Git for diagnostics if a wrapper is implicated; do not restart suspect automation until checked.
+
+## Mandatory storage review at every step completion — owner instruction, 2026-11-07
+
+Before declaring any step finished or handing it back, automatically run a storage review without waiting for another owner request. Measure free disk and changes since the step baseline, including hidden Git temporary objects, build/compiler caches, exports, screenshots, archives and task scratch directories. For each substantial new artifact, identify its purpose, canonical location and retention need. Reuse unchanged artifacts by path/hash; avoid duplicate exports, copies, backups, builds and full-log copies when a reference or compact receipt suffices. Required independent verification is not waived.
+
+Clean confirmed obsolete or reproducible task-owned artifacts automatically under the owner's standing authorization. Verify no active process needs them and preserve unique source, uncommitted work, account data, required backups, approved designs and audit/recovery evidence. For duplicates, verify identical content and retain a canonical copy with valid references. Never use blanket Git pruning or delete uncertain unique recovery objects. Resolve uncertainty through bounded inspection and report any retained item with its reason.
+
+Record before/after sizes, reclaimed space, unexplained growth, retained exceptions and cleanup/integrity checks in the step evidence. When free disk is below10GiB or unexplained growth exceeds2GiB, stop new storage-producing batches, diagnose the producer and correct/contain it before retrying. A step is not closed until this review is recorded; unresolved unsafe cleanup remains explicit. This is an agent-executed completion obligation, not a claim that a background monitor exists.
+
+
+## Maximum useful parallel execution — owner direction 2026-11-07
+
+Use the maximum available agent capacity for independent authorized work, dividing execution between Codex and Gemini. Assign concrete deliverables and non-overlapping file ownership, keep one controller per native/browser surface, and preserve independent review. Reuse current source and verified evidence; avoid duplicate investigation or agents whose output has no integration path. Keep dependent work sequential until its contract/source is ready. Existing design, financial, access, merge and release gates still apply. This direction expands staffing, not product scope or approval.

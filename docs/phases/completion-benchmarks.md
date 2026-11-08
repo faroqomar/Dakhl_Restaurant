@@ -1,6 +1,6 @@
 # Completion nonvisual operation benchmarks
 
-Date: 2026-11-07. Status: scenario implementation locally tested; independent review, native pilot and numeric baseline pending. No optimization, UI completion, phase completion or performance pass is claimed.
+Date: 2026-11-07. Status: independently reviewed Step3 native baseline at the recorded source fingerprint. Step4 compatibility fixes are later source and are not certified by those historical measurements. No optimization, UI completion, phase completion or performance pass is claimed.
 
 ## Ownership and timing
 

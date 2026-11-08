@@ -1,0 +1,133 @@
+{
+  "format": "dakhl-legacy-corpus-process-acceptance-v1",
+  "startedUtc": "2026-11-08T07:32:40.579282Z",
+  "status": "passed",
+  "sourceBefore": {
+    "test/fixtures/accounts/oracle.json": "53cf4d356cb24fcb6309591d9587f8d74ad3bab0b8918a39980f7fabdf373e83",
+    "test/accounts/legacy_corpus_restart_conformance_driver.dart": "d770f22f8a26008e003ff4c637024b477767130c5f20bbeeadfd877d8ab9e21c",
+    "test/accounts/support/legacy_corpus_restart_child.dart": "51b38511b1997992756620d96454c9a7a583151dbaa93b993c47412be168ead0",
+    "pubspec.yaml": "07bba9c18ac09d1ea6f9e1d4ee9559ab5026d4babc3c6e31e74267b61b8afe91",
+    "pubspec.lock": "63f2edcb3a3f0e521db5f3a71b019410b0a8e908c60e7ccf768678211acd4382",
+    ".dart_tool/package_config.json": "f5a804384a7c0c0446cc0dd19f76e791ea87861068e592f240e2aafd108dd4b0",
+    ".dart_tool/native_assets.yaml": "3c75343e957b62c044ae603e99b3cf9cbb7d4ff630e044bb5b85beec42344b0c",
+    "engine-dependency.json": "f8d2895f3c7d850bd0f5c10bb34e16e58bfa8fc4a454c8909717037cfae1d685",
+    "lib": {
+      "sha256": "b7eff34ec7483827ca0db8234e76422cb8bf3aa972047f1674305b63d0399913",
+      "files": 75
+    },
+    "../Madar_Engine/packages/domain/lib": {
+      "sha256": "8a7a6e7ab1d80fbd31b1b66150a7a8011b40c8ddf22b3a5033b80415ab8c8ee5",
+      "files": 9
+    },
+    "../Madar_Engine/packages/application/lib": {
+      "sha256": "302230692d1b0adacee0e90607835b8c260dd28014a0ee978c273b75f40dc7ba",
+      "files": 14
+    },
+    "../Madar_Engine/packages/data/lib": {
+      "sha256": "6291ae5b888f668d1fbaa52f470c26637730d448425853cff9d063d2c1254a0c",
+      "files": 3
+    }
+  },
+  "storageBefore": {
+    "freeKiB": 96981492,
+    "sizesKiB": {
+      ".git": 18430636,
+      ".dart_tool": 696896,
+      "outputs": 7395032,
+      "test/accounts": 144
+    },
+    "gitTemporaryObjectDirectories": []
+  },
+  "fixtureRoot": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-legacy-corpus-restart-3pc6Jk",
+  "fixtureKind": "synthetic-frozen-corpus",
+  "exportOperation": "AccountsRepository.codec.encode, shared by AccountsViewModel.exportBytes",
+  "engineRuntimeApiChanges": "N/A; public existing store only",
+  "nativeUiAndSchema12Activation": "not exercised",
+  "missingStoreFailsWithoutReseeding": true,
+  "writerProcess": {
+    "mode": "writer",
+    "pid": 75466,
+    "arguments": [
+      "--packages=/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/.dart_tool/package_config.json",
+      "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/support/legacy_corpus_restart_child.dart",
+      "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-legacy-corpus-restart-3pc6Jk",
+      "writer",
+      "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/legacy-corpus-restart/attempt-03/writer.json"
+    ],
+    "startedUtc": "2026-11-08T07:32:41.156100Z",
+    "finishedUtc": "2026-11-08T07:32:43.735492Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "processAbsent": true,
+    "stdout": "{\"event\":\"legacy-corpus-writer-complete\",\"pid\":75466,\"bootNonce\":\"f1e77a4e658a27a23c0b154aca983b0ff9617c18ab782e61\",\"cases\":27}\n",
+    "stderr": ""
+  },
+  "verifierProcess": {
+    "mode": "verify",
+    "pid": 75498,
+    "arguments": [
+      "--packages=/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/.dart_tool/package_config.json",
+      "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounts/support/legacy_corpus_restart_child.dart",
+      "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-legacy-corpus-restart-3pc6Jk",
+      "verify",
+      "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/legacy-corpus-restart/attempt-03/verify.json"
+    ],
+    "startedUtc": "2026-11-08T07:32:43.758097Z",
+    "finishedUtc": "2026-11-08T07:32:46.074201Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "processAbsent": true,
+    "stdout": "{\"event\":\"legacy-corpus-verify-complete\",\"pid\":75498,\"bootNonce\":\"156bad5fbffb5ed3ef3730b7d5b771647e108fe99e7ea5b6\",\"cases\":27}\n",
+    "stderr": ""
+  },
+  "positiveCases": 23,
+  "protectedRejections": 4,
+  "writerBootNonce": "f1e77a4e658a27a23c0b154aca983b0ff9617c18ab782e61",
+  "verifierBootNonce": "156bad5fbffb5ed3ef3730b7d5b771647e108fe99e7ea5b6",
+  "fixtureKiBReclaimed": 5320,
+  "fixtureRemoved": true,
+  "sourceAfter": {
+    "test/fixtures/accounts/oracle.json": "53cf4d356cb24fcb6309591d9587f8d74ad3bab0b8918a39980f7fabdf373e83",
+    "test/accounts/legacy_corpus_restart_conformance_driver.dart": "d770f22f8a26008e003ff4c637024b477767130c5f20bbeeadfd877d8ab9e21c",
+    "test/accounts/support/legacy_corpus_restart_child.dart": "51b38511b1997992756620d96454c9a7a583151dbaa93b993c47412be168ead0",
+    "pubspec.yaml": "07bba9c18ac09d1ea6f9e1d4ee9559ab5026d4babc3c6e31e74267b61b8afe91",
+    "pubspec.lock": "63f2edcb3a3f0e521db5f3a71b019410b0a8e908c60e7ccf768678211acd4382",
+    ".dart_tool/package_config.json": "f5a804384a7c0c0446cc0dd19f76e791ea87861068e592f240e2aafd108dd4b0",
+    ".dart_tool/native_assets.yaml": "3c75343e957b62c044ae603e99b3cf9cbb7d4ff630e044bb5b85beec42344b0c",
+    "engine-dependency.json": "f8d2895f3c7d850bd0f5c10bb34e16e58bfa8fc4a454c8909717037cfae1d685",
+    "lib": {
+      "sha256": "b7eff34ec7483827ca0db8234e76422cb8bf3aa972047f1674305b63d0399913",
+      "files": 75
+    },
+    "../Madar_Engine/packages/domain/lib": {
+      "sha256": "8a7a6e7ab1d80fbd31b1b66150a7a8011b40c8ddf22b3a5033b80415ab8c8ee5",
+      "files": 9
+    },
+    "../Madar_Engine/packages/application/lib": {
+      "sha256": "302230692d1b0adacee0e90607835b8c260dd28014a0ee978c273b75f40dc7ba",
+      "files": 14
+    },
+    "../Madar_Engine/packages/data/lib": {
+      "sha256": "6291ae5b888f668d1fbaa52f470c26637730d448425853cff9d063d2c1254a0c",
+      "files": 3
+    }
+  },
+  "sourceUnchanged": true,
+  "storageAfter": {
+    "freeKiB": 96979348,
+    "sizesKiB": {
+      ".git": 18430636,
+      ".dart_tool": 696896,
+      "outputs": 7396068,
+      "test/accounts": 144
+    },
+    "gitTemporaryObjectDirectories": []
+  },
+  "finishedUtc": "2026-11-08T07:32:46.476564Z",
+  "receiptHashes": {
+    "writer.json": "edd25733707f0df8c50a6c7b17e9fe26d65128b34d0817539a03c5f239b1c42d",
+    "verify.json": "551076cdb3732800751efdca8f726e2e314f1a397de8457434b425cf9f8c0359",
+    "writer-process.json": "4a0d1883c9bbddd05d207dcc4291c67d40b5b2d904a7e788075b2b7c034ca532",
+    "verify-process.json": "f140f0be44fac2bcc447e29a030569721131c779e35244fc2f806e115187014e"
+  }
+}

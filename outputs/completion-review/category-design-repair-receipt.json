@@ -1,0 +1,310 @@
+{
+  "utcRecorded": "2026-11-07T19:15:00Z",
+  "status": "Repairs applied in live Penpot and verified via exact affected board exports; root independent review and parent receipt update required before hold closure",
+  "scope": "Five held C4 category design and wireframe pairs",
+  "c1Preserved": true,
+  "c4FlutterUiApprovalRequested": false,
+  "parentHoldClosed": false,
+  "boards": {
+    "design": {
+      "boardId": "a06ebf34-7758-80cb-8008-e69adcdf0389",
+      "boardName": "Completion \u00b7 06 Daily records cashbox and categories \u00b7 Part 1 \u00b7 Design",
+      "boardDimensions": [
+        3900,
+        5572
+      ],
+      "exportAssetUrl": "http://localhost:9001/assets/by-id/963224b0-dcc5-42fb-828c-a0c1defacd95",
+      "exportSizeBytes": 3845080,
+      "exportCompletedAt": "2026-11-07T19:03:11.002Z",
+      "scale": 2.0
+    },
+    "wireframe": {
+      "boardId": "40a6df26-d27d-8012-8008-e69c55b58ca1",
+      "boardName": "Completion \u00b7 06 Daily records cashbox and categories \u00b7 Part 1 \u00b7 Wireframe",
+      "boardDimensions": [
+        3900,
+        5572
+      ],
+      "exportAssetUrl": "http://localhost:9001/assets/by-id/56308189-20a5-4c6c-a4ff-87dc1ebc5bd3",
+      "exportSizeBytes": 3458146,
+      "exportCompletedAt": "2026-11-07T19:11:08.937Z",
+      "scale": 2.0
+    }
+  },
+  "storageEvidence": {
+    "baselineFreeKiB": 115198424,
+    "currentFreeKiB": 111157912,
+    "appBaselineKiB": 26751464,
+    "appCurrentKiB": 27051780,
+    "engineBaselineKiB": 1243656,
+    "engineCurrentKiB": 1247440,
+    "limitCheck": "All project growths < 2 GiB and free disk > 10 GiB."
+  },
+  "pairs": [
+    {
+      "referenceId": "desktop-categories",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "boardRelativeCoordinates": {
+        "x": 1520,
+        "y": 3240,
+        "width": 1440,
+        "height": 1000
+      },
+      "pixelCrop": [
+        3040,
+        6480,
+        2880,
+        2000
+      ],
+      "design": {
+        "boardId": "a06ebf34-7758-80cb-8008-e69adcdf0389",
+        "nativeLayerId": "002514bb-1797-8060-8008-e91c83025656",
+        "overlaySvg": "outputs/penpot/completion/category-hold-repair/desktop-categories-design-overlay.svg",
+        "overlaySvgSha256": "0acce5e0f289c7b162b1aba78e6e7e2ea2d2da7352128f871cc9cf27e5ba4377",
+        "repairedCrop": "outputs/penpot/completion/category-hold-repair/desktop-categories-design-repaired.png",
+        "repairedCropSha256": "9e3e068db196f313b2ca51844b3b9762ba76db851931faa86fb88bdc8f638177",
+        "oldCrop": "outputs/penpot/completion/package-native-panels/wp06-01/desktop-categories-design.png",
+        "oldCropSha256": "9eaf1e240e7c617589c35188018f38f92854114b77197f277a7f0a38acc6bb5a",
+        "comparison": {
+          "oldMae": 0.20109774305555556,
+          "newMae": 0.19718628472222222,
+          "deltaMae": -0.00391145833333334,
+          "oldRatioOver32": 0.0022234375,
+          "newRatioOver32": 0.0022104166666666665
+        }
+      },
+      "wireframe": {
+        "boardId": "40a6df26-d27d-8012-8008-e69c55b58ca1",
+        "nativeLayerId": "002514bb-1797-8060-8008-e91e7c4286d2",
+        "overlaySvg": "outputs/penpot/completion/category-hold-repair/desktop-categories-wireframe-overlay.svg",
+        "overlaySvgSha256": "f42af0f105dc7472623b9b54e8d4ec50364b81aace5492b70cd93ec7810132ef",
+        "repairedCrop": "outputs/penpot/completion/category-hold-repair/desktop-categories-wireframe-repaired.png",
+        "repairedCropSha256": "34276fc4104dab8adc42c7cb0a6d0238d51ee14bf274eb2b87810f380cbd9c2f",
+        "oldCrop": "outputs/penpot/completion/package-native-panels/wp06-01/desktop-categories-wireframe.png",
+        "oldCropSha256": "876f53a5daf5d0c06c438fad1777b599b359e6cab68e40757ec9e5d025a46e16",
+        "comparison": {
+          "oldMae": 1.9205347800925925,
+          "newMae": 1.9164627314814815,
+          "deltaMae": -0.00407204861111099,
+          "oldRatioOver32": 0.005838888888888889,
+          "newRatioOver32": 0.005851041666666667
+        }
+      }
+    },
+    {
+      "referenceId": "desktop-category-edit",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "boardRelativeCoordinates": {
+        "x": 1520,
+        "y": 4320,
+        "width": 1440,
+        "height": 1000
+      },
+      "pixelCrop": [
+        3040,
+        8640,
+        2880,
+        2000
+      ],
+      "design": {
+        "boardId": "a06ebf34-7758-80cb-8008-e69adcdf0389",
+        "nativeLayerId": "002514bb-1797-8060-8008-e91cbaf9046f",
+        "overlaySvg": "outputs/penpot/completion/category-hold-repair/desktop-category-edit-design-overlay.svg",
+        "overlaySvgSha256": "74b3ae74afce1e2ff3eb926222b6fce646d87fa87e4aea53474c3e71e5a470ec",
+        "repairedCrop": "outputs/penpot/completion/category-hold-repair/desktop-category-edit-design-repaired.png",
+        "repairedCropSha256": "c653365c99781eb4dc7ddaf634fa9a140db8977c3db7b716e8e1be1f0c638dd5",
+        "oldCrop": "outputs/penpot/completion/package-native-panels/wp06-01/desktop-category-edit-design.png",
+        "oldCropSha256": "ed71cb35d7a94d740c4ceb185a522f7261457dd7366f3a3554b8cc29126cfbd4",
+        "comparison": {
+          "oldMae": 1.2165171296296295,
+          "newMae": 1.1997914351851853,
+          "deltaMae": -0.016725694444444272,
+          "oldRatioOver32": 0.003076215277777778,
+          "newRatioOver32": 0.003003125
+        }
+      },
+      "wireframe": {
+        "boardId": "40a6df26-d27d-8012-8008-e69c55b58ca1",
+        "nativeLayerId": "002514bb-1797-8060-8008-e91eabf4b7ff",
+        "overlaySvg": "outputs/penpot/completion/category-hold-repair/desktop-category-edit-wireframe-overlay.svg",
+        "overlaySvgSha256": "11270a3bf5e5d103b18e051a2c0fd60969c23116641e70f352f775426e934b57",
+        "repairedCrop": "outputs/penpot/completion/category-hold-repair/desktop-category-edit-wireframe-repaired.png",
+        "repairedCropSha256": "980d881ea3e25d69050d85ec99970ca196f234235f39e2152df33e42cf175c48",
+        "oldCrop": "outputs/penpot/completion/package-native-panels/wp06-01/desktop-category-edit-wireframe.png",
+        "oldCropSha256": "0e291673b62aa85f5cde7258507f924443edc95aa443b333ede46175e1f84551",
+        "comparison": {
+          "oldMae": 5.087235995370371,
+          "newMae": 5.070619270833333,
+          "deltaMae": -0.01661672453703744,
+          "oldRatioOver32": 0.021326388888888888,
+          "newRatioOver32": 0.021296875
+        }
+      }
+    },
+    {
+      "referenceId": "phone-categories",
+      "logicalSize": [
+        390,
+        844
+      ],
+      "boardRelativeCoordinates": {
+        "x": 3510,
+        "y": 924,
+        "width": 390,
+        "height": 844
+      },
+      "pixelCrop": [
+        7020,
+        1848,
+        780,
+        1688
+      ],
+      "design": {
+        "boardId": "a06ebf34-7758-80cb-8008-e69adcdf0389",
+        "nativeLayerId": "002514bb-1797-8060-8008-e919aaa0c5e9",
+        "overlaySvg": "outputs/penpot/completion/category-hold-repair/phone-categories-design-overlay.svg",
+        "overlaySvgSha256": "1b5fb52e28db35cd9d40f920779935bace4a113f8792b3beca678672dea81d82",
+        "repairedCrop": "outputs/penpot/completion/category-hold-repair/phone-categories-design-repaired.png",
+        "repairedCropSha256": "95aeb3feb7bbda08c4bbebdd0c1864cbb327d788b4fc4aa110c3aaa480053c23",
+        "oldCrop": "outputs/penpot/completion/package-native-panels/wp06-01/phone-categories-design.png",
+        "oldCropSha256": "e9e23b1f398a718cee14f2af70f7b03ea553e685cbe89c5557e8ce2acfd0316e",
+        "comparison": {
+          "oldMae": 1.183597389314214,
+          "newMae": 1.1657246222708308,
+          "deltaMae": -0.017872767043383142,
+          "oldRatioOver32": 0.01111161745048001,
+          "newRatioOver32": 0.01105313525337222
+        }
+      },
+      "wireframe": {
+        "boardId": "40a6df26-d27d-8012-8008-e69c55b58ca1",
+        "nativeLayerId": "002514bb-1797-8060-8008-e91deaa9b66e",
+        "overlaySvg": "outputs/penpot/completion/category-hold-repair/phone-categories-wireframe-overlay.svg",
+        "overlaySvgSha256": "2f7b72adfb51bd410dde5a4c9deffdd8525412d4736a8487eb23111dc19c542b",
+        "repairedCrop": "outputs/penpot/completion/category-hold-repair/phone-categories-wireframe-repaired.png",
+        "repairedCropSha256": "44354b1c1320bcf5126228c4a19bc5fff56449b6b6246bc9d49fcfaf155bf285",
+        "oldCrop": "outputs/penpot/completion/package-native-panels/wp06-01/phone-categories-wireframe.png",
+        "oldCropSha256": "bc7c8f008c209aff9e3cd29dd4323caa814741aa79c16dbcfc1c0cc9dd7f209a",
+        "comparison": {
+          "oldMae": 4.404236794669259,
+          "newMae": 4.385915157775347,
+          "deltaMae": -0.018321636893912085,
+          "oldRatioOver32": 0.06325647101713452,
+          "newRatioOver32": 0.06330887714181553
+        }
+      }
+    },
+    {
+      "referenceId": "phone-categories-bottom",
+      "logicalSize": [
+        390,
+        844
+      ],
+      "boardRelativeCoordinates": {
+        "x": 3510,
+        "y": 1848,
+        "width": 390,
+        "height": 844
+      },
+      "pixelCrop": [
+        7020,
+        3696,
+        780,
+        1688
+      ],
+      "design": {
+        "boardId": "a06ebf34-7758-80cb-8008-e69adcdf0389",
+        "nativeLayerId": "002514bb-1797-8060-8008-e91bfc525c97",
+        "overlaySvg": "outputs/penpot/completion/category-hold-repair/phone-categories-bottom-design-overlay.svg",
+        "overlaySvgSha256": "077f9d5367fdb8f3522e58f46edb1cc1319510189a000bcb3360c27a45931a3d",
+        "repairedCrop": "outputs/penpot/completion/category-hold-repair/phone-categories-bottom-design-repaired.png",
+        "repairedCropSha256": "372630aa1634a80fc3269bafdbaa06ffc243fd69028821ea1196b14a840712c9",
+        "oldCrop": "outputs/penpot/completion/package-native-panels/wp06-01/phone-categories-bottom-design.png",
+        "oldCropSha256": "ee6a2dd407c37653dfb353dd40c257605959e6be943fcf00c1c9b248dee812dd",
+        "comparison": {
+          "oldMae": 1.1879939340543606,
+          "newMae": 1.170882195082432,
+          "deltaMae": -0.017111738971928636,
+          "oldRatioOver32": 0.011135921740187142,
+          "newRatioOver32": 0.011078958561186049
+        }
+      },
+      "wireframe": {
+        "boardId": "40a6df26-d27d-8012-8008-e69c55b58ca1",
+        "nativeLayerId": "002514bb-1797-8060-8008-e91e140ef574",
+        "overlaySvg": "outputs/penpot/completion/category-hold-repair/phone-categories-bottom-wireframe-overlay.svg",
+        "overlaySvgSha256": "23c5c277406747fbb5bbf63bea29772b9d2aa267dff4d8ab67fc809d26b3890f",
+        "repairedCrop": "outputs/penpot/completion/category-hold-repair/phone-categories-bottom-wireframe-repaired.png",
+        "repairedCropSha256": "c926ca920618130246608a4bdabe9aad81aee3a3ab2d428ed94f4c866eb009d1",
+        "oldCrop": "outputs/penpot/completion/package-native-panels/wp06-01/phone-categories-bottom-wireframe.png",
+        "oldCropSha256": "2bc0f448545108528c826ce4cca52400b3d5c5d6ee1d125002c37c96b9fd16ae",
+        "comparison": {
+          "oldMae": 4.41107921173087,
+          "newMae": 4.393264926884595,
+          "deltaMae": -0.017814284846275008,
+          "oldRatioOver32": 0.06333621946773606,
+          "newRatioOver32": 0.06338938510147041
+        }
+      }
+    },
+    {
+      "referenceId": "full-phone-categories",
+      "logicalSize": [
+        390,
+        865
+      ],
+      "boardRelativeCoordinates": {
+        "x": 3040,
+        "y": 3714,
+        "width": 390,
+        "height": 865
+      },
+      "pixelCrop": [
+        6080,
+        7428,
+        780,
+        1730
+      ],
+      "design": {
+        "boardId": "a06ebf34-7758-80cb-8008-e69adcdf0389",
+        "nativeLayerId": "002514bb-1797-8060-8008-e91c5379d075",
+        "overlaySvg": "outputs/penpot/completion/category-hold-repair/full-phone-categories-design-overlay.svg",
+        "overlaySvgSha256": "579bc821aee7ff79407cf21dfdfb6c59e09d03451afe96d7b8ddff7798728f0f",
+        "repairedCrop": "outputs/penpot/completion/category-hold-repair/full-phone-categories-design-repaired.png",
+        "repairedCropSha256": "3edd5f77974b96198884121aa61743c5e2fba0096a04e07b70f2cb7e0f121545",
+        "oldCrop": "outputs/penpot/completion/package-native-panels/wp06-01/full-phone-categories-design.png",
+        "oldCropSha256": "4b639d2e74c16a07a7b53a9434c1863c5e6366f249e01f56409ad90747db40bc",
+        "comparison": {
+          "oldMae": 0.8301625413764142,
+          "newMae": 0.8134662319055382,
+          "deltaMae": -0.01669630947087597,
+          "oldRatioOver32": 0.009518304431599229,
+          "newRatioOver32": 0.009462724173706832
+        }
+      },
+      "wireframe": {
+        "boardId": "40a6df26-d27d-8012-8008-e69c55b58ca1",
+        "nativeLayerId": "002514bb-1797-8060-8008-e91e3da37cd4",
+        "overlaySvg": "outputs/penpot/completion/category-hold-repair/full-phone-categories-wireframe-overlay.svg",
+        "overlaySvgSha256": "78f7437de0fb1b9ca5249db505cb68c7af98bb28c106dbc1bc385921be000bfd",
+        "repairedCrop": "outputs/penpot/completion/category-hold-repair/full-phone-categories-wireframe-repaired.png",
+        "repairedCropSha256": "7d610d9db7ad4ceae9d727dd277396dc6cf3d350de0398a251609307184113ae",
+        "oldCrop": "outputs/penpot/completion/package-native-panels/wp06-01/full-phone-categories-wireframe.png",
+        "oldCropSha256": "8fbb0f8e01ac189427e9f23ad5e3917ad7a072fda96b492c7f57ebda73a5a895",
+        "comparison": {
+          "oldMae": 2.8268976335161304,
+          "newMae": 2.809515834197915,
+          "deltaMae": -0.017381799318215485,
+          "oldRatioOver32": 0.02490143767600415,
+          "newRatioOver32": 0.02495331258337039
+        }
+      }
+    }
+  ]
+}

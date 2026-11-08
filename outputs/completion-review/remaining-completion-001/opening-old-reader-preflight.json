@@ -1,0 +1,20 @@
+{
+  "fixtureRoot": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-opening-old-reader-uyxo31nv",
+  "oldSourceExpectedSha256": "ae1a0181e21b5fcb1b110f47c02bc98ab78f37d81a8099ce24f19633d6fefcb0",
+  "oldSourceActualSha256": "ae1a0181e21b5fcb1b110f47c02bc98ab78f37d81a8099ce24f19633d6fefcb0",
+  "sourceMatch": true,
+  "dependencyHashes": {
+    "lib/accounts/account_document.dart": {
+      "expected": "2604b3447261bb7c488078b371baa44dbccc7dc119d8fbdd2d00c27c37a438f7",
+      "actual": "2604b3447261bb7c488078b371baa44dbccc7dc119d8fbdd2d00c27c37a438f7"
+    },
+    "lib/accounts/legacy_account_codec.dart": {
+      "expected": "d95001f493fb8e70ee1988e3f620ca0684fc1136ab2e9bfad49f7032a3b92ebd",
+      "actual": "d95001f493fb8e70ee1988e3f620ca0684fc1136ab2e9bfad49f7032a3b92ebd"
+    },
+    "lib/accounting/restaurant_journal_mapper.dart": {
+      "expected": "0916bc37d753de94dc5df36ddefd92250581abb35233e069b5ed2806b1eeb8da",
+      "actual": "0916bc37d753de94dc5df36ddefd92250581abb35233e069b5ed2806b1eeb8da"
+    }
+  }
+}

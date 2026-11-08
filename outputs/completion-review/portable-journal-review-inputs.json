@@ -1,0 +1,27 @@
+{
+  "createdUtc": "2026-11-07T15:29:14.199588+00:00",
+  "status": "candidate-awaiting-independent-review",
+  "engineCommit": "d316fd6076375daa3f412889f73eaebfeeb5d4d4",
+  "files": {
+    "lib/accounts/portable_journal_state.dart": "3ac9a38b18775d28338616aa73e58bbf7a4ed0b1859f10acd55dd12e16716dee",
+    "lib/accounts/portable_journal_codec.dart": "ace3aa6dba1b01703b055669b0aafba81a7bf703c58d5cefa0ed64cf9046dd27",
+    "test/accounts/portable_journal_codec_test.dart": "87f4cc76a2549cf2a10628109f89d08383cb9f5ce2ef76f93e1570aba57a716d",
+    "test/accounts/portable_journal_conformance_test.dart": "c0e30f8688df5470309801cebb1c027bfaf84e443cf47a5e22e6296cdab2ab1f",
+    "docs/phases/completion-journal-persistence-contract.md": "3d863a896e0bced1bc5da000cc9ab71e791351b8f0731c4ee8ad357c5327a448"
+  },
+  "storage": {
+    "availableKiB": 115113024,
+    "appGitKiB": 18417808,
+    "engineGitKiB": 36664,
+    "buildKiB": 639456,
+    "dartToolKiB": 204852,
+    "reviewOutputsKiB": 216,
+    "tmpStores": 0
+  },
+  "rootIntakeFindings": [
+    "Reversal decoder reconstructs lines without validating serialized lines/policy/total and adds correctedFrom default.",
+    "Entry metadata and cutover opening values are shallow snapshots.",
+    "State constructors/copyWith bypass much decode validation; encode comment claims revalidation but only serializes.",
+    "Inspect correction links, source provenance/version, IQD profile acceptance, cutover consistency, strict error/capacity bounds and unknown field loss."
+  ]
+}

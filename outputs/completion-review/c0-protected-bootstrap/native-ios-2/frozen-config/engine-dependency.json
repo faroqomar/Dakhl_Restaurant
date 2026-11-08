@@ -1,0 +1,23 @@
+{
+  "engine": "Madar_Engine",
+  "status": "Local independently reviewed durable-command, paid-spending and optional collation-port source revision. Optional ICU adapter remains unconsumed; operational UI/posting/native/mobile/release evidence is separate.",
+  "git_commit": "ac8b4edc2c915ed22c0991685c33967b3360e7fa",
+  "packages": {
+    "madar_application": {
+      "path": "../Madar_Engine/packages/application",
+      "version": "0.1.0-dev.5"
+    },
+    "madar_flutter_adapters": {
+      "path": "../Madar_Engine/packages/flutter_adapters",
+      "version": "0.1.0-dev.1"
+    },
+    "madar_data": {
+      "path": "../Madar_Engine/packages/data",
+      "version": "0.1.0-dev.2"
+    },
+    "madar_domain": {
+      "path": "../Madar_Engine/packages/domain",
+      "version": "0.1.0-dev.5"
+    }
+  }
+}

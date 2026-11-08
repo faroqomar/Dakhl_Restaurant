@@ -1,0 +1,13 @@
+{
+  "recordedUtc": "2026-11-08T04:52:22.936680+00:00",
+  "predecessor": "../plan.json",
+  "predecessorSha256": "8fa00a80873e367108cb94ffd415a521811d194a1c13d4b2b1f01d4036538a7a",
+  "changes": [
+    "Harness waits for hit-testable tap targets and treats missed hits as fatal",
+    "Reviewed engine README-only revision adopted by Lead; package implementation/locks/config unchanged"
+  ],
+  "fixtureRoot": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-c1-native-preflight-repaired-krps0ibn",
+  "fullSourceInputs": 101,
+  "trackedSubset": 89,
+  "nativeRetry": "New source-bound campaign; old failed attempt preserved"
+}

@@ -1,6 +1,8 @@
-import 'package:madar_domain/madar_domain.dart';
+import 'package:madar_domain/madar_domain.dart' hide PaidSpendingStatement;
+import 'package:madar_domain/madar_domain.dart' as paid;
 
 import '../accounts/account_document.dart';
+import '../reports/source_event_order.dart';
 
 enum SpendingSource { all, daily, cash }
 
@@ -18,19 +20,18 @@ final class DailyCashSnapshot {
 }
 
 final class PaidSpendingStatement {
-  PaidSpendingStatement(
-    List<Map<String, Object?>> rows,
-    this.total,
-    this.dailyShare,
-    this.cashShare,
-    Map<String, BigInt> categories,
-  ) : rows = List.unmodifiable(rows),
-      byCategory = Map.unmodifiable(categories);
+  PaidSpendingStatement._(List<Map<String, Object?>> rows, this.domain)
+    : rows = List.unmodifiable(rows);
   final List<Map<String, Object?>> rows;
-  final BigInt total, dailyShare, cashShare;
+
+  /// Shared query results, including stable category ranks and pagination.
+  final paid.PaidSpendingStatement domain;
+  BigInt get total => domain.total;
+  BigInt get dailyShare => domain.dailyShare;
+  BigInt get cashShare => domain.cashShare;
 
   /// Insertion order is the frozen source tie-break for equal ranked amounts.
-  final Map<String, BigInt> byCategory;
+  Map<String, BigInt> get byCategory => domain.byCategory;
 }
 
 /// Read-only projections of codec-validated historical records. These values are
@@ -210,6 +211,17 @@ final class DailyCashQueries {
     return List.unmodifiable(rows);
   }
 
+  /// renderer.js orderedTransactions: descending date, createdAt, id; exact
+  /// ties retain the original merged movement encounter order.
+  List<Map<String, Object?>> orderedCashMovements(
+    int Function(String, String)? compareText,
+  ) => orderSourceEvents(
+    cashMovements,
+    keys: const ['date', 'createdAt', 'id'],
+    descending: true,
+    compareText: compareText,
+  );
+
   BigInt get cashBalance => _sum(
     cashMovements.map(
       (row) =>
@@ -228,54 +240,67 @@ final class DailyCashQueries {
     if (from.isNotEmpty && to.isNotEmpty && from.compareTo(to) > 0) {
       throw const FormatException('Reversed date range.');
     }
-    final dates =
-        <String>{
-              ...(_state['days']! as Map).keys.cast<String>(),
-              ..._rows('payments').map((p) => p['date']! as String),
-            }
-            .where(
-              (d) =>
-                  (from.isEmpty || d.compareTo(from) >= 0) &&
-                  (to.isEmpty || d.compareTo(to) <= 0),
-            )
-            .toList()
-          ..sort();
-    final rows = <Map<String, Object?>>[];
+    final dates = <String>{
+      ...(_state['days']! as Map).keys.cast<String>(),
+      ..._rows('payments').map((payment) => payment['date']! as String),
+    }.toList()..sort();
+    final records = <paid.PaidSpendingRecord>[];
+    final originals = <(String, String), Map<String, Object?>>{};
     for (final date in dates) {
-      for (final e in expenses(date)) {
-        if (categoryId.isNotEmpty && e['categoryId'] != categoryId) continue;
-        final f = _funding(e);
-        final amount = source == SpendingSource.all
-            ? e['amount']
-            : f[source == SpendingSource.daily ? 'dailyAmount' : 'cashAmount'];
-        if (_n(amount) > BigInt.zero) {
-          rows.add(
-            Map.unmodifiable({
-              ...e,
-              'date': date,
-              'originalAmount': e['amount'],
-              'funding': Map<String, Object?>.unmodifiable(f),
-              'amount': amount,
-            }),
-          );
-        }
+      for (final entry in expenses(date)) {
+        final amount = _n(entry['amount']);
+        // Legacy zero expenses are valid history but absent from statements.
+        // Liabilities never enter this stream; expenses() supplies paid rows.
+        if (amount == BigInt.zero) continue;
+        final funding = _funding(entry);
+        final kind = entry['kind'] as String? ?? 'expense';
+        final id = entry['id']! as String;
+        originals[(kind, id)] = entry;
+        records.add(
+          paid.PaidSpendingRecord(
+            id: id,
+            date: DateOnly.parse(date, minimumYear: 1000, maximumYear: 9999),
+            categoryId: entry['categoryId']! as String,
+            amount: amount,
+            dailyAmount: _n(funding['dailyAmount']),
+            cashAmount: _n(funding['cashAmount']),
+            note: entry['note'] as String? ?? '',
+            sourceKind: kind,
+          ),
+        );
       }
     }
-    final total = _sum(rows.map((e) => _n(e['amount'])));
-    final daily = source == SpendingSource.cash
-        ? BigInt.zero
-        : _sum(rows.map((e) => _n(_funding(e)['dailyAmount'])));
-    final categories = <String, BigInt>{};
-    for (final e in rows) {
-      final id = e['categoryId']! as String;
-      categories[id] = _add(categories[id] ?? BigInt.zero, _n(e['amount']));
-    }
-    return PaidSpendingStatement(
-      rows,
-      total,
-      daily,
-      _add(total, -daily),
-      categories,
+    final statement = paid.PaidSpendingQueries.execute(
+      records: records,
+      filter: paid.PaidSpendingFilter(
+        from: from.isEmpty
+            ? null
+            : DateOnly.parse(from, minimumYear: 1000, maximumYear: 9999),
+        to: to.isEmpty
+            ? null
+            : DateOnly.parse(to, minimumYear: 1000, maximumYear: 9999),
+        categoryId: categoryId,
+        source: switch (source) {
+          SpendingSource.all => paid.PaidSpendingSourceFilter.all,
+          SpendingSource.daily => paid.PaidSpendingSourceFilter.daily,
+          SpendingSource.cash => paid.PaidSpendingSourceFilter.cash,
+        },
+      ),
+      summation: paid.PaidSpendingSummation.legacyBinary64Integer,
+      maximumMoney: _money,
+      maximumSafeInteger: _policy.maximumSafeInteger,
     );
+    return PaidSpendingStatement._([
+      for (final row in statement.rows)
+        Map<String, Object?>.unmodifiable({
+          ...originals[(row.sourceKind, row.id)]!,
+          'date': row.date.toString(),
+          'originalAmount': row.originalAmount.toInt(),
+          'funding': Map<String, Object?>.unmodifiable(
+            _funding(originals[(row.sourceKind, row.id)]!),
+          ),
+          'amount': row.amount.toInt(),
+        }),
+    ], statement);
   }
 }

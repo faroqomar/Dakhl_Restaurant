@@ -1,0 +1,27 @@
+{
+  "appRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+  "device": {
+    "deviceId": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
+    "hostId": "local",
+    "liveStateProven": false,
+    "observationSha256": "43870fbb76548f95cb06e7cacc9ce991d5d32c586a8ff29c69f635a12b49d31e",
+    "observedAt": "2026-11-08T04:57:01.807685+00:00",
+    "proof": "operator-observation",
+    "sessionId": "t3-b91493306db60c230eefae24"
+  },
+  "fixture": {
+    "scope": "marked-isolated-synthetic",
+    "sha256": "0bd60f8fce491dfe84e67ad617bb2101f65998cc71b044aaec3f46fbbfaf4649"
+  },
+  "fixtureId": "0bd60f8fce491dfe84e67ad617bb2101f65998cc71b044aaec3f46fbbfaf4649",
+  "guardToolSha256": "b03e4b75153b67f6b48eb8286084067d67a9707b4bc52f538dcd8c14423588c5",
+  "observedAt": "2026-11-08T04:57:01.941464+00:00",
+  "platform": "ios",
+  "preflightToolSha256": "733b063024a9c064f9d4e4c27f5ebeb0ee6530be05ec8532b71d10bf6c61c14c",
+  "runtimeRevision": "bb00ccdad8f6710ca1778260d42ed5584f26a86c",
+  "schema": 1,
+  "sourceCoverage": "explicit-caller-selected-tracked-inputs",
+  "sourceFingerprint": "48bbd91368122a89013ce3b9016b0f48c69450efef455683def4292d9f16df12",
+  "status": "preflight-passed",
+  "targetId": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5"
+}

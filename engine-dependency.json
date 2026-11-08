@@ -1,15 +1,15 @@
 {
   "engine": "Madar_Engine",
-  "status": "Local reviewed integral Number formatter candidate; full app integration and final verification pending.",
-  "git_commit": "e73b5eebf84f742375eba298a63df8c7bcf70c97",
+  "status": "Reviewed local development candidate. Three-target ARM64 bundled conformance and macOS share-picker handoff verified; physical-phone, final visual/activation and delivery gates remain separately recorded.",
+  "git_commit": "c028f0466d63b4068b5696af1d0799f243eea6bb",
   "packages": {
     "madar_application": {
       "path": "../Madar_Engine/packages/application",
-      "version": "0.1.0-dev.3"
+      "version": "0.1.0-dev.6"
     },
     "madar_flutter_adapters": {
       "path": "../Madar_Engine/packages/flutter_adapters",
-      "version": "0.1.0-dev.1"
+      "version": "0.1.0-dev.3"
     },
     "madar_data": {
       "path": "../Madar_Engine/packages/data",
@@ -17,7 +17,11 @@
     },
     "madar_domain": {
       "path": "../Madar_Engine/packages/domain",
-      "version": "0.1.0-dev.4"
+      "version": "0.1.0-dev.5"
+    },
+    "madar_icu_collation": {
+      "path": "../Madar_Engine/packages/icu_collation",
+      "version": "0.1.0-dev.2"
     }
   }
 }

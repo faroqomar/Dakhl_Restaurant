@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-08T09:53:00.753547+00:00",
+  "runnerExit": 1,
+  "initialGuardRefused": "first expected marker omitted fixture id; zero deletions; exact actual marker then verified",
+  "roots": [
+    {
+      "path": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-boundary-life-ObpibC",
+      "fileBytes": 198952,
+      "noOpenHandles": true,
+      "markerAndUidVerified": true,
+      "removed": true
+    },
+    {
+      "path": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-boundary-life-ohX8Jc",
+      "fileBytes": 198952,
+      "noOpenHandles": true,
+      "markerAndUidVerified": true,
+      "removed": true
+    }
+  ]
+}

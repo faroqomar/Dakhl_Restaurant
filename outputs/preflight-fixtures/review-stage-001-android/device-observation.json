@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "tool": "device_open",
+  "hostId": "local",
+  "deviceId": "emulator-5554",
+  "sessionId": "t3-78f39ef5f82e05c862b586fa",
+  "observedAt": "2026-11-08T18:34:18.305476+00:00",
+  "controlReady": true,
+  "fixtureReady": true,
+  "evidence": [
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/preflight-fixtures/review-stage-001-android/device-open.json",
+      "sha256": "ac1dac2cbdac8e97c476c574bf2ed4f1fbe113970670805c3c14302b6f22e1aa"
+    }
+  ]
+}

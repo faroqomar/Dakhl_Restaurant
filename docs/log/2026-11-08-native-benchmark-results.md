@@ -1,0 +1,33 @@
+# Native operation benchmark results
+
+Date:2026-11-08. **60/60 ready cases passed;1,200 elapsed samples,20per case.** This is a macOS profile-mode baseline, with [independent aggregate evidence review](2026-11-08-benchmark-aggregate-review.md) clear within the stated scopes. It establishes no optimization improvement, mobile performance result or release approval.
+
+Canonical [machine receipt](../../outputs/completion-review/review-stage-001/benchmark-matrix-001.json) and [60-row CSV summary](../../outputs/completion-review/review-stage-001/benchmark-summary-001.csv) retain each operation's p50/p95 milliseconds, sampled peak resident RAM in MB, average CPU percent, sample count and scope. The CSV derives directly from the JSON; no full log or JSON copy belongs in this document. Machine-receipt SHA256: `b70c5865165458beef77c76c32c91273a4b281e6574337c3c5af8fbc09665e54`.
+
+## Exact conditions and identity
+
+Run interval:2026-11-08T18:25:32.946811+00:00 through18:32:02.578021+00:00. Target:`macos-host`; Apple M1 Pro, MacBookPro18,3,8logical CPUs, ARM64, Darwin27.2. Flutter3.47.8/Dart3.13.7, Xcode27.2 build27B52, macOS SDK build26B118, Python3.13.0. Builds use profile mode; startup measures fresh processes with uncontrolled OS caches. Compilation/installation are outside elapsed samples.
+
+App candidate:`0.0.0+1`, commit `cc91fae438101fce7ff4729e12bf3c2b64dacd70`, dirty source fingerprint `3a7e05889811c91e82ceed3909e59d84b47a3726991f62c344ce1d709447d8d8`. The commit alone does not identify this dirty candidate. Runtime and benchmark-tools commit:`f30827df9fe3c4d2ef6d7d31b53bb0125eea82ec`; benchmark tool fingerprint `2a7be23029253798bfcc197e2411edc3b9b4037ba1384ba6b24a75e5ed428086`; app runner fingerprint `fa6ae998fb8687431ce546b72291ffb29f573602eccd4f8555e718fc2a3ba1d4`. The JSON also retains package versions, exact runtime source/resolution fingerprints, per-case fixture/workload hashes and comparability keys. The separately reviewed development-workflow ledger tool has its own pin; do not substitute that pin for the measured benchmark-tool fingerprint.
+
+Madar owns the reusable measurement protocol, native sampler and shared adapters. Dakhl_Restaurant owns the operation scenarios and fixture composition. This result documentation changes neither implementation nor engine revision; engine work is N/A for this documentation lane.
+
+## Scope and limits
+
+The60cases comprise35review-workflow cases plus25earlier ready startup/shell/account/catalog/workspace/settings/parties cases. Review cases measure checkout/refund/void, expenses/corrections/undo, cash/transfer/register/date operations, purchase/payment/analysis, supplier ledger/additional debt, category mutation, portable export/import/recovery and seven separate report kinds. Fixtures use isolated synthetic accounts through real native storage adapters; no production account or policy mapping participates. Synthetic counteraccounts do not authorize live postings or supplier opening debt.
+
+Startup, shell navigation/shortcuts and account-surface cases include their explicitly recorded raster completion. Remaining controller/query/command/report series exclude UI/raster/native-input timing. Prepared immutable lookup, full catalog projection and durable writes are separate workloads; compare only matching scenario/fixture/comparability identities. Report generation ends at PDF bytes and does not measure opening/rasterizing pages, native Save/Share/Print dialogs or external application delivery. Larger tabular fixtures contain150rows; payment.max contains a bounded500-character note and makes no multipage claim. Ledger/analysis query fixtures contain200historical invoices. The JSON/CSV retain exact per-case differences.
+
+The three visible-to-raster series `orders.process`, `catalog.add_item` and `sales.add_item` remain **planned and unmeasured** in the operation registry. Existing nonvisual checkout/product-create/cart behavior does not substitute for those visible series. The60passed cases are all-ready coverage, not all conceivable UI performance coverage.
+
+Native `macos-libproc-taskinfo` samples direct-child process resident RAM and cumulative Mach CPU counters at20ms intervals; descendants are excluded. CPU normalizes one logical core to100%, so multithreaded process values may exceed100%. RAM is sampled peak, not allocation volume. Most command/query/report cases use one host start/end resource window across20samples, including inter-iteration fixture preparation, verification, reopen and teardown; elapsed samples exclude those stages. Startup uses spawn-to-ready windows. These broad CPU/RAM values are not isolated per-operation resource costs. Exact `resourceWindowScope`, boundary, sample count and duration remain in the JSON.
+
+All60receipts report cleanup complete and contain no diagnostics. The earlier one-iteration checkout pilot remains a separate smoke receipt; it is not pooled into the1,200matrix samples. The independent reviewer found no blocking aggregate evidence findings and verified statistics, comparability/source/runtime identity, fixtures and cleanup. The six Phase02 fixture cases in this matrix use their recorded small10-record profiles; medium/near20MiB capacity remains unverified here. Supplier-ledger rendering, the three visible series and native-dialog latency remain pending. No previous result proves a regression threshold or speed improvement without a matching baseline and explicit acceptance target.
+
+Root recorded a separate Android native scenario pass and owns final native/evidence review, remaining normal builds, tracker updates and final storage/memory delivery. This macOS matrix does not certify Android/iOS speed, mobile ICU parity, native visual qualification, remote CI, signing, merge or release.
+
+## Documentation-lane storage
+
+Before this batch: free89,362,168KiB; `.git`18,442,132KiB, `build`2,512,460KiB, `outputs`7,401,144KiB. The only new artifact is one31,057byte derived CSV plus this compact result record; existing matrix JSON/log remains canonical. No duplicated native build/log/JSON, disposable fixture or account backup belongs to this lane. Reclaimed0bytes. Final measurements and checks follow below.
+
+After this batch: free88,343,276KiB (decrease1,018,892KiB); `.git`18,442,132KiB unchanged, `build`3,332,932KiB (+820,472KiB), `outputs`7,509,056KiB (+107,912KiB). Root's Android retry overlaps the documentation batch; exact global attribution remains unknown. The owned CSV is31,057bytes; the lane created no build/export copies. No `.git/objects/tmp_objdir-*` exists. CSV field-by-field comparison against all60canonical results and owned relative-link checks pass. No deletion, native action or source/tool mutation occurred.

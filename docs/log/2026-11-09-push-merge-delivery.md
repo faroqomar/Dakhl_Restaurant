@@ -1,0 +1,3 @@
+# Authorized publication and merge
+
+Owner authorized pushing and merging all outstanding project work and cleaning temporary files on2026-11-09. Original checkout/ordinary branch retained. App and engine maintain separate source ownership; existing exact local verification is recorded in the Completion closeouts. Current PR-head CI must pass before merge. Generated binaries and unique recovery evidence remain local, with source/manifests/compact receipts committed. Physical/visual/financial activation/release gates remain separate from source merge. No production-account mutation or release is authorized by this delivery.

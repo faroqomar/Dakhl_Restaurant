@@ -1,0 +1,26 @@
+{
+  "operationId": "c1.product.photo_select_save",
+  "stageId": "photo-select-save-50",
+  "startedUtc": "2026-11-08T07:00:42.778728+00:00",
+  "endedUtc": "2026-11-08T07:01:07.723441+00:00",
+  "elapsedWallSeconds": 24.944581707939506,
+  "argv": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "tool/dev_dashboard/run_benchmarks.py",
+    "--engine-tools-root",
+    "/Users/eros/Dev/Eros_Projects/Madar_Engine",
+    "--case",
+    "c1.product.photo_select_save",
+    "--iterations",
+    "50",
+    "--output",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-03-photo-select-save-50-attempt-1.json"
+  ],
+  "exitCode": 0,
+  "stdoutBytes": 4599,
+  "stderrBytes": 0,
+  "stdoutSha256": "dbb6a4975db13870a92db992e40923a959c668d48ef979d1fa480b1323177342",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdoutSemanticallyEqualsCanonicalResult": true,
+  "duplicateStdoutRemoved": true
+}

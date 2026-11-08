@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-08T19:55:57.581267+00:00",
+  "oldPid": 80406,
+  "newPid": 32077,
+  "exact_bytes_retained": true,
+  "sha256": "786fd9d106464c943a299cd481aebd81525e31d14054b7ac59dd36e32a9336c5",
+  "ui_active_product": "product-2",
+  "ui_held_count": 1,
+  "ui_held_name": "طلب 1",
+  "limitations": [
+    "normal quit/relaunch, not force-kill",
+    "baseline exploratory artifact",
+    "physical phone unavailable"
+  ]
+}

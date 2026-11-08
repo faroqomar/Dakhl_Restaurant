@@ -1,0 +1,63 @@
+{
+  "recordedUtc": "2026-11-08T04:09:22.276062+00:00",
+  "status": "local_pass_independent_review_pending",
+  "ownership": {
+    "app": "Two acceptance sources and bounded synthetic evidence only",
+    "engineImplementationAPI": "N/A; existing d316 public contracts reused",
+    "design": "N/A"
+  },
+  "verification": {
+    "newTests": 5,
+    "failedFinalTests": 0,
+    "pilot": "Actual precommit child kill passed after harness fix and serialized test window",
+    "analysis": "No issues",
+    "format": "Zero changes",
+    "protectedProductionInputsUnchanged": 8,
+    "reusedEngineTestSupportFilesMatchConsumedCommit": 7,
+    "childCommand": "dart --packages=<existing app config> <owned child source> <owned temp directory> <kind> <checkpoint>",
+    "pubResolution": "No pub resolution; app lock/config/pin untouched",
+    "runtime": "Dart3.13.7 macos_arm64"
+  },
+  "oldEvidence": [
+    "outputs/completion-review/command-atomicity/repaired-1/independent-review.json",
+    "outputs/completion-review/command-atomicity/repaired-1/receipt.json",
+    "reused-engine-inputs.json"
+  ],
+  "coverage": "coverage-matrix.json",
+  "reviewManifest": "review-inputs.json",
+  "limits": [
+    "Capability readback outage is a seam simulation after real committed write, not a claimed real disk fault",
+    "Existing generic engine140 result supplied by parent and source-matched, not rerun here",
+    "No general power-loss/native-device/hosted-CI/runtime-schema/release evidence",
+    "Whole-source engine guard remains failed on separate candidate metadata/source"
+  ],
+  "storage": "storage-closeout.json",
+  "audit": [
+    "Pilot01 generic nullable matcher inference fixed",
+    "Pilot02 missing shared native-assets artifact; no clean, retry only after serialized-owner acknowledgement",
+    "Analysis01 two style infos fixed",
+    "Broad intake/process grep output required bounded follow-ups"
+  ],
+  "memory": {
+    "project": "daftar",
+    "syncExit": 0,
+    "latestCheckExit": 1,
+    "ownSourcePending": false,
+    "pending": [
+      "docs/phases/completion-remaining-correction-examples.md"
+    ],
+    "failed": {},
+    "status": "Own dated log ingested; separate concurrent source remains pending"
+  },
+  "timing": {
+    "status": "stopped",
+    "observedSeconds": 1008.1374692079844,
+    "agentCoordinationWaitSeconds": 102.39687104197219,
+    "activeEffortSeconds": null,
+    "priorIntakeGap": "unknown"
+  },
+  "finalManifestCheck": {
+    "files": 35,
+    "mismatchesBeforeStorageRefresh": []
+  }
+}

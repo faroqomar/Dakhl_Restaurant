@@ -1,0 +1,37 @@
+{
+  "recordedUtc": "2026-11-08T04:42:07.305393+00:00",
+  "initialObservedUtc": "2026-11-08T04:39:13.070582+00:00",
+  "task": "C1 iOS representative native pilot preparation",
+  "actor": "/root/resume_c1_native_pilot",
+  "ownership": {
+    "app": "C1 isolated native harness/evidence",
+    "engineImplementationAPI": "N/A; consume reviewed public storage/preferences/domain packages",
+    "design": "Existing C1 approval only"
+  },
+  "source": {
+    "appHead": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+    "engineHead": "783e29cf8ae5c829cbb09bdb5b7a547aa92bc8d6",
+    "declaredPin": "783e29cf8ae5c829cbb09bdb5b7a547aa92bc8d6",
+    "harnessSha256": "b5c5606a91be73266914282cc0ccfd38a3b8124186ff1f862c577d2de721c9f3",
+    "pinPubLockHashes": {
+      "engine-dependency.json": "b5dd40b177af81109234bd709aba3dc6a4059d0fc9733f4433346c8045af1b6e",
+      "pubspec.yaml": "07bba9c18ac09d1ea6f9e1d4ee9559ab5026d4babc3c6e31e74267b61b8afe91",
+      "pubspec.lock": "07b25a1dfb45a700e9bc844d4fcda00af753271fb8ae35a2d0d27e4960290f73",
+      ".dart_tool/package_config.json": "f5a804384a7c0c0446cc0dd19f76e791ea87861068e592f240e2aafd108dd4b0"
+    }
+  },
+  "baselineStorage": {
+    "freeKiB": 109751060,
+    "appGitKiB": 18430636,
+    "buildKiB": 592396,
+    "dartToolKiB": 204860,
+    "existingC1EvidenceKiB": 172,
+    "engineGitKiB": 44156,
+    "temporaryGitStores": 0
+  },
+  "scopeLimits": [
+    "No Flutter/pub/build/launch until root releases window and pin",
+    "One iOS pilot; no matrix or benchmark expansion",
+    "No real account, normal main, production schema12 or source/pin/Git change"
+  ]
+}

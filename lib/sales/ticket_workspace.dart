@@ -306,6 +306,14 @@ final class TicketWorkspaceController {
   Future<CapabilityResult<void>> saveActive(TicketDraft draft) => _change(
     (old) => TicketWorkspace(active: draft, held: old.held, form: old.form),
   );
+  Future<CapabilityResult<void>> saveFormDraft(Map<String, String> form) {
+    final submitted = Map<String, String>.unmodifiable(form);
+    return _change(
+      (old) =>
+          TicketWorkspace(active: old.active, held: old.held, form: submitted),
+    );
+  }
+
   Future<CapabilityResult<void>> hold({
     required String label,
     required String heldId,

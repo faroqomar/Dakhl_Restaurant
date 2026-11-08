@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-11-08T07:13:00+03:00",
+  "filesystem": "/dev/disk3s1",
+  "mount": "/System/Volumes/Data",
+  "preflightAvailableKiB": 110151156,
+  "closeoutAvailableKiB": 109808172,
+  "deltaKiB": -342984,
+  "status": "HEALTHY",
+  "note": "Ample free storage retained (> 100 GiB available). Temporary test directories cleaned up during tearDown."
+}

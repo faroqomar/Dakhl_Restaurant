@@ -1,0 +1,37 @@
+{
+  "recordedUtc": "2026-11-08T05:28:29.426269+00:00",
+  "task": "C1 true process restart and reference-photo file roundtrip",
+  "actor": "/root/resume_c1_native_pilot",
+  "fixtureId": "c879c0bd-63bb-4a9d-9ea5-8fcd512df775",
+  "ownership": {
+    "app": "New opt-in QA/restart fixture, entrypoint and evidence only",
+    "engineImplementationAPI": "N/A; reuse existing public CatalogViewModel/repository/storage/file adapters",
+    "design": "Existing approved C1 UI; QA controls are test instrumentation"
+  },
+  "source": {
+    "appHead": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+    "enginePin": "bb00ccdad8f6710ca1778260d42ed5584f26a86c",
+    "initialPilotManifestSha256": "c6cbd13c8ca78c110321077793d4d5350eb82df0e9b0200182375ba2bde9c089",
+    "initialPilotHarnessSha256": "59b50cf07c9fc7113cfd490c00f697a82dfa8be478939af60c6094e0ec6d79ec"
+  },
+  "storage": {
+    "freeKiB": 96979532,
+    "sizesKiB": {
+      ".": 27849208,
+      ".git": 18430636,
+      "build": 1131280,
+      ".dart_tool": 367356,
+      "../Madar_Engine/.git": 44528
+    },
+    "temporaryGitStores": {
+      ".git/objects": 0,
+      "../Madar_Engine/.git/objects": 0
+    }
+  },
+  "limits": [
+    "Source preparation only until root releases Flutter window",
+    "No production source/schema/pin/native-project/Git changes",
+    "No normal account directory or automatic reconstruction",
+    "Initial195-binding native pilot evidence remains immutable"
+  ]
+}

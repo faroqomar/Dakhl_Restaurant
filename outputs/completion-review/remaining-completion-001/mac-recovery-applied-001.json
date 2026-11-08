@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-08T19:54:57.754978+00:00",
+  "restored_exact_export": true,
+  "restored_sha256": "786fd9d106464c943a299cd481aebd81525e31d14054b7ac59dd36e32a9336c5",
+  "launch": {
+    "event": "acceptance_acknowledged",
+    "fixture": "remaining-20261108-v1",
+    "pid": 80406,
+    "root": "/Users/eros/Library/Containers/com.eros.dakhlrestaurant.phase00/Data/Library/Application Support/com.eros.dakhlrestaurant.phase00/dakhl-acceptance-remaining-20261108-v1",
+    "revision": 1,
+    "writeToken": "cbd74bc25c2857090b9dc51e9a5158012ce6286069ac5e80",
+    "fence": "Instance of 'StorageFence'",
+    "icuBundled": true
+  }
+}

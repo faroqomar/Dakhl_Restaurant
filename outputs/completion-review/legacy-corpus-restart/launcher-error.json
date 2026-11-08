@@ -1,0 +1,1 @@
+{"attempt":"launcher-01","exitCode":255,"command":"dart --packages=.dart_tool/package_config.json --native-assets=.dart_tool/native_assets.yaml test/accounts/legacy_corpus_restart_conformance_test.dart .../attempt-01","stderr":"Setting VM flags failed: Unrecognized flags: native_assets","fixtureCreated":false,"sourceCacheMutation":false}

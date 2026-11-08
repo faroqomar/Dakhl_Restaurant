@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/Users/eros/.t3/userdata/device/targets/t3-b91493306db60c230eefae24/agent-device",
+    "scroll",
+    "down",
+    "0.65",
+    "--settle"
+  ],
+  "startUtc": "2026-11-08T06:47:37.050758+00:00",
+  "endUtc": "2026-11-08T06:47:39.760173+00:00",
+  "elapsedSeconds": 2.709426834,
+  "exitCode": 0,
+  "log": "reach-product.log"
+}

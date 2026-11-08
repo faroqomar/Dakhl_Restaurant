@@ -1,0 +1,29 @@
+{
+  "startedUtc": "2026-11-08T04:47:18.876133+00:00",
+  "endedUtc": "2026-11-08T04:48:42.780681+00:00",
+  "elapsedSeconds": 83.90404941700399,
+  "argv": [
+    "/Users/eros/Dev/flutter/bin/flutter",
+    "test",
+    "--no-pub",
+    "-d",
+    "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
+    "--reporter",
+    "expanded",
+    "integration_test/c1_catalog_native_test.dart"
+  ],
+  "exitCode": 1,
+  "timedOut": false,
+  "buildMode": "Flutter integration-test debug default",
+  "platform": "ios",
+  "targetKind": "simulator",
+  "targetId": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
+  "appSourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+  "sourceDirty": true,
+  "runtimeRevision": "783e29cf8ae5c829cbb09bdb5b7a547aa92bc8d6",
+  "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9",
+  "fixtureId": "ce2a435fe8732f63872b33b911aeb284b0168144253e4973549c1d07a3d83ffb",
+  "sourceInputsUnchanged": true,
+  "stdoutLog": "outputs/completion-review/c1-native/device-ready-1/pilot-attempt-1.log",
+  "stdoutSha256": "054ff7ae848617ecf9ca33d7efabc34dba0ff955e2b8c61e447bfca41b66e7bb"
+}

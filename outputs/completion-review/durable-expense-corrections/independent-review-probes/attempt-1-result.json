@@ -1,0 +1,8 @@
+{
+  "status": "probe_compilation_error_not_behavioral_red",
+  "exitCode": 1,
+  "passed": 0,
+  "sourceSha256": "b05cb4e77c107746617d6165f1ce0eba0fb7700566c671ef4c70fde7eb6d4a08",
+  "error": "The getter 'code' is not defined for DurableCommandResult<RestaurantJournalExpenseCorrectionOutcome>; raw DurableCommandFailure did not promote generic result.",
+  "remedy": "Use exact DurableCommandFailure<RestaurantJournalExpenseCorrectionOutcome> type guard."
+}

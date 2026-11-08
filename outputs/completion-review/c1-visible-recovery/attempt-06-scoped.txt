@@ -1,0 +1,31 @@
+00:00 +0: loading /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart
+00:00 +0: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/product_photo_draft_controller_test.dart: eight reference choices retain frozen image bytes and labels
+00:00 +1: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/product_photo_draft_controller_test.dart: new product photo survives portable codec and repository reopen
+00:00 +2: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/product_photo_authority_test.dart: unsaved selections and removal preserve acknowledged photo baseline
+00:00 +3: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/product_photo_authority_test.dart: unsaved selections and removal preserve acknowledged photo baseline
+00:00 +4: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:00 +5: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:00 +6: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:00 +7: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:00 +8: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:00 +9: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:00 +10: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:00 +11: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:00 +12: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:02 +13: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:02 +14: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:02 +15: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:02 +16: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:02 +17: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:02 +18: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:02 +19: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:02 +20: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:03 +21: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:03 +22: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:04 +23: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:04 +24: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:04 +25: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through settings
+00:06 +26: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back no invented success through settings
+00:07 +27: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product through shell
+00:09 +28: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible precommit failure retains draft and retries once
+00:10 +29: All tests passed!

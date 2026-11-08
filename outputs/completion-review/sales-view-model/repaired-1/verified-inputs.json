@@ -1,0 +1,41 @@
+{
+  "recordedUtc": "2026-11-07T22:16:37.898356+00:00",
+  "files": [
+    {
+      "path": "lib/sales/sales_view_model.dart",
+      "sha256": "f27b059b4462e38f01cc00fe653a836a5360d07cc96914371753b3ae0fcf4dbe",
+      "bytes": 14727
+    },
+    {
+      "path": "test/sales/sales_view_model_test.dart",
+      "sha256": "8ba9f8f5a54d58a8181ab4fca922778959318760def636b4933a1fa7ccb12b00",
+      "bytes": 20919
+    },
+    {
+      "path": "lib/sales/ticket_workspace.dart",
+      "sha256": "767bd88b77cec9c8dddef50367ba759785e29259125c0b9a99328a04d79b8123",
+      "bytes": 12857
+    },
+    {
+      "path": "lib/catalog/catalog_read_model.dart",
+      "sha256": "1dd780146c76cdee653ab03ab1ae32928d4e0b4e1e3e75b837800348bc61c668",
+      "bytes": 4004
+    },
+    {
+      "path": "lib/inventory/stock_projection.dart",
+      "sha256": "4a6e3b6451d6a33f086c8c098cb72678066939ecc630fb2d87a4f3a44f5381ad",
+      "bytes": 4149
+    },
+    {
+      "path": "docs/phases/completion-sales-view-model-contract.md",
+      "sha256": "ba5d01b816ea0275be9200b2ad7f34580b9dc7e4d4571414bbba53f89852e0ae",
+      "bytes": 3752
+    },
+    {
+      "path": "engine-dependency.json",
+      "sha256": "b7e49af4417d3085edf0aa905201adc67d81f56546f4eb90aac607199345eea9",
+      "bytes": 758
+    }
+  ],
+  "scope": "Source-compatible fractional default-plus fix and retained regressions; focused independent recheck pending"
+}

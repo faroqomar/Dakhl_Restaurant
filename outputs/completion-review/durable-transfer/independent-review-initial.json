@@ -1,0 +1,29 @@
+{
+  "recordedUtc": "2026-11-08T03:23:13.424755+00:00",
+  "reviewer": "/root/review_durable_transfer_foundation",
+  "status": "revision_required",
+  "manifest": "review-inputs.json",
+  "verifiedBindingsBeforeAfter": 13,
+  "verification": {
+    "accountingTests": 228,
+    "analysis": "clean",
+    "engineImplementationBodiesMatched": 5
+  },
+  "findings": [
+    "Custom mapper profiles fail candidate validation because replay hardcodes default accounts",
+    "Jointly tampered metadata dates/sourceVersion and altered journal policy can replay",
+    "UnknownAckStore faults read rather than losing committed write acknowledgement",
+    "Four frozen-JS results match independent actual execution, but retained generator/source binding and test fixture consumption missing"
+  ],
+  "limits": [
+    "Create-only foundation; UI/edit-delete/performance/native/live cutover separate"
+  ],
+  "storage": {
+    "freeKiB": [
+      109293432,
+      110261956
+    ],
+    "temporaryGitStores": 0,
+    "probesRemoved": 3
+  }
+}

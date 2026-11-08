@@ -1,0 +1,31 @@
+{
+  "createdUtc": "2026-11-07T17:04:34.487646+00:00",
+  "status": "candidate-awaiting-independent-review",
+  "engineCommit": "d316fd6076375daa3f412889f73eaebfeeb5d4d4",
+  "files": {
+    "lib/accounting/restaurant_journal_sale_commands.dart": "f7a388d56a1c1087a29d348b4452981af4a25983ac7fb801a289ea51f9c2c5e8",
+    "test/accounting/restaurant_journal_sale_commands_test.dart": "a35852a8d6a323de6eaf17f55940e4512b83d45ed5c26666aae62b045a9e97c8",
+    "test/accounting/restaurant_journal_sale_conformance_test.dart": "be2dcd1437a62bf8888e26d12aa30adab09992dce51574317d6f495c06375bef",
+    "docs/phases/completion-durable-sales-contract.md": "744954e11ba76c720c9882534ed1026775e0d3d5fa7fcaadde29b4acbd5aa1b6",
+    "lib/accounts/portable_journal_codec.dart": "c24aa540615408ab001a18fa595a75bd799fd6e5b323cf56d8ec035de025e49a",
+    "lib/accounts/portable_journal_state.dart": "ae1a0181e21b5fcb1b110f47c02bc98ab78f37d81a8099ce24f19633d6fefcb0",
+    "lib/accounting/restaurant_journal_mapper.dart": "0916bc37d753de94dc5df36ddefd92250581abb35233e069b5ed2806b1eeb8da"
+  },
+  "workerReportedVerification": {
+    "unitTests": 12,
+    "realStoreTests": 11,
+    "analysis": "passed"
+  },
+  "rootIntakeConcerns": [
+    "expectedFence is optional; pre-read does not bind the coordinator to its observed fence when null.",
+    "Separate pre/post lineage checks leave a read/replay race; the codec passed to coordinator is not lineage-scoped.",
+    "Optional injected DurableCommandCoordinator may use a different store from the direct lineage precheck.",
+    "Pre-read/resolve/reread casts and exceptions omit valid cancelled variants; resolve outcome ignored and reads duplicated.",
+    "Outcome metadata is borrowed mutable state; equality ignores metadata.",
+    "Command snapshots and canonical identities use caller input separately; return Iterable enumerated more than once; canonicalization conflates BigInt and String.",
+    "Canonical payload identity advertised bounded, but constructors do not visibly enforce a byte/depth/scalar boundary.",
+    "Sale gross += differs from SaleProposal binary64 sum profile; receipt number override can disagree with persisted sale number.",
+    "Existing original sale posting eligibility is association-based; assess actual source/journal/receipt/date reconciliation before return or void."
+  ],
+  "runtimeAdopted": false
+}

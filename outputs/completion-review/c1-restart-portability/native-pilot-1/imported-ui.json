@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/Users/eros/.t3/userdata/device/targets/t3-b91493306db60c230eefae24/agent-device",
+    "snapshot",
+    "-i"
+  ],
+  "startUtc": "2026-11-08T06:51:15.773011+00:00",
+  "endUtc": "2026-11-08T06:51:16.269286+00:00",
+  "elapsedSeconds": 0.49629320899999996,
+  "exitCode": 0,
+  "log": "imported-ui.log"
+}

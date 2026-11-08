@@ -1,0 +1,18 @@
+{
+  "recordedUtc": "2026-11-08T05:46:38.685572+00:00",
+  "previousReview": "storage-closeout.json",
+  "baselineFreeKiB": 97282336,
+  "finalFreeKiB": 101084272,
+  "gitKiB": {
+    ".git": 18430636,
+    "../Madar_Engine/.git": 44528
+  },
+  "temporaryGitStores": {
+    ".git": 0,
+    "../Madar_Engine/.git": 0
+  },
+  "taskEvidenceKiB": 56,
+  "cleanupRemovedBytes": 0,
+  "retention": "Normal acceptance source plus immutable first-failure/final logs, manifests and memory/storage receipts retained; no owned temp stores or scratch source created",
+  "unexplainedGrowth": "Concurrent shared-volume/Git changes are not attributed to this lane without producer evidence"
+}

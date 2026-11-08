@@ -22,10 +22,13 @@ dependencies:
     path: ../Madar_Engine/packages/data
   madar_flutter_adapters:
     path: ../Madar_Engine/packages/flutter_adapters
+  madar_icu_collation:
+    path: ../Madar_Engine/packages/icu_collation
   path_provider: 2.1.6
   path: 1.9.1
   pdf: 3.13.1
 
+  crypto: 3.0.8 # Exact snapshot identity and import fixture hashing.
 dev_dependencies:
   flutter_test:
     sdk: flutter

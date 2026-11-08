@@ -1,0 +1,17 @@
+{
+  "recordedUtc": "2026-11-07T22:16:37.898356+00:00",
+  "status": "fractional_plus_locally_repaired_independent_recheck_pending",
+  "oldReview": "outputs/completion-review/sales-view-model/independent-review-initial.json",
+  "manifest": "outputs/completion-review/sales-view-model/repaired-1/verified-inputs.json",
+  "changedOldManifestPaths": [
+    "lib/sales/sales_view_model.dart",
+    "test/sales/sales_view_model_test.dart"
+  ],
+  "verification": {
+    "red": "Three retained parity cases fail after fixture setup corrected; original17pass",
+    "green": "48sales tests pass including20ViewModel cases",
+    "analysis": "two files clean"
+  },
+  "fix": "Default plus uses source min(1, max(0, dated remaining)), no-op when exhausted, retains first-add price; explicit requested quantity remains validated/rejected",
+  "limits": "Nonvisual only; UI/checkout/financial/runtime schema integration not implemented"
+}

@@ -1,3 +1,7 @@
+Current status, 2026-11-08: this dated gap register is superseded for implementation claims by the [retained-plan matrix](completion-review-stage-matrix.md), [opening amendment receipt](../log/2026-11-08-supplier-opening-amendment-build.md) and [execution journal](../log/phase-completion-execution.md). Do not count historical placeholder, design-hold or disk blockers below as current source gaps. Native/visual/delivery evidence remains individually qualified.
+
+Current detailed inventory: [213 unfinished obligations](completion-unfinished-checklist.md), audited2026-11-07 against retained phases00–11 and current source. Use that checklist for granular closure. Earlier low-disk and revision statements below are dated historical snapshots; current storage review is in the checklist receipt. Catalog controller now exists with8passing focused tests; operational integration remains unfinished.
+
 # Full-app completion register
 
 Date:2026-11-07. Status: integration blocked; candidate foundations verified only as listed below. No full-app pass.
@@ -29,3 +33,11 @@ Engine formatter candidate e73b5eebf84f742375eba298a63df8c7bcf70c97 passed 11,98
 The bounded collation audit found no existing proven cross-platform dependency. A separate Madar native ICU adapter needs exact Electron ICU code/data provenance, a macOS parity pilot, then iOS/Android evidence. Matching a version label alone is insufficient. No lexical fallback or speculative native dependency was added.
 
 The same integration gates have persisted across successive work turns: operational UI approval, FIN01/FIN02 decisions, and native build capacity. Independent candidate work above proceeded despite them. The remaining full-app integration and acceptance cannot be reported complete. Renew work when the required approvals and build capacity are available; retain source compatibility as an explicit unresolved engineering requirement.
+
+## Verification update — 2026-11-07
+
+After storage recovery, targeted candidate Flutter tests passed36/36 and full `flutter test --no-pub` passed676/676 at app sourcecc91fae with local enginee73b5ee. Earlier ENOSPC test blockage is resolved for this run. Logs: /tmp/completion-flutter-regressions.log and /tmp/completion-full-flutter-tests.log. These are local tests, not hosted CI or installed-device acceptance. The explicit report collation-gap test documents missing parity rather than proving parity. Operational UI and financial decisions remain outstanding.
+
+## Integration disposition after live QA
+
+Current source and computer-use evidence agree: app.dart routes non-settings destinations to Phase01RouteSurface and checkout to a demo toast. Fresh isolated macOS debug build succeeded; save feedback/navigation observed, daily/cashbox remain placeholders. Storage capacity is now110GiB free, so ENOSPC is no longer a current build blocker. Remaining dependent integration is blocked by the unchanged operational-design approval and FIN01/FIN02 decision records. These gates persisted through the resumed test/build/UI turns while independent verification progressed. Full app, financial posting, collation parity, recovery and release remain incomplete. No merge/deployment authorization inferred.

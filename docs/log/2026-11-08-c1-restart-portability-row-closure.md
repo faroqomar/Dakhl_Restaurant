@@ -1,0 +1,11 @@
+# C1 restart and photo-portability row closure
+
+Recorded: 2026-11-08T07:06:14.695638+00:00. Root accepts the independent actual-runtime review for C1-03/04/05/06/11. [Review receipt](../../outputs/completion-review/c1-restart-portability/native-pilot-1/independent-review-and-row-audit.json), [native result](../../outputs/completion-review/c1-restart-portability/native-pilot-1/result.json).
+
+The iPhone Duo/iOS27.1 Simulator reopened under distinct Dart PIDs1835,4476 and16000 with new boot nonces and no reseed. Origin fence, revision9, write token, three products and two movements persisted. Exact checkpoint payload/export is2459bytes, SHA a4f1f7cc98b258b103e05e6e307229df697759d944299e38d7f1bc30794227ae. Default native JSON Save/select/confirm imported a separate marked target; exact exported bytes and previous backup survived another process restart. Target-fence equality was not separately recorded.
+
+Retained form validation/stale/failed/unknown-write/atomic tests combine with this restart proof. Units, minimum stock, tracking, bundled photo selection/removal and post-history locks retain exact source behavior. One untracked product has no movement; tracked quantities remain5and2. This closes16of17C1 rows; C1-16 actual saved C3 navigation remains open. Other UI approvals remain separate.
+
+Independent review verified283bindings/103frozen inputs, prior195native/15layout/21mounted bindings and two87-file canonical app trees (237092142and172939248bytes). The reviewer ran no new tests/builds/native operations. One iOS simulator/debug pilot does not establish a platform matrix, physical-device, benchmark, C0/C7 or release result. Engine runtime/API changes: N/A; consumed reviewed bb00/applicationdev5.
+
+Owned test fixtures and host recipe were removed; cleaned intent tombstone retained. The sole2KB synthetic JSON remains at On My iPhone/c1-restart-c879c0bd-63bb-4a9d-9ea5-8fcd512df775.json because supported deletion was unavailable. Native target/session are stopped. Review free space97209868→97174724KiB; Git/build/cache unchanged and temporary Git stores0. Canonical binaries, failed attempts, sources and receipts remain required evidence. No uncertain cleanup, Git/remote action or live account change occurred.

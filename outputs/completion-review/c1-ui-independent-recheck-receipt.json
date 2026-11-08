@@ -1,0 +1,33 @@
+{
+  "createdUtc": "2026-11-07T16:41:21.600696+00:00",
+  "status": "C1-repair-independent-review-passed; native/benchmark/dependencies-pending",
+  "review": "d2adc712-38c1-4a2b-9209-948bde4f7cf2",
+  "sourceManifest": "outputs/completion-review/c1-ui-recheck-inputs.json",
+  "counts": {
+    "rootFullFlutter": 816,
+    "rootCatalogAllApp": 94,
+    "rootReference": 140,
+    "reviewCatalog": 58,
+    "reviewCatalogPlusAppTest": 75
+  },
+  "reviewLimits": [
+    "Reviewer arithmetic mixed app suite scopes; root counts remain separate.",
+    "Live screen-reader verification is owner-excluded, not a pending live gate.",
+    "Initial visual captures remain bound to their recorded older hashes."
+  ],
+  "deviceDiscovery": {
+    "tool": "device_list",
+    "result": "no return before root stopped awaiting",
+    "targetSelected": false,
+    "appLaunched": false,
+    "productionDataAccess": false
+  },
+  "storage": {
+    "availableKiB": 115612716,
+    "appGitKiB": 18418820,
+    "engineGitKiB": 36612,
+    "buildKiB": 595576,
+    "dartToolKiB": 204852,
+    "reviewOutputsKiB": 1856
+  }
+}

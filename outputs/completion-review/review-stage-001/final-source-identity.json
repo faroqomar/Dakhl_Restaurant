@@ -1,0 +1,62 @@
+{
+  "recordedAt": "2026-11-08T18:41:14.143314+00:00",
+  "appHead": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+  "sourceDirty": true,
+  "engineCommit": "f30827df9fe3c4d2ef6d7d31b53bb0125eea82ec",
+  "workflowToolCommit": "f7f68988561d25cc93eb28c0ec989847526b2df9",
+  "finalInputFingerprint": "1fc96b07c5f24e75de520bcada106033644520d3142b2dafc2b9da848f9dcf37",
+  "baseManifest": "android-native-context-001/plan.json",
+  "deltasFromNativeContexts": {
+    "native-campaign-006": [
+      {
+        "path": "lib/platform/review_performance_scenarios.dart",
+        "before": "302d750413439d2c0023f150ba2537b5be26524ab52b49e71123480931136616",
+        "after": "2549e1065684073ea6bbee109e231330227ff192972d25d15d4977d2178bccef"
+      },
+      {
+        "path": "lib/reports/saved_report_pdf_viewer.dart",
+        "before": "fb781fe54c3c836a2465519290da15f6ab1062387f190b585076b6934aa9e265",
+        "after": "2118dfb857baaca20c5c6f7fe08cff6d8840c516ea50e7cfe3239025d7062f7a"
+      },
+      {
+        "path": "test/platform/review_performance_test.dart",
+        "before": "bcf86c6f5b4b3e35ca11de17e63a2ffcc86b444666871c936b55d13259be5bd8",
+        "after": "1a25f794444dd8b29b2480a9444e5816dfe51ff315607ce8fb49bff2f1dff2ce"
+      },
+      {
+        "path": "tool/dev_dashboard/operations.json",
+        "before": "e2a01322d9e85f0c07695507124f402b68d2d61928443cd12177a3ffc94704ac",
+        "after": "344c105673c8694d9b236848241921bb61bb7db2402d6a9fd67469fcf32ef1c9"
+      },
+      {
+        "path": "tool/dev_dashboard/tests/test_app_runner.py",
+        "before": "cf5476b05a8400bb3c9efc33757af9eeef25f2af0021dfddb52b3acd2b0160c5",
+        "after": "672c9e7549fcafa523a40cfd907351dcd0d3c93b94a3eda93948ea4524ac0bc2"
+      },
+      {
+        "path": "tool/dev_dashboard/tests/test_review_operations.py",
+        "before": "4348d8ebe85f4afac2c664f73a5d7c3b14d3cd6288338e50b0ef30bf53eb8a7f",
+        "after": "365c25170393dc26fb30851441d8360060c98ac744aa524acc651b950ba70c73"
+      }
+    ],
+    "android-native-context-001": [
+      {
+        "path": "lib/reports/saved_report_pdf_viewer.dart",
+        "before": "fb781fe54c3c836a2465519290da15f6ab1062387f190b585076b6934aa9e265",
+        "after": "2118dfb857baaca20c5c6f7fe08cff6d8840c516ea50e7cfe3239025d7062f7a"
+      },
+      {
+        "path": "tool/dev_dashboard/tests/test_app_runner.py",
+        "before": "cf5476b05a8400bb3c9efc33757af9eeef25f2af0021dfddb52b3acd2b0160c5",
+        "after": "672c9e7549fcafa523a40cfd907351dcd0d3c93b94a3eda93948ea4524ac0bc2"
+      },
+      {
+        "path": "tool/dev_dashboard/tests/test_review_operations.py",
+        "before": "4348d8ebe85f4afac2c664f73a5d7c3b14d3cd6288338e50b0ef30bf53eb8a7f",
+        "after": "365c25170393dc26fb30851441d8360060c98ac744aa524acc651b950ba70c73"
+      }
+    ]
+  },
+  "postMeasurementChange": "Only braces around the existing unmounted-context return in PDF viewer plus two Python registry-test expectations. Benchmark producer/scenarios/registry remain unchanged from measured60-case source. No semantic timing/native workflow change.",
+  "normalBuildReceipt": "normal-builds-final.json"
+}

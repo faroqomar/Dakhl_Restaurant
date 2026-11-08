@@ -1,0 +1,7 @@
+{
+  "engine": "Madar_Engine",
+  "git_commit": "f7f68988561d25cc93eb28c0ec989847526b2df9",
+  "workflow_sha256": "3ccabda58f24cac7fb0f3c915870af62d77785fc4e95459fd5938e2a3d26b808",
+  "api_version": 1,
+  "scope": "Development campaign evidence and task timing only; runtime pin unchanged"
+}

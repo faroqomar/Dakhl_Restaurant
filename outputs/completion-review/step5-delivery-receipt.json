@@ -1,0 +1,28 @@
+{
+  "observedUtc": "2026-11-06T23:17:09.658139+00:00",
+  "head": "31a76d425677593ca972352fae8315294b85289b",
+  "draft": true,
+  "checks": [
+    {
+      "name": "Format, analyze, unit and widget tests",
+      "status": "IN_PROGRESS",
+      "conclusion": ""
+    },
+    {
+      "name": "Frozen screenshot and source integrity",
+      "status": "COMPLETED",
+      "conclusion": "SUCCESS"
+    },
+    {
+      "name": "Legacy reference regression tests",
+      "status": "COMPLETED",
+      "conclusion": "SUCCESS"
+    }
+  ],
+  "memoryPending": [
+    "PHASES.md",
+    "docs/phases/completion-draft-delivery.md",
+    "docs/log/2026-11-07-completion-step5-restarted-delivery.md"
+  ],
+  "memoryFailed": {}
+}

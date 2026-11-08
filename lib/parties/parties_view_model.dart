@@ -15,6 +15,8 @@ final class SupplierRecord {
       categoryId = row['categoryId']! as String,
       openingBalance = row['openingBalance']! as int,
       archived = row['archived'] == true;
+  factory SupplierRecord.fromMap(Map<String, Object?> row) =>
+      SupplierRecord._(row);
   final String id, name, phone, note, categoryId;
   final int openingBalance;
   final bool archived;
@@ -29,6 +31,8 @@ final class MaterialRecord {
       priceCarton = row['priceCarton']! as int,
       pricePiece = row['pricePiece']! as int,
       archived = row['archived']! as bool;
+  factory MaterialRecord.fromMap(Map<String, Object?> row) =>
+      MaterialRecord._(row);
   final String id, name, unit;
   final int priceCarton, pricePiece;
   final bool archived;

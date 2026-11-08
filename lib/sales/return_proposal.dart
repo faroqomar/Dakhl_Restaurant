@@ -16,6 +16,16 @@ final class ReturnLineRequest {
   final bool restock;
 }
 
+/// Pure cumulative refund quote shared by preview and durable proposal building.
+final class ReturnQuote {
+  ReturnQuote(this.amount, Iterable<Map<String, Object?>> lines)
+    : lines = List.unmodifiable(
+        lines.map((line) => Map<String, Object?>.unmodifiable(line)),
+      );
+  final BigInt amount;
+  final List<Map<String, Object?>> lines;
+}
+
 /// Immutable synthetic candidate only: does not persist, acknowledge cash paid,
 /// map journals, reserve inventory or authorize a durable return operation.
 final class ReturnProposal {
@@ -40,32 +50,20 @@ final class ReturnProposal {
   static void _date(String date) =>
       DateOnly.parse(date, minimumYear: 1000, maximumYear: 9999);
 
-  static ReturnProposal build(
+  static ReturnQuote quote(
     AccountDocument base, {
     required String saleId,
-    required String returnId,
-    required String date,
-    required String reason,
-    required String createdAt,
-    required String today,
     required Iterable<ReturnLineRequest> lines,
   }) {
-    _date(date);
-    _date(today);
-    if (date.compareTo(today) > 0) {
-      throw const FormatException('Future return date.');
-    }
     final raw = base.toJson();
-    final matches = (raw['sales']! as List).cast<Map<String, Object?>>().where(
-      (s) => s['id'] == saleId,
-    );
-    if (matches.isEmpty || matches.first['status'] != 'completed') {
+    final matches = (raw['sales']! as List)
+        .cast<Map<String, Object?>>()
+        .where((sale) => sale['id'] == saleId)
+        .toList(growable: false);
+    if (matches.length != 1 || matches.single['status'] != 'completed') {
       throw const FormatException('Sale unavailable for return.');
     }
-    final sale = matches.first;
-    if (date.compareTo(sale['date']! as String) < 0) {
-      throw const FormatException('Return precedes sale.');
-    }
+    final sale = matches.single;
     final requested = lines.toList(growable: false);
     final sold = (sale['lines']! as List).cast<Map<String, Object?>>();
     if (requested.isEmpty || requested.length > sold.length) {
@@ -126,6 +124,38 @@ final class ReturnProposal {
       result.map((l) => BigInt.from(l['amount']! as int)),
       policy: _policy,
     );
+    return ReturnQuote(amount, result);
+  }
+
+  static ReturnProposal build(
+    AccountDocument base, {
+    required String saleId,
+    required String returnId,
+    required String date,
+    required String reason,
+    required String createdAt,
+    required String today,
+    required Iterable<ReturnLineRequest> lines,
+  }) {
+    _date(date);
+    _date(today);
+    if (date.compareTo(today) > 0) {
+      throw const FormatException('Future return date.');
+    }
+    final raw = base.toJson();
+    final matches = (raw['sales']! as List).cast<Map<String, Object?>>().where(
+      (s) => s['id'] == saleId,
+    );
+    if (matches.isEmpty || matches.first['status'] != 'completed') {
+      throw const FormatException('Sale unavailable for return.');
+    }
+    final sale = matches.first;
+    if (date.compareTo(sale['date']! as String) < 0) {
+      throw const FormatException('Return precedes sale.');
+    }
+    final calculated = quote(base, saleId: saleId, lines: lines);
+    final result = calculated.lines;
+    final amount = calculated.amount;
     final next = jsonDecode(jsonEncode(raw)) as Map<String, dynamic>;
     (next['saleReturns'] as List).add({
       'id': returnId,

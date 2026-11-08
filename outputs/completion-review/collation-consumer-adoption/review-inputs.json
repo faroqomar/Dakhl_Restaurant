@@ -1,0 +1,78 @@
+{
+  "recordedUtc": "2026-11-08T04:43:17.376375+00:00",
+  "scope": "Deliberate app source adoption only; exact F10 row assessment requested",
+  "consumedEngineCommit": "783e29cf8ae5c829cbb09bdb5b7a547aa92bc8d6",
+  "implementationChanges": "N/A; app pin and one application lock version only; enforced offline resolution",
+  "files": [
+    {
+      "path": "engine-dependency.json",
+      "bytes": 801,
+      "sha256": "b5dd40b177af81109234bd709aba3dc6a4059d0fc9733f4433346c8045af1b6e"
+    },
+    {
+      "path": "pubspec.lock",
+      "bytes": 25103,
+      "sha256": "63f2edcb3a3f0e521db5f3a71b019410b0a8e908c60e7ccf768678211acd4382"
+    },
+    {
+      "path": "pubspec.yaml",
+      "bytes": 1158,
+      "sha256": "07bba9c18ac09d1ea6f9e1d4ee9559ab5026d4babc3c6e31e74267b61b8afe91"
+    },
+    {
+      "path": ".dart_tool/package_config.json",
+      "bytes": 21040,
+      "sha256": "f5a804384a7c0c0446cc0dd19f76e791ea87861068e592f240e2aafd108dd4b0"
+    },
+    {
+      "path": "scripts/check-engine.py",
+      "bytes": 8906,
+      "sha256": "01c54152e19952e4a8508177e881e11c468f21928e7f3718cbe7ea2efdb7511a"
+    },
+    {
+      "path": "test/platform/engine_adapter_wiring_test.dart",
+      "bytes": 1855,
+      "sha256": "6195f19ffa21a130180cce4a4b2a6745675224a7453ad365f2f9e04fbf3bf593"
+    },
+    {
+      "path": "outputs/completion-review/collation-consumer-adoption/baseline.json",
+      "bytes": 766,
+      "sha256": "59443e70f1dc0b032213d32eeb449af6ac694887cc64c6280ae078bf00721e9a"
+    },
+    {
+      "path": "outputs/completion-review/collation-consumer-adoption/metadata-delta.json",
+      "bytes": 2253,
+      "sha256": "0c30782388f1e02c6ee65a79447cd52d8bcf62256f0c58d1703d04e6ef07c0b7"
+    },
+    {
+      "path": "outputs/completion-review/collation-consumer-adoption/verification.json",
+      "bytes": 563,
+      "sha256": "726efa1fd917b776c82b917e8853dc5cbec6771bbe23e756b6affb0a230de5da"
+    },
+    {
+      "path": "outputs/completion-review/collation-consumer-adoption/engine-pin-check.log",
+      "bytes": 155,
+      "sha256": "4a87b1ad59f1ae21170e89958a8154efa532bff23f44a5eef447a104b5108ff4"
+    },
+    {
+      "path": "outputs/completion-review/collation-consumer-adoption/wiring-tests.log",
+      "bytes": 298,
+      "sha256": "051acf6298d2f81a15ea4ca94eb28fcf3114becbeac06c3a8c549099c9472fd7"
+    },
+    {
+      "path": "../Madar_Engine/outputs/completion-review/collation-source-checkpoint/commit-receipt.json",
+      "bytes": 805,
+      "sha256": "aa5d3b99739e509a0e1c1cece9eae750b942810d942a5972142fa018721aace1"
+    },
+    {
+      "path": "../Madar_Engine/outputs/completion-review/collation-source-checkpoint/independent-review-planned-3.json",
+      "bytes": 970,
+      "sha256": "cec590c18320f28d18e95edc00ddb0deb95899a719f60f81bb87c78936f1f148"
+    },
+    {
+      "path": "docs/phases/completion-unfinished-implementation-plan.md",
+      "bytes": 83885,
+      "sha256": "1ea1cb66348685652ec837f891cf859dac3fe1a8720e6adade1e26649dbca3a7"
+    }
+  ]
+}

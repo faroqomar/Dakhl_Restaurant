@@ -1,4 +1,10 @@
-**Current delivery snapshot (2026-10-31).** [Engine PR #6](https://github.com/faroqomar/Madar_Engine/pull/6) is merged as `b0db782aa1763e5bbb20bd735f12b9ba5dc0027c`; the consumer now pins reviewed engine `899678fa0b85807850e626db69b3291b8a7b7b64`. [App PR #9](https://github.com/faroqomar/Dakhl_Restaurant/pull/9) remains under final verification. The owner authorized in-scope fixes and verified paired merge; final consumer checks, native evidence and completion recording remain required. Earlier hosted results do not certify the new candidate. Optional Cubic review at the newer source was unavailable because billing was inactive; no latest-Cubic pass or billing change is claimed.
+Current local validation: [2026-11-09 successor closeout](log/2026-11-08-remaining-completion-closeout.md) records1,432full-suite checks, final affected rechecks, three-target native execution,65measured operations, normal builds and remaining acceptance gates.
+
+## Completion phase — 2026-11-05
+
+[One-phase scope, dependencies, references and readiness](phases/completion-scope-readiness.md). Original phase IDs remain work-package references. The owner authorized build, review and verification; see the current [tracker](../PHASES.md), [retained-plan matrix](phases/completion-review-stage-matrix.md) and [opening implementation](log/2026-11-08-supplier-opening-amendment-build.md). Native acceptance and delivery remain distinct.
+
+**Historical delivery snapshot (2026-10-31).** [Engine PR #6](https://github.com/faroqomar/Madar_Engine/pull/6) is merged as `b0db782aa1763e5bbb20bd735f12b9ba5dc0027c`; the consumer now pins reviewed engine `899678fa0b85807850e626db69b3291b8a7b7b64`. [App PR #9](https://github.com/faroqomar/Dakhl_Restaurant/pull/9) remains under final verification. The owner authorized in-scope fixes and verified paired merge; final consumer checks, native evidence and completion recording remain required. Earlier hosted results do not certify the new candidate. Optional Cubic review at the newer source was unavailable because billing was inactive; no latest-Cubic pass or billing change is claimed.
 
 The 18-case / 360-sample Mac baseline remains historical at app 5a11 / runtime a6 / tool 63. The 5a11 iOS 27.0 simulator's 9/9 outcomes and 5095 Android Open/Save passes are also dated evidence, not verification of later app library/engine changes. The import attempt timed out; final-candidate native checks remain separate. The incident assessment accepts known synthetic-fixture loss as a non-blocking bounded-preview residual; retention/restoration is **not** verified. No app merge, Phase 02 DONE, release, deployment or next phase is claimed here. [Tracker](../PHASES.md) and [publication evidence index](phases/02-publication-evidence-index.md) own subsequent evidence.
 
@@ -21,8 +27,11 @@ Status: approved baseline documentation checked against source. Original date: 2
 | Project purpose, implemented work and plans | [Project scope](reference/project-scope.md) |
 | Flutter/Dart rebuild plan and phase screenshots | [12-phase MVP plan](planning/flutter-rebuild/README.md) · [Screenshot gallery](planning/flutter-rebuild/gallery.html) · [Consolidation map](planning/flutter-rebuild/phase-map.md) |
 | Sales, inventory and shortcuts | [Usage guide](how-to/sales-inventory.md) |
+| Sales ticket/catalog ViewModel (mounted portable UI; live activation gated) | [API and lifecycle](reference/sales-view-model.md) |
 | Run and use Dakhl_Restaurant | [Main guide](../README.md) |
 | Accounting meanings and relationships | [Accounting rules](reference/accounting-rules.md) |
+| Durable sale/return/void API (isolated candidate; runtime activation pending) | [Command setup, examples, errors and limits](reference/durable-sales-commands.md) |
+| Durable spending/purchase API (reviewed portable candidate; live activation gated) | [Command setup, examples, errors and limits](reference/durable-spending-commands.md) |
 | Files, architecture, persistence, reports and tests | [Application reference](reference/application.md) |
 | Follow work from idea to outcome | [Documentation and tracking](how-to/documentation.md) |
 | Hindsight use, synchronization and recovery | [Memory guide](how-to/memory.md) |
@@ -44,7 +53,7 @@ The existing Dakhl_Restaurant application is local and built with Electron; its 
 
 ### Planned rebuild — 2026-10-27
 
-The owner selected Flutter and Dart for macOS, Android and iPhone, locally without synchronization, with backups/import, PDFs and normal printing. The [plan](planning/flutter-rebuild/README.md) and [decision 0011](decisions/0011-flutter-rebuild-baseline.md) establish scope; the phase00 technical baseline has started. The reference application remains Electron and product screens are not implemented. Current design is the reference until the owner approves a phase-specific change.
+The owner selected Flutter and Dart for macOS, Android and iPhone, locally without synchronization, with backups/import, PDFs and normal printing. The [plan](planning/flutter-rebuild/README.md) and [decision 0011](decisions/0011-flutter-rebuild-baseline.md) establish scope; the retained phase plans define its scope. The Flutter product screens now have mounted source implementations and portable operational composition; the Electron application remains the frozen reference. Current design is the reference until the owner approves a phase-specific change.
 
 Current owner direction defines the request. Current documentation/source define decisions and behavior. A decision record explains why, a work log establishes what happened, and Hindsight helps find both. Memory replaces neither the files nor actual implementation evidence.
 

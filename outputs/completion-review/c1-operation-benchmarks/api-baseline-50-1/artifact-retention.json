@@ -1,0 +1,14 @@
+{
+  "recordedUtc": "2026-11-08T07:06:11.616264+00:00",
+  "duplicateCliStdoutBytesRemoved": 40460,
+  "canonicalCaseResults": 9,
+  "acceptedLatencySamplesRetained": 450,
+  "canonicalResultRetention": "Nine chronological raw sample arrays with source/runtime/fixture/resource aggregates; diagnostics and workflow/source/execution receipts retained",
+  "nativeArtifacts": "Reused canonical existing profile bundle by hash; zero new builds, copies or archives",
+  "disposableCleanup": "Marked preflight fixture and per-iteration stores removed; no leftovers in known roots",
+  "retainedExceptions": [
+    "Original interrupted timer and refused absolute-path record remain audit evidence",
+    "Historical preparation and n=1 manifests/results remain immutable",
+    "OS periodic resource traces were not produced by reviewed host; no synthetic trace reconstructed"
+  ]
+}

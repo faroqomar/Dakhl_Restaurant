@@ -1,0 +1,26 @@
+{
+  "operationId": "c1.product.edit",
+  "stageId": "product-edit-50",
+  "startedUtc": "2026-11-08T07:00:17.420825+00:00",
+  "endedUtc": "2026-11-08T07:00:42.542850+00:00",
+  "elapsedWallSeconds": 25.12174654204864,
+  "argv": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "tool/dev_dashboard/run_benchmarks.py",
+    "--engine-tools-root",
+    "/Users/eros/Dev/Eros_Projects/Madar_Engine",
+    "--case",
+    "c1.product.edit",
+    "--iterations",
+    "50",
+    "--output",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-02-product-edit-50-attempt-1.json"
+  ],
+  "exitCode": 0,
+  "stdoutBytes": 4516,
+  "stderrBytes": 0,
+  "stdoutSha256": "0dbb0d75eb228e77a76b0501c2b97660b054a1b30680e33a74e67a8c6e4a16a5",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdoutSemanticallyEqualsCanonicalResult": true,
+  "duplicateStdoutRemoved": true
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "inputs": {
+    "engine-dependency.json": "b34ff44b2e2d0df17d36e4324e42d6bf6680006eb221ae0d59c3e2098ed4cc63",
+    "pubspec.lock": "7986e1336f5b2dfc29d9bdd0ae958920f852a86224c141857a42d3f29f5d72b0",
+    "lib/app/app.dart": "36af0f5a14290202d795679a5ea2bc747cc2f572b9feb7ede9829023ba4ef928",
+    "scripts/phase_preflight.py": "733b063024a9c064f9d4e4c27f5ebeb0ee6530be05ec8532b71d10bf6c61c14c",
+    "scripts/phase_workflow.py": "fa42b1b2cd926aa3fce7c1fe8f6d374fa3e5194a7a7ef139c711e2b9e37df2ba"
+  },
+  "fixture": {
+    "root": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-review-preflight-_xr_rzu5",
+    "path": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-review-preflight-_xr_rzu5/synthetic-fixture-source-v4.txt",
+    "sha256": "26c6f1f7d756bc15701b56f21381943abcefbfa529881f468dab041ac9c2a14d"
+  }
+}

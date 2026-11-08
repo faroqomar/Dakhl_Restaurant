@@ -1,0 +1,35 @@
+{
+  "recordedUtc": "2026-11-08T07:32:47.240197+00:00",
+  "reviewer": "/root/review_c1_native_layout_and_harness",
+  "verdict": "PASS exact F03/F04 policy/contract closure",
+  "preApprovalPacketSha256": "31cc52e40f65cc51a98897296a3089146028f375cd1c03361d1be40792bfc663",
+  "proposalBodyPreserved": true,
+  "priorBindings": 26,
+  "knownDeltas": [
+    "Owner approval overlay",
+    "ADR supplement",
+    "Later consumer pin"
+  ],
+  "acceptedSections": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+  ],
+  "blocked": "E missing-original-posting financial corrections until separately verified exception",
+  "runtimeContractsUnchanged": true,
+  "testOnlySuccessor": "ac8b4edc2c915ed22c0991685c33967b3360e7fa",
+  "limits": [
+    "No correction/runtime/import/undo implementation claimed",
+    "Live opening date/values, schema12activation, UI/merge/release remain separate"
+  ],
+  "storage": {
+    "freeKiB": [
+      97065116,
+      97043756
+    ],
+    "gitUnchanged": true,
+    "temporaryGitStores": 0
+  }
+}

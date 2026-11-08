@@ -1,0 +1,445 @@
+import 'package:flutter/material.dart';
+import 'package:madar_domain/madar_domain.dart';
+
+import '../shell/shell_view_model.dart';
+import '../ui/components.dart';
+import '../ui/dialogs.dart';
+import '../ui/theme.dart';
+import 'catalog_formatters.dart';
+import 'catalog_read_model.dart';
+import 'catalog_stock_history.dart';
+import 'catalog_view_model.dart';
+import 'stock_reversal_dialog.dart';
+
+Future<void> showStockHistoryDialog(
+  BuildContext context, {
+  required CatalogViewModel viewModel,
+  required CatalogProduct product,
+  ShellViewModel? shell,
+  DateOnly? today,
+  void Function(String saleId)? onNavigateSale,
+  void Function(String returnId)? onNavigateReturn,
+}) => showDakhlDialog<void>(
+  context: context,
+  title: 'حركة الصنف',
+  subtitle:
+      '${product.name} · المتوفر حتى ${today ?? CatalogFormatters.today()}: ${CatalogFormatters.formatQuantity(product.availableUnits)} ${product.unit}',
+  wide: true,
+  body: StockHistoryDialog(
+    viewModel: viewModel,
+    product: product,
+    shell: shell,
+    today: today ?? CatalogFormatters.today(),
+    onNavigateSale: onNavigateSale,
+    onNavigateReturn: onNavigateReturn,
+  ),
+  actions: [
+    Builder(
+      builder: (dialogContext) => DakhlButton(
+        label: 'إغلاق',
+        kind: DakhlButtonKind.secondary,
+        onPressed: () => Navigator.of(dialogContext).pop(),
+      ),
+    ),
+  ],
+);
+
+class StockHistoryDialog extends StatefulWidget {
+  const StockHistoryDialog({
+    super.key,
+    required this.viewModel,
+    required this.product,
+    this.shell,
+    required this.today,
+    this.onNavigateSale,
+    this.onNavigateReturn,
+  });
+
+  final CatalogViewModel viewModel;
+  final CatalogProduct product;
+  final ShellViewModel? shell;
+  final DateOnly today;
+  final void Function(String saleId)? onNavigateSale;
+  final void Function(String returnId)? onNavigateReturn;
+
+  @override
+  State<StockHistoryDialog> createState() => _StockHistoryDialogState();
+}
+
+class _StockHistoryDialogState extends State<StockHistoryDialog> {
+  late CatalogEditSession _session;
+  int _page = 1;
+  @override
+  void initState() {
+    super.initState();
+    _session = widget.viewModel.beginEdit();
+    widget.viewModel.addListener(_onModelChange);
+  }
+
+  @override
+  void dispose() {
+    widget.viewModel.removeListener(_onModelChange);
+    super.dispose();
+  }
+
+  void _onModelChange() {
+    if (mounted) setState(() {});
+  }
+
+  void _onSaleTap(String saleId) {
+    if (widget.onNavigateSale != null) {
+      widget.onNavigateSale!(saleId);
+    } else {
+      showDakhlToast(context, 'تعذّر فتح تفاصيل الفاتورة حالياً.');
+    }
+  }
+
+  void _onReturnTap(String returnId) {
+    if (widget.onNavigateReturn != null) {
+      widget.onNavigateReturn!(returnId);
+    } else {
+      showDakhlToast(context, 'تعذّر فتح تفاصيل المرتجع حالياً.');
+    }
+  }
+
+  Future<void> _handleReverse(Map<String, Object?> rawEntry) async {
+    if (widget.viewModel.repository.snapshot != _session.snapshot) {
+      setState(() {});
+      return;
+    }
+    final reversed = await showStockReversalDialog(
+      context,
+      viewModel: widget.viewModel,
+      product: widget.product,
+      originalEntry: rawEntry,
+      shell: widget.shell,
+    );
+    if (reversed == true && mounted) {
+      _session = widget.viewModel.beginEdit();
+      setState(() {});
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final account = widget.viewModel.repository.document;
+    if (account == null) {
+      return const Padding(
+        padding: EdgeInsets.all(24),
+        child: DakhlEmptyState(
+          title: 'لا توجد بيانات',
+          message: 'الحسابات غير متوفرة حالياً.',
+        ),
+      );
+    }
+
+    if (widget.viewModel.repository.snapshot != _session.snapshot) {
+      return DakhlStatus(
+        message: CatalogFormatters.errorMessage('stale_revision'),
+        kind: DakhlStatusKind.error,
+      );
+    }
+    final history = widget.viewModel.stockHistoryAt(
+      widget.product.id,
+      today: widget.today,
+    );
+    final page = CatalogStockHistoryPage(history, _page);
+    final items = page.items;
+
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final stacked = DakhlTokens.stacked(context, constraints.maxWidth);
+
+        return SingleChildScrollView(
+          padding: const EdgeInsets.symmetric(vertical: 8),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // Notice banner about chronological order and future entries
+              DakhlPanel(
+                padding: const EdgeInsets.all(12),
+                child: Row(
+                  children: [
+                    const Icon(
+                      Icons.info_outline,
+                      color: DakhlTokens.green,
+                      size: 20,
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        'الترتيب بتاريخ الحركة ثم وقت تسجيلها. الحركات المستقبلية موضحة؛ البيع الملغي ما ينخصم، والمرتجع يرجع فقط الكمية المختارة للمخزن.',
+                        style: Theme.of(context).textTheme.bodySmall
+                            ?.copyWith(height: 1.5),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              const SizedBox(height: 16),
+
+              if (items.isEmpty)
+                const DakhlEmptyState(
+                  title: 'لا توجد حركات مسجلة',
+                  message: 'لم يتم تسجيل أي حركة مخزنية أو مبيعات لهذا الصنف حتى الآن.',
+                )
+              else if (stacked)
+                // Card list for narrow screens
+                Column(
+                  children: [
+                    for (final item in items)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 10),
+                        child: DakhlPanel(
+                          padding: const EdgeInsets.all(12),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Wrap(
+                                alignment: WrapAlignment.spaceBetween,
+                                crossAxisAlignment: WrapCrossAlignment.center,
+                                spacing: 8,
+                                runSpacing: 4,
+                                children: [
+                                  Wrap(
+                                    crossAxisAlignment:
+                                        WrapCrossAlignment.center,
+                                    spacing: 6,
+                                    runSpacing: 4,
+                                    children: [
+                                      Text(
+                                        item.effectiveDate.toString(),
+                                        style: DakhlTokens.numberStyle.copyWith(
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      if (item.isFuture) ...[
+                                        const DakhlBadge('حركة مستقبلية'),
+                                      ],
+                                    ],
+                                  ),
+                                  Text(
+                                    item.deltaUnits >= BigInt.zero
+                                        ? '+${CatalogFormatters.formatQuantity(item.deltaUnits)}'
+                                        : CatalogFormatters.formatQuantity(
+                                            item.deltaUnits,
+                                          ),
+                                    textDirection: TextDirection.ltr,
+                                    style: DakhlTokens.numberStyle.copyWith(
+                                      color: item.deltaUnits >= BigInt.zero
+                                          ? DakhlTokens.green
+                                          : DakhlTokens.red,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 6),
+                              Wrap(
+                                alignment: WrapAlignment.spaceBetween,
+                                crossAxisAlignment: WrapCrossAlignment.center,
+                                spacing: 8,
+                                runSpacing: 4,
+                                children: [
+                                  Text(
+                                    '${item.kindLabel}${item.detail.isNotEmpty ? ' · ${item.detail}' : ''}',
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .bodySmall,
+                                  ),
+                                  Text(
+                                    'الرصيد: ${CatalogFormatters.formatQuantity(item.runningBalanceUnits)} ${widget.product.unit}',
+                                    style: DakhlTokens.numberStyle.copyWith(
+                                      fontSize: 13,
+                                      color: DakhlTokens.muted,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              if (item.saleId != null) ...[
+                                const SizedBox(height: 6),
+                                Align(
+                                  alignment: AlignmentDirectional.centerStart,
+                                  child: TextButton.icon(
+                                    onPressed: () => _onSaleTap(item.saleId!),
+                                    icon: const Icon(
+                                      Icons.receipt_outlined,
+                                      size: 16,
+                                    ),
+                                    label: Text('عرض البيع · ${item.saleId}'),
+                                  ),
+                                ),
+                              ],
+                              if (item.returnId != null) ...[
+                                const SizedBox(height: 6),
+                                Align(
+                                  alignment: AlignmentDirectional.centerStart,
+                                  child: TextButton.icon(
+                                    onPressed: () =>
+                                        _onReturnTap(item.returnId!),
+                                    icon: const Icon(
+                                      Icons.assignment_return_outlined,
+                                      size: 16,
+                                    ),
+                                    label: Text(
+                                      'عرض المرتجع · ${item.returnId}',
+                                    ),
+                                  ),
+                                ),
+                              ],
+                              if (item.isReversible &&
+                                  item.rawStockEntry != null) ...[
+                                const SizedBox(height: 6),
+                                Align(
+                                  alignment: AlignmentDirectional.centerEnd,
+                                  child: DakhlButton(
+                                    label: 'تصحيح الحركة',
+                                    kind: DakhlButtonKind.quiet,
+                                    onPressed: () =>
+                                        _handleReverse(item.rawStockEntry!),
+                                  ),
+                                ),
+                              ],
+                            ],
+                          ),
+                        ),
+                      ),
+                  ],
+                )
+              else
+                // Clean data table for wide screens
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(minWidth: constraints.maxWidth),
+                    child: DataTable(
+                      headingRowColor: const WidgetStatePropertyAll(
+                        DakhlTokens.soft,
+                      ),
+                      columns: const [
+                        DataColumn(label: Text('التاريخ')),
+                        DataColumn(label: Text('الحركة'), numeric: true),
+                        DataColumn(label: Text('الرصيد بعدها'), numeric: true),
+                        DataColumn(label: Text('المصدر / التفاصيل')),
+                        DataColumn(label: Text('الإجراء')),
+                      ],
+                      rows: [
+                        for (final item in items)
+                          DataRow(
+                            cells: [
+                              DataCell(
+                                Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Text(
+                                      item.effectiveDate.toString(),
+                                      style: DakhlTokens.numberStyle,
+                                    ),
+                                    if (item.isFuture) ...[
+                                      const SizedBox(width: 6),
+                                      const DakhlBadge('حركة مستقبلية'),
+                                    ],
+                                  ],
+                                ),
+                              ),
+                              DataCell(
+                                Text(
+                                  item.deltaUnits >= BigInt.zero
+                                      ? '+${CatalogFormatters.formatQuantity(item.deltaUnits)}'
+                                      : CatalogFormatters.formatQuantity(
+                                          item.deltaUnits,
+                                        ),
+                                  textDirection: TextDirection.ltr,
+                                  style: DakhlTokens.numberStyle.copyWith(
+                                    color: item.deltaUnits >= BigInt.zero
+                                        ? DakhlTokens.green
+                                        : DakhlTokens.red,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              DataCell(
+                                Text(
+                                  CatalogFormatters.formatQuantity(
+                                    item.runningBalanceUnits,
+                                  ),
+                                  textDirection: TextDirection.ltr,
+                                  style: DakhlTokens.numberStyle,
+                                ),
+                              ),
+                              DataCell(
+                                Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Text(item.kindLabel),
+                                    if (item.saleId != null) ...[
+                                      const SizedBox(width: 6),
+                                      InkWell(
+                                        onTap: () => _onSaleTap(item.saleId!),
+                                        child: Text(
+                                          item.saleId!,
+                                          style: const TextStyle(
+                                            color: DakhlTokens.green,
+                                            decoration:
+                                                TextDecoration.underline,
+                                          ),
+                                        ),
+                                      ),
+                                    ] else if (item.returnId != null) ...[
+                                      const SizedBox(width: 6),
+                                      InkWell(
+                                        onTap: () =>
+                                            _onReturnTap(item.returnId!),
+                                        child: Text(
+                                          item.returnId!,
+                                          style: const TextStyle(
+                                            color: DakhlTokens.green,
+                                            decoration:
+                                                TextDecoration.underline,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                    if (item.detail.isNotEmpty)
+                                      Text(' · ${item.detail}'),
+                                  ],
+                                ),
+                              ),
+                              DataCell(
+                                item.isReversible && item.rawStockEntry != null
+                                    ? DakhlButton(
+                                        label: 'تصحيح الحركة',
+                                        kind: DakhlButtonKind.quiet,
+                                        onPressed: () =>
+                                            _handleReverse(item.rawStockEntry!),
+                                      )
+                                    : const SizedBox.shrink(),
+                              ),
+                            ],
+                          ),
+                      ],
+                    ),
+                  ),
+                ),
+              if (page.pageCount > 1) ...[
+                const SizedBox(height: 16),
+                DakhlPagination(
+                  caption:
+                      'صفحة ${page.page} من ${page.pageCount} (إجمالي ${history.length} حركة)',
+                  onPrevious: page.page > 1
+                      ? () => setState(() => _page = page.page - 1)
+                      : null,
+                  onNext: page.page < page.pageCount
+                      ? () => setState(() => _page = page.page + 1)
+                      : null,
+                ),
+              ],
+            ],
+          ),
+        );
+      },
+    );
+  }
+}

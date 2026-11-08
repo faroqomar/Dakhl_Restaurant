@@ -1,0 +1,29 @@
+{
+  "recordedUtc": "2026-11-08T06:02:06.934039+00:00",
+  "reviewer": "/root/review_c1_mounted_and_pagination_acceptance",
+  "verdict": "PASS",
+  "findings": [],
+  "verifiedBindings": {
+    "mounted": 21,
+    "pagination": 34
+  },
+  "rootRechecked": true,
+  "exactRowClosureRecommendations": {
+    "C1-07": "Actual SQLite precommit failure preserves full durable state and retained form input; retry commits once",
+    "C1-14": "Mounted delayed ACK/busy/frozen-input/disposal cases isolate replacement account; memory replacement limit explicit and existing stale/unknown/model cases reused",
+    "C1-15": "Rendered later-page add/archive/filter clamps and every120ledger row over3dates match independent balances"
+  },
+  "executionEvidence": "Seven unchanged cases plus final targeted stock pass;4pagination cases; no interrupted run counted as pass",
+  "enginePin": "bb00ccdad8f6710ca1778260d42ed5584f26a86c",
+  "limits": [
+    "No new process-restart/file-portability/performance/phase or release acceptance"
+  ],
+  "storage": {
+    "freeKiB": [
+      101099144,
+      101099328
+    ],
+    "gitEvidenceUnchanged": true,
+    "temporaryGitStores": 0
+  }
+}

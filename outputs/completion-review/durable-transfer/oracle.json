@@ -1,0 +1,36 @@
+{
+  "engine": "frozen model.js (Electron 44.5.1 / Node 24.21.0)",
+  "date": "2026-01-15",
+  "scenarios": {
+    "scenario1_ordinary": {
+      "description": "Ordinary transfer 20k from 100k available",
+      "remaining": 80000,
+      "transferred": 20000,
+      "balance": 100000,
+      "cashbox": 20000
+    },
+    "scenario2_transfer_all": {
+      "description": "Transfer-all 100k reaches zero remaining",
+      "remaining": 0,
+      "transferred": 100000,
+      "balance": 100000,
+      "cashbox": 100000
+    },
+    "scenario3_legacy_unset_total": {
+      "description": "Recovery of unset total (null balance) to 125k before transfer, preserved after transfer",
+      "remaining": 70000,
+      "transferred": 35000,
+      "balance": 125000,
+      "cashbox": 35000
+    },
+    "scenario4_subsequent_dated_effects": {
+      "description": "Subsequent dated effects: transfer1 (20k) -> sale (10k) -> expense (5k) -> refund (10k) -> transfer2 (15k)",
+      "remaining": 60000,
+      "transferred": 35000,
+      "balance": 100000,
+      "cashbox": 35000,
+      "dailySpent": 25000,
+      "netSales": 0
+    }
+  }
+}

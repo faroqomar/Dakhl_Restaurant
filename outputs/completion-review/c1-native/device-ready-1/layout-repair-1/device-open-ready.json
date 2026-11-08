@@ -1,0 +1,16 @@
+{
+  "recordedUtc": "2026-11-08T05:07:46.058Z",
+  "tool": "device_open",
+  "device": {
+    "hostId": "local",
+    "id": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
+    "platform": "ios",
+    "name": "iPhone Duo",
+    "version": "iOS 27.1",
+    "booted": true,
+    "physical": false
+  },
+  "session": "t3-b91493306db60c230eefae24",
+  "command": "/Users/eros/.t3/userdata/device/targets/t3-b91493306db60c230eefae24/agent-device",
+  "note": "Fresh owned-session readback after Lead's narrow-history Wrap fix and83 catalog/app tests; no app launch by this call."
+}

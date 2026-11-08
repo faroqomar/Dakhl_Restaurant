@@ -1,3 +1,7 @@
+## Completion phase — 2026-11-05
+
+[One-phase scope, dependencies, references and readiness](completion-scope-readiness.md). Original phase IDs remain work-package references. Step 1 only; no implementation approval.
+
 Current continuation, 2026-10-31: **BLOCKED for joint merge/completion.** iOS simulator9/9 and original app6f9 hosted6/6 / enginebca hosted2/2 verified. Android acceptance and historical retention remain unresolved; new guard follow-up CI and exact-revision owner approval remain pending. [Current evidence](02-native-verification-2026-10-31.md). Earlier dated entries below are history.
 
 Step5 publication preparation, 2026-10-30: **DRAFT / NOT MERGE-READY**. The owner requested reviewable pull requests; publication and hosted-check results are recorded in [the Step5 delivery record](02-step5-delivery.md). Android preservation failed and prior installed-app data retention remains unverified; Android cancellation and current iOS verification remain open. No merge, release, target mutation or next phase is authorized. Earlier Step3/Step4 publication statements below are dated historical records.
@@ -52,3 +56,5 @@ Do not prefill results or approvals. Earlier Electron checks are reference evide
 - [Phase02 — bounded Step2 implementation plan](02-implementation-plan.md) — original plan preserved; selected for subsequent Step3 implementation, including the bounded technical ADR/PREF-01/workspace profile. No publication/merge permission.
 
 - [Phase02 — Step3 build and actual verification](02-step3-build.md) — current implementation/source/native/performance gates; prior dated Step1–2 states remain historical.
+
+- [Completion Step2 draft](completion-implementation-plan.md): bounded engine/app contracts, dependencies, tests, per-feature benchmarks, CI, docs, risks and completion gates; no implementation approval.

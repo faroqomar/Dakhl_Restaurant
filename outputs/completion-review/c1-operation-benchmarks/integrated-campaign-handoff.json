@@ -1,0 +1,55 @@
+{
+  "recordedUtc": "2026-11-08T05:18:44.086233+00:00",
+  "kind": "source_campaign_handoff_not_measurement_result",
+  "status": "integrated_unit_pass_awaiting_independent_review",
+  "operations": [
+    "c1.catalog.lookup",
+    "c1.catalog.filter",
+    "c1.catalog.page",
+    "c1.product.create",
+    "c1.product.edit",
+    "c1.product.photo_select_save",
+    "c1.stock.post",
+    "c1.stock.reverse",
+    "c1.stock.history"
+  ],
+  "runtimeEngineAtPreparation": "bb00ccdad8f6710ca1778260d42ed5584f26a86c",
+  "toolingManifest": "dev-tooling-dependency.json",
+  "target": "macos-host",
+  "buildMode": "profile",
+  "entrypoint": "lib/platform/c1_performance_main.dart",
+  "fixtureSource": "lib/platform/c1_performance_scenarios.dart",
+  "workload": "c1-operations-v1",
+  "measurementBoundaries": "Nonvisual actual ViewModel/query/durable save; photo bundles read; no image decode/raster/native input",
+  "requestedResourceIntervalMs": 20,
+  "pilotIterations": 1,
+  "matrixIterationsPerCase": 20,
+  "gates": [
+    "Independent integrated source/harness review",
+    "Parent grants serialized build/campaign window",
+    "Reviewed workflow and consumer preflight",
+    "One successful source-bound one-iteration pilot before matrix"
+  ],
+  "proposedPilotArgv": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "tool/dev_dashboard/run_benchmarks.py",
+    "--engine-tools-root",
+    "/Users/eros/Dev/Eros_Projects/Madar_Engine",
+    "--case",
+    "c1.catalog.lookup",
+    "--iterations",
+    "1",
+    "--output",
+    "outputs/completion-review/c1-operation-benchmarks/pilot-1.json"
+  ],
+  "samples": null,
+  "resources": null,
+  "metrics": "No benchmark result exists; runtime identity/provenance/resource samples derive from actual execution, never this handoff.",
+  "integration": {
+    "registrationPaths": 3,
+    "fixtureTestsPassed": 17,
+    "runnerTestsPassed": 35,
+    "targetedAnalysis": "clean",
+    "nativeBuildsOrMeasurementsRun": 0
+  }
+}

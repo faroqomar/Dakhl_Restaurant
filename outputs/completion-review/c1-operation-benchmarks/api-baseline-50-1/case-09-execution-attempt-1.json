@@ -1,0 +1,26 @@
+{
+  "operationId": "c1.catalog.page",
+  "stageId": "catalog-page-50",
+  "startedUtc": "2026-11-08T07:02:52.934836+00:00",
+  "endedUtc": "2026-11-08T07:03:11.141843+00:00",
+  "elapsedWallSeconds": 18.206930457963608,
+  "argv": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "tool/dev_dashboard/run_benchmarks.py",
+    "--engine-tools-root",
+    "/Users/eros/Dev/Eros_Projects/Madar_Engine",
+    "--case",
+    "c1.catalog.page",
+    "--iterations",
+    "50",
+    "--output",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-09-catalog-page-50-attempt-1.json"
+  ],
+  "exitCode": 0,
+  "stdoutBytes": 4426,
+  "stderrBytes": 0,
+  "stdoutSha256": "28f7973181eae3639198c5e66724e1d4a0956fdf8578e56231581cddb9ca5743",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdoutSemanticallyEqualsCanonicalResult": true,
+  "duplicateStdoutRemoved": true
+}

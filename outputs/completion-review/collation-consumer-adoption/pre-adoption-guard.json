@@ -1,0 +1,10 @@
+{
+  "recordedUtc": "2026-11-08T04:35:51.070975+00:00",
+  "stage": "before_deliberate_adoption",
+  "exit": 1,
+  "result": "expected_rejection_of_old_consumer_pin",
+  "reason": "ValueError: Review the engine upgrade and update engine-dependency.json deliberately.",
+  "engineHead": "783e29cf8ae5c829cbb09bdb5b7a547aa92bc8d6",
+  "declaredPin": "d316fd6076375daa3f412889f73eaebfeeb5d4d4",
+  "pubOrSourceMutation": false
+}

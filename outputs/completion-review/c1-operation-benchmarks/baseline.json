@@ -1,0 +1,56 @@
+{
+  "recordedUtc": "2026-11-08T05:00:24.570350+00:00",
+  "ownership": "New C1 benchmark source/tests/descriptors/log only; registration patch outside existing files",
+  "newPathsConfirmedAbsent": [
+    "lib/platform/c1_performance_main.dart",
+    "lib/platform/c1_performance_scenarios.dart",
+    "test/platform/c1_performance_test.dart",
+    "docs/log/2026-11-08-c1-operation-benchmark-harness.md",
+    "docs/phases/c1-operation-benchmarks.md",
+    "tool/dev_dashboard/tests/test_c1_registration_candidate.py"
+  ],
+  "protectedFiles": [
+    {
+      "path": "tool/dev_dashboard/operations.json",
+      "sha256": "002336e6a2eac1aa35d50d87a554b4f8ce631be37b30229814cb624e476bc16d",
+      "bytes": 14851
+    },
+    {
+      "path": "tool/dev_dashboard/run_benchmarks.py",
+      "sha256": "fd84844670c5a555d545e7262a4152c3724da628bc71b8282d6d03b040938c8e",
+      "bytes": 31491
+    },
+    {
+      "path": "engine-dependency.json",
+      "sha256": "8221825716c72a5b1221a1cbfc8f70f27bb3db2ede59648864194ea798544f5c",
+      "bytes": 801
+    },
+    {
+      "path": "pubspec.lock",
+      "sha256": "63f2edcb3a3f0e521db5f3a71b019410b0a8e908c60e7ccf768678211acd4382",
+      "bytes": 25103
+    },
+    {
+      "path": "pubspec.yaml",
+      "sha256": "07bba9c18ac09d1ea6f9e1d4ee9559ab5026d4babc3c6e31e74267b61b8afe91",
+      "bytes": 1158
+    },
+    {
+      "path": ".dart_tool/package_config.json",
+      "sha256": "f5a804384a7c0c0446cc0dd19f76e791ea87861068e592f240e2aafd108dd4b0",
+      "bytes": 21040
+    }
+  ],
+  "baseline": {
+    "freeKiB": 98437248,
+    "appGitKiB": 18430636,
+    "engineGitKiB": 44528,
+    "buildKiB": 1100004,
+    "dartToolKiB": 595304
+  },
+  "limits": [
+    "No Flutter/pub/build/benchmark process under this worker",
+    "Registration files reserved but unchanged during native pilot",
+    "No independently verified measurement or closure"
+  ]
+}

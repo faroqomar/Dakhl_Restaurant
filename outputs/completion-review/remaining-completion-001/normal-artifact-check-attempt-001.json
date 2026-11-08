@@ -1,0 +1,48 @@
+{
+  "at": "2026-11-08T21:08:45.631985+00:00",
+  "artifacts": [
+    {
+      "target": "macos",
+      "path": "build/macos/Build/Products/Debug/Dakhl_Restaurant Dev.app",
+      "bundleId": "com.eros.dakhlrestaurant.phase00",
+      "version": "0.0.0",
+      "build": "1",
+      "minimumSystem": "12.0",
+      "nativeIcuFiles": {
+        "Contents/Frameworks/madar_icu_collation.framework/Versions/A/madar_icu_collation": "f4eadaaac57bad4457bcfd53ec74fa3e50fc65db8bb7e6d80131849d94527d9f"
+      },
+      "ICULicenseAggregated": false,
+      "notices": {
+        "Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/NOTICES.Z": "6e76943246d5b08b24d4dc5e9b83946e4a84cdab348d5e6333eca85bf55d56f1"
+      },
+      "seal": "deep-strict-pass"
+    },
+    {
+      "target": "ios-unsigned-device",
+      "path": "build/ios/iphoneos/Runner.app",
+      "bundleId": "com.eros.dakhlrestaurant.phase00",
+      "version": "0.0.0",
+      "build": "1",
+      "minimumSystem": "15.0",
+      "nativeIcuFiles": {
+        "Frameworks/madar_icu_collation.framework/madar_icu_collation": "0e560776f91be94464651a58911a2beca348387b58a817dc644f2f451ba19aea"
+      },
+      "ICULicenseAggregated": false,
+      "notices": {
+        "Frameworks/App.framework/flutter_assets/NOTICES.Z": "6e76943246d5b08b24d4dc5e9b83946e4a84cdab348d5e6333eca85bf55d56f1"
+      },
+      "seal": "unsigned-device-build-not-installation"
+    },
+    {
+      "target": "android-arm64",
+      "path": "build/app/outputs/flutter-apk/app-debug.apk",
+      "bytes": 110272115,
+      "sha256": "619c3591f1676eb00585dd3455b485e82b9affd670aa3e8207892cc3e419dc9e",
+      "nativeIcuFiles": {},
+      "ICULicenseAggregated": false
+    }
+  ],
+  "macosSealExitCode": 0,
+  "scope": "Build-only; no normal app install/launch or live data. iOS device remains unsigned/unexecuted. Qualified Mac host27.2; app base min12 does not establish ICU runtime support on macOS12 (bundlebuiltmin13).",
+  "sourceManifest": "normal-build-source-inputs.json"
+}

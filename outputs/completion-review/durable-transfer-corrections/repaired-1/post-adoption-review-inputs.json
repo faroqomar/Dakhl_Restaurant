@@ -1,0 +1,256 @@
+{
+  "recordedUtc": "2026-11-08T04:43:17.376375+00:00",
+  "scope": "Isolated transfer edit/delete integrity repair and create historical replay integration",
+  "predecessor": {
+    "path": "outputs/completion-review/durable-transfer-corrections/repaired-1/review-inputs-final.json",
+    "sha256": "718c3ddb86602069e1012c768721c6190fe281b00f957cba7b4ff806befb36dd"
+  },
+  "currentEngineHead": "783e29cf8ae5c829cbb09bdb5b7a547aa92bc8d6",
+  "appConsumedEngine": "783e29cf8ae5c829cbb09bdb5b7a547aa92bc8d6",
+  "verification": {
+    "existingCreate": 38,
+    "existingCorrection": 33,
+    "newIntegrity": 26,
+    "focusedTotal": 97,
+    "allAccounting": 297,
+    "allAccountingResult": "passed",
+    "analysis": "No issues found",
+    "boundaries": "passed"
+  },
+  "files": [
+    {
+      "path": "lib/accounting/restaurant_journal_transfer_correction_commands.dart",
+      "bytes": 37585,
+      "sha256": "82c05ab0d98d90a86ef24708ac6c54325ec2c671640fbcf2f30820dff3639698"
+    },
+    {
+      "path": "lib/accounting/restaurant_journal_transfer_history.dart",
+      "bytes": 16604,
+      "sha256": "73adeba1621127be5a4d2250cb244ff131d10129387ca47729e530f294ed06bf"
+    },
+    {
+      "path": "lib/accounting/restaurant_journal_transfer_commands.dart",
+      "bytes": 19885,
+      "sha256": "7582723ac5a9c5b8876258a536283a0b9e1f4078264187e719c9fed1163f74f0"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_commands_test.dart",
+      "bytes": 20821,
+      "sha256": "e7fd426574f909d41f94421f06dca98bc30228aeb79a4560ab69fc745ceb410d"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_conformance_test.dart",
+      "bytes": 40316,
+      "sha256": "97a7f15bcf8edc24aa247bca29ec87457890bfd2afc40eeb14f72b271dfb9a89"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_correction_commands_test.dart",
+      "bytes": 27200,
+      "sha256": "52c58ac824459bc93edfeafde9479aa53d1279263fb5d1fc46f2f2d69cace2cc"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_correction_conformance_test.dart",
+      "bytes": 40379,
+      "sha256": "b9a4e202d88a470c5ecf561fcbafa4335336a1998003d46f5e68c1a8f35a6846"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_correction_integrity_test.dart",
+      "bytes": 20990,
+      "sha256": "f9d69b055e22bd5c65aef7437d86b008407e3a4f73e7d87e3d5f10d492380204"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_correction_safety_test.dart",
+      "bytes": 38253,
+      "sha256": "dd87d032993c97a77b6caba4ea0c17bba7a2449efabae0d9c6d14e5eb6b83dbc"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_safety_test.dart",
+      "bytes": 25684,
+      "sha256": "f32e517626dd51c05288acf2c8de0e0c58853db84991a8cb9f39134be39db70b"
+    },
+    {
+      "path": "lib/accounting/journal_command_host.dart",
+      "bytes": 9358,
+      "sha256": "ce26122bc550926fefcf1e8d30108c73ac2a66f2e8ad2871120f7512aa0a8721"
+    },
+    {
+      "path": "lib/accounting/restaurant_journal_mapper.dart",
+      "bytes": 35813,
+      "sha256": "0916bc37d753de94dc5df36ddefd92250581abb35233e069b5ed2806b1eeb8da"
+    },
+    {
+      "path": "lib/accounts/portable_journal_codec.dart",
+      "bytes": 5037,
+      "sha256": "c24aa540615408ab001a18fa595a75bd799fd6e5b323cf56d8ec035de025e49a"
+    },
+    {
+      "path": "lib/accounts/portable_journal_state.dart",
+      "bytes": 26992,
+      "sha256": "ae1a0181e21b5fcb1b110f47c02bc98ab78f37d81a8099ce24f19633d6fefcb0"
+    },
+    {
+      "path": "docs/phases/completion-durable-transfer-correction-contract.md",
+      "bytes": 4291,
+      "sha256": "807aae0341b01606c4eae09b65ea589d9ed44b7bc0298bf2f04a5df538848644"
+    },
+    {
+      "path": "docs/decisions/0021-completion-financial-policy.md",
+      "bytes": 4439,
+      "sha256": "5b5dc5a88edfcd6c6d3b75440658c5b57e66a94bda52c5d32e005f45c45ba3b1"
+    },
+    {
+      "path": "docs/reference/durable-transfer-corrections.md",
+      "bytes": 10186,
+      "sha256": "d9029c00d05af962708377b3806c4aa1515ec647bd758d6cf623e2156a8e22ee"
+    },
+    {
+      "path": "docs/log/2026-11-08-durable-transfer-corrections.md",
+      "bytes": 7352,
+      "sha256": "f3a15e4fbe42ecc30e8339341dfbcf6cdc3ae1cb27044b5acad64f147a0b9260"
+    },
+    {
+      "path": "docs/log/2026-11-08-durable-transfer-correction-integrity-repair.md",
+      "bytes": 5818,
+      "sha256": "5029f74164c26a8ec41bdeede10db6104d9e906dbc9105059df9f4ceb64dc0e2"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/review-inputs.json",
+      "bytes": 3827,
+      "sha256": "b838198fc8d8938253daa26f01d389a66361907c088660806d56c0472e3d8b79"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/independent-review.json",
+      "bytes": 1214,
+      "sha256": "feed9188fb304f9ba256a747405e656630a759e9f2905d87fbf5bc1695349648"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/oracle.cjs",
+      "bytes": 7126,
+      "sha256": "c98a717561c3aa5efba342f09e7ce72d81ec46acaa8758cc92f69ef05d1c94f4"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/oracle.json",
+      "bytes": 52182,
+      "sha256": "457f9333823f59cef1b33107db2d5ad1b7f64d0ed59a02ca3c29e25e41fd0d93"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/oracle-repaired-1.cjs",
+      "bytes": 8404,
+      "sha256": "b911c37f0f06b0844e1f41897cb8b5a3cc7c584f307afda357f028e1423c785c"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/oracle-repaired-1.json",
+      "bytes": 52533,
+      "sha256": "d0c41095ecd020df1fd56cde28b9da5b8a0e898c7d844c89142c10284bd2dd1e"
+    },
+    {
+      "path": "electron-reference/app/ui/model.js",
+      "bytes": 52984,
+      "sha256": "65a9b33cdca42e328d710f1afaa1b0fb42a7778284bd2f07f7c7e77d3d9f07f4"
+    },
+    {
+      "path": "electron-reference/app/ui/renderer.js",
+      "bytes": 59240,
+      "sha256": "be846cbb8dfef4f90a73b17029960b7daf461668375ce234ae9ea62d467e83ec"
+    },
+    {
+      "path": "engine-dependency.json",
+      "bytes": 801,
+      "sha256": "b5dd40b177af81109234bd709aba3dc6a4059d0fc9733f4433346c8045af1b6e"
+    },
+    {
+      "path": "pubspec.yaml",
+      "bytes": 1158,
+      "sha256": "07bba9c18ac09d1ea6f9e1d4ee9559ab5026d4babc3c6e31e74267b61b8afe91"
+    },
+    {
+      "path": "pubspec.lock",
+      "bytes": 25103,
+      "sha256": "63f2edcb3a3f0e521db5f3a71b019410b0a8e908c60e7ccf768678211acd4382"
+    },
+    {
+      "path": ".dart_tool/package_config.json",
+      "bytes": 21040,
+      "sha256": "f5a804384a7c0c0446cc0dd19f76e791ea87861068e592f240e2aafd108dd4b0"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/repaired-1/accounting-test-attempt-2.log",
+      "bytes": 61642,
+      "sha256": "b98a41a688b53c8391b336286fe54e0b261be18149b02282116d0315194461f3"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/repaired-1/accounting-test.log",
+      "bytes": 63130,
+      "sha256": "72d790195599995a4edfd89612a75d706779b7a2bda7326a2c892d89411fd8f1"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/repaired-1/analysis.log",
+      "bytes": 406,
+      "sha256": "0ac93906ab78dd5c474619fe41e6be98ca357e6e001537fe00c337baf26e159b"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/repaired-1/boundaries.log",
+      "bytes": 75,
+      "sha256": "4e93aa59f5791fc69f1fc1ab53261c81ea28a28aa834c8418652d9583d9d19eb"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/repaired-1/focused-result.json",
+      "bytes": 310,
+      "sha256": "4b3e58572960e11f103f4fffef209f79cf35cbf22534f5b39d4a7365c18ee7d0"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/repaired-1/memory-check.json",
+      "bytes": 401,
+      "sha256": "16ac8c6e411a3bee2bdd3f306a57d6dae5cf470093dea59acdd3b6799096d8c1"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/repaired-1/receipt.json",
+      "bytes": 1854,
+      "sha256": "a1055e24eeafa1d5f6b755d4417c0fd161cf511f74961618c83bf8000f4efa72"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/repaired-1/storage-closeout.json",
+      "bytes": 1443,
+      "sha256": "5619647c9a73d5393ae6bc924679fd2c979b276c7c6d74b9924ff4737ce2255a"
+    },
+    {
+      "path": "../Madar_Engine/packages/domain/lib/src/journal.dart",
+      "bytes": 4888,
+      "sha256": "7f27b72ad5d63d46ab2635fa894ec8f1c3db2e785cbe5a0b916d84630be86600"
+    },
+    {
+      "path": "../Madar_Engine/packages/application/lib/src/durable_command_coordinator.dart",
+      "bytes": 25004,
+      "sha256": "78070f4e3727a02deeddd550b5f97071c0703ecca73690be13ddbd1a173bc4d8"
+    },
+    {
+      "path": "../Madar_Engine/packages/application/lib/src/local_document_workspace.dart",
+      "bytes": 6393,
+      "sha256": "27d4e1404e907a98b361b962171e189800525fb040b60d9ecc37ebfde3b84f30"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/repaired-1/review-inputs.json",
+      "bytes": 9089,
+      "sha256": "9c7d9bf8270f59ab95275eb62cf9651119f2508f35a9a0dd5eab4f80709efc04"
+    }
+  ],
+  "adoptionBoundary": "Repair execution used prior d316/dev.4; only pin/lock hashes rebound after reviewed source783e29c adoption. No command implementation changed.",
+  "adoptionOnlyDeltas": [
+    {
+      "path": "engine-dependency.json",
+      "previousSha256": "b7e49af4417d3085edf0aa905201adc67d81f56546f4eb90aac607199345eea9",
+      "currentSha256": "b5dd40b177af81109234bd709aba3dc6a4059d0fc9733f4433346c8045af1b6e"
+    },
+    {
+      "path": "pubspec.lock",
+      "previousSha256": "07b25a1dfb45a700e9bc844d4fcda00af753271fb8ae35a2d0d27e4960290f73",
+      "currentSha256": "63f2edcb3a3f0e521db5f3a71b019410b0a8e908c60e7ccf768678211acd4382"
+    }
+  ],
+  "currentConsumedEngineCommit": "783e29cf8ae5c829cbb09bdb5b7a547aa92bc8d6",
+  "limits": [
+    "Only listed consumer pin/lock hashes changed after final repair freeze; command/domain/storage implementations remain unchanged",
+    "Root adoption verification is separate at collation-consumer-adoption/verification.json"
+  ],
+  "repairExecutionConsumedEngine": "d316fd6076375daa3f412889f73eaebfeeb5d4d4"
+}

@@ -1,0 +1,96 @@
+{
+  "recordedUtc": "2026-11-08T05:12:23.685312+00:00",
+  "status": "native_pilot_pass_independent_review_pending",
+  "actor": "/root/resume_c1_native_pilot",
+  "scope": "One representative C1 iOS simulator pilot only",
+  "ownership": {
+    "app": "C1 native acceptance harness and synthetic campaign evidence",
+    "engineImplementationAPI": "N/A; reviewed public storage/preferences/domain contracts consumed",
+    "design": "Existing owner-approved15 C1 pairs and5 pattern reuses; no new approval"
+  },
+  "identity": {
+    "appSourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+    "sourceDirty": true,
+    "runtimeRevision": "bb00ccdad8f6710ca1778260d42ed5584f26a86c",
+    "applicationPackage": "0.1.0-dev.5",
+    "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9",
+    "workflowSha256": "3ccabda58f24cac7fb0f3c915870af62d77785fc4e95459fd5938e2a3d26b808",
+    "flutter": "3.47.8",
+    "flutterRevision": "737ba8f885dc774b53b442759999a312c9461e4e",
+    "dart": "3.13.7",
+    "platform": "ios",
+    "hostId": "local",
+    "targetKind": "simulator",
+    "targetName": "iPhone Duo",
+    "runtime": "iOS27.1",
+    "targetId": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
+    "buildMode": "debug",
+    "fixtureId": "841e2e2123d79ba08c5d05695694176a35383e0fb3c56a41b701c97b975e16cd",
+    "inputFingerprint": "280847486025a3764c4a59b77220ab32c69de3c20ccb18ed7c5d9a0f03b4b999",
+    "inputs": 101,
+    "harnessSha256": "59b50cf07c9fc7113cfd490c00f697a82dfa8be478939af60c6094e0ec6d79ec",
+    "historyWidgetSha256": "70ee7aebaee726d82935ad015b95acc28ecd42297455e37585a0a96483890eee"
+  },
+  "verification": {
+    "nativeTestsPassed": 1,
+    "nativeFailuresFinal": 0,
+    "frameworkExceptionsFinal": 0,
+    "preflightAndPilotStagesPassed": 2,
+    "sourceInputsUnchangedBeforeAfter": 101,
+    "assertions": [
+      "Visible create with reference photo and exact opening movement",
+      "Edit/photo removal and historical unit/stock locks",
+      "Exact dated stock cutoff balances; restock and signed adjustment",
+      "Negative historical reversal rejected with exact invalid_payload and retained input/no write",
+      "Valid linked inverse preserves original and running balance",
+      "Stale visible edit retains draft and newer durable state",
+      "Actual committed write followed by synthetic acknowledgement loss; duplicate-write block and visible authoritative readback",
+      "Fresh-owner same-process SQLite close/reopen preserves exact payload"
+    ],
+    "harnessAnalysis": "Clean; formatter zero changes",
+    "rootLayoutRegression": "Root reported3 red-to-green narrow cases,83 catalog/app tests and clean targeted analysis; not rerun by this worker"
+  },
+  "attempts": [
+    {
+      "folder": ".",
+      "result": "failed: offscreen photo tap",
+      "sourcePreserved": "original-harness.dart.txt"
+    },
+    {
+      "folder": "repaired-1",
+      "result": "failed: stale domain error-code expectation at codec-first boundary",
+      "sourcePreserved": "repaired-1/historical-harness.dart.txt"
+    },
+    {
+      "folder": "repaired-2",
+      "result": "failed: native309px RenderFlex overflow",
+      "sourcePreserved": "repaired-2/historical-harness.dart.txt and historical-stock-history-dialog.dart.txt"
+    },
+    {
+      "folder": "layout-repair-1",
+      "result": "passed: root Wrap repair with unchanged no-exception/business assertions"
+    }
+  ],
+  "elapsedSecondsFinalCommand": 89.4560416250024,
+  "timingQualification": "Build+install+test command duration only; no feature p50/p95/RAM/CPU benchmark claim",
+  "limitations": [
+    "iOS simulator only; no Android/macOS matrix or physical hardware acceptance",
+    "No native pixel-comparison/screenshot artifact or recorded text-scale/viewport metrics from final run",
+    "Lost acknowledgement is a transport seam after real commit, not OS crash/power-loss proof",
+    "Reopen is same-process owner replacement, not process restart",
+    "No live schema12/cutover, real account, import/export, merge or release",
+    "Live screen-reader testing owner-excluded, not passed",
+    "Per-stage stdout.writeln events did not reach the host log; full test assertions provide sequence evidence"
+  ],
+  "window": "Released to root; no owned Flutter/pub/build runner remains",
+  "device": "Restored prior stopped state with supported device_close(shutdown:true); device_list confirms booted:false and no open session",
+  "cleanup": [
+    "cleanup.json",
+    "layout-repair-1/cleanup.json"
+  ],
+  "sourceReviewNeeded": "Both harness changes and native/layout successor remain subject to independent aggregate review; worker grants no approval",
+  "storage": "storage-closeout.json",
+  "reclaimedCompilerCacheKiB": 341940,
+  "timing": "timing.json and time-cost-review.json",
+  "memory": "memory-delivery.json; separate operational status, not a native assertion"
+}

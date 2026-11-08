@@ -11,6 +11,7 @@ import platform
 import plistlib
 import os
 import stat
+import shutil
 from contextlib import contextmanager
 import re
 import subprocess
@@ -23,11 +24,18 @@ REGISTRY = ROOT / 'tool/dev_dashboard/operations.json'
 EXECUTABLE = ROOT / 'build/macos/Build/Products/Profile/Dakhl_Restaurant Dev.app/Contents/MacOS/Dakhl_Restaurant Dev'
 
 
+class EmptyProfileFrameworkError(RuntimeError):
+    """The SDK recreated the known binary-free framework during assembly."""
+
+
 def command(argv, cwd=ROOT):
     completed = subprocess.run(argv, cwd=cwd, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     if completed.returncode:
         # Build/check diagnostics go to stderr, never become benchmark JSON.
         sys.stderr.write(completed.stdout[-12000:] + completed.stderr[-12000:])
+        missing = '/madar_icu_collation.framework/madar_icu_collation: No such file or directory'
+        if argv[:3] == ['flutter', 'build', 'macos'] and missing in (completed.stdout + completed.stderr):
+            raise EmptyProfileFrameworkError('command_failed:flutter')
         raise RuntimeError(f'command_failed:{Path(argv[0]).name}')
     return completed.stdout
 
@@ -401,6 +409,12 @@ def capture_phase02_failure(measurement, path, case, profile, run_id, iterations
 
 
 def operation_fixture_source(entry):
+    if entry.get('harness') == 'visible-operations':
+        return 'lib/platform/visible_performance_scenarios.dart'
+    if entry.get('harness') == 'review-operations':
+        return 'lib/platform/review_performance_scenarios.dart'
+    if entry.get('harness') == 'c1-operations':
+        return 'lib/platform/c1_performance_scenarios.dart'
     if entry.get('harness') == 'completion-nonvisual':
         return 'lib/platform/completion_performance_scenarios.dart'
     return ('lib/platform/phase02_performance_scenarios.dart' if entry.get('phase') == '02'
@@ -408,10 +422,71 @@ def operation_fixture_source(entry):
 
 
 def operation_target(entry):
+    if entry.get('harness') == 'visible-operations':
+        return 'lib/platform/visible_performance_main.dart'
+    if entry.get('harness') == 'review-operations':
+        return 'lib/platform/review_performance_main.dart'
+    if entry.get('harness') == 'c1-operations':
+        return 'lib/platform/c1_performance_main.dart'
     if entry.get('harness') == 'completion-nonvisual':
         return 'lib/platform/completion_performance_main.dart'
     return ('lib/platform/phase02_performance_main.dart' if entry.get('phase') == '02'
             else 'lib/platform/performance_main.dart')
+
+
+
+def operation_fixture_fingerprint(entry, case, profile):
+    identity = case + ':' + entry['scenarioVersion'] + (':' + profile if entry.get('phase') == '02' else '')
+    source = operation_fixture_source(entry)
+    if entry.get('harness') != 'visible-operations':
+        return hashlib.sha256((ROOT / source).read_bytes() + identity.encode()).hexdigest()
+    # Visible fixtures reuse the review seed. Frame both inputs so seed-only
+    # changes invalidate workload comparability, even if the UI source is stable.
+    digest = hashlib.sha256()
+    for path in (source, 'lib/platform/review_performance_scenarios.dart'):
+        payload = (ROOT / path).read_bytes()
+        digest.update(path.encode() + b'\0' + str(len(payload)).encode() + b'\0' + payload)
+    digest.update(identity.encode())
+    return digest.hexdigest()
+
+
+def operation_timeout(entry):
+    return 900 if entry.get('phase') == '02' or entry.get('harness') in {
+        'completion-nonvisual', 'c1-operations', 'review-operations', 'visible-operations'
+    } else 45
+
+
+def discard_empty_profile_icu_frameworks():
+    """Discard only SDK3.47 target-switch shells with no binary/resources.
+
+    Live payloads, unfamiliar inventories and redirected paths stay untouched.
+    This owns app build-cache hygiene, not runtime provisioning or engine code.
+    """
+    profile = ROOT / 'build/macos/Build/Products/Profile'
+    expected = {'Resources', 'Versions', 'Versions/A',
+                'Versions/A/Resources', 'Versions/Current'}
+    removed = 0
+    for parent in (profile / 'native_assets',
+                   profile / 'Dakhl_Restaurant Dev.app/Contents/Frameworks'):
+        framework = parent / 'madar_icu_collation.framework'
+        if not framework.exists() and not framework.is_symlink():
+            continue
+        if framework.resolve() != framework.absolute():
+            raise RuntimeError('profile_native_framework_redirected')
+        inventory = {p.relative_to(framework).as_posix() for p in framework.rglob('*')}
+        if inventory != expected:
+            continue
+        links = {'Resources': 'Versions/Current/Resources', 'Versions/Current': 'A'}
+        if any(not (framework / key).is_symlink() or
+               os.readlink(framework / key) != value for key, value in links.items()):
+            raise RuntimeError('profile_native_framework_redirected')
+        if any(not (framework / name).is_dir() or (framework / name).is_symlink()
+               for name in expected - links.keys()):
+            raise RuntimeError('profile_native_framework_redirected')
+        shutil.rmtree(framework)
+        removed += 1
+        sys.stderr.write('Discarded an empty generated ICU profile framework shell.\n')
+    return removed
 
 
 def build_profile(fingerprint, sdk, engine_identity=None, apple_toolchain=None,
@@ -426,8 +501,16 @@ def build_profile(fingerprint, sdk, engine_identity=None, apple_toolchain=None,
     except (OSError, ValueError):
         cached = None
     if not EXECUTABLE.is_file() or cached != dict(key=key, binaryFingerprint=binary_fingerprint()):
+        discard_empty_profile_icu_frameworks()
         sys.stderr.write('Preparing macOS profile benchmark build…\n')
-        command(['flutter', 'build', 'macos', '--profile', '--no-pub', '-t', key['target']])
+        argv = ['flutter', 'build', 'macos', '--profile', '--no-pub', '-t', key['target']]
+        try:
+            command(argv)
+        except EmptyProfileFrameworkError:
+            if not discard_empty_profile_icu_frameworks():
+                raise
+            sys.stderr.write('Retrying once after the verified SDK empty-framework failure.\n')
+            command(argv)
         stamp.parent.mkdir(parents=True, exist_ok=True)
         stamp.write_text(json.dumps(dict(key=key, binaryFingerprint=binary_fingerprint()), sort_keys=True))
     return EXECUTABLE
@@ -491,9 +574,7 @@ def main():
         if phase02:
             manifest_path = phase02_manifest_path(executable, case, args.fixture, run_id)
             argv += ['--fixture', args.fixture, '--fixture-manifest', str(manifest_path)]
-        fixture_source = ROOT / operation_fixture_source(entry)
-        fixture_identity = case + ':' + entry['scenarioVersion'] + (':' + args.fixture if phase02 else '')
-        spec = dict(operationId=case, label=entry['label'], argv=argv, cwd=str(ROOT), iterations=count, appVersion=version, sourceCommit=source_commit, sourceDirty=source_dirty, sourceFingerprint=fingerprint, engineCommit=engine_commit, targetId='macos-host', buildMode='profile', measurementKind=entry['measurementKind'], scenarioVersion=entry['scenarioVersion'], timeoutSeconds=900 if phase02 or entry.get('harness') == 'completion-nonvisual' else 45, sampleIntervalMs=20, fixtureFingerprint=hashlib.sha256(fixture_source.read_bytes() + fixture_identity.encode()).hexdigest())
+        spec = dict(operationId=case, label=entry['label'], argv=argv, cwd=str(ROOT), iterations=count, appVersion=version, sourceCommit=source_commit, sourceDirty=source_dirty, sourceFingerprint=fingerprint, engineCommit=engine_commit, targetId='macos-host', buildMode='profile', measurementKind=entry['measurementKind'], scenarioVersion=entry['scenarioVersion'], timeoutSeconds=operation_timeout(entry), sampleIntervalMs=20, fixtureFingerprint=operation_fixture_fingerprint(entry, case, args.fixture))
         result = module.run_benchmark(spec)
         if phase02:
             result['fixtureProfile'] = args.fixture
@@ -530,6 +611,24 @@ def main():
                 'exclude those stages and stop at command acknowledgement or completed lookup. '
                 'No UI/raster/input timing; RAM/CPU are not per-sample isolated.')
             result['fixtureProfile'] = 'completion-v1'
+        if entry.get('harness') == 'c1-operations':
+            result['resourceWindowScope'] = ('One host start/end window: C1 ViewModel/query or durable-save samples plus '
+                'inter-iteration fixture setup, exact verification, reopen and teardown. Elapsed samples exclude '
+                'those stages. Photo selection/save includes the bundled asset read; image decode is excluded. '
+                'No UI/raster/frame/native-input timing; RAM/CPU are not per-sample isolated.')
+            result['fixtureProfile'] = 'c1-operations-v1'
+        if entry.get('harness') == 'review-operations':
+            result['resourceWindowScope'] = ('One host start/end window: full-envelope command or report-generation samples plus '
+                'inter-iteration fresh real-adapter setup, exact verification, reopen and teardown. Elapsed excludes '
+                'those stages and ends at durable acknowledgement, canonical export bytes or complete PDF bytes. '
+                'No UI/raster/frame/native-input timing; RAM/CPU are not per-sample isolated.')
+            result['fixtureProfile'] = 'review-operations-v1'
+        if entry.get('harness') == 'visible-operations':
+            result['resourceWindowScope'] = ('One host start/end window: actual surface command-to-raster samples plus '
+                'inter-iteration fresh real-adapter setup, full-state verification, reopen and teardown. Elapsed '
+                'excludes those stages and native input dispatch; checkout excludes paid confirmation dialog. '
+                'Fixed 800x600 logical viewport at 2x DPR. RAM/CPU are not per-sample isolated.')
+            result['fixtureProfile'] = 'visible-operations-v1'
         result['runtimeEngineIdentity'] = engine_identity
         result['environment']['flutterVersion'] = sdk['frameworkVersion']
         result['environment']['dartVersion'] = sdk['dartSdkVersion']
@@ -542,6 +641,12 @@ def main():
         result['comparabilityKey'] = module.comparability_key(result)
         module.validate_result(result)
         results.append(result)
+        # Preserve completed evidence if a later profile build is refused.
+        # This separate file explicitly cannot claim a complete matrix.
+        progress = dict(schemaVersion=1, complete=False,
+                        requestedOperationIds=cases, results=results)
+        publish_results(args.output.with_name(args.output.name + '.progress.json'),
+                        progress, app_failure_receipts)
     if source_fingerprint() != fingerprint or hashlib.sha256(module_path.read_bytes()).hexdigest() != tooling_fingerprint or apple_toolchain_identity() != toolchain:
         raise RuntimeError('benchmark_source_changed_during_measurement')
     output = results[0] if len(results) == 1 else dict(schemaVersion=1, results=results)

@@ -50,6 +50,7 @@ final class PurchaseProposals {
         final c = m[0]!.codeUnitAt(0);
         return '${c >= 0x6f0 ? c - 0x6f0 : c - 0x660}';
       });
+  static String sourceMaterialNameKey(String text) => _key(text);
   static String _key(String text) => LegacyCase.lower(
     _latin(text),
     profile: LegacyCaseProfile.ecmascriptUnicode17,

@@ -1,6 +1,7 @@
 import 'package:madar_domain/madar_domain.dart';
 
 import '../accounts/account_document.dart';
+import 'source_event_order.dart';
 
 /// Source history filters. Empty strings disable the corresponding filter.
 /// Text searches saved receipt numbers, notes and line names without trimming.
@@ -72,12 +73,7 @@ final class SalesReport {
         policy: _policy,
       ).net;
 
-  /// Takes a codec-validated snapshot and preserves the frozen history UI
-  /// binary64 accumulation order, including representable unsafe aggregates.
-  static SalesReport build(
-    AccountDocument document, {
-    SalesHistoryFilter filter = const SalesHistoryFilter(),
-  }) {
+  static void validateFilter(SalesHistoryFilter filter) {
     for (final date in [filter.from, filter.to]) {
       if (date.isNotEmpty) {
         DateOnly.parse(date, minimumYear: 1000, maximumYear: 9999);
@@ -91,6 +87,16 @@ final class SalesReport {
     if (!['', 'completed', 'void'].contains(filter.status)) {
       throw const FormatException('Invalid sales status filter');
     }
+  }
+
+  /// Takes a codec-validated snapshot and preserves the frozen history UI
+  /// binary64 accumulation order, including representable unsafe aggregates.
+  static SalesReport build(
+    AccountDocument document, {
+    SalesHistoryFilter filter = const SalesHistoryFilter(),
+    int Function(String, String)? compareText,
+  }) {
+    validateFilter(filter);
     bool inPeriod(String date) =>
         (filter.from.isEmpty || date.compareTo(filter.from) >= 0) &&
         (filter.to.isEmpty || date.compareTo(filter.to) <= 0);
@@ -122,24 +128,14 @@ final class SalesReport {
         BigInt.from(refund['amount']! as int),
       );
     }
-    final selected = allSales
-        .where((sale) => inPeriod(sale['date']! as String) && matches(sale))
-        .toList();
-    // Preserve source array order when both source sort keys tie. Dart's sort
-    // is not stable, so use the original ordinal as the final comparator.
-    final ordinal = {
-      for (var i = 0; i < allSales.length; i++) allSales[i]['id']: i,
-    };
-    selected.sort((a, b) {
-      final date = (b['date']! as String).compareTo(a['date']! as String);
-      if (date != 0) return date;
-      final created = (b['createdAt']! as String).compareTo(
-        a['createdAt']! as String,
-      );
-      return created != 0
-          ? created
-          : ordinal[a['id']]!.compareTo(ordinal[b['id']]!);
-    });
+    final selected = orderSourceEvents(
+      allSales.where(
+        (sale) => inPeriod(sale['date']! as String) && matches(sale),
+      ),
+      keys: const ['date', 'createdAt'],
+      descending: true,
+      compareText: compareText,
+    );
     final rows = [
       for (final sale in selected)
         SaleHistoryRow._(

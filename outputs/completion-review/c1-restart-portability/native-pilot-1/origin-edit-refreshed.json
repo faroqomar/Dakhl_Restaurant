@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/Users/eros/.t3/userdata/device/targets/t3-b91493306db60c230eefae24/agent-device",
+    "press",
+    "@e32",
+    "--settle"
+  ],
+  "startUtc": "2026-11-08T06:47:08.305719+00:00",
+  "endUtc": "2026-11-08T06:47:09.493237+00:00",
+  "elapsedSeconds": 1.187531334,
+  "exitCode": 0,
+  "log": "origin-edit-refreshed.log"
+}

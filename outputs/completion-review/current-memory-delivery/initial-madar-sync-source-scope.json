@@ -1,0 +1,17 @@
+{
+  "project": "madar",
+  "bank": "project-madar",
+  "root": "/Users/eros/Dev/Eros_Projects/Madar_Engine",
+  "allowlist": [
+    "FULLSTACK.md",
+    "AGENTS.md",
+    "README.md",
+    "docs/**/*.md",
+    "packages/*/README.md"
+  ],
+  "start_utc": "2026-11-08T09:14:25.937195+00:00",
+  "source_manifest": {
+    "file": "madar-source-manifest.json",
+    "sha256": "237e8f73ac71b94d795c3b45d334a3ced31452cc5711cb5a5d7f4edb20f8a658"
+  }
+}

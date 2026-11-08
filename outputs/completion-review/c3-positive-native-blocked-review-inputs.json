@@ -1,0 +1,71 @@
+{
+  "recordedUtc": "2026-11-08T02:53:33.521979+00:00",
+  "status": "zero_mutation_blocked_evidence",
+  "files": [
+    {
+      "path": "outputs/penpot/completion/c3-positive-native-qualification/receipt.json",
+      "bytes": 15433,
+      "sha256": "2674d00f20d94346e59c17a8fce14e0f3b3244f0697f6afdc72e49dd10ea40c8"
+    },
+    {
+      "path": "outputs/penpot/completion/c3-positive-native-qualification/baseline.json",
+      "bytes": 183,
+      "sha256": "271a86c9c8ba089106f8f8ec145e9c0d44e055d07bdcceda838c5e4386271781"
+    },
+    {
+      "path": "outputs/penpot/completion/c3-positive-native-qualification/editor-load-failure.json",
+      "bytes": 2577,
+      "sha256": "37eee3892c48fe4abee08d39e51c8551d0211981566923d089ec3f1b5f6e89b2"
+    },
+    {
+      "path": "outputs/penpot/completion/c3-positive-native-qualification/source-bindings.json",
+      "bytes": 10826,
+      "sha256": "695fb5e6560cff17467a27e6143e7bcf7b9777ed2df99d42d919b882933a3298"
+    },
+    {
+      "path": "outputs/penpot/completion/c3-positive-native-qualification/storage-closeout.json",
+      "bytes": 863,
+      "sha256": "0efa75fc01415ac9b52511a64b5a80fde2d0a3b5a8d023a5226fdf422b3eb0ca"
+    },
+    {
+      "path": "docs/log/2026-11-08-c3-positive-native-qualification.md",
+      "bytes": 2762,
+      "sha256": "8c563cc1d2f374a69be3d878b39d7994a98d5e4e82f3fcd8ca05c85bc172161c"
+    },
+    {
+      "path": "outputs/penpot/completion/c3-positive-native-qualification/preimport-crop-receipt.json",
+      "bytes": 682,
+      "sha256": "25c24b5cca0997366a93883ace17ef6802826a0f4022538d8fb92ed9bd92c4d1"
+    },
+    {
+      "path": "outputs/penpot/completion/c3-positive-native-qualification/pilot-source-selects.png",
+      "bytes": 2815,
+      "sha256": "8ffcbec8256b8b3ec3fab1916e84a78f502503a5359beef6886f7141e7064ea9"
+    },
+    {
+      "path": "outputs/penpot/completion/c3-positive-native-qualification/pilot-prepared-control-4.png",
+      "bytes": 825,
+      "sha256": "e2a616b989e4c267d5e16d205e425ca92237cb568c2f454ed5487e2ced523815"
+    },
+    {
+      "path": "outputs/penpot/completion/c3-positive-native-qualification/pilot-prepared-control-3.png",
+      "bytes": 665,
+      "sha256": "2a08756dd3bbdaa09a67a3f6299484e2ef10edaf5aa78a191f482619060a01ff"
+    },
+    {
+      "path": "outputs/penpot/completion/c3-positive-native-qualification/pilot-prepared-control-2.png",
+      "bytes": 799,
+      "sha256": "1f90536da7d768f1046d03b1f824474c4b47baf085e7c749b36242726ad778c3"
+    },
+    {
+      "path": "outputs/penpot/completion/c3-positive-native-qualification/pilot-prepared-control-0.png",
+      "bytes": 423,
+      "sha256": "8b4500a8962db1e55c3c23da359444779e9c2a3c36389ce31968377a6b166d89"
+    },
+    {
+      "path": "outputs/penpot/completion/c3-positive-native-qualification/pilot-prepared-control-1.png",
+      "bytes": 541,
+      "sha256": "10110ce082c3df5a4b021995ad9f423fed6182cea636c33192810b74fec11f9f"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "createdAt": "2026-11-08T19:58:07.568202+00:00",
+  "actor": "bundled_icu_consumer",
+  "files": {
+    "lib/app/source_collation_runtime.dart": "1a383502f60cdfc0f4c73fc2ae26160e5877bb890130d4f33be166cbd47f1e87",
+    "test/app/source_collation_runtime_test.dart": "941bbf1a014fd43deeebd3e5b5c517521f57cd4d858c6ab4ec2fd4a4345c055d",
+    "integration_test/bundled_icu_native_test.dart": "2470df8c0c8a1c84ce3bc888b9a53f4170fa5dd86209f54ea4a1c7eecf3f515c",
+    "integration_test/completion_candidate_native_test.dart": "c65f67a6ec850370c40c88026b01163d5fc15d9cbdc7b02c1e39933500134440"
+  },
+  "sourceBytes": 14465,
+  "storage": {
+    "baselineFreeKiB": 84380528,
+    "baselineKiB": {
+      ".git": 18525496,
+      "build": 3658864,
+      "outputs": 7743032,
+      ".dart_tool": 2587388
+    },
+    "finalFreeKiB": 84378300,
+    "finalKiB": {
+      ".git": 18525496,
+      "build": 3632840,
+      "outputs": 7743336,
+      ".dart_tool": 2587388
+    },
+    "gitTempStores": [],
+    "removedTaskOwnedScratchBytes": 256720
+  },
+  "scope": "Consumer uses package-owned bundled ICU; no engine source copy or engine/pin/config/embed change. Native execution pending root."
+}

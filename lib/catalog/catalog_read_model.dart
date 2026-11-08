@@ -81,6 +81,11 @@ final class CatalogReadModel {
     for (final p in products)
       if (!p.archived && p.group.isNotEmpty) p.group,
   });
+  List<String> get inventoryGroups => List.unmodifiable({
+    for (final p in products)
+      if (p.group.isNotEmpty) p.group,
+  });
+  int get lowStockCount => products.where((p) => !p.archived && p.low).length;
   CatalogPage sales({String query = '', String group = '', int page = 1}) =>
       CatalogPage._(
         products.where(

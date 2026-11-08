@@ -1,0 +1,183 @@
+{
+  "recordedUtc": "2026-11-08T09:56:24.323684+00:00",
+  "scope": "Focused cleanup-latch repair after independent27binding review; no native result",
+  "predecessorManifest": {
+    "path": "outputs/completion-review/import-byte-boundary/root-repair/recheck-inputs.json",
+    "bytes": 6678,
+    "sha256": "62adc6de59d428f3c615ccbe282cca9db5fc0309fdb328b309596223d833562c"
+  },
+  "independentPredecessor": "27/27 unchanged; original two P2 repairs verified, 8/8 independent tests clean analysis; remaining wrong-success byte validation before finally latched cleanup",
+  "fix": "Success byte validation now inside finally; wrapper finally releases interlock for throwing native delegate too",
+  "actualRed": {
+    "failed": 2,
+    "reason": "wrong successful bytes and throwing delegate leave operation_in_flight/native_operation_in_flight"
+  },
+  "actualGreen": {
+    "passed": 10,
+    "failed": 0,
+    "analysis": "4items noissues"
+  },
+  "failedFixtureCleanup": "2 exact current-task marker/UID/no-link/no-open-handle roots removed; first incorrect marker guard refused all deletion, confirmed receipt retained",
+  "files": [
+    {
+      "path": "integration_test/support/c0_import_boundary_fixture.dart",
+      "bytes": 27841,
+      "sha256": "b4ec97dcab17e7e0b92e327100ba881e4bf91cff995bd129fa3b3ea2d045cb79"
+    },
+    {
+      "path": "integration_test/support/c0_import_boundary_qa_main.dart",
+      "bytes": 7839,
+      "sha256": "91c1634ff5d0bc65b55dfb5f865456e4943f40dfc0551bd6ac08f968fc491ff7"
+    },
+    {
+      "path": "test/accounts/import_boundary_fixture_test.dart",
+      "bytes": 3528,
+      "sha256": "4727b1f04ab4ea32618cc52230e8a66b536b07281ff264e86de94e5752216ae3"
+    },
+    {
+      "path": "test/accounts/import_boundary_lifecycle_test.dart",
+      "bytes": 10028,
+      "sha256": "962ad115103c2f129baa9f8c8e854b82efb150a1cbd4cef3c6a74ca3b80aa2f7"
+    },
+    {
+      "path": "pubspec.yaml",
+      "bytes": 1239,
+      "sha256": "1b66bef10ae3d9666a15c655457c42fe9e271bd33f6312b6f9b14b60508b9278"
+    },
+    {
+      "path": "pubspec.lock",
+      "bytes": 25105,
+      "sha256": "e0be922ad4ca293e171509137122803c5bf0ecb5cb6835bfd2729c73f1cc391f"
+    },
+    {
+      "path": ".dart_tool/package_config.json",
+      "bytes": 21040,
+      "sha256": "f5a804384a7c0c0446cc0dd19f76e791ea87861068e592f240e2aafd108dd4b0"
+    },
+    {
+      "path": "lib/accounts/legacy_account_codec.dart",
+      "bytes": 46428,
+      "sha256": "d95001f493fb8e70ee1988e3f620ca0684fc1136ab2e9bfad49f7032a3b92ebd"
+    },
+    {
+      "path": "lib/accounts/account_document.dart",
+      "bytes": 1950,
+      "sha256": "2604b3447261bb7c488078b371baa44dbccc7dc119d8fbdd2d00c27c37a438f7"
+    },
+    {
+      "path": "lib/accounts/accounts_repository.dart",
+      "bytes": 14731,
+      "sha256": "f059f59433c2d42c55ad794e61fcbcddb1554e6c004d047911f0d40b26aa3cf8"
+    },
+    {
+      "path": "lib/accounts/accounts_view_model.dart",
+      "bytes": 15579,
+      "sha256": "af3108c030bae58e34ce3606273e1b3e4f19a60b00a19678e97afb8d442eb4c6"
+    },
+    {
+      "path": "lib/accounts/accounts_surface.dart",
+      "bytes": 12539,
+      "sha256": "b99e98ce88324b00079b8c86788554d85dbef3446ff42882c5a323a8ff735a7a"
+    },
+    {
+      "path": "lib/accounts/workspace_document.dart",
+      "bytes": 1948,
+      "sha256": "76897263ad71ad49822f245c0a9077f4bd483d4ed6b8582742266df8e66bf726"
+    },
+    {
+      "path": "lib/app/accounts_store.dart",
+      "bytes": 5520,
+      "sha256": "dd1c2b901b4282bafeed9d4c1ee0c8036b9eaaff46e1109cf160810850f62e97"
+    },
+    {
+      "path": "lib/ui/dialogs.dart",
+      "bytes": 8093,
+      "sha256": "d99a92972604d58ec3124cbe2e7feab6a86183ad0fdcb3bf7651fd85cf19fc40"
+    },
+    {
+      "path": "engine-dependency.json",
+      "bytes": 801,
+      "sha256": "f8d2895f3c7d850bd0f5c10bb34e16e58bfa8fc4a454c8909717037cfae1d685"
+    },
+    {
+      "path": "ios/Runner/Info.plist",
+      "bytes": 2238,
+      "sha256": "d59c03b601068cc901559de9f14ec761264f50c03211db9468983cda74f6646b"
+    },
+    {
+      "path": "../Madar_Engine/packages/flutter_adapters/lib/src/native_file_transfer.dart",
+      "bytes": 3177,
+      "sha256": "a62e511c8edb859472623a5d11d8465bf86aa13a4d74dee4d76f939ae4bb41bc"
+    },
+    {
+      "path": "../Madar_Engine/packages/data/lib/src/local_document_workspace_store.dart",
+      "bytes": 55410,
+      "sha256": "f4ca6b5f0691938144670cc789cacf7334be507ae826ecce6c35ddb1c4e6802c"
+    },
+    {
+      "path": "../Madar_Engine/packages/application/lib/src/local_document_workspace.dart",
+      "bytes": 6393,
+      "sha256": "27d4e1404e907a98b361b962171e189800525fb040b60d9ecc37ebfde3b84f30"
+    },
+    {
+      "path": "outputs/completion-review/import-byte-boundary/root-repair/metadata-continuity.json",
+      "bytes": 810,
+      "sha256": "c1abf93e32ad5caf2dd34a4d94652b329819604f22df09252bdd5e0874631a99"
+    },
+    {
+      "path": "outputs/completion-review/import-byte-boundary/root-repair/tests-final.log",
+      "bytes": 2135,
+      "sha256": "a57f55a89e008c750740c0ce02eac80bdbe96f39c6ecdf21d5450134797e4d8a"
+    },
+    {
+      "path": "outputs/completion-review/import-byte-boundary/root-repair/analysis-latest.log",
+      "bytes": 1202,
+      "sha256": "cea2126a5e3af8701915f6c1923af6f8d2621ca9c42fcfde159a0156c570c77d"
+    },
+    {
+      "path": "outputs/completion-review/import-byte-boundary/root-repair/compile-attempt-1.log",
+      "bytes": 8783,
+      "sha256": "0847a9a8ab590b29634481e5a2ee735b7127c805860afb8bb9b33571759aae35"
+    },
+    {
+      "path": "outputs/completion-review/import-byte-boundary/root-repair/tests-attempt-2.log",
+      "bytes": 8108,
+      "sha256": "52d69f6b70b060e093f1a9c1b2b810053c0c5ef4b7f4d043beafda036e87170b"
+    },
+    {
+      "path": "outputs/completion-review/import-byte-boundary/root-repair/lifecycle-attempt-3.log",
+      "bytes": 786,
+      "sha256": "4618bda7fe0b16d602c002b399149963a13a76a2f972843250e4ab9b2afb2677"
+    },
+    {
+      "path": "outputs/completion-review/import-byte-boundary/root-repair/empty-test-namespace-cleanup.json",
+      "bytes": 1233,
+      "sha256": "875d86e99c21e8636517bff68ca08bef6fdfa8e47c10da19c709ff93eb54caa5"
+    },
+    {
+      "path": "outputs/completion-review/import-byte-boundary/root-repair/wrong-selection-red.log",
+      "bytes": 3034,
+      "sha256": "df6513fcfd791789bf97681428142e8c79d7900f3bf2c7b2d13049ddd7c22e87"
+    },
+    {
+      "path": "outputs/completion-review/import-byte-boundary/root-repair/wrong-selection-red-cleanup-confirmed.json",
+      "bytes": 660,
+      "sha256": "4be5530ebe4b3d017ac9d0443895797ea4fc021ce8b034107e7a1bf244ec0b12"
+    },
+    {
+      "path": "outputs/completion-review/import-byte-boundary/root-repair/selected-result-green.log",
+      "bytes": 2519,
+      "sha256": "a7befed0d588368bd76c1d724edc8874f03b44fd163d18f8dab490f95edfcd0b"
+    },
+    {
+      "path": "outputs/completion-review/import-byte-boundary/root-repair/selected-result-analysis.log",
+      "bytes": 96,
+      "sha256": "14a60884461d1f0c94019c43c5752455ab643e66227ab543a2314b99ed87f4fb"
+    },
+    {
+      "path": "outputs/completion-review/import-byte-boundary/root-repair/before-wrong-selection-fix.dart",
+      "bytes": 27683,
+      "sha256": "dee5e53287cbac77c4d226dd7f2fba173cdb99a6fb77f89839ce284c00bdd305"
+    }
+  ]
+}

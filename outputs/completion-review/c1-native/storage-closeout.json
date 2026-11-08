@@ -1,0 +1,52 @@
+{
+  "at": "2026-11-07T20:51:08.404685+00:00",
+  "unit": "KiB",
+  "baseline": {
+    "free": 112059852,
+    "appGit": 18422536,
+    "appBuild": 639928,
+    "taskOutputsExisted": false,
+    "fullProjectSize": "not-measured-at-start"
+  },
+  "final": {
+    "free": 112007856,
+    "sizes": {
+      ".": 27085808,
+      ".git": 18422716,
+      "build": 623536,
+      ".dart_tool": 204860,
+      "outputs/completion-review/c1-native": 156,
+      "../Madar_Engine/.git": 41184
+    },
+    "appTemporaryObjectStores": 0,
+    "engineTemporaryObjectStores": 0
+  },
+  "freeDeltaKiB": -51996,
+  "cleanup": {
+    "preflightFixtureRootsRemoved": 2,
+    "retainedDescriptorCopies": 1,
+    "bulkArtifactsCreated": false,
+    "reclaimedAllocatedBytes": "not-measured-tiny-fixtures-only"
+  },
+  "retained": [
+    {
+      "path": "integration_test/c1_catalog_native_test.dart",
+      "reason": "durable-native-acceptance-source"
+    },
+    {
+      "path": "outputs/completion-review/c1-native",
+      "reason": "canonical-small-blocked-ledger-diagnostics-and-timing-evidence"
+    },
+    {
+      "path": "build",
+      "reason": "shared-current-build-cache-other-workers-active-no-task-owned-native-build"
+    },
+    {
+      "path": ".git",
+      "reason": "repository-and-unique-history-preserved"
+    }
+  ],
+  "unexplainedTaskGrowthOver2GiB": false,
+  "concurrentHostGrowthAttribution": "unknown",
+  "blanketPruning": false
+}

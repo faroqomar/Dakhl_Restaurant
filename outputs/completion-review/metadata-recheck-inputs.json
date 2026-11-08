@@ -1,0 +1,21 @@
+{
+  "createdUtc": "2026-11-07T13:35:47.701154+00:00",
+  "files": {
+    "lib/catalog/product_photo_draft_controller.dart": "abf47ce91db7d23842c5c87e056cd3952b68633e61f21a189af2361acf0a9115",
+    "test/catalog/product_photo_draft_controller_test.dart": "c638e1d116152b2b1613e69fc596a894c7143c4f230091f13470634de4643a75",
+    "test/catalog/product_photo_authority_test.dart": "f8852c3da4fa3357f38121832d40a8618644f9497240c9d1c3c9934172c62cc3",
+    "lib/accounting/categories_view_model.dart": "1fc3c51f10f4c709b3cf90802c6b2370441344dbc3dbb48bc8e409965a33a6c5",
+    "test/accounting/categories_view_model_test.dart": "063dc0c0e6164467db27f2489da62a48bf210e33dffa2769a850ec061cf9b9a7",
+    "../Madar_Engine/packages/domain/lib/src/paid_spending_queries.dart": "bfdc3dd4a5d606da95c740b521479d4fb6fb08e17f0e3f6e18c609ed8334b1d6",
+    "../Madar_Engine/packages/domain/test/paid_spending_queries_test.dart": "0973436c7e607d4fc81a654a05cccb571a2041e787479e67aa10fac8f72cb629",
+    "../Madar_Engine/packages/domain/test/paid_spending_compatibility_test.dart": "d9cf2d80cdf3e6e471d249149e5293aa008584d54d63383fc99225896d3c62e4"
+  },
+  "rootVerification": {
+    "paidFocusedTests": 27,
+    "paidAnalyze": "pass",
+    "photoAndCatalogFocusedTests": 24,
+    "photoAnalyze": "pass"
+  },
+  "categoryVerification": "worker-reported17focused348relatedtests; independent review pending",
+  "scope": "No public export/version/pin/UI/production posting or full item closure"
+}

@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "results": [
+    {
+      "operationId": "accounts.open",
+      "label": "Reopen accounts and render",
+      "appVersion": "0.0.0+1",
+      "sourceCommit": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+      "sourceDirty": true,
+      "sourceFingerprint": "78f94c0c4d4ced62bb16d7b72817ddb4d470288c98d90fae7168cd4a3e3d43d2",
+      "engineCommit": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+      "targetId": "macos-host",
+      "schemaVersion": 1,
+      "protocolVersion": 1,
+      "status": "passed",
+      "buildMode": "profile",
+      "scenarioVersion": "1",
+      "measurementKind": "workflow",
+      "platform": "darwin",
+      "fixtureFingerprint": "bc730085f76071921bfe2425f84d82a33b286861a811bc5d5a4dffcc00fda8ea",
+      "iterations": 1,
+      "requestedIterations": 1,
+      "workloadHash": "bc730085f76071921bfe2425f84d82a33b286861a811bc5d5a4dffcc00fda8ea",
+      "timing": {
+        "medianMs": 20.599,
+        "p95Ms": 20.599,
+        "minMs": 20.599,
+        "maxMs": 20.599
+      },
+      "resources": {
+        "ramPeakMb": 146.653184,
+        "cpuAveragePercent": 35.62450889109554,
+        "cpuPeakPercent": 83.7616275389526,
+        "cpuSeconds": 0.03788258333333333,
+        "sampleCount": 6,
+        "intervalMs": 20,
+        "windowSeconds": 0.10633854195475578,
+        "cpuNormalization": "one-logical-core-100-percent",
+        "ramScope": "sampled-process-resident-peak",
+        "boundary": "host-start-to-end-marker-receipt"
+      },
+      "startup": {
+        "processToReadyMs": {
+          "medianMs": 1321.4806669857353,
+          "p95Ms": 1321.4806669857353,
+          "minMs": 1321.4806669857353,
+          "maxMs": 1321.4806669857353
+        },
+        "launchCount": 1
+      },
+      "samplesMs": [
+        20.599
+      ],
+      "startedAt": "2026-11-08T20:44:23.024652+00:00",
+      "finishedAt": "2026-11-08T20:44:24.569366+00:00",
+      "environment": {
+        "os": "Darwin",
+        "osVersion": "27.2",
+        "architecture": "arm64",
+        "cpuModel": "Apple M1 Pro",
+        "hardwareModel": "MacBookPro18,3",
+        "logicalCpuCount": 8,
+        "pythonVersion": "3.13.0",
+        "toolVersion": "1.0.0-dev.1",
+        "sampler": "macos-libproc-taskinfo",
+        "cpuPrecision": "native-cumulative-Mach-ticks/timebase; interval-derived-percent",
+        "processScope": "direct-child-only; excludes-descendants",
+        "startupCacheState": "fresh-process; OS caches uncontrolled",
+        "toolSourceFingerprint": "2a7be23029253798bfcc197e2411edc3b9b4037ba1384ba6b24a75e5ed428086",
+        "flutterVersion": "3.47.8",
+        "dartVersion": "3.13.7",
+        "appleToolchain": {
+          "xcode": "Xcode 27.2\nBuild version 27B52",
+          "macosSdkBuild": "26B118"
+        },
+        "appBenchmarkRunnerFingerprint": "cb68f982e3f7720c5503fdc7566a2769d500edfd409055fc9e120cd9a0a6adc4",
+        "benchmarkToolsCommit": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+        "benchmarkToolsFingerprint": "2a7be23029253798bfcc197e2411edc3b9b4037ba1384ba6b24a75e5ed428086"
+      },
+      "diagnostics": [],
+      "cleanupComplete": true,
+      "hardwareId": "ca9b90ae4eb4c205db80db02f7a87729bddeb2f5882ca17998d25d347ae5e8fa",
+      "comparabilityKey": "33b98460783bc2e4904c4468a6908a3d7185284c19dec27316957767d4b210c5",
+      "fixtureProfile": "small",
+      "fixtureManifest": {
+        "profile": "small",
+        "synthetic": true,
+        "sourceSchema": 11,
+        "legacySourceSchema": 1,
+        "recordKind": "cash transactions; no operating commands",
+        "recordCount": 10,
+        "canonicalBytes": 2904,
+        "legacyInputBytes": 2903,
+        "replacementBytes": 2906,
+        "notePattern": "synthetic-{index}",
+        "accountLimitBytes": 20971520,
+        "workspaceBytes": 3416,
+        "heldDrafts": 40,
+        "activeDrafts": 1,
+        "largestMarginPolicyBytes": 65536
+      },
+      "fixtureManifestFingerprint": "99946429b44e9c9f047f9835a431e4af95561d1fe4adc17b46e1b223dbeb30db",
+      "fixtureManifestArtifact": "outputs/phase02/performance-manifests/accounts.open-small-cb11b7254db3464ca3b272f3e1747c29.json",
+      "resourceWindowScope": "One host start/end window: operation samples plus inter-iteration fixture reset, teardown and rendering setup. Elapsed samples exclude fixture reset and end at actual raster completion. RAM/CPU are not per-sample isolated.",
+      "runtimeEngineIdentity": {
+        "gitCommit": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+        "manifestFingerprint": "d6d86b7d5d3b1e73165ec67ec07fd640dc7329c32d502e3f5cfab2974d89df24",
+        "sourceFingerprint": "a9fdec8dccdc8b207964ca7e4309128a8c20665225c654bf697c8bc9211db01c",
+        "packageVersions": {
+          "madar_application": "0.1.0-dev.6",
+          "madar_data": "0.1.0-dev.2",
+          "madar_domain": "0.1.0-dev.5",
+          "madar_flutter_adapters": "0.1.0-dev.3",
+          "madar_icu_collation": "0.1.0-dev.2"
+        },
+        "resolutionFingerprint": "22317a26ab78aebeb6444d789cc9dfa265f9360598c181882562ff38928d6f43"
+      },
+      "scope": "Actual consumer ViewModel/repository command over a fresh real adapter fixture, through AccountsSurface raster completion. Small10/medium1000/largest near20MiB synthetic cash transactions; workspace active+40held. Elapsed excludes reset; sampled RAM/CPU host window includes between-sample reset/cleanup. No native input dispatch or production records."
+    },
+    {
+      "operationId": "orders.process",
+      "label": "Process saved checkout and render cleared cart",
+      "appVersion": "0.0.0+1",
+      "sourceCommit": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+      "sourceDirty": true,
+      "sourceFingerprint": "78f94c0c4d4ced62bb16d7b72817ddb4d470288c98d90fae7168cd4a3e3d43d2",
+      "engineCommit": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+      "targetId": "macos-host",
+      "schemaVersion": 1,
+      "protocolVersion": 1,
+      "status": "passed",
+      "buildMode": "profile",
+      "scenarioVersion": "1",
+      "measurementKind": "workflow",
+      "platform": "darwin",
+      "fixtureFingerprint": "a8733484102c23e54c0c9daee695416a44075b55e24bfe2c37cabb5fe45d0ffd",
+      "iterations": 1,
+      "requestedIterations": 1,
+      "workloadHash": "a8733484102c23e54c0c9daee695416a44075b55e24bfe2c37cabb5fe45d0ffd",
+      "timing": {
+        "medianMs": 140.681,
+        "p95Ms": 140.681,
+        "minMs": 140.681,
+        "maxMs": 140.681
+      },
+      "resources": {
+        "ramPeakMb": 218.857472,
+        "cpuAveragePercent": 92.9562154429762,
+        "cpuPeakPercent": 173.86038184279903,
+        "cpuSeconds": 0.24800354166666683,
+        "sampleCount": 14,
+        "intervalMs": 20,
+        "windowSeconds": 0.2667960829567164,
+        "cpuNormalization": "one-logical-core-100-percent",
+        "ramScope": "sampled-process-resident-peak",
+        "boundary": "host-start-to-end-marker-receipt"
+      },
+      "startup": {
+        "processToReadyMs": {
+          "medianMs": 2253.1734169460833,
+          "p95Ms": 2253.1734169460833,
+          "minMs": 2253.1734169460833,
+          "maxMs": 2253.1734169460833
+        },
+        "launchCount": 1
+      },
+      "samplesMs": [
+        140.681
+      ],
+      "startedAt": "2026-11-08T20:45:06.896589+00:00",
+      "finishedAt": "2026-11-08T20:45:09.547737+00:00",
+      "environment": {
+        "os": "Darwin",
+        "osVersion": "27.2",
+        "architecture": "arm64",
+        "cpuModel": "Apple M1 Pro",
+        "hardwareModel": "MacBookPro18,3",
+        "logicalCpuCount": 8,
+        "pythonVersion": "3.13.0",
+        "toolVersion": "1.0.0-dev.1",
+        "sampler": "macos-libproc-taskinfo",
+        "cpuPrecision": "native-cumulative-Mach-ticks/timebase; interval-derived-percent",
+        "processScope": "direct-child-only; excludes-descendants",
+        "startupCacheState": "fresh-process; OS caches uncontrolled",
+        "toolSourceFingerprint": "2a7be23029253798bfcc197e2411edc3b9b4037ba1384ba6b24a75e5ed428086",
+        "flutterVersion": "3.47.8",
+        "dartVersion": "3.13.7",
+        "appleToolchain": {
+          "xcode": "Xcode 27.2\nBuild version 27B52",
+          "macosSdkBuild": "26B118"
+        },
+        "appBenchmarkRunnerFingerprint": "cb68f982e3f7720c5503fdc7566a2769d500edfd409055fc9e120cd9a0a6adc4",
+        "benchmarkToolsCommit": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+        "benchmarkToolsFingerprint": "2a7be23029253798bfcc197e2411edc3b9b4037ba1384ba6b24a75e5ed428086"
+      },
+      "diagnostics": [],
+      "cleanupComplete": true,
+      "hardwareId": "ca9b90ae4eb4c205db80db02f7a87729bddeb2f5882ca17998d25d347ae5e8fa",
+      "comparabilityKey": "806abdede36f183d0165f7333391aa435fee1e830e0c570cc54b387733424ea3",
+      "resourceWindowScope": "One host start/end window: actual surface command-to-raster samples plus inter-iteration fresh real-adapter setup, full-state verification, reopen and teardown. Elapsed excludes those stages and native input dispatch; checkout excludes paid confirmation dialog. Fixed 800x600 logical viewport at 2x DPR. RAM/CPU are not per-sample isolated.",
+      "fixtureProfile": "visible-operations-v1",
+      "runtimeEngineIdentity": {
+        "gitCommit": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+        "manifestFingerprint": "d6d86b7d5d3b1e73165ec67ec07fd640dc7329c32d502e3f5cfab2974d89df24",
+        "sourceFingerprint": "a9fdec8dccdc8b207964ca7e4309128a8c20665225c654bf697c8bc9211db01c",
+        "packageVersions": {
+          "madar_application": "0.1.0-dev.6",
+          "madar_data": "0.1.0-dev.2",
+          "madar_domain": "0.1.0-dev.5",
+          "madar_flutter_adapters": "0.1.0-dev.3",
+          "madar_icu_collation": "0.1.0-dev.2"
+        },
+        "resolutionFingerprint": "22317a26ab78aebeb6444d789cc9dfa265f9360598c181882562ff38928d6f43"
+      },
+      "scope": "Prepared one-line cash checkout through acknowledged persistence and peer synchronization to completed native raster of the real SalesSurface cleared cart. Paid confirmation dialog and native input dispatch excluded. Fixed 800x600 logical viewport at 2x DPR; 20 products and 200 historical cash rows. Fresh real adapter per sample. Setup, exact verification/reopen and cleanup excluded from elapsed, included between samples in broad sampled RAM/CPU window."
+    }
+  ]
+}

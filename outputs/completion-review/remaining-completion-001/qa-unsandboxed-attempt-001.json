@@ -1,0 +1,17 @@
+{
+  "identity": {
+    "event": "acceptance_acknowledged",
+    "fixture": "remaining-20261108-v1",
+    "pid": 60054,
+    "root": "/Users/eros/Library/Application Support/com.eros.dakhlrestaurant.phase00/dakhl-acceptance-remaining-20261108-v1",
+    "revision": 1,
+    "writeToken": "acceptance-initial-remaining-20261108-v1",
+    "fence": {
+      "storeId": "1daca59b0f976f895cc34303a92943d7eb9d71d57386be799a1dda4194348ebe",
+      "generation": "5bc6d151749ec90f05f728b4d703e8508ff0b02e8582dfe6197575104657c4da"
+    },
+    "icuBundled": true
+  },
+  "payload_sha256": "1801d656c3929bba02be2f25a37e7f0867d1de3f321204d61dc3a0dbbac3159f",
+  "cleanup": "confirmed newly created synthetic fixture only"
+}

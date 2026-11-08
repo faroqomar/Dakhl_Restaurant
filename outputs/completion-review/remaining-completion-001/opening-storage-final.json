@@ -1,0 +1,50 @@
+{
+  "recordedAt": "2026-11-08T19:52:02.818094+00:00",
+  "before": {
+    "recordedAt": "2026-11-08T19:36:30.291361+00:00",
+    "freeKiB": 84489132,
+    "sizesKiB": {
+      ".git": 18525496,
+      "build": 3632956,
+      "outputs": 7742536
+    },
+    "removed": [
+      {
+        "path": "outputs/completion-review/remaining-completion-001/opening-old-reader-probe-source.txt",
+        "bytes": 1059,
+        "reason": "Exact duplicate probe source; canonical retained."
+      },
+      {
+        "path": "/tmp/opening-required-reading.txt",
+        "bytes": 286108,
+        "reason": "Task-created reproducible concatenated instruction scratch; originals retained."
+      }
+    ],
+    "nativeCompilerStatus": "Opening first Flutter run failed before test execution in shared ICU native asset install-name rewrite; no retry pending engine freeze.",
+    "oldReaderSourceBytes": 28264
+  },
+  "after": {
+    "freeKiB": 84394776,
+    "sizesKiB": {
+      ".git": 18525496,
+      "build": 3658864,
+      "outputs": 7743024
+    }
+  },
+  "sourceFiles": {
+    "lib/parties/supplier_opening_commands.dart": "4c2e8962911f149afe8a4f4c017126a71360307560943a529a0dd71bd040b0f8",
+    "lib/parties/supplier_opening_controller.dart": "774996c891232032ea94b9fba3c2855ba596e223b06fe52bf5c35d3704b2e3a8",
+    "lib/accounts/portable_journal_state.dart": "024e1711e19579c1c4009917e99bfa41dbd49f8588024ce5f7dc8b304cadb61c",
+    "lib/accounting/restaurant_journal_spending_commands.dart": "4624f7f40935b60345ebe8873c54e96a714ca8aea1ec053010ec1478130055d3",
+    "lib/parties/additional_debt_commands.dart": "cf9920a69d05d8afccac08cf1b85d1d4b4876dd770d04c14374d7240eddcb4c8",
+    "lib/parties/parties_surface.dart": "5e1a1ed842d25ddaf3b8e495eed1ffa8952c530711332c1ac590d1a2c9f81ee0",
+    "lib/parties/parties_surface_controller.dart": "9374373ba98574cba626c0943dff5aff0d28823f2e43dad66468829d4d098695",
+    "test/parties/supplier_opening_controller_test.dart": "ae276e619e5c6f72d775536a28faedd0bf767e60030283029480671f9a0a1c46",
+    "test/parties/supplier_opening_surface_test.dart": "ad13454befa196dd9bdeb32a8318cdd92c66642b07b457e68af384d61e8b12c1"
+  },
+  "retainedCanonicalCompatibilityBytes": 28264,
+  "removedLogicalBytes": 287167,
+  "physicalReclaimedBytes": "Unknown; concurrent campaign/host changes prevent exact attribution.",
+  "gitTemporaryObjectDirectories": [],
+  "compilerReleased": true
+}

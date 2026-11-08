@@ -1,0 +1,14 @@
+{
+  "beforePid": 1835,
+  "afterPid": 4476,
+  "checks": {
+    "differentPid": true,
+    "differentBootNonce": true,
+    "notInitialized": true,
+    "checkpointExact": true,
+    "snapshotExact": true,
+    "productsExact": true,
+    "stockExact": true,
+    "payloadExact": true
+  }
+}

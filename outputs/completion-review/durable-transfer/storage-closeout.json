@@ -1,0 +1,14 @@
+{
+  "storageBaselineKiB": 110521052,
+  "storageCloseoutKiB": 109264868,
+  "componentsKiB": {
+    ".git": 18429564,
+    "../Madar_Engine/.git": 42596,
+    "build": 592208,
+    ".dart_tool": 204860,
+    "outputs/completion-review/durable-transfer": 24
+  },
+  "leftoverTemporaryStores": 0,
+  "disposableScratchCleaned": true,
+  "canonicalProofsRetained": true
+}
