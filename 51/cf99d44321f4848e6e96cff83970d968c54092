@@ -1,0 +1,3204 @@
+docs/how-to/repeated-problems.md
+  s_4cfb0aecd4cd7c::t_4cc076cb768955 594-597
+  s_4cfb0aecd4cd7c::t_e842c70e612b5a 307-593
+  s_4cfb0aecd4cd7c::t_63d433059784d4 598-601
+  s_b61aed9e5ebdf0::t_9c14866b4ed06d 602-888
+docs/phases/completion-benchmarks.md
+  s_4cfb0aecd4cd7c::t_dda791f01474ee 3
+docs/log/2026-11-07-completion-step6-gate.md
+  s_4cfb0aecd4cd7c::t_dbe9f111fb0767 1-11
+outputs/completion-build/step3-timing.json
+  s_4cfb0aecd4cd7c::t_9ff634b6bfe290 1
+AGENTS.md
+  s_4cfb0aecd4cd7c::t_63d433059784d4 378-388
+  s_b61aed9e5ebdf0::t_fcd68d82249721 389-401
+outputs/completion-review/report-parity/manifest.json
+  s_4cfb0aecd4cd7c::t_549c4a0c62b399 1-14
+outputs/completion-build/step3-timing-closeout.json
+  s_4cfb0aecd4cd7c::t_ba80059aa10f5d 1-11
+PHASES.md
+  s_4cfb0aecd4cd7c::t_dbe9f111fb0767 1-2
+  s_4cfb0aecd4cd7c::t_99329199dc76b3 27,33
+  s_4cfb0aecd4cd7c::t_bc6fbaab1fa6ce 7-26,28-30,34
+  s_b61aed9e5ebdf0::t_ea362ec30bdc20 3-6,35-62,399-428
+docs/log/phase-completion-execution.md
+  s_4cfb0aecd4cd7c::t_dbe9f111fb0767 638-641
+  s_4cfb0aecd4cd7c::t_ba80059aa10f5d 606-607
+  s_4cfb0aecd4cd7c::t_62917717ebd725 636-637
+  s_4cfb0aecd4cd7c::t_31af4fe379dec6 668-671
+  s_4cfb0aecd4cd7c::t_a07b1ecfa47245 688-691
+  s_4cfb0aecd4cd7c::t_cb5907accc3b8c 674-677
+  s_4cfb0aecd4cd7c::t_d586d28b2caa66 610-613
+  s_4cfb0aecd4cd7c::t_c6455b2807680e 630-631
+  s_4cfb0aecd4cd7c::t_20eb5c5ef9a25a 672-673
+  s_4cfb0aecd4cd7c::t_b9afaf41da6324 628-629
+  s_4cfb0aecd4cd7c::t_9ff634b6bfe290 1-605
+  s_4cfb0aecd4cd7c::t_4cc076cb768955 642-645
+  s_4cfb0aecd4cd7c::t_e842c70e612b5a 624-627
+  s_4cfb0aecd4cd7c::t_607541e61778a3 678-679
+  s_4cfb0aecd4cd7c::t_549c4a0c62b399 656-659
+  s_4cfb0aecd4cd7c::t_d9735a3ff5a481 646-649
+  s_4cfb0aecd4cd7c::t_73aa96999a56e1 652-655
+  s_4cfb0aecd4cd7c::t_81e0442b9b79ed 662-663
+  s_4cfb0aecd4cd7c::t_fe8584076c5605 632-635
+  s_4cfb0aecd4cd7c::t_7a011e1238ed7c 660-661
+  s_4cfb0aecd4cd7c::t_2fa966dfdbc8a4 680-683
+  s_4cfb0aecd4cd7c::t_c29a969a9920e7 684-687
+  s_4cfb0aecd4cd7c::t_0ab84401005605 650-651
+  s_4cfb0aecd4cd7c::t_e7e957687c8cd5 608-609
+  s_4cfb0aecd4cd7c::t_cb56be40481ee9 614-615
+  s_4cfb0aecd4cd7c::t_839902c6cd28ba 664-667
+  s_4cfb0aecd4cd7c::t_b9d62aa614595c 616-623
+  s_b61aed9e5ebdf0::t_a67781ede85e74 692-1464
+outputs/completion-review/step5-delivery-receipt.json
+  s_4cfb0aecd4cd7c::t_62917717ebd725 1-28
+outputs/completion-build/closeout.json
+  s_4cfb0aecd4cd7c::t_e7e957687c8cd5 1-33
+docs/log/2026-11-07-interactive-ui-qa.md
+  s_4cfb0aecd4cd7c::t_0ab84401005605 1-7
+  s_4cfb0aecd4cd7c::t_9c61dca3aa4817 8-11
+outputs/completion-review/app-ci-pass-82e8bf1.json
+  s_4cfb0aecd4cd7c::t_d9735a3ff5a481 1
+.gitignore
+  s_b61aed9e5ebdf0::t_2919ab6b732a96 76-87
+PLANS.md
+  s_b61aed9e5ebdf0::t_1269f4266dbceb 1-17,37
+analysis_options.yaml
+  s_b61aed9e5ebdf0::t_e221443a3cb952 5-7
+docs/README.md
+  s_b61aed9e5ebdf0::t_3b95eaad12e068 1-7,30,33-34,56
+docs/decisions/0020-self-hosted-penpot.md
+  s_b61aed9e5ebdf0::t_8359ec21c8a2f3 1-25
+docs/decisions/0021-completion-financial-policy.md
+  s_b61aed9e5ebdf0::t_8b76c60404d050 1-39
+docs/decisions/README.md
+  s_b61aed9e5ebdf0::t_01caf057124d30 30-32
+docs/how-to/completion-design-restart.md
+  s_b61aed9e5ebdf0::t_94e61d54ad3a88 1-38
+docs/how-to/versioning-and-performance.md
+  s_4cfb0aecd4cd7c::t_9c053942f26ebc 20,33-35
+docs/log/2026-11-05-completion-penpot-design.md
+  s_b61aed9e5ebdf0::t_3fb6a4584a55f7 1-16
+docs/log/2026-11-05-completion-scope.md
+  s_b61aed9e5ebdf0::t_27ffe0df227b73 1-13
+docs/log/2026-11-05-selfhost-native-pilot.md
+  s_b61aed9e5ebdf0::t_3d4b6ae4b7817d 1-9
+docs/log/2026-11-06-completion-continuation-save-reconciliation.md
+  s_b61aed9e5ebdf0::t_701ef0c5aa25e8 1-21
+docs/log/2026-11-06-completion-design-continuation.md
+  s_b61aed9e5ebdf0::t_c7e9332532cf12 1-15
+docs/log/2026-11-06-completion-design-restart.md
+  s_b61aed9e5ebdf0::t_fee3fc1daa88ae 1-33
+docs/log/2026-11-06-completion-design-write-blocker-handoff.md
+  s_b61aed9e5ebdf0::t_86d533c2b60131 1-38
+docs/log/2026-11-06-completion-native-131-milestone.md
+  s_b61aed9e5ebdf0::t_0a5ae728c0dcd8 1-17
+docs/log/2026-11-06-completion-native-135-milestone.md
+  s_b61aed9e5ebdf0::t_5a9957544475e4 1-11
+docs/log/2026-11-06-completion-native-143-milestone.md
+  s_b61aed9e5ebdf0::t_e969dcb2131acf 1-21
+docs/log/2026-11-06-completion-native-151-milestone.md
+  s_b61aed9e5ebdf0::t_7f6e10029e296f 1-17
+docs/log/2026-11-06-completion-native-165-milestone.md
+  s_4cfb0aecd4cd7c::t_43720e8c2c3cd6 1-46
+docs/log/2026-11-06-completion-parallel-review-integration.md
+  s_b61aed9e5ebdf0::t_30c1439e3eb545 1-37
+docs/log/2026-11-06-penpot-backend-heap-recovery.md
+  s_b61aed9e5ebdf0::t_d4b0ca07e8f0f0 1-13
+docs/log/2026-11-06-penpot-continuation-restart-correction.md
+  s_b61aed9e5ebdf0::t_5a95de86b1298d 1-7
+docs/log/2026-11-06-penpot-exporter-readiness-recovery.md
+  s_b61aed9e5ebdf0::t_df2eaf8155563b 1-22
+docs/log/2026-11-06-penpot-performance-findings.md
+  s_b61aed9e5ebdf0::t_7ff7473b96305d 1-37
+docs/log/2026-11-06-penpot-performance-investigation.md
+  s_b61aed9e5ebdf0::t_2fdbbea0c2a9c8 1-49
+docs/log/2026-11-06-penpot-workflow-delay-audit.md
+  s_b61aed9e5ebdf0::t_38ea35295cd4c8 1-41
+docs/log/2026-11-07-c1-native-acceptance.md
+  s_b61aed9e5ebdf0::t_62cc133b43630c 1-46
+docs/log/2026-11-07-c1-ui-integration.md
+  s_b61aed9e5ebdf0::t_4a6b151144542e 1-127
+docs/log/2026-11-07-c2-c3-design-approval-preparation.md
+  s_b61aed9e5ebdf0::t_33e1a741c43eac 1-37
+docs/log/2026-11-07-category-design-hold-repair.md
+  s_b61aed9e5ebdf0::t_558f31b16681b1 1-118
+docs/log/2026-11-07-command-atomicity-verification.md
+  s_b61aed9e5ebdf0::t_9e13bf63a22b29 1-44
+docs/log/2026-11-07-completion-category-view-model.md
+  s_b61aed9e5ebdf0::t_7f9c3c336d22f2 1-96
+docs/log/2026-11-07-completion-controller-oom-checkpoint.md
+  s_4cfb0aecd4cd7c::t_237b27890d8365 1-26
+docs/log/2026-11-07-completion-financial-packet.md
+  s_b61aed9e5ebdf0::t_897a27ba53d27f 1-65
+docs/log/2026-11-07-completion-step2-restart.md
+  s_4cfb0aecd4cd7c::t_2da77568f87fb5 1-15
+docs/log/2026-11-07-completion-step2-review.md
+  s_4cfb0aecd4cd7c::t_3278b8e84980bc 1-3
+docs/log/2026-11-07-completion-step3-build.md
+  s_4cfb0aecd4cd7c::t_3361a5a46de8c4 1-9
+docs/log/2026-11-07-completion-step4-review.md
+  s_4cfb0aecd4cd7c::t_2d022836488e66 1-29
+docs/log/2026-11-07-completion-step5-delivery.md
+  s_4cfb0aecd4cd7c::t_ebb8e29e677a5d 1-14
+docs/log/2026-11-07-completion-unfinished-planning.md
+  s_b61aed9e5ebdf0::t_e50fe0ec885051 1-49
+docs/log/2026-11-07-completion-verification.md
+  s_b61aed9e5ebdf0::t_fa436ca365eabd 1-48
+docs/log/2026-11-07-durable-sales-composition.md
+  s_b61aed9e5ebdf0::t_773e114d81151b 1-139
+docs/log/2026-11-07-durable-spending-composition.md
+  s_b61aed9e5ebdf0::t_ee8927919b00e5 1-156
+docs/log/2026-11-07-journal-reconciliation-verification.md
+  s_b61aed9e5ebdf0::t_667e68f996d093 1-43
+docs/log/2026-11-07-paid-spending-consumer-integration.md
+  s_b61aed9e5ebdf0::t_02560ad25236e8 1-9
+docs/log/2026-11-07-penpot-current-oom-recovery.md
+  s_4cfb0aecd4cd7c::t_15655931f36445 1-45
+docs/log/2026-11-07-portable-journal-codec.md
+  s_b61aed9e5ebdf0::t_24d607089e6464 1-107
+docs/log/2026-11-07-query-coordinator-adoption.md
+  s_b61aed9e5ebdf0::t_c9f46c3761bf57 1-9
+docs/log/2026-11-07-restaurant-journal-mapper.md
+  s_b61aed9e5ebdf0::t_5bb20830c16a72 1-21
+docs/log/2026-11-07-storage-producer-containment.md
+  s_b61aed9e5ebdf0::t_dcfd4b1fad60e0 1-108
+docs/log/2026-11-08-acceptance-test-repair.md
+  s_b61aed9e5ebdf0::t_b683547bc8c8d4 1-19
+docs/log/2026-11-08-additional-debt-review-build.md
+  s_b61aed9e5ebdf0::t_59a70b7358ee75 1-59
+docs/log/2026-11-08-baseline-delivery-reconciliation.md
+  s_b61aed9e5ebdf0::t_13340734b6e2a4 1-17
+docs/log/2026-11-08-benchmark-aggregate-review.md
+  s_b61aed9e5ebdf0::t_e7fd1b1f38b3ac 1-41
+docs/log/2026-11-08-benchmark-integration-completion.md
+  s_b61aed9e5ebdf0::t_e5769225f68d22 1-38
+docs/log/2026-11-08-bootstrap-successor-repair.md
+  s_b61aed9e5ebdf0::t_652cbd49359ab3 1-23
+docs/log/2026-11-08-build-first-categories.md
+  s_b61aed9e5ebdf0::t_e2c4aced99f399 1-15
+docs/log/2026-11-08-build-first-closeout.md
+  s_b61aed9e5ebdf0::t_4c7c0e710d18d0 1-56
+docs/log/2026-11-08-build-first-daily-cash-ui.md
+  s_b61aed9e5ebdf0::t_ea693e464d7bd0 1-11
+docs/log/2026-11-08-build-first-daily-register.md
+  s_b61aed9e5ebdf0::t_b91c30c08d4b12 1-103
+docs/log/2026-11-08-build-first-invoice-corrections.md
+  s_b61aed9e5ebdf0::t_7a2281c7d8eba9 1-28
+docs/log/2026-11-08-build-first-parties-ui.md
+  s_b61aed9e5ebdf0::t_1e5f9e14f13942 1-50
+docs/log/2026-11-08-build-first-portable-transfer.md
+  s_b61aed9e5ebdf0::t_227d6419956fba 1-102
+docs/log/2026-11-08-build-first-sales-history-ui.md
+  s_b61aed9e5ebdf0::t_fdd22826c3ed35 1-36
+docs/log/2026-11-08-build-first-sales-session-ui.md
+  s_b61aed9e5ebdf0::t_ff0a4606cf7dbd 1-39
+docs/log/2026-11-08-build-first-sales.md
+  s_b61aed9e5ebdf0::t_46e8587815e916 1-29
+docs/log/2026-11-08-build-first-settings-reports.md
+  s_b61aed9e5ebdf0::t_4a2eba776a1953 1-108
+docs/log/2026-11-08-build-first-spending-parties.md
+  s_b61aed9e5ebdf0::t_2a332452b4be1b 1-96
+docs/log/2026-11-08-build-first-stock-sale-navigation.md
+  s_b61aed9e5ebdf0::t_2fcaf58cd0a732 1-35
+docs/log/2026-11-08-bundled-icu-consumer.md
+  s_b61aed9e5ebdf0::t_7d632635849641 1-28
+docs/log/2026-11-08-c0-initial-retry-workspace-repair.md
+  s_b61aed9e5ebdf0::t_de62cd2465152f 1-13
+docs/log/2026-11-08-c0-native-bootstrap-row-closure.md
+  s_b61aed9e5ebdf0::t_7927a1a34b5b25 1-11
+docs/log/2026-11-08-c0-protected-bootstrap-native-ios-successor.md
+  s_b61aed9e5ebdf0::t_b36bb3549c8647 1-19
+docs/log/2026-11-08-c0-protected-bootstrap-native-ios.md
+  s_b61aed9e5ebdf0::t_214457a4afc4b7 1-17
+docs/log/2026-11-08-c0-protected-bootstrap-preparation.md
+  s_b61aed9e5ebdf0::t_50cf6eefb40332 1-15
+docs/log/2026-11-08-c1-api-baseline-50-preparation.md
+  s_b61aed9e5ebdf0::t_14e1fa835f4403 1-35
+docs/log/2026-11-08-c1-api-baseline-50.md
+  s_b61aed9e5ebdf0::t_31af897bf25b2a 1-53
+docs/log/2026-11-08-c1-api-baseline-independent-acceptance.md
+  s_b61aed9e5ebdf0::t_b09e8fe30e8c08 1-25
+docs/log/2026-11-08-c1-connected-gap-closure.md
+  s_b61aed9e5ebdf0::t_6ed2f522443b47 1-9
+docs/log/2026-11-08-c1-exact-row-closure.md
+  s_b61aed9e5ebdf0::t_34367add2dc59a 1-11
+docs/log/2026-11-08-c1-history-responsive-repair.md
+  s_b61aed9e5ebdf0::t_172efc1645682b 1-7
+docs/log/2026-11-08-c1-mounted-write-acceptance.md
+  s_b61aed9e5ebdf0::t_354795036ce8cb 1-7
+docs/log/2026-11-08-c1-native-device-ready-pilot.md
+  s_b61aed9e5ebdf0::t_1a146ade903525 1-29
+docs/log/2026-11-08-c1-operation-benchmark-harness.md
+  s_b61aed9e5ebdf0::t_77e51b24090a9e 1-38
+docs/log/2026-11-08-c1-profile-product-create-pilot.md
+  s_b61aed9e5ebdf0::t_402ad1e6699d31 1-31
+docs/log/2026-11-08-c1-rendered-pagination-verification.md
+  s_b61aed9e5ebdf0::t_95be5af6c29cac 1-21
+docs/log/2026-11-08-c1-restart-cleanup-repair.md
+  s_b61aed9e5ebdf0::t_5d9da1605bc33f 1-9
+docs/log/2026-11-08-c1-restart-portability-row-closure.md
+  s_b61aed9e5ebdf0::t_bedc0a5928aad7 1-11
+docs/log/2026-11-08-c1-restart-portability.md
+  s_b61aed9e5ebdf0::t_5874ce2e05a045 1-23
+docs/log/2026-11-08-c1-visible-recovery.md
+  s_b61aed9e5ebdf0::t_5a94a9cc1ca6d1 1-54
+docs/log/2026-11-08-c2-approval-packet.md
+  s_b61aed9e5ebdf0::t_a2309995c82881 1-27
+docs/log/2026-11-08-c2-c3-control-repair-independent-review.md
+  s_b61aed9e5ebdf0::t_5f5177fdf85bb5 1-30
+docs/log/2026-11-08-c2-design-independent-review.md
+  s_b61aed9e5ebdf0::t_695c4c57c40502 1-37
+docs/log/2026-11-08-c2-held-positive-source-preparation.md
+  s_b61aed9e5ebdf0::t_c81b1628128c60 1-31
+docs/log/2026-11-08-c2-held-supplement-independent-review.md
+  s_b61aed9e5ebdf0::t_2d5ff28ce2ad1b 1-11
+docs/log/2026-11-08-c2-held-supplement-qualification.md
+  s_b61aed9e5ebdf0::t_3ec05244762a75 1-17
+docs/log/2026-11-08-c2-held-supplement-resumed-1.md
+  s_b61aed9e5ebdf0::t_f019f381226096 1-10
+docs/log/2026-11-08-c2-held-supplement-root-nav-pilot.md
+  s_b61aed9e5ebdf0::t_15b256e975a460 1-26
+docs/log/2026-11-08-c2-positive-held-source-review.md
+  s_b61aed9e5ebdf0::t_794905831c7e95 1-11
+docs/log/2026-11-08-c3-native-control-repair.md
+  s_b61aed9e5ebdf0::t_fbe88b172e65dc 1-41
+docs/log/2026-11-08-c3-positive-native-qualification.md
+  s_b61aed9e5ebdf0::t_c164a637ae58c9 1-9
+docs/log/2026-11-08-c3-positive-return-preview-preparation.md
+  s_b61aed9e5ebdf0::t_dc91dc9b2daaec 1-136
+docs/log/2026-11-08-command-lifecycle-faults.md
+  s_b61aed9e5ebdf0::t_0fb5719225f4ce 1-36
+docs/log/2026-11-08-completion-count-auditor.md
+  s_b61aed9e5ebdf0::t_7a5aa80f8b4527 1-19
+docs/log/2026-11-08-control-source-selection.md
+  s_b61aed9e5ebdf0::t_801a80e3c4aac0 1-81
+docs/log/2026-11-08-daily-transfer-editor-build.md
+  s_b61aed9e5ebdf0::t_be2ee380975ef2 1-33
+docs/log/2026-11-08-day-date-register-undo-build.md
+  s_b61aed9e5ebdf0::t_2209acc212c58c 1-33
+docs/log/2026-11-08-deleted-spending-restoration-build.md
+  s_b61aed9e5ebdf0::t_6c775ccc2bd497 1-11
+docs/log/2026-11-08-durable-expense-corrections.md
+  s_b61aed9e5ebdf0::t_2d26ca462199a7 1-55
+docs/log/2026-11-08-durable-payment-corrections.md
+  s_b61aed9e5ebdf0::t_48a21aa27a3ac7 1-27
+docs/log/2026-11-08-durable-transfer-commands.md
+  s_b61aed9e5ebdf0::t_602a229fc1d828 1-101
+docs/log/2026-11-08-durable-transfer-correction-integrity-repair.md
+  s_b61aed9e5ebdf0::t_331dc6d514a1ef 1-38
+docs/log/2026-11-08-durable-transfer-corrections.md
+  s_b61aed9e5ebdf0::t_f49952a92d6d3a 1-98
+docs/log/2026-11-08-durable-transfer-independent-recheck.md
+  s_b61aed9e5ebdf0::t_dbff2c4f444589 1-11
+docs/log/2026-11-08-durable-transfer-review-repairs.md
+  s_b61aed9e5ebdf0::t_eee1b52a9e0f43 1-13
+docs/log/2026-11-08-exact-financial-row-closure.md
+  s_b61aed9e5ebdf0::t_30357f7e0fb0e7 1-18
+docs/log/2026-11-08-expense-correction-fence-repair.md
+  s_b61aed9e5ebdf0::t_7e2b2609a56eb9 1-11
+docs/log/2026-11-08-external-cash-build.md
+  s_b61aed9e5ebdf0::t_2d02503f990515 1-11
+docs/log/2026-11-08-f08-f09-fixture-closure.md
+  s_b61aed9e5ebdf0::t_6dba0b439d7ec7 1-13
+docs/log/2026-11-08-f10-reviewed-source-adoption-closure.md
+  s_b61aed9e5ebdf0::t_48f1801594e650 1-11
+docs/log/2026-11-08-final-campaign-evidence-review.md
+  s_b61aed9e5ebdf0::t_566ec863090618 1-19
+docs/log/2026-11-08-final-python-checks.md
+  s_b61aed9e5ebdf0::t_dcd55cac6d2ce5 1-14
+docs/log/2026-11-08-financial-review-fixes.md
+  s_b61aed9e5ebdf0::t_9bb71a041fdeb5 1-22
+docs/log/2026-11-08-financial-session-undo-build.md
+  s_b61aed9e5ebdf0::t_1207b1c0dc0bda 1-13
+docs/log/2026-11-08-import-byte-boundary-preparation.md
+  s_b61aed9e5ebdf0::t_5b1a33c932f6d6 1-77
+docs/log/2026-11-08-import-byte-boundary-root-repair.md
+  s_b61aed9e5ebdf0::t_10de7e957537bd 1-19
+docs/log/2026-11-08-journal-multiline-reconciliation.md
+  s_b61aed9e5ebdf0::t_ac90a74842ece3 1-32
+docs/log/2026-11-08-legacy-corpus-restart.md
+  s_b61aed9e5ebdf0::t_80dac6fe5da071 1-43
+docs/log/2026-11-08-metadata-stock-undo-build.md
+  s_b61aed9e5ebdf0::t_d87252ba692548 1-31
+docs/log/2026-11-08-multiline-reconciliation-review.md
+  s_b61aed9e5ebdf0::t_89f9094e293122 1-11
+docs/log/2026-11-08-native-benchmark-results.md
+  s_b61aed9e5ebdf0::t_c4487974e5be7f 1-33
+docs/log/2026-11-08-native-icu-resource-layout-fix.md
+  s_b61aed9e5ebdf0::t_a28c38ae67dbaa 1-23
+docs/log/2026-11-08-opening-cross-provider-review.md
+  s_b61aed9e5ebdf0::t_fc83f069c916c4 1-9
+docs/log/2026-11-08-party-session-undo-build.md
+  s_b61aed9e5ebdf0::t_b06bf5f811b7cb 1-39
+docs/log/2026-11-08-penpot-response-text-diagnosis.md
+  s_b61aed9e5ebdf0::t_7655379b1da383 1-24
+docs/log/2026-11-08-portable-metadata-bridge.md
+  s_b61aed9e5ebdf0::t_dde8c7721fa743 1-35
+docs/log/2026-11-08-portable-parent-integration.md
+  s_b61aed9e5ebdf0::t_a5ac6b7e957176 1-9
+docs/log/2026-11-08-portable-recovery-review-fix.md
+  s_b61aed9e5ebdf0::t_cd1a7c2afde71f 1-24
+docs/log/2026-11-08-purchase-completeness-fixes.md
+  s_b61aed9e5ebdf0::t_a20aa7bbdf4e31 1-30
+docs/log/2026-11-08-remaining-completion-closeout.md
+  s_b61aed9e5ebdf0::t_1c81fd07a64461 1-73
+docs/log/2026-11-08-remaining-correction-examples-review.md
+  s_b61aed9e5ebdf0::t_82f9013740a093 1-5
+docs/log/2026-11-08-remaining-correction-examples.md
+  s_b61aed9e5ebdf0::t_0d78e29ab0f439 1-28
+docs/log/2026-11-08-review-feature-benchmark-scenarios.md
+  s_b61aed9e5ebdf0::t_6b4ed6abaf608e 1-92
+docs/log/2026-11-08-review-validation-closeout.md
+  s_b61aed9e5ebdf0::t_a3bdbadbfc6eb4 1-58
+docs/log/2026-11-08-reviewed-collation-source-adoption.md
+  s_b61aed9e5ebdf0::t_5c27c6fe1882d2 1-7
+docs/log/2026-11-08-sales-view-model.md
+  s_b61aed9e5ebdf0::t_03221598b1fae4 1-34
+docs/log/2026-11-08-session-undo-composition-build.md
+  s_b61aed9e5ebdf0::t_9197bb81247257 1-17
+docs/log/2026-11-08-source-collation-presentation-build.md
+  s_b61aed9e5ebdf0::t_d57aeef9ee2e5f 1-25
+docs/log/2026-11-08-source-daily-composition-build.md
+  s_b61aed9e5ebdf0::t_03a01a689e360a 1-25
+docs/log/2026-11-08-source-local-financial-undo.md
+  s_b61aed9e5ebdf0::t_94f60cbef16ca9 1-21
+docs/log/2026-11-08-source-navigation-delivery-review-fix.md
+  s_b61aed9e5ebdf0::t_39ed810f156497 1-19
+docs/log/2026-11-08-source-sales-completion-build.md
+  s_b61aed9e5ebdf0::t_8d7965041ee259 1-17
+docs/log/2026-11-08-spending-opening-guard-review.md
+  s_b61aed9e5ebdf0::t_3a6e1b4f33b96f 1-11
+docs/log/2026-11-08-supplier-opening-amendment-build.md
+  s_b61aed9e5ebdf0::t_d4d645dd6e8679 1-36
+docs/log/2026-11-08-transfer-correction-integrity-recheck.md
+  s_b61aed9e5ebdf0::t_9b5c80f23d79f6 1-7
+docs/log/2026-11-08-visible-operation-benchmark-build.md
+  s_b61aed9e5ebdf0::t_d12abd23deaf7d 1-32
+docs/log/2026-11-09-push-merge-delivery.md
+  s_b61aed9e5ebdf0::t_e9f24ec2fbdb7e 1-3
+docs/phases/README.md
+  s_b61aed9e5ebdf0::t_e4c91f769e0e92 1-4,59-60
+docs/phases/build-first-collation-runtime-contract.md
+  s_b61aed9e5ebdf0::t_bc17eee6d0cedf 1-28
+docs/phases/c1-04-product-photo-evidence.md
+  s_b61aed9e5ebdf0::t_34515d527498ab 1-125
+docs/phases/c1-design-approval.md
+  s_b61aed9e5ebdf0::t_fa0f610f148d3f 1-11
+docs/phases/c1-operation-benchmarks.md
+  s_b61aed9e5ebdf0::t_97f820bd14f140 1-63
+docs/phases/c2-c4-owner-approval.md
+  s_b61aed9e5ebdf0::t_d9a99b0b2a8166 1-9
+docs/phases/c2-design-approval-proposal.md
+  s_b61aed9e5ebdf0::t_94abc798d296ce 1-74
+docs/phases/c4-design-approval-proposal.md
+  s_b61aed9e5ebdf0::t_4da1a9e6b71f20 1-17
+docs/phases/completion-baseline-acceptance-map.md
+  s_b61aed9e5ebdf0::t_7363c6dbbe86cb 1-35
+docs/phases/completion-day-date-and-register-undo-contract.md
+  s_b61aed9e5ebdf0::t_05ded69f9a32ed 1-33
+docs/phases/completion-deleted-spending-restoration-contract.md
+  s_b61aed9e5ebdf0::t_be3170c0be02a1 1-15
+docs/phases/completion-durable-expense-correction-contract.md
+  s_b61aed9e5ebdf0::t_e903c5d7c4134e 1-22
+docs/phases/completion-durable-invoice-correction-contract.md
+  s_b61aed9e5ebdf0::t_7195c4b6a8a6ce 1-58
+docs/phases/completion-durable-payment-correction-contract.md
+  s_b61aed9e5ebdf0::t_c7efbaa9fd3ff8 1-27
+docs/phases/completion-durable-sales-contract.md
+  s_b61aed9e5ebdf0::t_dcbc6f7c76c884 1-15
+docs/phases/completion-durable-spending-contract.md
+  s_b61aed9e5ebdf0::t_75a3fa757f5c70 1-17
+docs/phases/completion-durable-transfer-contract.md
+  s_b61aed9e5ebdf0::t_a423e47e854ec0 1-23
+docs/phases/completion-durable-transfer-correction-contract.md
+  s_b61aed9e5ebdf0::t_a4f7858bd6aa0e 1-29
+docs/phases/completion-external-cash-contract.md
+  s_b61aed9e5ebdf0::t_021de29328d2f4 1-15
+docs/phases/completion-financial-mapping-proposal.md
+  s_b61aed9e5ebdf0::t_b03d18fbbd871c 1,3,5,7,9-11,13,15,17,19-27,29,31,33,35,37-46,48,50-330
+docs/phases/completion-implementation-plan.md
+  s_4cfb0aecd4cd7c::t_1791aacf7704ec 1-209
+docs/phases/completion-journal-persistence-contract.md
+  s_b61aed9e5ebdf0::t_fa7e1fdc999bc5 1-15
+docs/phases/completion-live-gap-register.md
+  s_b61aed9e5ebdf0::t_d6674edd89826a 1-4,36-43
+docs/phases/completion-penpot-design-review.md
+  s_b61aed9e5ebdf0::t_aa65a8d90b5ffd 1-37
+docs/phases/completion-references.html
+  s_b61aed9e5ebdf0::t_bb056ed26229e2 1
+docs/phases/completion-remaining-correction-approval.md
+  s_b61aed9e5ebdf0::t_a6ef822ba7ce85 1-20
+docs/phases/completion-remaining-correction-examples.md
+  s_b61aed9e5ebdf0::t_1e7c22bf893aeb 1-164
+docs/phases/completion-review-stage-matrix.md
+  s_b61aed9e5ebdf0::t_ec8f189b1618cf 1-44
+docs/phases/completion-sales-view-model-contract.md
+  s_b61aed9e5ebdf0::t_8f13a5140093c7 1-27
+docs/phases/completion-scope-readiness.md
+  s_b61aed9e5ebdf0::t_66f5aec8b83916 1-86
+docs/phases/completion-unfinished-checklist.md
+  s_b61aed9e5ebdf0::t_7be6ece87fcbbd 1-343
+docs/phases/completion-unfinished-implementation-plan.md
+  s_b61aed9e5ebdf0::t_0fbb03a68fcb6e 1-361
+docs/phases/remaining-ui-build-approval-proposal.md
+  s_b61aed9e5ebdf0::t_3dc61cb231650b 1-97
+docs/phases/remaining-ui-owner-approval.md
+  s_b61aed9e5ebdf0::t_7ecdde1d895e73 1-7
+docs/phases/source-reference-build-approval.md
+  s_b61aed9e5ebdf0::t_5946d1ebc9b14b 1-7
+docs/phases/source-reference-build-proposal.md
+  s_b61aed9e5ebdf0::t_64f3a4acca052f 1-63
+docs/phases/supplier-opening-amendment-proposal.md
+  s_b61aed9e5ebdf0::t_8268130d8ce40c 1-22
+docs/planning/flutter-rebuild/README.md
+  s_b61aed9e5ebdf0::t_f94ee2a6bc807d 1-2
+docs/planning/flutter-rebuild/completion.html
+  s_b61aed9e5ebdf0::t_f476b1d936f428 1
+docs/planning/flutter-rebuild/gallery.html
+  s_b61aed9e5ebdf0::t_acf05b07e2e01a 3
+docs/planning/flutter-rebuild/phase-map.html
+  s_b61aed9e5ebdf0::t_a488e159c475c0 1
+docs/planning/flutter-rebuild/phase-map.json
+  s_b61aed9e5ebdf0::t_7660f2ad2dee41 142-165
+docs/planning/flutter-rebuild/phase-map.md
+  s_b61aed9e5ebdf0::t_f23466757e7748 1-2
+docs/planning/flutter-rebuild/phases/00.html
+  s_b61aed9e5ebdf0::t_4b0ebb363c3d99 1
+docs/planning/flutter-rebuild/phases/00.md
+  s_b61aed9e5ebdf0::t_4641cd800f5a0e 1-2
+docs/planning/flutter-rebuild/phases/01.html
+  s_b61aed9e5ebdf0::t_a907712cb01e28 1
+docs/planning/flutter-rebuild/phases/01.md
+  s_b61aed9e5ebdf0::t_7c65a11ee6b83a 1-2
+docs/planning/flutter-rebuild/phases/02.html
+  s_b61aed9e5ebdf0::t_c637b8f9ae1445 1
+docs/planning/flutter-rebuild/phases/02.md
+  s_b61aed9e5ebdf0::t_61c038566f4cbd 1-2
+docs/planning/flutter-rebuild/phases/03.html
+  s_b61aed9e5ebdf0::t_12c9d3bd233aa3 1
+docs/planning/flutter-rebuild/phases/03.md
+  s_b61aed9e5ebdf0::t_755ac08fc64ed7 1-2
+docs/planning/flutter-rebuild/phases/04.html
+  s_b61aed9e5ebdf0::t_11b389c524af70 1
+docs/planning/flutter-rebuild/phases/04.md
+  s_b61aed9e5ebdf0::t_29fb24d3db7ad7 1-2
+docs/planning/flutter-rebuild/phases/05.html
+  s_b61aed9e5ebdf0::t_3277562bb34054 1
+docs/planning/flutter-rebuild/phases/05.md
+  s_b61aed9e5ebdf0::t_0fd5375ae9d556 1-2
+docs/planning/flutter-rebuild/phases/06.html
+  s_b61aed9e5ebdf0::t_66b9ad48343f9a 1
+docs/planning/flutter-rebuild/phases/06.md
+  s_b61aed9e5ebdf0::t_57f75855f3ec79 1-2
+docs/planning/flutter-rebuild/phases/07.html
+  s_b61aed9e5ebdf0::t_fa89c8488ade20 1
+docs/planning/flutter-rebuild/phases/07.md
+  s_b61aed9e5ebdf0::t_822e15c1228761 1-2
+docs/planning/flutter-rebuild/phases/08.html
+  s_b61aed9e5ebdf0::t_6fd6442c9448f4 1
+docs/planning/flutter-rebuild/phases/08.md
+  s_b61aed9e5ebdf0::t_9cd5a6c5a092e3 1-2
+docs/planning/flutter-rebuild/phases/09.html
+  s_b61aed9e5ebdf0::t_70626120cb39c5 1
+docs/planning/flutter-rebuild/phases/09.md
+  s_b61aed9e5ebdf0::t_cc0dea905c744d 1-2
+docs/planning/flutter-rebuild/phases/10.html
+  s_b61aed9e5ebdf0::t_8b973db4ba4fbc 1
+docs/planning/flutter-rebuild/phases/10.md
+  s_b61aed9e5ebdf0::t_0014e01b368710 1-2
+docs/planning/flutter-rebuild/phases/11.html
+  s_b61aed9e5ebdf0::t_9d109af7512730 1
+docs/planning/flutter-rebuild/phases/11.md
+  s_b61aed9e5ebdf0::t_fec94bf95576b3 1-2
+docs/planning/flutter-rebuild/plan.html
+  s_b61aed9e5ebdf0::t_2857d0dfc46170 1
+docs/reference/durable-expense-corrections.md
+  s_b61aed9e5ebdf0::t_c025c1e71733ac 1-63
+docs/reference/durable-payment-corrections.md
+  s_b61aed9e5ebdf0::t_831bf35642ff57 1-65
+docs/reference/durable-sales-commands.md
+  s_b61aed9e5ebdf0::t_a342f0fc4e0478 1-65
+docs/reference/durable-spending-commands.md
+  s_b61aed9e5ebdf0::t_d3e86c9ecb3206 1-151
+docs/reference/durable-transfer-commands.md
+  s_b61aed9e5ebdf0::t_df9eb64b631750 1-116
+docs/reference/durable-transfer-corrections.md
+  s_b61aed9e5ebdf0::t_842ebeaa603984 1-128
+docs/reference/sales-view-model.md
+  s_b61aed9e5ebdf0::t_99d96f4f7dd9e9 1-38
+engine-dependency.json
+  s_b61aed9e5ebdf0::t_3a7566c192e328 3-4,8,12,20-24
+integration_test/bundled_icu_native_test.dart
+  s_b61aed9e5ebdf0::t_322a1b8560fc34 1-84
+integration_test/c0_protected_bootstrap_native_test.dart
+  s_b61aed9e5ebdf0::t_2572d5ca81d6b8 1-29
+integration_test/c1_catalog_native_test.dart
+  s_b61aed9e5ebdf0::t_c019815dc04757 1-552
+integration_test/completion_bundled_native_test.dart
+  s_b61aed9e5ebdf0::t_fd6be67efe0fdf 1-7
+integration_test/completion_candidate_native_test.dart
+  s_b61aed9e5ebdf0::t_10bb44c53a7bf1 1-181
+integration_test/support/c0_import_boundary_fixture.dart
+  s_b61aed9e5ebdf0::t_9bdac030a1ea72 1-833
+integration_test/support/c0_import_boundary_qa_main.dart
+  s_b61aed9e5ebdf0::t_a2d03fba1db4e7 1-225
+integration_test/support/c0_protected_bootstrap_scenarios.dart
+  s_b61aed9e5ebdf0::t_a147edff068661 1-750
+integration_test/support/c1_restart_fixture.dart
+  s_b61aed9e5ebdf0::t_fafda39d190743 1-740
+integration_test/support/c1_restart_qa_main.dart
+  s_b61aed9e5ebdf0::t_fd08cda6b763a7 1-306
+lib/accounting/cash_adjustment_editor.dart
+  s_b61aed9e5ebdf0::t_9222a8a9c7ea7b 1-321
+lib/accounting/categories_surface.dart
+  s_b61aed9e5ebdf0::t_3e8741fe9b71e0 1-338
+lib/accounting/categories_view_model.dart
+  s_b61aed9e5ebdf0::t_78e44ccbad1ae4 1-534
+lib/accounting/chicken_editor.dart
+  s_b61aed9e5ebdf0::t_2583cd9aef6825 1-139
+lib/accounting/correction_batch_receipts.dart
+  s_b61aed9e5ebdf0::t_5a3d93c40838ab 1-241
+lib/accounting/daily_cash_controller.dart
+  s_b61aed9e5ebdf0::t_ca2b737cfb6e29 1-276
+lib/accounting/daily_cash_queries.dart
+  s_b61aed9e5ebdf0::t_ec177dc40eb95c 1-2,5,23-24,26-31,34,214-224,243-248,250-270,273-291,293-304
+lib/accounting/daily_cash_surface.dart
+  s_b61aed9e5ebdf0::t_333d100ac2dae6 1-713
+lib/accounting/daily_metadata_controller.dart
+  s_b61aed9e5ebdf0::t_e831b39d58033d 1-106
+lib/accounting/daily_register_editor.dart
+  s_b61aed9e5ebdf0::t_66fd70a9ad54b2 1-190
+lib/accounting/daily_register_session_undo_adapter.dart
+  s_b61aed9e5ebdf0::t_c03480f2b2d188 1-64
+lib/accounting/daily_register_snapshot_controller.dart
+  s_b61aed9e5ebdf0::t_e88060e0799bbc 1-717
+lib/accounting/daily_register_undo_commands.dart
+  s_b61aed9e5ebdf0::t_dbb513868d5cea 1-289
+lib/accounting/daily_transfer_editor.dart
+  s_b61aed9e5ebdf0::t_c47d5cac9c8664 1-155
+lib/accounting/daily_transfer_editor_controller.dart
+  s_b61aed9e5ebdf0::t_1b14a7cbc08adb 1-136
+lib/accounting/day_date_correction_commands.dart
+  s_b61aed9e5ebdf0::t_213df78a653f1f 1-762
+lib/accounting/day_date_correction_controller.dart
+  s_b61aed9e5ebdf0::t_13fe290bc01492 1-185
+lib/accounting/day_date_editor.dart
+  s_b61aed9e5ebdf0::t_21c1455b000703 1-208
+lib/accounting/day_date_plan.dart
+  s_b61aed9e5ebdf0::t_cd764ac88102c8 1-236
+lib/accounting/day_date_session_undo_adapter.dart
+  s_b61aed9e5ebdf0::t_d21502797233fd 1-57
+lib/accounting/deleted_party_restoration.dart
+  s_b61aed9e5ebdf0::t_92589d1cd096bf 1-548
+lib/accounting/deleted_spending_restoration.dart
+  s_b61aed9e5ebdf0::t_31696cc11f4a20 1-559
+lib/accounting/expense_editor.dart
+  s_b61aed9e5ebdf0::t_7501a70e1a5ddf 1-234
+lib/accounting/expense_editor_controller.dart
+  s_b61aed9e5ebdf0::t_1feb05c0a9c224 1-202
+lib/accounting/financial_session_undo.dart
+  s_b61aed9e5ebdf0::t_327e77448d6e6f 1-391
+lib/accounting/journal_command_host.dart
+  s_b61aed9e5ebdf0::t_f12bc458f3c421 1-307
+lib/accounting/party_session_compensation.dart
+  s_b61aed9e5ebdf0::t_67668033f3ae47 1-444
+lib/accounting/restaurant_journal_expense_correction_commands.dart
+  s_b61aed9e5ebdf0::t_b136d23cb442b2 1-477
+lib/accounting/restaurant_journal_expense_history.dart
+  s_b61aed9e5ebdf0::t_4abce8b092eb09 1-537
+lib/accounting/restaurant_journal_external_cash_commands.dart
+  s_b61aed9e5ebdf0::t_250d6f4d4721da 1-754
+lib/accounting/restaurant_journal_invoice_correction_commands.dart
+  s_b61aed9e5ebdf0::t_613c3186472ff8 1-891
+lib/accounting/restaurant_journal_mapper.dart
+  s_b61aed9e5ebdf0::t_a8c510c7d5d141 1-1106
+lib/accounting/restaurant_journal_payment_correction_commands.dart
+  s_b61aed9e5ebdf0::t_ed5e94207440ca 1-556
+lib/accounting/restaurant_journal_payment_history.dart
+  s_b61aed9e5ebdf0::t_67c302a2cc24f2 1-664
+lib/accounting/restaurant_journal_sale_commands.dart
+  s_b61aed9e5ebdf0::t_487f9403d2dc15 1-1289
+lib/accounting/restaurant_journal_spending_commands.dart
+  s_b61aed9e5ebdf0::t_47e51eeb59a62d 1-2317
+lib/accounting/restaurant_journal_transfer_commands.dart
+  s_b61aed9e5ebdf0::t_68ae73b659cdf9 1-582
+lib/accounting/restaurant_journal_transfer_correction_commands.dart
+  s_b61aed9e5ebdf0::t_530a5b4e59d95f 1-1087
+lib/accounting/restaurant_journal_transfer_history.dart
+  s_b61aed9e5ebdf0::t_7fc2fbcaf219db 1-483
+lib/accounting/source_material_restoration.dart
+  s_b61aed9e5ebdf0::t_f2ba839fdd1d69 1-41
+lib/accounting/source_record_order.dart
+  s_b61aed9e5ebdf0::t_1face9264973be 1-62
+lib/accounting/spending_operations_view_model.dart
+  s_b61aed9e5ebdf0::t_7e569882f54282 1-914
+lib/accounting/spending_session_undo_adapter.dart
+  s_b61aed9e5ebdf0::t_f69b8413829420 1-472
+lib/accounts/legacy_session_undo.dart
+  s_b61aed9e5ebdf0::t_68cc52af5f3cbb 1-149
+lib/accounts/metadata_session_undo.dart
+  s_b61aed9e5ebdf0::t_05f8701743b571 1-112
+lib/accounts/metadata_undo_plan.dart
+  s_b61aed9e5ebdf0::t_8e78c4363994e6 1-205
+lib/accounts/portable_account_transfer_controller.dart
+  s_b61aed9e5ebdf0::t_1388c8cf9950c1 1-564
+lib/accounts/portable_accounts_surface.dart
+  s_b61aed9e5ebdf0::t_2a19707498fb2d 1-684
+lib/accounts/portable_journal_codec.dart
+  s_b61aed9e5ebdf0::t_f16541cdae0d11 1-172
+lib/accounts/portable_journal_state.dart
+  s_b61aed9e5ebdf0::t_e11cbac8a14f56 1-862
+lib/accounts/portable_metadata_repository_bridge.dart
+  s_b61aed9e5ebdf0::t_be421689c680c9 1-285
+lib/accounts/portable_metadata_validation.dart
+  s_b61aed9e5ebdf0::t_9d45ed309080e2 1-60
+lib/app/app.dart
+  s_b61aed9e5ebdf0::t_924c66cff533cd 2,15-50,55,71-76,79-88,108,111,118,120-144,149-188,191-192,194-197,204,215-221,223-228,242-245,258-264,274-277,297-299,310-312,314,316,333-334,336-572,600,602-604,615-626,632-641,657-698,702,713-766,770-774,803-990,996-1002,1005-1006,1022,1041-1197,1199-1202,1226,1256-1259,1321-1325,1327-1328,1331-1338,1390-1395,1400-1403,1405,1411-1418,1446-1468,1471-1472,1476-1482,1495,1497-1498,1500-1501,1509-1513,1515-1516,1530
+lib/app/portable_restaurant_host.dart
+  s_b61aed9e5ebdf0::t_4957c60e273b73 1-350
+lib/app/restaurant_operations_session.dart
+  s_b61aed9e5ebdf0::t_ad6ac94cdae1d7 1-601
+lib/app/source_collation_runtime.dart
+  s_b61aed9e5ebdf0::t_254e545cac5450 1-53
+lib/catalog/catalog_formatters.dart
+  s_b61aed9e5ebdf0::t_7a64917f383d9d 1-100
+lib/catalog/catalog_read_model.dart
+  s_b61aed9e5ebdf0::t_581a37498d7b2f 84-88
+lib/catalog/catalog_stock_history.dart
+  s_b61aed9e5ebdf0::t_d9b55ad0067a51 1-254
+lib/catalog/catalog_view_model.dart
+  s_b61aed9e5ebdf0::t_8577b1476a4d98 1-226
+lib/catalog/inventory_surface.dart
+  s_b61aed9e5ebdf0::t_fea1f2b301cd89 1-789
+lib/catalog/product_form_dialog.dart
+  s_b61aed9e5ebdf0::t_ccd4bece7d5b47 1-870
+lib/catalog/product_photo_draft_controller.dart
+  s_b61aed9e5ebdf0::t_abbce62620d214 1-348
+lib/catalog/stock_history_dialog.dart
+  s_b61aed9e5ebdf0::t_a4ebbf058320cb 1-494
+lib/catalog/stock_movement_dialog.dart
+  s_b61aed9e5ebdf0::t_dbf82ecdfeaa95 1-392
+lib/catalog/stock_reversal_dialog.dart
+  s_b61aed9e5ebdf0::t_df83ae975f0c72 1-224
+lib/inventory/inventory_commands.dart
+  s_b61aed9e5ebdf0::t_5d6b3bcb4dc558 126,148-162
+lib/inventory/stock_session_undo.dart
+  s_b61aed9e5ebdf0::t_826b3e6e1c8e59 1-128
+lib/main.dart
+  s_b61aed9e5ebdf0::t_9b4fe616d72dd7 6,14-19,28-30
+lib/parties/additional_debt_commands.dart
+  s_b61aed9e5ebdf0::t_fc5a9bca344f0d 1-696
+lib/parties/additional_debt_controller.dart
+  s_b61aed9e5ebdf0::t_722cf189d40cb5 1-241
+lib/parties/additional_debt_session_undo_adapter.dart
+  s_b61aed9e5ebdf0::t_8a38ec58e61a87 1-90
+lib/parties/parties_operations_view_model.dart
+  s_b61aed9e5ebdf0::t_b4eb2136c38646 1-790
+lib/parties/parties_session_undo_adapter.dart
+  s_b61aed9e5ebdf0::t_218e5e44394abf 1-444
+lib/parties/parties_surface.dart
+  s_b61aed9e5ebdf0::t_5ee96ddce9d3e1 1-2348
+lib/parties/parties_surface_controller.dart
+  s_b61aed9e5ebdf0::t_97ffc7123b0f11 1-599
+lib/parties/parties_view_model.dart
+  s_b61aed9e5ebdf0::t_c4c7684bfa91d4 18-19,34-35
+lib/parties/purchase_analysis.dart
+  s_b61aed9e5ebdf0::t_74ec31327d8d61 1-154
+lib/parties/purchase_operations_controller.dart
+  s_b61aed9e5ebdf0::t_9f81c27ad4737e 1-350
+lib/parties/purchase_proposal.dart
+  s_b61aed9e5ebdf0::t_0a455408e73ac7 53
+lib/parties/supplier_opening_commands.dart
+  s_b61aed9e5ebdf0::t_7ae0d449008664 1-575
+lib/parties/supplier_opening_controller.dart
+  s_b61aed9e5ebdf0::t_413f21ae47a317 1-262
+lib/platform/c1_performance_main.dart
+  s_b61aed9e5ebdf0::t_160886688daf7d 1-55
+lib/platform/c1_performance_scenarios.dart
+  s_b61aed9e5ebdf0::t_a4619031b37c12 1-508
+lib/platform/completion_acceptance_main.dart
+  s_b61aed9e5ebdf0::t_09dd25e670073a 1-167
+lib/platform/review_performance_main.dart
+  s_b61aed9e5ebdf0::t_78d6a6cb82e8b6 1-58
+lib/platform/review_performance_scenarios.dart
+  s_b61aed9e5ebdf0::t_79beaad68ff4f5 1-1095
+lib/platform/visible_performance_main.dart
+  s_b61aed9e5ebdf0::t_64324b73f297d5 1-103
+lib/platform/visible_performance_scenarios.dart
+  s_b61aed9e5ebdf0::t_8e5d64c665c5ed 1-344
+lib/reports/reports_surface.dart
+  s_b61aed9e5ebdf0::t_cfb582029c44f9 1-770
+lib/reports/reports_view_model.dart
+  s_b61aed9e5ebdf0::t_4f241f2fad2d0a 1-234
+lib/reports/restaurant_report.dart
+  s_b61aed9e5ebdf0::t_d3674a9da167a2 1-624
+lib/reports/restaurant_report_pdf.dart
+  s_b61aed9e5ebdf0::t_eeff89bd3b6aec 1-140
+lib/reports/sales_report.dart
+  s_b61aed9e5ebdf0::t_53af4c8d6e020b 4,76,90-99,131-138
+lib/reports/saved_report_pdf_viewer.dart
+  s_b61aed9e5ebdf0::t_c4e264bb958e1c 1-136
+lib/reports/source_event_order.dart
+  s_b61aed9e5ebdf0::t_da15547c5aa438 1-28
+lib/sales/held_orders_dialog.dart
+  s_b61aed9e5ebdf0::t_b0c9278d624bb2 1-322
+lib/sales/return_proposal.dart
+  s_b61aed9e5ebdf0::t_c092c6e02d6ed7 19-28,53,59-63,66,127-158
+lib/sales/sale_paid_dialog.dart
+  s_b61aed9e5ebdf0::t_f126b73ea063fb 1-149
+lib/sales/sale_return_dialog.dart
+  s_b61aed9e5ebdf0::t_1620082a385931 1-283
+lib/sales/sales_history_surface.dart
+  s_b61aed9e5ebdf0::t_b10ae72e0f1319 1-746
+lib/sales/sales_history_view_model.dart
+  s_b61aed9e5ebdf0::t_964a7e3a2c14b6 1-367
+lib/sales/sales_operations_view_model.dart
+  s_b61aed9e5ebdf0::t_5b88b49ea07be6 1-348
+lib/sales/sales_surface.dart
+  s_b61aed9e5ebdf0::t_07dd424a62947b 1-845
+lib/sales/sales_view_model.dart
+  s_b61aed9e5ebdf0::t_a1fcabf5c8c7a7 1-510
+lib/sales/sales_workflow_session.dart
+  s_b61aed9e5ebdf0::t_2555ff90ddbcf3 1-507
+lib/sales/ticket_workspace.dart
+  s_b61aed9e5ebdf0::t_7108c3108346f9 309-316
+lib/settings/account_settings_controller.dart
+  s_b61aed9e5ebdf0::t_93e9cf72adf543 2,27-160
+lib/settings/portable_settings_controller.dart
+  s_b61aed9e5ebdf0::t_b5d2759b4d948d 1-271
+lib/settings/settings_surface.dart
+  s_b61aed9e5ebdf0::t_03a775475f659d 1-743
+macos/Runner.xcodeproj/project.pbxproj
+  s_b61aed9e5ebdf0::t_f1f4d3ee1cf065 304
+outputs/completion-planning/full-implementation-restart-1-timing.json
+  s_b61aed9e5ebdf0::t_19647d5049e5ce 1
+outputs/completion-planning/full-implementation-restart-2-timing.json
+  s_b61aed9e5ebdf0::t_566813f6b03242 1
+outputs/completion-planning/full-implementation-restart-3-timing.json
+  s_b61aed9e5ebdf0::t_bf9e3f502e36d3 1
+outputs/completion-planning/full-implementation-restart-4-timing.json
+  s_b61aed9e5ebdf0::t_ae5c9e1ada42c2 1
+outputs/completion-planning/full-implementation-timing.json
+  s_b61aed9e5ebdf0::t_497c2abddd44f4 1
+outputs/completion-planning/memory-check-c1-repair.json
+  s_b61aed9e5ebdf0::t_103dcec268db68 1-22
+outputs/completion-planning/memory-check-journal-integrity.json
+  s_b61aed9e5ebdf0::t_31d4e2d266dd75 1-19
+outputs/completion-planning/memory-check-restart-1.json
+  s_b61aed9e5ebdf0::t_58eeb3e646b1a4 1-19
+outputs/completion-planning/memory-delivery.json
+  s_b61aed9e5ebdf0::t_765b15415ccc9a 1-11
+outputs/completion-planning/memory-durable-sales-intake.json
+  s_b61aed9e5ebdf0::t_1cf940e5b2c0c1 1-24
+outputs/completion-planning/memory-durable-sales-repair.json
+  s_b61aed9e5ebdf0::t_b3851f91d74c07 1-31
+outputs/completion-planning/memory-next-tranches.json
+  s_b61aed9e5ebdf0::t_211f26e8138483 1-27
+outputs/completion-planning/memory-sync-c1-repair.json
+  s_b61aed9e5ebdf0::t_1f72bbf7a149a3 1-10
+outputs/completion-planning/memory-sync-journal-integrity.json
+  s_b61aed9e5ebdf0::t_5540d696bdd796 1-5
+outputs/completion-planning/memory-sync-restart-1.json
+  s_b61aed9e5ebdf0::t_a76246a567a840 1-5
+outputs/completion-planning/timer-restart-3-interruption.json
+  s_b61aed9e5ebdf0::t_d6e7f6ef1ccf09 1-14
+outputs/completion-planning/timer-restart-4-interruption.json
+  s_b61aed9e5ebdf0::t_a318da8419f630 1-12
+outputs/completion-planning/unfinished-items-timing.json
+  s_b61aed9e5ebdf0::t_0ffe2e28dfb309 1
+outputs/completion-review/baseline-delivery-audit/c0-09-evidence-map.json
+  s_b61aed9e5ebdf0::t_1a549b95db3500 1-23
+outputs/completion-review/baseline-delivery-audit/documentation-review-inputs.json
+  s_b61aed9e5ebdf0::t_a24e6cd50174ce 1-71
+outputs/completion-review/baseline-delivery-audit/independent-documentation-review.json
+  s_b61aed9e5ebdf0::t_bb682f33d6caa3 1-33
+outputs/completion-review/baseline-delivery-audit/independent-row-disposition.json
+  s_b61aed9e5ebdf0::t_760dcf91914e24 1-36
+outputs/completion-review/baseline-delivery-audit/root-storage-closeout.json
+  s_b61aed9e5ebdf0::t_8ecb695e893e36 1-37
+outputs/completion-review/baseline-delivery-audit/test-only-adoption.json
+  s_b61aed9e5ebdf0::t_16a2d116470ba0 1-18
+outputs/completion-review/build-first-macos/attempt-001.json
+  s_b61aed9e5ebdf0::t_306442cd6d8789 1-457
+outputs/completion-review/build-first-macos/latest.json
+  s_b61aed9e5ebdf0::t_3678d517f3a2f6 1-4
+outputs/completion-review/build-first-macos/memory-closeout.json
+  s_b61aed9e5ebdf0::t_81170d8758dba0 1-38
+outputs/completion-review/build-first-macos/storage-closeout.json
+  s_b61aed9e5ebdf0::t_7300931200b31f 1-34
+outputs/completion-review/c0-protected-bootstrap/baseline.json
+  s_b61aed9e5ebdf0::t_7ae293b7f0ef82 1-22
+outputs/completion-review/c0-protected-bootstrap/host-attempt-1-interruption.json
+  s_b61aed9e5ebdf0::t_1509858ab05236 1-5
+outputs/completion-review/c0-protected-bootstrap/host-attempt-2-interruption.json
+  s_b61aed9e5ebdf0::t_2b83e875a68dbb 1-6
+outputs/completion-review/c0-protected-bootstrap/interrupted-fixture-cleanup.json
+  s_b61aed9e5ebdf0::t_a548dc764d8c8e 1-6
+outputs/completion-review/c0-protected-bootstrap/interrupted-fixture-inventory.json
+  s_b61aed9e5ebdf0::t_905a06081c8264 1-13
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/baseline.json
+  s_b61aed9e5ebdf0::t_4c994ae191e10f 1-17
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/c1-qa-app-relocation.json
+  s_b61aed9e5ebdf0::t_6725eb27b1c6b8 1-15
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/compiled-import-closure.json
+  s_b61aed9e5ebdf0::t_a83587d526df26 1-46
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/device-app-close.json
+  s_b61aed9e5ebdf0::t_0a4b6658ce7cfa 1-11
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/device-close.json
+  s_b61aed9e5ebdf0::t_f106d2b78c9295 1
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/device-final-state.json
+  s_b61aed9e5ebdf0::t_a65feec9e478e9 1
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/device-observation.json
+  s_b61aed9e5ebdf0::t_fc20890a34f93b 1-16
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/device-open.json
+  s_b61aed9e5ebdf0::t_92c246571c4f0f 1
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/failed-binary-identity.json
+  s_b61aed9e5ebdf0::t_d6b9c3ab28518e 1-444
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/failed-source/app.dart.txt
+  s_b61aed9e5ebdf0::t_70d8e962f524c1 1-642
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/failed-source/c0_protected_bootstrap_native_test.dart.txt
+  s_b61aed9e5ebdf0::t_f1d1a0e7b4e792 1-29
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/failed-source/c0_protected_bootstrap_scenarios.dart.txt
+  s_b61aed9e5ebdf0::t_da99571e611645 1-726
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/failed-source/native_app_readiness.dart.txt
+  s_b61aed9e5ebdf0::t_094ed7946d4c7f 1-146
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/fixture-descriptor.json
+  s_b61aed9e5ebdf0::t_85fc59eac9bb1a 1
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/host-fixture-cleanup.json
+  s_b61aed9e5ebdf0::t_a6a44cb0c7944b 1-6
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/pilot-attempt-1-command.json
+  s_b61aed9e5ebdf0::t_62a6a506180956 1-25
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/pilot-ledger-receipt.json
+  s_b61aed9e5ebdf0::t_81ccf31ea1b26c 1-50
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/pilot-process.json
+  s_b61aed9e5ebdf0::t_acb9e5ea263616 1-15
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/plan.json
+  s_b61aed9e5ebdf0::t_ec968d321da437 1-134
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/preflight-attempt-2.json
+  s_b61aed9e5ebdf0::t_af7ccba3cb1a49 1-27
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/preflight-command-2.json
+  s_b61aed9e5ebdf0::t_d6be5251a2bbbb 1-15
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/preflight-command.json
+  s_b61aed9e5ebdf0::t_5e97b491970677 1-15
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/preflight-ledger-receipt.json
+  s_b61aed9e5ebdf0::t_e6743b0c7b9fb1 1-21
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/preflight-spec.json
+  s_b61aed9e5ebdf0::t_6ddaf682cf6fa4 1-114
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/result.json
+  s_b61aed9e5ebdf0::t_abebeb28e0bb10 1-55
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/review-inputs.json
+  s_b61aed9e5ebdf0::t_9adce4cd4b907b 1-178
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/state.json
+  s_b61aed9e5ebdf0::t_6b30bda2918437 1
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/storage-closeout.json
+  s_b61aed9e5ebdf0::t_46a0af84664998 1-37
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/timing.json
+  s_b61aed9e5ebdf0::t_4718072221649c 1
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/window-release-audit.json
+  s_b61aed9e5ebdf0::t_cc27fdf135e505 1-9
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/workflow-failed-record.json
+  s_b61aed9e5ebdf0::t_e9415859f7b3e3 1-18
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/workflow-init.json
+  s_b61aed9e5ebdf0::t_3d5aa05506f7a6 1-16
+outputs/completion-review/c0-protected-bootstrap/native-ios-1/workflow-preflight-record.json
+  s_b61aed9e5ebdf0::t_e2b973e6aaa868 1-18
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/baseline.json
+  s_b61aed9e5ebdf0::t_33488d5a2e4b82 1-17
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/binary-identity.json
+  s_b61aed9e5ebdf0::t_fcf8c4d473eaa4 1-446
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/case-results.json
+  s_b61aed9e5ebdf0::t_815627cc8c7d8f 1-58
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/compiled-import-closure.json
+  s_b61aed9e5ebdf0::t_22bcb9878d3b5a 1-45
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/device-app-close.json
+  s_b61aed9e5ebdf0::t_1a793d8ffe23bb 1-11
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/device-close.json
+  s_b61aed9e5ebdf0::t_3f117c616788c0 1
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/device-final-state.json
+  s_b61aed9e5ebdf0::t_24ba907d371824 1
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/device-observation.json
+  s_b61aed9e5ebdf0::t_31beba4df07fa8 1-16
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/device-open.json
+  s_b61aed9e5ebdf0::t_b8d408ed93f42a 1
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/failed-ios-1-app-relocation.json
+  s_b61aed9e5ebdf0::t_79464b3153f0c6 1-13
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/fixture-descriptor.json
+  s_b61aed9e5ebdf0::t_547b3015b61691 1
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-config-receipt.json
+  s_b61aed9e5ebdf0::t_e519c70d57211e 1-43
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-config/.dart_tool__package_config.json
+  s_b61aed9e5ebdf0::t_4f3003524b8cb2 1-688
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-config/.fvmrc
+  s_b61aed9e5ebdf0::t_719c956f0e86a6 1-3
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-config/dev-tooling-dependency.json
+  s_b61aed9e5ebdf0::t_d498a51e5a1dfe 1-7
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-config/engine-dependency.json
+  s_b61aed9e5ebdf0::t_e206dbb40201d9 1-23
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-config/pubspec.lock
+  s_b61aed9e5ebdf0::t_b4b60fcbb7743a 1-874
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-config/pubspec.yaml
+  s_b61aed9e5ebdf0::t_3f8caf025c6fde 1-51
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source-receipt.json
+  s_b61aed9e5ebdf0::t_e49e179cc4e377 1-235
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/integration_test__c0_protected_bootstrap_native_test.dart.txt
+  s_b61aed9e5ebdf0::t_ce21efe2b0367d 1-29
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/integration_test__support__c0_protected_bootstrap_scenarios.dart.txt
+  s_b61aed9e5ebdf0::t_fc11ac569400e3 1-739
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/integration_test__support__native_app_readiness.dart.txt
+  s_b61aed9e5ebdf0::t_919befbcef38e2 1-146
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__accounts__account_document.dart.txt
+  s_b61aed9e5ebdf0::t_ebab3ca2c63b6b 1-54
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__accounts__accounts_repository.dart.txt
+  s_b61aed9e5ebdf0::t_0ea9d19bbd8ce2 1-438
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__accounts__accounts_surface.dart.txt
+  s_b61aed9e5ebdf0::t_65268c2bed2a94 1-294
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__accounts__accounts_view_model.dart.txt
+  s_b61aed9e5ebdf0::t_c060572582204d 1-510
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__accounts__legacy_account_codec.dart.txt
+  s_b61aed9e5ebdf0::t_f9ce95d6c94935 1-1347
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__accounts__legacy_v8_timestamp.dart.txt
+  s_b61aed9e5ebdf0::t_8a12e00ffecad6 1-477
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__accounts__workspace_document.dart.txt
+  s_b61aed9e5ebdf0::t_57ce401f58f3b8 1-60
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__app__accounts_store.dart.txt
+  s_b61aed9e5ebdf0::t_e72bb629d5b791 1-170
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__app__app.dart.txt
+  s_b61aed9e5ebdf0::t_49d496099a0680 1-642
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__app__bootstrap.dart.txt
+  s_b61aed9e5ebdf0::t_198cfde3c875c6 1-118
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__app__ios_shell_back_gesture.dart.txt
+  s_b61aed9e5ebdf0::t_ddd50a412ffb40 1-135
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__catalog__catalog_formatters.dart.txt
+  s_b61aed9e5ebdf0::t_3655f102f702c0 1-100
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__catalog__catalog_read_model.dart.txt
+  s_b61aed9e5ebdf0::t_25a0a3373bf6dc 1-123
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__catalog__catalog_stock_history.dart.txt
+  s_b61aed9e5ebdf0::t_7515ff0f81cdb7 1-254
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__catalog__catalog_view_model.dart.txt
+  s_b61aed9e5ebdf0::t_488e79f75a38f0 1-226
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__catalog__inventory_surface.dart.txt
+  s_b61aed9e5ebdf0::t_f2b21a3a1caf77 1-786
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__catalog__product_form_dialog.dart.txt
+  s_b61aed9e5ebdf0::t_b18382e9883537 1-870
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__catalog__product_photo_draft_controller.dart.txt
+  s_b61aed9e5ebdf0::t_2cabca49bfd523 1-348
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__catalog__stock_history_dialog.dart.txt
+  s_b61aed9e5ebdf0::t_f13134d82a3a11 1-445
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__catalog__stock_movement_dialog.dart.txt
+  s_b61aed9e5ebdf0::t_f80efb6ea0ee8a 1-392
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__catalog__stock_reversal_dialog.dart.txt
+  s_b61aed9e5ebdf0::t_24d7485f1559e5 1-224
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__inventory__inventory_commands.dart.txt
+  s_b61aed9e5ebdf0::t_cac96a6dc0808a 1-242
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__inventory__stock_projection.dart.txt
+  s_b61aed9e5ebdf0::t_e6b710745835f7 1-115
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__platform__shell_preferences_directory.dart.txt
+  s_b61aed9e5ebdf0::t_48547669d2ee82 1-93
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__shell__shell_preferences.dart.txt
+  s_b61aed9e5ebdf0::t_ed3a886418762f 1-98
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__shell__shell_routes.dart.txt
+  s_b61aed9e5ebdf0::t_65ac000f22832d 1-86
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__shell__shell_view_model.dart.txt
+  s_b61aed9e5ebdf0::t_220902817ae564 1-550
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__ui__component_gallery.dart.txt
+  s_b61aed9e5ebdf0::t_4e6f7d8dfd08d6 1-186
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__ui__components.dart.txt
+  s_b61aed9e5ebdf0::t_acf43856560068 1-826
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__ui__dakhl_ui.dart.txt
+  s_b61aed9e5ebdf0::t_a9157b9df9a5e6 1-10
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__ui__dialogs.dart.txt
+  s_b61aed9e5ebdf0::t_e1d50780896a17 1-255
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__ui__icons.dart.txt
+  s_b61aed9e5ebdf0::t_79dbf0ce0231a8 1-176
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__ui__route_surface.dart.txt
+  s_b61aed9e5ebdf0::t_ec06298d6af9ef 1-816
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__ui__shell_view.dart.txt
+  s_b61aed9e5ebdf0::t_ba1717e73e9f79 1-436
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/frozen-target-source/lib__ui__theme.dart.txt
+  s_b61aed9e5ebdf0::t_19d823e7d7cd35 1-121
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/host-fixture-cleanup.json
+  s_b61aed9e5ebdf0::t_52054811ca7471 1-6
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/independent-review-root-record.json
+  s_b61aed9e5ebdf0::t_dc186839649e3b 1-33
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/pilot-attempt-1-command.json
+  s_b61aed9e5ebdf0::t_9fe779bb31c14b 1-19
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/pilot-ledger-receipt.json
+  s_b61aed9e5ebdf0::t_70f03abfb380db 1-57
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/pilot-process.json
+  s_b61aed9e5ebdf0::t_d1403b4078600b 1-15
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/plan.json
+  s_b61aed9e5ebdf0::t_305d970c4a50ec 1-134
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/preflight-attempt-1.json
+  s_b61aed9e5ebdf0::t_22b11e739b6a95 1-27
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/preflight-command.json
+  s_b61aed9e5ebdf0::t_f92dcfb086d0aa 1-15
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/preflight-ledger-receipt.json
+  s_b61aed9e5ebdf0::t_bd5059947b5fa0 1-21
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/preflight-spec.json
+  s_b61aed9e5ebdf0::t_9a955e870df665 1-114
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/result.json
+  s_b61aed9e5ebdf0::t_ec93d0e7d0ff55 1-99
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/review-inputs.json
+  s_b61aed9e5ebdf0::t_bde7542c599b76 1-393
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/source-after.json
+  s_b61aed9e5ebdf0::t_585ef32635c003 1-6
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/state.json
+  s_b61aed9e5ebdf0::t_40f344eaee65cb 1
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/storage-closeout.json
+  s_b61aed9e5ebdf0::t_f82e8803a62b1b 1-36
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/timing.json
+  s_b61aed9e5ebdf0::t_fbffa12c64028e 1
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/window-release-audit.json
+  s_b61aed9e5ebdf0::t_530da0fd6cc3d6 1-8
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/workflow-init.json
+  s_b61aed9e5ebdf0::t_070388a514645a 1-16
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/workflow-pilot-record.json
+  s_b61aed9e5ebdf0::t_d60fef8a834bb7 1-18
+outputs/completion-review/c0-protected-bootstrap/native-ios-2/workflow-preflight-record.json
+  s_b61aed9e5ebdf0::t_18f114de14ae7a 1-18
+outputs/completion-review/c0-protected-bootstrap/owned-cleanup.json
+  s_b61aed9e5ebdf0::t_281eb04813e1df 1-12
+outputs/completion-review/c0-protected-bootstrap/receipt.json
+  s_b61aed9e5ebdf0::t_5198c5a8ec92f4 1-43
+outputs/completion-review/c0-protected-bootstrap/recovery-selector-repair/baseline.json
+  s_b61aed9e5ebdf0::t_dfc4a71a8ea81a 1-9
+outputs/completion-review/c0-protected-bootstrap/recovery-selector-repair/failed-native-scenarios.dart.txt
+  s_b61aed9e5ebdf0::t_d3b42b6f9dc82d 1-726
+outputs/completion-review/c0-protected-bootstrap/recovery-selector-repair/review-inputs.json
+  s_b61aed9e5ebdf0::t_41dc9e3572a042 1-256
+outputs/completion-review/c0-protected-bootstrap/red-workspace-loss-source/c0_protected_bootstrap_native_test.dart
+  s_b61aed9e5ebdf0::t_251de92b40e9c8 1-29
+outputs/completion-review/c0-protected-bootstrap/red-workspace-loss-source/c0_protected_bootstrap_scenarios.dart
+  s_b61aed9e5ebdf0::t_f08765a94004ee 1-704
+outputs/completion-review/c0-protected-bootstrap/red-workspace-loss-source/lib__accounts__accounts_repository.dart.txt
+  s_b61aed9e5ebdf0::t_12179560ac9c8c 1-438
+outputs/completion-review/c0-protected-bootstrap/red-workspace-loss-source/lib__accounts__accounts_surface.dart.txt
+  s_b61aed9e5ebdf0::t_a63f01818a268f 1-294
+outputs/completion-review/c0-protected-bootstrap/red-workspace-loss-source/lib__accounts__accounts_view_model.dart.txt
+  s_b61aed9e5ebdf0::t_06905182e29b64 1-510
+outputs/completion-review/c0-protected-bootstrap/red-workspace-loss-source/lib__accounts__workspace_document.dart.txt
+  s_b61aed9e5ebdf0::t_e4056c87109d84 1-60
+outputs/completion-review/c0-protected-bootstrap/red-workspace-loss-source/lib__app__accounts_store.dart.txt
+  s_b61aed9e5ebdf0::t_1e24020f0a6b6b 1-170
+outputs/completion-review/c0-protected-bootstrap/red-workspace-loss-source/lib__app__app.dart.txt
+  s_b61aed9e5ebdf0::t_98128978122b88 1-633
+outputs/completion-review/c0-protected-bootstrap/red-workspace-loss-source/lib__app__bootstrap.dart.txt
+  s_b61aed9e5ebdf0::t_60295c7befd5c5 1-118
+outputs/completion-review/c0-protected-bootstrap/red-workspace-loss-source/lib__shell__shell_view_model.dart.txt
+  s_b61aed9e5ebdf0::t_5e2e9f63206e26 1-550
+outputs/completion-review/c0-protected-bootstrap/red-workspace-loss-source/real_store_bootstrap_surface_test.dart
+  s_b61aed9e5ebdf0::t_0b8f9e96d6df07 1-18
+outputs/completion-review/c0-protected-bootstrap/review-inputs.json
+  s_b61aed9e5ebdf0::t_aebcb0b1a665f7 1-204
+outputs/completion-review/c0-protected-bootstrap/root-repair/baseline.json
+  s_b61aed9e5ebdf0::t_9aa13112327797 1-15
+outputs/completion-review/c0-protected-bootstrap/root-repair/independent-review.json
+  s_b61aed9e5ebdf0::t_da99cbabf80670 1-30
+outputs/completion-review/c0-protected-bootstrap/root-repair/integration_test__support__c0_protected_bootstrap_scenarios.dart.before.txt
+  s_b61aed9e5ebdf0::t_6f3babf1244121 1-704
+outputs/completion-review/c0-protected-bootstrap/root-repair/lib__app__app.dart.before.txt
+  s_b61aed9e5ebdf0::t_b9abc95c9d13f5 1-633
+outputs/completion-review/c0-protected-bootstrap/root-repair/review-inputs-live-1.json
+  s_b61aed9e5ebdf0::t_c426f698d4d5d8 1-252
+outputs/completion-review/c0-protected-bootstrap/root-repair/review-inputs.json
+  s_b61aed9e5ebdf0::t_b4c130fc29de93 1-245
+outputs/completion-review/c0-protected-bootstrap/storage-closeout.json
+  s_b61aed9e5ebdf0::t_1cb81696e04e99 1-28
+outputs/completion-review/c0-protected-bootstrap/timing.json
+  s_b61aed9e5ebdf0::t_6c827e5ba349ad 1
+outputs/completion-review/c1-design-approval.json
+  s_b61aed9e5ebdf0::t_3c1a9c353c3248 1-376
+outputs/completion-review/c1-history-layout-repair/independent-review-and-row-audit.json
+  s_b61aed9e5ebdf0::t_fc0b02b1c91f15 1-44
+outputs/completion-review/c1-history-layout-repair/red-result.json
+  s_b61aed9e5ebdf0::t_815834c82837de 1-36
+outputs/completion-review/c1-history-layout-repair/review-inputs.json
+  s_b61aed9e5ebdf0::t_b254994aa191ac 1-96
+outputs/completion-review/c1-mounted-acceptance/independent-review-and-row-audit.json
+  s_b61aed9e5ebdf0::t_cd687c23c52ba2 1-29
+outputs/completion-review/c1-mounted-acceptance/interrupted-store-cleanup.json
+  s_b61aed9e5ebdf0::t_0a9a2088312744 1-81
+outputs/completion-review/c1-mounted-acceptance/review-inputs.json
+  s_b61aed9e5ebdf0::t_789c0ff4d52455 1-116
+outputs/completion-review/c1-mounted-acceptance/verification.json
+  s_b61aed9e5ebdf0::t_9082d93cdfcbaf 1-24
+outputs/completion-review/c1-native/campaign-spec.json
+  s_b61aed9e5ebdf0::t_2ac140e7e186b9 1-20
+outputs/completion-review/c1-native/corrected-preflight/campaign-spec.json
+  s_b61aed9e5ebdf0::t_90fd79f680b259 1-20
+outputs/completion-review/c1-native/corrected-preflight/cleanup.json
+  s_b61aed9e5ebdf0::t_1cb332aa4edbfd 1-10
+outputs/completion-review/c1-native/corrected-preflight/plan.json
+  s_b61aed9e5ebdf0::t_eeab6cf0a96e18 1-326
+outputs/completion-review/c1-native/corrected-preflight/preflight-attempt-1.json
+  s_b61aed9e5ebdf0::t_5d5ea1fece87ce 1-9
+outputs/completion-review/c1-native/corrected-preflight/preflight-spec.json
+  s_b61aed9e5ebdf0::t_904c89c49716d4 1-11
+outputs/completion-review/c1-native/corrected-preflight/state.json
+  s_b61aed9e5ebdf0::t_484825d1bf0a7f 1-44
+outputs/completion-review/c1-native/corrected-preflight/workflow-command-1.json
+  s_b61aed9e5ebdf0::t_055c60dc29a5aa 1-21
+outputs/completion-review/c1-native/corrected-preflight/workflow-command-2.json
+  s_b61aed9e5ebdf0::t_212533ed56bf87 1-23
+outputs/completion-review/c1-native/corrected-preflight/workflow-command-3.json
+  s_b61aed9e5ebdf0::t_a8aba685ff28b2 1-19
+outputs/completion-review/c1-native/device-discovery-diagnosis.json
+  s_b61aed9e5ebdf0::t_74e2e628da8970 1-28
+outputs/completion-review/c1-native/device-discovery.json
+  s_b61aed9e5ebdf0::t_6c36c7fb9cf5b8 1-17
+outputs/completion-review/c1-native/device-ready-1/baseline.json
+  s_b61aed9e5ebdf0::t_d64c7ce8816590 1-37
+outputs/completion-review/c1-native/device-ready-1/cleanup.json
+  s_b61aed9e5ebdf0::t_fcab661d35076e 1-67
+outputs/completion-review/c1-native/device-ready-1/device-observation.json
+  s_b61aed9e5ebdf0::t_3017d9546f922d 1-16
+outputs/completion-review/c1-native/device-ready-1/device-open-ready.json
+  s_b61aed9e5ebdf0::t_865e472219c5cf 1-16
+outputs/completion-review/c1-native/device-ready-1/device-open.json
+  s_b61aed9e5ebdf0::t_93a6abaf1cc33a 1-19
+outputs/completion-review/c1-native/device-ready-1/device-restoration.json
+  s_b61aed9e5ebdf0::t_640366204ba06a 1-16
+outputs/completion-review/c1-native/device-ready-1/failure-diagnosis.json
+  s_b61aed9e5ebdf0::t_5965757acbe98d 1-17
+outputs/completion-review/c1-native/device-ready-1/fixture-descriptor.json
+  s_b61aed9e5ebdf0::t_2fd8c6fa79cf10 1
+outputs/completion-review/c1-native/device-ready-1/harness-repair-2.json
+  s_b61aed9e5ebdf0::t_e7e49e41c64d49 1-11
+outputs/completion-review/c1-native/device-ready-1/harness-repair.json
+  s_b61aed9e5ebdf0::t_5be851b594d351 1-17
+outputs/completion-review/c1-native/device-ready-1/input-draft.json
+  s_b61aed9e5ebdf0::t_09c24b27794090 1-212
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/binary-identity.json
+  s_b61aed9e5ebdf0::t_736d49c2badc61 1-29
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/cleanup.json
+  s_b61aed9e5ebdf0::t_656402bb7a8dec 1-27
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/device-observation.json
+  s_b61aed9e5ebdf0::t_c6712286ef7a7e 1-16
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/device-open-ready.json
+  s_b61aed9e5ebdf0::t_69070982e36504 1-16
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/fixture-descriptor.json
+  s_b61aed9e5ebdf0::t_c7ac59eddd3f1b 1
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/pilot-attempt-1-command.json
+  s_b61aed9e5ebdf0::t_6437972192d743 1-29
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/pilot-ledger-receipt-1.json
+  s_b61aed9e5ebdf0::t_5bb8f09bf0b106 1-29
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/pilot-process.json
+  s_b61aed9e5ebdf0::t_21e78bed55f6b3 1-16
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/plan.json
+  s_b61aed9e5ebdf0::t_ab4e6047f2698b 1-130
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/preflight-attempt-1.json
+  s_b61aed9e5ebdf0::t_c3cbfbacccdec2 1-27
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/preflight-command-1.json
+  s_b61aed9e5ebdf0::t_ad573783bd9932 1-15
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/preflight-ledger-receipt.json
+  s_b61aed9e5ebdf0::t_efff2a2f2bbd4d 1-21
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/preflight-spec.json
+  s_b61aed9e5ebdf0::t_c7cce42b366aeb 1-114
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/state.json
+  s_b61aed9e5ebdf0::t_757d0088e328c6 1
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/successor.json
+  s_b61aed9e5ebdf0::t_f8c4c4df721c90 1-18
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/workflow-init.json
+  s_b61aed9e5ebdf0::t_14ae0dcf3b4779 1-16
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/workflow-pilot-record-1.json
+  s_b61aed9e5ebdf0::t_468a08a77a4e0b 1-18
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/workflow-preflight-record.json
+  s_b61aed9e5ebdf0::t_361bfb34fd0ab5 1-18
+outputs/completion-review/c1-native/device-ready-1/layout-repair-1/workflow-summary.json
+  s_b61aed9e5ebdf0::t_03aa7282486fd3 1-16
+outputs/completion-review/c1-native/device-ready-1/memory-delivery.json
+  s_b61aed9e5ebdf0::t_1caa288ea1b689 1-48
+outputs/completion-review/c1-native/device-ready-1/original-harness.dart.txt
+  s_b61aed9e5ebdf0::t_3537a002b20abb 1-533
+outputs/completion-review/c1-native/device-ready-1/pilot-attempt-1-command.json
+  s_b61aed9e5ebdf0::t_9a65d04aa1c4fb 1-29
+outputs/completion-review/c1-native/device-ready-1/pilot-ledger-receipt-1.json
+  s_b61aed9e5ebdf0::t_1af7e31406dd4d 1-26
+outputs/completion-review/c1-native/device-ready-1/pilot-process.json
+  s_b61aed9e5ebdf0::t_2d6cd5b27739c3 1-16
+outputs/completion-review/c1-native/device-ready-1/plan.json
+  s_b61aed9e5ebdf0::t_cb83758465d404 1-130
+outputs/completion-review/c1-native/device-ready-1/preflight-attempt-1.json
+  s_b61aed9e5ebdf0::t_5a4be24cd41355 1-27
+outputs/completion-review/c1-native/device-ready-1/preflight-command-1.json
+  s_b61aed9e5ebdf0::t_d0ba89630c5d74 1-15
+outputs/completion-review/c1-native/device-ready-1/preflight-ledger-receipt.json
+  s_b61aed9e5ebdf0::t_4bf7e534740cdd 1-21
+outputs/completion-review/c1-native/device-ready-1/preflight-spec.json
+  s_b61aed9e5ebdf0::t_e3847ce17f6ae4 1-114
+outputs/completion-review/c1-native/device-ready-1/receipt.json
+  s_b61aed9e5ebdf0::t_3b3b1a182e5117 1-96
+outputs/completion-review/c1-native/device-ready-1/repaired-1/device-observation.json
+  s_b61aed9e5ebdf0::t_f0bb61a01e4b81 1-16
+outputs/completion-review/c1-native/device-ready-1/repaired-1/device-open-ready.json
+  s_b61aed9e5ebdf0::t_9a8607abae2873 1-16
+outputs/completion-review/c1-native/device-ready-1/repaired-1/failure-diagnosis.json
+  s_b61aed9e5ebdf0::t_6e1bcac0b0c229 1-12
+outputs/completion-review/c1-native/device-ready-1/repaired-1/fixture-descriptor.json
+  s_b61aed9e5ebdf0::t_3233778e307373 1
+outputs/completion-review/c1-native/device-ready-1/repaired-1/historical-harness.dart.txt
+  s_b61aed9e5ebdf0::t_3d7961fa4c3c9a 1-546
+outputs/completion-review/c1-native/device-ready-1/repaired-1/pilot-attempt-1-command.json
+  s_b61aed9e5ebdf0::t_028def13f84443 1-29
+outputs/completion-review/c1-native/device-ready-1/repaired-1/pilot-ledger-receipt-1.json
+  s_b61aed9e5ebdf0::t_c7d6da9cb84bdd 1-26
+outputs/completion-review/c1-native/device-ready-1/repaired-1/pilot-process.json
+  s_b61aed9e5ebdf0::t_83cd9fab2eaa2f 1-16
+outputs/completion-review/c1-native/device-ready-1/repaired-1/plan.json
+  s_b61aed9e5ebdf0::t_f76208828185e8 1-130
+outputs/completion-review/c1-native/device-ready-1/repaired-1/preflight-attempt-1.json
+  s_b61aed9e5ebdf0::t_dc67530c8b8898 1-27
+outputs/completion-review/c1-native/device-ready-1/repaired-1/preflight-command-1.json
+  s_b61aed9e5ebdf0::t_571d9c95673d84 1-15
+outputs/completion-review/c1-native/device-ready-1/repaired-1/preflight-ledger-receipt.json
+  s_b61aed9e5ebdf0::t_520fc7379512d7 1-21
+outputs/completion-review/c1-native/device-ready-1/repaired-1/preflight-spec.json
+  s_b61aed9e5ebdf0::t_832ed4f279cf01 1-114
+outputs/completion-review/c1-native/device-ready-1/repaired-1/state.json
+  s_b61aed9e5ebdf0::t_9a225483113b4f 1
+outputs/completion-review/c1-native/device-ready-1/repaired-1/successor.json
+  s_b61aed9e5ebdf0::t_4c367b8b37eb7f 1-13
+outputs/completion-review/c1-native/device-ready-1/repaired-1/workflow-init.json
+  s_b61aed9e5ebdf0::t_328f38ba482518 1-16
+outputs/completion-review/c1-native/device-ready-1/repaired-1/workflow-pilot-record-1.json
+  s_b61aed9e5ebdf0::t_602ddf580839d7 1-18
+outputs/completion-review/c1-native/device-ready-1/repaired-1/workflow-preflight-record.json
+  s_b61aed9e5ebdf0::t_61a0f72d05233c 1-18
+outputs/completion-review/c1-native/device-ready-1/repaired-2/device-observation.json
+  s_b61aed9e5ebdf0::t_83b3a3c7136b91 1-16
+outputs/completion-review/c1-native/device-ready-1/repaired-2/device-open-ready.json
+  s_b61aed9e5ebdf0::t_0ea54f86eacdb6 1-16
+outputs/completion-review/c1-native/device-ready-1/repaired-2/failure-diagnosis.json
+  s_b61aed9e5ebdf0::t_dc7e90de2389dd 1-25
+outputs/completion-review/c1-native/device-ready-1/repaired-2/fixture-descriptor.json
+  s_b61aed9e5ebdf0::t_edf30a3d0e3a34 1
+outputs/completion-review/c1-native/device-ready-1/repaired-2/historical-harness.dart.txt
+  s_b61aed9e5ebdf0::t_d793f59e067977 1-552
+outputs/completion-review/c1-native/device-ready-1/repaired-2/historical-stock-history-dialog.dart.txt
+  s_b61aed9e5ebdf0::t_7dc6abbaba5b99 1-438
+outputs/completion-review/c1-native/device-ready-1/repaired-2/pilot-attempt-1-command.json
+  s_b61aed9e5ebdf0::t_597626014e3898 1-29
+outputs/completion-review/c1-native/device-ready-1/repaired-2/pilot-ledger-receipt-1.json
+  s_b61aed9e5ebdf0::t_9be1a45cc3bd9a 1-26
+outputs/completion-review/c1-native/device-ready-1/repaired-2/pilot-process.json
+  s_b61aed9e5ebdf0::t_f846bb2b3dd803 1-16
+outputs/completion-review/c1-native/device-ready-1/repaired-2/plan.json
+  s_b61aed9e5ebdf0::t_46fd638adf6a17 1-130
+outputs/completion-review/c1-native/device-ready-1/repaired-2/preflight-attempt-1.json
+  s_b61aed9e5ebdf0::t_738f7e812bbe39 1-27
+outputs/completion-review/c1-native/device-ready-1/repaired-2/preflight-command-1.json
+  s_b61aed9e5ebdf0::t_5af1b5b19fad97 1-15
+outputs/completion-review/c1-native/device-ready-1/repaired-2/preflight-ledger-receipt.json
+  s_b61aed9e5ebdf0::t_d3ce965584246d 1-21
+outputs/completion-review/c1-native/device-ready-1/repaired-2/preflight-spec.json
+  s_b61aed9e5ebdf0::t_59dbeb50739f48 1-114
+outputs/completion-review/c1-native/device-ready-1/repaired-2/state.json
+  s_b61aed9e5ebdf0::t_3b991b61f24dc7 1
+outputs/completion-review/c1-native/device-ready-1/repaired-2/successor.json
+  s_b61aed9e5ebdf0::t_edfe8251c78757 1-12
+outputs/completion-review/c1-native/device-ready-1/repaired-2/workflow-init.json
+  s_b61aed9e5ebdf0::t_3bcd43e0f3dd97 1-16
+outputs/completion-review/c1-native/device-ready-1/repaired-2/workflow-pilot-record-1.json
+  s_b61aed9e5ebdf0::t_21a328c6eeb2ab 1-18
+outputs/completion-review/c1-native/device-ready-1/repaired-2/workflow-preflight-record.json
+  s_b61aed9e5ebdf0::t_6e75ccd1cbd9f2 1-18
+outputs/completion-review/c1-native/device-ready-1/review-inputs.json
+  s_b61aed9e5ebdf0::t_d3f44887a2de8c 1-992
+outputs/completion-review/c1-native/device-ready-1/source-fixture-identity.json
+  s_b61aed9e5ebdf0::t_fb20dab51e7383 1-9
+outputs/completion-review/c1-native/device-ready-1/state.json
+  s_b61aed9e5ebdf0::t_cc5efedaf2c53c 1
+outputs/completion-review/c1-native/device-ready-1/storage-closeout.json
+  s_b61aed9e5ebdf0::t_fccc5f6ed1ee31 1-62
+outputs/completion-review/c1-native/device-ready-1/storage-midpoint.json
+  s_b61aed9e5ebdf0::t_58894250edb6df 1-16
+outputs/completion-review/c1-native/device-ready-1/time-cost-review.json
+  s_b61aed9e5ebdf0::t_a2422d6e267865 1-41
+outputs/completion-review/c1-native/device-ready-1/timing.json
+  s_b61aed9e5ebdf0::t_0761707975e90b 1
+outputs/completion-review/c1-native/device-ready-1/workflow-init.json
+  s_b61aed9e5ebdf0::t_06f595f6916995 1-16
+outputs/completion-review/c1-native/device-ready-1/workflow-pilot-record-1.json
+  s_b61aed9e5ebdf0::t_f02705151bce24 1-18
+outputs/completion-review/c1-native/device-ready-1/workflow-preflight-record.json
+  s_b61aed9e5ebdf0::t_23c266a539fa17 1-18
+outputs/completion-review/c1-native/engine-pin-check.json
+  s_b61aed9e5ebdf0::t_88f6824372c9ca 1-11
+outputs/completion-review/c1-native/fixture-descriptor.json
+  s_b61aed9e5ebdf0::t_175a5f34649af7 1
+outputs/completion-review/c1-native/madar-recall.json
+  s_b61aed9e5ebdf0::t_f4f8cec1eb4aaa 1-22
+outputs/completion-review/c1-native/plan.json
+  s_b61aed9e5ebdf0::t_a581550c86ee92 1-326
+outputs/completion-review/c1-native/preflight-fixture-cleanup.json
+  s_b61aed9e5ebdf0::t_28d08cee98d8cd 1-10
+outputs/completion-review/c1-native/preflight-spec.json
+  s_b61aed9e5ebdf0::t_51e20c0bf785ba 1-11
+outputs/completion-review/c1-native/python39-preflight-diagnosis.json
+  s_b61aed9e5ebdf0::t_a04dc9f831e6f2 1-13
+outputs/completion-review/c1-native/repaired-1/independent-review.json
+  s_b61aed9e5ebdf0::t_590d2992eedef3 1-7
+outputs/completion-review/c1-native/repaired-1/receipt.json
+  s_b61aed9e5ebdf0::t_9a70dcda7548b7 1-18
+outputs/completion-review/c1-native/state.json
+  s_b61aed9e5ebdf0::t_9134f099288d8f 1-16
+outputs/completion-review/c1-native/storage-closeout.json
+  s_b61aed9e5ebdf0::t_7e8a943c7d3baf 1-52
+outputs/completion-review/c1-native/timing.json
+  s_b61aed9e5ebdf0::t_f70bd521490263 1
+outputs/completion-review/c1-native/verification.json
+  s_b61aed9e5ebdf0::t_281b1921403467 1-26
+outputs/completion-review/c1-native/workflow-command-1.json
+  s_b61aed9e5ebdf0::t_7b4cd41da20ea7 1-20
+outputs/completion-review/c1-native/workflow-command-2.json
+  s_b61aed9e5ebdf0::t_8cf12fb1257728 1-22
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/aggregate-result.json
+  s_b61aed9e5ebdf0::t_cdc7404763fc2f 1-267
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/artifact-retention.json
+  s_b61aed9e5ebdf0::t_5e80f9e88e350e 1-14
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/campaign-spec.json
+  s_b61aed9e5ebdf0::t_ffcd5042b7068f 1-60
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-01-execution-attempt-1.json
+  s_b61aed9e5ebdf0::t_3b510b917345a5 1-26
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-01-product-create-50-attempt-1.json
+  s_b61aed9e5ebdf0::t_e8c895cc81691e 1-145
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-01-product-create-50-attempt-1.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_42998bc74b3bfe 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-01-receipt-attempt-1.json
+  s_b61aed9e5ebdf0::t_04ac00aa9301f9 1-41
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-01-validation-attempt-1.json
+  s_b61aed9e5ebdf0::t_ff315705513adf 1-13
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-01-workflow-record-refused.json
+  s_b61aed9e5ebdf0::t_c7c896739e3ff0 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-01-workflow-record.json
+  s_b61aed9e5ebdf0::t_d8e9c6c7ddce4d 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-02-execution-attempt-1.json
+  s_b61aed9e5ebdf0::t_9911ad81385a7c 1-26
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-02-product-edit-50-attempt-1.json
+  s_b61aed9e5ebdf0::t_c8c9da5149758c 1-145
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-02-product-edit-50-attempt-1.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_d40221840dfb13 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-02-receipt-attempt-1.json
+  s_b61aed9e5ebdf0::t_7378c9ad4409c0 1-41
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-02-validation-attempt-1.json
+  s_b61aed9e5ebdf0::t_2a6c25cba4d9ab 1-14
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-02-workflow-record.json
+  s_b61aed9e5ebdf0::t_a69afeb78480a6 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-03-execution-attempt-1.json
+  s_b61aed9e5ebdf0::t_f155578aad8f3a 1-26
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-03-photo-select-save-50-attempt-1.json
+  s_b61aed9e5ebdf0::t_285bb9ebced503 1-145
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-03-photo-select-save-50-attempt-1.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_a963a0c3642983 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-03-receipt-attempt-1.json
+  s_b61aed9e5ebdf0::t_6b121fe331f575 1-41
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-03-validation-attempt-1.json
+  s_b61aed9e5ebdf0::t_0ec89226c43135 1-14
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-03-workflow-record.json
+  s_b61aed9e5ebdf0::t_66c925d0f12bb0 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-04-execution-attempt-1.json
+  s_b61aed9e5ebdf0::t_79336934d56d69 1-26
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-04-receipt-attempt-1.json
+  s_b61aed9e5ebdf0::t_91b71040222d00 1-41
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-04-stock-post-50-attempt-1.json
+  s_b61aed9e5ebdf0::t_87e1af9b650858 1-145
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-04-stock-post-50-attempt-1.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_6516327ca8ffc2 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-04-validation-attempt-1.json
+  s_b61aed9e5ebdf0::t_df8cf224f1d29b 1-14
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-04-workflow-record.json
+  s_b61aed9e5ebdf0::t_d10d651b05b0cf 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-05-execution-attempt-1.json
+  s_b61aed9e5ebdf0::t_f2a1a96dc51e49 1-26
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-05-receipt-attempt-1.json
+  s_b61aed9e5ebdf0::t_8c5dee98ebcd38 1-41
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-05-stock-reverse-50-attempt-1.json
+  s_b61aed9e5ebdf0::t_5d7f8bb923417e 1-145
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-05-stock-reverse-50-attempt-1.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_17e0f70626eaf1 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-05-validation-attempt-1.json
+  s_b61aed9e5ebdf0::t_21c2f28040152f 1-14
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-05-workflow-record.json
+  s_b61aed9e5ebdf0::t_d0f0b8e3d36618 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-06-execution-attempt-1.json
+  s_b61aed9e5ebdf0::t_b843894d1b4bbc 1-26
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-06-receipt-attempt-1.json
+  s_b61aed9e5ebdf0::t_1cb44cc94e61bd 1-41
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-06-stock-history-50-attempt-1.json
+  s_b61aed9e5ebdf0::t_aaa53f31a07f48 1-145
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-06-stock-history-50-attempt-1.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_22eed58df0cc0c 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-06-validation-attempt-1.json
+  s_b61aed9e5ebdf0::t_efe105893eb897 1-14
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-06-workflow-record.json
+  s_b61aed9e5ebdf0::t_c3811cf0e191cf 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-07-catalog-lookup-50-attempt-1.json
+  s_b61aed9e5ebdf0::t_1e13d798198f2b 1-145
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-07-catalog-lookup-50-attempt-1.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_31e029448d43f5 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-07-execution-attempt-1.json
+  s_b61aed9e5ebdf0::t_d6a8aadef42e9d 1-26
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-07-receipt-attempt-1.json
+  s_b61aed9e5ebdf0::t_a1aa721f9a837e 1-41
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-07-validation-attempt-1.json
+  s_b61aed9e5ebdf0::t_c8c227005a4cf9 1-14
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-07-workflow-record.json
+  s_b61aed9e5ebdf0::t_f2fb1812bb8f47 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-08-catalog-filter-50-attempt-1.json
+  s_b61aed9e5ebdf0::t_594f921086662b 1-145
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-08-catalog-filter-50-attempt-1.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_eb00d0cce21602 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-08-execution-attempt-1.json
+  s_b61aed9e5ebdf0::t_70112a2dfc45af 1-26
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-08-receipt-attempt-1.json
+  s_b61aed9e5ebdf0::t_04dd1cc2dae286 1-41
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-08-validation-attempt-1.json
+  s_b61aed9e5ebdf0::t_1ac34026a94354 1-14
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-08-workflow-record.json
+  s_b61aed9e5ebdf0::t_92a5d3cecc500f 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-09-catalog-page-50-attempt-1.json
+  s_b61aed9e5ebdf0::t_ca0c95a9783523 1-145
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-09-catalog-page-50-attempt-1.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_cfd584bb978c0d 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-09-execution-attempt-1.json
+  s_b61aed9e5ebdf0::t_5b14cd89e74793 1-26
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-09-receipt-attempt-1.json
+  s_b61aed9e5ebdf0::t_e9a57d02647453 1-41
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-09-validation-attempt-1.json
+  s_b61aed9e5ebdf0::t_b209e2e85d6653 1-14
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-09-workflow-record.json
+  s_b61aed9e5ebdf0::t_f01e507dcb839f 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-descriptors.json
+  s_b61aed9e5ebdf0::t_19cf75159b9aa9 1-274
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/cleanup-receipt.json
+  s_b61aed9e5ebdf0::t_a7f30e1bedbd49 1-10
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/draft-plan-context.json
+  s_b61aed9e5ebdf0::t_84cd23a05ed0d1 1-76
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/empty-diagnostic-cleanup.json
+  s_b61aed9e5ebdf0::t_3f1541258a9d3b 1-16
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/execution-baseline.json
+  s_b61aed9e5ebdf0::t_3c2fdf3f6aebc8 1-18
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/execution-freeze.json
+  s_b61aed9e5ebdf0::t_6dad9f5d97748a 1-20
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/execution-memory-check.json
+  s_b61aed9e5ebdf0::t_4e5b916a838c96 1-18
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/execution-memory-closeout.json
+  s_b61aed9e5ebdf0::t_7f3b894732401a 1-17
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/execution-memory-sync.json
+  s_b61aed9e5ebdf0::t_e8dedab986853d 1-2
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/execution-storage-closeout.json
+  s_b61aed9e5ebdf0::t_5f09acd4e08235 1-28
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/execution-timing-resumed.json
+  s_b61aed9e5ebdf0::t_022013df53cb08 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/execution-timing.json
+  s_b61aed9e5ebdf0::t_f24e020da6c65c 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/final-evidence-readback.json
+  s_b61aed9e5ebdf0::t_c763764d5c23ec 1-7
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/final-source-readback.json
+  s_b61aed9e5ebdf0::t_c626d9b0aaf241 1-6
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/final-storage-closeout.json
+  s_b61aed9e5ebdf0::t_8ec4da600bc472 1-29
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/fixture-descriptor.json
+  s_b61aed9e5ebdf0::t_fb8d0cdab5c25d 1-84
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/independent-preparation-review.json
+  s_b61aed9e5ebdf0::t_f75aaa23671177 1-39
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/independent-review.json
+  s_b61aed9e5ebdf0::t_fb55171b75e9dd 1-39
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/measurement-contract.json
+  s_b61aed9e5ebdf0::t_e312b1adbd5e3b 1-22
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/native-artifact-provenance.json
+  s_b61aed9e5ebdf0::t_2bcdac8e028414 1-31
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/plan.json
+  s_b61aed9e5ebdf0::t_38dd97f3b13d02 1-393
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/preflight-attempt-1.json
+  s_b61aed9e5ebdf0::t_4092bb95574299 1-18
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/preflight-spec.json
+  s_b61aed9e5ebdf0::t_8f84e88f8344b2 1-20
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/preparation-baseline.json
+  s_b61aed9e5ebdf0::t_8ea984c928255b 1-22
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/preparation-memory.json
+  s_b61aed9e5ebdf0::t_a5692028cf3785 1-13
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/preparation-review-inputs.json
+  s_b61aed9e5ebdf0::t_7624fb0c143787 1-156
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/preparation-storage-closeout.json
+  s_b61aed9e5ebdf0::t_6e2ae8888b50f8 1-47
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/preparation-timing.json
+  s_b61aed9e5ebdf0::t_ec09087e4171ed 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/preparation-validation.json
+  s_b61aed9e5ebdf0::t_62a4bbe5b8c4c5 1-14
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/profile-build-cache-receipt.json
+  s_b61aed9e5ebdf0::t_d5690548b4936d 1
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/review-inputs.json
+  s_b61aed9e5ebdf0::t_dadb0e539b1a22 1-567
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/state.json
+  s_b61aed9e5ebdf0::t_d99c75d77f9c9d 1-467
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/temp-store-baseline.json
+  s_b61aed9e5ebdf0::t_e8d5e253905387 1-4
+outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/workflow-summary.json
+  s_b61aed9e5ebdf0::t_a7bbbe5984bb65 1
+outputs/completion-review/c1-operation-benchmarks/baseline.json
+  s_b61aed9e5ebdf0::t_a6fb079485afad 1-56
+outputs/completion-review/c1-operation-benchmarks/campaign-handoff.json
+  s_b61aed9e5ebdf0::t_e8d60e8a3443ab 1-50
+outputs/completion-review/c1-operation-benchmarks/independent-source-review.json
+  s_b61aed9e5ebdf0::t_5b13955ee44b7b 1-34
+outputs/completion-review/c1-operation-benchmarks/integrated-campaign-handoff.json
+  s_b61aed9e5ebdf0::t_6476800ae3ed00 1-55
+outputs/completion-review/c1-operation-benchmarks/integrated-memory-final.json
+  s_b61aed9e5ebdf0::t_94dc822d9f8fa3 1-13
+outputs/completion-review/c1-operation-benchmarks/integrated-registration-bindings.json
+  s_b61aed9e5ebdf0::t_f084b3100ee68c 1-28
+outputs/completion-review/c1-operation-benchmarks/integrated-registration.patch
+  s_b61aed9e5ebdf0::t_fe554aea843023 1-188
+outputs/completion-review/c1-operation-benchmarks/integrated-review-inputs.json
+  s_b61aed9e5ebdf0::t_f826a2ec33ea7d 1-342
+outputs/completion-review/c1-operation-benchmarks/integrated-storage-closeout.json
+  s_b61aed9e5ebdf0::t_9b1edbbeaa2e2e 1-46
+outputs/completion-review/c1-operation-benchmarks/integrated-verification.json
+  s_b61aed9e5ebdf0::t_9e13acb2e6a324 1-42
+outputs/completion-review/c1-operation-benchmarks/integration-timing.json
+  s_b61aed9e5ebdf0::t_f4372d6ef99b47 1
+outputs/completion-review/c1-operation-benchmarks/memory-final.json
+  s_b61aed9e5ebdf0::t_ca305a6dab57a1 1-18
+outputs/completion-review/c1-operation-benchmarks/memory-status.json
+  s_b61aed9e5ebdf0::t_945a91d0750a73 1-11
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/campaign-spec.json
+  s_b61aed9e5ebdf0::t_6cef120dbc4b74 1-20
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/execution-freeze.json
+  s_b61aed9e5ebdf0::t_485fc594185aef 1-15
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/execution-timing.json
+  s_b61aed9e5ebdf0::t_a62103691710f4 1
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/final-source-readback.json
+  s_b61aed9e5ebdf0::t_c241deca8e4582 1-8
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/fixture-descriptor.json
+  s_b61aed9e5ebdf0::t_6a1c13688ba175 1-36
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/independent-review.json
+  s_b61aed9e5ebdf0::t_a86ba5cb3825ea 1-21
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/memory-closeout.json
+  s_b61aed9e5ebdf0::t_614e364640862f 1-11
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/native-artifact-provenance.json
+  s_b61aed9e5ebdf0::t_53b758d19810af 1-29
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/pilot-interpretation.json
+  s_b61aed9e5ebdf0::t_5f6bed7a76f0af 1-45
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/pilot-receipt-1.json
+  s_b61aed9e5ebdf0::t_d19544d7d8370f 1-37
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/plan.json
+  s_b61aed9e5ebdf0::t_07c65f23ca97f0 1-353
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/preflight-attempt-1.json
+  s_b61aed9e5ebdf0::t_de7549a86ac33a 1-18
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/preflight-spec.json
+  s_b61aed9e5ebdf0::t_4230a89fafec77 1-20
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/preparation-baseline.json
+  s_b61aed9e5ebdf0::t_cb1929319f1e0e 1-19
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/preparation-closeout.json
+  s_b61aed9e5ebdf0::t_a09c884063f13e 1-39
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/preparation-memory.json
+  s_b61aed9e5ebdf0::t_2a4fcb8e03d8a4 1-12
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/profile-build-cache-receipt.json
+  s_b61aed9e5ebdf0::t_09c7ab99034a8f 1-39
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/result-attempt-1.json
+  s_b61aed9e5ebdf0::t_5a410e13d13240 1-96
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/result-attempt-1.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_4b8d3253cd971b 1
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/review-inputs.json
+  s_b61aed9e5ebdf0::t_745c0f8bd3efb1 1-241
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/runner-execution-attempt-1.json
+  s_b61aed9e5ebdf0::t_541d705bbc6b0f 1-22
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/source-input-count.json
+  s_b61aed9e5ebdf0::t_97e80719101c4e 1-7
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/state.json
+  s_b61aed9e5ebdf0::t_91c697da35511a 1-87
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/storage-closeout.json
+  s_b61aed9e5ebdf0::t_6eea5e3b1639af 1-56
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/timing.json
+  s_b61aed9e5ebdf0::t_9f7acc750a98ea 1
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/workflow-init.json
+  s_b61aed9e5ebdf0::t_6e1bffc092371b 1-18
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/workflow-preflight.json
+  s_b61aed9e5ebdf0::t_e51b88f518186f 1-20
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/workflow-record-pilot.json
+  s_b61aed9e5ebdf0::t_0e7e82f19fabf1 1-18
+outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/workflow-summary.json
+  s_b61aed9e5ebdf0::t_ba86f3520a5428 1-16
+outputs/completion-review/c1-operation-benchmarks/registration-bindings.json
+  s_b61aed9e5ebdf0::t_763ef8ab822f17 1-23
+outputs/completion-review/c1-operation-benchmarks/registration.patch
+  s_b61aed9e5ebdf0::t_74c5055327b04d 1-179
+outputs/completion-review/c1-operation-benchmarks/registry-additions.json
+  s_b61aed9e5ebdf0::t_55822bf1300124 1-124
+outputs/completion-review/c1-operation-benchmarks/review-inputs.json
+  s_b61aed9e5ebdf0::t_530c5e02e40010 1-243
+outputs/completion-review/c1-operation-benchmarks/storage-closeout.json
+  s_b61aed9e5ebdf0::t_1208a1f9e65e59 1-60
+outputs/completion-review/c1-operation-benchmarks/timing.json
+  s_b61aed9e5ebdf0::t_5355c92f2af831 1
+outputs/completion-review/c1-operation-benchmarks/verification.json
+  s_b61aed9e5ebdf0::t_7b740b027d73ee 1-38
+outputs/completion-review/c1-rendered-pagination/attempt-1.json
+  s_b61aed9e5ebdf0::t_124c73f50b5125 1-42
+outputs/completion-review/c1-rendered-pagination/attempt-2.json
+  s_b61aed9e5ebdf0::t_38c03132c71d10 1-42
+outputs/completion-review/c1-rendered-pagination/baseline.json
+  s_b61aed9e5ebdf0::t_a33d7e790c00a1 1-59
+outputs/completion-review/c1-rendered-pagination/final-storage-receipt.json
+  s_b61aed9e5ebdf0::t_0677486a72d193 1-18
+outputs/completion-review/c1-rendered-pagination/memory-status.json
+  s_b61aed9e5ebdf0::t_cb15f4375e39a4 1-10
+outputs/completion-review/c1-rendered-pagination/receipt.json
+  s_b61aed9e5ebdf0::t_ab9f5d6c699d8f 1-28
+outputs/completion-review/c1-rendered-pagination/review-inputs.json
+  s_b61aed9e5ebdf0::t_f40277066e9bda 1-190
+outputs/completion-review/c1-rendered-pagination/storage-closeout.json
+  s_b61aed9e5ebdf0::t_0e2683fc555fe4 1-41
+outputs/completion-review/c1-restart-portability/baseline.json
+  s_b61aed9e5ebdf0::t_3d51d4ec33c47a 1-37
+outputs/completion-review/c1-restart-portability/close-repair/historical-before-terminal-guard/c1_restart_fixture.dart.txt
+  s_b61aed9e5ebdf0::t_faca8b269e9b9e 1-713
+outputs/completion-review/c1-restart-portability/close-repair/historical-before-terminal-guard/c1_restart_fixture_test.dart.txt
+  s_b61aed9e5ebdf0::t_f3a2aaabf3e698 1-158
+outputs/completion-review/c1-restart-portability/close-repair/historical-before-terminal-guard/manifest.json
+  s_b61aed9e5ebdf0::t_d63f76b0f98579 1-18
+outputs/completion-review/c1-restart-portability/close-repair/recheck-disposition.json
+  s_b61aed9e5ebdf0::t_461b01badd46cf 1-16
+outputs/completion-review/c1-restart-portability/close-repair/repair-receipt.json
+  s_b61aed9e5ebdf0::t_f6825c217d122b 1-17
+outputs/completion-review/c1-restart-portability/close-repair/review-inputs.json
+  s_b61aed9e5ebdf0::t_c7ebc598dfa333 1-63
+outputs/completion-review/c1-restart-portability/close-repair/terminal-guard/independent-review.json
+  s_b61aed9e5ebdf0::t_73f07323b25598 1-18
+outputs/completion-review/c1-restart-portability/close-repair/terminal-guard/repair-receipt.json
+  s_b61aed9e5ebdf0::t_2018e49e5692f3 1-16
+outputs/completion-review/c1-restart-portability/close-repair/terminal-guard/review-inputs.json
+  s_b61aed9e5ebdf0::t_737d48b770b6a8 1-67
+outputs/completion-review/c1-restart-portability/historical-source-before-close-repair/c1_restart_fixture.dart.txt
+  s_b61aed9e5ebdf0::t_a5703f3be373a9 1-656
+outputs/completion-review/c1-restart-portability/historical-source-before-close-repair/c1_restart_fixture_test.dart.txt
+  s_b61aed9e5ebdf0::t_3e8c68b8a32a82 1-112
+outputs/completion-review/c1-restart-portability/historical-source-before-close-repair/manifest.json
+  s_b61aed9e5ebdf0::t_4597898cf249c6 1-21
+outputs/completion-review/c1-restart-portability/native-pilot-1/after-export.json
+  s_b61aed9e5ebdf0::t_aae556eac6515b 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/after-form.json
+  s_b61aed9e5ebdf0::t_5c5e5a04ab2c75 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/baseline.json
+  s_b61aed9e5ebdf0::t_cbff80d26c41f4 1-22
+outputs/completion-review/c1-restart-portability/native-pilot-1/binary-identity.json
+  s_b61aed9e5ebdf0::t_c863f65aa5ff7c 1-446
+outputs/completion-review/c1-restart-portability/native-pilot-1/browse-screen.json
+  s_b61aed9e5ebdf0::t_d4b6ef23a72e95 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/build-attempt-1-command.json
+  s_b61aed9e5ebdf0::t_8c2d19ba170d32 1-23
+outputs/completion-review/c1-restart-portability/native-pilot-1/build-process.json
+  s_b61aed9e5ebdf0::t_5deec55edf73ae 1-15
+outputs/completion-review/c1-restart-portability/native-pilot-1/cancel-provider-cleanup.json
+  s_b61aed9e5ebdf0::t_9c17077cc09eef 1-14
+outputs/completion-review/c1-restart-portability/native-pilot-1/cleanup-provider-screen.json
+  s_b61aed9e5ebdf0::t_3ec1310ac76eda 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/cleanup-ready.json
+  s_b61aed9e5ebdf0::t_ab21c87d613c98 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/close-1.json
+  s_b61aed9e5ebdf0::t_c2908e12bb8cde 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/close-2.json
+  s_b61aed9e5ebdf0::t_65c992971523eb 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/close-form.json
+  s_b61aed9e5ebdf0::t_5cf6cea355efaf 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/confirm-native-import.json
+  s_b61aed9e5ebdf0::t_12da9ff56ad047 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/confirmed-import.json
+  s_b61aed9e5ebdf0::t_90700bd1ce4277 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/device-close.json
+  s_b61aed9e5ebdf0::t_d93e1e5c58f901 1
+outputs/completion-review/c1-restart-portability/native-pilot-1/device-final-state.json
+  s_b61aed9e5ebdf0::t_809bd5def9e14f 1
+outputs/completion-review/c1-restart-portability/native-pilot-1/device-observation.json
+  s_b61aed9e5ebdf0::t_bb9fa66c41f304 1-16
+outputs/completion-review/c1-restart-portability/native-pilot-1/device-open.json
+  s_b61aed9e5ebdf0::t_c5d0305c6af93f 1-18
+outputs/completion-review/c1-restart-portability/native-pilot-1/dismiss-file-menu.json
+  s_b61aed9e5ebdf0::t_17fad172ad0f58 1-14
+outputs/completion-review/c1-restart-portability/native-pilot-1/export-provider-screen.json
+  s_b61aed9e5ebdf0::t_7aeffa266af34a 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/export-provider.json
+  s_b61aed9e5ebdf0::t_dcb03d91327bd9 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/file-actions.jsonl
+  s_b61aed9e5ebdf0::t_e43897ebc2d53f 1-4
+outputs/completion-review/c1-restart-portability/native-pilot-1/files-cleanup.json
+  s_b61aed9e5ebdf0::t_7fc2f4d72436a8 1-14
+outputs/completion-review/c1-restart-portability/native-pilot-1/files-state.json
+  s_b61aed9e5ebdf0::t_73acbcd15bb66c 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/final-app-close.json
+  s_b61aed9e5ebdf0::t_de5ec5eb777708 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/final-flags-screen.json
+  s_b61aed9e5ebdf0::t_5a1660e71e6e4d 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/final-restart.json
+  s_b61aed9e5ebdf0::t_d3fcccda6bd2b1 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/final-restarted-state/launches.jsonl
+  s_b61aed9e5ebdf0::t_9294260ebd2b4d 1-3
+outputs/completion-review/c1-restart-portability/native-pilot-1/final-restarted-state/report-current.json
+  s_b61aed9e5ebdf0::t_247b9ba7ff026b 1-58
+outputs/completion-review/c1-restart-portability/native-pilot-1/final-source-check.json
+  s_b61aed9e5ebdf0::t_e388c963229fa2 1-6
+outputs/completion-review/c1-restart-portability/native-pilot-1/fixture-cleanup.json
+  s_b61aed9e5ebdf0::t_f087af1d677acf 1-11
+outputs/completion-review/c1-restart-portability/native-pilot-1/fixture-descriptor.json
+  s_b61aed9e5ebdf0::t_e81e2d2d09ed18 1
+outputs/completion-review/c1-restart-portability/native-pilot-1/hide-qa.json
+  s_b61aed9e5ebdf0::t_b635fcdf6a8030 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/import-preview.json
+  s_b61aed9e5ebdf0::t_5495564e64130c 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/import-provider-screen.json
+  s_b61aed9e5ebdf0::t_66aaa6d2d76f70 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/import-provider.json
+  s_b61aed9e5ebdf0::t_44db92fa3db0eb 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/imported-state/launches.jsonl
+  s_b61aed9e5ebdf0::t_62b31e8552c377 1-2
+outputs/completion-review/c1-restart-portability/native-pilot-1/imported-state/report-current.json
+  s_b61aed9e5ebdf0::t_2558f31a34a25d 1-58
+outputs/completion-review/c1-restart-portability/native-pilot-1/imported-ui.json
+  s_b61aed9e5ebdf0::t_78f19db896c1e5 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/independent-review-and-row-audit.json
+  s_b61aed9e5ebdf0::t_9dd5f11c5efe2a 1-61
+outputs/completion-review/c1-restart-portability/native-pilot-1/initial-app-relocation.json
+  s_b61aed9e5ebdf0::t_d754684875b560 1-538
+outputs/completion-review/c1-restart-portability/native-pilot-1/initial-snapshot.json
+  s_b61aed9e5ebdf0::t_c6ef2ce486016d 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/install-qa.json
+  s_b61aed9e5ebdf0::t_47e1db4da38845 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/launch-1.json
+  s_b61aed9e5ebdf0::t_7e16a2661be9dc 1-17
+outputs/completion-review/c1-restart-portability/native-pilot-1/launch-2.json
+  s_b61aed9e5ebdf0::t_8914dc48b1e4ea 1-16
+outputs/completion-review/c1-restart-portability/native-pilot-1/launch-3.json
+  s_b61aed9e5ebdf0::t_f24ee0d48382b9 1-16
+outputs/completion-review/c1-restart-portability/native-pilot-1/memory-check.json
+  s_b61aed9e5ebdf0::t_ea5d2533fd8d45 1-19
+outputs/completion-review/c1-restart-portability/native-pilot-1/memory-delivery.json
+  s_b61aed9e5ebdf0::t_462baa2fed8dec 1-15
+outputs/completion-review/c1-restart-portability/native-pilot-1/memory-sync.json
+  s_b61aed9e5ebdf0::t_068db6976e3aa3 1-2
+outputs/completion-review/c1-restart-portability/native-pilot-1/native-export.json
+  s_b61aed9e5ebdf0::t_2795494d37e8e5 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/native-import.json
+  s_b61aed9e5ebdf0::t_b25c59e24bdf2a 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/observed-root.json
+  s_b61aed9e5ebdf0::t_d8284d3e450d35 1-5
+outputs/completion-review/c1-restart-portability/native-pilot-1/old-process-absence.json
+  s_b61aed9e5ebdf0::t_d00fdc4c731517 1-7
+outputs/completion-review/c1-restart-portability/native-pilot-1/origin-edit-refreshed.json
+  s_b61aed9e5ebdf0::t_686604f07e3eb0 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/origin-edit.json
+  s_b61aed9e5ebdf0::t_3370fad795dd4e 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/origin-screen.json
+  s_b61aed9e5ebdf0::t_92f3a2b4c3305d 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/origin-visible.json
+  s_b61aed9e5ebdf0::t_0949f46135e54f 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/owned-file-menu-screen.json
+  s_b61aed9e5ebdf0::t_79d0cf8791ae5a 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/owned-file-menu.json
+  s_b61aed9e5ebdf0::t_8e66642724e6d2 1-15
+outputs/completion-review/c1-restart-portability/native-pilot-1/pilot-ledger-receipt.json
+  s_b61aed9e5ebdf0::t_ef13e3505e9d91 1-53
+outputs/completion-review/c1-restart-portability/native-pilot-1/plan.json
+  s_b61aed9e5ebdf0::t_bddd105edb4ad0 1-133
+outputs/completion-review/c1-restart-portability/native-pilot-1/post-import-restart-assertions.json
+  s_b61aed9e5ebdf0::t_5791d8c4e61830 1-14
+outputs/completion-review/c1-restart-portability/native-pilot-1/preflight-attempt-1.json
+  s_b61aed9e5ebdf0::t_427c21aa61587c 1-27
+outputs/completion-review/c1-restart-portability/native-pilot-1/preflight-command.json
+  s_b61aed9e5ebdf0::t_27b9d123614e41 1-15
+outputs/completion-review/c1-restart-portability/native-pilot-1/preflight-fixture-cleanup.json
+  s_b61aed9e5ebdf0::t_8e0709bb47d0f5 1-6
+outputs/completion-review/c1-restart-portability/native-pilot-1/preflight-ledger-receipt.json
+  s_b61aed9e5ebdf0::t_fb76c4baed2656 1-21
+outputs/completion-review/c1-restart-portability/native-pilot-1/preflight-spec.json
+  s_b61aed9e5ebdf0::t_7d912e113ddb8d 1-113
+outputs/completion-review/c1-restart-portability/native-pilot-1/prepare.json
+  s_b61aed9e5ebdf0::t_093f035b938877 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/prepared-screen.json
+  s_b61aed9e5ebdf0::t_3a5254af7d1b17 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/prepared-snapshot.json
+  s_b61aed9e5ebdf0::t_c55c904c9b2721 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/prepared-state/checkpoint-export.json
+  s_b61aed9e5ebdf0::t_e1ae3cfe34eb66 1-114
+outputs/completion-review/c1-restart-portability/native-pilot-1/prepared-state/checkpoint-meta.json
+  s_b61aed9e5ebdf0::t_de9536f71195cd 1
+outputs/completion-review/c1-restart-portability/native-pilot-1/prepared-state/checkpoint-payload.txt
+  s_b61aed9e5ebdf0::t_3b6c97cb66354a 1-114
+outputs/completion-review/c1-restart-portability/native-pilot-1/prepared-state/launches.jsonl
+  s_b61aed9e5ebdf0::t_3efa9d4267123b 1
+outputs/completion-review/c1-restart-portability/native-pilot-1/prepared-state/prepared.json
+  s_b61aed9e5ebdf0::t_3f8c4f9e721e30 1
+outputs/completion-review/c1-restart-portability/native-pilot-1/prepared-state/report-current.json
+  s_b61aed9e5ebdf0::t_a3c583f750780d 1-58
+outputs/completion-review/c1-restart-portability/native-pilot-1/product-reached.json
+  s_b61aed9e5ebdf0::t_8981229d7f2a95 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/provider-browse.json
+  s_b61aed9e5ebdf0::t_a69591ed4bf882 1-14
+outputs/completion-review/c1-restart-portability/native-pilot-1/provider-save.json
+  s_b61aed9e5ebdf0::t_bc1dba3ae5c17f 1-14
+outputs/completion-review/c1-restart-portability/native-pilot-1/reach-product.json
+  s_b61aed9e5ebdf0::t_2becfe714b8431 1-14
+outputs/completion-review/c1-restart-portability/native-pilot-1/reach-tracked.json
+  s_b61aed9e5ebdf0::t_eeaf14e11dac85 1-14
+outputs/completion-review/c1-restart-portability/native-pilot-1/remove-owned-fixture.json
+  s_b61aed9e5ebdf0::t_cb7b82de935056 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/reopen-provider-cleanup.json
+  s_b61aed9e5ebdf0::t_58d19d2b24dc86 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/restart-assertions.json
+  s_b61aed9e5ebdf0::t_7a3d7f788f3a1c 1-14
+outputs/completion-review/c1-restart-portability/native-pilot-1/restarted-snapshot.json
+  s_b61aed9e5ebdf0::t_69da39a92acd91 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/restarted-state/launches.jsonl
+  s_b61aed9e5ebdf0::t_aa79d08f845fc0 1-2
+outputs/completion-review/c1-restart-portability/native-pilot-1/restarted-state/report-current.json
+  s_b61aed9e5ebdf0::t_0c14ef91cfc373 1-58
+outputs/completion-review/c1-restart-portability/native-pilot-1/result.json
+  s_b61aed9e5ebdf0::t_de4f89f5622c73 1-125
+outputs/completion-review/c1-restart-portability/native-pilot-1/review-inputs.json
+  s_b61aed9e5ebdf0::t_232e72fa64102f 1-1715
+outputs/completion-review/c1-restart-portability/native-pilot-1/run_device.py
+  s_b61aed9e5ebdf0::t_341cf2a15370e7 1-10
+outputs/completion-review/c1-restart-portability/native-pilot-1/scrolled-screen.json
+  s_b61aed9e5ebdf0::t_ad30f9e4d8e024 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/second-process-absence.json
+  s_b61aed9e5ebdf0::t_0738c1d89b77d7 1-7
+outputs/completion-review/c1-restart-portability/native-pilot-1/select-owned-export.json
+  s_b61aed9e5ebdf0::t_8663fe09110ea2 1-14
+outputs/completion-review/c1-restart-portability/native-pilot-1/show-imported.json
+  s_b61aed9e5ebdf0::t_21f85ddfb6a940 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/state.json
+  s_b61aed9e5ebdf0::t_c1f563f43e4204 1
+outputs/completion-review/c1-restart-portability/native-pilot-1/storage-closeout.json
+  s_b61aed9e5ebdf0::t_5a7ef7e83f3de3 1-37
+outputs/completion-review/c1-restart-portability/native-pilot-1/timer-coverage-gap.json
+  s_b61aed9e5ebdf0::t_c0849b2fcdedb4 1-10
+outputs/completion-review/c1-restart-portability/native-pilot-1/timing.json
+  s_b61aed9e5ebdf0::t_dcae78fde93972 1
+outputs/completion-review/c1-restart-portability/native-pilot-1/tracked-edit-open.json
+  s_b61aed9e5ebdf0::t_e89fde19630061 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/tracked-edit-snapshot.json
+  s_b61aed9e5ebdf0::t_21bf483fec1cca 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/tracked-edit-visible.json
+  s_b61aed9e5ebdf0::t_14870c2a103cef 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/tracked-form-visible.json
+  s_b61aed9e5ebdf0::t_a05566063bfffa 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/tracked-form.json
+  s_b61aed9e5ebdf0::t_3bfd212037fa4f 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/tracked-geometry.json
+  s_b61aed9e5ebdf0::t_a35249fe5e92be 1-13
+outputs/completion-review/c1-restart-portability/native-pilot-1/tracked-lock-screen.json
+  s_b61aed9e5ebdf0::t_560775541d2900 1-12
+outputs/completion-review/c1-restart-portability/native-pilot-1/workflow-init.json
+  s_b61aed9e5ebdf0::t_ac42ba22701d00 1-16
+outputs/completion-review/c1-restart-portability/native-pilot-1/workflow-pilot-record.json
+  s_b61aed9e5ebdf0::t_4125ab20b53a74 1-18
+outputs/completion-review/c1-restart-portability/native-pilot-1/workflow-preflight-record.json
+  s_b61aed9e5ebdf0::t_b2ecf8ba325713 1-18
+outputs/completion-review/c1-restart-portability/source-handoff-storage.json
+  s_b61aed9e5ebdf0::t_0a49f07d71ed46 1-20
+outputs/completion-review/c1-restart-portability/source-review-disposition.json
+  s_b61aed9e5ebdf0::t_8bd61ef7b79aeb 1-19
+outputs/completion-review/c1-restart-portability/source-review-inputs.json
+  s_b61aed9e5ebdf0::t_f329c1bb940a68 1-53
+outputs/completion-review/c1-restart-portability/source-review-premature.json
+  s_b61aed9e5ebdf0::t_156398f083645c 1-49
+outputs/completion-review/c1-restart-portability/timing.json
+  s_b61aed9e5ebdf0::t_17f349d834f4ab 1
+outputs/completion-review/c1-ui-independent-recheck-receipt.json
+  s_b61aed9e5ebdf0::t_74ce77176d40de 1-33
+outputs/completion-review/c1-ui-recheck-inputs.json
+  s_b61aed9e5ebdf0::t_a57f50280c9321 1-83
+outputs/completion-review/c1-ui-review-inputs.json
+  s_b61aed9e5ebdf0::t_81ab55145fd1b2 1-67
+outputs/completion-review/c1-visible-recovery/analyze-01.txt
+  s_b61aed9e5ebdf0::t_866eedb7f6ba79 1-2
+outputs/completion-review/c1-visible-recovery/analyze-02.txt
+  s_b61aed9e5ebdf0::t_8e570572a245af 1-2
+outputs/completion-review/c1-visible-recovery/attempt-01.txt
+  s_b61aed9e5ebdf0::t_3efd4f84973ebc 1-15
+outputs/completion-review/c1-visible-recovery/attempt-02.txt
+  s_b61aed9e5ebdf0::t_0f12a8874a7a6b 1-20
+outputs/completion-review/c1-visible-recovery/attempt-03.txt
+  s_b61aed9e5ebdf0::t_ee4d4927bd2ccb 1-79
+outputs/completion-review/c1-visible-recovery/attempt-04.txt
+  s_b61aed9e5ebdf0::t_fadaef9e4001b8 1-5
+outputs/completion-review/c1-visible-recovery/attempt-05-shell-red.txt
+  s_b61aed9e5ebdf0::t_c787c84ddaeff2 1-31
+outputs/completion-review/c1-visible-recovery/attempt-06-scoped.txt
+  s_b61aed9e5ebdf0::t_3bb83cad33240d 1-31
+outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json
+  s_b61aed9e5ebdf0::t_fa07ee85c09081 1-42
+outputs/completion-review/c1-visible-recovery/reactivity-fix/receipt.json
+  s_b61aed9e5ebdf0::t_553b86f368dac4 1-23
+outputs/completion-review/c1-visible-recovery/reactivity-fix/verified-inputs.json
+  s_b61aed9e5ebdf0::t_49969b34d14208 1-22
+outputs/completion-review/c1-visible-recovery/receipt.json
+  s_b61aed9e5ebdf0::t_05adbf9b8df73e 1-123
+outputs/completion-review/c2-c3-control-repair-independent-review.json
+  s_b61aed9e5ebdf0::t_1ac6b40dc5fc26 1-284
+outputs/completion-review/c2-c3-design-approval-proposal.json
+  s_b61aed9e5ebdf0::t_f40b7df544a3ac 1-5237
+outputs/completion-review/c2-c3-design-repair-disposition.json
+  s_b61aed9e5ebdf0::t_92d0944617a287 1-27
+outputs/completion-review/c2-c3-design-review.html
+  s_b61aed9e5ebdf0::t_4ce45ac32c1efc 1-8
+outputs/completion-review/c2-design-approval-proposal.json
+  s_b61aed9e5ebdf0::t_dcd7b5c8acc80c 1-2697
+outputs/completion-review/c2-design-independent-review.json
+  s_b61aed9e5ebdf0::t_f2b9a0e9a7c62e 1-1661
+outputs/completion-review/c2-design-review-compact.html
+  s_b61aed9e5ebdf0::t_ee23be36a5de8e 1-3
+outputs/completion-review/c2-design-review.html
+  s_b61aed9e5ebdf0::t_a1fabf8f8aea98 1-3
+outputs/completion-review/c2-design-root-review.json
+  s_b61aed9e5ebdf0::t_dbf1d7cbdcd83a 1-40
+outputs/completion-review/c2-held-order-repair-receipt.json
+  s_b61aed9e5ebdf0::t_981fca380f896a 1-269
+outputs/completion-review/c2-held-positive-gallery.html
+  s_b61aed9e5ebdf0::t_40dde7ee774b16 1
+outputs/completion-review/c2-held-positive-independent-review.json
+  s_b61aed9e5ebdf0::t_a9ca314c31307c 1-46
+outputs/completion-review/c2-held-positive-proposal.json
+  s_b61aed9e5ebdf0::t_6443b163d30b1f 1-133
+outputs/completion-review/c2-held-supplement-independent-review.json
+  s_b61aed9e5ebdf0::t_26b5d84a624498 1-51
+outputs/completion-review/c2-held-supplement-qualification-receipt.json
+  s_b61aed9e5ebdf0::t_867f3f6c9d7748 1-7
+outputs/completion-review/c2-held-supplement-root-nav-review-inputs.json
+  s_b61aed9e5ebdf0::t_bb2d84b2dfa60c 1-111
+outputs/completion-review/c2-preview-images-manifest.json
+  s_b61aed9e5ebdf0::t_a8eee879f53ca9 1-451
+outputs/completion-review/c2-supplement-disposition-storage.json
+  s_b61aed9e5ebdf0::t_7e55474508261d 1-26
+outputs/completion-review/c3-design-repair-receipt.json
+  s_b61aed9e5ebdf0::t_f13dd237107802 1-1531
+outputs/completion-review/c3-positive-native-blocked-review-inputs.json
+  s_b61aed9e5ebdf0::t_0efefd6929549e 1-71
+outputs/completion-review/c3-positive-return-preview-independent-review.json
+  s_b61aed9e5ebdf0::t_63903176d5c8a6 1-39
+outputs/completion-review/c3-positive-return-preview-proposal-v2.json
+  s_b61aed9e5ebdf0::t_4fb2f0007e1c8d 1-651
+outputs/completion-review/c3-positive-return-preview-proposal.json
+  s_b61aed9e5ebdf0::t_579c767af41db6 1-647
+outputs/completion-review/c3-positive-return-preview.html
+  s_b61aed9e5ebdf0::t_d7b5d9c7c5390e 1-363
+outputs/completion-review/catalog-design-review.html
+  s_b61aed9e5ebdf0::t_a66073e6e66903 1-2
+outputs/completion-review/category-design-approval-proposal.json
+  s_b61aed9e5ebdf0::t_3cf368fe71c0f6 1-204
+outputs/completion-review/category-design-independent-review-receipt.json
+  s_b61aed9e5ebdf0::t_8708e7ca00f8cd 1-120
+outputs/completion-review/category-design-recheck-inputs.json
+  s_b61aed9e5ebdf0::t_29f1cf5ddc0bd6 1-208
+outputs/completion-review/category-design-repair-receipt.json
+  s_b61aed9e5ebdf0::t_1689e5332ba6c4 1-310
+outputs/completion-review/category-design-review.html
+  s_b61aed9e5ebdf0::t_2051a7a6e22e43 1
+outputs/completion-review/collation-consumer-adoption/application-readme-successor.md.txt
+  s_b61aed9e5ebdf0::t_90aba288310dd4 1-95
+outputs/completion-review/collation-consumer-adoption/application-readme-successor.patch
+  s_b61aed9e5ebdf0::t_ad4576ddd25ed7 1-22
+outputs/completion-review/collation-consumer-adoption/baseline.json
+  s_b61aed9e5ebdf0::t_75c81f57cc9508 1-26
+outputs/completion-review/collation-consumer-adoption/documentation-successor-receipt.json
+  s_b61aed9e5ebdf0::t_74d93967709da0 1-18
+outputs/completion-review/collation-consumer-adoption/independent-review-783-and-readme-remedy.json
+  s_b61aed9e5ebdf0::t_480fa18f9ffa27 1-26
+outputs/completion-review/collation-consumer-adoption/metadata-delta.json
+  s_b61aed9e5ebdf0::t_bf08946fb52649 1-55
+outputs/completion-review/collation-consumer-adoption/pre-adoption-guard.json
+  s_b61aed9e5ebdf0::t_fb21a6156d846c 1-10
+outputs/completion-review/collation-consumer-adoption/review-inputs.json
+  s_b61aed9e5ebdf0::t_4696a20a757e04 1-78
+outputs/completion-review/collation-consumer-adoption/verification.json
+  s_b61aed9e5ebdf0::t_f69a617f7fc22a 1-12
+outputs/completion-review/command-atomicity/analysis.json
+  s_b61aed9e5ebdf0::t_c7184238e801e0 1-6
+outputs/completion-review/command-atomicity/final-tests.json
+  s_b61aed9e5ebdf0::t_7a4174165974f3 1-6
+outputs/completion-review/command-atomicity/inputs.json
+  s_b61aed9e5ebdf0::t_644ef9aa16743d 1-29
+outputs/completion-review/command-atomicity/receipt.json
+  s_b61aed9e5ebdf0::t_61c42b5a119ac5 1-47
+outputs/completion-review/command-atomicity/repaired-1/final-test-result.json
+  s_b61aed9e5ebdf0::t_d535c5b3a3b431 1-6
+outputs/completion-review/command-atomicity/repaired-1/independent-review.json
+  s_b61aed9e5ebdf0::t_d7f8349d9412ca 1-10
+outputs/completion-review/command-atomicity/repaired-1/receipt.json
+  s_b61aed9e5ebdf0::t_6f32cbf436fd42 1-18
+outputs/completion-review/command-atomicity/repaired-1/verified-inputs.json
+  s_b61aed9e5ebdf0::t_bd7362535d19b5 1-28
+outputs/completion-review/command-atomicity/storage-closeout.json
+  s_b61aed9e5ebdf0::t_a206e831a5ea2a 1-50
+outputs/completion-review/command-atomicity/test-attempt-01.json
+  s_b61aed9e5ebdf0::t_3238b67388292e 1-6
+outputs/completion-review/command-atomicity/test-attempt-02.json
+  s_b61aed9e5ebdf0::t_fdeac1d0e4a58b 1-6
+outputs/completion-review/command-atomicity/test-attempt-03.json
+  s_b61aed9e5ebdf0::t_0dcd22b2a743c3 1-6
+outputs/completion-review/command-atomicity/verified-inputs.json
+  s_b61aed9e5ebdf0::t_dea3ac830c5bd0 1-27
+outputs/completion-review/command-lifecycle-faults/coverage-matrix.json
+  s_b61aed9e5ebdf0::t_a02759eb9c4c38 1-81
+outputs/completion-review/command-lifecycle-faults/dart-runtime.txt
+  s_b61aed9e5ebdf0::t_d97b91f661b111 1
+outputs/completion-review/command-lifecycle-faults/independent-review.json
+  s_b61aed9e5ebdf0::t_698e6dcff4d000 1-35
+outputs/completion-review/command-lifecycle-faults/receipt.json
+  s_b61aed9e5ebdf0::t_a035148722fbc5 1-63
+outputs/completion-review/command-lifecycle-faults/reused-engine-inputs.json
+  s_b61aed9e5ebdf0::t_db1ff3c54a4651 1-48
+outputs/completion-review/command-lifecycle-faults/review-inputs.json
+  s_b61aed9e5ebdf0::t_7b3dc1861d5d51 1-183
+outputs/completion-review/command-lifecycle-faults/source-baseline.json
+  s_b61aed9e5ebdf0::t_2887af70b7ed9f 1-55
+outputs/completion-review/command-lifecycle-faults/storage-closeout.json
+  s_b61aed9e5ebdf0::t_fe0af42f7408f5 1-45
+outputs/completion-review/command-lifecycle-faults/timing.json
+  s_b61aed9e5ebdf0::t_89bee79bf7ba76 1
+outputs/completion-review/completion-count-audit/current-refresh.json
+  s_b61aed9e5ebdf0::t_4f3dbdc6ebd495 1
+outputs/completion-review/completion-count-audit/decode-repair-recheck-inputs.json
+  s_b61aed9e5ebdf0::t_5983f41eabee19 1-41
+outputs/completion-review/completion-count-audit/dry-run-final.json
+  s_b61aed9e5ebdf0::t_4d886fb8177bd2 1
+outputs/completion-review/completion-count-audit/dry-run-initial-receipt.json
+  s_b61aed9e5ebdf0::t_467ad41e5a8c60 1-20
+outputs/completion-review/completion-count-audit/dry-run-initial.json
+  s_b61aed9e5ebdf0::t_bacd88078bdc46 1
+outputs/completion-review/completion-count-audit/independent-repair-root-record.json
+  s_b61aed9e5ebdf0::t_ea9d5ad09b68c6 1-17
+outputs/completion-review/completion-count-audit/review-inputs.json
+  s_b61aed9e5ebdf0::t_9ae4ffb99a42de 1-59
+outputs/completion-review/completion-count-audit/storage-baseline.json
+  s_b61aed9e5ebdf0::t_80beef15ffcecf 1-9
+outputs/completion-review/completion-count-audit/storage-closeout.json
+  s_b61aed9e5ebdf0::t_83b0e2b074a286 1-28
+outputs/completion-review/completion-count-audit/verification-receipt.json
+  s_b61aed9e5ebdf0::t_41f55a3c207f88 1-97
+outputs/completion-review/control-source-selection/diagnosis-and-preflight.json
+  s_b61aed9e5ebdf0::t_b6a4690c965e39 1-210
+outputs/completion-review/control-source-selection/independent-review.json
+  s_b61aed9e5ebdf0::t_43e94223320a4e 1-33
+outputs/completion-review/current-memory-delivery/baseline.json
+  s_b61aed9e5ebdf0::t_3a23373aa3065d 1-18
+outputs/completion-review/current-memory-delivery/configuration-identity.json
+  s_b61aed9e5ebdf0::t_83233fca049f1b 1-18
+outputs/completion-review/current-memory-delivery/daftar-source-manifest.json
+  s_b61aed9e5ebdf0::t_c1399b4b16b3c8 1-1636
+outputs/completion-review/current-memory-delivery/initial-daftar-check-source-scope.json
+  s_b61aed9e5ebdf0::t_eb867d0a9e57d9 1-19
+outputs/completion-review/current-memory-delivery/initial-daftar-check.json
+  s_b61aed9e5ebdf0::t_4c6c2236b3e4ee 1-41
+outputs/completion-review/current-memory-delivery/initial-daftar-sync-source-scope.json
+  s_b61aed9e5ebdf0::t_e38ff71b99ef5d 1-19
+outputs/completion-review/current-memory-delivery/initial-daftar-sync.json
+  s_b61aed9e5ebdf0::t_0a5263a8fcb349 1-27
+outputs/completion-review/current-memory-delivery/initial-madar-check-source-scope.json
+  s_b61aed9e5ebdf0::t_e68b309dd758a4 1-17
+outputs/completion-review/current-memory-delivery/initial-madar-check.json
+  s_b61aed9e5ebdf0::t_19e49997f44463 1-41
+outputs/completion-review/current-memory-delivery/initial-madar-sync-source-scope.json
+  s_b61aed9e5ebdf0::t_beec8c9d52790a 1-17
+outputs/completion-review/current-memory-delivery/initial-madar-sync.json
+  s_b61aed9e5ebdf0::t_26ca62966e53f0 1-27
+outputs/completion-review/current-memory-delivery/madar-source-manifest.json
+  s_b61aed9e5ebdf0::t_27b9e5ff946cda 1-639
+outputs/completion-review/current-memory-delivery/receipt-manifest.json
+  s_b61aed9e5ebdf0::t_69f8b9a593d06b 1-90
+outputs/completion-review/current-memory-delivery/result.json
+  s_b61aed9e5ebdf0::t_4a90789285df59 1-95
+outputs/completion-review/current-memory-delivery/storage-closeout.json
+  s_b61aed9e5ebdf0::t_f560ffcb48f338 1-32
+outputs/completion-review/device-hub-recovery-20261108.json
+  s_b61aed9e5ebdf0::t_68214199991904 1-40
+outputs/completion-review/durable-expense-corrections/attempt-1-failing-fixture.dart.txt
+  s_b61aed9e5ebdf0::t_d75168a1d58337 1-339
+outputs/completion-review/durable-expense-corrections/attempt-1-failure.json
+  s_b61aed9e5ebdf0::t_77836923243127 1-9
+outputs/completion-review/durable-expense-corrections/attempt-2-failure.json
+  s_b61aed9e5ebdf0::t_5f7fd392a5c23a 1-12
+outputs/completion-review/durable-expense-corrections/attempt-2-restaurant_journal_expense_correction_commands_test.dart.txt
+  s_b61aed9e5ebdf0::t_3c521fb8fad90f 1-341
+outputs/completion-review/durable-expense-corrections/attempt-2-restaurant_journal_expense_correction_safety_test.dart.txt
+  s_b61aed9e5ebdf0::t_ac1d1c17519469 1-452
+outputs/completion-review/durable-expense-corrections/fence-revision-repair/baseline.json
+  s_b61aed9e5ebdf0::t_22451a8cd3447d 1-10
+outputs/completion-review/durable-expense-corrections/fence-revision-repair/expense-history.before.dart.txt
+  s_b61aed9e5ebdf0::t_37c1a01f6fe955 1-505
+outputs/completion-review/durable-expense-corrections/fence-revision-repair/independent-review.json
+  s_b61aed9e5ebdf0::t_01157a92d53b50 1-148
+outputs/completion-review/durable-expense-corrections/fence-revision-repair/reference-before.md.txt
+  s_b61aed9e5ebdf0::t_edacac7952146a 1-59
+outputs/completion-review/durable-expense-corrections/fence-revision-repair/review-inputs.json
+  s_b61aed9e5ebdf0::t_a0c9966bfd7ac3 1-121
+outputs/completion-review/durable-expense-corrections/focused-result.json
+  s_b61aed9e5ebdf0::t_b264fde478f0a1 1-50
+outputs/completion-review/durable-expense-corrections/independent-review-probes/attempt-1-probe.dart.txt
+  s_b61aed9e5ebdf0::t_c4a6bba193a0f4 1-59
+outputs/completion-review/durable-expense-corrections/independent-review-probes/attempt-1-result.json
+  s_b61aed9e5ebdf0::t_b7e7b940aec7d4 1-8
+outputs/completion-review/durable-expense-corrections/independent-review-probes/attempt-2-probe.dart.txt
+  s_b61aed9e5ebdf0::t_c1c6711cf15d89 1-59
+outputs/completion-review/durable-expense-corrections/independent-review-probes/attempt-3-probe.dart.txt
+  s_b61aed9e5ebdf0::t_edf5cc99d8f735 1-61
+outputs/completion-review/durable-expense-corrections/independent-review-probes/attempt-4-probe.dart.txt
+  s_b61aed9e5ebdf0::t_7cc622dcdeec8d 1-62
+outputs/completion-review/durable-expense-corrections/independent-review-probes/review-result.json
+  s_b61aed9e5ebdf0::t_79de30f4982050 1-124
+outputs/completion-review/durable-expense-corrections/preflight.json
+  s_b61aed9e5ebdf0::t_c68ab49d6fc39a 1-14
+outputs/completion-review/durable-expense-corrections/preparation.json
+  s_b61aed9e5ebdf0::t_b3441fe2ceabb5 1-9
+outputs/completion-review/durable-expense-corrections/prepared-source-manifest.json
+  s_b61aed9e5ebdf0::t_d1094c92f1bc72 1-62
+outputs/completion-review/durable-expense-corrections/renderer-oracle.cjs
+  s_b61aed9e5ebdf0::t_90912db7c9b9cf 1-71
+outputs/completion-review/durable-expense-corrections/review-inputs.json
+  s_b61aed9e5ebdf0::t_3473327852ec64 1-79
+outputs/completion-review/durable-expense-corrections/storage-closeout.json
+  s_b61aed9e5ebdf0::t_80daed2062bd99 1-45
+outputs/completion-review/durable-payment-corrections/baseline.json
+  s_b61aed9e5ebdf0::t_25fc8f9289f48b 1-15
+outputs/completion-review/durable-payment-corrections/review-inputs.json
+  s_b61aed9e5ebdf0::t_459397d29401de 1-204
+outputs/completion-review/durable-payment-corrections/spending-before.dart
+  s_b61aed9e5ebdf0::t_ee7573deacda88 1-2125
+outputs/completion-review/durable-payment-corrections/storage-closeout.json
+  s_b61aed9e5ebdf0::t_174813a325c08e 1-28
+outputs/completion-review/durable-payment-corrections/supplier-oracle.cjs
+  s_b61aed9e5ebdf0::t_bb410bfb131cbd 1-12
+outputs/completion-review/durable-sales-independent-recheck-receipt.json
+  s_b61aed9e5ebdf0::t_b161e39e05e547 1-20
+outputs/completion-review/durable-sales-recheck-inputs.json
+  s_b61aed9e5ebdf0::t_b33fc84c3c9b85 1-87
+outputs/completion-review/durable-sales-review-inputs.json
+  s_b61aed9e5ebdf0::t_62d3a2e84c093c 1-31
+outputs/completion-review/durable-spending-opening-repair/independent-review-initial.json
+  s_b61aed9e5ebdf0::t_3cc232da8ac85a 1-15
+outputs/completion-review/durable-spending-opening-repair/independent-review.json
+  s_b61aed9e5ebdf0::t_d63f3eabc74144 1-25
+outputs/completion-review/durable-spending-opening-repair/receipt.json
+  s_b61aed9e5ebdf0::t_7741da7e1fed5f 1-12
+outputs/completion-review/durable-spending-opening-repair/verified-inputs.json
+  s_b61aed9e5ebdf0::t_f8da972a9ac596 1-126
+outputs/completion-review/durable-spending-recheck-inputs.json
+  s_b61aed9e5ebdf0::t_763de6ebce33d9 1-126
+outputs/completion-review/durable-spending-review-inputs.json
+  s_b61aed9e5ebdf0::t_4a8c01a8853e2b 1-89
+outputs/completion-review/durable-transfer-corrections/independent-review.json
+  s_b61aed9e5ebdf0::t_445bd799f6b516 1-30
+outputs/completion-review/durable-transfer-corrections/oracle-repaired-1.cjs
+  s_b61aed9e5ebdf0::t_6f8d62812e2c27 1-285
+outputs/completion-review/durable-transfer-corrections/oracle-repaired-1.json
+  s_b61aed9e5ebdf0::t_6649148b198882 1-2048
+outputs/completion-review/durable-transfer-corrections/oracle.cjs
+  s_b61aed9e5ebdf0::t_cd1d8fe6b787e6 1-262
+outputs/completion-review/durable-transfer-corrections/oracle.json
+  s_b61aed9e5ebdf0::t_24c5113667831d 1-2044
+outputs/completion-review/durable-transfer-corrections/repaired-1/current-source-continuity.json
+  s_b61aed9e5ebdf0::t_7630f10d7c2897 1-20
+outputs/completion-review/durable-transfer-corrections/repaired-1/focused-result.json
+  s_b61aed9e5ebdf0::t_32e16f99972594 1-7
+outputs/completion-review/durable-transfer-corrections/repaired-1/independent-review.json
+  s_b61aed9e5ebdf0::t_97cfc7ee1ce603 1-36
+outputs/completion-review/durable-transfer-corrections/repaired-1/memory-check.json
+  s_b61aed9e5ebdf0::t_5f16f7b106224a 1-18
+outputs/completion-review/durable-transfer-corrections/repaired-1/post-adoption-review-inputs.json
+  s_b61aed9e5ebdf0::t_897e135a684ecb 1-256
+outputs/completion-review/durable-transfer-corrections/repaired-1/receipt.json
+  s_b61aed9e5ebdf0::t_9402bf15f5f92e 1-30
+outputs/completion-review/durable-transfer-corrections/repaired-1/review-inputs-final.json
+  s_b61aed9e5ebdf0::t_718e2ca4638c26 1-235
+outputs/completion-review/durable-transfer-corrections/repaired-1/review-inputs.json
+  s_b61aed9e5ebdf0::t_574acca71bb2aa 1-230
+outputs/completion-review/durable-transfer-corrections/repaired-1/storage-closeout.json
+  s_b61aed9e5ebdf0::t_f28a6b0fb50731 1-38
+outputs/completion-review/durable-transfer-corrections/review-inputs.json
+  s_b61aed9e5ebdf0::t_87cf3adc3c5948 1-101
+outputs/completion-review/durable-transfer-corrections/storage-closeout.json
+  s_b61aed9e5ebdf0::t_e36806df1e9434 1-10
+outputs/completion-review/durable-transfer-corrections/timing.json
+  s_b61aed9e5ebdf0::t_b56feb71a0925a 1-31
+outputs/completion-review/durable-transfer/historical-oracle-generator.cjs
+  s_b61aed9e5ebdf0::t_4a4346670953a6 1-99
+outputs/completion-review/durable-transfer/independent-review-initial.json
+  s_b61aed9e5ebdf0::t_149ca94ba37ae1 1-29
+outputs/completion-review/durable-transfer/independent-review-repaired-2.json
+  s_b61aed9e5ebdf0::t_aff2d71f926dd1 1-34
+outputs/completion-review/durable-transfer/oracle-repaired-1.json
+  s_b61aed9e5ebdf0::t_70360ad5bd6eaa 1-838
+outputs/completion-review/durable-transfer/oracle.cjs
+  s_b61aed9e5ebdf0::t_87d88fd8d0044c 1-37
+outputs/completion-review/durable-transfer/oracle.json
+  s_b61aed9e5ebdf0::t_d5b1fe38583b36 1-36
+outputs/completion-review/durable-transfer/repaired-1-inputs.json
+  s_b61aed9e5ebdf0::t_e510d1f1f4c257 1-129
+outputs/completion-review/durable-transfer/repaired-2-inputs.json
+  s_b61aed9e5ebdf0::t_6c6ac3050a42d8 1-131
+outputs/completion-review/durable-transfer/review-inputs.json
+  s_b61aed9e5ebdf0::t_a642eb2ecdc16c 1-73
+outputs/completion-review/durable-transfer/root-review-storage-closeout.json
+  s_b61aed9e5ebdf0::t_5ee37acde3624b 1-32
+outputs/completion-review/durable-transfer/storage-closeout.json
+  s_b61aed9e5ebdf0::t_201c002cc71f40 1-14
+outputs/completion-review/durable-transfer/timing.json
+  s_b61aed9e5ebdf0::t_d11e0a29446978 1-16
+outputs/completion-review/engine-query-coordinator-adoption.json
+  s_b61aed9e5ebdf0::t_2790b45ff5a6f4 1-32
+outputs/completion-review/financial-row-closure/independent-disposition.json
+  s_b61aed9e5ebdf0::t_05844bdd31231a 1-39
+outputs/completion-review/financial-row-closure/verified-inputs.json
+  s_b61aed9e5ebdf0::t_eafbcbbae1511e 1-127
+outputs/completion-review/implementation-progress.json
+  s_b61aed9e5ebdf0::t_84ab2b7f781562 1-1738
+outputs/completion-review/import-byte-boundary/host-fixture-test-receipt.json
+  s_b61aed9e5ebdf0::t_f5f061a1948c11 1-40
+outputs/completion-review/import-byte-boundary/preparation-baseline.json
+  s_b61aed9e5ebdf0::t_a422d44ac8b347 1-14
+outputs/completion-review/import-byte-boundary/review-manifest-host-tested.json
+  s_b61aed9e5ebdf0::t_e66ef2de7ac5e3 1-66
+outputs/completion-review/import-byte-boundary/review-manifest.json
+  s_b61aed9e5ebdf0::t_58507fc2595eed 1-180
+outputs/completion-review/import-byte-boundary/root-repair/.dart_tool__package_config.json.before.txt
+  s_b61aed9e5ebdf0::t_15870b714e81d0 1-688
+outputs/completion-review/import-byte-boundary/root-repair/baseline.json
+  s_b61aed9e5ebdf0::t_9022e9d1af52b7 1-26
+outputs/completion-review/import-byte-boundary/root-repair/before-receipt-write-fix.dart
+  s_b61aed9e5ebdf0::t_d021e09e74ec3a 1-828
+outputs/completion-review/import-byte-boundary/root-repair/before-wrong-selection-fix.dart
+  s_b61aed9e5ebdf0::t_c2f8b5966e0819 1-823
+outputs/completion-review/import-byte-boundary/root-repair/empty-test-namespace-cleanup.json
+  s_b61aed9e5ebdf0::t_54f7e67c95b3e5 1-34
+outputs/completion-review/import-byte-boundary/root-repair/integration_test__support__c0_import_boundary_fixture.dart.before.txt
+  s_b61aed9e5ebdf0::t_4f02313170ed88 1-663
+outputs/completion-review/import-byte-boundary/root-repair/integration_test__support__c0_import_boundary_qa_main.dart.before.txt
+  s_b61aed9e5ebdf0::t_282da5f41f0482 1-218
+outputs/completion-review/import-byte-boundary/root-repair/metadata-continuity.json
+  s_b61aed9e5ebdf0::t_55bc7408da0920 1-15
+outputs/completion-review/import-byte-boundary/root-repair/pubspec.lock.before.txt
+  s_b61aed9e5ebdf0::t_5f68803d1b09b6 1-874
+outputs/completion-review/import-byte-boundary/root-repair/pubspec.yaml.before.txt
+  s_b61aed9e5ebdf0::t_67a0f926063b33 1-51
+outputs/completion-review/import-byte-boundary/root-repair/receipt-io-recheck-inputs.json
+  s_b61aed9e5ebdf0::t_30dd936502640f 1-40
+outputs/completion-review/import-byte-boundary/root-repair/receipt-write-red-cleanup.json
+  s_b61aed9e5ebdf0::t_6759ddf3e3b881 1-10
+outputs/completion-review/import-byte-boundary/root-repair/recheck-inputs.json
+  s_b61aed9e5ebdf0::t_950349df28b727 1-168
+outputs/completion-review/import-byte-boundary/root-repair/selected-result-recheck-inputs.json
+  s_b61aed9e5ebdf0::t_9e1a62a8d23a54 1-183
+outputs/completion-review/import-byte-boundary/root-repair/wrong-selection-red-cleanup-confirmed.json
+  s_b61aed9e5ebdf0::t_329cae5933a449 1-21
+outputs/completion-review/import-byte-boundary/root-repair/wrong-selection-red-cleanup.json
+  s_b61aed9e5ebdf0::t_b6c75f87e5dae9 1-5
+outputs/completion-review/journal-integrity-recheck-inputs.json
+  s_b61aed9e5ebdf0::t_3170b34e474f3d 1-30
+outputs/completion-review/journal-multiline-reconciliation/independent-review.json
+  s_b61aed9e5ebdf0::t_59997cb61ae339 1-31
+outputs/completion-review/journal-multiline-reconciliation/oracle-summary.json
+  s_b61aed9e5ebdf0::t_1ace3bdcdc60f5 1
+outputs/completion-review/journal-multiline-reconciliation/oracle.cjs
+  s_b61aed9e5ebdf0::t_932271f3a15beb 1-35
+outputs/completion-review/journal-multiline-reconciliation/oracle.json
+  s_b61aed9e5ebdf0::t_3a8d10abd14576 1-621
+outputs/completion-review/journal-multiline-reconciliation/receipt.json
+  s_b61aed9e5ebdf0::t_5d7738f6464617 1-109
+outputs/completion-review/journal-multiline-reconciliation/storage-closeout.json
+  s_b61aed9e5ebdf0::t_1d2682ccb7faf3 1-20
+outputs/completion-review/journal-multiline-reconciliation/timing-2.json
+  s_b61aed9e5ebdf0::t_909a47bcc2959b 1
+outputs/completion-review/journal-multiline-reconciliation/timing.json
+  s_b61aed9e5ebdf0::t_9e9d361560041b 1
+outputs/completion-review/journal-multiline-reconciliation/verified-inputs.json
+  s_b61aed9e5ebdf0::t_715b5783891a35 1-131
+outputs/completion-review/journal-reconciliation/independent-review-receipt.json
+  s_b61aed9e5ebdf0::t_1f92c8ae61f1c0 1-18
+outputs/completion-review/journal-reconciliation/verification-receipt.json
+  s_b61aed9e5ebdf0::t_63cc2c8d3eb08b 1-76
+outputs/completion-review/legacy-corpus-restart/attempt-01/result.json
+  s_b61aed9e5ebdf0::t_10b0c833d0a32f 1-132
+outputs/completion-review/legacy-corpus-restart/attempt-01/verify-process.json
+  s_b61aed9e5ebdf0::t_ddfd4ae52d42d0 1-18
+outputs/completion-review/legacy-corpus-restart/attempt-01/verify.json
+  s_b61aed9e5ebdf0::t_fbcc6ef62faa9c 1-1042
+outputs/completion-review/legacy-corpus-restart/attempt-01/writer-process.json
+  s_b61aed9e5ebdf0::t_3644646f34cdf3 1-18
+outputs/completion-review/legacy-corpus-restart/attempt-01/writer.json
+  s_b61aed9e5ebdf0::t_71a2811cb1a876 1-8491
+outputs/completion-review/legacy-corpus-restart/attempt-02/result.json
+  s_b61aed9e5ebdf0::t_cb1bb738eb2b54 1-133
+outputs/completion-review/legacy-corpus-restart/attempt-02/verify-process.json
+  s_b61aed9e5ebdf0::t_718626c308fac4 1-18
+outputs/completion-review/legacy-corpus-restart/attempt-02/verify.json
+  s_b61aed9e5ebdf0::t_70d6320dc559d0 1-1042
+outputs/completion-review/legacy-corpus-restart/attempt-02/writer-process.json
+  s_b61aed9e5ebdf0::t_35cd0334ad97e6 1-18
+outputs/completion-review/legacy-corpus-restart/attempt-02/writer.json
+  s_b61aed9e5ebdf0::t_7033e7f7f2fc41 1-8491
+outputs/completion-review/legacy-corpus-restart/attempt-03/result.json
+  s_b61aed9e5ebdf0::t_7fd019bafb3636 1-133
+outputs/completion-review/legacy-corpus-restart/attempt-03/verify-process.json
+  s_b61aed9e5ebdf0::t_da727c1f471cad 1-18
+outputs/completion-review/legacy-corpus-restart/attempt-03/verify.json
+  s_b61aed9e5ebdf0::t_1ae7ff765f8600 1-1042
+outputs/completion-review/legacy-corpus-restart/attempt-03/writer-process.json
+  s_b61aed9e5ebdf0::t_3a4b40b1fc3e21 1-18
+outputs/completion-review/legacy-corpus-restart/attempt-03/writer.json
+  s_b61aed9e5ebdf0::t_6cf5a855c24334 1-8491
+outputs/completion-review/legacy-corpus-restart/independent-review-and-row-audit.json
+  s_b61aed9e5ebdf0::t_b53015dbeb02ad 1-40
+outputs/completion-review/legacy-corpus-restart/launcher-error.json
+  s_b61aed9e5ebdf0::t_32f9423cf2a41c 1
+outputs/completion-review/legacy-corpus-restart/source-result-manifest.json
+  s_b61aed9e5ebdf0::t_a38805b60da524 1-104
+outputs/completion-review/metadata-recheck-inputs.json
+  s_b61aed9e5ebdf0::t_bcf89881353e0c 1-21
+outputs/completion-review/parallel-execution.json
+  s_b61aed9e5ebdf0::t_ee56497433c971 1-27
+outputs/completion-review/portable-journal-recheck-inputs.json
+  s_b61aed9e5ebdf0::t_14f4e525840174 1-39
+outputs/completion-review/portable-journal-review-inputs.json
+  s_b61aed9e5ebdf0::t_17ffc9e482cadb 1-27
+outputs/completion-review/progress-audit-2026-11-08.json
+  s_b61aed9e5ebdf0::t_f4a3f057ca0b61 1-37
+outputs/completion-review/progress-audit-latest.json
+  s_b61aed9e5ebdf0::t_f8f7787d3a437a 1-83
+outputs/completion-review/progress-status-2026-11-07.html
+  s_b61aed9e5ebdf0::t_6eb89ed925564e 1
+outputs/completion-review/public-api-candidate-inputs.json
+  s_b61aed9e5ebdf0::t_58bdd23d2f805a 1-111
+outputs/completion-review/purchase-completeness/storage.json
+  s_b61aed9e5ebdf0::t_33aa3e8f7f4194 1-14
+outputs/completion-review/push-merge-cleanup-20261109.json
+  s_b61aed9e5ebdf0::t_3863184c4047f4 1-264
+outputs/completion-review/remaining-completion-001/android-missing-icu-native-manifest-001.json
+  s_b61aed9e5ebdf0::t_08d72479cce3e5 1
+outputs/completion-review/remaining-completion-001/android-native-context-001/android-record-summary.json
+  s_b61aed9e5ebdf0::t_1a406d6d414a83 1
+outputs/completion-review/remaining-completion-001/android-native-context-001/android-result.json
+  s_b61aed9e5ebdf0::t_3deedecae0a8d3 1-21
+outputs/completion-review/remaining-completion-001/android-native-context-001/apk-badging.txt
+  s_b61aed9e5ebdf0::t_4a1fa08f35639b 1-111
+outputs/completion-review/remaining-completion-001/android-native-context-001/apk-signer.txt
+  s_b61aed9e5ebdf0::t_e7a9210180ac66 1-4
+outputs/completion-review/remaining-completion-001/android-native-context-001/device-launch-001.json
+  s_b61aed9e5ebdf0::t_dced80e4d19c7f 1-2
+outputs/completion-review/remaining-completion-001/android-native-context-001/guard-attempt-001.json
+  s_b61aed9e5ebdf0::t_e5a21951d4e6d9 1-41
+outputs/completion-review/remaining-completion-001/android-native-context-001/init-summary.json
+  s_b61aed9e5ebdf0::t_0de51e23983c53 1
+outputs/completion-review/remaining-completion-001/android-native-context-001/install-execute-001.json
+  s_b61aed9e5ebdf0::t_d92b11a33dc661 1-14
+outputs/completion-review/remaining-completion-001/android-native-context-001/native-driver-001.identity.json
+  s_b61aed9e5ebdf0::t_ac21abb74d33ca 1-8
+outputs/completion-review/remaining-completion-001/android-native-context-001/plan.json
+  s_b61aed9e5ebdf0::t_db428f341a9d87 1-507
+outputs/completion-review/remaining-completion-001/android-native-context-001/preflight-spec.json
+  s_b61aed9e5ebdf0::t_5f7b998b0e4ea1 1-42
+outputs/completion-review/remaining-completion-001/android-native-context-001/preflight-summary.json
+  s_b61aed9e5ebdf0::t_79597b59232ec0 1
+outputs/completion-review/remaining-completion-001/android-native-context-001/spec.json
+  s_b61aed9e5ebdf0::t_34ccc82296c7da 1-20
+outputs/completion-review/remaining-completion-001/android-native-context-001/state.json
+  s_b61aed9e5ebdf0::t_b8f2531924dbfe 1-71
+outputs/completion-review/remaining-completion-001/android-outer-hook-cache-diagnosis.json
+  s_b61aed9e5ebdf0::t_623d5168f9a403 1-45
+outputs/completion-review/remaining-completion-001/android-outer-hook-cache-successor.json
+  s_b61aed9e5ebdf0::t_b334e7cea9d913 1-35
+outputs/completion-review/remaining-completion-001/android-remaining.init.gradle
+  s_b61aed9e5ebdf0::t_0275d6750f5a0a 1-7
+outputs/completion-review/remaining-completion-001/baseline.json
+  s_b61aed9e5ebdf0::t_002e95442c76e9 1-16
+outputs/completion-review/remaining-completion-001/benchmark-host-conditions.json
+  s_b61aed9e5ebdf0::t_a0814116f1c5ab 1-5
+outputs/completion-review/remaining-completion-001/benchmark-integration-handoff.json
+  s_b61aed9e5ebdf0::t_e526875ca0bf67 1-127
+outputs/completion-review/remaining-completion-001/benchmark-matrix-003.json.progress.json
+  s_b61aed9e5ebdf0::t_c48f0e7edc01f0 1-763
+outputs/completion-review/remaining-completion-001/benchmark-matrix-003.json.progress.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_60b0f8eb65acad 1
+outputs/completion-review/remaining-completion-001/benchmark-matrix-004.json
+  s_b61aed9e5ebdf0::t_f79a7f58f5bfcb 1-7653
+outputs/completion-review/remaining-completion-001/benchmark-matrix-004.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_5b88eeea7587a4 1
+outputs/completion-review/remaining-completion-001/benchmark-pilot-001.json
+  s_b61aed9e5ebdf0::t_aa25a633e4190c 1-97
+outputs/completion-review/remaining-completion-001/benchmark-pilot-001.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_5189531d8819e5 1
+outputs/completion-review/remaining-completion-001/benchmark-summary-final.csv
+  s_b61aed9e5ebdf0::t_bbe059d2f3703b 1-66
+outputs/completion-review/remaining-completion-001/build-sizes-before-cleanup.txt
+  s_b61aed9e5ebdf0::t_bb8ef48e368651 1-72
+outputs/completion-review/remaining-completion-001/bundled-consumer-handoff.json
+  s_b61aed9e5ebdf0::t_14e5d9ab6d462f 1-30
+outputs/completion-review/remaining-completion-001/dart-tool-sizes-before-cleanup.txt
+  s_b61aed9e5ebdf0::t_2a3ee3b6e3826a 1-6
+outputs/completion-review/remaining-completion-001/empty-native-framework-cleanup.json
+  s_b61aed9e5ebdf0::t_d175f8475e0bc2 1-7
+outputs/completion-review/remaining-completion-001/final-ui-tooling-successor.json
+  s_b61aed9e5ebdf0::t_59dfea01dbc543 1-19
+outputs/completion-review/remaining-completion-001/final_normal_builds.py
+  s_b61aed9e5ebdf0::t_1aeba380476663 1-63
+outputs/completion-review/remaining-completion-001/flutter-cache-sizes-before-cleanup.txt
+  s_b61aed9e5ebdf0::t_d25cfbf2d33a07 1-94
+outputs/completion-review/remaining-completion-001/gemini-opening-review.md
+  s_b61aed9e5ebdf0::t_c20dae3acc8b94 1-47
+outputs/completion-review/remaining-completion-001/git-storage-subtrees-final.txt
+  s_b61aed9e5ebdf0::t_47cf410e74e3aa 1-9
+outputs/completion-review/remaining-completion-001/hook-cache-sizes-before-cleanup.txt
+  s_b61aed9e5ebdf0::t_8457b243466409 1-143
+outputs/completion-review/remaining-completion-001/ios-native-context-001/guard-attempt-001.json
+  s_b61aed9e5ebdf0::t_91a8b20dffcc54 1-9
+outputs/completion-review/remaining-completion-001/ios-native-context-001/guard-attempt-002.json
+  s_b61aed9e5ebdf0::t_8e77c3717ab9aa 1-27
+outputs/completion-review/remaining-completion-001/ios-native-context-001/guard-retry-001.json
+  s_b61aed9e5ebdf0::t_d3876fbc2f44f2 1-10
+outputs/completion-review/remaining-completion-001/ios-native-context-001/init-summary.json
+  s_b61aed9e5ebdf0::t_9d2cf23551e5b9 1
+outputs/completion-review/remaining-completion-001/ios-native-context-001/ios-record-summary.json
+  s_b61aed9e5ebdf0::t_1a2798796e10c8 1
+outputs/completion-review/remaining-completion-001/ios-native-context-001/ios-result.json
+  s_b61aed9e5ebdf0::t_f6c78e8a26486c 1-21
+outputs/completion-review/remaining-completion-001/ios-native-context-001/plan.json
+  s_b61aed9e5ebdf0::t_7d1612b2024bd3 1-507
+outputs/completion-review/remaining-completion-001/ios-native-context-001/preflight-spec-002.json
+  s_b61aed9e5ebdf0::t_6cc51619bac3de 1-25
+outputs/completion-review/remaining-completion-001/ios-native-context-001/preflight-spec.json
+  s_b61aed9e5ebdf0::t_f159651b59c303 1-25
+outputs/completion-review/remaining-completion-001/ios-native-context-001/preflight-summary-002.json
+  s_b61aed9e5ebdf0::t_91fe8db11f4729 1
+outputs/completion-review/remaining-completion-001/ios-native-context-001/preflight-summary.json
+  s_b61aed9e5ebdf0::t_e735e6dc4a6f99 1
+outputs/completion-review/remaining-completion-001/ios-native-context-001/spec.json
+  s_b61aed9e5ebdf0::t_0460c8a5ec74bd 1-20
+outputs/completion-review/remaining-completion-001/ios-native-context-001/state.json
+  s_b61aed9e5ebdf0::t_1b8ee95a9e6ca4 1-107
+outputs/completion-review/remaining-completion-001/mac-before-file-dialogs.json
+  s_b61aed9e5ebdf0::t_add6b102469251 1-15
+outputs/completion-review/remaining-completion-001/mac-before-restart-acknowledged.json
+  s_b61aed9e5ebdf0::t_f312e7505a141a 1-2051
+outputs/completion-review/remaining-completion-001/mac-before-restart-launch-evidence.json
+  s_b61aed9e5ebdf0::t_986f8a5c06bff0 1
+outputs/completion-review/remaining-completion-001/mac-bounded-rollback-result.json
+  s_b61aed9e5ebdf0::t_0170c089afd058 1-19
+outputs/completion-review/remaining-completion-001/mac-file-dialog-results-001.json
+  s_b61aed9e5ebdf0::t_42d99484398f80 1-21
+outputs/completion-review/remaining-completion-001/mac-import-applied-001.json
+  s_b61aed9e5ebdf0::t_672da70ff86a5c 1-17
+outputs/completion-review/remaining-completion-001/mac-portable-export-v12.json
+  s_b61aed9e5ebdf0::t_6e3bc8a1a0ecb1 1-2051
+outputs/completion-review/remaining-completion-001/mac-portable-import-v12.json
+  s_b61aed9e5ebdf0::t_bd14df56671a66 1-2051
+outputs/completion-review/remaining-completion-001/mac-recovery-applied-001.json
+  s_b61aed9e5ebdf0::t_ef0b3330e243b5 1-15
+outputs/completion-review/remaining-completion-001/mac-restart-results-001.json
+  s_b61aed9e5ebdf0::t_01fc47a2ba29fb 1-15
+outputs/completion-review/remaining-completion-001/mac-update-share-results-002.json
+  s_b61aed9e5ebdf0::t_06227171176c46 1-41
+outputs/completion-review/remaining-completion-001/madar-share-recall.json
+  s_b61aed9e5ebdf0::t_581096aa715f7e 1-1009
+outputs/completion-review/remaining-completion-001/native-benchmark-results-final.json
+  s_b61aed9e5ebdf0::t_697843d2240b42 1-223
+outputs/completion-review/remaining-completion-001/native-campaign-001/guard-attempt-001.json
+  s_b61aed9e5ebdf0::t_fd49fa7b472b15 1-9
+outputs/completion-review/remaining-completion-001/native-campaign-001/init-summary.json
+  s_b61aed9e5ebdf0::t_b7714aa3527b93 1
+outputs/completion-review/remaining-completion-001/native-campaign-001/plan.json
+  s_b61aed9e5ebdf0::t_a36de62c076c38 1-517
+outputs/completion-review/remaining-completion-001/native-campaign-001/preflight-spec.json
+  s_b61aed9e5ebdf0::t_bd8396e5f4926d 1-15
+outputs/completion-review/remaining-completion-001/native-campaign-001/preflight-summary.json
+  s_b61aed9e5ebdf0::t_4273f44b7a881e 1
+outputs/completion-review/remaining-completion-001/native-campaign-001/spec.json
+  s_b61aed9e5ebdf0::t_9303f844cd2074 1-30
+outputs/completion-review/remaining-completion-001/native-campaign-001/state.json
+  s_b61aed9e5ebdf0::t_3f7e9a43368435 1-44
+outputs/completion-review/remaining-completion-001/native-campaign-002/android-record-summary.json
+  s_b61aed9e5ebdf0::t_1b5040e074cc97 1
+outputs/completion-review/remaining-completion-001/native-campaign-002/android-result.json
+  s_b61aed9e5ebdf0::t_07d2b1de0f2545 1-21
+outputs/completion-review/remaining-completion-001/native-campaign-002/guard-attempt-001.json
+  s_b61aed9e5ebdf0::t_e039a0a7bb35b4 1-18
+outputs/completion-review/remaining-completion-001/native-campaign-002/init-summary.json
+  s_b61aed9e5ebdf0::t_14268a9eebc3aa 1
+outputs/completion-review/remaining-completion-001/native-campaign-002/ios-record-summary.json
+  s_b61aed9e5ebdf0::t_3b4a922e0f0347 1
+outputs/completion-review/remaining-completion-001/native-campaign-002/ios-result.json
+  s_b61aed9e5ebdf0::t_54dae6a064aac1 1-21
+outputs/completion-review/remaining-completion-001/native-campaign-002/macos-pilot-result.json
+  s_b61aed9e5ebdf0::t_95fdecfc8b2c13 1-21
+outputs/completion-review/remaining-completion-001/native-campaign-002/macos-pilot-summary.json
+  s_b61aed9e5ebdf0::t_c8db28693346d6 1
+outputs/completion-review/remaining-completion-001/native-campaign-002/plan.json
+  s_b61aed9e5ebdf0::t_e886d4be2efa9b 1-517
+outputs/completion-review/remaining-completion-001/native-campaign-002/preflight-spec.json
+  s_b61aed9e5ebdf0::t_7c614bfb015836 1-15
+outputs/completion-review/remaining-completion-001/native-campaign-002/preflight-summary.json
+  s_b61aed9e5ebdf0::t_c7e951e7073066 1
+outputs/completion-review/remaining-completion-001/native-campaign-002/spec.json
+  s_b61aed9e5ebdf0::t_17377ff88dcd7e 1-30
+outputs/completion-review/remaining-completion-001/native-campaign-002/state.json
+  s_b61aed9e5ebdf0::t_950dc108551056 1-125
+outputs/completion-review/remaining-completion-001/native-post-cleanup-confirmation.json
+  s_b61aed9e5ebdf0::t_5aaa3caec0d6b4 1-17
+outputs/completion-review/remaining-completion-001/normal-artifact-check-attempt-001.json
+  s_b61aed9e5ebdf0::t_3ff5aee7ccf40e 1-48
+outputs/completion-review/remaining-completion-001/normal-artifact-identities-final.json
+  s_b61aed9e5ebdf0::t_123e128ee6ff2b 1-102
+outputs/completion-review/remaining-completion-001/normal-build-source-inputs.json
+  s_b61aed9e5ebdf0::t_617a57367f1de2 1-482
+outputs/completion-review/remaining-completion-001/normal-builds-final.json
+  s_b61aed9e5ebdf0::t_ad8f26c26d906c 1-78
+outputs/completion-review/remaining-completion-001/obsolete-mac-icu-cleanup.json
+  s_b61aed9e5ebdf0::t_76e31c4f3ce3f7 1-12
+outputs/completion-review/remaining-completion-001/opening-app-recall.json
+  s_b61aed9e5ebdf0::t_480f7accf4d3c9 1-1367
+outputs/completion-review/remaining-completion-001/opening-engine-recall.json
+  s_b61aed9e5ebdf0::t_dbbab2da246541 1-1036
+outputs/completion-review/remaining-completion-001/opening-old-reader-preflight.json
+  s_b61aed9e5ebdf0::t_bb23f3839b1b63 1-20
+outputs/completion-review/remaining-completion-001/opening-old-reader-result.json
+  s_b61aed9e5ebdf0::t_9ad2b2fafe4fde 1-36
+outputs/completion-review/remaining-completion-001/opening-old-reader-source/accounting/restaurant_journal_mapper.dart
+  s_b61aed9e5ebdf0::t_7e860bcb4f88ea 1
+outputs/completion-review/remaining-completion-001/opening-old-reader-source/accounts/account_document.dart
+  s_b61aed9e5ebdf0::t_c7d7b53dfa82d7 1
+outputs/completion-review/remaining-completion-001/opening-old-reader-source/accounts/legacy_account_codec.dart
+  s_b61aed9e5ebdf0::t_88752aaccfe91e 1
+outputs/completion-review/remaining-completion-001/opening-old-reader-source/accounts/portable_journal_state.dart
+  s_b61aed9e5ebdf0::t_e701b0512f4a0d 1-820
+outputs/completion-review/remaining-completion-001/opening-old-reader-source/probe.dart
+  s_b61aed9e5ebdf0::t_af05f5281a64cb 1-19
+outputs/completion-review/remaining-completion-001/opening-storage-checkpoint.json
+  s_b61aed9e5ebdf0::t_2cae25d689a6cd 1-23
+outputs/completion-review/remaining-completion-001/opening-storage-final.json
+  s_b61aed9e5ebdf0::t_9f21909dedf2a4 1-50
+outputs/completion-review/remaining-completion-001/post-native-copy-delta.json
+  s_b61aed9e5ebdf0::t_fa830fae48aab6 1-8
+outputs/completion-review/remaining-completion-001/profile-recovery-pilot-001.json
+  s_b61aed9e5ebdf0::t_bf736514212ea0 1-116
+outputs/completion-review/remaining-completion-001/profile-recovery-pilot-001.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_a7d47585786365 1
+outputs/completion-review/remaining-completion-001/profile-switch-pilot-002.json
+  s_b61aed9e5ebdf0::t_9d001cae4b1c56 1-218
+outputs/completion-review/remaining-completion-001/profile-switch-pilot-002.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_ff086a8252fbac 1
+outputs/completion-review/remaining-completion-001/qa-candidate-artifact-001.json
+  s_b61aed9e5ebdf0::t_7aee9d3c7900de 1-66
+outputs/completion-review/remaining-completion-001/qa-candidate-artifact-002.json
+  s_b61aed9e5ebdf0::t_c8d24dc8aaf00d 1-67
+outputs/completion-review/remaining-completion-001/qa-candidate-entitlements-002.plist
+  s_b61aed9e5ebdf0::t_71a00d79a016e0 1
+outputs/completion-review/remaining-completion-001/qa-unsandboxed-attempt-001.json
+  s_b61aed9e5ebdf0::t_a54e244618c105 1-17
+outputs/completion-review/remaining-completion-001/storage-final-review.json
+  s_b61aed9e5ebdf0::t_84f6584594b1a4 1-80
+outputs/completion-review/remaining-completion-001/storage-post-memory.json
+  s_b61aed9e5ebdf0::t_aae484e5bd9f78 1-21
+outputs/completion-review/remaining-completion-001/storage-review-before-memory.json
+  s_b61aed9e5ebdf0::t_2b07043c389ba1 1-99
+outputs/completion-review/remaining-completion-001/task-timing.json
+  s_b61aed9e5ebdf0::t_061eab2b324b01 1
+outputs/completion-review/remaining-correction-examples/baseline.json
+  s_b61aed9e5ebdf0::t_9da897c3ae2bfb 1-22
+outputs/completion-review/remaining-correction-examples/independent-owner-acceptance-audit.json
+  s_b61aed9e5ebdf0::t_5933eeca6953d3 1-35
+outputs/completion-review/remaining-correction-examples/independent-review.json
+  s_b61aed9e5ebdf0::t_53ea738f79f3d3 1-26
+outputs/completion-review/remaining-correction-examples/mapper-probe-result.json
+  s_b61aed9e5ebdf0::t_d10dd757cb86e9 1-169
+outputs/completion-review/remaining-correction-examples/owner-acceptance.json
+  s_b61aed9e5ebdf0::t_08ff331247a23e 1-24
+outputs/completion-review/remaining-correction-examples/probe-source.cjs
+  s_b61aed9e5ebdf0::t_8d7dd4e36802bb 1-110
+outputs/completion-review/remaining-correction-examples/probe_mapper.dart
+  s_b61aed9e5ebdf0::t_825778cc49a200 1-244
+outputs/completion-review/remaining-correction-examples/review-inputs.json
+  s_b61aed9e5ebdf0::t_7cc242211b3a1c 1-144
+outputs/completion-review/remaining-correction-examples/source-bindings.json
+  s_b61aed9e5ebdf0::t_070c13ab5e3ada 1-87
+outputs/completion-review/remaining-correction-examples/source-probe-result.json
+  s_b61aed9e5ebdf0::t_c05c673ea29305 1-26
+outputs/completion-review/remaining-correction-examples/storage-closeout.json
+  s_b61aed9e5ebdf0::t_51a794e1539e16 1-49
+outputs/completion-review/remaining-correction-examples/verification-receipt.json
+  s_b61aed9e5ebdf0::t_5e25ab50388ded 1-17
+outputs/completion-review/remaining-ui-build-approval-manifest.json
+  s_b61aed9e5ebdf0::t_8c1f77fc106bc3 1-6076
+outputs/completion-review/review-fix-inputs.json
+  s_b61aed9e5ebdf0::t_51782b8af9f20c 1-69
+outputs/completion-review/review-stage-001/android-apk-badging.txt
+  s_b61aed9e5ebdf0::t_5b7bfa8fb201d1 1-111
+outputs/completion-review/review-stage-001/android-apk-signer.txt
+  s_b61aed9e5ebdf0::t_c2b7deaa0229df 1-18
+outputs/completion-review/review-stage-001/android-device-launch-001.json
+  s_b61aed9e5ebdf0::t_39b3894ee8986a 1-2
+outputs/completion-review/review-stage-001/android-install-execute-001.json
+  s_b61aed9e5ebdf0::t_85184067bf67a8 1
+outputs/completion-review/review-stage-001/android-native-context-001/android-pilot-result.json
+  s_b61aed9e5ebdf0::t_eba5649164aeee 1-33
+outputs/completion-review/review-stage-001/android-native-context-001/guard-attempt-001.json
+  s_b61aed9e5ebdf0::t_56c8e17ee2e7ca 1-41
+outputs/completion-review/review-stage-001/android-native-context-001/plan.json
+  s_b61aed9e5ebdf0::t_074d3e19bb4590 1-495
+outputs/completion-review/review-stage-001/android-native-context-001/preflight-spec.json
+  s_b61aed9e5ebdf0::t_fa4856de2adb33 1-42
+outputs/completion-review/review-stage-001/android-native-context-001/spec.json
+  s_b61aed9e5ebdf0::t_9ed3c5553810e0 1-20
+outputs/completion-review/review-stage-001/android-native-context-001/state.json
+  s_b61aed9e5ebdf0::t_45653ed02d2fef 1-83
+outputs/completion-review/review-stage-001/android-native-driver-001.identity.json
+  s_b61aed9e5ebdf0::t_faec772efbe48b 1-8
+outputs/completion-review/review-stage-001/android-review.init.gradle
+  s_b61aed9e5ebdf0::t_71c597a449ae7c 1-7
+outputs/completion-review/review-stage-001/benchmark-matrix-001.json
+  s_b61aed9e5ebdf0::t_783197900e62a0 1-7073
+outputs/completion-review/review-stage-001/benchmark-matrix-001.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_b125c61c0e2f9b 1
+outputs/completion-review/review-stage-001/benchmark-pilot-001.json
+  s_b61aed9e5ebdf0::t_37e2fce40e0161 1-97
+outputs/completion-review/review-stage-001/benchmark-pilot-001.json.diagnostics.json
+  s_b61aed9e5ebdf0::t_04868922095cf8 1
+outputs/completion-review/review-stage-001/benchmark-summary-001.csv
+  s_b61aed9e5ebdf0::t_6636960daea443 1-61
+outputs/completion-review/review-stage-001/engine-raster-reviewed-inputs.json
+  s_b61aed9e5ebdf0::t_0ab610b3e15e5f 1-21
+outputs/completion-review/review-stage-001/final-doc-check.json
+  s_b61aed9e5ebdf0::t_3486726cfc8356 1-4
+outputs/completion-review/review-stage-001/final-source-identity.json
+  s_b61aed9e5ebdf0::t_4286bb25840bd8 1-62
+outputs/completion-review/review-stage-001/ios-native-context-001/guard-attempt-001.json
+  s_b61aed9e5ebdf0::t_9563cfc9e3213b 1-9
+outputs/completion-review/review-stage-001/ios-native-context-001/guard-attempt-002.json
+  s_b61aed9e5ebdf0::t_f871dc6457465f 1-27
+outputs/completion-review/review-stage-001/ios-native-context-001/guard-retry-001.json
+  s_b61aed9e5ebdf0::t_fa28caa949fd70 1-10
+outputs/completion-review/review-stage-001/ios-native-context-001/ios-pilot-result.json
+  s_b61aed9e5ebdf0::t_fabfc67ce71d21 1-21
+outputs/completion-review/review-stage-001/ios-native-context-001/plan.json
+  s_b61aed9e5ebdf0::t_e4b836ae395c3a 1-495
+outputs/completion-review/review-stage-001/ios-native-context-001/preflight-spec-device.json
+  s_b61aed9e5ebdf0::t_5919f6be4168e7 1-25
+outputs/completion-review/review-stage-001/ios-native-context-001/preflight-spec.json
+  s_b61aed9e5ebdf0::t_4cb4eb664370fb 1-15
+outputs/completion-review/review-stage-001/ios-native-context-001/spec.json
+  s_b61aed9e5ebdf0::t_d40404987d1790 1-20
+outputs/completion-review/review-stage-001/ios-native-context-001/state.json
+  s_b61aed9e5ebdf0::t_545c05e4a36101 1-107
+outputs/completion-review/review-stage-001/madar-contract-recall.json
+  s_b61aed9e5ebdf0::t_b9b7d5c5ce65ae 1-867
+outputs/completion-review/review-stage-001/memory-check-app-attempt-001.json
+  s_b61aed9e5ebdf0::t_2e2449d10f3bfb 1-21
+outputs/completion-review/review-stage-001/memory-check-app-attempt-002.json
+  s_b61aed9e5ebdf0::t_c5c7e622d321f6 1-20
+outputs/completion-review/review-stage-001/memory-check-app-attempt-003.json
+  s_b61aed9e5ebdf0::t_21cf9f27520202 1-19
+outputs/completion-review/review-stage-001/memory-check-app-attempt-004.json
+  s_b61aed9e5ebdf0::t_cc469cd45d5339 1-19
+outputs/completion-review/review-stage-001/memory-check-app-attempt-005.json
+  s_b61aed9e5ebdf0::t_0545eea9cfd8db 1-17
+outputs/completion-review/review-stage-001/memory-check-app-final.json
+  s_b61aed9e5ebdf0::t_a2a23d07225332 1-15
+outputs/completion-review/review-stage-001/memory-check-app-milestone.json
+  s_b61aed9e5ebdf0::t_eb1a76f77eb9ce 1-15
+outputs/completion-review/review-stage-001/memory-check-engine-final.json
+  s_b61aed9e5ebdf0::t_d9bfd2e922897b 1-15
+outputs/completion-review/review-stage-001/memory-check-engine-milestone.json
+  s_b61aed9e5ebdf0::t_041ac2627671f1 1-15
+outputs/completion-review/review-stage-001/native-campaign-001/guard-attempt-001.json
+  s_b61aed9e5ebdf0::t_26ecef1f71ea1e 1-18
+outputs/completion-review/review-stage-001/native-campaign-001/macos-pilot-receipt-001.json
+  s_b61aed9e5ebdf0::t_b45da120e93810 1-21
+outputs/completion-review/review-stage-001/native-campaign-001/plan.json
+  s_b61aed9e5ebdf0::t_363c06d70343ab 1-499
+outputs/completion-review/review-stage-001/native-campaign-001/preflight-spec.json
+  s_b61aed9e5ebdf0::t_03a096c0c6a177 1-15
+outputs/completion-review/review-stage-001/native-campaign-001/spec.json
+  s_b61aed9e5ebdf0::t_5de4d2ed26f868 1-25
+outputs/completion-review/review-stage-001/native-campaign-001/state.json
+  s_b61aed9e5ebdf0::t_0d824da0f7ba91 1-71
+outputs/completion-review/review-stage-001/native-campaign-002/plan.json
+  s_b61aed9e5ebdf0::t_fb1f8f68d0ab8e 1-500
+outputs/completion-review/review-stage-001/native-campaign-002/preflight-spec.json
+  s_b61aed9e5ebdf0::t_2a5d94cacee541 1-15
+outputs/completion-review/review-stage-001/native-campaign-002/spec.json
+  s_b61aed9e5ebdf0::t_61cda91d59085e 1-25
+outputs/completion-review/review-stage-001/native-campaign-002/state.json
+  s_b61aed9e5ebdf0::t_b2bf5c5258ac09 1-16
+outputs/completion-review/review-stage-001/native-campaign-002/successor.json
+  s_b61aed9e5ebdf0::t_3cb0e14ade1d5d 1-9
+outputs/completion-review/review-stage-001/native-campaign-003/guard-attempt-001.json
+  s_b61aed9e5ebdf0::t_f95614bb372f5c 1-18
+outputs/completion-review/review-stage-001/native-campaign-003/macos-pilot-result.json
+  s_b61aed9e5ebdf0::t_f9e6e1ffa05efa 1-20
+outputs/completion-review/review-stage-001/native-campaign-003/plan.json
+  s_b61aed9e5ebdf0::t_83b325c6928ab1 1-500
+outputs/completion-review/review-stage-001/native-campaign-003/preflight-spec.json
+  s_b61aed9e5ebdf0::t_df414cbc2cc144 1-15
+outputs/completion-review/review-stage-001/native-campaign-003/spec.json
+  s_b61aed9e5ebdf0::t_c6b825f2aedf34 1-25
+outputs/completion-review/review-stage-001/native-campaign-003/state.json
+  s_b61aed9e5ebdf0::t_5639b01909fd5a 1-44
+outputs/completion-review/review-stage-001/native-campaign-003/successor.json
+  s_b61aed9e5ebdf0::t_b987a1bd900120 1-12
+outputs/completion-review/review-stage-001/native-campaign-004/guard-attempt-001.json
+  s_b61aed9e5ebdf0::t_69ac9c002a0c9c 1-18
+outputs/completion-review/review-stage-001/native-campaign-004/macos-pilot-receipt-001.json
+  s_b61aed9e5ebdf0::t_45ff67fa8b9650 1-21
+outputs/completion-review/review-stage-001/native-campaign-004/plan.json
+  s_b61aed9e5ebdf0::t_c716bf32259ce4 1-500
+outputs/completion-review/review-stage-001/native-campaign-004/preflight-spec.json
+  s_b61aed9e5ebdf0::t_9329d0bea5847a 1-15
+outputs/completion-review/review-stage-001/native-campaign-004/spec.json
+  s_b61aed9e5ebdf0::t_19590d7b392f9f 1-25
+outputs/completion-review/review-stage-001/native-campaign-004/state.json
+  s_b61aed9e5ebdf0::t_ef72e4d7a0b2c3 1-71
+outputs/completion-review/review-stage-001/native-campaign-005/guard-attempt-001.json
+  s_b61aed9e5ebdf0::t_4caeb12d0ac253 1-18
+outputs/completion-review/review-stage-001/native-campaign-005/macos-pilot-receipt-001.json
+  s_b61aed9e5ebdf0::t_a0f9c383de8628 1-21
+outputs/completion-review/review-stage-001/native-campaign-005/plan.json
+  s_b61aed9e5ebdf0::t_549598b84500f2 1-500
+outputs/completion-review/review-stage-001/native-campaign-005/preflight-spec.json
+  s_b61aed9e5ebdf0::t_4a95f3c41614ac 1-15
+outputs/completion-review/review-stage-001/native-campaign-005/spec.json
+  s_b61aed9e5ebdf0::t_15d437c2089a47 1-25
+outputs/completion-review/review-stage-001/native-campaign-005/state.json
+  s_b61aed9e5ebdf0::t_0b348a5a88512d 1-71
+outputs/completion-review/review-stage-001/native-campaign-006/guard-attempt-001.json
+  s_b61aed9e5ebdf0::t_d4187e77fe7912 1-18
+outputs/completion-review/review-stage-001/native-campaign-006/init-summary.json
+  s_b61aed9e5ebdf0::t_ae472b500b877f 1
+outputs/completion-review/review-stage-001/native-campaign-006/macos-pilot-result.json
+  s_b61aed9e5ebdf0::t_0c063262d46a38 1-21
+outputs/completion-review/review-stage-001/native-campaign-006/plan.json
+  s_b61aed9e5ebdf0::t_3fb78620d3a9e5 1-500
+outputs/completion-review/review-stage-001/native-campaign-006/preflight-spec.json
+  s_b61aed9e5ebdf0::t_4010ded4fcd8ae 1-15
+outputs/completion-review/review-stage-001/native-campaign-006/preflight-summary.json
+  s_b61aed9e5ebdf0::t_308777685e50ac 1
+outputs/completion-review/review-stage-001/native-campaign-006/spec.json
+  s_b61aed9e5ebdf0::t_208b0bb3acb593 1-25
+outputs/completion-review/review-stage-001/native-campaign-006/state.json
+  s_b61aed9e5ebdf0::t_51e6740ac5c0a9 1-71
+outputs/completion-review/review-stage-001/native-source-delta.json
+  s_b61aed9e5ebdf0::t_4bce6265375869 1-10
+outputs/completion-review/review-stage-001/normal-artifact-identities-final.json
+  s_b61aed9e5ebdf0::t_2992392763440f 1-35
+outputs/completion-review/review-stage-001/normal-builds-final.json
+  s_b61aed9e5ebdf0::t_4b170ca30b0de3 1-26
+outputs/completion-review/review-stage-001/review-operation-cases.json
+  s_b61aed9e5ebdf0::t_f6030cd8a905c5 1-34
+outputs/completion-review/review-stage-001/sqlite3-download-recovery.json
+  s_b61aed9e5ebdf0::t_520946ec254712 1-10
+outputs/completion-review/review-stage-001/storage-final-review.json
+  s_b61aed9e5ebdf0::t_03c98e158763fc 1-36
+outputs/completion-review/review-stage-001/storage-handoff-sample.json
+  s_b61aed9e5ebdf0::t_3297b482b65dd5 1-14
+outputs/completion-review/review-stage-001/verification-progress.json
+  s_b61aed9e5ebdf0::t_6b4222a9cf9faf 1-62
+outputs/completion-review/review-stage-001/visible-benchmark-handoff.json
+  s_b61aed9e5ebdf0::t_8bf13a291142a6 1-26
+outputs/completion-review/root-fixture-checkpoint-storage.json
+  s_b61aed9e5ebdf0::t_af52928ce487be 1-48
+outputs/completion-review/root-package-source-review-storage.json
+  s_b61aed9e5ebdf0::t_cd6ef9bc919581 1-42
+outputs/completion-review/root-source-adoption-closeout.json
+  s_b61aed9e5ebdf0::t_980d15b223a026 1-75
+outputs/completion-review/sales-view-model/independent-review-initial.json
+  s_b61aed9e5ebdf0::t_a14b43e51b2ffc 1-16
+outputs/completion-review/sales-view-model/receipt.json
+  s_b61aed9e5ebdf0::t_f5c87ce48e4e8c 1-55
+outputs/completion-review/sales-view-model/repaired-1/independent-review.json
+  s_b61aed9e5ebdf0::t_464faf649f641d 1-23
+outputs/completion-review/sales-view-model/repaired-1/receipt.json
+  s_b61aed9e5ebdf0::t_4afffe4d85a573 1-17
+outputs/completion-review/sales-view-model/repaired-1/verified-inputs.json
+  s_b61aed9e5ebdf0::t_94904c75b6b341 1-41
+outputs/completion-review/sales-view-model/verified-inputs.json
+  s_b61aed9e5ebdf0::t_34484b370c3bcf 1-40
+outputs/completion-review/stopped-work-report-2026-11-08.md
+  s_b61aed9e5ebdf0::t_f167e16774c89e 1-321
+outputs/completion-review/storage-current-native-cache/README.md
+  s_b61aed9e5ebdf0::t_479c9d0728c0bf 1-11
+outputs/completion-review/storage-current-native-cache/baseline.json
+  s_b61aed9e5ebdf0::t_1e3c854ec70f46 1-17
+outputs/completion-review/storage-current-native-cache/cache-target-inventory.json
+  s_b61aed9e5ebdf0::t_50f1486ee5e978 1-52
+outputs/completion-review/storage-current-native-cache/candidate-identities.json
+  s_b61aed9e5ebdf0::t_1530f7f8a84ea7 1-28
+outputs/completion-review/storage-current-native-cache/cleanup-result.json
+  s_b61aed9e5ebdf0::t_e598bcd7f8eabb 1-37
+outputs/completion-review/storage-current-native-cache/deletion-plan.json
+  s_b61aed9e5ebdf0::t_d29c75fba0d38d 1-332
+outputs/completion-review/storage-current-native-cache/immediate-predelete-check.json
+  s_b61aed9e5ebdf0::t_5e7e8519bdac14 1-18
+outputs/completion-review/storage-current-native-cache/predelete-process-check.json
+  s_b61aed9e5ebdf0::t_2cfe486a647c42 1-19
+outputs/completion-review/storage-current-native-cache/receipt-manifest.json
+  s_b61aed9e5ebdf0::t_502048dabf6ea5 1-54
+outputs/completion-review/storage-current-native-cache/retained-binary-verification.json
+  s_b61aed9e5ebdf0::t_4a6be0cb057caf 1-26
+outputs/completion-review/storage-current-native-cache/retained-cache-before.json
+  s_b61aed9e5ebdf0::t_c463df1168864c 1-23
+outputs/completion-review/storage-current-native-cache/retained-exceptions.json
+  s_b61aed9e5ebdf0::t_2d1d5cf2de1807 1-57
+outputs/completion-review/storage-current-native-cache/storage-closeout.json
+  s_b61aed9e5ebdf0::t_d876f7f02271ac 1-30
+outputs/completion-review/storage-current-native-cache/vm-observation.json
+  s_b61aed9e5ebdf0::t_b2197fe0a24918 1-120
+outputs/completion-review/storage-producer-readiness-receipt.json
+  s_b61aed9e5ebdf0::t_f1501e5f2973f5 1-75
+outputs/completion-scope/app-pr9.json
+  s_b61aed9e5ebdf0::t_dec7fdb25f2bcf 1
+outputs/completion-scope/document-checks.json
+  s_b61aed9e5ebdf0::t_0f3b8503b92350 1-17
+outputs/completion-scope/final-document-checks.json
+  s_b61aed9e5ebdf0::t_14202bd5f58e3a 1-15
+outputs/completion-scope/independent-review.md
+  s_b61aed9e5ebdf0::t_325a688c58e0ee 1-7
+outputs/completion-scope/memory-check-app.json
+  s_b61aed9e5ebdf0::t_05612faab7e3ac 1-35
+outputs/completion-scope/memory-status-app.json
+  s_b61aed9e5ebdf0::t_786002a39b2b29 1-35
+outputs/completion-scope/memory-sync-app.json
+  s_b61aed9e5ebdf0::t_7b0921a545a2a9 1
+outputs/completion-scope/reference-presentation.json
+  s_b61aed9e5ebdf0::t_a6bf10f2bcce24 1-11
+outputs/completion-scope/reference-preview.html
+  s_b61aed9e5ebdf0::t_c0a073241f6e69 1
+outputs/completion-scope/step2-restart/app-completion-implementation-plan.md
+  s_4cfb0aecd4cd7c::t_650bc6b0b68f90 1-161
+outputs/completion-scope/step2-restart/engine-consumer-completion-implementation-plan.md
+  s_4cfb0aecd4cd7c::t_becc6124ba40d8 1-46
+outputs/completion-scope/step2-restart/final-plan-checks.json
+  s_4cfb0aecd4cd7c::t_bb45c4e2239f96 1-12
+outputs/completion-scope/step2-restart/prior-plan-snapshots.json
+  s_4cfb0aecd4cd7c::t_b7d87608fd721a 1-12
+outputs/completion-scope/task-time.json
+  s_b61aed9e5ebdf0::t_8aaf6c2a21f479 1
+outputs/phase02/performance-manifests/accounts.migrate_legacy-small-45ad8e57049448a8a96a33aedb4d6447.json
+  s_b61aed9e5ebdf0::t_06162ca7994203 1
+outputs/phase02/performance-manifests/accounts.migrate_legacy-small-be3ebe326cf447878422f806b3c8e2bc.json
+  s_b61aed9e5ebdf0::t_bdc654b236b5e7 1
+outputs/phase02/performance-manifests/accounts.open-small-3dec93f407644c669adaed86d19ccf60.json
+  s_b61aed9e5ebdf0::t_d9d58dfe109f50 1
+outputs/phase02/performance-manifests/accounts.open-small-9e5ee8e7a3c04ec4a2c57a55a1faa873.json
+  s_b61aed9e5ebdf0::t_214541c4e46af8 1
+outputs/phase02/performance-manifests/accounts.open-small-ae87b87fa2f34747a3dc49e72f29c8de.json
+  s_b61aed9e5ebdf0::t_873c4b6e89446f 1
+outputs/phase02/performance-manifests/accounts.open-small-cb11b7254db3464ca3b272f3e1747c29.json
+  s_b61aed9e5ebdf0::t_1129414a75bf61 1
+outputs/phase02/performance-manifests/accounts.recover_previous-small-a852b4d5f6874862aeaa258e6e2c29b1.json
+  s_b61aed9e5ebdf0::t_17d109f1fc2843 1
+outputs/phase02/performance-manifests/accounts.recover_previous-small-cca7e271220542ceb8e50445810f2812.json
+  s_b61aed9e5ebdf0::t_32a818ff542e90 1
+outputs/phase02/performance-manifests/accounts.replace-small-2bafac0d79ca4789bca7a5ec6b61f98b.json
+  s_b61aed9e5ebdf0::t_f7507f57543564 1
+outputs/phase02/performance-manifests/accounts.replace-small-8a01debdac7a41629593cdb9ffe50c01.json
+  s_b61aed9e5ebdf0::t_1aa5202be971b6 1
+outputs/phase02/performance-manifests/accounts.save-small-58067f5e1ee04cde91a0fc95732011e2.json
+  s_b61aed9e5ebdf0::t_d457c5a064fe9a 1
+outputs/phase02/performance-manifests/accounts.save-small-a4e32dafe7f542d88fe0a7b7feb6bf10.json
+  s_b61aed9e5ebdf0::t_ffd3347d68dc1f 1
+outputs/phase02/performance-manifests/workspace.save_restore-small-380f2208ded94e2c9b56d86d9efe0a54.json
+  s_b61aed9e5ebdf0::t_028211c0e7329d 1
+outputs/phase02/performance-manifests/workspace.save_restore-small-bab13d6e2217474cbbd2dddf880cbd9b.json
+  s_b61aed9e5ebdf0::t_ab312ca5d500a0 1
+outputs/preflight-fixtures/remaining-bundled-001/.dakhl-synthetic-fixture
+  s_b61aed9e5ebdf0::t_ce95fe9251bcd0 1
+outputs/preflight-fixtures/remaining-bundled-001/android-device-open-001.json
+  s_b61aed9e5ebdf0::t_44c28a582a49be 1-16
+outputs/preflight-fixtures/remaining-bundled-001/android-open-facts-001.json
+  s_b61aed9e5ebdf0::t_9091a279be4937 1-9
+outputs/preflight-fixtures/remaining-bundled-001/ios-device-open-001.json
+  s_b61aed9e5ebdf0::t_55ec8c720023c3 1-17
+outputs/preflight-fixtures/remaining-bundled-001/ios-device-open-002.json
+  s_b61aed9e5ebdf0::t_a9efad8364b601 1-16
+outputs/preflight-fixtures/remaining-bundled-001/ios-open-facts-001.json
+  s_b61aed9e5ebdf0::t_d6f6aaff8f54d1 1-9
+outputs/preflight-fixtures/remaining-bundled-001/synthetic-runner.dart
+  s_b61aed9e5ebdf0::t_63579ee75b3073 1-7
+outputs/preflight-fixtures/review-stage-001-android/.dakhl-synthetic-fixture
+  s_b61aed9e5ebdf0::t_5fabc3d53c157f 1
+outputs/preflight-fixtures/review-stage-001-android/device-observation.json
+  s_b61aed9e5ebdf0::t_4dd6104940ccc9 1-16
+outputs/preflight-fixtures/review-stage-001-android/device-open.json
+  s_b61aed9e5ebdf0::t_bf76e8f7139ec1 1-26
+outputs/preflight-fixtures/review-stage-001-android/synthetic-fixture-source.txt
+  s_b61aed9e5ebdf0::t_0033e8f7dd1535 1-184
+pubspec.lock
+  s_b61aed9e5ebdf0::t_019fd185396502 109,405,419,426-433
+pubspec.yaml
+  s_b61aed9e5ebdf0::t_4c406835d531c5 25-26,31
+scripts/audit-completion-progress.py
+  s_b61aed9e5ebdf0::t_35516b9134f9ec 1-271
+scripts/embed_icu_macos.py
+  s_b61aed9e5ebdf0::t_8eb5698dcc3040 1-147
+scripts/resolve-penpot-source.py
+  s_b61aed9e5ebdf0::t_b193869494fbb9 1-127
+scripts/tests/test_embed_icu_macos.py
+  s_b61aed9e5ebdf0::t_78b159a2eab0b5 1-134
+scripts/tests/test_resolve_penpot_source.py
+  s_b61aed9e5ebdf0::t_bf011475ac470e 1-125
+test/accounting/categories_source_parity_test.dart
+  s_b61aed9e5ebdf0::t_ea4009accd6f92 1-112
+test/accounting/categories_surface_test.dart
+  s_b61aed9e5ebdf0::t_41c0fd54d57a2f 1-40
+test/accounting/categories_view_model_test.dart
+  s_b61aed9e5ebdf0::t_4b4d21d78abd0d 1-536
+test/accounting/daily_cash_surface_test.dart
+  s_b61aed9e5ebdf0::t_025b825c3a9bf2 1-112
+test/accounting/daily_metadata_controller_test.dart
+  s_b61aed9e5ebdf0::t_362f77264aed00 1-54
+test/accounting/daily_register_snapshot_controller_test.dart
+  s_b61aed9e5ebdf0::t_3f4ad625f20432 1-355
+test/accounting/daily_transfer_editor_test.dart
+  s_b61aed9e5ebdf0::t_ac41819fee4cf8 1-148
+test/accounting/day_date_cash_composition_test.dart
+  s_b61aed9e5ebdf0::t_377b593eb3a8ac 1-171
+test/accounting/day_date_correction_commands_test.dart
+  s_b61aed9e5ebdf0::t_88808ec45fd85e 1-363
+test/accounting/deleted_spending_restoration_test.dart
+  s_b61aed9e5ebdf0::t_8948400a9c749b 1-366
+test/accounting/expense_correction_fence_restore_test.dart
+  s_b61aed9e5ebdf0::t_2bbf9560bd438f 1-155
+test/accounting/expense_editor_controller_test.dart
+  s_b61aed9e5ebdf0::t_bba4ab3bc68a31 1-112
+test/accounting/external_cash_commands_test.dart
+  s_b61aed9e5ebdf0::t_3d6caf25ad8ef2 1-356
+test/accounting/financial_review_regressions_test.dart
+  s_b61aed9e5ebdf0::t_929e89805cea84 1-174
+test/accounting/financial_session_undo_test.dart
+  s_b61aed9e5ebdf0::t_331bdd9dfcc5d2 1-368
+test/accounting/journal_atomicity_fault_injection_test.dart
+  s_b61aed9e5ebdf0::t_36af21161ef64b 1-815
+test/accounting/journal_command_host_test.dart
+  s_b61aed9e5ebdf0::t_f7ec1a6dfcd312 1-414
+test/accounting/journal_command_lifecycle_faults_test.dart
+  s_b61aed9e5ebdf0::t_f0e38c15b50241 1-488
+test/accounting/journal_mixed_reconciliation_test.dart
+  s_b61aed9e5ebdf0::t_9fce793a006a82 1-799
+test/accounting/journal_multiline_reconciliation_test.dart
+  s_b61aed9e5ebdf0::t_0f41bff89d4093 1-683
+test/accounting/paid_spending_consumer_test.dart
+  s_b61aed9e5ebdf0::t_b5309e8a4eff86 1-158
+test/accounting/register_date_session_undo_test.dart
+  s_b61aed9e5ebdf0::t_151e840aced23f 1-215
+test/accounting/restaurant_journal_expense_correction_commands_test.dart
+  s_b61aed9e5ebdf0::t_7537a8dbdb9d64 1-342
+test/accounting/restaurant_journal_expense_correction_conformance_test.dart
+  s_b61aed9e5ebdf0::t_35cd94c1e8df81 1-446
+test/accounting/restaurant_journal_expense_correction_safety_test.dart
+  s_b61aed9e5ebdf0::t_07256b47cef55a 1-469
+test/accounting/restaurant_journal_integrity_test.dart
+  s_b61aed9e5ebdf0::t_9dca09fcbc2d60 1-201
+test/accounting/restaurant_journal_invoice_correction_commands_test.dart
+  s_b61aed9e5ebdf0::t_040f6cbb089253 1-313
+test/accounting/restaurant_journal_mapper_test.dart
+  s_b61aed9e5ebdf0::t_dede53a78ccba0 1-669
+test/accounting/restaurant_journal_payment_correction_commands_test.dart
+  s_b61aed9e5ebdf0::t_944eecc6e405c7 1-345
+test/accounting/restaurant_journal_payment_correction_conformance_test.dart
+  s_b61aed9e5ebdf0::t_bffee3fd8e7b7e 1-324
+test/accounting/restaurant_journal_payment_correction_safety_test.dart
+  s_b61aed9e5ebdf0::t_291f089cc09401 1-299
+test/accounting/restaurant_journal_sale_commands_test.dart
+  s_b61aed9e5ebdf0::t_7f842fdf255c6f 1-835
+test/accounting/restaurant_journal_sale_conformance_test.dart
+  s_b61aed9e5ebdf0::t_9d684f05e5030d 1-1103
+test/accounting/restaurant_journal_sale_safety_test.dart
+  s_b61aed9e5ebdf0::t_96c5a982f6da1b 1-691
+test/accounting/restaurant_journal_spending_commands_test.dart
+  s_b61aed9e5ebdf0::t_8f7a07ecba1bb6 1-896
+test/accounting/restaurant_journal_spending_conformance_test.dart
+  s_b61aed9e5ebdf0::t_3292129393154b 1-1260
+test/accounting/restaurant_journal_spending_safety_test.dart
+  s_b61aed9e5ebdf0::t_857ff2c5334355 1-872
+test/accounting/restaurant_journal_transfer_commands_test.dart
+  s_b61aed9e5ebdf0::t_35897a7a2678bf 1-660
+test/accounting/restaurant_journal_transfer_conformance_test.dart
+  s_b61aed9e5ebdf0::t_bead59d8007a08 1-1181
+test/accounting/restaurant_journal_transfer_correction_commands_test.dart
+  s_b61aed9e5ebdf0::t_7d262fe121bb58 1-800
+test/accounting/restaurant_journal_transfer_correction_conformance_test.dart
+  s_b61aed9e5ebdf0::t_3e6874f4cb3ae9 1-1222
+test/accounting/restaurant_journal_transfer_correction_integrity_test.dart
+  s_b61aed9e5ebdf0::t_3f0183c5498caf 1-616
+test/accounting/restaurant_journal_transfer_correction_safety_test.dart
+  s_b61aed9e5ebdf0::t_b772864ab96553 1-1119
+test/accounting/restaurant_journal_transfer_safety_test.dart
+  s_b61aed9e5ebdf0::t_4e883b18436521 1-748
+test/accounting/source_local_spending_undo_test.dart
+  s_b61aed9e5ebdf0::t_b0e47c4faa6fc3 1-259
+test/accounting/sparse_local_register_date_undo_test.dart
+  s_b61aed9e5ebdf0::t_348268828d83fc 1-212
+test/accounting/spending_operations_view_model_test.dart
+  s_b61aed9e5ebdf0::t_e3c02debd17166 1-151
+test/accounting/support/payment_correction_fixtures.dart
+  s_b61aed9e5ebdf0::t_26faeef986a2f0 1-171
+test/accounts/account_callback_fence_test.dart
+  s_b61aed9e5ebdf0::t_d76c1b4ff9bcbe 5-8,30-31,37-39,41-44,46-47,49-51,63,68,72-73,78,80-82
+test/accounts/import_boundary_fixture_test.dart
+  s_b61aed9e5ebdf0::t_95f97ebba88c07 1-102
+test/accounts/import_boundary_lifecycle_test.dart
+  s_b61aed9e5ebdf0::t_ceb5a7efb944d1 1-322
+test/accounts/legacy_corpus_restart_conformance_driver.dart
+  s_b61aed9e5ebdf0::t_1f6e61e292b4c1 1-326
+test/accounts/legacy_session_undo_test.dart
+  s_b61aed9e5ebdf0::t_8d8fd52cac22c3 1-87
+test/accounts/metadata_session_undo_test.dart
+  s_b61aed9e5ebdf0::t_521e9132701556 1-230
+test/accounts/portable_account_transfer_controller_test.dart
+  s_b61aed9e5ebdf0::t_ca8dcd93d5f3b8 1-542
+test/accounts/portable_accounts_surface_test.dart
+  s_b61aed9e5ebdf0::t_31bb1fe03807d3 1-494
+test/accounts/portable_journal_codec_test.dart
+  s_b61aed9e5ebdf0::t_f6498bcce1f845 1-707
+test/accounts/portable_journal_conformance_test.dart
+  s_b61aed9e5ebdf0::t_0008437cd109e0 1-442
+test/accounts/portable_journal_integrity_test.dart
+  s_b61aed9e5ebdf0::t_8e251741b4f49c 1-375
+test/accounts/portable_metadata_repository_bridge_test.dart
+  s_b61aed9e5ebdf0::t_207a9357c05e3c 1-324
+test/accounts/real_store_bootstrap_surface_test.dart
+  s_b61aed9e5ebdf0::t_29c705c7b6af63 1-18
+test/accounts/support/legacy_corpus_restart_child.dart
+  s_b61aed9e5ebdf0::t_c363a0ace02d99 1-491
+test/app/daily_register_composition_test.dart
+  s_b61aed9e5ebdf0::t_37c6e57e9dd68d 1-139
+test/app/portable_app_composition_test.dart
+  s_b61aed9e5ebdf0::t_af69f0969abf80 1-259
+test/app/portable_restaurant_host_test.dart
+  s_b61aed9e5ebdf0::t_0f065199beb25f 1-725
+test/app/restaurant_operations_session_test.dart
+  s_b61aed9e5ebdf0::t_377fa186c272f5 1-371
+test/app/source_collation_runtime_test.dart
+  s_b61aed9e5ebdf0::t_d68027e645f397 1-105
+test/app/supplier_opening_composition_test.dart
+  s_b61aed9e5ebdf0::t_d91b04a1bd7e71 1-107
+test/catalog/c1_integrity_workflow_test.dart
+  s_b61aed9e5ebdf0::t_11545c440704c3 1-332
+test/catalog/c1_pagination_mutation_workflow_test.dart
+  s_b61aed9e5ebdf0::t_3b008181eee5ae 1-393
+test/catalog/c1_visible_recovery_workflow_test.dart
+  s_b61aed9e5ebdf0::t_34e762b3d7d462 1-710
+test/catalog/catalog_stock_history_test.dart
+  s_b61aed9e5ebdf0::t_8962089755608a 1-118
+test/catalog/catalog_view_model_test.dart
+  s_4cfb0aecd4cd7c::t_02fbf4bd863286 1-264
+test/catalog/inventory_surface_test.dart
+  s_b61aed9e5ebdf0::t_011c2a1c0eff2e 1-250
+test/catalog/product_dialog_workflow_test.dart
+  s_b61aed9e5ebdf0::t_6add6a2f374148 1-383
+test/catalog/product_photo_authority_test.dart
+  s_b61aed9e5ebdf0::t_a3d303e5aafb6e 1-134
+test/catalog/product_photo_draft_controller_test.dart
+  s_b61aed9e5ebdf0::t_2b744dafee42dc 1-254
+test/catalog/shell_inventory_integration_test.dart
+  s_b61aed9e5ebdf0::t_beaf7add27f108 1-224
+test/catalog/stock_history_responsive_test.dart
+  s_b61aed9e5ebdf0::t_f0f3e415457c5e 1-130
+test/catalog/stock_movement_workflow_test.dart
+  s_b61aed9e5ebdf0::t_2fa76c6229fdc2 1-496
+test/catalog/stock_saved_sale_navigation_test.dart
+  s_b61aed9e5ebdf0::t_6717e5893b32c8 1-213
+test/inventory/stock_session_undo_test.dart
+  s_b61aed9e5ebdf0::t_4dce4d10280204 1-228
+test/parties/additional_debt_controller_test.dart
+  s_b61aed9e5ebdf0::t_3e324d1be46560 1-587
+test/parties/parties_operations_view_model_test.dart
+  s_b61aed9e5ebdf0::t_168971e01a997b 1-196
+test/parties/parties_session_undo_adapter_test.dart
+  s_b61aed9e5ebdf0::t_70f430984a2c1a 1-543
+test/parties/parties_surface_controller_test.dart
+  s_b61aed9e5ebdf0::t_d9c9f2c9aab374 1-186
+test/parties/parties_surface_test.dart
+  s_b61aed9e5ebdf0::t_7bd59dafc27919 1-518
+test/parties/purchase_analysis_test.dart
+  s_b61aed9e5ebdf0::t_0dbe141c54eab6 1-138
+test/parties/supplier_opening_controller_test.dart
+  s_b61aed9e5ebdf0::t_f9691d317719f3 1-630
+test/parties/supplier_opening_surface_test.dart
+  s_b61aed9e5ebdf0::t_e95e5cc175beb9 1-215
+test/platform/c1_performance_test.dart
+  s_b61aed9e5ebdf0::t_3821b6eac94865 1-135
+test/platform/c1_restart_fixture_test.dart
+  s_b61aed9e5ebdf0::t_ef00265efb6146 1-183
+test/platform/review_performance_test.dart
+  s_b61aed9e5ebdf0::t_d7041c7d2f3909 1-163
+test/platform/visible_performance_test.dart
+  s_b61aed9e5ebdf0::t_34b2f6fcc2a3ab 1-115
+test/reports/build_first_reports_test.dart
+  s_b61aed9e5ebdf0::t_33b4e1b630d4c8 1-127
+test/reports/sales_report_test.dart
+  s_b61aed9e5ebdf0::t_0dcbcd5a240da4 10-21,57,64,71,95,106,132,138,152,159,195,203-215,218-238
+test/reports/saved_report_pdf_viewer_test.dart
+  s_b61aed9e5ebdf0::t_4514430a8f3e3c 1-65
+test/reports/source_collation_presentation_test.dart
+  s_b61aed9e5ebdf0::t_af5295b28e7ace 1-224
+test/sales/sales_history_surface_test.dart
+  s_b61aed9e5ebdf0::t_9a3799d70c8f62 1-100
+test/sales/sales_history_view_model_test.dart
+  s_b61aed9e5ebdf0::t_63379745248ca6 1-60
+test/sales/sales_operations_view_model_test.dart
+  s_b61aed9e5ebdf0::t_2fd7cbbe27dda3 1-160
+test/sales/sales_surface_test.dart
+  s_b61aed9e5ebdf0::t_ee9372770e6acf 1-223
+test/sales/sales_view_model_test.dart
+  s_b61aed9e5ebdf0::t_425edeef5c5589 1-588
+test/sales/sales_workflow_session_test.dart
+  s_b61aed9e5ebdf0::t_61e60297c684ae 1-161
+test/sales/source_sales_completion_test.dart
+  s_b61aed9e5ebdf0::t_8a8aea48460ee1 1-351
+test/settings/portable_settings_controller_test.dart
+  s_b61aed9e5ebdf0::t_d5ba4550e5614a 1-171
+test/settings/settings_reports_surface_test.dart
+  s_b61aed9e5ebdf0::t_331a95b42bbd02 1-154
+test/support/lifecycle_fault_child.dart
+  s_b61aed9e5ebdf0::t_4b0463e3881cf7 1-190
+test/tooling/test_completion_progress_audit.py
+  s_b61aed9e5ebdf0::t_1a19320b8010a6 1-228
+tool/dev_dashboard/README.md
+  s_b61aed9e5ebdf0::t_31327c02771e20 123-149
+tool/dev_dashboard/operations.json
+  s_b61aed9e5ebdf0::t_18c0d2e8087726 37-38,40-46,50-51,53-59,63-64,66-72,230-827
+tool/dev_dashboard/run_benchmarks.py
+  s_b61aed9e5ebdf0::t_2691d6cb4ce540 14,27-30,36-38,412-417,425-430,437-491,504,506-513,577,614-631,644-649
+tool/dev_dashboard/tests/test_app_runner.py
+  s_b61aed9e5ebdf0::t_8f0439a83b0992 17-82,239,243-250
+tool/dev_dashboard/tests/test_c1_operations.py
+  s_b61aed9e5ebdf0::t_27a2ec33ef07bb 1-53
+tool/dev_dashboard/tests/test_review_operations.py
+  s_b61aed9e5ebdf0::t_1f305a4d123c66 1-30
+tool/dev_dashboard/tests/test_visible_operations.py
+  s_b61aed9e5ebdf0::t_a328c384200bc2 1-49
+tool/smoke_bundled_collation.dart
+  s_b61aed9e5ebdf0::t_fe7b02a202a062 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "51cf99d44321f4848e6e96cff83970d968c54092",
+  "prompts": {},
+  "sessions": {
+    "s_4cfb0aecd4cd7c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b2b4-e7e0-7aa0-af3c-4566b631abc3",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_b61aed9e5ebdf0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1baae-c832-7ba0-9f2d-2fecc9bc61fa",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
