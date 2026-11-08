@@ -11,3 +11,5 @@ Consumer adopts engine 8199a5a371358378440032541ab3ce6cba9e5301 import-only anal
 Engine review successor 01d4b5a17aa1092411f7d6ee26394111445e5997 adopted with applicationdev.7: defensive immutable provenance, redacted error source, reviewed tooling/native comment fixes. Constructorconst removal documented; app has no const provenance constructor call. Engine15+49+12focused checks and independent source/numeric rechecks pass. Original benchmark identities remain historical. Consumerchecks/freshhostedCI still required.
 
 Consumer adoption verification:7focused collation/runtime/history checks pass; enforced lock resolution and exact engine source/version/boundary checks pass. Only local application version changed in pubspec.lock. Evidence outputs/completion-review/cubic-engine-adoption-20261109/tests.txt.
+
+Adopt engine test-only manifest-checkout correction 296f56fdcca59c6be6e50b545b621ae2f5f9996e; runtime/API unchanged,8nativehooktests and analyzerpass. Strictmissing-bundle refusal retained.
