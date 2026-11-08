@@ -1,0 +1,35 @@
+docs/how-to/repeated-problems.md
+  s_b61aed9e5ebdf0::t_102e2f6585af78 893-896
+docs/log/2026-11-09-ci-lifecycle-native-assets.md
+  s_b61aed9e5ebdf0::t_0ead35a9c84599 1-9
+docs/log/phase-completion-execution.md
+  s_b61aed9e5ebdf0::t_81b691d2a23fd6 1469-1470
+outputs/completion-review/ci-lifecycle-20261109/analysis.txt
+  s_b61aed9e5ebdf0::t_2b21ba7f92ec25 1-2
+outputs/completion-review/ci-lifecycle-20261109/hosted-failure.txt
+  s_b61aed9e5ebdf0::t_d6e3767e62e152 1-27
+outputs/completion-review/ci-lifecycle-20261109/receipt.json
+  s_b61aed9e5ebdf0::t_f1d889dbd80f09 1-26
+outputs/completion-review/ci-lifecycle-20261109/tests.txt
+  s_b61aed9e5ebdf0::t_7b224273d684e7 1-7
+test/accounting/journal_command_lifecycle_faults_test.dart
+  s_b61aed9e5ebdf0::t_469fd21ce97437 335-338
+test/support/lifecycle_fault_child.dart
+  s_b61aed9e5ebdf0::t_72e0d7540bc644 182-185
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2c0eccd79ad3999b3b82779d9722bffbfb94f694",
+  "prompts": {},
+  "sessions": {
+    "s_b61aed9e5ebdf0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1baae-c832-7ba0-9f2d-2fecc9bc61fa",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
