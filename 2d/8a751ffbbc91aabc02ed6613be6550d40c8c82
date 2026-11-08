@@ -1,0 +1,181 @@
+.gitignore
+  s_b61aed9e5ebdf0::t_51663ab14ff9fd 80-81,89-137
+docs/how-to/repeated-problems.md
+  s_b61aed9e5ebdf0::t_ec68ad8b956ec4 889-892
+docs/how-to/versioning-and-performance.md
+  s_b61aed9e5ebdf0::t_585e6645e0f7d9 20
+docs/log/2026-11-05-completion-scope.md
+  s_b61aed9e5ebdf0::t_e16c7c9890f03d 3
+docs/log/2026-11-06-completion-native-143-milestone.md
+  s_b61aed9e5ebdf0::t_a81b541ceaec65 22-23
+docs/log/2026-11-06-penpot-backend-heap-recovery.md
+  s_b61aed9e5ebdf0::t_cce3d49ee2bd63 5
+docs/log/2026-11-07-completion-controller-oom-checkpoint.md
+  s_b61aed9e5ebdf0::t_7f5ebf8ebf891c 27-28
+docs/log/2026-11-07-completion-step5-restarted-delivery.md
+  s_b61aed9e5ebdf0::t_2b202c559b9de2 11
+docs/log/2026-11-07-interactive-ui-qa.md
+  s_b61aed9e5ebdf0::t_926a421cbadacf 5
+docs/log/2026-11-08-c2-held-supplement-independent-review.md
+  s_b61aed9e5ebdf0::t_f46fd8079c1a06 12-15
+docs/log/2026-11-08-c2-positive-held-source-review.md
+  s_b61aed9e5ebdf0::t_3f1d36c3527a92 12-13
+docs/log/2026-11-08-c3-positive-native-qualification.md
+  s_b61aed9e5ebdf0::t_06c6b78138cc10 5,7,9
+docs/log/2026-11-08-completion-count-auditor.md
+  s_b61aed9e5ebdf0::t_a716f891d46adb 20-21
+docs/log/2026-11-08-durable-transfer-review-repairs.md
+  s_b61aed9e5ebdf0::t_cbbccccc41875f 14-15
+docs/log/2026-11-08-final-python-checks.md
+  s_b61aed9e5ebdf0::t_5dedb5e3e4540b 15-16
+docs/log/2026-11-08-financial-session-undo-build.md
+  s_b61aed9e5ebdf0::t_b64d9d3a6b1b65 5
+docs/log/2026-11-08-penpot-response-text-diagnosis.md
+  s_b61aed9e5ebdf0::t_160aac6c532da2 25-26
+docs/log/2026-11-08-portable-recovery-review-fix.md
+  s_b61aed9e5ebdf0::t_185f467130dd32 18
+docs/log/2026-11-08-source-navigation-delivery-review-fix.md
+  s_b61aed9e5ebdf0::t_b57aecb7d0d6ca 20-21
+docs/log/2026-11-09-cubic-evidence-fixes.md
+  s_b61aed9e5ebdf0::t_066c9406810b42 1-24
+docs/log/2026-11-09-cubic-plan-provenance-fixes.md
+  s_b61aed9e5ebdf0::t_acb42ba6564016 1-7
+docs/log/2026-11-09-cubic-review-closeout.md
+  s_b61aed9e5ebdf0::t_150e9664fa945f 1-5
+docs/log/2026-11-09-cubic-runtime-fixes.md
+  s_b61aed9e5ebdf0::t_3997acb84798f0 1-17
+docs/log/2026-11-09-cubic-status-fixes.md
+  s_b61aed9e5ebdf0::t_ea3f042faf6c6a 1-28
+docs/log/phase-completion-execution.md
+  s_b61aed9e5ebdf0::t_9163e7ef4065a9 1467-1468
+docs/phases/README.md
+  s_b61aed9e5ebdf0::t_46616c2113fdd1 3
+docs/phases/c1-design-approval.md
+  s_b61aed9e5ebdf0::t_cb47ebde8c3557 7,12-13
+docs/phases/completion-app-nonvisual.md
+  s_b61aed9e5ebdf0::t_0264475372a38c 3
+docs/phases/completion-daily-cash-query-contract.md
+  s_b61aed9e5ebdf0::t_78379cfb0e272f 13
+docs/phases/completion-deleted-spending-restoration-contract.md
+  s_b61aed9e5ebdf0::t_215203e978b05a 13
+docs/phases/completion-durable-transfer-correction-contract.md
+  s_b61aed9e5ebdf0::t_d767af75e43947 15
+docs/phases/completion-external-cash-contract.md
+  s_b61aed9e5ebdf0::t_32677624cf2731 13
+docs/phases/completion-parties-contract.md
+  s_b61aed9e5ebdf0::t_fcf8234344ca71 33
+docs/phases/completion-sale-proposal-contract.md
+  s_b61aed9e5ebdf0::t_5c618de4b25e23 5
+docs/phases/completion-sales-view-model-contract.md
+  s_b61aed9e5ebdf0::t_e73986c60ac4db 7
+docs/phases/purchase_proposal-contract.md
+  s_b61aed9e5ebdf0::t_473f474522ac60 3
+docs/phases/remaining-ui-owner-approval.md
+  s_b61aed9e5ebdf0::t_7e422e3411ae86 5,8-9
+docs/phases/supplier-opening-amendment-proposal.md
+  s_b61aed9e5ebdf0::t_15f5e86a33d8c9 3
+docs/reference/sales-view-model.md
+  s_b61aed9e5ebdf0::t_400acfe33d060d 36
+lib/accounting/chicken_editor.dart
+  s_b61aed9e5ebdf0::t_136b7ca2959a7f 48-52
+lib/accounting/daily_metadata_controller.dart
+  s_b61aed9e5ebdf0::t_e1766b101c6359 93
+lib/accounts/metadata_session_undo.dart
+  s_b61aed9e5ebdf0::t_35bda2f070c669 108-111
+lib/parties/additional_debt_session_undo_adapter.dart
+  s_b61aed9e5ebdf0::t_3a6b383ab14dc0 81
+outputs/completion-build/platforms/android-debug.json
+  s_b61aed9e5ebdf0::t_f945ad0a798c46 12-15
+outputs/completion-build/platforms/macos-debug.json
+  s_b61aed9e5ebdf0::t_e5119e4b4cc414 6-9
+outputs/completion-review/catalog-design-review-portable.html
+  s_b61aed9e5ebdf0::t_71682b31eb6e1d 1-2
+outputs/completion-review/completion-count-audit/tests.log
+  s_b61aed9e5ebdf0::t_61d57a234c2520 1-5
+outputs/completion-review/cubic-evidence-publication-manifest.json
+  s_b61aed9e5ebdf0::t_1ad6ddf54e30e5 1-347
+outputs/completion-review/cubic-evidence-storage.json
+  s_b61aed9e5ebdf0::t_1adfe7991917cb 1-10
+outputs/completion-review/cubic-repairs-20261109/scripts-tests.log
+  s_b61aed9e5ebdf0::t_7861e6cdbfa2cc 1-140
+outputs/completion-review/cubic-runtime-20261109/analysis.txt
+  s_b61aed9e5ebdf0::t_51ab43a535d288 1-2
+outputs/completion-review/cubic-runtime-20261109/focused-tests.txt
+  s_b61aed9e5ebdf0::t_4552e992452ad8 1-18
+outputs/completion-review/cubic-runtime-20261109/receipt.json
+  s_b61aed9e5ebdf0::t_7cc1f36c310195 1-20
+outputs/completion-review/cubic-runtime-20261109/red-attempt.txt
+  s_b61aed9e5ebdf0::t_629225b6cec1ea 1-84
+outputs/completion-review/durable-transfer/repair-accounting.log
+  s_b61aed9e5ebdf0::t_f1b6942172eacd 1-235
+outputs/completion-review/durable-transfer/repair-analysis.log
+  s_b61aed9e5ebdf0::t_d16c2575379fdf 1-2
+outputs/completion-review/durable-transfer/repair-boundaries.log
+  s_b61aed9e5ebdf0::t_208673ab1721b7 1
+outputs/completion-review/durable-transfer/repair-green-initial.log
+  s_b61aed9e5ebdf0::t_bbb710a0b2b1ab 1-16
+outputs/completion-review/durable-transfer/repair-green.log
+  s_b61aed9e5ebdf0::t_8b2f04008bde72 1-40
+outputs/completion-review/durable-transfer/repair-red.log
+  s_b61aed9e5ebdf0::t_d8bafc1fa175bf 1-58
+outputs/completion-review/durable-transfer/repair-successor-fixture.log
+  s_b61aed9e5ebdf0::t_3d16547c2c2d59 1-8
+outputs/completion-review/review-stage-001/navigation-analyze-resumed.log
+  s_b61aed9e5ebdf0::t_3e1a661b2aafbb 1-2
+outputs/completion-review/review-stage-001/navigation-tests-resumed.log
+  s_b61aed9e5ebdf0::t_7d23ec9cc5c003 1-19
+outputs/completion-review/review-stage-001/python-final-checks.log
+  s_b61aed9e5ebdf0::t_d9cd132fdf1091 1-202
+outputs/penpot/completion/c2-held-supplement-qualification/root-nav-pilot/c1-final-preservation.json
+  s_b61aed9e5ebdf0::t_5156e7b5ec9be9 1-43
+outputs/penpot/completion/c2-held-supplement-qualification/root-nav-pilot/current-corrected-source-bindings.json
+  s_b61aed9e5ebdf0::t_a44160b33abba7 1-179
+outputs/penpot/completion/c2-held-supplement-qualification/root-nav-pilot/four-board-readbacks.json
+  s_b61aed9e5ebdf0::t_cfea03d92070dc 1-114
+outputs/penpot/completion/c2-held-supplement-qualification/root-nav-pilot/receipt.json
+  s_b61aed9e5ebdf0::t_e4e9884a1bf36e 1-432
+outputs/penpot/completion/c3-positive-native-qualification/root-native-text-observation.json
+  s_b61aed9e5ebdf0::t_c6f1b3f1c0eb24 1-40
+outputs/penpot/completion/c3-positive-native-qualification/root-response-metadata.json
+  s_b61aed9e5ebdf0::t_ecfbb5364e4cea 1-42
+outputs/penpot/completion/export-recovery/backend-heap-change-public.json
+  s_b61aed9e5ebdf0::t_602388acdb9cb5 1-10
+outputs/penpot/completion/export-recovery/continuation-current-checkpoint.json
+  s_b61aed9e5ebdf0::t_dfe6fed5e83331 1-234
+outputs/penpot/completion/export-recovery/control-repair-side-review-register.json
+  s_b61aed9e5ebdf0::t_b0520bebc8cf69 1-1161
+outputs/penpot/completion/export-recovery/current-method-hold-validation.json
+  s_b61aed9e5ebdf0::t_7e8abe4fc0cc7a 1-70
+outputs/penpot/completion/export-recovery/current-oom-native-method-stop.json
+  s_b61aed9e5ebdf0::t_94a681c23a0563 1-127
+outputs/penpot/completion/export-recovery/native-milestone-c05-mobile-balance-repair-v1.json
+  s_b61aed9e5ebdf0::t_d1c5134ef90905 1-84
+outputs/penpot/completion/source/c2-held-positive-states/review-inputs.json
+  s_b61aed9e5ebdf0::t_4f1cc074868b8d 1-266
+scripts/build-flutter-plan.py
+  s_b61aed9e5ebdf0::t_3ea341ede4e00c 7-8,710
+scripts/tests/test_plan_execution_grouping.py
+  s_b61aed9e5ebdf0::t_d6a9ab6c318215 1-20
+test/accounting/daily_metadata_controller_test.dart
+  s_b61aed9e5ebdf0::t_e1321d4652c9c4 1-7,16-137
+test/accounts/metadata_session_undo_test.dart
+  s_b61aed9e5ebdf0::t_cc546b59a64840 146-155
+test/parties/additional_debt_controller_test.dart
+  s_b61aed9e5ebdf0::t_3635aa241089f3 1-2,341-344
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2d8a751ffbbc91aabc02ed6613be6550d40c8c82",
+  "prompts": {},
+  "sessions": {
+    "s_b61aed9e5ebdf0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1baae-c832-7ba0-9f2d-2fecc9bc61fa",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
