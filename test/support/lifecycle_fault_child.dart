@@ -179,7 +179,10 @@ Future<void> main(List<String> args) async {
   final store = opened.value;
   final read = await store.readDocument();
   if (read is! CapabilitySuccess<DocumentSnapshot?> || read.value == null) {
-    throw StateError('Child requires the host-created complete base.');
+    final status = read is CapabilityFailure<DocumentSnapshot?>
+        ? read.code
+        : 'missing_document';
+    throw StateError('Child requires the host-created complete base: $status.');
   }
   armed = true;
   await executeLifecycleCommand(

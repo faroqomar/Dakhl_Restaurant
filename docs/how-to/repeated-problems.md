@@ -890,3 +890,7 @@ Normal Android compilation passed but APK inspection found missing ICU. The oute
 ## 2026-11-09: readback token lifetime diverged from editor/undo state
 
 Stale readback can clear a repository pending token while a controller retains ownership, trapping dismissal. Transient readback can retain the token while its return code loses unknown-outcome classification, clearing captured undo retry. Derive ownership from repository.hasUnknownWrite after readback and preserve commit_unknown classification while authority remains unresolved. Focused16checks and independent recheck pass; see cubic runtime repair receipt.
+
+## 2026-11-09 — Standalone test child bypassed native-asset hooks
+
+Hosted Linux passed 1,425 tests but failed both lifecycle SIGKILL cases before checkpoint: the standalone child could not read its host-created store. The harness used a direct `dart --packages … child.dart` invocation. Switch consumer process composition to `dart run`, matching the engine process tests, so Dart prepares native assets; retain kill/retry/replay assertions. All five lifecycle tests pass locally; hosted Linux successor remains pending, so the native-loader cause is inferred until confirmed. Child errors now report the safe capability code. Avoid changing durable runtime behavior or skipping kill tests to address a process-launch problem. Evidence: docs/log/2026-11-09-ci-lifecycle-native-assets.md.

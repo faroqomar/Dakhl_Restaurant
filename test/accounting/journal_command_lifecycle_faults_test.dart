@@ -332,7 +332,10 @@ void main() {
         final base = lifecycleCodec.decodeState(before.payload);
         await owner.close();
         final child = await Process.start('dart', [
-          '--packages=${File('.dart_tool/package_config.json').absolute.path}',
+          // Resolve native assets for this standalone process too. A direct VM
+          // invocation bypasses hooks and can open a protected, unreadable store
+          // on hosts without globally installed native dependencies.
+          'run',
           File('test/support/lifecycle_fault_child.dart').absolute.path,
           root.path,
           kind,
