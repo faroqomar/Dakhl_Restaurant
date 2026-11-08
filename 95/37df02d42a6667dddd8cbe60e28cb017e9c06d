@@ -1,0 +1,19 @@
+engine-dependency.json
+  s_b61aed9e5ebdf0::t_dbb5522adc1386 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "9537df02d42a6667dddd8cbe60e28cb017e9c06d",
+  "prompts": {},
+  "sessions": {
+    "s_b61aed9e5ebdf0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1baae-c832-7ba0-9f2d-2fecc9bc61fa",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
