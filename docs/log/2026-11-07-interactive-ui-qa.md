@@ -2,7 +2,7 @@
 
 Computer use inspected existing macOS development bundle: sales prototype, menu, sales history, inventory and account settings. Sales history/inventory visibly show empty placeholders; settings reports no saved accounts. Source inspection confirms non-settings routes use Phase01RouteSurface and checkout is demo-only; Completion commands are not fully UI-integrated. This was read-only navigation: no save/import/export/checkout or production-record testing. Existing bundle provenance is not established as current source.
 
-Added opt-in ui_qa_main.dart composition with fresh temporary real-adapter storage and no import/export capability. Targeted analysis/format passed. Native build and writable QA not performed: disk402MiB with repeated prior ENOSPC; building without adequate capacity would repeat known failure. Main entrypoint and engine source unchanged. No full-app pass or UI defect closure claimed. Source harness remains local/uncommitted for review.
+Added opt-in ui_qa_main.dart composition with fresh temporary real-adapter storage and no import/export capability. Targeted analysis/format passed. Native build and writable QA not performed: disk402MiB with repeated prior ENOSPC; building without adequate capacity would repeat known failure. Main entrypoint and engine source unchanged. No full-app pass or UI defect closure claimed. At this November 7 checkpoint the source harness remained local/uncommitted for review; `ui_qa_main.dart` is now included in the submitted source.
 
 Quit requested through UI; subsequent close reported procNotFound, consistent with process exit; no forced process or data deletion. Full end-to-end workflow testing remains blocked by absent UI integration and native build capacity. No merge/release approval.
 

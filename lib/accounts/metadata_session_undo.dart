@@ -105,7 +105,10 @@ FinancialUndoAttempt captureMetadataUndoAttempt({
     }
     if (result is CapabilityFailure<AccountDocument>) {
       ownsPending = repository.hasUnknownWrite;
-      return CapabilityFailure(result.code, result.message);
+      return CapabilityFailure(
+        ownsPending ? 'commit_unknown' : result.code,
+        result.message,
+      );
     }
     return const CapabilityCancelled();
   });

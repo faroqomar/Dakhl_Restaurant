@@ -17,3 +17,5 @@ Timing: exact test duration appears in tests.log; wall time between storage base
 ## Independent review and root decoding repair
 
 Independent review passed the20test corecount/atomicwrite behavior and found a P3 deepJSON RecursionError escaped stable refusal. Root added a subprocess regression, observed exit1 instead of2, caught the decoding exception, and21tests passed. Two earlier unittest module import errors are retained separately and are not behavioral REDs. Focused independent review passed21tests/6bindings. Root used the reviewed CLI to refresh current aggregates:33closed/28partial/152withoutprogress. Only aggregate JSON changes follow --write; checklist evidence/approval remains human-reviewed. Historical aggregate extension fields remain retained. [Repair record](../../outputs/completion-review/completion-count-audit/independent-repair-root-record.json).
+
+Publication evidence, 2026-11-09: [tests.log](../../outputs/completion-review/completion-count-audit/tests.log). These are retained historical receipts, not a new execution or approval.

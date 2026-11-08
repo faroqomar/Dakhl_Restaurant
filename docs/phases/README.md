@@ -1,6 +1,6 @@
 ## Completion phase — 2026-11-05
 
-[One-phase scope, dependencies, references and readiness](completion-scope-readiness.md). Original phase IDs remain work-package references. Step 1 only; no implementation approval.
+[One-phase scope, dependencies, references and readiness](completion-scope-readiness.md). Original phase IDs remain work-package references. This link preserves the Step 1 scope record. Later owner approvals authorized implementation and local validation; see the [current successor closeout](../log/2026-11-08-remaining-completion-closeout.md).
 
 Current continuation, 2026-10-31: **BLOCKED for joint merge/completion.** iOS simulator9/9 and original app6f9 hosted6/6 / enginebca hosted2/2 verified. Android acceptance and historical retention remain unresolved; new guard follow-up CI and exact-revision owner approval remain pending. [Current evidence](02-native-verification-2026-10-31.md). Earlier dated entries below are history.
 

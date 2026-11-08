@@ -1,6 +1,6 @@
 # Supplier opening amendment policy proposal
 
-Date:2026-11-08. Status: owner-approved on2026-11-08; implementation/verification in progress. Scope: remaining C5-03 supplier opening-debt creation/editing. Current [ADR0021](../decisions/0021-completion-financial-policy.md) says, “No backfill/opening adjustment … follows.” Its accepted history policy also leaves opening counterparts for verification/acceptance. Broad UI/source approval did not choose these accounting semantics.
+Date:2026-11-08. Status: owner-approved on 2026-11-08; implemented and locally verified in the [supplier-opening build receipt](../log/2026-11-08-supplier-opening-amendment-build.md). Scope: remaining C5-03 supplier opening-debt creation/editing. Before this amendment, [ADR0021](../decisions/0021-completion-financial-policy.md) said, “No backfill/opening adjustment … follows.” Its approved supplier-opening supplement now supersedes that exclusion within the policy below. Its accepted history policy also leaves opening counterparts for verification/acceptance. Broad UI/source approval did not choose these accounting semantics.
 
 ## Exact proposed policy
 

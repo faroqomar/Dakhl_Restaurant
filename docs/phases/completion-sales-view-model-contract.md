@@ -4,7 +4,7 @@ Status: bounded implementation contract under the authorized Completion objectiv
 
 ## Ownership and authority
 
-Dakhl_Restaurant owns observable presentation state and composition of its existing ticket workspace controller, account-scoped catalog and industry draft safeguards. Madar_Engine owns shared quote, exact values, stock and workspace contracts. Consume reviewed public packages at runtime pin `d316fd6076375daa3f412889f73eaebfeeb5d4d4`; engine implementation/API/Design N/A unless a concrete missing shared contract is demonstrated. Do not copy shared algorithms.
+Dakhl_Restaurant owns observable presentation state and composition of its existing ticket workspace controller, account-scoped catalog and draft safeguards. Madar_Engine owns shared quote, exact values, stock and workspace contracts. Consume reviewed public packages at runtime pin `d316fd6076375daa3f412889f73eaebfeeb5d4d4`; engine implementation/API/Design N/A unless a concrete missing shared contract is demonstrated. Do not copy shared algorithms.
 
 The current account repository remains schema11. The schema12 journal/sale command candidates are isolated and cannot become the live checkout persistence path in this slice. No financial posting, receipt allocation, migration, cutover selection, account reset, UI changes or new policy follows from this contract.
 

@@ -1,6 +1,6 @@
 # Completion nonvisual catalog and account settings
 
-Date: 2026-11-07. Status: implemented candidate; independent review and UI/repository integration pending. No persistence writes or new screen design.
+Date: 2026-11-07. Status: implemented candidate; independent review and UI/repository integration pending. The catalog read model and settings draft do not write. `AccountSettingsController.save()` persists through `repository.save`; this bounded foundation added no screen design.
 
 ## Catalog read model
 

@@ -1,6 +1,6 @@
 # Purchase proposals
 
-Status: local hypothetical candidates only. No repository commit, journal posting or UI integration.
+Status: the pure proposal API returns hypothetical candidates without writing. The current invoice preview/payment-allocation UI and durable spending commands consume these candidates; journal-backed submission and repository commits belong to those callers. See the [current successor closeout](../log/2026-11-08-remaining-completion-closeout.md).
 
 `PurchaseProposals` composes immutable account candidates from a codec-validated baseline. The caller supplies IDs and timestamp; no random generator, clock, storage or side effect exists. Returned records require separately approved journal mappings, atomic persistence and stale-fence handling before any save flow can consume them.
 

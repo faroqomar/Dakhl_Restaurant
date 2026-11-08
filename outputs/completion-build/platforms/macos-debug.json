@@ -3,5 +3,8 @@
   "command": "flutter build macos --debug --no-pub",
   "executable": "build/macos/Build/Products/Debug/Dakhl_Restaurant Dev.app/Contents/MacOS/Dakhl_Restaurant Dev",
   "executableSHA256": "4e9cf0b12c81ddf51e790c07519381d57a79a110b28cb1efb7b80155370ec8af",
-  "installedOrRuntimeVerified": false
+  "installedOrRuntimeVerified": false,
+  "provenanceStatus": "Historical artifact observation only; exact dirty source/tool identities were not captured and cannot be reconstructed.",
+  "reproducibleSourceClaim": false,
+  "supersededBy": "outputs/completion-review/remaining-completion-001/normal-artifact-identities-final.json"
 }

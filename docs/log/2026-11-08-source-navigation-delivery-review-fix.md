@@ -17,3 +17,5 @@ Canonical outputs: `outputs/completion-review/review-stage-001/navigation-analyz
 ## Storage
 
 Resume baseline: free93,631,332KiB; Git18,441,904KiB/build2,183,840KiB/outputs7,399,536KiB. This lane created only the compact analyzer/test logs and this receipt, with no retained fixture roots, screenshots, exports or copied builds. Final sample: free93,580,656KiB; Git18,441,904KiB/build2,215,836KiB/outputs7,399,540KiB. Git unchanged, build+31,996KiB and outputs+4KiB from the serialized compiler/log batch; globalfree−50,676KiB. shared directory/global movement cannot be assigned to this lane. Zero cleanup: no obsolete task-owned artifact remains.
+
+Publication evidence, 2026-11-09: [navigation-analyze-resumed.log](../../outputs/completion-review/review-stage-001/navigation-analyze-resumed.log), [navigation-tests-resumed.log](../../outputs/completion-review/review-stage-001/navigation-tests-resumed.log). These are retained historical receipts, not a new execution or approval.

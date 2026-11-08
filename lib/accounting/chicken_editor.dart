@@ -45,7 +45,11 @@ class _ChickenEditorState extends State<_ChickenEditor> {
   bool _busy = false, _dirty = false;
   String? _error;
   Future<void> _save() async {
-    if (_busy || (!widget.controller.needsReadback && !widget.canWrite())) {
+    if (_busy) return;
+    if (!widget.controller.needsReadback && !widget.canWrite()) {
+      setState(
+        () => _error = 'الحفظ غير متاح الآن. أكمل العملية المعلقة أو حدّث الحساب ثم حاول مرة أخرى.',
+      );
       return;
     }
     setState(() => _busy = true);

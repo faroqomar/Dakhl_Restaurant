@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:dakhl_restaurant/accounts/legacy_account_codec.dart';
 import 'package:dakhl_restaurant/accounts/portable_journal_codec.dart';
 import 'package:dakhl_restaurant/parties/additional_debt_commands.dart';
@@ -336,6 +338,10 @@ void main() {
     expect(await undoEdit.execute!(), isA<DurableCommandSuccess>());
     expect((c.account.toJson()['debts'] as List).single['amount'], 1000);
     final restored = codec.decodeState(c.snapshot.payload);
+    final undoIntent = jsonDecode(
+      restored.receipts.last.identity.canonicalPayloadIdentity,
+    ) as Map;
+    expect(undoIntent['reason'], 'تراجع عن التغيير السابق');
     final undoCreate = AdditionalDebtSessionUndoAdapter(
       controller: c,
       identity: original.identity,

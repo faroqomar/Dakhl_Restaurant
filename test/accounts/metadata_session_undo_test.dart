@@ -143,6 +143,16 @@ void main() {
     expect(undo.length, 1);
     final committed = store.document!.revision;
     store.throwAfterCommit = false;
+    store.readFailure = 'unavailable';
+    expect(
+      (await undo.undo() as CapabilityFailure<void>).code,
+      'commit_unknown',
+    );
+    expect(undo.needsReadback, true);
+    expect(undo.length, 1);
+    expect(repository.hasUnknownWrite, true);
+    expect(store.document!.revision, committed);
+    store.readFailure = null;
     expect(await undo.undo(), isA<CapabilitySuccess<void>>());
     expect(store.document!.revision, committed);
     expect(undo.length, 0);

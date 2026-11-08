@@ -33,6 +33,6 @@ The model freezes complete candidate submissions before listener notifications. 
 
 The candidate has20focused ViewModel cases and48sales tests passing after the fractional-plus repair; two-file static analysis is clean. Initial worker evidence includes140frozen Electron reference tests. See `outputs/completion-review/sales-view-model/` for original and repaired source identities, retained red runs and review dispositions. These are host tests with isolated fixtures, not native acceptance.
 
-C2 UI design approval and route binding remain pending. This model supplies neither operational checkout, debounced widget autosave, receipt numbering/actions, financial journal posting, schema12 activation, live cutover nor delivery approval. The schema11 account runtime and isolated schema12 journal command candidate remain separate.
+At this nonvisual checkpoint, C2 UI design approval and route binding remained pending. Later approved implementation binds the model through `_bindSales` and `SalesSurface`; see the [current successor closeout](../log/2026-11-08-remaining-completion-closeout.md). The following exclusions describe the original nonvisual slice. This model supplies neither operational checkout, debounced widget autosave, receipt numbering/actions, financial journal posting, schema12 activation, live cutover nor delivery approval. The schema11 account runtime and isolated schema12 journal command candidate remain separate.
 
 Contract: [Completion sales ViewModel](../phases/completion-sales-view-model-contract.md).

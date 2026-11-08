@@ -886,3 +886,7 @@ Symptom: profile benchmark target changes fail codesign because `madar_icu_colla
 ## 2026-11-09: stale outer Flutter hook cache omitted new native assets
 
 Normal Android compilation passed but APK inspection found missing ICU. The outer build_hooks stamp predated the added package hook, so inner positive hook cache did not invalidate it. Preserve the obsolete stamp/native manifest, invalidate only that stamp, rebuild once and inspect actual payload/license/asset URI. Successor002 payload matches the qualified native fixture. Never equate compilation with artifact completeness. A separate inspection mistake treated NOTICES.Z as zlib; it is GZIP. Correct the checker and preserve the failed inspection. Evidence: remaining-completion-001/android-outer-hook-cache-successor.json and normal-artifact-identities-final.json.
+
+## 2026-11-09: readback token lifetime diverged from editor/undo state
+
+Stale readback can clear a repository pending token while a controller retains ownership, trapping dismissal. Transient readback can retain the token while its return code loses unknown-outcome classification, clearing captured undo retry. Derive ownership from repository.hasUnknownWrite after readback and preserve commit_unknown classification while authority remains unresolved. Focused16checks and independent recheck pass; see cubic runtime repair receipt.

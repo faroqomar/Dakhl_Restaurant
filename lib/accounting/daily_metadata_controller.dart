@@ -90,6 +90,7 @@ final class DailyMetadataController {
     _busy = true;
     try {
       final result = await repository.reconcile();
+      _ownsPending = repository.hasUnknownWrite;
       if (result is CapabilitySuccess<AccountDocument>) {
         _ownsPending = false;
         _expected = repository.snapshot;

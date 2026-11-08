@@ -78,7 +78,7 @@ final class AdditionalDebtSessionUndoAdapter implements FinancialUndoAdapter {
           ? null
           : BigInt.from(prior.single['amount']! as int),
       note: original.kind != 'edit' ? '' : prior.single['note']! as String,
-      reason: 'Undo acknowledged additional debt change',
+      reason: 'تراجع عن التغيير السابق',
       recordedAt: CatalogFormatters.currentIsoTimestamp(),
     );
     final proposal = controller.coordinator.evaluate(command, current);

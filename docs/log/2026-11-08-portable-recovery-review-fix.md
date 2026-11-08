@@ -15,7 +15,7 @@ Date: 2026-11-08. Scope: approved source-reference portable data UI and reviewer
 
 `flutter test test/accounts/portable_account_transfer_controller_test.dart test/accounts/portable_accounts_surface_test.dart test/app/portable_restaurant_host_test.dart`: 31 passed. Includes complete-envelope previous recovery/fresh authority, legacy refusal, dirty blocking, exact unknown-publication readback, no-write preview/cancel, import counts and two assembled reload regressions (same fence/new revision and fresh fence). Existing import/export, 320px/200% text-scale and lifecycle cases also passed.
 
-Targeted `dart analyze` for both changed source files and all three test files: no issues. The last two source-only safety refinements (fresh-fence acknowledgement and avoiding unchanged reload recreation) landed after the scoped test run and are assigned to the root final aggregate recheck. No native/device/release claim.
+Targeted `dart analyze` for the transfer controller and accounts surface, plus all three test files: no issues. The change also includes `portable_restaurant_host.dart`; this sentence does not claim that host was in that original scoped analyzer invocation. The later [successor closeout](../log/2026-11-08-remaining-completion-closeout.md) records whole-project analysis and affected rechecks. The last two source-only safety refinements (fresh-fence acknowledgement and avoiding unchanged reload recreation) landed after the scoped test run and are assigned to the root final aggregate recheck. No native/device/release claim.
 
 ## Storage and execution
 

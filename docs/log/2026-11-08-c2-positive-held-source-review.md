@@ -9,3 +9,5 @@ All24 photo hashes/sourceURLs/bounds/object-fit values and canonicalPNGpayloads 
 Owner approval, mobiletyped-name, native-confirmation visuals and runtime acceptance remain pending. No UI/engine/API/pin changes; engine responsibility N/A. Canonical source/gallery/proposal stay unchanged. Evidence: outputs/completion-review/c2-held-positive-independent-review.json and outputs/penpot/completion/source/c2-held-positive-states/review-inputs.json.
 
 Storage: reviewer free109385512→109263256KiB; evidence17928KiB and Gitdirs unchanged, zero temporary stores/scratch. One cross-realm diagnostic assertion and one glyphcount assumption required correction; neither identified a candidate defect.
+
+Publication evidence, 2026-11-09: [review-inputs.json](../../outputs/penpot/completion/source/c2-held-positive-states/review-inputs.json). These are retained historical receipts, not a new execution or approval.
