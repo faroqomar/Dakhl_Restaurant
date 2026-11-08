@@ -6,5 +6,7 @@
   "installedOrRuntimeVerified": false,
   "provenanceStatus": "Historical artifact observation only; exact dirty source/tool identities were not captured and cannot be reconstructed.",
   "reproducibleSourceClaim": false,
-  "supersededBy": "outputs/completion-review/remaining-completion-001/normal-artifact-identities-final.json"
+  "supersededBy": "outputs/completion-review/remaining-completion-001/normal-artifact-identities-final.json",
+  "qualificationEligible": false,
+  "missingOriginalInputIdentity": "Unavailable; no matching original dirty-input manifest was retained. Successor receipt identifies a later artifact, not this historical binary."
 }
