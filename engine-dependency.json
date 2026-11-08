@@ -1,11 +1,11 @@
 {
   "engine": "Madar_Engine",
   "status": "Reviewed local development candidate. Three-target ARM64 bundled conformance and macOS share-picker handoff verified; physical-phone, final visual/activation and delivery gates remain separately recorded.",
-  "git_commit": "8199a5a371358378440032541ab3ce6cba9e5301",
+  "git_commit": "01d4b5a17aa1092411f7d6ee26394111445e5997",
   "packages": {
     "madar_application": {
       "path": "../Madar_Engine/packages/application",
-      "version": "0.1.0-dev.6"
+      "version": "0.1.0-dev.7"
     },
     "madar_flutter_adapters": {
       "path": "../Madar_Engine/packages/flutter_adapters",
