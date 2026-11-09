@@ -1,0 +1,97 @@
+{
+  "operationId": "orders.process",
+  "label": "Process saved checkout and render cleared cart",
+  "appVersion": "0.0.0+1",
+  "sourceCommit": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+  "sourceDirty": true,
+  "sourceFingerprint": "a8d762bd142450b5097fb55705fa034facfef4565af2eb21e71974ad99650429",
+  "engineCommit": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+  "targetId": "macos-host",
+  "schemaVersion": 1,
+  "protocolVersion": 1,
+  "status": "passed",
+  "buildMode": "profile",
+  "scenarioVersion": "1",
+  "measurementKind": "workflow",
+  "platform": "darwin",
+  "fixtureFingerprint": "a8733484102c23e54c0c9daee695416a44075b55e24bfe2c37cabb5fe45d0ffd",
+  "iterations": 1,
+  "requestedIterations": 1,
+  "workloadHash": "a8733484102c23e54c0c9daee695416a44075b55e24bfe2c37cabb5fe45d0ffd",
+  "timing": {
+    "medianMs": 135.186,
+    "p95Ms": 135.186,
+    "minMs": 135.186,
+    "maxMs": 135.186
+  },
+  "resources": {
+    "ramPeakMb": 221.085696,
+    "cpuAveragePercent": 88.0951244346847,
+    "cpuPeakPercent": 145.23565082493369,
+    "cpuSeconds": 0.23070020833333338,
+    "sampleCount": 14,
+    "intervalMs": 20,
+    "windowSeconds": 0.2618762500351295,
+    "cpuNormalization": "one-logical-core-100-percent",
+    "ramScope": "sampled-process-resident-peak",
+    "boundary": "host-start-to-end-marker-receipt"
+  },
+  "startup": {
+    "processToReadyMs": {
+      "medianMs": 1970.8253330318257,
+      "p95Ms": 1970.8253330318257,
+      "minMs": 1970.8253330318257,
+      "maxMs": 1970.8253330318257
+    },
+    "launchCount": 1
+  },
+  "samplesMs": [
+    135.186
+  ],
+  "startedAt": "2026-11-08T20:22:04.796529+00:00",
+  "finishedAt": "2026-11-08T20:22:07.162454+00:00",
+  "environment": {
+    "os": "Darwin",
+    "osVersion": "27.2",
+    "architecture": "arm64",
+    "cpuModel": "Apple M1 Pro",
+    "hardwareModel": "MacBookPro18,3",
+    "logicalCpuCount": 8,
+    "pythonVersion": "3.13.0",
+    "toolVersion": "1.0.0-dev.1",
+    "sampler": "macos-libproc-taskinfo",
+    "cpuPrecision": "native-cumulative-Mach-ticks/timebase; interval-derived-percent",
+    "processScope": "direct-child-only; excludes-descendants",
+    "startupCacheState": "fresh-process; OS caches uncontrolled",
+    "toolSourceFingerprint": "2a7be23029253798bfcc197e2411edc3b9b4037ba1384ba6b24a75e5ed428086",
+    "flutterVersion": "3.47.8",
+    "dartVersion": "3.13.7",
+    "appleToolchain": {
+      "xcode": "Xcode 27.2\nBuild version 27B52",
+      "macosSdkBuild": "26B118"
+    },
+    "appBenchmarkRunnerFingerprint": "7f6e314798f13730b1d87a18d5898ee99db0033967a6cceb3cbd672e5f463f5f",
+    "benchmarkToolsCommit": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+    "benchmarkToolsFingerprint": "2a7be23029253798bfcc197e2411edc3b9b4037ba1384ba6b24a75e5ed428086"
+  },
+  "diagnostics": [],
+  "cleanupComplete": true,
+  "hardwareId": "ca9b90ae4eb4c205db80db02f7a87729bddeb2f5882ca17998d25d347ae5e8fa",
+  "comparabilityKey": "696cff4d1d5ebf2cb2f719121e05825f86998718e6fb168adfdd11ec688a6cc6",
+  "resourceWindowScope": "One host start/end window: actual surface command-to-raster samples plus inter-iteration fresh real-adapter setup, full-state verification, reopen and teardown. Elapsed excludes those stages and native input dispatch; checkout excludes paid confirmation dialog. Fixed 800x600 logical viewport at 2x DPR. RAM/CPU are not per-sample isolated.",
+  "fixtureProfile": "visible-operations-v1",
+  "runtimeEngineIdentity": {
+    "gitCommit": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+    "manifestFingerprint": "d6d86b7d5d3b1e73165ec67ec07fd640dc7329c32d502e3f5cfab2974d89df24",
+    "sourceFingerprint": "a9fdec8dccdc8b207964ca7e4309128a8c20665225c654bf697c8bc9211db01c",
+    "packageVersions": {
+      "madar_application": "0.1.0-dev.6",
+      "madar_data": "0.1.0-dev.2",
+      "madar_domain": "0.1.0-dev.5",
+      "madar_flutter_adapters": "0.1.0-dev.3",
+      "madar_icu_collation": "0.1.0-dev.2"
+    },
+    "resolutionFingerprint": "22317a26ab78aebeb6444d789cc9dfa265f9360598c181882562ff38928d6f43"
+  },
+  "scope": "Prepared one-line cash checkout through acknowledged persistence and peer synchronization to completed native raster of the real SalesSurface cleared cart. Paid confirmation dialog and native input dispatch excluded. Fixed 800x600 logical viewport at 2x DPR; 20 products and 200 historical cash rows. Fresh real adapter per sample. Setup, exact verification/reopen and cleanup excluded from elapsed, included between samples in broad sampled RAM/CPU window."
+}

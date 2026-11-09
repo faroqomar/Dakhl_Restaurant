@@ -1,28 +1,28 @@
-# دمج مراحل خطة Flutter
+# Consolidate Flutter plan phases
 
-الحالة: تعديل خطة وتوثيق فقط؛ تنفيذ Flutter لم يبدأ. التاريخ: 2026-10-27، Asia/Baghdad.
+Status: plan/documentation change only; Flutter implementation had not started. Date: 2026-10-27, Asia/Baghdad.
 
-## الطلب
+## Request
 
-طلب المالك البحث عن المراحل التي يمكن دمجها ودمجها. بقيت متطلبات المنصات والحفظ والتصميم والصور والميزات كما اعتمدت في المهمة السابقة.
+The owner requested identifying and merging phases that could be combined. Platform, persistence, design, image and feature requirements remained as approved in the previous task.
 
-## التغيير والسبب
+## Change and rationale
 
-أُعيد ترتيب 19 مرحلة إلى 12 مرحلة من 00 إلى 11، بدمج التصميم والتنقل، والبيع والمسودات والتعليق، والخانات واليومي والقاصة، والموردين والمواد، والمشتريات والتسديد، والكشف ومراجعة اليوم والتقارير. تجميع مسار الفاتورة والتسديد يزيل اعتماده الداخلي على تسليم لاحق، وتجميع اليومي والقاصة يجعل التحقق من التحويل ومصدر المصروف مساراً واحداً.
+Reorganized 19 phases into 12, numbered 00–11, combining design/navigation; sales/drafts/held orders; categories/daily accounts/cashbox; suppliers/materials; purchases/payments; and statements/day review/reports. Combining invoice/payment removes an internal dependency on a later delivery; combining daily accounts/cashbox makes transfer/funding-source verification one workflow.
 
-بقيت بنود كل مسار ضمن عناوين مستقلة داخل المرحلة المدمجة. احتُفظ بجميع الصور وبيان الالتقاط، مع تحويل أرقامها إلى الخطة الجديدة في المعرض. أُضيفت خريطة أرقام وأسباب الدمج وتدقيق البنود، وحُفظت النسخة السابقة بوصفها تاريخية مع إصلاح روابطها واستبعاد Markdown المؤرشف من الفهرسة. حُدّثت الصفحات المقروءة والفهارس والتبعيات ومعايير قبول MVP والقرار 0012.
+Each original path's items remain under separate headings in its consolidated phase. All images and the capture manifest were retained, with gallery phase numbers mapped to the new plan. Added a phase map, merge rationale and item audit. Archived the previous version, repaired its links and excluded archived Markdown from indexing. Updated readable pages, indexes, dependencies, MVP acceptance and decision 0012.
 
-## التحقق والقيود
+## Verification and limits
 
-- نجح فحص الحفاظ على المصدر الأصلي للخطة: بيانات المراحل الـ19 الأساسية مطابقة للنسخة المؤرشفة، وكل مرحلة سابقة لها مالك واحد ضمن المراحل الـ12 الجديدة.
-- احتُفظ بـ89 بند عمل و39 معيار قبول خاص بالميزات. فُحص وجود كل بند بعد تحديث مراجع المراحل في ملفه الجديد، مع حفظ بوابات القبول العامة لكل مرحلة.
-- فُحصت بصمات الصور الـ179 دون تغيير، وحُفظت جميع روابط الصور الخاصة بكل مرحلة قديمة ضمن مالكها الجديد.
-- نجحت روابط Markdown وHTML للحزمة الحالية والمؤرشفة، والتحقق من اتجاه التبعيات إلى مراحل أسبق، وعدم وجود مراجع تنفيذية نشطة لأرقام 12–18. كل Markdown المؤرشف يحمل hindsight:ignore.
-- نجح فحص المعرض في Electron: 179 صورة، و12 مرشح مرحلة كل منها يعرض صوراً، و14 مرجع تقرير، وبحث invoice يعرض نتائج، ولا صور ظاهرة مكسورة. الأدلة المحلية: dist/flutter-phase-merge-validation.json وdist/flutter-phase-merge-gallery-qa.json.
-- شُغلت memory sync ثم memory check، وأظهر الفحص 88 مصدراً، وخدمة سليمة، وطلبات قيد المعالجة دون عمليات فاشلة. لم تُعلن الفهرسة مكتملة. النتيجة المفصلة المحلية: dist/flutter-phase-merge-memory-check.json.
+- Original-plan preservation check passed: the 19 original phase definitions match the archive, and every previous phase has exactly one owner among the 12 new phases.
+- Preserved 89 work items and 39 feature-specific acceptance criteria. Every item was found in its new file after phase-reference updates; each phase retains the common acceptance gates.
+- Checked all 179 image hashes unchanged; every old phase's image links remain under its new owner.
+- Markdown/HTML links passed for current/archived packages; dependency direction points to earlier phases; no active implementation references use numbers 12–18. All archived Markdown carries hindsight:ignore.
+- Electron gallery verification passed: 179 images, 12 phase filters each showing images, 14 report references, invoice search returning results and no broken visible images. Local evidence: dist/flutter-phase-merge-validation.json and dist/flutter-phase-merge-gallery-qa.json.
+- Ran memory sync then memory check: 88 sources, healthy service, processing requests and no failed operations. Indexing was not declared complete. Detailed local result: dist/flutter-phase-merge-memory-check.json.
 
-لا توجد نتيجة جديدة لاختبارات التطبيق؛ لم يتغير مصدر التطبيق أو بيانات المطعم أو صور المرجع. نجاح 140 اختباراً في السجل السابق يخص خط الأساس السابق ولا يُعرض كنتيجة جديدة لهذه المهمة.
+No new application-test result exists for this task. Application source, restaurant data and reference images were unchanged. The earlier record's 140 passing tests belong to its previous baseline and are not presented as a new result here.
 
-## الخطوة التالية
+## Next action
 
-استخدام [الخطة الحالية](../planning/flutter-rebuild/README.md) وخريطة المراحل الجديدة عند بدء التنفيذ. المراحل كلها ما زالت مخططة؛ تعديلات التصميم تُقرر مع المالك عند الوصول لكل مرحلة.
+Use the [current plan](../planning/flutter-rebuild/README.md) and new phase map when implementation begins. All phases remain planned; design edits are decided with the owner at each phase.

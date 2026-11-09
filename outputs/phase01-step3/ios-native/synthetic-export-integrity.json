@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/Users/eros/Library/Developer/CoreSimulator/Devices/4445755D-8F85-40F6-94C4-1ABF06D23981/data/Containers/Shared/AppGroup/6C0C2177-A610-4CC9-B873-914597963D3B/File Provider Storage/dakhl_restaurant_phase00_synthetic.json",
+    "bytes": 112,
+    "sha256": "857bf114be7b70a0608a623a39310df746ed1cc125657f4929b58c152d1f6f12",
+    "synthetic_message_match": true,
+    "sequence": 1,
+    "format": "dakhl_restaurant.phase00.synthetic.v1"
+  },
+  {
+    "path": "/Users/eros/Library/Developer/CoreSimulator/Devices/4445755D-8F85-40F6-94C4-1ABF06D23981/data/Containers/Data/Application/57116C33-81F7-4EF2-942F-D18916A1F69C/tmp/995FA013-8CA3-4DB3-B08E-666464849C9E/dakhl_restaurant_phase00_synthetic.json",
+    "bytes": 112,
+    "sha256": "857bf114be7b70a0608a623a39310df746ed1cc125657f4929b58c152d1f6f12",
+    "synthetic_message_match": true,
+    "sequence": 1,
+    "format": "dakhl_restaurant.phase00.synthetic.v1"
+  },
+  {
+    "path": "/Users/eros/Library/Developer/CoreSimulator/Devices/4445755D-8F85-40F6-94C4-1ABF06D23981/data/Containers/Data/Application/57116C33-81F7-4EF2-942F-D18916A1F69C/tmp/dakhl_restaurant_phase00_synthetic.json",
+    "bytes": 112,
+    "sha256": "857bf114be7b70a0608a623a39310df746ed1cc125657f4929b58c152d1f6f12",
+    "synthetic_message_match": true,
+    "sequence": 1,
+    "format": "dakhl_restaurant.phase00.synthetic.v1"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "campaignId": "completion-review-ios-001",
+  "targetId": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
+  "fixtureId": "26c6f1f7d756bc15701b56f21381943abcefbfa529881f468dab041ac9c2a14d",
+  "context": {
+    "platform": "ios"
+  },
+  "stages": [
+    {
+      "id": "guard",
+      "kind": "preflight",
+      "maxAttempts": 2
+    },
+    {
+      "id": "ios-pilot",
+      "kind": "pilot",
+      "maxAttempts": 2
+    }
+  ]
+}

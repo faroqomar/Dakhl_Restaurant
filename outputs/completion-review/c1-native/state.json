@@ -1,0 +1,16 @@
+{
+  "attempts": [],
+  "campaignId": "c1-native-pilot-001",
+  "identity": {
+    "contextFingerprint": "5751c268f50dc0beac6f258bee1be74f2a4d869faf6f3c5a77aad393f90d6459",
+    "engineRevision": "d316fd6076375daa3f412889f73eaebfeeb5d4d4",
+    "fixtureId": "dd02500356abe79d58bf707cd58c59e0e7c0ae7b2c9b833dc04a5f813c0bebcd",
+    "inputFingerprint": "443b8c942520c99cc6bd35cc4a597ac8fd0c9ad4eb37b54b3457c8dd6d9ac641",
+    "planFingerprint": "d21b60641ca687572091b7aac3b2341cb768143df02bb0a0ced0302412ab57df",
+    "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+    "targetId": "unselected-ios-candidate",
+    "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+  },
+  "planDigest": "d21b60641ca687572091b7aac3b2341cb768143df02bb0a0ced0302412ab57df",
+  "schemaVersion": 1
+}

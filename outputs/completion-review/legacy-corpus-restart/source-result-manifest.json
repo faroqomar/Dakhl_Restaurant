@@ -1,0 +1,104 @@
+{
+  "format": "dakhl-legacy-corpus-source-result-manifest-v1",
+  "generatedUtc": "2026-11-08T07:33:30.086052+00:00",
+  "canonicalAttempt": "attempt-03",
+  "status": "passed",
+  "engineRevision": "ac8b4edc2c915ed22c0991685c33967b3360e7fa",
+  "engineRuntimeApiChanges": "N/A: existing public AccountsRepository over real PowerSyncLocalDocumentWorkspaceStore",
+  "host": "Dart3.13.7 macos_arm64; existing resolved package config/assets; no Flutter/pub/build",
+  "cases": {
+    "positive": 23,
+    "protectedRejections": 4,
+    "missingStoreGuard": true
+  },
+  "exportBoundary": "Public AccountsRepository.codec.encode, shared by AccountsViewModel.exportBytes; no mounted UI/native file picker",
+  "corpusSha256": "53cf4d356cb24fcb6309591d9587f8d74ad3bab0b8918a39980f7fabdf373e83",
+  "authoritativeSourceManifest": "attempt-03/result.json sourceBefore/sourceAfter",
+  "ownedSources": {
+    "test/accounts/legacy_corpus_restart_conformance_driver.dart": "d770f22f8a26008e003ff4c637024b477767130c5f20bbeeadfd877d8ab9e21c",
+    "test/accounts/support/legacy_corpus_restart_child.dart": "51b38511b1997992756620d96454c9a7a583151dbaa93b993c47412be168ead0"
+  },
+  "receipts": {
+    "attempt-01/result.json": {
+      "bytes": 6345,
+      "sha256": "f46e37379703360b6d54c677c1ca828c4fd28ebf0cefd8737294be3b65a75004"
+    },
+    "attempt-01/verify-process.json": {
+      "bytes": 825,
+      "sha256": "ff51d5eb7b7b6dbd777cb1b8d696d01b358da120ceaa8af19b87969c974d6ed6"
+    },
+    "attempt-01/verify.json": {
+      "bytes": 345241,
+      "sha256": "5a3994df4f62718eff5051e08e4b367960ffb645f4b0c5d2cdecb3247db92862"
+    },
+    "attempt-01/writer-process.json": {
+      "bytes": 825,
+      "sha256": "136f7e5519437a33eaf755ca08db8f8bdd840c9d7ef85843aac7e92a8f1dcab4"
+    },
+    "attempt-01/writer.json": {
+      "bytes": 703506,
+      "sha256": "ab08d48bc7cfb16cef52459fbfe6af65a5c4327430f33c0e034d1219a9e6805b"
+    },
+    "attempt-02/result.json": {
+      "bytes": 6390,
+      "sha256": "adb2d26ede3fcf97f2d950b6edbd45d962f8d978511cec2edcce2e6072abe3f0"
+    },
+    "attempt-02/verify-process.json": {
+      "bytes": 825,
+      "sha256": "5776681d58b283815d04b8051306ac253503d9e585997bc1600e54bbf692ec3c"
+    },
+    "attempt-02/verify.json": {
+      "bytes": 345241,
+      "sha256": "ff19b018124059e258ffc4629a95236bc4be6f97a47e9c54018d29aae863fc1c"
+    },
+    "attempt-02/writer-process.json": {
+      "bytes": 825,
+      "sha256": "22e9a0324116cda6c52c7a62f5624c1b1587624bc3738f50370aa7965fd984dd"
+    },
+    "attempt-02/writer.json": {
+      "bytes": 703506,
+      "sha256": "11e7ad28ea3bf0142781521654604e15abd0523311f9086be750859acf259ec6"
+    },
+    "attempt-03/result.json": {
+      "bytes": 6394,
+      "sha256": "6d141d0469724be1d7093054542385d63ad9c228749cb29deb9e63ce5abea2a5"
+    },
+    "attempt-03/verify-process.json": {
+      "bytes": 825,
+      "sha256": "f140f0be44fac2bcc447e29a030569721131c779e35244fc2f806e115187014e"
+    },
+    "attempt-03/verify.json": {
+      "bytes": 345241,
+      "sha256": "551076cdb3732800751efdca8f726e2e314f1a397de8457434b425cf9f8c0359"
+    },
+    "attempt-03/writer-process.json": {
+      "bytes": 825,
+      "sha256": "4a0d1883c9bbddd05d207dcc4291c67d40b5b2d904a7e788075b2b7c034ca532"
+    },
+    "attempt-03/writer.json": {
+      "bytes": 703506,
+      "sha256": "edd25733707f0df8c50a6c7b17e9fe26d65128b34d0817539a03c5f239b1c42d"
+    },
+    "launcher-error.json": {
+      "bytes": 340,
+      "sha256": "adf99c6cf0bf59d06f7e446ff8811b179cad46b4d2facf3cb3cc21cb5b01c52d"
+    }
+  },
+  "fixtureCleanup": {
+    "removed": true,
+    "reclaimedKiB": 5320
+  },
+  "limits": [
+    "Standalone macOS host acceptance only",
+    "No native Flutter UI/window/picker execution",
+    "No real-account migration, schema12 activation, policy change or release acceptance",
+    "Independent review and root formal row closure remain separate"
+  ],
+  "retention": {
+    "attempt-03": "canonical final source-bound 23+4 result and full-map/durable authority evidence",
+    "attempt-02": "historical successful source before standalone driver rename",
+    "attempt-01": "historical successful source before missing-store/failure-cleanup guards",
+    "launcher-error.json": "failed unsupported flag255; no fixture created"
+  },
+  "runnerDiscovery": "Standalone *_driver.dart intentionally stays outside Flutter *_test.dart discovery; command in source header"
+}

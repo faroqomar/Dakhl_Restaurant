@@ -1,0 +1,35 @@
+stage: loading isolated reference
+stage: isolated reference loaded
+stage: export desktop-sales
+stage: DOM desktop-sales 448
+stage: PNG desktop-sales
+{"id":"desktop-sales","elements":448,"texts":146,"images":18,"svgs":24,"actualSize":{"width":2880,"height":2000},"expectedSize":{"width":2880,"height":2000},"equalDimensions":true,"changedPixels":0,"totalPixels":5760000,"changedPixelRatio":0,"differenceBounds":null,"meanAbsoluteChannelDifference":0,"maxChannelDifference":0,"actualSha256":"4b7ec00c447aac765662ec6d96d98998eb576b52ca1e9277a82eb8be0b4f49f2","expectedSha256":"4b7ec00c447aac765662ec6d96d98998eb576b52ca1e9277a82eb8be0b4f49f2"}
+stage: export desktop-navigation
+stage: DOM desktop-navigation 547
+stage: PNG desktop-navigation
+{"id":"desktop-navigation","elements":547,"texts":170,"images":24,"svgs":36,"actualSize":{"width":2880,"height":2000},"expectedSize":{"width":2880,"height":2000},"equalDimensions":true,"changedPixels":0,"totalPixels":5760000,"changedPixelRatio":0,"differenceBounds":null,"meanAbsoluteChannelDifference":0,"maxChannelDifference":0,"actualSha256":"3750ff59c26d37c01051131738673356db0e65c6fa5e25977624381946f37ecb","expectedSha256":"3750ff59c26d37c01051131738673356db0e65c6fa5e25977624381946f37ecb"}
+stage: export desktop-invoice-new
+stage: DOM desktop-invoice-new 114
+stage: PNG desktop-invoice-new
+{"id":"desktop-invoice-new","elements":114,"texts":40,"images":0,"svgs":3,"actualSize":{"width":2880,"height":2000},"expectedSize":{"width":2880,"height":2000},"equalDimensions":true,"changedPixels":255,"totalPixels":5760000,"changedPixelRatio":0.000044270833333333337,"differenceBounds":{"minX":2286,"minY":1765,"maxX":2306,"maxY":1792},"meanAbsoluteChannelDifference":0.0041171296296296294,"maxChannelDifference":210,"actualSha256":"71128bdf0d49e3ecaefcc8c55c985a69d85616807febf03974cd435b976ed251","expectedSha256":"ad11eb5bf1c2e722e6ae9de344216f47742ec2d937e64b453bf1d58942397472"}
+stage: export phone-sales
+stage: DOM phone-sales 140
+stage: PNG phone-sales
+{"id":"phone-sales","elements":140,"texts":47,"images":4,"svgs":7,"actualSize":{"width":780,"height":1688},"expectedSize":{"width":780,"height":1688},"equalDimensions":true,"changedPixels":838,"totalPixels":1316640,"changedPixelRatio":0.0006364685867055536,"differenceBounds":{"minX":417,"minY":873,"maxX":579,"maxY":1247},"meanAbsoluteChannelDifference":0.008497134119172033,"maxChannelDifference":178,"actualSha256":"9e0a8c01ba03e0aa91a89557c0a846a76053425af915c87b69488a6c0e73d6ab","expectedSha256":"c927c98295d7d1546031aacfac8a6f4d2958c2d80644a0f0888be25912f21859"}
+stage: export phone-invoice-new
+stage: DOM phone-invoice-new 85
+stage: PNG phone-invoice-new
+{"id":"phone-invoice-new","elements":85,"texts":30,"images":0,"svgs":3,"actualSize":{"width":780,"height":1688},"expectedSize":{"width":780,"height":1688},"equalDimensions":true,"changedPixels":0,"totalPixels":1316640,"changedPixelRatio":0,"differenceBounds":null,"meanAbsoluteChannelDifference":0,"maxChannelDifference":0,"actualSha256":"26dca31f61b6772dec43b329f552f3f65a90a4987e53643805f179599048c92e","expectedSha256":"26dca31f61b6772dec43b329f552f3f65a90a4987e53643805f179599048c92e"}
+stage: export medium-sales
+stage: DOM medium-sales 231
+sandbox_extension_issue_file failed for /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/electron-reference/node_modules/electron/dist/Electron.app/Contents/Frameworks/Electron Helper.app/Contents/Resources: 1 (Operation not permitted)
+stage: PNG medium-sales
+{"id":"medium-sales","elements":231,"texts":76,"images":6,"svgs":11,"actualSize":{"width":2048,"height":1536},"reference":"No supplied same-size baseline; additional frozen-source responsive view","actualSha256":"c9a8163aabdb9064e31e056017e1b8b98be0f34b0784990065f7d05df74024cb"}
+stage: export wide-sales
+stage: DOM wide-sales 617
+stage: PNG wide-sales
+{"id":"wide-sales","elements":617,"texts":197,"images":29,"svgs":34,"actualSize":{"width":3840,"height":2160},"reference":"No supplied same-size baseline; additional frozen-source responsive view","actualSha256":"9155de33a5d35c61b7ed3c55b054f93cb1a9a6d3212d0d05bc9afb516cb83294"}
+stage: export design-system
+stage: DOM design-system 188
+stage: PNG design-system
+{"id":"design-system","elements":188,"texts":71,"images":1,"svgs":0,"actualSize":{"width":2880,"height":2400},"expectedSize":{"width":2880,"height":2400},"equalDimensions":true,"changedPixels":7436,"totalPixels":6912000,"changedPixelRatio":0.0010758101851851853,"differenceBounds":{"minX":89,"minY":413,"maxX":2632,"maxY":436},"meanAbsoluteChannelDifference":0.13823972800925927,"maxChannelDifference":222,"actualSha256":"835292ff53b22aef7051de0028a0ff76321cfc3442b7a66d1155823f0ea7a716","expectedSha256":"0e9e34d1eb7f76d9a07548c2a8ed0631ed447708ae74f1ee0873a6f2ce558259"}

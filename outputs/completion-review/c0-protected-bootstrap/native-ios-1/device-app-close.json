@@ -1,0 +1,11 @@
+{
+  "atUtc": "2026-11-08T08:00:36.928164+00:00",
+  "argv": [
+    "/Users/eros/.t3/userdata/device/targets/t3-b91493306db60c230eefae24/agent-device",
+    "close",
+    "com.eros.dakhlrestaurant.phase00"
+  ],
+  "exitCode": 0,
+  "stdout": "Closed: t3-b91493306db60c230eefae24\n",
+  "stderr": ""
+}

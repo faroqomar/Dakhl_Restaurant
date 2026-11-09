@@ -1,5 +1,7 @@
 # Phase00 / CAP-00 — draft PR review package
 
+> Historical Step5 snapshot. The subsequent approved merges and remaining gates are recorded in [Step6](00-step6-merge.md).
+
 Date:2026-10-28. **Draft review only; not ready for merge approval.** The owner requested Step5, then explicitly approved narrowly scoped read-only engine access for CI. Neither instruction approves merge, release, production migration or the next phase.
 
 | Project | Draft PR | Base/dependency |

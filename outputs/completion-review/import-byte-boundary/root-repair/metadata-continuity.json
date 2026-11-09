@@ -1,0 +1,15 @@
+{
+  "recordedUtc": "2026-11-08T09:27:56.915451+00:00",
+  "purpose": "Existingresolvedcrypto3.0.8 directDEV for actualstreamedSHA256 in QA only",
+  "resolvedPackageEntries": 113,
+  "allPackageEntriesIdentical": true,
+  "lockDelta": "crypto dependency classification transitive\u2192directdev only",
+  "resolvedVersionOrSourceDelta": false,
+  "offlineEnforcedResolution": "exit0; no newversion/download",
+  "nativeC0Source": "Completed/frozensource-after104 beforemetadatachange; preservehistoricalconfigbytes",
+  "files": {
+    "pubspec.yaml": "1b66bef10ae3d9666a15c655457c42fe9e271bd33f6312b6f9b14b60508b9278",
+    "pubspec.lock": "e0be922ad4ca293e171509137122803c5bf0ecb5cb6835bfd2729c73f1cc391f",
+    ".dart_tool/package_config.json": "f5a804384a7c0c0446cc0dd19f76e791ea87861068e592f240e2aafd108dd4b0"
+  }
+}

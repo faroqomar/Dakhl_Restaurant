@@ -1,0 +1,1324 @@
+{
+  "screen": "phone-invoice-new",
+  "controls": [
+    {
+      "runId": "phone-invoice-new-control-0",
+      "kind": "text",
+      "text": "كل المواد",
+      "ownerDomId": "invoice-filter-material",
+      "sourceOwnerId": "n58",
+      "runBounds": {
+        "height": 17,
+        "width": 40.796875,
+        "x": 284.203125,
+        "y": 530.6875
+      },
+      "ownerBounds": {
+        "x": 201,
+        "y": 518.1875,
+        "width": 140,
+        "height": 42
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 201,
+        "y": 518.1875,
+        "width": 140,
+        "height": 42
+      },
+      "appliedPaintClip": {
+        "x": 201,
+        "y": 518.1875,
+        "width": 140,
+        "height": 42.0
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 284.203125,
+        "y": 530.6875,
+        "width": 40.796875,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-1",
+      "kind": "text",
+      "text": "yyyy",
+      "ownerDomId": "invoice-filter-from",
+      "sourceOwnerId": "n61",
+      "runBounds": {
+        "height": 17,
+        "width": 27.890625,
+        "x": 62,
+        "y": 528.2890625
+      },
+      "ownerBounds": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "appliedPaintClip": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 62,
+        "y": 528.2890625,
+        "width": 27.890625,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-2",
+      "kind": "text",
+      "text": "/",
+      "ownerDomId": "invoice-filter-from",
+      "sourceOwnerId": "n61",
+      "runBounds": {
+        "height": 17,
+        "width": 5.359375,
+        "x": 90.890625,
+        "y": 528.2890625
+      },
+      "ownerBounds": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "appliedPaintClip": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 90.890625,
+        "y": 528.2890625,
+        "width": 5.359375,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-3",
+      "kind": "text",
+      "text": "mm",
+      "ownerDomId": "invoice-filter-from",
+      "sourceOwnerId": "n61",
+      "runBounds": {
+        "height": 17,
+        "width": 23.515625,
+        "x": 97.25,
+        "y": 528.2890625
+      },
+      "ownerBounds": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "appliedPaintClip": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 97.25,
+        "y": 528.2890625,
+        "width": 23.515625,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-4",
+      "kind": "text",
+      "text": "/",
+      "ownerDomId": "invoice-filter-from",
+      "sourceOwnerId": "n61",
+      "runBounds": {
+        "height": 17,
+        "width": 5.359375,
+        "x": 121.765625,
+        "y": 528.2890625
+      },
+      "ownerBounds": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "appliedPaintClip": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 121.765625,
+        "y": 528.2890625,
+        "width": 5.359375,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-5",
+      "kind": "text",
+      "text": "dd",
+      "ownerDomId": "invoice-filter-from",
+      "sourceOwnerId": "n61",
+      "runBounds": {
+        "height": 17,
+        "width": 15.4765625,
+        "x": 128.125,
+        "y": 528.2890625
+      },
+      "ownerBounds": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "appliedPaintClip": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 128.125,
+        "y": 528.2890625,
+        "width": 15.4765625,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-6",
+      "kind": "indicator",
+      "text": "",
+      "ownerDomId": "invoice-filter-from",
+      "sourceOwnerId": "n61",
+      "runBounds": {
+        "height": 18,
+        "width": 18,
+        "x": 159,
+        "y": 527.984375
+      },
+      "ownerBounds": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "appliedPaintClip": {
+        "x": 49,
+        "y": 513.7890625,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 159,
+        "y": 527.984375,
+        "width": 18,
+        "height": 18.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-7",
+      "kind": "text",
+      "text": "yyyy",
+      "ownerDomId": "invoice-filter-to",
+      "sourceOwnerId": "n64",
+      "runBounds": {
+        "height": 17,
+        "width": 27.890625,
+        "x": 214,
+        "y": 616.0859375
+      },
+      "ownerBounds": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "appliedPaintClip": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 214,
+        "y": 616.0859375,
+        "width": 27.890625,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-8",
+      "kind": "text",
+      "text": "/",
+      "ownerDomId": "invoice-filter-to",
+      "sourceOwnerId": "n64",
+      "runBounds": {
+        "height": 17,
+        "width": 5.359375,
+        "x": 242.890625,
+        "y": 616.0859375
+      },
+      "ownerBounds": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "appliedPaintClip": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 242.890625,
+        "y": 616.0859375,
+        "width": 5.359375,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-9",
+      "kind": "text",
+      "text": "mm",
+      "ownerDomId": "invoice-filter-to",
+      "sourceOwnerId": "n64",
+      "runBounds": {
+        "height": 17,
+        "width": 23.515625,
+        "x": 249.25,
+        "y": 616.0859375
+      },
+      "ownerBounds": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "appliedPaintClip": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 249.25,
+        "y": 616.0859375,
+        "width": 23.515625,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-10",
+      "kind": "text",
+      "text": "/",
+      "ownerDomId": "invoice-filter-to",
+      "sourceOwnerId": "n64",
+      "runBounds": {
+        "height": 17,
+        "width": 5.359375,
+        "x": 273.765625,
+        "y": 616.0859375
+      },
+      "ownerBounds": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "appliedPaintClip": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 273.765625,
+        "y": 616.0859375,
+        "width": 5.359375,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-11",
+      "kind": "text",
+      "text": "dd",
+      "ownerDomId": "invoice-filter-to",
+      "sourceOwnerId": "n64",
+      "runBounds": {
+        "height": 17,
+        "width": 15.4765625,
+        "x": 280.125,
+        "y": 616.0859375
+      },
+      "ownerBounds": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "appliedPaintClip": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 280.125,
+        "y": 616.0859375,
+        "width": 15.4765625,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-12",
+      "kind": "indicator",
+      "text": "",
+      "ownerDomId": "invoice-filter-to",
+      "sourceOwnerId": "n64",
+      "runBounds": {
+        "height": 18,
+        "width": 18,
+        "x": 311,
+        "y": 615.78125
+      },
+      "ownerBounds": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "appliedPaintClip": {
+        "x": 201,
+        "y": 601.5859375,
+        "width": 140,
+        "height": 46.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 311,
+        "y": 615.78125,
+        "width": 18,
+        "height": 18.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-13",
+      "kind": "text",
+      "text": "كل الموردين",
+      "ownerDomId": "invoice-filter-supplier",
+      "sourceOwnerId": "n67",
+      "runBounds": {
+        "height": 17,
+        "width": 53.640625,
+        "x": 119.359375,
+        "y": 618.484375
+      },
+      "ownerBounds": {
+        "x": 49,
+        "y": 605.984375,
+        "width": 140,
+        "height": 42
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 49,
+        "y": 605.984375,
+        "width": 140,
+        "height": 42
+      },
+      "appliedPaintClip": {
+        "x": 49,
+        "y": 605.984375,
+        "width": 140,
+        "height": 42.0
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 119.359375,
+        "y": 618.484375,
+        "width": 53.640625,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-14",
+      "kind": "text",
+      "text": "مورد توضيحي",
+      "ownerDomId": "invoice-supplier",
+      "sourceOwnerId": "n109",
+      "runBounds": {
+        "height": 17,
+        "width": 70.046875,
+        "x": 277.953125,
+        "y": 203.59375
+      },
+      "ownerBounds": {
+        "x": 200,
+        "y": 192.09375,
+        "width": 163,
+        "height": 40
+      },
+      "ownerInheritedClip": {
+        "x": 17,
+        "y": 153.296875,
+        "width": 356,
+        "height": 681.703125
+      },
+      "ownerVisibleBounds": {
+        "x": 200,
+        "y": 192.09375,
+        "width": 163,
+        "height": 40
+      },
+      "appliedPaintClip": {
+        "x": 200,
+        "y": 192.09375,
+        "width": 163,
+        "height": 40.0
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 277.953125,
+        "y": 203.59375,
+        "width": 70.046875,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-15",
+      "kind": "text",
+      "text": "2026",
+      "ownerDomId": "date",
+      "sourceOwnerId": "n118",
+      "runBounds": {
+        "height": 17,
+        "width": 30.5703125,
+        "x": 41.078125,
+        "y": 204.59375
+      },
+      "ownerBounds": {
+        "x": 4.9453125,
+        "y": 192.09375,
+        "width": 142,
+        "height": 42.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 17,
+        "y": 153.296875,
+        "width": 356,
+        "height": 681.703125
+      },
+      "ownerVisibleBounds": {
+        "x": 17,
+        "y": 192.09375,
+        "width": 129.9453125,
+        "height": 42.3984375
+      },
+      "appliedPaintClip": {
+        "x": 17,
+        "y": 192.09375,
+        "width": 129.9453125,
+        "height": 42.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 41.078125,
+        "y": 204.59375,
+        "width": 30.5703125,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-16",
+      "kind": "text",
+      "text": "/",
+      "ownerDomId": "date",
+      "sourceOwnerId": "n118",
+      "runBounds": {
+        "height": 17,
+        "width": 5.359375,
+        "x": 72.6484375,
+        "y": 204.59375
+      },
+      "ownerBounds": {
+        "x": 4.9453125,
+        "y": 192.09375,
+        "width": 142,
+        "height": 42.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 17,
+        "y": 153.296875,
+        "width": 356,
+        "height": 681.703125
+      },
+      "ownerVisibleBounds": {
+        "x": 17,
+        "y": 192.09375,
+        "width": 129.9453125,
+        "height": 42.3984375
+      },
+      "appliedPaintClip": {
+        "x": 17,
+        "y": 192.09375,
+        "width": 129.9453125,
+        "height": 42.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 72.6484375,
+        "y": 204.59375,
+        "width": 5.359375,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-17",
+      "kind": "text",
+      "text": "10",
+      "ownerDomId": "date",
+      "sourceOwnerId": "n118",
+      "runBounds": {
+        "height": 17,
+        "width": 15.2890625,
+        "x": 79.0078125,
+        "y": 204.59375
+      },
+      "ownerBounds": {
+        "x": 4.9453125,
+        "y": 192.09375,
+        "width": 142,
+        "height": 42.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 17,
+        "y": 153.296875,
+        "width": 356,
+        "height": 681.703125
+      },
+      "ownerVisibleBounds": {
+        "x": 17,
+        "y": 192.09375,
+        "width": 129.9453125,
+        "height": 42.3984375
+      },
+      "appliedPaintClip": {
+        "x": 17,
+        "y": 192.09375,
+        "width": 129.9453125,
+        "height": 42.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 79.0078125,
+        "y": 204.59375,
+        "width": 15.2890625,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-18",
+      "kind": "text",
+      "text": "/",
+      "ownerDomId": "date",
+      "sourceOwnerId": "n118",
+      "runBounds": {
+        "height": 17,
+        "width": 5.359375,
+        "x": 95.296875,
+        "y": 204.59375
+      },
+      "ownerBounds": {
+        "x": 4.9453125,
+        "y": 192.09375,
+        "width": 142,
+        "height": 42.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 17,
+        "y": 153.296875,
+        "width": 356,
+        "height": 681.703125
+      },
+      "ownerVisibleBounds": {
+        "x": 17,
+        "y": 192.09375,
+        "width": 129.9453125,
+        "height": 42.3984375
+      },
+      "appliedPaintClip": {
+        "x": 17,
+        "y": 192.09375,
+        "width": 129.9453125,
+        "height": 42.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 95.296875,
+        "y": 204.59375,
+        "width": 5.359375,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-19",
+      "kind": "text",
+      "text": "27",
+      "ownerDomId": "date",
+      "sourceOwnerId": "n118",
+      "runBounds": {
+        "height": 17,
+        "width": 15.2890625,
+        "x": 101.65625,
+        "y": 204.59375
+      },
+      "ownerBounds": {
+        "x": 4.9453125,
+        "y": 192.09375,
+        "width": 142,
+        "height": 42.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 17,
+        "y": 153.296875,
+        "width": 356,
+        "height": 681.703125
+      },
+      "ownerVisibleBounds": {
+        "x": 17,
+        "y": 192.09375,
+        "width": 129.9453125,
+        "height": 42.3984375
+      },
+      "appliedPaintClip": {
+        "x": 17,
+        "y": 192.09375,
+        "width": 129.9453125,
+        "height": 42.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 101.65625,
+        "y": 204.59375,
+        "width": 15.2890625,
+        "height": 17.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-20",
+      "kind": "indicator",
+      "text": "",
+      "ownerDomId": "date",
+      "sourceOwnerId": "n118",
+      "runBounds": {
+        "height": 18,
+        "width": 18,
+        "x": 117.9453125,
+        "y": 204.2890625
+      },
+      "ownerBounds": {
+        "x": 4.9453125,
+        "y": 192.09375,
+        "width": 142,
+        "height": 42.3984375
+      },
+      "ownerInheritedClip": {
+        "x": 17,
+        "y": 153.296875,
+        "width": 356,
+        "height": 681.703125
+      },
+      "ownerVisibleBounds": {
+        "x": 17,
+        "y": 192.09375,
+        "width": 129.9453125,
+        "height": 42.3984375
+      },
+      "appliedPaintClip": {
+        "x": 17,
+        "y": 192.09375,
+        "width": 129.9453125,
+        "height": 42.3984375
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 117.9453125,
+        "y": 204.2890625,
+        "width": 18.0,
+        "height": 18.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-21",
+      "kind": "text",
+      "text": "اختار أو اكتب اسم المادة",
+      "ownerDomId": "line-name-2",
+      "sourceOwnerId": "n131",
+      "runBounds": {
+        "height": 18.5,
+        "width": 129.9609375,
+        "x": 216.0390625,
+        "y": 376.3828125
+      },
+      "ownerBounds": {
+        "x": 33,
+        "y": 361.8828125,
+        "width": 324,
+        "height": 48
+      },
+      "ownerInheritedClip": {
+        "x": 17,
+        "y": 264.2890625,
+        "width": 356,
+        "height": 421
+      },
+      "ownerVisibleBounds": {
+        "x": 33,
+        "y": 361.8828125,
+        "width": 324,
+        "height": 48
+      },
+      "appliedPaintClip": {
+        "x": 33,
+        "y": 361.8828125,
+        "width": 324,
+        "height": 48.0
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 216.0390625,
+        "y": 376.3828125,
+        "width": 129.9609375,
+        "height": 18.5
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-22",
+      "kind": "indicator",
+      "text": "",
+      "ownerDomId": "line-name-2",
+      "sourceOwnerId": "n131",
+      "runBounds": {
+        "height": 20.09375,
+        "width": 20.0859375,
+        "x": 44,
+        "y": 375.8359375
+      },
+      "ownerBounds": {
+        "x": 33,
+        "y": 361.8828125,
+        "width": 324,
+        "height": 48
+      },
+      "ownerInheritedClip": {
+        "x": 17,
+        "y": 264.2890625,
+        "width": 356,
+        "height": 421
+      },
+      "ownerVisibleBounds": {
+        "x": 33,
+        "y": 361.8828125,
+        "width": 324,
+        "height": 48
+      },
+      "appliedPaintClip": {
+        "x": 33,
+        "y": 361.8828125,
+        "width": 324,
+        "height": 48.0
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 44,
+        "y": 375.8359375,
+        "width": 20.0859375,
+        "height": 20.09375
+      },
+      "omitted": true,
+      "reason": "UA indicator has no drawable source asset; existing no-paint behavior retained, no invented geometry."
+    },
+    {
+      "runId": "phone-invoice-new-control-23",
+      "kind": "text",
+      "text": "0",
+      "ownerDomId": "line-pieces-2",
+      "sourceOwnerId": "n135",
+      "runBounds": {
+        "height": 17.5,
+        "width": 9.21875,
+        "x": 336.78125,
+        "y": 462.4765625
+      },
+      "ownerBounds": {
+        "x": 201,
+        "y": 447.4765625,
+        "width": 156,
+        "height": 48
+      },
+      "ownerInheritedClip": {
+        "x": 17,
+        "y": 264.2890625,
+        "width": 356,
+        "height": 421
+      },
+      "ownerVisibleBounds": {
+        "x": 201,
+        "y": 447.4765625,
+        "width": 156,
+        "height": 48
+      },
+      "appliedPaintClip": {
+        "x": 201,
+        "y": 447.4765625,
+        "width": 156,
+        "height": 48.0
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 336.78125,
+        "y": 462.4765625,
+        "width": 9.21875,
+        "height": 17.5
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-control-24",
+      "kind": "text",
+      "text": "0",
+      "ownerDomId": "amount",
+      "sourceOwnerId": null,
+      "runBounds": {
+        "height": 28,
+        "width": 14.6875,
+        "x": 324.3125,
+        "y": 710.9609375
+      },
+      "omitted": true,
+      "reason": "Actual owning control absent or ambiguous in paint-visible source nodes; no geometric fallback."
+    },
+    {
+      "runId": "phone-invoice-new-control-25",
+      "kind": "text",
+      "text": "اكتب أي تفاصيل تحب ترجع إلها…",
+      "ownerDomId": "note",
+      "sourceOwnerId": null,
+      "runBounds": {
+        "height": 17,
+        "width": 168.2890625,
+        "x": 172.7109375,
+        "y": 825.3515625
+      },
+      "omitted": true,
+      "reason": "Actual owning control absent or ambiguous in paint-visible source nodes; no geometric fallback."
+    },
+    {
+      "runId": "phone-invoice-new-n58-select-indicator",
+      "kind": "indicator",
+      "text": null,
+      "ownerDomId": null,
+      "sourceOwnerId": "n58",
+      "runBounds": {
+        "x": 208,
+        "y": 535.6875,
+        "width": 11,
+        "height": 7
+      },
+      "ownerBounds": {
+        "x": 201,
+        "y": 518.1875,
+        "width": 140,
+        "height": 42
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 201,
+        "y": 518.1875,
+        "width": 140,
+        "height": 42
+      },
+      "appliedPaintClip": {
+        "x": 201,
+        "y": 518.1875,
+        "width": 140,
+        "height": 42.0
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 208,
+        "y": 535.6875,
+        "width": 11,
+        "height": 7.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-n67-select-indicator",
+      "kind": "indicator",
+      "text": null,
+      "ownerDomId": null,
+      "sourceOwnerId": "n67",
+      "runBounds": {
+        "x": 56,
+        "y": 623.484375,
+        "width": 11,
+        "height": 7
+      },
+      "ownerBounds": {
+        "x": 49,
+        "y": 605.984375,
+        "width": 140,
+        "height": 42
+      },
+      "ownerInheritedClip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "ownerVisibleBounds": {
+        "x": 49,
+        "y": 605.984375,
+        "width": 140,
+        "height": 42
+      },
+      "appliedPaintClip": {
+        "x": 49,
+        "y": 605.984375,
+        "width": 140,
+        "height": 42.0
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 56,
+        "y": 623.484375,
+        "width": 11,
+        "height": 7.0
+      },
+      "omitted": false,
+      "partialClip": false
+    },
+    {
+      "runId": "phone-invoice-new-n109-select-indicator",
+      "kind": "indicator",
+      "text": null,
+      "ownerDomId": null,
+      "sourceOwnerId": "n109",
+      "runBounds": {
+        "x": 207,
+        "y": 208.59375,
+        "width": 11,
+        "height": 7
+      },
+      "ownerBounds": {
+        "x": 200,
+        "y": 192.09375,
+        "width": 163,
+        "height": 40
+      },
+      "ownerInheritedClip": {
+        "x": 17,
+        "y": 153.296875,
+        "width": 356,
+        "height": 681.703125
+      },
+      "ownerVisibleBounds": {
+        "x": 200,
+        "y": 192.09375,
+        "width": 163,
+        "height": 40
+      },
+      "appliedPaintClip": {
+        "x": 200,
+        "y": 192.09375,
+        "width": 163,
+        "height": 40.0
+      },
+      "sourcePaintVisible": true,
+      "runVisibleBounds": {
+        "x": 207,
+        "y": 208.59375,
+        "width": 11,
+        "height": 7.0
+      },
+      "omitted": false,
+      "partialClip": false
+    }
+  ],
+  "markers": [
+    {
+      "kind": "disclosure",
+      "summary": "كارتون / وحدة القياس",
+      "open": false,
+      "assetBounds": {
+        "x": 347,
+        "y": 507.5,
+        "width": 10,
+        "height": 19
+      },
+      "sourceOwnerId": "n141",
+      "ownerBounds": {
+        "x": 33,
+        "y": 495.4765625,
+        "width": 324,
+        "height": 44
+      },
+      "ownerInheritedClip": {
+        "x": 17,
+        "y": 264.2890625,
+        "width": 356,
+        "height": 421
+      },
+      "ownerVisibleBounds": {
+        "x": 33,
+        "y": 495.4765625,
+        "width": 324,
+        "height": 44
+      },
+      "appliedPaintClip": {
+        "x": 33,
+        "y": 495.4765625,
+        "width": 324,
+        "height": 44.0
+      },
+      "runVisibleBounds": {
+        "x": 347,
+        "y": 507.5,
+        "width": 10,
+        "height": 19.0
+      },
+      "omitted": false,
+      "partialClip": false
+    }
+  ],
+  "nativeClipPathSupportNotAssumed": true
+}

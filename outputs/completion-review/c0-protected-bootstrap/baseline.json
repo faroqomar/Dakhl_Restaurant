@@ -1,0 +1,22 @@
+{
+  "atUtc": "2026-11-08T07:11:49.821953+00:00",
+  "preconfirmedAbsent": [
+    "integration_test/c0_protected_bootstrap_native_test.dart",
+    "integration_test/support/c0_protected_bootstrap_scenarios.dart",
+    "test/platform/c0_protected_bootstrap_test.dart",
+    "docs/log/2026-11-08-c0-protected-bootstrap-preparation.md",
+    "outputs/completion-review/c0-protected-bootstrap"
+  ],
+  "freeKiB": 97134568,
+  "sizesKiB": {
+    ".": 29000464,
+    ".git": 18430636,
+    "build": 1950572,
+    ".dart_tool": 696896,
+    "../Madar_Engine/.git": 44700
+  },
+  "tmpGit": {
+    ".git/objects": 0,
+    "../Madar_Engine/.git/objects": 0
+  }
+}

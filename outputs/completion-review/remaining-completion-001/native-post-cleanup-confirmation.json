@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-08T20:21:26.276162+00:00",
+  "ownedForwardPort": 62240,
+  "ownedForwardAbsentNow": true,
+  "removalExecution": "PID-bound driver script finally called adb forward --remove tcp:62240 with check=True and returned exit0; earlier timestamp unavailable. Current host forward inventory has no owned port.",
+  "macArtifactLegacyPayloadAbsence": {
+    "build/macos/Build/Products/Debug/Dakhl_Restaurant Dev.app": {
+      "Frameworks/MadarIcu": true,
+      "Resources/MadarIcu": true
+    },
+    "outputs/completion-review/remaining-completion-001/Dakhl Acceptance Candidate.app": {
+      "Frameworks/MadarIcu": true,
+      "Resources/MadarIcu": true
+    }
+  },
+  "candidateArtifactIdentity": "qa-candidate-artifact-002.json"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "date_assertions_and_scope_disposition_source_review_passed",
+  "reviewer": "/root/recheck_c1_harness_dates",
+  "testSha256": "5e1558ead902a1635dc90aa67d6f6bacca4f001bab166eb5de30017ced01b85b",
+  "limitations": "No native execution or UI recovery proof in this historical source. Successor visible recovery candidate is under separate review.",
+  "recordedUtc": "2026-11-07T21:25:10.477131+00:00"
+}

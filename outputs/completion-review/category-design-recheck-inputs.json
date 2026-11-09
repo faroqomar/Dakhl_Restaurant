@@ -1,0 +1,208 @@
+{
+  "createdUtc": "2026-11-07T19:44:20.833518+00:00",
+  "status": "repair_candidate_independent_ux_review_pending",
+  "files": [
+    {
+      "path": "docs/log/2026-11-07-category-design-hold-repair.md",
+      "sha256": "c4eeec7c78f3e77f00ee7848eb6098ea89aaa3c2dea541d3762d1963c41df241",
+      "bytes": 8168
+    },
+    {
+      "path": "docs/phases/c1-design-approval.md",
+      "sha256": "a156a27fff045dcc6a63980083044d76730027302a14bcc126b58a0dc8432cba",
+      "bytes": 1347
+    },
+    {
+      "path": "docs/planning/flutter-rebuild/screenshots/desktop-categories.png",
+      "sha256": "1eada1d3727d59decd722f676f56e8b91c3e005bd3754738ba2c5bb51f5f2674",
+      "bytes": 103456
+    },
+    {
+      "path": "docs/planning/flutter-rebuild/screenshots/desktop-category-edit.png",
+      "sha256": "c7dc70b3390ec03579e2398a19613c7121779359708e40d7fd4b8312fd90461a",
+      "bytes": 172649
+    },
+    {
+      "path": "docs/planning/flutter-rebuild/screenshots/full-phone-categories.png",
+      "sha256": "6cc1d55aa293bdbb60c582f8f2e6dca35611aa782bf4beb51837adae7c7022f5",
+      "bytes": 98000
+    },
+    {
+      "path": "docs/planning/flutter-rebuild/screenshots/phone-categories-bottom.png",
+      "sha256": "2ad7f4c83077205737975b415377234a4ce5808cda5955253a29d6d64c141a0c",
+      "bytes": 112774
+    },
+    {
+      "path": "docs/planning/flutter-rebuild/screenshots/phone-categories.png",
+      "sha256": "bcd18deb77b667445340762f2062adb4fc565e37587d49715b5a7d50561afdf3",
+      "bytes": 112316
+    },
+    {
+      "path": "outputs/completion-review/c1-design-approval.json",
+      "sha256": "6ae194bea270d5f5be058f37d612f3be41e98a61e9d10ede6608502d77614313",
+      "bytes": 17124
+    },
+    {
+      "path": "outputs/completion-review/category-design-repair-receipt.json",
+      "sha256": "61aa0a3f03487393f24c4120a9fff6e30cf3dde53e1210f9f198e59d0389bf1d",
+      "bytes": 13597
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/desktop-categories-design-overlay.svg",
+      "sha256": "0acce5e0f289c7b162b1aba78e6e7e2ea2d2da7352128f871cc9cf27e5ba4377",
+      "bytes": 4351
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/desktop-categories-design-repaired.png",
+      "sha256": "9e3e068db196f313b2ca51844b3b9762ba76db851931faa86fb88bdc8f638177",
+      "bytes": 180666
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/desktop-categories-wireframe-overlay.svg",
+      "sha256": "f42af0f105dc7472623b9b54e8d4ec50364b81aace5492b70cd93ec7810132ef",
+      "bytes": 4257
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/desktop-categories-wireframe-repaired.png",
+      "sha256": "34276fc4104dab8adc42c7cb0a6d0238d51ee14bf274eb2b87810f380cbd9c2f",
+      "bytes": 163038
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/desktop-category-edit-design-overlay.svg",
+      "sha256": "74b3ae74afce1e2ff3eb926222b6fce646d87fa87e4aea53474c3e71e5a470ec",
+      "bytes": 6966
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/desktop-category-edit-design-repaired.png",
+      "sha256": "c653365c99781eb4dc7ddaf634fa9a140db8977c3db7b716e8e1be1f0c638dd5",
+      "bytes": 220068
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/desktop-category-edit-wireframe-overlay.svg",
+      "sha256": "11270a3bf5e5d103b18e051a2c0fd60969c23116641e70f352f775426e934b57",
+      "bytes": 6868
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/desktop-category-edit-wireframe-repaired.png",
+      "sha256": "980d881ea3e25d69050d85ec99970ca196f234235f39e2152df33e42cf175c48",
+      "bytes": 199080
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/full-phone-categories-design-overlay.svg",
+      "sha256": "579bc821aee7ff79407cf21dfdfb6c59e09d03451afe96d7b8ddff7798728f0f",
+      "bytes": 4401
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/full-phone-categories-design-repaired.png",
+      "sha256": "3edd5f77974b96198884121aa61743c5e2fba0096a04e07b70f2cb7e0f121545",
+      "bytes": 123698
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/full-phone-categories-wireframe-overlay.svg",
+      "sha256": "78f7437de0fb1b9ca5249db505cb68c7af98bb28c106dbc1bc385921be000bfd",
+      "bytes": 4307
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/full-phone-categories-wireframe-repaired.png",
+      "sha256": "7d610d9db7ad4ceae9d727dd277396dc6cf3d350de0398a251609307184113ae",
+      "bytes": 104167
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/phone-categories-bottom-design-overlay.svg",
+      "sha256": "077f9d5367fdb8f3522e58f46edb1cc1319510189a000bcb3360c27a45931a3d",
+      "bytes": 4445
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/phone-categories-bottom-design-repaired.png",
+      "sha256": "372630aa1634a80fc3269bafdbaa06ffc243fd69028821ea1196b14a840712c9",
+      "bytes": 131281
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/phone-categories-bottom-wireframe-overlay.svg",
+      "sha256": "23c5c277406747fbb5bbf63bea29772b9d2aa267dff4d8ab67fc809d26b3890f",
+      "bytes": 4351
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/phone-categories-bottom-wireframe-repaired.png",
+      "sha256": "c926ca920618130246608a4bdabe9aad81aee3a3ab2d428ed94f4c866eb009d1",
+      "bytes": 110843
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/phone-categories-design-overlay.svg",
+      "sha256": "1b5fb52e28db35cd9d40f920779935bace4a113f8792b3beca678672dea81d82",
+      "bytes": 4218
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/phone-categories-design-repaired.png",
+      "sha256": "95aeb3feb7bbda08c4bbebdd0c1864cbb327d788b4fc4aa110c3aaa480053c23",
+      "bytes": 129815
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/phone-categories-wireframe-overlay.svg",
+      "sha256": "2f7b72adfb51bd410dde5a4c9deffdd8525412d4736a8487eb23111dc19c542b",
+      "bytes": 4265
+    },
+    {
+      "path": "outputs/penpot/completion/category-hold-repair/phone-categories-wireframe-repaired.png",
+      "sha256": "44354b1c1320bcf5126228c4a19bc5fff56449b6b6246bc9d49fcfaf155bf285",
+      "bytes": 109924
+    },
+    {
+      "path": "outputs/penpot/completion/package-native-panels/wp06-01/desktop-categories-design.png",
+      "sha256": "9eaf1e240e7c617589c35188018f38f92854114b77197f277a7f0a38acc6bb5a",
+      "bytes": 179650
+    },
+    {
+      "path": "outputs/penpot/completion/package-native-panels/wp06-01/desktop-categories-wireframe.png",
+      "sha256": "876f53a5daf5d0c06c438fad1777b599b359e6cab68e40757ec9e5d025a46e16",
+      "bytes": 162240
+    },
+    {
+      "path": "outputs/penpot/completion/package-native-panels/wp06-01/desktop-category-edit-design.png",
+      "sha256": "ed71cb35d7a94d740c4ceb185a522f7261457dd7366f3a3554b8cc29126cfbd4",
+      "bytes": 218218
+    },
+    {
+      "path": "outputs/penpot/completion/package-native-panels/wp06-01/desktop-category-edit-wireframe.png",
+      "sha256": "0e291673b62aa85f5cde7258507f924443edc95aa443b333ede46175e1f84551",
+      "bytes": 197633
+    },
+    {
+      "path": "outputs/penpot/completion/package-native-panels/wp06-01/full-phone-categories-design.png",
+      "sha256": "4b639d2e74c16a07a7b53a9434c1863c5e6366f249e01f56409ad90747db40bc",
+      "bytes": 121480
+    },
+    {
+      "path": "outputs/penpot/completion/package-native-panels/wp06-01/full-phone-categories-wireframe.png",
+      "sha256": "8fbb0f8e01ac189427e9f23ad5e3917ad7a072fda96b492c7f57ebda73a5a895",
+      "bytes": 102649
+    },
+    {
+      "path": "outputs/penpot/completion/package-native-panels/wp06-01/phone-categories-bottom-design.png",
+      "sha256": "ee6a2dd407c37653dfb353dd40c257605959e6be943fcf00c1c9b248dee812dd",
+      "bytes": 129122
+    },
+    {
+      "path": "outputs/penpot/completion/package-native-panels/wp06-01/phone-categories-bottom-wireframe.png",
+      "sha256": "2bc0f448545108528c826ce4cca52400b3d5c5d6ee1d125002c37c96b9fd16ae",
+      "bytes": 109322
+    },
+    {
+      "path": "outputs/penpot/completion/package-native-panels/wp06-01/phone-categories-design.png",
+      "sha256": "e9e23b1f398a718cee14f2af70f7b03ea553e685cbe89c5557e8ce2acfd0316e",
+      "bytes": 127598
+    },
+    {
+      "path": "outputs/penpot/completion/package-native-panels/wp06-01/phone-categories-wireframe.png",
+      "sha256": "bc7c8f008c209aff9e3cd29dd4323caa814741aa79c16dbcfc1c0cc9dd7f209a",
+      "bytes": 108384
+    }
+  ],
+  "rootChecks": {
+    "declaredRepairHashesMatched": 30,
+    "pairs": 5
+  },
+  "ownerApprovedC4": false,
+  "parentHoldClosed": false,
+  "scope": "Five held category pairs; C1 preservation and live Saved state require independent verification"
+}

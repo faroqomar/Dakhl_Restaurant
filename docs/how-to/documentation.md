@@ -1,34 +1,34 @@
-# توثيق العمل ومتابعته
+# Document and track work
 
-الحالة: طريقة عمل معتمدة. التاريخ: 2026-10-16. المالك: مالك المشروع والقائم على التنفيذ. المصدر: طلب توثيق كل ما يتعلق بالمطعم ومتابعته مع Hindsight.
+Status: approved working method. Date: 2026-10-16. Owner: project owner and implementer. Source: the request to document restaurant-related work and track it with Hindsight.
 
-## أين نسجل المعلومة؟
+## Where information belongs
 
-| المعلومة | مكانها |
+| Information | Location |
 | --- | --- |
-| فكرة أو تحسين قبل التنفيذ | `docs/planning/ideas.md` ثم مستند منفصل عند الحاجة |
-| حملة وهدفها وحالتها ونتائجها | `docs/planning/campaigns.md` ثم ملف الحملة |
-| قرار مؤثر وسببه | `docs/decisions/NNNN-topic.md` مع تحديث فهرس القرارات |
-| قاعدة أو وصف للوضع الحالي | `docs/reference/` |
-| خطوات متكررة للعمل أو التعافي | `docs/how-to/` |
-| ما أُنجز وما اختُبر وما بقي | `docs/log/YYYY-MM-DD-topic.md` مع تحديث فهرس العمل |
+| Idea or improvement before implementation | `docs/planning/ideas.md`, then a separate document when needed |
+| Campaign, objective, status and outcomes | `docs/planning/campaigns.md`, then the campaign file |
+| Significant decision and rationale | `docs/decisions/NNNN-topic.md`, updating the decision index |
+| Rule or description of the current state | `docs/reference/` |
+| Repeated operating or recovery procedure | `docs/how-to/` |
+| Completed work, actual tests and remaining work | `docs/log/YYYY-MM-DD-topic.md`, updating the work index |
 
-## من الفكرة إلى التنفيذ
+## From idea to implementation
 
-1. سجّل كلام المالك مع التاريخ والمصدر ومعرف ثابت مثل `IDEA-0001`. الحالة الأولية «فكرة»؛ لا تعني الموافقة على البناء.
-2. عند مناقشتها حدّد المشكلة والنتيجة المطلوبة وما بقي مفتوحاً. اربط أي حملة أو قرار ذي علاقة.
-3. عند اعتماد التنفيذ سجّل النطاق ومعيار النجاح، ثم طبّق الطلب مع تحديث المرجع المتأثر.
-4. بعد العمل سجّل ما تغير والتحقق الفعلي والقيود، واربط الدليل بسجل الفكرة. استخدم «منفّذ» ثم «متحقق منه» عندما يوجد دليل مناسب لكل منهما.
-5. زامن الذاكرة وافحص اكتمالها حسب [دليل Hindsight](memory.md). إذا تعطلت الخدمة فالملفات محفوظة ويُسجل الانتظار بصدق.
+1. Record the owner's direction with date, source and a stable identifier such as `IDEA-0001`. The initial state is "idea"; it does not approve construction.
+2. During discussion, identify the problem, desired outcome and open questions. Link related campaigns or decisions.
+3. When implementation is approved, record scope and success criteria, then carry out the request and update the affected reference.
+4. After work, record changes, actual verification and limits, linking evidence to the idea. Use "implemented" and then "verified" when appropriate evidence exists for each.
+5. Synchronize memory and verify completion under the [Hindsight guide](memory.md). If the service fails, files remain preserved and pending status is reported honestly.
 
-## متابعة الحملات
+## Campaign tracking
 
-لكل حملة معرف `CAM-0001`، وهدف وجمهور ومنصة ومدة وميزانية وحالة وروابط المواد وقرار الاعتماد. لا تحول الميزانية المقترحة إلى صرف فعلي. عند انتهاء الحملة افصل المصروف الحقيقي عن المخطط، وحدد مصدر النتائج والفترة وما تعلمناه. لا تحسب عائداً مالياً دون أساس إسناد واضح.
+Each campaign has an ID such as `CAM-0001`, objective, audience, platform, duration, budget, status, asset links and approval decision. Do not turn a proposed budget into actual spending. At campaign end, separate actual spend from planned spend, state the result source/period and record lessons. Do not calculate financial return without a clear attribution basis.
 
-النشر أو دفع ميزانية أو إرسال رسالة يحتاج طلباً يجيز ذلك؛ وجود الحملة في السجل ليس إذناً بالتنفيذ الخارجي. الملفات العامة والذاكرة تحمل الوصف والنتائج المنقحة؛ مواد العملاء والمعلومات الحساسة تبقى خارجها.
+Publishing, spending a budget or sending a message requires an authorizing request; a campaign entry is not permission for external execution. Public project files and memory contain sanitized descriptions/results; customer materials and sensitive information stay outside them.
 
-## إنهاء مهمة
+## Finishing a task
 
-حدّث الحالة والتاريخ والمصدر والوثائق ذات العلاقة. اكتب سجل العمل مع نتيجة التحقق، ثم حدّث فهرسه. لا تكرر وصف السلوك في عدة أماكن: المرجع يملك القاعدة، والقرار يملك السبب، والسجل يملك نتيجة الحدث. عند استبدال قرار احتفظ به واربط البديل؛ لا تمحُ السبب القديم.
+Update state, date, source and related documentation. Write the work log with verification results and update its index. Avoid repeating behavior descriptions: the reference owns the rule, the decision owns its rationale and the log owns the event outcome. Preserve superseded decisions and link their replacements; do not erase earlier reasoning.
 
-هذا الأسلوب يتابع العمل المسجل فعلياً. لا يدّعي التقاط كل حديث تلقائياً أو منع أي وكيل من مخالفة التعليمات.
+This method tracks work actually recorded. It claims neither automatic capture of every conversation nor that no agent can ever violate the rules.

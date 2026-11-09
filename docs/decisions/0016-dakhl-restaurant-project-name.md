@@ -12,7 +12,7 @@ The existing Penpot project/file/page are renamed in place, retaining their IDs 
 
 - Project: **Dakhl_Restaurant**.
 - File: **Dakhl_Restaurant · Phase designs & wireframes**.
-- Page: **Dakhl_Restaurant · Designs & Wireframes / التصاميم**.
+- Page: **Dakhl_Restaurant · Designs & Wireframes / Designs**.
 
 This updates the names in [0015](0015-penpot-design-workspace.md), not the destination or approval gate. Hindsight's existing bank display name is **Dakhl_Restaurant**; its bank ID remains `project-daftar` so the existing knowledge stays accessible.
 
@@ -30,3 +30,5 @@ These exceptions prevent stranded restaurant accounts/drafts, broken imports/int
 ## Validation
 
 Search active project labels for remaining old names; independently review substitutions; verify protected Electron/provenance/screenshot files stay unchanged; validate documentation links and skill/config syntax. Record the actual checks and external rename evidence in [the task log](../log/2026-10-28-project-name.md). No normal application launch or Flutter tests/builds are needed for this naming-only change.
+
+Documentation-language note, 2026-10-28: workspace labels above are rendered in English; the canonical page identifier is unchanged. This translation does not rename the actual Penpot page.

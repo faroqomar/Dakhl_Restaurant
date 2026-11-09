@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "tool": "device_open",
+  "hostId": "local",
+  "deviceId": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
+  "sessionId": "t3-b91493306db60c230eefae24",
+  "observedAt": "2026-11-08T06:39:26.720850+00:00",
+  "controlReady": true,
+  "fixtureReady": true,
+  "evidence": [
+    {
+      "path": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-c1-restart-preflight-gmiba937/device-open.json",
+      "sha256": "d3922ccc789a5d630e9ff87cc81af832df7834f29a0301707eb05819a913b89f"
+    }
+  ]
+}

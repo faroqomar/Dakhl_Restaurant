@@ -1,11 +1,11 @@
-# معاينة المتصفح وملاحظات التصميم
+# Browser preview and design feedback
 
-الحالة: منفّذ ومفتوح للمراجعة. التاريخ: 2026-10-26. المصدر: طلب المالك فتح النظام بالمتصفح ليحدد الأجزاء غير المرغوبة في التصميم والتوزيع.
+Status: implemented and open for review. Date: 2026-10-26. Source: the owner requested opening the system in a browser to identify unwanted design/layout areas.
 
-`node scripts/preview-design.cjs` يقدم واجهة التطبيق الحالية على `http://127.0.0.1:4317/` ببيانات توضيحية فقط؛ لا يفتح حسابات المطعم. الشريط الإضافي خاص بالمعاينة: Highlight & comment لتحديد منطقة بالسحب أو النقر وإضافة تعليق، Comments لمراجعة الملاحظات، وExport لتنزيل قائمة نصية. تعليقات المالك تحفظ محلياً في `outputs/design-review/comments.json` ولا تدخل فهرسة ذاكرة المشروع أو بيانات المطعم. صفحات التطبيق تبقى قابلة للتنقل وتجربة المبيعات ببيانات منفصلة في تخزين المتصفح.
+`node scripts/preview-design.cjs` serves the current application UI at `http://127.0.0.1:4317/` using illustrative data only; it does not open restaurant accounts. The extra toolbar is preview-only: Highlight & comment selects an area by dragging/clicking and adds a comment; Comments reviews feedback; Export downloads a text list. Owner comments are saved locally in `outputs/design-review/comments.json` and are excluded from project-memory indexing and restaurant data. Application pages remain navigable, and sales can be tried with separate browser-storage data.
 
-التحقق: فتح صفحة المبيعات في متصفح Codex بعرض الأصناف التوضيحية وأزرار المراجعة، وفحص حفظ تعليق تجريبي وقراءته من ملف الملاحظات ثم إزالة ذلك السجل التجريبي فقط. لا توجد حسابات فعلية في الخادم أو تغييرات للتطبيق المثبت. الخادم مربوط بالعنوان المحلي فقط ويتحقق من حجم ومدخلات الملاحظة ومصدر الطلب. المعاينة مخصصة للتصميم؛ تصدير PDF والنسخ الاحتياطية الفعلية تبقى داخل تطبيق دفتر.
+Verification: opened the sales page in the Codex browser with sample products and review controls, checked saving and reading a synthetic comment from the comments file, then removed that test record only. The server contains no real accounts, and the installed application was unchanged. The server binds to loopback only and validates comment size/input and request origin. This is a design preview; actual PDF export and backups remain in Daftar.
 
-## إزالة أدوات التحديد — 2026-10-26
+## Remove selection tools — 2026-10-26
 
-بطلب المالك أزيل تحميل `review.js` و`review.css` من صفحة المعاينة، فأزيل شريط التعليقات والتحديد والطبقات الملونة. الملاحظات السابقة محفوظة محلياً. أعيد تشغيل خادم المعاينة وتحديث تبويب المتصفح؛ تحقق ظهور شاشة البيع دون أدوات المراجعة. فحص صياغة الخادم و`git diff --check` ناجحان؛ لم يتغير التطبيق أو بياناته.
+At the owner's request, loading `review.js` and `review.css` was removed from the preview, removing the comments/selection toolbar and colored overlays. Previous feedback remains saved locally. The preview server was restarted and the browser tab refreshed; the sales screen appeared without review tools. Server syntax and `git diff --check` passed. Neither the application nor its data changed.

@@ -1,0 +1,867 @@
+{
+  "results": [
+    {
+      "id": "a2b18ec3-6d05-414f-9ac6-2340966e236f",
+      "text": "The reviewed engine checkout remains pinned to revision 6d4ae39f35b005dfa1123a82c6df316901e1e1e4. Later documentation commits are separate, and no engine publication, merge, deployment, next-phase transition, or DONE approval is authorized. | When: October 29, 2026 | Involving: Project owner and Phase 01 reviewers | The active consumed checkout must remain at its exact approved pin.",
+      "type": "world",
+      "entities": [
+        "Madar Engine",
+        "Project Madar",
+        "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "Phase 01"
+      ],
+      "context": "Independent Phase01 review outcome with explicitly blocked reader acceptance, actual closed findings/nativechecks, exact worktree source hashes and separate project ownership. No raw transcript/privatepayloads.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-10-29T14:52:33.558132+00:00",
+      "document_id": "phase01:step4:independent-review",
+      "metadata": {
+        "project_path": "/Users/eros/.codex/worktrees/phase01-build-engine/Madar_Engine",
+        "source_hashes": "{\"docs/log/2026-10-29-cap01-step4-review.md\": \"2b20a1bdf2c4605efdcce0e5efca0d04a5860c534a8d79263b533596bf6d718c\", \"PHASES.md\": \"a838c838c09e7ba94caf43a2b91d4f793bdf8c13df1c2e273340f095c3f3a6d0\", \"docs/README.md\": \"3561cc235c637986f03507041a943a3f3f0b5b4321d125f8f9fd0d8062e9e91e\", \"docs/how-to/repeated-problems.md\": \"a1a0800083179fd6cfd14ef652fc6126ef5f693cc47e8ba77fdc968216004374\"}",
+        "engine_revision": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4"
+      },
+      "chunk_id": "project-madar_phase01:step4:independent-review_1",
+      "tags": [
+        "project:madar",
+        "kind:log"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0944607931831685,
+        "reranker": null,
+        "semantic": 0.860610382484152,
+        "keyword": 1.399999976158142
+      },
+      "attachments": null
+    },
+    {
+      "id": "9b51e3b6-544a-4810-8d61-7714500a49b7",
+      "text": "Consumer draft PR #9 depends on engine draft PR #6. The immutable consumer runtime remains pinned to a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294; publication head bca3dfc14680e78459916f03596d7323fe5b8436 passed 2/2 hosted checks, and existing consumer publication head 6f9ffa6d8152c991a5301c5f1e1f538c9dd586f2 passed 6/6. These checks are source-specific and later revisions require their own final-head checks. | When: October 31, 2026 | Involving: Madar Engine and Dakhl_Restaurant | A documentation publication head does not replace the immutable runtime revision.",
+      "type": "world",
+      "entities": [
+        "bca3dfc14680e78459916f03596d7323fe5b8436",
+        "Consumer draft PR #9",
+        "Madar Engine",
+        "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+        "Dakhl_Restaurant",
+        "6f9ffa6d8152c991a5301c5f1e1f538c9dd586f2",
+        "engine draft PR #6"
+      ],
+      "context": "Authoritative project source docs/reference/cap02-native-verification-2026-10-31.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-10-31T00:00:00.050000+00:00",
+      "occurred_end": "2026-10-31T00:00:00.050000+00:00",
+      "mentioned_at": "2026-11-04T16:39:54.411335+00:00",
+      "document_id": "repo:docs/reference/cap02-native-verification-2026-10-31.md",
+      "metadata": {
+        "sha256": "f81eb1d4392c8f7981a7dde9349e1e9badd7c896e667ed7d24f1f50dcc457dce",
+        "source_path": "docs/reference/cap02-native-verification-2026-10-31.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:docs/reference/cap02-native-verification-2026-10-31.md_0",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.091920409525306,
+        "reranker": null,
+        "semantic": 0.8608777009917691,
+        "keyword": 1.2000000476837158
+      },
+      "attachments": null
+    },
+    {
+      "id": "1b503f42-62b8-4089-b358-6fccf036baf8",
+      "text": "Project Madar must preserve the approved runtime source ancestry and exact reviewed engine pin `6d4ae39f35b005dfa1123a82c6df316901e1e1e4`; future engine integration must use a normal merge that keeps the pinned commit reachable, while squash or rebase that drops it is prohibited. Engine6d4ae39 remains reachable and must not be replaced with a merely equivalent API-created commit; remote HEAD and pin retrieval must be verified before consumer CI. Documentation-only changes must remain separate and must not advance the active runtime checkout or trigger repinning when runtime code is unchanged. On October 29 and November 4, 2026, documentation commits advanced the active consumed checkout and were correctly rejected by the unchanged exact-source checker; the selected remedy preserved documentation commit/branch `a918fbc053066226ef087a7e39c5a41fa8c8e8c9`, detached the active runtime checkout at `6d4ae39f35b005dfa1123a82c6df316901e1e1e4`, restored only committed documentation/evidence paths, and passed the checker without reset, source deletion, repinning, or check relaxation. Future documentation commits must use a separate checkout or restore the consumed reviewed checkout before consumer checks.",
+      "type": "observation",
+      "entities": [
+        "exact engine pin checker",
+        "consumer CI",
+        "docs/how-to/repeated-problems.md",
+        "a918fbc053066226ef087a7e39c5a41fa8c8e8c9",
+        "exact pin",
+        "6d4ae39",
+        "07d2bb1b4c920113457f0338aff2b00410dc9241",
+        "GitHub",
+        "Madar Engine",
+        "immutable consumer pin",
+        "Project Madar",
+        "Git",
+        "Engine6d4ae39",
+        "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "codex/phase01-build",
+        "Phase 01",
+        "outputs/cap01/final-checkout-state.json",
+        "Madar",
+        "a918fbc",
+        "engine outputs/cap01/final-checkout-state.json",
+        "exact-HEAD gate",
+        "exact-source checker",
+        "engine source pin"
+      ],
+      "context": null,
+      "occurred_start": "2026-10-29T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-04T23:59:59.030000+00:00",
+      "mentioned_at": "2026-11-04T16:39:54.386388+00:00",
+      "document_id": null,
+      "metadata": {},
+      "chunk_id": null,
+      "tags": [
+        "project:madar"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0917844880912113,
+        "reranker": null,
+        "semantic": 0.8711990867615835,
+        "keyword": 1.7000000476837158
+      },
+      "attachments": null
+    },
+    {
+      "id": "fb502c8f-1f7a-429e-aa0b-ae6b068baf97",
+      "text": "The reviewed runtime checkout must remain detached at `6d4ae39f35b005dfa1123a82c6df316901e1e1e4`, while documentation commit `a918fbc053066226ef087a7e39c5a41fa8c8e8c9` is preserved on `codex/phase01-build`; documentation must not advance the active runtime checkout used by the consumer. No runtime file or pin changed, no work was reset or discarded, and the exact-source checker passed after reconciliation. | When: October 29, 2026 | Involving: Madar engine and consumer checkout | A later documentation-only commit caused the unchanged consumer checker to reject the checkout; preserving separate documentation and runtime revisions maintains exact-source provenance.",
+      "type": "world",
+      "entities": [
+        "a918fbc053066226ef087a7e39c5a41fa8c8e8c9",
+        "Project Madar",
+        "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "codex/phase01-build",
+        "exact-source checker"
+      ],
+      "context": "Final exact-source checkout correction with retained documentation provenance. Current source-scoped handoff; no raw transcript/private payload.",
+      "occurred_start": "2026-10-29T00:00:00.040000+00:00",
+      "occurred_end": "2026-10-29T23:59:59.040000+00:00",
+      "mentioned_at": "2026-10-29T13:17:10.965113+00:00",
+      "document_id": "phase01:step3:local-build-evidence",
+      "metadata": {
+        "project_path": "/Users/eros/.codex/worktrees/phase01-build-engine/Madar_Engine",
+        "source_hashes": "{\"docs/log/2026-10-29-cap01-consumer-handoff.md\": \"7f5dffe86c52135784659ab9286cd0e67d2d581d87ebe0ac38b10ef8247761ee\", \"docs/log/2026-10-29-cap01-implementation.md\": \"6ac8ad7c6719622e5bfc933c0e79f9ce9da17753ecf508ddbde0ce57d0f12e07\", \"docs/decisions/0009-local-device-preferences.md\": \"27e7aa07671d4dd78cf31014089eb96ab7f12bcad9aa40e8513a6171b6fb2c1c\", \"packages/application/README.md\": \"2656377488efb6f64f47e8d3abefcb3a40aafd499945e54ef924ac1c94ad6dcd\", \"packages/data/README.md\": \"95daa7135c55b239204e0b56043a7b997743792fa5f6c40951a7304543920251\", \"docs/reference/cap01-device-preferences-plan.md\": \"8a9a5129c0e6b7e00fd5d0a0239b6130a2a7a690de4cb274f7cc5f415e24b7fd\", \"docs/how-to/repeated-problems.md\": \"0490390dcd0e6c69e0eb5b8e68e98deaa9dbdb62c07dcc507ccdd0daeb9aab7d\", \"PHASES.md\": \"726837754738cff44391812fb07ba60bbf71c8de8d1cf592c533b75749d8c236\", \"PLANS.md\": \"5554e108865ded89bac2f013c09437791ff0b124fd9b4a01da8bd4a9b1c8cc5a\", \"README.md\": \"b81cda05ba03d72017ac7ba93515ead73966c836cf1c47ff2514f3974e498b2b\", \"FULLSTACK.md\": \"c26c86f3aca805ab028d8d923b05fdd3fca24ae922ac2d1eb8637fc966ec8df2\"}"
+      },
+      "chunk_id": "project-madar_phase01:step3:local-build-evidence_1",
+      "tags": [
+        "project:madar",
+        "kind:log"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0875344764366386,
+        "reranker": null,
+        "semantic": 0.8497347235679686,
+        "keyword": 1.5
+      },
+      "attachments": null
+    },
+    {
+      "id": "b71a206d-7cf3-4443-8cc3-ef0ba6279b62",
+      "text": "The independently reviewed runtime source was commit a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294, deliberately consumed by app commit 5a11c66dbf665972b17b545c105eac74c17bfeeb; reviewed host commit 63bbed8303bf8561084c5f82a3ebd52e2bf9e95d remained separate and unchanged. The four-file source repair was reviewed in isolation, committed, fast-forward integrated, and passed source checker/package resolution without bypass. | When: As of October 30, 2026 | Involving: Madar project | Establishes exact provenance and integration status for the reviewed repair.",
+      "type": "world",
+      "entities": [
+        "5a11c66dbf665972b17b545c105eac74c17bfeeb",
+        "63bbed8303bf8561084c5f82a3ebd52e2bf9e95d",
+        "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+        "Madar"
+      ],
+      "context": "Authoritative project source docs/reference/cap02-step4-review.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-10-30T00:00:00.010000+00:00",
+      "occurred_end": "2026-10-30T23:59:59.010000+00:00",
+      "mentioned_at": "2026-11-04T16:39:54.371546+00:00",
+      "document_id": "repo:docs/reference/cap02-step4-review.md",
+      "metadata": {
+        "sha256": "b5da1b18a81c42011512c38db725aa3f4f8e6e48796d7b4e7190816a30f66d7a",
+        "source_path": "docs/reference/cap02-step4-review.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:docs/reference/cap02-step4-review.md_0",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0847841321721259,
+        "reranker": null,
+        "semantic": 0.8630116826871024,
+        "keyword": 1.3000000715255737
+      },
+      "attachments": null
+    },
+    {
+      "id": "3f75d58d-edb0-497b-ace3-83bce34bf2e0",
+      "text": "A later documentation-only engine commit advanced HEAD, and the unchanged consumer checker correctly rejected it. The active consumer checkout must remain detached at reviewed commit `6d4ae39f35b005dfa1123a82c6df316901e1e1e4`, while documentation commit `a918fbc053066226ef087a7e39c5a41fa8c8e8c9` is preserved on `codex/phase01-build`; no runtime file or pin changed, nothing was reset or discarded, and the exact-source checker passed again. | When: 2026-11-04 | Involving: Madar project engine and consumer checkouts | Further documentation must not advance the active runtime checkout used by the consumer; the distinction is recorded in `engine outputs/cap01/final-checkout-state.json`.",
+      "type": "world",
+      "entities": [
+        "a918fbc053066226ef087a7e39c5a41fa8c8e8c9",
+        "Madar Engine",
+        "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "codex/phase01-build",
+        "engine outputs/cap01/final-checkout-state.json"
+      ],
+      "context": "Authoritative project source docs/log/2026-10-29-cap01-consumer-handoff.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-04T00:00:00.030000+00:00",
+      "occurred_end": "2026-11-04T23:59:59.030000+00:00",
+      "mentioned_at": "2026-11-04T16:39:54.379149+00:00",
+      "document_id": "repo:docs/log/2026-10-29-cap01-consumer-handoff.md",
+      "metadata": {
+        "sha256": "7f5dffe86c52135784659ab9286cd0e67d2d581d87ebe0ac38b10ef8247761ee",
+        "source_path": "docs/log/2026-10-29-cap01-consumer-handoff.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:docs/log/2026-10-29-cap01-consumer-handoff.md_1",
+      "tags": [
+        "project:madar",
+        "kind:log"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0808926437614124,
+        "reranker": null,
+        "semantic": 0.8585022772251217,
+        "keyword": 1.3000000715255737
+      },
+      "attachments": null
+    },
+    {
+      "id": "e7bb0bdb-de03-4e94-82a2-c10d3a3462b3",
+      "text": "Normal merges should preserve approved source ancestry; the reviewed engine source pin should be retained when it remains the intended compatible revision, rather than repinned solely for a newer documentation commit. The consumer exact-HEAD gate requires a checkout at that pin, separate from a worktree used to read current engine documentation, and changed package source requires fresh review/conformance evidence. | When: Documented on Wednesday, October 28, 2026 | Involving: Project Madar | Documentation-only engine merges change the main commit SHA and can cause needless repinning, reapproval, or local gate failure.",
+      "type": "world",
+      "entities": [
+        "Project Madar",
+        "engine source",
+        "consumer gate"
+      ],
+      "context": "Owner-directed project prevention practice. Local documentation commit, not pushed/merged. Explicit worktree delivery supplements canonical-root sync without modifying its registry or unrelated edits.",
+      "occurred_start": "2026-10-28T00:00:00.020000+00:00",
+      "occurred_end": "2026-10-28T23:59:59.020000+00:00",
+      "mentioned_at": "2026-10-28T16:17:29.684363+00:00",
+      "document_id": "practice:repeated-problems",
+      "metadata": {
+        "sha256": "9cab9a7fbabd5a9704ee94125bae964b45810cd290bb9217318dad121dc7a29c",
+        "source_path": "docs/how-to/repeated-problems.md",
+        "source_root": "/Users/eros/.codex/worktrees/cap00-merge-record/Madar_Engine",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine",
+        "source_revision": "dc6a2256a1f0e051f802d7a67fb7d8624b5c85e9"
+      },
+      "chunk_id": "project-madar_practice:repeated-problems_3",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0804064458768883,
+        "reranker": null,
+        "semantic": 0.8796196913832554,
+        "keyword": 2.1000001430511475
+      },
+      "attachments": null
+    },
+    {
+      "id": "69478eeb-ed5f-414a-99c0-4518fa7e376d",
+      "text": "Project madar should use normal engine merges that preserve approved source ancestry, retain the reviewed engine source pin when it remains compatible, and avoid repinning solely for a newer documentation commit. The consumer's exact-HEAD gate requires a checkout at the approved pin, separate from any worktree used to read current documentation; changed package source requires fresh review and conformance evidence. This is a documented rule, not a verified implementation result. | When: November 4, 2026 | Involving: Project madar engineering | Documentation-only engine merges can change the main commit SHA and trigger unnecessary repinning, reapproval, or local gate failure.",
+      "type": "world",
+      "entities": [
+        "docs/how-to/repeated-problems.md",
+        "Project Madar",
+        "exact-HEAD gate",
+        "engine source pin"
+      ],
+      "context": "Authoritative project source docs/how-to/repeated-problems.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-04T16:39:54.356507+00:00",
+      "document_id": "repo:docs/how-to/repeated-problems.md",
+      "metadata": {
+        "sha256": "28b60770b2a4c7e81fc45a29146968721f1f27f198e3fe0aa67d5cd1689413db",
+        "source_path": "docs/how-to/repeated-problems.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:docs/how-to/repeated-problems.md_3",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0779630164300653,
+        "reranker": null,
+        "semantic": 0.8752260878547393,
+        "keyword": 2.1000001430511475
+      },
+      "attachments": null
+    },
+    {
+      "id": "7c834937-9c19-411e-a364-8df44100b4f0",
+      "text": "The exact engine pin checker passed after correcting the source checkout; it checks HEAD as well as the recorded source files. The correction was made without repinning, resetting, discarding prior work, changing runtime code, or requiring a native re-test. | When: October 29, 2026 | Involving: Madar project | This verified the final source-scoped handoff against the retained documentation provenance.",
+      "type": "world",
+      "entities": [
+        "exact engine pin checker",
+        "6d4ae39",
+        "Madar Engine",
+        "Madar"
+      ],
+      "context": "Final exact-source checkout correction with retained documentation provenance. Current source-scoped handoff; no raw transcript/private payload.",
+      "occurred_start": "2026-10-29T13:17:10.995113+00:00",
+      "occurred_end": "2026-10-29T13:17:10.995113+00:00",
+      "mentioned_at": "2026-10-29T13:17:10.995113+00:00",
+      "document_id": "phase01:step3:local-build-evidence",
+      "metadata": {
+        "project_path": "/Users/eros/.codex/worktrees/phase01-build-engine/Madar_Engine",
+        "source_hashes": "{\"docs/log/2026-10-29-cap01-consumer-handoff.md\": \"7f5dffe86c52135784659ab9286cd0e67d2d581d87ebe0ac38b10ef8247761ee\", \"docs/log/2026-10-29-cap01-implementation.md\": \"6ac8ad7c6719622e5bfc933c0e79f9ce9da17753ecf508ddbde0ce57d0f12e07\", \"docs/decisions/0009-local-device-preferences.md\": \"27e7aa07671d4dd78cf31014089eb96ab7f12bcad9aa40e8513a6171b6fb2c1c\", \"packages/application/README.md\": \"2656377488efb6f64f47e8d3abefcb3a40aafd499945e54ef924ac1c94ad6dcd\", \"packages/data/README.md\": \"95daa7135c55b239204e0b56043a7b997743792fa5f6c40951a7304543920251\", \"docs/reference/cap01-device-preferences-plan.md\": \"8a9a5129c0e6b7e00fd5d0a0239b6130a2a7a690de4cb274f7cc5f415e24b7fd\", \"docs/how-to/repeated-problems.md\": \"0490390dcd0e6c69e0eb5b8e68e98deaa9dbdb62c07dcc507ccdd0daeb9aab7d\", \"PHASES.md\": \"726837754738cff44391812fb07ba60bbf71c8de8d1cf592c533b75749d8c236\", \"PLANS.md\": \"5554e108865ded89bac2f013c09437791ff0b124fd9b4a01da8bd4a9b1c8cc5a\", \"README.md\": \"b81cda05ba03d72017ac7ba93515ead73966c836cf1c47ff2514f3974e498b2b\", \"FULLSTACK.md\": \"c26c86f3aca805ab028d8d923b05fdd3fca24ae922ac2d1eb8637fc966ec8df2\"}"
+      },
+      "chunk_id": "project-madar_phase01:step3:local-build-evidence_2",
+      "tags": [
+        "project:madar",
+        "kind:log"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0713647204722734,
+        "reranker": null,
+        "semantic": 0.8560835804889467,
+        "keyword": 1.3000000715255737
+      },
+      "attachments": null
+    },
+    {
+      "id": "ac0cfcc8-0882-4384-8766-c7e0c79b34df",
+      "text": "Engine draft PR #6 remains at exact commit `bca3dfc14680e78459916f03596d7323fe5b8436`, its two exact-head checks pass, and the app continues consuming immutable runtime `a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294`. | When: October 31, 2026 | Involving: Madar Engine and Dakhl_Restaurant | The continuation preserved the selected engine/app revision relationship without introducing source or contract changes.",
+      "type": "world",
+      "entities": [
+        "bca3dfc14680e78459916f03596d7323fe5b8436",
+        "Madar Engine",
+        "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+        "Dakhl_Restaurant",
+        "draft PR 6"
+      ],
+      "context": "Correction of dated app publication access blocker after owner authorization; current exact candidate and separate native gates. Sanitized project milestone only.",
+      "occurred_start": "2026-10-31T00:00:00.010000+00:00",
+      "occurred_end": "2026-10-31T23:59:59.010000+00:00",
+      "mentioned_at": "2026-10-31T16:29:40.297997+00:00",
+      "document_id": "madar:phase02:publication-resumed:2026-10-31",
+      "metadata": {
+        "scope": "Single sanitized milestone; no private payload, signing material, raw journal or copied app indexed.",
+        "source_sha256": "504c8b1860a1694cdec9e29904fb3730397cec41c621991e19944c84ad5e4e58",
+        "source_document": "docs/log/2026-10-31-cap02-consumer-publication-resumed.md",
+        "source_worktree": "/Users/eros/.codex/worktrees/phase02-build-engine/Madar_Engine",
+        "canonical_project": "madar"
+      },
+      "chunk_id": "project-madar_madar:phase02:publication-resumed:2026-10-31_0",
+      "tags": [
+        "project:madar",
+        "phase:02",
+        "kind:log"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.068843929639999,
+        "reranker": null,
+        "semantic": 0.8593770433214851,
+        "keyword": 1.0
+      },
+      "attachments": null
+    },
+    {
+      "id": "62490c08-ad14-4d0f-aec8-418612a15fde",
+      "text": "The reviewed preview source was retained at 784b139753a0e2a07d3f97eedb326debfe068395; no runtime pin or shared capability changes were required. Engine implementation, public API, package/logger changes, and engine design were marked N/A, while widgets, themes, navigation, presentation, restaurant workflows, and interaction safeguards remained consumer-owned. | When: October 29, 2026 | This preserves the reviewed boundary between the engine and consumer projects.",
+      "type": "world",
+      "entities": [
+        "Project Madar",
+        "Dakhl_Restaurant",
+        "784b139753a0e2a07d3f97eedb326debfe068395"
+      ],
+      "context": "English-only sanitized worktree design/approval evidence with current source hashes. Independent design review is not owner approval or runtime verification.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-10-29T09:26:15.706748+00:00",
+      "document_id": "worktree:phase01-design:2026-10-29",
+      "metadata": {
+        "branch": "codex/phase01-scope",
+        "project_path": "/Users/eros/.codex/worktrees/phase01-scope-engine/Madar_Engine",
+        "source_paths": "{\"PHASES.md\": \"ef5e12c5f5239fb648324a4bbed8f54e53ff4eb16626b840db5bc7abd84f9c05\", \"docs/log/2026-10-29-phase01-penpot-design.md\": \"ffbd6f7e55af59af7d93912396ffee1c2a8ab9f2c8f6820c7978b1c8ca64c147\"}",
+        "snapshot_sha256": "fbf69e4393d823935e7f687dc2c2e8f34e558e41ceafd79f36eef48a3d5579ef"
+      },
+      "chunk_id": "project-madar_worktree:phase01-design:2026-10-29_0",
+      "tags": [
+        "project:madar",
+        "kind:log"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0613967326642677,
+        "reranker": null,
+        "semantic": 0.8620335541943592,
+        "keyword": 1.100000023841858
+      },
+      "attachments": null
+    },
+    {
+      "id": "298c2418-c44c-45ea-a23d-5c3adffda1a3",
+      "text": "The reviewed Madar engine source is committed locally at `6d4ae39f35b005dfa1123a82c6df316901e1e1e4` for the local-only device-preferences capability. Dakhl_Restaurant consumes application `0.1.0-dev.2`, data `0.1.0-dev.1`, and native-adapter `0.1.0-dev.1` through sibling package paths with an immutable manifest and lockfile. Resolved-source, version, and package-boundary validation passed. The consumer must not replace this exact pin solely because newer documentation exists; newer source or versions require deliberate review and verification.",
+      "type": "observation",
+      "entities": [
+        "engine",
+        "f7f68988561d25cc93eb28c0ec989847526b2df9",
+        "consumer runtime",
+        "lockfile",
+        "engine manifest",
+        "lockfiles",
+        "domain version",
+        "application0.1.0-dev.2",
+        "data0.1.0-dev.1",
+        "consumer manifest",
+        "domain/adapters",
+        "../application",
+        "Project Madar",
+        "native UI",
+        "consumer conformance",
+        "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "Data",
+        "Dakhl_Restaurant",
+        "docs/log/2026-11-07-completion-step3-build.md",
+        "Madar",
+        "engine pin",
+        "runtime",
+        "package export",
+        "reviewed revision 899",
+        "codex/completion-scope",
+        "exact-source checker",
+        "native-adapter0.1.0-dev.1",
+        "dev.3 manifest",
+        "scripts/check-engine.py"
+      ],
+      "context": null,
+      "occurred_start": "2026-10-29T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-07T00:00:00.030000+00:00",
+      "mentioned_at": "2026-11-07T12:25:33.126130+00:00",
+      "document_id": null,
+      "metadata": {},
+      "chunk_id": null,
+      "tags": [
+        "project:madar"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0609445002756797,
+        "reranker": null,
+        "semantic": 0.8689650971314269,
+        "keyword": 1.399999976158142
+      },
+      "attachments": null
+    },
+    {
+      "id": "c73365eb-e6f5-49b5-814d-012f09242a48",
+      "text": "Engine contract/data adapter and documentation were independently reviewed with no actionable findings. The reviewed source hashes were verified, and local commit `6d4ae39f35b005dfa1123a82c6df316901e1e1e4` was created for `feat(data): add local-only device preferences capability`; the commit is local and is not guaranteed to be fetchable by hosted CI until authorized publication. | When: October 29, 2026 | Involving: Lead and Independent Reviewer | The handoff required verified reviewed source and explicit separation between local work and publishable CI dependencies.",
+      "type": "world",
+      "entities": [
+        "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "Madar",
+        "hosted CI",
+        "Independent Reviewer"
+      ],
+      "context": "Authoritative project source docs/log/2026-10-29-cap01-consumer-handoff.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-10-29T00:00:00.010000+00:00",
+      "occurred_end": "2026-10-29T00:00:00.010000+00:00",
+      "mentioned_at": "2026-11-04T16:39:54.359149+00:00",
+      "document_id": "repo:docs/log/2026-10-29-cap01-consumer-handoff.md",
+      "metadata": {
+        "sha256": "7f5dffe86c52135784659ab9286cd0e67d2d581d87ebe0ac38b10ef8247761ee",
+        "source_path": "docs/log/2026-10-29-cap01-consumer-handoff.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:docs/log/2026-10-29-cap01-consumer-handoff.md_0",
+      "tags": [
+        "project:madar",
+        "kind:log"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0578944047212637,
+        "reranker": null,
+        "semantic": 0.8707146798712396,
+        "keyword": 1.7000000476837158
+      },
+      "attachments": null
+    },
+    {
+      "id": "16aaa6ff-989d-4438-8490-01e2969c525c",
+      "text": "On October 29, 2026, committing documentation in the active consumed engine worktree moved HEAD past the immutable consumer pin, and the existing checker correctly rejected the state. The selected remedy was to preserve docs commit/branch a918fbc, detach the active runtime checkout at 6d4ae39, and restore only the committed documentation/evidence paths; the exact-source checker then passed without reset, source deletion, repinning, or check relaxation. | When: October 29, 2026 | Involving: Project Madar engineering workflow | Identical package bytes do not permit a later documentation-only HEAD when the consumer pin is immutable. Future documentation commits must use a separate checkout or restore the consumed reviewed checkout before consumer checks.",
+      "type": "world",
+      "entities": [
+        "6d4ae39",
+        "Madar Engine",
+        "immutable consumer pin",
+        "Project Madar",
+        "outputs/cap01/final-checkout-state.json",
+        "a918fbc"
+      ],
+      "context": "Authoritative project source docs/how-to/repeated-problems.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-10-29T00:00:00.020000+00:00",
+      "occurred_end": "2026-10-29T23:59:59.020000+00:00",
+      "mentioned_at": "2026-11-04T16:39:54.366507+00:00",
+      "document_id": "repo:docs/how-to/repeated-problems.md",
+      "metadata": {
+        "sha256": "28b60770b2a4c7e81fc45a29146968721f1f27f198e3fe0aa67d5cd1689413db",
+        "source_path": "docs/how-to/repeated-problems.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Madar_Engine"
+      },
+      "chunk_id": "project-madar_repo:docs/how-to/repeated-problems.md_8",
+      "tags": [
+        "project:madar",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0546010635016967,
+        "reranker": null,
+        "semantic": 0.8611021720706137,
+        "keyword": 1.5
+      },
+      "attachments": null
+    },
+    {
+      "id": "b376cd78-4f0a-4890-81c0-a3e8082f6f3e",
+      "text": "Future engine integration must preserve the pinned commit's ancestry through a normal merge; squash or rebase that drops the pin is prohibited. The publication includes the real pinned engine commit as a reachable ancestor and preserves source bytes. | When: October 29, 2026 | Ancestry preservation is required for runtime and publication integrity.",
+      "type": "world",
+      "entities": [
+        "Git",
+        "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+        "Madar"
+      ],
+      "context": "Authorized linked draft review publication, project-scoped source and exact acceptance limits. Not merge/deployment/phase advancement.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-10-29T16:35:02.962289+00:00",
+      "document_id": "phase01:step5-delivery",
+      "metadata": {
+        "project_path": "/Users/eros/.codex/worktrees/dashboard-engine-tools/Madar_Engine",
+        "source_hashes": "{\".github/workflows/engine.yml\": \"aab80bc6bcebffe193eced8712a8dc6dfc6a734199c2521b0f5affac541d4799\", \"PHASES.md\": \"afb504e214a0ff8128d69add29bfd1c03627a6080d9e544520bca9fdb4b6cf9a\", \"docs/log/2026-10-29-cap01-step5-pr.md\": \"c9874ddde8f1880c4fa6b818c8822fc02d55ad26c55f482aa74e01fd66d0cf52\", \"docs/log/2026-10-29-step5-development-review.md\": \"1cd620c7fa4599e26e82f6f2574be4e4c9ab6f6bc2a3e7f37fb0f53068712802\"}"
+      },
+      "chunk_id": "project-madar_phase01:step5-delivery_2",
+      "tags": [
+        "project:madar",
+        "kind:log"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0351991347974412,
+        "reranker": null,
+        "semantic": 0.8503636210940125,
+        "keyword": 1.399999976158142
+      },
+      "attachments": null
+    }
+  ],
+  "trace": null,
+  "entities": {
+    "Madar Engine": {
+      "entity_id": "5f3bbdb3-5705-46ae-b1e9-3033fa1e5fbb",
+      "canonical_name": "Madar Engine",
+      "observations": []
+    },
+    "Project Madar": {
+      "entity_id": "739ec0f5-34e4-4054-adcb-a8633bed248a",
+      "canonical_name": "Project Madar",
+      "observations": []
+    },
+    "6d4ae39f35b005dfa1123a82c6df316901e1e1e4": {
+      "entity_id": "8c9f9c06-ddfd-4d83-8210-8ab2f7597a13",
+      "canonical_name": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
+      "observations": []
+    },
+    "Phase 01": {
+      "entity_id": "9b218700-c940-4cc8-9ebc-0d94f31e0e25",
+      "canonical_name": "Phase 01",
+      "observations": []
+    },
+    "bca3dfc14680e78459916f03596d7323fe5b8436": {
+      "entity_id": "37d5b3c3-cc99-4f5f-8b17-24451d71b7e0",
+      "canonical_name": "bca3dfc14680e78459916f03596d7323fe5b8436",
+      "observations": []
+    },
+    "Consumer draft PR #9": {
+      "entity_id": "3ef875e1-37d0-4e86-b11c-29ab8e0d6a9a",
+      "canonical_name": "Consumer draft PR #9",
+      "observations": []
+    },
+    "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294": {
+      "entity_id": "950ad268-ea3f-4fbb-9580-37b3cd74666d",
+      "canonical_name": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+      "observations": []
+    },
+    "Dakhl_Restaurant": {
+      "entity_id": "acc7da4f-2d7e-4b9e-bd0c-442c063c5432",
+      "canonical_name": "Dakhl_Restaurant",
+      "observations": []
+    },
+    "6f9ffa6d8152c991a5301c5f1e1f538c9dd586f2": {
+      "entity_id": "ad035603-0eb9-4cd3-a645-9910b647c54f",
+      "canonical_name": "6f9ffa6d8152c991a5301c5f1e1f538c9dd586f2",
+      "observations": []
+    },
+    "engine draft PR #6": {
+      "entity_id": "fa907261-05cb-4523-bdb0-670f4603e3bb",
+      "canonical_name": "engine draft PR #6",
+      "observations": []
+    },
+    "exact engine pin checker": {
+      "entity_id": "0e7912a1-2e91-4c2c-af0f-7f4cbe94d036",
+      "canonical_name": "exact engine pin checker",
+      "observations": []
+    },
+    "consumer CI": {
+      "entity_id": "13e63eb6-f128-457e-bef6-59637ebe7074",
+      "canonical_name": "consumer CI",
+      "observations": []
+    },
+    "docs/how-to/repeated-problems.md": {
+      "entity_id": "1eef17a5-b902-4f3c-937c-f9dcb14fbb4b",
+      "canonical_name": "docs/how-to/repeated-problems.md",
+      "observations": []
+    },
+    "a918fbc053066226ef087a7e39c5a41fa8c8e8c9": {
+      "entity_id": "2f0ecfb2-244e-4594-8114-ae6623e3fa24",
+      "canonical_name": "a918fbc053066226ef087a7e39c5a41fa8c8e8c9",
+      "observations": []
+    },
+    "exact pin": {
+      "entity_id": "3a38a2cb-3aef-4c2a-8e82-50f168613901",
+      "canonical_name": "exact pin",
+      "observations": []
+    },
+    "6d4ae39": {
+      "entity_id": "497f5742-63c3-47d8-b011-99dbf17305d7",
+      "canonical_name": "6d4ae39",
+      "observations": []
+    },
+    "07d2bb1b4c920113457f0338aff2b00410dc9241": {
+      "entity_id": "5c767abf-fa29-4390-913c-d02da157eba5",
+      "canonical_name": "07d2bb1b4c920113457f0338aff2b00410dc9241",
+      "observations": []
+    },
+    "GitHub": {
+      "entity_id": "5e9b1a36-f5b9-4d0d-b10d-4d363966ba22",
+      "canonical_name": "GitHub",
+      "observations": []
+    },
+    "immutable consumer pin": {
+      "entity_id": "66b6c363-e7fa-4fa7-a260-20c4938fb300",
+      "canonical_name": "immutable consumer pin",
+      "observations": []
+    },
+    "Git": {
+      "entity_id": "824d4c2a-a72b-4449-bcfc-3ad319c272e3",
+      "canonical_name": "Git",
+      "observations": []
+    },
+    "Engine6d4ae39": {
+      "entity_id": "86d1cd57-091b-435d-b107-71b78e36877c",
+      "canonical_name": "Engine6d4ae39",
+      "observations": []
+    },
+    "codex/phase01-build": {
+      "entity_id": "9ad039f4-b16e-4432-88c7-ad28cc63e344",
+      "canonical_name": "codex/phase01-build",
+      "observations": []
+    },
+    "outputs/cap01/final-checkout-state.json": {
+      "entity_id": "bab803ac-2626-4b02-b592-7c4395906ea2",
+      "canonical_name": "outputs/cap01/final-checkout-state.json",
+      "observations": []
+    },
+    "Madar": {
+      "entity_id": "bd7486f7-b318-4024-aa8a-1e7d7bdabb30",
+      "canonical_name": "Madar",
+      "observations": []
+    },
+    "a918fbc": {
+      "entity_id": "c3e5f6ca-ae5c-4d0c-8816-4f279de59919",
+      "canonical_name": "a918fbc",
+      "observations": []
+    },
+    "engine outputs/cap01/final-checkout-state.json": {
+      "entity_id": "d4603a86-dc35-48fa-b8e4-8750d8f437c4",
+      "canonical_name": "engine outputs/cap01/final-checkout-state.json",
+      "observations": []
+    },
+    "exact-HEAD gate": {
+      "entity_id": "d95fef99-3533-42a4-ba41-a269a092a06c",
+      "canonical_name": "exact-HEAD gate",
+      "observations": []
+    },
+    "exact-source checker": {
+      "entity_id": "eb38b4c1-6184-4885-8b68-f93a1122d895",
+      "canonical_name": "exact-source checker",
+      "observations": []
+    },
+    "engine source pin": {
+      "entity_id": "f64be7ac-c46e-47a1-917d-b62c78a92b8d",
+      "canonical_name": "engine source pin",
+      "observations": []
+    },
+    "5a11c66dbf665972b17b545c105eac74c17bfeeb": {
+      "entity_id": "56291be5-060a-4a8a-abdc-996dacca7f0b",
+      "canonical_name": "5a11c66dbf665972b17b545c105eac74c17bfeeb",
+      "observations": []
+    },
+    "63bbed8303bf8561084c5f82a3ebd52e2bf9e95d": {
+      "entity_id": "72b2e840-73bf-420f-af24-ce33168b93f5",
+      "canonical_name": "63bbed8303bf8561084c5f82a3ebd52e2bf9e95d",
+      "observations": []
+    },
+    "engine source": {
+      "entity_id": "9d30bafe-dcf9-4e50-9852-9aaff2f6fef1",
+      "canonical_name": "engine source",
+      "observations": []
+    },
+    "consumer gate": {
+      "entity_id": "ae38469a-26f5-4481-9200-78217faa4f3b",
+      "canonical_name": "consumer gate",
+      "observations": []
+    },
+    "draft PR 6": {
+      "entity_id": "fa0031b0-c4d2-4fc4-ab2a-84ad9c7e41b1",
+      "canonical_name": "draft PR 6",
+      "observations": []
+    },
+    "784b139753a0e2a07d3f97eedb326debfe068395": {
+      "entity_id": "fdbe2941-2887-4fc0-acec-a5e7f85df47a",
+      "canonical_name": "784b139753a0e2a07d3f97eedb326debfe068395",
+      "observations": []
+    },
+    "engine": {
+      "entity_id": "04cd0e2f-0100-4169-bae0-67f8c22fb296",
+      "canonical_name": "engine",
+      "observations": []
+    },
+    "f7f68988561d25cc93eb28c0ec989847526b2df9": {
+      "entity_id": "07285ea4-85fc-4ab0-a426-f624aed06df7",
+      "canonical_name": "f7f68988561d25cc93eb28c0ec989847526b2df9",
+      "observations": []
+    },
+    "consumer runtime": {
+      "entity_id": "0a6b7fa6-1131-4e3b-bc84-4c025ffde39c",
+      "canonical_name": "consumer runtime",
+      "observations": []
+    },
+    "lockfile": {
+      "entity_id": "2357d01c-1aac-4c62-865d-bc4e98e4b3e4",
+      "canonical_name": "lockfile",
+      "observations": []
+    },
+    "engine manifest": {
+      "entity_id": "2ca7fbfd-44eb-4b86-9d3d-ece92db6bc19",
+      "canonical_name": "engine manifest",
+      "observations": []
+    },
+    "lockfiles": {
+      "entity_id": "34920bdf-b001-4cb4-b258-f0f96f60b74d",
+      "canonical_name": "lockfiles",
+      "observations": []
+    },
+    "domain version": {
+      "entity_id": "374617e9-fcab-4896-b62e-31c263b59f3f",
+      "canonical_name": "domain version",
+      "observations": []
+    },
+    "application0.1.0-dev.2": {
+      "entity_id": "467872fd-7df2-4c54-bffc-7dc73b647df5",
+      "canonical_name": "application0.1.0-dev.2",
+      "observations": []
+    },
+    "data0.1.0-dev.1": {
+      "entity_id": "4c60b48b-b147-4da7-a786-6f9d9ce051da",
+      "canonical_name": "data0.1.0-dev.1",
+      "observations": []
+    },
+    "consumer manifest": {
+      "entity_id": "4e06a73d-acb9-4482-972d-24b7833eac40",
+      "canonical_name": "consumer manifest",
+      "observations": []
+    },
+    "domain/adapters": {
+      "entity_id": "596c3cb9-e7db-43c9-87cb-2b3c759702b6",
+      "canonical_name": "domain/adapters",
+      "observations": []
+    },
+    "../application": {
+      "entity_id": "679c1d31-3031-46d0-883b-c02bcda7db47",
+      "canonical_name": "../application",
+      "observations": []
+    },
+    "native UI": {
+      "entity_id": "75797788-d3f5-4f31-8e75-bf75cb0d6326",
+      "canonical_name": "native UI",
+      "observations": []
+    },
+    "consumer conformance": {
+      "entity_id": "878f19e9-4bd6-4f13-8f4e-eee0750458ea",
+      "canonical_name": "consumer conformance",
+      "observations": []
+    },
+    "Data": {
+      "entity_id": "8eb2208e-87ed-4453-93f3-5883a3e10f94",
+      "canonical_name": "Data",
+      "observations": []
+    },
+    "docs/log/2026-11-07-completion-step3-build.md": {
+      "entity_id": "b4ac4ffa-36e9-4a7b-9f7d-08fce49d056e",
+      "canonical_name": "docs/log/2026-11-07-completion-step3-build.md",
+      "observations": []
+    },
+    "engine pin": {
+      "entity_id": "bd877752-5f7a-474c-8bab-e7b6802f29fa",
+      "canonical_name": "engine pin",
+      "observations": []
+    },
+    "runtime": {
+      "entity_id": "c630129a-861e-4dfe-9d82-eb3ea9b1e538",
+      "canonical_name": "runtime",
+      "observations": []
+    },
+    "package export": {
+      "entity_id": "db48d14f-7463-4701-852c-65ab58f02afd",
+      "canonical_name": "package export",
+      "observations": []
+    },
+    "reviewed revision 899": {
+      "entity_id": "e78502c5-5b2a-48e1-bcf8-be539931c81f",
+      "canonical_name": "reviewed revision 899",
+      "observations": []
+    },
+    "codex/completion-scope": {
+      "entity_id": "ea0be411-fa6d-48f5-97bb-a785230321da",
+      "canonical_name": "codex/completion-scope",
+      "observations": []
+    },
+    "native-adapter0.1.0-dev.1": {
+      "entity_id": "eb5a78b7-51bb-457b-926b-824c22621973",
+      "canonical_name": "native-adapter0.1.0-dev.1",
+      "observations": []
+    },
+    "dev.3 manifest": {
+      "entity_id": "f1bd5c55-0398-4c06-ab62-61ba4506c51f",
+      "canonical_name": "dev.3 manifest",
+      "observations": []
+    },
+    "scripts/check-engine.py": {
+      "entity_id": "fe9fc6fa-585d-49e0-805f-d73d97e2368d",
+      "canonical_name": "scripts/check-engine.py",
+      "observations": []
+    },
+    "hosted CI": {
+      "entity_id": "ce05daae-bad9-4b81-9924-c1be346ef258",
+      "canonical_name": "hosted CI",
+      "observations": []
+    },
+    "Independent Reviewer": {
+      "entity_id": "f0fabd81-e3b2-4886-8c76-8069f8a849ee",
+      "canonical_name": "Independent Reviewer",
+      "observations": []
+    }
+  },
+  "chunks": null,
+  "source_facts": null,
+  "source_facts_truncated": null
+}

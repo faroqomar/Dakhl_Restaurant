@@ -1,36 +1,36 @@
-# نقل تصميم دفتر إلى Figma — 2026-10-27
+# Transfer Daftar design to Figma — 2026-10-27
 
-الحالة: **تنفيذ جزئي متوقف بسبب حد أدوات Figma لخطة Starter؛ غير مكتمل وغير معتمد بصرياً.**
+Status: **partially implemented and stopped by the Figma Starter-plan tool limit; incomplete and not visually approved.**
 
-## الطلب
+## Request
 
-نقل جميع الواجهات ونظام التصميم والنوافذ المنبثقة إلى طبقات ومكونات Figma قابلة للتحرير. اختار المالك الطبقات القابلة للتحرير صراحةً، وليس Code Layer.
+Transfer all screens, the design system and pop-ups into editable Figma layers/components. The owner explicitly chose editable layers, not Code Layer.
 
-## الناتج الحالي
+## Current output
 
-- [ملف Figma](https://www.figma.com/design/kLJU2TbqeTqKoWrUYKSoKG).
-- جلسة Figma: `8b7a2933-581b-49df-9603-c661e0bee812`.
-- 74 حالة مصدر معزولة موثقة في `outputs/figma-transfer/inventory.json`: شاشات ومقاسات وإعدادات ونوافذ وحالات فارغة. جميع البيانات توضيحية، ولا بيانات حسابات فعلية.
-- اكتملت 10 عمليات capture مرجعية، بما فيها النوافذ، إلى طبقات أصلية قابلة للتحرير. تأكدنا من وجود 1038 طبقة نص في أول مرجع، وليست لقطة شاشة مسطحة.
-- أساسيات: 3 مجموعات متغيرات؛ 10 ألوان أصلية + 10 ألوان دلالية مرتبطة + 5 مقاييس، و7 أنماط نص. الألوان والمقاييس من CSS الحالي.
-- مكتبة مبدئية من 16 عائلة، ومكونات مصدر أدق: 203 مكونات (8 أزرار أيقونات، 134 شكل زر، 32 حقلاً، 29 بطاقة منتج) و1102 علاقة تحكم/مكون. تحتاج المكتبة تنظيماً وتخفيف التكرار وتسميات أفضل قبل الاعتماد.
-- جرى تجميع أول 10 شاشات بمثيلات مكونات. بقية الحالات ما زالت مراجع capture ولم يكتمل تجميعها النهائي.
+- [Figma file](https://www.figma.com/design/kLJU2TbqeTqKoWrUYKSoKG).
+- Figma session: `8b7a2933-581b-49df-9603-c661e0bee812`.
+- 74 isolated source states documented in `outputs/figma-transfer/inventory.json`: screens, sizes, settings, dialogs and empty states. All data is illustrative; no real accounts.
+- 10 reference captures, including dialogs, completed as native editable layers. The first reference contained 1038 text layers, not a flattened screenshot.
+- Foundations: 3 variable collections; 10 primitive colors, 10 linked semantic colors, 5 measurements and 7 text styles. Colors/measurements come from current CSS.
+- Initial library of 16 families and more precise source components: 203 components comprising 8 icon buttons, 134 button shapes, 32 fields and 29 product cards, with 1102 control/component relationships. The library needs organization, deduplication and better naming before approval.
+- The first 10 screens were assembled using component instances. Remaining states are capture references without completed final assembly.
 
-## الفحص والعيوب المفتوحة
+## Inspection and open defects
 
-أظهر فحص Figma للشاشتي البيع والمصاريف أن تحويل اتجاه بعض الحاويات الأفقية لا يحافظ على RTL: عنوان الصفحة والتنقل وبعض الأعمدة تنعكس. ترتيب بطاقة المنتج الأولى يحتاج تشخيصاً. لا يعد وجود طبقات قابلة للتحرير إثباتاً للمطابقة البصرية.
+Figma inspection of Sales/Expenses showed that converting some horizontal containers did not preserve RTL: page headings, navigation and some columns reversed. The first product card's order needs diagnosis. Editable layers do not establish visual fidelity.
 
-خطا التطبيق Geeza Pro وTahoma غير متاحين في محرر Figma البعيد؛ تحميل Tahoma فشل فعلياً. مكونات وتجميعات العمل تستخدم Noto Sans Arabic كبديل موثق. لم يتغير خط التطبيق. المراجع الخام قد تحتفظ باسم الخط غير المتاح حتى التنظيف النهائي.
+Application fonts Geeza Pro and Tahoma are unavailable in the remote Figma editor; loading Tahoma actually failed. Components/assemblies use Noto Sans Arabic as a documented substitute. The application font was unchanged. Raw references may retain unavailable font names until final cleanup.
 
-حد خطة Starter يسمح بثلاث صفحات، لذلك البنية ثلاث صفحات: النظام والدليل، الشاشات والمقاسات، والنوافذ والحالات. أوقف Figma أداة `use_figma` برسالة `You've reached the Figma MCP tool call limit on the Starter plan`. أكد `whoami` الخطة الحالية. لا يوجد موعد إعادة ضبط مؤكد في الاستجابة.
+Starter allows three pages, so the structure is three pages: system/guide, screens/sizes, and dialogs/states. Figma stopped `use_figma` with `You've reached the Figma MCP tool call limit on the Starter plan`. `whoami` confirmed the current plan. The response provided no confirmed reset time.
 
-## الاستئناف المطلوب
+## Required continuation
 
-1. قراءة `outputs/figma-transfer/session.json` و`foundations.json` و`source-masters.json` و`assembled-0.json` و`captures.json`، ثم فحص الملف الحالي قبل أي تعديل.
-2. تصحيح اتجاه الحاويات الأفقية ومحاذاة النصوص وفق المصدر؛ تشخيص ترتيب المنتجات قبل تعميم تعديل. ثم إعادة فحص البيع والمصاريف.
-3. إكمال التجميع بالمثيلات للـ64 حالة الباقية، والصفحات/المقاسات، وربط التوكنات وأنماط النص، وتحسين تسميات المكتبة والمكونات المصورة.
-4. استكمال جرد القائمة المنبثقة واختيار المورد ورسائل التأكيد الأصلية والاستيراد/الاستعادة وحالات الحفظ/الخطأ؛ توثيق نوافذ النظام كمواصفات سلوك بدلاً من الادعاء بمحاكاة نظام macOS.
-5. مراجعة كل مجموعة بصرياً وهيكلياً؛ إصلاح القص والمحاذاة؛ إضافة خريطة تدفق وتغطية قابلة للمتابعة؛ إزالة مراجع capture المؤقتة فقط بعد اكتمال النسخ النهائية والتحقق منها.
-6. الإعداد الأول وتذكيرات النسخ تبقى مؤجلة بنص المالك، ولا تعرض كميزات منفذة.
+1. Read `outputs/figma-transfer/session.json`, `foundations.json`, `source-masters.json`, `assembled-0.json` and `captures.json`, then inspect the current file before editing.
+2. Correct horizontal-container direction and text alignment against the source; diagnose product ordering before applying a general change. Recheck Sales/Expenses.
+3. Complete instance assembly for the remaining 64 states and screen sizes, bind tokens/text styles, and improve library and image-component naming.
+4. Complete the inventory for the pop-up menu, supplier selection, original confirmation messages, import/restore and save/error states. Document system dialogs as behavioral specifications rather than claiming macOS emulation.
+5. Visually/structurally review every group, fix clipping/alignment, add traceable flow/coverage maps, and remove temporary capture references only after final versions are complete and verified.
+6. Initial setup and backup reminders remain deferred by owner instruction; do not present them as implemented features.
 
-لا تعدّل هذه المهمة الحسابات أو منطق التطبيق أو النسخة المثبتة. التحقق هنا خاص بملف التصميم؛ لا حاجة لإعادة اختبارات التطبيق التي لم يتغير مصدرها.
+This task changes no accounts, application logic or installed build. Verification concerns the design file; unchanged application tests need not run again.

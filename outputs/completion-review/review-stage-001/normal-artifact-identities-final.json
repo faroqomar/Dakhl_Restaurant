@@ -1,0 +1,35 @@
+{
+  "recordedAt": "2026-11-08T18:44:25.094647+00:00",
+  "sourceIdentity": "final-source-identity.json",
+  "finalInputFingerprint": "1fc96b07c5f24e75de520bcada106033644520d3142b2dafc2b9da848f9dcf37",
+  "buildReceipts": "normal-builds-final.json",
+  "macosPostprocess": "Outer development ad-hoc seal refreshed after incremental nested-framework update; deep/strict verify passed. Canonical ICU bytes unchanged.",
+  "icuFileSha256": {
+    "libicu_collation_pilot.dylib": "f31e81506b3af2d3a48496094f8c9cc98be9cfe2cc0010f6d54658baade81091",
+    "icu-install/lib/libicui18n.78.2.dylib": "d1cae71b13ca18294628b277b607b0b121166432889dc0948e1764d09f341f63",
+    "icu-install/lib/libicuuc.78.2.dylib": "6b698c96954db7742959a28aa69c8b426ddffc9e95b271d73ed37e43c77e7b35",
+    "icu-install/lib/libicudata.78.2.dylib": "f1910ba9eb889d031b23fba8eb434b4fbcee9760b64a61b12c8d0b446689613c"
+  },
+  "artifacts": [
+    {
+      "path": "build/macos/Build/Products/Debug/Dakhl_Restaurant Dev.app",
+      "treeSha256": "c4e4f7c4410e59d92c901eb5df055497e7f64145811f147b52c93d2d9807165b",
+      "logicalFileBytes": 237834795,
+      "fileCount": 62,
+      "entrypoint": "lib/main.dart"
+    },
+    {
+      "path": "build/ios/iphonesimulator/Runner.app",
+      "treeSha256": "defde865ace2ff1d0bad130b64ac906a2c1e26687b199589d1492eea860ab3cc",
+      "logicalFileBytes": 239995814,
+      "fileCount": 87,
+      "entrypoint": "lib/main.dart"
+    },
+    {
+      "path": "build/app/outputs/flutter-apk/app-debug.apk",
+      "sha256": "4ad383388583bcddd0601ff0db63ad5c1e1a2367dc8fc7169c80bebd0ab978e1",
+      "bytes": 110225675,
+      "entrypoint": "lib/main.dart"
+    }
+  ]
+}

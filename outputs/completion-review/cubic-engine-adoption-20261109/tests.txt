@@ -1,0 +1,9 @@
+00:00 +0: loading /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/source_collation_runtime_test.dart
+00:00 +0: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/source_collation_runtime_test.dart: missing native runtime exposes no lexical or host fallback
+00:00 +1: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/source_collation_runtime_test.dart: refused second profile closes the first and exposes no comparator
+00:00 +2: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/source_collation_runtime_test.dart: refused second profile closes the first and exposes no comparator
+00:00 +3: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/app/source_collation_runtime_test.dart: refused second profile closes the first and exposes no comparator
+00:01 +4: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/reports/source_collation_presentation_test.dart: history cash and party lists expose unavailable ordering; separate material-name comparator forwards
+00:01 +5: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/reports/source_collation_presentation_test.dart: history cash and party lists expose unavailable ordering; separate material-name comparator forwards
+00:01 +6: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/reports/source_collation_presentation_test.dart: history cash and party lists expose unavailable ordering; separate material-name comparator forwards
+00:02 +7: All tests passed!

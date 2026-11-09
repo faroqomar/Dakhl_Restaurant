@@ -1,15 +1,27 @@
 {
   "engine": "Madar_Engine",
-  "status": "private draft review; supported release pending",
-  "git_commit": "784b139753a0e2a07d3f97eedb326debfe068395",
+  "status": "Reviewed local development candidate. Three-target ARM64 bundled conformance and macOS share-picker handoff verified; physical-phone, final visual/activation and delivery gates remain separately recorded.",
+  "git_commit": "d3d1ba1f6a5082f4ecc5a03ce677792f898269cf",
   "packages": {
     "madar_application": {
       "path": "../Madar_Engine/packages/application",
-      "version": "0.1.0-dev.1"
+      "version": "0.1.0-dev.7"
     },
     "madar_flutter_adapters": {
       "path": "../Madar_Engine/packages/flutter_adapters",
-      "version": "0.1.0-dev.1"
+      "version": "0.1.0-dev.3"
+    },
+    "madar_data": {
+      "path": "../Madar_Engine/packages/data",
+      "version": "0.1.0-dev.2"
+    },
+    "madar_domain": {
+      "path": "../Madar_Engine/packages/domain",
+      "version": "0.1.0-dev.5"
+    },
+    "madar_icu_collation": {
+      "path": "../Madar_Engine/packages/icu_collation",
+      "version": "0.1.0-dev.2"
     }
   }
 }

@@ -1,0 +1,10 @@
+{
+  "earlierNativeInputFingerprint": "5781b806ed200e685e64e12702ff810064783e195f9005b80a9909b5d3b7fdd2",
+  "finalNativeInputFingerprint": "1c80e6469d6d83ac6ba994c8f160c9c95aacf5a45d53bf1e4926d0e21d21f866",
+  "changedInputs": [
+    "lib/platform/review_performance_scenarios.dart",
+    "test/platform/review_performance_test.dart",
+    "tool/dev_dashboard/operations.json"
+  ],
+  "scope": "Three isolated benchmark/test/registry changes after macOS/iOS native runs. Native entrypoint and production imports unchanged; earlier exact native identities retained. No current-global-hash native rerun claim."
+}

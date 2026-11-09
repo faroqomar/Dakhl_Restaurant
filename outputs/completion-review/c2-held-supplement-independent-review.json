@@ -1,0 +1,51 @@
+{
+  "recordedUtc": "2026-11-08T02:54:32.731655+00:00",
+  "reviewer": "/root/review_c2_supplement_native_boards",
+  "status": "pass_both_supplemental_pairs",
+  "manifest": "outputs/completion-review/c2-held-supplement-root-nav-review-inputs.json",
+  "bindingsBeforeAfter": 20,
+  "rootCurrentBindingsMatched": 20,
+  "uniqueArtifactSourceBindings": 38,
+  "verification": {
+    "nativeExports": 4,
+    "pixelSize": [
+      2880,
+      2000
+    ],
+    "logicalSize": [
+      1440,
+      1000
+    ],
+    "savedRootBoards": 4,
+    "editableShapes": [
+      739,
+      758,
+      751,
+      771
+    ],
+    "repairChangedPixels": 442,
+    "changedPixelsOutsideOldNewMarkerUnion": 0,
+    "selectIndicators": "complete V in all four exports",
+    "C1Preservation": "Recorded parent and3430x5320 at0,0 agree; structural only, no fresh pixel identity"
+  },
+  "gates": [
+    "Name field is empty optional editable; typed-name evidence pending",
+    "Owner approval pending",
+    "Phone/keyboard/large text and runtime remain separate",
+    "Subsequent C3 editor-loading failure is a separate unresolved availability issue"
+  ],
+  "ownership": {
+    "engineAPIImplementation": "N/A",
+    "runtimePin": "d316fd6076375daa3f412889f73eaebfeeb5d4d4 unchanged"
+  },
+  "storage": {
+    "freeKiB": [
+      111611188,
+      110527376
+    ],
+    "gitDirectories": "unchanged",
+    "temporaryGitStores": 0,
+    "scratchArtifacts": 0,
+    "sharedVolumeProducer": "unknown"
+  }
+}

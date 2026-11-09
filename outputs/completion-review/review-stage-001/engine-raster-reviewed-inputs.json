@@ -1,0 +1,21 @@
+{
+  "recordedAt": "2026-11-08T17:30:03.553603+00:00",
+  "base": "ac8b4edc2c915ed22c0991685c33967b3360e7fa",
+  "review": "pdf_contract_review independent recheck: no findings",
+  "tests": {
+    "rasterAndHandoff": 18,
+    "application": 60,
+    "analysis": "clean"
+  },
+  "paths": {
+    "packages/application/README.md": "af056a0ea324305f33e70414f717762062fa81c481386869660d04c8810da81a",
+    "packages/application/lib/src/document_capabilities.dart": "923b1f698be43c0b9a02fe09d22b1a1f4a86fad3c48ad45e0a435fc86e387962",
+    "packages/application/pubspec.yaml": "8179b93c21fb371b6008161008b19af4427583190bac2eeb5a12801d43e1f48b",
+    "packages/flutter_adapters/README.md": "0198ee733d2494c68ac30e892a650db02730b2672794d1e034fddf147f32f9fd",
+    "packages/flutter_adapters/lib/madar_flutter_adapters.dart": "c5916a4adddd9fbfb22af9e250e4c29bd4d29bc474b23bc51f4664597647dca5",
+    "packages/flutter_adapters/lib/src/native_pdf_raster.dart": "046369a22da216793467c2d47cde67f96cb86df9ecc2a2ec76688a0285ba2b26",
+    "packages/flutter_adapters/pubspec.yaml": "c10a2b42e4e96faed7c550c8da384181267d39e83ac2b240e8961fe9d25bf25d",
+    "packages/flutter_adapters/test/native_pdf_raster_test.dart": "96eb5f2054f258ca5ef36f9cac12a79511a8630dded1d1e81e2d61ffb3867c03",
+    "docs/log/2026-11-08-pdf-raster-candidate.md": "2b590e1888e9dd712b2f5415c109792031c1aec18a5510ad7b9efecc9533308d"
+  }
+}

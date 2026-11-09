@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "tool": "device_open",
+  "hostId": "local",
+  "deviceId": "emulator-5554",
+  "sessionId": "t3-78f39ef5f82e05c862b586fa",
+  "observedAt": "2026-11-08T20:11:09.253722+00:00",
+  "controlReady": true,
+  "fixtureReady": true,
+  "evidence": [
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/preflight-fixtures/remaining-bundled-001/android-open-facts-001.json",
+      "sha256": "58ff8a4bff6ee270a22524ff9d2ab80fbf3d16c0ccd84d03bac709ceb4a8984a"
+    }
+  ]
+}

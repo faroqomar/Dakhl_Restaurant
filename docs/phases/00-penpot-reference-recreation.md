@@ -1,5 +1,7 @@
 # Phase 00 — Penpot screenshot recreation
 
+Current clarification, 2026-10-29: the owner approved the existing Phase 00 design set and independent review closed its iPhone technical prerequisite. Earlier pending statements below are historical. This closes the technical prerequisite only; it does not assert overall Phase 00 DONE or a production release.
+
 Date: 2026-10-28. Status: DESIGN; owner approval pending. [Tracker](../../PHASES.md). [Tool/location decision](../decisions/0015-penpot-design-workspace.md).
 
 ## Scope and destination
@@ -50,3 +52,7 @@ The six native Penpot boards have been exported at scale2/2880×2000 and indepen
 - The matching wireframes preserve the screenshot geometry, wording, amounts, ordering and crop, using grayscale and photo placeholders. These are structural references, not a claim of equal colors/photos.
 
 The independent review identifies no remaining blocking content/layout transfer defect. Original small contrast and compact-control findings remain documented; there is no runtime accessibility or responsive-device pass claim. All owner approval fields remain pending. Phase00 remains DESIGN, phases01–11 TODO.
+
+## Owner approval — 2026-10-29
+
+The owner explicitly approved both existing Phase 00 and Phase 01 design sets after requesting Step 3. This approves the existing Phase 00 reproductions/wireframes; it does not waive the still-outstanding iPhone Simulator native acceptance or certify Phase 00 DONE. Preannotation report hash is retained in `outputs/phase01-step3/approval-and-preflight.json`.

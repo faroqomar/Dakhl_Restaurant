@@ -1,46 +1,45 @@
-# المبيعات والمخزن والاختصارات
+# Sales, inventory and shortcuts
 
-الحالة: دليل معاينة المصدر 1.12.0. التاريخ: 2026-10-27. المصدر: واجهات دفتر الحالية واختبارات المبيعات.
+Status: source-preview guide for 1.12.0. Date: 2026-10-27. Source: current Daftar screens and sales tests. UI labels are translated into English for documentation; the application remains Arabic RTL.
 
-1. افتح **المخزن ← إضافة صنف**. أدخل الاسم وسعر البيع والوحدة والمجموعة إن أردت، والكمية الافتتاحية بتاريخ توفرها. ألغِ «تتبّع كمية هذا الصنف» للوجبات التي لا تخزنها بعدد محدد؛ تختفي حقول المخزون غير المطلوبة.
-2. للتزويد أو تسجيل نقص وتلف، استخدم **تزويد / تسوية**. زر **الحركة** يوضح الإضافات والبيع. هذه كميات أصناف البيع؛ فواتير شراء المكونات ومدفوعات الموردين تبقى في أقسامها.
-3. افتح **المبيعات**. ابحث بالاسم أو الرمز، أو اختر المجموعة. اضغط على الصنف لإضافته، واستخدم أزرار الكمية أو اكتب كمية عشرية. الطلب يبقى أثناء التنقل ويحفظ كمسودة محلية تُستعاد بعد إعادة فتح التطبيق. المسودة لا تُحتسب بيعاً حتى التأكيد.
-4. أدخل الخصم إن وجد واختر **نوع الطلب**، ثم راجع الإجمالي واضغط **تأكيد البيع النقدي**. هذا يسجل استلام قيمة الفاتورة بالضبط دون كتابة مبلغ مستلم. يتحدث المخزن ويفتح الوصل تلقائياً بعد نجاح الحفظ، وتجهز فاتورة جديدة. **حفظ PDF** يتيح اختيار ملف الوصل.
-5. افتح **سجل المبيعات** للبحث حسب الفترة والرقم والصنف وعرض الوصل مجدداً. **إلغاء هذه الفاتورة** يحتاج سبباً ويعيد كامل الكمية، مع الاحتفاظ بالوصل الملغى. أعد صافي مبلغ الفاتورة للزبون فعلياً عند الإلغاء. الإلغاء يصحح تاريخ البيع الأصلي؛ للإرجاع الجزئي أو بتاريخ لاحق استخدم «إرجاع أصناف». لا يسمح بالإلغاء بعد تسجيل مرتجع.
-6. في **الإعدادات والنسخ ← اختصارات الشريط العلوي** اختر واجهة لكل واحدة من الخانات الست واضغط **حفظ الاختصارات**. خيار «بدون اختصار» يخفي الزر. الاختيارات تدخل مع النسخ الاحتياطية، ويظل الوصول للإعدادات متاحاً من قائمة التنقل المنبثقة وزر التخصيص.
+1. Open **Inventory → Add product**. Enter name, sale price, unit, optional group and opening quantity dated when available. Disable **Track this product's quantity** for meals not stocked as a fixed count; unnecessary inventory fields disappear.
+2. Use **Restock / Adjustment** to receive stock or record shortage/waste. **Movements** shows additions and sales. These are sellable-product quantities; ingredient purchase invoices and supplier payments remain in their own sections.
+3. Open **Sales**. Search by name/code or choose a group. Select a product to add it, then use quantity buttons or enter a decimal quantity. The ticket survives navigation and is saved as a local draft recovered after reopening the application. It is not a sale until confirmed.
+4. Enter any discount and choose **Order type**, review the total, then select **Confirm cash sale**. This records receipt of the exact invoice value without entering cash received. Inventory updates and the receipt opens automatically after successful saving, with a new ticket ready. **Save PDF** allows choosing the receipt file.
+5. Open **Sales history** to search by period, number and product and reopen a receipt. **Void this sale** requires a reason and restores the entire quantity while preserving the voided receipt. Physically refund the net receipt amount to the customer when voiding. A void corrects the original sale date; for partial or later-dated returns use **Return products**. Voiding is not allowed after a return is recorded.
+6. Under **Settings and backups → Top-bar shortcuts**, choose a screen for each of six slots and select **Save shortcuts**. **No shortcut** hides the button. Choices are included in backups; settings remain reachable through popout navigation and the customize action.
 
-## اليومي والقاصة
+## Daily account and cashbox
 
-المبيعات النقدية المسجلة تظهر في المصاريف اليومية. عند تسجيل الباقي اكتب النقد الفعلي بعد الحسابات المسجلة، بما فيها المبيعات السابقة. البيع الذي يأتي بعد تسجيل الباقي يضاف إليه تلقائياً. القاصة لا تستلم المبيعات مرتين؛ عند نقل النقد من اليومي سجّل إيداع الباقي بالقاصة بالطريقة الموجودة. مجموع المبيعات ليس صافي الربح، ولا يتضمن تكاليف المكونات تلقائياً.
+Recorded cash sales appear in daily expenses. When entering remaining cash, enter actual cash after all recorded activity, including earlier sales. A sale after the remaining-cash entry is added automatically. Sales are not received twice by the cashbox; when transferring daily cash, record depositing the remaining amount into the cashbox using the existing procedure. Sales totals are not net profit and do not automatically include ingredient costs.
 
-المخزن والمبيعات والإعدادات محفوظة في ملف الحسابات والنسخ الاحتياطية نفسها؛ التحديث من الإصدارات السابقة يحافظ على سجلاتها ويضيف القوائم الجديدة فارغة.
+Inventory, sales and settings use the same account file/backups; updating earlier versions preserves their records and adds the new lists empty.
 
-## مساحة أكبر للشاشة — 2026-10-26
+## More screen space — 2026-10-26
 
-زر القائمة بالشريط العلوي يفتح التنقل فوق الصفحة دون ضغط مساحة العمل. يغلق بـEscape أو زر الإغلاق أو النقر خارجها. الطلب الجاري يبقى. نماذج الإضافة والتعديل نوافذ وسطية، وتطلب التأكيد فقط إذا كانت بها تغييرات غير محفوظة.
+The top-bar menu opens navigation over the page without squeezing the workspace. Escape, close or an outside click dismisses it. The current ticket remains. Add/edit forms are centered dialogs and request confirmation only when they contain unsaved changes.
 
-## أنواع الطلبات والصور المرجعية
+## Order types and reference images
 
-من الإعدادات، استخدم إدارة «أنواع الطلبات» لإضافة نوع أو تعطيله أو حذفه وتعيين الافتراضي؛ تعديل الأسماء لا يغير الفواتير السابقة. من المخزن ← تعديل الصنف، اختر صورة مرجعية مناسبة من الصور المتاحة أو «بدون صورة». هذه صور توضيحية مولدة. في الشاشة الكبيرة تتمرر الأصناف والطلب داخلياً؛ في الشاشات الصغيرة أو عند التكبير يمكن تمرير الصفحة للوصول للدفع. زر «عرض مدمج» يصغّر بطاقات الأصناف مع بقاء الصور.
+In settings, use **Order-type management** to add, disable or delete a type and set the default; changing names does not alter earlier receipts. Under **Inventory → Edit product**, choose a suitable reference image or **No image**. These are generated illustrative images. On large screens products/ticket scroll internally; smaller or zoomed screens allow page scrolling to reach payment. **Compact view** reduces product-card size while preserving images.
 
+## Review, corrections and backups
 
-## المراجعة والتصحيح والنسخ
+- Sales history supports period, state and order type, with export of the current view. The current ticket retains prices shown when products were added.
+- In inventory movements, **Correct movement** requests a reason and saves a reversal; then record the correct movement. A correction that would make historical inventory negative is rejected.
+- **Day review** combines funding-share review, actual-cash entry, balance preview and an optional cashbox transfer. **External cashbox deposit** is independent of **Transfer from daily balance**.
+- Settings show the last export and provide the earlier backup. Import/restore show a summary before replacement and save the previous file. Export regularly to a location independent of the device.
+- Receipt identity is optional in settings. After export, the Mac application offers open-file and reveal-in-folder actions.
+- Use ⌘/Ctrl + K for search, an exact code then Enter to add, ⌘/Ctrl + Enter for cash confirmation and ⌘/Ctrl + 1–6 for shortcuts outside text fields.
 
-- سجل المبيعات يتيح الفترة والحالة ونوع الطلب، مع تصدير هذا العرض. السعر في الطلب الجاري يبقى كما عُرض وقت إضافة الصنف.
-- في حركة المخزن، «تصحيح الحركة» يطلب سبباً ويحفظ حركة عكسية؛ بعدها سجّل الحركة الصحيحة. التصحيح الذي يجعل المخزون التاريخي سالباً يُرفض.
-- «مراجعة اليوم» يجمع مراجعة الحصص وتسجيل النقد الفعلي ومعاينة الرصيد والتحويل الاختياري للقاصة. «إيداع خارجي للقاصة» مستقل عن «تحويل من رصيد اليوم».
-- الإعدادات تعرض آخر تصدير وتوفر النسخة السابقة. الاستيراد والاستعادة يعرضان ملخصاً قبل الاستبدال ويحفظان الملف السابق. صدّر دورياً إلى مكان مستقل عن الجهاز.
-- هوية الوصل اختيارية من الإعدادات. بعد التصدير تظهر خيارات فتح الملف وإظهاره بالمجلد في تطبيق Mac.
-- ⌘/Ctrl + K للبحث، رمز مطابق ثم Enter للإضافة، ⌘/Ctrl + Enter للتأكيد النقدي، و⌘/Ctrl + 1–6 للاختصارات خارج حقول الكتابة.
+## Product tabs — 2026-10-27
 
-## تبويبات الأصناف — 2026-10-27
+Choose a group using the tabs above search; its count is the number of active products in that group. **All products** shows everything, and search filters the selected group. Selecting a card or its corner add icon adds the product to the ticket. Choosing a group preserves the incomplete receipt. On small windows, scroll groups horizontally and the page to reach the ticket and confirmation.
 
-في شاشة البيع اختار المجموعة من التبويبات فوق البحث؛ العدد بجانبها هو عدد الأصناف الفعالة في المجموعة. «كل الأصناف» يعرضها كلها، والبحث يصفّي المجموعة المختارة. الضغط على بطاقة الصنف أو أيقونة الإضافة في زاويتها يضيفه للطلب. اختيار المجموعة يحافظ على الفاتورة غير المكتملة. على النوافذ الصغيرة مرّر المجموعات أفقياً ومرّر الصفحة للوصول إلى الفاتورة والتأكيد.
+## MVP update — 2026-10-27
 
-## تحديث MVP — 2026-10-27
-
-- **تعليق الطلب** من الفاتورة الحالية يحفظه باسم اختياري ويفتح فاتورة فارغة. **الطلبات المعلقة** في أعلى البيع يتيح الاسترجاع والحذف. استرجاع طلب أثناء وجود أصناف يعلّق الطلب الحالي أولاً. الطلبات غير مدفوعة ولا تحجز مخزوناً، ومحفوظة على الجهاز فقط؛ لا تدخل ملف النسخة الاحتياطية.
-- بعد نجاح **تأكيد البيع النقدي** يفتح الوصل تلقائياً مع تفاصيل الأصناف والمبلغ، وإغلاق وطباعة وحفظ PDF. الطباعة اختيارية وتستخدم حوار النظام؛ إلغاء الطباعة لا يلغي البيع.
-- من **سجل المبيعات ← تفاصيل الفاتورة ← إرجاع أصناف** اختار الكمية، وما إذا كانت تعود للمخزن، والتاريخ والسبب. راجع المبلغ المحسوب بعد الخصم وأكد أنك أعدته من نقد اليومي. يبقى البيع الأصلي محفوظاً ويخصم المرتجع من تحصيل تاريخ الإرجاع فقط؛ لا يخصم من القاصة.
-- لا يمكن إلغاء فاتورة لها مرتجعات؛ يمكن إرجاع الكميات الباقية. المرتجع ليس تعديل سعر أو خصم جديداً.
-- الإعداد الأول وتذكيرات النسخ الاحتياطية مؤجلة إلى نهاية التطبيق؛ أدوات النسخ الحالية متاحة الآن.
+- **Hold order** saves the current ticket with an optional name and opens an empty one. **Held orders** at the top of sales supports resume/delete. Resuming while products are present first holds the current ticket. Orders are unpaid, reserve no stock and stay on the device; they are not in the account backup file.
+- After successful **Confirm cash sale**, automatically open the receipt with line/amount details and close, print and save-PDF actions. Printing is optional and uses the system dialog; cancelling printing does not cancel the sale.
+- Under **Sales history → Receipt details → Return products**, choose quantity, whether stock is restored, date and reason. Review the calculated discounted amount and confirm it was refunded from daily cash. The original sale remains saved and the return deducts collections only on its return date; it does not deduct from the cashbox.
+- A sale with returns cannot be voided; remaining quantities may be returned. A return is neither a price edit nor a new discount.
+- First-run setup and backup reminders are deferred until the end of application work; current backup tools remain available.

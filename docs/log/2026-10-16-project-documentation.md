@@ -1,27 +1,27 @@
-# 2026-10-16 — نطاق دفتر وتوثيقه وذاكرته
+# 2026-10-16 — Daftar scope, documentation and memory
 
-الحالة: مكتمل؛ التوثيق والتحقق المحلي وفهرسة الوثائق والاسترجاع نجحت. التاريخ: 2026-10-16 بتوقيت بغداد. المالك: القائم على المشروع. المصدر: طلب المالك وتأكيد اختيار ResturanetAccounting.
+Status: complete; documentation, local verification, source indexing and recall succeeded. Date: 2026-10-16, Baghdad time. Owner: project maintainer. Source: the owner's request and confirmation of ResturanetAccounting.
 
-## الطلب والتغييرات
+## Request and changes
 
-تثبيت أن المشروع خاص بمطعم واحد فقط، ويشمل الفواتير والحملات والأفكار والتطبيق الخاص، مع توثيق ومتابعة وHindsight. أضيف دليل التوثيق، ومراجع النطاق والبنية والحسابات، وسجلات الأفكار والحملات، وقوالب القرارات والعمل، وتعليمات الوكلاء. أضيف ربط Codex وأمر `scripts/memory` لبنك `project-daftar` وسُجل المجلد في خدمة Hindsight المشتركة.
+Established that this project serves one restaurant only and includes its invoices, campaigns, ideas and dedicated application, with documentation, follow-up and Hindsight. Added the documentation guide; scope, architecture and accounting references; idea/campaign records; decision/work templates; and agent instructions. Added the Codex connection and `scripts/memory` wrapper for bank `project-daftar`, and registered the folder in the shared Hindsight service.
 
-التغيير توثيق وإعداد ذاكرة التطوير. لم يتغير مصدر التطبيق أو ملف الاعتماديات أو الحسابات الفعلية ولم تنشأ بيانات مالية تجريبية. أثناء العمل طلب المالك البحث عن قالب مينيو بأسعار قديمة وجديدة؛ سُجل الطلب الحقيقي كـ IDEA-0001 وCAM-0001 مع روابط المرشحين وحدود التحقق. لم ينفّذ تصميم أو إعلان منشور.
+This changes documentation and development-memory configuration. Application source, dependency files and real accounts were unchanged, and no synthetic financial records were created. During the task, the owner requested research for an old/new-price menu template. That actual request was recorded as IDEA-0001 and CAM-0001, with candidate links and verification limits. No design or published advertisement was implemented.
 
-## القرارات والسبب
+## Decisions and rationale
 
-[القرار 0001](../decisions/0001-single-restaurant-and-project-memory.md) يثبت نطاق المالك ويمنع الخلط مع AlDakhl، ويفصل القابلية الموجودة عن المخطط. راجعت قواعد الرصيد الكلي من `model.js` بدلاً من تكرار ملاحظة التصميم التاريخية التي كانت تعتبر الصيغة غير محسومة.
+[Decision 0001](../decisions/0001-single-restaurant-and-project-memory.md) establishes the owner's scope, prevents confusion with AlDakhl and distinguishes existing capabilities from planned ones. I checked the total-balance rules in `model.js` rather than repeating an old design note that treated the formula as undecided.
 
-## التحقق
+## Verification
 
-- شجرة Git كانت نظيفة قبل العمل. روجعت README وpackage.json ومصدر التطبيق والتخزين والتقارير والنموذج والواجهة واختباراتها.
-- تسجيل `daftar` أعاد البنك `project-daftar` والمسار الصحيح وقائمة Markdown المسموحة. الاسترجاع الأول أعاد صفراً من النتائج، كما يتوقع لبنك جديد قبل إرسال الوثائق.
-- `git diff --check`: نجح بعد كتابة الوثائق الأولية.
-- فحص Python النهائي: 20 مستند Markdown، و60 رابطاً محلياً، دون روابط مكسورة. نجح تحليل TOML والتحقق من توجيه `project-daftar` واستثناء القوالب، مع بقاء توجيه AlDakhl مستقلاً و`retainSessions: false`.
-- `npm test`: 78 اختباراً ناجحاً، صفر فشل، صفر تخطي، بتاريخ هذه المهمة. لم تستخدم الاختبارات حسابات المطعم الفعلية.
-- `./scripts/memory sync` ثم `./scripts/memory check`: بعد اكتمال المعالجة أعاد الفحص exit 0، و16 مصدراً، و`pending: []` و`failed: {}` مع API سليم وقاعدة متصلة. هذا يثبت توصيل نسخ الوثائق قبل إضافة نتيجة التحقق هذه؛ يُعاد فحص إيصال تحديث السجل نفسه بعد حفظه.
-- `./scripts/memory recall --query 'دفتر مشروع خاص بمطعم واحد فقط والحملات الإعلانية وسلفة العمال'`: أعاد 22 نتيجة مع مسارات مصادر دفتر؛ راجعت عينة النتائج الخاصة باستقلال سلفة العمال وبنية التطبيق وحدود الذاكرة مقابل الوثائق والمصدر. لا نقل لحقائق AlDakhl إلى بنك دفتر.
+- Git was clean before the task. README, package.json, application/storage/report/model/UI source and tests were reviewed.
+- Registering `daftar` returned bank `project-daftar`, the correct path and the Markdown allowlist. Initial recall returned zero results, as expected for a new bank before documents were submitted.
+- `git diff --check`: passed after initial documentation was written.
+- Final Python check: 20 Markdown documents and 60 local links, with no broken links. TOML parsing, project-daftar routing and template exclusion passed; AlDakhl routing remained separate and `retainSessions: false` remained configured.
+- `npm test`: 78 passed, zero failed and zero skipped, on this task's date. Tests did not use actual restaurant accounts.
+- `./scripts/memory sync`, then `./scripts/memory check`: after processing completed, the check returned exit 0, 16 sources, `pending: []` and `failed: {}`, with a healthy API and connected database. This proves delivery of the document versions before this verification result was added; delivery of the log update itself must be checked again after saving.
+- `./scripts/memory recall --query 'Daftar is a one-restaurant project, advertising campaigns and worker advances'`: returned 22 results with Daftar source paths. A sample covering independent worker advances, application structure and memory boundaries was checked against documentation and source. No AlDakhl facts were transferred to the Daftar bank.
 
-## القيود والمتابعة
+## Limits and follow-up
 
-لا اختبارات إصدار أو طباعة بصرية جديدة ضمن مهمة التوثيق. ظهور خادم MCP في جلسة Codex جديدة لم يُتحقق منه؛ أمر المشروع هو مسار التحقق الحالي. اسم المطعم وأنواع الفواتير الجديدة وأسعار المينيو وتفاصيل النشر لم تحدد بعد؛ أول فكرة مسجلة بحالتها الحقيقية دون اختراع نتائج.
+No new release testing or visual printing checks were included in this documentation task. MCP server visibility in a fresh Codex session was not verified; the project wrapper is the current verification path. The restaurant name, new invoice types, menu prices and publication details were not yet specified. The first idea was recorded at its actual status without inventing results.

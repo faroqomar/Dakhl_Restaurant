@@ -1,0 +1,40 @@
+{
+  "recordedUtc": "2026-11-08T07:52:17.940979+00:00",
+  "reviewer": "/root/audit_remaining_baseline_and_delivery_rows",
+  "verdict": "PASS exact C0-07/C0-13 scope",
+  "manifestSha256": "cb50985681c0408b3d9c06357da072c402688cf1480169bca50c90c28d38966f",
+  "verifiedRetainedReceiptHashes": 16,
+  "positiveFixtures": 23,
+  "protectedRejections": 4,
+  "independentFullMapComparisons": 27,
+  "mismatches": 0,
+  "writerPid": 75466,
+  "verifierPid": 75498,
+  "processesExitedAndOsAbsenceVerified": true,
+  "missingStoreReseedingGuard": true,
+  "allExecutionSourceInputsMatchedAtReview": true,
+  "postReviewRuntimeImportContinuity": {
+    "lib/accounts/account_document.dart": "2604b3447261bb7c488078b371baa44dbccc7dc119d8fbdd2d00c27c37a438f7",
+    "lib/accounts/accounts_repository.dart": "f059f59433c2d42c55ad794e61fcbcddb1554e6c004d047911f0d40b26aa3cf8",
+    "lib/accounts/legacy_account_codec.dart": "d95001f493fb8e70ee1988e3f620ca0684fc1136ab2e9bfad49f7032a3b92ebd",
+    "lib/accounts/workspace_document.dart": "76897263ad71ad49822f245c0a9077f4bd483d4ed6b8582742266df8e66bf726"
+  },
+  "laterUncompiledFinancialCandidates": "Separate new/edited accounting files after review; pure driver AccountRepository/codec/workspace import closure unchanged; historical75-lib aggregate is not relabelled as current",
+  "limits": [
+    "Standalone macOS real-adapter and public codec export acceptance",
+    "No mounted UI/native chooser/platform matrix/live migration/schema12activation/hostedCI claim"
+  ],
+  "storage": {
+    "freeKiB": [
+      96969148,
+      96962728
+    ],
+    "gitUnchanged": true,
+    "temporaryGitStores": [
+      0,
+      0
+    ],
+    "retainedEvidenceKiB": 3144,
+    "fixtureRootAbsent": true
+  }
+}

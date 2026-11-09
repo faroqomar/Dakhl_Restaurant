@@ -1,0 +1,7 @@
+{
+  "previousCampaign": "completion-nonvisual-baseline-001",
+  "reason": "post-end-protocol-lifetime",
+  "changedSource": "lib/platform/completion_performance_main.dart",
+  "priorUnavailableResultsPreserved": true,
+  "diagnosis": "suspected-final-resource-read-race"
+}

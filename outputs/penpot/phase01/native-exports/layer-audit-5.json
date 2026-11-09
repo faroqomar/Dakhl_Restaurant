@@ -1,0 +1,333 @@
+[
+  {
+    "id": "6038a601-8820-8088-8008-dcf6ee2e0047",
+    "name": "01 · Reference · Wide sales shell · Design · v1",
+    "counts": {
+      "board": 1,
+      "group": 382,
+      "rectangle": 9,
+      "svg-raw": 1,
+      "path": 522,
+      "ellipse": 1
+    },
+    "imageFills": [
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed149821",
+        "name": "Product photo · n90",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed16e080",
+        "name": "Product photo · n108",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed193f4f",
+        "name": "Product photo · n124",
+        "w": 136.2265625,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed1c481e",
+        "name": "Product photo · n140",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed1eb83d",
+        "name": "Product photo · n156",
+        "w": 136.2265625,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed228a0f",
+        "name": "Product photo · n174",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed24c735",
+        "name": "Product photo · n190",
+        "w": 136.2265625,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed269dea",
+        "name": "Product photo · n206",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed2d24d3",
+        "name": "Product photo · n222",
+        "w": 136.2265625,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed31d12a",
+        "name": "Product photo · n238",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed36d48a",
+        "name": "Product photo · n254",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed3c3fc8",
+        "name": "Product photo · n270",
+        "w": 136.2265625,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed41931d",
+        "name": "Product photo · n286",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed4668e0",
+        "name": "Product photo · n302",
+        "w": 136.2265625,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed4b9d43",
+        "name": "Product photo · n318",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed50e37c",
+        "name": "Product photo · n334",
+        "w": 136.2265625,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed5568d0",
+        "name": "Product photo · n350",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed597f66",
+        "name": "Product photo · n366",
+        "w": 136.2265625,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed5d1049",
+        "name": "Product photo · n382",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed611c83",
+        "name": "Product photo · n398",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed65fda7",
+        "name": "Product photo · n414",
+        "w": 136.2265625,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed69d3ad",
+        "name": "Product photo · n430",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed6e9eb9",
+        "name": "Product photo · n446",
+        "w": 136.2265625,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed733696",
+        "name": "Product photo · n462",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed76ebdb",
+        "name": "Product photo · n478",
+        "w": 136.2265625,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed7a0366",
+        "name": "Product photo · n494",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed815f56",
+        "name": "Product photo · n527",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed81bd49",
+        "name": "Product photo · n533",
+        "w": 136.21875,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed820dd9",
+        "name": "Product photo · n539",
+        "w": 136.2265625,
+        "h": 82.5546875,
+        "imageW": 480,
+        "imageH": 480,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed8fee3b",
+        "name": "Native select marker",
+        "w": 11,
+        "h": 7,
+        "imageW": 20,
+        "imageH": 14,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf6ed9da5b4",
+        "name": "Native disclosure marker",
+        "w": 8,
+        "h": 15,
+        "imageW": 16,
+        "imageH": 30,
+        "wholeScreen": false
+      }
+    ],
+    "originalStringsRetained": true,
+    "editableTextCount": 0,
+    "source": "wide-sales dcfdd43da114d65dad1e218482cc8ee285e833efdccc567f7825dbc8aa0bb264"
+  },
+  {
+    "id": "6038a601-8820-8088-8008-dcf77896d80a",
+    "name": "01 · Reference · Wide sales shell · Wireframe · v1",
+    "counts": {
+      "board": 1,
+      "group": 411,
+      "rectangle": 38,
+      "svg-raw": 1,
+      "path": 486,
+      "ellipse": 1
+    },
+    "imageFills": [
+      {
+        "shape": "6038a601-8820-8088-8008-dcf778108787",
+        "name": "Native select marker",
+        "w": 11,
+        "h": 7,
+        "imageW": 20,
+        "imageH": 14,
+        "wholeScreen": false
+      },
+      {
+        "shape": "6038a601-8820-8088-8008-dcf7781d21d8",
+        "name": "Native disclosure marker",
+        "w": 8,
+        "h": 15,
+        "imageW": 16,
+        "imageH": 30,
+        "wholeScreen": false
+      }
+    ],
+    "originalStringsRetained": true,
+    "editableTextCount": 0,
+    "source": "wide-sales f0b0f9bd9e3f33a48e1c9026a528e94561dd2447858d400c1ab2cc63bd4f2f5b"
+  }
+]

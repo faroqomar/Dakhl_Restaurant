@@ -1,13 +1,13 @@
-# سجل الحملات الإعلانية للمطعم
+# Restaurant advertising campaign register
 
-الحالة: أول مسودة ترويجية منفّذة؛ لا نشر أو ميزانية معتمدة. التاريخ: 2026-10-16. المالك: مالك المطعم. المصدر: طلب إدراج الحملات ومتابعة طلب المينيو.
+Status: first promotional draft implemented; no approved publication or budget. Date: 2026-10-16. Owner: restaurant owner. Source: request to include campaign tracking and follow the menu request.
 
-كل حملة تخدم المطعم نفسه. هذا سجل متابعة؛ التطبيق الحالي لا ينشئ أو ينشر حملات إعلانية. لا نفترض منصة أو مبلغاً أو نتيجة.
+Every campaign serves the same restaurant. This is a tracking register; the current application does not create or publish advertising campaigns. Do not assume a platform, amount or outcome.
 
-| المعرف | الحملة والهدف | المنصة | الحالة | المدة | الميزانية المعتمدة | الصرف الفعلي ومصدره | النتائج والدليل | الخطوة التالية |
+| ID | Campaign and objective | Platform | Status | Duration | Approved budget | Actual spending and source | Results and evidence | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [CAM-0001](campaigns/CAM-0001-reduced-price-menu.md) | مينيو مطعم جنة بغداد؛ إبراز الفرق بين القديم والجديد | Canva للتصميم؛ منصة النشر غير محددة | v6 بتاريخ 2026-10-17، 21 خياراً تشمل السمك والأجنحة؛ لم تنشر | غير محددة | غير معتمدة | غير مسجل | [دليل الإضافة](../log/2026-10-17-promo-fish-wings.md)؛ لا نتائج حملة | مراجعة المالك للمسودة قبل أي نشر |
+| [CAM-0001](campaigns/CAM-0001-reduced-price-menu.md) | Jannat Baghdad restaurant menu highlighting old/new price differences | Canva for design; publication platform unspecified | v6 dated 2026-10-17, 21 options including fish/wings; not published | Unspecified | Not approved | Not recorded | [Addition evidence](../log/2026-10-17-promo-fish-wings.md); no campaign results | Owner review before any publication |
 
-الحالات: فكرة، مسودة، جاهزة للمراجعة، معتمدة، منشورة، متوقفة، منتهية، ملغاة. الانتقال إلى «منشورة» أو تسجيل صرف فعلي يحتاج دليلاً. استخدم [قالب الحملة](../templates/campaign.md) تحت `docs/planning/campaigns/` مع معرف ثابت `CAM-NNNN` واربطه هنا.
+Statuses: idea, draft, ready for review, approved, published, paused, ended, cancelled. Moving to published or recording actual spending requires evidence. Use the [campaign template](../templates/campaign.md) under `docs/planning/campaigns/`, assign a stable `CAM-NNNN` ID and link it here.
 
-الميزانية في السجل لا تحرك القاصة أو المصاريف. إذا سجل المالك تكلفة الإعلان في دفتر، نشير إلى وجود التسجيل ومراجعه المناسبة دون نسخ حساباته الخاصة إلى الذاكرة أو احتساب المبلغ مرة ثانية. قياس نجاح الحملة يحتاج هدفاً ومقياساً وفترة ومصدر بيانات، ولا نفترض أن زيادة المبيعات بسبب الحملة وحدها.
+A budget entry does not move cashbox funds or expenses. If the owner records advertising cost in Daftar, reference the existence of that entry and appropriate evidence without copying private accounts into memory or counting the amount twice. Measuring success requires an objective, metric, period and data source; do not assume sales growth resulted solely from the campaign.

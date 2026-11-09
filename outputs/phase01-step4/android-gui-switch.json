@@ -1,0 +1,6 @@
+{
+  "existingTaskTarget": "emulator-5554 Flutter_API_37_2",
+  "stopExitCode": 0,
+  "reason": "Reopen same task-owned headless target with visible native window for real OS Back and accessibility checks",
+  "noEraseUninstallOrClearData": true
+}

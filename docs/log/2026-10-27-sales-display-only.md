@@ -1,9 +1,9 @@
-# خيار حجم البطاقات في البيع فقط
+# Card-size control on Sales only
 
-الحالة: منفّذ. التاريخ: 2026-10-27. الطلب: إزالة إعداد عرض أصناف البيع من الإعدادات وإبقاؤه في شاشة البيع فقط.
+Status: implemented. Date: 2026-10-27. Request: remove sales-product display settings from Settings and keep the control on Sales only.
 
-التغيير: حذف القائمة ووصفها من الإعدادات، وحذف اعتماد حفظ الإعدادات عليها. بقي التحكم الأصلي في شاشة البيع وحفظ التفضيل المحلي كما هما. لم تتغير الحسابات أو صيغة البيانات. السبب: تنفيذ موضع التحكم الذي حدده المالك وتجنب تكراره.
+Change: removed the dropdown/description from Settings and removed settings-save dependence on it. The original Sales control and local preference storage remain unchanged. Accounts/data schema were untouched. Rationale: follow the owner's requested placement and avoid duplicate controls.
 
-التحقق: معاينة المتصفح تؤكد اختفاء الخيار من الإعدادات؛ اختبار عرض الأصناف المدمج الموجود يراجع عمله في شاشة البيع مع الحفاظ على الصور. نتائج مجموعة الاختبارات موثقة بعد اكتمالها. الصورة المحلية outputs/layout-review/settings-density-removed.png. لم يُستبدل التطبيق المثبت.
+Verification: browser preview confirms the control is absent from Settings. The existing compact-product display test covers Sales behavior while preserving photos. Suite results follow completion. Local image: outputs/layout-review/settings-density-removed.png. Installed application was not replaced.
 
-npm test نجح 120/120. الاسترجاع أعاد مصادر تاريخية مسحوبة فاعتمدت على الملفات الحالية. فحص الذاكرة السابق بلا عمليات معلقة أو فاشلة لكنه sources=0؛ تُعاد المزامنة والفحص لهذه الجولة، ولا يُعتبر انعدام المصادر دليلاً على الفهرسة.
+npm test passed 120/120. Recall returned withdrawn historical sources, so current files were used. The previous memory check had no pending/failed operations but sources=0. Sync/check run for this round without treating absent sources as indexing proof.

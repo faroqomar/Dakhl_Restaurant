@@ -1,0 +1,31 @@
+{
+  "recordedUtc": "2026-11-08T07:05:37.023810+00:00",
+  "mode": "profile",
+  "entrypoint": "lib/platform/c1_performance_main.dart",
+  "profileBuildsThisCampaign": 0,
+  "reusedCanonicalArtifactsMatchPriorPilot": true,
+  "artifacts": [
+    {
+      "path": "build/macos/Build/Products/Profile/Dakhl_Restaurant Dev.app/Contents/MacOS/Dakhl_Restaurant Dev",
+      "bytes": 585984,
+      "sha256": "67549c106b61d559dbc60903541ffa0c12e52ab664b310d81390ec9c4b0ad5a0",
+      "retention": "Canonical current profile build supports review/reproduction; no extra copy/archive created"
+    },
+    {
+      "path": "build/macos/Build/Products/Profile/Dakhl_Restaurant Dev.app/Contents/Frameworks/App.framework/App",
+      "bytes": 7281888,
+      "sha256": "79faec9aab10847d89b2e746880563987e0599344080379da40508ab029068e1",
+      "retention": "Canonical current profile build supports review/reproduction; no extra copy/archive created"
+    }
+  ],
+  "cacheReceipt": "profile-build-cache-receipt.json",
+  "sdkAndToolchain": {
+    "flutter": "3.47.8",
+    "dart": "3.13.7",
+    "apple": {
+      "xcode": "Xcode 27.2\nBuild version 27B52",
+      "macosSdkBuild": "26B118"
+    }
+  },
+  "retention": "Canonical existing build only; no duplicate binary/archive"
+}

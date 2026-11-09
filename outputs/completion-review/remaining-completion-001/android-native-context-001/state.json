@@ -1,0 +1,71 @@
+{
+  "attempts": [
+    {
+      "attemptId": "attempt-1",
+      "digest": "7172a4c53764db1be8056393b24ed90a59bd01f48322cb5fdbe4936233c4d3ca",
+      "previousDigest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt": {
+        "cleanupConfirmed": true,
+        "evidence": [
+          {
+            "path": "outputs/completion-review/remaining-completion-001/android-native-context-001/guard-attempt-001.json",
+            "sha256": "991a23f58dcf64a67e7f8bedfe09730947a1ffcfcbfae41511903a27fa9a16b8"
+          }
+        ],
+        "identity": {
+          "contextFingerprint": "6adee5be1d9d2cecc4d952696ca92162a39015a615b0bae3d385e3f5cb81c780",
+          "engineRevision": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+          "fixtureId": "4b888633f2431f14c5c6e02cfc60e4d49594e0198bb43cb78c91780b46e7b160",
+          "inputFingerprint": "315cc233069f51c3dee7c6b6c2731fca615de1089d2d5eb1e7fe03135a72a1e6",
+          "planFingerprint": "fc8f04c86298f31204d236f9d6d2409db1fb3b13962088fbac023295bd295e49",
+          "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+          "targetId": "emulator-5554",
+          "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+        },
+        "stageId": "guard",
+        "status": "passed"
+      },
+      "retry": null
+    },
+    {
+      "attemptId": "attempt-2",
+      "digest": "3bc4be136c38a272614ff82d7a0174102b13e854965a3ac51f8a768dd440f876",
+      "previousDigest": "7172a4c53764db1be8056393b24ed90a59bd01f48322cb5fdbe4936233c4d3ca",
+      "receipt": {
+        "cleanupConfirmed": true,
+        "evidence": [
+          {
+            "path": "outputs/completion-review/remaining-completion-001/android-native-context-001/native-driver-001.log",
+            "sha256": "8b8a5aa199d3a3b2fd23310cd63bcf35a243fed0aa42ac3b29e9f9b992d02b91"
+          }
+        ],
+        "identity": {
+          "contextFingerprint": "6adee5be1d9d2cecc4d952696ca92162a39015a615b0bae3d385e3f5cb81c780",
+          "engineRevision": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+          "fixtureId": "4b888633f2431f14c5c6e02cfc60e4d49594e0198bb43cb78c91780b46e7b160",
+          "inputFingerprint": "315cc233069f51c3dee7c6b6c2731fca615de1089d2d5eb1e7fe03135a72a1e6",
+          "planFingerprint": "fc8f04c86298f31204d236f9d6d2409db1fb3b13962088fbac023295bd295e49",
+          "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+          "targetId": "emulator-5554",
+          "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+        },
+        "stageId": "android-pilot",
+        "status": "passed"
+      },
+      "retry": null
+    }
+  ],
+  "campaignId": "remaining-bundled-android-001",
+  "identity": {
+    "contextFingerprint": "6adee5be1d9d2cecc4d952696ca92162a39015a615b0bae3d385e3f5cb81c780",
+    "engineRevision": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+    "fixtureId": "4b888633f2431f14c5c6e02cfc60e4d49594e0198bb43cb78c91780b46e7b160",
+    "inputFingerprint": "315cc233069f51c3dee7c6b6c2731fca615de1089d2d5eb1e7fe03135a72a1e6",
+    "planFingerprint": "fc8f04c86298f31204d236f9d6d2409db1fb3b13962088fbac023295bd295e49",
+    "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+    "targetId": "emulator-5554",
+    "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+  },
+  "planDigest": "fc8f04c86298f31204d236f9d6d2409db1fb3b13962088fbac023295bd295e49",
+  "schemaVersion": 1
+}

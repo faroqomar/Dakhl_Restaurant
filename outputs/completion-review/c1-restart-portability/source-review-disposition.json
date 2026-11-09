@@ -1,0 +1,19 @@
+{
+  "recordedUtc": "2026-11-08T06:18:04.305158+00:00",
+  "reviewer": "/root/review_c1_restart_qa_source",
+  "verdict": "revision_required",
+  "verifiedSourceBindings": 3,
+  "finding": "P2 close marks_closed before owners release; subsequent cleanup can delete retained live owner; remaining owners not drained",
+  "otherSafetyFindings": [],
+  "priorTests": 4,
+  "limits": [
+    "No native execution proof"
+  ],
+  "storage": {
+    "freeKiB": [
+      100414720,
+      100407700
+    ],
+    "temporaryGitStores": 0
+  }
+}

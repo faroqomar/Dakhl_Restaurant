@@ -33,14 +33,50 @@ jobs:
           repository: ${{ vars.MADAR_ENGINE_REPOSITORY }}
           ssh-key: ${{ secrets.MADAR_ENGINE_SSH_KEY }}
           token: ${{ secrets.MADAR_ENGINE_READ_TOKEN || github.token }}
+      - name: Read reviewed development tooling pin
+        id: tooling
+        run: |
+          python3 - <<'PYCODE'
+          import json, os, re
+          from pathlib import Path
+          revision = json.loads(Path('dev-tooling-dependency.json').read_text())['git_commit']
+          if not re.fullmatch(r'[0-9a-f]{40}', revision):
+              raise SystemExit('Development tooling must pin a full reviewed commit SHA.')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write(f'ref={revision}\n')
+          PYCODE
+      - name: Checkout independent reviewed development tooling
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          repository: ${{ vars.MADAR_ENGINE_REPOSITORY }}
+          ref: ${{ steps.tooling.outputs.ref }}
+          ssh-key: ${{ secrets.MADAR_ENGINE_SSH_KEY }}
+          token: ${{ secrets.MADAR_ENGINE_READ_TOKEN || github.token }}
+          ssh-strict: true
+          persist-credentials: false
+          path: Madar_Workflow_Tools
       - uses: subosito/flutter-action@1a449444c387b1966244ae4d4f8c696479add0b2 # v2
         with:
           flutter-version-file: Dakhl_Restaurant/.fvmrc
           channel: stable
       - run: dart pub get --enforce-lockfile
+        working-directory: Madar_Engine/packages/domain
+      - run: dart analyze
+        working-directory: Madar_Engine/packages/domain
+      - run: dart test
+        working-directory: Madar_Engine/packages/domain
+      - run: dart pub get --enforce-lockfile
         working-directory: Madar_Engine/packages/application
       - run: dart analyze
         working-directory: Madar_Engine/packages/application
+      - run: dart test
+        working-directory: Madar_Engine/packages/application
+      - run: dart pub get --enforce-lockfile
+        working-directory: Madar_Engine/packages/data
+      - run: dart analyze
+        working-directory: Madar_Engine/packages/data
+      - run: dart test
+        working-directory: Madar_Engine/packages/data
       - run: flutter pub get --enforce-lockfile
         working-directory: Madar_Engine/packages/flutter_adapters
       - run: flutter analyze --no-pub
@@ -51,10 +87,14 @@ jobs:
         working-directory: Madar_Engine
       - run: flutter pub get --enforce-lockfile
       - run: python3 -m unittest discover -s scripts/tests -v
+        env:
+          MADAR_WORKFLOW_TOOLS_ROOT: ${{ github.workspace }}/Madar_Workflow_Tools
+      - run: python3 scripts/release_version.py check
+      - run: python3 -m unittest discover -s tool/dev_dashboard/tests -v
       - run: python3 scripts/check-engine.py
       - run: dart format --output=none --set-exit-if-changed lib test integration_test
       - run: flutter analyze --no-pub
-      - run: flutter test --no-pub
+      - run: flutter test --no-pub --exclude-tags golden
 
   android:
     name: Android debug build
@@ -113,6 +153,9 @@ jobs:
       - run: xcodebuild -version
       - run: flutter pub get --enforce-lockfile
       - run: python3 scripts/check-engine.py
+      - name: Verify controlled macOS visual contracts
+        if: matrix.target == 'macos'
+        run: flutter test --no-pub --tags golden
       - name: macOS development build
         if: matrix.target == 'macos'
         run: flutter build macos --debug --no-pub

@@ -1,0 +1,33 @@
+{
+  "recordedUtc": "2026-11-08T02:41:28.105377+00:00",
+  "reviewer": "root independent of worker",
+  "status": "pass_read_only_source_resolution_preflight",
+  "files": {
+    "scripts/resolve-penpot-source.py": "5894ad46aace5c3cac80b651a8a39240a9ef398f24995c29cdea710f32ffb972",
+    "scripts/tests/test_resolve_penpot_source.py": "8d26fd455fb4cfe467c5c8fa8bd878051c832c193cb368e9fe4622d609874bf8",
+    "docs/log/2026-11-08-control-source-selection.md": "855868d686e65b4203f2ef0a937f5dee157da597fb8127078b2b70e6c24bd1b3"
+  },
+  "tests": 17,
+  "sourceReview": "Path confinement (including symlinks), exact source/manifest hashing, unique scene/kind and override/coverage consistency inspected",
+  "actualManifestProbe": {
+    "status": "resolved",
+    "sourceSceneId": "state-held-orders-empty",
+    "referenceId": null,
+    "kind": "design",
+    "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/source/package-prep/global-marker-paint-complete-v1/artwork/state-held-orders-empty-design-ua-paint-v1.svg",
+    "sha256": "9493af178bf670d59d690c1012a86b35acd066635e04222da980b6206b7b273a",
+    "manifest": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/source/package-prep/global-marker-paint-complete-v1-overrides-manifest.json",
+    "manifestSha256": "0b1694fed4a33dd8fb163a2ee538f59cdb3dcf70dbf18b052a37a8a0a92e5e7d",
+    "limits": "Source selection only; native export, review and owner approval remain separate."
+  },
+  "staleCandidateProbe": {
+    "status": "rejected",
+    "code": "superseded_source",
+    "message": "Candidate is not the selected canonical source."
+  },
+  "limits": [
+    "Does not repair generic native glyph extraction",
+    "Source resolution only; native and owner approval remain separate"
+  ],
+  "storage": "Worker four retained deliverables23745bytes; root aggregate storage follows"
+}

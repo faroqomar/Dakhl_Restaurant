@@ -1,0 +1,156 @@
+{
+  "recordedUtc": "2026-11-08T06:47:15.357001+00:00",
+  "scope": "Nine-case50-iteration macOS API baseline preparation only",
+  "status": "prepared_waiting_coordinator_quiet_window_no_execution",
+  "cases": 9,
+  "plannedIterationsPerCase": 50,
+  "plannedMeasuredLatencySamples": 450,
+  "stages": "Composed preflight, product-create50 pilot,8separate case stages",
+  "warmup": "Existing unchanged reviewed producer:one complete real verified warmup per case process, fresh measured fixtures",
+  "sourceChanges": [],
+  "protectedCaseFilesUnchanged": 7,
+  "draftPlanValidation": "Reviewed consumer prepare_plan/validate_plan passed; current326-input draft not initialized/frozen",
+  "rawRetention": "50chronological elapsedMs samples per case; aggregate OS resource observations only, not raw OS traces",
+  "normalization": "DecimalMB; one-logical-core100percent CPU; broad marker-window resources, no per-sample isolated resources",
+  "remainingGates": [
+    "Final true iOS restart/provider QA source recheck and safe idle point",
+    "Explicit root quiet serialized source/build/measurement handoff",
+    "Fresh consumer plan/marked fixture/preflight on actual current source",
+    "Per-case host validation/exact source-state/reset/cleanup; failures stop progression",
+    "Independent aggregate campaign review; numeric performance acceptance remains pending"
+  ],
+  "limits": [
+    "No build or measurement started",
+    "No sample/result files or execution plan/state exist",
+    "No producer/registry/infrastructure/pin/Git/business change",
+    "No GUI/frame/raster/native-input/image-decode/mobile claim",
+    "No old n1/other-case samples merged or optimization/budget pass"
+  ],
+  "files": [
+    {
+      "path": "../Madar_Engine/tool/dev_benchmarks/benchmark.py",
+      "bytes": 28761,
+      "sha256": "2a7be23029253798bfcc197e2411edc3b9b4037ba1384ba6b24a75e5ed428086"
+    },
+    {
+      "path": "../Madar_Engine/tool/dev_workflow/workflow.py",
+      "bytes": 21906,
+      "sha256": "3ccabda58f24cac7fb0f3c915870af62d77785fc4e95459fd5938e2a3d26b808"
+    },
+    {
+      "path": "dev-tooling-dependency.json",
+      "bytes": 288,
+      "sha256": "24065e391fc13ccf10eaf0f131deb9024641e29b68e7b75dfad07447e0a91299"
+    },
+    {
+      "path": "docs/log/2026-11-08-c1-api-baseline-50-preparation.md",
+      "bytes": 6162,
+      "sha256": "341f658188270905be1dfcf5dd88553117baf16c6778d527e148bec2501d985c"
+    },
+    {
+      "path": "engine-dependency.json",
+      "bytes": 801,
+      "sha256": "8221825716c72a5b1221a1cbfc8f70f27bb3db2ede59648864194ea798544f5c"
+    },
+    {
+      "path": "lib/platform/c1_performance_main.dart",
+      "bytes": 1794,
+      "sha256": "286bb7be151df100bb2a6c9e0d6d8a7c7f0d284c985ddfd7cb9e5c073983eca6"
+    },
+    {
+      "path": "lib/platform/c1_performance_scenarios.dart",
+      "bytes": 17251,
+      "sha256": "78bad859d98c07dd6fe4ab973e0eef8a55b31b1d068acdb4ea58d706e51f17b2"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/campaign-spec.json",
+      "bytes": 1132,
+      "sha256": "f3a053dfaab2cd0722a4093809345ec36eec55cd59ee478107478bea1533fb60"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-descriptors.json",
+      "bytes": 14232,
+      "sha256": "e2971f5ade36310aea08810dd64b3b3be092159a8e1a93a69108305a6575b53c"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/draft-plan-context.json",
+      "bytes": 2092,
+      "sha256": "4011f8078e139e88094c9cbfe6b971488ce48d484c4b0f07f8570697704619a6"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/fixture-descriptor.json",
+      "bytes": 2395,
+      "sha256": "e83792e4ae88ab3e6114c322a50c6babf8af123a7a6b15ee9e23d49af3ec0565"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/measurement-contract.json",
+      "bytes": 2549,
+      "sha256": "9b8cfac26ed7be836d1df280fa6ad8ae45c304529377210b09498ca2976c871b"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/preparation-baseline.json",
+      "bytes": 1138,
+      "sha256": "c8161f529feef438083c0dc2a59535a126909798cb643df5cc7b2cd427025fd0"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/preparation-memory.json",
+      "bytes": 337,
+      "sha256": "890f21885031e10e42af46bd3c79ca2ac30294d0d33cd62108bd6d4a2f603252"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/preparation-storage-closeout.json",
+      "bytes": 1426,
+      "sha256": "3e3f85382cc6df5fd72ea79c7ec7c89da36fd1cfb32bfcef3161450cf5dcdf46"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/preparation-timing.json",
+      "bytes": 424,
+      "sha256": "3758041d701e0ea116ad66fa371c42432aa5227d6232280848d5ff11c60d41f2"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/preparation-validation.json",
+      "bytes": 432,
+      "sha256": "f2d9b434ad616d63b54361532b7781dcdfca52e87135e89845e476689f715fa9"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/independent-source-review.json",
+      "bytes": 1077,
+      "sha256": "3f2a08984369d63ad4846d2258c578a096bf474ccf43b8ee37a783839e86aad4"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/review-inputs.json",
+      "bytes": 10170,
+      "sha256": "b18cb49660b5c27118f7bcf3fdf52a99f2fa4667ed01d55a8812ccaa66605cd3"
+    },
+    {
+      "path": "pubspec.lock",
+      "bytes": 25103,
+      "sha256": "63f2edcb3a3f0e521db5f3a71b019410b0a8e908c60e7ccf768678211acd4382"
+    },
+    {
+      "path": "scripts/check-engine.py",
+      "bytes": 8906,
+      "sha256": "01c54152e19952e4a8508177e881e11c468f21928e7f3718cbe7ea2efdb7511a"
+    },
+    {
+      "path": "scripts/phase_preflight.py",
+      "bytes": 15109,
+      "sha256": "733b063024a9c064f9d4e4c27f5ebeb0ee6530be05ec8532b71d10bf6c61c14c"
+    },
+    {
+      "path": "scripts/phase_workflow.py",
+      "bytes": 12702,
+      "sha256": "fa42b1b2cd926aa3fce7c1fe8f6d374fa3e5194a7a7ef139c711e2b9e37df2ba"
+    },
+    {
+      "path": "tool/dev_dashboard/operations.json",
+      "bytes": 24914,
+      "sha256": "7712d232c9cb922d714fa319a6fc04b6b569f5852d33c0594bc934ca0fe171a6"
+    },
+    {
+      "path": "tool/dev_dashboard/run_benchmarks.py",
+      "bytes": 32278,
+      "sha256": "dade20315b5bd2f3f4bf95fe2d3aac15fba44301357dc48518c31c17ed2c9116"
+    }
+  ]
+}

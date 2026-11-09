@@ -1,0 +1,26 @@
+{
+  "scope": "synthetic frozen source only; no browser, filesystem store or runtime activation",
+  "checksPassed": 15,
+  "checks": [
+    "expense exact-handler edit retains ID/timestamp, trims note, changes funding once",
+    "expense exact-handler date edit removes old row and appends same ID on target date",
+    "expense exact-handler mismatched funding is rejected",
+    "payment exact-handler edit excludes old payment from split and retains identity",
+    "payment edit preceding linked invoice is rejected",
+    "payment deletion projection restores invoice/debt allocations and funding exactly once",
+    "reducing a paid invoice below its saved payment is rejected by frozen validation",
+    "day shift moves expense/payment/transfer but preserves invoice/debt/sale dates and remaining",
+    "day shift collision and payment-before-invoice target are rejected atomically",
+    "adjacent range day shift preserves both day objects instead of overwriting",
+    "actual commit/undo keeps state/history on failed save and pops only on confirmed success",
+    "actual expense-delete handler removes current row; session undo restores it",
+    "actual commit caps session undo stack at 30 snapshots",
+    "actual undo preserves manual correction trail and appends compensating source-history event",
+    "actual sales commit clears generic undo; empty-stack undo opens eligible sale void"
+  ],
+  "limits": [
+    "DOM/save adapters are synthetic; no OS/process crash or file-write proof",
+    "Payment deletion probe applies the handler source filter and actual model validation, not supplier UI event execution",
+    "No durable expense/payment/date-shift/session-undo implementation is claimed"
+  ]
+}

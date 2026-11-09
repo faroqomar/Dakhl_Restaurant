@@ -1,0 +1,15 @@
+{
+  "kind": "native",
+  "label": "write",
+  "stage": "write",
+  "source": "5a11c66dbf665972b17b545c105eac74c17bfeeb",
+  "runtime": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+  "guardSha256": "f4c9a44a8efeec88c6d107dfabd7e0327bb191133230b43e51be16e45cbd219b",
+  "expectedOutcomeVerified": false,
+  "error": "guard-install-refused",
+  "errorType": "Failure",
+  "elapsedSeconds": 52.38218149999739,
+  "finalOwnedAppStopped": false,
+  "originalReceiptSha256": "12ae4b6bd9af59de5b4c76c05fb4a1b8eafbcf8c4bf32645ec7ff3acbd465c29",
+  "scope": "new isolated synthetic verification namespace; historical retention not established"
+}

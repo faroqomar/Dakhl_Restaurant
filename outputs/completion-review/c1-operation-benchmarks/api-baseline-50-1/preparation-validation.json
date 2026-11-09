@@ -1,0 +1,14 @@
+{
+  "recordedUtc": "2026-11-08T06:39:01.469268+00:00",
+  "reviewedConsumerPreparePlanValidation": "passed",
+  "sourceInputCount": 326,
+  "stages": 10,
+  "caseCount": 9,
+  "plannedLatencySamples": 450,
+  "caseOrderFixedAndRecorded": true,
+  "warmupSourceUnchanged": true,
+  "producerRegistryPinsUnchanged": true,
+  "actualWorkflowStateInitialized": false,
+  "nativeBuildOrMeasurementStarted": false,
+  "rawResultFilesExist": false
+}

@@ -1,0 +1,19 @@
+{
+  "project": "daftar",
+  "api": {
+    "status": "healthy",
+    "database": "connected",
+    "db_acquire_ms": 1.0,
+    "db_pool_waiting": 0,
+    "db_pool_in_use": 0,
+    "db_pool_max": 100,
+    "db_pool_idle": 6
+  },
+  "sources": 382,
+  "pending": [
+    "PHASES.md",
+    "docs/phases/completion-review-stage-matrix.md",
+    "docs/log/2026-11-08-final-campaign-evidence-review.md"
+  ],
+  "failed": {}
+}

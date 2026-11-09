@@ -1,9 +1,9 @@
-# بطاقات بيع أصغر وإضافة من الزاوية
+# Smaller sales cards with corner addition
 
-الحالة: منفّذ ومتحقق منه في المصدر والمعاينة. التاريخ: 2026-10-27. الطلب: إزالة زر الإضافة العريض، وضع أيقونة في الزاوية، وجعل البطاقات مدمجة.
+Status: implemented and verified in source/preview. Date: 2026-10-27. Request: remove the wide add button, place an icon in a corner and make cards compact.
 
-التغيير: استبدال عبارة «إضافة +» أسفل كل بطاقة بأيقونة زائد فوق زاوية الصورة، مع إبقاء العدد في الزاوية المقابلة. تقليل أبعاد الصور والمسافات وأحجام النص لتقصير البطاقات، مع الحفاظ على الاسم والسعر والمخزون والصورة. البطاقة زر واحد دون أزرار متداخلة؛ تنقر الأيقونة أو البطاقة للإضافة. أسماء الأزرار تصف الصنف والسعر. لا تعديل للحسابات أو المخزون أو قواعد البيع.
+Change: replaced the bottom Add + label with a plus icon over the image corner, retaining quantity in the opposite corner. Reduced image dimensions, spacing and typography to shorten cards while preserving name, price, stock and photo. Each card is one button, without nested buttons; clicking either the icon or card adds the item. Accessible button names describe item and price. No account, stock or sales rules changed.
 
-التحقق: npm test نجح 121/121. الاختبار الجديد ينقر أيقونة الزاوية مرتين ويتحقق من إضافة وحدة بكل نقرة وتحديث الإجمالي والعدد دون تسجيل بيع فعلي. معاينة Electron المعزولة بعروض 1512 و1024 و390px: لا تجاوز أفقي للصفحة. الدليل المحلي outputs/layout-review/sales-corner-results.json وsales-corner-cards.png وأداة verify-sales-cards.cjs. راجعت شاشة المتصفح بصرياً وتركتها مفتوحة؛ صورتها sales-cards-browser.png في المجلد نفسه.
+Verification: npm test passed 121/121. The new test clicks the corner icon twice and confirms one unit added per click, with total/count updated and no actual sale recorded. Isolated Electron previews at 1512, 1024 and 390px had no page-level horizontal overflow. Local evidence: outputs/layout-review/sales-corner-results.json, sales-corner-cards.png and verify-sales-cards.cjs. The browser screen was visually inspected and left open; sales-cards-browser.png is in the same folder.
 
-القيود: لم تُعدل حسابات المطعم أو النسخة المثبتة. الاسترجاع أعاد مصادر تاريخية مسحوبة؛ اعتمدت على الملفات الحالية. فحوص الذاكرة السابقة بلا عمليات معلقة أو فاشلة لكن sources=0؛ تُشغّل المزامنة والفحص لهذه الجولة دون اعتبار ذلك دليلاً على فهرسة المصادر الغائبة.
+Limits: restaurant accounts and the installed application were untouched. Recall returned withdrawn historical sources; current files were authoritative. Earlier memory checks had no pending/failed work but sources=0; this run uses sync/check without claiming absent sources were indexed.

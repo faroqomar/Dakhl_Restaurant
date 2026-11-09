@@ -1,0 +1,6 @@
+attributes:{id=0, touchExplorationEnabled=true, serviceHandlesDoubleTap=true, requestMultiFingerGestures=true, requestTwoFingerPassthrough=true, sendMotionEventsEnabledfalse, displayMagnificationEnabled=false, autoclickEnabled=false, nonInteractiveUiTimeout=0, interactiveUiTimeout=10000, installedServiceCount=5, magnificationModes={0=1}, magnificationCapabilities=3, audioDescriptionByDefaultEnabled=false, textHighContrastEnabled=false, mouseKeysEnabled=false, gamepadMouseEnabled=false, permittedAccessibilityServices=null}
+3 : {com.google.android.marvin.talkback/com.google.android.accessibility.selecttospeak.SelectToSpeakService} (A11yTool)
+4 : {com.google.android.marvin.talkback/com.google.android.marvin.talkback.TalkBackService} (A11yTool)
+Bound services:{Service[label=TalkBack, feedbackType[FEEDBACK_SPOKEN, FEEDBACK_HAPTIC, FEEDBACK_AUDIBLE], capabilities=251, eventTypes=TYPES_ALL_MASK, notificationTimeout=0, requestA11yBtn=false]}
+Enabled services:{{com.google.android.marvin.talkback/com.google.android.marvin.talkback.TalkBackService}}
+[com.google.android.deskclock][com.google.android.apps.photos][com.google.android.marvin.talkback][com.google.android.apps.nexuslauncher][com.google.android.apps.wellbeing][com.google.android.inputmethod.latin][com.eros.dakhlrestaurant.phase00][com.google.android.googlequicksearchbox]}]

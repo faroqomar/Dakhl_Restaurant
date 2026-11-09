@@ -1,0 +1,41 @@
+{
+  "recordedUtc": "2026-11-08T09:56:24.323684+00:00",
+  "scope": "Focused P3 decoding refusal fix only; canonical rows/aggregates untouched",
+  "predecessor": "review-inputs.json",
+  "independentPredecessor": "20tests/10bindings/corepartitioncorrect; 2411byte deepJSON produced rawRecursionError with exit1 instead of exit2 JSON; inputs unchanged",
+  "fix": "Catch RecursionError in JSON decode; subprocess CLI regression asserts exit2/codeinvalid_json, empty stderr, untouched3inputs and noscratch",
+  "red": "1actualbehavioral failure: exit1!=2; two earlier wrong unittest module import invocations were harness errors and retained separately",
+  "green": "21tests passed",
+  "files": [
+    {
+      "path": "scripts/audit-completion-progress.py",
+      "bytes": 12478,
+      "sha256": "792080967df7d995520d63e21baf529758989d8489f5120427c0eb9f538e0998"
+    },
+    {
+      "path": "test/tooling/test_completion_progress_audit.py",
+      "bytes": 10993,
+      "sha256": "5e38b53ee8422de96b6310e2385a824f5f2e711bd5aea4f01b6686acf07e87f7"
+    },
+    {
+      "path": "outputs/completion-review/completion-count-audit/deep-json-red.log",
+      "bytes": 647,
+      "sha256": "c2892daa582853ff64b89aecefe07e35b4d6716ee5e72fa9a8d87d62d8a0071b"
+    },
+    {
+      "path": "outputs/completion-review/completion-count-audit/deep-json-green.log",
+      "bytes": 120,
+      "sha256": "65133a1835c4c8afa978fe6409584f72bc7baac082d0a20d20ace2fd1ca0f6f2"
+    },
+    {
+      "path": "outputs/completion-review/completion-count-audit/deep-json-import-error-attempt-1.log",
+      "bytes": 574,
+      "sha256": "ec286ceee6418ea690046e56b5d1f763187f1ae108b4796966fd9387adc0b4b4"
+    },
+    {
+      "path": "outputs/completion-review/completion-count-audit/deep-json-import-error-attempt-2.log",
+      "bytes": 574,
+      "sha256": "ec286ceee6418ea690046e56b5d1f763187f1ae108b4796966fd9387adc0b4b4"
+    }
+  ]
+}

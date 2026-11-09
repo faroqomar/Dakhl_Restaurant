@@ -1,0 +1,16 @@
+{
+  "recordedUtc": "2026-11-08T06:30:02.927367+00:00",
+  "scope": "QA-only terminal lifecycle repair",
+  "finding": "After close, ensureImportTarget could create an owner omitted by subsequent cleanup",
+  "repair": [
+    "Close permanently requests shutdown before awaiting resource release",
+    "Public action methods reject after shutdown request with fixture_closed",
+    "Import owner registered before async initialization and readiness tracked",
+    "Initialization rechecks terminal state and does not double-release an owner already draining"
+  ],
+  "safeRed": "Closed fixture unexpectedly created target; finally explicitly disposed/closed that owner before namespace removal",
+  "testsPassed": 6,
+  "analysis": "No issues found",
+  "oldSource": "../historical-before-terminal-guard/manifest.json",
+  "nativeExecution": "pending independent recheck"
+}

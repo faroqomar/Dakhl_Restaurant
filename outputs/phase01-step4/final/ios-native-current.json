@@ -1,0 +1,15 @@
+{
+  "sourceAppSha256": "100cdc9f5aef5a9c446b4eaa3cfe7ea6595ad83563b308786ba38fa3a522b079",
+  "checks": "live native menu\u2192Inventory\u2192completedRTLleading-edge\u2192Sales after final Android-root registration wrapper",
+  "result": "pass",
+  "nativeDirtyGuardReuse": "prior same-turn modal/q captures at ios-native-back-acceptance.json; guard/helper unchanged, final147suite covers outerwrapper/modal guards",
+  "compiledDartRuntimeFilesBuiltInstalledEqual": {
+    "Frameworks/App.framework/App": "4a5a3ad6480f0e552d4c233cade185ded4216a0b07b4738ded77e5ac939ef510",
+    "Frameworks/App.framework/flutter_assets/vm_snapshot_data": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Frameworks/App.framework/flutter_assets/isolate_snapshot_data": "86bca6674ce2054938fb6ef6e827a46e775def9c32ee4bec672085e4047bae7f",
+    "Frameworks/App.framework/flutter_assets/kernel_blob.bin": "0c4a209b7894e1528032d76a08015ccae557310b204a564292037df814576206"
+  },
+  "actualTarget": "iPhone18Pro iOS27.0 DeviceHub27.1",
+  "initialFinalObservedRoute": "Sales",
+  "noDomainSave": true
+}

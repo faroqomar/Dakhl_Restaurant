@@ -1,0 +1,28 @@
+{
+  "recordedUtc": "2026-11-08T09:48:48.599927+00:00",
+  "availableKiB": 94555224,
+  "appKiB": 29196444,
+  "appGitKiB": 18430636,
+  "engineKiB": 1420140,
+  "engineGitKiB": 45172,
+  "deltaKiB": {
+    "appKiB": 80,
+    "appGitKiB": 0,
+    "engineKiB": 0,
+    "engineGitKiB": 0
+  },
+  "temporaryGitStores": 0,
+  "removedOwnedBytecode": [
+    {
+      "path": "scripts/__pycache__/audit-completion-progress.cpython-39.pyc",
+      "bytes": 13113
+    },
+    {
+      "path": "test/tooling/__pycache__/test_completion_progress_audit.cpython-39.pyc",
+      "bytes": 12893
+    }
+  ],
+  "reclaimedBytes": 26006,
+  "retained": "Two new source/test files, compact log and canonical audit evidence; synthetic tests clean TemporaryDirectory stores. No shared output/cache/Git cleanup.",
+  "unexplainedGrowth": "Concurrent shared-volume/repository changes have no verified producer in this lane."
+}

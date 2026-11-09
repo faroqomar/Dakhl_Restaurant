@@ -1,0 +1,162 @@
+[
+  {
+    "screen": "desktop-sales",
+    "kind": "design",
+    "file": "desktop-sales-design.svg",
+    "elements": 279,
+    "textRuns": 156,
+    "images": 18,
+    "icons": 27,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "desktop-sales",
+    "kind": "wireframe",
+    "file": "desktop-sales-wireframe.svg",
+    "elements": 279,
+    "textRuns": 156,
+    "images": 0,
+    "icons": 27,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "desktop-navigation",
+    "kind": "design",
+    "file": "desktop-navigation-design.svg",
+    "elements": 334,
+    "textRuns": 180,
+    "images": 24,
+    "icons": 39,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "desktop-navigation",
+    "kind": "wireframe",
+    "file": "desktop-navigation-wireframe.svg",
+    "elements": 334,
+    "textRuns": 180,
+    "images": 0,
+    "icons": 39,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "desktop-invoice-new",
+    "kind": "design",
+    "file": "desktop-invoice-new-design.svg",
+    "elements": 92,
+    "textRuns": 66,
+    "images": 0,
+    "icons": 9,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "desktop-invoice-new",
+    "kind": "wireframe",
+    "file": "desktop-invoice-new-wireframe.svg",
+    "elements": 92,
+    "textRuns": 66,
+    "images": 0,
+    "icons": 9,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "phone-invoice-new",
+    "kind": "design",
+    "file": "phone-invoice-new-design.svg",
+    "elements": 78,
+    "textRuns": 56,
+    "images": 0,
+    "icons": 9,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "phone-invoice-new",
+    "kind": "wireframe",
+    "file": "phone-invoice-new-wireframe.svg",
+    "elements": 78,
+    "textRuns": 56,
+    "images": 0,
+    "icons": 9,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "phone-sales",
+    "kind": "design",
+    "file": "phone-sales-design.svg",
+    "elements": 97,
+    "textRuns": 57,
+    "images": 4,
+    "icons": 9,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "phone-sales",
+    "kind": "wireframe",
+    "file": "phone-sales-wireframe.svg",
+    "elements": 97,
+    "textRuns": 57,
+    "images": 0,
+    "icons": 9,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "design-system",
+    "kind": "design",
+    "file": "design-system-design.svg",
+    "elements": 117,
+    "textRuns": 74,
+    "images": 1,
+    "icons": 1,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "design-system",
+    "kind": "wireframe",
+    "file": "design-system-wireframe.svg",
+    "elements": 117,
+    "textRuns": 74,
+    "images": 0,
+    "icons": 1,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "medium-sales",
+    "kind": "design",
+    "file": "medium-sales-design.svg",
+    "elements": 158,
+    "textRuns": 86,
+    "images": 6,
+    "icons": 14,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "medium-sales",
+    "kind": "wireframe",
+    "file": "medium-sales-wireframe.svg",
+    "elements": 158,
+    "textRuns": 86,
+    "images": 0,
+    "icons": 14,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "wide-sales",
+    "kind": "design",
+    "file": "wide-sales-design.svg",
+    "elements": 379,
+    "textRuns": 207,
+    "images": 29,
+    "icons": 37,
+    "wholeUiRasters": 0
+  },
+  {
+    "screen": "wide-sales",
+    "kind": "wireframe",
+    "file": "wide-sales-wireframe.svg",
+    "elements": 379,
+    "textRuns": 207,
+    "images": 0,
+    "icons": 37,
+    "wholeUiRasters": 0
+  }
+]

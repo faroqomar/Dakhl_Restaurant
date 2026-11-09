@@ -1,0 +1,1 @@
+{"format-version":[1,0,0],"native-assets":{"android_arm64":{"package:sqlite3/src/ffi/libsqlite3.g.dart":["absolute","libsqlite3.so"],"package:sqlite3_connection_pool/sqlite3_connection_pool.dart":["absolute","libsqlite3_connection_pool.so"],"package:powersync/src/platform_specific/native/sqlite3_powersync_init.dart":["absolute","libpowersync_core.so"]}}}

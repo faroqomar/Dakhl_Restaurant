@@ -4,6 +4,8 @@ import json, html
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'docs/planning/flutter-rebuild'
+EXECUTION_GROUPING = {'revision': '2026-11-05-completion', 'phase': 'Completion', 'stage': 'Step 1 scope only', 'included_work_packages': ['00-residual', '02-residual', '03', '04', '05', '06', '07', '08', '09', '10', '11'], 'reused_completed_work_packages': ['01'], 'scope_record': '../../phases/completion-scope-readiness.md', 'preserve_original_capture_mapping': True}
+
 BASELINE_PHASES = [
 ('00','Baseline and delivery setup','None',
  'A runnable, isolated Flutter app on macOS, Android and iPhone, with a frozen specification.',
@@ -705,7 +707,7 @@ The [preservation audit](merge-audit.json) lists each original work/check item w
 
 The [archived original plan](archive/v1-19-phases/plan.html) is retained for comparison, explicitly marked superseded and excluded from project-memory indexing. Do not implement from its obsolete numbering. Earlier logs remain historical evidence.
 ''')
-write('phase-map.json',json.dumps({'revision':'2026-10-27-12-phases','old_phase_count':len(BASELINE_PHASES),'current_phase_count':len(PHASES),'old_to_new':OLD_TO_NEW,'groups':[{'phase':n,'title':title,'dependencies':deps,'former_phases':old,'reason':reason} for n,title,deps,old,outcome,reason in PHASE_GROUPS]},indent=2))
+write('phase-map.json',json.dumps({'revision':'2026-10-27-12-phases','old_phase_count':len(BASELINE_PHASES),'current_phase_count':len(PHASES),'old_to_new':OLD_TO_NEW,'execution_grouping':EXECUTION_GROUPING,'groups':[{'phase':n,'title':title,'dependencies':deps,'former_phases':old,'reason':reason} for n,title,deps,old,outcome,reason in PHASE_GROUPS]},indent=2))
 items=[]
 for old,p in BASELINE.items():
     for kind,index in [('work',4),('acceptance',5)]:

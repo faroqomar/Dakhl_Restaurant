@@ -1,0 +1,71 @@
+{
+  "attempts": [
+    {
+      "attemptId": "attempt-1",
+      "digest": "cd5fe156475fa35a9cc182110a46a1414f5fe4e220f9c6294fea8d06d454ab81",
+      "previousDigest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt": {
+        "cleanupConfirmed": true,
+        "evidence": [
+          {
+            "path": "outputs/completion-review/review-stage-001/native-campaign-001/guard-attempt-001.json",
+            "sha256": "19b6add2588dfd36d2c8307755d32b6d817fdae0ba0082e1ff2c00ebe39521a6"
+          }
+        ],
+        "identity": {
+          "contextFingerprint": "ca9574a1b14c455f99a7e47a79afaf0a8e787a138baaac378564753deb90185a",
+          "engineRevision": "f30827df9fe3c4d2ef6d7d31b53bb0125eea82ec",
+          "fixtureId": "2a72b0a9c79c7a3ed8fdaaf43840644bdd9fad82b086ff4650fec1835ceffd7e",
+          "inputFingerprint": "711368ca426b5fb1602c3c8b6896f8377d1700477ca605811cc51d7e5c9348a1",
+          "planFingerprint": "ee4bc7a2d5ece0a0f00bd987117be40b7e78156f99ff6cbd6aef334bdb0c22bc",
+          "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+          "targetId": "macos-host",
+          "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+        },
+        "stageId": "guard",
+        "status": "passed"
+      },
+      "retry": null
+    },
+    {
+      "attemptId": "attempt-2",
+      "digest": "09fb1b9fd6789f5140c78c4b64917c62666ba97c1f505a01be5872feacd5a8db",
+      "previousDigest": "cd5fe156475fa35a9cc182110a46a1414f5fe4e220f9c6294fea8d06d454ab81",
+      "receipt": {
+        "cleanupConfirmed": true,
+        "evidence": [
+          {
+            "path": "outputs/completion-review/review-stage-001/native-campaign-001/macos-pilot-attempt-001.log",
+            "sha256": "810bb854583ae0e0e810f567592b5fd3dd8a30122656a54c893d5f33eef85e01"
+          }
+        ],
+        "identity": {
+          "contextFingerprint": "ca9574a1b14c455f99a7e47a79afaf0a8e787a138baaac378564753deb90185a",
+          "engineRevision": "f30827df9fe3c4d2ef6d7d31b53bb0125eea82ec",
+          "fixtureId": "2a72b0a9c79c7a3ed8fdaaf43840644bdd9fad82b086ff4650fec1835ceffd7e",
+          "inputFingerprint": "711368ca426b5fb1602c3c8b6896f8377d1700477ca605811cc51d7e5c9348a1",
+          "planFingerprint": "ee4bc7a2d5ece0a0f00bd987117be40b7e78156f99ff6cbd6aef334bdb0c22bc",
+          "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+          "targetId": "macos-host",
+          "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+        },
+        "stageId": "macos-pilot",
+        "status": "failed"
+      },
+      "retry": null
+    }
+  ],
+  "campaignId": "completion-review-native-001",
+  "identity": {
+    "contextFingerprint": "ca9574a1b14c455f99a7e47a79afaf0a8e787a138baaac378564753deb90185a",
+    "engineRevision": "f30827df9fe3c4d2ef6d7d31b53bb0125eea82ec",
+    "fixtureId": "2a72b0a9c79c7a3ed8fdaaf43840644bdd9fad82b086ff4650fec1835ceffd7e",
+    "inputFingerprint": "711368ca426b5fb1602c3c8b6896f8377d1700477ca605811cc51d7e5c9348a1",
+    "planFingerprint": "ee4bc7a2d5ece0a0f00bd987117be40b7e78156f99ff6cbd6aef334bdb0c22bc",
+    "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+    "targetId": "macos-host",
+    "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+  },
+  "planDigest": "ee4bc7a2d5ece0a0f00bd987117be40b7e78156f99ff6cbd6aef334bdb0c22bc",
+  "schemaVersion": 1
+}

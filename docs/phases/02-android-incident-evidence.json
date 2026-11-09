@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-31T18:57:54.485561+00:00",
+  "immutableAppSource": "52ed12052c34508f42cd3dd8fe34038c06d5e65e",
+  "independentHashAndReachabilityReview": "complete; no device or account-payload access",
+  "evidence": [
+    {
+      "role": "Phase01 native UI",
+      "originalRelativePath": "outputs/phase01-build/native-ui/android-native-ui-status.json",
+      "sha256": "a9fc9d0f88d06f4df009344d94732fa6b8df92adfac729d81db3f48bf2cee26e"
+    },
+    {
+      "role": "Preincident Android write",
+      "originalRelativePath": "outputs/phase02/native-current/android-write.json",
+      "sha256": "38508ae5744922a50566be4f853f62ff05ecc18e0122ebe0719f74281256227f"
+    },
+    {
+      "role": "Preincident picker",
+      "originalRelativePath": "outputs/phase02/picker/cancel-open-android.json",
+      "sha256": "8cda025d07fb8a2826115b497a29f6397da9303ed08ecbf089856f809c196682"
+    },
+    {
+      "role": "Native operational audit",
+      "originalRelativePath": "outputs/phase02/native-performance-audit.md",
+      "sha256": "a577015ac87ad5878b8fb34bf05e0667a7cdcb5f25038c029195f7ddb9f351e3"
+    },
+    {
+      "role": "Postincident impact",
+      "originalRelativePath": "outputs/phase02/step4-android-install-impact-readonly.json",
+      "sha256": "d569fcec01dd848b58e295c2bdf62855b53853a0359ea1cac6cede00e120e7e3"
+    }
+  ],
+  "knownLoss": "marked synthetic picker fixture",
+  "recordedBusinessAccountExposure": false,
+  "unrecordedActivity": "unknown",
+  "historicalRetention": "not verified",
+  "restorationPerformed": false,
+  "disposition": "non-blocking residual for bounded development-preview integration once current guarded native gates pass; reopen if business exposure discovered"
+}

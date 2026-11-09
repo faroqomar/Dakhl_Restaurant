@@ -1,0 +1,127 @@
+{
+  "utc": "2026-11-06T21:53:09.565149+00:00",
+  "status": "Native method stopped; project remains active; read-only receipt/docs/review work permitted",
+  "authority": "Owner explicit current-OOM stop condition, reiterated after fresh kernel evidence",
+  "diagnostic": "outputs/penpot/completion/parallel-completion/repairs08-archive-diagnostic.json",
+  "diagnosticSha256": "6f50a317b80cdae0c321a2fd3b0f7dbe028820c67b2a9a4a59e39eddd5d381ab",
+  "evidence": {
+    "kernelEvents": [
+      {
+        "secondsBeforeCapture": 378.04,
+        "approxUtc": "2026-11-06T21:43:39.871819+00:00",
+        "message": "[73549.382708] valkey-server invoked oom-killer: gfp_mask=<address>(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=0"
+      },
+      {
+        "secondsBeforeCapture": 378.03,
+        "approxUtc": "2026-11-06T21:43:39.877364+00:00",
+        "message": "[73549.388253] oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=18d35cc52fdf4e86697609366ae103784ff6d07b52283377454bdc57cba25cb2,mems_allowed=0,global_oom,task_memcg=/docker/627dded679e6d70c54a35176d560f163dcbbf48546b4158b8fd779572a565111,task=java,pid=1100333,uid=1001"
+      },
+      {
+        "secondsBeforeCapture": 378.03,
+        "approxUtc": "2026-11-06T21:43:39.878074+00:00",
+        "message": "[73549.388963] Out of memory: Killed process 1100333 (java) total-vm:7107372kB, anon-rss:3830392kB, file-rss:0kB, shmem-rss:0kB, UID:1001 pgtables:8140kB oom_score_adj:0"
+      }
+    ],
+    "backendContainerState": {
+      "startedAt": "2026-11-06T21:43:26.200335485Z",
+      "finishedAt": "2026-11-06T21:43:24.382487371Z",
+      "oomKilled": false,
+      "restartCount": 1,
+      "running": true
+    },
+    "archiveHttpStatus": 502
+  },
+  "classification": "VM-global OOM killed a Java task whose cgroup matches the Penpot backend in the failed native-archive window. Current native method remains held; no capacity change is applied.",
+  "delivery": {
+    "referenceMappings": 176,
+    "pairedNativeExports": 165,
+    "currentNativeExportedSides": 330,
+    "contentQualifiedPairs": 117,
+    "newOwnerApprovals": 0,
+    "repairUnitsExported": 8,
+    "repairSidesExported": 27,
+    "totalRepairUnits": 25,
+    "totalReplacementSides": 70,
+    "remainingRepairUnitsWithoutPng": 17,
+    "remainingReplacementSidesWithoutPng": 43,
+    "selectedPatternPairs": 12,
+    "completeNativePatternPairs": 0,
+    "nativeSavedUnexportedRepairUnits": 1,
+    "nativeSavedUnexportedRepairSides": 3
+  },
+  "partialUnit": {
+    "receipt": "outputs/penpot/completion/export-recovery/wp05-01-v6-design-c04-repair-c2ef316b-pending.json",
+    "boardId": "98ce91fd-649e-803a-8008-e7f9927acdf2",
+    "groupId": "98ce91fd-649e-803a-8008-e7f97fb803ca",
+    "clientGroupId": "98ce91fd-649e-803a-8008-e7f97fb803ca",
+    "source": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/export-recovery/Completion-wp05-01-v6-design-c04-repair-c2ef316b.svg",
+    "sourceSha256": "573da93628cb72f427619718c01e0aaaee54db9e7cd84ee76d88d605120eb154",
+    "visibleState": "Saving; no visible error",
+    "nativePng": null,
+    "settledObservation": {
+      "utc": "2026-11-06T21:58:24.288074+00:00",
+      "saved": true,
+      "saving": false,
+      "error": false,
+      "scope": "Read-only current-tab observation, not fullreopen/archive"
+    },
+    "currentVisibleState": "Saved; no PNG/export"
+  },
+  "activeIntakeWrapper": {
+    "utc": "2026-11-06T21:48:02.054536+00:00",
+    "wrapperId": "98ce91fd-649e-803a-8008-e7f95543159b",
+    "restoredParentId": "dea2b298-6357-8027-8008-e78670b1b24c",
+    "status": "Active temporary root intake wrapper for next existing repair batch; remove through UI before archive"
+  },
+  "preservedProofs": [
+    "native-continuation-checkpoint-165.penpot",
+    "repairs08-full-reopen-ui-proof.json",
+    "native-milestone-control-repairs-batch01.json",
+    "native-milestone-control-repairs-batch02a.json",
+    "native-milestone-control-repairs-batch02b.json"
+  ],
+  "pending": [
+    "New native archive failed;27replacement side panel IDs/ancestry/papers remain pending",
+    "Unit9save outcome not yet settled; no reimport or metadata replay",
+    "17remaining repair units/43sides and12patterns require a changed safe condition before resuming native method"
+  ],
+  "prohibitedWhileHeld": [
+    "Penpot mutations,imports,saves,exports/archive retries,reimports",
+    "Service/runtime/capacity changes by controller"
+  ],
+  "limits": "No project owner-stop, design approval, phase completion or engine/app implementation claim. Existing originals and all successful exports remain preserved.",
+  "latestDiagnosticReconciliation": {
+    "utc": "2026-11-06T22:01:29.028425+00:00",
+    "status": "CURRENT_VM_GLOBAL_OOM_CONFIRMED_NATIVE_METHOD_HELD",
+    "sha256": "bccc07bfa20a9321f306f9fe1eeec4e548bb6b839bc942c30bac39fee6ad58fe",
+    "currentFindings": {
+      "vmGlobalOomConfirmed": true,
+      "kernelKilledJavaCgroupMatchesPenpotBackend": true,
+      "killedJavaAnonRssKB": 3830392,
+      "backendRestartDuringArchiveFailure": true,
+      "nativeArchiveHttpStatus": 502,
+      "nativeMethodStopActive": true,
+      "runtimeChangesAppliedByRoot": false
+    },
+    "capacityReadOnly": {
+      "vmConfig": {
+        "cpu": 4.0,
+        "memory": 6.0,
+        "disk": 60.0
+      },
+      "hostPhysicalGiB": 16.0,
+      "hostMemoryFreePercentReported": 34
+    },
+    "runtimeResizeRestartApproval": "Not granted to controller; proposal only, no changes applied",
+    "preRestartCheck": "PriorSavedobservation is dated. Recheck no save is active immediately before any separately owner-approved restart."
+  },
+  "recoveryAuthorization": {
+    "utc": "2026-11-06T22:04:27.101971+00:00",
+    "authority": "Owner explicitly approved prepared8GiB recovery/restart, existing-ID/layout reconciliation, bounded original-parent/wrapper cleanup and one guarded archive pilot",
+    "runtimeOwner": "Root; controller makes no runtime/service changes",
+    "controllerGate": "Await verified runtime-ready handoff before live native action",
+    "queueGate": "Existing native queue resumes only on guarded pilot pass; recurrent current OOM stops method",
+    "status": "Approved recovery in progress; current native method remains held",
+    "limits": "No design/appbuild/merge approval inferred"
+  }
+}

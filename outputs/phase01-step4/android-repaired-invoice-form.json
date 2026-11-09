@@ -1,0 +1,152 @@
+[
+  {
+    "class": "android.widget.Button",
+    "text": "",
+    "content-desc": "قائمة جديدة\nحساب مورد توضيحي\nإغلاق النافذة",
+    "clickable": "true",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[0,142][1080,2361]"
+  },
+  {
+    "class": "android.view.View",
+    "text": "",
+    "content-desc": "المورد",
+    "clickable": "false",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,496][1006,554]"
+  },
+  {
+    "class": "android.widget.EditText",
+    "text": "مورد توضيحي",
+    "content-desc": "",
+    "clickable": "true",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,567][1006,693]"
+  },
+  {
+    "class": "android.view.View",
+    "text": "",
+    "content-desc": "رقم القائمة",
+    "clickable": "false",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,730][1006,788]"
+  },
+  {
+    "class": "android.widget.EditText",
+    "text": "",
+    "content-desc": "",
+    "clickable": "true",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,801][1006,927]"
+  },
+  {
+    "class": "android.view.View",
+    "text": "",
+    "content-desc": "تاريخ القائمة",
+    "clickable": "false",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,964][1006,1021]"
+  },
+  {
+    "class": "android.widget.EditText",
+    "text": "2026/10/27",
+    "content-desc": "",
+    "clickable": "true",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,1035][1006,1161]"
+  },
+  {
+    "class": "android.view.View",
+    "text": "",
+    "content-desc": "مواد القائمة",
+    "clickable": "false",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,1276][1006,1371]"
+  },
+  {
+    "class": "android.view.View",
+    "text": "",
+    "content-desc": "المادة",
+    "clickable": "false",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,1402][1006,1460]"
+  },
+  {
+    "class": "android.widget.EditText",
+    "text": "",
+    "content-desc": "",
+    "clickable": "true",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,1473][1006,1599]"
+  },
+  {
+    "class": "android.view.View",
+    "text": "",
+    "content-desc": "سعر القطعة",
+    "clickable": "false",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,1636][1006,1693]"
+  },
+  {
+    "class": "android.widget.EditText",
+    "text": "",
+    "content-desc": "",
+    "clickable": "true",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,1707][1006,1833]"
+  },
+  {
+    "class": "android.view.View",
+    "text": "",
+    "content-desc": "الكمية",
+    "clickable": "false",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,1869][1006,1927]"
+  },
+  {
+    "class": "android.widget.Button",
+    "text": "",
+    "content-desc": "حفظ القائمة والتسديد",
+    "clickable": "true",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,1983][1006,2109]"
+  },
+  {
+    "class": "android.widget.Button",
+    "text": "",
+    "content-desc": "إلغاء",
+    "clickable": "true",
+    "focusable": "true",
+    "focused": "false",
+    "enabled": "true",
+    "bounds": "[74,2141][1006,2267]"
+  }
+]

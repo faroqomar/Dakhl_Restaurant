@@ -1,0 +1,12 @@
+[
+  {
+    "source": "docs/phases/completion-implementation-plan.md",
+    "snapshot": "outputs/completion-scope/step2-restart/app-completion-implementation-plan.md",
+    "sha256": "24df4acb7f333bf6efb603b16e1e09e593488ec12309874b7ba5360b7f43077a"
+  },
+  {
+    "source": "../Madar_Engine/docs/reference/consumer-completion-implementation-plan.md",
+    "snapshot": "outputs/completion-scope/step2-restart/engine-consumer-completion-implementation-plan.md",
+    "sha256": "c40bf96a5c946506238bbfdd78b30061218421153260a476852008f35cda542d"
+  }
+]

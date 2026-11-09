@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "reviewId": "C2-C3-localized-control-independent-review-2026-11-08",
+  "createdUtc": "2026-11-07T21:54:04.203866+00:00",
+  "disposition": "PASS for six localized control repairs; full design approval and runtime remain separate",
+  "ownership": {
+    "app": "Native visual-reference repair qualification only",
+    "engine": "Implementation/API/Design N/A; no engine source or contract changed",
+    "reviewedEngineRevision": "d316fd6076375daa3f412889f73eaebfeeb5d4d4"
+  },
+  "inputReceipts": [
+    {
+      "path": "outputs/completion-review/c3-design-repair-receipt.json",
+      "sha256": "fb65b4b7e5d447e5f14754e96e7293ddf3dfbc06a01e0b52eb8c2979067e0522",
+      "bytes": 65056
+    },
+    {
+      "path": "outputs/completion-review/c2-held-order-repair-receipt.json",
+      "sha256": "f1e36a6253f957ef19060702d04d073779c40416465a8da456e85a703b755b21",
+      "bytes": 11676
+    }
+  ],
+  "bindingChecks": {
+    "manifestBindings": 80,
+    "uniqueRecordedPaths": 60,
+    "mismatches": 0,
+    "additionalControlAssetHashChecks": 44
+  },
+  "pairs": [
+    {
+      "id": "phone-sale-return",
+      "kind": "design",
+      "disposition": "localized_control_repair_qualified",
+      "after": {
+        "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/c3-hold-repair/phone-sale-return-design-repaired.png",
+        "bytes": 122599,
+        "sha256": "07acbcb979571a1509b8c3fbeecfc719a99495f0ba5702d8d279be0d90cf0670"
+      },
+      "boardUrl": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&layout=layers&selection=a06ebf34-7758-80cb-8008-e6995bda2882",
+      "controls": 2,
+      "changedPixels": 2100,
+      "outsideExpectedBounds": 0,
+      "cropExactlyReproducesNativeBoard": true,
+      "controlRoiErrorImproved": true,
+      "overlaySmallRasterCount": 2
+    },
+    {
+      "id": "phone-sale-return",
+      "kind": "wireframe",
+      "disposition": "localized_control_repair_qualified",
+      "after": {
+        "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/c3-hold-repair/phone-sale-return-wireframe-repaired.png",
+        "bytes": 108149,
+        "sha256": "8aa0e7e2ce3c442b697f46f0be6e7356a5951594fadcabd0c92911130f74bea0"
+      },
+      "boardUrl": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&layout=layers&selection=a06ebf34-7758-80cb-8008-e69a1bb1e925",
+      "controls": 2,
+      "changedPixels": 2093,
+      "outsideExpectedBounds": 0,
+      "cropExactlyReproducesNativeBoard": true,
+      "controlRoiErrorImproved": true,
+      "overlaySmallRasterCount": 2
+    },
+    {
+      "id": "empty-sale-history",
+      "kind": "design",
+      "disposition": "localized_control_repair_qualified",
+      "after": {
+        "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/c3-hold-repair/empty-sale-history-design-repaired.png",
+        "bytes": 243518,
+        "sha256": "f4f400d0d03f7022c6bc3621672d983908a085da356b63040d9a9a6f08e28d9e"
+      },
+      "boardUrl": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&layout=layers&selection=a06ebf34-7758-80cb-8008-e6995bda2882",
+      "controls": 2,
+      "changedPixels": 238,
+      "outsideExpectedBounds": 0,
+      "cropExactlyReproducesNativeBoard": true,
+      "controlRoiErrorImproved": true,
+      "overlaySmallRasterCount": 2
+    },
+    {
+      "id": "empty-sale-history",
+      "kind": "wireframe",
+      "disposition": "localized_control_repair_qualified",
+      "after": {
+        "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/c3-hold-repair/empty-sale-history-wireframe-repaired.png",
+        "bytes": 219898,
+        "sha256": "f6ac6de1ea61b96a4133ab63d5f508cfbfe3529285de53a8a918f2c276060ac3"
+      },
+      "boardUrl": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&layout=layers&selection=a06ebf34-7758-80cb-8008-e69a1bb1e925",
+      "controls": 2,
+      "changedPixels": 238,
+      "outsideExpectedBounds": 0,
+      "cropExactlyReproducesNativeBoard": true,
+      "controlRoiErrorImproved": true,
+      "overlaySmallRasterCount": 2
+    },
+    {
+      "id": "phone-sale-history",
+      "kind": "design",
+      "disposition": "localized_control_repair_qualified",
+      "after": {
+        "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/c3-hold-repair/phone-sale-history-design-repaired.png",
+        "bytes": 139889,
+        "sha256": "d97c9e08e81d5398e3d6943ddcd8aec01d7e7e9a2f18ed85893b9a48efd49560"
+      },
+      "boardUrl": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&layout=layers&selection=a06ebf34-7758-80cb-8008-e6995bda2882",
+      "controls": 2,
+      "changedPixels": 238,
+      "outsideExpectedBounds": 0,
+      "cropExactlyReproducesNativeBoard": true,
+      "controlRoiErrorImproved": true,
+      "overlaySmallRasterCount": 2
+    },
+    {
+      "id": "phone-sale-history",
+      "kind": "wireframe",
+      "disposition": "localized_control_repair_qualified",
+      "after": {
+        "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/c3-hold-repair/phone-sale-history-wireframe-repaired.png",
+        "bytes": 121199,
+        "sha256": "d0c841e5206ddc7fd10ffdafe4fe670ea1be196144fca7fd150abf059bb4fb7b"
+      },
+      "boardUrl": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&layout=layers&selection=a06ebf34-7758-80cb-8008-e69a1bb1e925",
+      "controls": 2,
+      "changedPixels": 238,
+      "outsideExpectedBounds": 0,
+      "cropExactlyReproducesNativeBoard": true,
+      "controlRoiErrorImproved": true,
+      "overlaySmallRasterCount": 2
+    },
+    {
+      "id": "phone-sale-return-bottom",
+      "kind": "design",
+      "disposition": "localized_control_repair_qualified",
+      "after": {
+        "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/c3-hold-repair/phone-sale-return-bottom-design-repaired.png",
+        "bytes": 121747,
+        "sha256": "dfc20d8c287fb3daa277ff3dc067b03de771eb8c04409f8cc0a57152211dfa2c"
+      },
+      "boardUrl": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&layout=layers&selection=a06ebf34-7758-80cb-8008-e6995bda2882",
+      "controls": 3,
+      "changedPixels": 3151,
+      "outsideExpectedBounds": 0,
+      "cropExactlyReproducesNativeBoard": true,
+      "controlRoiErrorImproved": true,
+      "overlaySmallRasterCount": 3
+    },
+    {
+      "id": "phone-sale-return-bottom",
+      "kind": "wireframe",
+      "disposition": "localized_control_repair_qualified",
+      "after": {
+        "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/c3-hold-repair/phone-sale-return-bottom-wireframe-repaired.png",
+        "bytes": 107144,
+        "sha256": "619d4c85f80cb6c61f04ac408c189c3a8fdece9cb9821762a97edeabc6d4465a"
+      },
+      "boardUrl": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&layout=layers&selection=a06ebf34-7758-80cb-8008-e69a1bb1e925",
+      "controls": 3,
+      "changedPixels": 3143,
+      "outsideExpectedBounds": 0,
+      "cropExactlyReproducesNativeBoard": true,
+      "controlRoiErrorImproved": true,
+      "overlaySmallRasterCount": 3
+    },
+    {
+      "id": "full-phone-sale-history",
+      "kind": "design",
+      "disposition": "localized_control_repair_qualified",
+      "after": {
+        "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/c3-hold-repair/full-phone-sale-history-design-repaired.png",
+        "bytes": 258002,
+        "sha256": "3df05a4aa8dd04639e7a235b37a119313a2eea132d6e30013bc7eb877518694b"
+      },
+      "boardUrl": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&layout=layers&selection=a06ebf34-7758-80cb-8008-e6995bda2882",
+      "controls": 2,
+      "changedPixels": 238,
+      "outsideExpectedBounds": 0,
+      "cropExactlyReproducesNativeBoard": true,
+      "controlRoiErrorImproved": true,
+      "overlaySmallRasterCount": 2
+    },
+    {
+      "id": "full-phone-sale-history",
+      "kind": "wireframe",
+      "disposition": "localized_control_repair_qualified",
+      "after": {
+        "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/c3-hold-repair/full-phone-sale-history-wireframe-repaired.png",
+        "bytes": 223169,
+        "sha256": "e356ed3f3ec52bc9f0ff75ac99fb41b630c44554bdfaa5fe986695d617a88daf"
+      },
+      "boardUrl": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&layout=layers&selection=a06ebf34-7758-80cb-8008-e69a1bb1e925",
+      "controls": 2,
+      "changedPixels": 238,
+      "outsideExpectedBounds": 0,
+      "cropExactlyReproducesNativeBoard": true,
+      "controlRoiErrorImproved": true,
+      "overlaySmallRasterCount": 2
+    },
+    {
+      "id": "desktop-held-orders",
+      "kind": "design",
+      "disposition": "localized_control_repair_qualified",
+      "after": {
+        "path": "outputs/penpot/completion/c2-held-order-repair/desktop-held-orders-design-repaired.png",
+        "bytes": 1422025,
+        "sha256": "f73f819c81b54820c8436e8459ced19b81996757462757cfe4165c9ffc576eeb"
+      },
+      "boardUrl": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&layout=layers&selection=0caf3b3a-c3d5-8062-8008-e68e650dbd57",
+      "controls": 1,
+      "changedPixels": 442,
+      "outsideExpectedBounds": 0,
+      "cropExactlyReproducesNativeBoard": true,
+      "controlRoiErrorImproved": true,
+      "overlaySmallRasterCount": 1
+    },
+    {
+      "id": "desktop-held-orders",
+      "kind": "wireframe",
+      "disposition": "localized_control_repair_qualified",
+      "after": {
+        "path": "outputs/penpot/completion/c2-held-order-repair/desktop-held-orders-wireframe-repaired.png",
+        "bytes": 447741,
+        "sha256": "7c57de6f9bdbdbb2a025019ac79d39d7a82f28849604393225549b50447e5b74"
+      },
+      "boardUrl": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&layout=layers&selection=c5f89649-e583-8076-8008-e692d0eef5b5",
+      "controls": 1,
+      "changedPixels": 440,
+      "outsideExpectedBounds": 0,
+      "cropExactlyReproducesNativeBoard": true,
+      "controlRoiErrorImproved": true,
+      "overlaySmallRasterCount": 1
+    }
+  ],
+  "validation": {
+    "nativeBoardCropExactByteEquality": 12,
+    "sourceControlRoisImproved": 24,
+    "changedPixelsOutsideNewControlsOrOldNewC2UnionPlus2PhysicalPixelMargin": 0,
+    "overlaySvgXmlAndBoundedImageFills": 12,
+    "noFullScreenRasterOrTextReplacementInRepairOverlays": true,
+    "reusedToolSourceReviewed": "outputs/penpot/completion/package-layout/native-pixels.swift",
+    "liveBrowserOpened": false,
+    "nativeSavedReadback": "Producer-retained DOM/readback/export chain inspected; no fresh live readback performed",
+    "visualInspected": "All12 final repaired design/wireframe full crops visually inspected; four source full captures (return top/bottom, full phone history, held orders) directly compared. Other source control correspondence bound to retained ROI hashes and source metadata."
+  },
+  "findings": [],
+  "limits": [
+    "Qualification applies only to specified control deltas, not full pixel identity or whole C2/C3 completion.",
+    "Existing disabled submit foreground tone, shadows/lower corners, source mobile numeric clipping and toast occlusion remain.",
+    "Positive partial/full refund preview and checked cash-confirmation states remain missing from this repair set.",
+    "C2-D01 visual chevron defect remedied; root owns aggregate hold disposition, original receipts and approval packet updates.",
+    "No C1/C4 design change, runtime, focus/keyboard/semantics, Device, live screen-reader, financial cutover, migration, CI/release or owner approval established.",
+    "All final boards/crops are producer-native exports with recorded provenance; no new archive or live Saved check was produced."
+  ],
+  "storage": {
+    "baselineFreeKiB": 112006672,
+    "baselineAppGitKiB": 18423252,
+    "baselineEngineGitKiB": 41284,
+    "baselineC3RepairKiB": 12852,
+    "baselineC2RepairKiB": 9152,
+    "scratch": "TemporaryDirectory disposed after comparisons; no exports/copies retained",
+    "reclaimedBytes": 0,
+    "retained": "Existing native PNGs, exact crops, overlays and receipts remain canonical review evidence. New compact receipt and review log only.",
+    "closeoutFreeKiB": 111847244,
+    "closeoutMeasuredKiB": {
+      ".git": 18423680,
+      "../Madar_Engine/.git": 41284,
+      "outputs/penpot/completion/c3-hold-repair": 12852,
+      "outputs/penpot/completion/c2-held-order-repair": 9152
+    },
+    "tmpObjdirCounts": {
+      ".git": 0,
+      "../Madar_Engine/.git": 0
+    },
+    "newScratchStoresRemaining": 0,
+    "unexplainedProjectGrowth": "App Git +428KiB during concurrent work, producer unassigned; engine Git and repair folders unchanged. No threshold breach."
+  },
+  "audit": {
+    "startUtc": "unknown; current-turn tool execution recorded by parent",
+    "durationSeconds": null,
+    "avoidableOverhead": "Several broad intake/rg outputs truncated before bounded JSON/path extraction; no mutations or reruns of producer export campaign",
+    "memory": "Separate daftar/madar focused recalls succeeded; current-source evidence governs verdict. Root owns batch sync/check."
+  }
+}

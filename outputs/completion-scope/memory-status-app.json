@@ -1,0 +1,35 @@
+{
+  "project": "daftar",
+  "api": {
+    "status": "healthy",
+    "database": "connected",
+    "db_acquire_ms": 5.7,
+    "db_pool_waiting": 0,
+    "db_pool_in_use": 0,
+    "db_pool_max": 100,
+    "db_pool_idle": 6
+  },
+  "sources": 180,
+  "pending": [
+    "docs/README.md",
+    "docs/planning/flutter-rebuild/phases/00.md",
+    "docs/planning/flutter-rebuild/phases/01.md",
+    "docs/planning/flutter-rebuild/phases/02.md",
+    "docs/planning/flutter-rebuild/phases/03.md",
+    "docs/planning/flutter-rebuild/phases/04.md",
+    "docs/planning/flutter-rebuild/phases/05.md",
+    "docs/planning/flutter-rebuild/phases/06.md",
+    "docs/planning/flutter-rebuild/phases/07.md",
+    "docs/planning/flutter-rebuild/phases/08.md",
+    "docs/planning/flutter-rebuild/phases/09.md",
+    "docs/planning/flutter-rebuild/phases/10.md",
+    "docs/planning/flutter-rebuild/phases/11.md",
+    "docs/planning/flutter-rebuild/phase-map.md",
+    "docs/phases/README.md",
+    "PHASES.md",
+    "docs/how-to/repeated-problems.md",
+    "docs/phases/completion-scope-readiness.md",
+    "docs/log/2026-11-05-completion-scope.md"
+  ],
+  "failed": {}
+}

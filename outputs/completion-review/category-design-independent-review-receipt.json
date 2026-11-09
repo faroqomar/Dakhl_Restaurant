@@ -1,0 +1,120 @@
+{
+  "recordedUtc": "2026-11-07T20:14:38.759Z",
+  "status": "export_content_qualified_and_live_layer_readback_verified_owner_approval_pending",
+  "reviewTaskId": "node:delegated-task:command%3Amcp%3A26dc35e8-ba96-4d1c-9209-1d57cd5a84ff%3Adelegate-task%3A169b48e1-91ce-4a69-b801-b88dd15e8c5e",
+  "frozenManifest": "outputs/completion-review/category-design-recheck-inputs.json",
+  "inputFilesMatched": 39,
+  "repairHashesMatched": 30,
+  "qualifiedRepairPairs": 5,
+  "priorQualifiedPairs": 3,
+  "ownerApproval": false,
+  "flutterUiAuthorized": false,
+  "rootLiveReadback": {
+    "design": {
+      "layers": [
+        {
+          "id": "002514bb-1797-8060-8008-e91c83025656",
+          "matches": [
+            {
+              "domId": "shape-002514bb-1797-8060-8008-e91c83025656",
+              "tag": "g"
+            }
+          ]
+        },
+        {
+          "id": "002514bb-1797-8060-8008-e91e7c4286d2",
+          "matches": []
+        },
+        {
+          "id": "002514bb-1797-8060-8008-e91cbaf9046f",
+          "matches": [
+            {
+              "domId": "shape-002514bb-1797-8060-8008-e91cbaf9046f",
+              "tag": "g"
+            }
+          ]
+        },
+        {
+          "id": "002514bb-1797-8060-8008-e91eabf4b7ff",
+          "matches": []
+        },
+        {
+          "id": "002514bb-1797-8060-8008-e919aaa0c5e9",
+          "matches": [
+            {
+              "domId": "shape-002514bb-1797-8060-8008-e919aaa0c5e9",
+              "tag": "g"
+            }
+          ]
+        },
+        {
+          "id": "002514bb-1797-8060-8008-e91deaa9b66e",
+          "matches": []
+        },
+        {
+          "id": "002514bb-1797-8060-8008-e91bfc525c97",
+          "matches": [
+            {
+              "domId": "shape-002514bb-1797-8060-8008-e91bfc525c97",
+              "tag": "g"
+            }
+          ]
+        },
+        {
+          "id": "002514bb-1797-8060-8008-e91e140ef574",
+          "matches": []
+        },
+        {
+          "id": "002514bb-1797-8060-8008-e91c5379d075",
+          "matches": [
+            {
+              "domId": "shape-002514bb-1797-8060-8008-e91c5379d075",
+              "tag": "g"
+            }
+          ]
+        },
+        {
+          "id": "002514bb-1797-8060-8008-e91e3da37cd4",
+          "matches": []
+        }
+      ],
+      "saved": [
+        "Saved"
+      ],
+      "url": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&board-id=a06ebf34-7758-80cb-8008-e69adcdf0389"
+    },
+    "wire": {
+      "layers": [
+        {
+          "found": true,
+          "id": "002514bb-1797-8060-8008-e91e7c4286d2"
+        },
+        {
+          "found": true,
+          "id": "002514bb-1797-8060-8008-e91eabf4b7ff"
+        },
+        {
+          "found": true,
+          "id": "002514bb-1797-8060-8008-e91deaa9b66e"
+        },
+        {
+          "found": true,
+          "id": "002514bb-1797-8060-8008-e91e140ef574"
+        },
+        {
+          "found": true,
+          "id": "002514bb-1797-8060-8008-e91e3da37cd4"
+        }
+      ],
+      "saved": true,
+      "url": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&board-id=40a6df26-d27d-8012-8008-e69c55b58ca1"
+    }
+  },
+  "limits": [
+    "Independent reviewer qualified exported artifacts; root supplied missing live Saved/layer readback.",
+    "Page route mismatch explains observed access difference; cookie-isolation claim was not established.",
+    "Live layer presence is not an additional pixel export or runtime Flutter acceptance.",
+    "C1 approval is unchanged; category pattern reuse requires separate approval.",
+    "Engine implementation/API/design changes N/A for app-owned design qualification."
+  ]
+}

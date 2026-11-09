@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-08T09:13:53.454097+00:00",
+  "files": {
+    "/Users/eros/Dev/Eros_Projects/Hindsight/config/projects.json": {
+      "sha256": "1650314b757d7b9ff9aae1d32f828535dc940697705004fd2d30a764bd6e288c",
+      "bytes": 1469
+    },
+    "/Users/eros/.hindsight/coding-agent.json": {
+      "sha256": "640671bb20666d2d1b17272c4b43381a0a47ecc024d4d7d19ca69e274e30266c",
+      "bytes": 3045
+    },
+    "/Users/eros/Dev/Eros_Projects/Hindsight/bin/memory.py": {
+      "sha256": "575a84b9b2a8caeb1590e87ac0a9b71d246ce2e34803d970423aad8695cfe3c0",
+      "bytes": 11411
+    }
+  },
+  "scope": "Read-only routing/allowlist/CLI identity; no configuration edits."
+}

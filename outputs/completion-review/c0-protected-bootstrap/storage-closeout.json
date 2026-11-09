@@ -1,0 +1,28 @@
+{
+  "atUtc": "2026-11-08T07:26:27.708342+00:00",
+  "baselineFreeKiB": 97134568,
+  "freeKiB": 97042536,
+  "freeDeltaKiB": -92032,
+  "sizesKiB": {
+    ".": 29013908,
+    ".git": 18430636,
+    "build": 1963668,
+    ".dart_tool": 696896,
+    "../Madar_Engine/.git": 45172
+  },
+  "deltaKiB": {
+    ".": 13444,
+    ".git": 0,
+    "build": 13096,
+    ".dart_tool": 0,
+    "../Madar_Engine/.git": 472
+  },
+  "tmpGit": {
+    ".git/objects": 0,
+    "../Madar_Engine/.git/objects": 0
+  },
+  "taskEvidenceKiB": 224,
+  "ownedCleanup": "All completed stores close/delete in teardown;two interrupted marked roots separately verified no old writer and removed,325932logical bytes each",
+  "retained": "New six-case tests/helper/native entrypoint,exact red snapshots/logs,compactreceipt;shared current caches untouched after root takeover",
+  "unassignedGrowth": "Concurrent producer cannot be inferred from shared volume/Git delta;task created noGit mutation"
+}

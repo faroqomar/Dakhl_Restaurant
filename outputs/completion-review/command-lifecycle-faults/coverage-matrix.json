@@ -1,0 +1,81 @@
+{
+  "recordedUtc": "2026-11-08T04:09:22.276062+00:00",
+  "status": "five_new_consumer_cases_pass_independent_review_pending",
+  "rows": [
+    {
+      "requirement": "preparation/validation before write",
+      "existing": [
+        "../Madar_Engine/packages/application/test/durable_command_safety_test.dart: capacity counts Arabic UTF8 bytes before store IO; receipt extraction fault; encoding cannot omit receipt",
+        "test/accounting/restaurant_journal_sale_safety_test.dart and restaurant_journal_spending_safety_test.dart: invalid source/journal/cutover/authority paths"
+      ],
+      "new": "No duplicate case planned; unchanged shared engine safety plus existing consumer rejection suites reused."
+    },
+    {
+      "requirement": "backup preparation and persistence failures",
+      "existing": [
+        "../Madar_Engine/packages/data/test/local_document_workspace_store_test.dart: backup.before_write/after_flush/after_publish/after_verify and transaction.before_commit preserve primary",
+        "test/accounting/journal_atomicity_fault_injection_test.dart: six command families at actual before/after commit"
+      ],
+      "new": "Add one composed invoice SIGKILL before commit; exact source/journals/funding/liability/receipt old-or-new assertions."
+    },
+    {
+      "requirement": "activation and recovery lifecycle",
+      "existing": [
+        "../Madar_Engine/packages/data/test/document_process_test.dart: recovery SIGKILL container/pointer/archive stages and initial durable prefixes",
+        "../Madar_Engine/packages/data/test/local_document_workspace_store_test.dart: unknown pointer activation; interrupted initialization resume"
+      ],
+      "applicability": "DurableCommandCoordinator requires an initialized account; it returns unavailable on null snapshot instead of activating. Bootstrap/recovery activation belongs to the storage owner. This is a boundary allocation, not a waived engine stage.",
+      "new": "None; no consumer startup/schema activation added."
+    },
+    {
+      "requirement": "readback/acknowledgement failure",
+      "existing": [
+        "test/accounting/journal_atomicity_fault_injection_test.dart: real transaction.after_commit pending state and unavailable resolution",
+        "../Madar_Engine/packages/data/test/local_document_workspace_store_test.dart: lost commit acknowledgement gates writes until bounded readback"
+      ],
+      "new": "Add actual inner-write success followed by unknown acknowledgement and capability readback outage; reopen and historical replay retain one complete invoice/payment operation."
+    },
+    {
+      "requirement": "process kill/restart",
+      "existing": [
+        "../Madar_Engine/packages/data/test/document_process_test.dart: backup and transaction before/after SIGKILL; recovery and initialization activation kills",
+        "../Madar_Engine/packages/data/test/durable_command_process_crash_test.dart: after-commit SIGKILL generic receipt"
+      ],
+      "new": "Composed invoice before-commit kill and tracked sale after-commit kill through standalone Dart child; no pub resolution or UI/native app control."
+    },
+    {
+      "requirement": "overlapping identical/conflicting commands",
+      "existing": [
+        "../Madar_Engine/packages/data/test/durable_command_conformance_test.dart: overlapping distinct updates through one owner CAS"
+      ],
+      "new": "Two real consumer invoice race tests force both initial reads to the same revision; identical operation replays once and changed intent rejects after the actual CAS conflict."
+    }
+  ],
+  "limits": [
+    "Existing engine test-source availability does not itself prove a new execution; prior source-bound results reused subject to independent review.",
+    "No arbitrary power-loss, physical device, hosted CI or live schema activation proof."
+  ],
+  "newCases": [
+    {
+      "test": "SIGKILL transaction.before_commit preserves complete composed invoice and retry/replay",
+      "result": "passed; exact old payload/revision/token/fence, retry adds one invoice/payment pair and receipt"
+    },
+    {
+      "test": "SIGKILL transaction.after_commit preserves complete composed sale and retry/replay",
+      "result": "passed; one sale/receipt, exact stock/cash/journal effects, identical retry replays and changed intent rejects"
+    },
+    {
+      "test": "overlapping identical composed commands use one real CAS result",
+      "result": "passed; both initial reads forced same revision, actual SDK conflict, one success/one replay and one complete invoice/payment pair"
+    },
+    {
+      "test": "overlapping conflicting composed commands use one real CAS result",
+      "result": "passed; actual CAS conflict, one success/one changed-payload rejection, one complete winner state"
+    },
+    {
+      "test": "committed multi-journal write stays protected through readback outage and reopens once",
+      "result": "passed; actual inner commit precedes acknowledgement loss, successful resolution then readback unavailable, no second commit, reopen replays one result"
+    }
+  ],
+  "existingEngineExecution": "Parent-provided prior full140-data-test evidence is reused after7test/support files byte-match d316. This task did not rerun the generic engine suite; independent reviewer must assess the linked historical result/provenance rather than infer execution from source coverage."
+}

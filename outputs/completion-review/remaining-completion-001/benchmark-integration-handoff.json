@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "actor": "visible_benchmark_integration",
+  "completedAtUtc": "2026-11-08T20:01:47.480725+00:00",
+  "sourceFiles": {
+    "tool/dev_dashboard/operations.json": {
+      "sha256": "e2e9f85de17446b8ee7110957b47fee615c05e2263c2227d32b4964099458997",
+      "bytes": 65303
+    },
+    "tool/dev_dashboard/run_benchmarks.py": {
+      "sha256": "7d3bc2e18a53d541d9692fd661d3079e51d65c948c1313b17f59fb5bc7954c9b",
+      "bytes": 34655
+    },
+    "tool/dev_dashboard/tests/test_app_runner.py": {
+      "sha256": "3063a3e6120bf892424fba1fd1add8f5deb67b9302dfe192f7c9f4bf327729f3",
+      "bytes": 33354
+    },
+    "tool/dev_dashboard/tests/test_review_operations.py": {
+      "sha256": "50191d0c7881f0f4eca18c95faa8fbe379f41f4cc2346150abaaf664a7556145",
+      "bytes": 1584
+    },
+    "tool/dev_dashboard/tests/test_visible_operations.py": {
+      "sha256": "53304741ff61a8b59062b04be668590f2a7b40ac037c54778e89cecdc148ed55",
+      "bytes": 2957
+    },
+    "lib/platform/review_performance_scenarios.dart": {
+      "sha256": "72f785f5278d4daf652a0c87b9fedefee97493bedf5a3bd6a29bb314f7989ed8",
+      "bytes": 38423
+    },
+    "test/platform/review_performance_test.dart": {
+      "sha256": "8c6322f5a8f0da01004b009df658423d580f03a789728f5fb813f94066348931",
+      "bytes": 5595
+    },
+    "lib/platform/visible_performance_main.dart": {
+      "sha256": "80011b88f7eee9a49108e45a89f603d3d9f50b35736698a581d1b13c90bd16ba",
+      "bytes": 3651
+    },
+    "lib/platform/visible_performance_scenarios.dart": {
+      "sha256": "b3f27c0f6fa25b2d33e5e3bd2ce0f1e9d02e04c4bafe70d628ec788e16666fc9",
+      "bytes": 12707
+    },
+    "test/platform/visible_performance_test.dart": {
+      "sha256": "8438dbd1c4ef5d1d91085f6bfe53b3dc5b07cf6041767178efcdced35c84c2c4",
+      "bytes": 4252
+    },
+    "lib/sales/sales_surface.dart": {
+      "sha256": "8f28283cf1b8506f695a12e2ec355960beb7e86fad26275ad895cfd7690202e3",
+      "bytes": 29902
+    },
+    "lib/sales/sales_view_model.dart": {
+      "sha256": "1095b26e795a69d149146fed2d5ee6a59a9294142c305a3350aa7e2af7eda1b8",
+      "bytes": 15733
+    },
+    "lib/sales/sales_workflow_session.dart": {
+      "sha256": "1fb87aed52963254a05d4beabc07d7eb7f23ead7367198e5db78ae0162c8dada",
+      "bytes": 17665
+    },
+    "test/sales/sales_surface_test.dart": {
+      "sha256": "7920f0264f805db989026fa9b89d54d2b0ce0c92aa4b8228e93ba2102bbba358",
+      "bytes": 7012
+    }
+  },
+  "ownedFiles": [
+    "tool/dev_dashboard/operations.json",
+    "tool/dev_dashboard/run_benchmarks.py",
+    "tool/dev_dashboard/tests/test_app_runner.py",
+    "tool/dev_dashboard/tests/test_review_operations.py",
+    "tool/dev_dashboard/tests/test_visible_operations.py",
+    "lib/platform/review_performance_scenarios.dart",
+    "test/platform/review_performance_test.dart",
+    "lib/sales/sales_surface.dart",
+    "lib/sales/sales_view_model.dart",
+    "lib/sales/sales_workflow_session.dart",
+    "test/sales/sales_surface_test.dart"
+  ],
+  "unchangedInputFiles": [
+    "lib/platform/visible_performance_main.dart",
+    "lib/platform/visible_performance_scenarios.dart",
+    "test/platform/visible_performance_test.dart"
+  ],
+  "checks": {
+    "flutter": "49/49: review42 + visible7 at800x600 widget viewport",
+    "python": "39/39",
+    "analysis": "0 issues"
+  },
+  "nativeMeasurements": "pending root; no latency, RAM, CPU or viewport/DPR native qualification claimed",
+  "registry": {
+    "ready": 65,
+    "review": 36,
+    "visible": 4
+  },
+  "storage": {
+    "beforeFreeKiB": 84381356,
+    "afterFreeKiB": 82308764,
+    "beforeSizesKiB": {
+      ".git": 18525496,
+      "build": 3658864,
+      "outputs": 7743032
+    },
+    "afterSizesKiB": {
+      ".git": 18525496,
+      "build": 3632856,
+      "outputs": 7743380,
+      ".dart_tool": 2587016
+    },
+    "attribution": "Concurrent root engine adoption and build work; shared directory delta is not attributable to this worker. No worker native build/export/app copy or cleanup.",
+    "retained": "Four compact check logs and this source hash receipt; source files retained. No production data.",
+    "cleanup": "No task temporary data remains; fixture teardown asserts each owned temporary directory is removed. No uncertain files deleted.",
+    "concurrencyNotice": "Free disk fell about2GiB while app Git/build/outputs stayed nearly stable. Root owns concurrent native/cache producer diagnosis; this worker ran no native builds and claims no cause."
+  },
+  "timing": {
+    "start": "not separately sampled; parent persistent campaign timer applies",
+    "measuredFlutterSeconds": 12,
+    "pythonReportedSeconds": 0.103
+  },
+  "failures": [
+    {
+      "symptom": "Initial targeted analyzer reported one braces-style info in opening postcondition",
+      "remedy": "Added braces, formatted before final freeze; successor analysis zero issues. Initial result retained in tool transcript."
+    }
+  ],
+  "consumerSuccessor": {
+    "checks": "32/32 sales+visible tests after source parity changes; 0 targeted analysis issues",
+    "sourceSemantics": "Unarchived full-catalog group counts independent of query/group/page; untracked cards show positive cart quantity and otherwise unit label. Immutable readonly VM\u2192session projection. No stock/write semantics changes.",
+    "red": "Two new widget tests failed against the prior UI; green passes include90eligible products, pagination, archived exclusion, ungrouped inclusion and zero-stock inclusion."
+  }
+}

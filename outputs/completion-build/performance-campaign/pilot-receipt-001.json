@@ -1,0 +1,21 @@
+{
+  "stageId": "catalog-pilot",
+  "status": "passed",
+  "cleanupConfirmed": true,
+  "identity": {
+    "contextFingerprint": "ca9574a1b14c455f99a7e47a79afaf0a8e787a138baaac378564753deb90185a",
+    "engineRevision": "7b1866fb8c9a40345c9d67b455c40053178fcb44",
+    "fixtureId": "bd8b1fd688ed9adc8266c449b8081ff53b074a32c8597594e7b2062e9669967a",
+    "inputFingerprint": "a9efaf4c719f72bc6458bf90cd97462cf457d53a9cc4e7eaad1fad9a5af8f2bf",
+    "planFingerprint": "13178b1a870e8b5bf64874e75c3981ff3c38efcea45e08156c8d6af53bbda259",
+    "sourceRevision": "7067ea72e06c831791f7ea393b8587150671af18",
+    "targetId": "macos-host",
+    "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+  },
+  "evidence": [
+    {
+      "path": "outputs/completion-build/performance-campaign/pilot-catalog-attempt1.json",
+      "sha256": "3ad0091e474481f04ac98190a6106d642d27afd1ddc65e474e2e892a6e3e5008"
+    }
+  ]
+}

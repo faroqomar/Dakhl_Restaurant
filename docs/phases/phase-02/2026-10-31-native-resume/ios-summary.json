@@ -1,0 +1,95 @@
+{
+  "checkedAt": "2026-10-31T17:07:43.617685+00:00",
+  "appSource": "5a11c66dbf665972b17b545c105eac74c17bfeeb",
+  "runtime": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+  "cases": [
+    {
+      "file": "ios-native-write.json",
+      "kind": "native",
+      "stage": "write",
+      "pass": true,
+      "elapsedSeconds": 179.40171316699707,
+      "sha256": "b56d07d7494a21b6df91fc80eebe38e4f4e167cb66f520545b804f565cf949f4",
+      "originalSha256": "16b2d187ec3b68ce5009d9919a58426e2318b5c3ccc133476e8e4dd397b8eda8"
+    },
+    {
+      "file": "ios-native-read.json",
+      "kind": "native",
+      "stage": "read",
+      "pass": true,
+      "elapsedSeconds": 63.24048679199768,
+      "sha256": "835375a1aa8d1a1d274615dd0302f2b1f961107581e6798bbee04e495a4f45fa",
+      "originalSha256": "0c1363d486eec06b36eceb2c0f68bda4579d6b4aba95134fd0ff3a575b57f0cd"
+    },
+    {
+      "file": "ios-native-wrong-nonce.json",
+      "kind": "native",
+      "stage": "wrong-nonce",
+      "pass": true,
+      "elapsedSeconds": 47.85938387498027,
+      "sha256": "f3255c83888756b13c42a0eb68dc5ffbab00b80af4b22bd92cc72508872e90eb",
+      "originalSha256": "6717c18ab8c4a79506938ad2517a695c68a607d01785860f7c7115e6361813fe"
+    },
+    {
+      "file": "ios-native-read-again.json",
+      "kind": "native",
+      "stage": "read-again",
+      "pass": true,
+      "elapsedSeconds": 59.89475241600303,
+      "sha256": "e2ccf7f6cb661f1d52908a6fd5db707ad3de05ea871f67af6b643903e4ef07fd",
+      "originalSha256": "1fe61ac6c0bec613a0bb87ccd5e29f59fc08382ec46687b1a1d6599fa38a2997"
+    },
+    {
+      "file": "ios-native-recover.json",
+      "kind": "native",
+      "stage": "recover",
+      "pass": true,
+      "elapsedSeconds": 47.86256387500907,
+      "sha256": "83cd094050d0092930b020abc26b69ab7fc0d69d6c10c7545df32728118daec1",
+      "originalSha256": "bde935d4ea32973aeb227dd57431326d54fd50d66f1bbc0f575ff65b55099b4c"
+    },
+    {
+      "file": "ios-native-read-recovered.json",
+      "kind": "native",
+      "stage": "read-recovered",
+      "pass": true,
+      "elapsedSeconds": 48.66198245898704,
+      "sha256": "d7952915099e8f1f4477cb8e1b408a06bf23ab9541f2b4c197d8b632cc853792",
+      "originalSha256": "485bd05c00e2bf3389f864b48c842c8d4a03084a148c573d1a3a45259175e9b6"
+    },
+    {
+      "file": "ios-picker-cancel-open.json",
+      "kind": "picker",
+      "stage": "cancel-open",
+      "pass": true,
+      "elapsedSeconds": 146.00083029200323,
+      "sha256": "9cc2709a8120db7552750c86224b2f8e5b7a119fed735142c63d9b009e6ddcda",
+      "originalSha256": "6495a847b465371e4d9461cd66f866d4103e3f14854d763203bbed4115e1dd56"
+    },
+    {
+      "file": "ios-picker-cancel-save.json",
+      "kind": "picker",
+      "stage": "cancel-save",
+      "pass": true,
+      "elapsedSeconds": 114.65199816698441,
+      "sha256": "d041439d98c019d7646686fb2ed6ce9e9c9ec624a598ef46169f9e794ca60ce7",
+      "originalSha256": "d6d83ec1abc4c162ce1c6b02b183223d8cc1e4d5fa8d45fc2fa287862a8fd496"
+    },
+    {
+      "file": "ios-picker-import-file.json",
+      "kind": "picker",
+      "stage": "import-file",
+      "pass": true,
+      "elapsedSeconds": 210.15182516601635,
+      "sha256": "d3a4bc51a855817485e6a0e87cd30c7115d587684ae37c1bb99d777578a4da56",
+      "originalSha256": "ba8e24b67fbc9a949497a923fd7e22f222d34cf5707283a35ac40001cb18fe86"
+    }
+  ],
+  "accepted": 9,
+  "scope": "fresh task-created iPhone18Pro/iOS27.0 simulator, synthetic only",
+  "targetShutdownVerified": true,
+  "targetRetainedForEvidence": true,
+  "keyboardCaptureRestoredOff": true,
+  "existingTargetsUntouched": true,
+  "historicalAndroidDataRecovery": "not established"
+}

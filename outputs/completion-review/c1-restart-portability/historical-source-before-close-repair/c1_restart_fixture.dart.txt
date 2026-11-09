@@ -1,0 +1,656 @@
+import 'dart:convert';
+import 'dart:io';
+import 'dart:math';
+
+import 'package:dakhl_restaurant/accounts/account_document.dart';
+import 'package:dakhl_restaurant/accounts/accounts_repository.dart';
+import 'package:dakhl_restaurant/accounts/accounts_view_model.dart';
+import 'package:dakhl_restaurant/accounts/legacy_account_codec.dart';
+import 'package:dakhl_restaurant/app/accounts_store.dart';
+import 'package:dakhl_restaurant/app/bootstrap.dart';
+import 'package:dakhl_restaurant/catalog/catalog_view_model.dart';
+import 'package:dakhl_restaurant/inventory/inventory_commands.dart';
+import 'package:dakhl_restaurant/shell/shell_preferences.dart';
+import 'package:flutter/foundation.dart';
+import 'package:madar_application/madar_application.dart';
+import 'package:madar_data/madar_data.dart';
+import 'package:madar_domain/madar_domain.dart';
+import 'package:madar_flutter_adapters/madar_flutter_adapters.dart';
+import 'package:path/path.dart' as p;
+
+/// Test-only composition. It never calls a default account-location factory.
+final class C1RestartFixture {
+  C1RestartFixture._({
+    required this.namespace,
+    required this.root,
+    required this.fixtureId,
+    required this.initializedThisLaunch,
+    required this.originStore,
+    required this.origin,
+    required this.preferences,
+  });
+
+  static const _namespaceOwner = 'dakhl-c1-restart-namespace-v1\n';
+  static const _rootOwner = 'dakhl-c1-restart-fixture-v1\n';
+  static const trackedId = 'c1000000-0000-4000-8000-000000000001';
+  static const untrackedId = 'c1000000-0000-4000-8000-000000000002';
+  static const flexibleId = 'c1000000-0000-4000-8000-000000000003';
+  final Directory namespace, root;
+  final String fixtureId;
+  final bool initializedThisLaunch;
+  final AppAccountsStore originStore;
+  final AccountsViewModel origin;
+  final AppPreferencesStore preferences;
+  AppAccountsStore? _targetStore;
+  AccountsViewModel? target;
+  bool _closed = false;
+  final String bootNonce = List.generate(
+    4,
+    (_) =>
+        Random.secure().nextInt(0x100000000).toRadixString(16).padLeft(8, '0'),
+  ).join();
+
+  Directory get originDirectory => Directory(p.join(root.path, 'origin'));
+  File get _prepared => File(p.join(root.path, 'prepared.json'));
+  File get _payload => File(p.join(root.path, 'checkpoint-payload.txt'));
+  File get _export => File(p.join(root.path, 'checkpoint-export.json'));
+  File get _meta => File(p.join(root.path, 'checkpoint-meta.json'));
+  File get _targetIntent => File(p.join(root.path, 'target-intent.json'));
+  String get exportFileName => 'c1-restart-$fixtureId.json';
+
+  static Future<C1RestartFixture> open({
+    required Directory namespace,
+    required String fixtureId,
+  }) async {
+    _require(
+      RegExp(
+        r'^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$',
+      ).hasMatch(fixtureId),
+      'invalid_fixture_id',
+    );
+    await _directory(namespace);
+    final owner = File(p.join(namespace.path, '.c1-restart-namespace'));
+    if (await _regularExists(owner)) {
+      _require(
+        await owner.readAsString() == _namespaceOwner,
+        'unknown_namespace',
+      );
+    } else {
+      _require(await namespace.list().isEmpty, 'unmarked_namespace');
+      await owner.create(exclusive: true);
+      await owner.writeAsString(_namespaceOwner, flush: true);
+    }
+    final intent = File(p.join(namespace.path, '$fixtureId.intent.json'));
+    final root = Directory(p.join(namespace.path, fixtureId));
+    final marker = File(p.join(root.path, '.c1-restart-owner'));
+    final fresh = !await _regularExists(intent);
+    if (fresh) {
+      _require(
+        await FileSystemEntity.type(root.path, followLinks: false) ==
+            FileSystemEntityType.notFound,
+        'unmarked_fixture',
+      );
+      await intent.create(exclusive: true);
+      await intent.writeAsString(
+        jsonEncode({
+          'schema': 1,
+          'fixtureId': fixtureId,
+          'status': 'allocated',
+        }),
+        flush: true,
+      );
+      await root.create();
+      await marker.create(exclusive: true);
+      await marker.writeAsString('$_rootOwner$fixtureId\n', flush: true);
+      await Directory(p.join(root.path, 'origin')).create();
+    } else {
+      final value = _map(await intent.readAsString());
+      _require(
+        value['schema'] == 1 &&
+            value['fixtureId'] == fixtureId &&
+            value['status'] == 'allocated',
+        'invalid_fixture_intent',
+      );
+      _require(await root.exists(), 'fixture_missing_after_restart');
+      _require(await _regularExists(marker), 'fixture_marker_missing');
+      _require(
+        await marker.readAsString() == '$_rootOwner$fixtureId\n',
+        'unknown_fixture_owner',
+      );
+      _require(
+        await Directory(p.join(root.path, 'origin')).exists(),
+        'account_missing_after_restart',
+      );
+    }
+    await _directory(root);
+    final originDirectory = Directory(p.join(root.path, 'origin'));
+    await _directory(originDirectory);
+    final store = _store(originDirectory);
+    final accounts = AccountsViewModel(
+      repository: AccountsRepository(store: store),
+    );
+    final preferences = AppPreferencesStore(
+      openStore: () => PowerSyncLocalPreferencesStore.open(
+        databasePath: p.join(root.path, 'shell.sqlite'),
+      ),
+      closeStore: (owner) async {
+        if (owner is PowerSyncLocalPreferencesStore) await owner.close();
+      },
+    );
+    final fixture = C1RestartFixture._(
+      namespace: namespace,
+      root: root,
+      fixtureId: fixtureId,
+      initializedThisLaunch: fresh,
+      originStore: store,
+      origin: accounts,
+      preferences: preferences,
+    );
+    try {
+      await accounts.initialize();
+      if (fresh) {
+        _require(
+          accounts.state == AccountsState.absent,
+          'unexpected_initial_state',
+        );
+        await accounts.save();
+        _require(accounts.state == AccountsState.saved, 'initial_save_failed');
+        final preferenceResult = await preferences.replace(
+          ShellPreferences.namespace,
+          jsonEncode({
+            'schemaVersion': 1,
+            'lastRouteId': 'inventory',
+            'shortcuts': [
+              'sales',
+              'inventory',
+              'expenses',
+              'cash',
+              'materials',
+              'settings',
+            ],
+          }),
+        );
+        _require(
+          preferenceResult is CapabilitySuccess<PreferenceSnapshot>,
+          'preferences_initialization_failed',
+        );
+      } else {
+        _require(
+          accounts.state == AccountsState.saved && accounts.document != null,
+          'account_unavailable_after_restart',
+        );
+        if (fixture._rows('products').isNotEmpty) {
+          _require(
+            await _regularExists(fixture._prepared),
+            'preparation_incomplete',
+          );
+        }
+        if (await _regularExists(fixture._prepared)) {
+          _require(await fixture._checkpointExact(), 'checkpoint_mismatch');
+        }
+      }
+      if (await _regularExists(fixture._targetIntent)) {
+        await fixture.ensureImportTarget(allowCreate: false);
+      }
+      await File(p.join(root.path, 'launches.jsonl')).writeAsString(
+        '${jsonEncode({'pid': pid, 'bootNonce': fixture.bootNonce, 'initializedThisLaunch': fresh, 'utc': DateTime.now().toUtc().toIso8601String()})}\n',
+        mode: FileMode.append,
+        flush: true,
+      );
+      await fixture.report();
+      return fixture;
+    } on Object {
+      await fixture.close();
+      rethrow;
+    }
+  }
+
+  Future<void> prepare() async {
+    _require(!await _regularExists(_prepared), 'fixture_already_prepared');
+    _require(
+      _rows('products').isEmpty && _rows('stockEntries').isEmpty,
+      'fixture_not_empty',
+    );
+    final catalog = CatalogViewModel(origin.repository);
+    try {
+      final before = origin.repository.snapshot!.revision;
+      _success(
+        await catalog.createProduct(
+          _product(
+            trackedId,
+            'C1 restart kebab',
+            photo: 'beef-kebab',
+            tracked: true,
+          ),
+          session: catalog.beginEdit(),
+          opening: InventoryMovement(
+            id: 'c1000000-0000-4000-8000-000000000011',
+            productId: trackedId,
+            quantityUnits: BigInt.from(5000),
+            effectiveDate: _date,
+            kind: StockEntryKind.opening,
+            createdAt: '2026-11-08T00:00:00.000Z',
+          ),
+        ),
+      );
+      _require(
+        origin.repository.snapshot!.revision == before + 1 &&
+            _rows('products').length == 1 &&
+            _rows('stockEntries').length == 1,
+        'opening_not_one_complete_save',
+      );
+      _success(
+        await catalog.editProduct({
+          ..._productById(trackedId),
+          'name': 'C1 restart edited',
+          'price': 15000,
+        }, session: catalog.beginEdit()),
+      );
+      _success(
+        await catalog.createProduct(
+          _product(
+            untrackedId,
+            'C1 restart water',
+            photo: 'water',
+            tracked: false,
+          ),
+          session: catalog.beginEdit(),
+        ),
+      );
+      _success(
+        await catalog.editProduct({
+          ..._productById(untrackedId),
+          'unit': 'زجاجة',
+        }, session: catalog.beginEdit()),
+      );
+      _success(
+        await catalog.createProduct(
+          _product(flexibleId, 'C1 restart flexible', tracked: false),
+          session: catalog.beginEdit(),
+        ),
+      );
+      _success(
+        await catalog.editProduct({
+          ..._productById(flexibleId),
+          'unit': 'قطعة',
+          'trackStock': true,
+          'minStock': 2,
+        }, session: catalog.beginEdit()),
+      );
+      _success(
+        await catalog.postMovement(
+          InventoryMovement(
+            id: 'c1000000-0000-4000-8000-000000000012',
+            productId: flexibleId,
+            quantityUnits: BigInt.from(2000),
+            effectiveDate: _date,
+            kind: StockEntryKind.restock,
+            createdAt: '2026-11-08T00:00:01.000Z',
+          ),
+          session: catalog.beginEdit(),
+        ),
+      );
+      // Frozen source retains locked values rather than rejecting the whole edit.
+      _success(
+        await catalog.editProduct({
+          ..._productById(flexibleId),
+          'unit': 'لتر',
+          'trackStock': false,
+        }, session: catalog.beginEdit()),
+      );
+      final flexible = _productById(flexibleId);
+      _require(
+        flexible['unit'] == 'قطعة' && flexible['trackStock'] == true,
+        'history_lock_changed',
+      );
+      final balances = catalog.inventoryModelAt(_date)!;
+      _require(
+        balances.products
+                    .singleWhere((v) => v.id == trackedId)
+                    .availableUnits ==
+                BigInt.from(5000) &&
+            balances.products
+                    .singleWhere((v) => v.id == flexibleId)
+                    .availableUnits ==
+                BigInt.from(2000) &&
+            !_rows('stockEntries').any((v) => v['productId'] == untrackedId),
+        'stock_fixture_mismatch',
+      );
+      await _payload.writeAsString(
+        origin.repository.snapshot!.payload,
+        flush: true,
+      );
+      await _export.writeAsBytes(origin.exportBytes()!, flush: true);
+      await _meta.writeAsString(jsonEncode(_snapshotMeta()), flush: true);
+      await _prepared.create(exclusive: true);
+      await _prepared.writeAsString(
+        jsonEncode({
+          'schema': 1,
+          'openingCreateRevisionDelta': 1,
+          'preHistoryOptionsChanged': true,
+          'postHistoryLockedFieldsPreserved': true,
+        }),
+        flush: true,
+      );
+      await report();
+    } finally {
+      catalog.dispose();
+    }
+  }
+
+  Future<void> ensureImportTarget({bool allowCreate = true}) async {
+    if (target != null) return;
+    final directory = Directory(p.join(root.path, 'import-target'));
+    final fresh = !await _regularExists(_targetIntent);
+    if (fresh) {
+      _require(
+        allowCreate &&
+            await FileSystemEntity.type(directory.path, followLinks: false) ==
+                FileSystemEntityType.notFound,
+        'import_target_unavailable',
+      );
+      await _targetIntent.writeAsString(
+        jsonEncode({'schema': 1, 'initialized': false}),
+        flush: true,
+      );
+      await directory.create();
+    } else {
+      _require(
+        _map(await _targetIntent.readAsString())['initialized'] == true &&
+            await directory.exists(),
+        'import_target_incomplete',
+      );
+    }
+    await _directory(directory);
+    final store = _store(directory);
+    final accounts = AccountsViewModel(
+      repository: AccountsRepository(store: store),
+    );
+    try {
+      await accounts.initialize();
+      if (fresh) {
+        _require(
+          accounts.state == AccountsState.absent,
+          'unexpected_import_target',
+        );
+        await accounts.save();
+        _require(
+          accounts.state == AccountsState.saved,
+          'import_target_save_failed',
+        );
+        await _targetIntent.writeAsString(
+          jsonEncode({'schema': 1, 'initialized': true}),
+          flush: true,
+        );
+      } else {
+        _require(
+          accounts.state == AccountsState.saved,
+          'import_target_missing_after_restart',
+        );
+      }
+      _targetStore = store;
+      target = accounts;
+    } on Object {
+      accounts.dispose();
+      await store.close();
+      rethrow;
+    }
+  }
+
+  NativeFileTransfer nativeTransfer() => NativeFileTransfer(
+    maxBytes: LegacyAccountCodec.maxPayloadBytes,
+    fileName: exportFileName,
+    mimeType: 'application/json',
+  );
+
+  Future<String> exportUsing(FileTransferCapability transfer) async {
+    _require(await _checkpointExact(), 'checkpoint_mismatch');
+    final observed = _ExactFixtureTransfer(
+      transfer,
+      await _export.readAsBytes(),
+    );
+    await origin.exportTo(observed);
+    final result = observed.saveResult;
+    final code = _resultCode(result, success: 'exported');
+    await _action('export', code);
+    return code;
+  }
+
+  Future<String> selectImportUsing(FileTransferCapability transfer) async {
+    _require(await _checkpointExact(), 'checkpoint_mismatch');
+    await ensureImportTarget();
+    final observed = _ExactFixtureTransfer(
+      transfer,
+      await _export.readAsBytes(),
+    );
+    final result = await target!.pickImport(observed);
+    final code = result == ImportPickOutcome.selected
+        ? 'selected'
+        : result.name;
+    await _action('import-selection', code);
+    return code;
+  }
+
+  Future<String> confirmImport() async {
+    _require(target?.pendingImport != null, 'no_selected_import');
+    await target!.confirmImport();
+    _require(target!.state == AccountsState.saved, 'import_not_acknowledged');
+    _require(
+      listEquals(target!.exportBytes(), await _export.readAsBytes()),
+      'import_bytes_mismatch',
+    );
+    await _action('import-confirmed', 'imported');
+    await report();
+    return 'imported';
+  }
+
+  Future<Map<String, Object?>> report() async {
+    final prepared = await _regularExists(_prepared);
+    final previous = _targetStore == null
+        ? null
+        : await _targetStore!.readPrevious();
+    final value = <String, Object?>{
+      'schema': 1,
+      'fixtureId': fixtureId,
+      'root': root.path,
+      'pid': pid,
+      'bootNonce': bootNonce,
+      'initializedThisLaunch': initializedThisLaunch,
+      'prepared': prepared,
+      'checkpointExact': prepared ? await _checkpointExact() : null,
+      'snapshot': _snapshotMeta(),
+      'products': _rows('products'),
+      'stockEntries': _rows('stockEntries').length,
+      'importExact': prepared && target?.document != null
+          ? listEquals(target!.exportBytes(), await _export.readAsBytes())
+          : null,
+      'preImportBackupPresent':
+          previous is CapabilitySuccess<PreviousDocument?> &&
+          previous.value != null,
+      'exportFileName': exportFileName,
+    };
+    await File(p.join(root.path, 'report-current.json')).writeAsString(
+      const JsonEncoder.withIndent('  ').convert(value),
+      flush: true,
+    );
+    return value;
+  }
+
+  Future<void> close() async {
+    if (_closed) return;
+    _closed = true;
+    origin.dispose();
+    target?.dispose();
+    await originStore.close();
+    await _targetStore?.close();
+    await preferences.close();
+  }
+
+  Future<void> cleanup() async {
+    await close();
+    final marker = File(p.join(root.path, '.c1-restart-owner'));
+    _require(
+      await FileSystemEntity.type(root.path, followLinks: false) ==
+              FileSystemEntityType.directory &&
+          await root.resolveSymbolicLinks() == root.path &&
+          await _regularExists(marker),
+      'unsafe_cleanup_root',
+    );
+    _require(
+      await marker.readAsString() == '$_rootOwner$fixtureId\n',
+      'unknown_fixture_owner',
+    );
+    await root.delete(recursive: true);
+    // The tiny intent tombstone prevents a later launch from reconstructing it.
+    await File(p.join(namespace.path, '$fixtureId.intent.json')).writeAsString(
+      jsonEncode({'schema': 1, 'fixtureId': fixtureId, 'status': 'cleaned'}),
+      flush: true,
+    );
+  }
+
+  Future<bool> _checkpointExact() async =>
+      await _regularExists(_prepared) &&
+      await _regularExists(_payload) &&
+      await _regularExists(_export) &&
+      await _regularExists(_meta) &&
+      origin.repository.snapshot?.payload == await _payload.readAsString() &&
+      listEquals(origin.exportBytes(), await _export.readAsBytes()) &&
+      mapEquals(_snapshotMeta(), _map(await _meta.readAsString()));
+
+  Map<String, Object?> _snapshotMeta() {
+    final value = origin.repository.snapshot!;
+    return {
+      'storeId': value.fence.storeId,
+      'generation': value.fence.generation,
+      'revision': value.revision,
+      'writeToken': value.writeToken,
+      'payloadBytes': utf8.encode(value.payload).length,
+    };
+  }
+
+  Future<void> _action(String action, String result) async {
+    await File(p.join(root.path, 'file-actions.jsonl')).writeAsString(
+      '${jsonEncode({'action': action, 'result': result, 'pid': pid})}\n',
+      mode: FileMode.append,
+      flush: true,
+    );
+  }
+
+  List<Map<String, Object?>> _rows(String key) =>
+      (origin.document!.toJson()[key] as List).cast<Map<String, Object?>>();
+  Map<String, Object?> _productById(String id) =>
+      _rows('products').singleWhere((value) => value['id'] == id);
+  static DateOnly get _date =>
+      DateOnly.parse('2001-01-01', minimumYear: 1000, maximumYear: 9999);
+  static Map<String, Object?> _product(
+    String id,
+    String name, {
+    String? photo,
+    required bool tracked,
+  }) => {
+    'id': id,
+    'name': name,
+    'code': id,
+    'group': 'C1 QA',
+    'unit': 'نفر',
+    'price': 14000,
+    'minStock': 2,
+    'trackStock': tracked,
+    'archived': false,
+    'photo': ?photo,
+  };
+  static AppAccountsStore _store(Directory directory) => AppAccountsStore(
+    openStore: () => PowerSyncLocalDocumentWorkspaceStore.open(
+      directoryPath: directory.path,
+    ),
+  );
+  static Future<void> _directory(Directory directory) async {
+    final type = await FileSystemEntity.type(
+      directory.path,
+      followLinks: false,
+    );
+    _require(
+      type == FileSystemEntityType.notFound ||
+          type == FileSystemEntityType.directory,
+      'unsafe_directory',
+    );
+    await directory.create(recursive: true);
+    _require(
+      await directory.resolveSymbolicLinks() == directory.absolute.path,
+      'noncanonical_directory',
+    );
+  }
+
+  static Future<bool> _regularExists(File file) async {
+    final type = await FileSystemEntity.type(file.path, followLinks: false);
+    _require(
+      type == FileSystemEntityType.notFound ||
+          type == FileSystemEntityType.file,
+      'unsafe_file',
+    );
+    return type == FileSystemEntityType.file;
+  }
+
+  static Map<String, Object?> _map(String text) =>
+      (jsonDecode(text) as Map).cast<String, Object?>();
+  static void _success(CapabilityResult<AccountDocument> result) {
+    if (result is CapabilityFailure<AccountDocument>) {
+      throw C1QaException('catalog_${result.code}');
+    }
+    _require(
+      result is CapabilitySuccess<AccountDocument>,
+      'catalog_command_failed',
+    );
+  }
+
+  static void _require(bool condition, String code) {
+    if (!condition) throw C1QaException(code);
+  }
+
+  static String _resultCode(
+    CapabilityResult<void>? result, {
+    required String success,
+  }) => switch (result) {
+    CapabilitySuccess<void>() => success,
+    CapabilityFailure<void>(:final code) => code,
+    CapabilityCancelled<void>() => 'cancelled',
+    _ => 'operation_not_started',
+  };
+}
+
+final class _ExactFixtureTransfer implements FileTransferCapability {
+  _ExactFixtureTransfer(this.inner, this.expected);
+  final FileTransferCapability inner;
+  final Uint8List expected;
+  CapabilityResult<void>? saveResult;
+  @override
+  Future<CapabilityResult<Uint8List>> open() async {
+    final result = await inner.open();
+    if (result is CapabilitySuccess<Uint8List> &&
+        !listEquals(result.value, expected)) {
+      return const CapabilityFailure(
+        'qa_fixture_bytes_mismatch',
+        'Only the marked synthetic export is accepted.',
+      );
+    }
+    return result;
+  }
+
+  @override
+  Future<CapabilityResult<void>> save(Uint8List bytes) async {
+    if (!listEquals(bytes, expected)) {
+      return saveResult = const CapabilityFailure(
+        'qa_fixture_bytes_mismatch',
+        'Source changed after its checkpoint.',
+      );
+    }
+    return saveResult = await inner.save(bytes);
+  }
+}
+
+final class C1QaException implements Exception {
+  const C1QaException(this.code);
+  final String code;
+  @override
+  String toString() => 'C1QaException($code)';
+}

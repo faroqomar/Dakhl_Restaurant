@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "inputs": {
+    "engine-dependency.json": "c9de769710282bc922132edd969a9066c2eca1b14350f1cfdb0968d953d8025c",
+    "pubspec.lock": "99a748014139eb583bebddf7653caccccc6dd1ddbe3c21773ecf5f0383d3697e",
+    "lib/platform/completion_performance_main.dart": "28506af64a33689f334a73c10387af2438b537b0c7f2dffcc126c394cc4a7cf1",
+    "lib/platform/completion_performance_scenarios.dart": "bd8b1fd688ed9adc8266c449b8081ff53b074a32c8597594e7b2062e9669967a",
+    "tool/dev_dashboard/run_benchmarks.py": "fd84844670c5a555d545e7262a4152c3724da628bc71b8282d6d03b040938c8e",
+    "tool/dev_dashboard/operations.json": "002336e6a2eac1aa35d50d87a554b4f8ce631be37b30229814cb624e476bc16d"
+  },
+  "fixture": {
+    "root": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-completion-preflight-7csnz3zj",
+    "path": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-completion-preflight-7csnz3zj/synthetic-workload-source.dart.txt",
+    "sha256": "bd8b1fd688ed9adc8266c449b8081ff53b074a32c8597594e7b2062e9669967a"
+  }
+}

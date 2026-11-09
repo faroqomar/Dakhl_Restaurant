@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-29",
+  "approval_source": "Direct owner Step 3 request followed by explicit approval of both existing Phase 00 and Phase 01 design sets",
+  "approved_artifacts_sha256": {
+    "/Users/eros/.codex/worktrees/phase01-scope-app/Dakhl_Restaurant/docs/phases/01-implementation-plan.md": "bef4db2c49a667b1e39d253a30243c61cccba5907676e5b2e6347ba7306b04ce",
+    "/Users/eros/.codex/worktrees/phase01-scope-app/Dakhl_Restaurant/docs/phases/01-penpot-design-review.md": "fe3ff8be7e8dd1235205d6dd2ca73a4c103899fb352b8e15728c07651b5ff45f",
+    "/Users/eros/.codex/worktrees/phase01-scope-app/Dakhl_Restaurant/docs/phases/00-penpot-reference-recreation.md": "80da35615cd497e1c95b1c33c453970faba8e014e3bc12936fa90ea1c34bdd93",
+    "/Users/eros/.codex/worktrees/phase01-scope-engine/Madar_Engine/docs/reference/cap01-device-preferences-plan.md": "2b1d7dad74437321e9e866997fd70d6ac9ff2079202fab6c87c75af928c33fbd"
+  },
+  "phase01_native_manifest_sha256": "7e5a9fcc7c5eded4a4fb16353229aa57cbf5ca1e3059fe37a1ad7282a122f1ae",
+  "preflight": {
+    "simulator": "iPhone 18 Pro / iOS 27.0",
+    "kind": "existing booted Simulator, no erase/install/build",
+    "bundle_id": "com.eros.dakhlrestaurant.phase00",
+    "launch_pid": 43279,
+    "launch": "xcrun simctl launch: success",
+    "interactive_open": "open -a Simulator: Unable to find application named Simulator",
+    "simulator_bundle_exists": false,
+    "spotlight_simulator_matches": 0,
+    "computer_control": "Invalid app: com.apple.iphonesimulator",
+    "idb_available": false,
+    "screenshot": "iphone-preflight.png",
+    "native_dialog_acceptance": "NOT PERFORMED / BLOCKED"
+  },
+  "scope": "No Phase 01 runtime changes, tests/builds, package/pin changes, PR, merge or deployment."
+}

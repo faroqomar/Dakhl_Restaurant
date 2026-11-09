@@ -1,0 +1,36 @@
+{
+  "recordedUtc": "2026-11-08T04:49:08.546809+00:00",
+  "reviewer": "/root/recheck_transfer_correction_integrity",
+  "verdict": "PASS",
+  "inputManifest": "outputs/completion-review/durable-transfer-corrections/repaired-1/post-adoption-review-inputs.json",
+  "verifiedBindings": 43,
+  "rootRecheckedBindings": 43,
+  "independentFocusedTests": 97,
+  "workerFullAccountingTests": 297,
+  "analysis": "clean",
+  "findings": [],
+  "verified": [
+    "Complete recognized target mapper/profile/policy/provenance validation",
+    "Receipt captured-intent reconstruction for every historical step, ordering and terminal projection",
+    "Missing receipt, disconnected forks, forged replacement/outcomes/provenance and changed profile reject",
+    "Bounded immutable snapshots with raw submitted reason identity",
+    "Actual edit/delete transaction.before_commit exceptions: rollback/reopen/retry/replay",
+    "Fresh Electron oracle executes frozen renderer delete handler and matches exactly"
+  ],
+  "consumedEngineCommit": "783e29cf8ae5c829cbb09bdb5b7a547aa92bc8d6",
+  "sourceContinuity": "Journal/coordinator/storage byte-match previously consumed implementation",
+  "limits": [
+    "Checkpoint exceptions are not arbitrary power-loss proof",
+    "C4-16/F03/F04 prerequisites, UI/performance/live activation and phase closure remain separate"
+  ],
+  "storage": {
+    "freeKiB": [
+      103965384,
+      103602264
+    ],
+    "appGitUnchanged": true,
+    "engineGitDeltaKiB": -32,
+    "temporaryGitStores": 0,
+    "ownedSyntheticStores": 0
+  }
+}

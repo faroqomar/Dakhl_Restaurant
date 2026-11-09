@@ -1,0 +1,123 @@
+{
+  "recorded_utc": "2026-11-07T21:18:51.481084+00:00",
+  "status": "host-verified-independent-review-and-native-pending",
+  "runtime_public_pin": "d316fd6076375daa3f412889f73eaebfeeb5d4d4",
+  "files": [
+    {
+      "path": "test/catalog/c1_visible_recovery_workflow_test.dart",
+      "bytes": 15562,
+      "sha256": "c0382a20c000f839590c67e1072aecdf6525284d630634832025b0c659ab0ea8"
+    },
+    {
+      "path": "integration_test/c1_catalog_native_test.dart",
+      "bytes": 20711,
+      "sha256": "b5c5606a91be73266914282cc0ccfd38a3b8124186ff1f862c577d2de721c9f3"
+    },
+    {
+      "path": "lib/app/app.dart",
+      "bytes": 22453,
+      "sha256": "f2c2f165c0e16df3927f0f77603263e887d821ab0faa48b1db52c5984372b221"
+    },
+    {
+      "path": "lib/catalog/product_form_dialog.dart",
+      "bytes": 31456,
+      "sha256": "af24df0ecf86c612e02c14962a8e239272ece9702a6c1dd7380511128b3976f6"
+    },
+    {
+      "path": "lib/catalog/product_photo_draft_controller.dart",
+      "bytes": 10948,
+      "sha256": "abf47ce91db7d23842c5c87e056cd3952b68633e61f21a189af2361acf0a9115"
+    },
+    {
+      "path": "lib/catalog/catalog_view_model.dart",
+      "bytes": 6451,
+      "sha256": "49bb283c6225b01b8c5a27591a26648081c3fb0f6340f9187d246035e2936a81"
+    }
+  ],
+  "worker_source_changes": [
+    "test/catalog/c1_visible_recovery_workflow_test.dart",
+    "integration_test/c1_catalog_native_test.dart"
+  ],
+  "root_source_change": "lib/app/app.dart",
+  "test_result": {
+    "command": "flutter test --no-pub test/catalog/c1_visible_recovery_workflow_test.dart test/catalog/product_photo_draft_controller_test.dart test/catalog/product_photo_authority_test.dart test/catalog/product_dialog_workflow_test.dart test/catalog/catalog_view_model_test.dart --reporter expanded",
+    "passed": 29,
+    "new_visible_cases": 4,
+    "elapsed_runner_seconds": 10,
+    "evidence": "outputs/completion-review/c1-visible-recovery/attempt-06-scoped.txt",
+    "exit_code": 0
+  },
+  "analysis": {
+    "command": "flutter analyze --no-pub lib/app/app.dart test/catalog/c1_visible_recovery_workflow_test.dart integration_test/c1_catalog_native_test.dart",
+    "result": "No issues found",
+    "elapsed_runner_seconds": 6.4,
+    "evidence": "outputs/completion-review/c1-visible-recovery/analyze-02.txt",
+    "exit_code": 0
+  },
+  "failed_attempts": [
+    {
+      "path": "outputs/completion-review/c1-visible-recovery/attempt-01.txt",
+      "result": "host fake-async gesture stalled; owned process terminated"
+    },
+    {
+      "path": "outputs/completion-review/c1-visible-recovery/attempt-02.txt",
+      "result": "stage diagnostics located host fake-async gesture; owned process terminated"
+    },
+    {
+      "path": "outputs/completion-review/c1-visible-recovery/attempt-03.txt",
+      "result": "visible path completed; worker reopen instance-equality assertion failed"
+    },
+    {
+      "path": "outputs/completion-review/c1-visible-recovery/attempt-05-shell-red.txt",
+      "result": "missing shell pending-confirmation status reproduced before root repair"
+    }
+  ],
+  "prior_pass": {
+    "path": "outputs/completion-review/c1-visible-recovery/attempt-04.txt",
+    "cases": 3,
+    "qualification": "before shell regression and additional shell-path case"
+  },
+  "native": {
+    "executed": false,
+    "harness_stage": "visible-lost-acknowledgement-retained-draft-readback",
+    "limitations": [
+      "Device evidence/preflight remains pending",
+      "Analyzer is not native acceptance",
+      "Host reopen uses new owner in same process, not OS crash or fresh process"
+    ]
+  },
+  "storage": {
+    "unit": "KiB",
+    "baseline": {
+      "free": 113867368,
+      "git": 18422716,
+      "build": 623604
+    },
+    "final_observed": {
+      "free": 109453556,
+      "git": 18423252,
+      "build": 623704,
+      "task_evidence_allocated": 32,
+      "active_git_tmp_objdir_count": 0,
+      "remaining_task_fixture_count": 0
+    },
+    "reclaimed_task_fixture_kib": 520,
+    "deleted_exact_task_fixture_names": [
+      "dakhl-c1-visible-AM8Ett",
+      "dakhl-c1-visible-IH39I0"
+    ],
+    "cleanup_checks": [
+      "lsof +D showed no open owners",
+      "no owned Flutter tester remained",
+      "both known roots absent after exact-path removal",
+      "completed tests close owners and remove their synthetic roots"
+    ],
+    "retained_exceptions": [
+      "Pre-existing unique .git/storage-recovery objects untouched",
+      "Failed-attempt logs retained as audit evidence",
+      "Concurrent app/engine artifacts preserved"
+    ],
+    "volume_growth": "Volume free-space drop remains unattributed. Parent measured app below its previous baseline, expected engine growth approximately80MiB, zero Git temporary stores and more than104GiB free; parent authorized bounded continuation."
+  },
+  "approval": "No independent approval, C1 row closure, merge, deployment or release claimed"
+}

@@ -1,0 +1,1738 @@
+{
+  "scope": "Completion full213-item implementation; no approval or completion inferred",
+  "items": [
+    {
+      "id": "C0-01",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "docs/phases/completion-baseline-acceptance-map.md",
+        "outputs/completion-review/baseline-delivery-audit/independent-documentation-review.json"
+      ],
+      "closedUtc": "2026-11-08T07:00:51.904371+00:00",
+      "closureScope": "Exact documentary reconciliation; underlying named runtime, delivery and approval residuals remain separate"
+    },
+    {
+      "id": "C0-02",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C0-03",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C0-04",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C0-05",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C0-06",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C0-07",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "outputs/completion-review/legacy-corpus-restart/independent-review-and-row-audit.json",
+        "outputs/completion-review/legacy-corpus-restart/attempt-03/result.json",
+        "docs/log/2026-11-08-legacy-corpus-restart.md"
+      ],
+      "closedUtc": "2026-11-08T07:52:17.940979+00:00",
+      "closureScope": "23positive/4protected corpus cases through real repository/store, distinct exited writer/verifier processes, full canonical/history/export/archive/fence preservation; no broader native UI claim"
+    },
+    {
+      "id": "C0-08",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C0-09",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "outputs/completion-review/baseline-delivery-audit/c0-09-evidence-map.json",
+        "../Madar_Engine/outputs/completion-review/document-store-races/independent-review.json",
+        "../Madar_Engine/outputs/completion-review/document-store-races/checkpoint-receipt.json",
+        "outputs/completion-review/baseline-delivery-audit/test-only-adoption.json"
+      ],
+      "closedUtc": "2026-11-08T07:32:47.240197+00:00",
+      "closureScope": "Two additional real-store races plus unchanged CAS/fence/process/lostACK evidence; reviewed test-only adoption/source guard pass"
+    },
+    {
+      "id": "C0-10",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "outputs/completion-review/c0-protected-bootstrap/native-ios-2/independent-review-root-record.json",
+        "docs/log/2026-11-08-c0-native-bootstrap-row-closure.md"
+      ]
+    },
+    {
+      "id": "C0-11",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "docs/phases/completion-baseline-acceptance-map.md",
+        "outputs/completion-review/baseline-delivery-audit/independent-documentation-review.json"
+      ],
+      "closedUtc": "2026-11-08T07:00:51.904371+00:00",
+      "closureScope": "Exact documentary reconciliation; underlying named runtime, delivery and approval residuals remain separate"
+    },
+    {
+      "id": "C0-12",
+      "type": "V",
+      "status": "Host-tested exact20MiB/L+1 fixture and retry-safe QA harness; focused source successor review and actual native picker acceptance pending",
+      "evidence": [
+        "outputs/completion-review/import-byte-boundary/root-repair/selected-result-recheck-inputs.json",
+        "docs/log/2026-11-08-import-byte-boundary-root-repair.md"
+      ]
+    },
+    {
+      "id": "C0-13",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "outputs/completion-review/legacy-corpus-restart/independent-review-and-row-audit.json",
+        "outputs/completion-review/legacy-corpus-restart/attempt-03/result.json",
+        "docs/log/2026-11-08-legacy-corpus-restart.md"
+      ],
+      "closedUtc": "2026-11-08T07:52:17.940979+00:00",
+      "closureScope": "23positive/4protected corpus cases through real repository/store, distinct exited writer/verifier processes, full canonical/history/export/archive/fence preservation; no broader native UI claim"
+    },
+    {
+      "id": "D-01",
+      "type": "G",
+      "status": "C1 approved; eight C4 category pairs content-qualified with live Saved/layer readback; C4 named approval and broader coverage pending",
+      "evidence": [
+        "outputs/penpot/completion/c1-c4-design-tranche-receipt.json",
+        "outputs/completion-review/catalog-design-review.html",
+        "docs/phases/c1-design-approval.md",
+        "outputs/completion-review/c1-design-approval.json",
+        "outputs/completion-review/category-design-independent-review-receipt.json",
+        "outputs/completion-review/category-design-approval-proposal.json",
+        "outputs/completion-review/c2-c3-design-repair-disposition.json"
+      ]
+    },
+    {
+      "id": "D-02",
+      "type": "G",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "D-03",
+      "type": "G",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "D-04",
+      "type": "G",
+      "status": "C1 named native designs and five pattern reuses approved; C4 holds and broader design coverage open",
+      "evidence": [
+        "outputs/penpot/completion/c1-c4-design-tranche-receipt.json",
+        "outputs/completion-review/catalog-design-review.html",
+        "docs/phases/c1-design-approval.md",
+        "outputs/completion-review/c1-design-approval.json",
+        "outputs/completion-review/c2-c3-design-repair-disposition.json"
+      ]
+    },
+    {
+      "id": "D-05",
+      "type": "G",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "D-06",
+      "type": "G",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "D-07",
+      "type": "G",
+      "status": "C1 named native designs and five pattern reuses approved; C4 holds and broader design coverage open",
+      "evidence": [
+        "outputs/penpot/completion/c1-c4-design-tranche-receipt.json",
+        "outputs/completion-review/catalog-design-review.html",
+        "docs/phases/c1-design-approval.md",
+        "outputs/completion-review/c1-design-approval.json",
+        "outputs/completion-review/c2-c3-design-repair-disposition.json"
+      ]
+    },
+    {
+      "id": "D-08",
+      "type": "G",
+      "status": "C1 named designs/pattern reuse approved; remaining workflow approvals open",
+      "evidence": [
+        "outputs/penpot/completion/c1-c4-design-tranche-receipt.json",
+        "outputs/completion-review/catalog-design-review.html",
+        "docs/phases/c1-design-approval.md",
+        "outputs/completion-review/c2-c3-design-repair-disposition.json"
+      ]
+    },
+    {
+      "id": "D-09",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C1-01",
+      "type": "I",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-history-layout-repair/independent-review-and-row-audit.json",
+        "docs/log/2026-11-08-c1-exact-row-closure.md"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T05:24:28.281425+00:00",
+      "closureScope": "Account-scoped routing/replacement and shell guards with connected widget/native navigation"
+    },
+    {
+      "id": "C1-02",
+      "type": "I",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-history-layout-repair/independent-review-and-row-audit.json",
+        "docs/log/2026-11-08-c1-exact-row-closure.md"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T05:24:28.281425+00:00",
+      "closureScope": "Bound search/status/group/pagination, Unicode cases,120-product rendered paging, preserved controller and clamping"
+    },
+    {
+      "id": "C1-03",
+      "type": "I",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-restart-portability/native-pilot-1/independent-review-and-row-audit.json",
+        "outputs/completion-review/c1-restart-portability/native-pilot-1/result.json"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T07:06:14.695638+00:00",
+      "closureScope": "Exact approved C1 form/data acceptance using actual process restart and native JSON portability plus retained failure/atomic/source safeguards; no broader target or release claim"
+    },
+    {
+      "id": "C1-04",
+      "type": "M",
+      "status": "closed",
+      "evidence": [
+        "lib/catalog/product_photo_draft_controller.dart",
+        "test/catalog/product_photo_draft_controller_test.dart",
+        "docs/phases/c1-04-product-photo-evidence.md",
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-restart-portability/native-pilot-1/independent-review-and-row-audit.json",
+        "outputs/completion-review/c1-restart-portability/native-pilot-1/result.json"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T07:06:14.695638+00:00",
+      "closureScope": "Exact approved C1 form/data acceptance using actual process restart and native JSON portability plus retained failure/atomic/source safeguards; no broader target or release claim"
+    },
+    {
+      "id": "C1-05",
+      "type": "I",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-restart-portability/native-pilot-1/independent-review-and-row-audit.json",
+        "outputs/completion-review/c1-restart-portability/native-pilot-1/result.json"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T07:06:14.695638+00:00",
+      "closureScope": "Exact approved C1 form/data acceptance using actual process restart and native JSON portability plus retained failure/atomic/source safeguards; no broader target or release claim"
+    },
+    {
+      "id": "C1-06",
+      "type": "I",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-restart-portability/native-pilot-1/independent-review-and-row-audit.json",
+        "outputs/completion-review/c1-restart-portability/native-pilot-1/result.json"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T07:06:14.695638+00:00",
+      "closureScope": "Exact approved C1 form/data acceptance using actual process restart and native JSON portability plus retained failure/atomic/source safeguards; no broader target or release claim"
+    },
+    {
+      "id": "C1-07",
+      "type": "I",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-mounted-acceptance/independent-review-and-row-audit.json",
+        "outputs/completion-review/c1-rendered-pagination/review-inputs.json"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T06:02:06.934039+00:00",
+      "closureScope": "Actual SQLite precommit failure preserves full durable state and retained form input; retry commits once"
+    },
+    {
+      "id": "C1-08",
+      "type": "I",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-history-layout-repair/independent-review-and-row-audit.json",
+        "docs/log/2026-11-08-c1-exact-row-closure.md"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T05:24:28.281425+00:00",
+      "closureScope": "Connected valid reversal, original/date preservation, duplicate and native historical-negative no-write rejection"
+    },
+    {
+      "id": "C1-09",
+      "type": "I",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-history-layout-repair/independent-review-and-row-audit.json",
+        "docs/log/2026-11-08-c1-exact-row-closure.md"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T05:24:28.281425+00:00",
+      "closureScope": "Connected archive/restore, selection exclusion and preserved IDs/sale snapshots"
+    },
+    {
+      "id": "C1-10",
+      "type": "I",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-history-layout-repair/independent-review-and-row-audit.json",
+        "docs/log/2026-11-08-c1-exact-row-closure.md"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T05:24:28.281425+00:00",
+      "closureScope": "Business-date projection, low/out boundaries and future exclusion/labels"
+    },
+    {
+      "id": "C1-11",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-native/repaired-1/receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-restart-portability/native-pilot-1/independent-review-and-row-audit.json",
+        "outputs/completion-review/c1-restart-portability/native-pilot-1/result.json"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T07:06:14.695638+00:00",
+      "closureScope": "Exact approved C1 form/data acceptance using actual process restart and native JSON portability plus retained failure/atomic/source safeguards; no broader target or release claim"
+    },
+    {
+      "id": "C1-12",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-native/repaired-1/receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-history-layout-repair/independent-review-and-row-audit.json",
+        "docs/log/2026-11-08-c1-exact-row-closure.md"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T05:24:28.281425+00:00",
+      "closureScope": "Real-store/UI backdating and reversal reconcile affected dates and reject negative prefixes"
+    },
+    {
+      "id": "C1-13",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-history-layout-repair/independent-review-and-row-audit.json",
+        "docs/log/2026-11-08-c1-exact-row-closure.md"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T05:24:28.281425+00:00",
+      "closureScope": "Prior listener/busy/snapshot/disposal fixes retain source continuity with independently reviewed reactivity/layout/harness changes"
+    },
+    {
+      "id": "C1-14",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-native/repaired-1/receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-mounted-acceptance/independent-review-and-row-audit.json",
+        "outputs/completion-review/c1-rendered-pagination/review-inputs.json"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T06:02:06.934039+00:00",
+      "closureScope": "Mounted delayed ACK/busy/frozen-input/disposal cases isolate replacement account; memory replacement limit explicit and existing stale/unknown/model cases reused"
+    },
+    {
+      "id": "C1-15",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-native/repaired-1/receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-mounted-acceptance/independent-review-and-row-audit.json",
+        "outputs/completion-review/c1-rendered-pagination/review-inputs.json"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T06:02:06.934039+00:00",
+      "closureScope": "Rendered later-page add/archive/filter clamps and every120ledger row over3dates match independent balances"
+    },
+    {
+      "id": "C1-16",
+      "type": "I",
+      "status": "connected repair independently rechecked; native/benchmark, collation and C3 dependency evidence open",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md"
+    },
+    {
+      "id": "C1-17",
+      "type": "I",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-c1-ui-integration.md",
+        "outputs/completion-review/c1-ui-review-inputs.json",
+        "outputs/completion-review/c1-ui-recheck-inputs.json",
+        "outputs/completion-review/c1-ui-independent-recheck-receipt.json",
+        "outputs/completion-review/c1-visible-recovery/reactivity-fix/independent-review.json",
+        "outputs/completion-review/c1-history-layout-repair/independent-review-and-row-audit.json",
+        "docs/log/2026-11-08-c1-exact-row-closure.md"
+      ],
+      "designApproval": "docs/phases/c1-design-approval.md",
+      "closedUtc": "2026-11-08T05:24:28.281425+00:00",
+      "closureScope": "Shared signed/fractional parsing, required adjustment/loss reasons and invalid sign/range no-write rejection"
+    },
+    {
+      "id": "F-01",
+      "type": "G",
+      "status": "closed",
+      "evidence": [
+        "docs/phases/completion-financial-mapping-proposal.md",
+        "docs/decisions/0021-completion-financial-policy.md",
+        "docs/log/2026-11-08-exact-financial-row-closure.md",
+        "outputs/completion-review/financial-row-closure/independent-disposition.json"
+      ],
+      "closed": true,
+      "closureEvidence": "outputs/completion-review/financial-row-closure/independent-disposition.json",
+      "priorClosureStatus": "closed: Owner accepted the symbolic classifications and worked1A-P/R1/T1 mappings; exact mapper remains independently reviewed. No new financial scope or live values selected."
+    },
+    {
+      "id": "F-02",
+      "type": "G",
+      "status": "closed",
+      "evidence": [
+        "docs/phases/completion-financial-mapping-proposal.md",
+        "docs/decisions/0021-completion-financial-policy.md",
+        "docs/log/2026-11-08-exact-financial-row-closure.md",
+        "outputs/completion-review/financial-row-closure/independent-disposition.json"
+      ],
+      "closed": true,
+      "closureEvidence": "outputs/completion-review/financial-row-closure/independent-disposition.json",
+      "priorClosureStatus": "closed: Accepted dated2A decision selects explicit verified opening/cutover and preservation/compatibility/rollback obligations. Choosing live values/date is a separate gate."
+    },
+    {
+      "id": "F-03",
+      "type": "G",
+      "status": "closed",
+      "evidence": [
+        "docs/phases/completion-financial-mapping-proposal.md",
+        "docs/decisions/0021-completion-financial-policy.md",
+        "outputs/completion-review/financial-row-closure/independent-disposition.json",
+        "docs/phases/completion-remaining-correction-approval.md",
+        "outputs/completion-review/remaining-correction-examples/owner-acceptance.json",
+        "outputs/completion-review/remaining-correction-examples/independent-owner-acceptance-audit.json"
+      ],
+      "closedUtc": "2026-11-08T07:32:47.240197+00:00",
+      "closureScope": "Exact accepted worked-example/compatibility policy contract; missing-posting financial corrections blocked and runtime implementation separate"
+    },
+    {
+      "id": "F-04",
+      "type": "G",
+      "status": "closed",
+      "evidence": [
+        "docs/phases/completion-financial-mapping-proposal.md",
+        "docs/decisions/0021-completion-financial-policy.md",
+        "outputs/completion-review/portable-journal-recheck-inputs.json",
+        "docs/log/2026-11-07-portable-journal-codec.md",
+        "outputs/completion-review/financial-row-closure/independent-disposition.json",
+        "docs/phases/completion-remaining-correction-approval.md",
+        "outputs/completion-review/remaining-correction-examples/owner-acceptance.json",
+        "outputs/completion-review/remaining-correction-examples/independent-owner-acceptance-audit.json"
+      ],
+      "closedUtc": "2026-11-08T07:32:47.240197+00:00",
+      "closureScope": "Exact accepted worked-example/compatibility policy contract; missing-posting financial corrections blocked and runtime implementation separate"
+    },
+    {
+      "id": "F-05",
+      "type": "M",
+      "status": "closed",
+      "evidence": [
+        "docs/log/2026-11-07-restaurant-journal-mapper.md",
+        "test/accounting/restaurant_journal_integrity_test.dart",
+        "docs/log/2026-11-07-durable-sales-composition.md",
+        "outputs/completion-review/durable-sales-recheck-inputs.json",
+        "outputs/completion-review/durable-sales-independent-recheck-receipt.json",
+        "docs/log/2026-11-08-exact-financial-row-closure.md",
+        "outputs/completion-review/financial-row-closure/independent-disposition.json"
+      ],
+      "closed": true,
+      "closureEvidence": "outputs/completion-review/financial-row-closure/independent-disposition.json",
+      "priorClosureStatus": "closed: Reusable immutable balanced journal, explicit currency/scale, bounds/inverse and unbalanced rejection satisfy the exact pure contract; independent consumer mappings validate before writes."
+    },
+    {
+      "id": "F-06",
+      "type": "M",
+      "status": "closed",
+      "evidence": [
+        "../Madar_Engine/docs/log/2026-11-07-durable-command-review-fixes.md",
+        "docs/log/2026-11-07-query-coordinator-adoption.md",
+        "outputs/completion-review/portable-journal-recheck-inputs.json",
+        "docs/log/2026-11-07-portable-journal-codec.md",
+        "docs/log/2026-11-07-durable-sales-composition.md",
+        "outputs/completion-review/durable-sales-recheck-inputs.json",
+        "outputs/completion-review/durable-sales-independent-recheck-receipt.json",
+        "docs/log/2026-11-08-exact-financial-row-closure.md",
+        "outputs/completion-review/financial-row-closure/independent-disposition.json"
+      ],
+      "closed": true,
+      "closureEvidence": "outputs/completion-review/financial-row-closure/independent-disposition.json",
+      "priorClosureStatus": "closed: Reusable persisted identity/outcome, identical retry, changed-payload rejection, overlapping CAS, lost acknowledgement and restart contract independently verified at consumed revision. SIGKILL evidence is aftercommit only; correction-specific identities remain separateF04."
+    },
+    {
+      "id": "F-07",
+      "type": "M",
+      "status": "Required correction/source-routing command paths remain incomplete; UI absence alone is not the reason.",
+      "evidence": [
+        "../Madar_Engine/docs/log/2026-11-07-durable-command-review-fixes.md",
+        "docs/log/2026-11-07-query-coordinator-adoption.md",
+        "outputs/completion-review/portable-journal-recheck-inputs.json",
+        "docs/log/2026-11-07-portable-journal-codec.md",
+        "docs/log/2026-11-07-durable-sales-composition.md",
+        "outputs/completion-review/durable-sales-recheck-inputs.json",
+        "outputs/completion-review/durable-sales-independent-recheck-receipt.json",
+        "outputs/completion-review/durable-spending-recheck-inputs.json",
+        "outputs/completion-review/durable-spending-opening-repair/independent-review.json",
+        "outputs/completion-review/journal-multiline-reconciliation/independent-review.json",
+        "outputs/completion-review/durable-transfer/independent-review-repaired-2.json",
+        "outputs/completion-review/financial-row-closure/independent-disposition.json"
+      ]
+    },
+    {
+      "id": "F-08",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "test/accounting/journal_atomicity_fault_injection_test.dart",
+        "outputs/completion-review/command-atomicity/receipt.json",
+        "outputs/completion-review/command-atomicity/verified-inputs.json",
+        "docs/log/2026-11-07-command-atomicity-verification.md",
+        "outputs/completion-review/command-atomicity/repaired-1/receipt.json",
+        "outputs/completion-review/command-atomicity/repaired-1/verified-inputs.json",
+        "outputs/completion-review/command-atomicity/repaired-1/independent-review.json",
+        "outputs/completion-review/financial-row-closure/independent-disposition.json",
+        "outputs/completion-review/command-lifecycle-faults/independent-review.json",
+        "docs/log/2026-11-08-f08-f09-fixture-closure.md"
+      ],
+      "closedUtc": "2026-11-08T04:29:15.908844+00:00",
+      "closureScope": "Exact representative non-UI fixture acceptance; later command/runtime/release gates separate"
+    },
+    {
+      "id": "F-09",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "test/accounting/journal_mixed_reconciliation_test.dart",
+        "outputs/completion-review/journal-reconciliation/verification-receipt.json",
+        "docs/log/2026-11-07-journal-reconciliation-verification.md",
+        "outputs/completion-review/journal-reconciliation/independent-review-receipt.json",
+        "outputs/completion-review/durable-spending-opening-repair/independent-review.json",
+        "outputs/completion-review/journal-multiline-reconciliation/independent-review.json",
+        "outputs/completion-review/durable-transfer/independent-review-repaired-2.json",
+        "outputs/completion-review/financial-row-closure/independent-disposition.json",
+        "outputs/completion-review/command-lifecycle-faults/independent-review.json",
+        "docs/log/2026-11-08-f08-f09-fixture-closure.md"
+      ],
+      "closedUtc": "2026-11-08T04:29:15.908844+00:00",
+      "closureScope": "Exact representative non-UI fixture acceptance; later command/runtime/release gates separate"
+    },
+    {
+      "id": "F-10",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "outputs/completion-review/financial-row-closure/independent-disposition.json",
+        "outputs/completion-review/collation-consumer-adoption/verification.json",
+        "../Madar_Engine/outputs/completion-review/collation-source-checkpoint/commit-receipt.json",
+        "outputs/completion-review/collation-consumer-adoption/independent-review-783-and-readme-remedy.json",
+        "outputs/completion-review/collation-consumer-adoption/documentation-successor-receipt.json",
+        "docs/log/2026-11-08-f10-reviewed-source-adoption-closure.md"
+      ],
+      "closedUtc": "2026-11-08T04:51:38.505086+00:00",
+      "closureScope": "Exact reviewed local source/version/documentation/adoption; hosted/mobile/UI/release remain separate"
+    },
+    {
+      "id": "C2-01",
+      "type": "I",
+      "status": "nonvisual SalesViewModel composition independently passed20focused/48sales tests including source-compatible fractional plus; UI wiring, checkout and native evidence remain open",
+      "evidence": [
+        "docs/reference/sales-view-model.md",
+        "outputs/completion-review/sales-view-model/repaired-1/independent-review.json"
+      ]
+    },
+    {
+      "id": "C2-02",
+      "type": "I",
+      "status": "nonvisual SalesViewModel composition independently passed20focused/48sales tests including source-compatible fractional plus; UI wiring, checkout and native evidence remain open",
+      "evidence": [
+        "docs/reference/sales-view-model.md",
+        "outputs/completion-review/sales-view-model/repaired-1/independent-review.json"
+      ]
+    },
+    {
+      "id": "C2-03",
+      "type": "I",
+      "status": "nonvisual SalesViewModel composition independently passed20focused/48sales tests including source-compatible fractional plus; UI wiring, checkout and native evidence remain open",
+      "evidence": [
+        "docs/reference/sales-view-model.md",
+        "outputs/completion-review/sales-view-model/repaired-1/independent-review.json"
+      ]
+    },
+    {
+      "id": "C2-04",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C2-05",
+      "type": "I",
+      "status": "nonvisual SalesViewModel composition independently passed20focused/48sales tests including source-compatible fractional plus; UI wiring, checkout and native evidence remain open",
+      "evidence": [
+        "docs/reference/sales-view-model.md",
+        "outputs/completion-review/sales-view-model/repaired-1/independent-review.json"
+      ]
+    },
+    {
+      "id": "C2-06",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C2-07",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C2-08",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C2-09",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C2-10",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C2-11",
+      "type": "I",
+      "status": "nonvisual SalesViewModel composition independently passed20focused/48sales tests including source-compatible fractional plus; UI wiring, checkout and native evidence remain open",
+      "evidence": [
+        "docs/reference/sales-view-model.md",
+        "outputs/completion-review/sales-view-model/repaired-1/independent-review.json"
+      ]
+    },
+    {
+      "id": "C2-12",
+      "type": "I",
+      "status": "nonvisual SalesViewModel composition independently passed20focused/48sales tests including source-compatible fractional plus; UI wiring, checkout and native evidence remain open",
+      "evidence": [
+        "docs/reference/sales-view-model.md",
+        "outputs/completion-review/sales-view-model/repaired-1/independent-review.json"
+      ]
+    },
+    {
+      "id": "C2-13",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C2-14",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C2-15",
+      "type": "V",
+      "status": "nonvisual model generation/disposal/late-callback guards independently reviewed; integrated runtime/autosave/checkout replacement proof remains open",
+      "evidence": [
+        "outputs/completion-review/sales-view-model/repaired-1/independent-review.json"
+      ]
+    },
+    {
+      "id": "C2-16",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C2-17",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C2-18",
+      "type": "I",
+      "status": "nonvisual SalesViewModel composition independently passed20focused/48sales tests including source-compatible fractional plus; UI wiring, checkout and native evidence remain open",
+      "evidence": [
+        "docs/reference/sales-view-model.md",
+        "outputs/completion-review/sales-view-model/repaired-1/independent-review.json"
+      ]
+    },
+    {
+      "id": "C2-19",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C2-20",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C3-01",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C3-02",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C3-03",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C3-04",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C3-05",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C3-06",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C3-07",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C3-08",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C3-09",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C3-10",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C3-11",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C3-12",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C3-13",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C3-14",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C4-01",
+      "type": "M",
+      "status": "nonvisual parity verified; eight category native pairs content-qualified; named C4 approval/UI/native pending",
+      "evidence": [
+        "docs/log/2026-11-07-completion-category-view-model.md",
+        "test/accounting/categories_source_parity_test.dart",
+        "outputs/completion-review/category-design-independent-review-receipt.json",
+        "outputs/completion-review/category-design-approval-proposal.json"
+      ]
+    },
+    {
+      "id": "C4-02",
+      "type": "M",
+      "status": "nonvisual parity verified; eight category native pairs content-qualified; named C4 approval/UI/native pending",
+      "evidence": [
+        "docs/log/2026-11-07-completion-category-view-model.md",
+        "test/accounting/categories_source_parity_test.dart",
+        "outputs/completion-review/category-design-independent-review-receipt.json",
+        "outputs/completion-review/category-design-approval-proposal.json"
+      ]
+    },
+    {
+      "id": "C4-03",
+      "type": "M",
+      "status": "nonvisual parity verified; eight category native pairs content-qualified; named C4 approval/UI/native pending",
+      "evidence": [
+        "docs/log/2026-11-07-completion-category-view-model.md",
+        "test/accounting/categories_source_parity_test.dart",
+        "outputs/completion-review/category-design-independent-review-receipt.json",
+        "outputs/completion-review/category-design-approval-proposal.json"
+      ]
+    },
+    {
+      "id": "C4-04",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C4-05",
+      "type": "M",
+      "status": "Reviewed isolated durable expense create/edit/delete and exact split-funding history verified; UI integration/runtime activation/operation benchmarks remain pending",
+      "evidence": [
+        "outputs/completion-review/durable-expense-corrections/fence-revision-repair/independent-review.json",
+        "docs/reference/durable-expense-corrections.md",
+        "docs/log/2026-11-08-expense-correction-fence-repair.md"
+      ]
+    },
+    {
+      "id": "C4-06",
+      "type": "I",
+      "status": "Reviewed isolated durable expense create/edit/delete and exact split-funding history verified; UI integration/runtime activation/operation benchmarks remain pending",
+      "evidence": [
+        "outputs/completion-review/durable-expense-corrections/fence-revision-repair/independent-review.json",
+        "docs/reference/durable-expense-corrections.md",
+        "docs/log/2026-11-08-expense-correction-fence-repair.md"
+      ]
+    },
+    {
+      "id": "C4-07",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C4-08",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C4-09",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C4-10",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C4-11",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C4-12",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C4-13",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C4-14",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C4-15",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C4-16",
+      "type": "M",
+      "status": "create-only durable transfer foundation independently reviewed; UI connection, edit/delete, native and performance obligations remain open",
+      "evidence": [
+        "docs/phases/completion-durable-transfer-contract.md",
+        "docs/log/2026-11-08-durable-transfer-independent-recheck.md",
+        "outputs/completion-review/durable-transfer/repaired-2-inputs.json",
+        "outputs/completion-review/durable-transfer/independent-review-repaired-2.json"
+      ]
+    },
+    {
+      "id": "C4-17",
+      "type": "V",
+      "status": "Isolated transfer edit/delete foundation independently passes 97 focused tests and 43 bindings; declared C4-16/F03/F04 prerequisites and operational integration remain",
+      "evidence": [
+        "outputs/completion-review/durable-transfer-corrections/repaired-1/post-adoption-review-inputs.json",
+        "docs/log/2026-11-08-durable-transfer-correction-integrity-repair.md",
+        "outputs/completion-review/durable-transfer-corrections/repaired-1/independent-review.json",
+        "docs/log/2026-11-08-transfer-correction-integrity-recheck.md"
+      ]
+    },
+    {
+      "id": "C4-18",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C4-19",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C4-20",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C5-01",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C5-02",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C5-03",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C5-04",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C5-05",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C5-06",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C5-07",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C5-08",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C5-09",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C5-10",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C5-11",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C5-12",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C5-13",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-01",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-02",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-03",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-04",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-05",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-06",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-07",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-08",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-09",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-10",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-11",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-12",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-13",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-14",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-15",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-16",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-17",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C6-18",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-01",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-02",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-03",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-04",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-05",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-06",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-07",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-08",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-09",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-10",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-11",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-12",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-13",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-14",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C7-15",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-01",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-02",
+      "type": "M",
+      "status": "shared query consumer integration independently reviewed and source-pinned; report UI and final verification pending",
+      "evidence": [
+        "docs/log/2026-11-07-paid-spending-consumer-integration.md",
+        "test/accounting/paid_spending_consumer_test.dart"
+      ]
+    },
+    {
+      "id": "C8-03",
+      "type": "V",
+      "status": "shared query consumer integration independently reviewed and source-pinned; report UI and final verification pending",
+      "evidence": [
+        "docs/log/2026-11-07-paid-spending-consumer-integration.md",
+        "test/accounting/paid_spending_consumer_test.dart"
+      ]
+    },
+    {
+      "id": "C8-04",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-05",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-06",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-07",
+      "type": "I",
+      "status": "Reviewed pure port and optional host ICU adapter committed locally and app pin adopted; optional adapter remains unconsumed; comparator wiring and mobile qualification pending",
+      "evidence": [
+        "../Madar_Engine/outputs/completion-review/collation-research-independent-review-receipt.json",
+        "../Madar_Engine/docs/phases/completion-collation-pilot-contract.md",
+        "../Madar_Engine/outputs/completion-review/collation-pilot-review-inputs.json",
+        "../Madar_Engine/outputs/completion-review/collation-pilot-review-disposition.json",
+        "../Madar_Engine/outputs/completion-review/collation-safety-repair-inputs.json",
+        "../Madar_Engine/outputs/completion-review/collation-corrected-independent-review.json",
+        "../Madar_Engine/outputs/completion-review/collation-normalization-fix-inputs.json",
+        "../Madar_Engine/outputs/completion-review/collation-corrected-2/independent-review.json",
+        "../Madar_Engine/outputs/completion-review/collation-package/independent-review-repaired-1.json",
+        "docs/log/2026-11-08-f10-reviewed-source-adoption-closure.md"
+      ]
+    },
+    {
+      "id": "C8-08",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-09",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-10",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-11",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-12",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-13",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-14",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-15",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-16",
+      "type": "M",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-17",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-18",
+      "type": "I",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-19",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-20",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C8-21",
+      "type": "V",
+      "status": "shared query consumer integration independently reviewed and source-pinned; report UI and final verification pending",
+      "evidence": [
+        "docs/log/2026-11-07-paid-spending-consumer-integration.md",
+        "test/accounting/paid_spending_consumer_test.dart"
+      ]
+    },
+    {
+      "id": "C9-01",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-02",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-03",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-04",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-05",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-06",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-07",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-08",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-09",
+      "type": "G",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-10",
+      "type": "G",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-11",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-12",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-13",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-14",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-15",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-16",
+      "type": "G",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-17",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-18",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-19",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-20",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-21",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-22",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-23",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C9-24",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-01",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-02",
+      "type": "V",
+      "status": "Nine isolated C1 API cases independently source-reviewed and measured at50samples each (450total); bounded macOS PROFILE baseline independently passed; other major-feature measurements and budgets remain pending",
+      "evidence": [
+        "outputs/completion-review/c1-operation-benchmarks/integrated-review-inputs.json",
+        "docs/phases/c1-operation-benchmarks.md",
+        "outputs/completion-review/c1-operation-benchmarks/independent-source-review.json",
+        "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/independent-review.json",
+        "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/independent-review.json"
+      ]
+    },
+    {
+      "id": "Q-03",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-04",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-05",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-06",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-07",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-08",
+      "type": "G",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-09",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-10",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-11",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "docs/phases/completion-baseline-acceptance-map.md",
+        "outputs/completion-review/baseline-delivery-audit/independent-documentation-review.json"
+      ],
+      "closedUtc": "2026-11-08T07:00:51.904371+00:00",
+      "closureScope": "Exact documentary reconciliation; underlying named runtime, delivery and approval residuals remain separate"
+    },
+    {
+      "id": "Q-12",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-13",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-14",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-15",
+      "type": "V",
+      "status": "local-containment-independently-reviewed; limits-recorded",
+      "evidence": [
+        "outputs/completion-review/storage-producer-readiness-receipt.json",
+        "docs/log/2026-11-07-storage-producer-containment.md"
+      ]
+    },
+    {
+      "id": "Q-16",
+      "type": "V",
+      "status": "closed",
+      "evidence": [
+        "outputs/completion-review/storage-producer-readiness-receipt.json",
+        "docs/log/2026-11-07-storage-producer-containment.md",
+        "outputs/completion-review/baseline-delivery-audit/independent-row-disposition.json"
+      ],
+      "closedUtc": "2026-11-08T06:51:08.357551+00:00",
+      "closureScope": "Recorded cleanup preserves unique objects, refs/index/worktree and connectivity; only verified duplicates removed"
+    },
+    {
+      "id": "Q-17",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-18",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "Q-19",
+      "type": "V",
+      "status": "open",
+      "evidence": []
+    }
+  ],
+  "reviewedEngineCommit": "ac8b4edc2c915ed22c0991685c33967b3360e7fa"
+}

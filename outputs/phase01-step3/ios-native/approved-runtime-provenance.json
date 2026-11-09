@@ -1,0 +1,13 @@
+{
+  "bundle_id": "com.eros.dakhlrestaurant.phase00",
+  "installed_executable_sha256": "f223638b0ff068b07b1c4f748f71c2d40d53a542712a8f16e0f4482e965d552d",
+  "retained_build_executable_sha256": "f223638b0ff068b07b1c4f748f71c2d40d53a542712a8f16e0f4482e965d552d",
+  "same_binary": true,
+  "source_worktree": "/Users/eros/.codex/worktrees/phase00-penpot/Dakhl_Restaurant",
+  "source_approved_head": "00baa5731776ecb7b0fe91911892cd5006d421f4",
+  "runtime_source_difference": "None in lib/native/pubspec/lock; engine-dependency status description changed only, commit pin unchanged",
+  "source_gate": "scripts/check-engine.py passed, actual resolved source pin/version/boundaries verified",
+  "launch_log": "approved-probe-launch.log",
+  "gui": "Device Hub27.1",
+  "runtime": "iOS27.0/iPhone18Pro"
+}

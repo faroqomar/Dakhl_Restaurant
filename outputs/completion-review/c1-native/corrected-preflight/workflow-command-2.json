@@ -1,0 +1,23 @@
+{
+  "startedAt": "2026-11-07T20:49:16.332755+00:00",
+  "endedAt": "2026-11-07T20:49:17.273916+00:00",
+  "argv": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "scripts/phase_workflow.py",
+    "preflight",
+    "--engine-tools-root",
+    "/Users/eros/Dev/Eros_Projects/Madar_Engine",
+    "--plan",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-native/corrected-preflight/plan.json",
+    "--state",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-native/corrected-preflight/state.json",
+    "--spec",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-native/corrected-preflight/preflight-spec.json",
+    "--evidence-output",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-native/corrected-preflight/preflight-attempt-1.json"
+  ],
+  "pythonVersion": "3.13.0 (v3.13.0:60403a5409f, Oct  7 2024, 00:37:40) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "exitCode": 1,
+  "stdout": "{\"attemptCount\": 1, \"campaignId\": \"c1-native-pilot-002\", \"consumerId\": \"Dakhl_Restaurant\", \"failedAttempts\": [\"attempt-1\"], \"identity\": {\"contextFingerprint\": \"5751c268f50dc0beac6f258bee1be74f2a4d869faf6f3c5a77aad393f90d6459\", \"engineRevision\": \"d316fd6076375daa3f412889f73eaebfeeb5d4d4\", \"fixtureId\": \"dd02500356abe79d58bf707cd58c59e0e7c0ae7b2c9b833dc04a5f813c0bebcd\", \"inputFingerprint\": \"aa8e3ca3ba1e121e015d26b3e930bb4d8544f777364903603373c85f69da32a0\", \"planFingerprint\": \"314a089c45f11aa767f284edafafe7023013415ce35128a6cf828784d7d99863\", \"sourceRevision\": \"cc91fae438101fce7ff4729e12bf3c2b64dacd70\", \"targetId\": \"unselected-ios-candidate\", \"toolRevision\": \"f7f68988561d25cc93eb28c0ec989847526b2df9\"}, \"nextStage\": \"native-preflight\", \"passedStages\": 0, \"schemaVersion\": 1, \"stages\": [{\"id\": \"native-preflight\", \"kind\": \"preflight\", \"status\": \"blocked\"}, {\"id\": \"catalog-pilot\", \"kind\": \"pilot\", \"status\": \"pending\"}], \"status\": \"blocked\"}\n",
+  "stderr": ""
+}

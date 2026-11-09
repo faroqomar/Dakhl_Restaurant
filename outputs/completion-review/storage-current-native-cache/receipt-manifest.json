@@ -1,0 +1,54 @@
+{
+  "README.md": {
+    "sha256": "962610b708bbc4811a17f69059eb56814f1a84f7acc4a17c70a11cd534f18a99",
+    "bytes": 2257
+  },
+  "baseline.json": {
+    "sha256": "99b1894f69db19ef23ffccce9d1442d384c2223a58fd3790b7cf6f65f994bd70",
+    "bytes": 944
+  },
+  "cache-target-inventory.json": {
+    "sha256": "8aec5bc5dfca5c96e382104172243e9d419b334559f40f68ddc191a96acf53f1",
+    "bytes": 2728
+  },
+  "candidate-identities.json": {
+    "sha256": "727ed056a247c809a26337b1f298d82e5175b216aafa3e89f7d25f1388a04911",
+    "bytes": 1339
+  },
+  "cleanup-result.json": {
+    "sha256": "39402992c41f0365d612e1424815cf54c31b65c71b18a92c68ce487b8ed8e047",
+    "bytes": 1305
+  },
+  "deletion-plan.json": {
+    "sha256": "dcdb174ce003a23ad4455f44b24f88924373e634d0f86b0cbc6f1fdffb128a50",
+    "bytes": 11205
+  },
+  "immediate-predelete-check.json": {
+    "sha256": "9990a249f45dfebda0744ec6762f889a9d8d16b8c3d8b4dd32bf539b0f7e8a62",
+    "bytes": 411
+  },
+  "predelete-process-check.json": {
+    "sha256": "2813ace1e8c95b54017df4610be13413819776405cdef527a1463134d315b07d",
+    "bytes": 418
+  },
+  "retained-binary-verification.json": {
+    "sha256": "715039933cee6602ce76eafe376e7675d45f79f78f38cc7de6ec1207cd468e78",
+    "bytes": 1052
+  },
+  "retained-cache-before.json": {
+    "sha256": "4128e012500eebaca46a0b8bee4e8c4948380461de64759f0393b74ed68b9e28",
+    "bytes": 785
+  },
+  "retained-exceptions.json": {
+    "sha256": "2e47ffafb4cf9e7870a3a1681b1ac09822a447599ef86cea123afe44dd8816ff",
+    "bytes": 2295
+  },
+  "storage-closeout.json": {
+    "sha256": "55847dec1c6079b6a5a8e38782e654070c19585ac89d34b1ef8d7d6e68e3a0cb",
+    "bytes": 1877
+  },
+  "vm-observation.json": {
+    "sha256": "aafa82764a0f1e6d07eee817fbb4f034f98d70de440b76d94e3e158520557386",
+    "bytes": 3967
+  }
+}

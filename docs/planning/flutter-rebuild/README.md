@@ -1,3 +1,5 @@
+> Execution update, 2026-11-05: the owner grouped all remaining work into one **Completion phase**. Original IDs below remain requirement/work-package references. Preserve prior DONE evidence and unfinished checks. [Current scope and readiness](../../phases/completion-scope-readiness.md) · [Current planning view](completion.html). This historical pack does not grant implementation approval.
+
 # Dakhl_Restaurant — Flutter/Dart rebuild to a complete MVP
 
 Status: revised 12-phase planning baseline, superseding the original 19-phase sequence; Flutter implementation has not started. Date: 27 October 2026 (Asia/Baghdad). Owner: restaurant/project owner. Reference: current working tree, Electron 1.12.0, account schema 11.

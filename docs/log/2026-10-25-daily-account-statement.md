@@ -1,17 +1,17 @@
-# فصل مصروفات القاصة وإضافة كشف الحساب
+# Separate cashbox expenses and add the account statement
 
-الحالة: منفذ ومتحقق ومثبت كتحديث محلي. التاريخ: 2026-10-25. المصدر: طلب مالك التطبيق.
+Status: implemented, verified and installed as a local update. Date: 2026-10-25. Source: application owner's request.
 
-## المطلوب والتغيير
+## Request and change
 
-فصل مصاريف القاصة عن مصاريف اليومي والرصيد الكلي، وإضافة كشف حساب بمرشحات وتحليل أعلى المصاريف. أصبح المجموع التلقائي والرصيد المبني من الباقي يحسبان حصة اليومي فقط. تظهر حصة القاصة في جدول منفصل؛ السطر المشترك ينقسم بين الجدولين حسب تخصيص الدفع. السجلات القديمة التي لا تحمل مصدراً تبقى محسوبة يومياً. الأرصدة المسجلة سابقاً لا يعاد كتابتها.
+Separated cashbox expenses from daily expenses and total balance, and added an account statement with filters and analysis of the largest expenses. The automatic total and balance derived from the remainder now include only the daily share. The cashbox share appears in a separate table; a shared item is split between the tables according to payment allocation. Legacy records without a source continue to count as daily. Previously recorded balances are not rewritten.
 
-أضيفت صفحة «كشف الحساب» مع فترة من/إلى، خانة، ومصدر الدفع. تعرض الإجمالي والحصتين وعدد البنود وترتيب الخانات حسب الإنفاق المسجل. تقرير PDF اليومي يعرض المصروفين بقسمين. تحليل الكشف يعتمد الحركات المسجلة كمدفوعة، فلا يمثل قيمة الفواتير الآجلة غير المسددة.
+Added an Account Statement page with from/to dates, category and funding-source filters. It shows the total, both shares, item count and categories ranked by recorded spending. The daily PDF displays the two expense groups separately. Statement analysis uses movements recorded as paid; it does not represent the value of unpaid credit invoices.
 
-## التحقق
+## Verification
 
-نجحت اختبارات التطبيق بعد تحديث دلالات المجموع والرصيد: 82 اختباراً. شمل التحقق فصل مصدر الدفع وإظهار النسبتين ومرشحات الكشف. لم تستخدم بيانات تجريبية في حساب المطعم.
+Application tests passed after total/balance semantics were updated: 82 tests. Verification covered funding-source separation, both shares and statement filters. No synthetic data was used in the restaurant account.
 
-## حالة التثبيت
+## Installation status
 
-بُنيت نسخة macOS ARM64 وثُبّتت 1.9.0 في `/Users/eros/Applications/Daftar.app`. تحقق فتحها وظهور صفحة «كشف الحساب» وصفحة المصاريف اليومية المفصولة. حُفظ التطبيق السابق في `/Users/eros/Applications/Daftar-1.8.0-before-daily-statement.app`.
+Built macOS ARM64 and installed 1.9.0 at `/Users/eros/Applications/Daftar.app`. Launch and display of the Account Statement page and separated Daily Expenses page were verified. The previous application was preserved at `/Users/eros/Applications/Daftar-1.8.0-before-daily-statement.app`.

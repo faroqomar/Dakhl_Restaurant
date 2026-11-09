@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "createdUtc": "2026-11-07T21:35:53.600267+00:00",
+  "status": "Saved native arrow repair completed; independent review/hold closure and owner approval pending",
+  "referenceId": "desktop-held-orders",
+  "finding": "C2-D01 in c2-design-independent-review.json",
+  "ownership": {
+    "app": "Visual control repair only",
+    "Madar": "Runtime/API/Design N/A; consumed d316fd6 unchanged"
+  },
+  "method": "Local browser UI only. Preserved and hid only two exact malformed old native marker layers; appended exact source-bound design/gray control raster fills. No full-screen raster, no new state or business rule.",
+  "source": {
+    "path": "docs/planning/flutter-rebuild/screenshots/desktop-held-orders.png",
+    "bytes": 1337452,
+    "sha256": "4d946176e047676e8ab6ea3cbf83d49fcf1717ba9f811fe4680324a3741fdb92",
+    "pixelSize": [
+      2880,
+      2000
+    ],
+    "expectedSha256": "4d946176e047676e8ab6ea3cbf83d49fcf1717ba9f811fe4680324a3741fdb92",
+    "hashMatchesRecorded": true
+  },
+  "sourceControl": {
+    "path": "outputs/penpot/completion/c2-held-order-repair/source-control.json",
+    "bytes": 3761,
+    "sha256": "2498e5e7c4bd8b8913bf406e4d3de23caea9893bc1847e28d96eb8507656113c"
+  },
+  "exactLogicalBounds": [
+    1054,
+    613,
+    11,
+    7
+  ],
+  "oldLogicalBounds": [
+    1058,
+    613.125,
+    11,
+    7
+  ],
+  "pairs": [
+    {
+      "id": "desktop-held-orders",
+      "kind": "design",
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/desktop-held-orders.png",
+        "bytes": 1337452,
+        "sha256": "4d946176e047676e8ab6ea3cbf83d49fcf1717ba9f811fe4680324a3741fdb92",
+        "pixelSize": [
+          2880,
+          2000
+        ],
+        "expectedSha256": "4d946176e047676e8ab6ea3cbf83d49fcf1717ba9f811fe4680324a3741fdb92",
+        "hashMatchesRecorded": true
+      },
+      "before": {
+        "path": "outputs/penpot/completion/package-native-panels/wp04-01/desktop-held-orders-design.png",
+        "bytes": 1421874,
+        "sha256": "2fd38ddeae5d5fe1f1647aa5ee008949ae2075c3b1b640adf0d0322bcf0070bd",
+        "pixelSize": [
+          2880,
+          2000
+        ],
+        "expectedSha256": "2fd38ddeae5d5fe1f1647aa5ee008949ae2075c3b1b640adf0d0322bcf0070bd",
+        "hashMatchesRecorded": true
+      },
+      "after": {
+        "path": "outputs/penpot/completion/c2-held-order-repair/desktop-held-orders-design-repaired.png",
+        "bytes": 1422025,
+        "sha256": "f73f819c81b54820c8436e8459ced19b81996757462757cfe4165c9ffc576eeb"
+      },
+      "nativeExport": {
+        "path": "outputs/penpot/completion/c2-held-order-repair/design-native-2x.png",
+        "bytes": 4096920,
+        "sha256": "29a60f4843fce8658089ba304221689e763c10dcb8184158c2bd27ee7e5f5dd7"
+      },
+      "globalBefore": 2.022892650462963,
+      "globalAfter": 2.020733564814815,
+      "localizedControls": [
+        {
+          "candidateId": "control-raster-11",
+          "role": "select-chevron",
+          "physicalCrop": {
+            "x": 2108,
+            "y": 1226,
+            "width": 22,
+            "height": 14
+          },
+          "meanAbsoluteRGBError": {
+            "before": 32.57142857142857,
+            "after": 5.791125541125541
+          }
+        }
+      ],
+      "nativeIds": {
+        "boardId": "0caf3b3a-c3d5-8062-8008-e68e650dbd57",
+        "overlayRootId": "be9db90a-8ea9-8034-8008-e93ebf494c98",
+        "newControlId": "be9db90a-8ea9-8034-8008-e93ec0507c91",
+        "hiddenPreservedControlId": "0caf3b3a-c3d5-8062-8008-e68e87dadb0e"
+      },
+      "originalNativeIds": {
+        "boardId": "0caf3b3a-c3d5-8062-8008-e68e650dbd57",
+        "groupId": "0caf3b3a-c3d5-8062-8008-e68e8758bdba",
+        "panelId": "0caf3b3a-c3d5-8062-8008-e68e87ac616a"
+      },
+      "boardUrl": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&layout=layers&selection=0caf3b3a-c3d5-8062-8008-e68e650dbd57",
+      "overlay": {
+        "path": "outputs/penpot/completion/c2-held-order-repair/desktop-held-orders-design-overlay.svg",
+        "bytes": 679,
+        "sha256": "7a6b35966aba838fb0410584d5215e80faeb4422d3afe080350a87be75c4951d"
+      },
+      "nativeChangeScope": {
+        "bitsPerPixel": 32,
+        "changeBounds": [
+          2108,
+          1226,
+          2137,
+          1240
+        ],
+        "changedPixels": 442,
+        "condition": "Same native PNG pixel format; ImageIO raw provider bytes, no color conversion, resize or padding.",
+        "first": "outputs/penpot/completion/package-native-panels/wp04-01/desktop-held-orders-design.png",
+        "height": 2000,
+        "insideExpectedBounds": 442,
+        "maxChannelDelta": 133,
+        "outsideExamples": [],
+        "outsideExpectedBounds": 0,
+        "second": "outputs/penpot/completion/c2-held-order-repair/desktop-held-orders-design-repaired.png",
+        "width": 2880
+      }
+    },
+    {
+      "id": "desktop-held-orders",
+      "kind": "wireframe",
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/desktop-held-orders.png",
+        "bytes": 1337452,
+        "sha256": "4d946176e047676e8ab6ea3cbf83d49fcf1717ba9f811fe4680324a3741fdb92",
+        "pixelSize": [
+          2880,
+          2000
+        ],
+        "expectedSha256": "4d946176e047676e8ab6ea3cbf83d49fcf1717ba9f811fe4680324a3741fdb92",
+        "hashMatchesRecorded": true
+      },
+      "before": {
+        "path": "outputs/penpot/completion/package-native-panels/wp04-01/desktop-held-orders-wireframe.png",
+        "bytes": 447699,
+        "sha256": "fba877c7d20110cb3ab0ec136eec3fcf7f563a4817d5fcc7ed63defe95307537",
+        "pixelSize": [
+          2880,
+          2000
+        ],
+        "expectedSha256": "fba877c7d20110cb3ab0ec136eec3fcf7f563a4817d5fcc7ed63defe95307537",
+        "hashMatchesRecorded": true
+      },
+      "after": {
+        "path": "outputs/penpot/completion/c2-held-order-repair/desktop-held-orders-wireframe-repaired.png",
+        "bytes": 447741,
+        "sha256": "7c57de6f9bdbdbb2a025019ac79d39d7a82f28849604393225549b50447e5b74"
+      },
+      "nativeExport": {
+        "path": "outputs/penpot/completion/c2-held-order-repair/wireframe-native-2x.png",
+        "bytes": 3202710,
+        "sha256": "e5b6ff00d891fb02dc0e9968d04dac6caaa722d20a552886087e7b8f909dc5d0"
+      },
+      "globalBefore": 11.850652719907407,
+      "globalAfter": 11.848807175925925,
+      "localizedControls": [
+        {
+          "candidateId": "control-raster-11",
+          "role": "select-chevron",
+          "physicalCrop": {
+            "x": 2108,
+            "y": 1226,
+            "width": 22,
+            "height": 14
+          },
+          "meanAbsoluteRGBError": {
+            "before": 32.154761904761905,
+            "after": 8.884199134199134
+          }
+        }
+      ],
+      "nativeIds": {
+        "boardId": "c5f89649-e583-8076-8008-e692d0eef5b5",
+        "overlayRootId": "be9db90a-8ea9-8034-8008-e93f7afbabfd",
+        "newControlId": "be9db90a-8ea9-8034-8008-e93f7cc0f030",
+        "hiddenPreservedControlId": "c5f89649-e583-8076-8008-e692e4bea9c0"
+      },
+      "originalNativeIds": {
+        "boardId": "c5f89649-e583-8076-8008-e692d0eef5b5",
+        "groupId": "c5f89649-e583-8076-8008-e692e453ce60",
+        "panelId": "c5f89649-e583-8076-8008-e692e488a377"
+      },
+      "boardUrl": "http://localhost:9001/#/workspace?team-id=5b438bb7-7d89-81bf-8008-e66cac635d85&file-id=5b438bb7-7d89-81bf-8008-e66cde6075af&page-id=5b438bb7-7d89-81bf-8008-e66cde6075b0&layout=layers&selection=c5f89649-e583-8076-8008-e692d0eef5b5",
+      "overlay": {
+        "path": "outputs/penpot/completion/c2-held-order-repair/desktop-held-orders-wireframe-overlay.svg",
+        "bytes": 610,
+        "sha256": "7567a47f47b39b4076550cf4361a65db635d07b8c7da5607b06483efd05563c5"
+      },
+      "nativeChangeScope": {
+        "bitsPerPixel": 32,
+        "changeBounds": [
+          2108,
+          1226,
+          2137,
+          1240
+        ],
+        "changedPixels": 440,
+        "condition": "Same native PNG pixel format; ImageIO raw provider bytes, no color conversion, resize or padding.",
+        "first": "outputs/penpot/completion/package-native-panels/wp04-01/desktop-held-orders-wireframe.png",
+        "height": 2000,
+        "insideExpectedBounds": 440,
+        "maxChannelDelta": 121,
+        "outsideExamples": [],
+        "outsideExpectedBounds": 0,
+        "second": "outputs/penpot/completion/c2-held-order-repair/desktop-held-orders-wireframe-repaired.png",
+        "width": 2880
+      }
+    }
+  ],
+  "nativeSavedObserved": true,
+  "finalSavedEvidence": {
+    "path": "outputs/penpot/completion/c2-held-order-repair/final-saved-dom.json",
+    "bytes": 1231,
+    "sha256": "4a0cf9afd4552ba54d618b33e36fdff90ec3b846b7686b3131b74e3b3ee54a7d"
+  },
+  "exportsCompletedUtc": {
+    "design": "2026-11-07T21:31:00.641Z",
+    "wireframe": "2026-11-07T21:34:26.303Z"
+  },
+  "validation": {
+    "controlCount": 2,
+    "sourceControl": "V chevron, original 22x14 physical source crop; no pixel rescaling.",
+    "nativeSourceComparison": "Global equal-size ICC-aware CoreGraphics decode to sRGB over white; no alignment/scaling/masking. Local exactsource22\u00d714ROI. Wireframe global error includes intentional photo placeholders/grayscale, not a fidelity acceptance score.",
+    "nativeChangeScope": "Design 442 and wireframe 440 changed pixels; zero outside the old/new control union plus a two-physical-pixel antialiasing margin. All other panel pixels unchanged.",
+    "visual": "Correct V observed in native crops on both sides; Arabic RTL modal/held ticket, restore/delete actions, date/amount metadata and photo/placeholder treatment preserved.",
+    "runtime": "No runtime accessibility, device, persistence, hold/resume or financial evidence created."
+  },
+  "remaining": [
+    "Root independent review and C2-D01 hold closure pending; not self-qualified.",
+    "Explicit owner approval pending; original approval packet/trackers/approvedIDs untouched.",
+    "Other C2 findings C2-D02/C2-E01 unchanged; flatter shadows/lower-edge differences and inherited prose remain separately reviewable.",
+    "Native image AA/color rendering differs from frozen pixels; no pixel identity claim."
+  ],
+  "storage": {
+    "finalFreeBytes": 112600363008,
+    "finalMeasuredKiB": {
+      ".git": 18423252,
+      "outputs/penpot": 7189572,
+      "outputs/completion-review": 2920,
+      "outputs/penpot/completion/c2-held-order-repair": 9148,
+      "outputs/penpot/completion/c3-hold-repair": 12852
+    },
+    "tmpObjdirCount": 0,
+    "cleanup": "Downloads moved once to canonical output paths. Two final board exports, exact crops, small ROIs, overlays and receipts retained as review evidence. No archives, builds, caches or Git writes. Owned browser tab closed after final Saved/export verification.",
+    "reclaimedBytes": 0,
+    "hostDelta": "Root notified of concurrent host free-space decrease. Task artifacts are about 9 MiB plus C3 about 12.5 MiB; .git unchanged after an early shared 536 KiB change. No host-growth cause inferred."
+  },
+  "approval": {
+    "ownerApproval": "pending",
+    "holdsClosed": false
+  },
+  "audit": {
+    "log": "docs/log/2026-11-08-c3-native-control-repair.md",
+    "failure": "One Hide click timed out at 15 seconds because the button was hover-only and 0x0. Readback confirmed unchanged state; hover then click succeeded. No unchanged mutation retry.",
+    "timeCost": "Native completion timestamps are exact; task start, active effort, tokens and cost are unknown. Save/import latency and initially overbroad reading contributed observed overhead."
+  }
+}

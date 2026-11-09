@@ -1,0 +1,169 @@
+{
+  "scope": "Public mapper and portable representation only; no store transaction or source reconciliation proof",
+  "checksPassed": 7,
+  "checks": [
+    "Public mapper balances 30000 original/inverse and 32000 linked replacement",
+    "Date-shift replacement uses target date while inverse stays on original date",
+    "Payment inverse restores supplier liability without recognizing another expense",
+    "Mapper rejects inverse-of-inverse; undo must compensate the current active posting",
+    "Portable codec preserves original entry, inverse/replacement links, lineage and receipt across exact roundtrip",
+    "Legacy schema11 enrollment remains gated and synthesizes no journal/receipt",
+    "Legacy runtime reader rejects complete schema12 rather than dropping history"
+  ],
+  "journalExamples": [
+    {
+      "journalId": "journal-expense-01-v1",
+      "sourceRecordId": "expense-01",
+      "effectiveDate": "2026-11-02",
+      "reversesId": null,
+      "correctedFromId": null,
+      "balancedTotal": "30000",
+      "lines": [
+        {
+          "accountId": "expense:category:market",
+          "side": "debit",
+          "amount": "30000"
+        },
+        {
+          "accountId": "asset:cash:daily",
+          "side": "credit",
+          "amount": "20000"
+        },
+        {
+          "accountId": "asset:cash:cashbox",
+          "side": "credit",
+          "amount": "10000"
+        }
+      ]
+    },
+    {
+      "journalId": "journal-expense-01-inverse",
+      "sourceRecordId": "expense-01",
+      "effectiveDate": "2026-11-02",
+      "reversesId": "journal-expense-01-v1",
+      "correctedFromId": null,
+      "balancedTotal": "30000",
+      "lines": [
+        {
+          "accountId": "expense:category:market",
+          "side": "credit",
+          "amount": "30000"
+        },
+        {
+          "accountId": "asset:cash:daily",
+          "side": "debit",
+          "amount": "20000"
+        },
+        {
+          "accountId": "asset:cash:cashbox",
+          "side": "debit",
+          "amount": "10000"
+        }
+      ]
+    },
+    {
+      "journalId": "journal-expense-01-v2",
+      "sourceRecordId": "expense-01",
+      "effectiveDate": "2026-11-02",
+      "reversesId": null,
+      "correctedFromId": "journal-expense-01-v1",
+      "balancedTotal": "32000",
+      "lines": [
+        {
+          "accountId": "expense:category:market",
+          "side": "debit",
+          "amount": "32000"
+        },
+        {
+          "accountId": "asset:cash:daily",
+          "side": "credit",
+          "amount": "22000"
+        },
+        {
+          "accountId": "asset:cash:cashbox",
+          "side": "credit",
+          "amount": "10000"
+        }
+      ]
+    },
+    {
+      "journalId": "journal-payment-01-v1",
+      "sourceRecordId": "payment-01",
+      "effectiveDate": "2026-11-02",
+      "reversesId": null,
+      "correctedFromId": null,
+      "balancedTotal": "20000",
+      "lines": [
+        {
+          "accountId": "liability:supplier:supplier-01",
+          "side": "debit",
+          "amount": "20000"
+        },
+        {
+          "accountId": "asset:cash:daily",
+          "side": "credit",
+          "amount": "15000"
+        },
+        {
+          "accountId": "asset:cash:cashbox",
+          "side": "credit",
+          "amount": "5000"
+        }
+      ]
+    },
+    {
+      "journalId": "journal-payment-01-inverse",
+      "sourceRecordId": "payment-01",
+      "effectiveDate": "2026-11-02",
+      "reversesId": "journal-payment-01-v1",
+      "correctedFromId": null,
+      "balancedTotal": "20000",
+      "lines": [
+        {
+          "accountId": "liability:supplier:supplier-01",
+          "side": "credit",
+          "amount": "20000"
+        },
+        {
+          "accountId": "asset:cash:daily",
+          "side": "debit",
+          "amount": "15000"
+        },
+        {
+          "accountId": "asset:cash:cashbox",
+          "side": "debit",
+          "amount": "5000"
+        }
+      ]
+    },
+    {
+      "journalId": "journal-expense-01-shifted",
+      "sourceRecordId": "expense-01",
+      "effectiveDate": "2026-11-03",
+      "reversesId": null,
+      "correctedFromId": "journal-expense-01-v1",
+      "balancedTotal": "30000",
+      "lines": [
+        {
+          "accountId": "expense:category:market",
+          "side": "debit",
+          "amount": "30000"
+        },
+        {
+          "accountId": "asset:cash:daily",
+          "side": "credit",
+          "amount": "20000"
+        },
+        {
+          "accountId": "asset:cash:cashbox",
+          "side": "credit",
+          "amount": "10000"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Synthetic journals are attached to a synthetic oracle account for structural validation only; this is not a reconciled command execution",
+    "No runtime schema12 activation, import implementation or arbitrary crash proof"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "utc": "2026-11-08T08:16:57.586091+00:00",
+  "swapusage": "vm.swapusage: total = 15360.00M  used = 14017.69M  free = 1342.31M  (encrypted)",
+  "swapusage_exit": 0,
+  "files": [
+    {
+      "name": "kernelcore",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2025-07-25T07:51:13.058748+00:00",
+      "modified_utc": "2025-09-04T23:36:28.647505+00:00"
+    },
+    {
+      "name": "swapfile0",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-10-27T08:03:34.863128+00:00",
+      "modified_utc": "2026-10-27T08:03:34.877505+00:00"
+    },
+    {
+      "name": "swapfile1",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-10-27T08:04:29.744861+00:00",
+      "modified_utc": "2026-10-27T08:04:29.746333+00:00"
+    },
+    {
+      "name": "swapfile10",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-11-08T04:40:43.717878+00:00",
+      "modified_utc": "2026-11-08T04:40:43.742329+00:00"
+    },
+    {
+      "name": "swapfile11",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-11-08T06:37:37.011231+00:00",
+      "modified_utc": "2026-11-08T06:37:37.045022+00:00"
+    },
+    {
+      "name": "swapfile12",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-11-08T07:47:09.687313+00:00",
+      "modified_utc": "2026-11-08T07:47:09.770235+00:00"
+    },
+    {
+      "name": "swapfile13",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-11-08T07:58:51.346378+00:00",
+      "modified_utc": "2026-11-08T07:58:51.379152+00:00"
+    },
+    {
+      "name": "swapfile14",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-11-08T07:59:05.783015+00:00",
+      "modified_utc": "2026-11-08T07:59:05.799511+00:00"
+    },
+    {
+      "name": "swapfile2",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-10-27T08:33:36.235141+00:00",
+      "modified_utc": "2026-10-27T08:33:36.236496+00:00"
+    },
+    {
+      "name": "swapfile3",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-11-05T15:17:29.705697+00:00",
+      "modified_utc": "2026-11-05T15:17:29.742909+00:00"
+    },
+    {
+      "name": "swapfile4",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-11-06T18:04:35.053598+00:00",
+      "modified_utc": "2026-11-06T18:04:35.250160+00:00"
+    },
+    {
+      "name": "swapfile5",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-11-07T15:13:40.783548+00:00",
+      "modified_utc": "2026-11-07T15:13:40.823178+00:00"
+    },
+    {
+      "name": "swapfile6",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-11-07T13:18:48.968509+00:00",
+      "modified_utc": "2026-11-07T13:18:48.979910+00:00"
+    },
+    {
+      "name": "swapfile7",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-11-07T22:44:53.701559+00:00",
+      "modified_utc": "2026-11-07T22:44:53.738015+00:00"
+    },
+    {
+      "name": "swapfile8",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-11-08T02:50:30.573299+00:00",
+      "modified_utc": "2026-11-08T02:50:30.608047+00:00"
+    },
+    {
+      "name": "swapfile9",
+      "logical_bytes": 1073741824,
+      "allocated_bytes": 1073741824,
+      "birth_utc": "2026-11-08T04:40:28.726392+00:00",
+      "modified_utc": "2026-11-08T04:40:28.815182+00:00"
+    }
+  ],
+  "interpretation": "VM/swap files exist and remain owned by macOS. Metadata cannot identify the originating workload or prove the growth producer fixed. No OS memory/process/file changes."
+}

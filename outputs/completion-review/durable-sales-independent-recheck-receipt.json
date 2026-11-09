@@ -1,0 +1,20 @@
+{
+  "createdUtc": "2026-11-07T18:02:40.750308+00:00",
+  "status": "isolated-candidate-independently-verified",
+  "review": "c237c174-ace5-4aad-b677-793e704e7504",
+  "inputManifest": "outputs/completion-review/durable-sales-recheck-inputs.json",
+  "allNineHashesMatched": true,
+  "independentVerification": {
+    "focusedTests": 41,
+    "disposableProbes": 6,
+    "analysis": "passed"
+  },
+  "rootFullFlutterTests": 857,
+  "runtimeActivated": false,
+  "limits": [
+    "global reconciliation",
+    "expense/purchase commands",
+    "migration/cutover",
+    "UI/native/benchmarks/CI/release"
+  ]
+}

@@ -1,0 +1,3 @@
+# Historical native verification helpers
+
+These files preserve the exact task-specific manual probes used during the dated Step 4 session. They are not maintained end-user commands or a portable UI-test harness. Their original checkout/helper/ADB paths, temporary dependencies and unsupported-command behavior are known limitations; do not rerun them to establish current acceptance. Actual observations, failures, cleanup and limits are stated in docs/phases/01-step4-review.md. Current behavior is covered by maintained app tests and explicitly scoped native evidence. Live TalkBack verification is owner-excluded and remains unverified.

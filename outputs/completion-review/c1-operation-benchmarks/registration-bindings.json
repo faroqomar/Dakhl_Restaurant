@@ -1,0 +1,23 @@
+[
+  {
+    "path": "tool/dev_dashboard/run_benchmarks.py",
+    "beforeSha256": "fd84844670c5a555d545e7262a4152c3724da628bc71b8282d6d03b040938c8e",
+    "afterSha256": "dade20315b5bd2f3f4bf95fe2d3aac15fba44301357dc48518c31c17ed2c9116",
+    "beforeBytes": 31491,
+    "afterBytes": 32278
+  },
+  {
+    "path": "tool/dev_dashboard/operations.json",
+    "beforeSha256": "002336e6a2eac1aa35d50d87a554b4f8ce631be37b30229814cb624e476bc16d",
+    "afterSha256": "7706e37c0cb0a22e996588fc04d863f9adc907f6983e085c8db3fa4a5cdce40e",
+    "beforeBytes": 14851,
+    "afterBytes": 24550
+  },
+  {
+    "path": "tool/dev_dashboard/tests/test_app_runner.py",
+    "beforeSha256": "c25ea5bae14971b80646e34a201d34f51b740dc24e6aad2c0bcc0a9fdf39fde2",
+    "afterSha256": "325942295aa61893fc8a38398e97c690b2230913bf1de562ce734daafc51d4c6",
+    "beforeBytes": 31705,
+    "afterBytes": 31895
+  }
+]

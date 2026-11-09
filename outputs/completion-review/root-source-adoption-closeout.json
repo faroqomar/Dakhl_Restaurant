@@ -1,0 +1,75 @@
+{
+  "recordedUtc": "2026-11-08T04:58:11.595224+00:00",
+  "scope": "F10 source adoption and transfer correction recheck closeout; native/benchmark workers remain active",
+  "baseline": {
+    "freeKiB": 109854212,
+    "appGitKiB": 18430196,
+    "engineGitKiB": 42964
+  },
+  "closeout": {
+    "freeKiB": 98503668,
+    "appGitKiB": 18430636,
+    "engineGitKiB": 44528
+  },
+  "temporaryGitStores": {
+    "appGit": 0,
+    "engineGit": 0
+  },
+  "cleanup": {
+    "removedBytes": 0,
+    "reason": "No obsolete task-owned outputs confirmed; active native build caches and canonical review/failed-attempt evidence retained"
+  },
+  "retained": [
+    {
+      "path": "outputs/completion-review/collation-consumer-adoption",
+      "purpose": "Exact before/after pin proof, reviewed README remedy, current guard and independent adoption",
+      "sizeKiB": 60
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/repaired-1",
+      "purpose": "Canonical repair regressions/oracle/source manifest and independent review",
+      "sizeKiB": 192
+    },
+    {
+      "path": "outputs/completion-review/c1-native",
+      "purpose": "Active native campaigns and preserved failed attempts",
+      "sizeKiB": 528
+    }
+  ],
+  "currentCounts": {
+    "closed": 7,
+    "partial": 43,
+    "withoutRecordedProgress": 163,
+    "total": 213
+  },
+  "limits": [
+    "Concurrent shared-volume free-space movement is not attributed without producer measurements",
+    "This closeout does not claim active native/benchmark tasks completed"
+  ],
+  "projectKiB": {
+    ".": 28045320,
+    "../Madar_Engine": 1419548,
+    "build": 1100004,
+    ".dart_tool": 595304
+  },
+  "deltaKiB": {
+    "freeKiB": -11350544,
+    "appGitKiB": 440,
+    "engineGitKiB": 1564
+  },
+  "memoryAtStepClose": {
+    "recordedUtc": "2026-11-08T05:00:53.991333+00:00",
+    "daftar": {
+      "sources": 297,
+      "pending": [
+        "PHASES.md"
+      ],
+      "failed": {}
+    },
+    "madar": {
+      "sources": 122,
+      "pending": [],
+      "failed": {}
+    }
+  }
+}

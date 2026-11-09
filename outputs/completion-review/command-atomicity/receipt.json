@@ -1,0 +1,47 @@
+{
+  "status": "13 accepted conformance tests passed; independent review pending",
+  "testSource": "test/accounting/journal_atomicity_fault_injection_test.dart",
+  "tests": {
+    "startedUtc": "2026-11-07T20:46:46.829514+00:00",
+    "endedUtc": "2026-11-07T20:46:53.180070+00:00",
+    "elapsedSeconds": 6.350327709,
+    "exitCode": 0
+  },
+  "analysis": {
+    "startedUtc": "2026-11-07T20:46:56.111510+00:00",
+    "endedUtc": "2026-11-07T20:47:00.239619+00:00",
+    "elapsedSeconds": 4.127953167,
+    "exitCode": 0
+  },
+  "engineCommit": "d316fd6076375daa3f412889f73eaebfeeb5d4d4",
+  "checkpoints": [
+    "transaction.before_commit",
+    "transaction.after_commit"
+  ],
+  "commandKinds": [
+    "sale",
+    "return",
+    "void",
+    "expense",
+    "invoice_with_immediate_payment",
+    "supplier_payment"
+  ],
+  "coverage": {
+    "beforeCommit": 6,
+    "afterCommitResolved": 6,
+    "afterCommitUnresolvedReopenAndInterleave": 1,
+    "reopen": true,
+    "changedIntentRejectedWithoutWrites": 6,
+    "trackedStockSale": true,
+    "mixedFundingTwoJournalInvoice": true
+  },
+  "limits": [
+    "deterministic exception injection at named SDK checkpoints",
+    "clean close/reopen only, not arbitrary process or power loss",
+    "no native/device/fsync/disk-full/multiprocess proof",
+    "candidate schema12 only; runtime remains11",
+    "no row/phase/design/release approval"
+  ],
+  "memoryDelivery": "Parent integrates dated log in aggregate app-only sync/check; pending at worker handoff",
+  "sourceManifest": "verified-inputs.json"
+}

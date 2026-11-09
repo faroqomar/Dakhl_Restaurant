@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/Users/eros/.t3/userdata/device/targets/t3-b91493306db60c230eefae24/agent-device",
+    "close",
+    "com.eros.dakhlrestaurant.phase00"
+  ],
+  "startUtc": "2026-11-08T06:45:57.156363+00:00",
+  "endUtc": "2026-11-08T06:45:58.025213+00:00",
+  "elapsedSeconds": 0.868863375,
+  "exitCode": 0,
+  "log": "close-1.log"
+}

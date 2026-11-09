@@ -1,0 +1,112 @@
+import 'dart:io';
+
+import 'package:flutter_test/flutter_test.dart';
+import 'package:madar_flutter_adapters/madar_flutter_adapters.dart';
+import 'package:path/path.dart' as p;
+
+import '../../integration_test/support/c1_restart_fixture.dart';
+
+void main() {
+  const id = 'c879c0bd-63bb-4a9d-9ea5-8fcd512df775';
+  late Directory namespace;
+  setUp(() async {
+    final allocated = await Directory.systemTemp.createTemp('c1-restart-test-');
+    namespace = Directory(await allocated.resolveSymbolicLinks());
+  });
+  tearDown(() async {
+    if (await namespace.exists()) await namespace.delete(recursive: true);
+  });
+
+  test(
+    'marked fixture reopens exact state without preparing it again',
+    () async {
+      final first = await C1RestartFixture.open(
+        namespace: namespace,
+        fixtureId: id,
+      );
+      addTearDown(first.close);
+      await first.prepare();
+      final before = await first.report();
+      expect(before['checkpointExact'], isTrue);
+      expect(before['products'], hasLength(3));
+      expect(before['stockEntries'], 2);
+      final revision = first.origin.repository.snapshot!.revision;
+      await first.close();
+
+      final reopened = await C1RestartFixture.open(
+        namespace: namespace,
+        fixtureId: id,
+      );
+      addTearDown(reopened.close);
+      expect(reopened.initializedThisLaunch, isFalse);
+      expect((await reopened.report())['checkpointExact'], isTrue);
+      expect(reopened.origin.repository.snapshot!.revision, revision);
+      await expectLater(reopened.prepare(), throwsA(isA<C1QaException>()));
+    },
+  );
+
+  test('existing intent cannot reconstruct a missing account store', () async {
+    final first = await C1RestartFixture.open(
+      namespace: namespace,
+      fixtureId: id,
+    );
+    addTearDown(first.close);
+    await first.prepare();
+    final accountRoot = first.originDirectory;
+    await first.close();
+    await accountRoot.delete(recursive: true);
+    await expectLater(
+      C1RestartFixture.open(namespace: namespace, fixtureId: id),
+      throwsA(isA<C1QaException>()),
+    );
+    expect(await accountRoot.exists(), isFalse);
+  });
+
+  test('unknown ownership marker is preserved and refused', () async {
+    await File(p.join(namespace.path, '.c1-restart-namespace'))
+        .writeAsString('unknown owner');
+    await expectLater(
+      C1RestartFixture.open(namespace: namespace, fixtureId: id),
+      throwsA(isA<C1QaException>()),
+    );
+    expect(
+      await File(p.join(namespace.path, '.c1-restart-namespace'))
+          .readAsString(),
+      'unknown owner',
+    );
+  });
+
+  test(
+    'real file bytes pass export, preview and separate-store import',
+    () async {
+      final fixture = await C1RestartFixture.open(
+        namespace: namespace,
+        fixtureId: id,
+      );
+      addTearDown(fixture.close);
+      await fixture.prepare();
+      final file = File(p.join(fixture.root.path, 'test-export.json'));
+      final transfer = NativeFileTransfer(
+        maxBytes: 20 * 1024 * 1024,
+        fileName: 'test-export.json',
+        mimeType: 'application/json',
+        save: (bytes) async {
+          await file.writeAsBytes(bytes, flush: true);
+          return file.uri;
+        },
+        pick: () => file.readAsBytes(),
+      );
+      expect(await fixture.exportUsing(transfer), 'exported');
+      expect(await fixture.selectImportUsing(transfer), 'selected');
+      expect(await fixture.confirmImport(), 'imported');
+      final report = await fixture.report();
+      expect(report['importExact'], isTrue);
+      expect(report['checkpointExact'], isTrue);
+      expect(report['preImportBackupPresent'], isTrue);
+      expect(
+        fixture.target!.repository.document!.toJson(),
+        fixture.origin.repository.document!.toJson(),
+      );
+    },
+  );
+}

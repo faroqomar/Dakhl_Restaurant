@@ -1,0 +1,22 @@
+00:00 +0: loading /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/integration_test/phase01_native_ui_test.dart
+Running Gradle task 'assembleDebug'...                          
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/Users/eros/.gradle/wrapper/dists/gradle-9.3.1-all/9ot9r568e8zfvvd4mn8rbu1j0/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Running Gradle task 'assembleDebug'...                             24.8s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...        1,674ms
+00:00 +0: native Android keyboard and cancel retain the synthetic invoice
+{"event":"madar.preferences.open","level":"INFO","operation_id":"preferences-1","outcome":"success","elapsed_us":873420}
+{"event":"madar.preferences.read","level":"INFO","operation_id":"preferences-2","outcome":"success","elapsed_us":60197}
+{"event":"madar.preferences.read","level":"INFO","operation_id":"preferences-3","outcome":"success","elapsed_us":51614}
+{"event":"madar.preferences.replace","level":"INFO","operation_id":"preferences-4","outcome":"success","elapsed_us":271489}
+PHASE01_ANDROID_STAGE_keyboard
+PHASE01_ANDROID_STAGE_retained
+{"event":"madar.preferences.replace","level":"INFO","operation_id":"preferences-5","outcome":"success","elapsed_us":42616}
+{"event":"madar.preferences.read","level":"INFO","operation_id":"preferences-6","outcome":"success","elapsed_us":18535}
+PHASE01_ANDROID_RESULT={"pid":7532,"logicalWidth":411.42857142857144,"logicalHeight":923.4285714285714,"devicePixelRatio":2.625,"initialKeyboardInset":0.0,"actualKeyboardInset":336.3809523809524,"runtimeTextScale":1.0,"narrowLayout":true,"saveAndCancelAboveKeyboard":true,"cancelRetainedSyntheticText":true,"syntheticDraftDiscarded":true,"originalPreferencesRestored":true,"initialSnapshotPresent":true,"domainSaveSubmitted":false}
+00:20 +1: (tearDownAll)
+00:21 +1: All tests passed!

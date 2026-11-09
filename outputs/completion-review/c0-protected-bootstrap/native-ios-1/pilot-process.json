@@ -1,0 +1,15 @@
+{
+  "pid": 94105,
+  "argv": [
+    "/Users/eros/Dev/flutter/bin/flutter",
+    "test",
+    "--no-pub",
+    "-d",
+    "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
+    "--reporter",
+    "expanded",
+    "--fail-fast",
+    "integration_test/c0_protected_bootstrap_native_test.dart"
+  ],
+  "startUtc": "2026-11-08T07:47:00.534217+00:00"
+}

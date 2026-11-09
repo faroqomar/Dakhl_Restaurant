@@ -1,37 +1,37 @@
-# مراجعة شاملة للتطبيق وتجربة الاستخدام
+# Complete application and usability audit
 
-الحالة: فحص ومقترحات فقط؛ لم تنفذ إصلاحات التطبيق. التاريخ: 2026-10-26. المصدر: طلب المالك فحص جميع التدفقات والواجهة وتجربة الاستخدام وتقديم قائمة كاملة بالتغييرات المقترحة وأسبابها.
+Status: inspection and proposals only; application fixes were not implemented. Date: 2026-10-26. Source: the owner requested inspection of all flows, UI and usability, with a complete list of proposed changes and reasons.
 
-## النطاق والنتيجة
+## Scope and result
 
-راجعت نسخة المصدر 1.11.0 / صيغة 9 في الأقسام الثلاثة عشر، باستخدام حسابات توضيحية معزولة. بقيت حسابات المطعم ومسودة المستخدم في المتصفح دون تغيير. لم تحدث النسخة المثبتة.
+Reviewed source version 1.11.0 / schema 9 across all thirteen sections using isolated illustrative accounts. Restaurant accounts and the owner's browser draft remained unchanged. The installed application was not updated.
 
-النتيجة [تقرير كامل](../planning/2026-10-26-full-app-ux-audit.md) ونسخة تفاعلية في `outputs/ux-audit-2026-10-26/report.html`: **63 ملاحظة، منها 16 P1 و43 P2 و4 P3**. لم تثبت حالة P0 أو خسارة فعلية في سجلات المطعم. لكل ملاحظة دليل وأثر واقتراح واختبار قبول؛ توجد تفرقة بين السلوك المعاد إنتاجه والقياس ومراجعة المصدر وتوصيات التصميم.
+Result: [complete report](../planning/2026-10-26-full-app-ux-audit.md) and an interactive version at `outputs/ux-audit-2026-10-26/report.html`: **63 findings: 16 P1, 43 P2 and 4 P3**. No P0 or actual loss of restaurant records was established. Each finding includes evidence, impact, a proposal and an acceptance test; reproduced behavior, measurements, source review and design recommendations are distinguished.
 
-أهم النتائج: تعديل مصروف من يوم آخر في الكشف يفتح النموذج بيوم خاطئ، مرشح القاصة يعرض توزيعاً خاطئاً للمصروف المشترك، معاينة مجموع اليومي تجمع حصص القاصة أيضاً، تعارض معاينتي الرصيد بفاتورة المشتريات، تقريب الكميات العشرية في الشاشة، انسداد أول فاتورة دون مورد، فقدان المسودات، وإمكان محو فاتورة بيع مكتملة بالتراجع العام دون إلغاء محفوظ. ظهر أيضاً تعذر الوصول للدفع عند تكبير الواجهة 200% بنافذة 900×580.
+Key findings: editing a statement expense from another day opens the wrong date; the cashbox filter displays incorrect allocation for shared expenses; the daily-total preview includes cashbox shares; purchase-invoice balance previews conflict; decimal quantities are rounded on screen; the first invoice is blocked without a supplier; drafts are lost; and general undo can remove a completed sale without a saved cancellation. Payment also became inaccessible at actual 200% zoom in a 900×580 window.
 
-## التحقق الفعلي
+## Actual verification
 
-- `npm test`: نجح 96 من 96. بعض الثغرات المكتشفة غير مغطاة بهذه الاختبارات.
-- فحص كل الأقسام وتصويرها، مع تدفقات البيع والإلغاء وفشل الحفظ وإعادته، الأصناف والمخزن والتلف، المصروفات والتحويل للقاصة وحذفه والتراجع، المورد والفاتورة والتسديد، العامل ودفعاته واستلامه، الخانات والإعدادات.
-- فحص 7 أحجام نافذة للمبيعات والقائمة مفتوحة ومغلقة. لم يظهر تجاوز أفقي للصفحة في هذه الحالات، وبقي الدفع داخل النافذة دون تكبير. فحص أقسام رئيسية أخرى عند 900×580 دون تجاوز أفقي للصفحة.
-- تكبير Electron الفعلي 200%: ارتفاع العرض المنطقي 290px، نهاية زر الدفع عند 485px مع منع تمرير الصفحة.
-- قياس تباين نص الحفظ: نحو 4.33:1 على خلفية القائمة، أقل من 4.5:1 للنص العادي. هذه ليست شهادة مطابقة WCAG شاملة.
-- قياس توضيحي لسجل 5,000 عملية: نحو 798ms للبناء والتخطيط و55,153 عنصر DOM. قياس محلي مفرد لا يمثل كل الأجهزة.
-- توليد ملفات PDF للمصروفات والمشتريات والبيع من بيانات الاختبار وفحص الصفحة الأولى بصرياً. حوارات النظام الفعلية والطابعات وقارئ الباركود وVoiceOver لم تختبر بهذه الجولة.
-- فحص مصادر وروابط وصور جميع الملاحظات؛ محفوظة مع الأدلة ومشغلات الفحص في مجلد التقرير.
-- الملفات المرجعية الإضافية التي ذكرتها مهارة critique لم تكن موجودة في الحزمة؛ التقرير يوضح استخدام قائمة تقييم محلية صريحة بدلاً من ادعاء قراءتها.
+- `npm test`: 96/96 passed. Some discovered gaps are not covered by these tests.
+- Inspected/captured every section, including sale/cancellation/save failure/retry; products, stock and spoilage; expenses, cashbox transfer/deletion/undo; supplier/invoice/payment; worker payments/receipt; categories and settings.
+- Tested 7 sales window sizes with navigation open/closed. No page-level horizontal overflow appeared in these cases; payment stayed inside the unzoomed window. Other main sections were checked at 900×580 without page-level horizontal overflow.
+- Actual Electron zoom at 200%: logical viewport height 290px, payment-button bottom 485px, with page scrolling prevented.
+- Save-text contrast measured approximately 4.33:1 against the menu background, below 4.5:1 for normal text. This is not comprehensive WCAG certification.
+- An illustrative 5,000-operation history took approximately 798ms to build/layout and contained 55,153 DOM elements. This is one local measurement, not a result for every device.
+- Generated expense, purchase and sales PDFs from test data and visually inspected their first pages. Actual system dialogs, printers, barcode reader and VoiceOver were not tested in this run.
+- Checked the sources, links and images for all findings; these and the verification harnesses are saved in the report folder.
+- Extra reference files mentioned by the critique skill were absent from its package; the report explicitly uses a local evaluation checklist rather than claiming those files were read.
 
-## الحدود والخطوة التالية
+## Boundaries and next action
 
-المراجعة لا توافق تلقائياً على كل المقترحات. لا تغيّر النطاق المالي أو تفصل المشروع عن كونه لمطعم واحد. تبقى صور المراجع والدفع السريع دون إدخال مبلغ مستلم والاختصارات وتخطيط المبيعات المعتمد متطلبات محفوظة، ويحدد طلب النوافذ المنبثقة أدناه الاتجاه الجديد للتنقل.
+This review does not automatically approve every proposal, change financial scope or turn the project into a multi-restaurant product. Reference photos, quick payment without entering cash received, shortcuts and the approved sales layout remain requirements. The owner's pop-up request below establishes the new navigation direction.
 
-التوصية: معالجة أخطاء الدقة والاسترجاع أولاً، ثم تبسيط التدفقات، ثم الوصول والأداء والتفاصيل البصرية. الإضافات مثل الطلبات المعلقة والمرتجع الجزئي والوصفات والطباعة الحرارية خيارات مستقلة غير منفذة وليست محسوبة ضمن عدد العيوب.
+Recommendation: address accuracy/recovery errors first, then simplify flows, then accessibility, performance and visual details. Held orders, partial returns, recipes and thermal printing are separate unimplemented options, excluded from the defect count.
 
-## إضافة المالك أثناء المراجعة
+## Owner addition during review
 
-طلب المالك إضافة أن القوائم/اللوحات الجانبية مزعجة ويجب أن تصبح نوافذ منبثقة. أضيف D64 كاتجاه تصميم مطلوب: قائمة تنقل تظهر فوق الصفحة ونماذج قصيرة في حوار منبثق، مع حماية المسودات وعدم ضغط مساحة العمل. اقتراح التنفيذ هو حوارات داخل التطبيق؛ فصل نوافذ نظام التشغيل يحتاج تحديداً إذا كان مقصوداً. لم ينفذ هذا التغيير في جولة الفحص.
+The owner said side menus/panels were distracting and should become pop-ups. Added D64 as a required design direction: navigation over the page and short forms in dialogs, protecting drafts and avoiding compression of the workspace. The proposed implementation uses in-application dialogs; separate operating-system windows require clarification if intended. This change was not implemented during the inspection.
 
-أصبح الإجمالي **64 بنداً: 63 ملاحظة مراجعة + اتجاه تصميم طلبه المالك**، بتوزيع 16 P1 و44 P2 و4 P3. طلب النوافذ المنبثقة يحل محل الحفاظ على شكل القائمة الجانبية السابقة في التصميم المقترح.
+The total became **64 items: 63 audit findings plus one owner-requested design direction**, comprising 16 P1, 44 P2 and 4 P3. The pop-up direction supersedes preserving the old sidebar appearance in the proposed design.
 
-التحقق النهائي: التقرير يعرض 64 بنداً، والبحث يعثر على D64 وإحالته في D18. تحققت مسارات جميع روابط المخرجات المحلية وعددها 15، واستجاب كل منها بنجاح. هذه الملفات مصدر مقترحات المراجعة وليست إثباتاً لتنفيذ الإصلاحات.
+Final verification: the report displays 64 items; search finds D64 and its D18 reference. All 15 local output-link paths resolved successfully. These files are proposal evidence, not proof the fixes were implemented.

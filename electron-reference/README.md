@@ -1,94 +1,96 @@
-# دفتر · حسابات المطعم
+# Daftar · Restaurant accounts
 
-تطبيق Mac يعمل بدون إنترنت، مبني على تصميم Sketch المعتمد بالأخضر الهادئ.
+Historical reference README, translated into English under the owner's documentation-language direction. Version/installation statements below retain the original document's historical context; this translation is not a fresh installation audit. UI labels are English descriptions of the unchanged Arabic RTL application.
 
-## نطاق المشروع والتوثيق
+An offline Mac application based on the approved Sketch design and calm green palette.
 
-**دفتر مشروع خاص بمطعم واحد فقط.** الفواتير والحسابات والحملات الإعلانية والأفكار والتطبيق الخاص كلها تخص المطعم نفسه. هذا هو النطاق المعتمد بتوجيه المالك بتاريخ 2026-10-16.
+## Project scope and documentation
 
-الحسابات والفواتير الموصوفة أدناه موجودة في التطبيق الحالي؛ الحملات والأفكار لها سجلات توثيق ومتابعة، وإضافة وظائف لها داخل التطبيق تحتاج متطلبات وتنفيذاً لاحقاً.
+**Daftar is a dedicated project for one restaurant only.** Invoices, accounts, advertising campaigns, ideas and the dedicated application all serve that restaurant. This is the scope approved by owner direction on 2026-10-16.
 
-- [دليل التوثيق والمتابعة](docs/README.md): نقطة البداية لكل وثائق المشروع.
-- [نطاق المطعم وحالة القدرات](docs/reference/project-scope.md).
-- [قواعد الحسابات](docs/reference/accounting-rules.md) و[بنية التطبيق والبيانات](docs/reference/application.md).
-- [سجل الأفكار](docs/planning/ideas.md) و[سجل الحملات](docs/planning/campaigns.md).
-- [القرارات](docs/decisions/README.md) و[سجلات العمل](docs/log/README.md).
-- [استخدام ذاكرة Hindsight](docs/how-to/memory.md): بنك المشروع `project-daftar`، والتوثيق المحلي هو المرجع المعتمد.
+Accounts/invoices described below exist in the current application; campaigns/ideas have documentation and tracking registers, while adding their functions to the application needs later requirements and implementation.
 
-## فتح التطبيق
+- [Documentation and tracking guide](docs/README.md): starting point for all project documentation.
+- [Restaurant scope and capability status](docs/reference/project-scope.md).
+- [Accounting rules](docs/reference/accounting-rules.md) and [application/data architecture](docs/reference/application.md).
+- [Idea register](docs/planning/ideas.md) and [campaign register](docs/planning/campaigns.md).
+- [Decisions](docs/decisions/README.md) and [work logs](docs/log/README.md).
+- [Hindsight memory use](docs/how-to/memory.md): project bank `project-daftar`; local documentation is authoritative.
 
-النسخة الحالية 1.10.1 مثبتة في `/Users/eros/Applications/Daftar.app`، ومعها اختصار `دفتر.app` على سطح المكتب. افتحها بنقرتين. نسخة البناء موجودة أيضاً في `dist/Daftar-darwin-arm64/Daftar.app`. التطبيق مخصص لأجهزة Mac بمعالج Apple Silicon؛ البيانات تبقى مستقلة عن مكان التطبيق.
+## Open the application
 
-## الموجود حالياً
+Version 1.10.1 is installed at `/Users/eros/Applications/Daftar.app`, with a desktop shortcut using the historical Arabic Daftar filename (JSON Unicode escapes: `"\u062F\u0641\u062A\u0631.app"`). Double-click to open. The packaged build also exists at `dist/Daftar-darwin-arm64/Daftar.app`. The application targets Apple Silicon Macs; data remains independent of the application location.
 
-- مراجعة الواجهة 1.12.0: قائمة تنقل ونماذج منبثقة، استعادة مسودة البيع، تصحيح المخزون، فلاتر وتقارير إضافية، وحالة النسخ والاستعادة. [تفاصيل إصلاح البنود الـ64](docs/planning/2026-10-26-ux-audit-resolution.md). البناء الجديد منفصل عن التطبيق المثبت.
+## Available capabilities
 
-- المبيعات في المصدر ومعاينة 1.12.0: أصناف مصورة يساراً وفاتورة ثابتة يميناً، تمرير داخلي للقوائم، خصم ودفع بالقيمة الدقيقة دون كتابة النقد المستلم، ونوع طلب قابل للتخصيص من الإعدادات، مع وصل PDF وسجل وإلغاء يعيد الكمية. التطبيق المثبت يبقى 1.10.1 خلال المراجعة الحالية.
-- مخزن أصناف البيع: أسعار وكميات افتتاحية وتزويد ونقص وتنبيه للمخزون القليل وسجل حركة، مع خيار بيع وجبة دون تتبّع كمية. المخزون مستقل عن مكونات وكراتين الموردين؛ لا يوجد تحويل وصفات تلقائي.
-- ستة اختصارات بالأعلى قابلة للتخصيص لأي واجهة رئيسية من الإعدادات، ومحفوظة ضمن النسخ الاحتياطية.
-- [طريقة استخدام المبيعات والمخزن والاختصارات](docs/how-to/sales-inventory.md). المبيعات نقدية ضمن اليومي؛ تدخل لقطة الباقي دون تكرار إضافتها إلى القاصة.
+- UI review 1.12.0: popout navigation/forms, sales-draft recovery, inventory correction, additional filters/reports and backup/restore status. [Details of the 64-item remediation](docs/planning/2026-10-26-ux-audit-resolution.md). The new build is separate from the installed application.
 
-- صفحة فواتير المشتريات: اختيار المورد وإدخال الفواتير الجديدة أو القديمة بتاريخها، مع كمية وسعر الكارتون والقطعة. تحليل المشتريات حسب المادة والفترة والمورد يبيّن الكميات والمبالغ وتغير الأسعار؛ ووصل التسديد يعرض المتبقي بعد الدفع.
-- تصدير فاتورة اليوم أو أي قائمة مورد إلى PDF محلي بحجم A4، بنفس ألوان دفتر، مع عربية واضحة وأرقام إنكليزية وفواصل آلاف. فاتورة اليوم تشمل المصاريف ومصادرها والأرصدة والدجاج وحركات القاصة؛ وقائمة المورد تشمل المواد وتسديداتها وتوزيع الدفعات بين القائمة والديون. الجداول تمتد على صفحات مرقّمة عند الحاجة. اختار مكان الحفظ من زر «تصدير PDF» أو زر PDF بجانب القائمة.
+- Sales in source/preview 1.12.0: illustrated products on the left and a fixed ticket on the right, internal list scrolling, discount/exact-value payment without entering cash received, and order types configurable in settings, with PDF receipt, history and voiding that restores quantity. Installed version remains 1.10.1 during the current review.
+- Sellable-product inventory: prices, opening quantities, restock, shortages, low-stock warnings and movement history, with optional meals sold without quantity tracking. Inventory is independent of supplier ingredients/cartons; there is no automatic recipe conversion.
+- Six top shortcuts, configurable in settings for any main screen and included in backups.
+- [Sales, inventory and shortcut usage](docs/how-to/sales-inventory.md). Cash sales belong to the daily account and enter the remaining-cash snapshot without duplicate addition to the cashbox.
 
-- سجل لكل يوم مع اختيار التاريخ والرجوع للأيام السابقة.
-- زر «تعديل تاريخ الفاتورة» ينقل سجل اليوم كله: المصاريف والتسديدات والدجاج والأرصدة وحركات القاصة. خيار تصحيح الأيام التالية ينقل الأيام ضمن المدة التي تحددها بنفس فرق التاريخ، مع معاينة قبل الحفظ ومنع تداخل يومين. تواريخ قوائم الموردين والديون تبقى مستقلة، ولا يسمح بتاريخ تسديد يسبق قائمته أو الدين المسجّل. النقل قابل للتراجع خلال الجلسة.
-- الصمون، الخبز، الفلافل والأسواق، وإمكانية إضافة خانات تحفظ أسماءها. تختار لكل خانة «رئيسية» أو «إضافية» عند الإضافة أو تغيّر نوعها من قسم الخانات؛ الاختيار محفوظ محلياً وضمن النسخ الاحتياطية.
-- الأرقام العربية والفارسية تتحول إلى إنكليزية أثناء الإدخال. المبالغ والأعداد والكميات تظهر بفواصل آلاف، والكسور تبقى كما كتبتها. أرقام القوائم والهاتف تحافظ على أصفارها وتنسيقها.
-- مبلغ وملاحظات اختيارية لكل مصروف، مع تعديل السجل ونقله ليوم آخر وحذفه.
-- مصدر دفع في آخر النموذج: الرصيد اليومي افتراضياً، القاصة، أو مشترك بمبلغ محدد من كل مصدر. مجموع الحصتين يجب أن يساوي المصروف.
-- رصيد متبقٍ لكل يوم تحت قائمة المصاريف: تدخل الباقي الفعلي بعد المصاريف الحالية، ثم تودعه كله أو جزء منه بالقاصة.
-- مجموع تلقائي للمصاريف، أو مجموع يدوي تختاره وتعيده للتلقائي متى أردت.
-- الرصيد الكلي ينحفظ عند تسجيل الباقي: مجموع مصاريف اليومي + الباقي الفعلي + المبالغ المودعة منه بالقاصة سابقاً. حصة القاصة من المصروف لا تدخل في مجموع مصاريف اليومي. الأرصدة اليدوية والتاريخية المحفوظة لا تُستبدل عند فتح الحساب.
-- عدد الدجاج المصروف والمتبقي، بدون دخوله في المصاريف.
-- القاصة: إيداع وسحب بتاريخ وملاحظات وسجل كامل للحركات.
-- تراجع عن التغييرات خلال الجلسة الحالية، وتصدير واستيراد نسخة احتياطية.
+- Purchase Invoices page: choose a supplier and enter new/historical invoices with dates and carton/piece quantity/prices. Purchase analysis by material, period and supplier shows quantities, amounts and price changes; payment receipts show the remainder after payment.
+- Export the daily statement or any supplier invoice to a local A4 PDF in Daftar's colors, with clear Arabic text, English digits and thousands separators. The daily report includes expenses, funding sources, balances, chicken counts and cashbox movements; supplier invoices include materials, payments and allocation between invoice/debt. Tables span numbered pages when needed. Choose the save location using **Export PDF** or the invoice's PDF button.
 
-حصة القاصة من المصروف تُخصم تلقائياً، وتعديل المصروف أو حذفه يصحّحها. إيداع الرصيد المتبقي يضيف المبلغ للقاصة ويخصمه من اليومي في عملية حفظ واحدة، ولا يمكن إيداع أكثر من المتاح. يظهر مصدر الحركة في سجل القاصة، ويمكن تعديل الإيداع أو حذفه لإرجاع المبلغ إلى اليومي. لتسجيل الرصيد الموجود بالقاصة عند البدء، سجّل إيداعاً أولياً مع ملاحظة «رصيد افتتاحي».
+- A record for every day with date selection and access to earlier days.
+- **Edit invoice date** moves the entire day's record: expenses, payments, chicken counts, balances and cashbox movements. The following-days correction option moves days in the selected period by the same date offset, previewing before saving and preventing collisions. Supplier-invoice/debt dates remain independent; payment cannot precede its invoice/recorded debt. The move is undoable during the session.
+- Samoon, bread, falafel and market categories, plus custom categories preserving names. Choose **Primary** or **Additional** when adding a category or change its type in the Categories section; the selection is stored locally and in backups.
+- Arabic/Persian digits normalize to English digits during entry. Amounts, counts and quantities show thousands separators, retaining entered fractions. Invoice/phone numbers preserve leading zeros and formatting.
+- An amount and optional notes per expense, with editing, moving to another day and deletion.
+- Funding source at the end of the form: daily balance by default, cashbox or shared with a specified amount from each. Both shares must total the expense.
+- Remaining cash per day beneath expenses: enter actual cash left after current expenses, then deposit all or part into the cashbox.
+- Automatic expense total or a manually selected total, with return to automatic at any time.
+- Overall balance is saved when remaining cash is recorded: daily expenses + actual remaining cash + earlier deposits of that cash into the cashbox. Cashbox-funded expenses do not enter daily totals. Saved manual/historical balances are not replaced when opening accounts.
+- Issued/remaining chicken counts without including them in expenses.
+- Cashbox deposits/withdrawals with dates, notes and complete movement history.
+- Undo changes during the current session and export/import backups.
 
-الرصيد المتبقي هو الباقي الفعلي بعد المصاريف المسجّلة وقت إدخاله، لذلك لا تُخصم المصاريف السابقة مرة ثانية. الرصيد الكلي اليومي يحسب من مجموع حصص مصاريف اليومي + المتبقي + ما تم إيداعه منه بالقاصة. مصاريف القاصة وحصتها من الدفع المشترك لا تدخل في مجموع مصاريف اليومي. إعادة تسجيل الباقي تعتمد المبلغ الجديد نقطة بداية للحركات التالية. المصاريف القديمة تُعتبر من اليومي، وأرصدة القاصة التاريخية تبقى كما كانت. مجموع مصروف اليومي يحسب حصته فقط؛ حصة القاصة تظهر منفصلة وتُخصم من رصيد القاصة ولا تدخل في الرصيد الكلي لليومي. كلفة الحركة كاملة تبقى ظاهرة في كشف الحساب. السجلات القديمة التي لا تحمل مصدر دفع تُعتبر يومية.
+An expense's cashbox share is deducted automatically; editing/deleting it corrects that effect. Depositing remaining cash adds to the cashbox and deducts daily cash in one save, and cannot exceed availability. Cashbox history identifies movement sources; editing/deleting a deposit returns the amount to daily cash. Record initial cashbox funds as an opening deposit with an **Opening balance** note.
 
-## توافق سجلات العمال القديمة
+Remaining cash is actual cash after expenses recorded at entry time, so earlier expenses are not deducted again. Daily overall balance is calculated as summed daily expense shares + remaining cash + deposits from it into the cashbox. Cashbox expenses and cashbox portions of shared funding do not enter daily-expense totals. Re-entering remaining cash establishes a new baseline for later movements. Older expenses are treated as daily-funded; historical cashbox balances remain unchanged. Daily totals include only daily shares; the cashbox share is shown separately, deducted from its own balance and excluded from daily overall balance. Full movement cost remains visible in the account statement. Legacy records without a funding source are daily-funded.
 
-أزيلت واجهة سلفة العمال من التطبيق بطلب المالك بتاريخ 2026-10-27. لا تظهر في التنقل أو تخصيص الاختصارات. تبقى سجلات العمال وحركاتهم القديمة محفوظة في ملفات الحسابات والنسخ الاحتياطية دون تغيير الأرصدة أو المصاريف، وتتحول الاختصارات القديمة إليها إلى خانات فارغة. [القرار](docs/decisions/0007-retire-worker-savings.md).
+## Historical worker-record compatibility
 
-## الموردون والقوائم والتسديدات
+At the owner's request on 2026-10-27, the worker-advance UI was removed. It is absent from navigation/shortcut customization. Historical worker/movement records remain in account files/backups without changing balances or expenses; old shortcuts to that screen become empty slots. [Decision](docs/decisions/0007-retire-worker-savings.md).
 
-- لكل مورد اسم، هاتف وملاحظة اختيارية، ديون سابقة عليك وخانة مصروف افتراضية للتسديد. المبلغ الذي كان باسم الرصيد الافتتاحي يُعامل كدين سابق، ويظهر المتبقي منه بعد التسديد.
-- المواد الدائمية تحفظ الاسم والوحدة وسعر الوحدة. اختيار المادة بالقائمة يعبئ الوحدة والسعر، مع إمكانية تغييرهما لتلك القائمة.
-- القائمة تحفظ رقمها وتاريخها والمواد وكمياتها وأسعارها وملاحظتها. رقم القائمة لا يتكرر عند نفس المورد، ويمكن أن يتكرر عند مورد مختلف.
-- أي مادة جديدة تكتبها بالقائمة تنحفظ للمورد تلقائياً. تغيير سعر المادة الدائمية لاحقاً لا يغيّر القوائم القديمة.
-- الكميات تقبل حتى 3 خانات عشرية، وقيمة كل سطر تقرّب إلى أقرب دينار عراقي.
-- رصيد المورد = الديون السابقة + الديون المضافة + مجموع القوائم − مجموع التسديدات. كشف الحساب يوضح الحساب قبل وبعد كل حركة حسب التاريخ.
-- عند تسجيل قائمة جديدة يمكن تسديد جزء أو كل قيمتها فوراً، أو إدخال صفر لتسديدها لاحقاً. إذا زاد التسديد عن المتبقي من القائمة، يذهب الفرق للديون تلقائياً، ويمكن تسديد الديون وحدها أيضاً.
-- التسديد يرتبط بقائمة محددة أو بالديون، مع تاريخ وخانة وملاحظة ومصدر دفع يومي أو قاصة أو مشترك.
-- إضافة القائمة تسجّل الدين فقط؛ مبلغ التسديد هو الذي يظهر ضمن المصاريف اليومية بتاريخ الدفعة، ويخصم من مصدره مرة واحدة.
-- تبويب الديون يسمح بتسجيل مبلغ وتاريخ وملاحظة للدين وتعديله أو حذفه، ما دام ذلك لا يُنقص الدين دون ما سُدّد منه. التسجيل يزيد الدين فقط دون مصروف.
-- معاينة التسديد توضح حصة القائمة وحصة الديون والديون المتبقية بعدها. لا يمكن تسديد أكثر من المتبقي من القائمة والديون المتاحة بتاريخ الدفعة، ولا تُرحّل الزيادة إلى قوائم أخرى. التوزيع يُحفظ مع الدفعة ولا يتغير عند تعديل قيمة القائمة لاحقاً.
-- يمكن تعديل القائمة والتسديد أو حذفهما والتراجع. القائمة التي لها تسديدات لا تحذف قبل حذف دفعاتها؛ حذف دفعة يصحح الدين واليومي والقاصة.
+## Suppliers, invoices and payments
 
-البيانات القديمة تُقرأ تلقائياً دون تغيير قيمها، والموردون وموادهم وقوائمهم وتسديداتهم ضمن ملف الحفظ والنسخ الاحتياطية نفسه.
+- Each supplier has a name, optional phone/note, prior debt owed and a default payment-expense category. The former opening-balance amount is treated as prior debt, showing its remainder after settlement.
+- Permanent materials preserve name, unit and unit price. Selecting a material in an invoice fills unit/price, which can be changed for that invoice.
+- An invoice saves number, date, materials, quantities, prices and note. Numbers cannot repeat for the same supplier but may repeat across suppliers.
+- A new material entered in an invoice is automatically saved for the supplier. Later permanent-material price edits do not change earlier invoices.
+- Quantities accept up to 3 decimal places; line totals round to the nearest Iraqi dinar.
+- Supplier balance = prior debt + added debt + invoice totals - payment totals. Statements show the balance before/after each dated movement.
+- When adding an invoice, pay some/all immediately or enter zero for later settlement. Excess beyond its remaining value automatically settles debt; debt can also be paid independently.
+- Payment links to a specified invoice or debt, with date, category, note and daily/cashbox/shared funding.
+- Adding an invoice records debt only; its payment is the expense on the payment date and deducts its source once.
+- The debt tab records an amount, date and note, permitting edit/delete provided debt is not reduced below the amount already settled. Recording debt alone creates no expense.
+- Payment preview shows invoice/debt portions and remaining debt afterward. Payment cannot exceed invoice remainder plus debt available on its date, and excess is not moved to other invoices. Allocation is stored with the payment and does not change when an invoice value is later edited.
+- Invoices/payments support edit/delete and undo. An invoice with payments cannot be deleted until those payments are removed; deleting a payment corrects debt, daily account and cashbox.
 
-## حفظ البيانات
+Older data is read automatically without value changes; suppliers, materials, invoices and payments share the same save/backup file.
 
-ملف الحسابات:
+## Data persistence
+
+Account file:
 
 `~/Library/Application Support/Daftar/accounts.json`
 
-يحفظ كل تغيير ناجح على القرص بكتابة ذرية، ويحفظ نسخة من البيانات السابقة في `accounts.backup.json`. عند الاستيراد تحفظ البيانات الموجودة أولاً في ملف `accounts-before-import-<timestamp>.json`. إذا تعذر قراءة الملف، يتوقف الحفظ لحماية البيانات بدلاً من تصفير الحسابات.
+Every successful change is saved to disk atomically, with preceding data retained in `accounts.backup.json`. Import first preserves existing data in `accounts-before-import-<timestamp>.json`. If reading fails, saving stops to protect data rather than clearing accounts.
 
-من **البيانات والنسخ** يمكنك تصدير نسخة إضافية، استيراد ملف، أو فتح مجلد البيانات. نافذة التطبيق تحفظ مكانها وحجمها في ملف منفصل. البيانات محلية غير مشفرة، وتعتمد حمايتها على حساب المستخدم في macOS.
+Under **Data and backups**, export another copy, import a file or open the data folder. Window position/size are saved separately. Data is local and unencrypted; its protection depends on the macOS user account.
 
-## اختصارات
+## Shortcuts
 
-- ⌘N: إضافة مصروف.
-- ⌘Z: تراجع عن آخر تغيير، أو تراجع عن الكتابة عند التركيز في حقل نص.
-- ⌘⇧E: تصدير نسخة احتياطية.
-- ⌘O: استيراد نسخة احتياطية.
-- ⌘,: إعدادات البيانات.
-- Esc: إغلاق نموذج الإدخال.
+- ⌘N: add expense.
+- ⌘Z: undo the last change, or undo typing while focused in a text field.
+- ⌘⇧E: export backup.
+- ⌘O: import backup.
+- ⌘,: data settings.
+- Esc: close the entry form.
 
-## التطوير
+## Development
 
 ```sh
 npm ci
@@ -97,6 +99,6 @@ npm test
 npm run package
 ```
 
-الواجهة HTML/CSS/JavaScript محلية داخل Electron. لا تستخدم اتصالات شبكية أو خطوطاً من الإنترنت. الواجهة معزولة عن Node، وكل عمليات الملف تمر عبر جسر محدود ومتحقق من مصدره. نموذج البيانات يُفحص قبل الحفظ والاستيراد.
+The UI is local HTML/CSS/JavaScript inside Electron. It uses neither network connections nor internet fonts. The UI is isolated from Node; all file operations pass through a restricted, origin-validated bridge. Validate the model before save/import.
 
-التطبيق الحالي غير موقّع بشهادة توزيع من Apple؛ هذه نسخة محلية للاستخدام على هذا الجهاز.
+The current application has no Apple distribution-signing certificate; this is a local build for use on this device.

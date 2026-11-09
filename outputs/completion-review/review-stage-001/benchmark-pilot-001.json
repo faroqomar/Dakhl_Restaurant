@@ -1,0 +1,97 @@
+{
+  "operationId": "review.sales.checkout",
+  "label": "Finalize sale to durable acknowledgement",
+  "appVersion": "0.0.0+1",
+  "sourceCommit": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+  "sourceDirty": true,
+  "sourceFingerprint": "3a7e05889811c91e82ceed3909e59d84b47a3726991f62c344ce1d709447d8d8",
+  "engineCommit": "f30827df9fe3c4d2ef6d7d31b53bb0125eea82ec",
+  "targetId": "macos-host",
+  "schemaVersion": 1,
+  "protocolVersion": 1,
+  "status": "passed",
+  "buildMode": "profile",
+  "scenarioVersion": "1",
+  "measurementKind": "workflow",
+  "platform": "darwin",
+  "fixtureFingerprint": "b84a2ba08f2c91fad1016233b855785ab625ca84686c15331f2947587393f9b2",
+  "iterations": 1,
+  "requestedIterations": 1,
+  "workloadHash": "b84a2ba08f2c91fad1016233b855785ab625ca84686c15331f2947587393f9b2",
+  "timing": {
+    "medianMs": 33.434,
+    "p95Ms": 33.434,
+    "minMs": 33.434,
+    "maxMs": 33.434
+  },
+  "resources": {
+    "ramPeakMb": 139.313152,
+    "cpuAveragePercent": 99.99386712169782,
+    "cpuPeakPercent": 101.48062111356961,
+    "cpuSeconds": 0.05231041666666669,
+    "sampleCount": 4,
+    "intervalMs": 20,
+    "windowSeconds": 0.052313624997623265,
+    "cpuNormalization": "one-logical-core-100-percent",
+    "ramScope": "sampled-process-resident-peak",
+    "boundary": "host-start-to-end-marker-receipt"
+  },
+  "startup": {
+    "processToReadyMs": {
+      "medianMs": 1447.5436670472845,
+      "p95Ms": 1447.5436670472845,
+      "minMs": 1447.5436670472845,
+      "maxMs": 1447.5436670472845
+    },
+    "launchCount": 1
+  },
+  "samplesMs": [
+    33.434
+  ],
+  "startedAt": "2026-11-08T18:24:36.658366+00:00",
+  "finishedAt": "2026-11-08T18:24:38.268402+00:00",
+  "environment": {
+    "os": "Darwin",
+    "osVersion": "27.2",
+    "architecture": "arm64",
+    "cpuModel": "Apple M1 Pro",
+    "hardwareModel": "MacBookPro18,3",
+    "logicalCpuCount": 8,
+    "pythonVersion": "3.13.0",
+    "toolVersion": "1.0.0-dev.1",
+    "sampler": "macos-libproc-taskinfo",
+    "cpuPrecision": "native-cumulative-Mach-ticks/timebase; interval-derived-percent",
+    "processScope": "direct-child-only; excludes-descendants",
+    "startupCacheState": "fresh-process; OS caches uncontrolled",
+    "toolSourceFingerprint": "2a7be23029253798bfcc197e2411edc3b9b4037ba1384ba6b24a75e5ed428086",
+    "flutterVersion": "3.47.8",
+    "dartVersion": "3.13.7",
+    "appleToolchain": {
+      "xcode": "Xcode 27.2\nBuild version 27B52",
+      "macosSdkBuild": "26B118"
+    },
+    "appBenchmarkRunnerFingerprint": "fa6ae998fb8687431ce546b72291ffb29f573602eccd4f8555e718fc2a3ba1d4",
+    "benchmarkToolsCommit": "f30827df9fe3c4d2ef6d7d31b53bb0125eea82ec",
+    "benchmarkToolsFingerprint": "2a7be23029253798bfcc197e2411edc3b9b4037ba1384ba6b24a75e5ed428086"
+  },
+  "diagnostics": [],
+  "cleanupComplete": true,
+  "hardwareId": "ca9b90ae4eb4c205db80db02f7a87729bddeb2f5882ca17998d25d347ae5e8fa",
+  "comparabilityKey": "ff688caf6115674bb4a9f37c601222cc44c731eb879a96beb027dde44566c84e",
+  "resourceWindowScope": "One host start/end window: full-envelope command or report-generation samples plus inter-iteration fresh real-adapter setup, exact verification, reopen and teardown. Elapsed excludes those stages and ends at durable acknowledgement, canonical export bytes or complete PDF bytes. No UI/raster/frame/native-input timing; RAM/CPU are not per-sample isolated.",
+  "fixtureProfile": "review-operations-v1",
+  "runtimeEngineIdentity": {
+    "gitCommit": "f30827df9fe3c4d2ef6d7d31b53bb0125eea82ec",
+    "manifestFingerprint": "b34ff44b2e2d0df17d36e4324e42d6bf6680006eb221ae0d59c3e2098ed4cc63",
+    "sourceFingerprint": "570e41da226942a5038223de20c26959bc2d02f08090cf9830ff8137989276ff",
+    "packageVersions": {
+      "madar_application": "0.1.0-dev.6",
+      "madar_data": "0.1.0-dev.2",
+      "madar_domain": "0.1.0-dev.5",
+      "madar_flutter_adapters": "0.1.0-dev.2",
+      "madar_icu_collation": "0.1.0-dev.1"
+    },
+    "resolutionFingerprint": "22317a26ab78aebeb6444d789cc9dfa265f9360598c181882562ff38928d6f43"
+  },
+  "scope": "Actual complete-envelope consumer command or PDF composition over20synthetic products,200pre-cutover cash rows, one supplier/material, one sale/invoice line and explicit synthetic verified opening. Fresh real adapter per sample; setup, exact validation/reopen and cleanup excluded from elapsed, included between samples in host RAM/CPU window. No UI/raster/frame/native-input timing. Export ends at canonical bytes; report generation includes bundled-font read and ends at PDF bytes; import/recovery starts after candidate preparation."
+}

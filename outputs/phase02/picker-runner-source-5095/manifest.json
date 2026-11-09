@@ -1,0 +1,49 @@
+{
+  "purpose": "Dated source-review archive; not a portable or current-head installer",
+  "sourceRevision": "5095e5cbbad496a5c5e203af4a8a31559bcf26ee",
+  "runtimeRevision": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+  "entrySha256": "c9354e76a57fd5f4b71f60884fa95d8894531fca334786d245608f8bc0fb64f5",
+  "supportSha256": "9c908488fee0ed27e398dfd293251eddf60b33ca44c92887f845ca441459f7f1",
+  "guardSha256": "f4c9a44a8efeec88c6d107dfabd7e0327bb191133230b43e51be16e45cbd219b",
+  "files": [
+    {
+      "path": "new-picker-android.py",
+      "sha256": "0ae68fd3aba04d70180ed015848d7d3cd42d2c72d28923d0c4b0010463b8f31b",
+      "bytes": 9363
+    },
+    {
+      "path": "new-picker-ios.py",
+      "sha256": "d1a5b66e49d0f163a2ff8e3d0e8138daba79c36f3335bdf963af2ca18b03670d",
+      "bytes": 8261
+    },
+    {
+      "path": "new-picker-build.py",
+      "sha256": "aa9d7688a50178ed4ac05f9d0ba24cdc9fac7292fea585d9df9776c674738c94",
+      "bytes": 6608
+    },
+    {
+      "path": "reviewed-android-stage.py",
+      "sha256": "702b65b1fd57f6a1fbdf457a22364a5b3657938fcd1ff51886b729a1cd9597a8",
+      "bytes": 37317
+    },
+    {
+      "path": "integration_driver.dart",
+      "sha256": "b40e3f03ecbb888ba0e020b17db57bd6f9b68fb1deea09fb9877baa675c2c938",
+      "bytes": 364
+    }
+  ],
+  "excluded": [
+    "APK/app bundle",
+    "synthetic payload copies",
+    "account data",
+    "VM service authentication URLs",
+    "signing files",
+    "target descriptors",
+    "raw device logs"
+  ],
+  "limits": [
+    "Archived source preserves task-local paths and identities as provenance; dependencies/targets are not configured for other checkouts.",
+    "New revisions require independently reviewed source/engine/guard/entrypoint/support bindings and fresh fixture artifacts.",
+    "Source availability does not establish native acceptance or historical data retention."
+  ]
+}

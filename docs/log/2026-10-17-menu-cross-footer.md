@@ -1,9 +1,9 @@
-# 2026-10-17 — ضبط الشطب ورقم التوصيل وإكمال الأسعار القديمة
+# 2026-10-17 — Adjust strike marks, delivery number and missing old prices
 
-الحالة: v5 منفّذة، لا نشر. المصدر: طلب المالك ضبط ×، ثم توسيط رقم التوصيل وإضافة الأسعار القديمة، وتوجيهه الصريح حسابها بجمع المكونات.
+Status: v5 implemented, not published. Source: the owner's requests to adjust X marks, then center the delivery number and add old prices, with explicit instructions to calculate them by summing their components.
 
-نُقلت علامات × إلى مركز أرقام Tajawal القديمة بإزاحة 10 بكسلات للأعلى. كانت v4 نسخة وسيطة للشطب، ثم حلت v5 محلها. وُضع مركز رقم التوصيل الأفقي عند 540، وهو مركز المستطيل، وعدّل موضعه الرأسي ليتوسط ارتفاعه بصرياً. بقيت كلمة للتوصيل إلى اليمين.
+Moved the X marks to the centers of old Tajawal price numerals with a 10-pixel upward offset. Version v4 was an intermediate strike-mark revision, superseded by v5. The delivery number's horizontal center was placed at 540, the rectangle's center; its vertical position was adjusted to appear centered within the rectangle. The delivery label stayed on the right.
 
-استُخدم سعر الدجاجة القديم 12,000، وحُسب نصفها 6,000. جُمعت مع أسعار الدليمية القديمة 8,000 و12,000 و17,000: للصواني مع النصف/الكاملة 14,000/20,000 و18,000/24,000 و23,000/29,000. أضيف 6,000 مشطوباً لنصف الدجاجة. هذه حسابات بطلب المالك وليست أسعاراً تاريخية استُرجعت من سجل بيع. بقيت الأسعار الحالية دون تغيير.
+Used the old whole-chicken price of 12,000 and calculated half as 6,000. Added these to the old Dulaimiya prices of 8,000, 12,000 and 17,000: half/whole-chicken trays become 14,000/20,000, 18,000/24,000 and 23,000/29,000. Added a struck-through 6,000 for half chicken. These are owner-requested calculations, not historical prices recovered from sales records. Current prices remained unchanged.
 
-Canva الحالي `DAHYPYJ-nR0`: https://www.canva.com/d/A5_hfPpRMeY-yOm . مصادر التصميم تحت `outputs/campaigns/CAM-0001/v5/` خارج فهرسة Hindsight؛ لا يتكرر رقم التوصيل هنا. فُحصت قيم الجمع الست وقيمة نصف الدجاجة مقابل بيانات المخرج. روجعت الصورة النهائية المصدرة من Canva بدقة 1080×1440: مواضع × في مراكز الأرقام القديمة، ورقم التوصيل متوسط المربع، وجميع الإضافات ظاهرة. فُحصت الروابط المحلية و`git diff --check`؛ تفحص مزامنة الذاكرة قبل التسليم. لا تغيير في حسابات التطبيق أو نشر إعلان.
+Current Canva: `DAHYPYJ-nR0`, https://www.canva.com/d/A5_hfPpRMeY-yOm . Design sources are under `outputs/campaigns/CAM-0001/v5/`, outside Hindsight indexing; the delivery number is not repeated here. The six sum values and half-chicken value were checked against output data. The final 1080×1440 Canva export was inspected: X marks center on old numerals, the delivery number centers in its box, and all additions are visible. Local links and `git diff --check` were checked; memory synchronization is checked before delivery. No application accounts changed or advertisement was published.

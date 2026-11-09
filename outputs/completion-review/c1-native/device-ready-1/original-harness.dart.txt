@@ -1,0 +1,533 @@
+import 'dart:convert';
+import 'dart:io';
+
+import 'package:dakhl_restaurant/accounts/accounts_repository.dart';
+import 'package:dakhl_restaurant/accounts/accounts_view_model.dart';
+import 'package:dakhl_restaurant/accounts/accounts_surface.dart';
+import 'package:dakhl_restaurant/app/accounts_store.dart';
+import 'package:dakhl_restaurant/app/app.dart';
+import 'package:dakhl_restaurant/app/bootstrap.dart';
+import 'package:dakhl_restaurant/catalog/catalog_formatters.dart';
+import 'package:dakhl_restaurant/catalog/inventory_surface.dart';
+import 'package:dakhl_restaurant/catalog/product_form_dialog.dart';
+import 'package:dakhl_restaurant/catalog/stock_history_dialog.dart';
+import 'package:dakhl_restaurant/catalog/stock_movement_dialog.dart';
+import 'package:dakhl_restaurant/catalog/stock_reversal_dialog.dart';
+import 'package:dakhl_restaurant/shell/shell_preferences.dart';
+import 'package:dakhl_restaurant/ui/components.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:integration_test/integration_test.dart';
+import 'package:madar_application/madar_application.dart';
+import 'package:madar_data/madar_data.dart';
+import 'package:path/path.dart' as p;
+
+import 'support/native_app_readiness.dart';
+
+/// Acceptance test, retained source. Run only after the source-bound consumer
+/// preflight and Device discovery/open succeed. Never invoke normal main().
+/// Each invocation allocates fresh synthetic storage and deletes only that root
+/// after unmounting and closing its owners. No file import/export capabilities.
+void main() {
+  final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
+  testWidgets('C1 isolated native catalog and dated-stock pilot', (
+    tester,
+  ) async {
+    final allocated = await Directory.systemTemp.createTemp('dakhl-c1-native-');
+    final root = Directory(await allocated.resolveSymbolicLinks());
+    final directory = await Directory(p.join(root.path, 'accounts')).create();
+    AppAccountsStore openAccounts() => AppAccountsStore(
+      openStore: () => PowerSyncLocalDocumentWorkspaceStore.open(
+        directoryPath: directory.path,
+      ),
+    );
+    final durable = openAccounts();
+    final store = _LostAcknowledgementStore(durable);
+    final repository = AccountsRepository(store: store);
+    final accounts = AccountsViewModel(repository: repository);
+    final preferences = AppPreferencesStore(
+      openStore: () => PowerSyncLocalPreferencesStore.open(
+        databasePath: p.join(root.path, 'shell.sqlite'),
+      ),
+      closeStore: (owner) async {
+        if (owner is PowerSyncLocalPreferencesStore) await owner.close();
+      },
+    );
+    addTearDown(() async {
+      await tester.pumpWidget(const SizedBox.shrink());
+      accounts.dispose();
+      await preferences.close();
+      await durable.close();
+      await root.delete(recursive: true);
+    });
+
+    await accounts.initialize();
+    expect(accounts.state, AccountsState.absent);
+    await accounts.save();
+    expect(accounts.state, AccountsState.saved);
+    expect(
+      await preferences.replace(
+        ShellPreferences.namespace,
+        jsonEncode({
+          'schemaVersion': 1,
+          'lastRouteId': 'inventory',
+          'shortcuts': [
+            'sales',
+            'inventory',
+            'expenses',
+            'cash',
+            'materials',
+            'settings',
+          ],
+        }),
+      ),
+      isA<CapabilitySuccess<PreferenceSnapshot>>(),
+    );
+    await waitForNativeAppReadiness(
+      frames: LiveNativeAppReadinessFrames(binding),
+      mount: () => mountNativeAppRoot(
+        DakhlRestaurantApp(accounts: accounts, preferencesStore: preferences),
+      ),
+      ready: () => find.byType(InventorySurface).evaluate().length == 1,
+    );
+    final catalog = tester
+        .widget<InventorySurface>(find.byType(InventorySurface))
+        .model!;
+    final today = CatalogFormatters.today();
+    List<Map<String, Object?>> records(String key) =>
+        (repository.document!.toJson()[key] as List)
+            .cast<Map<String, Object?>>();
+    Map<String, Object?> product() => records('products').single;
+    BigInt balance() =>
+        catalog.inventoryModelAt(today)!.products.single.availableUnits;
+    BigInt balanceAt(String day) => catalog
+        .inventoryModelAt(CatalogFormatters.parseDate(day))!
+        .products
+        .single
+        .availableUnits;
+
+    await _tap(tester, find.widgetWithText(DakhlButton, 'إضافة صنف').first);
+    await _wait(
+      tester,
+      () => find.byType(ProductFormDialog).evaluate().isNotEmpty,
+    );
+    await _field(tester, 'اسم الصنف', 'C1 synthetic kebab');
+    await _field(tester, 'رمز الصنف / الباركود (اختياري)', 'C1-NATIVE');
+    await _field(tester, 'الوحدة', 'نفر');
+    await _field(tester, 'المجموعة (اختياري)', 'QA');
+    await _field(tester, 'سعر البيع بالدينار · د.ع', '14000');
+    await _tap(tester, find.bySemanticsLabel('اختيار صورة كباب لحم'));
+    expect(find.text('الصورة المختارة: كباب لحم'), findsOneWidget);
+    await _field(tester, 'الكمية الافتتاحية', '5');
+    await _field(tester, 'تاريخ الكمية', '2001-01-01');
+    await _tap(tester, find.widgetWithText(DakhlButton, 'حفظ التغيير'));
+    await _wait(
+      tester,
+      () => find.byType(ProductFormDialog).evaluate().isEmpty,
+    );
+    expect(product()['photo'], 'beef-kebab');
+    expect(product()['price'], 14000);
+    expect(records('stockEntries'), hasLength(1));
+    expect(records('stockEntries').single['quantity'], 5);
+    expect(records('stockEntries').single['date'], '2001-01-01');
+    expect(records('stockEntries').single['kind'], 'opening');
+    expect(balanceAt('2000-12-31'), BigInt.zero);
+    expect(balanceAt('2001-01-01'), BigInt.from(5000));
+    expect(balance(), BigInt.from(5000));
+    _event('create-photo-opening');
+
+    await _tap(tester, find.widgetWithText(DakhlButton, 'تعديل'));
+    await _wait(
+      tester,
+      () => find.byType(ProductFormDialog).evaluate().isNotEmpty,
+    );
+    expect(
+      tester
+          .widget<DakhlField>(find.widgetWithText(DakhlField, 'الوحدة'))
+          .enabled,
+      isFalse,
+    );
+    expect(tester.widget<Checkbox>(find.byType(Checkbox)).onChanged, isNull);
+    expect(
+      find.text('التتبّع ثابت لوجود حركات أو مبيعات مسجلة.'),
+      findsOneWidget,
+    );
+    await _field(tester, 'اسم الصنف', 'C1 synthetic edited');
+    await _tap(tester, find.bySemanticsLabel('بدون صورة'));
+    await _tap(tester, find.widgetWithText(DakhlButton, 'حفظ التغيير'));
+    await _wait(
+      tester,
+      () => find.byType(ProductFormDialog).evaluate().isEmpty,
+    );
+    expect(product()['name'], 'C1 synthetic edited');
+    expect(product()['photo'], isNull);
+    expect(product()['unit'], 'نفر');
+    expect(product()['trackStock'], isTrue);
+    _event('edit-photo-removal-history-locks');
+
+    await _movement(
+      tester,
+      quantity: '10',
+      date: '2001-01-02',
+      note: 'C1 restock',
+    );
+    final restock = records('stockEntries').last;
+    expect(restock['date'], '2001-01-02');
+    expect(restock['kind'], 'restock');
+    expect(balanceAt('2001-01-01'), BigInt.from(5000));
+    expect(balanceAt('2001-01-02'), BigInt.from(15000));
+    expect(balance(), BigInt.from(15000));
+    await _movement(
+      tester,
+      quantity: '-7',
+      date: '2001-01-03',
+      note: 'C1 consumption',
+      adjustment: true,
+    );
+    final consumption = records('stockEntries').last;
+    expect(consumption['date'], '2001-01-03');
+    expect(consumption['kind'], 'adjustment');
+    expect(balanceAt('2001-01-02'), BigInt.from(15000));
+    expect(balanceAt('2001-01-03'), BigInt.from(8000));
+    expect(balance(), BigInt.from(8000));
+    _event('dated-restock-and-adjustment');
+
+    // Reversing the earlier +10 would leave -2 on the later consumption day.
+    // Exercise the visible correction form and assert no durable write occurs.
+    final before = repository.snapshot;
+    await _openReversal(tester, restock['id']! as String);
+    await _field(tester, 'سبب التصحيح', 'C1 invalid historical reversal');
+    await _tap(tester, find.widgetWithText(DakhlButton, 'تسجيل التصحيح'));
+    await _wait(tester, () => find.byType(DakhlStatus).evaluate().isNotEmpty);
+    expect(repository.snapshot, before);
+    expect(catalog.errorCode, 'stock_balance_out_of_range');
+    expect(records('stockEntries'), hasLength(3));
+    expect(find.text('C1 invalid historical reversal'), findsOneWidget);
+    expect(balance(), BigInt.from(8000));
+    await _discard(tester);
+    await _tap(tester, find.widgetWithText(DakhlButton, 'إغلاق'));
+    await _wait(
+      tester,
+      () => find.byType(StockHistoryDialog).evaluate().isEmpty,
+    );
+
+    await _openReversal(tester, consumption['id']! as String);
+    await _field(tester, 'سبب التصحيح', 'C1 accepted correction');
+    await _tap(tester, find.widgetWithText(DakhlButton, 'تسجيل التصحيح'));
+    await _wait(
+      tester,
+      () => find.byType(StockReversalDialog).evaluate().isEmpty,
+    );
+    final reversal = records('stockEntries').last;
+    expect(reversal['reversesId'], consumption['id']);
+    expect(reversal['date'], consumption['date']);
+    expect(reversal['date'], '2001-01-03');
+    expect(balanceAt('2001-01-02'), BigInt.from(15000));
+    expect(balanceAt('2001-01-03'), BigInt.from(15000));
+    expect(reversal['quantity'], 7);
+    expect(
+      records('stockEntries').where((e) => e['id'] == consumption['id']),
+      hasLength(1),
+    );
+    expect(balance(), BigInt.from(15000));
+    final history = catalog.stockHistoryAt(
+      product()['id']! as String,
+      today: today,
+    );
+    expect(history, hasLength(4));
+    expect(history.last.runningBalanceUnits, BigInt.from(15000));
+    expect(
+      history.singleWhere((e) => e.id == consumption['id']).isReversible,
+      isFalse,
+    );
+    await _tap(tester, find.widgetWithText(DakhlButton, 'إغلاق'));
+    await _wait(
+      tester,
+      () => find.byType(StockHistoryDialog).evaluate().isEmpty,
+    );
+    _event('history-negative-rejection-and-linked-reversal');
+
+    // A changed snapshot after opening the form must retain typed input and
+    // reject its stale edit without overwriting the newer persisted document.
+    await _tap(tester, find.widgetWithText(DakhlButton, 'تعديل'));
+    await _wait(
+      tester,
+      () => find.byType(ProductFormDialog).evaluate().isNotEmpty,
+    );
+    await _field(tester, 'اسم الصنف', 'C1 stale input');
+    expect(
+      await repository.save(repository.document!),
+      isA<CapabilitySuccess>(),
+    );
+    final newer = repository.snapshot;
+    await _tap(tester, find.widgetWithText(DakhlButton, 'حفظ التغيير'));
+    await _wait(
+      tester,
+      () => find
+          .text(CatalogFormatters.errorMessage('stale_revision'))
+          .evaluate()
+          .isNotEmpty,
+    );
+    expect(repository.snapshot, newer);
+    expect(product()['name'], 'C1 synthetic edited');
+    expect(find.text('C1 stale input'), findsOneWidget);
+    await _discard(tester);
+    _event('stale-visible-form');
+
+    // Same visible path proven by the host widget/real-store acceptance tests.
+    // This source remains pending native execution. Inject acknowledgement loss
+    // after the actual commit, without claiming an OS/filesystem fault.
+    final acknowledgedProduct = {...product()};
+    final acknowledgedSnapshot = repository.snapshot;
+    final stockBeforeUnknown = records('stockEntries');
+    await _tap(tester, find.widgetWithText(DakhlButton, 'تعديل'));
+    await _wait(
+      tester,
+      () => find.byType(ProductFormDialog).evaluate().isNotEmpty,
+    );
+    await _field(tester, 'اسم الصنف', 'C1 acknowledged by readback');
+    store.loseNextAcknowledgement = true;
+    await _tap(tester, find.widgetWithText(DakhlButton, 'حفظ التغيير'));
+    await _wait(
+      tester,
+      () => find
+          .text(CatalogFormatters.errorMessage('commit_unknown'))
+          .evaluate()
+          .isNotEmpty,
+    );
+    expect(repository.hasUnknownWrite, isTrue);
+    expect(repository.snapshot, acknowledgedSnapshot);
+    expect(product(), acknowledgedProduct);
+    expect(find.text('C1 acknowledged by readback'), findsOneWidget);
+    final writes = store.documentWriteCalls;
+    await _tap(tester, find.widgetWithText(DakhlButton, 'حفظ التغيير'));
+    expect(store.documentWriteCalls, writes);
+    expect(repository.hasUnknownWrite, isTrue);
+    await _tap(tester, find.widgetWithText(DakhlButton, 'إلغاء'));
+    await _tap(tester, find.widgetWithText(DakhlButton, 'متابعة التعديل'));
+    expect(find.text('C1 acknowledged by readback'), findsOneWidget);
+    await _discard(tester);
+    expect(find.text('تعذّر تأكيد الحفظ؛ أعد التحقق.'), findsOneWidget);
+    await _tap(tester, find.widgetWithText(DakhlButton, 'الإعدادات'));
+    await _wait(
+      tester,
+      () => find.byType(AccountsSurface).evaluate().isNotEmpty,
+    );
+    expect(
+      tester
+          .widget<DakhlButton>(find.widgetWithText(DakhlButton, 'حفظ الحسابات'))
+          .onPressed,
+      isNull,
+    );
+    await _tap(tester, find.widgetWithText(DakhlButton, 'إعادة التحقق'));
+    await _wait(tester, () => !repository.hasUnknownWrite && !accounts.busy);
+    expect(accounts.state, AccountsState.saved);
+    expect(store.documentWriteCalls, writes);
+    expect(product()['name'], 'C1 acknowledged by readback');
+    expect(product()['id'], acknowledgedProduct['id']);
+    expect(records('stockEntries'), stockBeforeUnknown);
+    expect(records('stockEntries'), hasLength(4));
+    await _tap(tester, find.widgetWithText(DakhlButton, 'المخزن'));
+    await _wait(
+      tester,
+      () => find.byType(InventorySurface).evaluate().isNotEmpty,
+    );
+    expect(find.text('C1 acknowledged by readback'), findsOneWidget);
+    _event('visible-lost-acknowledgement-retained-draft-readback');
+
+    // Reopen the actual SQLite-backed workspace with a fresh owner in this
+    // process. This establishes durability, not a fresh-process restart pass.
+    final expectedPayload = repository.snapshot!.payload;
+    await tester.pumpWidget(const SizedBox.shrink());
+    await durable.close();
+    final reopened = openAccounts();
+    try {
+      final read = await reopened.readDocument();
+      expect(read, isA<CapabilitySuccess<DocumentSnapshot?>>());
+      expect(
+        (read as CapabilitySuccess<DocumentSnapshot?>).value!.payload,
+        expectedPayload,
+      );
+    } finally {
+      await reopened.close();
+    }
+    expect(tester.takeException(), isNull);
+    _event('durable-close-and-reopen');
+  }, timeout: const Timeout(Duration(minutes: 5)));
+}
+
+void _event(String stage) =>
+    stdout.writeln(jsonEncode({'event': 'c1_native_stage', 'stage': stage}));
+
+Future<void> _wait(WidgetTester tester, bool Function() ready) async {
+  final clock = Stopwatch()..start();
+  while (!ready()) {
+    if (clock.elapsed > const Duration(seconds: 15)) {
+      fail('C1 UI state exceeded 15 seconds.');
+    }
+    await tester.pump(const Duration(milliseconds: 100));
+  }
+  await tester.pump();
+}
+
+Future<void> _tap(WidgetTester tester, Finder finder) async {
+  expect(finder, findsOneWidget);
+  await tester.ensureVisible(finder);
+  await tester.pump(const Duration(milliseconds: 250));
+  await tester.tap(finder);
+  await tester.pump(const Duration(milliseconds: 250));
+}
+
+Future<void> _field(WidgetTester tester, String label, String value) async {
+  final field = find.widgetWithText(DakhlField, label);
+  expect(field, findsOneWidget);
+  await tester.ensureVisible(field);
+  await tester.enterText(field, value);
+  await tester.pump();
+}
+
+Future<void> _discard(WidgetTester tester) async {
+  await _tap(tester, find.widgetWithText(DakhlButton, 'إلغاء'));
+  await _wait(tester, () => find.text('تجاهل التغييرات').evaluate().isNotEmpty);
+  await _tap(tester, find.text('تجاهل التغييرات'));
+  await _wait(
+    tester,
+    () =>
+        find.byType(StockReversalDialog).evaluate().isEmpty &&
+        find.byType(ProductFormDialog).evaluate().isEmpty,
+  );
+}
+
+Future<void> _movement(
+  WidgetTester tester, {
+  required String quantity,
+  required String date,
+  required String note,
+  bool adjustment = false,
+}) async {
+  await _tap(tester, find.widgetWithText(DakhlButton, 'تزويد / تسوية'));
+  await _wait(
+    tester,
+    () => find.byType(StockMovementDialog).evaluate().isNotEmpty,
+  );
+  if (adjustment) {
+    await _tap(tester, find.byType(DropdownButtonFormField<MovementFormKind>));
+    await _tap(tester, find.text('تسوية').last);
+  }
+  final dialog = find.byType(StockMovementDialog);
+  final fields = find.descendant(
+    of: dialog,
+    matching: find.byType(TextFormField),
+  );
+  await tester.ensureVisible(fields.at(0));
+  await tester.enterText(fields.at(0), quantity);
+  await tester.ensureVisible(fields.at(1));
+  await tester.enterText(fields.at(1), date);
+  await tester.ensureVisible(fields.at(2));
+  await tester.enterText(fields.at(2), note);
+  await _tap(tester, find.widgetWithText(DakhlButton, 'حفظ التغيير'));
+  await _wait(
+    tester,
+    () => find.byType(StockMovementDialog).evaluate().isEmpty,
+  );
+}
+
+Future<void> _openReversal(WidgetTester tester, String id) async {
+  await _tap(tester, find.widgetWithText(DakhlButton, 'الحركة'));
+  await _wait(
+    tester,
+    () => find.byType(StockHistoryDialog).evaluate().isNotEmpty,
+  );
+  final history = tester.widget<StockHistoryDialog>(
+    find.byType(StockHistoryDialog),
+  );
+  final entries = history.viewModel
+      .stockHistoryAt(history.product.id, today: history.today)
+      .reversed
+      .where((e) => e.isReversible)
+      .toList();
+  final index = entries.indexWhere((e) => e.id == id);
+  expect(index, isNonNegative);
+  await _tap(
+    tester,
+    find.widgetWithText(DakhlButton, 'تصحيح الحركة').at(index),
+  );
+  await _wait(
+    tester,
+    () => find.byType(StockReversalDialog).evaluate().isNotEmpty,
+  );
+}
+
+/// Test-only transport fault wrapper; Madar still owns persistence and recovery.
+final class _LostAcknowledgementStore implements LocalDocumentWorkspaceStore {
+  _LostAcknowledgementStore(this.inner);
+  final LocalDocumentWorkspaceStore inner;
+  bool loseNextAcknowledgement = false;
+  int documentWriteCalls = 0;
+  @override
+  Future<CapabilityResult<DocumentSnapshot>> writeDocument(
+    String payload, {
+    required String writeToken,
+    DocumentSnapshot? expected,
+    bool replaceGeneration = false,
+  }) async {
+    documentWriteCalls++;
+    final result = await inner.writeDocument(
+      payload,
+      writeToken: writeToken,
+      expected: expected,
+      replaceGeneration: replaceGeneration,
+    );
+    if (loseNextAcknowledgement &&
+        result is CapabilitySuccess<DocumentSnapshot>) {
+      loseNextAcknowledgement = false;
+      return const CapabilityFailure(
+        'commit_unknown',
+        'Synthetic acknowledgement loss after commit.',
+      );
+    }
+    return result;
+  }
+
+  @override
+  Future<CapabilityResult<DocumentSnapshot?>> readDocument() =>
+      inner.readDocument();
+  @override
+  Future<CapabilityResult<DocumentSnapshot>> resumeInitialCreation(
+    String payload, {
+    required String writeToken,
+  }) => inner.resumeInitialCreation(payload, writeToken: writeToken);
+  @override
+  Future<CapabilityResult<WorkspaceState>> readWorkspace(StorageFence fence) =>
+      inner.readWorkspace(fence);
+  @override
+  Future<CapabilityResult<WorkspaceSnapshot>> writeWorkspace(
+    String payload, {
+    required StorageFence fence,
+    required int? expectedRevision,
+    required String writeToken,
+  }) => inner.writeWorkspace(
+    payload,
+    fence: fence,
+    expectedRevision: expectedRevision,
+    writeToken: writeToken,
+  );
+  @override
+  Future<CapabilityResult<PreviousDocument?>> readPrevious() =>
+      inner.readPrevious();
+  @override
+  Future<CapabilityResult<String>> preserveSource(List<int> bytes) =>
+      inner.preserveSource(bytes);
+  @override
+  Future<CapabilityResult<DocumentSnapshot>> recoverPrevious(
+    PreviousDocument previous, {
+    required String payload,
+    required String writeToken,
+  }) =>
+      inner.recoverPrevious(previous, payload: payload, writeToken: writeToken);
+  @override
+  Future<CapabilityResult<void>> resolvePendingWrite() =>
+      inner.resolvePendingWrite();
+  @override
+  Future<void> close() => inner.close();
+}

@@ -1,0 +1,6 @@
+stage: loading isolated reference
+stage: isolated reference loaded
+stage: export design-system
+stage: DOM design-system 188
+stage: PNG design-system
+{"id":"design-system","elements":188,"texts":71,"images":1,"svgs":0,"actualSize":{"width":2880,"height":2400},"expectedSize":{"width":2880,"height":2400},"equalDimensions":true,"changedPixels":0,"totalPixels":6912000,"changedPixelRatio":0,"differenceBounds":null,"meanAbsoluteChannelDifference":0,"maxChannelDifference":0,"actualSha256":"0e9e34d1eb7f76d9a07548c2a8ed0631ed447708ae74f1ee0873a6f2ce558259","expectedSha256":"0e9e34d1eb7f76d9a07548c2a8ed0631ed447708ae74f1ee0873a6f2ce558259"}

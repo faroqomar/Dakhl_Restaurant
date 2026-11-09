@@ -1,0 +1,22 @@
+[
+  {
+    "name": "analysis",
+    "exitCode": 0,
+    "log": "outputs/dev-dashboard/review-corrections/analysis.txt"
+  },
+  {
+    "name": "flutter-tests",
+    "exitCode": 0,
+    "log": "outputs/dev-dashboard/review-corrections/flutter-tests.txt"
+  },
+  {
+    "name": "script-tests",
+    "exitCode": 0,
+    "log": "outputs/dev-dashboard/review-corrections/script-tests.txt"
+  },
+  {
+    "name": "cache-tests",
+    "exitCode": 0,
+    "log": "outputs/dev-dashboard/review-corrections/cache-tests.txt"
+  }
+]

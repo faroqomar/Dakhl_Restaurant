@@ -1,0 +1,66 @@
+{
+  "project": "daftar",
+  "bank": "project-daftar",
+  "operation_id": "e7604219-9eca-4b49-ab52-2402b2562f9e",
+  "status": "completed",
+  "source_hashes": {
+    "docs/phases/01-build-evidence.md": "1ccce8c90573ece8345ddc8cd97c220690cce73dcfb2357d61399aebe1269208",
+    "docs/reference/phase01-shell-contract.md": "e2548e0189e3eca87ef34bb320ae872a3c9c19490756bcc272f10d859d0f0915",
+    "docs/log/2026-10-29-phase01-build.md": "67926645b40630454ecf1e4a1d53396fe549b78007e807b2a275699c280678e0",
+    "docs/phases/01-implementation-plan.md": "9d9d72425bf06b2ac7ef757641f486aaff10e22fb521233b0f2bee5f7b8c039d",
+    "docs/phases/01-penpot-design-review.md": "cadd8bb007e11eb10b70092ed980ec7bc1320ed7f89b963aa3f22acd4df80828",
+    "docs/phases/00-ios-native-acceptance.md": "47f69c5ae64df719211fad1eb11459f14ddd0006eff2da5a3e95bc5f0608d6bf",
+    "docs/how-to/repeated-problems.md": "1b7ca4303f0dcad9bddbb7579a576ad02a283dfdbc7dfc72675280942c01eca3",
+    "PHASES.md": "4ce53adb5441a919137816143817bb0fa2e7ed79835cb3c828986056033d90b4",
+    "README.md": "55de5a6b8aaa59b0b217a2321348422caf212889e951b8e74368069dbef3baba",
+    "integration_test/README.md": "e02af352e86f90d2a50a6132123477b4a568b40a35e73a4dcb6a6b7b1a6f0fde",
+    "test/ui/README.md": "6163c33d0890a97eb79faebf7c346a26c87073b6d560c2c77e1c92e139d36215",
+    "docs/phases/README.md": "3b89aac51caf5c4024e5c6c40966d56207dde21abb9b3c9ae38e29b0c53dd79c",
+    "docs/planning/flutter-rebuild/feature-coverage.md": "232b4d22e6b90ffda94f0347d3a0de5676c1a0bfbc07cf25a914bac5f2462d6d"
+  },
+  "canonicalCheck": {
+    "sources": 110,
+    "pending": [],
+    "failed": {}
+  },
+  "scope": "English project-owned build-worktree Markdown summary with exact source hashes; separate from canonical-root watcher",
+  "supersedesOperation": "b13b1e8b-cefc-410d-93f2-bcb7e7c996e2",
+  "previousReceipt": "phase01-build-delivery-before-pin-check.json",
+  "reason": "Final exact-pin checkout correction; no runtime delta or approval change",
+  "operation_status": {
+    "operation_id": "e7604219-9eca-4b49-ab52-2402b2562f9e",
+    "status": "completed",
+    "operation_type": "batch_retain",
+    "id": "e7604219-9eca-4b49-ab52-2402b2562f9e",
+    "task_type": "batch_retain",
+    "mental_model_id": null,
+    "created_at": "2026-10-29T13:17:10.913833+00:00",
+    "updated_at": "2026-10-29T13:17:45.616973+00:00",
+    "completed_at": "2026-10-29T13:17:45.616973+00:00",
+    "error_message": null,
+    "retry_count": 0,
+    "next_retry_at": null,
+    "progress": null,
+    "result_metadata": {
+      "is_parent": true,
+      "document_id": "phase01:step3:local-build-evidence",
+      "items_count": 1,
+      "total_tokens": 1506,
+      "unit_ids_count": 7,
+      "num_sub_batches": 1,
+      "extraction_errors_count": 0
+    },
+    "details": null,
+    "child_operations": [
+      {
+        "operation_id": "ce9f5cbd-973b-42f3-8ebe-b9852c42b4ff",
+        "status": "completed",
+        "sub_batch_index": 1,
+        "items_count": 1,
+        "error_message": null
+      }
+    ],
+    "task_payload": null
+  },
+  "source_hashes_match": true
+}

@@ -1,0 +1,577 @@
+{
+  "packagedAt": "2026-10-30T13:26:26.726258+00:00",
+  "scope": "App Phase02 Step5 selective publication packet; original build checkout unchanged.",
+  "sourceAppCommit": "5a11c66dbf665972b17b545c105eac74c17bfeeb",
+  "runtimeEngineCommit": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+  "measurementToolsCommit": "63bbed8303bf8561084c5f82a3ebd52e2bf9e95d",
+  "copiedFiles": [
+    {
+      "path": "PHASES.md",
+      "sourceSha256": "cd552b88ad10029a66f0bd3f5bfb3ffc4c9ec9d3b8589169d9514bf9f30c3c93",
+      "publishedSha256": "eeb21c18edb3ecca7d0a6a55e6e0aed4de4ced65dff45d783c5c1b1dcf5502d0",
+      "byteIdentical": false,
+      "bytes": 34441
+    },
+    {
+      "path": "PLANS.md",
+      "sourceSha256": "5796d419a647fd89cf7d0f56f2443475cbb818478f7bf061540e05c6aac00605",
+      "publishedSha256": "c1e47cc093b92f3f93733016596f3b146ad8c1f6943f6f5cf62d87a5ea6e2830",
+      "byteIdentical": false,
+      "bytes": 8240
+    },
+    {
+      "path": "README.md",
+      "sourceSha256": "f1faf7c124f2739fef29ea982baa1dda0cfdb5b1ccbb1d185682b2703df72f70",
+      "publishedSha256": "157188cc9d33b10400658590675b6537ab277e1cbba1dbe9c7e972599eeb1ef1",
+      "byteIdentical": false,
+      "bytes": 6139
+    },
+    {
+      "path": "docs/README.md",
+      "sourceSha256": "2f62d7df6ebd0db54ac3974bcaec179d0af02bfb6f0134ff1d1558da57e8d689",
+      "publishedSha256": "a5c0705d8bfe43d2b3e6a3d4e01ff439dc4aa7c5a6e567fd2b134099d7ae3442",
+      "byteIdentical": false,
+      "bytes": 5781
+    },
+    {
+      "path": "docs/how-to/repeated-problems.md",
+      "sourceSha256": "5af3d91bb152a8055d6582eb8e7ea5ee4b54e773d536cb80d840c54dcbada0a4",
+      "publishedSha256": "cb327bffadd2ff73e1d8289e2042f0aa5f469c5236c6a8ff3762e7c0bc101bbe",
+      "byteIdentical": false,
+      "bytes": 60636
+    },
+    {
+      "path": "docs/how-to/versioning-and-performance.md",
+      "sourceSha256": "842e8dc5ff53ffdc3975f4c451361f0676928b44468e2a1f08d7c51dea1a1de7",
+      "publishedSha256": "842e8dc5ff53ffdc3975f4c451361f0676928b44468e2a1f08d7c51dea1a1de7",
+      "byteIdentical": true,
+      "bytes": 5243
+    },
+    {
+      "path": "docs/log/README.md",
+      "sourceSha256": "8d391aff30d09e587cc262d7b10b6d66f096cc0fe5be398c6eaed5cf9efa5dec",
+      "publishedSha256": "2dc54c116a97675106a285fb2ea63ff5e116624c941c21dee3270d5b6b9b8429",
+      "byteIdentical": false,
+      "bytes": 5600
+    },
+    {
+      "path": "docs/phases/02-implementation-plan.md",
+      "sourceSha256": "8fab5ef10b21f08c9ffb310da33809c4f01010e7f5198113935faa978e668b3a",
+      "publishedSha256": "4c4e8e11bd7b8b5ab4b0198690252f71d4ecb07f46bdfb19ceab445b230a0c14",
+      "byteIdentical": false,
+      "bytes": 20378
+    },
+    {
+      "path": "docs/phases/02-step3-build.md",
+      "sourceSha256": "b5073239af0d82528ab98b8f6331793d779145587f8f31093270df05ca6623bb",
+      "publishedSha256": "14e2395d258e32cdd486a46b06bd9a4fdc43e9bca3be3d1d20432053e6735366",
+      "byteIdentical": false,
+      "bytes": 11942
+    },
+    {
+      "path": "docs/phases/README.md",
+      "sourceSha256": "d94d60d6e4ed9f594c7cc5030e4ed62d76454d1eed932724408e4c734dd11218",
+      "publishedSha256": "0e6ada95335e42ab5ea7f8b54ab897c7d98ee7d3bf85cc863e1e071f486d7dfc",
+      "byteIdentical": false,
+      "bytes": 6077
+    },
+    {
+      "path": "docs/log/2026-10-29-phase02-implementation-plan.md",
+      "sourceSha256": "b330f3ba8e250c14aae662850b1cd18f611e9e8726d957b370d3ce5fea9231a8",
+      "publishedSha256": "b330f3ba8e250c14aae662850b1cd18f611e9e8726d957b370d3ce5fea9231a8",
+      "byteIdentical": true,
+      "bytes": 3230
+    },
+    {
+      "path": "docs/log/2026-10-29-phase02-penpot-design.md",
+      "sourceSha256": "901e8503ce05896c55a0a34dc626f0e5452571c5d9a9154f04062080b0da8a3b",
+      "publishedSha256": "0563d3ab35fbdab2a159de51ff2b95d6e2ee9f420d892803f779411f9c7856d7",
+      "byteIdentical": false,
+      "bytes": 3324
+    },
+    {
+      "path": "docs/log/2026-10-29-phase02-scope-readiness.md",
+      "sourceSha256": "4ca5a4eddc495e55f6378c50f2ea09338a45cb3884be13f57575aba984b34bcd",
+      "publishedSha256": "6edab3bcdb576423eceab0b268fe91f8a0f6d021154f82e7eaee9ef0a4486805",
+      "byteIdentical": false,
+      "bytes": 2565
+    },
+    {
+      "path": "docs/log/2026-10-30-phase02-android-preservation-incident.md",
+      "sourceSha256": "e60ed725cd5ddb4ee92cc28644506348806f0e9b653433489b6abeccc3b00a81",
+      "publishedSha256": "14b49b518eade4c6122a7d94318a2f4dbd7dc54a6952e98b31e92cff9307e3d3",
+      "byteIdentical": false,
+      "bytes": 7215
+    },
+    {
+      "path": "docs/log/2026-10-30-phase02-build.md",
+      "sourceSha256": "4f7e0a6368f321e3fc94365f8c855a43a9423411a2f4e6bc7da8eeb63d49cba2",
+      "publishedSha256": "fb2fb924bcb911fa2c8a73409a6eb4b7c94f5481d64e1cc9b24c9a87516907d9",
+      "byteIdentical": false,
+      "bytes": 3603
+    },
+    {
+      "path": "docs/log/2026-10-30-phase02-step4-review.md",
+      "sourceSha256": "d361bf56984d3a2ff43063b7ff04b70196ad7fb3e20600f7c0fab01b05f81f8a",
+      "publishedSha256": "04a49d270fcc38c45c34b7be072dff918d1da50adffb8cb9580c8457417fde99",
+      "byteIdentical": false,
+      "bytes": 3468
+    },
+    {
+      "path": "docs/phases/02-performance.md",
+      "sourceSha256": "a0f0b3a3e1da1150023a7255e371976808b084d2e3be906428b98c831bb66df6",
+      "publishedSha256": "e5440824654d51bcb064a74d3a3a974a1055685d13c7a155ea582276a659093c",
+      "byteIdentical": false,
+      "bytes": 6603
+    },
+    {
+      "path": "docs/phases/02-step4-performance.md",
+      "sourceSha256": "2eb002af4b6157b73f2cf345cad5cdb8f45afa77b285e715afaf87e4ada248bd",
+      "publishedSha256": "2ab224adb7003eae3b1b01698d71062e10b55e9efc2716fd676e4859c4c24152",
+      "byteIdentical": false,
+      "bytes": 8821
+    },
+    {
+      "path": "docs/phases/02-step4-review.md",
+      "sourceSha256": "43b10b493ae7650a41c2129e631b758e4be964a7e4788118598ac5711ef1b8c2",
+      "publishedSha256": "4adca91f4d070461e804628b7377a488d36e259af52abac6cf0d5788d4a49a70",
+      "byteIdentical": false,
+      "bytes": 11632
+    },
+    {
+      "path": "docs/phases/02-penpot-design-review.md",
+      "sourceSha256": "e16af7d502e3eac2eb4ff71ecc39e0028ba363882a8dfc71263c53aa044483b9",
+      "publishedSha256": "e8d424e2ae76a1aefa926277910d073f40b51f73014d37a9bd6b054645ee8a0b",
+      "byteIdentical": false,
+      "bytes": 9542
+    },
+    {
+      "path": "docs/phases/02-scope-readiness.md",
+      "sourceSha256": "df4effc1a327dd1318fc03a5a3c035a23cacd22c6867e41d7f254e2e93cc6f42",
+      "publishedSha256": "65d3bce151c2d46150ce244c57d0e2a29d5c4787a453d3fa8ffa45a94074e94d",
+      "byteIdentical": false,
+      "bytes": 10555
+    },
+    {
+      "path": "outputs/phase02/step4-bootstrap-independent-review.md",
+      "sourceSha256": "294bfe1ead26e47696f65b8e906907d978342c9e7b26221529c9afc7a2c583bb",
+      "publishedSha256": "294bfe1ead26e47696f65b8e906907d978342c9e7b26221529c9afc7a2c583bb",
+      "byteIdentical": true,
+      "bytes": 7788
+    },
+    {
+      "path": "outputs/phase02/step4-codec-port-review.md",
+      "sourceSha256": "4dbf2b71d55a7ebb3ad3f595b32ae76805467a846fc128c84f8a2edddd481ba6",
+      "publishedSha256": "4674675a23b0774e658f5faab0e1f0eadec8821505db9dfb2eaf4580b7aa43e8",
+      "byteIdentical": false,
+      "bytes": 7014
+    },
+    {
+      "path": "outputs/phase02/step4-failure-diagnostic-review-final.md",
+      "sourceSha256": "3f4e7cd92da651cbade87861720c6841953fc79aa25200ac3bda05e1a32ee5c1",
+      "publishedSha256": "3f4e7cd92da651cbade87861720c6841953fc79aa25200ac3bda05e1a32ee5c1",
+      "byteIdentical": true,
+      "bytes": 6490
+    },
+    {
+      "path": "outputs/phase02/step4-evidence-followup.md",
+      "sourceSha256": "86a187d461e9ffadab6f4f9477e552a9d792c2c2d0fcbfcc73c238273a68d35a",
+      "publishedSha256": "86a187d461e9ffadab6f4f9477e552a9d792c2c2d0fcbfcc73c238273a68d35a",
+      "byteIdentical": true,
+      "bytes": 5166
+    },
+    {
+      "path": "outputs/phase02/step4-native-evidence-review.md",
+      "sourceSha256": "7c29a63677c45e8a09cfb98a309d846762c8e206afcb677c860e34ca617044a9",
+      "publishedSha256": "7c29a63677c45e8a09cfb98a309d846762c8e206afcb677c860e34ca617044a9",
+      "byteIdentical": true,
+      "bytes": 9839
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance-independent-review.md",
+      "sourceSha256": "99ec221c4187cf83591cc3685d25c3e37b03ec86a254bcfc77d9428679411e7f",
+      "publishedSha256": "99ec221c4187cf83591cc3685d25c3e37b03ec86a254bcfc77d9428679411e7f",
+      "byteIdentical": true,
+      "bytes": 8800
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance-independent-review.json",
+      "sourceSha256": "80c2d963b551ad89722f6a257d7d4ff6c225d973a13c30bccdab21462eab0030",
+      "publishedSha256": "80c2d963b551ad89722f6a257d7d4ff6c225d973a13c30bccdab21462eab0030",
+      "byteIdentical": true,
+      "bytes": 4607
+    },
+    {
+      "path": "outputs/phase02/step4-final-docs-independent-review.md",
+      "sourceSha256": "7904055aff9bd34d9f8251e6461e4e2409258b337b2510bed7fcc13d541a0383",
+      "publishedSha256": "7904055aff9bd34d9f8251e6461e4e2409258b337b2510bed7fcc13d541a0383",
+      "byteIdentical": true,
+      "bytes": 2364
+    },
+    {
+      "path": "outputs/phase02/step4-final-docs-independent-review.json",
+      "sourceSha256": "0e3d34eca821b2f5c7f7f7e594f8f751a087e3e875c34bcdf9adcb16a4ccd8d5",
+      "publishedSha256": "0e3d34eca821b2f5c7f7f7e594f8f751a087e3e875c34bcdf9adcb16a4ccd8d5",
+      "byteIdentical": true,
+      "bytes": 8037
+    },
+    {
+      "path": "outputs/phase02/step4-bootstrap-current-checks.json",
+      "sourceSha256": "fa69d60961ec0e2499a320dcb9f963748a35a7a3445fcef10102621fda82000d",
+      "publishedSha256": "fa69d60961ec0e2499a320dcb9f963748a35a7a3445fcef10102621fda82000d",
+      "byteIdentical": true,
+      "bytes": 1418
+    },
+    {
+      "path": "outputs/phase02/step4-bootstrap-candidate.json",
+      "sourceSha256": "18e6d2ee2cac021e6a17c7baa2a02ee93912d7ec2d78a4d62b53b9289315c78d",
+      "publishedSha256": "18e6d2ee2cac021e6a17c7baa2a02ee93912d7ec2d78a4d62b53b9289315c78d",
+      "byteIdentical": true,
+      "bytes": 847
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/summary.json",
+      "sourceSha256": "5691601adc738d03243180e03aeef9979ef4632e3a44b02ef765af8b1f14ae14",
+      "publishedSha256": "5691601adc738d03243180e03aeef9979ef4632e3a44b02ef765af8b1f14ae14",
+      "byteIdentical": true,
+      "bytes": 119522
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/summary.md",
+      "sourceSha256": "ea6f47b6410e2fa2882f3d5a2dd0a2759a9e1568c4925d1a41581f05cc3862aa",
+      "publishedSha256": "ea6f47b6410e2fa2882f3d5a2dd0a2759a9e1568c4925d1a41581f05cc3862aa",
+      "byteIdentical": true,
+      "bytes": 4846
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/small/accounts.open.json",
+      "sourceSha256": "49c488a8e6e57cf4109a85db93574b21641bc5689eda8742c0b8fa040a81099e",
+      "publishedSha256": "49c488a8e6e57cf4109a85db93574b21641bc5689eda8742c0b8fa040a81099e",
+      "byteIdentical": true,
+      "bytes": 5082
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/small/accounts.save.json",
+      "sourceSha256": "dd9067174b2c7f7c2339b0c5b5a4a8fc0b8091fe744844715c5761e3e3fd1999",
+      "publishedSha256": "dd9067174b2c7f7c2339b0c5b5a4a8fc0b8091fe744844715c5761e3e3fd1999",
+      "byteIdentical": true,
+      "bytes": 5090
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/small/accounts.migrate_legacy.json",
+      "sourceSha256": "52a470f0f0fb4ad612d92512fb2b3796ec215364ee9fea59e537acd151fb696a",
+      "publishedSha256": "52a470f0f0fb4ad612d92512fb2b3796ec215364ee9fea59e537acd151fb696a",
+      "byteIdentical": true,
+      "bytes": 5130
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/small/accounts.replace.json",
+      "sourceSha256": "9732522510c68892b5331262c9407f72b98c14bfccc92c4b4b6acdc9e39fde57",
+      "publishedSha256": "9732522510c68892b5331262c9407f72b98c14bfccc92c4b4b6acdc9e39fde57",
+      "byteIdentical": true,
+      "bytes": 5108
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/small/accounts.recover_previous.json",
+      "sourceSha256": "0f78fdec420e4712e5409e3a4051b111a9600a7ee4c5c804d5b547d4a0c87997",
+      "publishedSha256": "0f78fdec420e4712e5409e3a4051b111a9600a7ee4c5c804d5b547d4a0c87997",
+      "byteIdentical": true,
+      "bytes": 5138
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/small/workspace.save_restore.json",
+      "sourceSha256": "25a6f6e3dcd146bdb3af665004c8405ac88f4947d81242d6274eff0b19c9ae0d",
+      "publishedSha256": "25a6f6e3dcd146bdb3af665004c8405ac88f4947d81242d6274eff0b19c9ae0d",
+      "byteIdentical": true,
+      "bytes": 5115
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/medium/accounts.open.json",
+      "sourceSha256": "7f16984b86eaec8f0cb12b115ce3049d36dec64a0e78655bc11b00f5cf0c9e04",
+      "publishedSha256": "7f16984b86eaec8f0cb12b115ce3049d36dec64a0e78655bc11b00f5cf0c9e04",
+      "byteIdentical": true,
+      "bytes": 5103
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/medium/accounts.save.json",
+      "sourceSha256": "3bfe7062ea4c0508cf9a74690798d2f022984c9997e7416f304d9f5751adbeda",
+      "publishedSha256": "3bfe7062ea4c0508cf9a74690798d2f022984c9997e7416f304d9f5751adbeda",
+      "byteIdentical": true,
+      "bytes": 5112
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/medium/accounts.migrate_legacy.json",
+      "sourceSha256": "83406c50c02854efcb9b7e2f9f54dc692530bca363d6d2e4ecf6a8a6ffc684fd",
+      "publishedSha256": "83406c50c02854efcb9b7e2f9f54dc692530bca363d6d2e4ecf6a8a6ffc684fd",
+      "byteIdentical": true,
+      "bytes": 5154
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/medium/accounts.replace.json",
+      "sourceSha256": "625b63f80edcd5b084d7e5552dd6258cc648a9b6e034a0b6b4a56a4de2962b29",
+      "publishedSha256": "625b63f80edcd5b084d7e5552dd6258cc648a9b6e034a0b6b4a56a4de2962b29",
+      "byteIdentical": true,
+      "bytes": 5127
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/medium/accounts.recover_previous.json",
+      "sourceSha256": "752267e0a6bc93d0443bb9b9b2131a9cd55c8d2bf321fd7d5ffc650c3c05ed4a",
+      "publishedSha256": "752267e0a6bc93d0443bb9b9b2131a9cd55c8d2bf321fd7d5ffc650c3c05ed4a",
+      "byteIdentical": true,
+      "bytes": 5168
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/medium/workspace.save_restore.json",
+      "sourceSha256": "7fae69aa40b4559a5a79498d4868ea22f7ea4fad498a7df3dc0aac5e7930e872",
+      "publishedSha256": "7fae69aa40b4559a5a79498d4868ea22f7ea4fad498a7df3dc0aac5e7930e872",
+      "byteIdentical": true,
+      "bytes": 5133
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/largest/accounts.open.json",
+      "sourceSha256": "3d90e5fc8f682a3ab7363abb50908f09efd43184ee9526392d095d574167186c",
+      "publishedSha256": "3d90e5fc8f682a3ab7363abb50908f09efd43184ee9526392d095d574167186c",
+      "byteIdentical": true,
+      "bytes": 5167
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/largest/accounts.save.json",
+      "sourceSha256": "d160ca01074060119991d332c93281c7283b7e0b31b9c4a1183250b017815422",
+      "publishedSha256": "d160ca01074060119991d332c93281c7283b7e0b31b9c4a1183250b017815422",
+      "byteIdentical": true,
+      "bytes": 5167
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/largest/accounts.migrate_legacy.json",
+      "sourceSha256": "c9134a1ce2900f69860c33ac65e094cd001ae2d292280917b8b83097145d3f4b",
+      "publishedSha256": "c9134a1ce2900f69860c33ac65e094cd001ae2d292280917b8b83097145d3f4b",
+      "byteIdentical": true,
+      "bytes": 5183
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/largest/accounts.replace.json",
+      "sourceSha256": "6d664bb6b0f58b89f5f7b055341944f28506eba444ce2873baf9601702959879",
+      "publishedSha256": "6d664bb6b0f58b89f5f7b055341944f28506eba444ce2873baf9601702959879",
+      "byteIdentical": true,
+      "bytes": 5186
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/largest/accounts.recover_previous.json",
+      "sourceSha256": "6828d50b5a1a15a1daa6fe9980512dc9907a703878a19b7f00a8114fdd155532",
+      "publishedSha256": "6828d50b5a1a15a1daa6fe9980512dc9907a703878a19b7f00a8114fdd155532",
+      "byteIdentical": true,
+      "bytes": 5203
+    },
+    {
+      "path": "outputs/phase02/step4-final-performance/largest/workspace.save_restore.json",
+      "sourceSha256": "a6a5d8da91ee4278206aa3233c90fe64d73d7b387cd0ffb7325276e7b752a576",
+      "publishedSha256": "a6a5d8da91ee4278206aa3233c90fe64d73d7b387cd0ffb7325276e7b752a576",
+      "byteIdentical": true,
+      "bytes": 5201
+    },
+    {
+      "path": "outputs/penpot/phase02/review-gallery.md",
+      "sourceSha256": "b3b7b601b51c2804a08fd775c760c1cdfc44d98068bfa46a37f4a6ad1fa73a7c",
+      "publishedSha256": "9a1da6a3a95613bbbd5980f57a2b862a68a1f938ab35f854394b27fb1877a480",
+      "byteIdentical": false,
+      "bytes": 3719
+    },
+    {
+      "path": "outputs/penpot/phase02/native-exports.json",
+      "sourceSha256": "1e8814fd86b425d40620963a4bbc1f5c9d164da285d90f7aaedd17b934402405",
+      "publishedSha256": "1e8814fd86b425d40620963a4bbc1f5c9d164da285d90f7aaedd17b934402405",
+      "byteIdentical": true,
+      "bytes": 9545
+    },
+    {
+      "path": "outputs/penpot/phase02/design-overview.png",
+      "sourceSha256": "c145738beb4b2d9bab514b2c9ac338d3def157236bd3fa322467957d76505a9f",
+      "publishedSha256": "c145738beb4b2d9bab514b2c9ac338d3def157236bd3fa322467957d76505a9f",
+      "byteIdentical": true,
+      "bytes": 250880
+    },
+    {
+      "path": "outputs/penpot/phase02/wireframe-overview.png",
+      "sourceSha256": "bef849ccd923e250904c26a7f7b75e5a3024545cd2837e572baea29f66b46a59",
+      "publishedSha256": "bef849ccd923e250904c26a7f7b75e5a3024545cd2837e572baea29f66b46a59",
+      "byteIdentical": true,
+      "bytes": 169335
+    },
+    {
+      "path": "outputs/penpot/phase02/A-status-design-penpot.png",
+      "sourceSha256": "f2e202a0be90532f38bc78bb2a7e07df5312f5cb80476cd3052b6ef5c444ffaa",
+      "publishedSha256": "f2e202a0be90532f38bc78bb2a7e07df5312f5cb80476cd3052b6ef5c444ffaa",
+      "byteIdentical": true,
+      "bytes": 609268
+    },
+    {
+      "path": "outputs/penpot/phase02/A-status-wireframe-penpot.png",
+      "sourceSha256": "04b831bf909105262e39f5e83ced6d5ea64f2ae7708057c73b884b2387e98a58",
+      "publishedSha256": "04b831bf909105262e39f5e83ced6d5ea64f2ae7708057c73b884b2387e98a58",
+      "byteIdentical": true,
+      "bytes": 188143
+    },
+    {
+      "path": "outputs/penpot/phase02/B-file-errors-design-penpot.png",
+      "sourceSha256": "2e495b5ae9b20e02c1272019ef70c603a7db9a42f457117531cae301189b39d9",
+      "publishedSha256": "2e495b5ae9b20e02c1272019ef70c603a7db9a42f457117531cae301189b39d9",
+      "byteIdentical": true,
+      "bytes": 132999
+    },
+    {
+      "path": "outputs/penpot/phase02/B-file-errors-wireframe-penpot.png",
+      "sourceSha256": "cac029ed72e42694cfb5e9d2a041f96bdb97689f854f5a755077e5ef3983138a",
+      "publishedSha256": "cac029ed72e42694cfb5e9d2a041f96bdb97689f854f5a755077e5ef3983138a",
+      "byteIdentical": true,
+      "bytes": 110313
+    },
+    {
+      "path": "outputs/penpot/phase02/C-recovery-design-penpot.png",
+      "sourceSha256": "7e0cea45d82c9d10af69e99c8064cfe7a202af44442aae21aadd00860b637aa2",
+      "publishedSha256": "7e0cea45d82c9d10af69e99c8064cfe7a202af44442aae21aadd00860b637aa2",
+      "byteIdentical": true,
+      "bytes": 138549
+    },
+    {
+      "path": "outputs/penpot/phase02/C-recovery-wireframe-penpot.png",
+      "sourceSha256": "338ae55b89f25a8fbbbed95c74d234be4d85f03802db71e47fcc2ad0d0746c03",
+      "publishedSha256": "338ae55b89f25a8fbbbed95c74d234be4d85f03802db71e47fcc2ad0d0746c03",
+      "byteIdentical": true,
+      "bytes": 113983
+    },
+    {
+      "path": "outputs/penpot/phase02/D-narrow-status-design-penpot.png",
+      "sourceSha256": "a01351879a0e80dda81b8fef2c26b807ff5df6ebb9d9598bf5aa595a0fb28a5d",
+      "publishedSha256": "a01351879a0e80dda81b8fef2c26b807ff5df6ebb9d9598bf5aa595a0fb28a5d",
+      "byteIdentical": true,
+      "bytes": 97959
+    },
+    {
+      "path": "outputs/penpot/phase02/D-narrow-status-wireframe-penpot.png",
+      "sourceSha256": "e56284947c897bb78510ac1b663d8f85c5e830753b16f34e4238375ca4203e26",
+      "publishedSha256": "e56284947c897bb78510ac1b663d8f85c5e830753b16f34e4238375ca4203e26",
+      "byteIdentical": true,
+      "bytes": 47982
+    },
+    {
+      "path": "outputs/penpot/phase02/E-narrow-recovery-design-penpot.png",
+      "sourceSha256": "d7766046975a7025b2c8934edd2d56b074190007b6a094be1181180e95bb3da5",
+      "publishedSha256": "d7766046975a7025b2c8934edd2d56b074190007b6a094be1181180e95bb3da5",
+      "byteIdentical": true,
+      "bytes": 57741
+    },
+    {
+      "path": "outputs/penpot/phase02/E-narrow-recovery-wireframe-penpot.png",
+      "sourceSha256": "f82209c3e1f7043c34fca64531840cd5642b6e606f2c49904bb44d4b9ca15c40",
+      "publishedSha256": "f82209c3e1f7043c34fca64531840cd5642b6e606f2c49904bb44d4b9ca15c40",
+      "byteIdentical": true,
+      "bytes": 48386
+    },
+    {
+      "path": "outputs/penpot/phase02/F-large-text-design-penpot.png",
+      "sourceSha256": "989e1f65e63cb595d3dd0e5b19c9acdfbb39bc4013b055a93e7df36451ea1829",
+      "publishedSha256": "989e1f65e63cb595d3dd0e5b19c9acdfbb39bc4013b055a93e7df36451ea1829",
+      "byteIdentical": true,
+      "bytes": 50471
+    },
+    {
+      "path": "outputs/penpot/phase02/F-large-text-wireframe-penpot.png",
+      "sourceSha256": "58e0f796e8dc949da589d6060a33202ebed98b78842107c13af3953a5fd65710",
+      "publishedSha256": "58e0f796e8dc949da589d6060a33202ebed98b78842107c13af3953a5fd65710",
+      "byteIdentical": true,
+      "bytes": 43008
+    },
+    {
+      "path": "outputs/phase02/step4-v8-composer-result.json",
+      "sourceSha256": "bba783889e9486021840a221798897beddb3399e740f9e318e2621a07d1cfde7",
+      "publishedSha256": "bba783889e9486021840a221798897beddb3399e740f9e318e2621a07d1cfde7",
+      "byteIdentical": true,
+      "bytes": 4200
+    }
+  ],
+  "localOnlyReferences": {
+    "docs/log/phase-02-execution.md": {
+      "sourceSha256AtPackaging": "d490433a2ead39ecf2f36721364cd1003b550152426fa7b98b90c3bb069c639c",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/phase02/post-profile-final-checks.json": {
+      "sourceSha256AtPackaging": "e43b09830a91b99c29db2b0e3475effa1c714a5900c5cb6302538b221dcfe2b9",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/phase02/native-current/summary.json": {
+      "sourceSha256AtPackaging": "c49d8942bb9b5ed7e7ad9a7109003f6e12a2386aa4b1af37b021329f3e33a404",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/phase02/picker/cancel-open-android.json": {
+      "sourceSha256AtPackaging": "8cda025d07fb8a2826115b497a29f6397da9303ed08ecbf089856f809c196682",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/phase02/step4-native/summary.md": {
+      "sourceSha256AtPackaging": "98267335276517fec240970d8104c34a8fc5b786e5ebc5d13b62c603ca0e86a1",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/phase02/step4-android-install-impact-readonly.json": {
+      "sourceSha256AtPackaging": "d569fcec01dd848b58e295c2bdf62855b53853a0359ea1cac6cede00e120e7e3",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/phase02/step4-android-impact-clock.json": {
+      "sourceSha256AtPackaging": "fb7086cb85e5a0a7dabf1a4619fd6af68e4e7dc7b17a2c9735f31772afd593a0",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/phase02/step4-android-debug-certificate-binding.json": {
+      "sourceSha256AtPackaging": "f88b3a9e3c44e25820e3709e95b79d764fca988f1241a2864341b708175aaf8a",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/phase02/step4-android-task-config-inventory.json": {
+      "sourceSha256AtPackaging": "57896eb3e1fb5c14119ba7d8e9a297d3fe0df9036287050fd7e6356ac177f5ca",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/phase02/step4-native-audit.md": {
+      "sourceSha256AtPackaging": "2c04a3b1940c11a6d41fbdc93ffb8148a13b6fda6b3d9368aa905c8436ed7963",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/phase02/performance-frame-id/summary.json": {
+      "sourceSha256AtPackaging": "d2e7a977ea3d08162e84a1fd294c7ed07cc233191383f41e51205de119a3a8e9",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/phase02/app-performance-evidence-review-20261030T101056Z.md": {
+      "sourceSha256AtPackaging": "66e2c36a6c9c98516aee3c74f5cd0e3e16654fc667a442ed251826e3a6056be8",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/phase02/native-performance-audit.md": {
+      "sourceSha256AtPackaging": "a577015ac87ad5878b8fb34bf05e0667a7cdcb5f25038c029195f7ddb9f351e3",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/phase02/step4-remote-readonly.json": {
+      "sourceSha256AtPackaging": "43f3d9b94f4cc8051626e4aa698eda29125cbe3557a186304720f79745e7f9d1",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/penpot/phase02/native-audit.json": {
+      "sourceSha256AtPackaging": "ea905fd2b9f1ce88a5f52b3a262eb73b71acb5b75456ad51a31d7bcbbb6a705f",
+      "public": false,
+      "reason": "Excluded raw/local evidence or live execution journal; no public raw-artifact claim."
+    },
+    "outputs/phase02/step4-codec-port-review.json": {
+      "sourceSha256AtPackaging": "4d66b1915fbedfc18b6cc76673a21e8918e96e2cd81604ee8455056cd76832a8",
+      "public": false,
+      "reason": "Detailed independent synthetic probe report omitted from bounded publication packet; summary MD retained."
+    }
+  },
+  "privacy": "No account payloads, signing stores/private keys, raw command logs, raw conversations, live audit journals, scripts or full Penpot payloads copied. Synthetic fixture summaries and frozen design PNGs only.",
+  "limits": "Hashes for original reports/metrics certify captured source bytes, not the later documentation-only publication HEAD. Explicit local-only references do not imply public raw evidence availability.",
+  "followup": "2026-10-30: current documentation records rejected app publication candidate0b75862; original source hashes are packaging-time provenance, not a claim that later local follow-up was pushed."
+}

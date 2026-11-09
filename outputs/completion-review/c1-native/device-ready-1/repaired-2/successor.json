@@ -1,0 +1,12 @@
+{
+  "recordedUtc": "2026-11-08T04:57:01.833644+00:00",
+  "predecessor": "../repaired-1/plan.json",
+  "predecessorSha256": "4251eca3dbe17beacd141b683ddc6f2c5323c4404cb5d60d6e7c9359bcf8b935",
+  "changes": [
+    "Correct exact invalid_payload assertion at codec-first negative-stock rejection boundary; preserve all no-write/input/history/balance checks"
+  ],
+  "fixtureRoot": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-c1-native-preflight-repaired2-46hjl9sf",
+  "fullSourceInputs": 101,
+  "trackedSubset": 89,
+  "nativeRetry": "New source-bound campaign; both failed contexts preserved"
+}

@@ -1,0 +1,16 @@
+{
+  "performanceStatus": "pending",
+  "reason": "Transfer operation performance is registered as pending until a reviewed preflight/workflow campaign measures p50/p95 latency and sampled RAM/CPU on declared fixtures. No unrelated timings or invented N/A are substituted.",
+  "fixtureIdentity": [
+    "t-conf-1: ordinary 20k transfer on synthetic single-store, revision 1->2",
+    "t-reopen-1: close and reopen persistence and replay, revision 2",
+    "t-replay-1: idempotent replay without revision increment, revision 2",
+    "t-ack-1: uncertain acknowledgement recovery via resolvePendingWrite(), revision 2",
+    "t-sc1: ordinary 20k transfer differential parity against frozen model.js",
+    "t-sc2: transfer-all 100k differential parity against frozen model.js",
+    "t-sc3: legacy unset-total recovery 30k transfer differential parity against frozen model.js",
+    "t-sc4-1: multi-operation mixed history initial transfer 20k",
+    "t-sc4-2: multi-operation mixed history second transfer 15k"
+  ],
+  "fullCampaignAuthorization": "separate_parent_authorization_required"
+}

@@ -1,13 +1,13 @@
-# 0003 — تطبيق ملاحظات تصميم المبيعات
+# 0003 — Apply the sales-design review feedback
 
-الحالة: معتمد بتأكيد المالك للملاحظات الأربع ونوع الطلب، ومنفّذ في المصدر ومعاينة المتصفح. التاريخ: 2026-10-26. المصدر: التعليقات المصدّرة من مراجعة التصميم، ثم تأكيد أن القائمة المطلوبة هي نوع الطلب (صالة/سفري/توصيل). يحل هذا القرار محل اشتراط إدخال النقد المستلم في قرار 0002، ويبقي قواعد المخزون واليومي والقاصة كما هي.
+Status: approved when the owner confirmed the four comments and order type; implemented in source and browser preview. Date: 2026-10-26. Source: exported design-review comments, then confirmation that the requested selector is order type (dine-in/takeaway/delivery). This decision supersedes decision 0002's requirement to enter cash received and preserves the inventory, daily-account and cashbox rules.
 
-- تبقى صفحة البيع بحجم النافذة. البحث والشريط العلوي والإجمالي وزر إتمام البيع ثابتة، وتتمرير الأصناف داخل قائمتها. قائمة أصناف الفاتورة قابلة للتمرير عند طول الطلب حتى تبقى كل أسطره قابلة للوصول دون تحريك الدفع.
-- بطاقات الأصناف تعرض صوراً مرجعية مولدة، محفوظة محلياً، وليست صوراً فعلية لمنتجات المطعم. يمكن اختيار الصورة المناسبة لكل صنف من تعديله بالمخزن، أو إبقاؤه بلا صورة. بيانات الحسابات تحفظ مفتاح الصورة المسموح فقط. [مصادر الصور ومجموعة النصوص](../reference/product-photos.md).
-- الضغط على إتمام البيع يسجل دفع صافي قيمة الفاتورة بالضبط، دون إدخال النقد المستلم. الخصم يبقى مبلغاً ثابتاً. لا نضيف القيمة للقاصة تلقائياً. الفواتير السابقة تحتفظ بالنقد المستلم والباقي المسجلين.
-- يستبدل حقل الملاحظة في البيع السريع بقائمة نوع الطلب. الإعدادات تسمح بتعديل الأنواع وترتيبها: اسم واحد لكل سطر، من 1 إلى 20 نوعاً، دون تكرار أو اسم فارغ، والأول افتراضي. تحفظ الفاتورة اسم النوع وقت البيع، فلا تتغير الفواتير السابقة عند تغيير الإعدادات. الملاحظات السابقة تبقى في الوصول.
-- الصيغة 9 تضيف تفضيلات أنواع الطلبات ومفتاح الصورة ونوع الطلب الاختياري للفواتير. يقبل الترحيل الصيغ 1–8 ويحافظ على السجلات السابقة. الفاتورة القديمة التي لا تعرف نوع الطلب لا تنسب تلقائياً إلى نوع جديد.
+- Keep the sales page within the window. Search, top bar, total and complete-sale action remain fixed, with products scrolling inside their list. Ticket lines scroll for long orders so every line remains reachable without moving payment controls.
+- Product cards show generated reference images stored locally, not photographs of the restaurant's actual products. A suitable image can be chosen while editing a product in inventory, or the product can remain without an image. Account data stores only the allowed image key. [Image sources and prompt set](../reference/product-photos.md).
+- Completing a sale records payment of the exact net receipt value, without entering cash received. The discount remains a fixed amount. Do not automatically add the value to the cashbox. Earlier receipts preserve their recorded cash received and change.
+- Replace the quick-sale note field with an order-type selector. Settings allow editing and ordering types: one name per line, from 1 to 20 types, without duplicates or empty names, with the first as default. A sale stores its type name at the time of sale, so changing settings does not change earlier receipts. Earlier notes remain accessible.
+- Schema 9 adds order-type preferences, the image key and an optional receipt order type. Migration accepts schemas 1–8 and preserves previous records. An old receipt with no known order type is not automatically assigned a new type.
 
-الإصدار في المصدر 1.11.0 ومعاينة المتصفح محدثة. التطبيق المثبت يبقى 1.10.1 خلال جولة مراجعة التصميم الحالية؛ لم تُفتح حسابات المطعم أو تضاف إليها بيانات توضيحية.
+Source version is 1.11.0 and the browser preview is updated. The installed application remains 1.10.1 during this design-review round; restaurant accounts were neither opened nor populated with illustrative data.
 
-تحديث 2026-10-26: جانب التنقل والتمرير وحماية المسودة حل محله [القرار 0004](0004-ux-popouts-and-recovery.md). تبقى الصور والدفع الدقيق وأنواع الطلبات معتمدة.
+Update, 2026-10-26: navigation, scrolling and draft-protection behavior are superseded by [decision 0004](0004-ux-popouts-and-recovery.md). Images, exact payment and order types remain approved.

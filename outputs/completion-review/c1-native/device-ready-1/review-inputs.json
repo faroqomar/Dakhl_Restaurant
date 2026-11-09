@@ -1,0 +1,992 @@
+{
+  "recordedUtc": "2026-11-08T05:17:08.154122+00:00",
+  "scope": "One successful C1 iOS representative pilot plus three preserved failed source contexts; independent review, no self-approval",
+  "currentSourceInputs": 101,
+  "nativeTestsPassed": 1,
+  "runtimeRevision": "bb00ccdad8f6710ca1778260d42ed5584f26a86c",
+  "inputFingerprint": "280847486025a3764c4a59b77220ab32c69de3c20ccb18ed7c5d9a0f03b4b999",
+  "files": [
+    {
+      "path": ".dart_tool/package_config.json",
+      "bytes": 21040,
+      "sha256": "f5a804384a7c0c0446cc0dd19f76e791ea87861068e592f240e2aafd108dd4b0"
+    },
+    {
+      "path": ".fvmrc",
+      "bytes": 26,
+      "sha256": "90bf8f8884c05a407f51d6ef651ba033fef99a656010f8bfcb65951e921f4294"
+    },
+    {
+      "path": "assets/.DS_Store",
+      "bytes": 6148,
+      "sha256": "a37fc6a722a700f92d843715f013c6ef792922b5cf867ca70d76ec345a45cc96"
+    },
+    {
+      "path": "assets/fonts/Amiri-Regular.ttf",
+      "bytes": 431116,
+      "sha256": "ab391c4147d054c48976e98322ad0eefe1427aa0e0502a12a4c75d80a70cfcd7"
+    },
+    {
+      "path": "assets/fonts/INTER-SOURCE.json",
+      "bytes": 727,
+      "sha256": "0dedd756d69888039a4ce14df615e1f3cd7f41eae3220738fe889e97dad64ce5"
+    },
+    {
+      "path": "assets/fonts/Inter-OFL.txt",
+      "bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "path": "assets/fonts/Inter.ttf",
+      "bytes": 876576,
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+    },
+    {
+      "path": "assets/fonts/METADATA.pb",
+      "bytes": 1857,
+      "sha256": "3df4f62489d9b01bb900d36e73120c06dfed0c49b585ff4398fd8a11410fd114"
+    },
+    {
+      "path": "assets/fonts/OFL.txt",
+      "bytes": 4389,
+      "sha256": "72de68e5954f4fdd24702292ef5a32f003ca960ec9330dc86e5eefb5dffb9b22"
+    },
+    {
+      "path": "assets/fonts/SOURCE.md",
+      "bytes": 1974,
+      "sha256": "6e16cdec5de6e72e8c421d58c98cc5c51a5afbf60c1f8bb2d0bf7e12db702906"
+    },
+    {
+      "path": "assets/ui/SOURCE.md",
+      "bytes": 442,
+      "sha256": "72a47939fdd81d68f290a0554d77571c7bf8e6b908a60b2fab0b6a8d767417f9"
+    },
+    {
+      "path": "assets/ui/appetizers-480.webp",
+      "bytes": 38940,
+      "sha256": "61905fc92ab0b8823ccac953e9228ff64a9833cfdf3d2e72ff068f34403a40b8"
+    },
+    {
+      "path": "assets/ui/beef-kebab-480.webp",
+      "bytes": 57946,
+      "sha256": "8301b2382543f54f69a6ceb3c15143dddf4e73cdbb085010ab35f6a122a0019e"
+    },
+    {
+      "path": "assets/ui/chicken-kebab-480.webp",
+      "bytes": 58554,
+      "sha256": "d8680deb5d2b1ad2b0d4371bae270e499a4c4da5b0e8ce025aff47baa3d77677"
+    },
+    {
+      "path": "assets/ui/cola-480.webp",
+      "bytes": 41606,
+      "sha256": "56f04bb847e5af34febd6b13ebf203099cc37d215a56bcfeb1484018c4aa6aa2"
+    },
+    {
+      "path": "assets/ui/dulaimiya-480.webp",
+      "bytes": 53536,
+      "sha256": "0ca509c92e7f8388faf68f8315d26e2c07f9ccfe042e2d6d5e90ae5d87278fc0"
+    },
+    {
+      "path": "assets/ui/grilled-chicken-480.webp",
+      "bytes": 49286,
+      "sha256": "6cb9e42ec177b5469b2e8e9d1f598dc7eb3996546d7c68602d61d75127b65f41"
+    },
+    {
+      "path": "assets/ui/red-rice-480.webp",
+      "bytes": 38052,
+      "sha256": "834a50464f3102bab64b179ad3a9b00dfc9b702ff6d17b8b45c0bc58f44b5988"
+    },
+    {
+      "path": "assets/ui/water-480.webp",
+      "bytes": 23346,
+      "sha256": "23ffd46e2afa0633ab0e543e0799f23d1dfdf310ae5258ceead86e74639ad498"
+    },
+    {
+      "path": "dev-tooling-dependency.json",
+      "bytes": 288,
+      "sha256": "24065e391fc13ccf10eaf0f131deb9024641e29b68e7b75dfad07447e0a91299"
+    },
+    {
+      "path": "docs/log/2026-11-08-c1-native-device-ready-pilot.md",
+      "bytes": 7331,
+      "sha256": "117d6e69ce18b10e3154ac770fe75163f0befdcd50a6f0b1f50508abe1fae543"
+    },
+    {
+      "path": "docs/phases/c1-design-approval.md",
+      "bytes": 1347,
+      "sha256": "a156a27fff045dcc6a63980083044d76730027302a14bcc126b58a0dc8432cba"
+    },
+    {
+      "path": "engine-dependency.json",
+      "bytes": 801,
+      "sha256": "8221825716c72a5b1221a1cbfc8f70f27bb3db2ede59648864194ea798544f5c"
+    },
+    {
+      "path": "integration_test/c1_catalog_native_test.dart",
+      "bytes": 21477,
+      "sha256": "59b50cf07c9fc7113cfd490c00f697a82dfa8be478939af60c6094e0ec6d79ec"
+    },
+    {
+      "path": "integration_test/support/native_app_readiness.dart",
+      "bytes": 4578,
+      "sha256": "e8f71ee996de207ab9f40e08285a050658b0868ae8fe09c5011ca2a5fc16f6ed"
+    },
+    {
+      "path": "ios/.gitignore",
+      "bytes": 569,
+      "sha256": "37380775aeb2499662b7aca80f4ac4c95ae827c3ba2bfa179aa3e9af4812c623"
+    },
+    {
+      "path": "ios/Flutter/AppFrameworkInfo.plist",
+      "bytes": 720,
+      "sha256": "da12038f9b2688a8a26160fea2609fa8fcb11421448c109f09c0f573efe7698d"
+    },
+    {
+      "path": "ios/Flutter/Debug.xcconfig",
+      "bytes": 30,
+      "sha256": "a82d7765b37116ee4821d2cd1d65942febf8032353757ffb0826eabde785b4a6"
+    },
+    {
+      "path": "ios/Flutter/Release.xcconfig",
+      "bytes": 30,
+      "sha256": "a82d7765b37116ee4821d2cd1d65942febf8032353757ffb0826eabde785b4a6"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.pbxproj",
+      "bytes": 25809,
+      "sha256": "eca5db65df873b58c2a551efb50ea04c4cab843c3f0962a23891adbad0fab947"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+      "bytes": 135,
+      "sha256": "7f3b00b5c3fdb45242d7b87e1e5c4e25d1fa8129a16c94295ecc4e8ea2235c5f"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "bytes": 238,
+      "sha256": "dfa0f9bb85b95ccba9c6811adadf8cb407fb5d52088e89db83ebc308ec448542"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings",
+      "bytes": 226,
+      "sha256": "11b247bc6796892d67c9a821d18604db4dd6a880981b34f38460b9866e6b247f"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme",
+      "bytes": 4717,
+      "sha256": "9fbce429f56243561dd437a527136c9f9ed77165e3b271b923faf236cfcd0484"
+    },
+    {
+      "path": "ios/Runner.xcworkspace/contents.xcworkspacedata",
+      "bytes": 152,
+      "sha256": "46c3c9702ff7c5584e11c954d943cfb6e07fb26e3fbd072ddbc0f388aa352de1"
+    },
+    {
+      "path": "ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "bytes": 238,
+      "sha256": "dfa0f9bb85b95ccba9c6811adadf8cb407fb5d52088e89db83ebc308ec448542"
+    },
+    {
+      "path": "ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings",
+      "bytes": 226,
+      "sha256": "11b247bc6796892d67c9a821d18604db4dd6a880981b34f38460b9866e6b247f"
+    },
+    {
+      "path": "ios/Runner/AppDelegate.swift",
+      "bytes": 539,
+      "sha256": "451c6d9ba0a2b3ff43092ea349c60fa79a91f1158b915eb29dbdd357cb95d7b8"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "bytes": 2519,
+      "sha256": "3b1e214f466ffedff74baa5598ad5c4421130eea6bc8d57b8fe23435e8280ae4"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "bytes": 10932,
+      "sha256": "7770183009e914112de7d8ef1d235a6a30c5834424858e0d2f8253f6b8d31926"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png",
+      "bytes": 295,
+      "sha256": "cab10a0d391ec5bc09ef50ce49e8ad401cee7ef03707ec0923a222c5c2b3d212"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png",
+      "bytes": 406,
+      "sha256": "b9ad02cf6576a04d1b6806ac02a2431481b448dd0c2e505ce25842d1f7c4730b"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png",
+      "bytes": 450,
+      "sha256": "c6e6d3b215ae744a9c391f4c4d44157eff5e739d6ad6c39f9bfa5df66dddd267"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png",
+      "bytes": 282,
+      "sha256": "5dee24dc104ac76dc162e42ae0beb163d426bf365562ee28ba7b3ad368559a60"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png",
+      "bytes": 462,
+      "sha256": "a9b21eb6f4271385655a8771f76e29eef8c1107d7879cbcfc567e6619d1f716a"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png",
+      "bytes": 704,
+      "sha256": "e677d701ffe4af7bc2935098d6b3984cc9ab7ace573e6900955a5535b12410cf"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png",
+      "bytes": 406,
+      "sha256": "b9ad02cf6576a04d1b6806ac02a2431481b448dd0c2e505ce25842d1f7c4730b"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png",
+      "bytes": 586,
+      "sha256": "7c61c42fc7b657d9cf314d32a4ec458f0647c3aaf360be1b9377857266ec2499"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png",
+      "bytes": 862,
+      "sha256": "19be171481dc71a0b2803ebcd01dd8b0c5fd5778dee34c0a3cabc948c225f24e"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png",
+      "bytes": 862,
+      "sha256": "19be171481dc71a0b2803ebcd01dd8b0c5fd5778dee34c0a3cabc948c225f24e"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png",
+      "bytes": 1674,
+      "sha256": "4209a49e44a92ec40a327d3455eb1b1c153ee83d75de1c2be0a12ab18b2ff9de"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png",
+      "bytes": 762,
+      "sha256": "836c918cb613249eba0483a6b02fa3df3c1c0a89a315ee4d3b88509b83c7ab73"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png",
+      "bytes": 1226,
+      "sha256": "41c7d42f6e61f8fe7f30b1ffa2256aecbc9682be06d18c4a3062043e1a2e547c"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png",
+      "bytes": 1418,
+      "sha256": "5d7e5bdf01b93802bc973345b3a78c038907147625035952a08a115a563b7f81"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json",
+      "bytes": 391,
+      "sha256": "ccc7950fd5f5b82067c85f667940a9d59189151460761ece8098ca78daa19469"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png",
+      "bytes": 68,
+      "sha256": "93ae7d494fad0fb30cbf3ae746a39c4bc7a0f8bbf87fbb587a3f3c01f3c5ce20"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png",
+      "bytes": 68,
+      "sha256": "93ae7d494fad0fb30cbf3ae746a39c4bc7a0f8bbf87fbb587a3f3c01f3c5ce20"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png",
+      "bytes": 68,
+      "sha256": "93ae7d494fad0fb30cbf3ae746a39c4bc7a0f8bbf87fbb587a3f3c01f3c5ce20"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
+      "bytes": 336,
+      "sha256": "a985b626c4f7546a8ba392d135e9226c3547c8e2b46895f5f2bdf40d7b14ef9f"
+    },
+    {
+      "path": "ios/Runner/Base.lproj/LaunchScreen.storyboard",
+      "bytes": 2377,
+      "sha256": "857e61203b3deafb05766d8fcda898b86a7cb6f3d5e385ecc9926c4d698215e9"
+    },
+    {
+      "path": "ios/Runner/Base.lproj/Main.storyboard",
+      "bytes": 1605,
+      "sha256": "fd367b6c43006d61b730f674970dd48b9f662c8f2264e52ffc1558102a2c9f2d"
+    },
+    {
+      "path": "ios/Runner/Info.plist",
+      "bytes": 2238,
+      "sha256": "d59c03b601068cc901559de9f14ec761264f50c03211db9468983cda74f6646b"
+    },
+    {
+      "path": "ios/Runner/Runner-Bridging-Header.h",
+      "bytes": 38,
+      "sha256": "1a8d11d01d1cc92c650c9c9ed35299240052d4683a15a719a2315ef44185e074"
+    },
+    {
+      "path": "ios/Runner/SceneDelegate.swift",
+      "bytes": 76,
+      "sha256": "add68b905971dedfcc0d0b5b7118030de5925ba8c081ad9815463699e3a444ad"
+    },
+    {
+      "path": "ios/RunnerTests/RunnerTests.swift",
+      "bytes": 285,
+      "sha256": "5e8f4908dacea6f29b2a790e4d38bf5fded69096063f9a27a2f21584d62b30c0"
+    },
+    {
+      "path": "lib/accounts/account_document.dart",
+      "bytes": 1950,
+      "sha256": "2604b3447261bb7c488078b371baa44dbccc7dc119d8fbdd2d00c27c37a438f7"
+    },
+    {
+      "path": "lib/accounts/accounts_repository.dart",
+      "bytes": 14731,
+      "sha256": "f059f59433c2d42c55ad794e61fcbcddb1554e6c004d047911f0d40b26aa3cf8"
+    },
+    {
+      "path": "lib/accounts/accounts_surface.dart",
+      "bytes": 12539,
+      "sha256": "b99e98ce88324b00079b8c86788554d85dbef3446ff42882c5a323a8ff735a7a"
+    },
+    {
+      "path": "lib/accounts/accounts_view_model.dart",
+      "bytes": 15579,
+      "sha256": "af3108c030bae58e34ce3606273e1b3e4f19a60b00a19678e97afb8d442eb4c6"
+    },
+    {
+      "path": "lib/accounts/legacy_account_codec.dart",
+      "bytes": 46428,
+      "sha256": "d95001f493fb8e70ee1988e3f620ca0684fc1136ab2e9bfad49f7032a3b92ebd"
+    },
+    {
+      "path": "lib/accounts/legacy_v8_timestamp.dart",
+      "bytes": 14489,
+      "sha256": "4f7ac2f32cd665d15094293f694ffde61cc35e98f5313ebb894b66031c414f63"
+    },
+    {
+      "path": "lib/accounts/workspace_document.dart",
+      "bytes": 1948,
+      "sha256": "76897263ad71ad49822f245c0a9077f4bd483d4ed6b8582742266df8e66bf726"
+    },
+    {
+      "path": "lib/app/accounts_store.dart",
+      "bytes": 5520,
+      "sha256": "dd1c2b901b4282bafeed9d4c1ee0c8036b9eaaff46e1109cf160810850f62e97"
+    },
+    {
+      "path": "lib/app/app.dart",
+      "bytes": 22560,
+      "sha256": "5b4759b6ea526b5271c7a023c97bd5b9c7cd5d565b1bde5712cf02eb17e3c24a"
+    },
+    {
+      "path": "lib/app/bootstrap.dart",
+      "bytes": 3774,
+      "sha256": "fc4a90a4fd4c7cb18f64aadf2b926d0b663703b297db0def277041f736c5a351"
+    },
+    {
+      "path": "lib/app/ios_shell_back_gesture.dart",
+      "bytes": 4345,
+      "sha256": "4c2c03ebe96d06adc336443aad01acc288618a853ab60c349b873664f3409788"
+    },
+    {
+      "path": "lib/catalog/catalog_formatters.dart",
+      "bytes": 3996,
+      "sha256": "b5990043017745b62b60745d8297fa28b173e841a12fb710bb33281c5323d151"
+    },
+    {
+      "path": "lib/catalog/catalog_read_model.dart",
+      "bytes": 4004,
+      "sha256": "1dd780146c76cdee653ab03ab1ae32928d4e0b4e1e3e75b837800348bc61c668"
+    },
+    {
+      "path": "lib/catalog/catalog_stock_history.dart",
+      "bytes": 8046,
+      "sha256": "bb4f70693865a3d7cd710ddb5630e23db3e1351be12a9b81227f180c0beca78c"
+    },
+    {
+      "path": "lib/catalog/catalog_view_model.dart",
+      "bytes": 6451,
+      "sha256": "49bb283c6225b01b8c5a27591a26648081c3fb0f6340f9187d246035e2936a81"
+    },
+    {
+      "path": "lib/catalog/inventory_surface.dart",
+      "bytes": 31598,
+      "sha256": "6b2ba246bc9ff8fca6f8b7add70cfe1b002e866a36be44b911f8f4c1e51e5da4"
+    },
+    {
+      "path": "lib/catalog/product_form_dialog.dart",
+      "bytes": 31456,
+      "sha256": "af24df0ecf86c612e02c14962a8e239272ece9702a6c1dd7380511128b3976f6"
+    },
+    {
+      "path": "lib/catalog/product_photo_draft_controller.dart",
+      "bytes": 10948,
+      "sha256": "abf47ce91db7d23842c5c87e056cd3952b68633e61f21a189af2361acf0a9115"
+    },
+    {
+      "path": "lib/catalog/stock_history_dialog.dart",
+      "bytes": 19125,
+      "sha256": "70ee7aebaee726d82935ad015b95acc28ecd42297455e37585a0a96483890eee"
+    },
+    {
+      "path": "lib/catalog/stock_movement_dialog.dart",
+      "bytes": 12684,
+      "sha256": "66609e95a7200b86d3c346b88159246cc847ded76dab73190e7674f2f8fd09ab"
+    },
+    {
+      "path": "lib/catalog/stock_reversal_dialog.dart",
+      "bytes": 6473,
+      "sha256": "569d2c5b34b12941619a06778ff3a43768f9b413bbbc94c52c4b55e390ab749e"
+    },
+    {
+      "path": "lib/inventory/inventory_commands.dart",
+      "bytes": 8546,
+      "sha256": "0eaa3008f30f5d63518a4bbc71bbb77cc11133adea6765d4f863ce22d77bb8c0"
+    },
+    {
+      "path": "lib/inventory/stock_projection.dart",
+      "bytes": 4149,
+      "sha256": "4a6e3b6451d6a33f086c8c098cb72678066939ecc630fb2d87a4f3a44f5381ad"
+    },
+    {
+      "path": "lib/platform/shell_preferences_directory.dart",
+      "bytes": 3346,
+      "sha256": "8191470332c3bbf8f536c8d2b916bf2db4564ef9522644360a278d4093185f51"
+    },
+    {
+      "path": "lib/shell/shell_preferences.dart",
+      "bytes": 3234,
+      "sha256": "1664ca1c96eaa1bc469c18417d2f7b6bb0b85bc48f19091033fd68a5fbbbaa2b"
+    },
+    {
+      "path": "lib/shell/shell_routes.dart",
+      "bytes": 2751,
+      "sha256": "29f7a708e24f78f17e026d19146720c9fdb4c9c0145f4d4e81c3f1c7660bd7c3"
+    },
+    {
+      "path": "lib/shell/shell_view_model.dart",
+      "bytes": 17363,
+      "sha256": "367b0331fc5833619f3adeb12e101fd1584c8420bfe04eacf56941b68bb21423"
+    },
+    {
+      "path": "lib/ui/component_gallery.dart",
+      "bytes": 7061,
+      "sha256": "294ded9f16b0693b8925ddac2f3aad1c5a9998f8d62f932d3053731f04960497"
+    },
+    {
+      "path": "lib/ui/components.dart",
+      "bytes": 25269,
+      "sha256": "4215fd3486f96ca6c686f388daccab7d39eade5f60607e81109e3c832df857e6"
+    },
+    {
+      "path": "lib/ui/dakhl_ui.dart",
+      "bytes": 270,
+      "sha256": "1974d326c1f56e713c937b7640ac74fac2b50668759dafe086489e5467f427e7"
+    },
+    {
+      "path": "lib/ui/dialogs.dart",
+      "bytes": 8093,
+      "sha256": "d99a92972604d58ec3124cbe2e7feab6a86183ad0fdcb3bf7651fd85cf19fc40"
+    },
+    {
+      "path": "lib/ui/icons.dart",
+      "bytes": 4399,
+      "sha256": "f4ef42502f4d0032c7ccf642d604ef5253e68fa36f8bccce1efa3a70754b80ec"
+    },
+    {
+      "path": "lib/ui/route_surface.dart",
+      "bytes": 26593,
+      "sha256": "292f3ea3e62e125002a699b636e0d2d206febbcb9c1ac538eda09842161431ef"
+    },
+    {
+      "path": "lib/ui/shell_view.dart",
+      "bytes": 15763,
+      "sha256": "d96f6d4727d2eb6ec6dd4bae3d350fc21e0b5114502ae88e99318042993b8bde"
+    },
+    {
+      "path": "lib/ui/theme.dart",
+      "bytes": 4078,
+      "sha256": "3cde79b90ce5104929f9392ac6386938175155a427e322d5ea393f403132dc2a"
+    },
+    {
+      "path": "outputs/completion-review/c1-design-approval.json",
+      "bytes": 17124,
+      "sha256": "6ae194bea270d5f5be058f37d612f3be41e98a61e9d10ede6608502d77614313"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/baseline.json",
+      "bytes": 1594,
+      "sha256": "f76e77d543b2b5d4f0805d1b8a0bdd7e67f767b0a852289154f671dab45eb080"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/cleanup.json",
+      "bytes": 2702,
+      "sha256": "90e7e3dcc53578948ef959472c0a85d6c29245c682102a80f316a51560a7ba10"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/device-observation.json",
+      "bytes": 512,
+      "sha256": "4fffd10d55bfca34ca4a66249fb6cbcc521b8f509d110f10838dd339a09c5207"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/device-open-ready.json",
+      "bytes": 514,
+      "sha256": "2e1e4125b48950116aee6d92d9b98960ba678832c7c053fa97cb849676c89186"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/device-open.json",
+      "bytes": 629,
+      "sha256": "986dd71175ad4bdadc139faa9603f84ac867c10964e33e20d366698475da79a5"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/device-restoration.json",
+      "bytes": 398,
+      "sha256": "0410d5aff4ab76690de8e204d1c3db2ee92269b00063b7fc049b70d3e09a5e2d"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/failure-diagnosis.json",
+      "bytes": 872,
+      "sha256": "c241946d2dd77495e941814d15b77ba77377ff1cd4cfd5ce1f5e4a2bcbfad08c"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/fixture-descriptor.json",
+      "bytes": 478,
+      "sha256": "ce2a435fe8732f63872b33b911aeb284b0168144253e4973549c1d07a3d83ffb"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/harness-repair-2.json",
+      "bytes": 405,
+      "sha256": "014628b63ca737b040772a37514579073d1cf5f768d468b294cba5c7ca8b2f01"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/harness-repair.json",
+      "bytes": 766,
+      "sha256": "4d68ac2b1edc520d801507a2d425c0e5a28b780f0879b9d92f4d613e9e818b5a"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/input-draft.json",
+      "bytes": 22674,
+      "sha256": "9989419e6dc7a7467d3836c6253d6037939707cf94a5f8fe4c18d221022fb963"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/binary-identity.json",
+      "bytes": 1175,
+      "sha256": "9e12b65958462496b66054650b23db521b0539fa2a47ecc7f566fd2b80f1d48a"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/cleanup.json",
+      "bytes": 1094,
+      "sha256": "b4c8e433c95d7f8c046c7be34ba2b77de02d683a2e60f424f465af55031c8769"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/device-observation.json",
+      "bytes": 519,
+      "sha256": "321a9435b571aad2dfa6d988f8f50199a2f0b197a29a69e851247577cb536b95"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/device-open-ready.json",
+      "bytes": 556,
+      "sha256": "a19aa1df1ceaf0d57497cf157371dfd58f57c5fc73bca3edc2acf8f125f8ea51"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/fixture-descriptor.json",
+      "bytes": 567,
+      "sha256": "841e2e2123d79ba08c5d05695694176a35383e0fb3c56a41b701c97b975e16cd"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/pilot-attempt-1-command.json",
+      "bytes": 1093,
+      "sha256": "34402335ed8ef23502faf53219dbed93016390961f7ba980922d70327c318e08"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/pilot-attempt-1.log",
+      "bytes": 352,
+      "sha256": "680bd389be7208b92c3ac62b5a837289996ec29ac2c13ce5a01b365e5f6d3a27"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/pilot-ledger-receipt-1.json",
+      "bytes": 1339,
+      "sha256": "0966472bc5613c468d11447876705beaf89a3a14a20b02d17ffcf1008a8e9455"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/pilot-process.json",
+      "bytes": 443,
+      "sha256": "e6f72521c3f22b8afece915135c5b402bc3478e268eae4ead0bc67fe8ea2610c"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/plan.json",
+      "bytes": 12440,
+      "sha256": "5ca3d4ff330f3c2df367f2b4e2c6870dd3fb99ab6ca3dfe64d7f41d8ef6c4fb1"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/preflight-attempt-1.json",
+      "bytes": 1224,
+      "sha256": "c8aa811c174485b54a9520ddc4c30ad048737a9503627a050ff523571bd691d0"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/preflight-command-1.json",
+      "bytes": 732,
+      "sha256": "5ac35f7800cfa50f50e02d5462f2ac49d1d92c9b4ec79562149c44c51d06410d"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/preflight-ledger-receipt.json",
+      "bytes": 945,
+      "sha256": "f3eed6907728c67e2d1d326925e1703dec5394fd75746354e0d2e62ee859a12b"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/preflight-spec.json",
+      "bytes": 11389,
+      "sha256": "43fb375a11b8634de6835d74dc8ddf6bd928705cae73461f76e1006bbf698d3d"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/state.json",
+      "bytes": 3196,
+      "sha256": "3a19657f1f644631347060975d216d252a6528741c7f25f361942cfaef7c9e7b"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/successor.json",
+      "bytes": 1106,
+      "sha256": "5c7f7bd8c9e39107e901757b491df4a417e865b1c99cd2aa0cf41c14e554d201"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/workflow-init.json",
+      "bytes": 1254,
+      "sha256": "61d7c981ae7c04fed8d40efcea9b5b34e8f416d9a8a704b5163463e7f9a80226"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/workflow-pilot-record-1.json",
+      "bytes": 1805,
+      "sha256": "98307a8a46a507ab704325798de59a3dda9fd231c09d80eee0295bde8231629f"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/workflow-preflight-record.json",
+      "bytes": 1812,
+      "sha256": "e26e1195632e3f7b23b18bed92c698a8bc37076a49ecc281faca9040454b0dcb"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/layout-repair-1/workflow-summary.json",
+      "bytes": 1640,
+      "sha256": "5b4af3e0e61b73e6673b864d67f987516a56e611db5fbb90dd01912c14e02e82"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/original-harness.dart.txt",
+      "bytes": 20711,
+      "sha256": "b5c5606a91be73266914282cc0ccfd38a3b8124186ff1f862c577d2de721c9f3"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/pilot-attempt-1-command.json",
+      "bytes": 1078,
+      "sha256": "83ea28f16b681381dcf7843fc60557f2700fece805066fe007b3d058c7e56a65"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/pilot-attempt-1.log",
+      "bytes": 4187,
+      "sha256": "054ff7ae848617ecf9ca33d7efabc34dba0ff955e2b8c61e447bfca41b66e7bb"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/pilot-ledger-receipt-1.json",
+      "bytes": 1154,
+      "sha256": "04b0283e770b21f6dd7163e9ba131a40598a423b4b99978651945271f1506eb4"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/pilot-process.json",
+      "bytes": 445,
+      "sha256": "7639c4862e4282595e75ed2aeab492ee912171ba04ed15553fb75afbee1e829a"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/plan.json",
+      "bytes": 12424,
+      "sha256": "8fa00a80873e367108cb94ffd415a521811d194a1c13d4b2b1f01d4036538a7a"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/preflight-attempt-1.json",
+      "bytes": 1224,
+      "sha256": "e49aaf0fbd669b6a500f9b3f0ee7ec20d550ee746285f773dee8593db219e974"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/preflight-command-1.json",
+      "bytes": 700,
+      "sha256": "5f074efc764b1007925936c0bf9f39b2feafaa2df07c56e1679e198595a88191"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/preflight-ledger-receipt.json",
+      "bytes": 929,
+      "sha256": "1a9d54c1aeb84579d7256f870964e69e886e0d478ec8cf3483e0f0e3934fe651"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/preflight-spec.json",
+      "bytes": 11368,
+      "sha256": "59e25f0b5f85493d3f21be880f207fa08ed46a71c55785616405d76aeb17e575"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/receipt.json",
+      "bytes": 4839,
+      "sha256": "16d750f0f9801143640f0cd30a8dc23da8a1d6f98787e6347dce954b0ee99e61"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/device-observation.json",
+      "bytes": 521,
+      "sha256": "4d5ff354f704b2360438b780985849b4ac30b50d5073ce686baddea58f67c7ae"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/device-open-ready.json",
+      "bytes": 536,
+      "sha256": "2c826952af5dd36fda256cbbcd42de7ad2fd04e69c09ebf1b75198313b104f9a"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/failure-diagnosis.json",
+      "bytes": 764,
+      "sha256": "62b4698fbf0fcbbe4f31f50a739943ce87784196fcfe0fad9d3eb3732794db8b"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/fixture-descriptor.json",
+      "bytes": 478,
+      "sha256": "2003acd6c2e03d27191f9bf4367d3f1b79c7381369446a928fbcc11e666f06e9"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/historical-harness.dart.txt",
+      "bytes": 21226,
+      "sha256": "abfa40ee5fb20afb2b60f8ea0345d54e3496b8bb5abc212182acd94e3f90e74a"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/pilot-attempt-1-command.json",
+      "bytes": 1089,
+      "sha256": "c1c4e352670d1c96ca8c921fbed889ac0284293cc2c46c11431cda88ae8841dd"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/pilot-attempt-1.log",
+      "bytes": 2284,
+      "sha256": "89ff37a98165b3f70e9d1b8b115b51855bd583cc097fcfc37d92c045ff65f9a3"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/pilot-ledger-receipt-1.json",
+      "bytes": 1183,
+      "sha256": "70641dae96777c30e38694e647b0cd5172277cf7614e90b8e6c1dfabba474c68"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/pilot-process.json",
+      "bytes": 438,
+      "sha256": "6a1c79023c71b8c250865520c8ab85151238ec599e7c3fd2e192521a4c955ac4"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/plan.json",
+      "bytes": 12435,
+      "sha256": "4251eca3dbe17beacd141b683ddc6f2c5323c4404cb5d60d6e7c9359bcf8b935"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/preflight-attempt-1.json",
+      "bytes": 1224,
+      "sha256": "c0028c0596d1bacc04d2c643e2abf3d5fd6c1bc7807f79da74fbc5615ff051e0"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/preflight-command-1.json",
+      "bytes": 722,
+      "sha256": "62d96ffd1bb46a712a6d783744751635eeb3a08499e338b86bdef7c6722684e5"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/preflight-ledger-receipt.json",
+      "bytes": 940,
+      "sha256": "87caddb85f0a19858ccea71dba8bca9e515e64d60808022a555bbc361771b911"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/preflight-spec.json",
+      "bytes": 11395,
+      "sha256": "abccbdddbb78658993b863781919d311a93778a9f380d989941129f97b00fdaf"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/state.json",
+      "bytes": 3052,
+      "sha256": "fbe15f61381bc0a7c7321cb31aa593f3f1d32add7728b3a26af63b5d712273d7"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/successor.json",
+      "bytes": 635,
+      "sha256": "719a6a6bb53208ce9f3f5514bfb5ae2666a54ce2234b35782a9ea5fa74071a6d"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/workflow-init.json",
+      "bytes": 1244,
+      "sha256": "ee1d9cec7c258b6dc8753e2166fdedc2217a8190289378193034f72bc41a623d"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/workflow-pilot-record-1.json",
+      "bytes": 1803,
+      "sha256": "fefc14c78821a8b759c78ad1e69b42df3ddfd12ffcf30f1c50d8ac0496a71553"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-1/workflow-preflight-record.json",
+      "bytes": 1792,
+      "sha256": "6d32c957148cfc6fa627064adf58e26acc5ad890a1d16e8f94fe78833f6521ee"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/device-observation.json",
+      "bytes": 522,
+      "sha256": "43870fbb76548f95cb06e7cacc9ce991d5d32c586a8ff29c69f635a12b49d31e"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/device-open-ready.json",
+      "bytes": 530,
+      "sha256": "f81854c7281790f1ead6e8fb6f5e7da148fa199b1b2627f64f3c1748e931d811"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/failure-diagnosis.json",
+      "bytes": 1456,
+      "sha256": "8d981713e2b9da743eddc2fe95b9e59be9353c7a4cb9f81efda7d95b6f6bc1be"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/fixture-descriptor.json",
+      "bytes": 478,
+      "sha256": "0bd60f8fce491dfe84e67ad617bb2101f65998cc71b044aaec3f46fbbfaf4649"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/historical-harness.dart.txt",
+      "bytes": 21477,
+      "sha256": "59b50cf07c9fc7113cfd490c00f697a82dfa8be478939af60c6094e0ec6d79ec"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/historical-stock-history-dialog.dart.txt",
+      "bytes": 18722,
+      "sha256": "480c8c29001602d934f627e0a43b8f3375a5175d1522584eb7f62b9d268e54ef"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/pilot-attempt-1-command.json",
+      "bytes": 1088,
+      "sha256": "197840098c3af06e00197fd6afe063ab8246cc1c7b360fd88ec0aaabe3b6dde3"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/pilot-attempt-1.log",
+      "bytes": 2163,
+      "sha256": "1f7bc64f3b9f11aa23000d6a219e8e2ecee95dc0c049494119703cd07726242a"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/pilot-ledger-receipt-1.json",
+      "bytes": 1183,
+      "sha256": "f2bd693e610169367eec1c3d873981acfafa97d7b75ea299636f8db02e9ba60b"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/pilot-process.json",
+      "bytes": 438,
+      "sha256": "312dd9d79c7bb933e5e82598e88bfde881c86b3cf0084dd38402194167ee239a"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/plan.json",
+      "bytes": 12435,
+      "sha256": "f2f8facbdd7cb84800ad149e473602f95860c08ee2511a1b16cf4559ab7fdeab"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/preflight-attempt-1.json",
+      "bytes": 1224,
+      "sha256": "bf15ffcd97b49c9ffd31285d257624142c751d934600f55c10bb430bd77c921a"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/preflight-command-1.json",
+      "bytes": 722,
+      "sha256": "2e50a7b7a2a279f7fd8888ffb059c61620f64bfd889e25238852d45175fc29ae"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/preflight-ledger-receipt.json",
+      "bytes": 940,
+      "sha256": "7c87b7783a78fc283a1098959546e004f5587d2f12ef7de0214a57f44e023d9d"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/preflight-spec.json",
+      "bytes": 11398,
+      "sha256": "68152b1c8cd68ad49a1477a54b1d06a4605a430cefd3a8d6f2bc19d1eb2d3cff"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/state.json",
+      "bytes": 3052,
+      "sha256": "4086a8fc42ada8a0f1c7943f082074db08041396b156aa1a05039b537878a170"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/successor.json",
+      "bytes": 608,
+      "sha256": "532ae0257774ce59a2399645e802e7e310beaddc50a8666804b9f6260defc2da"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/workflow-init.json",
+      "bytes": 1244,
+      "sha256": "da857c104ee1787c469b44e4b94e37eb3f14f69afe7605464bd1c54fe712b2d2"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/workflow-pilot-record-1.json",
+      "bytes": 1803,
+      "sha256": "cceff9510a14c5fecefbe9c554b61a3a8ae3deb6ceb28a757c49cc7eb5b82708"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/repaired-2/workflow-preflight-record.json",
+      "bytes": 1792,
+      "sha256": "aff45444919120b1990979ad143db6b46c2a61606ea4ab3a85eca2121d7a6eaf"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/source-fixture-identity.json",
+      "bytes": 692,
+      "sha256": "bd232ee10f992f191ac7c8743e5c108d42331771e409a1cdb63c6dfa3f06d26e"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/state.json",
+      "bytes": 3001,
+      "sha256": "7ef89eecd274513d46f460cca54fcae6862f7fe2e084c072c214a06190e8913d"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/storage-closeout.json",
+      "bytes": 2735,
+      "sha256": "859248a8cc5f1415dbc7766b05edd2ee80fa6fe46f0ffc2ea3691cbeb9e68291"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/storage-midpoint.json",
+      "bytes": 378,
+      "sha256": "bd752e8252b13afbd5f798015cf8e9f7c0e264a530764840ca768a4b561fb566"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/time-cost-review.json",
+      "bytes": 2098,
+      "sha256": "2ac47e0103b11e488e646d0e3bf6b3a39e86a23de6c33e963c77440f621d2e71"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/timing.json",
+      "bytes": 497,
+      "sha256": "96be4e1fa137f8c62d5a39af48b5ea6e202f775cd304b3688e6714b615fbf7f0"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/workflow-init.json",
+      "bytes": 1222,
+      "sha256": "d033aa4e0651c37f325ecd92579467854a60680fec4508f0bfb69589d9fc2945"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/workflow-pilot-record-1.json",
+      "bytes": 1759,
+      "sha256": "00d06870ae438780612b85a2f9245baa0cb7f00ed88d472925f6e2c97f597cce"
+    },
+    {
+      "path": "outputs/completion-review/c1-native/device-ready-1/workflow-preflight-record.json",
+      "bytes": 1748,
+      "sha256": "e45207cdc6b19c66b27b23fc948feec67995359a79a6e48e57b762cd3938e6e0"
+    },
+    {
+      "path": "pubspec.lock",
+      "bytes": 25103,
+      "sha256": "63f2edcb3a3f0e521db5f3a71b019410b0a8e908c60e7ccf768678211acd4382"
+    },
+    {
+      "path": "pubspec.yaml",
+      "bytes": 1158,
+      "sha256": "07bba9c18ac09d1ea6f9e1d4ee9559ab5026d4babc3c6e31e74267b61b8afe91"
+    },
+    {
+      "path": "scripts/phase_preflight.py",
+      "bytes": 15109,
+      "sha256": "733b063024a9c064f9d4e4c27f5ebeb0ee6530be05ec8532b71d10bf6c61c14c"
+    },
+    {
+      "path": "test/catalog/stock_history_responsive_test.dart",
+      "bytes": 4665,
+      "sha256": "b834222f20c9ce26db42414e09e26fc7874f00b8fd38cdf2e5155dfcfb6bd3fa"
+    }
+  ],
+  "mutableOperationalStatusExcluded": [
+    "memory-delivery.json"
+  ],
+  "limits": [
+    "No matrix/physical/benchmark/release claim",
+    "Initial full-project baseline and timer coverage gaps disclosed"
+  ]
+}

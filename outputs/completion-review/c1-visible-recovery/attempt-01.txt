@@ -1,0 +1,15 @@
+00:00 +0: loading /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart
+00:00 +0: visible unknown save reads back one committed product
+00:42 +0 -1: loading /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart [E]
+  Bad state: Cannot close sink while adding stream.
+  package:stream_channel/src/guarantee_channel.dart 180:7      _GuaranteeSink.close
+  package:flutter_tools/src/test/flutter_platform.dart 765:43  FlutterPlatform._startTest
+  
+One or more uncaught errors occurred shutting down:
+  Bad state: Cannot add event while adding stream.
+00:42 +0 -1: visible unknown save reads back one committed product - did not complete [E]
+00:42 +0 -1: Some tests failed.
+
+Failing tests:
+  /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: loading /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart
+  /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/c1_visible_recovery_workflow_test.dart: visible unknown save reads back one committed product (did not complete)

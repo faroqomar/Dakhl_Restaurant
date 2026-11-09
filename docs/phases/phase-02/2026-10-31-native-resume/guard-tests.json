@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-31T17:43:54.520875+00:00",
+  "actor": "android_install_safety",
+  "scope": "app-specific guard V2 report-format repair; engine/runtime unchanged",
+  "guardSha256": "f4c9a44a8efeec88c6d107dfabd7e0327bb191133230b43e51be16e45cbd219b",
+  "testsSha256": "6d094eb93bbada5a46264a18aa95dd83b6a0aeabc9ae38570f915f1f1dbbac14",
+  "command": "python3 -m unittest discover -s scripts/tests -v",
+  "fullScriptTests": 65,
+  "guardCases": 37,
+  "existingOtherScriptCases": 28,
+  "status": "passed",
+  "elapsedSeconds": 9.443,
+  "logSha256": "5fa00286bedd82af38ca9ed59c13c2dd6304152f5f3efa6adbff2ecb2386b967",
+  "realDeviceOperationsByWorker": false,
+  "keysOrAccountsAccessed": false,
+  "noRerunForReceiptRefresh": true
+}

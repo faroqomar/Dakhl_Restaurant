@@ -1,23 +1,23 @@
-# تنفيذ إصلاحات مراجعة دفتر
+# Implement Daftar audit fixes
 
-الحالة: منفذ ومتحقق منه في المصدر والبناء المحلي؛ ليس تحديثاً للتطبيق المثبت. التاريخ: 2026-10-26. مصدر التفويض: طلب المالك «fix them all» بعد تقرير 64 بنداً وطلب النوافذ المنبثقة.
+Status: implemented and verified in source/local build; not an update to the installed application. Date: 2026-10-26. Authorization: the owner requested "fix them all" after the 64-item report and pop-up request.
 
-نفذت معالجة البنود D01–D64، مع الحفاظ على المطعم الواحد والحسابات المحلية والعربية RTL والفصل بين اليومي والقاصة والموردين وسلفة العمال. التفاصيل الفردية وأساس التحقق لكل بند في [مصفوفة المعالجة](../planning/2026-10-26-ux-audit-resolution.md).
+Addressed D01–D64 while preserving one-restaurant scope, local accounts, Arabic RTL and separation between daily funds, cashbox, suppliers and worker advances. Individual details and each item's verification basis are in the [resolution matrix](../planning/2026-10-26-ux-audit-resolution.md).
 
-الإصدار 1.12.0، صيغة الحسابات 10. التنقل والنماذج منبثقة، مسودة البيع قابلة للاستعادة، التصحيحات تحفظ أثرها، الفلاتر والتقارير أوضح، وقوائم السجلات مقسمة إلى صفحات. صور WebP للواجهة نحو 500 KB بدلاً من تحميل نحو 20 MB من الأصل؛ الأصل محفوظ في مساحة المشروع ومستبعد من البناء.
+Version 1.12.0, account schema 10. Navigation/forms use pop-ups, the sales draft can be restored, corrections preserve their trace, filters/reports are clearer and records are paginated. UI WebP photos total approximately 500 KB instead of loading approximately 20 MB of originals; originals remain in the workspace and are excluded from the build.
 
-## التحقق الفعلي
+## Actual verification
 
-- 113 اختباراً ناجحاً تشمل الحسابات والتوافق والحفظ والواجهة وتقارير PDF واستيراداً/استعادةً أصليين عبر معالجات Electron بملفات مؤقتة.
-- استعادة ملف تالف حفظت الأصل التالف قبل الاستبدال؛ إلغاء الاستيراد ترك الحسابات كما هي؛ فتح الصادرات محصور بملفات الجلسة.
-- مرور متصفح على الأقسام الثلاثة عشر، بلا أخطاء JavaScript في التدفقات المسجلة. فحص النصوص المرئية للشاشات الملتقطة لم يسجل مرشح تباين دون العتبة؛ ليس شهادة وصول شاملة.
-- أحجام 1440×1000، 900×580، 760×844، 390×640، وتكبير 200%؛ الدفع وحقول/حفظ المشتريات قابلون للوصول.
-- عينة 5,000 فاتورة تظهر 50 صفاً في الصفحة مع الاحتفاظ بإجماليات كل النتائج. التوقيت المسجل محلي خاص بهذه العينة والجهاز.
-- توليد الأنواع الثمانية فعلياً إلى PDF؛ مراجعة صور شاشات التقارير ورستر PDF البيع والمشتريات.
-- بناء macOS ARM64 في `dist/Daftar-darwin-arm64/Daftar.app`. لم يُستبدل التطبيق المثبت ولم تُفتح سجلات المطعم للاختبار.
+- 113 passing tests cover accounting, compatibility, persistence, UI, PDF reports and native import/restore through Electron handlers using temporary files.
+- Restoring corrupt data preserved the corrupt original before replacement; cancelled import left accounts unchanged; opening exports is restricted to session-owned files.
+- Browser pass across all thirteen sections, without JavaScript errors in recorded flows. Visible-text checks on captured screens found no contrast candidate below the threshold; this is not comprehensive accessibility certification.
+- Sizes 1440×1000, 900×580, 760×844 and 390×640, plus 200% zoom: payment and purchase fields/save remained reachable.
+- A 5,000-invoice fixture displays 50 rows per page while retaining totals for all results. Recorded local timing applies only to this fixture/device.
+- Actually generated all eight PDF types; reviewed report screenshots and rasterized sales/purchase PDFs.
+- macOS ARM64 build at `dist/Daftar-darwin-arm64/Daftar.app`. The installed application was not replaced and restaurant records were not opened for testing.
 
-الأدلة في [outputs/ux-fixes-2026-10-26](../../outputs/ux-fixes-2026-10-26/)، وتشمل الاختبارات، تحقق المتصفح، الصور، PDFs، تقرير المعالجة والبناء. المعاينة الجديدة على المنفذ 4329 تستخدم بيانات توضيحية منفصلة؛ المنفذ 4317 القديم لم يُعد تحميله كي لا يفقد المستخدم سياقه.
+Evidence in [outputs/ux-fixes-2026-10-26](../../outputs/ux-fixes-2026-10-26/) includes tests, browser verification, screenshots, PDFs, resolution report and build. The new preview on port 4329 uses separate illustrative data. Old port 4317 was not refreshed to avoid losing the user's context.
 
-## الحدود
+## Limits
 
-القارئ والطابعة الفعليان وجلسة VoiceOver الشاملة غير مختبرة. المعاينة لا تنفذ وظائف ملفات Mac الأصلية؛ هذه متاحة في البناء ومختبرة بمعزل. معالجة القائمة لا تعني ضمان انعدام كل عيب محتمل. الخطوة التالية مراجعة المالك للتجربة الجديدة. مزامنة فهرس التوثيق اكتملت؛ فحص الخدمة أعاد pending فارغاً وfailed فارغاً.
+Actual scanner/printer hardware and a comprehensive VoiceOver session were not tested. The preview does not implement native Mac file operations; these exist in the build and were tested in isolation. Resolving the list does not guarantee absence of every possible defect. Next: owner review of the updated experience. Documentation-index synchronization completed; the service check returned empty pending/failed sets.

@@ -1,0 +1,179 @@
+{
+  "manifest": "outputs/penpot/completion/source/package-prep/global-marker-paint-complete-v1-overrides-manifest.json",
+  "manifestSha256": "0b1694fed4a33dd8fb163a2ee538f59cdb3dcf70dbf18b052a37a8a0a92e5e7d",
+  "selected": [
+    {
+      "referenceId": null,
+      "sourceSceneId": "state-held-orders-empty",
+      "kind": "design",
+      "sourceSVG": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/source/package-prep/delta-held-checkout-artwork/state-held-orders-empty-design.svg",
+      "sourceSvgSha256": "54942872ae8bcff71df17e1476fe64904a5f86ad9d3408ce2f35f84b0cbba5ef",
+      "svgPath": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/source/package-prep/global-marker-paint-complete-v1/artwork/state-held-orders-empty-design-ua-paint-v1.svg",
+      "sha256": "9493af178bf670d59d690c1012a86b35acd066635e04222da980b6206b7b273a",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "changes": [
+        {
+          "candidateId": "control-raster-11",
+          "action": "replace-complete-marker",
+          "oldSvgImageId": "Native select indicator",
+          "newLocalBounds": {
+            "x": 1054,
+            "y": 613,
+            "width": 11,
+            "height": 7
+          },
+          "captureBounds": {
+            "x": 1054,
+            "y": 613,
+            "width": 11,
+            "height": 7
+          },
+          "missingOldNominalGlyphPixels": 16,
+          "paintSourceSha256": "166d0859e426143b8774d3ec465a7d1d82ad90557b2ab0c7c1618731f7371547",
+          "payloadSha256": "102805c03d1ec57057f5686e418d2fd878fbf151d68961a2caa6356dd57851e7"
+        }
+      ],
+      "extraInheritedTranslationCss": [
+        0,
+        0
+      ],
+      "rasterLayerPlacement": "Changed/additional exact post-composite source pixel markers paint after vector content in their original coordinate system; actual owner/ancestor/viewport clip retained, opaque source occlusion pixels transparent.",
+      "nativeState": "Pending parent browser import/export/actual IDs and independent review",
+      "sidecar": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/source/package-prep/global-marker-paint-complete-v1/sidecars/state-held-orders-empty-strings-controls-ua-paint-v1.json",
+      "sidecarSha256": "864b5277a5e59fcbf46cc7add9bf24428bab046065df93060fed2853d25df3f8"
+    },
+    {
+      "referenceId": null,
+      "sourceSceneId": "state-held-orders-empty",
+      "kind": "wireframe",
+      "sourceSVG": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/source/package-prep/delta-held-checkout-artwork/state-held-orders-empty-wireframe.svg",
+      "sourceSvgSha256": "67da028e988e03154c7e5abaa24580756a49b74a77c1b80ea1d70c71b8fcbd4f",
+      "svgPath": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/source/package-prep/global-marker-paint-complete-v1/artwork/state-held-orders-empty-wireframe-ua-paint-v1.svg",
+      "sha256": "98a774ce756c5509ea59f4e6059e5a39f9ca194b1a748ff27b3143220caf3da0",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "changes": [
+        {
+          "candidateId": "control-raster-11",
+          "action": "replace-complete-marker",
+          "oldSvgImageId": "Native select indicator",
+          "newLocalBounds": {
+            "x": 1054,
+            "y": 613,
+            "width": 11,
+            "height": 7
+          },
+          "captureBounds": {
+            "x": 1054,
+            "y": 613,
+            "width": 11,
+            "height": 7
+          },
+          "missingOldNominalGlyphPixels": 16,
+          "paintSourceSha256": "166d0859e426143b8774d3ec465a7d1d82ad90557b2ab0c7c1618731f7371547",
+          "payloadSha256": "a7175e7601ed03bf9272ee5384ed991843712aaadd0362ddca9d70cb8176c6bb"
+        }
+      ],
+      "extraInheritedTranslationCss": [
+        0,
+        0
+      ],
+      "rasterLayerPlacement": "Changed/additional exact post-composite source pixel markers paint after vector content in their original coordinate system; actual owner/ancestor/viewport clip retained, opaque source occlusion pixels transparent.",
+      "nativeState": "Pending parent browser import/export/actual IDs and independent review",
+      "sidecar": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/source/package-prep/global-marker-paint-complete-v1/sidecars/state-held-orders-empty-strings-controls-ua-paint-v1.json",
+      "sidecarSha256": "864b5277a5e59fcbf46cc7add9bf24428bab046065df93060fed2853d25df3f8"
+    },
+    {
+      "referenceId": null,
+      "sourceSceneId": "state-held-name-editable",
+      "kind": "design",
+      "sourceSVG": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/source/package-prep/delta-held-checkout-artwork/state-held-name-editable-design.svg",
+      "sourceSvgSha256": "b55f8fa6a1ee65e341f63be3bc160d37bb9c6d33530f062ef21b2758ea353249",
+      "svgPath": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/source/package-prep/global-marker-paint-complete-v1/artwork/state-held-name-editable-design-ua-paint-v1.svg",
+      "sha256": "62cf83cdaf9625511e2164a9c9a258b7ccbddd5b30b2a14cb49dcb20e4430946",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "changes": [
+        {
+          "candidateId": "control-raster-12",
+          "action": "replace-complete-marker",
+          "oldSvgImageId": "Native select indicator",
+          "newLocalBounds": {
+            "x": 1054,
+            "y": 613,
+            "width": 11,
+            "height": 7
+          },
+          "captureBounds": {
+            "x": 1054,
+            "y": 613,
+            "width": 11,
+            "height": 7
+          },
+          "missingOldNominalGlyphPixels": 16,
+          "paintSourceSha256": "1b17a59b1de742722c5d077dd19f64b94510e28dab597f385b3411f35e5ddf70",
+          "payloadSha256": "baa31b5ec92d1f3f8116d285aa2aa9813fc68dc41bc7d9a862a248b50b9ea151"
+        }
+      ],
+      "extraInheritedTranslationCss": [
+        0,
+        0
+      ],
+      "rasterLayerPlacement": "Changed/additional exact post-composite source pixel markers paint after vector content in their original coordinate system; actual owner/ancestor/viewport clip retained, opaque source occlusion pixels transparent.",
+      "nativeState": "Pending parent browser import/export/actual IDs and independent review",
+      "sidecar": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/source/package-prep/global-marker-paint-complete-v1/sidecars/state-held-name-editable-strings-controls-ua-paint-v1.json",
+      "sidecarSha256": "f602c16115088932cfff3ef97a184f418ca705d2cc96010ce054c62272f16048"
+    },
+    {
+      "referenceId": null,
+      "sourceSceneId": "state-held-name-editable",
+      "kind": "wireframe",
+      "sourceSVG": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/source/package-prep/delta-held-checkout-artwork/state-held-name-editable-wireframe.svg",
+      "sourceSvgSha256": "ac2f45f6c064ba4bfe345a254ca6a379c8d7e07f13daa0d3dd1b1c3aad228e89",
+      "svgPath": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/source/package-prep/global-marker-paint-complete-v1/artwork/state-held-name-editable-wireframe-ua-paint-v1.svg",
+      "sha256": "dcf6022cbd573fcab1475271bfe9f61fbf1543d76e177701c472919a0639001b",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "changes": [
+        {
+          "candidateId": "control-raster-12",
+          "action": "replace-complete-marker",
+          "oldSvgImageId": "Native select indicator",
+          "newLocalBounds": {
+            "x": 1054,
+            "y": 613,
+            "width": 11,
+            "height": 7
+          },
+          "captureBounds": {
+            "x": 1054,
+            "y": 613,
+            "width": 11,
+            "height": 7
+          },
+          "missingOldNominalGlyphPixels": 16,
+          "paintSourceSha256": "1b17a59b1de742722c5d077dd19f64b94510e28dab597f385b3411f35e5ddf70",
+          "payloadSha256": "f236fd215b4efb1e95f1bd8d64a4e53e32e6c5390b1e2d3fe619a104c939a004"
+        }
+      ],
+      "extraInheritedTranslationCss": [
+        0,
+        0
+      ],
+      "rasterLayerPlacement": "Changed/additional exact post-composite source pixel markers paint after vector content in their original coordinate system; actual owner/ancestor/viewport clip retained, opaque source occlusion pixels transparent.",
+      "nativeState": "Pending parent browser import/export/actual IDs and independent review",
+      "sidecar": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/penpot/completion/source/package-prep/global-marker-paint-complete-v1/sidecars/state-held-name-editable-strings-controls-ua-paint-v1.json",
+      "sidecarSha256": "f602c16115088932cfff3ef97a184f418ca705d2cc96010ce054c62272f16048"
+    }
+  ],
+  "limit": "Existing corrected source artwork and exact post-composite pixel marker proof; native and owner qualification separate"
+}

@@ -1,0 +1,8 @@
+{
+  "app_root": "/absolute/path/to/Dakhl_Restaurant",
+  "engine_root": "/absolute/path/to/runtime/Madar_Engine",
+  "engine_tools_root": "/absolute/path/to/benchmark-tools/Madar_Engine",
+  "site_url": "https://dakhl-development-dashboard.eros-6.chatgpt.site",
+  "port": 18763,
+  "data_dir": "/absolute/path/to/Dakhl_Development_Dashboard/var"
+}

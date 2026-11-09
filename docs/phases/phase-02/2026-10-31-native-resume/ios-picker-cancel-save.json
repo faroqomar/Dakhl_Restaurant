@@ -1,0 +1,17 @@
+{
+  "startedAt": "2026-10-31T17:00:53.787795+00:00",
+  "finishedAt": "2026-10-31T17:02:48.440158+00:00",
+  "elapsedSeconds": 114.65199816698441,
+  "kind": "picker",
+  "label": "cancel-save",
+  "stage": "cancel-save",
+  "appSource": "5a11c66dbf665972b17b545c105eac74c17bfeeb",
+  "runtime": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+  "entrySha256": "308c59c2c3c4f26cdb0bf024aaa5699b71ccb2099a77d03b5df14de4cfcb7f8e",
+  "exitCode": 0,
+  "hostTimedOut": false,
+  "expectedOutcomeVerified": true,
+  "nativeResults": [],
+  "dataScope": "fresh task-created target; fixed marked synthetic conformance fixture only; no production store",
+  "originalReceiptSha256": "d6d83ec1abc4c162ce1c6b02b183223d8cc1e4d5fa8d45fc2fa287862a8fd496"
+}

@@ -1,0 +1,11 @@
+{
+  "purpose": "Current interpretation of dated evidence; original capture facts are preserved",
+  "memorySourceHashes": "Match the source at retained capture, not later docs. No retrospective ingestion claim.",
+  "nativeAcceptance": "outputs/phase01-step3/ios-native/acceptance-manifest.json closes only the Phase00 iPhone technical prerequisite; not overall phase DONE.",
+  "designApproval": "outputs/phase01-step3/approval-and-preflight.json supersedes earlier pending-review snapshots.",
+  "portableKeyboardLog": "outputs/phase01-step3/native-keyboard-probe-disposable.log",
+  "iosBuildLog": "outputs/phase01-build/main-ios-final.log",
+  "historicalOriginalPaths": "Observed original local paths in raw captures are historical provenance, not portable commands.",
+  "penpotStages": "outputs/penpot/phase01/README.md",
+  "nativeHelpers": "outputs/phase01-step4/tools/README.md"
+}

@@ -1,0 +1,8 @@
+00:00 +0: loading /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounting/restaurant_journal_transfer_safety_test.dart
+00:00 +0: Restaurant Journal Transfer Safety & Frozen JS Differential Parity Scenario 1: Ordinary transfer differential parity against frozen model.js
+00:01 +1: Restaurant Journal Transfer Safety & Frozen JS Differential Parity Scenario 2: Transfer-all differential parity against frozen model.js
+00:01 +2: Restaurant Journal Transfer Safety & Frozen JS Differential Parity Scenario 3: Legacy unset-total recovery differential parity against frozen model.js
+00:01 +3: Restaurant Journal Transfer Safety & Frozen JS Differential Parity Scenario 4: Subsequent dated effects differential parity against frozen model.js
+00:01 +4: Restaurant Journal Transfer Safety & Frozen JS Differential Parity multi-date isolation: transfers on date A do not change available remaining on date B
+00:01 +5: Restaurant Journal Transfer Safety & Frozen JS Differential Parity exact boundary: transfer of minimal 1 IQD succeeds, transfer of available+1 rejects
+00:01 +6: All tests passed!

@@ -1,0 +1,13 @@
+# Engine consumption, documentation and diagnostics
+
+Date: 2026-10-28. Status: owner-approved standing policy. Madar_Engine's FULLSTACK and docs/how-to/engine-consumer-standards.md own shared architecture/API authority; this record covers the consumer's obligations.
+
+For every phase, identify reusable engine work, restaurant-app work and their contract/reviewed package revision before implementation. Shared rules/contracts/adapters are implemented once in Madar and consumed here as packages. UI/ViewModels, restaurant workflows, PDF composition and app-specific safeguards remain in this app. Do not duplicate the engine backend or require an unnecessary engine change for an app-only feature. Compiled package consumption remains local/offline; it does not create a remote service requirement.
+
+Use suitable maintained Dart/Flutter packages when needed and reviewed for license, SDK/platform support, offline behavior and testability. Keep pure Dart business contracts independent of Flutter; reusable Flutter/platform integrations belong in separate adapter packages. Existing madar_application and madar_flutter_adapters already follow this packaging pattern. No unused package or new logger is installed by this documentation change.
+
+Deliver engine API/setup/examples/compatibility/errors/limits documentation with shared code, and keep the app's integration, safeguards and tested engine revision documented separately. Documentation and Hindsight memory are English-only, including plans, decisions, logs and generated explanations. Describe Arabic UI and reference assets in English without changing executable UI/fixtures or frozen screenshot/source bytes.
+
+New/changed execution paths require useful structured, leveled terminal diagnostics with safe operation correlation, outcomes and sanitized failures/retries. Compose the logger through host/adapters without coupling core business rules to a concrete logger. Preserve machine-readable probe output, avoid render-loop spam and make logging failure non-disruptive. Never log raw account/customer/financial payloads, secrets or whole files. Debug/release verbosity is appropriate; remote telemetry/upload remains separately authorized.
+
+Meaningful tests precede behavior changes. Combine independent engine tests and real consumer/conformance cases, retaining the agreed MVVM, failure/recovery, data-integrity, targeted CI and explicit approval gates. When logging is implemented, test privacy/redaction, meaningful events and failure isolation. Record ownership, contracts, docs, package justification, diagnostics and test evidence for each phase; use justified N/A. No UI design approval, phase completion, next phase, deployment or policy resolution is implied by this instruction.

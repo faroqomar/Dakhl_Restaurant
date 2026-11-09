@@ -1,0 +1,19 @@
+{
+  "project": "daftar",
+  "api": {
+    "status": "healthy",
+    "database": "connected",
+    "db_acquire_ms": 0.7,
+    "db_pool_waiting": 0,
+    "db_pool_in_use": 0,
+    "db_pool_max": 100,
+    "db_pool_idle": 5
+  },
+  "sources": 219,
+  "pending": [
+    "PHASES.md",
+    "docs/how-to/repeated-problems.md",
+    "docs/log/2026-11-07-completion-step4-restarted-review.md"
+  ],
+  "failed": {}
+}

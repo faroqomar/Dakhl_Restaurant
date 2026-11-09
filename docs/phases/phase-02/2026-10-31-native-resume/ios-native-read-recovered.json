@@ -1,0 +1,29 @@
+{
+  "startedAt": "2026-10-31T16:56:10.070843+00:00",
+  "finishedAt": "2026-10-31T16:56:58.733036+00:00",
+  "elapsedSeconds": 48.66198245898704,
+  "kind": "native",
+  "label": "read-recovered",
+  "stage": "read-recovered",
+  "appSource": "5a11c66dbf665972b17b545c105eac74c17bfeeb",
+  "runtime": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+  "entrySha256": "06d3a48c9de4abd1715b1f214e805e8e97e317a637b91e28dda01d01768d0eb4",
+  "exitCode": 0,
+  "hostTimedOut": false,
+  "expectedOutcomeVerified": true,
+  "nativeResults": [
+    {
+      "stage": "read-recovered",
+      "runNonce": "fa71198d-4e68-4d30-8a61-461aa068d270",
+      "pid": 94245,
+      "storeId": "9b65fc7bcd88ae01a031db204177dc651fdbd52c8d028b251f1d802136fb2721",
+      "generation": "a297ac5ed7a1a5d1edbac6159cec8cc4e70b882d94826a2ecf2aacb90f1b22cf",
+      "documentRevision": 1,
+      "held": 0,
+      "runtime": "real native Madar adapter + consumer codec/repository/ViewModel + rendered app",
+      "dataScope": "fixed marked Phase02 conformance child only; --no-uninstall required"
+    }
+  ],
+  "dataScope": "fresh task-created target; fixed marked synthetic conformance fixture only; no production store",
+  "originalReceiptSha256": "485bd05c00e2bf3389f864b48c842c8d4a03084a148c573d1a3a45259175e9b6"
+}

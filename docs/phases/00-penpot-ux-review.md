@@ -24,7 +24,7 @@ No approval-ready claim is made for these initial exports. Repeat review after t
 
 ## Content and composition checked
 
-- Sales: six-column catalog on the left, compact bill on the right; first row right-to-left kebab meat, kebab chicken, grilled chicken, chicken rice dish, red rice, appetizer plate. Visible cart quantities/totals remain 2/24,000 and 1/2,000; subtotal 26,000, discount 1,000, total 25,000; date 2026/10/27 and order type صالة. The lower product row retains the captured viewport crop. Typography is connected Arabic and visually close because the artwork uses source-derived outlines, rather than claiming an arbitrary font substitution is identical.
+- Sales: six-column catalog on the left, compact bill on the right; first row right-to-left kebab meat, kebab chicken, grilled chicken, chicken rice dish, red rice, appetizer plate. Visible cart quantities/totals remain 2/24,000 and 1/2,000; subtotal 26,000, discount 1,000, total 25,000; date 2026/10/27 and order type dine-in. The lower product row retains the captured viewport crop. Typography is connected Arabic and visually close because the artwork uses source-derived outlines, rather than claiming an arbitrary font substitution is identical.
 - Expenses: main daily ledger on the right and cashbox rail on the left. Daily rows remain 15,000; 20,000; 15,000. Shared-funding captions retain daily/cashbox amounts 20,000/10,000 and 15,000/5,000. Cashbox rows remain 10,000; 10,000; 5,000, totaling 25,000; daily spent 50,000, daily balance 150,000, remaining balance 80,000 and net collection 49,230 remain distinct.
 - Settings: the data tab is active, status card is right, export/import card left, data-location panel below and saved/disabled savebar at the bottom. The literal synthetic location text is retained. The extra collapsed restore paragraph and missing icons are the exceptions listed above.
 - Wireframes: the same major geometry, labels, financial values and visible crop are retained, with grayscale styling and crossed photo placeholders. They share the icon-positioning/settings-state regressions and therefore also require re-verification.
@@ -33,7 +33,7 @@ No approval-ready claim is made for these initial exports. Repeat review after t
 
 These are reference limitations to record for owner review, not permission to redesign the reproduction:
 
-- The sales eyebrow `الفاتورة الحالية` uses 10px text with color #6A8074 on white: calculated contrast approximately 4.24:1.
+- The sales eyebrow "Current invoice" (translated UI label) uses 10px text with color #6A8074 on white: calculated contrast approximately 4.24:1.
 - The active group count `33` uses white 12px text over a 15% white layer on #078657: composited contrast approximately 3.59:1.
 - Source geometry records sales cart removal/stepper buttons at 28×30 logical pixels and quantity fields at 36×30; expense rail edit controls are 32×36. These are compact reference targets. No invisible hit padding or runtime target behavior is established by the artwork.
 - The source reference includes low-stock color and supporting stock text; preserve the wording as well as its visual state. Do not rely on a grayscale wireframe to prove color contrast.

@@ -7,7 +7,7 @@ The owner supplied:
 - [Universal Rules & Agents](</Users/eros/Dev/ErosVault/My_Workflow/AGENTS.md — Universal Rules & Agents.md>) — permanent workflow and role rules.
 - [Phase Tracker](</Users/eros/Dev/ErosVault/My_Workflow/PHASES.md — Phase Tracker.md>) — the tracker template, instantiated for the current 00–11 phases.
 
-Exact local source copies are universal-rules.source.txt and phase-tracker.source.txt. source-manifest.json records their SHA-256 hashes. The previous project-specific AGENTS.md is preserved in project-rules-before-adoption.source.txt and its rules remain in the active root AGENTS.md. The Vault originals and other projects were not edited.
+Exact local source copies are universal-rules.source.txt and phase-tracker.source.txt. source-manifest.json records their SHA-256 hashes. The previous project-specific AGENTS.md is represented by the owner-authorized English translation in project-rules-before-adoption.source.txt, with its rules retained in active root AGENTS.md. [Translation provenance](translation-provenance.json) records the original Git revision/SHA-256 and the translated SHA-256; the original Arabic bytes remain recoverable from Git history. This translated copy is not claimed to be verbatim. The Vault originals and other projects were not edited.
 
 ## Active files
 

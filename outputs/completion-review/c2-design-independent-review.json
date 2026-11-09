@@ -1,0 +1,1661 @@
+{
+  "schemaVersion": 1,
+  "reviewId": "C2-independent-static-qualification-2026-11-08",
+  "createdUtc": "2026-11-07T21:17:12.265717+00:00",
+  "actor": "independent C2 reviewer",
+  "disposition": "Named C2 static proposal is suitable for owner review with explicit discrepancies/exclusions; whole C2 UI coverage and owner approval remain incomplete. Twelve Completion pairs have no newly identified essential-content hold; desktop-held-orders is held from an unconditional fidelity recommendation.",
+  "inputs": [
+    {
+      "path": "outputs/completion-review/c2-c3-design-approval-proposal.json",
+      "sha256": "5b332f64e7bd7fcb9f05f117ebce8591c1c0b1a99d18a3f53d144ecfdc143b91",
+      "bytes": 279568
+    },
+    {
+      "path": "outputs/completion-review/c2-c3-design-review.html",
+      "sha256": "cc33cc7b4f0a4c62b30393e4a68b8f548ed63bf403e6f97aad3bd1550e2be4bf",
+      "bytes": 146707
+    },
+    {
+      "path": "docs/log/2026-11-07-c2-c3-design-approval-preparation.md",
+      "sha256": "62cafc0dc44b43a81b347b96d2f2dd347a8a8396870970efdb7a37a97233591c",
+      "bytes": 8061
+    }
+  ],
+  "ownership": {
+    "app": "Reference/native presentation qualification only; UI/workflows/composition/safeguards remain app-owned.",
+    "engine": "Implementation/API/Design N/A: no shared rule, package, pin or contract changed.",
+    "packetReviewedEngineRevision": "d316fd6076375daa3f412889f73eaebfeeb5d4d4",
+    "revisionLimit": "Declared reviewed contract identity retained; no runtime adoption or compatibility test run in this static review."
+  },
+  "approvals": {
+    "ownerDesignApproval": false,
+    "runtimeApproval": false,
+    "mergeReleasePhaseClosure": false,
+    "C1": "existing approved scope unaffected",
+    "C4": "pending and separate",
+    "C3": "not reviewed or requalified here; all five packet holds/exclusions and absent positive partial/full refund/checked-cash-confirmation states preserved"
+  },
+  "counts": {
+    "c2References": 15,
+    "completionPairsInspectedByIdentity": 13,
+    "completionPairsWithoutNewEssentialContentHold": 12,
+    "completionPairHeldFromUnconditionalFidelityRecommendation": 1,
+    "historicalPhase01ReusePairsProposed": 2,
+    "allSourceOnlyScenesExcluded": 17,
+    "phase02PatternPairsProposedSeparately": 5,
+    "referenceTriplesVisuallyInspectedThisTask": 8,
+    "existingControlDetailImagesInspected": 9,
+    "newArtworkExportsArchives": 0
+  },
+  "fullSalesDecision": {
+    "classification": "content-qualified static proposal based on new independent observation, not inherited register label",
+    "observation": "Direct review of exact full source and both selected native crops: cropped source origin, navigation/category counts, search/grid icon, food-photo crops (design), neutral placeholders (wireframe), visible names/prices and low-stock labels, two ticket quantities 2/1, line amounts 24,000/2,000, subtotal26,000, date2026/10/27, net25,000 and visible checkout/hold/clear structure correspond. Source itself crops right-hand labels/calendar at its natural-document viewport; no native reachability claim. Dedicated source calendar crop is blank in the source too. Visible select chevron is retained on both sides. Existing diagnostic alone was insufficient; this is new independent static content observation bound to the exact hashes below.",
+    "layerRows": [
+      {
+        "referenceId": "full-sales",
+        "kind": "design",
+        "boardId": "0a2b3bc9-9c0b-8010-8008-e6b83d100f05",
+        "groupId": "0a2b3bc9-9c0b-8010-8008-e6b84f9a035b",
+        "panelId": "0a2b3bc9-9c0b-8010-8008-e6b8501174f3",
+        "expectedPaper": {
+          "x": 130080,
+          "y": 80,
+          "width": 1440,
+          "height": 1000
+        },
+        "paperIds": [
+          "0a2b3bc9-9c0b-8010-8008-e6b8501184c9",
+          "0a2b3bc9-9c0b-8010-8008-e6b8501184cb"
+        ],
+        "paperMatch": true,
+        "belongsToRecordedBoard": true,
+        "nodes": 717,
+        "types": {
+          "group": 301,
+          "rect": 33,
+          "path": 382,
+          "circle": 1
+        },
+        "imageFills": 25,
+        "wholeViewportImages": []
+      },
+      {
+        "referenceId": "full-sales",
+        "kind": "wireframe",
+        "boardId": "0a2b3bc9-9c0b-8010-8008-e6aff22ff326",
+        "groupId": "0a2b3bc9-9c0b-8010-8008-e6b000e277eb",
+        "panelId": "0a2b3bc9-9c0b-8010-8008-e6b001f35d4c",
+        "expectedPaper": {
+          "x": 112080,
+          "y": 80,
+          "width": 1440,
+          "height": 1000
+        },
+        "paperIds": [
+          "0a2b3bc9-9c0b-8010-8008-e6b001f38ba9",
+          "0a2b3bc9-9c0b-8010-8008-e6b001f38bab"
+        ],
+        "paperMatch": true,
+        "belongsToRecordedBoard": true,
+        "nodes": 738,
+        "types": {
+          "group": 325,
+          "rect": 33,
+          "path": 379,
+          "circle": 1
+        },
+        "imageFills": 1,
+        "wholeViewportImages": []
+      }
+    ],
+    "limits": [
+      "New observation qualifies visible content of these immutable crops only.",
+      "No fresh Saved, reopen, current live layer or complete migration claim.",
+      "Outlined glyph paths are editable vectors with source sidecars, not ordinary editable text.",
+      "No pixel identity, runtime semantics, arithmetic/checkout success or owner approval."
+    ],
+    "referenceBinding": "references[referenceId=full-sales] contains exact source/native identities."
+  },
+  "references": [
+    {
+      "referenceId": "desktop-sales",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/desktop-sales.png",
+        "sha256": "4b7ec00c447aac765662ec6d96d98998eb576b52ca1e9277a82eb8be0b4f49f2",
+        "pixelSize": [
+          2880,
+          2000
+        ]
+      },
+      "classification": "historical Phase01 reuse proposed",
+      "visualReviewThisTask": false,
+      "observation": "Exact identity/geometry and recorded per-side content proof reused; no fresh full visual inspection of this reference this task.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/phase01/native-exports/desktop-sales-design.png",
+            "sha256": "82a4a738354debf223108196dd05036f3fa17e5f900f596df0872d477565af2d",
+            "pixelSize": [
+              2880,
+              2000
+            ]
+          },
+          "ids": {
+            "boardId": "812c55ce-996a-805c-8008-dcf124e008ef",
+            "panelId": null
+          }
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/phase01/native-exports/desktop-sales-wireframe.png",
+            "sha256": "1c61ff676ba983d478eae72e57d86a03c72dbbab26ea03391fcdf5fa56553f74",
+            "pixelSize": [
+              2880,
+              2000
+            ]
+          },
+          "ids": {
+            "boardId": "812c55ce-996a-805c-8008-dcf1263a146e",
+            "panelId": null
+          }
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/phase01/native-exports/native-manifest.json",
+        "docs/phases/01-step6-completion.md"
+      ]
+    },
+    {
+      "referenceId": "desktop-hold-order",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/desktop-hold-order.png",
+        "sha256": "7ecf2792a62cd67a252c19cd0b4e371db91d643d28978f6da1688fa0945d49a2",
+        "pixelSize": [
+          2880,
+          2000
+        ]
+      },
+      "classification": "content-qualified static proposal",
+      "visualReviewThisTask": true,
+      "observation": "Direct review: optional order-name field/placeholder, device-only preservation and stock-after-sale copy, cancel/close and hold-and-open-new-order action retained over populated source ticket. This is an optional NAME, not a reason. It does not qualify a typed-name or failed-hold/40-limit state.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c02-repair-1192d53d/desktop-hold-order-design.png",
+            "sha256": "9e753fa8ac81c5a1346d416ef2272d4923446fbe6d4eb02ea43339eb5ed18d5a",
+            "pixelSize": [
+              1440,
+              1000
+            ]
+          },
+          "ids": {
+            "boardId": "ee8ab1eb-11db-8048-8008-e79e445d3389",
+            "groupId": "28dc4c5c-7c4f-80a7-8008-e79d093403d4",
+            "panelId": "28dc4c5c-7c4f-80a7-8008-e79d096d73f4"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-1192d53d-design-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-1192d53d-design-crops.json",
+          "pixelCrop": [
+            0,
+            1080,
+            1440,
+            1000
+          ]
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c01-repair-4cb873c9/desktop-hold-order-wireframe.png",
+            "sha256": "5a7008b44b421bfc2c099bb62cbbf81cff8332d4443dda16a655808b719a6c1b",
+            "pixelSize": [
+              1440,
+              1000
+            ]
+          },
+          "ids": {
+            "boardId": "476c7276-87bc-802c-8008-e7ee1b04e262",
+            "groupId": "476c7276-87bc-802c-8008-e7edff941b97",
+            "panelId": "476c7276-87bc-802c-8008-e7ee00309998"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c01-repair-4cb873c9-wireframe-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c01-repair-4cb873c9-wireframe-crops.json",
+          "pixelCrop": [
+            0,
+            1080,
+            1440,
+            1000
+          ]
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/ready.json",
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/findings.md",
+        "outputs/penpot/completion/parallel-completion/native-unchanged-counterparts-review/ready.json",
+        "outputs/penpot/completion/parallel-completion/native-unchanged-counterparts-review/findings.md",
+        "outputs/penpot/completion/export-recovery/continuation-native-layer-audit-memory8-pilot.json",
+        "outputs/penpot/completion/export-recovery/memory8-pilot-final-structure-proof.json",
+        "outputs/penpot/completion/export-recovery/memory8-prepilot-existing-id-ui-proof.json",
+        "outputs/penpot/completion/parallel-completion/penpot-memory8-complete-pilot-queue-handoff.json"
+      ]
+    },
+    {
+      "referenceId": "desktop-sales-cart",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/desktop-sales-cart.png",
+        "sha256": "5af5df1ecff56fb9e6aa76053e640207d1a8a46cb16c52afcc924ea966d54f7f",
+        "pixelSize": [
+          2880,
+          2000
+        ]
+      },
+      "classification": "content-qualified static proposal",
+      "visualReviewThisTask": true,
+      "observation": "Direct review: RTL left catalog/right ticket, source photo crops versus deliberate neutral wireframe placeholders, 2/1 quantities, 24,000/2,000 lines, 26,000subtotal, 1,000discount,25,000net, order-type chevron, expanded disclosure/calendar/date and checkout/hold/clear actions retained.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c03-repair-41e0d33a/desktop-sales-cart-design.png",
+            "sha256": "3beeab5fb3806423e4c979a57989f7f1d86f314d6c5cb04e937e401a7db27a23",
+            "pixelSize": [
+              1440,
+              1000
+            ]
+          },
+          "ids": {
+            "boardId": "7c179d3b-40ff-808e-8008-e79ff8563cab",
+            "groupId": "6ce9fa2d-01b7-8034-8008-e79fb0cb6e32",
+            "panelId": "6ce9fa2d-01b7-8034-8008-e79fb1215962"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c03-repair-41e0d33a-design-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c03-repair-41e0d33a-design-crops.json",
+          "pixelCrop": [
+            0,
+            3240,
+            1440,
+            1000
+          ]
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c01-repair-4cb873c9/desktop-sales-cart-wireframe.png",
+            "sha256": "4bc67d6a4b9d102a625c57ebc90572c760d7462f4c41a5394ae22eec6b3f52a1",
+            "pixelSize": [
+              1440,
+              1000
+            ]
+          },
+          "ids": {
+            "boardId": "476c7276-87bc-802c-8008-e7ee1b04e262",
+            "groupId": "476c7276-87bc-802c-8008-e7edff941b97",
+            "panelId": "476c7276-87bc-802c-8008-e7ee0093ee7c"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c01-repair-4cb873c9-wireframe-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c01-repair-4cb873c9-wireframe-crops.json",
+          "pixelCrop": [
+            0,
+            3240,
+            1440,
+            1000
+          ]
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/ready.json",
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/findings.md",
+        "outputs/penpot/completion/parallel-completion/native-unchanged-counterparts-review/ready.json",
+        "outputs/penpot/completion/parallel-completion/native-unchanged-counterparts-review/findings.md",
+        "outputs/penpot/completion/export-recovery/continuation-native-layer-audit-memory8-pilot.json",
+        "outputs/penpot/completion/export-recovery/memory8-pilot-final-structure-proof.json",
+        "outputs/penpot/completion/export-recovery/memory8-prepilot-existing-id-ui-proof.json",
+        "outputs/penpot/completion/parallel-completion/penpot-memory8-complete-pilot-queue-handoff.json"
+      ]
+    },
+    {
+      "referenceId": "desktop-sales-compact",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/desktop-sales-compact.png",
+        "sha256": "95bc4395b88481b400524e0d0ea252d33358a090ba39c981fd27efd672fa9918",
+        "pixelSize": [
+          2880,
+          2000
+        ]
+      },
+      "classification": "content-qualified static proposal",
+      "visualReviewThisTask": false,
+      "observation": "Exact identity/geometry and recorded per-side content proof reused; no fresh full visual inspection of this reference this task.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c04-repair-d50cb83e/desktop-sales-compact-design.png",
+            "sha256": "95ea5585235e5a253f2771da4ad60cb961287c831950abaff9ddbfde10b2e825",
+            "pixelSize": [
+              1440,
+              1000
+            ]
+          },
+          "ids": {
+            "boardId": "a9cd4983-d631-8030-8008-e7efaed89101",
+            "groupId": "a9cd4983-d631-8030-8008-e7efa5183d0f",
+            "panelId": "a9cd4983-d631-8030-8008-e7efa569a85c"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c04-repair-d50cb83e-design-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c04-repair-d50cb83e-design-crops.json",
+          "pixelCrop": [
+            1520,
+            0,
+            1440,
+            1000
+          ]
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c02-repair-246ccf4b/desktop-sales-compact-wireframe.png",
+            "sha256": "d6466f685a82a5bf7f4107a8b0c01d09d6f2b0c249ced164f4e4103e58d57b3a",
+            "pixelSize": [
+              1440,
+              1000
+            ]
+          },
+          "ids": {
+            "boardId": "a9cd4983-d631-8030-8008-e7f0475cc67e",
+            "groupId": "a9cd4983-d631-8030-8008-e7f03593206a",
+            "panelId": "a9cd4983-d631-8030-8008-e7f03617e38f"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-246ccf4b-wireframe-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-246ccf4b-wireframe-crops.json",
+          "pixelCrop": [
+            1520,
+            0,
+            1440,
+            1000
+          ]
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/ready.json",
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/findings.md",
+        "outputs/penpot/completion/export-recovery/continuation-native-layer-audit-memory8-pilot.json",
+        "outputs/penpot/completion/export-recovery/memory8-pilot-final-structure-proof.json",
+        "outputs/penpot/completion/export-recovery/memory8-prepilot-existing-id-ui-proof.json",
+        "outputs/penpot/completion/parallel-completion/penpot-memory8-complete-pilot-queue-handoff.json"
+      ]
+    },
+    {
+      "referenceId": "desktop-sales-catalog-bottom",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/desktop-sales-catalog-bottom.png",
+        "sha256": "59dc4f2544a180bf7f724d0dc6af672b238d5ce9b869af3083fcc69e7b8c3214",
+        "pixelSize": [
+          2880,
+          2000
+        ]
+      },
+      "classification": "content-qualified static proposal",
+      "visualReviewThisTask": false,
+      "observation": "Exact identity/geometry and recorded per-side content proof reused; no fresh full visual inspection of this reference this task.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c03-repair-41e0d33a/desktop-sales-catalog-bottom-design.png",
+            "sha256": "9106be9c037b899ab308c0c1cd142fd35bc567daa31240e54cb780ca2cd9be87",
+            "pixelSize": [
+              1440,
+              1000
+            ]
+          },
+          "ids": {
+            "boardId": "7c179d3b-40ff-808e-8008-e79ff8563cab",
+            "groupId": "6ce9fa2d-01b7-8034-8008-e79fb0cb6e32",
+            "panelId": "6ce9fa2d-01b7-8034-8008-e79fb15cad11"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c03-repair-41e0d33a-design-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c03-repair-41e0d33a-design-crops.json",
+          "pixelCrop": [
+            0,
+            4320,
+            1440,
+            1000
+          ]
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c02-repair-246ccf4b/desktop-sales-catalog-bottom-wireframe.png",
+            "sha256": "515a23a6a8aba6227e59fb452b57824eff901da9f9e0cc36e086b1de038dd365",
+            "pixelSize": [
+              1440,
+              1000
+            ]
+          },
+          "ids": {
+            "boardId": "a9cd4983-d631-8030-8008-e7f0475cc67e",
+            "groupId": "a9cd4983-d631-8030-8008-e7f03593206a",
+            "panelId": "a9cd4983-d631-8030-8008-e7f035eccc97"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-246ccf4b-wireframe-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-246ccf4b-wireframe-crops.json",
+          "pixelCrop": [
+            0,
+            4320,
+            1440,
+            1000
+          ]
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/ready.json",
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/findings.md",
+        "outputs/penpot/completion/parallel-completion/native-unchanged-counterparts-review/ready.json",
+        "outputs/penpot/completion/parallel-completion/native-unchanged-counterparts-review/findings.md",
+        "outputs/penpot/completion/export-recovery/continuation-native-layer-audit-memory8-pilot.json",
+        "outputs/penpot/completion/export-recovery/memory8-pilot-final-structure-proof.json",
+        "outputs/penpot/completion/export-recovery/memory8-prepilot-existing-id-ui-proof.json",
+        "outputs/penpot/completion/parallel-completion/penpot-memory8-complete-pilot-queue-handoff.json"
+      ]
+    },
+    {
+      "referenceId": "desktop-sales-no-results",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/desktop-sales-no-results.png",
+        "sha256": "ea19297d1694ff3f31a18c5572353d2662d1cef100a831e4c85cad561fe2db65",
+        "pixelSize": [
+          2880,
+          2000
+        ]
+      },
+      "classification": "content-qualified static proposal",
+      "visualReviewThisTask": false,
+      "observation": "Exact identity/geometry and recorded per-side content proof reused; no fresh full visual inspection of this reference this task.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c04-repair-d50cb83e/desktop-sales-no-results-design.png",
+            "sha256": "ab6f45c4786fdf6b230e1264520e2a638ee96c67e03e0553fb5c88440d449900",
+            "pixelSize": [
+              1440,
+              1000
+            ]
+          },
+          "ids": {
+            "boardId": "a9cd4983-d631-8030-8008-e7efaed89101",
+            "groupId": "a9cd4983-d631-8030-8008-e7efa5183d0f",
+            "panelId": "a9cd4983-d631-8030-8008-e7efa5bf90a5"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c04-repair-d50cb83e-design-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c04-repair-d50cb83e-design-crops.json",
+          "pixelCrop": [
+            1520,
+            1080,
+            1440,
+            1000
+          ]
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c02-repair-246ccf4b/desktop-sales-no-results-wireframe.png",
+            "sha256": "8d12fd5c33c33a55d3add2c14147751c0bd883cc298d466b59e7c86078bd7e30",
+            "pixelSize": [
+              1440,
+              1000
+            ]
+          },
+          "ids": {
+            "boardId": "a9cd4983-d631-8030-8008-e7f0475cc67e",
+            "groupId": "a9cd4983-d631-8030-8008-e7f03593206a",
+            "panelId": "a9cd4983-d631-8030-8008-e7f03648c7df"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-246ccf4b-wireframe-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-246ccf4b-wireframe-crops.json",
+          "pixelCrop": [
+            1520,
+            1080,
+            1440,
+            1000
+          ]
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/ready.json",
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/findings.md",
+        "outputs/penpot/completion/export-recovery/continuation-native-layer-audit-memory8-pilot.json",
+        "outputs/penpot/completion/export-recovery/memory8-pilot-final-structure-proof.json",
+        "outputs/penpot/completion/export-recovery/memory8-prepilot-existing-id-ui-proof.json",
+        "outputs/penpot/completion/parallel-completion/penpot-memory8-complete-pilot-queue-handoff.json"
+      ]
+    },
+    {
+      "referenceId": "desktop-sale-paid",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/desktop-sale-paid.png",
+        "sha256": "60849c80e47f7338c81664762bd764b4326f5c1448c8f57162bdc16784db9ac5",
+        "pixelSize": [
+          2880,
+          2000
+        ]
+      },
+      "classification": "content-qualified static proposal",
+      "visualReviewThisTask": true,
+      "observation": "Direct review: saved-success title, S-000003/date,10,000IQD cash amount, one delivery line and frozen price, print/new-close/details/PDF action order and background history retained. This different successful fixture is not evidence that the25,000cart was committed.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c02-repair-1192d53d/desktop-sale-paid-design.png",
+            "sha256": "101a7635b26ba669f95ff1207508d2fb9114309013489f7cd9db10c9abffe204",
+            "pixelSize": [
+              1440,
+              1000
+            ]
+          },
+          "ids": {
+            "boardId": "ee8ab1eb-11db-8048-8008-e79e445d3389",
+            "groupId": "28dc4c5c-7c4f-80a7-8008-e79d093403d4",
+            "panelId": "28dc4c5c-7c4f-80a7-8008-e79d09ae958b"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-1192d53d-design-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-1192d53d-design-crops.json",
+          "pixelCrop": [
+            0,
+            2160,
+            1440,
+            1000
+          ]
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c01-repair-4cb873c9/desktop-sale-paid-wireframe.png",
+            "sha256": "a61da7c60d2150837837366c1e7fbc35005a0740bc2f854c09d3d6f33206a682",
+            "pixelSize": [
+              1440,
+              1000
+            ]
+          },
+          "ids": {
+            "boardId": "476c7276-87bc-802c-8008-e7ee1b04e262",
+            "groupId": "476c7276-87bc-802c-8008-e7edff941b97",
+            "panelId": "476c7276-87bc-802c-8008-e7ee0074b6b7"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c01-repair-4cb873c9-wireframe-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c01-repair-4cb873c9-wireframe-crops.json",
+          "pixelCrop": [
+            0,
+            2160,
+            1440,
+            1000
+          ]
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/ready.json",
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/findings.md",
+        "outputs/penpot/completion/parallel-completion/native-unchanged-counterparts-review/ready.json",
+        "outputs/penpot/completion/parallel-completion/native-unchanged-counterparts-review/findings.md",
+        "outputs/penpot/completion/export-recovery/continuation-native-layer-audit-memory8-pilot.json",
+        "outputs/penpot/completion/export-recovery/memory8-pilot-final-structure-proof.json",
+        "outputs/penpot/completion/export-recovery/memory8-prepilot-existing-id-ui-proof.json",
+        "outputs/penpot/completion/parallel-completion/penpot-memory8-complete-pilot-queue-handoff.json"
+      ]
+    },
+    {
+      "referenceId": "phone-sales",
+      "logicalSize": [
+        390,
+        844
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/phone-sales.png",
+        "sha256": "c927c98295d7d1546031aacfac8a6f4d2958c2d80644a0f0888be25912f21859",
+        "pixelSize": [
+          780,
+          1688
+        ]
+      },
+      "classification": "historical Phase01 reuse proposed",
+      "visualReviewThisTask": false,
+      "observation": "Exact identity/geometry and recorded per-side content proof reused; no fresh full visual inspection of this reference this task.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/phase01/native-exports/phone-sales-design.png",
+            "sha256": "f6a481e1afffb3192eebcfb0d0519b817b4a3b161cd73a21a80cddd7bfddc237",
+            "pixelSize": [
+              780,
+              1688
+            ]
+          },
+          "ids": {
+            "boardId": "6038a601-8820-8088-8008-dcf67806c1ef",
+            "panelId": "6038a601-8820-8088-8008-dcfc38b41bc6"
+          }
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/phase01/native-exports/phone-sales-wireframe.png",
+            "sha256": "7abfe5c68a521ed445456e65f7fc14d61a9c1cdcff8900ceb479187e5e3bb0e2",
+            "pixelSize": [
+              780,
+              1688
+            ]
+          },
+          "ids": {
+            "boardId": "6038a601-8820-8088-8008-dcf68b9b53cd",
+            "panelId": "6038a601-8820-8088-8008-dcfc54caefa5"
+          }
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/phase01/native-exports/native-manifest.json",
+        "docs/phases/01-step6-completion.md"
+      ]
+    },
+    {
+      "referenceId": "desktop-held-orders",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/desktop-held-orders.png",
+        "sha256": "4d946176e047676e8ab6ea3cbf83d49fcf1717ba9f811fe4680324a3741fdb92",
+        "pixelSize": [
+          2880,
+          2000
+        ]
+      },
+      "classification": "held from unconditional fidelity recommendation: explicit visual discrepancy",
+      "visualReviewThisTask": true,
+      "observation": "Direct review: populated held entry, device-only/no stock reservation/no sale explanation, date/two-line metadata, restore-with-current-hold and delete action retained. Both native sides replace the visible background order-type V chevron with a square/check-shaped mark. Exact existing detail crops confirm the discrepancy; exclude this pair from an unconditional source-fidelity shortlist.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/completion/package-native-panels/wp04-01/desktop-held-orders-design.png",
+            "sha256": "2fd38ddeae5d5fe1f1647aa5ee008949ae2075c3b1b640adf0d0322bcf0070bd",
+            "pixelSize": [
+              2880,
+              2000
+            ]
+          },
+          "ids": {
+            "boardId": "0caf3b3a-c3d5-8062-8008-e68e650dbd57",
+            "groupId": "0caf3b3a-c3d5-8062-8008-e68e8758bdba",
+            "panelId": "0caf3b3a-c3d5-8062-8008-e68e87ac616a"
+          },
+          "parentArtifact": "outputs/penpot/completion/package-native-exports/wp04-01-design-2x.png",
+          "cropReceipt": "outputs/penpot/completion/package-native-receipts/wp04-01-design-crops.json",
+          "pixelCrop": [
+            0,
+            0,
+            2880,
+            2000
+          ]
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/completion/package-native-panels/wp04-01/desktop-held-orders-wireframe.png",
+            "sha256": "fba877c7d20110cb3ab0ec136eec3fcf7f563a4817d5fcc7ed63defe95307537",
+            "pixelSize": [
+              2880,
+              2000
+            ]
+          },
+          "ids": {
+            "boardId": "c5f89649-e583-8076-8008-e692d0eef5b5",
+            "groupId": "c5f89649-e583-8076-8008-e692e453ce60",
+            "panelId": "c5f89649-e583-8076-8008-e692e488a377"
+          },
+          "parentArtifact": "outputs/penpot/completion/package-native-exports/wp04-01-wireframe-2x.png",
+          "cropReceipt": "outputs/penpot/completion/package-native-receipts/wp04-01-wireframe-crops.json",
+          "pixelCrop": [
+            0,
+            0,
+            2880,
+            2000
+          ]
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/completion/export-recovery/review-page-09.html",
+        "outputs/penpot/completion/export-recovery/continuation-native-layer-audit-110.json",
+        "outputs/penpot/completion/export-recovery/control-review-index.json",
+        "outputs/penpot/completion/export-recovery/control-review-observations.json"
+      ]
+    },
+    {
+      "referenceId": "empty-sales",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/empty-sales.png",
+        "sha256": "bc8a0e4093599b98c26e48b78ca62b57456ebc3e143709b048b14843893cdcd8",
+        "pixelSize": [
+          2880,
+          2000
+        ]
+      },
+      "classification": "content-qualified static proposal",
+      "visualReviewThisTask": true,
+      "observation": "Direct review: zero catalog/empty-ticket text/icon, add-product CTA,0subtotal/net, disabled checkout styling and collapsed discount disclosure retained. This covers an empty catalog/ticket presentation; it does not prove invalid-input rejection or runtime disabled semantics.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c04-repair-d50cb83e/empty-sales-design.png",
+            "sha256": "4fbca961e9f3761d266893fb0b5e209b9551015b3394c8362bb1a17480d8ed1e",
+            "pixelSize": [
+              1440,
+              1000
+            ]
+          },
+          "ids": {
+            "boardId": "a9cd4983-d631-8030-8008-e7efaed89101",
+            "groupId": "a9cd4983-d631-8030-8008-e7efa5183d0f",
+            "panelId": "a9cd4983-d631-8030-8008-e7efa5e2dd38"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c04-repair-d50cb83e-design-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c04-repair-d50cb83e-design-crops.json",
+          "pixelCrop": [
+            1520,
+            2160,
+            1440,
+            1000
+          ]
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c02-repair-246ccf4b/empty-sales-wireframe.png",
+            "sha256": "f3c5147417d17ddd3eb87a359254f2516eade6726bd339bad0f0c3ce643081bd",
+            "pixelSize": [
+              1440,
+              1000
+            ]
+          },
+          "ids": {
+            "boardId": "a9cd4983-d631-8030-8008-e7f0475cc67e",
+            "groupId": "a9cd4983-d631-8030-8008-e7f03593206a",
+            "panelId": "a9cd4983-d631-8030-8008-e7f0365b9eb5"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-246ccf4b-wireframe-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-246ccf4b-wireframe-crops.json",
+          "pixelCrop": [
+            1520,
+            2160,
+            1440,
+            1000
+          ]
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/ready.json",
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/findings.md",
+        "outputs/penpot/completion/export-recovery/continuation-native-layer-audit-memory8-pilot.json",
+        "outputs/penpot/completion/export-recovery/memory8-pilot-final-structure-proof.json",
+        "outputs/penpot/completion/export-recovery/memory8-prepilot-existing-id-ui-proof.json",
+        "outputs/penpot/completion/parallel-completion/penpot-memory8-complete-pilot-queue-handoff.json"
+      ]
+    },
+    {
+      "referenceId": "phone-sales-bottom",
+      "logicalSize": [
+        390,
+        844
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/phone-sales-bottom.png",
+        "sha256": "df5f6fafea2b48b406add3d31f84d19923602207e862c9433ed568f5a8a4a8c8",
+        "pixelSize": [
+          780,
+          1688
+        ]
+      },
+      "classification": "content-qualified static proposal",
+      "visualReviewThisTask": false,
+      "observation": "Exact identity/geometry and recorded per-side content proof reused; no fresh full visual inspection of this reference this task.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c04-repair-d50cb83e/phone-sales-bottom-design.png",
+            "sha256": "9e932db68a30066be6df5130e5bfc0e76c573a2ce7c82fb86e05953dda0cc6d0",
+            "pixelSize": [
+              390,
+              844
+            ]
+          },
+          "ids": {
+            "boardId": "a9cd4983-d631-8030-8008-e7efaed89101",
+            "groupId": "a9cd4983-d631-8030-8008-e7efa5183d0f",
+            "panelId": "a9cd4983-d631-8030-8008-e7efa5f2774f"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c04-repair-d50cb83e-design-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c04-repair-d50cb83e-design-crops.json",
+          "pixelCrop": [
+            3040,
+            0,
+            390,
+            844
+          ]
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c03-repair-1aae3e6c/phone-sales-bottom-wireframe.png",
+            "sha256": "37885b96110650de06a52489a8c6d9cfe8ee92bcebf4041b68bdcf863b360014",
+            "pixelSize": [
+              390,
+              844
+            ]
+          },
+          "ids": {
+            "boardId": "614f99fb-c86e-806b-8008-e7f11fe72aa1",
+            "groupId": "614f99fb-c86e-806b-8008-e7f1146b360e",
+            "panelId": "614f99fb-c86e-806b-8008-e7f114c1992a"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c03-repair-1aae3e6c-wireframe-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c03-repair-1aae3e6c-wireframe-crops.json",
+          "pixelCrop": [
+            3040,
+            0,
+            390,
+            844
+          ]
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/ready.json",
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/findings.md",
+        "outputs/penpot/completion/export-recovery/continuation-native-layer-audit-memory8-pilot.json",
+        "outputs/penpot/completion/export-recovery/memory8-pilot-final-structure-proof.json",
+        "outputs/penpot/completion/export-recovery/memory8-prepilot-existing-id-ui-proof.json",
+        "outputs/penpot/completion/parallel-completion/penpot-memory8-complete-pilot-queue-handoff.json"
+      ]
+    },
+    {
+      "referenceId": "phone-sales-cart",
+      "logicalSize": [
+        390,
+        844
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/phone-sales-cart.png",
+        "sha256": "7c2e173195e109803067d981d9ca42048444db67cc93ee08491bd9b299aa9d18",
+        "pixelSize": [
+          780,
+          1688
+        ]
+      },
+      "classification": "content-qualified static proposal",
+      "visualReviewThisTask": true,
+      "observation": "Direct review:390x844 narrow composition, four visible food-photo crops/design and neutral wireframe slots,8,000/12,000/10,000prices, stock/order counts and inherited failed-save/draft-retained toast match. Native design1x and wireframe2x require matching logical scale for comparisons.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c05-repair-686668ae/phone-sales-cart-design.png",
+            "sha256": "61ac92895bc585ca238db62ece997a4a447c2dafcf434073a26042d43fdbb8d0",
+            "pixelSize": [
+              390,
+              844
+            ]
+          },
+          "ids": {
+            "boardId": "9dd51a33-cad8-8059-8008-e7a5a952c6f0",
+            "groupId": "a22ad31c-ef4e-8063-8008-e7a56c33b484",
+            "panelId": "a22ad31c-ef4e-8063-8008-e7a56c5fd9f2"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c05-repair-686668ae-design-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c05-repair-686668ae-design-crops.json",
+          "pixelCrop": [
+            3040,
+            924,
+            390,
+            844
+          ]
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/completion/package-native-panels/wp04-01/phone-sales-cart-wireframe.png",
+            "sha256": "bd7c7b4e0964d3260bc6d4fa154aeb8c44998bb0e0784874b02dfbba39015d73",
+            "pixelSize": [
+              780,
+              1688
+            ]
+          },
+          "ids": {
+            "boardId": "c5f89649-e583-8076-8008-e692d0eef5b5",
+            "groupId": "a06ebf34-7758-80cb-8008-e6984b456df8",
+            "panelId": "a06ebf34-7758-80cb-8008-e6984bb790bf"
+          },
+          "parentArtifact": "outputs/penpot/completion/package-native-exports/wp04-01-wireframe-2x.png",
+          "cropReceipt": "outputs/penpot/completion/package-native-receipts/wp04-01-wireframe-crops.json",
+          "pixelCrop": [
+            6080,
+            1848,
+            780,
+            1688
+          ]
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/completion/parallel-completion/qualification-repairs/ready.json",
+        "outputs/penpot/completion/export-recovery/continuation-native-layer-audit-131.json",
+        "outputs/penpot/completion/export-recovery/native-131-placement-and-parent-proof.json",
+        "outputs/penpot/completion/export-recovery/wp03-parent-restored-131-export.json"
+      ]
+    },
+    {
+      "referenceId": "phone-sales-cart-bottom",
+      "logicalSize": [
+        390,
+        844
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/phone-sales-cart-bottom.png",
+        "sha256": "22e40733170859d34cca429730e9a819115610df30860dbac2c34f3d0f66667f",
+        "pixelSize": [
+          780,
+          1688
+        ]
+      },
+      "classification": "content-qualified static proposal",
+      "visualReviewThisTask": true,
+      "observation": "Direct review: same bottom scroll/crop, line quantities2/1,26,000subtotal,1,000discount,25,000total, order-type chevron, calendar/disclosure, checkout/hold/clear and inherited toast retained. Lower ticket-card paint appears square at the native bottom edge while source has rounded lower corners; flatter shadow retained as discrepancy.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c05-repair-686668ae/phone-sales-cart-bottom-design.png",
+            "sha256": "e715e5e0968da15957b9bae3b5e0fb0aa11dbc8b289daeccba52f09eb917c0f0",
+            "pixelSize": [
+              390,
+              844
+            ]
+          },
+          "ids": {
+            "boardId": "9dd51a33-cad8-8059-8008-e7a5a952c6f0",
+            "groupId": "a22ad31c-ef4e-8063-8008-e7a56c33b484",
+            "panelId": "a22ad31c-ef4e-8063-8008-e7a56c726087"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c05-repair-686668ae-design-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c05-repair-686668ae-design-crops.json",
+          "pixelCrop": [
+            3040,
+            1848,
+            390,
+            844
+          ]
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/continuation-panels/wp04-01-v6-c03-repair-1aae3e6c/phone-sales-cart-bottom-wireframe.png",
+            "sha256": "bd805941c947cc44b71b0d970f06d71757ac041f3aa550ff79e22dd53b5f62a8",
+            "pixelSize": [
+              390,
+              844
+            ]
+          },
+          "ids": {
+            "boardId": "614f99fb-c86e-806b-8008-e7f11fe72aa1",
+            "groupId": "614f99fb-c86e-806b-8008-e7f1146b360e",
+            "panelId": "614f99fb-c86e-806b-8008-e7f114de60b2"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/wp04-01-v6-c03-repair-1aae3e6c-wireframe-native-1x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/wp04-01-v6-c03-repair-1aae3e6c-wireframe-crops.json",
+          "pixelCrop": [
+            3040,
+            1848,
+            390,
+            844
+          ]
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/ready.json",
+        "outputs/penpot/completion/parallel-completion/native-control-repairs-batch01-review/findings.md",
+        "outputs/penpot/completion/parallel-completion/native-unchanged-counterparts-review/ready.json",
+        "outputs/penpot/completion/parallel-completion/native-unchanged-counterparts-review/findings.md",
+        "outputs/penpot/completion/export-recovery/continuation-native-layer-audit-memory8-pilot.json",
+        "outputs/penpot/completion/export-recovery/memory8-pilot-final-structure-proof.json",
+        "outputs/penpot/completion/export-recovery/memory8-prepilot-existing-id-ui-proof.json",
+        "outputs/penpot/completion/parallel-completion/penpot-memory8-complete-pilot-queue-handoff.json"
+      ]
+    },
+    {
+      "referenceId": "full-phone-sales",
+      "logicalSize": [
+        390,
+        4940
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/full-phone-sales.png",
+        "sha256": "858229586b7efe6288baf00aa9f7f269e4df7bcfd7fb367f22bd0500456f132b",
+        "pixelSize": [
+          780,
+          9880
+        ]
+      },
+      "classification": "content-qualified static proposal",
+      "visualReviewThisTask": false,
+      "observation": "Exact identity/geometry and recorded per-side content proof reused; no fresh full visual inspection of this reference this task.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/completion/package-native-panels/full-phone-sales/full-phone-sales-design.png",
+            "sha256": "372387ed29fb4932e0fb43b1d5d54497af6fd52286596b9a0b748dde1ca802bd",
+            "pixelSize": [
+              780,
+              9880
+            ]
+          },
+          "ids": {
+            "boardId": "d0e960e2-2a51-80c0-8008-e67bb05c2ac7",
+            "groupId": "d0e960e2-2a51-80c0-8008-e67bb05c2ac7",
+            "panelId": "d0e960e2-2a51-80c0-8008-e67b9e577dad"
+          },
+          "parentArtifact": "outputs/penpot/completion/package-native-exports/full-phone-sales-design-2x.png",
+          "cropReceipt": "outputs/penpot/completion/package-native-receipts/full-phone-sales-design-crops.json",
+          "pixelCrop": [
+            0,
+            0,
+            780,
+            9880
+          ]
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/completion/package-native-panels/full-phone-sales/full-phone-sales-wireframe.png",
+            "sha256": "f8802b788bfacb18d0993be2ef259c2323c7a6249999de5ff091a2077b9fbe9a",
+            "pixelSize": [
+              780,
+              9880
+            ]
+          },
+          "ids": {
+            "boardId": "d0e960e2-2a51-80c0-8008-e67c5f269492",
+            "groupId": "d0e960e2-2a51-80c0-8008-e67c5f269492",
+            "panelId": "d0e960e2-2a51-80c0-8008-e67c5d94dd14"
+          },
+          "parentArtifact": "outputs/penpot/completion/package-native-exports/full-phone-sales-wireframe-2x.png",
+          "cropReceipt": "outputs/penpot/completion/package-native-receipts/full-phone-sales-wireframe-crops.json",
+          "pixelCrop": [
+            0,
+            0,
+            780,
+            9880
+          ]
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/completion/export-recovery/review-page-19.html",
+        "outputs/penpot/completion/export-recovery/continuation-native-layer-audit-111.json",
+        "outputs/penpot/completion/export-recovery/control-review-index.json",
+        "outputs/penpot/completion/export-recovery/control-review-observations.json",
+        "outputs/penpot/completion/export-recovery/repaired-control-review-observations.json",
+        "outputs/penpot/completion/export-recovery/review-page-17.html",
+        "outputs/penpot/completion/export-recovery/review-page-18.html",
+        "outputs/penpot/completion/export-recovery/full-phone-sales-tall-review-receipt.json",
+        "outputs/penpot/completion/export-recovery/dedicated-control-review-observations.json"
+      ]
+    },
+    {
+      "referenceId": "full-sales",
+      "logicalSize": [
+        1440,
+        1000
+      ],
+      "source": {
+        "path": "docs/planning/flutter-rebuild/screenshots/full-sales.png",
+        "sha256": "6b000f63dee720797a977c4ed17062100ec2d4df4e2c3edd0b0a2efe9dc6b307",
+        "pixelSize": [
+          2880,
+          2000
+        ]
+      },
+      "classification": "content-qualified static proposal",
+      "visualReviewThisTask": true,
+      "observation": "Direct review of exact full source and both selected native crops: cropped source origin, navigation/category counts, search/grid icon, food-photo crops (design), neutral placeholders (wireframe), visible names/prices and low-stock labels, two ticket quantities 2/1, line amounts 24,000/2,000, subtotal26,000, date2026/10/27, net25,000 and visible checkout/hold/clear structure correspond. Source itself crops right-hand labels/calendar at its natural-document viewport; no native reachability claim. Dedicated source calendar crop is blank in the source too. Visible select chevron is retained on both sides. Existing diagnostic alone was insufficient; this is new independent static content observation bound to the exact hashes below.",
+      "native": {
+        "design": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/full-sales-design-panel-2x.png",
+            "sha256": "bf6bb8693aa88c2725d411543a759e47aa9230c4d1100e5565b63f13ce3b3942",
+            "pixelSize": [
+              2880,
+              2000
+            ]
+          },
+          "ids": {
+            "boardId": "0a2b3bc9-9c0b-8010-8008-e6b83d100f05",
+            "groupId": "0a2b3bc9-9c0b-8010-8008-e6b84f9a035b",
+            "panelId": "0a2b3bc9-9c0b-8010-8008-e6b8501174f3"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/full-sales-design-native-2x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/full-sales-design-crop-receipt.json",
+          "pixelCrop": [
+            160,
+            160,
+            2880,
+            2000
+          ]
+        },
+        "wireframe": {
+          "crop": {
+            "path": "outputs/penpot/completion/export-recovery/full-sales-wireframe-panel-2x.png",
+            "sha256": "44f5de84367372e46d1799d5b8f089159738f47bfcfdd7509551375111cf9f90",
+            "pixelSize": [
+              2880,
+              2000
+            ]
+          },
+          "ids": {
+            "boardId": "0a2b3bc9-9c0b-8010-8008-e6aff22ff326",
+            "groupId": "0a2b3bc9-9c0b-8010-8008-e6b000e277eb",
+            "panelId": "0a2b3bc9-9c0b-8010-8008-e6b001f35d4c"
+          },
+          "parentArtifact": "outputs/penpot/completion/export-recovery/full-sales-wireframe-native-2x.png",
+          "cropReceipt": "outputs/penpot/completion/export-recovery/full-sales-wireframe-crop-receipt.json",
+          "pixelCrop": [
+            160,
+            160,
+            2880,
+            2000
+          ]
+        }
+      },
+      "priorQualificationEvidence": [
+        "outputs/penpot/completion/export-recovery/full-sales-source-comparison.json",
+        "outputs/penpot/completion/export-recovery/full-sales-wireframe-native-2x.png"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "C2-D01",
+      "severity": "fidelity hold for unconditional recommendation",
+      "referenceId": "desktop-held-orders",
+      "finding": "Background order-type select V chevron is rendered as a small square/check-shaped mark on BOTH native sides; packet discrepancy:null and no-flagged-state observation are too strong.",
+      "exactLogicalBounds": [
+        1054,
+        613,
+        11,
+        7
+      ],
+      "evidence": [
+        {
+          "path": "outputs/penpot/completion/export-recovery/review-controls/4d946176e047/desktop-held-orders/source/7f3d562469b4.png",
+          "sha256": "b704fc5b44fb06d2a6047bdb43ad3090bcada4f8ee3cfc96c43e22122b84e80f",
+          "bytes": 707,
+          "pixelSize": [
+            22,
+            14
+          ]
+        },
+        {
+          "path": "outputs/penpot/completion/export-recovery/review-controls/2fd38ddeae5d/desktop-held-orders/design/7f3d562469b4.png",
+          "sha256": "43dd393ea6db6e4f36b958603da7fd4a77b67aeeae4dbf2c8e8a37a6fa73b3f2",
+          "bytes": 487,
+          "pixelSize": [
+            22,
+            14
+          ]
+        },
+        {
+          "path": "outputs/penpot/completion/export-recovery/review-controls/fba877c7d201/desktop-held-orders/wireframe/7f3d562469b4.png",
+          "sha256": "0411d0e2b02a275b454adc2c7015733fd06c3cf599085108406dc22d5fa9bbbb",
+          "bytes": 427,
+          "pixelSize": [
+            22,
+            14
+          ]
+        }
+      ],
+      "requiredDisposition": "Repair/native re-export/review, or obtain explicit owner acceptance of this named discrepancy. No repair performed here."
+    },
+    {
+      "id": "C2-D02",
+      "severity": "explicit visual discrepancy",
+      "references": [
+        "desktop-hold-order",
+        "desktop-sale-paid",
+        "phone-sales-cart-bottom"
+      ],
+      "finding": "Flatter modal/card shadows and small lower-edge/corner paint differences remain visible, including square native lower ticket-card paint in phone-sales-cart-bottom.",
+      "requiredDisposition": "Present to owner; no automatic fidelity/pixel-identity acceptance."
+    },
+    {
+      "id": "C2-E01",
+      "severity": "evidence wording correction",
+      "finding": "Prior unchanged-counterpart ready.json claims100%vector fidelity and describes hold-name input/actions as optional reason/confirm hold. Exact source/native pixels show optional name and hold-and-open-new-order. Pixels support the actual source controls; inherited prose does not.",
+      "evidence": "outputs/penpot/completion/parallel-completion/native-unchanged-counterparts-review/ready.json",
+      "requiredDisposition": "Use current independent pixel observations; do not propagate those prior prose claims."
+    }
+  ],
+  "validation": {
+    "candidateSourceAndNativeAndReuseDescriptorsVerified": 48,
+    "additionalPhase02AndC2SourceOnlyDescriptorsVerified": 36,
+    "allVerifiedDescriptors": 84,
+    "hashOrSizeErrors": [],
+    "nativeCandidateSidesWithExactRecordedBoardGroupPanelAncestryPaperBinding": 26,
+    "nativeCandidateSidesWithExactCropReceiptAndBoundsBinding": 26,
+    "pathHandling": "Absolute legacy and relative paths resolved to canonical filesystem paths before comparing.",
+    "parentArtifacts": [
+      {
+        "path": "outputs/penpot/completion/export-recovery/full-sales-design-native-2x.png",
+        "sha256": "f71f4dff58ed87305ff750c00d78290fb7ea695c12a1be16da4d6f43acc11759",
+        "bytes": 1806442,
+        "pixelSize": [
+          3200,
+          2320
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/full-sales-wireframe-native-2x.png",
+        "sha256": "089fdb796d122b134a437e2de0f1bf075b8ebb254f32d7f6495ca5037495b186",
+        "bytes": 381929,
+        "pixelSize": [
+          3200,
+          2320
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/wp04-01-v6-c01-repair-4cb873c9-wireframe-native-1x.png",
+        "sha256": "c2465cabb8a0a3637af082c660ace15f619d71023f02c454c0aac93269b56ca5",
+        "bytes": 489970,
+        "pixelSize": [
+          3430,
+          5320
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-1192d53d-design-native-1x.png",
+        "sha256": "9e2e09c48d08ec78ebe1d05a573205e3e95cfb8163fcbce0cb4c9af25ddc6fa1",
+        "bytes": 574872,
+        "pixelSize": [
+          3430,
+          5320
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-246ccf4b-wireframe-native-1x.png",
+        "sha256": "702b5e0a2d8d6cc8d49071124ac487b1c8859dff368af150b7f0da6190a70ed8",
+        "bytes": 570578,
+        "pixelSize": [
+          3430,
+          5320
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/wp04-01-v6-c03-repair-1aae3e6c-wireframe-native-1x.png",
+        "sha256": "16bf30c379aaf4b9bccbfaf6ce7638fe9347586877ca080cb9a4aa31e545acfe",
+        "bytes": 148586,
+        "pixelSize": [
+          3430,
+          5320
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/wp04-01-v6-c03-repair-41e0d33a-design-native-1x.png",
+        "sha256": "67318dca35d5199cefd6d212e3f2833444c26b82734360a1283a6e3b44ab4c2c",
+        "bytes": 1043763,
+        "pixelSize": [
+          3430,
+          5320
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/wp04-01-v6-c04-repair-d50cb83e-design-native-1x.png",
+        "sha256": "cce684c33b8c1b86c8fdbe82355e4007941e9d1299f39b0106b8f39ffcc06d00",
+        "bytes": 892124,
+        "pixelSize": [
+          3430,
+          5320
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/wp04-01-v6-c05-repair-686668ae-design-native-1x.png",
+        "sha256": "3a49e619b64005f5d4d548c3199c6e44c9de2b2316edbcd43f164c0112f4edb6",
+        "bytes": 302106,
+        "pixelSize": [
+          3430,
+          5320
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/package-native-exports/full-phone-sales-design-2x.png",
+        "sha256": "4710a02a0de43f94e4e3ddca617ec46c6b27ab7c0c7d6bffd06d2a560ed8968b",
+        "bytes": 3006605,
+        "pixelSize": [
+          780,
+          9880
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/package-native-exports/full-phone-sales-wireframe-2x.png",
+        "sha256": "be8c10f6eebb628c33ffd4e84b9d91b11267653a31d493814eef4ba3122ecd03",
+        "bytes": 601143,
+        "pixelSize": [
+          780,
+          9880
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/package-native-exports/wp04-01-design-2x.png",
+        "sha256": "0bf6eb41dbf2886233a86228792641e0dd2ba4cd3dd8503d25d05551f82efca3",
+        "bytes": 4096695,
+        "pixelSize": [
+          6860,
+          10640
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/package-native-exports/wp04-01-wireframe-2x.png",
+        "sha256": "74e3e8e8028ead7d78b2f444a165dc3004a03f495798243f4272e2f9d7edcd72",
+        "bytes": 3202565,
+        "pixelSize": [
+          6860,
+          10640
+        ]
+      }
+    ],
+    "cropReceipts": [
+      {
+        "path": "outputs/penpot/completion/export-recovery/full-sales-design-crop-receipt.json",
+        "sha256": "5f41f51438cc9e53005ee6d0bac94ea07d0f5ef195f5da661d4f4d4efa5142c7",
+        "bytes": 536
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/full-sales-wireframe-crop-receipt.json",
+        "sha256": "d1f36875f37d79d12c6394f16b80d175005e24a44393c6851ec468db5341d893",
+        "bytes": 545
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/wp04-01-v6-c01-repair-4cb873c9-wireframe-crops.json",
+        "sha256": "5abf0eada9f6e1b73de8606a95f89adebc57236acb441d2237db20c8a41c75e9",
+        "bytes": 2184
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-1192d53d-design-crops.json",
+        "sha256": "9740583564478b0e9a10ac5c1b632270c273443bc3bc2205460ce2565dd0ed20",
+        "bytes": 1438
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/wp04-01-v6-c02-repair-246ccf4b-wireframe-crops.json",
+        "sha256": "9e79786ed59a4a40329023ba1c9441d2551e7559cbae790d6fffcd95327654ba",
+        "bytes": 2944
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/wp04-01-v6-c03-repair-1aae3e6c-wireframe-crops.json",
+        "sha256": "cfbd91a6874653c8620be6a72a44f8e18f698431ed57ae1afb55bac3ce9475e4",
+        "bytes": 1463
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/wp04-01-v6-c03-repair-41e0d33a-design-crops.json",
+        "sha256": "e2b0664f4f50fc0c5eee2a2b0b883f8138369ef4b3f7ebd867a572441cab659d",
+        "bytes": 1460
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/wp04-01-v6-c04-repair-d50cb83e-design-crops.json",
+        "sha256": "80351d794d5b2f11338ad66eacefc2f5241ede688949a0572e15b1dfc989e5d3",
+        "bytes": 2884
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/wp04-01-v6-c05-repair-686668ae-design-crops.json",
+        "sha256": "435b49868dab09aeadcb76571682021df075a3616d0c9048ad933c529ad759c3",
+        "bytes": 1443
+      },
+      {
+        "path": "outputs/penpot/completion/package-native-receipts/full-phone-sales-design-crops.json",
+        "sha256": "f000cb030c2d42314e983b5881c3839a28bce76e1b70f1374d45807d2e311143",
+        "bytes": 757
+      },
+      {
+        "path": "outputs/penpot/completion/package-native-receipts/full-phone-sales-wireframe-crops.json",
+        "sha256": "a6891daa4ced326eff717303a293a43ee41dbb25f90b56af105e9f47194a0869",
+        "bytes": 766
+      },
+      {
+        "path": "outputs/penpot/completion/package-native-receipts/wp04-01-design-crops.json",
+        "sha256": "c7f82c8e47f063ceab211df0b1a382ed9c985de91ba5fae1ac3848ff84b0a6cd",
+        "bytes": 8963
+      },
+      {
+        "path": "outputs/penpot/completion/package-native-receipts/wp04-01-wireframe-crops.json",
+        "sha256": "598e06081b5a584004896f929cf05aec83761c00c6c63d4ce787d3f7120e706b",
+        "bytes": 9071
+      }
+    ],
+    "nativeLayerAudit": {
+      "path": "outputs/penpot/completion/export-recovery/continuation-native-layer-audit-memory8-pilot.json",
+      "sha256": "f68d91a2e1b5bff394e00667e1f6ee14ec9c8f93db9ad3d95377765774a35ff6",
+      "bytes": 330199
+    },
+    "archiveRereadThisTask": false,
+    "decodedCropPixelRecomparisonThisTask": false,
+    "cropLimit": "Exact source/crop hashes, receipt geometry, parent bounds and recorded layer proof checked. Existing decoded crop proof reused; no new pixel-identity threshold or whole archive parse.",
+    "fullSalesControls": [
+      {
+        "path": "outputs/penpot/completion/export-recovery/review-controls-dedicated/6b000f63dee7/full-sales/source/62f6f84ef9ac.png",
+        "sha256": "033a3de52d6e19636575c0efe9f57e9d6c44454bf79c3f38141ad6764089f2dc",
+        "bytes": 545,
+        "pixelSize": [
+          34,
+          35
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/review-controls-dedicated/6b000f63dee7/full-sales/source/422b8caf674e.png",
+        "sha256": "01886f800f5d4b3a64571a74adfa017ad9e605dece26175a27fd5e53e4d0d0e7",
+        "bytes": 1169,
+        "pixelSize": [
+          60,
+          63
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/review-controls-dedicated/bf6bb8693aa8/full-sales/design/62f6f84ef9ac.png",
+        "sha256": "09c1b11e886cdfeec08af6bf02cc4cc68902064227c737e323a04b8864492fe9",
+        "bytes": 219,
+        "pixelSize": [
+          34,
+          35
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/review-controls-dedicated/bf6bb8693aa8/full-sales/design/422b8caf674e.png",
+        "sha256": "5c24350cac7cd157dde073ee614b078e4bddd074c2e5dda453ff07ef0093b511",
+        "bytes": 1294,
+        "pixelSize": [
+          60,
+          63
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/review-controls-dedicated/44f5de843673/full-sales/wireframe/62f6f84ef9ac.png",
+        "sha256": "b7f4d6197d42a6f42daf740d51cb987741a0b536340f6b5bb17a726c5233316e",
+        "bytes": 218,
+        "pixelSize": [
+          34,
+          35
+        ]
+      },
+      {
+        "path": "outputs/penpot/completion/export-recovery/review-controls-dedicated/44f5de843673/full-sales/wireframe/422b8caf674e.png",
+        "sha256": "df28e64b1f26845d8b87c0d6022ea2d50a51af3a70fd386eaad467f8fc6a4742",
+        "bytes": 973,
+        "pixelSize": [
+          60,
+          63
+        ]
+      }
+    ],
+    "acceptanceStateMap": "All20 C2 requiredWork/acceptance/owner strings exactly match retained implementation checklist. Mapping is a reference association, never a completed acceptance item.",
+    "scopeMatch": "All15 C2 screenshot IDs match retained original04 set. C2-10/19 also reference desktop-receipt in C3: this cross-slice association does not approve C3.",
+    "historicalPhase01NativeBindings": {
+      "manifest": {
+        "path": "outputs/penpot/phase01/native-exports/native-manifest.json",
+        "sha256": "7e5a9fcc7c5eded4a4fb16353229aa57cbf5ca1e3059fe37a1ad7282a122f1ae"
+      },
+      "matchedSides": [
+        {
+          "referenceId": "desktop-sales",
+          "kind": "design",
+          "boardId": "812c55ce-996a-805c-8008-dcf124e008ef",
+          "sha256": "82a4a738354debf223108196dd05036f3fa17e5f900f596df0872d477565af2d"
+        },
+        {
+          "referenceId": "desktop-sales",
+          "kind": "wireframe",
+          "boardId": "812c55ce-996a-805c-8008-dcf1263a146e",
+          "sha256": "1c61ff676ba983d478eae72e57d86a03c72dbbab26ea03391fcdf5fa56553f74"
+        },
+        {
+          "referenceId": "phone-sales",
+          "kind": "design",
+          "boardId": "6038a601-8820-8088-8008-dcf67806c1ef",
+          "sha256": "f6a481e1afffb3192eebcfb0d0519b817b4a3b161cd73a21a80cddd7bfddc237"
+        },
+        {
+          "referenceId": "phone-sales",
+          "kind": "wireframe",
+          "boardId": "6038a601-8820-8088-8008-dcf68b9b53cd",
+          "sha256": "7abfe5c68a521ed445456e65f7fc14d61a9c1cdcff8900ceb479187e5e3bb0e2"
+        }
+      ]
+    },
+    "sourceProvenance": "Owner frozen Electron reference pack, isolated synthetic profile; original PNGs retained. Phone references are narrow Electron captures, not native devices. See capture-guide.md and immutable packet."
+  },
+  "coverageLimits": {
+    "nativeVisualCoverage": "Catalog/cart/compact/scroll/no-results/empty, hold-name/populated held, failed-save retained-draft toast and paid confirmation; sampled direct review detailed per reference. Remaining per-side content proof reused at exact hashes.",
+    "missingFeatureStates": [
+      "held empty list and typed/editable-name native qualification",
+      "held delete confirmation/cancel",
+      "40/41 held limit and stale hold/swap failure/unknown-outcome resolution",
+      "feature-specific loading/saving progress and protected checkout unknown outcome/readback/retry",
+      "invalid discount/insufficient stock/archived-unavailable product/changed date explicit feature UI",
+      "feature-specific320width,200%text and keyboard/safe-area native qualified adaptations",
+      "PDF/print cancellation,denied,unavailable-printer,failure/retry runtime outcomes"
+    ],
+    "sourceOnlyC2Ids": [
+      "proposal-checkout-full-320-200",
+      "proposal-checkout-keyboard-safearea",
+      "state-held-orders-empty",
+      "state-held-name-editable",
+      "proposal-held-name-full-320-200",
+      "proposal-held-name-keyboard-safearea",
+      "proposal-checkout-cart-lines-bottom-full-320-200",
+      "proposal-checkout-amount-reflow-full-320-200",
+      "adaptation-checkout",
+      "adaptation-checkout-amount-reflow",
+      "adaptation-checkout-cart-bottom"
+    ],
+    "sourceOnlyRule": "All17 source-only scenes/compounds remain outside native-qualified shortlist; eleven C2-related source/proposal groups were identity checked here. No count of scene/compound assets implies native pair delivery.",
+    "phase02Reuse": [
+      {
+        "key": "A-status",
+        "status": "proposed Phase02 pattern reuse for C2/C3; approval pending",
+        "limit": "Existing native pattern is not a feature-specific sales/return/void state board. Historical cloud identity retained."
+      },
+      {
+        "key": "B-file-errors",
+        "status": "proposed Phase02 pattern reuse for C2/C3; approval pending",
+        "limit": "Existing native pattern is not a feature-specific sales/return/void state board. Historical cloud identity retained."
+      },
+      {
+        "key": "C-recovery",
+        "status": "proposed Phase02 pattern reuse for C2/C3; approval pending",
+        "limit": "Existing native pattern is not a feature-specific sales/return/void state board. Historical cloud identity retained."
+      },
+      {
+        "key": "E-narrow-recovery",
+        "status": "proposed Phase02 pattern reuse for C2/C3; approval pending",
+        "limit": "Existing native pattern is not a feature-specific sales/return/void state board. Historical cloud identity retained."
+      },
+      {
+        "key": "F-large-text",
+        "status": "proposed Phase02 pattern reuse for C2/C3; approval pending",
+        "limit": "Existing native pattern is not a feature-specific sales/return/void state board. Historical cloud identity retained."
+      }
+    ],
+    "reuseRule": "Phase01 desktop/phone pairs retain historical approval only; C2 reuse still proposed. Phase02 patterns retain historical cloud identities and require explicit C2 context acceptance; generic persistence/recovery visuals do not establish all sales-specific states."
+  },
+  "designVsRuntime": {
+    "design": "Arabic RTL hierarchy/action order and mixed financial/receipt strings checked in sampled static exports; intentional neutral wireframe photo placeholders retained. Physical dimensions/logical scale checked.",
+    "responsiveness": "1440x1000 and390x844 plus tall390x4940 references are source geometries, not adaptive runtime proof. No1024/1920,320,200%text or keyboard runtime checks here.",
+    "accessibility": "Static labels, disabled styling, confirm/cancel and explicit scope copy observed; no measured contrast/target-size/semantics/focus/keyboard certification. Source toast overlays content and full-document cropping remain source limitations.",
+    "runtime": "No app, device, browser, server or live Penpot action. No persistence, finance, resource, accessibility or physical-device evidence created. TalkBack owner-excluded, never passed."
+  },
+  "storage": {
+    "earlyMeasuredKiB": {
+      ".git": 18423252,
+      "outputs/completion-review": 2724,
+      "outputs/penpot/completion": 7042944
+    },
+    "firstRetainedFreeMeasurement": {
+      "utc": "2026-11-07T21:14:41.924864+00:00",
+      "freeBytes": 113708015616
+    },
+    "beforeReceiptWrite": {
+      "utc": "2026-11-07T21:17:12.265717+00:00",
+      "freeBytes": 110964772864
+    },
+    "latePrewriteMeasuredKiB": {
+      ".git": 18423252,
+      "outputs/completion-review": 2744,
+      "outputs/penpot/completion": 7046596
+    },
+    "tmpObjdirCount": 0,
+    "cleanup": "No scratch images, exports, archives, builds, caches, browser/server resources or disposable task files created. Only these two new review/audit receipts are retained. Shared concurrent growth is not attributed to this task.",
+    "startupFreeSpaceBaseline": "Initial filesystem figure was lost in truncated combined output; not reconstructed. Later prewrite measurement is explicit.",
+    "completionReviewDirectoryBeforeTaskOwnedReceiptsKiB": 2744,
+    "finalReviewUtc": "2026-11-07T21:18:06.883029+00:00",
+    "finalFreeBytes": 112080388096,
+    "freeChangeFromFirstRetainedMeasurementBytes": -1627627520,
+    "finalMeasuredKiB": {
+      ".git": 18423252,
+      "outputs/completion-review": 2868,
+      "outputs/penpot/completion": 7046688
+    },
+    "retainedTaskArtifacts": [
+      "outputs/completion-review/c2-design-independent-review.json",
+      "docs/log/2026-11-08-c2-design-independent-review.md"
+    ],
+    "reclaimedBytes": 0,
+    "growthAttribution": "Concurrent C3 outputs and other campaigns changed shared filesystem directories; .git unchanged in this task. No new image/archive/build/cache output from this review. Two small review/audit files are canonical retained evidence.",
+    "finalTmpObjdirCount": 0
+  },
+  "audit": {
+    "taskStartUtc": null,
+    "timingLimit": "Initial exact UTC and active effort/token/cost not available; no fabricated duration. All substantive tool batches and failed inspection assumptions are summarized in companion log.",
+    "memory": "Current-turn focused CLI Hindsight recall succeeded separately for daftar and madar; current sources governed. Root owns final changed-source sync/check; no memory-delivery claim.",
+    "inspectionOverhead": [
+      "Broad combined authority/recall output was truncated; bounded relevant schemas/excerpts corrected the reading path.",
+      "A screenshots/README.md lookup failed; rg inventory located canonical capture-guide.md.",
+      "Initial crop checker compared absolute legacy and relative paths as strings and falsely flagged19bindings; canonical resolved-path recheck passed all26. No source/output mutation followed the false result."
+    ],
+    "allowedFilesOnly": [
+      "outputs/completion-review/c2-design-independent-review.json",
+      "docs/log/2026-11-08-c2-design-independent-review.md"
+    ]
+  }
+}

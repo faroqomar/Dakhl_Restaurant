@@ -1,0 +1,144 @@
+{
+  "frozenUtc": "2026-11-08T04:13:33.009601+00:00",
+  "scope": "F03/F04 proposed remaining correction examples; no implementation approval",
+  "owner": "prepare_remaining_correction_examples",
+  "files": [
+    {
+      "path": "electron-reference/app/ui/model.js",
+      "bytes": 52984,
+      "sha256": "65a9b33cdca42e328d710f1afaa1b0fb42a7778284bd2f07f7c7e77d3d9f07f4"
+    },
+    {
+      "path": "electron-reference/app/ui/renderer.js",
+      "bytes": 59240,
+      "sha256": "be846cbb8dfef4f90a73b17029960b7daf461668375ce234ae9ea62d467e83ec"
+    },
+    {
+      "path": "electron-reference/app/ui/ux.js",
+      "bytes": 62242,
+      "sha256": "2b60b1c72b80e3059e09b871b1df2e51fb1f1e06c54e280c71a191fbdeb9ff5f"
+    },
+    {
+      "path": "electron-reference/app/ui/suppliers.js",
+      "bytes": 43681,
+      "sha256": "3e99769a498fe6bd30230b07b88e6c2bcff8e5302881600b4fa341660a73cfe3"
+    },
+    {
+      "path": "lib/accounting/restaurant_journal_mapper.dart",
+      "bytes": 35813,
+      "sha256": "0916bc37d753de94dc5df36ddefd92250581abb35233e069b5ed2806b1eeb8da"
+    },
+    {
+      "path": "lib/accounts/portable_journal_state.dart",
+      "bytes": 26992,
+      "sha256": "ae1a0181e21b5fcb1b110f47c02bc98ab78f37d81a8099ce24f19633d6fefcb0"
+    },
+    {
+      "path": "lib/accounts/portable_journal_codec.dart",
+      "bytes": 5037,
+      "sha256": "c24aa540615408ab001a18fa595a75bd799fd6e5b323cf56d8ec035de025e49a"
+    },
+    {
+      "path": "lib/accounts/legacy_account_codec.dart",
+      "bytes": 46428,
+      "sha256": "d95001f493fb8e70ee1988e3f620ca0684fc1136ab2e9bfad49f7032a3b92ebd"
+    },
+    {
+      "path": "test/fixtures/accounts/oracle.json",
+      "bytes": 5183359,
+      "sha256": "53cf4d356cb24fcb6309591d9587f8d74ad3bab0b8918a39980f7fabdf373e83"
+    },
+    {
+      "path": "engine-dependency.json",
+      "bytes": 758,
+      "sha256": "b7e49af4417d3085edf0aa905201adc67d81f56546f4eb90aac607199345eea9"
+    },
+    {
+      "path": "../Madar_Engine/packages/domain/lib/src/journal.dart",
+      "bytes": 4888,
+      "sha256": "7f27b72ad5d63d46ab2635fa894ec8f1c3db2e785cbe5a0b916d84630be86600"
+    },
+    {
+      "path": "../Madar_Engine/packages/application/lib/src/durable_command_coordinator.dart",
+      "bytes": 25004,
+      "sha256": "78070f4e3727a02deeddd550b5f97071c0703ecca73690be13ddbd1a173bc4d8"
+    },
+    {
+      "path": "docs/decisions/0021-completion-financial-policy.md",
+      "bytes": 4439,
+      "sha256": "5b5dc5a88edfcd6c6d3b75440658c5b57e66a94bda52c5d32e005f45c45ba3b1"
+    },
+    {
+      "path": "docs/phases/completion-unfinished-implementation-plan.md",
+      "bytes": 83885,
+      "sha256": "1ea1cb66348685652ec837f891cf859dac3fe1a8720e6adade1e26649dbca3a7"
+    },
+    {
+      "path": "docs/phases/completion-financial-mapping-proposal.md",
+      "bytes": 32087,
+      "sha256": "a03f5b623e3ea1f5b7bbc53d54c6d42c8e1d3da62e13fdabf7a9a628f1f686f1"
+    },
+    {
+      "path": "docs/phases/completion-journal-persistence-contract.md",
+      "bytes": 3077,
+      "sha256": "3d863a896e0bced1bc5da000cc9ab71e791351b8f0731c4ee8ad357c5327a448"
+    },
+    {
+      "path": "docs/phases/completion-remaining-correction-examples.md",
+      "bytes": 28469,
+      "sha256": "31cc52e40f65cc51a98897296a3089146028f375cd1c03361d1be40792bfc663"
+    },
+    {
+      "path": "docs/log/2026-11-08-remaining-correction-examples.md",
+      "bytes": 5824,
+      "sha256": "2f093090a18f732aed09e638f2111763343cff013b00a3cbfe32f7bf66fcd1d4"
+    },
+    {
+      "path": "outputs/completion-review/remaining-correction-examples/baseline.json",
+      "bytes": 798,
+      "sha256": "ce7b618fd2473140cdf25ad6235d244c0b7fe80564aa7348829c37e65c392544"
+    },
+    {
+      "path": "outputs/completion-review/remaining-correction-examples/mapper-probe-result.json",
+      "bytes": 4843,
+      "sha256": "724114b8ae161ad3fcea1e8ea31dcff4341b1d207ce12c973a9973016747a6be"
+    },
+    {
+      "path": "outputs/completion-review/remaining-correction-examples/probe-source.cjs",
+      "bytes": 11525,
+      "sha256": "f25f2ea70240b2c3f8abe3d51943a6b5eec1d8efabeef2a41fd62e9873d3c443"
+    },
+    {
+      "path": "outputs/completion-review/remaining-correction-examples/probe_mapper.dart",
+      "bytes": 8286,
+      "sha256": "83a2a0a9040b3a64f3f18373596826ec6ac043190fae654df4d48a9962987c92"
+    },
+    {
+      "path": "outputs/completion-review/remaining-correction-examples/source-bindings.json",
+      "bytes": 3151,
+      "sha256": "5fe2e29744937385d4d6efb57a2538f5aaf917d1ccf72f3116dd017ba9ce2459"
+    },
+    {
+      "path": "outputs/completion-review/remaining-correction-examples/source-probe-result.json",
+      "bytes": 1706,
+      "sha256": "36ee5758d495bd70daa623dbe30fd7c50db68ed86a9c766f6a7cc5a9fa3fda29"
+    },
+    {
+      "path": "outputs/completion-review/remaining-correction-examples/storage-closeout.json",
+      "bytes": 1731,
+      "sha256": "951863aaa78a04995bc2334866fed3bcd5a5325c8cd9abff31eba64f1fc24619"
+    },
+    {
+      "path": "outputs/completion-review/remaining-correction-examples/verification-receipt.json",
+      "bytes": 697,
+      "sha256": "c0b7bf6bb739bdd320f62ede58675193206366d8b33c85366140c183465541af"
+    }
+  ],
+  "reviewRequest": [
+    "Frozen-source parity of edit/delete/date-shift/session undo cases",
+    "Accepted policy versus unresolved missing-posting/cross-cutover choices",
+    "Complete-state restart/reimport/duplicate identity preservation",
+    "No claim of runtime implementation or row closure"
+  ],
+  "sourceObservation": "Hashes captured after bounded read-only probes, then verified unchanged at freeze. Previously reviewed mapper/portable hashes also match."
+}

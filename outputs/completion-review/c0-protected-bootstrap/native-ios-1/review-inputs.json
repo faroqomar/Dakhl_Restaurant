@@ -1,0 +1,178 @@
+{
+  "recordedUtc": "2026-11-08T08:03:42.141246+00:00",
+  "scope": "Failed actual iOSC0nativepilot;1pass/1harnessfail/4unrun;no native acceptance closure",
+  "bindingCount": 34,
+  "compiledInputHashAuthority": "plan.json+pilot-attempt-1-command.json;104unchanged at runner end;later current-source repairs are separate",
+  "files": [
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/baseline.json",
+      "bytes": 492,
+      "sha256": "ba550808885cac461668f34d9c48ab34ee0540f6cd22c5b6ae56fc22f67c8230"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/c1-qa-app-relocation.json",
+      "bytes": 797,
+      "sha256": "5a5c07b59fba6b4261593b96bf7d68df87538da981bb9fdbc213b362709ccf5c"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/compiled-import-closure.json",
+      "bytes": 1953,
+      "sha256": "15c6cc1205edba45b6b82e16793e19987fe0920c1cd67ec2002673924441c16b"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/device-app-close.json",
+      "bytes": 292,
+      "sha256": "8b1c4ab8b70d774994c53de260d68c6e27fc6443647adea0736330f8590c64e0"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/device-close.json",
+      "bytes": 80,
+      "sha256": "9a0677d10e775da09914e22132889ae7b7c0f7aa308f4cd68b255e072731f68e"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/device-final-state.json",
+      "bytes": 1800,
+      "sha256": "8fbfda714460ba5f4e0c0f9b3808a3fd87ae699305e4ed6aef0ddfc9cadccdc9"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/device-observation.json",
+      "bytes": 497,
+      "sha256": "5582df6f8b14ffd0180212b80d45a8b91e787039aaa7ec8028a1b8eb22834ed0"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/device-open.json",
+      "bytes": 6927,
+      "sha256": "bdcdd06bfe64967a7a698b26276559140e1f717fa92dc1a45e82c15e8a4b74f6"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/failed-binary-identity.json",
+      "bytes": 16733,
+      "sha256": "3169cf2f5738ad219ec9634c88d448c037d4781803606b23e79d0f928a5dccce"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/failed-source/app.dart.txt",
+      "bytes": 22994,
+      "sha256": "aeb58181d6eb771aec644f60cad42f42d0120cf3df9b0e5372a6793b84646437"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/failed-source/c0_protected_bootstrap_native_test.dart.txt",
+      "bytes": 1017,
+      "sha256": "dfb2825134cf78418d793c054898dcb756d0291a68cf0b32909c44feb82d75f3"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/failed-source/c0_protected_bootstrap_scenarios.dart.txt",
+      "bytes": 24264,
+      "sha256": "e75157253f1ad41fe86947478fa31924554715653be5f43bd40a87b829da92b1"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/failed-source/native_app_readiness.dart.txt",
+      "bytes": 4578,
+      "sha256": "e8f71ee996de207ab9f40e08285a050658b0868ae8fe09c5011ca2a5fc16f6ed"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/fixture-descriptor.json",
+      "bytes": 869,
+      "sha256": "79e74e30baa24f999ea2a4e860a573c7b653b5e181849ad6f7e97e318500ee49"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/host-fixture-cleanup.json",
+      "bytes": 191,
+      "sha256": "72ec134248c077ec891e526dacff6862a0d470c929c9044c8edba89f59f8e36b"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/pilot-attempt-1-command.json",
+      "bytes": 842,
+      "sha256": "0e80762864dbf5850decd6ca1691c4ed6b3ac72fbf76ec5395f70db681402922"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/pilot-attempt-1.log",
+      "bytes": 3509,
+      "sha256": "0034ccb9e0e82a4dd113838e5e8f41a9c4a22e691241f0a766f943da549cc29b"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/pilot-ledger-receipt.json",
+      "bytes": 2386,
+      "sha256": "6003be015721c74f42d3e4e618cefb01ab27e0d46a752191f66ca2c8d2db4ccd"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/pilot-process.json",
+      "bytes": 326,
+      "sha256": "eb870bc9930a1e115d7cba797898f464d36226d62da10a199b2a9d696991334a"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/plan.json",
+      "bytes": 12919,
+      "sha256": "5cc435089b6457730921b6150eb8e896219c216b0a8c2776671753cbbf3988be"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/preflight-attempt-2.json",
+      "bytes": 1224,
+      "sha256": "9c8f8fcfa71dc42fe7d0d5b02584cebc3dfd41abcf8a09b4a9e77ad609580e12"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/preflight-command-2.json",
+      "bytes": 721,
+      "sha256": "2f509b69e72f3004022d2ee3ea8c1f13c1c165f802548c9a8936b457c74170ec"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/preflight-command.json",
+      "bytes": 519,
+      "sha256": "b83cf46491efe4c3734579ac37fbc1e8f2cf3ac792bc6976530450116b64db70"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/preflight-ledger-receipt.json",
+      "bytes": 939,
+      "sha256": "aa7be78cd4b97b8ad63ce5b4a305605ccbde7ea36699b5197d2674b480a421ef"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/preflight-spec.json",
+      "bytes": 11343,
+      "sha256": "5759ac2cde709ba68ce7abdbc0ce97066dffc5d0117820f44ef9c416d64c31ff"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/result.json",
+      "bytes": 2294,
+      "sha256": "58d62ec6e2eb9a181ce469ea34fc3f6f100c3948fd4d03e350bf4c0a8731bb82"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/state.json",
+      "bytes": 4100,
+      "sha256": "79ba66a09d594ef291eb2dc8c42654d2d1eeeebaf525d734bf3417ce02161f45"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/storage-closeout.json",
+      "bytes": 1321,
+      "sha256": "362e8db0e5a0fce2e09817a16faf2e6748ff71c3d86d277594c5d09a07fb6449"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/timing.json",
+      "bytes": 468,
+      "sha256": "537c6213de0c0dcac9f9c8c88195bf9d88309d6514ab002393e800b403642168"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/window-release-audit.json",
+      "bytes": 981,
+      "sha256": "5e2510a1309222de81218ee11f89250179f78d7922d88ca24cd54af1ad911945"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/workflow-failed-record.json",
+      "bytes": 1832,
+      "sha256": "7ff8d32da72959746f68c4410fccedf14dc386d4b1af308b5175ca480a831da2"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/workflow-init.json",
+      "bytes": 1122,
+      "sha256": "e60ea0dc74bc930f9804d4a26781429e58e3266697ffb3fed3d1a8ff4340cbf5"
+    },
+    {
+      "path": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/workflow-preflight-record.json",
+      "bytes": 1823,
+      "sha256": "945a2e8527451f48d8f3186a9ec68cc7e82a2154f8b6c75c6d957d42b337003c"
+    },
+    {
+      "path": "docs/log/2026-11-08-c0-protected-bootstrap-native-ios.md",
+      "bytes": 4396,
+      "sha256": "816ff1003e1813e5f2bb55af97ecc220ddea064dc51e56acfb388fe9ca2e212a"
+    }
+  ]
+}

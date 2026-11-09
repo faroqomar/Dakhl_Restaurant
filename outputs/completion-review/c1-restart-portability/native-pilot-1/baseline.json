@@ -1,0 +1,22 @@
+{
+  "recordedUtc": "2026-11-08T06:36:41.380509+00:00",
+  "scope": "Actual iOS process restart and default native file-provider pilot",
+  "sourceReviewManifest": "outputs/completion-review/c1-restart-portability/close-repair/terminal-guard/review-inputs.json",
+  "sourceReviewManifestSha256": "b1a1409f19fc1a8feaa8d6d03ef19ebee494b13feed82ee7af28e583b7910813",
+  "fixtureSourceSha256": "c9ede255c750440428daa61c607decf8a596fab20b3296c2ceaa581da23b8668",
+  "qaFixtureId": "c879c0bd-63bb-4a9d-9ea5-8fcd512df775",
+  "freeKiB": 101451208,
+  "sizesKiB": {
+    ".": 28458048,
+    ".git": 18430636,
+    "build": 1593188,
+    ".dart_tool": 513808,
+    "../Madar_Engine/.git": 44528
+  },
+  "temporaryGitStores": {
+    ".git/objects": 0,
+    "../Madar_Engine/.git/objects": 0
+  },
+  "runtimePin": "bb00ccdad8f6710ca1778260d42ed5584f26a86c",
+  "status": "preflight_preparation_no_native_launch_yet"
+}

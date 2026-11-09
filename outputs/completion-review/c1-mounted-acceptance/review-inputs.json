@@ -1,0 +1,116 @@
+{
+  "recordedUtc": "2026-11-08T05:53:20.444071+00:00",
+  "scope": "C1-07/14 new mounted real-store acceptance plus linked C1-15 candidate",
+  "files": [
+    {
+      "path": "test/catalog/c1_visible_recovery_workflow_test.dart",
+      "bytes": 26112,
+      "sha256": "76119cab5e7f1378847d51e9da67868b14030bc698ba4971d978a830ef999239"
+    },
+    {
+      "path": "test/accounts/accounts_view_model_test.dart",
+      "bytes": 23751,
+      "sha256": "f54135799dd7b5dfe486e40391c5e81784144723b0e09652ba8eb693930da63b"
+    },
+    {
+      "path": "lib/catalog/product_form_dialog.dart",
+      "bytes": 31456,
+      "sha256": "af24df0ecf86c612e02c14962a8e239272ece9702a6c1dd7380511128b3976f6"
+    },
+    {
+      "path": "lib/catalog/stock_movement_dialog.dart",
+      "bytes": 12684,
+      "sha256": "66609e95a7200b86d3c346b88159246cc847ded76dab73190e7674f2f8fd09ab"
+    },
+    {
+      "path": "lib/catalog/catalog_view_model.dart",
+      "bytes": 6451,
+      "sha256": "49bb283c6225b01b8c5a27591a26648081c3fb0f6340f9187d246035e2936a81"
+    },
+    {
+      "path": "lib/catalog/inventory_surface.dart",
+      "bytes": 31598,
+      "sha256": "6b2ba246bc9ff8fca6f8b7add70cfe1b002e866a36be44b911f8f4c1e51e5da4"
+    },
+    {
+      "path": "lib/inventory/inventory_commands.dart",
+      "bytes": 8546,
+      "sha256": "0eaa3008f30f5d63518a4bbc71bbb77cc11133adea6765d4f863ce22d77bb8c0"
+    },
+    {
+      "path": "lib/accounts/accounts_repository.dart",
+      "bytes": 14731,
+      "sha256": "f059f59433c2d42c55ad794e61fcbcddb1554e6c004d047911f0d40b26aa3cf8"
+    },
+    {
+      "path": "lib/accounts/accounts_view_model.dart",
+      "bytes": 15579,
+      "sha256": "af3108c030bae58e34ce3606273e1b3e4f19a60b00a19678e97afb8d442eb4c6"
+    },
+    {
+      "path": "lib/app/app.dart",
+      "bytes": 22560,
+      "sha256": "5b4759b6ea526b5271c7a023c97bd5b9c7cd5d565b1bde5712cf02eb17e3c24a"
+    },
+    {
+      "path": "../Madar_Engine/packages/data/lib/src/local_document_workspace_store.dart",
+      "bytes": 55410,
+      "sha256": "f4ca6b5f0691938144670cc789cacf7334be507ae826ecce6c35ddb1c4e6802c"
+    },
+    {
+      "path": "docs/phases/completion-unfinished-implementation-plan.md",
+      "bytes": 83885,
+      "sha256": "1ea1cb66348685652ec837f891cf859dac3fe1a8720e6adade1e26649dbca3a7"
+    },
+    {
+      "path": "outputs/completion-review/c1-mounted-acceptance/attempt-4.log",
+      "bytes": 2723,
+      "sha256": "3642c9b444b282185791dc899f05bb00d9c38e8ffe9fce08f44dfdb44f5aa2c9"
+    },
+    {
+      "path": "outputs/completion-review/c1-mounted-acceptance/stock-final.log",
+      "bytes": 218,
+      "sha256": "fa4bc3b8aebe944c5b7f890697bb879f06afb1f7b90f7a8e4a643f73e4a260ce"
+    },
+    {
+      "path": "outputs/completion-review/c1-mounted-acceptance/analysis.log",
+      "bytes": 69,
+      "sha256": "c8cc27bb292313170d0f6e8b37dd4583ca6f9623de588f59e062f862cc129355"
+    },
+    {
+      "path": "outputs/completion-review/c1-mounted-acceptance/format-final.log",
+      "bytes": 46,
+      "sha256": "ebf8691cd9669b02dd9d748aaf543551b337b2beb44f2d128dc7ffbfa0318f03"
+    },
+    {
+      "path": "outputs/completion-review/c1-mounted-acceptance/verification.json",
+      "bytes": 1523,
+      "sha256": "74cac4cc1f707231c81bf1fc1ea7b1adf4f9a77304bd068d39ade532560a7325"
+    },
+    {
+      "path": "outputs/completion-review/c1-mounted-acceptance/interrupted-store-cleanup.json",
+      "bytes": 3896,
+      "sha256": "e10a187850ffc91e2d11edc6847a5bbf08293bb310496edc09e7cda8dac3989d"
+    },
+    {
+      "path": "engine-dependency.json",
+      "bytes": 801,
+      "sha256": "8221825716c72a5b1221a1cbfc8f70f27bb3db2ede59648864194ea798544f5c"
+    },
+    {
+      "path": "pubspec.lock",
+      "bytes": 25103,
+      "sha256": "63f2edcb3a3f0e521db5f3a71b019410b0a8e908c60e7ccf768678211acd4382"
+    },
+    {
+      "path": "outputs/completion-review/c1-rendered-pagination/review-inputs.json",
+      "bytes": 6901,
+      "sha256": "3758b06e8b9336b9f95f3761ccc9e1ec7f66041bfb8f8495dc9aafa6e8ea1fb4"
+    }
+  ],
+  "paginationManifest": "outputs/completion-review/c1-rendered-pagination/review-inputs.json",
+  "limits": [
+    "No new native/process-restart or benchmark proof",
+    "Replacement account uses explicit in-memory storage; first delayed/faulted store is actual SQLite"
+  ]
+}

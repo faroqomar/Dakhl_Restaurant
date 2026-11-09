@@ -1,0 +1,29 @@
+{
+  "startedAt": "2026-10-31T16:52:21.541256+00:00",
+  "finishedAt": "2026-10-31T16:53:24.781957+00:00",
+  "elapsedSeconds": 63.24048679199768,
+  "kind": "native",
+  "label": "read",
+  "stage": "read",
+  "appSource": "5a11c66dbf665972b17b545c105eac74c17bfeeb",
+  "runtime": "a6a8ebdd8f68f5d603d56dc3f3d0f13cc3e38294",
+  "entrySha256": "06d3a48c9de4abd1715b1f214e805e8e97e317a637b91e28dda01d01768d0eb4",
+  "exitCode": 0,
+  "hostTimedOut": false,
+  "expectedOutcomeVerified": true,
+  "nativeResults": [
+    {
+      "stage": "read",
+      "runNonce": "fa71198d-4e68-4d30-8a61-461aa068d270",
+      "pid": 90391,
+      "storeId": "c05b01973571b680f6cf60056fd8fea0c97e22a96c8ab34ddc73cb6054f78e76",
+      "generation": "b21aeb11c7de748e04b4c74fe894c18d8a48fa98d281e3f082baffe43970c56c",
+      "documentRevision": 2,
+      "held": 40,
+      "runtime": "real native Madar adapter + consumer codec/repository/ViewModel + rendered app",
+      "dataScope": "fixed marked Phase02 conformance child only; --no-uninstall required"
+    }
+  ],
+  "dataScope": "fresh task-created target; fixed marked synthetic conformance fixture only; no production store",
+  "originalReceiptSha256": "0c1363d486eec06b36eceb2c0f68bda4579d6b4aba95134fd0ff3a575b57f0cd"
+}
