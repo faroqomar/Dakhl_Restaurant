@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/Users/eros/.t3/userdata/device/targets/t3-b91493306db60c230eefae24/agent-device",
+    "open",
+    "com.apple.DocumentsApp",
+    "--timeout",
+    "120000"
+  ],
+  "startUtc": "2026-11-08T06:53:54.919590+00:00",
+  "endUtc": "2026-11-08T06:53:59.463726+00:00",
+  "elapsedSeconds": 4.544132083,
+  "exitCode": 1,
+  "log": "files-cleanup.log"
+}

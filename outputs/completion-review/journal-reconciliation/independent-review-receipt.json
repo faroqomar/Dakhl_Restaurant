@@ -1,0 +1,18 @@
+{
+  "recordedUtc": "2026-11-07T21:01:56.696711+00:00",
+  "reviewer": "/root/review_mixed_reconciliation",
+  "status": "bounded evidence independently verified; broader F09 open",
+  "inputManifest": "verification-receipt.json",
+  "matchedAppInputs": 21,
+  "matchedEngineInputs": 3,
+  "tests": "1 rich real-store history independently passed",
+  "analysis": "No issues, 2.6s",
+  "sourceSha256": "c75eab45d28219fce922ea6e1a9520ee03d2ef742a9e05ba9bab00d04dcf3562",
+  "sourceOracle": "electron-reference/app/ui/model.js:302-310 cumulative floor966 then1934",
+  "scope": "11commands/13journals/11receipts; paid19000; liability500; stock16; close/reopen/stable replay/rejection no-write",
+  "limits": [
+    "Bounded generated fixture, not arbitrary migrated/cross-cutover state",
+    "No independent external export/import compatibility proof",
+    "No crash/native/release or source-pin pass"
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "cache": ".dart_tool/flutter_build/1f0ecc97d4836deda538c97ec870eafc",
+    "target": "integration_test/c1_catalog_native_test.dart",
+    "cached_target_md5": "47b5f20c9811eef455905d9c30a1b890",
+    "current_target_md5": "47b5f20c9811eef455905d9c30a1b890",
+    "canonical_binary": "build/c1-native-passed-bb00ccd/Runner.app",
+    "compiler_dill_sha256": "dd9da949f59238ea8c1cdf88e684d83dd7b03b0773c09e2ed5f8719085c2e567",
+    "retained_kernel_sha256": "dd9da949f59238ea8c1cdf88e684d83dd7b03b0773c09e2ed5f8719085c2e567",
+    "compiler_matches_retained_kernel": true,
+    "allocated_bytes": 111460352,
+    "logical_bytes": 111392500,
+    "file_count": 24
+  },
+  {
+    "cache": ".dart_tool/flutter_build/106d2ba19ef65c92f2a3caae20c7627a",
+    "target": "integration_test/support/c1_restart_qa_main.dart",
+    "cached_target_md5": "560746764288b82fb5f0127c46057bf9",
+    "current_target_md5": "560746764288b82fb5f0127c46057bf9",
+    "canonical_binary": "build/c1-restart-qa-passed-bb00ccd/Runner.app",
+    "compiler_dill_sha256": "ca95083e02e7312717143249668725d710a34af85e7c5cc734b3d268747ab3ae",
+    "retained_kernel_sha256": "ca95083e02e7312717143249668725d710a34af85e7c5cc734b3d268747ab3ae",
+    "compiler_matches_retained_kernel": true,
+    "allocated_bytes": 128380928,
+    "logical_bytes": 128309391,
+    "file_count": 24
+  }
+]

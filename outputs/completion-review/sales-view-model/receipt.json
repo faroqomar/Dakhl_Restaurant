@@ -1,0 +1,55 @@
+{
+  "recordedUtc": "2026-11-07T22:09:33.218781+00:00",
+  "status": "implemented_local_tests_pass_independent_review_pending",
+  "scope": "Nonvisual SalesViewModel only; no UI route or checkout posting",
+  "engine": {
+    "implementation": "N/A; unchanged public contracts",
+    "runtimePin": "d316fd6076375daa3f412889f73eaebfeeb5d4d4"
+  },
+  "manifest": "outputs/completion-review/sales-view-model/verified-inputs.json",
+  "verification": {
+    "newFocusedCases": 17,
+    "salesSuiteCases": 45,
+    "frozenReferenceCases": 140,
+    "analyzer": "No issues found",
+    "logs": [
+      "sales-regression-final.log",
+      "analysis-final.log",
+      "reference-tests.log"
+    ]
+  },
+  "semantics": {
+    "persistenceOwner": "existing TicketWorkspaceController; privately constructed for same repository",
+    "authority": "immutable generation binding; recreate model after replacement",
+    "quote": "public CommerceCalculations, scale3 quantity/IQD0, half-toward-positive-infinity",
+    "sourceInput": "Arabic decimal/grouping/digits; exponent syntax rejected",
+    "capturedPrices": "first-add retained through quantity/catalog changes",
+    "draftFinancialEffects": "account document unchanged across draft transitions",
+    "recovery": "existing controller/repository readback; no repeated unknown write"
+  },
+  "limits": [
+    "C2UI approval and connection pending",
+    "Checkout posting/receipts absent",
+    "Runtime schema11 unchanged; schema12journal candidates not connected",
+    "Native execution and operation benchmarks pending",
+    "Full completion/delivery not claimed"
+  ],
+  "storage": {
+    "baselineFreeKiB": 111888712,
+    "closeoutFreeKiB": 110687204,
+    "componentKiB": {
+      ".git": 18428044,
+      "../Madar_Engine/.git": 41744,
+      "build": 623664,
+      ".dart_tool": 204860,
+      "outputs/completion-review/sales-view-model": 96
+    },
+    "temporaryGitStores": {
+      ".git/objects": 0,
+      "../Madar_Engine/.git/objects": 0
+    },
+    "cleanupReclaimedBytes": 0,
+    "retained": "Two production/specification files and compact canonical regression/provenance logs; no disposable sources or stores created by new tests",
+    "unexplainedGrowth": "Shared volume/Git changes from concurrent work have no verified producer attribution; owned output approximately100KiB"
+  }
+}

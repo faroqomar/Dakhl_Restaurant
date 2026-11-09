@@ -1,0 +1,1894 @@
+{
+  "sourceSha256": "65a9b33cdca42e328d710f1afaa1b0fb42a7778284bd2f07f7c7e77d3d9f07f4",
+  "runtime": {
+    "node": "24.21.0",
+    "acorn": "8.18.0",
+    "ada": "4.0.0",
+    "amaro": "1.1.11",
+    "ares": "1.34.8",
+    "brotli": "1.2.0",
+    "cldr": "48.0",
+    "icu": "78.2",
+    "llhttp": "9.4.3",
+    "merve": "1.2.2",
+    "modules": "149",
+    "napi": "10",
+    "nbytes": "0.1.4",
+    "ncrypto": "0.0.1",
+    "nghttp2": "1.70.0",
+    "nghttp3": "",
+    "ngtcp2": "",
+    "openssl": "0.0.0",
+    "simdjson": "4.6.7",
+    "simdutf": "7.7.0",
+    "sqlite": "3.53.4",
+    "tz": "2025c",
+    "undici": "7.29.1",
+    "unicode": "17.0",
+    "uv": "1.52.1",
+    "uvwasi": "0.0.23",
+    "v8": "15.2.124.28-electron.0",
+    "zlib": "1.3.2.1-motley",
+    "zstd": "1.6.0",
+    "electron": "44.5.1",
+    "chrome": "152.0.7977.130"
+  },
+  "collation": {
+    "locale": "en-US",
+    "usage": "sort",
+    "sensitivity": "variant",
+    "ignorePunctuation": false,
+    "collation": "default",
+    "numeric": false,
+    "caseFirst": "false"
+  },
+  "cases": [
+    {
+      "name": "archived and mixed allocation",
+      "state": {
+        "version": 11,
+        "products": [],
+        "stockEntries": [],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [
+          {
+            "id": "s",
+            "openingBalance": 100,
+            "archived": true
+          },
+          {
+            "id": "other",
+            "openingBalance": 99
+          }
+        ],
+        "materials": [],
+        "invoices": [
+          {
+            "id": "i",
+            "supplierId": "s",
+            "date": "2026-01-02",
+            "createdAt": "2026-01-02T00:00:00Z",
+            "lines": [
+              {
+                "quantity": 1.5,
+                "price": 101
+              }
+            ]
+          },
+          {
+            "id": "other-i",
+            "supplierId": "other",
+            "date": "2026-01-02",
+            "createdAt": "2026-01-02",
+            "lines": [
+              {
+                "quantity": 1,
+                "price": 20
+              }
+            ]
+          }
+        ],
+        "payments": [
+          {
+            "id": "p",
+            "supplierId": "s",
+            "invoiceId": "i",
+            "date": "2026-01-02",
+            "createdAt": "2026-01-02T00:00:00Z",
+            "amount": 170,
+            "invoiceAmount": 152,
+            "debtAmount": 18
+          },
+          {
+            "id": "legacy",
+            "supplierId": "s",
+            "invoiceId": null,
+            "date": "2026-01-03",
+            "createdAt": "2026-01-03T00:00:00Z",
+            "amount": 10
+          }
+        ],
+        "debts": [
+          {
+            "id": "d",
+            "supplierId": "s",
+            "date": "2026-01-01",
+            "createdAt": "2026-01-01T00:00:00Z",
+            "amount": 30
+          },
+          {
+            "id": "future",
+            "supplierId": "s",
+            "date": "2026-02-01",
+            "createdAt": "2026-02-01T00:00:00Z",
+            "amount": 50
+          }
+        ],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "expected": {
+        "balance": 152,
+        "debt": 152,
+        "datedDebt": 102,
+        "excludedDebt": 120,
+        "paid": 152,
+        "due": 0,
+        "ledger": [
+          {
+            "id": "d",
+            "type": "debt",
+            "amount": 30,
+            "before": 100,
+            "balance": 130
+          },
+          {
+            "id": "i",
+            "type": "invoice",
+            "amount": 152,
+            "before": 130,
+            "balance": 282
+          },
+          {
+            "id": "p",
+            "type": "payment",
+            "amount": 170,
+            "before": 282,
+            "balance": 112
+          },
+          {
+            "id": "legacy",
+            "type": "payment",
+            "amount": 10,
+            "before": 112,
+            "balance": 102
+          },
+          {
+            "id": "future",
+            "type": "debt",
+            "amount": 50,
+            "before": 102,
+            "balance": 152
+          }
+        ],
+        "before": 282
+      }
+    },
+    {
+      "name": "missing supplier",
+      "state": {
+        "version": 11,
+        "products": [],
+        "stockEntries": [],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [
+          {
+            "id": "s",
+            "openingBalance": 100,
+            "archived": true
+          },
+          {
+            "id": "other",
+            "openingBalance": 99
+          }
+        ],
+        "materials": [],
+        "invoices": [
+          {
+            "id": "i",
+            "supplierId": "s",
+            "date": "2026-01-02",
+            "createdAt": "2026-01-02T00:00:00Z",
+            "lines": [
+              {
+                "quantity": 1.5,
+                "price": 101
+              }
+            ]
+          },
+          {
+            "id": "other-i",
+            "supplierId": "other",
+            "date": "2026-01-02",
+            "createdAt": "2026-01-02",
+            "lines": [
+              {
+                "quantity": 1,
+                "price": 20
+              }
+            ]
+          }
+        ],
+        "payments": [
+          {
+            "id": "p",
+            "supplierId": "s",
+            "invoiceId": "i",
+            "date": "2026-01-02",
+            "createdAt": "2026-01-02T00:00:00Z",
+            "amount": 170,
+            "invoiceAmount": 152,
+            "debtAmount": 18
+          },
+          {
+            "id": "legacy",
+            "supplierId": "s",
+            "invoiceId": null,
+            "date": "2026-01-03",
+            "createdAt": "2026-01-03T00:00:00Z",
+            "amount": 10
+          }
+        ],
+        "debts": [
+          {
+            "id": "d",
+            "supplierId": "s",
+            "date": "2026-01-01",
+            "createdAt": "2026-01-01T00:00:00Z",
+            "amount": 30
+          },
+          {
+            "id": "future",
+            "supplierId": "s",
+            "date": "2026-02-01",
+            "createdAt": "2026-02-01T00:00:00Z",
+            "amount": 50
+          }
+        ],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "supplier": "missing",
+      "expected": {
+        "balance": 0,
+        "debt": 0,
+        "datedDebt": 0,
+        "excludedDebt": 0,
+        "paid": 152,
+        "due": 0,
+        "ledger": [],
+        "before": 0
+      }
+    },
+    {
+      "name": "empty",
+      "state": {
+        "version": 11,
+        "products": [],
+        "stockEntries": [],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [],
+        "materials": [],
+        "invoices": [],
+        "payments": [],
+        "debts": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "expected": {
+        "balance": 0,
+        "debt": 0,
+        "datedDebt": 0,
+        "excludedDebt": 0,
+        "paid": 0,
+        "due": 0,
+        "ledger": [],
+        "before": 0
+      }
+    },
+    {
+      "name": "invoice removed",
+      "state": {
+        "version": 11,
+        "products": [],
+        "stockEntries": [],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [
+          {
+            "id": "s",
+            "openingBalance": 100,
+            "archived": true
+          },
+          {
+            "id": "other",
+            "openingBalance": 99
+          }
+        ],
+        "materials": [],
+        "invoices": [],
+        "payments": [
+          {
+            "id": "p",
+            "supplierId": "s",
+            "invoiceId": "i",
+            "date": "2026-01-02",
+            "createdAt": "2026-01-02T00:00:00Z",
+            "amount": 170,
+            "invoiceAmount": 152,
+            "debtAmount": 18
+          },
+          {
+            "id": "legacy",
+            "supplierId": "s",
+            "invoiceId": null,
+            "date": "2026-01-03",
+            "createdAt": "2026-01-03T00:00:00Z",
+            "amount": 10
+          }
+        ],
+        "debts": [
+          {
+            "id": "d",
+            "supplierId": "s",
+            "date": "2026-01-01",
+            "createdAt": "2026-01-01T00:00:00Z",
+            "amount": 30
+          },
+          {
+            "id": "future",
+            "supplierId": "s",
+            "date": "2026-02-01",
+            "createdAt": "2026-02-01T00:00:00Z",
+            "amount": 50
+          }
+        ],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "expected": {
+        "balance": 0,
+        "debt": 152,
+        "datedDebt": 102,
+        "excludedDebt": 120,
+        "paid": 152,
+        "due": 0,
+        "ledger": [
+          {
+            "id": "d",
+            "type": "debt",
+            "amount": 30,
+            "before": 100,
+            "balance": 130
+          },
+          {
+            "id": "p",
+            "type": "payment",
+            "amount": 170,
+            "before": 130,
+            "balance": -40
+          },
+          {
+            "id": "legacy",
+            "type": "payment",
+            "amount": 10,
+            "before": -40,
+            "balance": -50
+          },
+          {
+            "id": "future",
+            "type": "debt",
+            "amount": 50,
+            "before": -50,
+            "balance": 0
+          }
+        ],
+        "before": 130
+      }
+    },
+    {
+      "name": "independent units and maximum money",
+      "state": {
+        "version": 11,
+        "products": [],
+        "stockEntries": [],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [
+          {
+            "id": "s",
+            "openingBalance": 0
+          }
+        ],
+        "materials": [],
+        "invoices": [
+          {
+            "id": "i",
+            "supplierId": "s",
+            "date": "2026-01-02",
+            "createdAt": "2026-01-02T00:00:00Z",
+            "lines": [
+              {
+                "quantityCartons": 0.001,
+                "priceCarton": 500,
+                "quantityPieces": 0.001,
+                "pricePiece": 500
+              },
+              {
+                "quantity": 1,
+                "price": 999999999998
+              }
+            ]
+          }
+        ],
+        "payments": [],
+        "debts": [],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "expected": {
+        "balance": 1000000000000,
+        "debt": 0,
+        "datedDebt": 0,
+        "excludedDebt": 0,
+        "paid": 0,
+        "due": 1000000000000,
+        "ledger": [
+          {
+            "id": "i",
+            "type": "invoice",
+            "amount": 1000000000000,
+            "before": 0,
+            "balance": 1000000000000
+          }
+        ],
+        "before": 1000000000000
+      }
+    },
+    {
+      "name": "validated schema11 history",
+      "validated": true,
+      "state": {
+        "version": 11,
+        "products": [],
+        "stockEntries": [],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [
+          {
+            "id": "s",
+            "name": "s",
+            "phone": "",
+            "note": "",
+            "categoryId": "market",
+            "openingBalance": 100,
+            "archived": true,
+            "materials": []
+          },
+          {
+            "id": "other",
+            "name": "other",
+            "phone": "",
+            "note": "",
+            "categoryId": "market",
+            "openingBalance": 99,
+            "materials": []
+          }
+        ],
+        "invoices": [
+          {
+            "id": "i",
+            "supplierId": "s",
+            "number": "i",
+            "date": "2026-01-02",
+            "lines": [
+              {
+                "materialId": "m",
+                "name": "Material",
+                "unit": "piece",
+                "quantity": 1.5,
+                "price": 101
+              }
+            ],
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          },
+          {
+            "id": "other-i",
+            "supplierId": "other",
+            "number": "other-i",
+            "date": "2026-01-02",
+            "lines": [
+              {
+                "materialId": "m",
+                "name": "Material",
+                "unit": "piece",
+                "quantity": 1,
+                "price": 20
+              }
+            ],
+            "note": "",
+            "createdAt": "2026-01-02"
+          }
+        ],
+        "payments": [
+          {
+            "id": "p",
+            "supplierId": "s",
+            "invoiceId": "i",
+            "invoiceAmount": 152,
+            "debtAmount": 18,
+            "categoryId": "market",
+            "date": "2026-01-02",
+            "amount": 170,
+            "funding": {
+              "source": "daily",
+              "dailyAmount": 170,
+              "cashAmount": 0
+            },
+            "note": "",
+            "createdAt": "2026-01-02T00:00:00Z"
+          },
+          {
+            "id": "legacy",
+            "supplierId": "s",
+            "invoiceId": null,
+            "invoiceAmount": 0,
+            "debtAmount": 10,
+            "categoryId": "market",
+            "date": "2026-01-03",
+            "amount": 10,
+            "funding": {
+              "source": "daily",
+              "dailyAmount": 10,
+              "cashAmount": 0
+            },
+            "note": "",
+            "createdAt": "2026-01-03T00:00:00Z"
+          }
+        ],
+        "debts": [
+          {
+            "id": "d",
+            "supplierId": "s",
+            "date": "2026-01-01",
+            "amount": 30,
+            "note": "",
+            "createdAt": "2026-01-01T00:00:00Z"
+          },
+          {
+            "id": "future",
+            "supplierId": "s",
+            "date": "2026-02-01",
+            "amount": 50,
+            "note": "",
+            "createdAt": "2026-02-01T00:00:00Z"
+          }
+        ],
+        "materials": [
+          {
+            "id": "m",
+            "name": "Material",
+            "unit": "piece",
+            "priceCarton": 0,
+            "pricePiece": 0,
+            "archived": false
+          }
+        ],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "expected": {
+        "balance": 152,
+        "debt": 152,
+        "datedDebt": 102,
+        "excludedDebt": 120,
+        "paid": 152,
+        "due": 0,
+        "ledger": [
+          {
+            "id": "d",
+            "type": "debt",
+            "amount": 30,
+            "before": 100,
+            "balance": 130
+          },
+          {
+            "id": "i",
+            "type": "invoice",
+            "amount": 152,
+            "before": 130,
+            "balance": 282
+          },
+          {
+            "id": "p",
+            "type": "payment",
+            "amount": 170,
+            "before": 282,
+            "balance": 112
+          },
+          {
+            "id": "legacy",
+            "type": "payment",
+            "amount": 10,
+            "before": 112,
+            "balance": 102
+          },
+          {
+            "id": "future",
+            "type": "debt",
+            "amount": 50,
+            "before": 102,
+            "balance": 152
+          }
+        ],
+        "before": 282
+      }
+    }
+  ],
+  "comparisons": [
+    [
+      "i",
+      "i",
+      0
+    ],
+    [
+      "i",
+      "2026-01-02",
+      1
+    ],
+    [
+      "i",
+      "2026-01-02T00:00:00Z",
+      1
+    ],
+    [
+      "i",
+      "other-i",
+      -1
+    ],
+    [
+      "i",
+      "d",
+      1
+    ],
+    [
+      "i",
+      "2026-01-01",
+      1
+    ],
+    [
+      "i",
+      "2026-01-01T00:00:00Z",
+      1
+    ],
+    [
+      "i",
+      "future",
+      1
+    ],
+    [
+      "i",
+      "2026-02-01",
+      1
+    ],
+    [
+      "i",
+      "2026-02-01T00:00:00Z",
+      1
+    ],
+    [
+      "i",
+      "p",
+      -1
+    ],
+    [
+      "i",
+      "legacy",
+      -1
+    ],
+    [
+      "i",
+      "2026-01-03",
+      1
+    ],
+    [
+      "i",
+      "2026-01-03T00:00:00Z",
+      1
+    ],
+    [
+      "2026-01-02",
+      "i",
+      -1
+    ],
+    [
+      "2026-01-02",
+      "2026-01-02",
+      0
+    ],
+    [
+      "2026-01-02",
+      "2026-01-02T00:00:00Z",
+      -1
+    ],
+    [
+      "2026-01-02",
+      "other-i",
+      -1
+    ],
+    [
+      "2026-01-02",
+      "d",
+      -1
+    ],
+    [
+      "2026-01-02",
+      "2026-01-01",
+      1
+    ],
+    [
+      "2026-01-02",
+      "2026-01-01T00:00:00Z",
+      1
+    ],
+    [
+      "2026-01-02",
+      "future",
+      -1
+    ],
+    [
+      "2026-01-02",
+      "2026-02-01",
+      -1
+    ],
+    [
+      "2026-01-02",
+      "2026-02-01T00:00:00Z",
+      -1
+    ],
+    [
+      "2026-01-02",
+      "p",
+      -1
+    ],
+    [
+      "2026-01-02",
+      "legacy",
+      -1
+    ],
+    [
+      "2026-01-02",
+      "2026-01-03",
+      -1
+    ],
+    [
+      "2026-01-02",
+      "2026-01-03T00:00:00Z",
+      -1
+    ],
+    [
+      "2026-01-02T00:00:00Z",
+      "i",
+      -1
+    ],
+    [
+      "2026-01-02T00:00:00Z",
+      "2026-01-02",
+      1
+    ],
+    [
+      "2026-01-02T00:00:00Z",
+      "2026-01-02T00:00:00Z",
+      0
+    ],
+    [
+      "2026-01-02T00:00:00Z",
+      "other-i",
+      -1
+    ],
+    [
+      "2026-01-02T00:00:00Z",
+      "d",
+      -1
+    ],
+    [
+      "2026-01-02T00:00:00Z",
+      "2026-01-01",
+      1
+    ],
+    [
+      "2026-01-02T00:00:00Z",
+      "2026-01-01T00:00:00Z",
+      1
+    ],
+    [
+      "2026-01-02T00:00:00Z",
+      "future",
+      -1
+    ],
+    [
+      "2026-01-02T00:00:00Z",
+      "2026-02-01",
+      -1
+    ],
+    [
+      "2026-01-02T00:00:00Z",
+      "2026-02-01T00:00:00Z",
+      -1
+    ],
+    [
+      "2026-01-02T00:00:00Z",
+      "p",
+      -1
+    ],
+    [
+      "2026-01-02T00:00:00Z",
+      "legacy",
+      -1
+    ],
+    [
+      "2026-01-02T00:00:00Z",
+      "2026-01-03",
+      -1
+    ],
+    [
+      "2026-01-02T00:00:00Z",
+      "2026-01-03T00:00:00Z",
+      -1
+    ],
+    [
+      "other-i",
+      "i",
+      1
+    ],
+    [
+      "other-i",
+      "2026-01-02",
+      1
+    ],
+    [
+      "other-i",
+      "2026-01-02T00:00:00Z",
+      1
+    ],
+    [
+      "other-i",
+      "other-i",
+      0
+    ],
+    [
+      "other-i",
+      "d",
+      1
+    ],
+    [
+      "other-i",
+      "2026-01-01",
+      1
+    ],
+    [
+      "other-i",
+      "2026-01-01T00:00:00Z",
+      1
+    ],
+    [
+      "other-i",
+      "future",
+      1
+    ],
+    [
+      "other-i",
+      "2026-02-01",
+      1
+    ],
+    [
+      "other-i",
+      "2026-02-01T00:00:00Z",
+      1
+    ],
+    [
+      "other-i",
+      "p",
+      -1
+    ],
+    [
+      "other-i",
+      "legacy",
+      1
+    ],
+    [
+      "other-i",
+      "2026-01-03",
+      1
+    ],
+    [
+      "other-i",
+      "2026-01-03T00:00:00Z",
+      1
+    ],
+    [
+      "d",
+      "i",
+      -1
+    ],
+    [
+      "d",
+      "2026-01-02",
+      1
+    ],
+    [
+      "d",
+      "2026-01-02T00:00:00Z",
+      1
+    ],
+    [
+      "d",
+      "other-i",
+      -1
+    ],
+    [
+      "d",
+      "d",
+      0
+    ],
+    [
+      "d",
+      "2026-01-01",
+      1
+    ],
+    [
+      "d",
+      "2026-01-01T00:00:00Z",
+      1
+    ],
+    [
+      "d",
+      "future",
+      -1
+    ],
+    [
+      "d",
+      "2026-02-01",
+      1
+    ],
+    [
+      "d",
+      "2026-02-01T00:00:00Z",
+      1
+    ],
+    [
+      "d",
+      "p",
+      -1
+    ],
+    [
+      "d",
+      "legacy",
+      -1
+    ],
+    [
+      "d",
+      "2026-01-03",
+      1
+    ],
+    [
+      "d",
+      "2026-01-03T00:00:00Z",
+      1
+    ],
+    [
+      "2026-01-01",
+      "i",
+      -1
+    ],
+    [
+      "2026-01-01",
+      "2026-01-02",
+      -1
+    ],
+    [
+      "2026-01-01",
+      "2026-01-02T00:00:00Z",
+      -1
+    ],
+    [
+      "2026-01-01",
+      "other-i",
+      -1
+    ],
+    [
+      "2026-01-01",
+      "d",
+      -1
+    ],
+    [
+      "2026-01-01",
+      "2026-01-01",
+      0
+    ],
+    [
+      "2026-01-01",
+      "2026-01-01T00:00:00Z",
+      -1
+    ],
+    [
+      "2026-01-01",
+      "future",
+      -1
+    ],
+    [
+      "2026-01-01",
+      "2026-02-01",
+      -1
+    ],
+    [
+      "2026-01-01",
+      "2026-02-01T00:00:00Z",
+      -1
+    ],
+    [
+      "2026-01-01",
+      "p",
+      -1
+    ],
+    [
+      "2026-01-01",
+      "legacy",
+      -1
+    ],
+    [
+      "2026-01-01",
+      "2026-01-03",
+      -1
+    ],
+    [
+      "2026-01-01",
+      "2026-01-03T00:00:00Z",
+      -1
+    ],
+    [
+      "2026-01-01T00:00:00Z",
+      "i",
+      -1
+    ],
+    [
+      "2026-01-01T00:00:00Z",
+      "2026-01-02",
+      -1
+    ],
+    [
+      "2026-01-01T00:00:00Z",
+      "2026-01-02T00:00:00Z",
+      -1
+    ],
+    [
+      "2026-01-01T00:00:00Z",
+      "other-i",
+      -1
+    ],
+    [
+      "2026-01-01T00:00:00Z",
+      "d",
+      -1
+    ],
+    [
+      "2026-01-01T00:00:00Z",
+      "2026-01-01",
+      1
+    ],
+    [
+      "2026-01-01T00:00:00Z",
+      "2026-01-01T00:00:00Z",
+      0
+    ],
+    [
+      "2026-01-01T00:00:00Z",
+      "future",
+      -1
+    ],
+    [
+      "2026-01-01T00:00:00Z",
+      "2026-02-01",
+      -1
+    ],
+    [
+      "2026-01-01T00:00:00Z",
+      "2026-02-01T00:00:00Z",
+      -1
+    ],
+    [
+      "2026-01-01T00:00:00Z",
+      "p",
+      -1
+    ],
+    [
+      "2026-01-01T00:00:00Z",
+      "legacy",
+      -1
+    ],
+    [
+      "2026-01-01T00:00:00Z",
+      "2026-01-03",
+      -1
+    ],
+    [
+      "2026-01-01T00:00:00Z",
+      "2026-01-03T00:00:00Z",
+      -1
+    ],
+    [
+      "future",
+      "i",
+      -1
+    ],
+    [
+      "future",
+      "2026-01-02",
+      1
+    ],
+    [
+      "future",
+      "2026-01-02T00:00:00Z",
+      1
+    ],
+    [
+      "future",
+      "other-i",
+      -1
+    ],
+    [
+      "future",
+      "d",
+      1
+    ],
+    [
+      "future",
+      "2026-01-01",
+      1
+    ],
+    [
+      "future",
+      "2026-01-01T00:00:00Z",
+      1
+    ],
+    [
+      "future",
+      "future",
+      0
+    ],
+    [
+      "future",
+      "2026-02-01",
+      1
+    ],
+    [
+      "future",
+      "2026-02-01T00:00:00Z",
+      1
+    ],
+    [
+      "future",
+      "p",
+      -1
+    ],
+    [
+      "future",
+      "legacy",
+      -1
+    ],
+    [
+      "future",
+      "2026-01-03",
+      1
+    ],
+    [
+      "future",
+      "2026-01-03T00:00:00Z",
+      1
+    ],
+    [
+      "2026-02-01",
+      "i",
+      -1
+    ],
+    [
+      "2026-02-01",
+      "2026-01-02",
+      1
+    ],
+    [
+      "2026-02-01",
+      "2026-01-02T00:00:00Z",
+      1
+    ],
+    [
+      "2026-02-01",
+      "other-i",
+      -1
+    ],
+    [
+      "2026-02-01",
+      "d",
+      -1
+    ],
+    [
+      "2026-02-01",
+      "2026-01-01",
+      1
+    ],
+    [
+      "2026-02-01",
+      "2026-01-01T00:00:00Z",
+      1
+    ],
+    [
+      "2026-02-01",
+      "future",
+      -1
+    ],
+    [
+      "2026-02-01",
+      "2026-02-01",
+      0
+    ],
+    [
+      "2026-02-01",
+      "2026-02-01T00:00:00Z",
+      -1
+    ],
+    [
+      "2026-02-01",
+      "p",
+      -1
+    ],
+    [
+      "2026-02-01",
+      "legacy",
+      -1
+    ],
+    [
+      "2026-02-01",
+      "2026-01-03",
+      1
+    ],
+    [
+      "2026-02-01",
+      "2026-01-03T00:00:00Z",
+      1
+    ],
+    [
+      "2026-02-01T00:00:00Z",
+      "i",
+      -1
+    ],
+    [
+      "2026-02-01T00:00:00Z",
+      "2026-01-02",
+      1
+    ],
+    [
+      "2026-02-01T00:00:00Z",
+      "2026-01-02T00:00:00Z",
+      1
+    ],
+    [
+      "2026-02-01T00:00:00Z",
+      "other-i",
+      -1
+    ],
+    [
+      "2026-02-01T00:00:00Z",
+      "d",
+      -1
+    ],
+    [
+      "2026-02-01T00:00:00Z",
+      "2026-01-01",
+      1
+    ],
+    [
+      "2026-02-01T00:00:00Z",
+      "2026-01-01T00:00:00Z",
+      1
+    ],
+    [
+      "2026-02-01T00:00:00Z",
+      "future",
+      -1
+    ],
+    [
+      "2026-02-01T00:00:00Z",
+      "2026-02-01",
+      1
+    ],
+    [
+      "2026-02-01T00:00:00Z",
+      "2026-02-01T00:00:00Z",
+      0
+    ],
+    [
+      "2026-02-01T00:00:00Z",
+      "p",
+      -1
+    ],
+    [
+      "2026-02-01T00:00:00Z",
+      "legacy",
+      -1
+    ],
+    [
+      "2026-02-01T00:00:00Z",
+      "2026-01-03",
+      1
+    ],
+    [
+      "2026-02-01T00:00:00Z",
+      "2026-01-03T00:00:00Z",
+      1
+    ],
+    [
+      "p",
+      "i",
+      1
+    ],
+    [
+      "p",
+      "2026-01-02",
+      1
+    ],
+    [
+      "p",
+      "2026-01-02T00:00:00Z",
+      1
+    ],
+    [
+      "p",
+      "other-i",
+      1
+    ],
+    [
+      "p",
+      "d",
+      1
+    ],
+    [
+      "p",
+      "2026-01-01",
+      1
+    ],
+    [
+      "p",
+      "2026-01-01T00:00:00Z",
+      1
+    ],
+    [
+      "p",
+      "future",
+      1
+    ],
+    [
+      "p",
+      "2026-02-01",
+      1
+    ],
+    [
+      "p",
+      "2026-02-01T00:00:00Z",
+      1
+    ],
+    [
+      "p",
+      "p",
+      0
+    ],
+    [
+      "p",
+      "legacy",
+      1
+    ],
+    [
+      "p",
+      "2026-01-03",
+      1
+    ],
+    [
+      "p",
+      "2026-01-03T00:00:00Z",
+      1
+    ],
+    [
+      "legacy",
+      "i",
+      1
+    ],
+    [
+      "legacy",
+      "2026-01-02",
+      1
+    ],
+    [
+      "legacy",
+      "2026-01-02T00:00:00Z",
+      1
+    ],
+    [
+      "legacy",
+      "other-i",
+      -1
+    ],
+    [
+      "legacy",
+      "d",
+      1
+    ],
+    [
+      "legacy",
+      "2026-01-01",
+      1
+    ],
+    [
+      "legacy",
+      "2026-01-01T00:00:00Z",
+      1
+    ],
+    [
+      "legacy",
+      "future",
+      1
+    ],
+    [
+      "legacy",
+      "2026-02-01",
+      1
+    ],
+    [
+      "legacy",
+      "2026-02-01T00:00:00Z",
+      1
+    ],
+    [
+      "legacy",
+      "p",
+      -1
+    ],
+    [
+      "legacy",
+      "legacy",
+      0
+    ],
+    [
+      "legacy",
+      "2026-01-03",
+      1
+    ],
+    [
+      "legacy",
+      "2026-01-03T00:00:00Z",
+      1
+    ],
+    [
+      "2026-01-03",
+      "i",
+      -1
+    ],
+    [
+      "2026-01-03",
+      "2026-01-02",
+      1
+    ],
+    [
+      "2026-01-03",
+      "2026-01-02T00:00:00Z",
+      1
+    ],
+    [
+      "2026-01-03",
+      "other-i",
+      -1
+    ],
+    [
+      "2026-01-03",
+      "d",
+      -1
+    ],
+    [
+      "2026-01-03",
+      "2026-01-01",
+      1
+    ],
+    [
+      "2026-01-03",
+      "2026-01-01T00:00:00Z",
+      1
+    ],
+    [
+      "2026-01-03",
+      "future",
+      -1
+    ],
+    [
+      "2026-01-03",
+      "2026-02-01",
+      -1
+    ],
+    [
+      "2026-01-03",
+      "2026-02-01T00:00:00Z",
+      -1
+    ],
+    [
+      "2026-01-03",
+      "p",
+      -1
+    ],
+    [
+      "2026-01-03",
+      "legacy",
+      -1
+    ],
+    [
+      "2026-01-03",
+      "2026-01-03",
+      0
+    ],
+    [
+      "2026-01-03",
+      "2026-01-03T00:00:00Z",
+      -1
+    ],
+    [
+      "2026-01-03T00:00:00Z",
+      "i",
+      -1
+    ],
+    [
+      "2026-01-03T00:00:00Z",
+      "2026-01-02",
+      1
+    ],
+    [
+      "2026-01-03T00:00:00Z",
+      "2026-01-02T00:00:00Z",
+      1
+    ],
+    [
+      "2026-01-03T00:00:00Z",
+      "other-i",
+      -1
+    ],
+    [
+      "2026-01-03T00:00:00Z",
+      "d",
+      -1
+    ],
+    [
+      "2026-01-03T00:00:00Z",
+      "2026-01-01",
+      1
+    ],
+    [
+      "2026-01-03T00:00:00Z",
+      "2026-01-01T00:00:00Z",
+      1
+    ],
+    [
+      "2026-01-03T00:00:00Z",
+      "future",
+      -1
+    ],
+    [
+      "2026-01-03T00:00:00Z",
+      "2026-02-01",
+      -1
+    ],
+    [
+      "2026-01-03T00:00:00Z",
+      "2026-02-01T00:00:00Z",
+      -1
+    ],
+    [
+      "2026-01-03T00:00:00Z",
+      "p",
+      -1
+    ],
+    [
+      "2026-01-03T00:00:00Z",
+      "legacy",
+      -1
+    ],
+    [
+      "2026-01-03T00:00:00Z",
+      "2026-01-03",
+      1
+    ],
+    [
+      "2026-01-03T00:00:00Z",
+      "2026-01-03T00:00:00Z",
+      0
+    ]
+  ]
+}

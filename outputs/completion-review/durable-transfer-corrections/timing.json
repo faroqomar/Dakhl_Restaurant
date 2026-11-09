@@ -1,0 +1,31 @@
+{
+  "performanceStatus": "PENDING",
+  "note": "Per implementation protocol, no artificial or uninstrumented performance metrics are fabricated. Performance evaluation is tracked as PENDING for dedicated benchmark suite.",
+  "fixtures": [
+    {
+      "id": "t-sc1",
+      "description": "Differential scenario 1: 20k -> 30k -> delete against frozen model.js and renderer.js",
+      "measurement": "PENDING"
+    },
+    {
+      "id": "t-sc2",
+      "description": "Differential scenario 2: Repeated edits (20k -> 40k -> 25k -> 50k) and historical replay",
+      "measurement": "PENDING"
+    },
+    {
+      "id": "t-sc3",
+      "description": "Differential scenario 3: Legacy unset-total recovery and delete balance preservation",
+      "measurement": "PENDING"
+    },
+    {
+      "id": "t-sc4",
+      "description": "Differential scenario 4: Intervening sales, refunds, expenses between create, edit, delete",
+      "measurement": "PENDING"
+    },
+    {
+      "id": "t-conf-1",
+      "description": "Conformance suite: 11 real-store atomic CAS, replay, and fault recovery tests",
+      "measurement": "PENDING"
+    }
+  ]
+}

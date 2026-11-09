@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+    "/Users/eros/Dev/Eros_Projects/Madar_Engine/tool/dev_workflow/workflow.py",
+    "record",
+    "--plan",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-native/device-ready-1/plan.json",
+    "--root",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant",
+    "--state",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-native/device-ready-1/state.json",
+    "--receipt",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-native/device-ready-1/pilot-ledger-receipt-1.json"
+  ],
+  "exitCode": 0,
+  "stdout": "{\"attemptCount\": 2, \"campaignId\": \"c1-native-device-ready-1\", \"consumerId\": \"Dakhl_Restaurant\", \"failedAttempts\": [\"attempt-2\"], \"identity\": {\"contextFingerprint\": \"179c9966476dc96bdcd92c102bd0897d05186e830f3776820288f8108f6f916d\", \"engineRevision\": \"783e29cf8ae5c829cbb09bdb5b7a547aa92bc8d6\", \"fixtureId\": \"ce2a435fe8732f63872b33b911aeb284b0168144253e4973549c1d07a3d83ffb\", \"inputFingerprint\": \"6ef88a3e26d1df03bf8daa0aca91c22ab8030a09d8c134ac90d2ae5cd58738b9\", \"planFingerprint\": \"d0ef0e0e21fd918bad9b097ef8a33e640fc44f8465742a447d109a058aab7115\", \"sourceRevision\": \"cc91fae438101fce7ff4729e12bf3c2b64dacd70\", \"targetId\": \"DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5\", \"toolRevision\": \"f7f68988561d25cc93eb28c0ec989847526b2df9\"}, \"nextStage\": \"catalog-pilot\", \"passedStages\": 1, \"schemaVersion\": 1, \"stages\": [{\"id\": \"native-preflight\", \"kind\": \"preflight\", \"status\": \"passed\"}, {\"id\": \"catalog-pilot\", \"kind\": \"pilot\", \"status\": \"blocked\"}], \"status\": \"blocked\"}\n",
+  "stderr": ""
+}

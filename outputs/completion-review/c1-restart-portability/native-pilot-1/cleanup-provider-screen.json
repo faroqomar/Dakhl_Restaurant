@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/Users/eros/.t3/userdata/device/targets/t3-b91493306db60c230eefae24/agent-device",
+    "screenshot",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-restart-portability/native-pilot-1/cleanup-provider.png"
+  ],
+  "startUtc": "2026-11-08T06:52:41.718167+00:00",
+  "endUtc": "2026-11-08T06:52:42.696459+00:00",
+  "elapsedSeconds": 0.978309084,
+  "exitCode": 0,
+  "log": "cleanup-provider-screen.log"
+}

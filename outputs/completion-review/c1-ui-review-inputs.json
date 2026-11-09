@@ -1,0 +1,67 @@
+{
+  "utc": "2026-11-07T15:22:46.728151+00:00",
+  "sourceState": "C1 worker candidate, parent formatted ten new files before independent review",
+  "engineCommit": "d316fd6076375daa3f412889f73eaebfeeb5d4d4",
+  "designApproval": "docs/phases/c1-design-approval.md",
+  "files": [
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/lib/catalog/catalog_formatters.dart",
+      "sha256": "b490efe828fd9d6c014378f3672abebc791824f06832d0a7fad99b2c091b8f66"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/lib/catalog/product_form_dialog.dart",
+      "sha256": "f8b6a3550a8c9c76661467edaf6aa740e8ae0726f27eea7f96400d006703a2cc"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/lib/catalog/stock_movement_dialog.dart",
+      "sha256": "ad9494d06d53ba30f1813d174db38e924c4775639bfffaa48e9af2c2ee1d9db3"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/lib/catalog/stock_reversal_dialog.dart",
+      "sha256": "64069f7dadb8e2d8ac68b1f7dcd7fd318de10ce28306751b4cc98ecab41ef458"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/lib/catalog/stock_history_dialog.dart",
+      "sha256": "b67b990da6665914bab3fac8463760c7e9d9fd28495039a09edc0f8b88a21c96"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/lib/catalog/inventory_surface.dart",
+      "sha256": "d796fa3508712f1373b5e3ae5babe28915f02047c04694d9376b27dc5be8a2b7"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/lib/app/app.dart",
+      "sha256": "ad6bb3e2ef23a461333ae0d47b2e9e90160f07878cb0e8e2095f4bf3191d731b"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/inventory_surface_test.dart",
+      "sha256": "52eeae841228dc5b38300ecf57cd26803e325780617b8491cce76d63c4a63a76"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/product_dialog_workflow_test.dart",
+      "sha256": "000e221609635edbcd661fbde39a11d3181e552bcc34230b91346aee5b00ef8e"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/stock_movement_workflow_test.dart",
+      "sha256": "22a61e0ade351431385c93ec250c3892ec703fefbf10056b78307c04b56b3c97"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/catalog/shell_inventory_integration_test.dart",
+      "sha256": "ed6503796a0e51e0e3e5f738e74ac7d3f28b22fc1bb40aba67660b0757291663"
+    }
+  ],
+  "workerReportedChecks": {
+    "catalogAndAppTests": 61,
+    "analysis": "passed"
+  },
+  "rootIntakeConcerns": [
+    "Microsecond-based ID generation repeats an earlier prevented problem",
+    "View-owned stock history arithmetic/querying may violate shared query/MVVM boundaries",
+    "Captured authority and dirty/unknown/disposal flows need connected failure tests",
+    "No actual runtime visual/export/native evidence in worker report"
+  ],
+  "limits": [
+    "Independent code and visual review pending",
+    "No full C1 completion",
+    "Native/performance/C3 detail navigation dependencies remain pending"
+  ]
+}

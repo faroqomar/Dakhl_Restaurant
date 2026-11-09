@@ -1,0 +1,14 @@
+[
+  {
+    "log": "red",
+    "rawSha256": "cc6649aeb4c42e6029e6ff2de834329c98bf30cbb7a6b8aca25009cb3b3915ac"
+  },
+  {
+    "log": "green",
+    "rawSha256": "80845abf4b2f4fdfc636accec7b15278a9ea743f8f04235a4aba5f0dc121c2ed"
+  },
+  {
+    "log": "pure-green",
+    "rawSha256": "95f4d8817d17bdafc2d716840b2b95794d472b9aff744e4f36ad43ff5d62e837"
+  }
+]

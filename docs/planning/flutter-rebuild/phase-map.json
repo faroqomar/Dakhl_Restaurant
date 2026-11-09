@@ -139,5 +139,28 @@
       ],
       "reason": "Keep independent end-to-end, installed-device and cutover verification as the final gate."
     }
-  ]
+  ],
+  "execution_grouping": {
+    "revision": "2026-11-05-completion",
+    "phase": "Completion",
+    "stage": "Step 1 scope only",
+    "included_work_packages": [
+      "00-residual",
+      "02-residual",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11"
+    ],
+    "reused_completed_work_packages": [
+      "01"
+    ],
+    "scope_record": "../../phases/completion-scope-readiness.md",
+    "preserve_original_capture_mapping": true
+  }
 }

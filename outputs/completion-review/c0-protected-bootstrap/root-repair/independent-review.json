@@ -1,0 +1,30 @@
+{
+  "recordedUtc": "2026-11-08T07:52:17.940979+00:00",
+  "reviewer": "/root/review_c1_restart_qa_source",
+  "verdict": "PASS ready for one actual iOS six-case campaign",
+  "manifest": "review-inputs-live-1.json",
+  "manifestSha256": "1cb47f42c24d04a5f458c5d86bbc726c7567bbf155abd67b659ef24be95dc383",
+  "verifiedBindings": 46,
+  "independentHostCasesPassed": 6,
+  "retainedAppCatalogRegressionsPassed": 109,
+  "analysis": "clean4items",
+  "realOsDenialProvenBothCases": true,
+  "workspaceRetry": "actual fence/revision1/token/payload preserved with0mutations; first-create draft preserved",
+  "sourceDiff": "Initial protected-read latch only;7other dependencies match red snapshots",
+  "correctedFinding": "45predecessor omitted currentapp.dart; successor46 adds independently frozen live source without codechange",
+  "limits": [
+    "Native C0-10 remains pending",
+    "Permissioncases must unavailable if actualOSdenial unproved",
+    "Older C1 native/benchmark manifests remain historical; narrowdiff/109regression support continuity"
+  ],
+  "storage": {
+    "freeKiB": [
+      96963080,
+      96958736
+    ],
+    "temporaryGitStores": 0,
+    "gitAndCacheUnchanged": true,
+    "buildDeltaKiB": -28,
+    "evidenceDeltaKiB": 12
+  }
+}

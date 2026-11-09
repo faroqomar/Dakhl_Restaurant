@@ -1,0 +1,14 @@
+{
+  "recordedUtc": "2026-11-08T07:00:42.543973+00:00",
+  "operationId": "c1.product.edit",
+  "status": "passed",
+  "genericResultValidation": "passed",
+  "cleanupComplete": true,
+  "sourceFingerprint": "4f1fffb01be255874300beb3933dc58cd72157a644a77759f4e714a592cceefc",
+  "availableKiBBefore": 97190252,
+  "profileCacheUnchanged": true,
+  "sampleCount": 50,
+  "recomputedMedianMs": 185.208,
+  "recomputedP95Ms": 195.295,
+  "fullSyntheticOutcomeAndFreshOwnerReopen": "accepted by reviewed producer before each sample"
+}

@@ -1,0 +1,27 @@
+{
+  "recordedUtc": "2026-11-07T22:37:17.566350+00:00",
+  "ownerDirection": "maximum useful parallel Codex/Gemini capacity",
+  "assignments": [
+    {
+      "actor": "Codex",
+      "task": "extend_multiline_reconciliation",
+      "scope": "New bounded F09multi-line/fractional real-store tests only"
+    },
+    {
+      "actor": "Codex",
+      "task": "qualify_c2_held_source_pairs",
+      "scope": "One resumed localPenpot pilot using known root-outdent remedy; sole livecontroller"
+    },
+    {
+      "actor": "Gemini",
+      "task": "reusable collation package candidate",
+      "state": "delegation_pending",
+      "scope": "New engine pureport/optional FFI package source candidate; no app/pin adoption"
+    },
+    {
+      "actor": "Root",
+      "scope": "Integrate scoped independent passes, source packet corrections, approvals and source contracts"
+    }
+  ],
+  "limits": "C1 design approval only; C2/C3/C4 owner approvals, live cutover, native evidence and release remain separate."
+}

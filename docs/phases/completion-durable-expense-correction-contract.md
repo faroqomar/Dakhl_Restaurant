@@ -1,0 +1,22 @@
+# Isolated durable operating-expense corrections
+
+Date: 2026-11-08. Status: authorized nonvisual Completion foundation under accepted ADR0021 and [A–D/F worked examples](completion-remaining-correction-approval.md). This scope implements eligible operating-expense edit/delete only; generic day-range shifts, session undo, payment/invoice corrections and UI remain separate. Missing-original-posting financial corrections stay blocked under section E.
+
+## Ownership and contract
+
+Dakhl_Restaurant owns source projection, immutable source snapshots/correction lineage and family-specific reconciliation. Existing public Madar balanced journals, coordinator and one-store persistence remain the reusable authority. New engine runtime/API: N/A. Consume reviewed ac8b4edc2c915ed22c0991685c33967b3360e7fa; it changes only two store tests/log from bb00. Runtime stays schema11; version12 financial state is synthetic/isolated and is not activated by this slice.
+
+## Required behavior
+
+- Edit an eligible post-cutover operating expense through one complete candidate: preserve source ID/createdAt, validate the exact frozen-source edit behavior, remove the previous current row, append the accepted replacement at its chosen post-cutover date, original-date inverse and replacement posting, correction history and one receipt in a single revision. Delete removes only the current source projection and appends its inverse/history/receipt. Preserve all original journals and receipts.
+- Reconcile the expected current source/posting completely: original amount/date/category/funding/note/timestamp, recognized account lines/policy, linked source snapshots and receipt intent. Refuse missing/reversed/ambiguous/changed targets and stale source/fence/account lineage. One inverse per original and no inverse-of-inverse. No raw metadata agreement may substitute for rebuilding the expected mapper value.
+- Preserve daily/cashbox split, stable source category history, zero-value compatibility only under explicit allow-zero policy, and frozen source note/date/category rules. Preserve manual total/balance/remaining snapshots; derived cash/register values follow source effects, including allowed negative cash. Transfers and supplier records remain untouched.
+- Account lineage, expected authority, all caller intent/IDs/dates/funding/category/note/reason, mapper/profile/policy and payload version belong to bounded immutable canonical identity. Same operation/intent replays once; changed intent rejects without writes. Record exact decimal financial metadata as strings. Replayed outcomes reconcile against retained historical source/posting/receipt chains even after later edit/delete; they need not remain the current source row.
+- Existing create-expense replay must remain valid after a supported correction chain. Any extension to its matcher is narrow and independently reviewed. Historical command replays must reject tampered source/history/receipt/outcome/profile fields, forks, missing edges and forged equal-amount intent. Do not change create-payment/invoice or sales behavior.
+- Unknown acknowledgement delegates to the existing command host/coordinator. Real before-commit failure leaves the complete state unchanged; a genuinely committed lost acknowledgement resolves/reopens/replays with exactly one effect. All execution requires captured authority; foreign store injection fails closed.
+
+## Acceptance and limits
+
+Use actual frozen renderer expense edit/delete bodies for differential source parity, including edits to amount/funding/category/note/date and preserved manual observations. Cover repeated edits, delete, historical create/correction replay, custom profiles/policy/zero, all-or-none precommit faults, actual lost acknowledgement, lineage/fence/canonical tampering and fresh-owner reopen with real PowerSync. Assert complete source maps, journals, receipts and query effects rather than totals alone. No duplicated engine persistence/financial implementation.
+
+Tests, API/error/limit/examples documentation, exact source manifest and independent aggregate review are required. Per-operation measured performance remains separately pending until an authorized isolated benchmark; unit-test elapsed is not a benchmark. C4-05 remains partial until its full UI/dependency acceptance. No live migration/cutover values, native/UI design approval, checklist closure, remote/Git delivery or release follows from worker completion.

@@ -1,0 +1,83 @@
+{
+  "attempts": [
+    {
+      "attemptId": "attempt-1",
+      "digest": "2d3d6596c055e08b78434439c930e6043219d1a2798060adfbe20e14def8cfad",
+      "previousDigest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt": {
+        "cleanupConfirmed": true,
+        "evidence": [
+          {
+            "path": "outputs/completion-review/review-stage-001/android-native-context-001/guard-attempt-001.json",
+            "sha256": "ec037c23adbdf12b4a8b2aac4a3094cecf06601850a8fd9cdfcd013356644b9d"
+          }
+        ],
+        "identity": {
+          "contextFingerprint": "6adee5be1d9d2cecc4d952696ca92162a39015a615b0bae3d385e3f5cb81c780",
+          "engineRevision": "f30827df9fe3c4d2ef6d7d31b53bb0125eea82ec",
+          "fixtureId": "26c6f1f7d756bc15701b56f21381943abcefbfa529881f468dab041ac9c2a14d",
+          "inputFingerprint": "1c80e6469d6d83ac6ba994c8f160c9c95aacf5a45d53bf1e4926d0e21d21f866",
+          "planFingerprint": "71f871b2d184eafeed63e500bdb98444a973ce319dd29d16bdeb55e6fc3c2b7e",
+          "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+          "targetId": "emulator-5554",
+          "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+        },
+        "stageId": "guard",
+        "status": "passed"
+      },
+      "retry": null
+    },
+    {
+      "attemptId": "attempt-2",
+      "digest": "083643b5641d125611ae084ffab7bfaa8d601c4785be9367ae711f885413c3f9",
+      "previousDigest": "2d3d6596c055e08b78434439c930e6043219d1a2798060adfbe20e14def8cfad",
+      "receipt": {
+        "cleanupConfirmed": true,
+        "evidence": [
+          {
+            "path": "outputs/completion-review/review-stage-001/android-native-driver-001.log",
+            "sha256": "06c03b784174398508008384f8313893ec3a642422244cff88240a8b68ad2ef3"
+          },
+          {
+            "path": "outputs/completion-review/review-stage-001/android-native-driver-001.identity.json",
+            "sha256": "5f3ab1658dc7acf288615736e336b6c6fbf3ddeb57491e3067d939ce17224106"
+          },
+          {
+            "path": "outputs/completion-review/review-stage-001/android-install-execute-001.json",
+            "sha256": "063d3bf2aad8df345991407e9bb75249e00f93a80e820f0964deda578e4ccd07"
+          },
+          {
+            "path": "outputs/completion-review/review-stage-001/android-device-launch-001.json",
+            "sha256": "e00280058a8f73f29c475b284669819c5eb23f799ba018dbfa8d15467d4ffbcb"
+          }
+        ],
+        "identity": {
+          "contextFingerprint": "6adee5be1d9d2cecc4d952696ca92162a39015a615b0bae3d385e3f5cb81c780",
+          "engineRevision": "f30827df9fe3c4d2ef6d7d31b53bb0125eea82ec",
+          "fixtureId": "26c6f1f7d756bc15701b56f21381943abcefbfa529881f468dab041ac9c2a14d",
+          "inputFingerprint": "1c80e6469d6d83ac6ba994c8f160c9c95aacf5a45d53bf1e4926d0e21d21f866",
+          "planFingerprint": "71f871b2d184eafeed63e500bdb98444a973ce319dd29d16bdeb55e6fc3c2b7e",
+          "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+          "targetId": "emulator-5554",
+          "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+        },
+        "stageId": "android-pilot",
+        "status": "passed"
+      },
+      "retry": null
+    }
+  ],
+  "campaignId": "completion-review-android-001",
+  "identity": {
+    "contextFingerprint": "6adee5be1d9d2cecc4d952696ca92162a39015a615b0bae3d385e3f5cb81c780",
+    "engineRevision": "f30827df9fe3c4d2ef6d7d31b53bb0125eea82ec",
+    "fixtureId": "26c6f1f7d756bc15701b56f21381943abcefbfa529881f468dab041ac9c2a14d",
+    "inputFingerprint": "1c80e6469d6d83ac6ba994c8f160c9c95aacf5a45d53bf1e4926d0e21d21f866",
+    "planFingerprint": "71f871b2d184eafeed63e500bdb98444a973ce319dd29d16bdeb55e6fc3c2b7e",
+    "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+    "targetId": "emulator-5554",
+    "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+  },
+  "planDigest": "71f871b2d184eafeed63e500bdb98444a973ce319dd29d16bdeb55e6fc3c2b7e",
+  "schemaVersion": 1
+}

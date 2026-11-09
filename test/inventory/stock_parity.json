@@ -1,0 +1,128 @@
+{
+  "sourceSha256": "65a9b33cdca42e328d710f1afaa1b0fb42a7778284bd2f07f7c7e77d3d9f07f4",
+  "cases": [
+    {
+      "name": "fractional-same-day",
+      "segments": [
+        {
+          "bucket": "incoming",
+          "units": 300,
+          "count": 1,
+          "date": "2026-01-01"
+        },
+        {
+          "bucket": "outgoing",
+          "units": 100,
+          "count": 1,
+          "date": "2026-01-01"
+        }
+      ],
+      "through": "2026-01-01",
+      "groupedUnits": "200",
+      "sequentialUnits": "200",
+      "valid": true
+    },
+    {
+      "name": "future-exclusion",
+      "segments": [
+        {
+          "bucket": "incoming",
+          "units": 300,
+          "count": 1,
+          "date": "2026-01-01"
+        },
+        {
+          "bucket": "incoming",
+          "units": 100,
+          "count": 1,
+          "date": "2026-02-01"
+        }
+      ],
+      "through": "2026-01-01",
+      "groupedUnits": "300",
+      "sequentialUnits": "300",
+      "valid": true
+    },
+    {
+      "name": "large-cancellation",
+      "segments": [
+        {
+          "bucket": "incoming",
+          "units": 1000000000000,
+          "count": 10000,
+          "date": "2026-01-01"
+        },
+        {
+          "bucket": "incoming",
+          "units": 1,
+          "count": 1,
+          "date": "2026-01-01"
+        },
+        {
+          "bucket": "incoming",
+          "units": -1000000000000,
+          "count": 10000,
+          "date": "2026-01-01"
+        }
+      ],
+      "through": "2026-01-01",
+      "groupedUnits": "0",
+      "sequentialUnits": "0",
+      "valid": true
+    },
+    {
+      "name": "query-order-difference",
+      "segments": [
+        {
+          "bucket": "incoming",
+          "units": 1000000000000,
+          "count": 10000,
+          "date": "2026-01-01"
+        },
+        {
+          "bucket": "outgoing",
+          "units": 1000000000000,
+          "count": 10000,
+          "date": "2026-01-01"
+        },
+        {
+          "bucket": "outgoing",
+          "units": 1,
+          "count": 1,
+          "date": "2026-01-01"
+        },
+        {
+          "bucket": "returned",
+          "units": 1,
+          "count": 1,
+          "date": "2026-01-01"
+        }
+      ],
+      "through": "2026-01-01",
+      "groupedUnits": "1",
+      "sequentialUnits": "0",
+      "valid": true
+    },
+    {
+      "name": "backdated-overdraft",
+      "segments": [
+        {
+          "bucket": "incoming",
+          "units": -1,
+          "count": 1,
+          "date": "2026-01-01"
+        },
+        {
+          "bucket": "incoming",
+          "units": 2,
+          "count": 1,
+          "date": "2026-01-02"
+        }
+      ],
+      "through": "2026-01-01",
+      "groupedUnits": "-1",
+      "sequentialUnits": "-1",
+      "valid": false
+    }
+  ]
+}

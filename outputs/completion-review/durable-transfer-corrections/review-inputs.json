@@ -1,0 +1,101 @@
+{
+  "recordedUtc": "2026-11-08T04:14:08.811440+00:00",
+  "scope": "Foundation nonvisual same-date post-cutover transfer edit/delete; no UI/live activation or source-pin bypass",
+  "verification": {
+    "unitTests": 16,
+    "safetyParityTests": 6,
+    "conformanceTests": 11,
+    "focusedTests": 33,
+    "fullAccountingTests": 271,
+    "analysis": "clean (0 issues)",
+    "boundaries": "pass",
+    "performanceStatus": "PENDING"
+  },
+  "files": [
+    {
+      "path": "lib/accounting/restaurant_journal_transfer_correction_commands.dart",
+      "bytes": 45644,
+      "sha256": "63b6c7f89f777b7f9b9f174e30e5284b5d28364681f72d813a9e8ee745c95698"
+    },
+    {
+      "path": "lib/accounting/restaurant_journal_transfer_history.dart",
+      "bytes": 9606,
+      "sha256": "d9a99dea8f895c0e18a6d603a37fd3bb8bb3394a3a833789f1014423a35c2049"
+    },
+    {
+      "path": "lib/accounting/restaurant_journal_transfer_commands.dart",
+      "bytes": 20593,
+      "sha256": "237fee45c7ba96802080ce448d901acea4681dbd411a8a74ca87fe0e2cf4469d"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_correction_commands_test.dart",
+      "bytes": 25151,
+      "sha256": "b9f0beb8087a9de980ad145c154a01b6677f35b84f9a5551216729fe9e884a16"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_correction_safety_test.dart",
+      "bytes": 34548,
+      "sha256": "e2462150f755a830c88b862adecf9c93232a937d18aeb653588901f36158dfd9"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_correction_conformance_test.dart",
+      "bytes": 37441,
+      "sha256": "fc69a58a76cc7ac43f67b0d49928046d244979f563ca9f67a5867abcd9f72d46"
+    },
+    {
+      "path": "docs/reference/durable-transfer-corrections.md",
+      "bytes": 7209,
+      "sha256": "4a8235a01a546bde4ac9490084848e03fdd84f0c8a177e2607e493074465e831"
+    },
+    {
+      "path": "docs/log/2026-11-08-durable-transfer-corrections.md",
+      "bytes": 7352,
+      "sha256": "f3a15e4fbe42ecc30e8339341dfbcf6cdc3ae1cb27044b5acad64f147a0b9260"
+    },
+    {
+      "path": "docs/phases/completion-durable-transfer-correction-contract.md",
+      "bytes": 4291,
+      "sha256": "807aae0341b01606c4eae09b65ea589d9ed44b7bc0298bf2f04a5df538848644"
+    },
+    {
+      "path": "docs/decisions/0021-completion-financial-policy.md",
+      "bytes": 4439,
+      "sha256": "5b5dc5a88edfcd6c6d3b75440658c5b57e66a94bda52c5d32e005f45c45ba3b1"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/oracle.cjs",
+      "bytes": 7126,
+      "sha256": "c98a717561c3aa5efba342f09e7ce72d81ec46acaa8758cc92f69ef05d1c94f4"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/oracle.json",
+      "bytes": 52182,
+      "sha256": "457f9333823f59cef1b33107db2d5ad1b7f64d0ed59a02ca3c29e25e41fd0d93"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/test.log",
+      "bytes": 9220,
+      "sha256": "7c2d8415d0fa0299f95215b6facd5281026555dff2d5f6a6e76f8da187279d84"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/analysis.log",
+      "bytes": 96,
+      "sha256": "ed98de005cf168e77e7fbb40a05db8856116b69003c02ffb27990da7bae65f5b"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/boundaries.log",
+      "bytes": 2708,
+      "sha256": "c92ebde69c08ce1b79bdd0defd09421c4dc1abe69b411e424cbac7b0fc71bcc6"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/timing.json",
+      "bytes": 1120,
+      "sha256": "90d7bb1e10dae6c153ad194f538f7cebf97b3c0d480c2791018b8917e86d8b4f"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer-corrections/storage-closeout.json",
+      "bytes": 354,
+      "sha256": "578dc6362e2f75751645b531f13f147f88b1994ee4c15e269a7787cdd787c4b7"
+    }
+  ]
+}

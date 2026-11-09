@@ -1,0 +1,23 @@
+{
+  "recordedAt": "2026-11-08T19:36:30.291361+00:00",
+  "freeKiB": 84489132,
+  "sizesKiB": {
+    ".git": 18525496,
+    "build": 3632956,
+    "outputs": 7742536
+  },
+  "removed": [
+    {
+      "path": "outputs/completion-review/remaining-completion-001/opening-old-reader-probe-source.txt",
+      "bytes": 1059,
+      "reason": "Exact duplicate probe source; canonical retained."
+    },
+    {
+      "path": "/tmp/opening-required-reading.txt",
+      "bytes": 286108,
+      "reason": "Task-created reproducible concatenated instruction scratch; originals retained."
+    }
+  ],
+  "nativeCompilerStatus": "Opening first Flutter run failed before test execution in shared ICU native asset install-name rewrite; no retry pending engine freeze.",
+  "oldReaderSourceBytes": 28264
+}

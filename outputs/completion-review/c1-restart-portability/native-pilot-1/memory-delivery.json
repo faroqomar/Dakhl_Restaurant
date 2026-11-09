@@ -1,0 +1,15 @@
+{
+  "atUtc": "2026-11-08T06:59:00.624526+00:00",
+  "project": "daftar",
+  "status": "pending",
+  "lastCollectedSources": 310,
+  "pending": [
+    "docs/log/2026-11-08-c1-restart-portability.md",
+    "docs/phases/completion-baseline-acceptance-map.md",
+    "docs/log/2026-11-08-baseline-delivery-reconciliation.md"
+  ],
+  "failed": {},
+  "ownLogUpdatedAfterSync": true,
+  "nextAction": "Parent sync/check after benchmark quiet measurement window;no claim of completed ingestion",
+  "engine": "N/A;no engine docs/source changed"
+}

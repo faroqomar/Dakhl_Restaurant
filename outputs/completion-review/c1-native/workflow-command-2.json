@@ -1,0 +1,22 @@
+{
+  "startedAt": "2026-11-07T20:47:01.947752+00:00",
+  "endedAt": "2026-11-07T20:47:02.399118+00:00",
+  "argv": [
+    "python3",
+    "scripts/phase_workflow.py",
+    "preflight",
+    "--engine-tools-root",
+    "/Users/eros/Dev/Eros_Projects/Madar_Engine",
+    "--plan",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-native/plan.json",
+    "--state",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-native/state.json",
+    "--spec",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-native/preflight-spec.json",
+    "--evidence-output",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-native/preflight-attempt-1.json"
+  ],
+  "exitCode": 2,
+  "stdout": "{\"status\": \"refused\", \"code\": \"workflow-refused\"}\n",
+  "stderr": ""
+}

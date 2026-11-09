@@ -1,0 +1,12 @@
+[
+  {
+    "path": "docs/phases/completion-implementation-plan.md",
+    "sha256": "68eebdfadfd6c6d7d02d0a7f9d8b6f1abbc17948dff1c708210cc3da454661fa",
+    "local_links": "pass"
+  },
+  {
+    "path": "../Madar_Engine/docs/reference/consumer-completion-implementation-plan.md",
+    "sha256": "8ffe402cbf7dd119d211de1e953e58a0e3ac714858104e91bc3dd48a73242730",
+    "local_links": "pass"
+  }
+]

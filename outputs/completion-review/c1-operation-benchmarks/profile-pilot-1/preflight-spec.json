@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "inputs": {
+    "engine-dependency.json": "8221825716c72a5b1221a1cbfc8f70f27bb3db2ede59648864194ea798544f5c",
+    "dev-tooling-dependency.json": "24065e391fc13ccf10eaf0f131deb9024641e29b68e7b75dfad07447e0a91299",
+    "pubspec.yaml": "07bba9c18ac09d1ea6f9e1d4ee9559ab5026d4babc3c6e31e74267b61b8afe91",
+    "pubspec.lock": "63f2edcb3a3f0e521db5f3a71b019410b0a8e908c60e7ccf768678211acd4382",
+    "tool/dev_dashboard/run_benchmarks.py": "dade20315b5bd2f3f4bf95fe2d3aac15fba44301357dc48518c31c17ed2c9116",
+    "tool/dev_dashboard/operations.json": "7712d232c9cb922d714fa319a6fc04b6b569f5852d33c0594bc934ca0fe171a6",
+    "scripts/phase_workflow.py": "fa42b1b2cd926aa3fce7c1fe8f6d374fa3e5194a7a7ef139c711e2b9e37df2ba",
+    "scripts/phase_preflight.py": "733b063024a9c064f9d4e4c27f5ebeb0ee6530be05ec8532b71d10bf6c61c14c",
+    "scripts/android_install_guard.py": "b03e4b75153b67f6b48eb8286084067d67a9707b4bc52f538dcd8c14423588c5",
+    "assets/ui/chicken-kebab-480.webp": "d8680deb5d2b1ad2b0d4371bae270e499a4c4da5b0e8ce025aff47baa3d77677"
+  },
+  "fixture": {
+    "root": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-c1-profile-preflight-tntfr56r",
+    "path": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-c1-profile-preflight-tntfr56r/fixture-descriptor.json",
+    "sha256": "a95f65344dd7d94f4eeff3f09c0f5ee9381e75a0e8339a39a98efd8018824fd8"
+  }
+}

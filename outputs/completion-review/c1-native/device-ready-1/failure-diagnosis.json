@@ -1,0 +1,17 @@
+{
+  "recordedUtc": "2026-11-08T04:49:52.157038+00:00",
+  "observed": "tap target center324,703 was outside live root466x678 after typing; photo removal callback did not run",
+  "hypothesis": "Keyboard/layout transition after ensureVisible moved the target outside the live hit-test viewport",
+  "confidence": "Observed missed hit; precise keyboard timing cause suspected",
+  "remedy": "Bounded ensureVisible plus hitTestable readiness and fatal missed-hit guard; do not suppress warning or alter product",
+  "nativeAssertion": {
+    "expectedPhoto": null,
+    "actualPhoto": "beef-kebab",
+    "line": 163
+  },
+  "cleanup": "Test reached tearDownAll without a reported teardown error; host marked recipe retained for review until final cleanup",
+  "limits": [
+    "No product defect established from a missed test input",
+    "No passed native flow or retry claimed"
+  ]
+}

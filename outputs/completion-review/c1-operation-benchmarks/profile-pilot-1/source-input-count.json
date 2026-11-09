@@ -1,0 +1,7 @@
+{
+  "recordedUtc": "2026-11-08T05:48:22.257119+00:00",
+  "currentInputCount": 326,
+  "maximumWorkflowInputs": 512,
+  "frozen": false,
+  "reason": "Wait for root source/window handoff before final hashes/init"
+}

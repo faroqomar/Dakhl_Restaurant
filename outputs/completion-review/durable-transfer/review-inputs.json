@@ -1,0 +1,73 @@
+{
+  "createdUtc": "2026-11-08T03:05:00.000000+00:00",
+  "status": "candidate_independent_review_pending",
+  "engineCommit": "d316fd6076375daa3f412889f73eaebfeeb5d4d4",
+  "wholeSourceEngineGuardStatus": "uncommitted_collation_candidate_preserved_failing",
+  "performanceStatus": "pending_reviewed_campaign",
+  "files": [
+    {
+      "path": "lib/accounting/restaurant_journal_transfer_commands.dart",
+      "sha256": "31d151c746cf0bca56820121be06e1f5f53d83ddfe94898b5a61888d3cb8ee77"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_commands_test.dart",
+      "sha256": "ea4c62aa1bb147474ee0f297a753f4e44af6d7d9a23e5c0f2da38cd66f80f8f6"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_conformance_test.dart",
+      "sha256": "4fbc5a4d86f6db35fc1c91f5d93a02307ae0587dff34622ac4b11c3052b0e575"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_safety_test.dart",
+      "sha256": "74e086d08e6be6a3eb89040ca387c4237aeed984dae7ae126c19b87ad3bb5f28"
+    },
+    {
+      "path": "docs/reference/durable-transfer-commands.md",
+      "sha256": "9d50e444000c1e826203aa39cccbffd97a6859a91d2755e5ad7ec640dce2d893"
+    },
+    {
+      "path": "docs/phases/completion-durable-transfer-contract.md",
+      "sha256": "23d289bdea1553086959b162c11d9178346ce332fc67653d5e8f4435fb247690"
+    },
+    {
+      "path": "docs/decisions/0021-completion-financial-policy.md",
+      "sha256": "5b5dc5a88edfcd6c6d3b75440658c5b57e66a94bda52c5d32e005f45c45ba3b1"
+    },
+    {
+      "path": "docs/log/2026-11-08-durable-transfer-commands.md",
+      "sha256": "f9c57981f92ec673808ec0870fd3cc9ad2904b47f22758aaa649d9457b0a71f3"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer/oracle.json",
+      "sha256": "31d061851fa31e0de4345d5c5003d8fb57758b58561e0d7713524e9d34182420"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer/analysis.log",
+      "sha256": "885837ee7f9cb3f172c6172fce3e0b9c3c0e470ebdf7d83261ffc42424625d5b"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer/test.log",
+      "sha256": "1789797234640027ac354c83e3ce1b3029ff283fd7ca7860776008f05d03e039"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer/timing.json",
+      "sha256": "ae72771d2ac014a89f5b390964dc5fef976fcdd73ae81ced8f7fcd5731436bc7"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer/storage-closeout.json",
+      "sha256": "cc854f3394d5fa9a0187087e28bf7691d4704d7f7d95855c7012bc9a0dbef9d8"
+    }
+  ],
+  "verification": {
+    "transferTestSuites": 3,
+    "totalTransferTests": 33,
+    "unitTests": 17,
+    "conformanceTests": 10,
+    "safetyTests": 6,
+    "transferTestsPassed": 33,
+    "transferTestsFailed": 0,
+    "fullAccountingSuiteTests": 228,
+    "fullAccountingSuitePassed": 228,
+    "analyzerIssues": 0
+  }
+}

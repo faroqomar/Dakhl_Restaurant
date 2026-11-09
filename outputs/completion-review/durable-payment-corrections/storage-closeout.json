@@ -1,0 +1,28 @@
+{
+  "recordedUtc": "2026-11-08T10:04:46.539736+00:00",
+  "beforeFreeKiB": 94536268,
+  "afterFreeKiB": 95555080,
+  "beforeSizesKiB": {
+    ".git": 18430636,
+    "build": 2168472,
+    ".dart_tool": 669424,
+    "outputs": 7397888,
+    "../Madar_Engine/.git": 45172
+  },
+  "afterSizesKiB": {
+    ".git": 18430636,
+    "build": 2145524,
+    ".dart_tool": 669424,
+    "outputs": 7398124,
+    "../Madar_Engine/.git": 45172
+  },
+  "taskReceiptAllocatedKiB": 148,
+  "leftoverOwnedStoreRoots": [],
+  "temporaryGitStores": {
+    ".git/objects": 0,
+    "../Madar_Engine/.git/objects": 0
+  },
+  "cleanup": "All owned PowerSync test stores removed by passing teardown; four task-owned scratch/recall scripts removed. No design/account/recovery evidence or shared cache removed.",
+  "retention": "New source/tests/reference/log and compact oracle/attempt evidence retained for independent review. spending-before.dart preserves exact pre-integration source; no full build/export added.",
+  "growthAttribution": "Concurrent shared-volume/cache changes are not attributed to this worker; this task ran only focused host tests/analysis, not native builds."
+}

@@ -1,0 +1,53 @@
+{
+  "recordedUtc": "2026-11-08T05:55:53.495918+00:00",
+  "status": "source_frozen_unit4pass_analysis_clean_native_pending",
+  "files": [
+    {
+      "path": "integration_test/support/c1_restart_fixture.dart",
+      "bytes": 21818,
+      "sha256": "8b59b5c96fc57a3df1f34bb301a7c2df2c38df87394f0b0ecf26f0703928f0f5"
+    },
+    {
+      "path": "integration_test/support/c1_restart_qa_main.dart",
+      "bytes": 11669,
+      "sha256": "fe863130142f5337a51907cd40d8e248f2e94024b21649dc8faee2d2b9752e41"
+    },
+    {
+      "path": "test/platform/c1_restart_fixture_test.dart",
+      "bytes": 3785,
+      "sha256": "05df3f335c60b0c8b6707532aa6f2cac48fd7922a96dd1177d2a5f0c82a7785b"
+    }
+  ],
+  "verification": {
+    "unitCasesPassed": 4,
+    "analysis": "No issues found! explicitly verified in final output",
+    "format": "3 new files formatted; latest parser clean"
+  },
+  "attempts": [
+    {
+      "kind": "analysis",
+      "result": "4 info lints fixed: unused typed_data import,3 braces"
+    },
+    {
+      "kind": "unit1",
+      "result": "1passed3failed at fixture create: explicit photo:null invalid at legacy codec boundary; harness factory fixed to omit absent photo"
+    },
+    {
+      "kind": "unit2",
+      "result": "4passed; real file callbacks validate bytes through actual model/export/import, not native provider UI"
+    },
+    {
+      "kind": "analysis2",
+      "result": "One null-aware-elements info remained; prior source-review manifest was premature and is withdrawn/preserved. Replaced conditional map entry with Dart null-aware value; final analyzer explicitly reports No issues found and four unit cases pass again."
+    }
+  ],
+  "audit": [
+    "Two patch context attempts failed atomically after formatter changes; corrected bounded source reads before patch",
+    "Unit teardown now registers each opened owner immediately, including failed setup"
+  ],
+  "limits": [
+    "Same-process reopen in unit test is not the required native process restart",
+    "Native default file-provider execution still pending",
+    "No Device boot or iOS build yet"
+  ]
+}

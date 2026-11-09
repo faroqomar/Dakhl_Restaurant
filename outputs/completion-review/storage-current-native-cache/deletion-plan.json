@@ -1,0 +1,332 @@
+[
+  {
+    "cache": ".dart_tool/flutter_build/1f0ecc97d4836deda538c97ec870eafc",
+    "target": "integration_test/c1_catalog_native_test.dart",
+    "cached_target_md5": "47b5f20c9811eef455905d9c30a1b890",
+    "current_target_md5": "47b5f20c9811eef455905d9c30a1b890",
+    "canonical_binary": "build/c1-native-passed-bb00ccd/Runner.app",
+    "compiler_dill_sha256": "dd9da949f59238ea8c1cdf88e684d83dd7b03b0773c09e2ed5f8719085c2e567",
+    "retained_kernel_sha256": "dd9da949f59238ea8c1cdf88e684d83dd7b03b0773c09e2ed5f8719085c2e567",
+    "compiler_matches_retained_kernel": true,
+    "allocated_bytes": 111460352,
+    "logical_bytes": 111392500,
+    "file_count": 24,
+    "purpose": "Reproducible historical C1 compiler cache; compiled kernel retained in canonical qualified app; current C0/C1 profile caches kept.",
+    "deleted_file_manifest": [
+      {
+        "path": ".filecache",
+        "kind": "file",
+        "bytes": 369724,
+        "sha256": "8686ea5363e4788150fb3d4be413276e98816575abf9f8521f9dc95306a04f93"
+      },
+      {
+        "path": "App.framework/App",
+        "kind": "file",
+        "bytes": 16800,
+        "sha256": "0042fbafaf02d708e8e80d0cc6e033bd9939df35553b4676d40e5b8c52ab55cb"
+      },
+      {
+        "path": "IssueLaunchRootViewControllerAccess.stamp",
+        "kind": "file",
+        "bytes": 190,
+        "sha256": "4128f690946a592b56e57df94eeb1240bb971ed6195f23ef0459a1065ca1e020"
+      },
+      {
+        "path": "app.dill",
+        "kind": "file",
+        "bytes": 110530392,
+        "sha256": "dd9da949f59238ea8c1cdf88e684d83dd7b03b0773c09e2ed5f8719085c2e567"
+      },
+      {
+        "path": "build_hooks.d",
+        "kind": "file",
+        "bytes": 3013,
+        "sha256": "0006b243736eafbd2bd7175f38661e245a66cc04570f849a18b3fa65b1daf06a"
+      },
+      {
+        "path": "build_hooks.stamp",
+        "kind": "file",
+        "bytes": 3413,
+        "sha256": "c254e0420071d9d23cfef8c901f3d0d8c7d59039ffa4e5aa29ced7f740c08b7c"
+      },
+      {
+        "path": "build_hooks_result.json",
+        "kind": "file",
+        "bytes": 4300,
+        "sha256": "8ba01e8bcc10acf79289e3c86e636397a5c1758775acfb419e952a7b6b9f93e4"
+      },
+      {
+        "path": "debug_ios_bundle_flutter_assets.stamp",
+        "kind": "file",
+        "bytes": 13117,
+        "sha256": "ca8368aaf5b2df0367219c4faa38f65d8c5399321891105141fd34825bd6d65d"
+      },
+      {
+        "path": "debug_ios_lldb_init.stamp",
+        "kind": "file",
+        "bytes": 289,
+        "sha256": "6f65d68eb4fec500f5b7d2f2801d87c85a48f65e6b12c22a61e026ccdf91dbd9"
+      },
+      {
+        "path": "debug_universal_framework.stamp",
+        "kind": "file",
+        "bytes": 236,
+        "sha256": "b62cfb95fa210e40a152f842919a8c701e36325bc08ac4eb2aba18027566100d"
+      },
+      {
+        "path": "debug_unpack_ios.stamp",
+        "kind": "file",
+        "bytes": 267,
+        "sha256": "56ab440ab7c8dc077429dff96cbbf6c9c3db4fa976824d0f26e7fee9268891a7"
+      },
+      {
+        "path": "flutter_assets.d",
+        "kind": "file",
+        "bytes": 11336,
+        "sha256": "5884c4a93b50ec2c51b1926fb82b2187bb6274119544c3521a45dae2bcc4f803"
+      },
+      {
+        "path": "gen_dart_plugin_registrant.stamp",
+        "kind": "file",
+        "bytes": 206,
+        "sha256": "8ffd078e83c4b92f2e9d6b7cc91bcaa4388f5e4a1ffb812b32e5c696ed869005"
+      },
+      {
+        "path": "gen_localizations.stamp",
+        "kind": "file",
+        "bytes": 26,
+        "sha256": "cc720a324af5727c74f00b41fb209465e50885fadb5f14831028fa4b418d3ccc"
+      },
+      {
+        "path": "install_code_assets.d",
+        "kind": "file",
+        "bytes": 1711,
+        "sha256": "f72cc7db279504367adbb5bf56927a3043b1e18aaa5b41ca3b5ebff488af0d90"
+      },
+      {
+        "path": "install_code_assets.stamp",
+        "kind": "file",
+        "bytes": 2192,
+        "sha256": "a4dbf3daf393e349b5073c5ff3fbfe5db530f7692cf47341162522f2b18a7dbe"
+      },
+      {
+        "path": "kernel_snapshot_program.d",
+        "kind": "file",
+        "bytes": 209809,
+        "sha256": "7a2b22586d32db56eaa6382496b5c739ad679f8997775ed232e348a768ff9a5a"
+      },
+      {
+        "path": "kernel_snapshot_program.stamp",
+        "kind": "file",
+        "bytes": 215418,
+        "sha256": "a00b1cceaaa48f97f2eeeedc63a9e8f743201937d27a50095e8cf5408d505f7b"
+      },
+      {
+        "path": "link_hooks.d",
+        "kind": "file",
+        "bytes": 130,
+        "sha256": "3c1d6f9f7f083f7059d51925d172abe15576552796e881c6981ee5f95f54930a"
+      },
+      {
+        "path": "link_hooks.stamp",
+        "kind": "file",
+        "bytes": 541,
+        "sha256": "9b7616ad55613600b0852f50e6a9a7d7034430340ce39a01631ec15134495024"
+      },
+      {
+        "path": "link_hooks_result.json",
+        "kind": "file",
+        "bytes": 4039,
+        "sha256": "dfcdc5dece9d21ea1e07409403ac1d1ccb8c79ea81615653d652fd8ac4a074d5"
+      },
+      {
+        "path": "native_assets.json",
+        "kind": "file",
+        "bytes": 500,
+        "sha256": "7e51ece0856b771d8f02af56f84fa3c42d266caddd319d191426bab00c9e84cc"
+      },
+      {
+        "path": "outputs.json",
+        "kind": "file",
+        "bytes": 4849,
+        "sha256": "b695ae63daed0759ea27f3d68c9f571129c04b61bba0a4b001407df2d95dd12f"
+      },
+      {
+        "path": "recorded_uses.json",
+        "kind": "file",
+        "bytes": 2,
+        "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      }
+    ],
+    "before_manifest": {
+      "files": 24,
+      "logical_bytes": 111392500,
+      "manifest_sha256": "3204a415556c6985cd72eef87c8615b22040328983f9d7b1a1202d4f2385d5cf"
+    }
+  },
+  {
+    "cache": ".dart_tool/flutter_build/106d2ba19ef65c92f2a3caae20c7627a",
+    "target": "integration_test/support/c1_restart_qa_main.dart",
+    "cached_target_md5": "560746764288b82fb5f0127c46057bf9",
+    "current_target_md5": "560746764288b82fb5f0127c46057bf9",
+    "canonical_binary": "build/c1-restart-qa-passed-bb00ccd/Runner.app",
+    "compiler_dill_sha256": "ca95083e02e7312717143249668725d710a34af85e7c5cc734b3d268747ab3ae",
+    "retained_kernel_sha256": "ca95083e02e7312717143249668725d710a34af85e7c5cc734b3d268747ab3ae",
+    "compiler_matches_retained_kernel": true,
+    "allocated_bytes": 128380928,
+    "logical_bytes": 128309391,
+    "file_count": 24,
+    "purpose": "Reproducible historical C1 compiler cache; compiled kernel retained in canonical qualified app; current C0/C1 profile caches kept.",
+    "deleted_file_manifest": [
+      {
+        "path": ".filecache",
+        "kind": "file",
+        "bytes": 471436,
+        "sha256": "230a8cac21bfc7fab8cb1cc03eadcd556c3509e7ee65e0f4a03c8bac988c1723"
+      },
+      {
+        "path": "App.framework/App",
+        "kind": "file",
+        "bytes": 49568,
+        "sha256": "16d28fc6b5abc1b6a535099c1c874c8537e17162ab657287df64d6b299962af4"
+      },
+      {
+        "path": "IssueLaunchRootViewControllerAccess.stamp",
+        "kind": "file",
+        "bytes": 190,
+        "sha256": "4128f690946a592b56e57df94eeb1240bb971ed6195f23ef0459a1065ca1e020"
+      },
+      {
+        "path": "app.dill",
+        "kind": "file",
+        "bytes": 127178800,
+        "sha256": "ca95083e02e7312717143249668725d710a34af85e7c5cc734b3d268747ab3ae"
+      },
+      {
+        "path": "build_hooks.d",
+        "kind": "file",
+        "bytes": 3553,
+        "sha256": "8b0df4def3780c78d3d1aac3af3de2679b2a836cdbd15448ca3eb88c36977396"
+      },
+      {
+        "path": "build_hooks.stamp",
+        "kind": "file",
+        "bytes": 3961,
+        "sha256": "019fdbc4284bbc8157e8e65b41562021fcfb7bdcbf69f0eb15d3ff86c5e1be21"
+      },
+      {
+        "path": "build_hooks_result.json",
+        "kind": "file",
+        "bytes": 8597,
+        "sha256": "ae4acb0b8f9a0b41381442ff8fe606cadf8c4751b8733ab94547f110476f4f0d"
+      },
+      {
+        "path": "debug_ios_bundle_flutter_assets.stamp",
+        "kind": "file",
+        "bytes": 13117,
+        "sha256": "42f30fbd659a5fca9fbb7c79f02aa807ab0dc98df2a48aee84bb66d01a79929c"
+      },
+      {
+        "path": "debug_ios_lldb_init.stamp",
+        "kind": "file",
+        "bytes": 289,
+        "sha256": "6f65d68eb4fec500f5b7d2f2801d87c85a48f65e6b12c22a61e026ccdf91dbd9"
+      },
+      {
+        "path": "debug_universal_framework.stamp",
+        "kind": "file",
+        "bytes": 236,
+        "sha256": "51f0a331842ca0fdcd6032a3a4e2d05fab722b6ccb0457e4ac7887ae14697fe1"
+      },
+      {
+        "path": "debug_unpack_ios.stamp",
+        "kind": "file",
+        "bytes": 267,
+        "sha256": "56ab440ab7c8dc077429dff96cbbf6c9c3db4fa976824d0f26e7fee9268891a7"
+      },
+      {
+        "path": "flutter_assets.d",
+        "kind": "file",
+        "bytes": 11336,
+        "sha256": "9db3dc2a958577224fda59abb241e5fb332b5870f32ff6167882c7bbb8c77cf9"
+      },
+      {
+        "path": "gen_dart_plugin_registrant.stamp",
+        "kind": "file",
+        "bytes": 206,
+        "sha256": "8ffd078e83c4b92f2e9d6b7cc91bcaa4388f5e4a1ffb812b32e5c696ed869005"
+      },
+      {
+        "path": "gen_localizations.stamp",
+        "kind": "file",
+        "bytes": 26,
+        "sha256": "cc720a324af5727c74f00b41fb209465e50885fadb5f14831028fa4b418d3ccc"
+      },
+      {
+        "path": "install_code_assets.d",
+        "kind": "file",
+        "bytes": 2251,
+        "sha256": "4f80a84ec1eb8576705d6143294859b4c4ea99dfb56aa1d9bb9de79806378f27"
+      },
+      {
+        "path": "install_code_assets.stamp",
+        "kind": "file",
+        "bytes": 2740,
+        "sha256": "c20f0284badfc9e20a642d3d66d396328f3f4351afba29f33eaae0347265e039"
+      },
+      {
+        "path": "kernel_snapshot_program.d",
+        "kind": "file",
+        "bytes": 271973,
+        "sha256": "8e1b8395f0311451131302b8f177c98807432d3b68cdced1b49f0abe31cecd77"
+      },
+      {
+        "path": "kernel_snapshot_program.stamp",
+        "kind": "file",
+        "bytes": 279046,
+        "sha256": "0367a55303129ecd9b7b7a71a813d4a954576ec9d09c32da93e1439dd2295f33"
+      },
+      {
+        "path": "link_hooks.d",
+        "kind": "file",
+        "bytes": 130,
+        "sha256": "53b1276ecd9e8af5f5f004e6e9e117f30370517471e4789318f45e74cc41eda7"
+      },
+      {
+        "path": "link_hooks.stamp",
+        "kind": "file",
+        "bytes": 541,
+        "sha256": "eee406a719edf1f6952c47766e575053a699efc021a27d761746c2c09bcf741f"
+      },
+      {
+        "path": "link_hooks_result.json",
+        "kind": "file",
+        "bytes": 5323,
+        "sha256": "f18bfc2f9a8bd29ea9f7270886aca80a50b44881aca27c4e707af4b140e450a3"
+      },
+      {
+        "path": "native_assets.json",
+        "kind": "file",
+        "bytes": 954,
+        "sha256": "08897c2a2a6346bbd754650dcc3e92480e7679de3783d4da5bdb2b4179253330"
+      },
+      {
+        "path": "outputs.json",
+        "kind": "file",
+        "bytes": 4849,
+        "sha256": "b695ae63daed0759ea27f3d68c9f571129c04b61bba0a4b001407df2d95dd12f"
+      },
+      {
+        "path": "recorded_uses.json",
+        "kind": "file",
+        "bytes": 2,
+        "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      }
+    ],
+    "before_manifest": {
+      "files": 24,
+      "logical_bytes": 128309391,
+      "manifest_sha256": "f9ab87b7dfe0f18b629124696b66452e7cf4e42c4a06e31f8067ffb6f56bd635"
+    }
+  }
+]

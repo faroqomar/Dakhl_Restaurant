@@ -1,0 +1,15 @@
+# Portable journal account state: isolated implementation contract
+
+Status: selected by the Lead for an isolated implementation under ADR0021's accepted4A semantics. Runtime activation, migration execution, actual cutover values/date and release remain pending independent evidence or their explicit approval.
+
+Madar owns balanced journal values, durable command coordination and the single local document-store protocol. Dakhl_Restaurant owns the portable account representation, restaurant mapping, historical provenance and command/state composition. The reviewed runtime is `d316fd6076375daa3f412889f73eaebfeeb5d4d4` (application0.1.0-dev.4/domain0.1.0-dev.5).
+
+Use a single version12 portable envelope containing the canonical schema11 account payload plus journals/correction lineage, durable receipts/outcomes, caller-owned account lineage identity and cutover state/provenance. Embedding the unchanged account payload reuses the existing validated legacy codec without weakening its version11 boundary. Existing readers reject version12; they must not silently read or discard its additional state.
+
+The new codec/state module remains isolated from AccountsRepository, bootstrap, file actions and current schema11 runtime. It must not read real accounts, change an installed data directory, or create journals/opening amounts for old history. Legacy enrollment takes explicit caller-owned identity and retains source-version provenance. Preparing an envelope with no accepted cutover must not imply active financial posting.
+
+Validate complete state before persistence: exact IQD/quantity representation and byte bounds, journal balances and accepted profiles, unique immutable history/operation identities, correction/reversal lineage, receipt outcomes and source provenance. Preserve all state on encode/decode, import/export, restart and restore. Reject corrupt, unsupported or incompatible payloads with stable errors; do not normalize away durable unknown state, invent missing identity, prune receipts or rebuild accounts automatically.
+
+Implement Madar's public DurableCommandStateCodec for the complete envelope and use the existing single LocalDocumentWorkspaceStore owner in isolated conformance tests. No second database or copied storage/idempotency algorithm belongs in the app. Codec failures must remain failures; restore/replacement fences and opaque account lineage are different identities. Tests must exercise accepted/replayed/changed-payload outcomes, uncertain acknowledgement, restart, malformed/future/oversized state, exact values, identity/history preservation and every supported legacy source version using current fixtures/source authorities.
+
+The source account, journals, receipts and cutover metadata are durable data, not a cache. Backup/source preservation and compatible rollback are required before eventual runtime migration. This implementation does not grant live migration permission. Existing C1 worker and mapping/public API reviewers retain their assigned files. No phase or checklist row closes from a standalone codec pass.

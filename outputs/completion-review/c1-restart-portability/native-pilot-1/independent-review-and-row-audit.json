@@ -1,0 +1,61 @@
+{
+  "recordedUtc": "2026-11-08T07:06:14.695638+00:00",
+  "reviewer": "/root/review_c1_restart_qa_source",
+  "verdict": "PASS",
+  "manifestSha256": "8b40af56b3173ed448bc9d5076623d5f61a63621cfa71365f53bc53962cdd935",
+  "verifiedBindings": 283,
+  "frozenSourceInputs": 103,
+  "reusedBindings": {
+    "priorNative": 195,
+    "layoutRepair": 15,
+    "mounted": 21
+  },
+  "acceptedRows": [
+    "C1-03",
+    "C1-04",
+    "C1-05",
+    "C1-06",
+    "C1-11"
+  ],
+  "processIds": [
+    1835,
+    4476,
+    16000
+  ],
+  "originRevision": 9,
+  "checkpointBytes": 2459,
+  "checkpointSha256": "a4f1f7cc98b258b103e05e6e307229df697759d944299e38d7f1bc30794227ae",
+  "canonicalAppTrees": [
+    {
+      "files": 87,
+      "bytes": 237092142
+    },
+    {
+      "files": 87,
+      "bytes": 172939248
+    }
+  ],
+  "findings": [],
+  "limits": [
+    "One iOS simulator/debug target; no platform matrix/physical/performance/release claim",
+    "Imported target proven by confirmed import, exact export bytes and backup after reopen; no separately recorded target-fence equality",
+    "Sole2KB synthetic provider export retained; supported delete unavailable",
+    "Guarded engine sources clean at this review; later test-only race work is separate"
+  ],
+  "storage": {
+    "freeKiB": [
+      97209868,
+      97174724
+    ],
+    "appGitKiB": 18430636,
+    "engineGitKiB": 44528,
+    "buildKiB": 1950572,
+    "dartToolKiB": 696896,
+    "evidenceKiB": 1300,
+    "temporaryGitStores": [
+      0,
+      0
+    ]
+  },
+  "reviewActions": "Read-only hash/evidence review; no test/build/native/memory sync"
+}

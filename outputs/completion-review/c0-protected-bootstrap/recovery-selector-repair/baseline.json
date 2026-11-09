@@ -1,0 +1,9 @@
+{
+  "recordedUtc": "2026-11-08T08:21:50.161447+00:00",
+  "failedNativeSourceSha256": "e75157253f1ad41fe86947478fa31924554715653be5f43bd40a87b829da92b1",
+  "changedFile": "integration_test/support/c0_protected_bootstrap_scenarios.dart",
+  "scope": "Scope2recoveryactions to AccountsSurface andwaitclosingdialogabsence beforesecondopen; noarbitraryfirst/last/hiddenactionmatching orproductchange",
+  "failedCampaign": "../native-ios-1/result.json",
+  "priorReviewedAppSourceUnchanged": "aeb58181d6eb771aec644f60cad42f42d0120cf3df9b0e5372a6793b84646437",
+  "auditCorrection": "Firsteditassertion usednonuniqueglobal3linecontext andstoppedbeforewriting; scopedcase1branchthenassertedsinglecontext. Failednative sourcecopyalreadyretained."
+}

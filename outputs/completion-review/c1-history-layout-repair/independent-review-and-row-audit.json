@@ -1,0 +1,44 @@
+{
+  "recordedUtc": "2026-11-08T05:24:28.281425+00:00",
+  "reviewer": "/root/review_c1_native_layout_and_harness",
+  "verdict": "PASS_layout_harness_and_representative_iOS_pilot",
+  "findings": [],
+  "verified": {
+    "repairBindings": 15,
+    "finalCampaignBindings": 195,
+    "nativeSourceInputs": 101,
+    "nativeTestsPassed": 1,
+    "workflowStagesPassed": 2
+  },
+  "native": "iPhone Duo iOS27.1 simulator only;89.456s command is not a benchmark",
+  "recommendedExactRowClosures": {
+    "C1-01": "Account-scoped routing/replacement and shell guards with connected widget/native navigation",
+    "C1-02": "Bound search/status/group/pagination, Unicode cases,120-product rendered paging, preserved controller and clamping",
+    "C1-08": "Connected valid reversal, original/date preservation, duplicate and native historical-negative no-write rejection",
+    "C1-09": "Connected archive/restore, selection exclusion and preserved IDs/sale snapshots",
+    "C1-10": "Business-date projection, low/out boundaries and future exclusion/labels",
+    "C1-12": "Real-store/UI backdating and reversal reconcile affected dates and reject negative prefixes",
+    "C1-13": "Prior listener/busy/snapshot/disposal fixes retain source continuity with independently reviewed reactivity/layout/harness changes",
+    "C1-17": "Shared signed/fractional parsing, required adjustment/loss reasons and invalid sign/range no-write rejection"
+  },
+  "remaining": {
+    "C1-03/05/06/11": "True app-process restart proof missing; owner reopen is same process",
+    "C1-04": "Also actual export/import preservation",
+    "C1-07": "Stock-form failed-write/input-retention through real persistence incomplete",
+    "C1-14": "Mounted-form delayed-save input/busy/disposal cases incomplete; model/stale/unknown coverage partial",
+    "C1-15": "Rendered later-page add/archive mutation and displayed120-event paged balances incomplete",
+    "C1-16": "Saved C3 sale/return navigation unconnected; fallback toast remains"
+  },
+  "limits": [
+    "No benchmark/native-platform-matrix gate added to unrelated rows",
+    "No Android/macOS/physical-device or phase/release acceptance"
+  ],
+  "storage": {
+    "freeKiB": [
+      98192188,
+      97537664
+    ],
+    "gitSizesUnchanged": true,
+    "temporaryGitStores": 0
+  }
+}

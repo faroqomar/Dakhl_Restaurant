@@ -1,0 +1,34 @@
+{
+  "recordedUtc": "2026-11-08T09:24:33.034640+00:00",
+  "testRunnerEnded": true,
+  "reason": "5namespace factory calls rejected noncanonical /var symlink before any fixture/source creation; only currentUID/recent/empty/nonsymlink directories removed nonrecursively",
+  "removed": [
+    {
+      "path": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-boundary-life-WkGvK8",
+      "birthUtc": "2026-11-08T09:21:19.268651+00:00",
+      "bytes": 64
+    },
+    {
+      "path": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-boundary-life-WMoxMG",
+      "birthUtc": "2026-11-08T09:21:19.463009+00:00",
+      "bytes": 64
+    },
+    {
+      "path": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-boundary-life-u3f4mo",
+      "birthUtc": "2026-11-08T09:21:19.321063+00:00",
+      "bytes": 64
+    },
+    {
+      "path": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-boundary-life-A4qauQ",
+      "birthUtc": "2026-11-08T09:21:19.302166+00:00",
+      "bytes": 64
+    },
+    {
+      "path": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-boundary-life-Ass5lW",
+      "birthUtc": "2026-11-08T09:21:19.313041+00:00",
+      "bytes": 64
+    }
+  ],
+  "recursiveDelete": false,
+  "retainedUnknown": true
+}

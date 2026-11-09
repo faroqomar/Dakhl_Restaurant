@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-08T08:14:01.262081+00:00",
+  "free_bytes": 95175450624,
+  "allocated_bytes": {
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant": 29839835136,
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/.git": 18872971264,
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/.git/objects": 4744908800,
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/.dart_tool": 808599552,
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/.dart_tool/flutter_build": 514834432,
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/build": 2041540608,
+    "/Users/eros/Dev/Eros_Projects/Madar_Engine": 1454223360,
+    "/Users/eros/Dev/Eros_Projects/Madar_Engine/.git": 46256128,
+    "/System/Volumes/VM": 17179869184
+  },
+  "git_tmp_objdirs": [],
+  "scope": "Only proven obsolete .dart_tool/flutter_build compiler hash directories and this receipt directory. All binaries/current C0/current C1 profile/nativeasset hooks/config preserved."
+}

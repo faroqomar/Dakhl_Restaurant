@@ -1,0 +1,62 @@
+{
+  "recordedAt": "2026-11-08T18:54:07.656529+00:00",
+  "fullSuite": {
+    "passed": 1397,
+    "failed": 0,
+    "log": "flutter-test-frozen-successor.log",
+    "durationSeconds": 110
+  },
+  "analysis": "final-successor-passed",
+  "engineBoundary": "passed",
+  "nativePilot": "macos-passed",
+  "benchmarkMeasurements": {
+    "casesPassed": 60,
+    "casesFailed": 0,
+    "samples": 1200,
+    "iterationsEach": 20,
+    "receipt": "benchmark-matrix-001.json",
+    "independentReview": "clear"
+  },
+  "iosNative": "passed",
+  "androidNative": "passed",
+  "benchmarkFixtures": {
+    "cases": 35,
+    "testsPassed": 39
+  },
+  "python": {
+    "scriptsPassed": 134,
+    "runnerPassed": 37
+  },
+  "state": "authorized-local-validation-complete; whole-completion-gated",
+  "format": {
+    "files": 310,
+    "changes": 0
+  },
+  "normalBuilds": {
+    "macos": "passed",
+    "iosSimulator": "passed",
+    "androidArm64": "passed"
+  },
+  "macosArtifactSeal": "deep-strict-passed-after-outer-adhoc-reseal",
+  "finalIndependentReview": "clear including generated-artifact addendum",
+  "storage": "reviewed; exact-duplicate-APK-removed",
+  "memory": {
+    "app": {
+      "sources": 382,
+      "pending": [],
+      "failed": {}
+    },
+    "engine": {
+      "sources": 128,
+      "pending": [],
+      "failed": {}
+    }
+  },
+  "remainingGates": [
+    "verified supplier opening contract/policy",
+    "mobile ICU availability/parity",
+    "visual/physical/native dialog and update/retention acceptance",
+    "unmeasured visible/native-dialog/mobile performance and budgets",
+    "remote CI, owner approval, distribution, merge/release"
+  ]
+}

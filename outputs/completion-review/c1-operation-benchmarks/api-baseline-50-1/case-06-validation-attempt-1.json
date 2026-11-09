@@ -1,0 +1,14 @@
+{
+  "recordedUtc": "2026-11-08T07:02:15.959391+00:00",
+  "operationId": "c1.stock.history",
+  "status": "passed",
+  "genericResultValidation": "passed",
+  "cleanupComplete": true,
+  "sourceFingerprint": "4f1fffb01be255874300beb3933dc58cd72157a644a77759f4e714a592cceefc",
+  "availableKiBBefore": 97201892,
+  "profileCacheUnchanged": true,
+  "sampleCount": 50,
+  "recomputedMedianMs": 0.6605000000000001,
+  "recomputedP95Ms": 0.751,
+  "fullSyntheticOutcomeAndFreshOwnerReopen": "accepted by reviewed producer before each sample"
+}

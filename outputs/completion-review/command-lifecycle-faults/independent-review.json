@@ -1,0 +1,35 @@
+{
+  "recordedUtc": "2026-11-08T04:29:15.908844+00:00",
+  "reviewer": "/root/review_f08_lifecycle_matrix",
+  "verdict": "PASS",
+  "scope": "Exact F08 acceptance for representative non-UI command harness",
+  "manifest": "review-inputs.json",
+  "verifiedBindings": 35,
+  "rootRecheckedBindings": 35,
+  "independentTestsPassed": 5,
+  "reusedEngineFilesAtConsumedCommit": 7,
+  "priorAtomicityCases": 13,
+  "findings": [],
+  "coverage": [
+    "Preparation and validation failure before write",
+    "Backup preparation and persistence checkpoints",
+    "Storage-owned activation and recovery SIGKILL",
+    "Composed invoice before-commit and tracked sale after-commit SIGKILL",
+    "Committed-write acknowledgement/readback outage and reopen",
+    "Overlapping identical and conflicting commands with actual CAS"
+  ],
+  "limits": [
+    "No arbitrary power-loss, live schema activation, native target or hosted CI proof",
+    "Historical engine140 result reused after source match; not rerun"
+  ],
+  "storage": {
+    "freeKiB": [
+      109797540,
+      109791152
+    ],
+    "appGitGrowthKiB": 440,
+    "growthProducer": "unknown concurrent",
+    "temporaryGitStores": 0,
+    "ownedStores": 0
+  }
+}

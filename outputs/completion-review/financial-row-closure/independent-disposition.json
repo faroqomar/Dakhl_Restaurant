@@ -1,0 +1,39 @@
+{
+  "recordedUtc": "2026-11-08T03:50:03.651921+00:00",
+  "reviewer": "/root/audit_exact_completion_row_closure",
+  "decision": "close_exact_rows_only",
+  "closedRows": {
+    "F-01": "Owner accepted the symbolic classifications and worked1A-P/R1/T1 mappings; exact mapper remains independently reviewed. No new financial scope or live values selected.",
+    "F-02": "Accepted dated2A decision selects explicit verified opening/cutover and preservation/compatibility/rollback obligations. Choosing live values/date is a separate gate.",
+    "F-05": "Reusable immutable balanced journal, explicit currency/scale, bounds/inverse and unbalanced rejection satisfy the exact pure contract; independent consumer mappings validate before writes.",
+    "F-06": "Reusable persisted identity/outcome, identical retry, changed-payload rejection, overlapping CAS, lost acknowledgement and restart contract independently verified at consumed revision. SIGKILL evidence is aftercommit only; correction-specific identities remain separateF04."
+  },
+  "remainingRows": {
+    "F-03": "Full legacy/pre-cutover edit/delete/date-shift/undo worked-example acceptance incomplete.",
+    "F-04": "General correction/undo/date-shift exported history and cross-cutover/reimport compatibility remain incomplete.",
+    "F-07": "Required correction/source-routing command paths remain incomplete; UI absence alone is not the reason.",
+    "F-08": "Preparation/validation/persist/activation/readback/ack and requested kill/restart matrix exceeds the currently named checkpoint coverage.",
+    "F-09": "Representative fixture acceptance is evidenced, but the explicit F05\u2013F08 non-UI fixture dependency includes incomplete F08. Do not add unwired UI or unspecified global-runtime requirements.",
+    "F-10": "Current whole-source guard fails on separate uncommitted packages/tool; historical d316 adoption does not satisfy current clean-source condition."
+  },
+  "sourceManifest": "verified-inputs.json",
+  "consumedEngineCommit": "d316fd6076375daa3f412889f73eaebfeeb5d4d4",
+  "engineFilesMatchedByReviewerAndRoot": 8,
+  "resolvedPackagesMatched": 4,
+  "verification": "Existing independent engine/consumer results reused after unchanged-source checks; no new suites/builds run",
+  "limits": [
+    "No wholephase DONE, UI approval, live opening/date, migration or release",
+    "F08 arbitrary crash/powerloss not proven",
+    "Separate collation source checkpoint remains open"
+  ],
+  "reviewStorage": {
+    "freeKiB": [
+      110200808,
+      110167332
+    ],
+    "appGitGrowthKiB": 404,
+    "growthProducer": "unknown concurrent",
+    "temporaryGitStores": 0,
+    "sourceOrTrackerEditsByReviewer": 0
+  }
+}

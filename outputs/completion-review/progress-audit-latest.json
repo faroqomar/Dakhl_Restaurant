@@ -1,0 +1,83 @@
+{
+  "recordedUtc": "2026-11-08T10:02:51.161426+00:00",
+  "total": 213,
+  "counts": {
+    "M": {
+      "total": 28,
+      "progressRecorded": 10,
+      "closed": 3,
+      "partialProgress": 7,
+      "noProgressRecorded": 18
+    },
+    "I": {
+      "total": 70,
+      "progressRecorded": 20,
+      "closed": 10,
+      "partialProgress": 10,
+      "noProgressRecorded": 50
+    },
+    "V": {
+      "total": 99,
+      "progressRecorded": 23,
+      "closed": 16,
+      "partialProgress": 7,
+      "noProgressRecorded": 76
+    },
+    "G": {
+      "total": 16,
+      "progressRecorded": 8,
+      "closed": 4,
+      "partialProgress": 4,
+      "noProgressRecorded": 8
+    }
+  },
+  "progressRecorded": 61,
+  "statusOpen": 152,
+  "formalChecked": 33,
+  "connectedC1CodeRows": 12,
+  "newTransferProgress": "C4-16 now has independently reviewed create-only foundation; UI and later correction acceptance still open",
+  "previousSnapshot": {
+    "recordedUtc": "2026-11-07T22:37:17.566350+00:00",
+    "progressRecorded": 47,
+    "statusOpen": 166
+  },
+  "limit": "61 rows have recorded progress: 33 closed and 28 partial; 152 without recorded progress; 180 formal obligations remain.",
+  "formallyRemaining": 180,
+  "partialProgress": 28,
+  "noProgressRecorded": 152,
+  "closedRows": [
+    "C0-01",
+    "C0-07",
+    "C0-09",
+    "C0-10",
+    "C0-11",
+    "C0-13",
+    "C1-01",
+    "C1-02",
+    "C1-03",
+    "C1-04",
+    "C1-05",
+    "C1-06",
+    "C1-07",
+    "C1-08",
+    "C1-09",
+    "C1-10",
+    "C1-11",
+    "C1-12",
+    "C1-13",
+    "C1-14",
+    "C1-15",
+    "C1-17",
+    "F-01",
+    "F-02",
+    "F-03",
+    "F-04",
+    "F-05",
+    "F-06",
+    "F-08",
+    "F-09",
+    "F-10",
+    "Q-11",
+    "Q-16"
+  ]
+}

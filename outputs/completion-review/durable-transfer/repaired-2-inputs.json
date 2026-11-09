@@ -1,0 +1,131 @@
+{
+  "recordedUtc": "2026-11-08T03:28:19.908400+00:00",
+  "scope": "Focused four-finding repair recheck; no UI/activation or source-pin bypass",
+  "verification": {
+    "focusedTests": 38,
+    "accountingTests": 233,
+    "successorFixtureTests": 6,
+    "analysis": "clean",
+    "boundaries": "pass"
+  },
+  "historicalOracleRestoredSha256": "31d061851fa31e0de4345d5c5003d8fb57758b58561e0d7713524e9d34182420",
+  "files": [
+    {
+      "path": "lib/accounting/restaurant_journal_transfer_commands.dart",
+      "bytes": 20035,
+      "sha256": "7d0b848f2c825be8e22ffa788bb609674491da2d295a013e04f7224c11095720"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_commands_test.dart",
+      "bytes": 20821,
+      "sha256": "e7fd426574f909d41f94421f06dca98bc30228aeb79a4560ab69fc745ceb410d"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_conformance_test.dart",
+      "bytes": 40316,
+      "sha256": "97a7f15bcf8edc24aa247bca29ec87457890bfd2afc40eeb14f72b271dfb9a89"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_transfer_safety_test.dart",
+      "bytes": 25684,
+      "sha256": "f32e517626dd51c05288acf2c8de0e0c58853db84991a8cb9f39134be39db70b"
+    },
+    {
+      "path": "docs/reference/durable-transfer-commands.md",
+      "bytes": 9978,
+      "sha256": "e6988139e2d1ab8147e3675e26dab49c58bcebee5fe67c88255bc342a9248584"
+    },
+    {
+      "path": "docs/phases/completion-durable-transfer-contract.md",
+      "bytes": 3580,
+      "sha256": "23d289bdea1553086959b162c11d9178346ce332fc67653d5e8f4435fb247690"
+    },
+    {
+      "path": "docs/decisions/0021-completion-financial-policy.md",
+      "bytes": 4439,
+      "sha256": "5b5dc5a88edfcd6c6d3b75440658c5b57e66a94bda52c5d32e005f45c45ba3b1"
+    },
+    {
+      "path": "docs/log/2026-11-08-durable-transfer-commands.md",
+      "bytes": 8002,
+      "sha256": "f9c57981f92ec673808ec0870fd3cc9ad2904b47f22758aaa649d9457b0a71f3"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer/oracle.json",
+      "bytes": 1111,
+      "sha256": "31d061851fa31e0de4345d5c5003d8fb57758b58561e0d7713524e9d34182420"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer/analysis.log",
+      "bytes": 97,
+      "sha256": "885837ee7f9cb3f172c6172fce3e0b9c3c0e470ebdf7d83261ffc42424625d5b"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer/test.log",
+      "bytes": 9000,
+      "sha256": "1789797234640027ac354c83e3ce1b3029ff283fd7ca7860776008f05d03e039"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer/timing.json",
+      "bytes": 1078,
+      "sha256": "ae72771d2ac014a89f5b390964dc5fef976fcdd73ae81ced8f7fcd5731436bc7"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer/storage-closeout.json",
+      "bytes": 359,
+      "sha256": "cc854f3394d5fa9a0187087e28bf7691d4704d7f7d95855c7012bc9a0dbef9d8"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer/oracle.cjs",
+      "bytes": 3082,
+      "sha256": "df5b6575bdd375b53b5e5c4d786cf65a2d287a3ea9a6bdff40999c9b6deadfe1"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer/oracle-repaired-1.json",
+      "bytes": 20311,
+      "sha256": "785b6c271ddbb2db68a4c093a04f0a59c806406180816f8427ed68a112f86773"
+    },
+    {
+      "path": "outputs/completion-review/durable-transfer/historical-oracle-generator.cjs",
+      "bytes": 4236,
+      "sha256": "bd1f4e151cd5972ff2a1e01457ca640fed7d9d31596bfb4cf3cdcd04c2332115"
+    },
+    {
+      "path": "electron-reference/app/ui/model.js",
+      "bytes": 52984,
+      "sha256": "65a9b33cdca42e328d710f1afaa1b0fb42a7778284bd2f07f7c7e77d3d9f07f4"
+    },
+    {
+      "path": "docs/log/2026-11-08-durable-transfer-review-repairs.md",
+      "bytes": 3002,
+      "sha256": "a67f6b174bfef18c3573a32d6b5f2278881e3f5a925e43b0c6b94c15328c4451"
+    },
+    {
+      "path": "../Madar_Engine/packages/application/lib/src/durable_command_coordinator.dart",
+      "bytes": 25004,
+      "sha256": "78070f4e3727a02deeddd550b5f97071c0703ecca73690be13ddbd1a173bc4d8"
+    },
+    {
+      "path": "../Madar_Engine/packages/data/lib/src/local_document_workspace_store.dart",
+      "bytes": 55410,
+      "sha256": "f4ca6b5f0691938144670cc789cacf7334be507ae826ecce6c35ddb1c4e6802c"
+    },
+    {
+      "path": "../Madar_Engine/packages/domain/lib/src/commerce_calculations.dart",
+      "bytes": 10235,
+      "sha256": "bc5d35670aa29610b7599fdca29bea51b26c27c5c02f136eb38683b9121383d0"
+    },
+    {
+      "path": "../Madar_Engine/packages/domain/lib/src/stock_movements.dart",
+      "bytes": 6440,
+      "sha256": "c980479a527ea48938bffd03879ab12f22aaff01d3394448231d2c7053a7a0cc"
+    },
+    {
+      "path": "../Madar_Engine/packages/domain/lib/src/journal.dart",
+      "bytes": 4888,
+      "sha256": "7f27b72ad5d63d46ab2635fa894ec8f1c3db2e785cbe5a0b916d84630be86600"
+    }
+  ],
+  "successorOf": "repaired-1-inputs.json",
+  "delta": "Formatter-only change in initially unformatted unit test; expected formatter hash independently supplied."
+}

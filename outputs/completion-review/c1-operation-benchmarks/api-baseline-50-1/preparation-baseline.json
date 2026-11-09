@@ -1,0 +1,22 @@
+{
+  "recordedUtc": "2026-11-08T06:36:59.383975+00:00",
+  "scope": "Source-only preparation; no source business/producer/registry/Git changes",
+  "storage": {
+    "freeKiB": 101447868,
+    "appProjectKiB": 28458088,
+    "engineProjectKiB": 1419548,
+    "appGitKiB": 18430636,
+    "engineGitKiB": 44528,
+    "buildKiB": 1593188,
+    "dartToolKiB": 513808
+  },
+  "protectedCaseSourceHashes": {
+    "lib/platform/c1_performance_main.dart": "286bb7be151df100bb2a6c9e0d6d8a7c7f0d284c985ddfd7cb9e5c073983eca6",
+    "lib/platform/c1_performance_scenarios.dart": "78bad859d98c07dd6fe4ab973e0eef8a55b31b1d068acdb4ea58d706e51f17b2",
+    "tool/dev_dashboard/run_benchmarks.py": "dade20315b5bd2f3f4bf95fe2d3aac15fba44301357dc48518c31c17ed2c9116",
+    "tool/dev_dashboard/operations.json": "7712d232c9cb922d714fa319a6fc04b6b569f5852d33c0594bc934ca0fe171a6",
+    "engine-dependency.json": "8221825716c72a5b1221a1cbfc8f70f27bb3db2ede59648864194ea798544f5c",
+    "pubspec.lock": "63f2edcb3a3f0e521db5f3a71b019410b0a8e908c60e7ccf768678211acd4382",
+    "dev-tooling-dependency.json": "24065e391fc13ccf10eaf0f131deb9024641e29b68e7b75dfad07447e0a91299"
+  }
+}

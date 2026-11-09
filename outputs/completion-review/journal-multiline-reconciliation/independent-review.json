@@ -1,0 +1,31 @@
+{
+  "recordedUtc": "2026-11-08T02:39:38.049497+00:00",
+  "reviewer": "/root/review_multiline_reconciliation",
+  "status": "pass_bounded_F09_history",
+  "inputManifest": "outputs/completion-review/journal-multiline-reconciliation/verified-inputs.json",
+  "verifiedBindings": 25,
+  "rootRecheckedBindings": 25,
+  "verification": {
+    "targetedTests": 1,
+    "analysis": "clean",
+    "commands": 10,
+    "journals": 12,
+    "receipts": 10,
+    "replayedAfterReopen": 10,
+    "oracle": "Fresh Electron44.5.1 frozen source reexecution; writeFileSync intercepted in memory; oracle and both Dart snapshots matched",
+    "engineSource": "Five consumed implementation files byte-match d316fd6076375daa3f412889f73eaebfeeb5d4d4; four resolved package paths agree"
+  },
+  "limits": [
+    "whole-source guard fails on separate collation candidate",
+    "no global F09 closure, schema12 activation, arbitrary crash or native acceptance"
+  ],
+  "storage": {
+    "reviewFreeKiB": [
+      106922880,
+      106925412
+    ],
+    "temporaryGitStores": 0,
+    "temporarySyntheticStores": 0,
+    "sourceEdits": 0
+  }
+}

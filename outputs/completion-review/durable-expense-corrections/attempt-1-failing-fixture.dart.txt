@@ -1,0 +1,339 @@
+import 'dart:convert';
+
+import 'package:flutter_test/flutter_test.dart';
+import 'package:madar_application/madar_application.dart';
+import 'package:madar_domain/madar_domain.dart';
+import 'package:dakhl_restaurant/accounting/restaurant_journal_expense_correction_commands.dart';
+import 'package:dakhl_restaurant/accounting/restaurant_journal_expense_history.dart';
+import 'package:dakhl_restaurant/accounting/restaurant_journal_mapper.dart';
+import 'package:dakhl_restaurant/accounting/restaurant_journal_spending_commands.dart';
+import 'package:dakhl_restaurant/accounts/legacy_account_codec.dart';
+import 'package:dakhl_restaurant/accounts/portable_journal_state.dart';
+
+const fixtureFence = StorageFence(storeId: 'fixture', generation: 'generation');
+const fixtureStamp = '2026-01-10T12:00:00.000Z';
+DateOnly expenseDate(String day) =>
+    DateOnly.parse('2026-01-$day', minimumYear: 1000, maximumYear: 9999);
+PortableJournalState expenseSeed({RestaurantJournalMapper? mapper}) {
+  mapper ??= RestaurantJournalMapper();
+  final account = const LegacyAccountCodec().empty().toJson();
+  account['days'] = {
+    '2026-01-10': {
+      'expenses': <Object?>[],
+      'chickenUsed': 2,
+      'chickenLeft': 3,
+      'balance': 550,
+      'totalOverride': 70,
+      'remaining': {
+        'amount': 300,
+        'dailySpent': 50,
+        'transferred': 0,
+        'salesTotal': 0,
+      },
+    },
+  };
+  final opening = mapper.mapVerifiedCutoverOpening(
+    journalId: 'opening',
+    effectiveDate: expenseDate('01'),
+    verifiedPhysicalRegisterCash: BigInt.from(1000),
+    verifiedCashboxBalance: BigInt.zero,
+    verifiedSupplierDebts: const {},
+  );
+  return PortableJournalState(
+    accountLineage: 'lineage',
+    account: const LegacyAccountCodec().decodeJson(account),
+    sourceProvenance: const PortableJournalSourceProvenance(
+      sourceVersion: 11,
+      enrolledAt: '2026-01-01T00:00:00.000Z',
+      migrated: false,
+    ),
+    cutoverState: PortableJournalCutoverState.established(
+      cutoverDate: expenseDate('01'),
+      openingJournalId: 'opening',
+    ),
+    journals: [
+      PortableJournalEntry(
+        journal: opening.journal,
+        sourceType: opening.sourceType.name,
+        sourceRecordId: 'cutover',
+        recordedAt: '2026-01-01T00:00:00.000Z',
+      ),
+    ],
+    receipts: const [],
+  );
+}
+
+CreateOperatingExpenseCommand createExpense({
+  StorageFence? fence = fixtureFence,
+  JournalPolicy? policy,
+}) => CreateOperatingExpenseCommand(
+  operationId: 'create',
+  accountLineage: 'lineage',
+  expectedFence: fence,
+  expenseId: 'expense',
+  journalId: 'original',
+  date: expenseDate('10'),
+  categoryId: 'samoon',
+  amount: BigInt.from(100),
+  fundingSource: FundingSource.shared,
+  dailyAmount: BigInt.from(60),
+  cashAmount: BigInt.from(40),
+  note: ' original ',
+  recordedAt: fixtureStamp,
+  policy: policy,
+);
+EditOperatingExpenseCommand editExpense({
+  StorageFence? fence = fixtureFence,
+  String operation = 'edit',
+  String target = 'original',
+  String inverse = 'inverse',
+  String replacement = 'replacement',
+  String day = '11',
+  int amount = 180,
+  String category = 'samoon',
+  String note = ' edited ',
+  FundingSource fundingSource = FundingSource.cash,
+  int? dailyAmount,
+  int? cashAmount,
+  RestaurantAccountProfile profile = const RestaurantAccountProfile(),
+  JournalPolicy? policy,
+}) => EditOperatingExpenseCommand(
+  operationId: operation,
+  accountLineage: 'lineage',
+  expectedFence: fence,
+  expenseId: 'expense',
+  expectedActiveJournalId: target,
+  inverseJournalId: inverse,
+  replacementJournalId: replacement,
+  date: expenseDate(day),
+  categoryId: category,
+  amount: BigInt.from(amount),
+  fundingSource: fundingSource,
+  dailyAmount: dailyAmount == null ? null : BigInt.from(dailyAmount),
+  cashAmount: cashAmount == null ? null : BigInt.from(cashAmount),
+  note: note,
+  reason: ' correct entry ',
+  recordedAt: '2026-01-12T12:00:00.000Z',
+  profile: profile,
+  policy: policy,
+);
+DeleteOperatingExpenseCommand deleteExpense({
+  StorageFence? fence = fixtureFence,
+  String target = 'replacement',
+  RestaurantAccountProfile profile = const RestaurantAccountProfile(),
+  JournalPolicy? policy,
+}) => DeleteOperatingExpenseCommand(
+  operationId: 'delete',
+  accountLineage: 'lineage',
+  expectedFence: fence,
+  expenseId: 'expense',
+  expectedActiveJournalId: target,
+  inverseJournalId: 'delete-inverse',
+  reason: 'remove entry',
+  recordedAt: '2026-01-13T12:00:00.000Z',
+  profile: profile,
+  policy: policy,
+);
+PortableJournalState applyCreate(
+  PortableJournalState state, {
+  RestaurantJournalMapper? mapper,
+}) {
+  final cmd = createExpense();
+  final evaluation =
+      RestaurantJournalSpendingCommandCoordinator.evaluateExpense(
+        command: cmd,
+        state: state,
+        cutoverDate: expenseDate('01'),
+        mapper: mapper ?? RestaurantJournalMapper(),
+      );
+  expect(evaluation.rejected, isFalse);
+  return withExpenseReceipt(
+    evaluation.candidateState!,
+    cmd.identity,
+    evaluation.outcomePayload!,
+    1,
+  );
+}
+
+PortableJournalState withExpenseReceipt(
+  PortableJournalState state,
+  DurableCommandIdentity identity,
+  String payload,
+  int sequence,
+) => state.copyWith(
+  receipts: [
+    ...state.receipts,
+    DurableCommandReceipt(
+      identity: identity,
+      status: DurableCommandStatus.committed,
+      outcomePayload: payload,
+      committedRevision: sequence,
+      sequence: sequence,
+      fence: fixtureFence,
+    ),
+  ],
+);
+
+void main() {
+  test('edit moves the projection and preserves original journal and source observations', () {
+    final state = applyCreate(expenseSeed());
+    final command = editExpense();
+    final result = RestaurantJournalExpenseCorrectionCoordinator.evaluate(
+      command: command,
+      state: state,
+      mapper: RestaurantJournalMapper(),
+    );
+    expect(result.rejected, isFalse);
+    final candidate = withExpenseReceipt(
+      result.candidateState!,
+      command.identity,
+      result.outcomePayload!,
+      2,
+    );
+    final days = candidate.account.toJson()['days'] as Map;
+    final oldDay = days['2026-01-10'] as Map;
+    expect(oldDay['expenses'], isEmpty);
+    expect(oldDay['balance'], 550);
+    expect(oldDay['totalOverride'], 70);
+    expect(
+      oldDay['remaining'],
+      (state.account.toJson()['days'] as Map)['2026-01-10']['remaining'],
+    );
+    final source =
+        ((days['2026-01-11'] as Map)['expenses'] as List).single as Map;
+    expect(source, {
+      'id': 'expense',
+      'categoryId': 'samoon',
+      'amount': 180,
+      'note': 'edited',
+      'funding': {'source': 'cash', 'dailyAmount': 0, 'cashAmount': 180},
+      'createdAt': fixtureStamp,
+    });
+    expect(
+      candidate.journals.take(2).map((j) => j.toJson()).toList(),
+      state.journals.map((j) => j.toJson()).toList(),
+    );
+    expect(candidate.journals[2].journal.reversesId, 'original');
+    expect(candidate.journals[2].journal.effectiveDate, expenseDate('10'));
+    expect(candidate.journals[3].journal.effectiveDate, expenseDate('11'));
+    expect(
+      RestaurantJournalExpenseHistory.validate(
+        state: candidate,
+        expenseId: 'expense',
+        mapper: RestaurantJournalMapper(),
+        expectedActiveJournalId: 'replacement',
+      ),
+      isTrue,
+    );
+    final deletion = deleteExpense();
+    final removed = RestaurantJournalExpenseCorrectionCoordinator.evaluate(
+      command: deletion,
+      state: candidate,
+      mapper: RestaurantJournalMapper(),
+    );
+    expect(removed.rejected, isFalse);
+    final deleted = withExpenseReceipt(
+      removed.candidateState!,
+      deletion.identity,
+      removed.outcomePayload!,
+      3,
+    );
+    expect(
+      RestaurantJournalExpenseHistory.validate(
+        state: deleted,
+        expenseId: 'expense',
+        mapper: RestaurantJournalMapper(),
+        initialIdentity: createExpense().identity,
+      ),
+      isTrue,
+    );
+    expect(deleted.receipts.take(2).toList(), candidate.receipts.toList());
+  });
+
+  test(
+    'history rejects changed source, receipt intent, missing edge and fork',
+    () {
+      final state = applyCreate(expenseSeed());
+      final command = editExpense();
+      final result = RestaurantJournalExpenseCorrectionCoordinator.evaluate(
+        command: command,
+        state: state,
+        mapper: RestaurantJournalMapper(),
+      );
+      final good = withExpenseReceipt(
+        result.candidateState!,
+        command.identity,
+        result.outcomePayload!,
+        2,
+      );
+      bool valid(PortableJournalState s) =>
+          RestaurantJournalExpenseHistory.validate(
+            state: s,
+            expenseId: 'expense',
+            mapper: RestaurantJournalMapper(),
+          );
+      expect(valid(good), isTrue);
+      expect(valid(good.copyWith(receipts: good.receipts.skip(1))), isFalse);
+      expect(
+        valid(
+          good.copyWith(
+            journals: good.journals.where((j) => j.journal.id != 'inverse'),
+          ),
+        ),
+        isFalse,
+      );
+      final raw =
+          jsonDecode(jsonEncode(good.account.toJson())) as Map<String, Object?>;
+      ((((raw['days'] as Map)['2026-01-11'] as Map)['expenses'] as List).single
+              as Map)['note'] =
+          'forged';
+      expect(
+        valid(
+          good.copyWith(account: const LegacyAccountCodec().decodeJson(raw)),
+        ),
+        isFalse,
+      );
+      expect(
+        valid(
+          good.copyWith(
+            journals: [
+              ...good.journals,
+              PortableJournalEntry(
+                journal: good.journals[2].journal.reversed(
+                  id: 'inverse-of-inverse',
+                  effectiveDate: expenseDate('10'),
+                  reason: 'forged',
+                ),
+                sourceType: RestaurantJournalSourceType.voidReversal.name,
+                sourceRecordId: 'expense',
+                recordedAt: fixtureStamp,
+              ),
+            ],
+          ),
+        ),
+        isFalse,
+      );
+    },
+  );
+  test(
+    'canonical identity binds raw reason/note, complete profile and authority',
+    () {
+      expect(
+        editExpense().identity,
+        isNot(editExpense(note: 'edited').identity),
+      );
+      expect(
+        editExpense().identity,
+        isNot(
+          editExpense(
+            profile: const RestaurantAccountProfile(
+              cashboxAccountId: 'cash:custom',
+            ),
+          ).identity,
+        ),
+      );
+      expect(editExpense().identity, isNot(editExpense(fence: null).identity));
+      expect(() => editExpense(inverse: 'original'), throwsFormatException);
+    },
+  );
+}

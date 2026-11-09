@@ -1,0 +1,26 @@
+{
+  "operationId": "c1.stock.history",
+  "stageId": "stock-history-50",
+  "startedUtc": "2026-11-08T07:01:59.914124+00:00",
+  "endedUtc": "2026-11-08T07:02:15.958414+00:00",
+  "elapsedWallSeconds": 16.044197917100973,
+  "argv": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "tool/dev_dashboard/run_benchmarks.py",
+    "--engine-tools-root",
+    "/Users/eros/Dev/Eros_Projects/Madar_Engine",
+    "--case",
+    "c1.stock.history",
+    "--iterations",
+    "50",
+    "--output",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-06-stock-history-50-attempt-1.json"
+  ],
+  "exitCode": 0,
+  "stdoutBytes": 4418,
+  "stderrBytes": 0,
+  "stdoutSha256": "d87e4ff075cf3f5e5c0e4486bd34ae4b625b1cb335ea3603f5f53afdb54a1644",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdoutSemanticallyEqualsCanonicalResult": true,
+  "duplicateStdoutRemoved": true
+}

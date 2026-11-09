@@ -1,0 +1,18 @@
+{
+  "recordedUtc": "2026-11-08T06:25:14.204235+00:00",
+  "scope": "Preserved5-test first close repair before separate terminal lifecycle fix",
+  "files": [
+    {
+      "originalPath": "integration_test/support/c1_restart_fixture.dart",
+      "snapshotPath": "outputs/completion-review/c1-restart-portability/close-repair/historical-before-terminal-guard/c1_restart_fixture.dart.txt",
+      "bytes": 23581,
+      "sha256": "4b6e72f3d0d07ba3a6c3cbf1a15f24ea19239b9d324d65f4d39f9a409af4fb9d"
+    },
+    {
+      "originalPath": "test/platform/c1_restart_fixture_test.dart",
+      "snapshotPath": "outputs/completion-review/c1-restart-portability/close-repair/historical-before-terminal-guard/c1_restart_fixture_test.dart.txt",
+      "bytes": 5498,
+      "sha256": "a635c0c2dd34d102bd84349e44a21e32df0a5894f5135e4b52809049eaf2089e"
+    }
+  ]
+}

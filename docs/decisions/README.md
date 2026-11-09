@@ -27,3 +27,6 @@ Use the [decision template](../templates/decision.md) and a sequential number. A
 - [0012 — Consolidate Flutter phases from 19 to 12](0012-merge-flutter-rebuild-phases.md) — replaces the phase breakdown in 0011 while preserving its scope.
 - [0018 — Parallel Madar engine/app development boundary](0018-madar-engine-boundary.md).
 - [0019 — Engine packages, documentation and safe diagnostics](0019-engine-package-documentation-diagnostics.md).
+
+- [0020 — Self-hosted Penpot](0020-self-hosted-penpot.md): owner-selected local design destination/browser path, original cloud work preserved; setup/native design evidence separate.
+- [0021 — Completion financial policy](0021-completion-financial-policy.md): owner accepted the reviewed conceptual posting/history/correction/portability package; implementation, actual cutover and delivery gates remain separate.

@@ -1,0 +1,55 @@
+{
+  "recordedUtc": "2026-11-08T04:42:10.243821+00:00",
+  "previousPin": {
+    "engine": "Madar_Engine",
+    "status": "Local independently reviewed paid-spending and durable-command revision; source adoption verified separately, full Completion UI/posting/native/release evidence pending.",
+    "git_commit": "d316fd6076375daa3f412889f73eaebfeeb5d4d4",
+    "packages": {
+      "madar_application": {
+        "path": "../Madar_Engine/packages/application",
+        "version": "0.1.0-dev.4"
+      },
+      "madar_flutter_adapters": {
+        "path": "../Madar_Engine/packages/flutter_adapters",
+        "version": "0.1.0-dev.1"
+      },
+      "madar_data": {
+        "path": "../Madar_Engine/packages/data",
+        "version": "0.1.0-dev.2"
+      },
+      "madar_domain": {
+        "path": "../Madar_Engine/packages/domain",
+        "version": "0.1.0-dev.5"
+      }
+    }
+  },
+  "previousPinBytesHashVerified": true,
+  "newPin": {
+    "engine": "Madar_Engine",
+    "status": "Local independently reviewed durable-command, paid-spending and optional collation-port source revision. Optional ICU adapter remains unconsumed; operational UI/posting/native/mobile/release evidence is separate.",
+    "git_commit": "783e29cf8ae5c829cbb09bdb5b7a547aa92bc8d6",
+    "packages": {
+      "madar_application": {
+        "path": "../Madar_Engine/packages/application",
+        "version": "0.1.0-dev.5"
+      },
+      "madar_flutter_adapters": {
+        "path": "../Madar_Engine/packages/flutter_adapters",
+        "version": "0.1.0-dev.1"
+      },
+      "madar_data": {
+        "path": "../Madar_Engine/packages/data",
+        "version": "0.1.0-dev.2"
+      },
+      "madar_domain": {
+        "path": "../Madar_Engine/packages/domain",
+        "version": "0.1.0-dev.5"
+      }
+    }
+  },
+  "lockChange": "madar_application path version only: dev.4 to dev.5",
+  "pubspecUnchanged": true,
+  "optionalIcuDependencyAdded": false,
+  "sourceCheckpointReview": "../Madar_Engine/outputs/completion-review/collation-source-checkpoint/independent-review-planned-3.json",
+  "audit": "Initial stanza end search matched four-space child indentation after pin write, before lock write. Corrected exact two-space top-level package match; no pub/test/process ran between attempts."
+}

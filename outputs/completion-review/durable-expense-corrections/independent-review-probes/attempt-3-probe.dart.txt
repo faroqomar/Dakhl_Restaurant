@@ -1,0 +1,61 @@
+import 'dart:io';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:madar_application/madar_application.dart';
+import 'package:madar_data/madar_data.dart';
+import 'package:dakhl_restaurant/accounting/restaurant_journal_expense_correction_commands.dart';
+import 'package:dakhl_restaurant/accounting/restaurant_journal_expense_history.dart';
+import 'package:dakhl_restaurant/accounting/restaurant_journal_mapper.dart';
+import 'package:dakhl_restaurant/accounting/restaurant_journal_spending_commands.dart';
+import 'package:dakhl_restaurant/accounts/portable_journal_codec.dart';
+import 'restaurant_journal_expense_correction_commands_test.dart' as f;
+
+void main() {
+  const codec = PortableJournalCodec();
+  test('review: historical expense receipt revisions reset under a new fence', () {
+    final root = f.applyCreate(f.expenseSeed());
+    const newFence = StorageFence(storeId: 'fixture', generation: 'new-generation');
+    final command = f.editExpense(fence: newFence);
+    final result = RestaurantJournalExpenseCorrectionCoordinator.evaluate(
+      command: command, state: root, mapper: RestaurantJournalMapper());
+    expect(result.rejected, isFalse);
+    final candidate = result.candidateState!.copyWith(receipts: [
+      ...root.receipts,
+      DurableCommandReceipt(identity: command.identity,
+        status: DurableCommandStatus.committed, outcomePayload: result.outcomePayload!,
+        committedRevision: 1, sequence: 2, fence: newFence),
+    ]);
+    expect(codec.decodeState(codec.encodeState(candidate)).receipts.length, 2);
+    expect(RestaurantJournalExpenseHistory.validate(state: candidate,
+      expenseId: 'expense', mapper: RestaurantJournalMapper()), isTrue);
+  });
+  for (final deleting in [false, true]) {
+    test('review: fresh ${deleting ? 'delete' : 'edit'} succeeds after complete-account restore into a new store', () async {
+      final temp = await Directory.systemTemp.createTemp('dakhl-expense-review-');
+      final opened = await PowerSyncLocalDocumentWorkspaceStore.open(directoryPath: temp.path);
+      var store = (opened as CapabilitySuccess<PowerSyncLocalDocumentWorkspaceStore>).value;
+      try {
+        final seed = await store.writeDocument(codec.encodeState(f.expenseSeed()), writeToken: 'review-seed');
+        final fence = (seed as CapabilitySuccess<DocumentSnapshot>).value.fence;
+        expect(await RestaurantJournalSpendingCommandCoordinator(store: store)
+          .executeExpense(f.createExpense(fence: fence)),
+          isA<DurableCommandSuccess<RestaurantJournalSpendingOutcome>>());
+        final before = (await store.readDocument() as CapabilitySuccess<DocumentSnapshot?>).value!;
+        await store.close();
+        final restored = await PowerSyncLocalDocumentWorkspaceStore.open(directoryPath: '${temp.path}/restored');
+        store = (restored as CapabilitySuccess<PowerSyncLocalDocumentWorkspaceStore>).value;
+        final replaced = await store.writeDocument(before.payload, writeToken: 'review-restore');
+        final replacement = (replaced as CapabilitySuccess<DocumentSnapshot>).value;
+        expect(replacement.fence, isNot(fence));
+        expect(replacement.revision, 1);
+        final command = deleting ? f.deleteExpense(fence: replacement.fence, target: 'original')
+          : f.editExpense(fence: replacement.fence);
+        final result = await RestaurantJournalExpenseCorrectionCoordinator(store: store).execute(command);
+        expect(result, isA<DurableCommandSuccess<RestaurantJournalExpenseCorrectionOutcome>>(),
+          reason: result is DurableCommandFailure<RestaurantJournalExpenseCorrectionOutcome> ? 'actual code: ${result.code}' : '$result');
+      } finally {
+        await store.close();
+        if (temp.existsSync()) temp.deleteSync(recursive: true);
+      }
+    });
+  }
+}

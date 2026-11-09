@@ -1,0 +1,28 @@
+{
+  "recordedUtc": "2026-11-08T05:44:26.791940+00:00",
+  "status": "local_pass_independent_review_pending",
+  "row": "C1-15",
+  "reviewManifest": "outputs/completion-review/c1-rendered-pagination/review-inputs.json",
+  "testsPassed": 4,
+  "source": {
+    "path": "test/catalog/c1_pagination_mutation_workflow_test.dart",
+    "bytes": 15054,
+    "sha256": "9fef17116682598d3a8c8e5c40dc80bd32b01caedfca133e3bcaea2f963a4bab"
+  },
+  "verification": [
+    "Actual product create/archive/status/group/search/pager gestures",
+    "101 to102products, archive last two,3 to2display clamp; exhaustive remaining product identities",
+    "120-event mixed-sign ledger rendered on all three pages at Nov1/7/8 with independent31/51/71 source checkpoints",
+    "Every displayed running-balance cell, source note order and future badge checked;120unique rows per date case"
+  ],
+  "productionChanged": false,
+  "engineImplementationAPI": "N/A; public reviewed contracts reused",
+  "window": "released",
+  "storage": "storage-closeout.json",
+  "memory": "memory-status.json",
+  "finalHashCheck": {
+    "recordedUtc": "2026-11-08T05:46:38.685572+00:00",
+    "matched": 34
+  },
+  "finalStorage": "final-storage-receipt.json"
+}

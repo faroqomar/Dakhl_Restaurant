@@ -1,0 +1,26 @@
+{
+  "operationId": "c1.catalog.lookup",
+  "stageId": "catalog-lookup-50",
+  "startedUtc": "2026-11-08T07:02:16.193886+00:00",
+  "endedUtc": "2026-11-08T07:02:34.333430+00:00",
+  "elapsedWallSeconds": 18.13945812510792,
+  "argv": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "tool/dev_dashboard/run_benchmarks.py",
+    "--engine-tools-root",
+    "/Users/eros/Dev/Eros_Projects/Madar_Engine",
+    "--case",
+    "c1.catalog.lookup",
+    "--iterations",
+    "50",
+    "--output",
+    "/Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-07-catalog-lookup-50-attempt-1.json"
+  ],
+  "exitCode": 0,
+  "stdoutBytes": 4452,
+  "stderrBytes": 0,
+  "stdoutSha256": "1a37d68ae3fe73c3f34f1fac5b945278e6ea91279b09bab2d7ce582be2d5e7fb",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdoutSemanticallyEqualsCanonicalResult": true,
+  "duplicateStdoutRemoved": true
+}

@@ -1,0 +1,18 @@
+{
+  "recordedUtc": "2026-11-08T05:07:46.477657+00:00",
+  "predecessor": "../repaired-2/plan.json",
+  "predecessorSha256": "f2f8facbdd7cb84800ad149e473602f95860c08ee2511a1b16cf4559ab7fdeab",
+  "changes": [
+    "Lead replaced narrow-history Rows with bounded Wrap layout after three red regressions;83 catalog/app tests and targeted analysis passed per Lead",
+    "Harness and no-exception/state assertions remain unchanged"
+  ],
+  "fixtureRoot": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-c1-native-preflight-layout-4ouvl9dd",
+  "fullSourceInputs": 101,
+  "trackedSubset": 89,
+  "relatedApprovalAndRegressionHashes": {
+    "docs/phases/c1-design-approval.md": "a156a27fff045dcc6a63980083044d76730027302a14bcc126b58a0dc8432cba",
+    "outputs/completion-review/c1-design-approval.json": "6ae194bea270d5f5be058f37d612f3be41e98a61e9d10ede6608502d77614313",
+    "test/catalog/stock_history_responsive_test.dart": "b834222f20c9ce26db42414e09e26fc7874f00b8fd38cdf2e5155dfcfb6bd3fa"
+  },
+  "nativeRetry": "New source-bound campaign for product layout remedy; three failed contexts preserved"
+}

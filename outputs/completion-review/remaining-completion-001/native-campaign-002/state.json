@@ -1,0 +1,125 @@
+{
+  "attempts": [
+    {
+      "attemptId": "attempt-1",
+      "digest": "0b61be4693d8f1ddc97b90138ce6d383a9f526b0f030f7258074afced889817c",
+      "previousDigest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt": {
+        "cleanupConfirmed": true,
+        "evidence": [
+          {
+            "path": "outputs/completion-review/remaining-completion-001/native-campaign-002/guard-attempt-001.json",
+            "sha256": "9703161e1b73c3a72043af8db5559b3839ae03a29e9f0c1d88a7615170a06221"
+          }
+        ],
+        "identity": {
+          "contextFingerprint": "ca9574a1b14c455f99a7e47a79afaf0a8e787a138baaac378564753deb90185a",
+          "engineRevision": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+          "fixtureId": "4b888633f2431f14c5c6e02cfc60e4d49594e0198bb43cb78c91780b46e7b160",
+          "inputFingerprint": "315cc233069f51c3dee7c6b6c2731fca615de1089d2d5eb1e7fe03135a72a1e6",
+          "planFingerprint": "a97e6634ffdb8240c1c973d0c70df44af58bcdf69b4c2c1800029b2636b91a7d",
+          "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+          "targetId": "macos-host",
+          "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+        },
+        "stageId": "guard",
+        "status": "passed"
+      },
+      "retry": null
+    },
+    {
+      "attemptId": "attempt-2",
+      "digest": "3935e1723d9e823717958eb23dbfeb7efc81e804f467d314b5b9ac26dc63bd26",
+      "previousDigest": "0b61be4693d8f1ddc97b90138ce6d383a9f526b0f030f7258074afced889817c",
+      "receipt": {
+        "cleanupConfirmed": true,
+        "evidence": [
+          {
+            "path": "outputs/completion-review/remaining-completion-001/native-campaign-002/macos-pilot-attempt-001.log",
+            "sha256": "d1586547aa2b2a372882063b663b6811284412d89a40da6ea16f49b9c8b5b985"
+          }
+        ],
+        "identity": {
+          "contextFingerprint": "ca9574a1b14c455f99a7e47a79afaf0a8e787a138baaac378564753deb90185a",
+          "engineRevision": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+          "fixtureId": "4b888633f2431f14c5c6e02cfc60e4d49594e0198bb43cb78c91780b46e7b160",
+          "inputFingerprint": "315cc233069f51c3dee7c6b6c2731fca615de1089d2d5eb1e7fe03135a72a1e6",
+          "planFingerprint": "a97e6634ffdb8240c1c973d0c70df44af58bcdf69b4c2c1800029b2636b91a7d",
+          "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+          "targetId": "macos-host",
+          "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+        },
+        "stageId": "macos-pilot",
+        "status": "passed"
+      },
+      "retry": null
+    },
+    {
+      "attemptId": "attempt-3",
+      "digest": "2e08efd79a74ecc3516485f9caf4b592f5e1852c1cf3ac132d892752a5ed75db",
+      "previousDigest": "3935e1723d9e823717958eb23dbfeb7efc81e804f467d314b5b9ac26dc63bd26",
+      "receipt": {
+        "cleanupConfirmed": true,
+        "evidence": [
+          {
+            "path": "outputs/completion-review/remaining-completion-001/ios-native-context-001/ios-pilot-attempt-001.log",
+            "sha256": "0f290a6725b0015a83181a029ebbd03fbc15401e169ee322b2108d91ff000ee0"
+          }
+        ],
+        "identity": {
+          "contextFingerprint": "ca9574a1b14c455f99a7e47a79afaf0a8e787a138baaac378564753deb90185a",
+          "engineRevision": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+          "fixtureId": "4b888633f2431f14c5c6e02cfc60e4d49594e0198bb43cb78c91780b46e7b160",
+          "inputFingerprint": "315cc233069f51c3dee7c6b6c2731fca615de1089d2d5eb1e7fe03135a72a1e6",
+          "planFingerprint": "a97e6634ffdb8240c1c973d0c70df44af58bcdf69b4c2c1800029b2636b91a7d",
+          "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+          "targetId": "macos-host",
+          "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+        },
+        "stageId": "ios-native",
+        "status": "passed"
+      },
+      "retry": null
+    },
+    {
+      "attemptId": "attempt-4",
+      "digest": "779890acbea39ada524fcb68a0e542c040afc03fd7292161771273f8be0435d9",
+      "previousDigest": "2e08efd79a74ecc3516485f9caf4b592f5e1852c1cf3ac132d892752a5ed75db",
+      "receipt": {
+        "cleanupConfirmed": true,
+        "evidence": [
+          {
+            "path": "outputs/completion-review/remaining-completion-001/android-native-context-001/native-driver-001.log",
+            "sha256": "8b8a5aa199d3a3b2fd23310cd63bcf35a243fed0aa42ac3b29e9f9b992d02b91"
+          }
+        ],
+        "identity": {
+          "contextFingerprint": "ca9574a1b14c455f99a7e47a79afaf0a8e787a138baaac378564753deb90185a",
+          "engineRevision": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+          "fixtureId": "4b888633f2431f14c5c6e02cfc60e4d49594e0198bb43cb78c91780b46e7b160",
+          "inputFingerprint": "315cc233069f51c3dee7c6b6c2731fca615de1089d2d5eb1e7fe03135a72a1e6",
+          "planFingerprint": "a97e6634ffdb8240c1c973d0c70df44af58bcdf69b4c2c1800029b2636b91a7d",
+          "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+          "targetId": "macos-host",
+          "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+        },
+        "stageId": "android-native",
+        "status": "passed"
+      },
+      "retry": null
+    }
+  ],
+  "campaignId": "remaining-bundled-native-002",
+  "identity": {
+    "contextFingerprint": "ca9574a1b14c455f99a7e47a79afaf0a8e787a138baaac378564753deb90185a",
+    "engineRevision": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+    "fixtureId": "4b888633f2431f14c5c6e02cfc60e4d49594e0198bb43cb78c91780b46e7b160",
+    "inputFingerprint": "315cc233069f51c3dee7c6b6c2731fca615de1089d2d5eb1e7fe03135a72a1e6",
+    "planFingerprint": "a97e6634ffdb8240c1c973d0c70df44af58bcdf69b4c2c1800029b2636b91a7d",
+    "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+    "targetId": "macos-host",
+    "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+  },
+  "planDigest": "a97e6634ffdb8240c1c973d0c70df44af58bcdf69b4c2c1800029b2636b91a7d",
+  "schemaVersion": 1
+}

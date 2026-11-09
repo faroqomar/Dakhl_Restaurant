@@ -1,0 +1,19 @@
+00:00 +0: loading /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart
+00:00 +0: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: saved payment intent opens its exact source once and missing identity fails visibly
+00:00 +1: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: saved payment intent opens its exact source once and missing identity fails visibly
+00:01 +2: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: saved payment intent opens its exact source once and missing identity fails visibly
+00:01 +3: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: saved payment intent opens its exact source once and missing identity fails visibly
+00:01 +4: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounting/daily_cash_surface_test.dart: daily view splits saved funding and keeps chicken nonfinancial
+00:01 +5: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/sales/sales_history_surface_test.dart: schema11 return preview accepts input while financial posting stays disabled
+00:01 +6: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: all archived suppliers retain readable ledger and debt browsing
+00:01 +7: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: repeated archived saved materials open with unique editor rows
+00:01 +8: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: saved material selection survives rebuild and clears for a renamed material
+00:01 +9: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: mapped additional debt form creates one source and one posting
+00:02 +10: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: additional debt unmapped form cannot mutate source
+00:02 +11: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: ledger dates filter display and expose saved event edits
+00:02 +12: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: purchase analysis saved lines and delivery controls are reachable
+00:02 +13: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: source payment create and expanded carton controls are reachable
+00:02 +14: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: supplier creation saves metadata with zero new opening and retained history
+00:02 +15: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: material default-price edit preserves saved invoice snapshots
+00:02 +16: /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/parties/parties_surface_test.dart: schema11 invoice editor presents saved data with financial save disabled
+00:03 +17: All tests passed!

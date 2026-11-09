@@ -1,0 +1,50 @@
+{
+  "recordedUtc": "2026-11-08T08:05:13.887568+00:00",
+  "status": "local_targeted_verification_passed_independent_review_pending",
+  "newExpenseCases": 32,
+  "existingSpendingCases": 72,
+  "uniquePassedCases": 104,
+  "evidenceComposition": {
+    "attempt1": {
+      "passed": 73,
+      "failed": 31,
+      "retained": "targeted-tests-attempt-1.log",
+      "source": "attempt-1-failing-fixture.dart.txt",
+      "cause": "test fixture tried mutating immutable map"
+    },
+    "attempt2": {
+      "passed": 28,
+      "failed": 4,
+      "retained": "targeted-tests-attempt-2.log",
+      "passingNewConformanceCases": 6,
+      "cause": "four adversarial tests encountered earlier portable-constructor rejection"
+    },
+    "attempt3": {
+      "passed": 26,
+      "failed": 0,
+      "retained": "targeted-tests-attempt-3.log",
+      "scope": "final unit/safety cases"
+    }
+  },
+  "runtimeSourceUnchangedDuringAllAttempts": {
+    "lib/accounting/restaurant_journal_expense_correction_commands.dart": true,
+    "lib/accounting/restaurant_journal_expense_history.dart": true,
+    "lib/accounting/restaurant_journal_spending_commands.dart": true
+  },
+  "analysis": {
+    "result": "No issues found",
+    "evidence": "final-analysis.log"
+  },
+  "actualSourceOracle": "renderer-oracle.cjs extracts/executes actual frozen expense-edit and confirm-delete branch/helper bodies; full source maps and derived daily/cash queries compared in real PowerSync test",
+  "faultEvidence": "edit/delete actual transaction.before_commit exceptions preserve exact bytes and revision; fresh-owner reopen/retry/replay; genuine write success followed by lost ACK resolves once; race yields one effect",
+  "limits": [
+    "independent aggregate review pending",
+    "performance pending isolated operation campaign",
+    "schema12/runtime/UI activation excluded",
+    "no phase/checklist closure, Git/remote/merge/release",
+    "parent memory sync/check pending"
+  ],
+  "runtimeRevision": "ac8b4edc2c915ed22c0991685c33967b3360e7fa",
+  "runtimeApiChanges": "N/A existing public journal/host/coordinator/store contracts",
+  "runnerReleased": true
+}

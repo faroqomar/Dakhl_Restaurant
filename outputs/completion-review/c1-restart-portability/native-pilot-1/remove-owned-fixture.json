@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/Users/eros/.t3/userdata/device/targets/t3-b91493306db60c230eefae24/agent-device",
+    "press",
+    "@e66",
+    "--settle"
+  ],
+  "startUtc": "2026-11-08T06:53:47.029465+00:00",
+  "endUtc": "2026-11-08T06:53:50.090532+00:00",
+  "elapsedSeconds": 3.0610827919999997,
+  "exitCode": 0,
+  "log": "remove-owned-fixture.log"
+}

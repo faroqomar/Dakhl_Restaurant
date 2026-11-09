@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "status": "passed_execution_pending_independent_review",
+  "atUtc": "2026-11-08T06:57:09.111040+00:00",
+  "identity": {
+    "contextFingerprint": "20033eacc8184b2ff7a484bce111634789b20b95be0a345ab33b41279b57a310",
+    "engineRevision": "bb00ccdad8f6710ca1778260d42ed5584f26a86c",
+    "fixtureId": "58e801b27334955d471bf19ca8abd5fbbd78d215059cec071e96062c5e2a892f",
+    "inputFingerprint": "55e42ad1db48ca2db99cea6dad0414c3beef844f569797988304cc7382d00187",
+    "planFingerprint": "4dd3159de1e5437a3ed9459a11384f493a4ec08caf3df3d758ad816886ec2c12",
+    "sourceRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+    "targetId": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
+    "toolRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9"
+  },
+  "sourceState": "dirty;103exact frozen input hashes unchanged",
+  "qaFixtureId": "c879c0bd-63bb-4a9d-9ea5-8fcd512df775",
+  "fixtureSourceSha256": "c9ede255c750440428daa61c607decf8a596fab20b3296c2ceaa581da23b8668",
+  "target": {
+    "hostId": "local",
+    "deviceId": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
+    "name": "iPhone Duo",
+    "runtime": "iOS27.1",
+    "physical": false,
+    "capturedViewport": "466x678@1x",
+    "agentDeviceVersion": "0.21.31",
+    "hubVersion": "0.19.1"
+  },
+  "engineResponsibility": "N/A; app QA consumes reviewed public packages without implementation/API change",
+  "cases": {
+    "actualProcessRestart": {
+      "status": "passed",
+      "pids": [
+        1835,
+        4476,
+        16000
+      ],
+      "bootNonces": [
+        "5fe799dfb7866048634717a06cfec585",
+        "2f33448a81298d3e72c738552d9d1ad7",
+        "f7066d2bfe8d162a4602fe84a841b4b7"
+      ],
+      "oldProcessesAbsent": true,
+      "initializations": [
+        true,
+        false,
+        false
+      ],
+      "checkpointExact": true,
+      "originalSnapshotUnchanged": true
+    },
+    "productPersistence": {
+      "status": "passed",
+      "productCount": 3,
+      "stockEntries": 2,
+      "trackedOpeningScaledUnits": 5000,
+      "laterTrackedScaledUnits": 2000,
+      "photoKeys": [
+        "beef-kebab",
+        "water",
+        null
+      ],
+      "units": [
+        "نفر",
+        "زجاجة",
+        "قطعة"
+      ],
+      "trackedFlags": [
+        true,
+        false,
+        true
+      ],
+      "proof": "prepared/restarted/final reports and exact2459byte checkpoint"
+    },
+    "approvedFormAfterRestart": {
+      "status": "passed",
+      "selectedPhoto": "beef-kebab",
+      "unitDisabled": true,
+      "trackingDisabledChecked": true,
+      "evidence": "tracked-form-visible.log + tracked-locks.png",
+      "limit": "QA overlay overlaps top-left close; no product action changed state"
+    },
+    "nativeFileRoundtrip": {
+      "status": "passed",
+      "provider": "default NativeFileTransfer and iOS document picker;On My iPhone",
+      "exportFileName": "c1-restart-c879c0bd-63bb-4a9d-9ea5-8fcd512df775.json",
+      "importTarget": "separate marked import-target via actual pickImport/confirmImport",
+      "exactCheckpointExportBytesAfterImport": true,
+      "preImportBackupPresent": true,
+      "exactImportAfterActualProcessRestart": true,
+      "evidence": [
+        "provider-save.log",
+        "select-owned-export.log",
+        "confirm-native-import.log",
+        "file-actions.jsonl",
+        "post-import-restart-assertions.json"
+      ]
+    }
+  },
+  "cleanup": {
+    "deviceStopped": true,
+    "openDeviceSessions": 0,
+    "ownedFixtureRemoved": true,
+    "fixtureRootReclaimedLogicalBytes": 585357,
+    "hostRecipeReclaimedLogicalBytes": 1751,
+    "externalExportException": "sole2KB owned synthetic JSON remains in On My iPhone;picker context menu lacks Delete;com.apple.DocumentsApp absent;no install/scan workaround attempted",
+    "oldSuccessfulAppPreservedByCanonicalMove": "initial-app-relocation.json",
+    "currentSuccessfulQaAppRetained": "binary-identity.json"
+  },
+  "verificationLimits": [
+    "One iOS simulator/debug pilot;not physical-device/Android/matrix/performance/release evidence",
+    "Existing initial native pilot retains same-process owner-reopen limit;this successor separately proves actual close/open",
+    "Default native file provider proof is separate from earlier host disk callback unit roundtrip",
+    "Console logs retain duplicate Apple accessibility-class warnings;bounded scan found no Flutter exception/refusal/overflow markers,not general crash/power-loss proof",
+    "Root owns independent review/exact row closure/approval;none self-closed"
+  ],
+  "timing": "timer1168.453s observed;75.097s build;native-build wait214.547s includes tool/context interval,not compiler-only;prior timer gap unknown",
+  "storage": "storage-closeout.json",
+  "problems": [
+    "stale ref rejected before action;two offscreen ref presses dispatched0,0 without UI/state changes;fixed using screenshot,scroll and observed hittable geometry",
+    "QA overlay intercepted attempted close;left readonly form and used existing QA actions/remount",
+    "native picker sparse AX required screenshot-grounded coordinates;backend fallback recorded",
+    "one source-cleanup assertion expected wrong marker;zero deletion before inspection/corrected exact marker",
+    "oversized intake output and one snapshot dispatched before open completion;bounded follow-up provided evidence;avoid next time"
+  ]
+}

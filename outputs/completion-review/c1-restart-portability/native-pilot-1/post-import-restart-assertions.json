@@ -1,0 +1,14 @@
+{
+  "pid": 16000,
+  "checks": {
+    "thirdPid": true,
+    "newNonce": true,
+    "notReseeded": true,
+    "checkpointExact": true,
+    "importExact": true,
+    "backupPresent": true,
+    "originalSnapshotPreserved": true,
+    "productsPreserved": true,
+    "stockPreserved": true
+  }
+}

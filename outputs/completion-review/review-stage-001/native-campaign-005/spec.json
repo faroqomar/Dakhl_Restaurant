@@ -1,0 +1,25 @@
+{
+  "campaignId": "completion-review-native-005",
+  "targetId": "macos-host",
+  "fixtureId": "cca745d7c109cf0666b0ef4db3e79f6115121a6b6d4ff4b14e0ca794f6c61331",
+  "context": {
+    "platform": "host"
+  },
+  "stages": [
+    {
+      "id": "guard",
+      "kind": "preflight",
+      "maxAttempts": 2
+    },
+    {
+      "id": "macos-pilot",
+      "kind": "pilot",
+      "maxAttempts": 2
+    },
+    {
+      "id": "native-matrix",
+      "kind": "case",
+      "maxAttempts": 2
+    }
+  ]
+}

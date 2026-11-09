@@ -1,0 +1,46 @@
+{
+  "recordedUtc": "2026-11-08T05:17:35.396779+00:00",
+  "baseline": {
+    "freeKiB": 98437248,
+    "appGitKiB": 18430636,
+    "engineGitKiB": 44528,
+    "buildKiB": 1100004,
+    "dartToolKiB": 595304
+  },
+  "sourceStageCloseout": "storage-closeout.json",
+  "integratedCloseout": {
+    "freeKiB": 97653876,
+    "appGitKiB": 18430636,
+    "engineGitKiB": 44528,
+    "buildKiB": 1131280,
+    "dartToolKiB": 367356
+  },
+  "deltaKiB": {
+    "freeKiB": -783372,
+    "appGitKiB": 0,
+    "engineGitKiB": 0,
+    "buildKiB": 31276,
+    "dartToolKiB": -227948
+  },
+  "temporaryGitStores": {
+    "app": 0,
+    "engine": 0
+  },
+  "ownedSyntheticStoresRemaining": [],
+  "cleanup": {
+    "removed": [
+      "tool/dev_dashboard/tests/__pycache__/test_c1_operations.cpython-313.pyc"
+    ],
+    "reclaimedBytes": 4947,
+    "reason": "Only new task-owned test module bytecode removed after unit process exited; shared caches/builds retained"
+  },
+  "registrationAfterHashesVerified": 3,
+  "pinLockPubspecConfigUnchanged": true,
+  "growthAttribution": "Own sources/patches/tests/evidence retained; concurrent shared free/build/cache deltas have no verified producer in this lane. Git sizes unchanged.",
+  "retainedExceptions": [
+    "Initial unintegrated43-binding manifest and patch preserve source-only stage",
+    "Failed and passed fixture logs preserve numeric-wire expectation correction",
+    "Integrated patch is canonical final registration delta; old patch remains history",
+    "Permanent source/tests/docs retained for independent review; no native/profile binary produced"
+  ]
+}

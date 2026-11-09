@@ -1,0 +1,33 @@
+{
+  "recordedUtc": "2026-11-08T07:00:51.904371+00:00",
+  "reviewer": "/root/review_c1_native_layout_and_harness",
+  "verdict": "PASS",
+  "manifest": "documentation-review-inputs.json",
+  "manifestSha256": "18a8f55626a00cf7ea254770ffecaf6c5b040a1ac49a551c401d9b36ed91e966",
+  "verifiedBindings": 13,
+  "retainedPhase00Clauses": 14,
+  "localLinksChecked": 24,
+  "acceptedRows": [
+    "Q-11",
+    "C0-01",
+    "C0-11"
+  ],
+  "q16": "recorded cleanup closure supported; permanent producer repair separate",
+  "testsBuildsOrNativeActions": false,
+  "storage": {
+    "freeKiB": [
+      95095844,
+      95109128
+    ],
+    "temporaryGitStores": [
+      0,
+      0
+    ],
+    "gitSizesUnchanged": true
+  },
+  "limits": [
+    "No current minimum-OS/physical-device claim",
+    "No current remote-head/CI/merge/release claim",
+    "Dated source/technical evidence retains original scope"
+  ]
+}

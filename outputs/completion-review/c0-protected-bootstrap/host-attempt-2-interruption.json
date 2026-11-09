@@ -1,0 +1,6 @@
+{
+  "atUtc": "2026-11-08T07:21:53.288770+00:00",
+  "status": "interrupted_not_passed",
+  "lastCheckpoint": "first.read.released; setup/mount completed; real SDK initialization begins from widget FakeAsync zone; cause not proven",
+  "next": "test-only real-I/O zone dispatch, preserving real results and model/UI assertions"
+}

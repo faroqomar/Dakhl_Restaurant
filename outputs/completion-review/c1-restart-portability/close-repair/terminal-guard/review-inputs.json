@@ -1,0 +1,67 @@
+{
+  "recordedUtc": "2026-11-08T06:30:02.927367+00:00",
+  "scope": "Focused QA cleanup terminal guard before native pilot",
+  "files": [
+    {
+      "path": "integration_test/support/c1_restart_fixture.dart",
+      "bytes": 24343,
+      "sha256": "c9ede255c750440428daa61c607decf8a596fab20b3296c2ceaa581da23b8668"
+    },
+    {
+      "path": "integration_test/support/c1_restart_qa_main.dart",
+      "bytes": 11669,
+      "sha256": "fe863130142f5337a51907cd40d8e248f2e94024b21649dc8faee2d2b9752e41"
+    },
+    {
+      "path": "test/platform/c1_restart_fixture_test.dart",
+      "bytes": 6378,
+      "sha256": "b468fcd5eb47967314b6f8bd2f369d20b678abda655f310a18093cab2e23ba93"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/close-repair/terminal-guard/red.log",
+      "bytes": 996,
+      "sha256": "311c1c78ab55a5d8e52dd1f039e76f08eb1b05bb9dc9e0f1cf7cc5623702b660"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/close-repair/terminal-guard/green.log",
+      "bytes": 567,
+      "sha256": "c7117c172a1cae7bd28626776e5d870796d8666e416d6907c3af686330f69d71"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/close-repair/terminal-guard/analysis.log",
+      "bytes": 109,
+      "sha256": "79ff724e716355643ff38f67b33b869ad0e883301b1ec36b73c21799c227b099"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/close-repair/terminal-guard/format.log",
+      "bytes": 100,
+      "sha256": "b240fd63bc92f401cbd5a34b1ebdee041deb337a5eb02293825396d884c48433"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/close-repair/terminal-guard/repair-receipt.json",
+      "bytes": 862,
+      "sha256": "6128bb88c9602f445859abca67ef1cdda4ee7e2835ee8e3db3b15fab2f72be41"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/close-repair/review-inputs.json",
+      "bytes": 2433,
+      "sha256": "318c1580b70740a04d1740e12bdd7834ff25797ec70351d61b0df0236f6414d4"
+    },
+    {
+      "path": "outputs/completion-review/c1-restart-portability/close-repair/historical-before-terminal-guard/manifest.json",
+      "bytes": 839,
+      "sha256": "4ce488a01f7e218b97753548b1fb0b06db64b65c4845a3853f721ff137e2c633"
+    },
+    {
+      "path": "engine-dependency.json",
+      "bytes": 801,
+      "sha256": "8221825716c72a5b1221a1cbfc8f70f27bb3db2ede59648864194ea798544f5c"
+    },
+    {
+      "path": "pubspec.lock",
+      "bytes": 25103,
+      "sha256": "63f2edcb3a3f0e521db5f3a71b019410b0a8e908c60e7ccf768678211acd4382"
+    }
+  ],
+  "preservedBenchmarkSource": "../../historical-source-before-close-repair/manifest.json"
+}

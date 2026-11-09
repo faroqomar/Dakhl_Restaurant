@@ -1,0 +1,15 @@
+{
+  "atUtc": "2026-11-08T07:44:55.415599+00:00",
+  "action": "atomic move;no duplicate archive",
+  "from": "build/ios/iphonesimulator/Runner.app",
+  "to": "build/c1-restart-qa-passed-bb00ccd/Runner.app",
+  "files": 87,
+  "logicalBytes": 237092142,
+  "allHashesMatchPriorBinaryManifest": true,
+  "allHashesMatchAfterMove": true,
+  "treeSha256": "521c42ffc984b41f2d7451d406492070e809bf338b714cf8df07e917e37a4eb4",
+  "priorBinaryIdentity": "outputs/completion-review/c1-restart-portability/native-pilot-1/binary-identity.json",
+  "old283ManifestSha256": "8b40af56b3173ed448bc9d5076623d5f61a63621cfa71365f53bc53962cdd935",
+  "retention": "Canonical prior qualified C1restartQA build;keep alongside earlier172939248B C1app at build/c1-native-passed-bb00ccd/Runner.app",
+  "activeAppWritersAtMove": []
+}

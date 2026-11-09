@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-07T20:51:07.931802+00:00",
+  "tool": "mcp__t3_code__device_list",
+  "arguments": {},
+  "outcome": "no-return-before-wait-cell-termination",
+  "observedPendingWaitSecondsAtLeast": 32,
+  "completeCallDurationSeconds": null,
+  "returnedTargetIds": [],
+  "toolError": null,
+  "toolRecoveryAdvice": null,
+  "deviceOpenAttempted": false,
+  "buildAttempted": false,
+  "nativeExecutionAttempted": false,
+  "screenshotTaken": false,
+  "cause": "unknown",
+  "changedCondition": "T3-server-runtime-restarted-since-prior-controller-discovery"
+}

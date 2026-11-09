@@ -1,0 +1,27 @@
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:04.2489551Z ##[group]❌ /home/runner/work/Dakhl_Restaurant/Dakhl_Restaurant/Dakhl_Restaurant/test/accounting/journal_command_lifecycle_faults_test.dart: SIGKILL transaction.before_commit preserves complete composed invoice and retry/replay (failed)
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:04.2492740Z Bad state: No actual checkpoint: Unhandled exception:
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:04.2493907Z Bad state: Child requires the host-created complete base.
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:04.2495675Z #0      main (file:///home/runner/work/Dakhl_Restaurant/Dakhl_Restaurant/Dakhl_Restaurant/test/support/lifecycle_fault_child.dart:182:5)
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:04.2497245Z <asynchronous suspension>
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:04.2497771Z 
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:04.2507488Z test/accounting/journal_command_lifecycle_faults_test.dart 356:29  main.<fn>.<fn>
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:04.2508454Z ===== asynchronous gap ===========================
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:04.2509321Z dart:async                                                         Stream.firstWhere
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:04.2510362Z test/accounting/journal_command_lifecycle_faults_test.dart 354:14  main.<fn>
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:04.2511460Z ===== asynchronous gap ===========================
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:04.2513070Z dart:async                                                         _CustomZone.registerUnaryCallback
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:04.2514010Z test/accounting/journal_command_lifecycle_faults_test.dart 330:23  main.<fn>
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:09.2453967Z ##[group]❌ /home/runner/work/Dakhl_Restaurant/Dakhl_Restaurant/Dakhl_Restaurant/test/accounting/journal_command_lifecycle_faults_test.dart: SIGKILL transaction.after_commit preserves complete composed sale and retry/replay (failed)
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:09.2455827Z Bad state: No actual checkpoint: Unhandled exception:
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:09.2456552Z Bad state: Child requires the host-created complete base.
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:09.2457705Z #0      main (file:///home/runner/work/Dakhl_Restaurant/Dakhl_Restaurant/Dakhl_Restaurant/test/support/lifecycle_fault_child.dart:182:5)
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:09.2458796Z <asynchronous suspension>
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:09.2459545Z 
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:09.2460005Z test/accounting/journal_command_lifecycle_faults_test.dart 356:29  main.<fn>.<fn>
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:09.2460863Z ===== asynchronous gap ===========================
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:09.2461548Z dart:async                                                         Stream.firstWhere
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:09.2466770Z test/accounting/journal_command_lifecycle_faults_test.dart 354:14  main.<fn>
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:09.2467631Z ===== asynchronous gap ===========================
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:09.2468391Z dart:async                                                         _CustomZone.registerUnaryCallback
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:30:09.2469350Z test/accounting/journal_command_lifecycle_faults_test.dart 330:23  main.<fn>
+Format, analyze, unit and widget tests	Run flutter test --no-pub --exclude-tags golden	2026-11-08T23:32:19.8997081Z ##[error]1425 tests passed, 2 failed, 3 skipped.

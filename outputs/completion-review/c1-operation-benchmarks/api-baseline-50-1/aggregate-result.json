@@ -1,0 +1,267 @@
+{
+  "recordedUtc": "2026-11-08T07:05:37.023810+00:00",
+  "campaignId": "c1-api-baseline-50-1",
+  "status": "completed_pending_independent_review",
+  "workflowStatus": "ready_for_review",
+  "passedStages": 10,
+  "operationCases": 9,
+  "rawAcceptedLatencySamples": 450,
+  "iterationsPerCase": 50,
+  "profileBuildsThisCampaign": 0,
+  "profileCacheReused": true,
+  "sourceBindingsUnchanged": 326,
+  "sourceDirty": true,
+  "runtimeEngine": "bb00ccdad8f6710ca1778260d42ed5584f26a86c",
+  "workflowRevision": "f7f68988561d25cc93eb28c0ec989847526b2df9",
+  "cases": [
+    {
+      "operationId": "c1.product.create",
+      "resultPath": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-01-product-create-50-attempt-1.json",
+      "resultSha256": "e26bab6119d39d7bd1459813e91abec752ee8458b4778be84e5ea5e16893dbb3",
+      "timing": {
+        "medianMs": 183.85899999999998,
+        "p95Ms": 192.642,
+        "minMs": 177.112,
+        "maxMs": 198.173
+      },
+      "resources": {
+        "ramPeakMb": 257.55648,
+        "cpuAveragePercent": 114.69715506272132,
+        "cpuPeakPercent": 177.59546224962102,
+        "cpuSeconds": 24.130750791666664,
+        "sampleCount": 944,
+        "intervalMs": 20,
+        "windowSeconds": 21.038665500003844,
+        "cpuNormalization": "one-logical-core-100-percent",
+        "ramScope": "sampled-process-resident-peak",
+        "boundary": "host-start-to-end-marker-receipt"
+      },
+      "cleanupComplete": true,
+      "comparabilityKey": "5428cb1b0d580629c6d9b4e16c3e8343501976e8078ea792abaa43568104d16e"
+    },
+    {
+      "operationId": "c1.product.edit",
+      "resultPath": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-02-product-edit-50-attempt-1.json",
+      "resultSha256": "e7f7aa9328e707220376b1f38548c889e53143af2da635c83a33f328b20650b5",
+      "timing": {
+        "medianMs": 185.208,
+        "p95Ms": 195.295,
+        "minMs": 176.245,
+        "maxMs": 199.291
+      },
+      "resources": {
+        "ramPeakMb": 257.622016,
+        "cpuAveragePercent": 114.9572281802167,
+        "cpuPeakPercent": 171.32111069850762,
+        "cpuSeconds": 24.400254083333333,
+        "sampleCount": 948,
+        "intervalMs": 20,
+        "windowSeconds": 21.225506625021808,
+        "cpuNormalization": "one-logical-core-100-percent",
+        "ramScope": "sampled-process-resident-peak",
+        "boundary": "host-start-to-end-marker-receipt"
+      },
+      "cleanupComplete": true,
+      "comparabilityKey": "de791030462c841f0ab364a06ae580d7886b84aac30b32d27f9774642758585a"
+    },
+    {
+      "operationId": "c1.product.photo_select_save",
+      "resultPath": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-03-photo-select-save-50-attempt-1.json",
+      "resultSha256": "646be8c135d176a715d112a12f5041e901214b912b6fb362c0c492eb62318688",
+      "timing": {
+        "medianMs": 184.1855,
+        "p95Ms": 197.794,
+        "minMs": 173.459,
+        "maxMs": 213.656
+      },
+      "resources": {
+        "ramPeakMb": 255.033344,
+        "cpuAveragePercent": 115.04878039611636,
+        "cpuPeakPercent": 162.46174545583594,
+        "cpuSeconds": 24.29182320833333,
+        "sampleCount": 945,
+        "intervalMs": 20,
+        "windowSeconds": 21.114368292037398,
+        "cpuNormalization": "one-logical-core-100-percent",
+        "ramScope": "sampled-process-resident-peak",
+        "boundary": "host-start-to-end-marker-receipt"
+      },
+      "cleanupComplete": true,
+      "comparabilityKey": "9e238be7753645ba520794c5918f8fdc3f77f4a60597ab9bd7edff6611d0aad8"
+    },
+    {
+      "operationId": "c1.stock.post",
+      "resultPath": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-04-stock-post-50-attempt-1.json",
+      "resultSha256": "210bed93b2951ff31e6bcbfb926a1cb6f140e345e2bdcaf30f7941f88769bbaf",
+      "timing": {
+        "medianMs": 186.24599999999998,
+        "p95Ms": 199.416,
+        "minMs": 178.106,
+        "maxMs": 218.537
+      },
+      "resources": {
+        "ramPeakMb": 173.686784,
+        "cpuAveragePercent": 115.53909170799666,
+        "cpuPeakPercent": 171.69603250529457,
+        "cpuSeconds": 24.62718820833333,
+        "sampleCount": 957,
+        "intervalMs": 20,
+        "windowSeconds": 21.31502666696906,
+        "cpuNormalization": "one-logical-core-100-percent",
+        "ramScope": "sampled-process-resident-peak",
+        "boundary": "host-start-to-end-marker-receipt"
+      },
+      "cleanupComplete": true,
+      "comparabilityKey": "417082f9135e08ff33923b60c312e7049e453bad39f2f0898a7ee8c30f5fdd4a"
+    },
+    {
+      "operationId": "c1.stock.reverse",
+      "resultPath": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-05-stock-reverse-50-attempt-1.json",
+      "resultSha256": "11aa155d1def1cf2aa9a418da194f41a9fe52d3fb9d9e7b76d6a8e8aa99cc7b6",
+      "timing": {
+        "medianMs": 188.902,
+        "p95Ms": 211.382,
+        "minMs": 178.019,
+        "maxMs": 215.471
+      },
+      "resources": {
+        "ramPeakMb": 259.35872,
+        "cpuAveragePercent": 114.77103065689595,
+        "cpuPeakPercent": 177.34229076443336,
+        "cpuSeconds": 24.996633375,
+        "sampleCount": 977,
+        "intervalMs": 20,
+        "windowSeconds": 21.779566874960437,
+        "cpuNormalization": "one-logical-core-100-percent",
+        "ramScope": "sampled-process-resident-peak",
+        "boundary": "host-start-to-end-marker-receipt"
+      },
+      "cleanupComplete": true,
+      "comparabilityKey": "2506b3629ddc0e4e9204e2229d79ad805cf1b17d90843f6f2762222f643da096"
+    },
+    {
+      "operationId": "c1.stock.history",
+      "resultPath": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-06-stock-history-50-attempt-1.json",
+      "resultSha256": "2b3a4bc6e3d5ded54aef048cbf86eb248072633f41a796ce877123161c3d0807",
+      "timing": {
+        "medianMs": 0.6605000000000001,
+        "p95Ms": 0.751,
+        "minMs": 0.63,
+        "maxMs": 1.048
+      },
+      "resources": {
+        "ramPeakMb": 163.086336,
+        "cpuAveragePercent": 118.55087380948402,
+        "cpuPeakPercent": 184.15820151451484,
+        "cpuSeconds": 14.302198958333332,
+        "sampleCount": 533,
+        "intervalMs": 20,
+        "windowSeconds": 12.06418687500991,
+        "cpuNormalization": "one-logical-core-100-percent",
+        "ramScope": "sampled-process-resident-peak",
+        "boundary": "host-start-to-end-marker-receipt"
+      },
+      "cleanupComplete": true,
+      "comparabilityKey": "aa1352f65ada1864a2b595825a2068c645baaa69a54edfbc16706815f7708ff1"
+    },
+    {
+      "operationId": "c1.catalog.lookup",
+      "resultPath": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-07-catalog-lookup-50-attempt-1.json",
+      "resultSha256": "4567a2cc56ef3f909031821cd23ed6471f34e8366e6392dd9f67cc309ae6e75f",
+      "timing": {
+        "medianMs": 49.098,
+        "p95Ms": 49.938,
+        "minMs": 47.286,
+        "maxMs": 51.568
+      },
+      "resources": {
+        "ramPeakMb": 242.745344,
+        "cpuAveragePercent": 113.80362299037081,
+        "cpuPeakPercent": 171.2986112990289,
+        "cpuSeconds": 16.320378416666664,
+        "sampleCount": 646,
+        "intervalMs": 20,
+        "windowSeconds": 14.340824999962933,
+        "cpuNormalization": "one-logical-core-100-percent",
+        "ramScope": "sampled-process-resident-peak",
+        "boundary": "host-start-to-end-marker-receipt"
+      },
+      "cleanupComplete": true,
+      "comparabilityKey": "6fbd0cf35a7f545df65be94b8dd2dc59f1f6bc2745c15e692c4e0bd86981b33f"
+    },
+    {
+      "operationId": "c1.catalog.filter",
+      "resultPath": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-08-catalog-filter-50-attempt-1.json",
+      "resultSha256": "6a88a4b721b42d2bd65c5cd67e5ca41b85ff0f33de922a513707a253e037826c",
+      "timing": {
+        "medianMs": 45.224000000000004,
+        "p95Ms": 46.448,
+        "minMs": 43.266,
+        "maxMs": 47.442
+      },
+      "resources": {
+        "ramPeakMb": 164.364288,
+        "cpuAveragePercent": 115.1162053943397,
+        "cpuPeakPercent": 164.59850634307588,
+        "cpuSeconds": 16.473322291666666,
+        "sampleCount": 639,
+        "intervalMs": 20,
+        "windowSeconds": 14.310167917050421,
+        "cpuNormalization": "one-logical-core-100-percent",
+        "ramScope": "sampled-process-resident-peak",
+        "boundary": "host-start-to-end-marker-receipt"
+      },
+      "cleanupComplete": true,
+      "comparabilityKey": "5c6735b1288ef8e0872fe8c00a04c3a653440d338e7de6c0c29d5a5e0903d3c5"
+    },
+    {
+      "operationId": "c1.catalog.page",
+      "resultPath": "outputs/completion-review/c1-operation-benchmarks/api-baseline-50-1/case-09-catalog-page-50-attempt-1.json",
+      "resultSha256": "c4b4c55c926d76f971b818e6965a3542de2e4aa3e0564c1682da0f529ac34b02",
+      "timing": {
+        "medianMs": 48.217,
+        "p95Ms": 49.605,
+        "minMs": 46.957,
+        "maxMs": 50.403
+      },
+      "resources": {
+        "ramPeakMb": 200.032256,
+        "cpuAveragePercent": 114.29860368804957,
+        "cpuPeakPercent": 167.99559822607307,
+        "cpuSeconds": 16.467636,
+        "sampleCount": 647,
+        "intervalMs": 20,
+        "windowSeconds": 14.407556583057158,
+        "cpuNormalization": "one-logical-core-100-percent",
+        "ramScope": "sampled-process-resident-peak",
+        "boundary": "host-start-to-end-marker-receipt"
+      },
+      "cleanupComplete": true,
+      "comparabilityKey": "8c5f6540049699712839741bb94ae6d9af5c5ff8528c10ccf48587d253ceefa5"
+    }
+  ],
+  "latencyBoundary": "Actual ViewModel query or durable acknowledgement only; one verified warmup per fresh process and fresh fixture per measured iteration.",
+  "resourceBoundary": "One host start/end window: C1 ViewModel/query or durable-save samples plus inter-iteration fixture setup, exact verification, reopen and teardown. Elapsed samples exclude those stages. Photo selection/save includes the bundled asset read; image decode is excluded. No UI/raster/frame/native-input timing; RAM/CPU are not per-sample isolated.",
+  "retainedRawData": "All 450 chronological latency samples in nine canonical results; periodic OS resource traces are not retained by the reviewed host.",
+  "limits": [
+    "Finite synthetic macOS ARM64 profile API baseline; no numeric performance budget or optimization acceptance",
+    "No GUI, frame, raster, native input, image decode or mobile performance claim",
+    "RAM is absolute sampled direct-child resident peak; CPU normalizes one logical core to100%; broad case resource windows include setup/verification/reopen/cleanup",
+    "OS/thermal/background cache conditions uncontrolled; quiet window excludes owned concurrent builds/Device boot",
+    "Previous n=1 pilot remains separate and unchanged; no pooling into51 samples"
+  ],
+  "bookkeepingProblems": [
+    {
+      "symptom": "Persistent timer first invocation saw closed stdin and exited1/interrupted",
+      "remedy": "Preserved interrupted timing and started reviewed timer under PTY; pre-resume interval remains outside active-effort claims"
+    },
+    {
+      "symptom": "First product-create workflow record refused unsafe-path for absolute evidence references",
+      "remedy": "Retained refused output; changed references to repository-relative paths and recorded the same accepted measurement; no measurement retry or stage mutation on refusal"
+    },
+    {
+      "symptom": "One intake dictionary probe requested command instead of proposedArgv and raised KeyError; one unused module path lookup did not exist; memory/prevention excerpts exceeded output budget",
+      "remedy": "Used actual descriptor field/current runner function and bounded reads; no source/build/test changes or benchmark reruns"
+    }
+  ]
+}

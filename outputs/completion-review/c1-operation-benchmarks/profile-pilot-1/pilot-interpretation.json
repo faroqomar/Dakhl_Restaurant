@@ -1,0 +1,45 @@
+{
+  "recordedUtc": "2026-11-08T06:01:06.205635+00:00",
+  "status": "pilot_pass_campaign_review_pending",
+  "validation": "Reviewed Madar validate_result passed; exact target/source/binary cache matches",
+  "operationId": "c1.product.create",
+  "n": 1,
+  "sampleMs": 186.662,
+  "p50Ms": 186.662,
+  "p95Ms": 186.662,
+  "latencyMeaning": "One acknowledged product plus6.25 opening-unit commit; one-sample plumbing/correctness qualification, not a distribution or budget pass",
+  "resources": {
+    "ramPeakMb": 159.891456,
+    "cpuAveragePercent": 106.7749253802676,
+    "cpuPeakPercent": 143.96772718017053,
+    "cpuSeconds": 0.31880612499999994,
+    "sampleCount": 14,
+    "intervalMs": 20,
+    "windowSeconds": 0.29857770807575434,
+    "cpuNormalization": "one-logical-core-100-percent",
+    "ramScope": "sampled-process-resident-peak",
+    "boundary": "host-start-to-end-marker-receipt"
+  },
+  "resourceMeaning": "For n=1, broad host marker-receipt window includes command and post-elapsed exact verification/reopen/cleanup; warm-up/initial preparation/build excluded. Absolute direct-child RSS and marker-window CPU are not incremental product memory or isolated command CPU. Pipe/report latency remains.",
+  "sourceFingerprint": "4f1fffb01be255874300beb3933dc58cd72157a644a77759f4e714a592cceefc",
+  "binaryFingerprint": "c31d0452da1b4d40235b4f9951016a6515f3374cb1ce71e58a06ad41cd39d3e4",
+  "correctness": "Producer accepted sample only after complete canonical expected payload, revision+1, unchanged fence/workspace, known stock and fresh-owner reopen; target1001products/1201stock entries",
+  "runtimeCleanup": {
+    "producerCompleted": true,
+    "hostOwnedProcessCleanupComplete": true,
+    "newKnownPrefixDirectories": [],
+    "tempRootsAfter": {
+      "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T": [],
+      "/Users/eros/Library/Containers/com.eros.dakhlrestaurant.phase00/Data/tmp": []
+    }
+  },
+  "preflightFixtureRemoved": true,
+  "noArtificialInWindowWaitAdded": true,
+  "limits": [
+    "No matrix",
+    "No optimization or agreed performance-budget pass",
+    "No visible/raster/native-input/image-decode/mobile timing",
+    "Same-process fresh-owner readback, not process/power-loss proof",
+    "OS sampled peak may miss instantaneous peaks; background/thermal/cache state uncontrolled"
+  ]
+}

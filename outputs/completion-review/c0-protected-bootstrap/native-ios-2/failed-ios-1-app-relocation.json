@@ -1,0 +1,13 @@
+{
+  "atUtc": "2026-11-08T08:52:51.581820+00:00",
+  "from": "build/ios/iphonesimulator/Runner.app",
+  "to": "build/c0-protected-bootstrap-failed-ios-1/Runner.app",
+  "method": "atomic move;no duplicate copy",
+  "files": 87,
+  "logicalBytes": 172958264,
+  "beforeAfterAllHashesMatch": true,
+  "priorBinaryIdentity": "outputs/completion-review/c0-protected-bootstrap/native-ios-1/failed-binary-identity.json",
+  "treeSha256": "1f2e7eab2b042feaf34af73b98678968a38a6ae3778ab955a793629ed7be47df",
+  "retention": "Preserve failed native-ios-1 exact build before newbuild;priorC1canonicalapps untouched",
+  "oldFailureManifestSha256": "3671909f17b576337a81b46a347f9302e6fc840894e536bccda9ecff175e2d97"
+}

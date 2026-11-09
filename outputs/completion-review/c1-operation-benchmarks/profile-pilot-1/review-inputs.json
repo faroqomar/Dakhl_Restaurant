@@ -1,0 +1,241 @@
+{
+  "recordedUtc": "2026-11-08T06:09:03.229936+00:00",
+  "scope": "One native macOS profile c1.product.create plumbing/correctness pilot; campaign independent review pending",
+  "status": "local_pass_n1_no_matrix_no_performance_acceptance",
+  "n": 1,
+  "soleSampleMs": 186.662,
+  "p50Ms": 186.662,
+  "p95Ms": 186.662,
+  "reportedOsResourceObservations": 14,
+  "resourceWindowSeconds": 0.29857770807575434,
+  "resources": "Broad direct-child marker window; absolute RSS/CPU, post-elapsed verification/reopen/cleanup included; not per-command incremental resources",
+  "workflow": {
+    "stagesPassed": 2,
+    "status": "ready_for_review",
+    "matrixStages": 0,
+    "sourceInputs": 326,
+    "finalSourceReadbackMatches": true
+  },
+  "priorHarnessSourceReview": "Integrated54bindings PASS supplied by root; matched before build",
+  "sourceTransition": "After this frozen receipt, parent may archive/repair unused QA source. Retain explicit old326snapshot provenance; no benchmark dependency change inferred.",
+  "files": [
+    {
+      "path": "../Madar_Engine/tool/dev_benchmarks/benchmark.py",
+      "bytes": 28761,
+      "sha256": "2a7be23029253798bfcc197e2411edc3b9b4037ba1384ba6b24a75e5ed428086"
+    },
+    {
+      "path": "../Madar_Engine/tool/dev_workflow/workflow.py",
+      "bytes": 21906,
+      "sha256": "3ccabda58f24cac7fb0f3c915870af62d77785fc4e95459fd5938e2a3d26b808"
+    },
+    {
+      "path": "dev-tooling-dependency.json",
+      "bytes": 288,
+      "sha256": "24065e391fc13ccf10eaf0f131deb9024641e29b68e7b75dfad07447e0a91299"
+    },
+    {
+      "path": "docs/log/2026-11-08-c1-profile-product-create-pilot.md",
+      "bytes": 6482,
+      "sha256": "d517bdc2c23782c51151e31e5523c76a040a2fda4fa67b519100f797a2277edb"
+    },
+    {
+      "path": "engine-dependency.json",
+      "bytes": 801,
+      "sha256": "8221825716c72a5b1221a1cbfc8f70f27bb3db2ede59648864194ea798544f5c"
+    },
+    {
+      "path": "lib/platform/c1_performance_main.dart",
+      "bytes": 1794,
+      "sha256": "286bb7be151df100bb2a6c9e0d6d8a7c7f0d284c985ddfd7cb9e5c073983eca6"
+    },
+    {
+      "path": "lib/platform/c1_performance_scenarios.dart",
+      "bytes": 17251,
+      "sha256": "78bad859d98c07dd6fe4ab973e0eef8a55b31b1d068acdb4ea58d706e51f17b2"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/integrated-review-inputs.json",
+      "bytes": 13505,
+      "sha256": "e97e5f081693fdf9248aa5149cdc39e957a9b9a81b7cd7126b706f5ad6466fdc"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/campaign-spec.json",
+      "bytes": 427,
+      "sha256": "02fb8580f735fbc2b17d49ce229ae1b6d68ddb39c60fe33190bff2a0563db44a"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/execution-freeze.json",
+      "bytes": 626,
+      "sha256": "8ef06b30fdbceba5cc80d9a403b6ba527ed1c6120151927531f3305fc3773429"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/execution-timing.json",
+      "bytes": 469,
+      "sha256": "a48ab89ba66f4339e9c118115d88eaf13786479a6688e5e51397e541fd2978bd"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/final-source-readback.json",
+      "bytes": 406,
+      "sha256": "dbe438bcdc75a5de707169a8f3e2cb103a20203f682978ed318bc1890bb89a5c"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/fixture-descriptor.json",
+      "bytes": 1492,
+      "sha256": "a95f65344dd7d94f4eeff3f09c0f5ee9381e75a0e8339a39a98efd8018824fd8"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/native-artifact-provenance.json",
+      "bytes": 1118,
+      "sha256": "1d5ae7572bfd6e7954fcdc4405f67e7fb96612f0ecb54a7a7af4075edfb21c9f"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/pilot-interpretation.json",
+      "bytes": 2323,
+      "sha256": "c337404f8ea6ae31b6fdf5b2522900de01d7adc45e6930e3f9b069dd704206e3"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/pilot-receipt-1.json",
+      "bytes": 1748,
+      "sha256": "216784811477d214482e5239f8cc749da30649bb790f6744738f026c1843f665"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/plan.json",
+      "bytes": 39069,
+      "sha256": "d4730beefb6d590900a62090a1a3aaee884c481b0857b509dabfe313899a854d"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/preflight-attempt-1.json",
+      "bytes": 841,
+      "sha256": "ba32b4527c393d1dc63fb730a1d877777cc24bce10284bb9a16bce77c78532e2"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/preflight-spec.json",
+      "bytes": 1395,
+      "sha256": "d47dc0c4757395739012759ae450f2dd6703eee5a5c08c547bd34948c4c607f3"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/preparation-baseline.json",
+      "bytes": 585,
+      "sha256": "67e8e336a2dd29a8276ea3b157d2bcba9bdf407d72c1f6cd11f4d6db8b624b5f"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/preparation-closeout.json",
+      "bytes": 1140,
+      "sha256": "c649d90bdb4ddf8512da976f86d61c1aecc2b783ed3eb64c82cb8e931ca6db73"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/preparation-memory.json",
+      "bytes": 296,
+      "sha256": "fb431ef8de2979b118aedd906d4e043c6dbb00092c69b0d27c0aedd5beb81d88"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/profile-build-cache-receipt.json",
+      "bytes": 1668,
+      "sha256": "31ab5d51351db47f6946ee40952addf5d8d68fefca97d11f24e7c36d5c368b5f"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/result-attempt-1.json",
+      "bytes": 4420,
+      "sha256": "9a13e567e4c04eda39f5ae5a07ae7550fe078c83d70960f9f4e965e7dded1883"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/result-attempt-1.json.diagnostics.json",
+      "bytes": 131,
+      "sha256": "87a71819756f1b7515956c6cc7629820b03dd19d8a7f837c0751f21e4c0b0af5"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/runner-attempt-1.stderr.log",
+      "bytes": 43,
+      "sha256": "0571b5e76dabc56927346f043e967d06035c178c6657abd5dbbdc5c69198e97d"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/runner-attempt-1.stdout.log",
+      "bytes": 4084,
+      "sha256": "534bc3c297cd7b39a0d1285d4832885d6e0b9be690f08656441f6b9646d3f47e"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/runner-execution-attempt-1.json",
+      "bytes": 843,
+      "sha256": "e29969e863b30e56c4c598685fbe36167e9b8cd4667ddae2250d4dd42fe1261b"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/source-input-count.json",
+      "bytes": 211,
+      "sha256": "8020da2f0b1241c2b7e53660e1e8634f1d5f7aea81cfcba301710ee02ccfa926"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/state.json",
+      "bytes": 4318,
+      "sha256": "193413674042ed3529bc3e27ffaf38deaee0523c8fb6a0c397d6824c1d40a867"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/storage-closeout.json",
+      "bytes": 2054,
+      "sha256": "dd09fac1870f76447ea0148ce8393e2b0b241e544e2fbe9ee2195d29072437bf"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/timing.json",
+      "bytes": 469,
+      "sha256": "1200ee926d5d27c43ea7a0e21181d569ad660852d387ebb06965a0318509a7f5"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/workflow-init.json",
+      "bytes": 1742,
+      "sha256": "a53fb824a934e67d82c3b872bc0f1cc8baceea7d2213622e1fb3d87f6354d80a"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/workflow-preflight.json",
+      "bytes": 1913,
+      "sha256": "890008bf239183b49d46c2dae7f2236fead786d34060a4f492db87906b1eca05"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/workflow-record-pilot.json",
+      "bytes": 1732,
+      "sha256": "e7b9db40697d25abf5947748ef25b8969f62c69f424d60b061736515b139132c"
+    },
+    {
+      "path": "outputs/completion-review/c1-operation-benchmarks/profile-pilot-1/workflow-summary.json",
+      "bytes": 1575,
+      "sha256": "5e22d96d76655c390ca56722c177de626c8ce62adf4e6bb7932d9c5cbed0780f"
+    },
+    {
+      "path": "pubspec.lock",
+      "bytes": 25103,
+      "sha256": "63f2edcb3a3f0e521db5f3a71b019410b0a8e908c60e7ccf768678211acd4382"
+    },
+    {
+      "path": "pubspec.yaml",
+      "bytes": 1158,
+      "sha256": "07bba9c18ac09d1ea6f9e1d4ee9559ab5026d4babc3c6e31e74267b61b8afe91"
+    },
+    {
+      "path": "scripts/phase_preflight.py",
+      "bytes": 15109,
+      "sha256": "733b063024a9c064f9d4e4c27f5ebeb0ee6530be05ec8532b71d10bf6c61c14c"
+    },
+    {
+      "path": "scripts/phase_workflow.py",
+      "bytes": 12702,
+      "sha256": "fa42b1b2cd926aa3fce7c1fe8f6d374fa3e5194a7a7ef139c711e2b9e37df2ba"
+    },
+    {
+      "path": "tool/dev_dashboard/operations.json",
+      "bytes": 24914,
+      "sha256": "7712d232c9cb922d714fa319a6fc04b6b569f5852d33c0594bc934ca0fe171a6"
+    },
+    {
+      "path": "tool/dev_dashboard/run_benchmarks.py",
+      "bytes": 32278,
+      "sha256": "dade20315b5bd2f3f4bf95fe2d3aac15fba44301357dc48518c31c17ed2c9116"
+    }
+  ],
+  "limits": [
+    "One sample is not a latency distribution/budget pass/baseline matrix",
+    "No UI/raster/native-input/image decode/mobile performance",
+    "Generic host aggregates OS observations without retaining raw periodic trace",
+    "Same-process fresh-owner reopen is not process/power-loss proof",
+    "Whole-project storage baseline absent in this lane; final totals/components retained",
+    "Parent owns independent review, source succession and aggregate memory/trackers"
+  ]
+}

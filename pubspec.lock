@@ -106,7 +106,7 @@ packages:
     source: hosted
     version: "0.3.5+5"
   crypto:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: crypto
       sha256: e3626ae6270383c9e3a549f34c9e4cd26c09ae6a9adaab2bf4737a00340efdc4
@@ -402,7 +402,7 @@ packages:
       path: "../Madar_Engine/packages/application"
       relative: true
     source: path
-    version: "0.1.0-dev.3"
+    version: "0.1.0-dev.7"
   madar_data:
     dependency: "direct main"
     description:
@@ -416,14 +416,21 @@ packages:
       path: "../Madar_Engine/packages/domain"
       relative: true
     source: path
-    version: "0.1.0-dev.1"
+    version: "0.1.0-dev.5"
   madar_flutter_adapters:
     dependency: "direct main"
     description:
       path: "../Madar_Engine/packages/flutter_adapters"
       relative: true
     source: path
-    version: "0.1.0-dev.1"
+    version: "0.1.0-dev.3"
+  madar_icu_collation:
+    dependency: "direct main"
+    description:
+      path: "../Madar_Engine/packages/icu_collation"
+      relative: true
+    source: path
+    version: "0.1.0-dev.2"
   matcher:
     dependency: transitive
     description:

@@ -1,0 +1,9 @@
+{
+  "appRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
+  "failureCode": "invalid-artifact",
+  "fixtureId": "4b888633f2431f14c5c6e02cfc60e4d49594e0198bb43cb78c91780b46e7b160",
+  "platform": "ios",
+  "runtimeRevision": "c028f0466d63b4068b5696af1d0799f243eea6bb",
+  "status": "preflight-failed",
+  "targetId": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5"
+}

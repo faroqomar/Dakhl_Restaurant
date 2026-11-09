@@ -1,0 +1,10 @@
+{
+  "recordedUtc": "2026-11-08T06:36:41.380509+00:00",
+  "priorTimer": "outputs/completion-review/c1-restart-portability/timing.json",
+  "priorTimerSha256": "2f6c56d22d48d6956ba7fb34bfff72bf1a86b68dc3a14c1c82096e0977239701",
+  "lastRecordedUtc": "2026-11-08T06:13:38.109011+00:00",
+  "priorStatus": "running receipt stale; no owned timer process found",
+  "reason": "Unknown; old process handle unavailable in resumed turn",
+  "coverage": "Interval after prior heartbeat until successor timer start is unknown, not continued work",
+  "action": "Preserve prior receipt and start separate native timer"
+}

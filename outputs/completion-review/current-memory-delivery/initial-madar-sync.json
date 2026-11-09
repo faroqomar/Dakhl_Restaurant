@@ -1,0 +1,27 @@
+{
+  "project": "madar",
+  "bank": "project-madar",
+  "command": [
+    "/Users/eros/Dev/Eros_Projects/Hindsight/.venv/bin/python",
+    "/Users/eros/Dev/Eros_Projects/Hindsight/bin/memory.py",
+    "sync",
+    "--project",
+    "madar"
+  ],
+  "start_utc": "2026-11-08T09:14:25.937195+00:00",
+  "end_utc": "2026-11-08T09:14:26.017013+00:00",
+  "elapsed_seconds": 0.079818,
+  "exit_code": 0,
+  "source_count_before": 125,
+  "source_count_after": 125,
+  "changed_during_command": [],
+  "current_summary": null,
+  "queued": [],
+  "source_hashes_current_match_synced_count": 125,
+  "current_sources_not_yet_matching_synced_hash": [],
+  "source_scope_receipt": "initial-madar-sync-source-scope.json",
+  "after_source_manifest": {
+    "file": "madar-source-manifest.json",
+    "sha256": "237e8f73ac71b94d795c3b45d334a3ced31452cc5711cb5a5d7f4edb20f8a658"
+  }
+}

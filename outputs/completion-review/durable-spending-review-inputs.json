@@ -1,0 +1,89 @@
+{
+  "createdUtc": "2026-11-07T18:52:19.941603+00:00",
+  "status": "candidate_independent_review_pending",
+  "engineCommit": "d316fd6076375daa3f412889f73eaebfeeb5d4d4",
+  "files": [
+    {
+      "path": "lib/accounting/journal_command_host.dart",
+      "sha256": "ce26122bc550926fefcf1e8d30108c73ac2a66f2e8ad2871120f7512aa0a8721"
+    },
+    {
+      "path": "lib/accounting/restaurant_journal_spending_commands.dart",
+      "sha256": "135f55cf7ea709eef323318c173d11239b428b3f12131c266b532473324e3346"
+    },
+    {
+      "path": "lib/accounting/restaurant_journal_sale_commands.dart",
+      "sha256": "7c030d5b570dac9d42e433b9291a050396d2610236afc70c9a6c5fea7abe60b9"
+    },
+    {
+      "path": "test/accounting/journal_command_host_test.dart",
+      "sha256": "f077754581b1e8e9bcca8bd81800b2ba50c8b17479c846c98d76e55068bd39d7"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_spending_commands_test.dart",
+      "sha256": "45d320002826a011ad77cd485b932ab845f3ef125bc2c32cb04de0c979766694"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_spending_conformance_test.dart",
+      "sha256": "13bbbdcf509abc1e7e4e58047c8b961d82d369bb3662e095a71683592410cf62"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_sale_commands_test.dart",
+      "sha256": "a7e9e44a07c694b34cde1abdea83eda2401425717efeef788ebfbe7dc73dc176"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_sale_conformance_test.dart",
+      "sha256": "dc0967016b223d9517c632611c5a5c385900951de168606b650eab01b2f04753"
+    },
+    {
+      "path": "test/accounting/restaurant_journal_sale_safety_test.dart",
+      "sha256": "add3ddf085f2ea1774e7ad771215df5eef188892baa17d82d273314679d70008"
+    },
+    {
+      "path": "docs/reference/durable-spending-commands.md",
+      "sha256": "234bfb2eb37163ccb5a0f8f3917388617ce0a9a2f3eb5d6370db92dddd1f1b3c"
+    },
+    {
+      "path": "docs/phases/completion-durable-spending-contract.md",
+      "sha256": "6c6003bce0c53ff7ac3cca14d6afce20d8dfbbf80dc68eb79113fec81d3b5ec4"
+    },
+    {
+      "path": "docs/decisions/0021-completion-financial-policy.md",
+      "sha256": "5b5dc5a88edfcd6c6d3b75440658c5b57e66a94bda52c5d32e005f45c45ba3b1"
+    },
+    {
+      "path": "lib/accounts/portable_journal_codec.dart",
+      "sha256": "c24aa540615408ab001a18fa595a75bd799fd6e5b323cf56d8ec035de025e49a"
+    },
+    {
+      "path": "lib/accounts/portable_journal_state.dart",
+      "sha256": "ae1a0181e21b5fcb1b110f47c02bc98ab78f37d81a8099ce24f19633d6fefcb0"
+    },
+    {
+      "path": "lib/accounting/restaurant_journal_mapper.dart",
+      "sha256": "0916bc37d753de94dc5df36ddefd92250581abb35233e069b5ed2806b1eeb8da"
+    },
+    {
+      "path": "lib/parties/purchase_proposal.dart",
+      "sha256": "c7b1a21f3b9eb9d5f2ef0b2c33b3cd0c64cedd2e61c64f0f8b02ce584cbd9563"
+    },
+    {
+      "path": "lib/parties/supplier_ledger.dart",
+      "sha256": "71b3b0bc4dc1fffc8389eeeabe212216f8b10fe24f0891c64b3721bb064dcc7e"
+    }
+  ],
+  "rootVerification": {
+    "accountingTestsBeforeRepair": 136,
+    "newRegressionFailures": 2,
+    "accountingTestsAfterRepair": 138,
+    "affectedAnalysis": "no issues",
+    "originalSalesTestsUnchanged": true
+  },
+  "runtimeActivated": false,
+  "knownConcerns": [
+    "unposted post-cutover debt eligibility",
+    "opening/history payment reconciliation",
+    "invoice and replay source integrity",
+    "ledger comparator boundary"
+  ]
+}

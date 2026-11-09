@@ -1,0 +1,114 @@
+[
+  {
+    "boardId": "ef9dc521-4e97-80c0-8008-e9525586a5d5",
+    "depth": "--depth: 0;",
+    "geometry": [
+      {
+        "label": "Width",
+        "value": "1440"
+      },
+      {
+        "label": "Height",
+        "value": "1000"
+      },
+      {
+        "label": "X axis",
+        "value": "72000"
+      },
+      {
+        "label": "Y axis",
+        "value": "6000"
+      }
+    ],
+    "imageCount": 53,
+    "maximumImageArea": 1440000,
+    "name": "Completion · C2 supplement · Held orders empty · Design",
+    "renderedShapeDescendants": 739,
+    "root": true,
+    "saved": true
+  },
+  {
+    "boardId": "ef9dc521-4e97-80c0-8008-e984404ceae3",
+    "depth": "--depth: 0;",
+    "geometry": [
+      {
+        "label": "Width",
+        "value": "1440"
+      },
+      {
+        "label": "Height",
+        "value": "1000"
+      },
+      {
+        "label": "X axis",
+        "value": "78000"
+      },
+      {
+        "label": "Y axis",
+        "value": "6000"
+      }
+    ],
+    "imageCount": 5,
+    "maximumImageArea": 1440000,
+    "name": "Completion · C2 supplement · Held orders empty · Wireframe",
+    "renderedShapeDescendants": 758,
+    "root": true,
+    "saved": true
+  },
+  {
+    "boardId": "ef9dc521-4e97-80c0-8008-e9850554be41",
+    "depth": "--depth: 0;",
+    "geometry": [
+      {
+        "label": "Width",
+        "value": "1440"
+      },
+      {
+        "label": "Height",
+        "value": "1000"
+      },
+      {
+        "label": "X axis",
+        "value": "72000"
+      },
+      {
+        "label": "Y axis",
+        "value": "7160"
+      }
+    ],
+    "imageCount": 53,
+    "maximumImageArea": 1440000,
+    "name": "Completion · C2 supplement · Editable held name · Design",
+    "renderedShapeDescendants": 751,
+    "root": true,
+    "saved": true
+  },
+  {
+    "boardId": "ef9dc521-4e97-80c0-8008-e985c0d6a73a",
+    "depth": "--depth: 0;",
+    "geometry": [
+      {
+        "label": "Width",
+        "value": "1440"
+      },
+      {
+        "label": "Height",
+        "value": "1000"
+      },
+      {
+        "label": "X axis",
+        "value": "78000"
+      },
+      {
+        "label": "Y axis",
+        "value": "7160"
+      }
+    ],
+    "imageCount": 5,
+    "maximumImageArea": 1440000,
+    "name": "Completion · C2 supplement · Editable held name · Wireframe",
+    "renderedShapeDescendants": 771,
+    "root": true,
+    "saved": true
+  }
+]

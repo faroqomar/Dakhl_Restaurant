@@ -1,0 +1,12 @@
+{
+  "predecessors": [
+    "native-campaign-001",
+    "native-campaign-002"
+  ],
+  "reason": "Split-layout partial-publication and interrupted-cleanup recovery guards, eight passing script regressions; epoch002 never ran preflight/build",
+  "canonicalFixtureReused": {
+    "root": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-review-preflight-_xr_rzu5",
+    "path": "/private/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/dakhl-review-preflight-_xr_rzu5/synthetic-fixture-source.txt",
+    "sha256": "2a72b0a9c79c7a3ed8fdaaf43840644bdd9fad82b086ff4650fec1835ceffd7e"
+  }
+}
