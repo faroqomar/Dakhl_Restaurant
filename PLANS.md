@@ -10,7 +10,7 @@ Restarted Step2, 2026-11-07: **Step2 planning COMPLETE — independent review cl
 
 # Active execution: one Completion phase
 
-Owner direction, 2026-11-05: consolidate all remaining work into **Completion**. Include unfinished 00/02 obligations and original 03–11 requirements; reuse approved Phase 01 DONE work. Original IDs below remain work-package/dependency references, with their full acceptance criteria and historical evidence preserved. They no longer require separate phase starts. [Current scope/readiness](docs/phases/completion-scope-readiness.md) · [Current planning view](docs/planning/flutter-rebuild/completion.html).
+Owner direction, 2026-11-05: consolidate all remaining work into **Completion**. Include unfinished 00/02 obligations and original 03–11 requirements; reuse approved Phase 01 DONE work. Original IDs below remain work-package/dependency references, with their full acceptance criteria and historical evidence preserved. They no longer require separate phase starts. [Current scope/readiness](docs/phases/completion-scope-readiness.md) · [Current planning view](docs/phases/completion-scope-readiness.md).
 
 Historical stage,2026-11-07: self-hosted Penpot is established and all165reference pairs have native exports. Step1.5 correction/qualification, selected native patterns and owner presentation remain incomplete. Step2 plan bodies passed focused review; target/access inventory and explicit approvals remain pending. [Current verification](docs/log/2026-11-07-completion-verification.md). [Preparation, artifacts and limits](docs/phases/completion-penpot-design-review.md). Design, implementation plan, merge and delivery approvals remain distinct. No implementation authorization. Frozen generated 12-package material is a requirements/reference library; do not rerun its historical builder to overwrite this grouping. Future authorized documentation maintenance must preserve this overlay.
 
@@ -32,7 +32,7 @@ Execution update,2026-10-29: Phase01 approved development-preview scope is DONE 
 
 Historical initialization status,2026-10-28: Phase00 baseline was under verification and product UI implementation had not started.
 
-Read [AGENTS.md](AGENTS.md) for mandatory workflow and [PHASES.md](PHASES.md) for live status/evidence. This file is the binding phase index and incorporates the scope and acceptance requirements in each linked detailed phase file. The [visual plan](docs/planning/flutter-rebuild/plan.html) and [179-image library](docs/planning/flutter-rebuild/gallery.html) remain in place.
+Read [AGENTS.md](AGENTS.md) for mandatory workflow and [PHASES.md](PHASES.md) for live status/evidence. This file is the binding phase index and incorporates the scope and acceptance requirements in each linked detailed phase file. The [visual plan](docs/planning/flutter-rebuild/README.md) and [179-image library](docs/planning/flutter-rebuild/gallery.html) remain in place.
 
 ## Retained work-package definitions
 

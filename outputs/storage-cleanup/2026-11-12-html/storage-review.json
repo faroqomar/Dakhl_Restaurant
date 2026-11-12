@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-11-12T17:05:57.514862+00:00",
+  "baseline_kib": {
+    ".": 25093264,
+    ".git": 14984720,
+    "docs": 56068,
+    "outputs": 8080772
+  },
+  "final_kib": {
+    ".": 25066644,
+    ".git": 14984660,
+    "docs": 55424,
+    "outputs": 8054920
+  },
+  "project_reduction_kib": 26620,
+  "free_bytes_before": 57444634624,
+  "free_bytes_after": 57320538112,
+  "removed_allocated_bytes": 28286976,
+  "retained_html": 21,
+  "retained_html_purpose": "7tracked canonical screenshot/current review/print pages;14local-only editable/source/review helpers",
+  "retained_nonhtml": "All geometry/sourceJSON, PNG/SVG, fonts, native archives/bundles, accounts, existing dirty files",
+  "task_artifacts": {
+    "path": "outputs/storage-cleanup/2026-11-12-html",
+    "purpose": "One canonical hash-based retention manifest plus compact deletion/link/verification/storage receipts; no copied HTML/images/archives",
+    "kib": 1044
+  },
+  "git_temporary_object_dirs": [],
+  "git_object_pruning": false,
+  "unattributed_shared_volume_delta": "No reclaimed-space claim from global free-disk variation",
+  "cleanup": "Temporary task-only Python scripts removed after checks; no build/compiler cache created by this task"
+}

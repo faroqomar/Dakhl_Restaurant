@@ -1,6 +1,6 @@
 > Source-retirement update, 2026-11-12: this is a frozen requirements/reference pack. Current implementation status belongs to [PHASES.md](../../../PHASES.md). The owner removed the Electron source and obsolete planning/capture generators; retain screenshots/manifests and historical phase definitions. Source citations below refer to Git revision `2c0eccd79ad3999b3b82779d9722bffbfb94f694`; [decision 0022](../../decisions/0022-retire-electron-reference.md) records recovery. Historical “not started” labels describe the original plan, not current execution.
 
-> Execution update, 2026-11-05: the owner grouped all remaining work into one **Completion phase**. Original IDs below remain requirement/work-package references. Preserve prior DONE evidence and unfinished checks. [Current scope and readiness](../../phases/completion-scope-readiness.md) · [Current planning view](completion.html). This historical pack does not grant implementation approval.
+> Execution update, 2026-11-05: the owner grouped all remaining work into one **Completion phase**. Original IDs below remain requirement/work-package references. Preserve prior DONE evidence and unfinished checks. [Current scope and readiness](../../phases/completion-scope-readiness.md) · [Current planning view](../../phases/completion-scope-readiness.md). This historical pack does not grant implementation approval.
 
 # Dakhl_Restaurant — Flutter/Dart rebuild to a complete MVP
 
@@ -48,7 +48,7 @@ Phases 00–02 establish the runnable foundation; 03–05 deliver inventory and 
 
 The owner requested fewer, more coherent phases. The revision combines design with navigation, sales with draft/held-ticket recovery, daily accounting with categories and cashbox, suppliers with materials, invoices with settlement, and statements/day review with reports/printing. Storage safety, inventory, return accounting and final release remain distinct gates.
 
-All original work items, feature-specific acceptance checks and 179 screenshot files are retained. Dependencies and screenshot filters use the new numbering. The [phase map](phase-map.md) records every old-to-new assignment and why it was merged; the [historical 19-phase version](archive/v1-19-phases/plan.html) remains available for comparison and is superseded. A merged phase includes several workstreams and is complete only when all of them pass.
+All original work items, feature-specific acceptance checks and 179 screenshot files are retained. Dependencies and screenshot filters use the new numbering. The [phase map](phase-map.md) records every old-to-new assignment and why it was merged; the [historical 19-phase version](archive/v1-19-phases/README.md) remains available for comparison and is superseded. A merged phase includes several workstreams and is complete only when all of them pass.
 
 ## Proposed implementation boundaries
 

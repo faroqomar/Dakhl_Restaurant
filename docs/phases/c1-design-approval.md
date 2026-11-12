@@ -10,4 +10,6 @@ Five category discrepancy pairs remain on hold. This approval neither approves s
 
 Madar Design/API change: N/A. The app composes the existing reviewed catalog/stock/journal contracts; reusable engine candidates retain their own review/adoption gates.
 
-Publication note, 2026-11-09: the portable gallery changes only image URLs to checkout-relative paths. The original approved HTML and its recorded hash remain unchanged; all 40 image bytes are the exact canonical crops, not new exports.
+Publication note, 2026-11-09: the portable gallery changes only image URLs to checkout-relative paths. The original approved HTML and its recorded hash remain preserved in Git history after the 2026-11-12 cleanup; all 40 image bytes are the exact canonical crops, not new exports.
+
+HTML cleanup, 2026-11-12: the original approved `catalog-design-review.html` remains recoverable at Git revision `433ee33f1b2811687cc8b23af2c5c9014786de5d`; it no longer occupies a checkout path. The portable gallery and approved crop files remain byte-identical at their existing paths. This maintenance grants no new design approval.

@@ -2,7 +2,7 @@
 
 Status: extracted reference plus planned acceptance rules, 2026-10-27. No Flutter implementation yet.
 
-[Visual board](design-system.html) · [Board image](screenshots/design-system.png) · [Computed tokens](design-tokens.json) · [All screenshots](gallery.html)
+[Visual board](design-system.md) · [Board image](screenshots/design-system.png) · [Computed tokens](design-tokens.json) · [All screenshots](gallery.html)
 
 ## Frozen token inventory
 
