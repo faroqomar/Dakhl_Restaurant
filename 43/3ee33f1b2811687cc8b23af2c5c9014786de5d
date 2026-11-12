@@ -1,0 +1,21 @@
+docs/log/2026-11-12-reference-cleanup.md
+  s_861dc41d98c7d8::t_c38b2759f56358 66-71
+outputs/storage-cleanup/2026-11-12/publication.json
+  s_861dc41d98c7d8::t_31761a408f546a 12-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "433ee33f1b2811687cc8b23af2c5c9014786de5d",
+  "prompts": {},
+  "sessions": {
+    "s_861dc41d98c7d8": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d014-7c7f-7783-8d8c-42a66c23811f",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
