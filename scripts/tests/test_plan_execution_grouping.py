@@ -1,20 +1,40 @@
-import ast
 import json
 from pathlib import Path
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
 
+
 class PlanGroupingTest(unittest.TestCase):
-    def test_builder_emits_retained_completion_scope(self):
-        tree = ast.parse((ROOT / 'scripts/build-flutter-plan.py').read_text())
-        current = json.loads((ROOT / 'docs/planning/flutter-rebuild/phase-map.json').read_text())
-        assignment = next(n for n in tree.body if isinstance(n, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'EXECUTION_GROUPING' for t in n.targets))
-        grouping = ast.literal_eval(assignment.value)
-        call = next(n.value for n in tree.body if isinstance(n, ast.Expr) and isinstance(n.value, ast.Call) and isinstance(n.value.func, ast.Name) and n.value.func.id == 'write' and n.value.args and isinstance(n.value.args[0], ast.Constant) and n.value.args[0].value == 'phase-map.json')
-        captured = {}
-        groups = [(g['phase'], g['title'], g['dependencies'], g['former_phases'], '', g['reason']) for g in current['groups']]
-        env = dict(json=json, write=lambda name, data: captured.update(json.loads(data)), EXECUTION_GROUPING=grouping, BASELINE_PHASES=[None]*current['old_phase_count'], PHASES=[None]*current['current_phase_count'], OLD_TO_NEW=current['old_to_new'], PHASE_GROUPS=groups)
-        exec(compile(ast.fix_missing_locations(ast.Module(body=[ast.Expr(call)], type_ignores=[])), '<phase-map-writer>', 'exec'), env)
-        self.assertEqual(captured['execution_grouping'], current['execution_grouping'])
-        self.assertEqual(captured['old_to_new'], current['old_to_new'])
+    def test_retained_capture_mapping_covers_each_original_phase_once(self):
+        current = json.loads(
+            (ROOT / 'docs/planning/flutter-rebuild/phase-map.json').read_text()
+        )
+        self.assertEqual(current['old_phase_count'], 19)
+        self.assertEqual(current['current_phase_count'], 12)
+        self.assertEqual(
+            {g['phase'] for g in current['groups']},
+            {f'{i:02}' for i in range(12)},
+        )
+        mapping = {}
+        for group in current['groups']:
+            for old in group['former_phases']:
+                self.assertNotIn(old, mapping, 'Original phase assigned twice')
+                mapping[old] = group['phase']
+        self.assertEqual(set(mapping), {f'{i:02}' for i in range(19)})
+        self.assertEqual(mapping, current['old_to_new'])
+
+    def test_completion_overlay_retains_required_work_packages(self):
+        current = json.loads(
+            (ROOT / 'docs/planning/flutter-rebuild/phase-map.json').read_text()
+        )
+        grouping = current['execution_grouping']
+        self.assertEqual(grouping['phase'], 'Completion')
+        self.assertEqual(
+            grouping['included_work_packages'],
+            ['00-residual', '02-residual'] + [f'{i:02}' for i in range(3, 12)],
+        )
+        self.assertEqual(grouping['reused_completed_work_packages'], ['01'])
+        self.assertTrue(grouping['preserve_original_capture_mapping'])
+        scope = ROOT / 'docs/planning/flutter-rebuild' / grouping['scope_record']
+        self.assertTrue(scope.is_file(), 'Completion scope record must remain available')

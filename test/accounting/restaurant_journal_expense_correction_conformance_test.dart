@@ -65,7 +65,7 @@ void main() {
     return (result as CapabilitySuccess<DocumentSnapshot>).value.fence;
   }
 
-  test('PowerSync actual frozen renderer edits/delete full-map parity and historical replay after reopen', () async {
+  test('PowerSync frozen edit/delete fixture full-map parity and historical replay after reopen', () async {
     final store = await open();
     final fence = await seed(store);
     final create = fixtures.createExpense(fence: fence);
@@ -75,58 +75,9 @@ void main() {
       isA<DurableCommandSuccess<RestaurantJournalSpendingOutcome>>(),
     );
     final initial = await expenseState(store);
-    final actions = [
-      {
-        'type': 'edit',
-        'id': 'expense',
-        'originalDate': '2026-01-10',
-        'values': {
-          'date': '2026-01-11',
-          'category': 'market',
-          'amount': '180',
-          'paymentSource': 'cash',
-          'note': ' edited ',
-        },
-      },
-      {
-        'type': 'edit',
-        'id': 'expense',
-        'originalDate': '2026-01-11',
-        'values': {
-          'date': '2026-01-10',
-          'category': 'bread',
-          'amount': '90',
-          'paymentSource': 'shared',
-          'dailyAmount': '30',
-          'cashAmount': '60',
-          'note': ' second ',
-        },
-      },
-      {
-        'type': 'edit',
-        'id': 'expense',
-        'originalDate': '2026-01-10',
-        'values': {
-          'date': '2026-01-10',
-          'category': 'bread',
-          'amount': '0',
-          'paymentSource': 'daily',
-          'note': ' zero ',
-        },
-      },
-      {'type': 'delete', 'id': 'expense', 'originalDate': '2026-01-10'},
-    ];
-    final process = await Process.start('node', [
-      'outputs/completion-review/durable-expense-corrections/renderer-oracle.cjs',
-    ]);
-    process.stdin.write(
-      jsonEncode({'state': initial.account.toJson(), 'actions': actions}),
-    );
-    await process.stdin.close();
-    final output = await process.stdout.transform(utf8.decoder).join();
-    final error = await process.stderr.transform(utf8.decoder).join();
-    expect(await process.exitCode, 0, reason: error);
-    final oracle = jsonDecode(output) as Map;
+    final oracle = jsonDecode(
+      File('test/fixtures/legacy/expense_corrections.json').readAsStringSync(),
+    ) as Map;
     final expected = oracle['results'] as List;
     final correction = RestaurantJournalExpenseCorrectionCoordinator(
       store: store,

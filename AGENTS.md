@@ -23,7 +23,7 @@ Give every subagent this reading requirement and ownership boundary. Keep projec
 
 - Current user instructions govern scope. The adopted universal workflow and the restaurant-specific rules below apply together. Retain single-restaurant, Arabic RTL/IQD, offline-data and historical-record protections; do not import the stack or product scope of another project.
 - Owner direction2026-10-28: develop Madar_Engine alongside this app. Shared engine contracts/business capabilities/reusable adapters live only in Madar_Engine; consume its packages here, never copy/fork engine source. App UI, restaurant workflows, document composition and app-specific safeguards stay here. Read both projects' current scope before cross-project changes; do not add Madar's proposed cloud stack or unresolved financial policies to this offline app. [Boundary decision](docs/decisions/0018-madar-engine-boundary.md).
-- Flutter work belongs at the root. Preserve electron-reference/ and keep the detailed plan/screenshots in docs/planning/flutter-rebuild/.
+- Flutter work belongs at the root. The owner retired `electron-reference/` on 2026-11-12; preserve the detailed plan/screenshots in `docs/planning/flutter-rebuild/` and synthetic regression fixtures in `test/fixtures/`. See the retirement rule below.
 - PLANS.md defines the current 12 phases (00–11) and incorporates their detailed scope. PHASES.md is authoritative for execution status and completion evidence. Published plan pages do not override the tracker.
 - The owner's screenshot-reproduction direction is approved as intent, not evidence of design validation or approval. On 2026-10-28 the owner explicitly replaced Figma with **Penpot**. Penpot is the design/reference-validation destination for this project; the approval gate remains mandatory. The Figma wording in the preserved universal source below is superseded only as to the tool. Non-UI phases record Design: N/A; reassess when UI enters scope.
 - Reuse one Penpot project/file/page for all future create/recreate-design requests: project **Dakhl_Restaurant**, file **Dakhl_Restaurant · Phase designs & wireframes**, page **Dakhl_Restaurant · Designs & Wireframes / Designs**. This is an English rendering for documentation; canonical IDs and the external workspace are not renamed by this translation. [Canonical page](https://design.penpot.app/#/workspace?team-id=bfddaaba-4180-81d4-8008-db9f13093baa&file-id=122350ae-89ad-8027-8008-dba0bd5cf454&page-id=122350ae-89ad-8027-8008-dba0bd5cf455). Keep phase versions in named boards on that page, preserve prior work, and use computer use if MCP is blocked. Phase 00's current design prerequisite covers only its three listed desktop screenshots and matching wireframes. [Decision and scope](docs/decisions/0015-penpot-design-workspace.md).
@@ -302,7 +302,7 @@ Status: approved instructions. Date: 2026-10-16. Source: project-owner direction
 
 ### Folder organization — 2026-10-28
 
-The project root is for the Flutter/Dart rebuild. The old application, dependencies and tests are in `electron-reference/` for reference; do not implement Flutter features there. The plan/screenshots stay in `docs/planning/flutter-rebuild/` outside the reference folder; documentation, memory and Git remain shared at the root. Links named `docs/`, `outputs/`, `dist/` and `design/` inside the reference point to root folders and do not mean those folders moved. Run reference tests from the root with `npm --prefix electron-reference test`. Do not launch the normal application merely to verify relocation because it may read restaurant accounts. [Organization decision](docs/decisions/0013-electron-reference-folder.md).
+The project root contains the Flutter/Dart application. Owner direction, 2026-11-12: remove the preserved `electron-reference/` application and its obsolete capture/export tooling. Earlier preservation instructions describe the historical layout and are superseded for that folder. The retained plans/screenshots stay in `docs/planning/flutter-rebuild/`; Git history preserves the retired source. Use fixed synthetic regression fixtures for compatibility checks, with source revision/hash provenance. Do not restore a runnable Electron copy or run retired npm commands as routine verification. [Retirement decision](docs/decisions/0022-retire-electron-reference.md).
 
 This project serves **one restaurant only**. Read `docs/reference/project-scope.md` and `docs/README.md` first. Do not automatically turn it into a multi-restaurant platform or general-purpose product. Invoices, campaigns, ideas and the dedicated application serve the same restaurant. These instructions document direction, not implemented in-app campaign functionality.
 
@@ -315,7 +315,7 @@ This project serves **one restaurant only**. Read `docs/reference/project-scope.
 
 ## Protect the application
 
-- The current application is Electron/JavaScript with local JSON data. Do not impose a new technology/database because another project's examples use it.
+- The current application is Flutter/Dart with offline local records. The Electron application was retired from this checkout on 2026-11-12. Do not impose a new database because another project's examples use it.
 - Preserve older accounts, backups and validation before save/import. Every schema change needs a record-preserving migration and appropriate tests.
 - Worker advances are independent of expenses/cashbox. Chicken counts are outside financial amounts. A supplier invoice records debt; payment enters expenses and deducts its source exactly once.
 - Remaining cash, cashbox and overall balance are not alternative names for net profit. Document a report's meaning before implementation.
@@ -328,7 +328,7 @@ This project serves **one restaurant only**. Read `docs/reference/project-scope.
 2. Record significant decisions and rationale in `docs/decisions/`; preserve earlier decisions with successor links.
 3. Update affected documentation and record the task outcome in `docs/log/YYYY-MM-DD-topic.md`: request, change, reason, actual verification, limits and next action.
 4. Distinguish proposed, approved, implemented and verified states. Never record test/campaign results without evidence. Do not invent ideas/campaigns in the owner's name merely to fill a register.
-5. Run verification appropriate to the change. Application changes need `npm test` and the affected-path checks; documentation-only changes need source/link/state-accuracy review.
+5. Run verification appropriate to the change. Application changes need the applicable Flutter tests, analysis and affected-path checks; documentation-only changes need source/link/state-accuracy review. The retired Electron test command no longer applies.
 6. Run `./scripts/memory sync` and then `./scripts/memory check`; queue submission is not completion. Recheck pending operations and disclose failures/pending work.
 
 ## Project-memory boundaries

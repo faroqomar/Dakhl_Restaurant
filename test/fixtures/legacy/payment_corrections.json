@@ -1,0 +1,385 @@
+{
+  "source": {
+    "suppliersSha256": "3e99769a498fe6bd30230b07b88e6c2bcff8e5302881600b4fa341660a73cfe3",
+    "submitBodySha256": "7f85126d20fb3c1a14bee86249a1660040098c2a6ba238b0d30a2ebefc77b0f3",
+    "fundingBodySha256": "6c2163923aeb942ad7168eab32ecb690b847009926390ecf62e2776a065ca5f4",
+    "deleteBodySha256": "0ecbe9886c57ae24786824e38c8098718310f2c4ed22338ab631e66fa2983dec"
+  },
+  "results": [
+    {
+      "account": {
+        "version": 11,
+        "products": [],
+        "stockEntries": [],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [
+          {
+            "id": "supplier",
+            "name": "supplier",
+            "phone": "",
+            "note": "",
+            "categoryId": "samoon",
+            "openingBalance": 7500,
+            "materials": []
+          },
+          {
+            "id": "other",
+            "name": "other",
+            "phone": "",
+            "note": "",
+            "categoryId": "samoon",
+            "openingBalance": 0,
+            "materials": []
+          }
+        ],
+        "invoices": [
+          {
+            "id": "invoice",
+            "supplierId": "supplier",
+            "number": "I-1",
+            "date": "2026-01-05",
+            "lines": [
+              {
+                "materialId": "material",
+                "name": "Flour",
+                "unit": "bag",
+                "quantityCartons": 0,
+                "quantityPieces": 1,
+                "priceCarton": 0,
+                "pricePiece": 12500,
+                "quantity": 1,
+                "price": 12500
+              }
+            ],
+            "note": "",
+            "createdAt": "2026-01-05T12:00:00.000Z"
+          }
+        ],
+        "payments": [
+          {
+            "id": "payment",
+            "supplierId": "supplier",
+            "invoiceId": "invoice",
+            "invoiceAmount": 12500,
+            "debtAmount": 5500,
+            "categoryId": "market",
+            "date": "2026-01-10",
+            "amount": 18000,
+            "funding": {
+              "source": "shared",
+              "dailyAmount": 13000,
+              "cashAmount": 5000
+            },
+            "note": "edited",
+            "createdAt": "2026-01-10T12:00:00.000Z"
+          }
+        ],
+        "debts": [],
+        "materials": [
+          {
+            "id": "material",
+            "name": "Flour",
+            "unit": "bag",
+            "priceCarton": 0,
+            "pricePiece": 12500,
+            "archived": false
+          }
+        ],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "cash": -5000,
+      "dailySpent": 13000
+    },
+    {
+      "account": {
+        "version": 11,
+        "products": [],
+        "stockEntries": [],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [
+          {
+            "id": "supplier",
+            "name": "supplier",
+            "phone": "",
+            "note": "",
+            "categoryId": "samoon",
+            "openingBalance": 7500,
+            "materials": []
+          },
+          {
+            "id": "other",
+            "name": "other",
+            "phone": "",
+            "note": "",
+            "categoryId": "samoon",
+            "openingBalance": 0,
+            "materials": []
+          }
+        ],
+        "invoices": [
+          {
+            "id": "invoice",
+            "supplierId": "supplier",
+            "number": "I-1",
+            "date": "2026-01-05",
+            "lines": [
+              {
+                "materialId": "material",
+                "name": "Flour",
+                "unit": "bag",
+                "quantityCartons": 0,
+                "quantityPieces": 1,
+                "priceCarton": 0,
+                "pricePiece": 12500,
+                "quantity": 1,
+                "price": 12500
+              }
+            ],
+            "note": "",
+            "createdAt": "2026-01-05T12:00:00.000Z"
+          }
+        ],
+        "payments": [
+          {
+            "id": "payment",
+            "supplierId": "supplier",
+            "invoiceId": "invoice",
+            "invoiceAmount": 12500,
+            "debtAmount": 4500,
+            "categoryId": "bread",
+            "date": "2026-01-11",
+            "amount": 17000,
+            "funding": {
+              "source": "shared",
+              "dailyAmount": 12000,
+              "cashAmount": 5000
+            },
+            "note": "twice",
+            "createdAt": "2026-01-10T12:00:00.000Z"
+          }
+        ],
+        "debts": [],
+        "materials": [
+          {
+            "id": "material",
+            "name": "Flour",
+            "unit": "bag",
+            "priceCarton": 0,
+            "pricePiece": 12500,
+            "archived": false
+          }
+        ],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "cash": -5000,
+      "dailySpent": 0
+    },
+    {
+      "account": {
+        "version": 11,
+        "products": [],
+        "stockEntries": [],
+        "sales": [],
+        "saleReturns": [],
+        "preferences": {
+          "shortcuts": [
+            "sales",
+            "inventory",
+            "sale-history",
+            "expenses",
+            "cash",
+            "settings"
+          ],
+          "orderTypes": [
+            "صالة",
+            "سفري",
+            "توصيل"
+          ],
+          "restaurant": {
+            "name": "",
+            "contact": "",
+            "footer": ""
+          }
+        },
+        "categories": [
+          {
+            "id": "samoon",
+            "name": "الصمون",
+            "type": "primary"
+          },
+          {
+            "id": "bread",
+            "name": "الخبز",
+            "type": "primary"
+          },
+          {
+            "id": "falafel",
+            "name": "الفلافل",
+            "type": "primary"
+          },
+          {
+            "id": "market",
+            "name": "الأسواق",
+            "type": "primary"
+          }
+        ],
+        "days": {},
+        "transactions": [],
+        "transfers": [],
+        "suppliers": [
+          {
+            "id": "supplier",
+            "name": "supplier",
+            "phone": "",
+            "note": "",
+            "categoryId": "samoon",
+            "openingBalance": 7500,
+            "materials": []
+          },
+          {
+            "id": "other",
+            "name": "other",
+            "phone": "",
+            "note": "",
+            "categoryId": "samoon",
+            "openingBalance": 0,
+            "materials": []
+          }
+        ],
+        "invoices": [
+          {
+            "id": "invoice",
+            "supplierId": "supplier",
+            "number": "I-1",
+            "date": "2026-01-05",
+            "lines": [
+              {
+                "materialId": "material",
+                "name": "Flour",
+                "unit": "bag",
+                "quantityCartons": 0,
+                "quantityPieces": 1,
+                "priceCarton": 0,
+                "pricePiece": 12500,
+                "quantity": 1,
+                "price": 12500
+              }
+            ],
+            "note": "",
+            "createdAt": "2026-01-05T12:00:00.000Z"
+          }
+        ],
+        "payments": [],
+        "debts": [],
+        "materials": [
+          {
+            "id": "material",
+            "name": "Flour",
+            "unit": "bag",
+            "priceCarton": 0,
+            "pricePiece": 12500,
+            "archived": false
+          }
+        ],
+        "workers": [],
+        "savingsEntries": []
+      },
+      "cash": 0,
+      "dailySpent": 0
+    }
+  ]
+}

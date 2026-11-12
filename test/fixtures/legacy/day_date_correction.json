@@ -1,0 +1,232 @@
+{
+  "before": {
+    "version": 11,
+    "products": [
+      {
+        "id": "p",
+        "name": "Product",
+        "code": "",
+        "unit": "piece",
+        "price": 1000,
+        "group": "",
+        "minStock": 0,
+        "trackStock": false,
+        "archived": false
+      }
+    ],
+    "stockEntries": [],
+    "sales": [
+      {
+        "id": "sale",
+        "number": "S-000001",
+        "date": "2026-11-07",
+        "status": "completed",
+        "lines": [
+          {
+            "productId": "p",
+            "name": "Product",
+            "unit": "piece",
+            "quantity": 1,
+            "price": 1000,
+            "trackStock": false
+          }
+        ],
+        "discount": 0,
+        "paid": 1000,
+        "note": "",
+        "createdAt": "2026-11-07T10:00:00Z",
+        "orderType": "صالة"
+      }
+    ],
+    "saleReturns": [],
+    "preferences": {
+      "shortcuts": [
+        "sales",
+        "inventory",
+        "sale-history",
+        "expenses",
+        "cash",
+        "settings"
+      ],
+      "orderTypes": [
+        "صالة",
+        "سفري",
+        "توصيل"
+      ],
+      "restaurant": {
+        "name": "",
+        "contact": "",
+        "footer": ""
+      }
+    },
+    "categories": [
+      {
+        "id": "samoon",
+        "name": "الصمون",
+        "type": "primary"
+      },
+      {
+        "id": "bread",
+        "name": "الخبز",
+        "type": "primary"
+      },
+      {
+        "id": "falafel",
+        "name": "الفلافل",
+        "type": "primary"
+      },
+      {
+        "id": "market",
+        "name": "الأسواق",
+        "type": "primary"
+      }
+    ],
+    "days": {
+      "2026-11-07": {
+        "expenses": [],
+        "chickenUsed": 2,
+        "chickenLeft": 0,
+        "balance": 50000,
+        "totalOverride": null,
+        "remaining": {
+          "amount": 50000,
+          "dailySpent": 0,
+          "transferred": 0,
+          "salesTotal": 1000
+        }
+      },
+      "2026-11-08": {
+        "expenses": [],
+        "chickenUsed": 1,
+        "chickenLeft": 0,
+        "balance": 42,
+        "totalOverride": null,
+        "remaining": null
+      }
+    },
+    "transactions": [],
+    "transfers": [],
+    "suppliers": [],
+    "invoices": [],
+    "payments": [],
+    "debts": [],
+    "materials": [],
+    "workers": [],
+    "savingsEntries": []
+  },
+  "after": {
+    "version": 11,
+    "products": [
+      {
+        "id": "p",
+        "name": "Product",
+        "code": "",
+        "unit": "piece",
+        "price": 1000,
+        "group": "",
+        "minStock": 0,
+        "trackStock": false,
+        "archived": false
+      }
+    ],
+    "stockEntries": [],
+    "sales": [
+      {
+        "id": "sale",
+        "number": "S-000001",
+        "date": "2026-11-07",
+        "status": "completed",
+        "lines": [
+          {
+            "productId": "p",
+            "name": "Product",
+            "unit": "piece",
+            "quantity": 1,
+            "price": 1000,
+            "trackStock": false
+          }
+        ],
+        "discount": 0,
+        "paid": 1000,
+        "note": "",
+        "createdAt": "2026-11-07T10:00:00Z",
+        "orderType": "صالة"
+      }
+    ],
+    "saleReturns": [],
+    "preferences": {
+      "shortcuts": [
+        "sales",
+        "inventory",
+        "sale-history",
+        "expenses",
+        "cash",
+        "settings"
+      ],
+      "orderTypes": [
+        "صالة",
+        "سفري",
+        "توصيل"
+      ],
+      "restaurant": {
+        "name": "",
+        "contact": "",
+        "footer": ""
+      }
+    },
+    "categories": [
+      {
+        "id": "samoon",
+        "name": "الصمون",
+        "type": "primary"
+      },
+      {
+        "id": "bread",
+        "name": "الخبز",
+        "type": "primary"
+      },
+      {
+        "id": "falafel",
+        "name": "الفلافل",
+        "type": "primary"
+      },
+      {
+        "id": "market",
+        "name": "الأسواق",
+        "type": "primary"
+      }
+    ],
+    "days": {
+      "2026-11-08": {
+        "expenses": [],
+        "chickenUsed": 2,
+        "chickenLeft": 0,
+        "balance": 50000,
+        "totalOverride": null,
+        "remaining": {
+          "amount": 50000,
+          "dailySpent": 0,
+          "transferred": 0,
+          "salesTotal": 0
+        }
+      },
+      "2026-11-09": {
+        "expenses": [],
+        "chickenUsed": 1,
+        "chickenLeft": 0,
+        "balance": 42,
+        "totalOverride": null,
+        "remaining": null
+      }
+    },
+    "transactions": [],
+    "transfers": [],
+    "suppliers": [],
+    "invoices": [],
+    "payments": [],
+    "debts": [],
+    "materials": [],
+    "workers": [],
+    "savingsEntries": []
+  }
+}

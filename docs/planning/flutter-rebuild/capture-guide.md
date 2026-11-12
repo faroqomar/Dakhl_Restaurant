@@ -1,5 +1,7 @@
 # Frozen screenshot reference pack
 
+Retirement update, 2026-11-12: the owner removed the Electron source, capture harness and legacy planning-pack generator. The capture procedure below is historical; its commands no longer run from this checkout. Retained screenshot/asset manifests still support integrity verification. Recover the original source at Git revision `2c0eccd79ad3999b3b82779d9722bffbfb94f694` if an explicitly authorized historical investigation needs it. [Retirement decision](../../decisions/0022-retire-electron-reference.md).
+
 Status: captured and catalogued 2026-10-27. 179 images; 0 capture errors in the final run.
 
 The captures are unchanged by the 19-to-12 phase consolidation. The original manifest/harness retain capture-time phase IDs; phase-map.json maps those IDs to the current plan. The builder applies the map to the gallery and phase reference tables; do not renumber the capture provenance or recapture images just to change grouping.

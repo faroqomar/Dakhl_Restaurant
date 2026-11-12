@@ -19,36 +19,10 @@ SalesReport fixtureReport(
   compareText: compareText ?? (a, b) => a.compareTo(b),
 );
 
-// Actual frozen model creates/validates synthetic history. The actual history
-// function's computation prefix is executed before its rendering expression.
-Map<String, dynamic> oracle() {
-  final result = Process.runSync('node', [
-    '-e',
-    r'''
-const fs=require('fs'); const M=require('./electron-reference/app/ui/model.js');
-let state=M.empty();
-state.products=[{id:'p',name:'Historic Rice',code:'',group:'',unit:'plate',price:101,minStock:0,trackStock:false,archived:false}];
-for(const [id,date,qty,discount,note,type] of [['a','2026-01-01',2,1,'Family','صالة'],['b','2026-01-02',1,0,'Quick','سفري'],['c','2026-01-02',1,0,'Void','صالة']]) {
-state=M.completeSale(state,{date,lines:[{productId:'p',quantity:qty}],discount,note,orderType:type},id,date+'T12:00:00.000Z');
-}
-state=M.voidSale(state,'c','mistake','2026-01-03T12:00:00.000Z');
-state=M.returnSale(state,'a',{date:'2026-01-03',reason:'return',lines:[{productId:'p',quantity:1,restock:false}]},'r','2026-01-03T12:00:00.000Z');
-state.products[0].name='Current renamed item';state.products[0].price=999;state=M.validate(state);
-const filters=[{},{from:'2026-01-03',to:'2026-01-03'},{from:'2026-01-02',to:'2026-01-03',query:'FAMILY'}, {status:'void'}, {orderType:'سفري'}, {query:'Historic Rice'}, {query:'Current renamed item'}, {from:'2026-01-04',to:'2026-01-01'}, {query:' S-000001'}, {query:'S-000001'}];
-const source=fs.readFileSync('./electron-reference/app/ui/commerce.js','utf8');
-const start=source.indexOf('function salesHistoryPage() {')+'function salesHistoryPage() {'.length;
-const body=source.slice(start,source.indexOf("  return header(",start));
-const run=new Function('state','saleFilter','M',body+';return {ids:sales.map(s=>s.id),returns:refunds.map(r=>r.id),refunded,total,completed:active.length,voided:sales.length-active.length};');
-const ux=fs.readFileSync('./electron-reference/app/ui/ux.js','utf8');
-const validRange=new Function('M','toast',ux.split('\n').find(l=>l.startsWith('function validRange(f)'))+';return validRange;')(M,()=>{});
-console.log(JSON.stringify({state,filters,valid:filters.map(f=>validRange(f)),results:filters.map(f=>run(state,{from:'',to:'',query:'',status:'',orderType:'',...f},M))}));
-''',
-  ]);
-  if (result.exitCode != 0) {
-    throw StateError('Frozen source oracle failed: ${result.stderr}');
-  }
-  return jsonDecode(result.stdout as String) as Map<String, dynamic>;
-}
+// Frozen synthetic source results captured before retiring the Electron tree.
+Map<String, dynamic> oracle() => jsonDecode(
+  File('test/fixtures/legacy/sales_history.json').readAsStringSync(),
+) as Map<String, dynamic>;
 
 void main() {
   test('report rejects invalid source date bounds and reversed period', () {
@@ -84,7 +58,7 @@ void main() {
     );
   });
   test(
-    'actual frozen JS history filtering and period totals agree for ten cases',
+    'frozen JS fixture history filtering and period totals agree for ten cases',
     () {
       final filters = source['filters'] as List;
       final expected = source['results'] as List;
@@ -187,13 +161,11 @@ void main() {
         },
     ];
     final large = const LegacyAccountCodec().decodeJson(raw);
-    final result = Process.runSync('node', [
-      '-e',
-      r"const fs=require('fs');const M=require('./electron-reference/app/ui/model.js');const src=fs.readFileSync('./electron-reference/app/ui/commerce.js','utf8');const start=src.indexOf('function salesHistoryPage() {')+'function salesHistoryPage() {'.length;const body=src.slice(start,src.indexOf('  return header(',start));const state={sales:Array.from({length:9008},(_,i)=>({id:String(i),date:new Date(Date.UTC(2000,0,1+i)).toISOString().slice(0,10),createdAt:'2026-01-01T00:00:00Z',status:'completed',number:String(i),note:'',lines:[{name:'Rice',quantity:1000,price:1000000000}],discount:i%2})),saleReturns:[]};const run=new Function('state','saleFilter','M',body+';return BigInt(total).toString();');console.log(run(state,{from:'',to:'',query:'',status:'',orderType:''},M));",
-    ]);
-    expect(result.exitCode, 0, reason: '${result.stderr}');
+    final expectedTotal = (jsonDecode(
+      File('test/fixtures/legacy/sales_large_total.json').readAsStringSync(),
+    ) as Map)['expectedTotal'];
     final report = fixtureReport(large);
-    expect(report.completedTotal.toString(), (result.stdout as String).trim());
+    expect(report.completedTotal.toString(), expectedTotal);
     expect(report.netMovement, report.completedTotal);
     expect(
       report.completedTotal,
@@ -229,11 +201,7 @@ void main() {
       },
     );
     expect(report.sales.map((row) => row.snapshot['id']), ['b', 'c']);
-    final sourceOrder = Process.runSync('node', [
-      '-e',
-      "console.log(JSON.stringify([['b','Jan 2, 2026 12:00:00'],['c','jan 2, 2026 12:00:00']].sort((a,b)=>b[1].localeCompare(a[1])).map(x=>x[0])))",
-    ]);
-    expect(sourceOrder.exitCode, 0);
-    expect(jsonDecode(sourceOrder.stdout as String), ['b', 'c']);
+    // The fixture's captured source ordering is ['b', 'c']; this test uses
+    // finite source weights and does not qualify a production comparator.
   });
 }

@@ -30,3 +30,5 @@ Use the [decision template](../templates/decision.md) and a sequential number. A
 
 - [0020 — Self-hosted Penpot](0020-self-hosted-penpot.md): owner-selected local design destination/browser path, original cloud work preserved; setup/native design evidence separate.
 - [0021 — Completion financial policy](0021-completion-financial-policy.md): owner accepted the reviewed conceptual posting/history/correction/portability package; implementation, actual cutover and delivery gates remain separate.
+
+- [0022 — Retire Electron reference](0022-retire-electron-reference.md): owner-authorized source/tooling retirement; frozen screenshots, synthetic regression expectations and Git history retained.

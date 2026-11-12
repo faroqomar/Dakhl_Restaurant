@@ -1,4 +1,0 @@
-'use strict';
-const M=require('./ui/model.js');
-function accountSummary(data){if(!data)return 'الحسابات الحالية غير قابلة للقراءة';const dates=[...Object.keys(data.days),...['saleReturns','sales','invoices','payments','transactions','transfers','savingsEntries','stockEntries','debts'].flatMap(key=>(data[key]||[]).map(e=>e.date))].filter(M.validDate).sort();return `صيغة ${data.version} · من ${dates[0]||'لا توجد تواريخ'} إلى ${dates.at(-1)||'—'}\n${Object.values(data.days).reduce((n,d)=>n+d.expenses.length,0)} مصروف · ${data.sales.length} بيع · ${(data.saleReturns||[]).length} مرتجع · ${data.invoices.length} قائمة شراء · ${data.payments.length} تسديد · ${data.suppliers.length} مورد · ${data.products.length} صنف · ${data.workers.length} عامل · ${data.savingsEntries.length} حركة سلفة`;}
-module.exports={accountSummary};

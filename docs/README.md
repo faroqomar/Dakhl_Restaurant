@@ -45,15 +45,15 @@ Status: approved baseline documentation checked against source. Original date: 2
 
 ## Project state
 
-2026-10-28 organization: the [legacy application](../electron-reference/REFERENCE.md) is in electron-reference/ and the root is for the Flutter rebuild. The plan, screenshots and documentation remained in place. [Organization decision](decisions/0013-electron-reference-folder.md). Bare source paths below refer to that reference application.
+The root contains the Flutter/Dart application. The owner retired the preserved Electron application and its obsolete tooling on 2026-11-12. Frozen screenshots, historical provenance and synthetic compatibility fixtures remain. [Retirement decision](decisions/0022-retire-electron-reference.md) · [Current setup](../README.md) · [Maintenance checks](log/2026-11-12-reference-cleanup.md).
 
-The existing Dakhl_Restaurant application is local and built with Electron; its `package.json` version is 1.12.0 and account schema in `app/ui/model.js` is 11. Accounts and invoices are implemented in source. Campaigns and ideas are documented tracking registers, with no corresponding current UI module. An installed version or published campaign requires independent verification evidence.
+Current Flutter implementation/validation and remaining activation, migration, physical-phone and release gates appear in [PHASES.md](../PHASES.md). Ideas and campaigns remain documented registers; repository cleanup adds no runtime feature.
 
 ## Reference precedence
 
 ### Planned rebuild — 2026-10-27
 
-The owner selected Flutter and Dart for macOS, Android and iPhone, locally without synchronization, with backups/import, PDFs and normal printing. The [plan](planning/flutter-rebuild/README.md) and [decision 0011](decisions/0011-flutter-rebuild-baseline.md) establish scope; the retained phase plans define its scope. The Flutter product screens now have mounted source implementations and portable operational composition; the Electron application remains the frozen reference. Current design is the reference until the owner approves a phase-specific change.
+The owner selected Flutter and Dart for macOS, Android and iPhone, locally without synchronization, with backups/import, PDFs and normal printing. The [plan](planning/flutter-rebuild/README.md) and [decision 0011](decisions/0011-flutter-rebuild-baseline.md) establish scope; the retained phase plans define its scope. The Flutter product screens now have mounted source implementations and portable operational composition; the retained Electron screenshots and synthetic source-derived fixtures remain historical references. Current design is the reference until the owner approves a phase-specific change.
 
 Current owner direction defines the request. Current documentation/source define decisions and behavior. A decision record explains why, a work log establishes what happened, and Hindsight helps find both. Memory replaces neither the files nor actual implementation evidence.
 

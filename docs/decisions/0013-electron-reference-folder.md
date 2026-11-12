@@ -1,5 +1,7 @@
 # 0013 — Preserve the legacy application in electron-reference
 
+Superseded for source-folder retention on 2026-11-12 by [0022 — Retire Electron reference](0022-retire-electron-reference.md). The original organization record below remains historical.
+
 Status: owner-approved and implemented as folder organization; does not begin Flutter implementation. Date: 2026-10-28.
 
 ## Request and decision

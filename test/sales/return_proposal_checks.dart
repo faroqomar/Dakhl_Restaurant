@@ -5,11 +5,9 @@ import 'package:dakhl_restaurant/accounts/legacy_account_codec.dart';
 import 'package:dakhl_restaurant/sales/return_proposal.dart';
 
 int verifyReturnProposal() {
-  final process = Process.runSync('node', [
-    'return_proposal_oracle.cjs',
-  ], workingDirectory: 'test/sales');
-  if (process.exitCode != 0) throw StateError('${process.stderr}');
-  final oracle = jsonDecode(process.stdout as String) as Map<String, dynamic>;
+  final oracle = jsonDecode(
+    File('test/fixtures/legacy/return_proposal.json').readAsStringSync(),
+  ) as Map<String, dynamic>;
   var checks = 0;
   void check(bool value, String label) {
     if (!value) throw StateError(label);

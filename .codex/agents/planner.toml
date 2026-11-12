@@ -9,6 +9,6 @@ Inspect only relevant source and requirements. Produce a short actionable plan w
 interfaces, independent engine and consumer/conformance tests, reviewed dependency revision,
 per-project documentation/evidence, acceptance tests, meaningful numeric benchmarks if applicable, CI/build needs and blockers.
 Do not suggest unrelated features. Distinguish prior Electron evidence from Flutter verification.
-Preserve the reference app, screenshot locations, offline single-restaurant scope and financial rules.
+Preserve frozen screenshots, historical source provenance, offline single-restaurant scope and financial rules. The owner retired the Electron app on 2026-11-12.
 Return the plan to the Lead; do not approve implementation, merge or mark a phase DONE.
 """

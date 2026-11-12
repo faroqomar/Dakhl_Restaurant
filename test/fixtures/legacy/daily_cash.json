@@ -1,0 +1,255 @@
+{
+  "state": {
+    "version": 11,
+    "products": [
+      {
+        "id": "prod",
+        "name": "Rice",
+        "code": "",
+        "unit": "plate",
+        "price": 37000,
+        "group": "",
+        "minStock": 0,
+        "trackStock": false,
+        "archived": false
+      }
+    ],
+    "stockEntries": [],
+    "sales": [
+      {
+        "id": "sale",
+        "number": "S-000001",
+        "date": "2026-01-01",
+        "status": "completed",
+        "lines": [
+          {
+            "productId": "prod",
+            "name": "Rice",
+            "unit": "plate",
+            "quantity": 1,
+            "price": 37000,
+            "trackStock": false
+          }
+        ],
+        "discount": 0,
+        "paid": 37000,
+        "note": "",
+        "createdAt": "2026-01-01T12:00:00Z",
+        "orderType": "صالة"
+      }
+    ],
+    "saleReturns": [
+      {
+        "id": "refund",
+        "saleId": "sale",
+        "date": "2026-01-02",
+        "reason": "test",
+        "createdAt": "2026-01-02T12:00:00Z",
+        "lines": [
+          {
+            "productId": "prod",
+            "quantity": 1,
+            "restock": false,
+            "amount": 37000
+          }
+        ],
+        "amount": 37000
+      }
+    ],
+    "preferences": {
+      "shortcuts": [
+        "sales",
+        "inventory",
+        "sale-history",
+        "expenses",
+        "cash",
+        "settings"
+      ],
+      "orderTypes": [
+        "صالة",
+        "سفري",
+        "توصيل"
+      ],
+      "restaurant": {
+        "name": "",
+        "contact": "",
+        "footer": ""
+      }
+    },
+    "categories": [
+      {
+        "id": "samoon",
+        "name": "الصمون",
+        "type": "primary"
+      },
+      {
+        "id": "bread",
+        "name": "الخبز",
+        "type": "primary"
+      },
+      {
+        "id": "falafel",
+        "name": "الفلافل",
+        "type": "primary"
+      },
+      {
+        "id": "market",
+        "name": "الأسواق",
+        "type": "primary"
+      }
+    ],
+    "days": {
+      "2026-01-01": {
+        "expenses": [
+          {
+            "id": "e",
+            "categoryId": "market",
+            "amount": 30000,
+            "note": "",
+            "funding": {
+              "source": "shared",
+              "dailyAmount": 20000,
+              "cashAmount": 10000
+            },
+            "createdAt": "2026-01-01T12:00:00Z"
+          }
+        ],
+        "chickenUsed": 7,
+        "chickenLeft": 9,
+        "balance": 125000,
+        "totalOverride": null,
+        "remaining": {
+          "amount": 100000,
+          "dailySpent": 20000,
+          "transferred": 5000,
+          "salesTotal": 30000
+        }
+      }
+    },
+    "transactions": [
+      {
+        "id": "deposit",
+        "date": "2026-01-01",
+        "type": "deposit",
+        "amount": 50000,
+        "note": "",
+        "createdAt": "2026-01-01T12:00:00Z"
+      }
+    ],
+    "transfers": [
+      {
+        "id": "t",
+        "date": "2026-01-01",
+        "amount": 7000,
+        "createdAt": "2026-01-01T12:00:00Z"
+      }
+    ],
+    "suppliers": [
+      {
+        "id": "s",
+        "name": "Supplier",
+        "phone": "",
+        "note": "",
+        "categoryId": "market",
+        "openingBalance": 100000,
+        "materials": []
+      }
+    ],
+    "invoices": [],
+    "payments": [
+      {
+        "id": "p",
+        "supplierId": "s",
+        "invoiceId": null,
+        "invoiceAmount": 0,
+        "debtAmount": 8000,
+        "categoryId": "market",
+        "date": "2026-01-01",
+        "amount": 8000,
+        "funding": {
+          "source": "shared",
+          "dailyAmount": 3000,
+          "cashAmount": 5000
+        },
+        "note": "",
+        "createdAt": "2026-01-01T12:00:00Z"
+      }
+    ],
+    "debts": [],
+    "materials": [],
+    "workers": [],
+    "savingsEntries": []
+  },
+  "results": [
+    {
+      "date": "2026-01-01",
+      "dailySpent": 23000,
+      "transferred": 7000,
+      "remaining": 102000,
+      "total": 23000,
+      "salesTotal": 37000,
+      "cash": 42000,
+      "expenseCount": 2
+    },
+    {
+      "date": "2026-01-02",
+      "dailySpent": 0,
+      "transferred": 0,
+      "remaining": null,
+      "total": 0,
+      "salesTotal": -37000,
+      "cash": 42000,
+      "expenseCount": 0
+    },
+    {
+      "date": "2026-01-03",
+      "dailySpent": 0,
+      "transferred": 0,
+      "remaining": null,
+      "total": 0,
+      "salesTotal": 0,
+      "cash": 42000,
+      "expenseCount": 0
+    }
+  ],
+  "movements": [
+    {
+      "id": "deposit",
+      "date": "2026-01-01",
+      "type": "deposit",
+      "amount": 50000,
+      "note": "",
+      "createdAt": "2026-01-01T12:00:00Z",
+      "kind": "cash"
+    },
+    {
+      "id": "e",
+      "date": "2026-01-01",
+      "type": "withdrawal",
+      "kind": "expense",
+      "amount": 10000,
+      "note": "",
+      "categoryId": "market",
+      "createdAt": "2026-01-01T12:00:00Z"
+    },
+    {
+      "id": "p",
+      "date": "2026-01-01",
+      "type": "withdrawal",
+      "kind": "supplier-payment",
+      "supplierId": "s",
+      "amount": 5000,
+      "note": "تسديد Supplier · الديون",
+      "categoryId": "market",
+      "createdAt": "2026-01-01T12:00:00Z"
+    },
+    {
+      "id": "t",
+      "date": "2026-01-01",
+      "amount": 7000,
+      "createdAt": "2026-01-01T12:00:00Z",
+      "type": "deposit",
+      "kind": "transfer"
+    }
+  ]
+}

@@ -6,7 +6,7 @@ Status: owner-approved; future capabilities need further definition. Date: 2026-
 
 This project and application serve one restaurant only. Every invoice, campaign, idea and development activity here belongs to that same restaurant. No approved need exists for multiple restaurants, subscriptions or selling a general-purpose system. Scope changes require explicit direction and a documented decision.
 
-The restaurant name supplied by the owner for the menu on 2026-10-16 is **Jannat Baghdad Restaurant**. The current project name is **Dakhl_Restaurant**, as directed on 2026-10-28. The reference Electron application's historical name is **Daftar**; preserve its technical identity, data and frozen screenshots. A restaurant-name change does not automatically change records.
+The restaurant name supplied by the owner for the menu on 2026-10-16 is **Jannat Baghdad Restaurant**. The current project name is **Dakhl_Restaurant**, as directed on 2026-10-28. The retired Electron application's historical name is **Daftar**; preserve existing account data, its technical identity in historical evidence and the frozen screenshots. The owner removed its source folder from the current checkout on 2026-11-12; [retirement decision](../decisions/0022-retire-electron-reference.md). A restaurant-name change does not automatically change records.
 
 ## Areas of work and status
 
@@ -18,7 +18,7 @@ The restaurant name supplied by the owner for the menu on 2026-10-16 is **Jannat
 | Advertising campaigns | [Campaign documentation register](../planning/campaigns.md) | Creation/publishing/ad-platform integrations are not implemented in the application |
 | Ideas | [Idea register](../planning/ideas.md) | Convert an idea into requirements, then implement when requested |
 | Sales and inventory | Cash sales, history/PDF receipts, sellable inventory and custom shortcuts since 2026-10-26 | Ingredients, recipes and credit sales are outside current scope; returns/held orders belong to [MVP completion](../decisions/0010-mvp-returns-and-held-orders.md) |
-| Dedicated application | Electron, Arabic RTL UI and local persistence | Flutter/Dart rebuild for macOS/Android/iPhone is selected/planned; [decision 0011](../decisions/0011-flutter-rebuild-baseline.md). The isolated phase00 technical baseline has started; product screens and migration are not implemented |
+| Dedicated application | Flutter/Dart, Arabic RTL UI and offline local persistence | Local implementation and validation are recorded in [PHASES.md](../../PHASES.md). Live migration, physical-phone acceptance and release retain their separate gates. Electron source retired on 2026-11-12; frozen screenshots remain |
 | Documentation and memory | Project documents and dedicated `project-daftar` Hindsight bank | Synchronization results are established in work logs, not inferred from configuration |
 
 ## Matters the owner has not yet defined

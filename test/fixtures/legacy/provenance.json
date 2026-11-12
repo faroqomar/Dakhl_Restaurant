@@ -1,0 +1,29 @@
+{
+  "capturedAt": "2026-11-12",
+  "repositoryCommit": "2c0eccd79ad3999b3b82779d9722bffbfb94f694",
+  "synthetic": true,
+  "sources": {
+    "electron-reference/app/ui/renderer.js": "be846cbb8dfef4f90a73b17029960b7daf461668375ce234ae9ea62d467e83ec",
+    "electron-reference/app/ui/numbers.js": "43cb2823ebe3ad54ce1fe29376f89999824218ad68764cfe36cf9aa3a5f523f6",
+    "electron-reference/app/ui/commerce.js": "e5cd21b5953c4f24d9fce9a75f9dac3cc7db4e7e8e0825c6651902a5d9579971",
+    "electron-reference/app/ui/suppliers.js": "3e99769a498fe6bd30230b07b88e6c2bcff8e5302881600b4fa341660a73cfe3",
+    "electron-reference/app/ui/ux.js": "2b60b1c72b80e3059e09b871b1df2e51fb1f1e06c54e280c71a191fbdeb9ff5f",
+    "electron-reference/app/ui/model.js": "65a9b33cdca42e328d710f1afaa1b0fb42a7778284bd2f07f7c7e77d3d9f07f4"
+  },
+  "runtime": {
+    "node": "22.22.1",
+    "v8": "12.4.254.21-node.35",
+    "icu": "78.2"
+  },
+  "fixtureSha256": {
+    "daily_cash.json": "2f582ef43a702554be41d3ea7b5dde0efeab44ce0abd476ea7743e7311b20c7f",
+    "day_date_correction.json": "2c23b154523c2cea3d1b59507607b8305fddb6c80c5c519ca81dbeecd3079bd7",
+    "expense_corrections.json": "2021c297d0e53de50197716a40ade6d9de34ab97ba1b7e13fbac28541cbbb9b5",
+    "payment_corrections.json": "9c532f04572829811ae31e7d376097dbb825978aade354a50b94a073b4e0f1cc",
+    "product_photo_hashes.json": "bd7dd09b77545ac66be589c8412264dee21e5f081bd17c91fb164592a5d227ec",
+    "report_account.json": "87052e164b76091b88b0f0d3632aa670179fd6d7094591648e1881a86bbf5d16",
+    "return_proposal.json": "461fa3a91c711ff928447eaa79ebafb01de7eedb5f557598aa5a4c9858b66428",
+    "sales_history.json": "c5e18b7e97f9dea87458f57ffe06868d0deee243015232875ebfa4b1afa45f7a",
+    "sales_large_total.json": "67045c1850afe45e6b05c02db889ccd2e6ddeeb1d2c86a2a1cbaf47fe5553e74"
+  }
+}
