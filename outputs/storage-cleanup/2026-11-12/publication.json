@@ -9,5 +9,30 @@
     "outputs/storage-cleanup": 844
   },
   "scope": "Cleanup branch, commit, push and PR; no merge/release",
-  "validation_reuse": "1430non-golden pass;136tooling;44dashboard; no analysis/format issues; independent reviews; source hashes checked this turn"
+  "validation_reuse": "1430non-golden pass;136tooling;44dashboard; no analysis/format issues; independent reviews; source hashes checked this turn",
+  "publication_verified_at": "2026-11-12T14:44:13.160464+00:00",
+  "pull_request": "https://github.com/faroqomar/Dakhl_Restaurant/pull/13",
+  "published_branch": "codex/retire-electron-reference",
+  "first_published_head": "b6b61deccf47c9e98e2b8420c64bb9f5962741bc",
+  "remote_branch_sha_verified": true,
+  "remote_electron_directory_absent": true,
+  "remote_readme_workflow_fixture_provenance_present": true,
+  "review": "Independent staged scope/privacy/completeness clear; 59ACMR997520bytes, no secret/account/bundle paths; unchanged test fixtures/media hashes",
+  "main_integration": "Rebased onto fb7037a; resolved only modify/delete lockfile conflict by retaining authorized deletion; final tree identical to original reviewed33ded07",
+  "preservation": "Pre-existing DeviceHub note restored byte-for-byte; temporary duplicate stash dropped. Nov10logs/receipts leftlocal.",
+  "checks_at_first_head": {
+    "asset_integrity": "success",
+    "flutter_quality": "in_progress",
+    "merged": false
+  },
+  "storage_after_publication_kib": {
+    ".": 25093152,
+    ".git": 14984616,
+    "outputs/storage-cleanup": 848
+  },
+  "free_bytes_after": 53842186240,
+  "git_connectivity": "passed plain git fsck --connectivity-only",
+  "git_recovery_size_kib": 11295116,
+  "storage_note": "Git object-store allocation fell from2753852KiB(initial cleanup inventory) to1225228KiB and shows3packs; producer/repacking attribution unknown. Recovery-store allocation unchanged. No cleanup credit claimed for this Git change.",
+  "audit_closeout": "A small documentation-only successor commit records publication results; remote final head lives in PR metadata, avoiding a self-referential receipt."
 }
