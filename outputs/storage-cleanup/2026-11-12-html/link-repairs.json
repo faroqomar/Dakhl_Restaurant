@@ -1,0 +1,186 @@
+{
+  "recorded_at": "2026-11-12T17:02:42.687545+00:00",
+  "markdown": [
+    {
+      "document": "PLANS.md",
+      "old": "docs/planning/flutter-rebuild/completion.html",
+      "new": "docs/phases/completion-scope-readiness.md"
+    },
+    {
+      "document": "PLANS.md",
+      "old": "docs/planning/flutter-rebuild/plan.html",
+      "new": "docs/planning/flutter-rebuild/README.md"
+    },
+    {
+      "document": "docs/decisions/0012-merge-flutter-rebuild-phases.md",
+      "old": "../planning/flutter-rebuild/archive/v1-19-phases/plan.html",
+      "new": "../planning/flutter-rebuild/archive/v1-19-phases/README.md"
+    },
+    {
+      "document": "docs/log/2026-10-29-phase01-penpot-design.md",
+      "old": "../../outputs/penpot/phase01/review/index.html",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/outputs/penpot/phase01/review/index.html"
+    },
+    {
+      "document": "docs/phases/01-implementation-plan.md",
+      "old": "../../outputs/penpot/phase01/review/index.html",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/outputs/penpot/phase01/review/index.html"
+    },
+    {
+      "document": "docs/phases/01-penpot-design-review.md",
+      "old": "../../outputs/penpot/phase01/review/index.html",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/outputs/penpot/phase01/review/index.html"
+    },
+    {
+      "document": "docs/phases/completion-scope-readiness.md",
+      "old": "completion-references.html",
+      "new": "../planning/flutter-rebuild/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/README.md",
+      "old": "completion.html",
+      "new": "../../phases/completion-scope-readiness.md"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/README.md",
+      "old": "archive/v1-19-phases/plan.html",
+      "new": "archive/v1-19-phases/README.md"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/README.md",
+      "old": "gallery.html",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/design-system.md",
+      "old": "design-system.html",
+      "new": "design-system.md"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/design-system.md",
+      "old": "gallery.html",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/00.md",
+      "old": "../gallery.html?phase=00",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/01.md",
+      "old": "../gallery.html?phase=01",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/02.md",
+      "old": "../gallery.html?phase=02",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/03.md",
+      "old": "../gallery.html?phase=03",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/04.md",
+      "old": "../gallery.html?phase=04",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/05.md",
+      "old": "../gallery.html?phase=05",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/06.md",
+      "old": "../gallery.html?phase=06",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/07.md",
+      "old": "../gallery.html?phase=07",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/08.md",
+      "old": "../gallery.html?phase=08",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/09.md",
+      "old": "../gallery.html?phase=09",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/10.md",
+      "old": "../gallery.html?phase=10",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/11.md",
+      "old": "../gallery.html?phase=11",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/12.md",
+      "old": "../gallery.html?phase=12",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/13.md",
+      "old": "../gallery.html?phase=13",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/14.md",
+      "old": "../gallery.html?phase=14",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/15.md",
+      "old": "../gallery.html?phase=15",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/16.md",
+      "old": "../gallery.html?phase=16",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/17.md",
+      "old": "../gallery.html?phase=17",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/archive/v1-19-phases/phases/18.md",
+      "old": "../gallery.html?phase=18",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/design-system.md",
+      "old": "design-system.html",
+      "new": "design-system.md"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/phase-map.md",
+      "old": "completion.html",
+      "new": "../../phases/completion-scope-readiness.md"
+    },
+    {
+      "document": "docs/planning/flutter-rebuild/phase-map.md",
+      "old": "archive/v1-19-phases/plan.html",
+      "new": "archive/v1-19-phases/README.md"
+    },
+    {
+      "document": "docs/reference/readme-before-portfolio-2026-11-12.md",
+      "old": "../../docs/planning/flutter-rebuild/plan.html",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/plan.html"
+    },
+    {
+      "document": "docs/reference/readme-before-portfolio-2026-11-12.md",
+      "old": "../../docs/planning/flutter-rebuild/design-system.html",
+      "new": "https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/design-system.html"
+    }
+  ],
+  "gallery_navigation_repaired": 6
+}

@@ -17,7 +17,7 @@ Status: executable planning baseline; Flutter implementation has not started. Da
 
 ## Start here
 
-1. Browse the [visual reference gallery](gallery.html) — **179 captured images** with desktop, narrow, dialog, full-document, empty-state, design-system and report references.
+1. Browse the [visual reference gallery](https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html) — **179 captured images** with desktop, narrow, dialog, full-document, empty-state, design-system and report references.
 2. Follow the [19 phase files](#phase-sequence), in dependency order. Every phase names a working feature/outcome, implementation checklist, screenshots and testable exit criteria.
 3. Keep the [design contract](design-system.md), [accounting parity contract](accounting-parity.md), [feature/source inventory](feature-coverage.md) and [MVP acceptance checklist](mvp-acceptance.md) beside the work.
 4. At the start of a phase, ask for any edits to that feature. Record accepted changes and replace only the affected reference baseline; retain the previous one. Do not pause unrelated agreed work waiting for speculative changes.

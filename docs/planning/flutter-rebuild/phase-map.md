@@ -1,4 +1,4 @@
-> Execution update, 2026-11-05: the owner grouped all remaining work into one **Completion phase**. Original IDs below remain requirement/work-package references. Preserve prior DONE evidence and unfinished checks. [Current scope and readiness](../../phases/completion-scope-readiness.md) · [Current planning view](completion.html). This historical pack does not grant implementation approval.
+> Execution update, 2026-11-05: the owner grouped all remaining work into one **Completion phase**. Original IDs below remain requirement/work-package references. Preserve prior DONE evidence and unfinished checks. [Current scope and readiness](../../phases/completion-scope-readiness.md) · [Current planning view](../../phases/completion-scope-readiness.md). This historical pack does not grant implementation approval.
 
 # Phase consolidation — 19 to 12
 
@@ -55,4 +55,4 @@ The dependency graph has only earlier-phase dependencies. In particular, the dai
 
 The [preservation audit](merge-audit.json) lists each original work/check item with its new owner and updated phase references. All platforms, accounting rules, error/recovery cases and final MVP acceptance remain required. Phase status remains planned/not started.
 
-The [archived original plan](archive/v1-19-phases/plan.html) is retained for comparison, explicitly marked superseded and excluded from project-memory indexing. Do not implement from its obsolete numbering. Earlier logs remain historical evidence.
+The [archived original plan](archive/v1-19-phases/README.md) is retained for comparison, explicitly marked superseded and excluded from project-memory indexing. Do not implement from its obsolete numbering. Earlier logs remain historical evidence.

@@ -1,3 +1,5 @@
+> Historical transfer only. On 2026-11-12 the owner removed the superseded 74 HTML cases and obsolete server/export helpers. Recover the former files from Git revision `433ee33f1b2811687cc8b23af2c5c9014786de5d`; use current local Penpot sources. The dated blocked-transfer record below is historical and its server commands no longer run.
+
 # Daftar Figma transfer — partial, blocked
 
 File: https://www.figma.com/design/kLJU2TbqeTqKoWrUYKSoKG

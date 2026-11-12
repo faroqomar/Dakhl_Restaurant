@@ -25,6 +25,6 @@ Dependencies use the new phase numbers without cycles: phase 06 tests settlement
 
 ## Supersession and documentation
 
-This supersedes the **phase breakdown** in [0011](0011-flutter-rebuild-baseline.md), not its approved rebuild scope. The [current plan](../planning/flutter-rebuild/README.md) runs from 00 to 11. The [previous version](../planning/flutter-rebuild/archive/v1-19-phases/plan.html) is preserved, labelled historical and excluded from memory indexing.
+This supersedes the **phase breakdown** in [0011](0011-flutter-rebuild-baseline.md), not its approved rebuild scope. The [current plan](../planning/flutter-rebuild/README.md) runs from 00 to 11. The [previous version](../planning/flutter-rebuild/archive/v1-19-phases/README.md) is preserved, labelled historical and excluded from memory indexing.
 
 Application source, accounts and screenshots were unchanged by this task. Actual verification and limits are in the [consolidation log](../log/2026-10-27-flutter-phase-consolidation.md).

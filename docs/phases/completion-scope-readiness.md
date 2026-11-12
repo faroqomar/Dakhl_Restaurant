@@ -54,7 +54,7 @@ Dependency order remains real even within one phase: 00/02 residual readiness �
 
 ## Supplied references and design readiness
 
-[Reference gallery](completion-references.html) shows the original supplied screenshots; [full frozen gallery](../planning/flutter-rebuild/gallery.html) and [capture manifest](../planning/flutter-rebuild/screenshot-manifest.json) retain provenance. Read-only UX assessment verified **179/179 current image hashes**, zero missing/mismatched. Capture date `2026-10-27T17:08:06.592Z`; Electron 1.12.0/schema 11, synthetic in-memory records. Original 03–11 references contain 176 unique images; including 02 gives 177. Counts overlap between packages and do not mean missing library files.
+[Reference gallery](../planning/flutter-rebuild/gallery.html) shows the original supplied screenshots; [full frozen gallery](../planning/flutter-rebuild/gallery.html) and [capture manifest](../planning/flutter-rebuild/screenshot-manifest.json) retain provenance. Read-only UX assessment verified **179/179 current image hashes**, zero missing/mismatched. Capture date `2026-10-27T17:08:06.592Z`; Electron 1.12.0/schema 11, synthetic in-memory records. Original 03–11 references contain 176 unique images; including 02 gives 177. Counts overlap between packages and do not mean missing library files.
 
 Desktop viewport PNGs represent 1440×1000 logical layouts at 2×; narrow viewport PNGs represent 390×844 at 2×. Full-document captures have variable heights; report HTML pages use 794×1123 logical dimensions. Consult the manifest for each image. Narrow references came from Electron on macOS; report images came from HTML. They do not prove Android/iPhone UI or actual PDF/printing behavior. Frozen source, images and assets remain unchanged.
 

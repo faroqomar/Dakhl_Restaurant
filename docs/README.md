@@ -75,3 +75,5 @@ Owner direction, 2026-10-28: develop Madar_Engine alongside the app, keeping sha
 
 
 Development campaigns: [source-bound workflow](how-to/development-campaigns.md), [fixture/device/delivery preflight](how-to/task-preflight.md), [verified tooling outcome](log/2026-11-04-tooling-hardening.md).
+
+Generated HTML retention: [current artifacts and recovery](reference/html-artifact-retention.md). Markdown remains authoritative for plans/contracts; use the single screenshot gallery rather than duplicate phase/contract HTML pages.

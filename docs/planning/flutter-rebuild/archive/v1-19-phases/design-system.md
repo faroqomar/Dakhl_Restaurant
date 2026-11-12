@@ -6,7 +6,7 @@
 
 Status: extracted reference plus planned acceptance rules, 2026-10-27. No Flutter implementation yet.
 
-[Visual board](design-system.html) · [Board image](../../screenshots/design-system.png) · [Computed tokens](design-tokens.json) · [All screenshots](gallery.html)
+[Visual board](design-system.md) · [Board image](../../screenshots/design-system.png) · [Computed tokens](design-tokens.json) · [All screenshots](https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/docs/planning/flutter-rebuild/archive/v1-19-phases/gallery.html)
 
 ## Frozen token inventory
 
