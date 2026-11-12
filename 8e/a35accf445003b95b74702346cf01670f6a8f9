@@ -1,0 +1,109 @@
+PLANS.md
+  s_861dc41d98c7d8::t_40ee2b3346e58b 13,35
+docs/README.md
+  s_861dc41d98c7d8::t_e06252d9768f1c 78-79
+docs/decisions/0012-merge-flutter-rebuild-phases.md
+  s_861dc41d98c7d8::t_3c797504f2ed5b 28
+docs/how-to/repeated-problems.md
+  s_861dc41d98c7d8::t_64cfb3c56ce514 908-913
+docs/log/2026-10-29-phase01-penpot-design.md
+  s_861dc41d98c7d8::t_3bbd8967a529ce 9,11
+docs/log/2026-11-12-html-cleanup.md
+  s_861dc41d98c7d8::t_b93ca809bfbc47 1-47
+docs/phases/01-implementation-plan.md
+  s_861dc41d98c7d8::t_f0b3420f783062 18,73
+docs/phases/01-penpot-design-review.md
+  s_861dc41d98c7d8::t_db59145de6fe31 11,17
+docs/phases/c1-design-approval.md
+  s_861dc41d98c7d8::t_c816af0aafe25e 13-15
+docs/phases/completion-scope-readiness.md
+  s_861dc41d98c7d8::t_2ff6377f4e4df1 57
+docs/planning/flutter-rebuild/README.md
+  s_861dc41d98c7d8::t_d2ecf75f592a94 3,51
+docs/planning/flutter-rebuild/archive/v1-19-phases/README.md
+  s_861dc41d98c7d8::t_f64d4858cd6beb 20
+docs/planning/flutter-rebuild/archive/v1-19-phases/design-system.md
+  s_861dc41d98c7d8::t_1ff548ee352721 9
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/00.md
+  s_861dc41d98c7d8::t_199b4b3c23d20d 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/01.md
+  s_861dc41d98c7d8::t_9df81181bb5835 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/02.md
+  s_861dc41d98c7d8::t_82e1c22eb7532a 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/03.md
+  s_861dc41d98c7d8::t_ef00800fdc8174 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/04.md
+  s_861dc41d98c7d8::t_57120bbe963a18 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/05.md
+  s_861dc41d98c7d8::t_cebe335381609e 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/06.md
+  s_861dc41d98c7d8::t_e10076f39f8c24 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/07.md
+  s_861dc41d98c7d8::t_3fa6243f86df25 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/08.md
+  s_861dc41d98c7d8::t_d82f937cfcdf77 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/09.md
+  s_861dc41d98c7d8::t_817d412a0f26ae 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/10.md
+  s_861dc41d98c7d8::t_a21cdb1ba48f15 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/11.md
+  s_861dc41d98c7d8::t_2d91558de883da 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/12.md
+  s_861dc41d98c7d8::t_ff537ddf17a4ea 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/13.md
+  s_861dc41d98c7d8::t_66d2262c348a52 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/14.md
+  s_861dc41d98c7d8::t_2f37063720205a 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/15.md
+  s_861dc41d98c7d8::t_0f4e0316ef26b3 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/16.md
+  s_861dc41d98c7d8::t_c88ba140855066 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/17.md
+  s_861dc41d98c7d8::t_abe4f44e09e819 11
+docs/planning/flutter-rebuild/archive/v1-19-phases/phases/18.md
+  s_861dc41d98c7d8::t_cb8b749ce78aae 11
+docs/planning/flutter-rebuild/design-system.md
+  s_861dc41d98c7d8::t_51330d2c49e35f 5
+docs/planning/flutter-rebuild/gallery.html
+  s_861dc41d98c7d8::t_692b4ce538fe87 3
+docs/planning/flutter-rebuild/phase-map.md
+  s_861dc41d98c7d8::t_f8d9d94881bdd5 1,58
+docs/reference/html-artifact-retention.md
+  s_861dc41d98c7d8::t_e149accc29a11b 1-32
+docs/reference/readme-before-portfolio-2026-11-12.md
+  s_861dc41d98c7d8::t_193764eaf9992a 32-33,35,72
+outputs/dev-dashboard/console-review/README.md
+  s_861dc41d98c7d8::t_b40cf9a57b4f02 1,3,5
+outputs/figma-transfer/RESUME.md
+  s_861dc41d98c7d8::t_79854400fd8f4b 1-2
+outputs/penpot/phase01/reference-data/README.md
+  s_861dc41d98c7d8::t_9cd9f08d6f5e2a 1-3
+outputs/storage-cleanup/2026-11-12-html/baseline.json
+  s_861dc41d98c7d8::t_8505a7c37dda4e 1-13
+outputs/storage-cleanup/2026-11-12-html/deletion.json
+  s_861dc41d98c7d8::t_650a1b4ef96c31 1-5287
+outputs/storage-cleanup/2026-11-12-html/link-repairs.json
+  s_861dc41d98c7d8::t_4eacf315412a1d 1-186
+outputs/storage-cleanup/2026-11-12-html/retention-manifest.json
+  s_861dc41d98c7d8::t_1236c699370756 1-16792
+outputs/storage-cleanup/2026-11-12-html/storage-review.json
+  s_861dc41d98c7d8::t_e06379df962423 1-31
+outputs/storage-cleanup/2026-11-12-html/verification.json
+  s_861dc41d98c7d8::t_006941cfd1256e 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8ea35accf445003b95b74702346cf01670f6a8f9",
+  "prompts": {},
+  "sessions": {
+    "s_861dc41d98c7d8": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d014-7c7f-7783-8d8c-42a66c23811f",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
