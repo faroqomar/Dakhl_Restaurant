@@ -1,0 +1,260 @@
+{
+  "version": 11,
+  "products": [
+    {
+      "id": "p",
+      "name": "رز",
+      "code": "",
+      "unit": "طبق",
+      "price": 1000,
+      "group": "",
+      "minStock": 0,
+      "trackStock": false,
+      "archived": false
+    }
+  ],
+  "stockEntries": [],
+  "sales": [
+    {
+      "id": "sale",
+      "number": "S-000001",
+      "date": "2026-10-04",
+      "status": "completed",
+      "lines": [
+        {
+          "productId": "p",
+          "name": "رز",
+          "unit": "طبق",
+          "quantity": 2,
+          "price": 1000,
+          "trackStock": false
+        }
+      ],
+      "discount": 0,
+      "paid": 2000,
+      "note": "",
+      "createdAt": "2026-10-04T12:00:00.000Z",
+      "orderType": "صالة"
+    }
+  ],
+  "saleReturns": [],
+  "preferences": {
+    "shortcuts": [
+      "sales",
+      "inventory",
+      "sale-history",
+      "expenses",
+      "cash",
+      "settings"
+    ],
+    "orderTypes": [
+      "صالة",
+      "سفري",
+      "توصيل"
+    ],
+    "restaurant": {
+      "name": "",
+      "contact": "",
+      "footer": ""
+    }
+  },
+  "categories": [
+    {
+      "id": "samoon",
+      "name": "الصمون",
+      "type": "primary"
+    },
+    {
+      "id": "bread",
+      "name": "الخبز",
+      "type": "primary"
+    },
+    {
+      "id": "falafel",
+      "name": "الفلافل",
+      "type": "primary"
+    },
+    {
+      "id": "market",
+      "name": "الأسواق",
+      "type": "primary"
+    },
+    {
+      "id": "gas",
+      "name": "الغاز",
+      "type": "additional"
+    }
+  ],
+  "days": {
+    "2026-10-04": {
+      "expenses": [
+        {
+          "id": "expense-0",
+          "categoryId": "samoon",
+          "amount": 115000,
+          "note": "",
+          "funding": {
+            "source": "daily",
+            "dailyAmount": 115000,
+            "cashAmount": 0
+          }
+        },
+        {
+          "id": "expense-1",
+          "categoryId": "bread",
+          "amount": 14000,
+          "note": "",
+          "funding": {
+            "source": "daily",
+            "dailyAmount": 14000,
+            "cashAmount": 0
+          }
+        },
+        {
+          "id": "expense-2",
+          "categoryId": "falafel",
+          "amount": 8000,
+          "note": "",
+          "funding": {
+            "source": "daily",
+            "dailyAmount": 8000,
+            "cashAmount": 0
+          }
+        },
+        {
+          "id": "expense-3",
+          "categoryId": "gas",
+          "amount": 42000,
+          "note": "تبديل قنينة",
+          "funding": {
+            "source": "daily",
+            "dailyAmount": 42000,
+            "cashAmount": 0
+          }
+        },
+        {
+          "id": "expense-4",
+          "categoryId": "market",
+          "amount": 35000,
+          "note": "خضار للمطعم",
+          "funding": {
+            "source": "daily",
+            "dailyAmount": 35000,
+            "cashAmount": 0
+          }
+        }
+      ],
+      "chickenUsed": 85,
+      "chickenLeft": 206,
+      "balance": 950000,
+      "totalOverride": 350000,
+      "remaining": {
+        "amount": 600000,
+        "dailySpent": 314000,
+        "transferred": 0,
+        "salesTotal": 0
+      }
+    }
+  },
+  "transactions": [
+    {
+      "id": "cash",
+      "date": "2026-10-01",
+      "type": "deposit",
+      "amount": 500000,
+      "note": "رصيد القاصة",
+      "createdAt": "2026-10-01T10:00:00.000Z"
+    },
+    {
+      "id": "future",
+      "date": "2026-10-06",
+      "type": "deposit",
+      "amount": 999999,
+      "note": "حركة لاحقة لا تدخل بفاتورة اليوم السابق",
+      "createdAt": "2026-10-06T10:00:00.000Z"
+    }
+  ],
+  "transfers": [
+    {
+      "id": "transfer",
+      "date": "2026-10-04",
+      "amount": 215000,
+      "createdAt": "2026-10-04T20:00:00.000Z"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "supplier",
+      "name": "مورد تجريبي",
+      "phone": "07701234567",
+      "note": "",
+      "categoryId": "market",
+      "openingBalance": 50000,
+      "materials": [
+        {
+          "id": "rice",
+          "name": "رز",
+          "unit": "كيلو",
+          "price": 2500,
+          "archived": false
+        },
+        {
+          "id": "oil",
+          "name": "زيت",
+          "unit": "كارتون",
+          "price": 40000,
+          "archived": false
+        }
+      ]
+    }
+  ],
+  "invoices": [
+    {
+      "id": "invoice",
+      "supplierId": "supplier",
+      "number": "٠٠١٢",
+      "date": "2026-10-03",
+      "lines": [
+        {
+          "materialId": "rice",
+          "name": "رز بسمتي",
+          "unit": "كيلو",
+          "quantity": 12.5,
+          "price": 2500
+        },
+        {
+          "materialId": "oil",
+          "name": "زيت طبخ",
+          "unit": "كارتون",
+          "quantity": 2,
+          "price": 40000
+        }
+      ],
+      "note": "تجهيز المطعم\nالأسعار محفوظة وقت تسجيل القائمة.",
+      "createdAt": "2026-10-03T10:00:00.000Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "payment",
+      "supplierId": "supplier",
+      "invoiceId": "invoice",
+      "invoiceAmount": 111250,
+      "debtAmount": 10000,
+      "categoryId": "market",
+      "date": "2026-10-04",
+      "amount": 121250,
+      "funding": {
+        "source": "shared",
+        "dailyAmount": 100000,
+        "cashAmount": 21250
+      },
+      "note": "القائمة كاملة وجزء من الديون",
+      "createdAt": "2026-10-04T11:00:00.000Z"
+    }
+  ],
+  "debts": [],
+  "materials": [],
+  "workers": [],
+  "savingsEntries": []
+}

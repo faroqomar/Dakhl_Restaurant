@@ -1,0 +1,308 @@
+{
+  "state": {
+    "version": 11,
+    "products": [
+      {
+        "id": "p",
+        "name": "Current renamed item",
+        "code": "",
+        "unit": "plate",
+        "price": 999,
+        "group": "",
+        "minStock": 0,
+        "trackStock": false,
+        "archived": false
+      }
+    ],
+    "stockEntries": [],
+    "sales": [
+      {
+        "id": "a",
+        "number": "S-000001",
+        "date": "2026-01-01",
+        "status": "completed",
+        "lines": [
+          {
+            "productId": "p",
+            "name": "Historic Rice",
+            "unit": "plate",
+            "quantity": 2,
+            "price": 101,
+            "trackStock": false
+          }
+        ],
+        "discount": 1,
+        "paid": 201,
+        "note": "Family",
+        "createdAt": "2026-01-01T12:00:00.000Z",
+        "orderType": "صالة"
+      },
+      {
+        "id": "b",
+        "number": "S-000002",
+        "date": "2026-01-02",
+        "status": "completed",
+        "lines": [
+          {
+            "productId": "p",
+            "name": "Historic Rice",
+            "unit": "plate",
+            "quantity": 1,
+            "price": 101,
+            "trackStock": false
+          }
+        ],
+        "discount": 0,
+        "paid": 101,
+        "note": "Quick",
+        "createdAt": "2026-01-02T12:00:00.000Z",
+        "orderType": "سفري"
+      },
+      {
+        "id": "c",
+        "number": "S-000003",
+        "date": "2026-01-02",
+        "status": "void",
+        "lines": [
+          {
+            "productId": "p",
+            "name": "Historic Rice",
+            "unit": "plate",
+            "quantity": 1,
+            "price": 101,
+            "trackStock": false
+          }
+        ],
+        "discount": 0,
+        "paid": 101,
+        "note": "Void",
+        "createdAt": "2026-01-02T12:00:00.000Z",
+        "orderType": "صالة",
+        "voidReason": "mistake",
+        "voidedAt": "2026-01-03T12:00:00.000Z"
+      }
+    ],
+    "saleReturns": [
+      {
+        "id": "r",
+        "saleId": "a",
+        "date": "2026-01-03",
+        "reason": "return",
+        "createdAt": "2026-01-03T12:00:00.000Z",
+        "lines": [
+          {
+            "productId": "p",
+            "quantity": 1,
+            "restock": false,
+            "amount": 100
+          }
+        ],
+        "amount": 100
+      }
+    ],
+    "preferences": {
+      "shortcuts": [
+        "sales",
+        "inventory",
+        "sale-history",
+        "expenses",
+        "cash",
+        "settings"
+      ],
+      "orderTypes": [
+        "صالة",
+        "سفري",
+        "توصيل"
+      ],
+      "restaurant": {
+        "name": "",
+        "contact": "",
+        "footer": ""
+      }
+    },
+    "categories": [
+      {
+        "id": "samoon",
+        "name": "الصمون",
+        "type": "primary"
+      },
+      {
+        "id": "bread",
+        "name": "الخبز",
+        "type": "primary"
+      },
+      {
+        "id": "falafel",
+        "name": "الفلافل",
+        "type": "primary"
+      },
+      {
+        "id": "market",
+        "name": "الأسواق",
+        "type": "primary"
+      }
+    ],
+    "days": {},
+    "transactions": [],
+    "transfers": [],
+    "suppliers": [],
+    "invoices": [],
+    "payments": [],
+    "debts": [],
+    "materials": [],
+    "workers": [],
+    "savingsEntries": []
+  },
+  "filters": [
+    {},
+    {
+      "from": "2026-01-03",
+      "to": "2026-01-03"
+    },
+    {
+      "from": "2026-01-02",
+      "to": "2026-01-03",
+      "query": "FAMILY"
+    },
+    {
+      "status": "void"
+    },
+    {
+      "orderType": "سفري"
+    },
+    {
+      "query": "Historic Rice"
+    },
+    {
+      "query": "Current renamed item"
+    },
+    {
+      "from": "2026-01-04",
+      "to": "2026-01-01"
+    },
+    {
+      "query": " S-000001"
+    },
+    {
+      "query": "S-000001"
+    }
+  ],
+  "valid": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true
+  ],
+  "results": [
+    {
+      "ids": [
+        "b",
+        "c",
+        "a"
+      ],
+      "returns": [
+        "r"
+      ],
+      "refunded": 100,
+      "total": 202,
+      "completed": 2,
+      "voided": 1
+    },
+    {
+      "ids": [],
+      "returns": [
+        "r"
+      ],
+      "refunded": 100,
+      "total": -100,
+      "completed": 0,
+      "voided": 0
+    },
+    {
+      "ids": [],
+      "returns": [
+        "r"
+      ],
+      "refunded": 100,
+      "total": -100,
+      "completed": 0,
+      "voided": 0
+    },
+    {
+      "ids": [
+        "c"
+      ],
+      "returns": [],
+      "refunded": 0,
+      "total": 0,
+      "completed": 0,
+      "voided": 1
+    },
+    {
+      "ids": [
+        "b"
+      ],
+      "returns": [],
+      "refunded": 0,
+      "total": 101,
+      "completed": 1,
+      "voided": 0
+    },
+    {
+      "ids": [
+        "b",
+        "c",
+        "a"
+      ],
+      "returns": [
+        "r"
+      ],
+      "refunded": 100,
+      "total": 202,
+      "completed": 2,
+      "voided": 1
+    },
+    {
+      "ids": [],
+      "returns": [],
+      "refunded": 0,
+      "total": 0,
+      "completed": 0,
+      "voided": 0
+    },
+    {
+      "ids": [],
+      "returns": [],
+      "refunded": 0,
+      "total": 0,
+      "completed": 0,
+      "voided": 0
+    },
+    {
+      "ids": [],
+      "returns": [],
+      "refunded": 0,
+      "total": 0,
+      "completed": 0,
+      "voided": 0
+    },
+    {
+      "ids": [
+        "a"
+      ],
+      "returns": [
+        "r"
+      ],
+      "refunded": 100,
+      "total": 101,
+      "completed": 1,
+      "voided": 0
+    }
+  ]
+}

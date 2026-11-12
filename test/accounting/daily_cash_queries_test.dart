@@ -7,11 +7,9 @@ import 'package:dakhl_restaurant/accounting/daily_cash_queries.dart';
 
 void main() {
   test('daily cash and refund dates match frozen source', () {
-    final process = Process.runSync('node', [
-      'daily_cash_oracle.cjs',
-    ], workingDirectory: 'test/accounting');
-    expect(process.exitCode, 0, reason: process.stderr.toString());
-    final oracle = jsonDecode(process.stdout as String) as Map<String, dynamic>;
+    final oracle = jsonDecode(
+      File('test/fixtures/legacy/daily_cash.json').readAsStringSync(),
+    ) as Map<String, dynamic>;
     final doc = const LegacyAccountCodec().decodeJson(
       oracle['state'] as Map<String, dynamic>,
     );

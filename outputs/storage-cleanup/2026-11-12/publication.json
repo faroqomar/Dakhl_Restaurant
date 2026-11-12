@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-11-12T14:39:28.818619+00:00",
+  "baseline_head": "2c0eccd79ad3999b3b82779d9722bffbfb94f694",
+  "remote_main": "fb7037a6ea449a721079a7da72a36e6f67b6de81",
+  "free_bytes_before": 51542056960,
+  "sizes_kib_before": {
+    ".": 27407368,
+    ".git": 17298836,
+    "outputs/storage-cleanup": 844
+  },
+  "scope": "Cleanup branch, commit, push and PR; no merge/release",
+  "validation_reuse": "1430non-golden pass;136tooling;44dashboard; no analysis/format issues; independent reviews; source hashes checked this turn"
+}

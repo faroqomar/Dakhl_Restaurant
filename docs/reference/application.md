@@ -1,29 +1,25 @@
-# Application and data — Current-state reference
+# Application and data reference
 
-> Update, 2026-10-28: the root now contains a Flutter development baseline (blank RTL shell and synthetic-data capability tests) under verification, without product screens, production accounts or migration. [Implementation evidence](../phases/00-build-evidence.md). The Electron description below remains historical reference.
+Current setup and architecture: [root README](../../README.md), [phase tracker](../../PHASES.md), [engine ownership](../decisions/0018-madar-engine-boundary.md) and [consumer contract](../how-to/engine-consumer-contract.md). The Flutter app owns restaurant UI/workflows and consumes reviewed Madar packages. Live activation/migration and delivery retain their separate gates.
 
-> Current project name: **Dakhl_Restaurant**. This file documents the reference Electron application under its historical **Daftar** identity; the UI/storage names described below are compatibility evidence, not the current project name.
+## Retired Electron source reference
 
-> Organization, 2026-10-28: Electron source, commands, dependencies and tests are in `electron-reference/`. Resolve bare code paths and npm commands in this document from that directory; direct links are updated. Documentation, plan and screenshots remain at the root, which is the Flutter rebuild location. [Decision 0013](../decisions/0013-electron-reference-folder.md).
-
-> Planning update, 2026-10-27: the owner requested a Flutter/Dart rebuild. The [plan and visual references](../planning/flutter-rebuild/README.md) describe future work; this remains the current Electron application reference until its replacement is implemented and verified. Approved rebuild scope includes no cloud synchronization.
-
-Status: documented from source; establishes neither an installed version nor a new build. Date: 2026-10-16. Owner: Dakhl_Restaurant developer. Sources: linked files below.
+The owner removed `electron-reference/` on 2026-11-12. The historical description below documents Electron 1.12.0/schema 11 under its former **Daftar** identity; it describes compatibility behavior, not current setup or installed software. Source paths refer to Git revision `2c0eccd79ad3999b3b82779d9722bffbfb94f694`. Recover source with the procedure in [decision 0022](../decisions/0022-retire-electron-reference.md). Retired npm/capture commands no longer apply to this checkout. Current verification uses Flutter tests and retained synthetic expectations; do not launch an old app against restaurant accounts.
 
 ## Structure
 
 | File | Responsibility |
 | --- | --- |
-| [package.json](../../electron-reference/package.json) | Version 1.12.0; Electron/JavaScript; run, test and package commands |
-| [main.cjs](../../electron-reference/app/main.cjs) | Window/menus, data path, IPC-origin validation, save/import/export |
-| [preload.cjs](../../electron-reference/app/preload.cjs) | Restricted `window.daftar` bridge between UI and main process |
-| [storage.cjs](../../electron-reference/app/storage.cjs) | Validation, atomic saving, backups and unreadable-file protection |
-| [model.js](../../electron-reference/app/ui/model.js) | Schema 11, migration/validation, accounting, suppliers and worker advances |
-| [renderer.js](../../electron-reference/app/ui/renderer.js) | Rendering, forms, navigation and in-session undo |
-| [suppliers.js](../../electron-reference/app/ui/suppliers.js) | Supplier, material, invoice, debt and payment UI |
-| [numbers.js](../../electron-reference/app/ui/numbers.js) | Arabic/Persian digit normalization and input formatting |
-| [index.html](../../electron-reference/app/ui/index.html) and [styles.css](../../electron-reference/app/ui/styles.css) | Arabic RTL UI, application sections and local styling |
-| [pdf.cjs](../../electron-reference/app/reports/pdf.cjs) and [export.cjs](../../electron-reference/app/reports/export.cjs) | Build reports from saved data, generate/write A4 PDFs |
+| `electron-reference/package.json` | Version 1.12.0; Electron/JavaScript; run, test and package commands |
+| `electron-reference/app/main.cjs` | Window/menus, data path, IPC-origin validation, save/import/export |
+| `electron-reference/app/preload.cjs` | Restricted `window.daftar` bridge between UI and main process |
+| `electron-reference/app/storage.cjs` | Validation, atomic saving, backups and unreadable-file protection |
+| `electron-reference/app/ui/model.js` | Schema 11, migration/validation, accounting, suppliers and worker advances |
+| `electron-reference/app/ui/renderer.js` | Rendering, forms, navigation and in-session undo |
+| `electron-reference/app/ui/suppliers.js` | Supplier, material, invoice, debt and payment UI |
+| `electron-reference/app/ui/numbers.js` | Arabic/Persian digit normalization and input formatting |
+| `electron-reference/app/ui/index.html` and `electron-reference/app/ui/styles.css` | Arabic RTL UI, application sections and local styling |
+| `electron-reference/app/reports/pdf.cjs` and `electron-reference/app/reports/export.cjs` | Build reports from saved data, generate/write A4 PDFs |
 
 This structure belongs to Dakhl_Restaurant; it is not AlDakhl's Flutter/PowerSync architecture.
 

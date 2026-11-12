@@ -16,55 +16,13 @@ import 'support/payment_correction_fixtures.dart';
 
 void main() {
   test(
-    'actual frozen supplier edit/delete bodies preserve complete source maps',
+    'frozen supplier edit/delete fixtures preserve complete source maps',
     () async {
       var state = paymentPosted();
-      final p = await Process.start('node', [
-        'outputs/completion-review/durable-payment-corrections/supplier-oracle.cjs',
-      ]);
-      p.stdin.write(
-        jsonEncode({
-          'state': state.account.toJson(),
-          'actions': [
-            {
-              'type': 'edit',
-              'id': 'payment',
-              'values': {
-                'supplierId': 'supplier',
-                'invoiceId': 'invoice',
-                'date': '2026-01-10',
-                'categoryId': 'market',
-                'amount': '18000',
-                'paymentSource': 'shared',
-                'dailyAmount': '13000',
-                'cashAmount': '5000',
-                'note': ' edited ',
-              },
-            },
-            {
-              'type': 'edit',
-              'id': 'payment',
-              'values': {
-                'supplierId': 'supplier',
-                'invoiceId': 'invoice',
-                'date': '2026-01-11',
-                'categoryId': 'bread',
-                'amount': '17000',
-                'paymentSource': 'shared',
-                'dailyAmount': '12000',
-                'cashAmount': '5000',
-                'note': ' twice ',
-              },
-            },
-            {'type': 'delete', 'id': 'payment'},
-          ],
-        }),
-      );
-      await p.stdin.close();
-      final stdout = await p.stdout.transform(utf8.decoder).join();
-      final stderr = await p.stderr.transform(utf8.decoder).join();
-      expect(await p.exitCode, 0, reason: stderr);
-      final oracle = jsonDecode(stdout) as Map;
+      final oracle = jsonDecode(
+        File('test/fixtures/legacy/payment_corrections.json')
+            .readAsStringSync(),
+      ) as Map;
       final cases = oracle['results'] as List;
       state = f.paymentApply(state, f.paymentEdit(state));
       expect(state.account.toJson(), cases[0]['account']);

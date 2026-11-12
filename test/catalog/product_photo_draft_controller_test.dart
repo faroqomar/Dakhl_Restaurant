@@ -1,4 +1,8 @@
 import 'dart:async';
+import 'dart:convert';
+
+import 'package:crypto/crypto.dart';
+
 import 'dart:io';
 
 import 'package:dakhl_restaurant/accounts/accounts_repository.dart';
@@ -23,15 +27,18 @@ void main() {
       'ماء',
       'مشروب غازي',
     ];
+    final hashes = jsonDecode(
+      File('test/fixtures/legacy/product_photo_hashes.json').readAsStringSync(),
+    ) as Map;
     expect(ProductPhotoReference.canonicalKeys.length, 8);
     for (var i = 0; i < 8; i++) {
       final key = ProductPhotoReference.canonicalKeys[i];
       expect(ProductPhotoReference.labelFor(key), labels[i]);
       final asset = File(ProductPhotoReference.assetPathFor(key)!);
-      final original = File(
-        'electron-reference/app/ui/photos/thumbs/$key-480.webp',
+      expect(
+        sha256.convert(asset.readAsBytesSync()).toString(),
+        hashes['$key-480.webp'],
       );
-      expect(asset.readAsBytesSync(), original.readAsBytesSync());
     }
     expect(ProductPhotoReference.labelFor(null), 'بدون صورة');
     expect(ProductPhotoReference.isValidKey('../../other'), isFalse);

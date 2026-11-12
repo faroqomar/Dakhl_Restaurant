@@ -1,3 +1,5 @@
+> Source-retirement update, 2026-11-12: this is a frozen requirements/reference pack. Current implementation status belongs to [PHASES.md](../../../PHASES.md). The owner removed the Electron source and obsolete planning/capture generators; retain screenshots/manifests and historical phase definitions. Source citations below refer to Git revision `2c0eccd79ad3999b3b82779d9722bffbfb94f694`; [decision 0022](../../decisions/0022-retire-electron-reference.md) records recovery. Historical “not started” labels describe the original plan, not current execution.
+
 > Execution update, 2026-11-05: the owner grouped all remaining work into one **Completion phase**. Original IDs below remain requirement/work-package references. Preserve prior DONE evidence and unfinished checks. [Current scope and readiness](../../phases/completion-scope-readiness.md) · [Current planning view](completion.html). This historical pack does not grant implementation approval.
 
 # Dakhl_Restaurant — Flutter/Dart rebuild to a complete MVP
@@ -52,7 +54,7 @@ All original work items, feature-specific acceptance checks and 179 screenshot f
 
 These are implementation recommendations to validate in phase 00/02, not additional owner-approved product features:
 
-- The Flutter rebuild will use this project root. The old application, dependencies and tests now live in `electron-reference/`; plans and screenshots remain in `docs/planning/flutter-rebuild/`. Do not overwrite the reference or use the production storage path during development. [Folder-layout decision](../../decisions/0013-electron-reference-folder.md).
+- The Flutter application uses this project root. The owner retired the old `electron-reference/` source folder on 2026-11-12; plans, screenshots and source provenance remain. Use isolated synthetic data for development. [Retirement decision](../../decisions/0022-retire-electron-reference.md).
 - Flutter views and view models render/coordinate; pure Dart domain code validates and computes; repositories are the single write boundary; platform services provide files, storage, sharing, print and lifecycle. Widgets do not calculate money or write account files.
 - Begin with compatible, versioned local JSON and a reliable single-writer, validated atomic save/backup service. It matches the current offline product and minimizes migration risk. A database is not required by this request; any storage change needs a separate documented decision and proof of lossless compatibility.
 - Keep finalized account data, recoverable ticket workspace and device-only preferences separate. Use stable operation identity and durable validation for duplicate prevention; no server is required.

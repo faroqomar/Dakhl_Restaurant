@@ -1,6 +1,8 @@
 # Current accounting rules
 
-Status: description of existing behavior; changes need a decision and verification. Date: 2026-10-16. Owner: Dakhl_Restaurant maintainer. Source: [model.js](../../electron-reference/app/ui/model.js), [storage.cjs](../../electron-reference/app/storage.cjs), and tests for accounts, suppliers, payment sources, worker advances and dates.
+Source-retirement update, 2026-11-12: source paths below describe the historical Electron behavior at Git revision `2c0eccd79ad3999b3b82779d9722bffbfb94f694`. The owner removed that application from the checkout; [decision 0022](../decisions/0022-retire-electron-reference.md) records recovery and fixture provenance. These accounting meanings remain subject to their current contracts and explicit policy decisions; source removal changes no financial rule.
+
+Status: description of existing behavior; changes need a decision and verification. Date: 2026-10-16. Owner: Dakhl_Restaurant maintainer. Source: `electron-reference/app/ui/model.js`, `electron-reference/app/storage.cjs`, and tests for accounts, suppliers, payment sources, worker advances and dates.
 
 ## Amounts and expenses
 

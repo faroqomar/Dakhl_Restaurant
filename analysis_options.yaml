@@ -2,8 +2,7 @@ include: package:flutter_lints/flutter.yaml
 
 analyzer:
   exclude:
-    # Preserved Electron reference and frozen evidence snapshots are not app modules.
-    - electron-reference/**
+    # Frozen evidence snapshots and generated files are not app modules.
     - outputs/**
     - build/**
     - android/**

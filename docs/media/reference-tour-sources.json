@@ -1,0 +1,18 @@
+{
+  "kind": "captioned screenshot slideshow",
+  "duration_ms": 9000,
+  "sources": [
+    {
+      "path": "docs/planning/flutter-rebuild/screenshots/desktop-sales.png",
+      "sha256": "4b7ec00c447aac765662ec6d96d98998eb576b52ca1e9277a82eb8be0b4f49f2"
+    },
+    {
+      "path": "docs/planning/flutter-rebuild/screenshots/desktop-inventory.png",
+      "sha256": "b01a566183fc30aa64e869f9b9cd35a7e668e8be22e7bba52bca28ada5d69a76"
+    },
+    {
+      "path": "docs/planning/flutter-rebuild/screenshots/desktop-expenses.png",
+      "sha256": "f89ba2a8e05956d79a7f8bd3041cfb61c9a31efafad5ebb4d7d3e97099cfdee5"
+    }
+  ]
+}

@@ -16,19 +16,10 @@ import '../accounts/accounts_view_model_test.dart' show FixtureStore;
 
 void main() {
   test('seven saved report kinds compose and generate offline PDF bytes', () async {
-    final result = Process.runSync('node', [
-      '-e',
-      r'''
-const M=require('./electron-reference/app/ui/model.js');
-let s=require('./electron-reference/tests/pdf-fixture.cjs').fixture();
-s.products=[{id:'p',name:'رز',code:'',group:'',unit:'طبق',price:1000,minStock:0,trackStock:false,archived:false}];
-s=M.completeSale(s,{date:'2026-10-04',lines:[{productId:'p',quantity:2}],discount:0,note:'',orderType:s.preferences.orderTypes[0]},'sale','2026-10-04T12:00:00.000Z');
-console.log(JSON.stringify(s));
-''',
-    ]);
-    expect(result.exitCode, 0, reason: '${result.stderr}');
     final document = const LegacyAccountCodec().decodeJson(
-      (jsonDecode(result.stdout as String) as Map).cast<String, Object?>(),
+      (jsonDecode(
+        File('test/fixtures/legacy/report_account.json').readAsStringSync(),
+      ) as Map).cast<String, Object?>(),
     );
     // Fixture has ASCII timestamp/ID keys; this bounded smoke does not qualify
     // the required production ICU comparator or mobile native adapter.

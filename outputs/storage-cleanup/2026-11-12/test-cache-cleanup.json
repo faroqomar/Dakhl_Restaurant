@@ -1,0 +1,63 @@
+{
+  "recorded_at": "2026-11-12T14:19:36.334753+00:00",
+  "removed": [
+    {
+      "path": "build/test_cache",
+      "allocated_kib": 102428,
+      "purpose": "reproducible test/native-hook compilation cache; no app bundles or source"
+    },
+    {
+      "path": "build/unit_test_assets",
+      "allocated_kib": 3460,
+      "purpose": "reproducible test/native-hook compilation cache; no app bundles or source"
+    },
+    {
+      "path": "build/native_assets",
+      "allocated_kib": 36436,
+      "purpose": "reproducible test/native-hook compilation cache; no app bundles or source"
+    },
+    {
+      "path": ".dart_tool/flutter_build",
+      "allocated_kib": 8,
+      "purpose": "reproducible test/native-hook compilation cache; no app bundles or source"
+    },
+    {
+      "path": ".dart_tool/hooks_runner/sqlite3",
+      "allocated_kib": 24344,
+      "purpose": "reproducible test/native-hook compilation cache; no app bundles or source"
+    },
+    {
+      "path": ".dart_tool/hooks_runner/sqlite3_connection_pool",
+      "allocated_kib": 21952,
+      "purpose": "reproducible test/native-hook compilation cache; no app bundles or source"
+    },
+    {
+      "path": ".dart_tool/hooks_runner/madar_icu_collation",
+      "allocated_kib": 21976,
+      "purpose": "reproducible test/native-hook compilation cache; no app bundles or source"
+    },
+    {
+      "path": ".dart_tool/hooks_runner/powersync",
+      "allocated_kib": 22656,
+      "purpose": "reproducible test/native-hook compilation cache; no app bundles or source"
+    },
+    {
+      "path": ".dart_tool/hooks_runner/objective_c",
+      "allocated_kib": 21972,
+      "purpose": "reproducible test/native-hook compilation cache; no app bundles or source"
+    },
+    {
+      "path": ".dart_tool/hooks_runner/shared/madar_icu_collation",
+      "allocated_kib": 68420,
+      "purpose": "reproducible test/native-hook compilation cache; no app bundles or source"
+    },
+    {
+      "path": ".dart_tool/hooks_runner/shared/objective_c",
+      "allocated_kib": 1052,
+      "purpose": "reproducible test/native-hook compilation cache; no app bundles or source"
+    }
+  ],
+  "retained": [],
+  "reclaimed_kib": 324704,
+  "retained_native_payloads": ".dart_tool/hooks_runner/shared/{sqlite3,sqlite3_connection_pool,powersync}: validated pinned payloads reused after stalled downloads"
+}

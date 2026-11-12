@@ -1,5 +1,7 @@
 # Frozen V8 timestamp compatibility
 
+Source-retirement update, 2026-11-12: the Electron validator and `scripts/build-account-corpus.cjs` are retired from this checkout. Retained account/timestamp JSON fixtures preserve the recorded source outputs and limits; their provenance cites Git revision `2c0eccd79ad3999b3b82779d9722bffbfb94f694`. [Recovery and retirement](../decisions/0022-retire-electron-reference.md). Historical generation claims below describe the recorded capture, not a currently runnable generator.
+
 Scope: consumer-only schema 1–11 timestamp validation in Dakhl_Restaurant. The frozen `electron-reference/app/ui/model.js` accepts `Date.parse`-valid strings with at most 40 UTF-16 code units. The Dart codec validates against a private adaptation of the source parser and retains the exact original string. This changes neither financial date-only policy nor account values, engine arithmetic, persistence, UI, package versions or reviewed engine consumption.
 
 ## Primary source and license

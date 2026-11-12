@@ -1,0 +1,111 @@
+{
+  "recorded_at": "2026-11-12T14:20:32.581015+00:00",
+  "source_head": "2c0eccd79ad3999b3b82779d9722bffbfb94f694",
+  "head_unchanged": true,
+  "index_sha256": "1f7a11c837bc617cdf1d9710a43e08c9c7482d1783966daf1a2ed7fdfd88a25e",
+  "index_unchanged": false,
+  "changed_preexisting_refs": [],
+  "added_refs": [
+    "refs/t3/orchestration-v2/checkpoints/NzlmMTMzZDZiNTYwNTkwMjU2Y2E5YTM2M2E2NGE5MDc/ordinal/1"
+  ],
+  "git_temporary_object_dirs": [],
+  "git_objects_deleted": false,
+  "storage": {
+    "baseline_kib": {
+      ".": 26788316,
+      ".git": 16550592,
+      "build": 2015100,
+      ".dart_tool": 36412,
+      "outputs": 8080208,
+      "dist": 9372,
+      "electron-reference": 21388,
+      "docs": 56116,
+      "local-worktree-archive": 8
+    },
+    "final_kib": {
+      ".": 26659500,
+      ".git": 16550988,
+      "build": 1905128,
+      ".dart_tool": 38612,
+      "outputs": 8080744,
+      "dist": 9360,
+      "docs": 56064
+    },
+    "project_reduction_kib": 128816,
+    "baseline_free_bytes": 53207834624,
+    "final_free_bytes": 50042302464,
+    "free_delta_bytes": -3165532160,
+    "shared_volume_delta_attribution": "unknown beyond measured repository change; no aggregate reclaimed claim from df"
+  },
+  "verified": {
+    "full_non_golden_flutter": {
+      "passed": 1430,
+      "elapsed_seconds": 109
+    },
+    "affected_flutter": {
+      "passed": 960,
+      "elapsed_seconds": 76
+    },
+    "python313_tooling": {
+      "passed": 136,
+      "elapsed_seconds": 10.999
+    },
+    "dashboard_tooling": {
+      "passed": 44,
+      "elapsed_seconds": 0.119
+    },
+    "analysis": "No issues",
+    "format": {
+      "files": 321,
+      "changed": 0
+    },
+    "engine_checker": "passed",
+    "screenshots": 179,
+    "assets": 21,
+    "legacy_fixture_hashes": 9,
+    "current_document_links": "196 checked by independent reviewer; none broken"
+  },
+  "removed_allocated_kib": 346756,
+  "retained_exceptions": [
+    {
+      "path": "test/fixtures/legacy/",
+      "purpose": "canonical independent synthetic expected outputs and provenance",
+      "allocated_kib": 128
+    },
+    {
+      "path": ".dart_tool/hooks_runner/shared/{sqlite3,sqlite3_connection_pool,powersync}",
+      "purpose": "small validated pinned native payloads avoid repeating stalled downloads"
+    },
+    {
+      "path": ".git/storage-recovery/ and .git/ai/",
+      "purpose": "unique/incomplete historical recovery material; no Git store cleanup authorized as disposable by evidence"
+    },
+    {
+      "path": "outputs/penpot/, accepted build bundles, dist/ historical documents",
+      "purpose": "design/recovery/acceptance evidence, not blanket disposable cache"
+    },
+    {
+      "path": "outputs/storage-cleanup/2026-11-12/",
+      "purpose": "canonical compact task receipts and failed/successful verification logs"
+    }
+  ],
+  "engine_code_api_pin_changes": "N/A; consumer maintenance only",
+  "publication": "Initial local-only closeout; owner authorized branch/commit/push/PR in follow-up. Merge/release remains separate.",
+  "memory": {
+    "api": "healthy",
+    "database": "connected",
+    "pending_sources": 11,
+    "failed_sources": 0,
+    "delivery": "pending",
+    "receipt": "memory-check-closeout.json"
+  },
+  "staged_entries_match_head": true,
+  "index_binary_change_assessment": "Baseline and final have no staged changes; staged file content remains HEAD. Binary index changed during status/tool activity; metadata refresh is suspected, exact writer not established.",
+  "independent_review": "clear for source/test/CI/documentation/storage receipts",
+  "closure": "Owner-authorized local cleanup complete; memory ingestion remains pending, no publication",
+  "empty_task_receipts_removed": [
+    "memory-sync.json",
+    "memory-sync-final.json"
+  ],
+  "removed_empty_receipt_reason": "No output content; command exit and pending state preserved in log/check receipts"
+}

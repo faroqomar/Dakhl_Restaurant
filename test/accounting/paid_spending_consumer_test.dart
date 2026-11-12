@@ -7,14 +7,10 @@ import 'package:dakhl_restaurant/accounts/legacy_account_codec.dart';
 import 'package:dakhl_restaurant/accounting/daily_cash_queries.dart';
 import 'package:dakhl_restaurant/parties/purchase_proposal.dart';
 
-Map<String, dynamic> fixture() {
-  final result = Process.runSync('node', [
-    'daily_cash_oracle.cjs',
-  ], workingDirectory: 'test/accounting');
-  expect(result.exitCode, 0, reason: result.stderr.toString());
-  return (jsonDecode(result.stdout as String) as Map<String, dynamic>)['state']
-      as Map<String, dynamic>;
-}
+Map<String, dynamic> fixture() =>
+    (jsonDecode(File('test/fixtures/legacy/daily_cash.json').readAsStringSync())
+            as Map<String, dynamic>)['state']
+        as Map<String, dynamic>;
 
 void main() {
   test('unpaid positive purchase invoice never creates paid spending', () {

@@ -36,20 +36,10 @@ void main() {
   test(
     'source range oracle preserves independent sales and snapshot baseline',
     () async {
-      final result = await Process.run('node', [
-        '-e',
-        r'''
-const M=require('./electron-reference/app/ui/model.js');
-let a=M.empty(); a.products=[{id:'p',name:'Product',code:'',unit:'piece',group:'',price:1000,minStock:0,trackStock:false,archived:false}];
-a=M.completeSale(a,{date:'2026-11-07',lines:[{productId:'p',quantity:1}],discount:0},'sale','2026-11-07T10:00:00Z');
-a.days['2026-11-07']={expenses:[],chickenUsed:2,chickenLeft:0,balance:null,totalOverride:null,remaining:null};
-M.recordRemaining(a,'2026-11-07',50000);
-a.days['2026-11-08']={expenses:[],chickenUsed:1,chickenLeft:0,balance:42,totalOverride:null,remaining:null};
-console.log(JSON.stringify({before:a,after:M.correctDayDates(a,'2026-11-07','2026-11-08','2026-11-08')}));
-''',
-      ]);
-      expect(result.exitCode, 0, reason: result.stderr.toString());
-      final values = jsonDecode(result.stdout as String) as Map;
+      final values = jsonDecode(
+        File('test/fixtures/legacy/day_date_correction.json')
+            .readAsStringSync(),
+      ) as Map;
       final before = const LegacyAccountCodec().decodeJson(
         (values['before'] as Map).cast<String, Object?>(),
       );
