@@ -1,0 +1,23 @@
+README.md
+  s_0fed7935aa89b7::t_6afd8bc5c43348 3,5,7,9,11,13,15,17,19,21,23,25,27,29,35-38,41,44-46,49-51,53-55,57,59-68,76,78-81,83,85
+docs/log/2026-11-27-readme-live-demo.md
+  s_0fed7935aa89b7::t_30fef1844d23b3 1-44
+docs/media/README.md
+  s_0fed7935aa89b7::t_8fc41b2b14f6a5 3-16,19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "fe86d07d0aeb946764c55b62431d32a566c1ae67",
+  "prompts": {},
+  "sessions": {
+    "s_0fed7935aa89b7": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a21e93-e208-7412-bfb9-f584f1c5887b",
+        "model": "gpt-6.2-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
