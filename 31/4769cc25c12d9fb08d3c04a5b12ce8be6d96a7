@@ -1,0 +1,19 @@
+docs/phases/c1-operation-benchmarks.md
+  s_6b337378c1151d::t_ab73e12ae7efca 63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "314769cc25c12d9fb08d3c04a5b12ce8be6d96a7",
+  "prompts": {},
+  "sessions": {
+    "s_6b337378c1151d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a21ee8-9742-78e1-bf8f-fbcff9ed6028",
+        "model": "unknown"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
