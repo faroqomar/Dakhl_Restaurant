@@ -1,0 +1,161 @@
+.gitignore
+  s_6b337378c1151d::t_58be87e2b73074 69-70
+PHASES.md
+  s_6b337378c1151d::t_cb130da8d931aa 15,25,43,45,410
+PLANS.md
+  s_6b337378c1151d::t_ff867684f2e63a 3
+docs/README.md
+  s_6b337378c1151d::t_b30f7722aff7a9 48,78-79
+docs/how-to/documentation.md
+  s_6b337378c1151d::t_e42e2eb7827f1f 10
+docs/log/2026-10-26-ux-audit-fixes.md
+  s_6b337378c1151d::t_a89303c599eb0f 19
+docs/log/2026-10-28-phase-00-kickoff.md
+  s_6b337378c1151d::t_807cb687629a18 31
+docs/log/2026-10-28-project-name.md
+  s_6b337378c1151d::t_8bd010d4ddbc61 7
+docs/log/2026-10-29-phase01-penpot-design.md
+  s_6b337378c1151d::t_782406541886c4 9,20-22
+docs/log/2026-10-29-phase01-step3-preflight.md
+  s_6b337378c1151d::t_223ccc62e0e6d2 25
+docs/log/2026-10-30-phase02-android-preservation-incident.md
+  s_6b337378c1151d::t_bc5ef7455d9209 45
+docs/log/2026-11-06-completion-design-continuation.md
+  s_6b337378c1151d::t_66fcc200466c2b 3,15
+docs/log/2026-11-06-completion-design-restart.md
+  s_6b337378c1151d::t_0fe5e1ef541a16 19
+docs/log/2026-11-06-completion-design-write-blocker-handoff.md
+  s_6b337378c1151d::t_3d972db35e4c8b 20,26,34
+docs/log/2026-11-07-command-atomicity-verification.md
+  s_6b337378c1151d::t_4a0de4ad2f4cfd 23,38
+docs/log/2026-11-07-completion-verification.md
+  s_6b337378c1151d::t_3b034fcb9e0ed9 34,44
+docs/log/2026-11-07-query-coordinator-adoption.md
+  s_6b337378c1151d::t_b5bf555f5b5d05 9
+docs/log/2026-11-08-build-first-closeout.md
+  s_6b337378c1151d::t_8b2dd0493a4efa 26,48-52,56
+docs/log/2026-11-08-c0-native-bootstrap-row-closure.md
+  s_6b337378c1151d::t_204b7fa101b649 5
+docs/log/2026-11-08-c1-connected-gap-closure.md
+  s_6b337378c1151d::t_c7237a0e1ec944 3
+docs/log/2026-11-08-c1-exact-row-closure.md
+  s_6b337378c1151d::t_c63065e924213c 5
+docs/log/2026-11-08-expense-correction-fence-repair.md
+  s_6b337378c1151d::t_9f1b5640c48a9c 9
+docs/log/2026-11-08-f08-f09-fixture-closure.md
+  s_6b337378c1151d::t_13b9f05e0e461f 5,7
+docs/log/2026-11-08-f10-reviewed-source-adoption-closure.md
+  s_6b337378c1151d::t_96b86edf116dab 5
+docs/log/2026-11-08-import-byte-boundary-root-repair.md
+  s_6b337378c1151d::t_e9192d3b5c4813 11,19
+docs/log/2026-11-08-legacy-corpus-restart.md
+  s_6b337378c1151d::t_c38c6c3c69b5ad 33
+docs/log/2026-11-08-remaining-completion-closeout.md
+  s_6b337378c1151d::t_29f2de51220cb5 15,52
+docs/log/2026-11-08-review-validation-closeout.md
+  s_6b337378c1151d::t_04d5889e1f5139 7,32,44,50,52
+docs/log/2026-11-08-transfer-correction-integrity-recheck.md
+  s_6b337378c1151d::t_377656b045e9f7 5
+docs/log/README.md
+  s_6b337378c1151d::t_852ed5e9203e23 3-5,7
+docs/phases/00-baseline-kickoff.md
+  s_6b337378c1151d::t_215050a762e813 27
+docs/phases/00-figma-reference-preparation.md
+  s_6b337378c1151d::t_5059847e2a1c84 18
+docs/phases/00-ios-native-acceptance.md
+  s_6b337378c1151d::t_19c224901f4e3d 11,17-22,26
+docs/phases/00-penpot-reference-recreation.md
+  s_6b337378c1151d::t_3691e559d986cc 49-51
+docs/phases/00-penpot-ux-review.md
+  s_6b337378c1151d::t_635958bf117658 11
+docs/phases/01-penpot-design-review.md
+  s_6b337378c1151d::t_49eb9db239783f 17
+docs/phases/01-review-corrections.md
+  s_6b337378c1151d::t_0c615b282f9bad 9
+docs/phases/02-penpot-design-review.md
+  s_6b337378c1151d::t_03bef6e01d1abf 67
+docs/phases/02-publication-evidence-index.md
+  s_6b337378c1151d::t_6e6bfa866374f5 13-24,32,35,46
+docs/phases/02-step4-performance-readable-index.md
+  s_6b337378c1151d::t_8e24045b4190ac 9-26
+docs/phases/02-step4-performance.md
+  s_6b337378c1151d::t_ad2474b71b55a3 12,20-37,47
+docs/phases/02-step4-review.md
+  s_6b337378c1151d::t_2f8627cffc6df3 15,25,35,37-39,47,51
+docs/phases/02-step5-delivery.md
+  s_6b337378c1151d::t_fd673ecfa77398 25,27,31,39
+docs/phases/c1-design-approval.md
+  s_6b337378c1151d::t_6757f1e222bc0f 7
+docs/phases/c1-operation-benchmarks.md
+  s_6b337378c1151d::t_804019c41b59db 9
+docs/phases/c2-c4-owner-approval.md
+  s_6b337378c1151d::t_bcf521333f683e 10-13
+docs/phases/completion-baseline-acceptance-map.md
+  s_6b337378c1151d::t_76dc6412ad149c 33
+docs/phases/completion-benchmarks.md
+  s_6b337378c1151d::t_735b9088426bf9 80
+docs/phases/completion-deleted-spending-restoration-contract.md
+  s_6b337378c1151d::t_76051e59de790b 15
+docs/phases/completion-penpot-design-review.md
+  s_6b337378c1151d::t_6d3f7c82e31b5d 1,3,17-19,37
+docs/phases/completion-remaining-correction-approval.md
+  s_6b337378c1151d::t_cf01470c8a1d22 5
+docs/phases/completion-remaining-correction-examples.md
+  s_6b337378c1151d::t_40fe69f7363b65 17
+docs/phases/completion-scope-readiness.md
+  s_6b337378c1151d::t_a107ce5afe32ea 19
+docs/phases/completion-unfinished-checklist.md
+  s_6b337378c1151d::t_c329bbdf481fd9 7
+docs/phases/remaining-ui-build-approval-proposal.md
+  s_6b337378c1151d::t_7f1ca08c3efee4 13-15,74
+docs/phases/source-reference-build-proposal.md
+  s_6b337378c1151d::t_c44698e44c6e38 45-53
+docs/planning/2026-10-26-full-app-ux-audit.md
+  s_6b337378c1151d::t_9d199fb959301d 84,100,116,146,162,304,334,448,604,704,874
+docs/planning/2026-10-26-ux-audit-resolution.md
+  s_6b337378c1151d::t_87ed109d7e80cd 16
+docs/reference/durable-transfer-commands.md
+  s_6b337378c1151d::t_eee4a1b457edda 109
+docs/reference/html-artifact-retention.md
+  s_6b337378c1151d::t_9136d0510afd50 12-14
+docs/reference/project-scope.md
+  s_6b337378c1151d::t_03a0b2a0cfe53b 18
+docs/templates/README.md
+  s_6b337378c1151d::t_fc906ef7ddf4fa 6
+integration_test/README.md
+  s_6b337378c1151d::t_4602a236362325 182
+scripts/audit-completion-progress.py
+  s_6b337378c1151d::t_1be4aa5281c91b 24-25
+test/accounting/restaurant_journal_transfer_correction_safety_test.dart
+  s_6b337378c1151d::t_9b56d4fcf61b5f 22-23
+test/accounting/restaurant_journal_transfer_safety_test.dart
+  s_6b337378c1151d::t_781eb067371b90 21
+test/fixtures/legacy/README.md
+  s_6b337378c1151d::t_f4873e9ac0e14a 17-20
+docs/log/2026-11-28-public-repository-cleanup.md
+  s_27595989504f9f::t_a6b4bc5cf7c64e 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b6496efc771904cb0d20328c95f8d249fe0a926b",
+  "prompts": {},
+  "sessions": {
+    "s_27595989504f9f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a21eed-8769-7f13-93b0-0c57d392bd53",
+        "model": "unknown"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_6b337378c1151d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a21ee8-9742-78e1-bf8f-fbcff9ed6028",
+        "model": "gpt-6.2-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
