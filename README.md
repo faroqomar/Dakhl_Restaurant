@@ -1,60 +1,71 @@
 # Dakhl_Restaurant
 
-Offline restaurant sales, inventory and daily accounting with an Arabic RTL interface and Iraqi dinar amounts. It covers day-to-day restaurant operations through local records and explicit backup/import workflows.
+Dakhl_Restaurant is an offline Flutter app for running sales, stock, and daily accounts at one restaurant. The interface reads right to left in Arabic and records amounts in Iraqi dinars (IQD).
 
-The Flutter application shares reusable business capabilities with [Madar_Engine](https://github.com/faroqomar/Madar_Engine). Restaurant screens, workflows and safeguards stay here.
+**Development build.** Try the workflows with the included synthetic account. Physical-phone checks, per-form visual acceptance, live financial activation, signing, and release are still open. See the [phase tracker](PHASES.md) and [local validation record](docs/log/2026-11-08-remaining-completion-closeout.md).
 
-**Status: unreleased development build.** The Flutter work has local implementation and validation evidence on macOS ARM64, Android ARM64 Emulator and iOS ARM64 Simulator. Physical-phone checks, per-form visual acceptance, live financial activation, signing and release remain open. See the [current tracker](PHASES.md) and [local validation record](docs/log/2026-11-08-remaining-completion-closeout.md).
+## Watch a cash sale
 
-## Preview
+### macOS
 
-![Arabic sales screen with a product catalog and current ticket, using synthetic data](docs/planning/flutter-rebuild/screenshots/desktop-sales.png)
+Add a product to the ticket beside the catalog and confirm the **1,000 IQD** cash sale. The macOS app saves receipt `S-000005` in a synthetic account.
 
-**Archived Electron screenshots, synthetic data.** These screenshots show the original application's sales, stock and spending workflows. They are reference captures for the Flutter rebuild.
+![Adding an item to the desktop ticket and confirming the cash sale in the running macOS app](docs/media/desktop-cash-sale.gif)
 
-![Nine-second screenshot tour of sales, inventory and daily spending in the preserved Electron app](docs/media/reference-tour.gif)
+[Desktop sales catalog](docs/media/desktop-sales-catalog.png) · [Saved desktop receipt](docs/media/desktop-cash-sale-receipt.png)
 
-The GIF cycles through three captured screens; it is a screenshot tour, not an interaction recording. [Full screenshot gallery](docs/planning/flutter-rebuild/gallery.html) · [Media provenance](docs/media/README.md).
+### iPhone Simulator
 
-## Workflows
+Add a product, confirm the cash sale, and open the saved receipt. Receipt `S-000001` shows one synthetic item and a total of **1,000 IQD**.
 
-- Build cash-sale tickets, hold orders, review saved sales and issue receipts.
-- Maintain sellable products and stock movement history.
-- Track daily expenses, cashbox movements, suppliers, purchase invoices and payments.
-- Export PDF reports and move account data through explicit backup/import workflows.
+<img src="docs/media/cash-sale.gif" width="340" alt="Adding a synthetic catalog item, confirming a cash sale, and opening the saved receipt in the Arabic Flutter app">
 
-The retained synthetic screenshots document the original workflow reference. The Flutter app adds reviewed local persistence, history and recovery safeguards, with implementation and test evidence in the [Completion record](docs/log/2026-11-08-remaining-completion-closeout.md). Normal `lib/main.dart` retains the existing account composition; complete-envelope financial workflows require explicit initialization. Local validation does not authorize live-account migration.
+[View the saved receipt as a still image](docs/media/cash-sale-receipt.png).
 
-## Run the Flutter development app
+## Run the demo
 
-Requirements: **Flutter 3.47.8 / Dart 3.13.7**, Python 3.10+, and the native toolchain for your target. Use macOS with Xcode for the macOS/iOS targets, or the Android SDK for Android. The SDK constraints live in [.fvmrc](.fvmrc) and [pubspec.yaml](pubspec.yaml).
+Use Flutter **3.47.8** with Dart **3.13.7**, Python **3.10 or later**, and your target's Flutter toolchain. On a Mac, use Xcode for macOS and iOS Simulator builds. For Android, use the Android SDK and an emulator. You need read access to both repositories. The SDK versions are recorded in [.fvmrc](.fvmrc) and [pubspec.yaml](pubspec.yaml).
 
-Clone both repositories as sibling directories. You need repository access to each. Madar is a source dependency; copying its implementation into this app breaks the ownership and verification contract.
+Clone the repositories as siblings and select the Madar revision required by this app checkout.
 
 ```sh
 git clone https://github.com/faroqomar/Dakhl_Restaurant.git
 git clone https://github.com/faroqomar/Madar_Engine.git
 cd Dakhl_Restaurant
-
-# Read this app checkout's required engine revision.
-python3 -c 'import json; print(json.load(open("engine-dependency.json"))["git_commit"])'
-```
-
-In the new sibling Madar checkout, check out the revision printed above. If that development revision is unavailable remotely, obtain the reviewed source from the maintainer before continuing. Then, from `Dakhl_Restaurant`:
-
-```sh
+engine_revision="$(python3 -c 'import json; print(json.load(open("engine-dependency.json"))["git_commit"])')"
+git -C ../Madar_Engine checkout --detach "$engine_revision"
 flutter pub get --enforce-lockfile
 python3 scripts/check-engine.py
-flutter run -d macos
 ```
 
-Use `flutter devices` and replace `macos` with your Android emulator or iOS Simulator device ID. Platform setup and native probe limits appear in [integration_test/README.md](integration_test/README.md). The optional collation adapter needs generated native artifacts for full qualification; a fresh clone does not include that evidence. Setup is documented in [Madar's ICU package](https://github.com/faroqomar/Madar_Engine/tree/main/packages/icu_collation).
+Start a simulator or emulator and find its ID with `flutter devices`. Replace `DEVICE_ID` below with that ID. Use `macos` for the macOS target.
 
-The development app uses ID `com.eros.dakhlrestaurant.phase00` and a separate data location from the original Electron app. Use disposable synthetic accounts while evaluating it. Back up actual records before any migration or import work.
+```sh
+flutter run --no-pub -d DEVICE_ID \
+  -t lib/platform/completion_acceptance_main.dart \
+  --dart-define=DAKHL_ACCEPTANCE_ID=readme-demo
+```
 
-## Verify
+When the Arabic Sales screen opens with a populated catalog, the demo is ready. The demo starts in its own local account and generates its sample records. Reuse the same demo ID to reopen your sample account, or choose a new ID to start with a fresh fixture.
 
-From the Flutter project root after dependency resolution:
+### Save your first sale
+
+1. On Sales, search for `Synthetic item 0` and add one to the ticket.
+2. Scroll to checkout. Check that the total is **1,000 IQD**, then tap **Confirm cash sale**.
+3. Open **Receipt details** from the confirmation. The saved receipt shows the item and sale total.
+
+<img src="docs/media/sales-catalog.png" width="340" alt="Arabic Sales screen with the synthetic product catalog before checkout">
+
+## What you can try
+
+- Build cash-sale tickets, hold orders, and review saved sales and receipts.
+- Manage sellable products and review stock movements.
+- Record daily expenses, cashbox movements, supplier invoices, and payments in the isolated demo.
+- Review PDF reports and try manual account backup and import with disposable demo files.
+
+The app keeps records on the device. Manual backup and import let you move a copy between installations. The normal `lib/main.dart` uses the app's standard account storage. Use the demo entry point above to try financial workflows with sample records.
+
+## Develop and verify
 
 ```sh
 python3 scripts/check-engine.py
@@ -62,21 +73,13 @@ flutter analyze --no-pub
 flutter test --no-pub --exclude-tags golden
 ```
 
-The engine checker validates the recorded revision, resolved package sources, versions and pure-core boundary. These commands do not cover native file dialogs, physical printers or production migration. See the [integration-test guide](integration_test/README.md) for those separate checks.
+The engine checker verifies the revision and resolved package sources recorded in [engine-dependency.json](engine-dependency.json). [Madar_Engine](https://github.com/faroqomar/Madar_Engine) supplies shared business rules, persistence contracts, and reusable adapters. Dakhl_Restaurant owns the restaurant screens, workflows, document layout, and account safeguards. See the [ownership decision](docs/decisions/0018-madar-engine-boundary.md).
 
-The Electron application and its Node/Electron tooling were retired from this checkout on 2026-11-12. Frozen screenshots and synthetic regression fixtures remain; [the retirement decision](docs/decisions/0022-retire-electron-reference.md) records source recovery and verification limits.
+- [Native integration and probe guide](integration_test/README.md)
+- [Documentation index](docs/README.md) and [contributor workflow](AGENTS.md)
+- [Current capture provenance and archived Electron media](docs/media/README.md)
+- [Font source and licenses](assets/fonts/SOURCE.md)
 
-## Architecture and project map
+Project-wide licensing is unspecified in this repository.
 
-| Location | Responsibility |
-| --- | --- |
-| `lib/`, `test/`, `integration_test/` | Flutter app, restaurant workflows and app-specific tests |
-| [engine-dependency.json](engine-dependency.json) | Reviewed Madar revision and package versions |
-| [docs/](docs/README.md) | Contracts, decisions, setup and dated evidence |
-| [Screenshot library](docs/planning/flutter-rebuild/gallery.html) | Frozen synthetic UI references |
-
-Madar owns shared contracts, exact-value rules, durable operation coordination and reusable adapters. This app owns Arabic UI, restaurant mappings, document composition and account safeguards. [Ownership contract](docs/decisions/0018-madar-engine-boundary.md).
-
-The app serves one restaurant, works offline and preserves historical records. Manual backup/import does not synchronize devices. Broader cloud services and multi-restaurant operation are outside this app's scope.
-
-Development workflow: [AGENTS](AGENTS.md) · [plans](PLANS.md) · [tracker](PHASES.md) · [prompts](PROMPTS.md). Earlier README delivery snapshots remain in the [historical copy](docs/reference/readme-before-portfolio-2026-11-12.md); current status belongs to the tracker.
+The [archived Electron screenshots](docs/planning/flutter-rebuild/gallery.html) preserve the reference for the Flutter rebuild. The [retirement decision](docs/decisions/0022-retire-electron-reference.md) records how to recover the old source from Git history.
