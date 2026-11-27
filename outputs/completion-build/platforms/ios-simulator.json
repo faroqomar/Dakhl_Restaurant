@@ -1,8 +1,0 @@
-{
-  "status": "blocked",
-  "command": "flutter build ios --simulator --debug --no-codesign --no-pub",
-  "exitCode": 1,
-  "error": "Flutter.framework temporary copy: No space left on device",
-  "retry": "Not retried without sufficient storage headroom",
-  "installedOrRuntimeVerified": false
-}

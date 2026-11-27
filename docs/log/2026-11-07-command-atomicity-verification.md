@@ -20,7 +20,7 @@ Verification is pending. Clean reopen is not arbitrary process, power-loss, fsyn
 
 ## Verified result
 
-Final tests: **13 passed** at 20:46:46–20:46:53 UTC (6.350 s wall clock). Targeted analyzer: **no issues** at 20:46:56–20:47:00 UTC (4.128 s wall clock). Commands used the existing Flutter toolchain with `--no-pub`; no native surface, account launch, extra subprocess campaign, Git change or dependency resolution occurred. The tested production-input hashes match the initial snapshot. [Receipt](../../outputs/completion-review/command-atomicity/receipt.json), [final source manifest](../../outputs/completion-review/command-atomicity/verified-inputs.json), [test output](../../outputs/completion-review/command-atomicity/final-tests.log), [analysis](../../outputs/completion-review/command-atomicity/analysis.log).
+Final tests: **13 passed** at 20:46:46–20:46:53 UTC (6.350 s wall clock). Targeted analyzer: **no issues** at 20:46:56–20:47:00 UTC (4.128 s wall clock). Commands used the existing Flutter toolchain with `--no-pub`; no native surface, account launch, extra subprocess campaign, Git change or dependency resolution occurred. The tested production-input hashes match the initial snapshot. Receipt, final source manifest, [test output](../../outputs/completion-review/command-atomicity/final-tests.log), [analysis](../../outputs/completion-review/command-atomicity/analysis.log).
 
 | Accepted composition | Actual precommit checkpoint | Actual postcommit checkpoint |
 | --- | --- | --- |
@@ -35,7 +35,7 @@ The thirteenth case throws at the actual postcommit checkpoint and makes only th
 
 ## Storage closeout and handoff
 
-[Storage receipt](../../outputs/completion-review/command-atomicity/storage-closeout.json): free disk 112048048→112025924 KiB; Git 18422536→18422716 KiB; outputs 7305660→7305808 KiB; build 639928→623524 KiB; .dart_tool unchanged at 204860 KiB. Project size at closeout is 27085652 KiB; the parent-provided start baseline was 27101652 KiB. Concurrent workers share these directories; the producer of Git/free-space changes is unknown. No threshold breach or tmp_objdir store appeared.
+Storage receipt: free disk 112048048→112025924 KiB; Git 18422536→18422716 KiB; outputs 7305660→7305808 KiB; build 639928→623524 KiB; .dart_tool unchanged at 204860 KiB. Project size at closeout is 27085652 KiB; the parent-provided start baseline was 27101652 KiB. Concurrent workers share these directories; the producer of Git/free-space changes is unknown. No threshold breach or tmp_objdir store appeared.
 
 The framework closed and deleted all task-created synthetic stores; a host scan found none remaining. Reclaimed host-cleanup bytes: 0; no extra delete was needed. Retain the acceptance test, dated log, source hashes, failed attempts and compact final receipts as canonical evidence. Failure logs preserve distinct authoring mistakes, rather than duplicate exports. All initial candidate hashes stayed unchanged. Existing dirty work remains untouched.
 

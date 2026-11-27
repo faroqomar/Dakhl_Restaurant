@@ -1,8 +1,0 @@
-{
-  "engineActualHead": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
-  "consumerManifestPin": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
-  "resolvedSourceCheckerExitCode": 0,
-  "preservedDocumentationCommit": "a918fbc053066226ef087a7e39c5a41fa8c8e8c9",
-  "engineRuntimeUnchanged": true,
-  "laterEngineDocumentationCommits": "use separate checkout; preserve this active exact pin"
-}

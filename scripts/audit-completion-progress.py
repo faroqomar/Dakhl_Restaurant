@@ -21,8 +21,8 @@ import tempfile
 
 
 CHECKLIST = Path('docs/phases/completion-unfinished-checklist.md')
-PROGRESS = Path('outputs/completion-review/implementation-progress.json')
-OUTPUT = Path('outputs/completion-review/progress-audit-latest.json')
+PROGRESS = Path('docs/phases/completion-progress/implementation-progress.json')
+OUTPUT = Path('docs/phases/completion-progress/progress-audit-latest.json')
 BASELINE = {'M': 28, 'I': 70, 'V': 99, 'G': 16}
 # Frozen original 213 IDs/types. Status and requirement text remain in Markdown.
 EXPECTED_BY_TYPE = {

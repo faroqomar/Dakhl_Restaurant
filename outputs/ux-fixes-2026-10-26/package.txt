@@ -1,7 +1,0 @@
-
-> daftar-restaurant@1.12.0 package
-> electron-packager . Daftar --platform=darwin --arch=arm64 --out=dist --overwrite --asar --app-bundle-id=com.eros.daftar --app-category-type=public.app-category.finance --icon=assets/Daftar.icns --ignore=^/design --ignore=^/tests --ignore=^/README --ignore=^/.impeccable --ignore=^/scripts --ignore=^/outputs --ignore=^/docs --ignore=^/AGENTS --ignore='^/\.codex' --ignore='^/app/ui/photos/[^/]+\.png$'
-
-Packaging app for platform darwin arm64 using electron v44.5.1
-WARNING: Could not find icon "assets/Daftar.icns" with extension ".icon", skipping this app icon format
-Wrote new app to: dist/Daftar-darwin-arm64

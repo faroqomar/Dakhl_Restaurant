@@ -36,8 +36,6 @@ Status: approved baseline documentation checked against source. Original date: 2
 | Follow work from idea to outcome | [Documentation and tracking](how-to/documentation.md) |
 | Hindsight use, synchronization and recovery | [Memory guide](how-to/memory.md) |
 | Ideas and improvements | [Idea register](planning/ideas.md) |
-| Dine-in menu | [Menu and prices](planning/dine-in-menu.md) |
-| Advertising campaigns | [Campaign register](planning/campaigns.md) |
 | Decisions and rationale | [Decision register](decisions/README.md) |
 | Changes and actual verification | [Work logs](log/README.md) |
 | Templates for new records | [Templates](templates/README.md) |
@@ -47,7 +45,7 @@ Status: approved baseline documentation checked against source. Original date: 2
 
 The root contains the Flutter/Dart application. The owner retired the preserved Electron application and its obsolete tooling on 2026-11-12. Frozen screenshots, historical provenance and synthetic compatibility fixtures remain. [Retirement decision](decisions/0022-retire-electron-reference.md) · [Current setup](../README.md) · [Maintenance checks](log/2026-11-12-reference-cleanup.md).
 
-Current Flutter implementation/validation and remaining activation, migration, physical-phone and release gates appear in [PHASES.md](../PHASES.md). Ideas and campaigns remain documented registers; repository cleanup adds no runtime feature.
+Current Flutter implementation/validation and remaining activation, migration, physical-phone and release gates appear in [PHASES.md](../PHASES.md). Application improvements remain in the [idea register](planning/ideas.md).
 
 ## Reference precedence
 
@@ -77,3 +75,5 @@ Owner direction, 2026-10-28: develop Madar_Engine alongside the app, keeping sha
 Development campaigns: [source-bound workflow](how-to/development-campaigns.md), [fixture/device/delivery preflight](how-to/task-preflight.md), [verified tooling outcome](log/2026-11-04-tooling-hardening.md).
 
 Generated HTML retention: [current artifacts and recovery](reference/html-artifact-retention.md). Markdown remains authoritative for plans/contracts; use the single screenshot gallery rather than duplicate phase/contract HTML pages.
+
+Generated review exports and superseded working notes were removed from the public checkout. Dated references in retained records identify evidence captured at the time. See the [repository cleanup record](log/2026-11-28-public-repository-cleanup.md).

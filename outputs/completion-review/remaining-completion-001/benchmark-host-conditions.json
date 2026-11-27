@@ -1,5 +1,0 @@
-{
-  "at": "2026-11-08T20:22:50.221478+00:00",
-  "uptime": "23:22  up 12 days, 12:28, 1 user, load averages: 15.81 46.67 80.02",
-  "conditions": "Both task-booted simulators stopped; Flutter suite/native builds and CUA apps stopped before measurements. OS background services and caches uncontrolled. High earlier load averages retained; no cross-run improvement or capacity threshold claim."
-}

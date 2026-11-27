@@ -23,7 +23,7 @@ The optional native ICU package now enters this local development candidate from
 - `flutter build macos --debug --no-pub` with required ICU runtime: passed in 26.766 seconds. All 180 recorded source/asset/config hashes stayed unchanged during compilation. This duration is a build audit value, not a feature benchmark.
 
 Canonical app: [Dakhl_Restaurant Dev.app](../../build/macos/Build/Products/Debug/Dakhl_Restaurant%20Dev.app).
-Exact build/tool/source/runtime/executable identity: [attempt-001 receipt](../../outputs/completion-review/build-first-macos/attempt-001.json). [Build output](../../outputs/completion-review/build-first-macos/attempt-001.log). [Storage receipt](../../outputs/completion-review/build-first-macos/storage-closeout.json).
+Exact build/tool/source/runtime/executable identity: attempt-001 receipt. Build output. Storage receipt.
 
 ## Remaining gates
 
@@ -45,12 +45,12 @@ Priority automation backlog: enforce source-ready/one-runner handoffs; provide t
 
 - [Daily composition](2026-11-08-source-daily-composition-build.md)
 - [Session undo composition](2026-11-08-session-undo-composition-build.md)
-- [Source-local financial undo](2026-11-08-source-local-financial-undo.md)
-- [Deleted spending restoration](2026-11-08-deleted-spending-restoration-build.md)
-- [Party session undo](2026-11-08-party-session-undo-build.md)
-- [Register/date undo](2026-11-08-day-date-register-undo-build.md)
-- [Collation presentation](2026-11-08-source-collation-presentation-build.md)
+- Source-local financial undo
+- Deleted spending restoration
+- Party session undo
+- Register/date undo
+- Collation presentation
 - [ICU candidate contract](../phases/build-first-collation-runtime-contract.md)
 - [Engine runtime bundle](../../../Madar_Engine/docs/log/2026-11-08-icu-runtime-bundle-build.md)
 
-Memory closeout: final project-scoped delivery results are recorded in the [machine receipt](../../outputs/completion-review/build-first-macos/memory-closeout.json) after synchronization. Engine's preceding scoped check reports zero pending/failed. Each project retains its own bank; accepted queue entries alone do not establish delivery.
+Memory closeout: final project-scoped delivery results are recorded in the machine receipt after synchronization. Engine's preceding scoped check reports zero pending/failed. Each project retains its own bank; accepted queue entries alone do not establish delivery.

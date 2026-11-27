@@ -1,9 +1,0 @@
-{
-  "appRevision": "cc91fae438101fce7ff4729e12bf3c2b64dacd70",
-  "failureCode": "device-evidence-required",
-  "fixtureId": "26c6f1f7d756bc15701b56f21381943abcefbfa529881f468dab041ac9c2a14d",
-  "platform": "ios",
-  "runtimeRevision": "f30827df9fe3c4d2ef6d7d31b53bb0125eea82ec",
-  "status": "preflight-failed",
-  "targetId": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5"
-}

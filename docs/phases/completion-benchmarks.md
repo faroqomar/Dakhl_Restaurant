@@ -77,4 +77,4 @@ macOS27.2, AppleM1Pro/8logicalCPUs, Flutter3.47.8/Dart3.13.7, profile mode, expl
 
 RAM/CPU cover each whole start/end marker window, including inter-iteration fixture preparation, verification and cleanup. They are not memory/CPU cost of one command. Catalog elapsed excludes model construction/stock projection. Small measured intervals retain sampler resolution limits. OS caches and background host load are uncontrolled.
 
-[Raw results](../../outputs/completion-build/performance-campaign-002/seven-operations-attempt1.json), [campaign state](../../outputs/completion-build/performance-campaign-002/state.json), and [earlier unavailable campaign](../../outputs/completion-build/performance-campaign/seven-operations-attempt1.json) preserve samples, hashes, hardware/tool identities and cleanup. These are first baselines; no comparable earlier series exists.
+Raw results, campaign state, and earlier unavailable campaign preserve samples, hashes, hardware/tool identities and cleanup. These are first baselines; no comparable earlier series exists.

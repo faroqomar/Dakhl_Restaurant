@@ -1,8 +1,0 @@
-{
-  "source": "owner explicit question reply during Step3",
-  "question": "Does Cmd3 open Sales and CmdK place typing in Search?",
-  "answer": "Both work",
-  "result": "manual pass",
-  "app": "restored main macOS development app",
-  "doesNotChange": "automated45second observer remains inconclusive; no runtime source change"
-}

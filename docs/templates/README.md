@@ -3,7 +3,7 @@
 Status: ready, empty templates. Date: 2026-10-16. Owner: project maintainer.
 
 - [Idea](idea.md): copy into `docs/planning/ideas/`, then link the record in the idea index.
-- [Campaign](campaign.md): copy into `docs/planning/campaigns/`, then link the record in the campaign index.
+- [Campaign](campaign.md): copy into the private campaign records.
 - [Decision](decision.md): copy into `docs/decisions/NNNN-topic.md` and update the index.
 - [Work log](work-log.md): copy into `docs/log/YYYY-MM-DD-topic.md` and update the index.
 

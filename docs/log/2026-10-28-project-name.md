@@ -4,7 +4,7 @@ Date:2026-10-28 (Asia/Baghdad). Owner request: the project was renamed from Daft
 
 Updated active root documentation, workflow/agent descriptions, current Flutter planning Markdown/HTML and its generator, project-specific Penpot skill references and the current design-artifact README. Added [decision0016](../decisions/0016-dakhl-restaurant-project-name.md) and a canonical-name rule in AGENTS.md. The current directory already had the correct name.
 
-Renamed the existing Penpot project, file and page in place to **Dakhl_Restaurant**, **Dakhl_Restaurant · Phase designs & wireframes** and **Dakhl_Restaurant · Designs & Wireframes / Designs** (English rendering of the saved bilingual page label). The browser confirmed each name after saving, with the same file/page IDs. [Dashboard rename proof](../../outputs/penpot/phase00/screenshot-recreation/project-rename-proof.png). No boards, layer geometry or reference artwork were changed.
+Renamed the existing Penpot project, file and page in place to **Dakhl_Restaurant**, **Dakhl_Restaurant · Phase designs & wireframes** and **Dakhl_Restaurant · Designs & Wireframes / Designs** (English rendering of the saved bilingual page label). The browser confirmed each name after saving, with the same file/page IDs. Dashboard rename proof. No boards, layer geometry or reference artwork were changed.
 
 Updated the Hindsight bank's display name to **Dakhl_Restaurant**. Its returned bank ID remained `project-daftar`; the memory selector `daftar` and MCP alias `daftar_memory` are preserved so current knowledge and tools continue to resolve. The same compatibility distinction is documented in the memory guide.
 

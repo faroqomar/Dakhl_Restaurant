@@ -16,7 +16,7 @@ Version 1.12.0, account schema 10. Navigation/forms use pop-ups, the sales draft
 - Actually generated all eight PDF types; reviewed report screenshots and rasterized sales/purchase PDFs.
 - macOS ARM64 build at `dist/Daftar-darwin-arm64/Daftar.app`. The installed application was not replaced and restaurant records were not opened for testing.
 
-Evidence in [outputs/ux-fixes-2026-10-26](../../outputs/ux-fixes-2026-10-26/) includes tests, browser verification, screenshots, PDFs, resolution report and build. The new preview on port 4329 uses separate illustrative data. Old port 4317 was not refreshed to avoid losing the user's context.
+Evidence in outputs/ux-fixes-2026-10-26 includes tests, browser verification, screenshots, PDFs, resolution report and build. The new preview on port 4329 uses separate illustrative data. Old port 4317 was not refreshed to avoid losing the user's context.
 
 ## Limits
 

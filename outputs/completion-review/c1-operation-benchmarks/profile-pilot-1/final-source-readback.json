@@ -1,8 +1,0 @@
-{
-  "recordedUtc": "2026-11-08T06:09:03.229936+00:00",
-  "scope": "Full326consumer source input readback before parent QA cleanup delta",
-  "matchedInputs": 326,
-  "mismatches": [],
-  "planSha256": "d4730beefb6d590900a62090a1a3aaee884c481b0857b509dabfe313899a854d",
-  "nextSourceChange": "Parent to preserve old QA bytes before a separate cleanup-only successor; this measured source remains historical"
-}

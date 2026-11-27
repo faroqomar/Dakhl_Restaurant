@@ -1,8 +1,0 @@
-00:00 +0: loading /Users/eros/.codex/worktrees/phase01-build-app/Dakhl_Restaurant/integration_test/phase01_keyboard_probe_disposable_test.dart
-Building macOS application...                                   
-✓ Built build/macos/Build/Products/Debug/Dakhl_Restaurant Dev.app
-00:00 +0: bounded native keyboard delivery probe
-PHASE01_KEY_PROBE_READY
-{"event_seen":false,"is_predefined_K_or_slot3":false,"route_matches_expected":false,"inconclusive_no_predefined_event":true}
-00:45 +1: (tearDownAll)
-00:45 +1: All tests passed!

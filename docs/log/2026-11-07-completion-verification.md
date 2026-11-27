@@ -31,7 +31,7 @@ The reportc04frame correction retains explicit limits: no precorrection all-desc
 
 Root discovery/diagnostics exceeded three output caps and had an optional-field lookup error; bounded schema reads corrected them before any completion claim. A guarded metadata edit stopped when another writer had updated the app plan, preserving that work. Full action records remain in the execution journal.
 
-[Artifact audit](../../outputs/penpot/completion/parallel-completion/completion-verification-2026-11-07/artifact-verification.json) · [Current status and plan hashes](../../outputs/penpot/completion/parallel-completion/completion-verification-2026-11-07/verification-current-status.json) · [Tracking corrections](../../outputs/penpot/completion/parallel-completion/completion-verification-2026-11-07/tracking-corrections.json) · [Independent readiness receipt](../../outputs/penpot/completion/parallel-completion/completion-verification-2026-11-07/independent-readiness-review.md).
+Artifact audit · Current status and plan hashes · Tracking corrections · Independent readiness receipt.
 
 ## Concurrent internal engine work
 
@@ -41,7 +41,7 @@ A separate `2026-11-07-completion-step3-build.md` checkpoint appeared during thi
 
 The first control-repair batch passed focused review on all 13 assigned replacement sides (four units/nine references), zero content holds or explicit owner discrepancies. All three final output hashes match. Unassigned siblings remain unqualified; fresh archive/panel-ID/placement/reopen proof is still pending. Units 5 and 6 also have verified parent PNG hashes from their recorded receipts, bringing current export progress to 6/25 units,19/70 sides. No qualification-count increment or owner approval was inferred.
 
-The corrected unit 7 sequence is one Add-export closure and one Saved-wait closure. Read-only client crash summaries show older T3 Nightly host/renderer SIGTRAP incidents, but they predate current unit 7 events and do not establish its cause. No backend OOM/service failure or verified transport fix was found. [Bounded transport evidence](../../outputs/penpot/completion/parallel-completion/completion-verification-2026-11-07/bounded-transport-review.json).
+The corrected unit 7 sequence is one Add-export closure and one Saved-wait closure. Read-only client crash summaries show older T3 Nightly host/renderer SIGTRAP incidents, but they predate current unit 7 events and do not establish its cause. No backend OOM/service failure or verified transport fix was found. Bounded transport evidence.
 
 ## Later immutable repair receipts
 

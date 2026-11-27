@@ -2,7 +2,7 @@
 
 Date: 2026-11-08. Status: **Owner accepted sections A–D and F; missing-posting financial corrections remain blocked.** Source: owner selected “Accept examples; keep missing-posting corrections blocked” in response to the concrete reviewed packet.
 
-The accepted [worked packet](completion-remaining-correction-examples.md) has pre-approval SHA-256 `31cc52e40f65cc51a98897296a3089146028f375cd1c03361d1be40792bfc663`. Its [independent review](../../outputs/completion-review/remaining-correction-examples/independent-review.json) passed source/policy fidelity with 26 bindings, 15 frozen-source checks and seven mapper/codec checks. This acceptance adds no runtime test result.
+The accepted [worked packet](completion-remaining-correction-examples.md) has pre-approval SHA-256 `31cc52e40f65cc51a98897296a3089146028f375cd1c03361d1be40792bfc663`. Its independent review passed source/policy fidelity with 26 bindings, 15 frozen-source checks and seven mapper/codec checks. This acceptance adds no runtime test result.
 
 | Section | Accepted scope |
 | --- | --- |

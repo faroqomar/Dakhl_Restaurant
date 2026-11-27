@@ -1,1 +1,0 @@
-{"profile":"small","synthetic":true,"sourceSchema":11,"legacySourceSchema":1,"recordKind":"cash transactions; no operating commands","recordCount":10,"canonicalBytes":2904,"legacyInputBytes":2903,"replacementBytes":2906,"notePattern":"synthetic-{index}","accountLimitBytes":20971520,"workspaceBytes":3416,"heldDrafts":40,"activeDrafts":1,"largestMarginPolicyBytes":65536}

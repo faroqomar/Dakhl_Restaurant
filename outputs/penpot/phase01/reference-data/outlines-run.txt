@@ -1,8 +1,0 @@
-desktop-sales runs 158 max advance error 0.021251271473772704 median 0.004563178119340705 canvas fallbacks 0
-desktop-navigation runs 182 max advance error 0.021251271473772704 median 0.004563178119340705 canvas fallbacks 0
-desktop-invoice-new runs 72 max advance error 0.023140822784824877 median 0.0048828125 canvas fallbacks 0
-phone-invoice-new runs 62 max advance error 0.012732397151893338 median 0.004252373417727995 canvas fallbacks 0
-phone-sales runs 58 max advance error 0.021251271473772704 median 0.005636867088611552 canvas fallbacks 0
-design-system runs 75 max advance error 0.15625 median 0.0048828125 canvas fallbacks 0
-medium-sales runs 88 max advance error 0.021251271473772704 median 0.004054588607594667 canvas fallbacks 0
-wide-sales runs 209 max advance error 0.021251271473772704 median 0.004563178119340705 canvas fallbacks 0

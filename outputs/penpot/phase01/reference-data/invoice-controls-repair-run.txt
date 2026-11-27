@@ -1,4 +1,0 @@
-stage: loading isolated reference
-stage: isolated reference loaded
-stage: export desktop-invoice-new
-stage: export phone-invoice-new

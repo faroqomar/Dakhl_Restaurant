@@ -10,18 +10,18 @@ The original manifest retains absolute author-worktree paths as historical prove
 
 | Pair | Kind | Available PNG | SHA-256 |
 | --- | --- | --- | --- |
-| A-status | design | [PNG](../../outputs/penpot/phase02/A-status-design-penpot.png) | `f2e202a0be90532f38bc78bb2a7e07df5312f5cb80476cd3052b6ef5c444ffaa` |
-| A-status | wireframe | [PNG](../../outputs/penpot/phase02/A-status-wireframe-penpot.png) | `04b831bf909105262e39f5e83ced6d5ea64f2ae7708057c73b884b2387e98a58` |
-| B-file-errors | design | [PNG](../../outputs/penpot/phase02/B-file-errors-design-penpot.png) | `2e495b5ae9b20e02c1272019ef70c603a7db9a42f457117531cae301189b39d9` |
-| B-file-errors | wireframe | [PNG](../../outputs/penpot/phase02/B-file-errors-wireframe-penpot.png) | `cac029ed72e42694cfb5e9d2a041f96bdb97689f854f5a755077e5ef3983138a` |
-| C-recovery | design | [PNG](../../outputs/penpot/phase02/C-recovery-design-penpot.png) | `7e0cea45d82c9d10af69e99c8064cfe7a202af44442aae21aadd00860b637aa2` |
-| C-recovery | wireframe | [PNG](../../outputs/penpot/phase02/C-recovery-wireframe-penpot.png) | `338ae55b89f25a8fbbbed95c74d234be4d85f03802db71e47fcc2ad0d0746c03` |
-| D-narrow-status | design | [PNG](../../outputs/penpot/phase02/D-narrow-status-design-penpot.png) | `a01351879a0e80dda81b8fef2c26b807ff5df6ebb9d9598bf5aa595a0fb28a5d` |
-| D-narrow-status | wireframe | [PNG](../../outputs/penpot/phase02/D-narrow-status-wireframe-penpot.png) | `e56284947c897bb78510ac1b663d8f85c5e830753b16f34e4238375ca4203e26` |
-| E-narrow-recovery | design | [PNG](../../outputs/penpot/phase02/E-narrow-recovery-design-penpot.png) | `d7766046975a7025b2c8934edd2d56b074190007b6a094be1181180e95bb3da5` |
-| E-narrow-recovery | wireframe | [PNG](../../outputs/penpot/phase02/E-narrow-recovery-wireframe-penpot.png) | `f82209c3e1f7043c34fca64531840cd5642b6e606f2c49904bb44d4b9ca15c40` |
-| F-large-text | design | [PNG](../../outputs/penpot/phase02/F-large-text-design-penpot.png) | `989e1f65e63cb595d3dd0e5b19c9acdfbb39bc4013b055a93e7df36451ea1829` |
-| F-large-text | wireframe | [PNG](../../outputs/penpot/phase02/F-large-text-wireframe-penpot.png) | `58e0f796e8dc949da589d6060a33202ebed98b78842107c13af3953a5fd65710` |
+| A-status | design | PNG | `f2e202a0be90532f38bc78bb2a7e07df5312f5cb80476cd3052b6ef5c444ffaa` |
+| A-status | wireframe | PNG | `04b831bf909105262e39f5e83ced6d5ea64f2ae7708057c73b884b2387e98a58` |
+| B-file-errors | design | PNG | `2e495b5ae9b20e02c1272019ef70c603a7db9a42f457117531cae301189b39d9` |
+| B-file-errors | wireframe | PNG | `cac029ed72e42694cfb5e9d2a041f96bdb97689f854f5a755077e5ef3983138a` |
+| C-recovery | design | PNG | `7e0cea45d82c9d10af69e99c8064cfe7a202af44442aae21aadd00860b637aa2` |
+| C-recovery | wireframe | PNG | `338ae55b89f25a8fbbbed95c74d234be4d85f03802db71e47fcc2ad0d0746c03` |
+| D-narrow-status | design | PNG | `a01351879a0e80dda81b8fef2c26b807ff5df6ebb9d9598bf5aa595a0fb28a5d` |
+| D-narrow-status | wireframe | PNG | `e56284947c897bb78510ac1b663d8f85c5e830753b16f34e4238375ca4203e26` |
+| E-narrow-recovery | design | PNG | `d7766046975a7025b2c8934edd2d56b074190007b6a094be1181180e95bb3da5` |
+| E-narrow-recovery | wireframe | PNG | `f82209c3e1f7043c34fca64531840cd5642b6e606f2c49904bb44d4b9ca15c40` |
+| F-large-text | design | PNG | `989e1f65e63cb595d3dd0e5b19c9acdfbb39bc4013b055a93e7df36451ea1829` |
+| F-large-text | wireframe | PNG | `58e0f796e8dc949da589d6060a33202ebed98b78842107c13af3953a5fd65710` |
 
 ## Historical artifact availability
 
@@ -29,10 +29,10 @@ The original manifest retains absolute author-worktree paths as historical prove
 | --- | --- | --- |
 | Step 1/1.5/2 memory delivery receipts under `outputs/memory/` | Dated scope, design and plan logs | The named worktree delivery JSON is local-only, not in this checkout. Historical reported delivery is not a current source-bank synchronization pass. |
 | `penpot-page-proof.jpg` and native audit JSON | Final PNGs, final export manifest and design review | Saved-page screenshot/audit raw artifacts are local-only. PNG hashes do not substitute for the missing screenshot. |
-| `step4-bootstrap-candidate.json` independent-review `.json` reference | [Published independent review narrative](../../outputs/phase02/step4-bootstrap-independent-review.md) | The JSON companion is not included. The narrative is a separate artifact, not replacement bytes for a JSON digest. |
+| `step4-bootstrap-candidate.json` independent-review `.json` reference | Published independent review narrative | The JSON companion is not included. The narrative is a separate artifact, not replacement bytes for a JSON digest. |
 | `step4-bootstrap-current-checks.json` test/analyze/source logs | Published summary receipt | Three raw command logs are local-only. The receipt alone does not reproduce those raw results; use actual final-head checks for the new candidate. |
 | Bootstrap review JSON / SDK diagnosis JSON | Published review narrative and source bindings | Missing JSON companions cannot be independently rehashed from this PR. |
-| Failure-diagnostic final-checks JSON, patch and review JSON | [Published diagnostic review narrative](../../outputs/phase02/step4-failure-diagnostic-review-final.md) | Missing raw companions remain local provenance; no availability or fresh verification claim is made. |
+| Failure-diagnostic final-checks JSON, patch and review JSON | Published diagnostic review narrative | Missing raw companions remain local provenance; no availability or fresh verification claim is made. |
 | `step4-v8-composer-result.json` audit reference | Published result receipt and [compatibility reference](../reference/legacy-v8-timestamp-compatibility.md) | The detailed audit is local-only, not a working repository link. |
 | Final performance fixture manifests | [18 immutable result files and readable metrics](02-step4-performance-readable-index.md) | Some referenced raw manifests are not included. Recorded fingerprints are not independently reproducible raw manifests in this checkout. |
 | Compressed original performance summaries/reviews | Frozen originals plus [readable companion](02-step4-performance-readable-index.md) | Originals and benchmark JSON remain byte-identical; the companion provides spacing, units, source and resource-window explanations. |
@@ -43,4 +43,4 @@ These are disclosed publication limits. Missing required evidence must be suppli
 
 The app-private original is intentional. The native picker selects a separate **synthetic provider copy**, not private Application Support directly. The reviewed host mechanism observes the printed own-nonce path, validates marked ownership/source identity, creates one new provider-visible file exclusively, verifies its bytes by SHA-256, and leaves the original intact. Android uses the isolated verification package's `run-as` and Download; iOS uses only the attested disposable simulator's local Files provider. The operator/CUA performs selection and explicit replacement/recovery confirmation; no copy helper sends UI input.
 
-The [dated runner source archive](../../outputs/phase02/picker-runner-source-5095/README.md) delivers the exact reviewed code and a relative hash manifest for the 5095/a6 campaign. It is source-review evidence, not a portable/current-final-head installer: task-local paths, dependencies and identities are deliberately not provisioned. New app/engine/guard epochs require independently reviewed bindings for the entry point, all imported harness support, guard, adapter/builder and driver, plus fresh exact artifacts. Old pass/failure receipts are not relabelled. No APK, fixture payload, target descriptor, signing file or raw device log is bundled.
+The [dated runner source archive](https://github.com/faroqomar/Dakhl_Restaurant/blob/7b85ca43e6ff93f82c58a9da546147cb5779f1dd/outputs/phase02/picker-runner-source-5095/README.md) delivers the exact reviewed code and a relative hash manifest for the 5095/a6 campaign. It is source-review evidence, not a portable/current-final-head installer: task-local paths, dependencies and identities are deliberately not provisioned. New app/engine/guard epochs require independently reviewed bindings for the entry point, all imported harness support, guard, adapter/builder and driver, plus fresh exact artifacts. Old pass/failure receipts are not relabelled. No APK, fixture payload, target descriptor, signing file or raw device log is bundled.

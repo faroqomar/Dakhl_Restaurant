@@ -42,15 +42,15 @@ This covers the 29 held base references, source-only positive refund/name previe
 
 ## Existing supplemental references
 
-[Positive refund source proposal v2](../../outputs/completion-review/c3-positive-return-preview-proposal-v2.json) and [typed held-name source proposal](../../outputs/completion-review/c2-held-positive-proposal.json) retain their prior qualification limits. These sources are implementation inputs under the requested decision, not native design evidence.
+Positive refund source proposal v2 and typed held-name source proposal retain their prior qualification limits. These sources are implementation inputs under the requested decision, not native design evidence.
 
-- `state-held-name-positive`: [source PNG](../../outputs/penpot/completion/source/c2-held-positive-states/reference-data/state-held-name-positive.png), SHA256 `e2dbf5620f47f2498c4ac445f42ce124a16d91f50b15c0d9a27bfb0098bbf4ec`.
-- `desktop-sale-return-partial`: [source PNG](../../outputs/penpot/completion/source/positive-return-preview/reference-data/desktop-sale-return-partial.png), SHA256 `5d33a019916b42fc5d66b532718c1c77994d8bccb5b6e5c323c7afc2462528b6`.
-- `desktop-sale-return-full`: [source PNG](../../outputs/penpot/completion/source/positive-return-preview/reference-data/desktop-sale-return-full.png), SHA256 `aad11074eb620cbf776fa6da19e9a2596f28b8a5a148070523aea1c2c5e35b14`.
-- `phone-sale-return-partial-bottom`: [source PNG](../../outputs/penpot/completion/source/positive-return-preview/reference-data/phone-sale-return-partial-bottom.png), SHA256 `0fa32ccd0c7476fcab560b0be868e58c5f63f12d4a4bda1f08faafffa5e252a1`.
-- `phone-sale-return-full-bottom`: [source PNG](../../outputs/penpot/completion/source/positive-return-preview/reference-data/phone-sale-return-full-bottom.png), SHA256 `aee1f8744e729d4476eb74265ec78d552507800880e973c961ad94d8d0aded9b`.
-- `phone-sale-return-partial`: [source PNG](../../outputs/penpot/completion/source/positive-return-preview/reference-data/phone-sale-return-partial.png), SHA256 `f54d67ee855b07f17c28529cb16e0ba3aada3b94dbb5730405f06a08592f7113`.
-- `phone-sale-return-full`: [source PNG](../../outputs/penpot/completion/source/positive-return-preview/reference-data/phone-sale-return-full.png), SHA256 `d03e22708c2a501ed6e0f042c79c55db412a1953de9ef6718b155990b5093476`.
+- `state-held-name-positive`: source PNG, SHA256 `e2dbf5620f47f2498c4ac445f42ce124a16d91f50b15c0d9a27bfb0098bbf4ec`.
+- `desktop-sale-return-partial`: source PNG, SHA256 `5d33a019916b42fc5d66b532718c1c77994d8bccb5b6e5c323c7afc2462528b6`.
+- `desktop-sale-return-full`: source PNG, SHA256 `aad11074eb620cbf776fa6da19e9a2596f28b8a5a148070523aea1c2c5e35b14`.
+- `phone-sale-return-partial-bottom`: source PNG, SHA256 `0fa32ccd0c7476fcab560b0be868e58c5f63f12d4a4bda1f08faafffa5e252a1`.
+- `phone-sale-return-full-bottom`: source PNG, SHA256 `aee1f8744e729d4476eb74265ec78d552507800880e973c961ad94d8d0aded9b`.
+- `phone-sale-return-partial`: source PNG, SHA256 `f54d67ee855b07f17c28529cb16e0ba3aada3b94dbb5730405f06a08592f7113`.
+- `phone-sale-return-full`: source PNG, SHA256 `d03e22708c2a501ed6e0f042c79c55db412a1953de9ef6718b155990b5093476`.
 
 Source-defined remaining interactions retain authority in `electron-reference/app/ui/commerce.js`, `renderer.js` and `model.js`. No source file, new artwork/export, browser session, independent review or runtime test was created by this proposal.
 

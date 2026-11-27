@@ -1,9 +1,0 @@
-{
-  "builtAndInstalledApkSha256": "7077403319cdd90d1c41e919108ba3ed2c793c75075830961de4ec4e06cb28ac",
-  "matchesFinalBuildReceipt": true,
-  "appSourceSha256": "100cdc9f5aef5a9c446b4eaa3cfe7ea6595ad83563b308786ba38fa3a522b079",
-  "androidOsApi": 37,
-  "appTargetSdk": 36,
-  "developmentBundle": "com.eros.dakhlrestaurant.phase00",
-  "restore": "install-r, no clear-data/uninstall"
-}

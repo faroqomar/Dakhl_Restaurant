@@ -1,9 +1,0 @@
-{
-  "utc": "2026-11-08T08:02:36.875088+00:00",
-  "passed": 73,
-  "failed": 31,
-  "cause": "shared new test fixture tried mutating AccountDocument.toJson immutable map; existing spending regressions passed",
-  "failingFixtureSha256": "a626cf47b36532810878262989a461f4c0925581f39ccc33258c3b694604f2a6",
-  "remedy": "copy immutable root with Map<String,Object?>.from before fixture changes",
-  "sourceBeforeFix": "attempt-1-failing-fixture.dart.txt"
-}

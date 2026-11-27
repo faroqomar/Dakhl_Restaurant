@@ -81,7 +81,7 @@ With no suppliers, Purchases still offers Add invoice. Clicking it throws an Ara
 
 **Source:** [app/ui/suppliers.js:77](../../electron-reference/app/ui/suppliers.js:77), [app/ui/suppliers.js:189](../../electron-reference/app/ui/suppliers.js:189), [app/ui/renderer.js:121](../../electron-reference/app/ui/renderer.js:121), [app/ui/renderer.js:247](../../electron-reference/app/ui/renderer.js:247)
 
-[Screen evidence](../../outputs/ux-audit-2026-10-26/bug-empty-invoice.png)
+Screen evidence
 
 ### D02 · P1 · Editing a statement row uses the wrong day
 
@@ -97,7 +97,7 @@ From the statement, editing a 25 October expense while the selected day is 26 Oc
 
 **Source:** [app/ui/renderer.js:61](../../electron-reference/app/ui/renderer.js:61), [app/ui/renderer.js:130](../../electron-reference/app/ui/renderer.js:130), [app/ui/renderer.js:256](../../electron-reference/app/ui/renderer.js:256), [app/ui/model.js:388](../../electron-reference/app/ui/model.js:388)
 
-[Screen evidence](../../outputs/ux-audit-2026-10-26/bug-edit-older-expense.png)
+Screen evidence
 
 ### D03 · P1 · Cash filter labels shared spending as daily spending
 
@@ -113,7 +113,7 @@ For a 30,000 shared expense split 18,000 daily / 12,000 cash, filtering the stat
 
 **Source:** [app/ui/renderer.js:57](../../electron-reference/app/ui/renderer.js:57), [app/ui/renderer.js:58](../../electron-reference/app/ui/renderer.js:58)
 
-[Screen evidence](../../outputs/ux-audit-2026-10-26/bug-statement-cash.png)
+Screen evidence
 
 ### D04 · P1 · Manual-total form previews the wrong expense total
 
@@ -143,7 +143,7 @@ With an existing balance of 60,000, a new 5,000 invoice and immediate 5,000 paym
 
 **Source:** [app/ui/suppliers.js:103](../../electron-reference/app/ui/suppliers.js:103), [app/ui/suppliers.js:135](../../electron-reference/app/ui/suppliers.js:135)
 
-[Screen evidence](../../outputs/ux-audit-2026-10-26/invoice-form.png)
+Screen evidence
 
 ### D06 · P1 · Fractional quantities appear as whole numbers
 
@@ -159,7 +159,7 @@ A saved quantity of 2.5 is displayed as 3 in purchase analysis and its table; it
 
 **Source:** [app/ui/renderer.js:8](../../electron-reference/app/ui/renderer.js:8), [app/ui/suppliers.js:25](../../electron-reference/app/ui/suppliers.js:25)
 
-[Screen evidence](../../outputs/ux-audit-2026-10-26/invoices.png)
+Screen evidence
 
 ### D07 · P1 · A blank sale date still saves using a hidden old date
 
@@ -301,7 +301,7 @@ At the supported 900×580 window with Electron zoom set to 200%, the effective v
 
 **Source:** [app/ui/commerce.css:20](../../electron-reference/app/ui/commerce.css:20), [app/ui/commerce.css:66](../../electron-reference/app/ui/commerce.css:66), [app/ui/commerce.css:87](../../electron-reference/app/ui/commerce.css:87)
 
-[Screen evidence](../../outputs/ux-audit-2026-10-26/sales-200-percent.png)
+Screen evidence
 
 ### D17 · P2 · Savings date and visible history describe different periods
 
@@ -331,7 +331,7 @@ The sidebar puts selling, purchase setup, daily accounts, workers and settings i
 
 **Source:** [app/ui/index.html:23](../../electron-reference/app/ui/index.html:23)
 
-[Screen evidence](../../outputs/ux-audit-2026-10-26/sales-900-580-open.png)
+Screen evidence
 
 ### D19 · P2 · Repeated navigation and large slogan headings consume working space
 
@@ -445,7 +445,7 @@ The date and discount always occupy space, even in an ordinary full-price sale. 
 
 **Source:** [app/ui/commerce.js:18](../../electron-reference/app/ui/commerce.js:18), [app/ui/commerce.css:35](../../electron-reference/app/ui/commerce.css:35), [app/ui/commerce.css:38](../../electron-reference/app/ui/commerce.css:38)
 
-[Screen evidence](../../outputs/ux-audit-2026-10-26/sales-900-580-open.png)
+Screen evidence
 
 ### D27 · P2 · Available quantity does not explain what is already in the bill
 
@@ -601,7 +601,7 @@ Each item exposes material, carton quantity, piece quantity, unit, carton price 
 
 **Source:** [app/ui/suppliers.js:79](../../electron-reference/app/ui/suppliers.js:79), [app/ui/suppliers.js:90](../../electron-reference/app/ui/suppliers.js:90), [app/ui/styles.css:11](../../electron-reference/app/ui/styles.css:11)
 
-[Screen evidence](../../outputs/ux-audit-2026-10-26/invoice-form.png)
+Screen evidence
 
 ### D38 · P2 · Purchase analysis mixes units and repeats invoice debt on each item
 
@@ -701,7 +701,7 @@ Sales, daily total, overall balance, cash expenses, remaining cash and transfer 
 
 **Source:** [app/ui/renderer.js:49](../../electron-reference/app/ui/renderer.js:49), [app/ui/renderer.js:52](../../electron-reference/app/ui/renderer.js:52), [app/ui/renderer.js:143](../../electron-reference/app/ui/renderer.js:143)
 
-[Screen evidence](../../outputs/ux-audit-2026-10-26/expenses.png)
+Screen evidence
 
 ### D45 · P2 · Direct cash deposit and transfer from daily cash look too similar
 
@@ -871,7 +871,7 @@ The submit footer belongs to the scrollable drawer form, below all fields and ex
 
 **Source:** [app/ui/renderer.js:163](../../electron-reference/app/ui/renderer.js:163), [app/ui/styles.css:6](../../electron-reference/app/ui/styles.css:6)
 
-[Screen evidence](../../outputs/ux-audit-2026-10-26/invoice-form.png)
+Screen evidence
 
 ### D57 · P2 · Validation often identifies the problem without locating the field
 

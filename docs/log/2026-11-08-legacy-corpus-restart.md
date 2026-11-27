@@ -30,7 +30,7 @@ Engine changes and design: N/A. Current engine-dependency.json names reviewed te
 - Attempt03: 2026-11-08T07:32:40.579282Z–07:32:46.476564Z, 5.897s wall. Final renamed driver passed23+4 plus missing-store guard. Writer75466 exited0/absent before verifier75498 started; verifier exited0/absent, fresh nonce, source unchanged. Removed5,320KiB owned fixtures.
 - Dart formatting passed for both owned files. Successful standalone executions compiled and typechecked the driver/child and exercised actual SDK stores; no Flutter/pub/build/native command ran. Root owns independent review and batched scoped memory sync/check; this worker claims no completed memory delivery.
 
-Canonical final evidence: [source/result manifest](../../outputs/completion-review/legacy-corpus-restart/source-result-manifest.json), [attempt03 result](../../outputs/completion-review/legacy-corpus-restart/attempt-03/result.json), [writer exact maps and durable state](../../outputs/completion-review/legacy-corpus-restart/attempt-03/writer.json), [fresh verifier](../../outputs/completion-review/legacy-corpus-restart/attempt-03/verify.json). Process receipts bind exit codes, timing, PIDs, bounded errors and absence. Full detailed phase journaling/row closure belongs to the parent campaign.
+Canonical final evidence: source/result manifest, attempt03 result, writer exact maps and durable state, fresh verifier. Process receipts bind exit codes, timing, PIDs, bounded errors and absence. Full detailed phase journaling/row closure belongs to the parent campaign.
 
 ## Storage closeout and retained artifacts
 

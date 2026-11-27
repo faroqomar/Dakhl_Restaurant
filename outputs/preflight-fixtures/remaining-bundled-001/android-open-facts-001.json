@@ -1,9 +1,0 @@
-{
-  "tool": "device_open",
-  "hostId": "local",
-  "deviceId": "emulator-5554",
-  "sessionId": "t3-78f39ef5f82e05c862b586fa",
-  "booted": true,
-  "physical": false,
-  "observedAt": "2026-11-08T20:11:09.253722+00:00"
-}
