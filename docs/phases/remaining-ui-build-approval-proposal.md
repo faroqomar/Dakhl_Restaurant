@@ -10,9 +10,9 @@ This approval would extend presentation scope only. Existing C1 and [C2/C4 categ
 
 ## Exact evidence selection
 
-- [Immutable selection manifest](../../outputs/completion-review/remaining-ui-build-approval-manifest.json), SHA256 `d141fcd6736d3a15a107482233db762357c1f43977a8efc405844771f817fff2`. It records each source PNG/hash, design/wireframe crop/hash, original native parent/hash where applicable, native identities and qualification receipts.
-- [Existing master evidence index](../../outputs/penpot/completion/completion-evidence-review.html) contains both selected and excluded references. The selection manifest controls this request; the master index is navigation, not blanket approval.
-- [Qualification register](../../outputs/penpot/completion/export-recovery/content-qualification-register.json) supplies prior content verdicts. [C3 repair disposition](../../outputs/completion-review/c2-c3-design-repair-disposition.json) supersedes its five earlier C3 discrepancy rows only for the localized repaired controls.
+- Immutable selection manifest, SHA256 `d141fcd6736d3a15a107482233db762357c1f43977a8efc405844771f817fff2`. It records each source PNG/hash, design/wireframe crop/hash, original native parent/hash where applicable, native identities and qualification receipts.
+- Existing master evidence index contains both selected and excluded references. The selection manifest controls this request; the master index is navigation, not blanket approval.
+- Qualification register supplies prior content verdicts. C3 repair disposition supersedes its five earlier C3 discrepancy rows only for the localized repaired controls.
 - C6 adds `desktop-invoice-new` and `phone-invoice-new` as explicit reuses of their historical Phase01 approved native pairs. Their cloud exports and identities remain historical; no local migration claim follows.
 - Current bounded file checks verified 411 unique source/native/evidence files with zero missing/mismatched selected inputs. This is hash/identity validation, not a new visual review. No screenshot, export, archive, source copy or browser session was created.
 
@@ -71,7 +71,7 @@ These references have pending/discrepancy records or lack the required exact qua
 
 ## Supplemental states and limitations
 
-- [C3 positive return proposal v2](../../outputs/completion-review/c3-positive-return-preview-proposal-v2.json) records source-content review, with native qualification pending. Its [blocked native attempt](../../outputs/completion-review/c3-positive-native-blocked-review-inputs.json) recorded no new mutations. Positive calculated partial/full cash-refund states remain outside this native packet.
+- C3 positive return proposal v2 records source-content review, with native qualification pending. Its blocked native attempt recorded no new mutations. Positive calculated partial/full cash-refund states remain outside this native packet.
 - Existing C2 held-empty-name/delete-confirmation, feature-specific checkout eligibility/unknown outcome and 320px/200%/keyboard proposals remain outside this packet. C2 owner approval did not waive those exclusions.
 - Feature-specific loading, invalid input, failed/unknown save, retry/cancel, stale swap, funding correction, keyboard/safe-area and large-text states are covered only where the exact selected native reference or explicit approved shared pattern applies. Source-only SVG/PNG proposals remain source-only.
 - Source-visible frozen values are visual reference data, not live financial records or accepted opening values. Do not invent COGS/profit, cash policies, opening journals or missing-posting exceptions.

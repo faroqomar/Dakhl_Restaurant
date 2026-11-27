@@ -14,3 +14,7 @@ The owner retired `electron-reference/` on 2026-11-12. These synthetic fixtures 
 - `product_photo_hashes.json`: SHA-256 of the eight former reference thumbnails; compare existing canonical Flutter assets without a second image copy.
 
 The existing account, catalog, sale, purchase and supplier JSON oracles remain in their original test paths. Their finite cases retain their recorded limits. These tests compare Dart behavior to independent captured source results; they no longer claim a live differential JavaScript run. Do not derive replacement expected values from the implementation under test. Review intentional compatibility changes against independent requirements.
+
+## Durable transfer oracles
+
+`durable-transfer-oracle.json` and `durable-transfer-corrections-oracle.json` are fixed synthetic inputs to the transfer safety suites. They retain the exact bytes of the respective `oracle-repaired-1.json` files from the archived transfer and transfer-correction comparisons at `7b85ca43e6ff93f82c58a9da546147cb5779f1dd`.

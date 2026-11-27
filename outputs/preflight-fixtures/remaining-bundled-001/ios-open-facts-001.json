@@ -1,9 +1,0 @@
-{
-  "tool": "device_open",
-  "hostId": "local",
-  "deviceId": "DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5",
-  "sessionId": "t3-1a7e360279de8cddfa1ccb26",
-  "booted": true,
-  "physical": false,
-  "observedAt": "2026-11-08T20:06:11.003145+00:00"
-}

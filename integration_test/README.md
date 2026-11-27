@@ -179,7 +179,7 @@ Application Support. A native document picker cannot browse that directory.
 The operator must select a separate synthetic provider copy prepared by the
 reviewed external host mechanism, as documented in the [publication evidence
 index](../docs/phases/02-publication-evidence-index.md). The exact dated runner
-[source archive](../outputs/phase02/picker-runner-source-5095/README.md) and hash
+[source archive](https://github.com/faroqomar/Dakhl_Restaurant/blob/7b85ca43e6ff93f82c58a9da546147cb5779f1dd/outputs/phase02/picker-runner-source-5095/README.md) and hash
 manifest make that mechanism inspectable; they are not a portable installer for
 new source revisions.
 

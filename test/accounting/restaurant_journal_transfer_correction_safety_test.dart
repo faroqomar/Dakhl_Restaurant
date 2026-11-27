@@ -19,9 +19,8 @@ import 'package:dakhl_restaurant/sales/return_proposal.dart';
 
 void main() {
   final oracle = jsonDecode(
-    File(
-      'outputs/completion-review/durable-transfer-corrections/oracle-repaired-1.json',
-    ).readAsStringSync(),
+    File('test/fixtures/legacy/durable-transfer-corrections-oracle.json')
+        .readAsStringSync(),
   ) as Map<String, dynamic>;
   const legacyCodec = LegacyAccountCodec();
   final mapper = RestaurantJournalMapper();

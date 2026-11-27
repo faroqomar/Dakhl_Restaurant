@@ -1,1 +1,0 @@
-{"harness": "integration_test/c1_catalog_native_test.dart", "persistence": "fresh-temporary-sqlite-workspace", "runtimeAccountsAccess": false, "schema": 1, "scope": "synthetic-catalog-only"}

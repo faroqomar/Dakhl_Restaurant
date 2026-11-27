@@ -1,7 +1,0 @@
-# C1 narrow stock-history repair
-
-2026-11-08T05:06:56.873975+00:00 — After native functional checks, retained iPhone pilot reported a309px RenderFlex overflow at final no-exception assertion. Its native log did not identify the original creator; source localization was an inference. Root added three durable modal regressions with full movement UUID, correction reason and future badge at466/390px and320px with2x text. All failed and directly identified the card header/detail Rows.
-
-Root changed those narrow card groups to Wrap with bounded child width and run spacing, preserving complete identity/reason/date/delta/balance and existing short-content layout. All three regressions pass,83catalog/app tests pass and targeted analysis is clean. No engine implementation, business state or new UI scope changed. [Frozen review manifest](../../outputs/completion-review/c1-history-layout-repair/review-inputs.json). Native successor and independent review remain pending.
-
-The C1 harness also retains hit-test readiness repair and the established invalid_payload codec error, without weakening visible error/no-write/history/balance or final no-exception assertions. Failed campaigns stay immutable. Storage remains above90GiB; native worker removed only two verified obsolete failed-harness ios compiler directories (227,960KiB) after its point-in-time process check. Shared current caches and all source/failure evidence remain.

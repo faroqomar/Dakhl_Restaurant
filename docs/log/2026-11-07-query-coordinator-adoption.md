@@ -6,4 +6,4 @@ Independent review1258c427 passed the source/API/consumer candidate. Root verifi
 
 Local verification: domain78tests, application47tests, full data140tests, Flutteradapters27tests, and5consumer tests pass. Package formatting, analyses, asserted domain examples and boundary checks pass. The app's enforced offline pub resolution and exact source-pin checker now pass for this commit. Hosted CI and native app acceptance remain separate and unverified for this adoption.
 
-[Compact adoption receipt](../../outputs/completion-review/engine-query-coordinator-adoption.json) records source, packages, evidence limits and storage. Full financial posting/portable receipt-schema integration, actual cutover and per-feature benchmarks remain open.
+Compact adoption receipt records source, packages, evidence limits and storage. Full financial posting/portable receipt-schema integration, actual cutover and per-feature benchmarks remain open.

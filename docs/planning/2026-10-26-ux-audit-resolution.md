@@ -13,7 +13,7 @@ The changes retain the Arabic RTL layout, calm green identity, one-restaurant sc
 - All eight report types generated as actual PDFs. Representative invoice and sales PDFs rasterized and visually inspected.
 - macOS ARM64 package built separately from the existing installed app.
 
-Evidence: [automated test output](../../outputs/ux-fixes-2026-10-26/tests-final.txt), [browser checks](../../outputs/ux-fixes-2026-10-26/verification.json), [PDF checks](../../outputs/ux-fixes-2026-10-26/pdf/verification.json), [package output](../../outputs/ux-fixes-2026-10-26/package.txt).
+Evidence: automated test output, browser checks, PDF checks, package output.
 
 ## Item-by-item resolution
 

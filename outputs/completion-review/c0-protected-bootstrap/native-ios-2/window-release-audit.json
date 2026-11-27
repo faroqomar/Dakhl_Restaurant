@@ -1,8 +1,0 @@
-{
-  "runnerEndUtc": "2026-11-08T08:55:13.846900+00:00",
-  "releaseMessage": "First assistant message after completion observation:explicitcompilerwindowrelease toRoot;before sourcehash/artifactreview/Devicecleanup",
-  "releaseUpperBoundUtc": "2026-11-08T08:55:56.280982+00:00",
-  "releaseUpperBoundSeconds": 42.434082,
-  "actualSendArrivalTimestamp": "Root receiver receipt is authoritative",
-  "wrapperNote": "Runner wrote command timing immediately at exit;heredoc stdin acknowledgement reached EOF,so no waiting handshake occurred. No sourcehash/cleanup ran before release."
-}

@@ -16,7 +16,7 @@ Counts remain176reference mappings,165required new unique pairs,68with both prio
 
 ## Evidence and continuation
 
-[Machine checkpoint](../../outputs/penpot/completion/restart-run/checkpoint.json), [attempt1](../../outputs/penpot/completion/restart-run/small-unit-attempt-1.json), [attempt2](../../outputs/penpot/completion/restart-run/small-unit-attempt-2.json), [existing export integrity](../../outputs/penpot/completion/restart-run/existing-export-integrity.json), [browser preview](../../outputs/penpot/completion/restart-run/supplier-design-browser-preview.png). The preview is a browser screenshot, not a native export or accepted deliverable. No updated final native archive exists.
+Machine checkpoint, attempt1, attempt2, existing export integrity, browser preview. The preview is a browser screenshot, not a native export or accepted deliverable. No updated final native archive exists.
 
 Changed-condition alternative for parent assessment: test the same saved small board through Penpot's supported native SVG export UI and correlate its actual IDs/content with a visible browser preview; then test the representative photo/origin pair. This changes the export route, not the saved file or automation stack. It remains proposed/unproven and does not waive native fidelity, paired output or review. Do not retry the failed bitmap route unchanged or import more references before proving the two-case gate.
 

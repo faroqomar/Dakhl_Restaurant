@@ -7,7 +7,7 @@ Status: approved working method. Date: 2026-10-16. Owner: project owner and impl
 | Information | Location |
 | --- | --- |
 | Idea or improvement before implementation | `docs/planning/ideas.md`, then a separate document when needed |
-| Campaign, objective, status and outcomes | `docs/planning/campaigns.md`, then the campaign file |
+| Campaign, objective, status and outcomes | Private campaign records |
 | Significant decision and rationale | `docs/decisions/NNNN-topic.md`, updating the decision index |
 | Rule or description of the current state | `docs/reference/` |
 | Repeated operating or recovery procedure | `docs/how-to/` |

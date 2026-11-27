@@ -1,9 +1,0 @@
-1220	.git/cursor
-4943592	.git/objects
-12	.git/info
-208	.git/logs
-2499380	.git/ai
-64	.git/hooks
-828	.git/refs
-11295116	.git/storage-recovery
-18740704	.git

@@ -1,8 +1,0 @@
-{
-  "at": "2026-11-08T20:20:18.878442+00:00",
-  "path": "lib/sales/sales_history_surface.dart",
-  "beforeSha256": "dbe36a724b4b0d712d454f1f4bb634ce236ab7fa0ca3619a57c37dae04821913",
-  "afterSha256": "31b9c7e5958936c66e961ada8a44c0d59383c921ef6e5bf3cf8bc4a22262bab4",
-  "scope": "Arabic receipt PDF share status now describes accepted OS handoff instead of completed delivery. No API/command/native path change.",
-  "nativeEvidenceReuse": "native-campaign-002/plan.json and mac-update-share-results-002.json remain exact earlier source/artifact proofs; this later copy-only delta is explicit."
-}

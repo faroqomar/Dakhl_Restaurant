@@ -1,7 +1,0 @@
-{
-  "removedOnlyEmptyGeneratedFrameworks": [
-    "build/macos/Build/Products/Profile/native_assets/madar_icu_collation.framework",
-    "build/macos/Build/Products/Profile/Dakhl_Restaurant Dev.app/Contents/Frameworks/madar_icu_collation.framework"
-  ],
-  "cause": "Incremental profile target switch left an empty framework shell; no native binary deleted. Upstream cache origin inferred from exact layout and successful previous profile artifact."
-}

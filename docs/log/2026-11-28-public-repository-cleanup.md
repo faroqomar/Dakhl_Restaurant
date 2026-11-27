@@ -1,0 +1,11 @@
+# Public repository cleanup
+
+The owner asked to remove generated outputs and obsolete documentation from the public checkout while keeping the app and its verification working. The cleanup removes the tracked `outputs/` tree, campaign drafts, internal exports, and superseded working notes. Git retains earlier revisions. Generated files under `outputs/` now stay local.
+
+The app still uses the same runtime files and engine revision. The transfer tests now read the original synthetic oracles from `test/fixtures/legacy/`. The completion checklist audit reads its two original JSON inputs from `docs/phases/completion-progress/`. The frozen screenshots, CI manifests, README demos, accounting rules and current phase evidence remain. Madar_Engine changes are N/A because this cleanup only affects the consumer repository.
+
+The cleanup removes 2,303 previously tracked paths under `outputs/` and 173 superseded or campaign-related paths under `docs/`. The active C2 and C4 approval packets retain their original bytes. Their older generated evidence and the completion progress record's historical output references can be read with `git show 7b85ca43e6ff93f82c58a9da546147cb5779f1dd:<old-path>`.
+
+Local checks passed for all 12 affected Flutter tests, static analysis, 136 workflow tests, 44 dashboard tests, the 213-row completion audit, the engine pin and package boundaries, and the hashes of 179 frozen screenshots and 21 reference assets. The first Python test run picked up Python 3.9 and failed on the newer union syntax in the existing preflight. The Python 3.13 rerun passed. The prior `main` Android job ran out of space on its GitHub runner. That baseline failure establishes neither the result of this branch's Android job nor a change to the app.
+
+The old tracked output tree totalled 244,757,365 logical bytes. The files were already missing from the local worktree at intake, so staging their removal reclaimed no local space. The shared volume had 17,689,660 KiB free at intake and 17,507,028 KiB at the pre-push sample. Git storage moved from 2,514,028 to 2,514,076 KiB before committing. No temporary Git object directories were present. The shared-volume change includes local verification and concurrent activity. The existing unstaged documentation edits and untracked notes remain outside the cleanup.

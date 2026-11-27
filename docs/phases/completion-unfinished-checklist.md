@@ -4,7 +4,7 @@ Date: 2026-11-07. **Not complete; not merge-ready.** Owner-requested granular au
 
 Planning companion: [one proposed action/dependency/acceptance plan for each of these 213 items](completion-unfinished-implementation-plan.md). Planning changes no item status and authorizes no implementation.
 
-Current closure update (2026-11-08): **33 rows closed, 180 formally open**. Closed foundation rows: F01/F02/F03/F04/F05/F06/F08/F09/F10; storage cleanup Q-16; documentary reconciliation Q-11/C0-01/C0-11 and C0-09 store race verification; C0-07/C0-13 legacy/history restart/export and C0-10 actual native bootstrap/status acceptance; closed C1 rows: C1-01–15/17 (C1-16 remains open). The [current audit](../../outputs/completion-review/progress-audit-latest.json) separates partial progress from no recorded progress. [C1 exact closure](../log/2026-11-08-c1-exact-row-closure.md). Category totals/types retain the original baseline; phase/release remain open.
+Current closure update (2026-11-08): **33 rows closed, 180 formally open**. Closed foundation rows: F01/F02/F03/F04/F05/F06/F08/F09/F10; storage cleanup Q-16; documentary reconciliation Q-11/C0-01/C0-11 and C0-09 store race verification; C0-07/C0-13 legacy/history restart/export and C0-10 actual native bootstrap/status acceptance; closed C1 rows: C1-01–15/17 (C1-16 remains open). The [current audit](completion-progress/progress-audit-latest.json) separates partial progress from no recorded progress. [C1 exact closure](../log/2026-11-08-c1-exact-row-closure.md). Category totals/types retain the original baseline; phase/release remain open.
 
 ## Evidence and status rules
 

@@ -22,4 +22,4 @@ After correcting Device Hub access, the existing approved Phase 00 runtime was r
 
 Focused independent Reviewer `phase01_docs_review` closed the native technical prerequisite: 16/16 artifact hashes and all3 specimens verified, approved runtime source unchanged, bounded share/print conclusions retained. No extra documentation-merge gate is needed before already authorized Phase 01 implementation. Overall DONE/evidence integration/release gates remain separate. Execution now proceeds in new dedicated build worktrees; original dirty preparation trees are preserved.
 
-Historical source-delivery receipt: [original scope-worktree capture](../../outputs/memory/phase01-step3-delivery.json), restored byte-for-byte for auditability. This dated receipt covers its recorded source snapshot, not later implementation, approval or documentation edits.
+Historical source-delivery receipt: original scope-worktree capture, restored byte-for-byte for auditability. This dated receipt covers its recorded source snapshot, not later implementation, approval or documentation edits.

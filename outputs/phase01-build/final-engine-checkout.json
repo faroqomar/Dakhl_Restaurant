@@ -1,7 +1,0 @@
-{
-  "runtimeHead": "6d4ae39f35b005dfa1123a82c6df316901e1e1e4",
-  "preservedDocumentationCommit": "a918fbc053066226ef087a7e39c5a41fa8c8e8c9",
-  "preservedBranch": "codex/phase01-build",
-  "worktreeState": "detached at reviewed pin; exact documentation/evidence files restored from preserved commit, runtime source untouched",
-  "reason": "Consumer checker correctly requires actual HEAD equals approved pin, even when later commit is docs-only; no check weakened"
-}

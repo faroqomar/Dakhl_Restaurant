@@ -1,7 +1,0 @@
-{
-  "status": "blocked_safe_native_root_placement_not_proven",
-  "qualifiedPairs": 0,
-  "canonicalReceipt": "outputs/penpot/completion/c2-held-supplement-qualification/receipt.json",
-  "sha256": "856f7ab6581ccd5d3862daf147f206b1d5b8f8e05b155d2ebf2b7f893a6c3ce7",
-  "limits": "Parent owns aggregate trackers, approval and memory delivery. Existing source-only pairs remain held."
-}

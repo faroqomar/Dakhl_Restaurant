@@ -1,6 +1,0 @@
-8	.dart_tool/extension_discovery
-622156	.dart_tool/hooks_runner
-3117648	.dart_tool/flutter_build
-0	.dart_tool/native_assets
-2340	.dart_tool/lib
-3742204	.dart_tool

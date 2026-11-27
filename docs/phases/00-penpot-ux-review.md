@@ -8,7 +8,7 @@ The owner's latest instruction requires the design and wireframe to match the th
 
 Review exactly six 1440×1000 logical-pixel boards: design and grayscale wireframe for `desktop-sales`, `desktop-expenses`, and `desktop-settings-data`. Wireframes preserve geometry, labels, data, hierarchy and viewport cropping; product photographs become placeholders. Do not add other screens, phone designs or application implementation.
 
-Sources: [phase scope](../planning/flutter-rebuild/phases/00.md), [design contract](../planning/flutter-rebuild/design-system.md), [capture guide](../planning/flutter-rebuild/capture-guide.md), [frozen screenshots](../planning/flutter-rebuild/screenshots/), [reference extraction](../../outputs/penpot/phase00/reference-data/), [Penpot exports](../../outputs/penpot/phase00/screenshot-recreation/).
+Sources: [phase scope](../planning/flutter-rebuild/phases/00.md), [design contract](../planning/flutter-rebuild/design-system.md), [capture guide](../planning/flutter-rebuild/capture-guide.md), [frozen screenshots](../planning/flutter-rebuild/screenshots/), reference extraction, Penpot exports.
 
 ## Initial exported-board review — repairs required
 

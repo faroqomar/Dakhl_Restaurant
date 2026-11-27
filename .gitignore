@@ -12,14 +12,6 @@ window.json
 .env.*
 !.env.example
 
-# Local design feedback
-outputs/design-review/comments.json
-
-# Local Electron preview profiles and browser caches
-outputs/**/isolated-profile/
-outputs/**/profile/
-outputs/**/order-panel-profile/
-
 # Flutter generated artifacts
 # Miscellaneous
 *.class
@@ -74,64 +66,5 @@ app.*.map.json
 # Local engine worktree wiring; canonical sibling paths live in pubspec.yaml.
 pubspec_overrides.yaml
 
-# Local native Penpot archives: retained on disk; receipts/hashes stay reviewable.
-# Avoid repeatedly ingesting large recovery bundles into Git snapshots.
-/outputs/penpot/**/*.penpot
-/outputs/penpot/completion/**
-!/outputs/penpot/completion/**/
-
-# Reproducible local C1 visual review captures; retain compact receipts.
-/outputs/completion-review/c1-visual/
-
-# Generated native acceptance binaries remain local; retain exact receipts.
-/outputs/completion-review/**/*.app/
-/outputs/preflight-fixtures/**/*.apk
-
-# Bounded portable design-review receipts and exact approved crops.
-!/outputs/penpot/completion/export-recovery/current-oom-native-method-stop.json
-!/outputs/penpot/completion/export-recovery/current-method-hold-validation.json
-!/outputs/penpot/completion/export-recovery/control-repair-side-review-register.json
-!/outputs/penpot/completion/export-recovery/continuation-current-checkpoint.json
-!/outputs/penpot/completion/export-recovery/native-milestone-c05-mobile-balance-repair-v1.json
-!/outputs/penpot/completion/source/c2-held-positive-states/review-inputs.json
-!/outputs/penpot/completion/c3-positive-native-qualification/root-response-metadata.json
-!/outputs/penpot/completion/c3-positive-native-qualification/root-native-text-observation.json
-!/outputs/penpot/completion/c2-held-supplement-qualification/root-nav-pilot/receipt.json
-!/outputs/penpot/completion/c2-held-supplement-qualification/root-nav-pilot/current-corrected-source-bindings.json
-!/outputs/penpot/completion/c2-held-supplement-qualification/root-nav-pilot/four-board-readbacks.json
-!/outputs/penpot/completion/c2-held-supplement-qualification/root-nav-pilot/c1-final-preservation.json
-!/outputs/penpot/completion/c2-held-supplement-qualification/root-nav-pilot/state-held-orders-empty-design-repaired.png
-!/outputs/penpot/completion/c2-held-supplement-qualification/root-nav-pilot/state-held-orders-empty-wireframe-native.png
-!/outputs/penpot/completion/c2-held-supplement-qualification/root-nav-pilot/state-held-name-editable-design-native.png
-!/outputs/penpot/completion/c2-held-supplement-qualification/root-nav-pilot/state-held-name-editable-wireframe-native.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-inventory-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-inventory-wireframe.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-product-new-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-product-new-wireframe.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-product-edit-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-product-edit-wireframe.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-stock-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-stock-wireframe.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-stock-history-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-stock-history-wireframe.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-stock-reverse-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-stock-reverse-wireframe.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/phone-inventory-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/phone-inventory-wireframe.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-product-new-bottom-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-product-new-bottom-wireframe.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-product-edit-bottom-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/desktop-product-edit-bottom-wireframe.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/empty-inventory-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/empty-inventory-wireframe.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/phone-inventory-bottom-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/phone-inventory-bottom-wireframe.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/phone-product-new-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/phone-product-new-wireframe.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/phone-product-new-bottom-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/phone-product-new-bottom-wireframe.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/full-phone-inventory-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/full-phone-inventory-wireframe.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/full-inventory-design.png
-!/outputs/penpot/completion/package-native-panels/wp03-01/full-inventory-wireframe.png
-!/outputs/penpot/completion/export-recovery/backend-heap-change-public.json
+# Generated reports, builds, captures and local review exports.
+/outputs/

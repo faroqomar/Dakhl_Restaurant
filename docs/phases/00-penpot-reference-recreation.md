@@ -46,9 +46,9 @@ The three screenshot states are the scope of exact recreation. They do not autho
 
 The six native Penpot boards have been exported at scale2/2880×2000 and independently inspected. The transfer defects found in the first exports—missing photo rendering, misplaced icons, hidden restore content, disclosure markers and the ready-status dot—were corrected and re-verified. [Independent UX report](00-penpot-ux-review.md).
 
-- [Native export overview](../../outputs/penpot/phase00/screenshot-recreation/penpot-review-overview.png).
-- [Native structure/image audit](../../outputs/penpot/phase00/screenshot-recreation/native-structure-audit.json): six1440×1000 boards; editable native vectors; eighteen discrete product-photo fills and tiny native control markers; no whole-screen image fills.
-- [Pixel comparison](../../outputs/penpot/phase00/screenshot-recreation/native-pixel-comparison.json): native exports are **not byte/pixel identical**. Color-managed mean absolute RGB error (0–255) is sales1.527, expenses0.826 and settings0.719. Nonzero pixels include font hinting/rasterization, photo sampling, source ICC/color compositing and shadow differences. No visual-difference pass threshold was invented.
+- Native export overview.
+- Native structure/image audit: six1440×1000 boards; editable native vectors; eighteen discrete product-photo fills and tiny native control markers; no whole-screen image fills.
+- Pixel comparison: native exports are **not byte/pixel identical**. Color-managed mean absolute RGB error (0–255) is sales1.527, expenses0.826 and settings0.719. Nonzero pixels include font hinting/rasterization, photo sampling, source ICC/color compositing and shadow differences. No visual-difference pass threshold was invented.
 - The matching wireframes preserve the screenshot geometry, wording, amounts, ordering and crop, using grayscale and photo placeholders. These are structural references, not a claim of equal colors/photos.
 
 The independent review identifies no remaining blocking content/layout transfer defect. Original small contrast and compact-control findings remain documented; there is no runtime accessibility or responsive-device pass claim. All owner approval fields remain pending. Phase00 remains DESIGN, phases01–11 TODO.

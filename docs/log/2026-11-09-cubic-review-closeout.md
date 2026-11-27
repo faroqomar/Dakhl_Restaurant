@@ -1,9 +1,0 @@
-# PR11 review repair closeout
-
-All40inline findings from review5820034491 have dispositions in the four linked repair reports: [status](2026-11-09-cubic-status-fixes.md), [runtime](2026-11-09-cubic-runtime-fixes.md), [evidence](2026-11-09-cubic-evidence-fixes.md), [plan/provenance](2026-11-09-cubic-plan-provenance-fixes.md). Approval digest is reproducible and retained; historical missing source provenance is explicitly unavailable, with later source-bound successor linked. No historic input hashes were invented.
-
-Runtime regressions16/16 pass, targeted analysis zero issues; Python135/135pass. Independent read-only runtime/plan recheck clear. Source mutation is limited to four app safeguards plus plan writer; engine changes N/A. Selected evidence68files/12.19MB reused at canonical paths, secrets-pattern scan and portable image links checked. Fresh hosted CI and automatic review remain required before merge. Storage/retention receipt: outputs/completion-review/cubic-evidence-storage.json.
-
-## Seven remaining discussion threads
-
-Rechecked current source after the edited-review notification. Status findings4508132934/4508133025/4508133027 already distinguish historical checkpoints from successor state; added explicit current source-only engine successor.4508132999 has exact allowlist exceptions, and selected canonical receipts are tracked.4508133010 prose spacing fixed, including final ROI string. Historical artifact findings4508132949/4508133002 cannot acquire original provenance after the fact; both now explicitly exclude qualification and distinguish the later artifact receipt. Replies preserve that limit rather than treating the later fingerprint as proof for old binaries. No runtime changes or new test campaign. Storage sample remains above77GiB free; unique evidence retained.

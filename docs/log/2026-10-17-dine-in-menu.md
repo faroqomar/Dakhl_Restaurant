@@ -1,7 +1,0 @@
-# 2026-10-17 — Separate dine-in menu
-
-Status: implemented draft. Source: the owner's request for a new dine-in menu with the same section order and a supplied list of 17 items. The extra appetizer plate was corrected to 1,500 with explicit owner confirmation.
-
-Created a separate menu with a black background, white names, yellow prices and Tajawal typography. Preserved the samoon/double-skewer details, 100% Iraqi meat designation, appetizer-plate counts and fish accompaniments. A dine-in meat-kebab portion costs 16,000; the promotional price did not replace it. Grammar was corrected for three appetizer plates and whole/half/quarter chicken. The owner's supplied Nashif name was retained. Chicken accompaniments from the promotional menu were not copied into the dine-in menu; its accompaniments follow the dine-in request only.
-
-Outputs: `outputs/menus/dine-in/v1/`, Canva `DAHYPh0SxSk`. The item count of 17 and price sequence were checked against the request and correction. The Canva page was visually reviewed, exported as a 1080×1600 PNG and inspected again. Delivery image: `jannat-baghdad-dine-in-final.png`, after moving separators 10 pixels away from the beginning of the following row. Every item, detail and price appeared without overlap. Local links and `git diff --check` passed; memory synchronization is checked before delivery. The previous promotional menu and account data were unchanged; nothing was published. [Approved menu content](../planning/dine-in-menu.md).

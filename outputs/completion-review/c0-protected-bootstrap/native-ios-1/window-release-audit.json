@@ -1,9 +1,0 @@
-{
-  "runnerEndUtc": "2026-11-08T07:48:20.210100+00:00",
-  "actualRunnerElapsedSeconds": 79.6755845,
-  "explicitCompilerWindowReleaseMessage": "Sent toRoot before failed-source snapshot and Deviceclosure;exact send/arrival UTC not captured in this worker receipt;Root receiver audit owns exact timestamp",
-  "releaseMessageBeforeUtc": "2026-11-08T08:00:36.928164+00:00",
-  "postExitReleaseUpperBoundSeconds": 736.718064,
-  "classification": "Avoidable observation/coordination gap after completed runner;Root reports finance/boundary workers waited. Exact cause and actual send/arrival delay unknown;do not attribute to compiler execution. Read-only Device screenshot/tool handoff occurred before completion inspection.",
-  "prevention": "On runner completion/failure,the FIRST action is explicit compiler/window release toRoot,then hash/source/docs/storage/Devicecleanup. Timer native-build-and-test pause includes post-exit observation overhead;it is not nativeprocessduration."
-}

@@ -1,9 +1,0 @@
-Launching lib/main.dart on iPhone 18 Pro in debug mode...
-Running Xcode build...                                          
-Xcode build done.                                           22.1s
-[IMPORTANT:flutter/shell/platform/darwin/graphics/FlutterDarwinContextMetalImpeller.mm(45)] Using the Impeller rendering backend (Metal).
--[WFIsolatedShortcutRunner init] Taking sandbox extensions for execution
--[WFIsolatedShortcutRunner init]_block_invoke Sandbox extensions acquired
-Syncing files to device iPhone 18 Pro...                        
-Indexing for request: <WFToolKitIndexingRequest: 0x10244c0c0>, changeset: .partial(updatedCount: 1 removedCount: 0 updated: ["com.eros.dakhlrestaurant.phase00"], removed: [], provenance: [VoiceShortcutClient.ToolKitIndexingReason.Changeset.Provenance.launchServicesSnapshot(<LaunchServicesSnapshot uuid=6A639F86-B935-41CB-89B4-7AC9AAAD4E71, v=824)> ["com.apple.ios.StoreKitUIService", "com.apple.ClockAngel", "com.apple.messages.RemoteAlerts", "com.apple.GradientPoster", "com.apple.icloud.apps.messages.business", "com.apple.AccessibilityUIServer", "com.apple.UIKit.FontPickerUIService", "com.apple.AMSEngagementViewService", "com.apple.intelligenceplatform.IntelligencePlatform.IntelligencePlatformDataActionsAppIntentsExtension", "com.apple.NeighborhoodActivityConduitService.NeighborhoodActivityConduitIntentsExtension", "com.apple.chrono.WidgetRenderer-WatchFaces", "com.apple.Preferences.PassbookSettingsIntentExtension", "com.apple.TVRemoteApp.TVRemoteSettingsAppIntents", "com.apple.siri.messages.SiriMessagesAppIntentsExtension", "com<…>, priority: <decode: missing data>
-Syncing files to device iPhone 18 Pro...                           291ms

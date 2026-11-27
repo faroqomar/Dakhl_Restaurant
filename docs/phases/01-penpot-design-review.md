@@ -14,7 +14,7 @@ Use the existing `codex/phase01-scope` app documentation/design-preparation work
 
 ## Review set
 
-The set contains eleven design/wireframe pairs, twenty-two boards. [Local approval gallery](https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/outputs/penpot/phase01/review/index.html), [native exports](../../outputs/penpot/phase01/native-exports/) and [the final native manifest](../../outputs/penpot/phase01/native-exports/native-manifest.json) contain the reviewable evidence. See also the [native layer audit](../../outputs/penpot/phase01/native-exports/native-layer-audit.json) and [Penpot page proof](../../outputs/penpot/phase01/review/penpot-page-proof.png). Local filesystem and cross-worktree links depend on this machine's layout; they are not published portable URLs. Native in this record means Penpot's own exported artwork, not a native application/device run.
+The set contains eleven design/wireframe pairs, twenty-two boards. [Local approval gallery](https://github.com/faroqomar/Dakhl_Restaurant/blob/433ee33f1b2811687cc8b23af2c5c9014786de5d/outputs/penpot/phase01/review/index.html), native exports and the final native manifest contain the reviewable evidence. See also the native layer audit and Penpot page proof. Local filesystem and cross-worktree links depend on this machine's layout; they are not published portable URLs. Native in this record means Penpot's own exported artwork, not a native application/device run.
 
 | Pair | Logical dimensions | Scope |
 | --- | --- | --- |

@@ -15,7 +15,7 @@ Date: 2026-10-28 (Asia/Baghdad). Owner request: recreate the existing design in 
 
 ## UX Agent preparation
 
-UX `phase00_ux` prepared the following matrix from the [design contract](../planning/flutter-rebuild/design-system.md), [capture guide](../planning/flutter-rebuild/capture-guide.md), [manifest](../planning/flutter-rebuild/screenshot-manifest.json) and [transfer recovery record](../../outputs/figma-transfer/RESUME.md). This is a validation plan, not passed validation.
+UX `phase00_ux` prepared the following matrix from the [design contract](../planning/flutter-rebuild/design-system.md), [capture guide](../planning/flutter-rebuild/capture-guide.md), [manifest](../planning/flutter-rebuild/screenshot-manifest.json) and transfer recovery record. This is a validation plan, not passed validation.
 
 | Area | Recreation and acceptance scope |
 | --- | --- |

@@ -9,7 +9,7 @@ Date: 2026-10-30. **All18 local macOS cases passed,360 real samples,20 per case;
 - UTC 2026-10-30T12:45:18.461673+00:00 → 2026-10-30T13:03:05.971704+00:00; campaign 1067.510s, command wall sum 1058.102s, resource windows 925.095s. These overlap and must not be added to execution wall time.
 - Formerly failing largest migration was predeclared first; its20 valid samples/cleanup preceded the other17 distinct pairs once. All source/manifest/run/binary/cleanup identities were validated. No isolated/old source case is merged.
 
-[Complete machine-readable index and hashes](../../outputs/phase02/step4-final-performance/summary.json), [raw table and per-case artifacts](../../outputs/phase02/step4-final-performance/summary.md). Independent final arithmetic/provenance review passed805 fresh checks and108 artifact hashes with zero discrepancies: [review](../../outputs/phase02/step4-final-performance-independent-review.md).
+Complete machine-readable index and hashes, raw table and per-case artifacts. Independent final arithmetic/provenance review passed805 fresh checks and108 artifact hashes with zero discrepancies: review.
 
 ## Results
 
@@ -17,24 +17,24 @@ Latency is milliseconds; RSS is sampled absolute peak decimal MB. CPU average is
 
 | Fixture | Real operation | Median ms | p95 ms | RSS peak MB | CPU average % |
 | --- | --- | ---: | ---: | ---: | ---: |
-| small | [accounts.open](../../outputs/phase02/step4-final-performance/small/accounts.open.json) | 15.230 | 17.074 | 158.417 | 26.12 |
-| small | [accounts.save](../../outputs/phase02/step4-final-performance/small/accounts.save.json) | 7.652 | 16.045 | 172.098 | 20.64 |
-| small | [accounts.migrate_legacy](../../outputs/phase02/step4-final-performance/small/accounts.migrate_legacy.json) | 31.295 | 32.733 | 173.015 | 25.01 |
-| small | [accounts.replace](../../outputs/phase02/step4-final-performance/small/accounts.replace.json) | 15.307 | 16.999 | 176.488 | 24.42 |
-| small | [accounts.recover_previous](../../outputs/phase02/step4-final-performance/small/accounts.recover_previous.json) | 23.686 | 25.456 | 174.670 | 29.20 |
-| small | [workspace.save_restore](../../outputs/phase02/step4-final-performance/small/workspace.save_restore.json) | 7.002 | 9.112 | 167.936 | 19.29 |
-| medium | [accounts.open](../../outputs/phase02/step4-final-performance/medium/accounts.open.json) | 40.142 | 48.380 | 174.424 | 66.50 |
-| medium | [accounts.save](../../outputs/phase02/step4-final-performance/medium/accounts.save.json) | 56.892 | 63.161 | 191.922 | 73.92 |
-| medium | [accounts.migrate_legacy](../../outputs/phase02/step4-final-performance/medium/accounts.migrate_legacy.json) | 73.466 | 75.338 | 190.956 | 48.90 |
-| medium | [accounts.replace](../../outputs/phase02/step4-final-performance/medium/accounts.replace.json) | 81.955 | 88.684 | 192.643 | 86.35 |
-| medium | [accounts.recover_previous](../../outputs/phase02/step4-final-performance/medium/accounts.recover_previous.json) | 115.047 | 123.083 | 193.954 | 105.03 |
-| medium | [workspace.save_restore](../../outputs/phase02/step4-final-performance/medium/workspace.save_restore.json) | 27.752 | 33.533 | 190.824 | 60.06 |
-| largest | [accounts.open](../../outputs/phase02/step4-final-performance/largest/accounts.open.json) | 1656.209 | 1657.363 | 717.128 | 101.19 |
-| largest | [accounts.save](../../outputs/phase02/step4-final-performance/largest/accounts.save.json) | 3748.990 | 3814.721 | 716.112 | 102.46 |
-| largest | [accounts.migrate_legacy](../../outputs/phase02/step4-final-performance/largest/accounts.migrate_legacy.json) | 3188.012 | 3242.811 | 739.459 | 99.54 |
-| largest | [accounts.replace](../../outputs/phase02/step4-final-performance/largest/accounts.replace.json) | 5723.102 | 5750.237 | 818.332 | 103.24 |
-| largest | [accounts.recover_previous](../../outputs/phase02/step4-final-performance/largest/accounts.recover_previous.json) | 7273.328 | 7339.703 | 843.842 | 103.48 |
-| largest | [workspace.save_restore](../../outputs/phase02/step4-final-performance/largest/workspace.save_restore.json) | 1306.543 | 1319.042 | 741.409 | 102.27 |
+| small | accounts.open | 15.230 | 17.074 | 158.417 | 26.12 |
+| small | accounts.save | 7.652 | 16.045 | 172.098 | 20.64 |
+| small | accounts.migrate_legacy | 31.295 | 32.733 | 173.015 | 25.01 |
+| small | accounts.replace | 15.307 | 16.999 | 176.488 | 24.42 |
+| small | accounts.recover_previous | 23.686 | 25.456 | 174.670 | 29.20 |
+| small | workspace.save_restore | 7.002 | 9.112 | 167.936 | 19.29 |
+| medium | accounts.open | 40.142 | 48.380 | 174.424 | 66.50 |
+| medium | accounts.save | 56.892 | 63.161 | 191.922 | 73.92 |
+| medium | accounts.migrate_legacy | 73.466 | 75.338 | 190.956 | 48.90 |
+| medium | accounts.replace | 81.955 | 88.684 | 192.643 | 86.35 |
+| medium | accounts.recover_previous | 115.047 | 123.083 | 193.954 | 105.03 |
+| medium | workspace.save_restore | 27.752 | 33.533 | 190.824 | 60.06 |
+| largest | accounts.open | 1656.209 | 1657.363 | 717.128 | 101.19 |
+| largest | accounts.save | 3748.990 | 3814.721 | 716.112 | 102.46 |
+| largest | accounts.migrate_legacy | 3188.012 | 3242.811 | 739.459 | 99.54 |
+| largest | accounts.replace | 5723.102 | 5750.237 | 818.332 | 103.24 |
+| largest | accounts.recover_previous | 7273.328 | 7339.703 | 843.842 | 103.48 |
+| largest | workspace.save_restore | 1306.543 | 1319.042 | 741.409 | 102.27 |
 
 ## Workload and method
 
@@ -44,7 +44,7 @@ Each iteration prepares a fresh owned synthetic store outside elapsed measuremen
 
 Sampled direct-process RSS/Mach CPU span host start/end markers, including between-iteration fixture reset, bootstrap/render setup, callback idle and teardown. They are aggregate case resources, not per-latency-sample attribution; descendants are excluded. Requested sampling interval20ms does not guarantee the instantaneous memory peak. OS/native caches and thermal state are uncontrolled. Hardware is Apple M1 Pro/MacBookPro18,3,8 logical CPUs, macOS27.2 arm64, Flutter3.47.8/Dart3.13.7; exact Python/tool/sampler/Xcode/SDK identity is in the index. Only lightweight documentation/evidence coordination occurred concurrently; no other tests/profiles/heavy commands, and the task Android target was off.
 
-Initial root/warm-up/first-raster readiness now precedes fresh-frame baseline selection under one total ten-second guard. It does not replace actual matching native ID/rasterFinish. Operation timing/resource-window boundaries are unchanged, but bootstrap adds setup work within later reset windows. This source cohort is therefore separate from earlier partials and no cross-epoch resource delta or optimization claim is made. [Independent bootstrap review](../../outputs/phase02/step4-bootstrap-independent-review.md).
+Initial root/warm-up/first-raster readiness now precedes fresh-frame baseline selection under one total ten-second guard. It does not replace actual matching native ID/rasterFinish. Operation timing/resource-window boundaries are unchanged, but bootstrap adds setup work within later reset windows. This source cohort is therefore separate from earlier partials and no cross-epoch resource delta or optimization claim is made. Independent bootstrap review.
 
 ## Preserved failures and limits
 

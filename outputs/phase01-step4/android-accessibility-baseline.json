@@ -1,9 +1,0 @@
-{
-  "target": "existing development emulator-5554",
-  "secureSettings": {
-    "enabled_accessibility_services": "null",
-    "accessibility_enabled": "0"
-  },
-  "stateChangesMade": false,
-  "permission": "owner explicitly authorized adb Back testing and temporary TalkBack; restore recorded settings after check"
-}

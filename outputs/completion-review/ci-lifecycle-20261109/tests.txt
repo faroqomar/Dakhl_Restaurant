@@ -1,7 +1,0 @@
-00:00 +0: loading /Users/eros/Dev/Eros_Projects/Dakhl_Restaurant/test/accounting/journal_command_lifecycle_faults_test.dart
-00:00 +0: SIGKILL transaction.before_commit preserves complete composed invoice and retry/replay
-00:11 +1: SIGKILL transaction.after_commit preserves complete composed sale and retry/replay
-00:15 +2: overlapping identical composed commands use one real CAS result
-00:15 +3: overlapping conflicting composed commands use one real CAS result
-00:15 +4: committed multi-journal write stays protected through readback outage and reopens once
-00:15 +5: All tests passed!

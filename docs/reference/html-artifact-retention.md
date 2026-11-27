@@ -9,9 +9,9 @@ The keep/delete manifest records exact paths, hashes, reasons and retained captu
 Seven tracked HTML files remain:
 
 - [Screenshot gallery](../planning/flutter-rebuild/gallery.html): one filterable index for the 179 canonical captures.
-- [Approved C1 packet](../../outputs/completion-review/catalog-design-review-portable.html): exact owner-approved presentation; preserve its byte/hash identity.
-- [C2 review](../../outputs/completion-review/c2-design-review.html), [category hold/proposal review](../../outputs/completion-review/category-design-review.html) and [positive-return proposal review](../../outputs/completion-review/c3-positive-return-preview.html): distinct current review packets; retaining them does not grant approval.
-- [Current promotional menu](../../outputs/campaigns/CAM-0001/v6/jannat-baghdad-menu-v6.html) and [current dine-in menu](../../outputs/menus/dine-in/v2/jannat-baghdad-dine-in.html): current editable/print outputs. Their generators still depend on earlier JSON/font folders; those assets remain.
+- Approved C1 packet: exact owner-approved presentation; preserve its byte/hash identity.
+- C2 review, category hold/proposal review and positive-return proposal review: distinct current review packets; retaining them does not grant approval.
+- Current promotional menu and current dine-in menu: current editable/print outputs. Their generators still depend on earlier JSON/font folders; those assets remain.
 
 Fourteen existing local-only Penpot HTML sources/review helpers remain under the current ignore rules. They include three hand-authored annotation inputs, six current C3 source captures, the unique held-name source, and four current review/comparison helpers. They retain their original hashes and locations. This cleanup does not publish those local artifacts or qualify new design evidence. Canonical native archives, source SVGs, geometry JSON, screenshots, manifests and approved crops remain in place.
 

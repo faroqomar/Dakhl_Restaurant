@@ -7,3 +7,7 @@ Approval covers the exact prepared C2 core references/pattern reuses and C4 cate
 Approved packet identities before this annotation:
 - `docs/phases/c2-design-approval-proposal.md` SHA256 `882f070b62ed60240066506ae419ce8b5d5776a833e659ece47129c1c5bb811f`.
 - `docs/phases/c4-design-approval-proposal.md` SHA256 `dcb45ed81b9e1ec634b480f034852aed828837375eda3734bfb1aa0fa606efaa`.
+
+## Historical evidence locations
+
+The approval packets retain their original public bytes. To inspect a generated exhibit linked from a packet, read its path at revision `7b85ca43e6ff93f82c58a9da546147cb5779f1dd`. The [repository cleanup record](../log/2026-11-28-public-repository-cleanup.md) gives the Git command.

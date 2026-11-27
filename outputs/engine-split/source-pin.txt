@@ -1,2 +1,0 @@
-Pure contract, adapter independence and consumer source boundaries passed.
-Consumer engine commit, versions and source boundaries match.
